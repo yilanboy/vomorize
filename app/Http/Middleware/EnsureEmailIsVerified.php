@@ -1,0 +1,30 @@
+<?php
+
+namespace App\Http\Middleware;
+
+use Closure;
+use Illuminate\Http\Request;
+use Symfony\Component\HttpFoundation\Response;
+
+class EnsureEmailIsVerified
+{
+    /**
+     * Handle an incoming request.
+     *
+     * @param  Closure(Request): (Response)  $next
+     */
+    public function handle(Request $request, Closure $next): Response
+    {
+        $user = $request->user();
+
+        if ($user && ! $user->hasVerifiedEmail()) {
+            if (! $request->routeIs('verification.notice', 'verification.verify', 'verification.send', 'logout')) {
+                return $request->expectsJson()
+                    ? abort(403, 'Your email address is not verified.')
+                    : redirect()->route('verification.notice');
+            }
+        }
+
+        return $next($request);
+    }
+}

@@ -1,0 +1,115 @@
+@import 'tailwindcss';
+
+@import 'tw-animate-css';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+    --font-sans:
+        Instrument Sans, ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji',
+        'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+    --color-zinc-25: oklch(99.2% 0 0);
+}
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+    *,
+    ::after,
+    ::before,
+    ::backdrop,
+    ::file-selector-button {
+        border-color: var(--color-gray-200, currentColor);
+    }
+}
+
+
+
+ :root {
+    /* These are feature-local runtime values, not application color tokens. */
+    --tile-border: oklch(77.4% 0 0);
+    /* orange-500/7 — the `ready` tile's surface. See `.tile-wash`. */
+    --tile-wash: oklch(70.5% 0.213 47.604 / 0.07);
+}
+
+.dark {
+    --tile-border: oklch(38.2% 0 0);
+    /* orange-400/15 — the `ready` tile's surface in dark. */
+    --tile-wash: oklch(75% 0.183 55.934 / 0.15);
+}
+
+@layer base {
+    * {
+        @apply border-zinc-200 outline-zinc-400/50 dark:border-zinc-800 dark:outline-zinc-600/50;
+    }
+    body {
+        @apply bg-zinc-100 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-50;
+    }
+}
+
+/*
+ * How far a waiting group has travelled toward becoming due, as a percentage. Registering it
+ * is what lets the gradient stop interpolate — an unregistered custom property is treated as
+ * a token and will not animate.
+ */
+@property --tile-fill {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 0%;
+}
+
+/*
+ * The wash on a waiting group tile: the `ready` tile's own surface rising from the bottom
+ * edge, full at the moment the group comes due. Matching that accent exactly is the point —
+ * the wash then reads as the tile becoming the actionable tile it is counting down to,
+ * rather than as a separate quantity. Keep the two in step: if the `ready` surface in
+ * `getGroupClasses` changes, these tokens change with it.
+ *
+ * The transition band keeps the boundary soft without diffusing the wash across the tile.
+ * A hard edge would sit mid-digit at most values, which at tile scale reads as a rendering
+ * fault rather than a design.
+ */
+@layer utilities {
+    .tile-wash {
+        background-image: linear-gradient(
+            to top,
+            var(--tile-wash) 0 calc(var(--tile-fill) - 6%),
+            transparent calc(var(--tile-fill) + 6%)
+        );
+        /*
+         * The wash is the one thing on this page that cannot move on its own: across the
+         * longest interval a half-hour session advances it by about a tenth of a pixel. This
+         * animation is therefore the whole source of the filling quality — it reveals state on
+         * arrival, the way a chart animates its bars in, not live movement.
+         *
+         * `backwards` holds the tile at empty through its stagger delay, so the grid fills as a
+         * wave. Using an animation rather than a transition is deliberate: an animation runs
+         * once on mount and is not re-triggered when the minute tick nudges `--tile-fill`,
+         * whereas a transition would replay on every such change.
+         */
+        animation: tile-wash-rise 700ms ease-out backwards;
+        animation-delay: var(--tile-wash-delay, 0ms);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        .tile-wash {
+            animation: none;
+        }
+    }
+}
+
+@keyframes tile-wash-rise {
+    from {
+        --tile-fill: 0%;
+    }
+}

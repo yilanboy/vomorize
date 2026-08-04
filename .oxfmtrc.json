@@ -1,0 +1,10 @@
+{
+    "$schema": "./node_modules/oxfmt/configuration_schema.json",
+    "svelte": true,
+    "sortTailwindcss": {
+        "stylesheet": "resources/css/app.css",
+        "functions": ["clsx", "cn", "cva"]
+    },
+    "singleQuote": true,
+    "tabWidth": 4
+}
