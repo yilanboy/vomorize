@@ -122,14 +122,7 @@ resources/js/pages/  Inertia/Svelte pages
 resources/js/        Shared frontend components and utilities
 routes/              Web and settings routes
 tests/               Feature, unit, and browser tests
-DESIGN.md            Product and technical design decisions
-SPEC.md              V1 product specification
 ```
-
-## Further documentation
-
-- [`DESIGN.md`](DESIGN.md) — detailed architecture, learning flow, and product behavior.
-- [`SPEC.md`](SPEC.md) — V1 requirements, implementation decisions, and testing decisions.
 
 ## License
 
