@@ -28,7 +28,7 @@ Route::post('/quiz/custom/count', [CustomQuizController::class, 'learnedWordCoun
 Route::post('/quiz/custom/fetch', [CustomQuizController::class, 'fetchVocabulary'])->name('quiz.custom.fetch');
 
 // Socialite GitHub Login
-Route::get('/auth/github', [GitHubAuthController::class, 'redirect'])->name('auth.github');
+Route::get('/auth/github/redirect', [GitHubAuthController::class, 'redirect'])->name('auth.github');
 Route::get('/auth/github/callback', [GitHubAuthController::class, 'callback'])->name('auth.github.callback');
 
 require __DIR__.'/settings.php';

@@ -101,3 +101,14 @@ test('users are rate limited', function () {
 
     $response->assertTooManyRequests();
 });
+
+test('for the user who register through socialite, he cannot login with a null password', function () {
+    $user = User::factory()->create();
+
+    $this->post(route('login.store'), [
+        'email' => $user->email,
+        'password' => null,
+    ]);
+
+    $this->assertGuest();
+});

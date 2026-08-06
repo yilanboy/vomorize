@@ -14,6 +14,8 @@ return new class extends Migration
         Schema::table('users', function (Blueprint $table) {
             $table->string('locale', 10)->default('zh_TW')->after('email');
             $table->string('github_id')->nullable()->unique()->after('locale');
+            $table->string('github_token')->nullable()->after('github_id');
+            $table->string('github_refresh_token')->nullable()->after('github_token');
         });
     }
 
@@ -24,7 +26,7 @@ return new class extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->dropUnique(['github_id']);
-            $table->dropColumn(['locale', 'github_id']);
+            $table->dropColumn(['locale', 'github_id', 'github_token', 'github_refresh_token']);
         });
     }
 };

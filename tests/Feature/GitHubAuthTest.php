@@ -8,28 +8,32 @@ use Laravel\Socialite\Two\User as SocialiteUser;
 uses(RefreshDatabase::class);
 
 it('redirects to github OAuth provider', function () {
-    $response = $this->get('/auth/github');
+    Socialite::fake('github');
+
+    $response = $this->get('/auth/github/redirect');
 
     $response->assertRedirect();
 });
 
-it('creates a new user from github callback', function () {
-    $abstractUser = Mockery::mock(SocialiteUser::class);
-    $abstractUser->shouldReceive('getId')->andReturn('123456');
-    $abstractUser->shouldReceive('getName')->andReturn('GitHub Learner');
-    $abstractUser->shouldReceive('getNickname')->andReturn('ghlearner');
-    $abstractUser->shouldReceive('getEmail')->andReturn('github@example.com');
-
-    Socialite::shouldReceive('driver->user')->andReturn($abstractUser);
+it('user can login with github', function () {
+    Socialite::fake('github', SocialiteUser::fake([
+        'id' => 'github-123',
+        'name' => 'Jason Beggs',
+        'email' => 'jason@example.com',
+    ]));
 
     $response = $this->get('/auth/github/callback');
 
     $response->assertRedirect('/');
-    $this->assertDatabaseHas('users', [
-        'email' => 'github@example.com',
-        'github_id' => '123456',
-    ]);
-    $this->assertAuthenticated();
+
+    $user = User::query()->where('email', 'jason@example.com')->firstOrFail();
+
+    expect($user->email)->toBe('jason@example.com')
+        ->and($user->name)->toBe('Jason Beggs')
+        ->and($user->email_verified_at)->not->toBeNull()
+        ->and($user->github_id)->toBe('github-123')
+        ->and($user->github_token)->not->toBeNull()
+        ->and($user->github_refresh_token)->not->toBeNull();
 });
 
 it('auto-links github account to existing password account with verified email', function () {
@@ -39,39 +43,51 @@ it('auto-links github account to existing password account with verified email',
         'github_id' => null,
     ]);
 
-    $abstractUser = Mockery::mock(SocialiteUser::class);
-    $abstractUser->shouldReceive('getId')->andReturn('789012');
-    $abstractUser->shouldReceive('getName')->andReturn('Verified User');
-    $abstractUser->shouldReceive('getNickname')->andReturn('verifieduser');
-    $abstractUser->shouldReceive('getEmail')->andReturn('verified@example.com');
-
-    Socialite::shouldReceive('driver->user')->andReturn($abstractUser);
+    Socialite::fake('github', SocialiteUser::fake([
+        'id' => 'github-123',
+        'name' => 'Verified User',
+        'email' => 'verified@example.com',
+    ]));
 
     $response = $this->get('/auth/github/callback');
 
     $response->assertRedirect('/');
-    expect($existing->fresh()->github_id)->toBe('789012');
+
+    $existing->refresh();
+
+    expect($existing->github_id)
+        ->toBe('github-123')
+        ->and($existing->email)
+        ->toBe('verified@example.com');
     $this->assertAuthenticatedAs($existing);
 });
 
-it('rejects auto-linking github account if existing email is not verified', function () {
+it('set auto-linking github account password to null if existing email is not verified', function () {
     $existing = User::factory()->create([
         'email' => 'unverified@example.com',
         'email_verified_at' => null,
         'github_id' => null,
     ]);
 
-    $abstractUser = Mockery::mock(SocialiteUser::class);
-    $abstractUser->shouldReceive('getId')->andReturn('999999');
-    $abstractUser->shouldReceive('getName')->andReturn('Unverified User');
-    $abstractUser->shouldReceive('getNickname')->andReturn('unverifieduser');
-    $abstractUser->shouldReceive('getEmail')->andReturn('unverified@example.com');
-
-    Socialite::shouldReceive('driver->user')->andReturn($abstractUser);
+    Socialite::fake('github', SocialiteUser::fake([
+        'id' => 'github-123',
+        'name' => 'Unverified User',
+        'email' => 'unverified@example.com',
+    ]));
 
     $response = $this->get('/auth/github/callback');
 
-    $response->assertRedirect('/login');
-    expect($existing->fresh()->github_id)->toBeNull();
-    $this->assertGuest();
+    $response->assertRedirect('/');
+
+    $existing->refresh();
+
+    expect($existing->github_id)
+        ->toBe('github-123')
+        ->and($existing->email)
+        ->toBe('unverified@example.com')
+        ->and($existing->password)
+        ->toBeNull()
+        ->and($existing->email_verified_at)->not->toBeNull();
+
+    $this->assertAuthenticatedAs($existing);
 });
