@@ -10,9 +10,6 @@ use App\Http\Controllers\LevelController;
 use App\Http\Controllers\ProgressMigrationController;
 use Illuminate\Support\Facades\Route;
 
-// Locale switching
-Route::post('/locale', [LocaleController::class, 'update'])->name('locale.update');
-
 // Home & Learning routes
 Route::get('/', HomeController::class)->name('home');
 Route::get('/levels/{level}', [LevelController::class, 'show'])->name('levels.show');
