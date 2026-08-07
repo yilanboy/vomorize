@@ -10,6 +10,8 @@ export type ThemeState = {
     updateAppearance: (value: Appearance) => void;
 };
 
+const appearance = $state<{ value: Appearance }>({ value: 'system' });
+
 let themeChangeMediaQuery: MediaQueryList | null = null;
 
 const prefersDark = (): boolean => {
@@ -42,10 +44,9 @@ const applyTheme = (value: Appearance): void => {
         return;
     }
 
-    const dark = isDarkMode(value);
-
-    document.documentElement.classList.toggle('dark', dark);
-    document.documentElement.style.colorScheme = dark ? 'dark' : 'light';
+    const isDark = isDarkMode(value);
+    document.documentElement.classList.toggle('dark', isDark);
+    document.documentElement.style.colorScheme = isDark ? 'dark' : 'light';
 };
 
 const getStoredAppearance = (): Appearance => {
@@ -53,27 +54,10 @@ const getStoredAppearance = (): Appearance => {
         return 'system';
     }
 
-    const initial = document.documentElement.dataset.appearance;
-
-    if (initial === 'light' || initial === 'dark' || initial === 'system') {
-        return initial;
-    }
-
     const stored = localStorage.getItem('appearance');
 
-    if (stored === 'light' || stored === 'dark' || stored === 'system') {
-        return stored;
-    }
-
-    const cookie = document.cookie
-        .split('; ')
-        .find((entry) => entry.startsWith('appearance='))
-        ?.split('=')[1];
-
-    return cookie === 'light' || cookie === 'dark' || cookie === 'system' ? cookie : 'system';
+    return stored === 'light' || stored === 'dark' || stored === 'system' ? stored : 'system';
 };
-
-const appearance = $state<{ value: Appearance }>({ value: getStoredAppearance() });
 
 const handleSystemThemeChange = (): void => {
     applyTheme(appearance.value);
@@ -93,14 +77,12 @@ export function initializeTheme(): () => void {
         return () => {};
     }
 
-    const storedAppearance = getStoredAppearance();
-
     if (!localStorage.getItem('appearance')) {
-        localStorage.setItem('appearance', storedAppearance);
-        setCookie('appearance', storedAppearance);
+        localStorage.setItem('appearance', 'system');
+        setCookie('appearance', 'system');
     }
 
-    appearance.value = storedAppearance;
+    appearance.value = getStoredAppearance();
     applyTheme(appearance.value);
 
     detachThemeChangeListener();
@@ -115,10 +97,6 @@ export function updateAppearance(value: Appearance): void {
 
     if (typeof window !== 'undefined') {
         localStorage.setItem('appearance', value);
-    }
-
-    if (typeof document !== 'undefined') {
-        document.documentElement.dataset.appearance = value;
     }
 
     setCookie('appearance', value);

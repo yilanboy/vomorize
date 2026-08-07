@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" data-appearance="{{ $appearance ?? 'system' }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}"  @class(['dark' => ($appearance ?? 'system') == 'dark'])>
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -7,29 +7,6 @@
         <link rel="icon" href="/favicon.ico" sizes="any">
         <link rel="icon" href="/favicon.svg" type="image/svg+xml">
         <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-
-        <script>
-            (() => {
-                let stored = null;
-
-                try {
-                    stored = localStorage.getItem('appearance');
-                } catch {
-                    // Storage may be unavailable in restricted browser contexts.
-                }
-
-                const appearance = ['light', 'dark', 'system'].includes(stored)
-                    ? stored
-                    : @json($appearance ?? 'system');
-                const dark = appearance === 'dark'
-                    || (appearance === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches);
-                const root = document.documentElement;
-
-                root.dataset.appearance = appearance;
-                root.classList.toggle('dark', dark);
-                root.style.colorScheme = dark ? 'dark' : 'light';
-            })();
-        </script>
 
         <script>
             /*

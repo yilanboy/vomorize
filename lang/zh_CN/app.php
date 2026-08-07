@@ -63,6 +63,7 @@ return [
     'home' => '首页',
     'settings' => '设置',
     'login' => '登录',
+    'login_success' => '登录成功！',
     'register' => '注册',
     'logout' => '退出登录',
     'language' => '语言',

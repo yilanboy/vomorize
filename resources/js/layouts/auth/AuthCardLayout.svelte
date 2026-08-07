@@ -1,5 +1,6 @@
 <script lang="ts">
     import type { Snippet } from 'svelte';
+    import { Toaster } from 'svelte-sonner';
     import AppNavbar from '@/components/AppNavbar.svelte';
     import { translations } from '@/lib/locale.svelte';
 
@@ -44,3 +45,5 @@
         </div>
     </div>
 </div>
+
+<Toaster />

@@ -63,6 +63,7 @@ return [
     'home' => 'ホーム',
     'settings' => '設定',
     'login' => 'ログイン',
+    'login_success' => 'ログインしました！',
     'register' => '会員登録',
     'logout' => 'ログアウト',
     'language' => '言語',

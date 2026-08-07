@@ -1,5 +1,6 @@
 <script lang="ts">
     import type { Snippet } from 'svelte';
+    import { Toaster } from 'svelte-sonner';
     import AppNavbar from '@/components/AppNavbar.svelte';
 
     let {
@@ -13,3 +14,5 @@
     <AppNavbar />
     {@render children?.()}
 </div>
+
+<Toaster />

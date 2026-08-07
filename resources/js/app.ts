@@ -8,10 +8,6 @@ import { initializeTheme } from '@/lib/theme.svelte';
 
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
 
-// This will set light / dark mode on page load...
-initializeTheme();
-initializeLocale();
-
 createInertiaApp({
     title: (title) => (title ? `${title} - ${appName}` : appName),
     layout: (name) => {
@@ -31,5 +27,10 @@ createInertiaApp({
     },
 });
 
+// This will set light / dark mode on page load...
+initializeTheme();
+
 // This will listen for flash toast data from the server...
 initializeFlashToast();
+
+initializeLocale();

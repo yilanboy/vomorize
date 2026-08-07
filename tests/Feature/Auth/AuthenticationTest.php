@@ -19,7 +19,12 @@ test('users can authenticate using the login screen', function () {
     ]);
 
     $this->assertAuthenticated();
-    $response->assertRedirect(route('home', absolute: false));
+    $response
+        ->assertRedirect(route('home', absolute: false))
+        ->assertSessionHas('inertia.flash_data.toast', [
+            'type' => 'success',
+            'message' => '登入成功！',
+        ]);
 });
 
 test('unverified users are redirected to verification notice after login', function () {

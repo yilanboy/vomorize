@@ -62,6 +62,7 @@ return [
     'home' => '首頁',
     'settings' => '設定',
     'login' => '登入',
+    'login_success' => '登入成功！',
     'register' => '註冊',
     'logout' => '登出',
     'language' => '語言',
