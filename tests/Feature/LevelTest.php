@@ -2,6 +2,7 @@
 
 use App\Models\Level;
 use App\Models\LevelTranslation;
+use Database\Seeders\DefaultLevelSeeder;
 use Database\Seeders\VocabularySeeder;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 
@@ -43,6 +44,18 @@ test('vocabulary seeder seeds level translations for zh_TW, zh_CN, and ja', func
         ->and($ja)->not->toBeNull()
         ->and($ja->name)->toBe('レベル 1')
         ->and($ja->description)->toBe('初級：よく使われる必須1,000単語');
+});
+
+test('default level seeder creates translations for every level', function () {
+    $this->seed(DefaultLevelSeeder::class);
+
+    expect(Level::count())->toBe(7)
+        ->and(LevelTranslation::count())->toBe(21);
+
+    Level::with('translations')->each(function (Level $level): void {
+        expect($level->translations->pluck('locale')->sort()->values()->all())
+            ->toBe(['ja', 'zh_CN', 'zh_TW']);
+    });
 });
 
 test('home page returns level translations', function () {
