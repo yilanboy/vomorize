@@ -58,6 +58,18 @@ test('default level seeder creates translations for every level', function () {
     });
 });
 
+test('default level seeder is idempotent', function () {
+    $this->seed(DefaultLevelSeeder::class);
+
+    expect(Level::count())->toBe(7)
+        ->and(LevelTranslation::count())->toBe(21);
+
+    $this->seed(DefaultLevelSeeder::class);
+
+    expect(Level::count())->toBe(7)
+        ->and(LevelTranslation::count())->toBe(21);
+});
+
 test('home page returns level translations', function () {
     $this->seed(VocabularySeeder::class);
 

@@ -50,9 +50,9 @@ class DefaultLevelSeeder extends Seeder
      */
     public function run(): void
     {
-        foreach (self::LEVELS as $id => $data) {
-            $level = Level::query()->create(['id' => $id]);
-            $level->translations()->createMany($data);
+        foreach (self::LEVELS as $id => $translations) {
+            $level = Level::query()->updateOrCreate(['id' => $id]);
+            $level->translations()->upsert($translations, uniqueBy: ['level_id', 'locale']);
         }
     }
 }
