@@ -6,9 +6,6 @@ use App\Models\Level;
 use App\Models\User;
 use App\Models\Vocabulary;
 use App\Models\VocabularyTranslation;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-
-uses(RefreshDatabase::class);
 
 beforeEach(function () {
     $this->level = Level::create([
@@ -114,24 +111,28 @@ it('keeps a migrated learner on the review phase after an earlier device left a 
 
     // First device: the guest failed the introduction, so it recorded a stage zero attempt.
     $this->actingAs($user)->postJson('/progress/migrate', [
-        'guest_progress' => [[
-            'group_id' => $this->group1->id,
-            'stage' => 0,
-            'last_score' => 50,
-            'last_reviewed_at' => now()->subWeek()->toIso8601String(),
-            'next_review_at' => now()->subWeek()->addHours(12)->toIso8601String(),
-        ]],
+        'guest_progress' => [
+            [
+                'group_id' => $this->group1->id,
+                'stage' => 0,
+                'last_score' => 50,
+                'last_reviewed_at' => now()->subWeek()->toIso8601String(),
+                'next_review_at' => now()->subWeek()->addHours(12)->toIso8601String(),
+            ],
+        ],
     ])->assertOk();
 
     // Second device: the guest passed the introduction and reached stage three.
     $this->actingAs($user)->postJson('/progress/migrate', [
-        'guest_progress' => [[
-            'group_id' => $this->group1->id,
-            'stage' => 3,
-            'last_score' => 100,
-            'last_reviewed_at' => now()->subDays(3)->toIso8601String(),
-            'next_review_at' => now()->subDay()->toIso8601String(),
-        ]],
+        'guest_progress' => [
+            [
+                'group_id' => $this->group1->id,
+                'stage' => 3,
+                'last_score' => 100,
+                'last_reviewed_at' => now()->subDays(3)->toIso8601String(),
+                'next_review_at' => now()->subDay()->toIso8601String(),
+            ],
+        ],
     ])->assertOk();
 
     $this->actingAs($user)

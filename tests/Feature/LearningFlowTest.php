@@ -5,9 +5,6 @@ use App\Models\Level;
 use App\Models\User;
 use App\Models\Vocabulary;
 use App\Models\VocabularyTranslation;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-
-uses(RefreshDatabase::class);
 
 beforeEach(function () {
     $this->level = Level::create([

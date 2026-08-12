@@ -22,9 +22,7 @@ class SetLocale
     {
         $locale = self::DEFAULT_LOCALE;
 
-        if ($request->user() && $request->user()->locale && in_array($request->user()->locale, self::SUPPORTED_LOCALES, true)) {
-            $locale = $request->user()->locale;
-        } elseif ($request->session()->has('locale') && in_array($request->session()->get('locale'), self::SUPPORTED_LOCALES, true)) {
+        if ($request->session()->has('locale') && in_array($request->session()->get('locale'), self::SUPPORTED_LOCALES, true)) {
             $locale = $request->session()->get('locale');
         } elseif ($request->hasHeader('Accept-Language')) {
             $locale = $this->negotiatedLocale($request);

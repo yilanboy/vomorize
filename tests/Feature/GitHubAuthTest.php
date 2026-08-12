@@ -1,11 +1,8 @@
 <?php
 
 use App\Models\User;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Laravel\Socialite\Facades\Socialite;
 use Laravel\Socialite\Two\User as SocialiteUser;
-
-uses(RefreshDatabase::class);
 
 it('redirects to github OAuth provider', function () {
     Socialite::fake('github');

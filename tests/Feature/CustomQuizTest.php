@@ -6,10 +6,7 @@ use App\Models\Level;
 use App\Models\User;
 use App\Models\Vocabulary;
 use App\Models\VocabularyTranslation;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\DB;
-
-uses(RefreshDatabase::class);
 
 /**
  * Three groups of ten words, mirroring the curriculum's fixed group size, so that a learned pool

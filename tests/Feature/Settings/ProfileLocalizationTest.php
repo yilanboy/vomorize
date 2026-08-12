@@ -3,7 +3,7 @@
 use App\Models\User;
 
 test('profile page provides localized translation strings for zh_TW, zh_CN, and ja', function () {
-    $user = User::factory()->create(['locale' => 'zh_TW']);
+    $user = User::factory()->create();
 
     // Every locale ships on every response, so one request proves all three.
     $this->actingAs($user)

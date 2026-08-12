@@ -4,10 +4,7 @@ use App\Models\Group;
 use App\Models\Level;
 use App\Models\LevelTranslation;
 use App\Models\User;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Inertia\Testing\AssertableInertia as Assert;
-
-uses(RefreshDatabase::class);
 
 /**
  * The trail above a group is assembled in the browser, because a language switch never reaches

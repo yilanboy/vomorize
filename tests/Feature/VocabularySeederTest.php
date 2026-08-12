@@ -5,9 +5,6 @@ use App\Models\Level;
 use App\Models\Vocabulary;
 use App\Models\VocabularyTranslation;
 use Database\Seeders\VocabularySeeder;
-use Illuminate\Foundation\Testing\RefreshDatabase;
-
-uses(RefreshDatabase::class);
 
 it('seeds all levels, groups, vocabularies and translations', function () {
     $this->seed(VocabularySeeder::class);
