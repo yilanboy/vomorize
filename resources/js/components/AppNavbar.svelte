@@ -62,7 +62,9 @@
     let t = $derived(translations());
 </script>
 
-<header class="sticky top-0 z-40 border-b border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900">
+<header
+    class="sticky top-0 z-40 border-b border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900"
+>
     <div class="mx-auto flex max-w-4xl items-center justify-between px-4 py-3 sm:px-6">
         <div class="flex items-center space-x-6">
             <Link
@@ -81,6 +83,11 @@
                     />
                 </svg>
                 <span>Vomorize</span>
+                <span
+                    class="rounded bg-amber-100 px-1.5 py-0.5 text-xs font-semibold tracking-wide text-amber-700 dark:bg-amber-900/40 dark:text-amber-300"
+                >
+                    BETA
+                </span>
             </Link>
 
             <nav class="hidden space-x-4 sm:flex">
