@@ -69,7 +69,7 @@
         { label: interpolate(t['group_title'], { id: String(group.sequence) }) },
     ]);
 
-    let activeProgress = $state({
+    let activeProgress: ProgressData = $state({
         stage: 0,
         last_score: null,
         last_reviewed_at: null,
@@ -82,26 +82,38 @@
     );
 
     onMount(() => {
-        if (!isGuest) {
-            return;
-        }
-
         const guestProgress = getGuestGroupProgress(group.id);
 
-        if (!guestProgress) {
-            return;
-        }
+        if (!isGuest) {
+            activeProgress = {
+                ...progress,
+                status: deriveGroupStatus(
+                    progress.stage,
+                    progress.last_score,
+                    progress.next_review_at,
+                    Date.now(),
+                ),
+            };
 
-        activeProgress = {
-            ...progress,
-            ...guestProgress,
-            status: deriveGroupStatus(
-                guestProgress.stage,
-                guestProgress.last_score,
-                guestProgress.next_review_at,
-                Date.now(),
-            ),
-        };
+            return;
+        } else {
+            if (!guestProgress) {
+                return;
+            }
+
+            activeProgress = {
+                stage: guestProgress.stage,
+                last_score: guestProgress.last_score,
+                last_reviewed_at: guestProgress.last_reviewed_at,
+                next_review_at: guestProgress.next_review_at,
+                status: deriveGroupStatus(
+                    guestProgress.stage,
+                    guestProgress.last_score,
+                    guestProgress.next_review_at,
+                    Date.now(),
+                ),
+            };
+        }
     });
 </script>
 
@@ -213,10 +225,7 @@
                                 </p>
                             </div>
                             <div class="flex shrink-0 flex-wrap gap-2">
-                                <div
-                                    data-test={`pronunciation-${vocabulary.id}`}
-                                    class="contents"
-                                >
+                                <div data-test={`pronunciation-${vocabulary.id}`} class="contents">
                                     <AudioButton
                                         url={vocabulary.audio_url}
                                         label={t['pronunciation']}
