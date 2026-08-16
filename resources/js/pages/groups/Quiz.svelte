@@ -5,7 +5,6 @@
     import GroupQuizQuestion from '@/components/GroupQuizQuestion.svelte';
     import QuizLeaveGuard, { disarmLeaveGuard } from '@/components/QuizLeaveGuard.svelte';
     import StickyActionBar from '@/components/StickyActionBar.svelte';
-    import { preloadAudio } from '@/lib/audio';
     import {
         calculateNextState,
         getGuestGroupProgress,
@@ -100,15 +99,6 @@
 
             return;
         }
-
-        preloadAudio([
-            'https://assets.vomorize.com/quiz/correct.mp3',
-            'https://assets.vomorize.com/quiz/wrong.mp3',
-            ...vocabularies.flatMap((vocabulary: VocabularyItem) => [
-                vocabulary.audio_url,
-                vocabulary.sentence_audio_url,
-            ]),
-        ]);
 
         questions = buildReviewQuestions(vocabularies);
     });

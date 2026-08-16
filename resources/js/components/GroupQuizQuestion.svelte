@@ -1,6 +1,7 @@
 <script lang="ts">
     import AudioButton from '@/components/AudioButton.svelte';
-    import { playAudio, playCorrectSound, playWrongSound } from '@/lib/audio';
+    import LargeAudioButton from '@/components/LargeAudioButton.svelte';
+    import { playAudio, playCorrectSound, playWrongSound } from '@/lib/audio.svelte';
     import { answerFor, definitionOf } from '@/lib/groupQuiz';
     import type { QuizQuestion, QuizVocabulary } from '@/lib/groupQuiz';
     import { translations } from '@/lib/locale.svelte';
@@ -55,7 +56,9 @@
     }
 </script>
 
-<div class="w-full space-y-6 rounded-2xl border border-zinc-200 bg-zinc-50 p-6 shadow-xs dark:border-zinc-800 dark:bg-zinc-900">
+<div
+    class="w-full space-y-6 rounded-2xl border border-zinc-200 bg-zinc-50 p-6 shadow-xs dark:border-zinc-800 dark:bg-zinc-900"
+>
     <!--
         Whatever the question asks with — a word, a definition, or a sound — is centred at the top
         of the card, and the region carries a floor tall enough for the tallest of the three, so the
@@ -83,7 +86,7 @@
                 {definitionOf(question.vocabulary)}
             </h2>
         {:else}
-            <AudioButton url={question.vocabulary.audio_url} size="lg" />
+            <LargeAudioButton url={question.vocabulary.audio_url} />
         {/if}
     </div>
 

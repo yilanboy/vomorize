@@ -6,7 +6,6 @@
     import GroupQuizQuestion from '@/components/GroupQuizQuestion.svelte';
     import QuizLeaveGuard, { disarmLeaveGuard } from '@/components/QuizLeaveGuard.svelte';
     import StickyActionBar from '@/components/StickyActionBar.svelte';
-    import { preloadAudio } from '@/lib/audio';
     import { translations } from '@/lib/locale.svelte';
     import { calculateNextState, saveGuestGroupProgress } from '@/lib/progress';
     import {
@@ -117,15 +116,6 @@
     }
 
     onMount(() => {
-        preloadAudio([
-            'https://assets.vomorize.com/quiz/correct.mp3',
-            'https://assets.vomorize.com/quiz/wrong.mp3',
-            ...vocabularies.flatMap((vocabulary) => [
-                vocabulary.audio_url,
-                vocabulary.sentence_audio_url,
-            ]),
-        ]);
-
         questions = buildIntroductionQuestions(vocabularies);
     });
 </script>
