@@ -2,17 +2,15 @@
 
 namespace App\Http\Middleware;
 
+use App\Enums\Locale;
 use Closure;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cookie;
+use Illuminate\Support\Facades\URL;
 use Symfony\Component\HttpFoundation\Response;
 
 class SetLocale
 {
-    /**
-     * Supported locales.
-     */
-    public const SUPPORTED_LOCALES = ['zh_TW', 'zh_CN', 'ja'];
-
     public const DEFAULT_LOCALE = 'zh_TW';
 
     /**
@@ -20,37 +18,33 @@ class SetLocale
      */
     public function handle(Request $request, Closure $next): Response
     {
-        $locale = self::DEFAULT_LOCALE;
+        $routeLocale = $request->route('locale');
 
-        if ($request->session()->has('locale') && in_array($request->session()->get('locale'), self::SUPPORTED_LOCALES, true)) {
-            $locale = $request->session()->get('locale');
-        } elseif ($request->hasHeader('Accept-Language')) {
-            $locale = $this->negotiatedLocale($request);
+        if ($routeLocale) {
+            $matchedLocale = Locale::fromRouteKey($routeLocale);
+
+            if ($matchedLocale) {
+                app()->setLocale($matchedLocale->value);
+                URL::defaults(['locale' => $matchedLocale->routeKey()]);
+                Cookie::queue(Cookie::make('locale', $matchedLocale->routeKey(), 525600, '/', null, null, false));
+                $request->route()?->forgetParameter('locale');
+
+                return $next($request);
+            }
         }
 
-        app()->setLocale($locale);
+        // Fallback for unlocalized routes or if route parameter is missing
+        $cookieLocale = $request->cookie('locale');
+        $matchedFromCookie = Locale::fromRouteKey($cookieLocale);
+
+        if ($matchedFromCookie) {
+            app()->setLocale($matchedFromCookie->value);
+            URL::defaults(['locale' => $matchedFromCookie->routeKey()]);
+        } else {
+            app()->setLocale(self::DEFAULT_LOCALE);
+            URL::defaults(['locale' => 'zh-tw']);
+        }
 
         return $next($request);
-    }
-
-    /**
-     * The best supported match for the languages the visitor's browser asks for.
-     *
-     * Consulted only once every explicit choice has been ruled out, so a visitor who has
-     * chosen is never overridden. The negotiated answer is deliberately not persisted: a
-     * first-time visitor needs nothing written on their behalf, and an explicit switch
-     * already outranks this branch from then on.
-     *
-     * Symfony's negotiation reads the script subtag, so the `zh-Hant` and `zh-Hans` forms
-     * Apple platforms send resolve correctly rather than falling back on region alone. It
-     * returns the head of the candidate list when nothing matches, so the default leads that
-     * list — which keeps the no-match answer correct however SUPPORTED_LOCALES is ordered.
-     */
-    private function negotiatedLocale(Request $request): string
-    {
-        return $request->getPreferredLanguage([
-            self::DEFAULT_LOCALE,
-            ...self::SUPPORTED_LOCALES,
-        ]) ?? self::DEFAULT_LOCALE;
     }
 }

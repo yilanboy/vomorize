@@ -6,7 +6,7 @@
     import GroupQuizQuestion from '@/components/GroupQuizQuestion.svelte';
     import QuizLeaveGuard, { disarmLeaveGuard } from '@/components/QuizLeaveGuard.svelte';
     import StickyActionBar from '@/components/StickyActionBar.svelte';
-    import { translations } from '@/lib/locale.svelte';
+    import { currentLocaleRouteKey, translations } from '@/lib/locale.svelte';
     import { calculateNextState, saveGuestGroupProgress } from '@/lib/progress';
     import {
         answerFor,
@@ -84,7 +84,12 @@
         disarmLeaveGuard();
 
         if (score < 90) {
-            router.visit(resultRoute.url(group.id, { query: { phase: 'introduce', score } }));
+            router.visit(
+                resultRoute.url(
+                    { locale: currentLocaleRouteKey(), group: group.id },
+                    { query: { phase: 'introduce', score } },
+                ),
+            );
 
             return;
         }
@@ -98,18 +103,26 @@
                 last_reviewed_at: nextState.last_reviewed_at,
                 next_review_at: nextState.next_review_at,
             });
-            router.visit(resultRoute.url(group.id, { query: { phase: 'introduce', score } }));
+            router.visit(
+                resultRoute.url(
+                    { locale: currentLocaleRouteKey(), group: group.id },
+                    { query: { phase: 'introduce', score } },
+                ),
+            );
 
             return;
         }
 
         router.post(
-            progressRoute.store.url(group.id),
+            progressRoute.store.url({ locale: currentLocaleRouteKey(), group: group.id }),
             { phase: 'introduce', score },
             {
                 onSuccess: () =>
                     router.visit(
-                        resultRoute.url(group.id, { query: { phase: 'introduce', score } }),
+                        resultRoute.url(
+                            { locale: currentLocaleRouteKey(), group: group.id },
+                            { query: { phase: 'introduce', score } },
+                        ),
                     ),
             },
         );
@@ -120,7 +133,7 @@
     });
 </script>
 
-<QuizLeaveGuard exitUrl={levelRoute.url(group.level_id)} />
+<QuizLeaveGuard exitUrl={levelRoute.url({ locale: currentLocaleRouteKey(), level: group.level_id })} />
 
 <div class="flex flex-1 flex-col">
     <main class="mx-auto w-full max-w-2xl flex-1 px-4 py-8 sm:px-6">

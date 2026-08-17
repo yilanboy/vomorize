@@ -73,7 +73,16 @@ return [
     |
     */
 
-    'home' => '/',
+    'home' => '/zh-tw',
+
+    'redirects' => [
+        'login' => '/zh-tw',
+        'logout' => '/zh-tw',
+        'password-reset' => '/zh-tw/login',
+        'register' => '/zh-tw',
+        'email-verification' => '/zh-tw',
+        'password-confirmation' => '/zh-tw',
+    ],
 
     /*
     |--------------------------------------------------------------------------
@@ -131,7 +140,7 @@ return [
     |
     */
 
-    'views' => true,
+    'views' => false,
 
     /*
     |--------------------------------------------------------------------------

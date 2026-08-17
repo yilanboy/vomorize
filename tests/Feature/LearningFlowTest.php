@@ -37,7 +37,7 @@ beforeEach(function () {
 });
 
 it('renders home page with level payload', function () {
-    $response = $this->get('/');
+    $response = $this->get('/zh-tw');
 
     $response->assertOk()
         ->assertInertia(fn ($page) => $page
@@ -47,7 +47,7 @@ it('renders home page with level payload', function () {
 });
 
 it('renders level page with groups payload', function () {
-    $response = $this->get("/levels/{$this->level->id}");
+    $response = $this->get("/zh-tw/levels/{$this->level->id}");
 
     $response->assertOk()
         ->assertInertia(fn ($page) => $page
@@ -58,7 +58,7 @@ it('renders level page with groups payload', function () {
 });
 
 it('renders group overview page with vocabulary and audio URLs', function () {
-    $response = $this->get("/groups/{$this->group->id}");
+    $response = $this->get("/zh-tw/groups/{$this->group->id}");
 
     $response->assertOk()
         ->assertInertia(fn ($page) => $page
@@ -78,7 +78,7 @@ it('carries every locale of vocabulary content into the group overview', functio
         'example_translation' => 'ja 例句 1',
     ]);
 
-    $this->get("/groups/{$this->group->id}")
+    $this->get("/zh-tw/groups/{$this->group->id}")
         ->assertOk()
         ->assertInertia(fn ($page) => $page
             ->where('vocabularies.0.translations.zh_TW.definition', '釋義 1')
@@ -91,7 +91,7 @@ it('carries every locale of vocabulary content into the group overview', functio
 it('updates learning progress on score submission for authenticated user', function () {
     $user = User::factory()->create();
 
-    $response = $this->actingAs($user)->postJson("/groups/{$this->group->id}/progress", [
+    $response = $this->actingAs($user)->postJson("/zh-tw/groups/{$this->group->id}/progress", [
         'phase' => 'quiz',
         'score' => 90,
     ]);

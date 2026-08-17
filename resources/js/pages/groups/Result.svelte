@@ -1,6 +1,6 @@
 <script lang="ts">
     import { Link } from '@inertiajs/svelte';
-    import { translations } from '@/lib/locale.svelte';
+    import { currentLocaleRouteKey, translations } from '@/lib/locale.svelte';
     import {
         show as showRoute,
         introduce as introduceRoute,
@@ -14,7 +14,9 @@
 
     let t = $derived(translations());
     let retryHref = $derived(
-        result.phase === 'introduce' ? introduceRoute.url(group.id) : quizRoute.url(group.id),
+        result.phase === 'introduce'
+            ? introduceRoute.url({ locale: currentLocaleRouteKey(), group: group.id })
+            : quizRoute.url({ locale: currentLocaleRouteKey(), group: group.id }),
     );
 </script>
 
@@ -60,7 +62,7 @@
                 </Link>
             {/if}
             <Link
-                href={showRoute.url(group.id)}
+                href={showRoute.url({ locale: currentLocaleRouteKey(), group: group.id })}
                 class="inline-flex flex-1 justify-center rounded-xl border border-zinc-200 px-4 py-3 text-sm font-semibold text-zinc-900 dark:border-zinc-800 dark:text-zinc-50"
             >
                 {t['back_to_group']}

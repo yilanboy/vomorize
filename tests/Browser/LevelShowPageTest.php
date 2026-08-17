@@ -1,5 +1,6 @@
 <?php
 
+use App\Enums\Locale;
 use App\Models\Level;
 use Database\Seeders\DefaultSeeder;
 
@@ -15,10 +16,9 @@ test('level show page has no smoke', function () {
 test('level show page labels will switch by locale', function (string $locale, string $localeLabel) {
     $level = Level::find(1)->load('translations');
     $translation = $level->translations->firstWhere('locale', $locale);
+    $routeKey = Locale::from($locale)->routeKey();
 
-    visit(route('levels.show', ['level' => $level->id]))
-        ->click('@language-switcher')
-        ->click($localeLabel)
+    visit(route('levels.show', ['locale' => $routeKey, 'level' => $level->id]))
         ->assertSeeIn('@level-name', $translation->name)
         ->assertSeeIn('@level-description', $translation->description);
 })->with('locale');

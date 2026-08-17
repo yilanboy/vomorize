@@ -22,7 +22,7 @@ class RegisterResponse implements RegisterResponseContract
             ? new JsonResponse('', 201)
             : redirect()->intended(
                 $request->user()?->hasVerifiedEmail()
-                    ? Fortify::redirects('register', config('fortify.home'))
+                    ? Fortify::redirects('register', route('home'))
                     : route('verification.notice')
             );
     }

@@ -4,10 +4,10 @@ use App\Models\Group;
 use App\Models\Level;
 use App\Models\Vocabulary;
 use App\Models\VocabularyTranslation;
-use Database\Seeders\VocabularySeeder;
+use Database\Seeders\DefaultSeeder;
 
 it('seeds all levels, groups, vocabularies and translations', function () {
-    $this->seed(VocabularySeeder::class);
+    $this->seed(DefaultSeeder::class);
 
     expect(Level::count())->toBe(7)
         ->and(Group::count())->toBe(700)
@@ -16,7 +16,7 @@ it('seeds all levels, groups, vocabularies and translations', function () {
 });
 
 it('seeds vocabulary fields and translations correctly', function () {
-    $this->seed(VocabularySeeder::class);
+    $this->seed(DefaultSeeder::class);
 
     $group = Group::where('level_id', 1)->where('sequence', 1)->firstOrFail();
     $vocabulary = Vocabulary::where('group_id', $group->id)->where('word', 'sign')->firstOrFail();
@@ -32,11 +32,11 @@ it('seeds vocabulary fields and translations correctly', function () {
 });
 
 it('does not duplicate or reassign ids when run twice', function () {
-    $this->seed(VocabularySeeder::class);
+    $this->seed(DefaultSeeder::class);
 
     $vocabularyId = Vocabulary::where('word', 'sign')->firstOrFail()->id;
 
-    $this->seed(VocabularySeeder::class);
+    $this->seed(DefaultSeeder::class);
 
     expect(Level::count())->toBe(7)
         ->and(Group::count())->toBe(700)

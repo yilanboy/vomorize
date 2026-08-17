@@ -1,11 +1,11 @@
 <?php
 
 use App\Models\Level;
-use Database\Seeders\VocabularySeeder;
+use Database\Seeders\DefaultSeeder;
 use Illuminate\Support\Facades\Lang;
 
 beforeEach(function () {
-    $this->seed(VocabularySeeder::class);
+    $this->seed(DefaultSeeder::class);
 });
 
 test('root page has no smoke', function () {
@@ -32,11 +32,8 @@ test('root page labels will switch by locale', function (string $locale, string 
     }
 })->with('locale');
 
-test('root page keeps the selected locale after a refresh', function () {
-    visit('/')
-        ->click('@language-switcher')
-        ->click('日本語')
-        ->refresh()
+test('direct localized visit renders japanese', function () {
+    visit('/ja')
         ->assertSeeIn('@home-title', Lang::get('app.home_title', locale: 'ja'))
         ->assertSeeIn('@home-subtitle', Lang::get('app.home_subtitle', locale: 'ja'));
 });

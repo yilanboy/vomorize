@@ -2,6 +2,7 @@
 
 namespace App\Http\Middleware;
 
+use App\Enums\Locale;
 use Illuminate\Http\Request;
 use Inertia\Middleware;
 
@@ -44,6 +45,8 @@ class HandleInertiaRequests extends Middleware
                 'user' => $request->user(),
             ],
             'locale' => $locale,
+            'locale_route_key' => str_replace('_', '-', strtolower($locale)),
+            // 'available_locales' => Locale::labels(),
             'available_locales' => [
                 'zh_TW' => '繁體中文',
                 'zh_CN' => '简体中文',
@@ -55,7 +58,7 @@ class HandleInertiaRequests extends Middleware
              * endpoint's validation keeps the two from disagreeing about what is switchable.
              */
             'translations' => [
-                'app' => collect(SetLocale::SUPPORTED_LOCALES)
+                'app' => collect(Locale::values())
                     ->mapWithKeys(fn (string $supported): array => [
                         $supported => trans('app', [], $supported),
                     ])

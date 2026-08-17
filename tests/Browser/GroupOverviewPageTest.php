@@ -1,5 +1,6 @@
 <?php
 
+use App\Enums\Locale;
 use App\Models\Group;
 use App\Models\Vocabulary;
 use Database\Seeders\DefaultSeeder;
@@ -18,10 +19,9 @@ test('group overview labels will switch by locale', function (string $locale, st
     $group = Group::find(1)->load('vocabularies');
     $stage = 0;
     $vocabulary = $group->vocabularies->first();
+    $routeKey = Locale::from($locale)->routeKey();
 
-    visit(route('groups.show', ['group' => $group->id]))
-        ->click('@language-switcher')
-        ->click($localeLabel)
+    visit(route('groups.show', ['locale' => $routeKey, 'group' => $group->id]))
         ->assertSeeIn('@group-title', Lang::get('app.group_title', ['id' => $group->id], $locale))
         ->assertSeeIn('@core-vocab-count',
             Lang::get('app.core_vocab_count', ['count' => $group->vocabularies->count()], $locale))

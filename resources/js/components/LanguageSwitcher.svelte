@@ -1,6 +1,7 @@
 <script lang="ts">
     import Languages from '@lucide/svelte/icons/languages';
     import Check from '@lucide/svelte/icons/check';
+    import { router } from '@inertiajs/svelte';
     import {
         DropdownMenu,
         DropdownMenuContent,
@@ -8,7 +9,6 @@
         DropdownMenuTrigger,
     } from '@/components/ui/dropdown-menu';
     import { Button } from '@/components/ui/button';
-    import { setLocale } from '@/lib/locale.svelte';
 
     let {
         currentLocale = 'zh_TW',
@@ -18,23 +18,16 @@
         availableLocales?: Record<string, string>;
     }>();
 
-    /**
-     * The language changes here and now; remembering it is a background errand.
-     *
-     * Deliberately not a router visit. A visit is what the quiz leave guard intercepts, so
-     * submitting the choice is what used to make changing language indistinguishable from
-     * walking out of a quiz. Nothing is awaited either: every locale is already in the browser,
-     * so there is nothing the response could tell us that the page needs.
-     *
-     * `keepalive` is load-bearing rather than decorative — without it, switching and immediately
-     * tapping a link cancels the request in flight and the choice is silently never saved.
-     */
     function selectLocale(code: string) {
         if (code === currentLocale) {
             return;
         }
 
-        setLocale(code);
+        const targetRouteKey = code.toLowerCase().replace('_', '-');
+        if (typeof document !== 'undefined') {
+            document.cookie = `locale=${targetRouteKey};path=/;max-age=31536000;SameSite=Lax`;
+        }
+        router.visit(`/${targetRouteKey}`);
     }
 </script>
 

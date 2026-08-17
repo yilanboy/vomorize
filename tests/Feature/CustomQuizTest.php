@@ -67,7 +67,7 @@ it('tells a signed-in learner how many words they have learned', function () {
         2 => ['stage' => 1, 'last_reviewed_at' => now()],
     ]);
 
-    $this->actingAs($user)->get('/quiz/custom')
+    $this->actingAs($user)->get('/zh-tw/quiz/custom')
         ->assertOk()
         ->assertInertia(fn ($page) => $page
             ->component('quiz/Custom')
@@ -84,7 +84,7 @@ it('counts a group whose only session was completed and failed', function () {
         1 => ['stage' => 0, 'last_score' => 40, 'last_reviewed_at' => now()],
     ]);
 
-    $this->actingAs($user)->get('/quiz/custom')
+    $this->actingAs($user)->get('/zh-tw/quiz/custom')
         ->assertOk()
         ->assertInertia(fn ($page) => $page->where('learned_word_count', 10));
 });
@@ -94,7 +94,7 @@ it('leaves out a group opened but abandoned before its first session finished', 
         1 => ['stage' => 0, 'last_reviewed_at' => null],
     ]);
 
-    $this->actingAs($user)->get('/quiz/custom')
+    $this->actingAs($user)->get('/zh-tw/quiz/custom')
         ->assertOk()
         ->assertInertia(fn ($page) => $page->where('learned_word_count', 0));
 });
@@ -104,7 +104,7 @@ it('leaves out groups that were never attempted', function () {
         1 => ['stage' => 3, 'last_reviewed_at' => now()],
     ]);
 
-    $this->actingAs($user)->get('/quiz/custom')
+    $this->actingAs($user)->get('/zh-tw/quiz/custom')
         ->assertOk()
         ->assertInertia(fn ($page) => $page->where('learned_word_count', 10));
 });
@@ -114,7 +114,7 @@ it('stops shipping the group catalogue to the page', function () {
         1 => ['stage' => 1, 'last_reviewed_at' => now()],
     ]);
 
-    $this->actingAs($user)->get('/quiz/custom')
+    $this->actingAs($user)->get('/zh-tw/quiz/custom')
         ->assertOk()
         ->assertInertia(fn ($page) => $page
             ->missing('all_groups')
@@ -129,7 +129,7 @@ it('samples exactly the requested number of distinct words', function () {
     ]);
 
     $targets = $this->actingAs($user)
-        ->postJson('/quiz/custom/fetch', ['count' => 7])
+        ->postJson('/zh-tw/quiz/custom/fetch', ['count' => 7])
         ->assertOk()
         ->json('targets');
 
@@ -143,7 +143,7 @@ it('yields the whole pool when more words are requested than exist', function ()
     ]);
 
     $this->actingAs($user)
-        ->postJson('/quiz/custom/fetch', ['count' => 500])
+        ->postJson('/zh-tw/quiz/custom/fetch', ['count' => 500])
         ->assertOk()
         ->assertJsonCount(10, 'targets');
 });
@@ -158,7 +158,7 @@ it('yields the whole pool when the count is explicitly null', function () {
     ]);
 
     $this->actingAs($user)
-        ->postJson('/quiz/custom/fetch', ['count' => null])
+        ->postJson('/zh-tw/quiz/custom/fetch', ['count' => null])
         ->assertOk()
         ->assertJsonCount(10, 'targets')
         ->assertJsonCount(0, 'distractors');
@@ -171,7 +171,7 @@ it('yields the whole pool when no count is given', function () {
     ]);
 
     $this->actingAs($user)
-        ->postJson('/quiz/custom/fetch')
+        ->postJson('/zh-tw/quiz/custom/fetch')
         ->assertOk()
         ->assertJsonCount(20, 'targets');
 });
@@ -182,7 +182,7 @@ it('derives a signed-in learner pool from their progress and ignores posted grou
     ]);
 
     $targets = $this->actingAs($user)
-        ->postJson('/quiz/custom/fetch', ['group_ids' => [2, 3]])
+        ->postJson('/zh-tw/quiz/custom/fetch', ['group_ids' => [2, 3]])
         ->assertOk()
         ->json('targets');
 
@@ -199,7 +199,7 @@ it('sends distractors drawn from the pool but never the sampled words themselves
     ]);
 
     $body = $this->actingAs($user)
-        ->postJson('/quiz/custom/fetch', ['count' => 5])
+        ->postJson('/zh-tw/quiz/custom/fetch', ['count' => 5])
         ->assertOk()
         ->json();
 
@@ -221,7 +221,7 @@ it('omits distractors when the whole pool was requested', function () {
     ]);
 
     $this->actingAs($user)
-        ->postJson('/quiz/custom/fetch')
+        ->postJson('/zh-tw/quiz/custom/fetch')
         ->assertOk()
         ->assertJsonCount(0, 'distractors');
 });
@@ -243,7 +243,7 @@ it('sends only what a question renders for each word', function () {
     ]);
 
     $word = collect(
-        $this->actingAs($user)->postJson('/quiz/custom/fetch')->assertOk()->json('targets')
+        $this->actingAs($user)->postJson('/zh-tw/quiz/custom/fetch')->assertOk()->json('targets')
     )->firstWhere('id', 1);
 
     expect($word['word'])->toBe('word_1')
@@ -264,8 +264,8 @@ it('never touches learning progress', function () {
 
     $before = LearningProgress::where('user_id', $user->id)->get()->toArray();
 
-    $this->actingAs($user)->get('/quiz/custom')->assertOk();
-    $this->actingAs($user)->postJson('/quiz/custom/fetch', ['count' => 5])->assertOk();
+    $this->actingAs($user)->get('/zh-tw/quiz/custom')->assertOk();
+    $this->actingAs($user)->postJson('/zh-tw/quiz/custom/fetch', ['count' => 5])->assertOk();
 
     expect(LearningProgress::where('user_id', $user->id)->get()->toArray())->toBe($before)
         ->and(LearningProgress::count())->toBe(1);
@@ -277,24 +277,24 @@ it('rejects a count below one', function () {
     ]);
 
     $this->actingAs($user)
-        ->postJson('/quiz/custom/fetch', ['count' => 0])
+        ->postJson('/zh-tw/quiz/custom/fetch', ['count' => 0])
         ->assertJsonValidationErrors('count');
 });
 
 it('sizes a guest pool from the groups their browser declares', function () {
-    $this->postJson('/quiz/custom/count', ['group_ids' => [1, 3]])
+    $this->postJson('/zh-tw/quiz/custom/count', ['group_ids' => [1, 3]])
         ->assertOk()
         ->assertExactJson(['learned_word_count' => 20]);
 });
 
 it('reports nothing learned for a guest who declares no groups', function () {
-    $this->postJson('/quiz/custom/count')
+    $this->postJson('/zh-tw/quiz/custom/count')
         ->assertOk()
         ->assertExactJson(['learned_word_count' => 0]);
 });
 
 it('draws a guest sample from the groups their browser declares', function () {
-    $targets = $this->postJson('/quiz/custom/fetch', ['count' => 6, 'group_ids' => [2]])
+    $targets = $this->postJson('/zh-tw/quiz/custom/fetch', ['count' => 6, 'group_ids' => [2]])
         ->assertOk()
         ->json('targets');
 
@@ -309,7 +309,7 @@ it('draws a guest sample from the groups their browser declares', function () {
  * that, so the unknown id is simply not part of the pool.
  */
 it('still starts a session when a declared group no longer exists', function () {
-    $this->postJson('/quiz/custom/fetch', ['group_ids' => [1, 999]])
+    $this->postJson('/zh-tw/quiz/custom/fetch', ['group_ids' => [1, 999]])
         ->assertOk()
         ->assertJsonCount(10, 'targets');
 });
@@ -319,7 +319,7 @@ it('does not run one query per declared group id', function () {
         DB::flushQueryLog();
         DB::enableQueryLog();
 
-        $this->postJson('/quiz/custom/count', ['group_ids' => $groupIds])->assertOk();
+        $this->postJson('/zh-tw/quiz/custom/count', ['group_ids' => $groupIds])->assertOk();
 
         return count(DB::getQueryLog());
     };
@@ -329,18 +329,18 @@ it('does not run one query per declared group id', function () {
 });
 
 it('rejects more declared groups than the curriculum holds', function () {
-    $this->postJson('/quiz/custom/count', ['group_ids' => range(1, 701)])
+    $this->postJson('/zh-tw/quiz/custom/count', ['group_ids' => range(1, 701)])
         ->assertJsonValidationErrors('group_ids');
 });
 
 it('rejects a group id that is not an integer', function () {
-    $this->postJson('/quiz/custom/count', ['group_ids' => ['not-a-number']])
+    $this->postJson('/zh-tw/quiz/custom/count', ['group_ids' => ['not-a-number']])
         ->assertJsonValidationErrors('group_ids.0');
 });
 
 it('creates no learning progress for a guest session', function () {
-    $this->postJson('/quiz/custom/count', ['group_ids' => [1]])->assertOk();
-    $this->postJson('/quiz/custom/fetch', ['count' => 5, 'group_ids' => [1]])->assertOk();
+    $this->postJson('/zh-tw/quiz/custom/count', ['group_ids' => [1]])->assertOk();
+    $this->postJson('/zh-tw/quiz/custom/fetch', ['count' => 5, 'group_ids' => [1]])->assertOk();
 
     expect(LearningProgress::count())->toBe(0);
 });
