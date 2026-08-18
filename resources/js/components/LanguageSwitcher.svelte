@@ -1,7 +1,7 @@
 <script lang="ts">
     import Languages from '@lucide/svelte/icons/languages';
     import Check from '@lucide/svelte/icons/check';
-    import { router, page } from '@inertiajs/svelte';
+    import { router } from '@inertiajs/svelte';
     import {
         DropdownMenu,
         DropdownMenuContent,
@@ -9,20 +9,22 @@
         DropdownMenuTrigger,
     } from '@/components/ui/dropdown-menu';
     import { Button } from '@/components/ui/button';
-    import { currentLocale } from '@/lib/locale.svelte';
+    import { currentLocale, availableLocales } from '@/lib/locale.svelte';
 
-    let availableLocales = $derived(
-        (page.props.available_locales as Record<string, string>) || { zh_TW: '繁體中文' },
-    );
+    function getLabel(locale: string) {
+        return {
+            'zh-tw': '繁體中文',
+            'zh-cn': '简体中文',
+            ja: '日本語',
+        }[locale];
+    }
 
-    function selectLocale(code: string) {
-        if (code === currentLocale()) {
+    function selectLocale(locale: string) {
+        if (locale === currentLocale()) {
             return;
         }
 
-        const targetRouteKey = code.toLowerCase().replace('_', '-');
-
-        router.visit(`/${targetRouteKey}`);
+        router.visit(`/${locale}`);
     }
 </script>
 
@@ -44,13 +46,13 @@
         {/snippet}
     </DropdownMenuTrigger>
     <DropdownMenuContent align="end" class="w-40">
-        {#each Object.entries(availableLocales) as [code, name]}
+        {#each availableLocales() as locale (locale)}
             <DropdownMenuItem
-                onclick={() => selectLocale(code)}
+                onclick={() => selectLocale(locale)}
                 class="flex cursor-pointer items-center justify-between px-3 py-2 text-sm font-medium"
             >
-                <span>{name}</span>
-                {#if code === currentLocale()}
+                <span>{getLabel(locale)}</span>
+                {#if locale === currentLocale()}
                     <Check class="h-4 w-4 text-zinc-900 dark:text-zinc-50" />
                 {/if}
             </DropdownMenuItem>

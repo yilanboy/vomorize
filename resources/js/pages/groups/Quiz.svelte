@@ -12,7 +12,7 @@
     } from '@/lib/progress';
     import { answerFor, buildReviewQuestions } from '@/lib/groupQuiz';
     import type { QuizQuestion, VocabularyItem } from '@/lib/groupQuiz';
-    import { currentLocaleRouteKey, translations } from '@/lib/locale.svelte';
+    import { currentLocale, translations } from '@/lib/locale.svelte';
     import progressRoute from '@/routes/groups/progress';
     import { introduce as introduceRoute, result as resultRoute } from '@/routes/groups';
     import { show as levelRoute } from '@/routes/levels';
@@ -65,20 +65,20 @@
             });
             router.visit(
                 resultRoute.url(
-                    { locale: currentLocaleRouteKey(), group: group.id },
+                    { locale: currentLocale(), group: group.id },
                     { query: { phase: 'quiz', score } },
                 ),
             );
         } else {
             router.post(
-                progressRoute.store.url({ locale: currentLocaleRouteKey(), group: group.id }),
+                progressRoute.store.url({ locale: currentLocale(), group: group.id }),
                 { phase: 'quiz', score },
                 {
                     preserveScroll: true,
                     onSuccess: () =>
                         router.visit(
                             resultRoute.url(
-                                { locale: currentLocaleRouteKey(), group: group.id },
+                                { locale: currentLocale(), group: group.id },
                                 { query: { phase: 'quiz', score } },
                             ),
                         ),
@@ -104,7 +104,7 @@
             // A correction the app makes on the learner's behalf, not their decision.
             disarmLeaveGuard();
             router.visit(
-                introduceRoute.url({ locale: currentLocaleRouteKey(), group: group.id }),
+                introduceRoute.url({ locale: currentLocale(), group: group.id }),
             );
 
             return;
@@ -114,7 +114,7 @@
     });
 </script>
 
-<QuizLeaveGuard exitUrl={levelRoute.url({ locale: currentLocaleRouteKey(), level: group.level_id })} />
+<QuizLeaveGuard exitUrl={levelRoute.url({ locale: currentLocale(), level: group.level_id })} />
 
 {#if currentQuestion}
     <div class="flex flex-1 flex-col">

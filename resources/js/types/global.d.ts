@@ -19,7 +19,7 @@ declare module '@inertiajs/core' {
             name: string;
             auth: Auth;
             locale: string;
-            available_locales: Record<string, string>;
+            available_locales: string[];
             /**
              * Interface copy for every supported locale, keyed by locale.
              *

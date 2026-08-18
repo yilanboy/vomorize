@@ -5,12 +5,12 @@ use function Pest\Laravel\withUnencryptedCookie;
 
 it('carries interface copy for every locale in one response', function () {
     get('/zh-tw')->assertInertia(fn ($page) => $page
-        ->where('translations.app.zh_TW.home_title', '英語單字核心記憶')
-        ->where('translations.app.zh_TW.home_subtitle', '7,000 個高頻詞彙 · 間隔重複記憶法')
-        ->where('translations.app.zh_TW.level_stats', '1,000 單字 · 100 組')
-        ->where('translations.app.zh_CN.home_title', '英语单字核心记忆')
-        ->where('translations.app.zh_CN.home_subtitle', '7,000 个高频词汇 · 间隔重复记忆法')
-        ->where('translations.app.zh_CN.level_stats', '1,000 单词 · 100 组')
+        ->where('translations.app.zh-tw.home_title', '英語單字核心記憶')
+        ->where('translations.app.zh-tw.home_subtitle', '7,000 個高頻詞彙 · 間隔重複記憶法')
+        ->where('translations.app.zh-tw.level_stats', '1,000 單字 · 100 組')
+        ->where('translations.app.zh-cn.home_title', '英语单字核心记忆')
+        ->where('translations.app.zh-cn.home_subtitle', '7,000 个高频词汇 · 间隔重复记忆法')
+        ->where('translations.app.zh-cn.level_stats', '1,000 单词 · 100 组')
         ->where('translations.app.ja.home_title', '英語単語核心記憶')
         ->where('translations.app.ja.home_subtitle', '7,000語の高頻度語彙・間隔反復記憶法')
         ->where('translations.app.ja.level_stats', '1,000単語・100グループ')
@@ -20,8 +20,8 @@ it('carries interface copy for every locale in one response', function () {
 it('carries every supported locale, and nothing that is not supported', function () {
     get('/zh-tw')->assertInertia(fn ($page) => $page
         ->has('translations.app', 3)
-        ->has('translations.app.zh_TW')
-        ->has('translations.app.zh_CN')
+        ->has('translations.app.zh-tw')
+        ->has('translations.app.zh-cn')
         ->has('translations.app.ja')
     );
 });

@@ -28,7 +28,7 @@ beforeEach(function () {
 
         VocabularyTranslation::create([
             'vocabulary_id' => $vocabulary->id,
-            'locale' => 'zh_TW',
+            'locale' => 'zh-tw',
             'definition' => "釋義 {$i}",
             'example_translation' => "例句翻譯 {$i}",
         ]);
@@ -41,7 +41,7 @@ beforeEach(function () {
  * change language mid-phase without the question set being rebuilt underneath them.
  */
 it('carries every locale of vocabulary content into both quiz phases', function (string $route) {
-    foreach (['zh_CN' => '释义', 'ja' => '釈義'] as $locale => $noun) {
+    foreach (['zh-cn' => '释义', 'ja' => '釈義'] as $locale => $noun) {
         for ($i = 1; $i <= 4; $i++) {
             VocabularyTranslation::create([
                 'vocabulary_id' => $i,
@@ -55,8 +55,8 @@ it('carries every locale of vocabulary content into both quiz phases', function 
     $this->get("/zh-tw/groups/{$this->group->id}{$route}")
         ->assertOk()
         ->assertInertia(fn ($page) => $page
-            ->where('vocabularies.0.translations.zh_TW.definition', '釋義 1')
-            ->where('vocabularies.0.translations.zh_CN.definition', '释义 1')
+            ->where('vocabularies.0.translations.zh-tw.definition', '釋義 1')
+            ->where('vocabularies.0.translations.zh-cn.definition', '释义 1')
             ->where('vocabularies.0.translations.ja.definition', '釈義 1')
             ->where('vocabularies.0.translations.ja.example_translation', 'ja 例句 1')
             ->missing('vocabularies.0.definition')

@@ -9,7 +9,8 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^8.3",
+        "php": "^8.4",
+        "ext-pdo": "*",
         "inertiajs/inertia-laravel": "^3.0",
         "laravel-lang/common": "^6.8",
         "laravel/ai": "^0.10.1",

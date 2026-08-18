@@ -8,11 +8,11 @@ return [
             'pronunciation' => '/ˈspɛkteɪtɝ/',
             'example_sentence' => 'The spectator cheered loudly when the team scored a goal.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '旁觀者',
                     'example_translation' => '那位觀眾在球隊進球時大聲歡呼。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '观众，旁观者',
                     'example_translation' => '当球队得分时，观众大声欢呼。',
                 ],
@@ -28,11 +28,11 @@ return [
             'pronunciation' => '/ˈəpˈɡɹeɪd/, /əpˈɡɹeɪd/',
             'example_sentence' => 'We need to upgrade our computer system before next month.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '升級',
                     'example_translation' => '我們需要在下個月之前升級我們的電腦系統。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '升级，改进',
                     'example_translation' => '我们需要在下个月之前升级我们的电脑系统。',
                 ],
@@ -48,11 +48,11 @@ return [
             'pronunciation' => '/ɪˈɫæbɝˌeɪt/, /ɪˈɫæbɹət/',
             'example_sentence' => 'Could you please elaborate on your plans for the new project?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '精心製作的',
                     'example_translation' => '能請你詳細說明一下新專案的計劃嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '详细阐述，精心制作的',
                     'example_translation' => '您能详细说明一下新项目的计划吗？',
                 ],
@@ -68,11 +68,11 @@ return [
             'pronunciation' => '/ˌsupɝˈvɪʒən/',
             'example_sentence' => 'The children played under the supervision of their teacher.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '監督',
                     'example_translation' => '孩子們在老師的監督下玩耍。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '监督，管理',
                     'example_translation' => '孩子们在老师的监督下玩耍。',
                 ],
@@ -88,11 +88,11 @@ return [
             'pronunciation' => '/dɪˈɫɪbɝˌeɪt/, /dɪˈɫɪbɝət/, /dɪˈɫɪbɹət/',
             'example_sentence' => 'The attack was described as a deliberate act of violence tonight.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '商榷',
                     'example_translation' => '這次襲擊被描述為今晚蓄意的暴力行為。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '蓄意的，深思熟虑的',
                     'example_translation' => '今晚的袭击被描述为蓄意的暴力行为。',
                 ],
@@ -108,11 +108,11 @@ return [
             'pronunciation' => '/dɪsˈkɹɪməˌneɪt/',
             'example_sentence' => 'It is illegal to discriminate against anyone based on their race.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '辨析',
                     'example_translation' => '根據種族歧視任何人都是違法的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '歧视，辨别',
                     'example_translation' => '根据种族歧视任何人都是违法的。',
                 ],
@@ -128,11 +128,11 @@ return [
             'pronunciation' => '/ˈkɹɪpəɫ/',
             'example_sentence' => 'The severe injury threatened to cripple the young professional athlete.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '削弱',
                     'example_translation' => '嚴重的受傷威脅到要讓這位年輕的職業運動員殘廢。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '使残废，严重削弱',
                     'example_translation' => '严重的受伤威胁到要让这位年轻的职业运动员残废。',
                 ],
@@ -148,11 +148,11 @@ return [
             'pronunciation' => '/ˈkwaɪɝ/',
             'example_sentence' => 'She sings in the local church choir every Sunday morning.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '詩班',
                     'example_translation' => '她每週日早上在當地教堂的合唱團唱歌。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '合唱团，唱诗班',
                     'example_translation' => '她每周日早上在当地教堂的合唱团唱歌。',
                 ],
@@ -168,11 +168,11 @@ return [
             'pronunciation' => '/hwɛˈɹæz/, /wɛˈɹæz/',
             'example_sentence' => 'Whereas he is rich, he is not happy.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '然而',
                     'example_translation' => '儘管他很富有，他並不快樂。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '然而，鉴于',
                     'example_translation' => '尽管他很富有，但他并不快乐。',
                 ],
@@ -188,11 +188,11 @@ return [
             'pronunciation' => '/pɹəˈvoʊk/',
             'example_sentence' => 'Don\'t provoke the dog or it might bite you.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '惹',
                     'example_translation' => '不要激怒那隻狗，否則牠可能會咬你。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '激怒，挑衅',
                     'example_translation' => '不要激怒那只狗，否则它可能会咬你。',
                 ],
@@ -210,11 +210,11 @@ return [
             'pronunciation' => '/ˌɪˈmɛns/',
             'example_sentence' => 'The ocean looked immense from the top of the cliff.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '巨大',
                     'example_translation' => '從懸崖頂端望去，大海看起來無比遼闊。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '巨大的，无边无际的',
                     'example_translation' => '从悬崖顶端望去，大海显得无比辽阔。',
                 ],
@@ -230,11 +230,11 @@ return [
             'pronunciation' => '/əˈsəmpʃən/',
             'example_sentence' => 'Your argument is based on a false assumption, unfortunately.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '假設',
                     'example_translation' => '遺憾的是，你的論點是基於一個錯誤的假設。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '假设，设想',
                     'example_translation' => '遗憾的是，你的论点是建立在一个错误的假设之上的。',
                 ],
@@ -250,11 +250,11 @@ return [
             'pronunciation' => '/ˌɑpɝˈeɪʃənəɫ/',
             'example_sentence' => 'The new airport will be fully operational by next year.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '操作',
                     'example_translation' => '新機場將在明年全面投入運作。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '运行中的，操作的',
                     'example_translation' => '新机场将在明年全面投入运营。',
                 ],
@@ -270,11 +270,11 @@ return [
             'pronunciation' => '/ˈpætʃ/',
             'example_sentence' => 'The mechanic applied a patch to fix the leak.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '修補',
                     'example_translation' => '技工貼了一塊補丁來修補漏水。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '补丁，修补',
                     'example_translation' => '修理工打了个补丁来修补漏水处。',
                 ],
@@ -290,11 +290,11 @@ return [
             'pronunciation' => '/ˈbæn/',
             'example_sentence' => 'The city decided to ban smoking in all public parks and beaches.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '禁止',
                     'example_translation' => '市府決定禁止在所有公共公園和海灘吸菸。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '禁止，禁令',
                     'example_translation' => '市政府决定禁止在所有公共公园和海滩吸烟。',
                 ],
@@ -310,11 +310,11 @@ return [
             'pronunciation' => '/ˈɡæðɝɪŋ/',
             'example_sentence' => 'They had a small family gathering to celebrate his birth.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '採集',
                     'example_translation' => '他們舉行了一個小型家庭聚會來慶祝他的出生。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '聚会，集会',
                     'example_translation' => '他们举行了一个小型家庭聚会来庆祝他的出生。',
                 ],
@@ -330,11 +330,11 @@ return [
             'pronunciation' => '/ˈstɑɹtəɫ/',
             'example_sentence' => 'The loud noise startled the sleeping cat.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '驚嚇',
                     'example_translation' => '巨大的聲響嚇到了正在睡覺的貓。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '使吓一跳，使惊吓',
                     'example_translation' => '巨大的声音吓到了正在睡觉的猫。',
                 ],
@@ -350,11 +350,11 @@ return [
             'pronunciation' => '/ˈpɹimiəm/',
             'example_sentence' => 'The insurance premium increases every year.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '優質的',
                     'example_translation' => '保險費每年都會增加。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '保险费，溢价',
                     'example_translation' => '保险费每年都在增加。',
                 ],
@@ -370,11 +370,11 @@ return [
             'pronunciation' => '/ˈkɹɑnɪk/',
             'example_sentence' => 'He suffers from a chronic back problem that requires therapy.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '慢性的',
                     'example_translation' => '他患有需要治療的慢性背部問題。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '慢性的，长期的',
                     'example_translation' => '他患有需要治疗的慢性腰背问题。',
                 ],
@@ -390,11 +390,11 @@ return [
             'pronunciation' => '/ˈmæməɫ/',
             'example_sentence' => 'A whale is the largest mammal in the world.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '哺乳動物',
                     'example_translation' => '鯨魚是世界上最大的哺乳動物。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '哺乳动物',
                     'example_translation' => '鲸鱼是世界上最大的哺乳动物。',
                 ],
@@ -412,11 +412,11 @@ return [
             'pronunciation' => '/ˌɪmˈpoʊzɪŋ/',
             'example_sentence' => 'The castle was an imposing structure that towered over the village.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '雄偉的',
                     'example_translation' => '這座城堡是一座氣勢宏偉的建築，高聳於村莊之上。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '雄伟的',
                     'example_translation' => '这座城堡是一座气势雄伟的建筑，高耸于村庄之上。',
                 ],
@@ -432,11 +432,11 @@ return [
             'pronunciation' => '/əˈfɛkʃənət/, /əˈfɛkʃənɪt/',
             'example_sentence' => 'He is a very affectionate father who loves his children.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '親熱',
                     'example_translation' => '他是一位非常慈愛的父親，深愛著他的孩子。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '充满深情的',
                     'example_translation' => '他是一位非常慈爱的父亲，深爱着他的孩子。',
                 ],
@@ -452,11 +452,11 @@ return [
             'pronunciation' => '/ˈkæpsəɫ/',
             'example_sentence' => 'The medicine is available in a small, easy-to-swallow capsule.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '膠囊',
                     'example_translation' => '這種藥有小巧且易於吞嚥的膠囊。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '胶囊',
                     'example_translation' => '这种药有小巧且易于吞咽的胶囊。',
                 ],
@@ -472,11 +472,11 @@ return [
             'pronunciation' => '/ˈaʊtˌbɹeɪk/',
             'example_sentence' => 'The disease outbreak forced the government to close all schools.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '爆發',
                     'example_translation' => '疾病的爆發迫使政府關閉了所有學校。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '爆发',
                     'example_translation' => '疾病的爆发迫使政府关闭了所有学校。',
                 ],
@@ -492,11 +492,11 @@ return [
             'pronunciation' => '/ɹiˈvaɪv/, /ɹɪˈvaɪv/',
             'example_sentence' => 'They managed to revive the old tradition.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '復活',
                     'example_translation' => '他們成功地復興了這個古老的傳統。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '复兴',
                     'example_translation' => '他们成功地复兴了这个古老的传统。',
                 ],
@@ -512,11 +512,11 @@ return [
             'pronunciation' => '/ˌɹiəˈbɪɫəˌteɪt/, /ˌɹihəˈbɪɫəˌteɪt/',
             'example_sentence' => 'The program helps rehabilitate injured wildlife before releasing them back into nature.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '恢復',
                     'example_translation' => '這個計畫幫助受傷的野生動物復健，然後再將牠們放回大自然。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '使康复',
                     'example_translation' => '该项目帮助受伤的野生动物复健，然后再将它们放回大自然。',
                 ],
@@ -532,11 +532,11 @@ return [
             'pronunciation' => '/ˈkɹɛdəbəɫ/',
             'example_sentence' => 'We need to find a credible source of information for our report.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '可信的',
                     'example_translation' => '我們需要為我們的報告找到一個可靠的資訊來源。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '可信的',
                     'example_translation' => '我们需要为我们的报告找到一个可靠的信息来源。',
                 ],
@@ -552,11 +552,11 @@ return [
             'pronunciation' => '/ˈwɪdoʊ/',
             'example_sentence' => 'She became a widow after her husband passed away last year.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '寡婦',
                     'example_translation' => '她在丈夫去年過世後成了寡婦。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '寡妇',
                     'example_translation' => '她在丈夫去年去世后成了寡妇。',
                 ],
@@ -572,11 +572,11 @@ return [
             'pronunciation' => '/ˈwɪdoʊɝ/',
             'example_sentence' => 'He has been a widower for ten years since his wife passed away.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '鰥夫',
                     'example_translation' => '自從妻子去世後，他當了十年的鰥夫。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '鳏夫',
                     'example_translation' => '自从妻子去世后，他当了十年的鳏夫。',
                 ],
@@ -592,11 +592,11 @@ return [
             'pronunciation' => '/ˈkeɪtɝ/',
             'example_sentence' => 'The company can cater for large events like weddings and parties.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '迎合',
                     'example_translation' => '這家公司可以承辦婚禮和派對等大型活動。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '提供餐饮',
                     'example_translation' => '这家公司可以承办婚礼和派对等大型活动。',
                 ],
@@ -614,11 +614,11 @@ return [
             'pronunciation' => '/mɝˈækjəɫəs/',
             'example_sentence' => 'The miraculous recovery of the patient surprised all the doctors.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '神奇',
                     'example_translation' => '病人奇蹟般的康復讓所有醫生都感到驚訝。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '奇迹般的',
                     'example_translation' => '病人奇迹般的康复让所有医生都感到惊讶。',
                 ],
@@ -634,11 +634,11 @@ return [
             'pronunciation' => '/ˈɡɹis/',
             'example_sentence' => 'Please apply grease to the door hinges to stop the squeaking.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '潤滑脂',
                     'example_translation' => '請在門鉸鏈上塗潤滑油以停止吱吱作響。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '润滑脂',
                     'example_translation' => '请在门铰链上涂润滑油以停止吱吱作响。',
                 ],
@@ -654,11 +654,11 @@ return [
             'pronunciation' => '/ˌəndɝˈniθ/',
             'example_sentence' => 'The cat is sleeping underneath the table.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '下',
                     'example_translation' => '貓正在桌子下面睡覺。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '在……下面',
                     'example_translation' => '猫正在桌子下面睡觉。',
                 ],
@@ -674,11 +674,11 @@ return [
             'pronunciation' => '/əˈpɹɑksəˌmeɪt/, /əˈpɹɑksəmət/',
             'example_sentence' => 'The approximate cost of the trip will be five hundred dollars.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '近似',
                     'example_translation' => '這次旅行的大約費用將是五百美元。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '大约的',
                     'example_translation' => '这次旅行的大概费用将是五百美元。',
                 ],
@@ -694,11 +694,11 @@ return [
             'pronunciation' => '/ˈstɹæŋɡəɫ/',
             'example_sentence' => 'The vines strangle the old tree in the forest.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '扼殺',
                     'example_translation' => '藤蔓在森林中勒死了那棵老樹。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '勒死',
                     'example_translation' => '藤蔓在森林中勒死了那棵老树。',
                 ],
@@ -714,11 +714,11 @@ return [
             'pronunciation' => '/ɹiˈstɹeɪn/',
             'example_sentence' => 'The police had to restrain the angry man.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '抑制',
                     'example_translation' => '警察不得不制止那個憤怒的男子。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '克制',
                     'example_translation' => '警察不得不制止那个愤怒的男子。',
                 ],
@@ -734,11 +734,11 @@ return [
             'pronunciation' => '/ˈfaɪˌnaɪt/',
             'example_sentence' => 'We have a finite amount of time to finish this project.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '有限',
                     'example_translation' => '我們有有限的時間來完成這個專案。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '有限的',
                     'example_translation' => '我们完成这个项目的时间是有限的。',
                 ],
@@ -754,11 +754,11 @@ return [
             'pronunciation' => '/ˈɪnˌɫænd/',
             'example_sentence' => 'The city is located inland, far from the coast.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '內陸',
                     'example_translation' => '這座城市位於內陸，遠離海岸。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '内陆的',
                     'example_translation' => '这座城市位于内陆，远离海岸。',
                 ],
@@ -774,11 +774,11 @@ return [
             'pronunciation' => '/əˈkɔɹdəns/',
             'example_sentence' => 'The decision was made in accordance with the current laws.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '符合',
                     'example_translation' => '該決定是根據現行法律做出的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '一致',
                     'example_translation' => '该决定是根据现行法律做出的。',
                 ],
@@ -794,11 +794,11 @@ return [
             'pronunciation' => '/ˈhɛmɪsˌfɪɹ/',
             'example_sentence' => 'The Northern Hemisphere experiences summer from June to August.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '半球',
                     'example_translation' => '北半球在六月到八月期間經歷夏季。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '半球',
                     'example_translation' => '北半球在六月到八月期间经历夏季。',
                 ],
@@ -816,11 +816,11 @@ return [
             'pronunciation' => '/ˈfækʃən/',
             'example_sentence' => 'The rebel faction refused to negotiate with the government.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '派',
                     'example_translation' => '叛軍派系拒絕與政府談判。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '派系',
                     'example_translation' => '反叛派系拒绝与政府谈判。',
                 ],
@@ -836,11 +836,11 @@ return [
             'pronunciation' => '/ˈkjumjəɫətɪv/',
             'example_sentence' => 'The cumulative effect of regular exercise is very beneficial.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '累計',
                     'example_translation' => '規律運動的累積效果是非常有益的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '累积的',
                     'example_translation' => '规律运动的累积效果是非常有益的。',
                 ],
@@ -856,11 +856,11 @@ return [
             'pronunciation' => '/ˈɹəbɪʃ/',
             'example_sentence' => 'Please don\'t throw rubbish on the street.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '垃圾',
                     'example_translation' => '請不要在街上丟垃圾。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '垃圾',
                     'example_translation' => '请不要在街上扔垃圾。',
                 ],
@@ -876,11 +876,11 @@ return [
             'pronunciation' => '/ˈɹɛptaɪɫ/',
             'example_sentence' => 'The snake is a common reptile found in many countries.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '爬蟲',
                     'example_translation' => '蛇是一種常見的爬行動物，在許多國家都能發現。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '爬行动物',
                     'example_translation' => '蛇是一种在许多国家都能找到的常见爬行动物。',
                 ],
@@ -896,11 +896,11 @@ return [
             'pronunciation' => '/ˈɫis/',
             'example_sentence' => 'We signed a one-year lease for the apartment.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '租',
                     'example_translation' => '我們簽了一份為期一年的公寓租約。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '租约',
                     'example_translation' => '我们签了一份为期一年的公寓租约。',
                 ],
@@ -916,11 +916,11 @@ return [
             'pronunciation' => '/əˈɫɛdʒ/',
             'example_sentence' => 'The neighbors allege that he has been stealing their mail.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '聲稱',
                     'example_translation' => '鄰居們指稱他一直在偷他們的郵件。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '指控',
                     'example_translation' => '邻居们指控他一直在偷他们的邮件。',
                 ],
@@ -936,11 +936,11 @@ return [
             'pronunciation' => '/ˈhoʊɫsəm/',
             'example_sentence' => 'The family enjoyed a wholesome meal together.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '健康',
                     'example_translation' => '這家人一起享用了一頓健康的餐點。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '有益健康的',
                     'example_translation' => '全家人一起享用了一顿健康的饭菜。',
                 ],
@@ -956,11 +956,11 @@ return [
             'pronunciation' => '/ˈdʊˈɹeɪʃən/',
             'example_sentence' => 'The duration of the flight is approximately ten hours today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '期間',
                     'example_translation' => '航程大約需要十個小時。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '持续时间',
                     'example_translation' => '今天航班的持续时间大约是十个小时。',
                 ],
@@ -976,11 +976,11 @@ return [
             'pronunciation' => '/kɑzˈmɛtɪk/',
             'example_sentence' => 'She bought some expensive cosmetic products at the store today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '化妝品',
                     'example_translation' => '她今天在商店買了一些昂貴的化妝品。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '美容的',
                     'example_translation' => '她今天在商店买了一些昂贵的化妆品。',
                 ],
@@ -996,11 +996,11 @@ return [
             'pronunciation' => '/ˌɪnˈkɫusɪv/',
             'example_sentence' => 'This company has an inclusive work environment.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '包容性',
                     'example_translation' => '這家公司有一個包容的工作環境。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '包容的',
                     'example_translation' => '这家公司拥有包容的工作环境。',
                 ],
@@ -1018,11 +1018,11 @@ return [
             'pronunciation' => '/ˈsoʊʃəˌɫaɪz/',
             'example_sentence' => 'Dogs need to socialize with other dogs from a young age.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '社群',
                     'example_translation' => '狗需要從小就與其他狗社交。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '社交',
                     'example_translation' => '狗需要从小就和其他狗进行社交。',
                 ],
@@ -1038,11 +1038,11 @@ return [
             'pronunciation' => '/ˈtɹɪɫjən/',
             'example_sentence' => 'The company is worth over a trillion dollars.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '百萬',
                     'example_translation' => '這家公司價值超過一兆美元。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '万亿',
                     'example_translation' => '这家公司的价值超过一万亿美元。',
                 ],
@@ -1058,11 +1058,11 @@ return [
             'pronunciation' => '/ˌsoʊsiˈɑɫədʒi/',
             'example_sentence' => 'Sociology helps us understand how societies function and change over time.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '社會學',
                     'example_translation' => '社會學幫助我們了解社會如何運作及隨時間變遷。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '社会学',
                     'example_translation' => '社会学帮助我们理解社会如何运转以及如何随时间变化。',
                 ],
@@ -1078,11 +1078,11 @@ return [
             'pronunciation' => '/ˈkaʊɝdɫi/',
             'example_sentence' => 'The attack was described as a cowardly act by the authorities.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '膽小',
                     'example_translation' => '當局形容這次襲擊是懦夫行為。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '怯懦的',
                     'example_translation' => '当局将这次袭击形容为怯懦的行为。',
                 ],
@@ -1098,11 +1098,11 @@ return [
             'pronunciation' => '/sɪmˈpɫɪsəti/, /sɪmˈpɫɪsɪti/',
             'example_sentence' => 'The beauty of this design lies in its simplicity.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '簡單',
                     'example_translation' => '這個設計的美在於它的簡潔。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '简洁',
                     'example_translation' => '这个设计的精妙之处在于它的简洁。',
                 ],
@@ -1118,11 +1118,11 @@ return [
             'pronunciation' => '/ˈkɑŋɡɹəsmən/',
             'example_sentence' => 'The congressman proposed a new bill to improve public education.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '男國會議員',
                     'example_translation' => '這位男國會議員提出了一項改善公共教育的新法案。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '男国会议员',
                     'example_translation' => '这位国会议员提出了一项改善公共教育的新法案。',
                 ],
@@ -1138,11 +1138,11 @@ return [
             'pronunciation' => '/ˈkɑŋɡɹəsˌwʊmən/',
             'example_sentence' => 'The congresswoman gave a powerful speech in support of the new law.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '女國會議員',
                     'example_translation' => '這位女國會議員發表了支持新法律的有力演說。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '女国会议员',
                     'example_translation' => '这位女性国会议员发表了有力支持新法律的演讲。',
                 ],
@@ -1158,11 +1158,11 @@ return [
             'pronunciation' => '/ˈhændiˌkæp/',
             'example_sentence' => 'The organization helps people with various handicaps.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '障礙',
                     'example_translation' => '該機構幫助患有各種殘疾的人。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '障碍',
                     'example_translation' => '该组织帮助患有各种残疾的人。',
                 ],
@@ -1178,11 +1178,11 @@ return [
             'pronunciation' => '/tɹænzˈmɪt/',
             'example_sentence' => 'The new satellite can transmit signals all over globe.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '傳送',
                     'example_translation' => '這顆新衛星可以向全球發射信號。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '发射',
                     'example_translation' => '这颗新卫星可以向全球发射信号。',
                 ],
@@ -1198,11 +1198,11 @@ return [
             'pronunciation' => '/ˈaʊtˌɫɔ/',
             'example_sentence' => 'The outlaw was finally captured after years on the run.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '取締',
                     'example_translation' => '那個亡命之徒在逃亡多年後終於被捕了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '逃犯',
                     'example_translation' => '这名逃犯在逃亡多年后终于被捕。',
                 ],
@@ -1220,11 +1220,11 @@ return [
             'pronunciation' => '/ˈæstɹəˌnɑt/',
             'example_sentence' => 'The astronaut spent six months on the international station.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '太空人',
                     'example_translation' => '宇航員在國際空間站待了六個月。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '宇航员',
                     'example_translation' => '宇航员在国际空间站度过了六个月。',
                 ],
@@ -1240,11 +1240,11 @@ return [
             'pronunciation' => '/vəˈnɪɫə/',
             'example_sentence' => 'Vanilla is one of the most popular flavors in the world.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '香草',
                     'example_translation' => '香草是世界上最受歡迎的口味之一。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '香草',
                     'example_translation' => '香草是世界上最受欢迎的风味之一。',
                 ],
@@ -1260,11 +1260,11 @@ return [
             'pronunciation' => '/ˈpɛɹɪʃ/',
             'example_sentence' => 'Many plants perish in the cold winter.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '淪',
                     'example_translation' => '許多植物在寒冷的冬天枯死。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '枯萎；死亡；毁灭',
                     'example_translation' => '许多植物在寒冷的冬天枯死。',
                 ],
@@ -1280,11 +1280,11 @@ return [
             'pronunciation' => '/əˈkaʊnəbəɫ/, /əˈkaʊntəbəɫ/',
             'example_sentence' => 'Managers are held accountable for the performance of their team.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '負責任的',
                     'example_translation' => '經理要對其團隊的表現負責。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '负有责任的',
                     'example_translation' => '经理要对他们团队的绩效负责。',
                 ],
@@ -1300,11 +1300,11 @@ return [
             'pronunciation' => '/fiˈɑnˌseɪ/',
             'example_sentence' => 'She introduced her fiancé to her parents at dinner.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '未婚夫',
                     'example_translation' => '她在晚餐時把未婚夫介紹給她的父母。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '未婚夫',
                     'example_translation' => '她在晚餐时把未婚夫介绍给了父母。',
                 ],
@@ -1320,11 +1320,11 @@ return [
             'pronunciation' => '/ˈʃɔɹtˌkəmɪŋ/',
             'example_sentence' => 'His lack of experience is his biggest shortcoming.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '缺點',
                     'example_translation' => '他缺乏經驗是他最大的缺點。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '缺点；短处',
                     'example_translation' => '缺乏经验是他最大的缺点。',
                 ],
@@ -1340,11 +1340,11 @@ return [
             'pronunciation' => '/ˈnoʊtəbəɫ/',
             'example_sentence' => 'The city has many notable landmarks worth visiting.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '值得注意的',
                     'example_translation' => '這座城市有許多值得參觀的著名地標。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '值得注意的；著名的',
                     'example_translation' => '这座城市有许多值得参观的著名地标。',
                 ],
@@ -1360,11 +1360,11 @@ return [
             'pronunciation' => '/ˈpeɪpɝˌbæk/',
             'example_sentence' => 'I bought a paperback to read on the train.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '平裝',
                     'example_translation' => '我買了一本平裝書在火車上閱讀。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '平装书',
                     'example_translation' => '我买了一本平装书在火车上读。',
                 ],
@@ -1380,11 +1380,11 @@ return [
             'pronunciation' => '/dɪˈpɹaɪv/',
             'example_sentence' => 'It is wrong to deprive children of access to quality education.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '剝奪',
                     'example_translation' => '剝奪孩子接受優質教育的權利是不對的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '剥夺；使丧失',
                     'example_translation' => '剥夺孩子们接受优质教育的机会是不对的。',
                 ],
@@ -1400,11 +1400,11 @@ return [
             'pronunciation' => '/ˈɫɪtɝəsi/',
             'example_sentence' => 'Improving literacy is essential for a country\'s development.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '識字能力',
                     'example_translation' => '提升識字率對一個國家的發展至關重要。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '识字；读写能力',
                     'example_translation' => '提高识字率对一个国家的发展至关重要。',
                 ],
@@ -1422,11 +1422,11 @@ return [
             'pronunciation' => '/kəˈɫɪʒən/',
             'example_sentence' => 'There was a minor collision between two cars on the highway.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '碰撞',
                     'example_translation' => '高速公路上發生了兩輛車的輕微碰撞。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '碰撞',
                     'example_translation' => '高速公路上发生了一起两车轻微碰撞事故。',
                 ],
@@ -1442,11 +1442,11 @@ return [
             'pronunciation' => '/ˈstɹeɪ/',
             'example_sentence' => 'A stray cat wandered into our yard last night.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '流浪',
                     'example_translation' => '昨晚一隻流浪貓走進了我們的院子。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '流浪的；走失的',
                     'example_translation' => '昨晚一只流浪猫走进了我们的院子。',
                 ],
@@ -1462,11 +1462,11 @@ return [
             'pronunciation' => '/ˈsɪˌɹiəɫ/',
             'example_sentence' => 'A serial killer terrorized the small town for months.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '連續劇',
                     'example_translation' => '一名連環殺手恐嚇了這個小鎮好幾個月。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '连环的；连续的',
                     'example_translation' => '一名连环杀手使这个小镇恐慌了数月之久。',
                 ],
@@ -1482,11 +1482,11 @@ return [
             'pronunciation' => '/ˈɡɫɪtɝ/',
             'example_sentence' => 'The glitter of the decorations made the room look festive.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '閃光',
                     'example_translation' => '裝飾品的閃光使房間看起來充滿節日氣氛。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '闪光；灿烂',
                     'example_translation' => '装饰品的闪光使房间看起来很有节日气氛。',
                 ],
@@ -1502,11 +1502,11 @@ return [
             'pronunciation' => '/ˈɫitɝ/',
             'example_sentence' => 'I bought a liter of milk from the store.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '公升',
                     'example_translation' => '我從商店買了一公升的牛奶。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '升；公升',
                     'example_translation' => '我从商店买了一升牛奶。',
                 ],
@@ -1522,11 +1522,11 @@ return [
             'pronunciation' => '/ˈɡɫum/',
             'example_sentence' => 'The gloom of the rainy day made everyone feel sad.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '愁雲',
                     'example_translation' => '雨天的陰暗讓每個人都感到悲傷。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '阴暗；忧郁',
                     'example_translation' => '雨天的阴沉让每个人都感到悲伤。',
                 ],
@@ -1542,11 +1542,11 @@ return [
             'pronunciation' => '/ˈɛkˌstɹækt/, /ɪkˈstɹækt/',
             'example_sentence' => 'We need to extract the data from the database.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '提煉',
                     'example_translation' => '我們需要從資料庫中提取資料。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '提取；抽取',
                     'example_translation' => '我们需要从数据库中提取数据。',
                 ],
@@ -1562,11 +1562,11 @@ return [
             'pronunciation' => '/ˈɪtʃ/',
             'example_sentence' => 'I have an itch on my back that I can\'t reach.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '癢',
                     'example_translation' => '我背上有一個癢的地方，我搆不到。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '痒；发痒',
                     'example_translation' => '我背上有个地方发痒，我够不到。',
                 ],
@@ -1582,11 +1582,11 @@ return [
             'pronunciation' => '/ˈbætɝ/',
             'example_sentence' => 'The chef prepared a smooth batter for the morning pancakes.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '連擊',
                     'example_translation' => '廚師為早晨的煎餅準備了均勻的麵糊。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '面糊',
                     'example_translation' => '厨师为早晨的煎饼调制了均匀的面糊。',
                 ],
@@ -1602,11 +1602,11 @@ return [
             'pronunciation' => '/ˈkæʒəɫti/, /ˈkæʒəwəɫti/, /ˈkæʒwəɫti/',
             'example_sentence' => 'There were several casualties in the serious traffic accident.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '傷亡',
                     'example_translation' => '那場嚴重的交通事故中有幾人傷亡。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '伤亡人员',
                     'example_translation' => '那场严重的交通事故中有几名伤亡人员。',
                 ],
@@ -1624,11 +1624,11 @@ return [
             'pronunciation' => '/ˈsɑɫəˌtud/',
             'example_sentence' => 'She enjoyed the solitude of the mountains.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '孤獨',
                     'example_translation' => '她享受山中的寧靜獨處。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '独处，孤独',
                     'example_translation' => '她很享受山中独处的宁静。',
                 ],
@@ -1644,11 +1644,11 @@ return [
             'pronunciation' => '/aɪˈɹɑnɪk/',
             'example_sentence' => 'It is ironic that the fire station burned down.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '諷刺的',
                     'example_translation' => '消防站被燒毀了，真是諷刺。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '讽刺的，具有讽刺意味的',
                     'example_translation' => '消防局竟然被烧毁了，这真是个讽刺。',
                 ],
@@ -1664,11 +1664,11 @@ return [
             'pronunciation' => '/ˈwɔɹənti/',
             'example_sentence' => 'The product comes with a two-year warranty.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '保固單',
                     'example_translation' => '這個產品附有兩年的保固。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '保修，保用单',
                     'example_translation' => '该产品附带两年的保修。',
                 ],
@@ -1684,11 +1684,11 @@ return [
             'pronunciation' => '/ɪɡˈzɛmpt/',
             'example_sentence' => 'Students are exempt from paying the tax.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '豁免',
                     'example_translation' => '學生免繳這項稅款。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '被免除的，豁免的',
                     'example_translation' => '学生免交这项税款。',
                 ],
@@ -1704,11 +1704,11 @@ return [
             'pronunciation' => '/ˈfɔɹθˈkəmɪŋ/',
             'example_sentence' => 'The forthcoming book has already generated a lot of excitement.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '即將推出',
                     'example_translation' => '即將出版的書已經引起了很大的關注。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '即将出版的，即将来临的',
                     'example_translation' => '即将在出版的新书已经引起了极大关注。',
                 ],
@@ -1724,11 +1724,11 @@ return [
             'pronunciation' => '/ˈsɫɔtɝ/',
             'example_sentence' => 'The slaughter of innocent civilians during the war shocked the entire world.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '屠宰',
                     'example_translation' => '戰爭期間對無辜平民的屠殺震驚了全世界。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '屠杀，屠宰',
                     'example_translation' => '战争期间对无辜平民的屠杀震惊了全世界。',
                 ],
@@ -1744,11 +1744,11 @@ return [
             'pronunciation' => '/ˈfɛmənən/',
             'example_sentence' => 'She has a very feminine style of dress.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '女性化的',
                     'example_translation' => '她的穿著風格非常女性化。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '女性的，女性化的',
                     'example_translation' => '她的穿衣风格非常具有女性色彩。',
                 ],
@@ -1764,11 +1764,11 @@ return [
             'pronunciation' => '/ˈkɫɑˌkwaɪz/',
             'example_sentence' => 'Please turn the metal handle in a clockwise direction to open.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '順時針',
                     'example_translation' => '請順時針轉動金屬手柄以打開。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '顺时针方向的（地）',
                     'example_translation' => '请顺时针旋转金属手柄以打开。',
                 ],
@@ -1784,11 +1784,11 @@ return [
             'pronunciation' => '/ˈɛɹˌtaɪt/',
             'example_sentence' => 'Store the cookies in an airtight container to keep them fresh.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '密閉',
                     'example_translation' => '將餅乾存放在密封容器中以保持新鮮。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '密封的，不透气的',
                     'example_translation' => '将饼干存放在密封容器中以保持新鲜。',
                 ],
@@ -1804,11 +1804,11 @@ return [
             'pronunciation' => '/ɡɝˈɪɫə/',
             'example_sentence' => 'The gorilla beat its chest and roared in the jungle.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '大猩猩',
                     'example_translation' => '大猩猩在叢林中捶胸並咆哮。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '大猩猩',
                     'example_translation' => '大猩猩在丛林里捶打胸膛并怒吼。',
                 ],
@@ -1826,11 +1826,11 @@ return [
             'pronunciation' => '/ˈbɛvɝɪdʒ/, /ˈbɛvɹɪdʒ/',
             'example_sentence' => 'What kind of alcoholic beverage would you like with your dinner?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '飲料',
                     'example_translation' => '你晚餐想喝哪種酒精飲料？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '饮料',
                     'example_translation' => '您晚餐想喝哪种酒精饮料？',
                 ],
@@ -1846,11 +1846,11 @@ return [
             'pronunciation' => '/ˈɹætəˌfaɪ/',
             'example_sentence' => 'The parliament voted to ratify the trade agreement.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '核准',
                     'example_translation' => '議會投票批准了這項貿易協定。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '批准，认可',
                     'example_translation' => '议会投票批准了该贸易协定。',
                 ],
@@ -1866,11 +1866,11 @@ return [
             'pronunciation' => '/ˈaɪɫ/',
             'example_sentence' => 'The treasure was hidden on a small isle in the Caribbean.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '小島',
                     'example_translation' => '寶藏被藏在加勒比海的一座小島上。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '小岛，岛',
                     'example_translation' => '宝藏被藏在加勒比海的一个小岛上。',
                 ],
@@ -1886,11 +1886,11 @@ return [
             'pronunciation' => '/stɑɹˈveɪʃən/',
             'example_sentence' => 'Millions of people around the world face the threat of starvation every day.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '飢餓',
                     'example_translation' => '全世界數百萬人每天都面臨飢餓的威脅。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '饥饿，饿死',
                     'example_translation' => '全世界数以百万计的人每天都面临着饥饿的威胁。',
                 ],
@@ -1906,11 +1906,11 @@ return [
             'pronunciation' => '/ˈskɹeɪp/',
             'example_sentence' => 'She used a knife to scrape the mud off her boots.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '刮',
                     'example_translation' => '她用刀子刮掉靴子上的泥巴。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '刮，擦，刮削',
                     'example_translation' => '她用小刀刮掉了靴子上的泥巴。',
                 ],
@@ -1926,11 +1926,11 @@ return [
             'pronunciation' => '/ˈpiənɪst/, /piˈænəst/, /piˈɑnəst/',
             'example_sentence' => 'She is a talented pianist who performs at concert halls around the world.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '鋼琴家',
                     'example_translation' => '她是一位才華橫溢的鋼琴家，在世界各地的音樂廳演出。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '钢琴家，钢琴演奏者',
                     'example_translation' => '她是一位才华横溢的钢琴家，在世界各地的音乐厅演出。',
                 ],
@@ -1946,11 +1946,11 @@ return [
             'pronunciation' => '/dɪˈseɪbəɫ/',
             'example_sentence' => 'The technician managed to disable the faulty alarm system tonight.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '停用',
                     'example_translation' => '技術員今晚成功停用了故障的警報系統。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '使失效，停用',
                     'example_translation' => '技术员今晚成功停用了故障的警报系统。',
                 ],
@@ -1966,11 +1966,11 @@ return [
             'pronunciation' => '/sɝˈpæs/',
             'example_sentence' => 'She worked hard to surpass her own record.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '超過',
                     'example_translation' => '她努力超越自己的紀錄。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '超过，超越',
                     'example_translation' => '她努力工作以超越自己的记录。',
                 ],
@@ -1986,11 +1986,11 @@ return [
             'pronunciation' => '/dɪˈsaɪsɪv/',
             'example_sentence' => 'The manager took decisive action to resolve the internal crisis.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '決定性',
                     'example_translation' => '經理採取了果斷行動來解決內部危機。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '果断的，决定性的',
                     'example_translation' => '经理采取了果断行动来解决内部危机。',
                 ],
@@ -2006,11 +2006,11 @@ return [
             'pronunciation' => '/ˌɪntɝˈsɛkʃən/',
             'example_sentence' => 'There is a traffic light at the intersection.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '路口',
                     'example_translation' => '十字路口有一個紅綠燈。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '十字路口，交叉路口',
                     'example_translation' => '十字路口有一个红绿灯。',
                 ],
@@ -2028,11 +2028,11 @@ return [
             'pronunciation' => '/ˈməðɝˌhʊd/',
             'example_sentence' => 'Motherhood changed her life in ways she never expected.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '母性',
                     'example_translation' => '母親身份以她從未預料到的方式改變了她的生活。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '母亲身份；母性',
                     'example_translation' => '母亲的身份以她从未预料到的方式改变了她的生活。',
                 ],
@@ -2048,11 +2048,11 @@ return [
             'pronunciation' => '/ɪɫɛkˈtɹɪʃən/',
             'example_sentence' => 'The electrician came to fix the wiring problem in our house.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '電工',
                     'example_translation' => '電工來修理我們房子裡的佈線問題。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '电工',
                     'example_translation' => '电工来修理我们家里的线路问题。',
                 ],
@@ -2068,11 +2068,11 @@ return [
             'pronunciation' => '/dɪˈpɫoʊməsi/',
             'example_sentence' => 'The conflict was resolved through careful national diplomacy today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '外交',
                     'example_translation' => '衝突今天通過謹慎的國家外交得到了解決。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '外交',
                     'example_translation' => '这一冲突今天通过谨慎的国家外交得到了解决。',
                 ],
@@ -2088,11 +2088,11 @@ return [
             'pronunciation' => '/ˈdɪkˌteɪt/, /dɪkˈteɪt/',
             'example_sentence' => 'The manager decided to dictate a letter to his personal assistant.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '聽寫',
                     'example_translation' => '經理決定給他的私人助手口述一封信。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '口述；听写',
                     'example_translation' => '经理决定向他的私人助理口述一封信。',
                 ],
@@ -2108,11 +2108,11 @@ return [
             'pronunciation' => '/ˈkɑmət/',
             'example_sentence' => 'The comet will be visible in the night sky early next month.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '彗星',
                     'example_translation' => '彗星將於下月初出現在夜空中。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '彗星',
                     'example_translation' => '这颗彗星将于下月初出现在夜空中。',
                 ],
@@ -2128,11 +2128,11 @@ return [
             'pronunciation' => '/ɹiˈzɪstənt/, /ɹɪˈzɪstənt/',
             'example_sentence' => 'The material is resistant to heat and water.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '抵抗的',
                     'example_translation' => '這種材料能抵抗高溫和水。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '有抵抗力的；耐……的',
                     'example_translation' => '这种材料耐热且防水。',
                 ],
@@ -2148,11 +2148,11 @@ return [
             'pronunciation' => '/ˈtɪɫt/',
             'example_sentence' => 'Please tilt the mirror a bit so I can see myself better.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '傾斜',
                     'example_translation' => '請把鏡子傾斜一點，好讓我看得更清楚。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '倾斜',
                     'example_translation' => '请把镜子稍稍倾斜一点，这样我能看清自己。',
                 ],
@@ -2168,11 +2168,11 @@ return [
             'pronunciation' => '/ˈfɔɹmjəˌɫeɪt/',
             'example_sentence' => 'We need to formulate a plan before starting the project.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '制定',
                     'example_translation' => '我們需要在開始專案之前制定一個計畫。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '制定；构想',
                     'example_translation' => '我们需要在开始项目之前制定出一个计划。',
                 ],
@@ -2188,11 +2188,11 @@ return [
             'pronunciation' => '/ˈɫaɪnɝ/',
             'example_sentence' => 'The large ocean liner sailed across the Atlantic Ocean.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '襯墊',
                     'example_translation' => '那艘大型遠洋班輪橫渡了大西洋。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '邮轮；班轮',
                     'example_translation' => '那艘大型远洋邮轮横渡了大西洋。',
                 ],
@@ -2208,11 +2208,11 @@ return [
             'pronunciation' => '/ˈdaʊnwɝd/',
             'example_sentence' => 'The path led downward toward the peaceful small forest stream.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '向下',
                     'example_translation' => '小路通向下方的靜謐森林小溪。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '向下的',
                     'example_translation' => '这条小路向下延伸，通向宁静的森林小溪。',
                 ],
@@ -2230,11 +2230,11 @@ return [
             'pronunciation' => '/ˈkɫæsp/',
             'example_sentence' => 'She used a small silver clasp to fasten her beautiful necklace.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '釦子',
                     'example_translation' => '她用一個銀製的小扣環扣住了她漂亮的項鍊。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '扣环；紧握',
                     'example_translation' => '她用一个小银扣扣住了她那条漂亮的项链。',
                 ],
@@ -2250,11 +2250,11 @@ return [
             'pronunciation' => '/ʃæmˈpeɪn/',
             'example_sentence' => 'We opened a bottle of expensive champagne to celebrate the news.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '香檳酒',
                     'example_translation' => '我們開了一瓶昂貴的香檳來慶祝這個消息。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '香槟酒',
                     'example_translation' => '我们开了一瓶昂贵的香槟来庆祝这个消息。',
                 ],
@@ -2270,11 +2270,11 @@ return [
             'pronunciation' => '/dɪˈtɝdʒənt/',
             'example_sentence' => 'Please use a mild detergent to wash the delicate silk clothes.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '洗滌劑',
                     'example_translation' => '請使用溫和的洗滌劑清洗精緻的絲綢衣服。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '洗涤剂；清洁剂',
                     'example_translation' => '请使用温和的洗涤剂清洗精致的丝绸衣服。',
                 ],
@@ -2290,11 +2290,11 @@ return [
             'pronunciation' => '/ˈbɹɑ/',
             'example_sentence' => 'She bought a new comfortable cotton bra from the department store.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '胸罩',
                     'example_translation' => '她在百貨公司買了一件新的舒服棉質內衣。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '文胸；胸罩',
                     'example_translation' => '她在百货公司买了一件新的舒适棉质文胸。',
                 ],
@@ -2310,11 +2310,11 @@ return [
             'pronunciation' => '/ˈviˌtoʊ/',
             'example_sentence' => 'The president used his veto to block the new law.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '否決',
                     'example_translation' => '總統使用他的否決權來阻擋這項新法律。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '否决；否决权',
                     'example_translation' => '总统行使了否决权，阻止了这项新法律。',
                 ],
@@ -2330,11 +2330,11 @@ return [
             'pronunciation' => '/ˈwɝkˌfɔɹs/',
             'example_sentence' => 'The company is investing in training its workforce.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '勞動力',
                     'example_translation' => '這家公司正在投資培訓其勞動力。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '劳动力；全体员工',
                     'example_translation' => '该公司正在投资培训其劳动力。',
                 ],
@@ -2350,11 +2350,11 @@ return [
             'pronunciation' => '/ˌɛməˈɡɹeɪʃən/',
             'example_sentence' => 'The report analyzes the trends in national emigration recently.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '移民',
                     'example_translation' => '報告分析了最近國家移民的趨勢。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '移居国外；移民',
                     'example_translation' => '该报告分析了近期国家人口移居国外的趋势。',
                 ],
@@ -2370,11 +2370,11 @@ return [
             'pronunciation' => '/dɪˈskɑɹd/',
             'example_sentence' => 'Please discard any broken or damaged items in the garbage bin.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '丟棄',
                     'example_translation' => '請將任何破損或損壞的物品丟進垃圾桶。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '丢弃；抛弃',
                     'example_translation' => '请将任何破损或损坏的物品扔进垃圾桶。',
                 ],
@@ -2390,11 +2390,11 @@ return [
             'pronunciation' => '/ˈəˌpɹaɪzɪŋ/, /əˈpɹaɪzɪŋ/',
             'example_sentence' => 'The uprising against the corrupt government spread quickly across the country.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '起義',
                     'example_translation' => '反抗腐敗政府的起義迅速蔓延到全國各地。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '起义；暴动',
                     'example_translation' => '反抗腐败政府的起义迅速蔓延到全国各地。',
                 ],
@@ -2410,11 +2410,11 @@ return [
             'pronunciation' => '/ˈsɑɹdʒənt/',
             'example_sentence' => 'The sergeant led his soldiers through the training exercise.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '軍士',
                     'example_translation' => '中士帶領他的士兵們完成訓練演習。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '中士；警长',
                     'example_translation' => '中士带领他的士兵们完成了训练演习。',
                 ],
@@ -2432,11 +2432,11 @@ return [
             'pronunciation' => '/ɹɪˈzɛntmənt/',
             'example_sentence' => 'She resented being treated unfairly by her boss.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '怨恨',
                     'example_translation' => '她怨恨老闆對她的不公平對待。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '怨恨，愤恨',
                     'example_translation' => '她对老板不公正地对待自己感到怨恨。',
                 ],
@@ -2452,11 +2452,11 @@ return [
             'pronunciation' => '/ˈɡɫæmɝəs/',
             'example_sentence' => 'She wore a glamorous dress to the awards ceremony.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '迷人的',
                     'example_translation' => '她穿了一件華麗的禮服去參加頒獎典禮。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '迷人的，富有魅力的',
                     'example_translation' => '她穿了一件华丽的礼服去参加颁奖典礼。',
                 ],
@@ -2472,11 +2472,11 @@ return [
             'pronunciation' => '/ˈdɹæft/',
             'example_sentence' => 'There was a cold draught coming from under the kitchen door.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '草稿',
                     'example_translation' => '廚房門下有一股冷風吹進來。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '穿堂风，冷风',
                     'example_translation' => '厨房门下吹进一阵冷风。',
                 ],
@@ -2492,11 +2492,11 @@ return [
             'pronunciation' => '/ˈtʃɝp/',
             'example_sentence' => 'The small birds began to chirp outside my window early today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '嘰嘰喳喳',
                     'example_translation' => '今天一早，小鳥開始在我窗外唧唧喳喳地叫。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '（鸟或昆虫）唧唧喳喳叫；唧唧喳喳声',
                     'example_translation' => '今天一大早，小鸟就在我窗外开始唧唧喳喳地叫了。',
                 ],
@@ -2512,11 +2512,11 @@ return [
             'pronunciation' => '/ˈdʒɑki/',
             'example_sentence' => 'The jockey rode the horse to victory in the final race.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '騎師',
                     'example_translation' => '那位騎師在最後一場比賽中騎馬奪得了勝利。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '赛马骑师',
                     'example_translation' => '那位骑师在最后一场比赛中骑马夺得了胜利。',
                 ],
@@ -2532,11 +2532,11 @@ return [
             'pronunciation' => '/əˈpɹɛʃən/',
             'example_sentence' => 'The people fought against oppression and demanded their freedom.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '壓迫',
                     'example_translation' => '人民反抗壓迫並要求自由。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '压迫，高压统治',
                     'example_translation' => '人民反抗压迫并争取自由。',
                 ],
@@ -2552,11 +2552,11 @@ return [
             'pronunciation' => '/bɑɹˈbɛɹiən/',
             'example_sentence' => 'The ancient empire was eventually conquered by barbarian tribes.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '野蠻人',
                     'example_translation' => '這個古老的帝國最終被野蠻部落征服了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '野蛮的；野蛮人',
                     'example_translation' => '这个古老的帝国最终被野蛮部落征服了。',
                 ],
@@ -2572,11 +2572,11 @@ return [
             'pronunciation' => '[examinee]',
             'example_sentence' => 'The examinee finished the test ahead of time.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '考生',
                     'example_translation' => '考生提前完成了考試。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '考生，应试者',
                     'example_translation' => '考生提前完成了考试。',
                 ],
@@ -2592,11 +2592,11 @@ return [
             'pronunciation' => '/ˌɪnˈkɝ/',
             'example_sentence' => 'Late payments will incur additional fees.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '招致',
                     'example_translation' => '逾期付款將會產生額外的費用。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '招致，产生（费用、损失等）',
                     'example_translation' => '逾期付款将产生额外费用。',
                 ],
@@ -2612,11 +2612,11 @@ return [
             'pronunciation' => '/sɝˈin/',
             'example_sentence' => 'The serene lake reflected the mountains perfectly.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '安詳',
                     'example_translation' => '寧靜的湖面完美地倒映著群山。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '宁静的，安详的',
                     'example_translation' => '宁静的湖面完美地倒映着群山。',
                 ],
@@ -2634,11 +2634,11 @@ return [
             'pronunciation' => '/ˌhɑspəˈtæɫəti/',
             'example_sentence' => 'The hotel is known for its warm hospitality.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '款待',
                     'example_translation' => '這家飯店以其熱情的款待而聞名。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '款待，殷勤好客',
                     'example_translation' => '这家酒店以其热情好客而闻名。',
                 ],
@@ -2654,11 +2654,11 @@ return [
             'pronunciation' => '/ˈkɫæm/',
             'example_sentence' => 'We went to the beach to collect some fresh clams for dinner.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '蛤',
                     'example_translation' => '我們去海邊收集了一些新鮮的蛤蜊做晚餐。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '蛤蜊，双壳贝',
                     'example_translation' => '我们去海滩捡了一些新鲜的蛤蜊做晚餐。',
                 ],
@@ -2674,11 +2674,11 @@ return [
             'pronunciation' => '/ˈpɫeɪɡ/',
             'example_sentence' => 'The plague spread rapidly through the city.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '瘟疫',
                     'example_translation' => '瘟疫迅速在城市中蔓延。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '瘟疫，鼠疫',
                     'example_translation' => '瘟疫迅速在城市中蔓延。',
                 ],
@@ -2694,11 +2694,11 @@ return [
             'pronunciation' => '/ˈfɔɹmədəbəɫ/, /ˌfɔɹˈmɪdəbəɫ/',
             'example_sentence' => 'The team faced a formidable challenge in completing the project on time.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '強大',
                     'example_translation' => '團隊在按時完成專案方面面臨了艱鉅的挑戰。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '艰巨的，可怕的，难对付的',
                     'example_translation' => '团队在按时完成项目方面面临着艰巨的挑战。',
                 ],
@@ -2714,11 +2714,11 @@ return [
             'pronunciation' => '/ˈsɫaɪ/',
             'example_sentence' => 'The sly fox crept quietly through the henhouse.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '狡猾',
                     'example_translation' => '狡猾的狐狸悄悄地潛入了雞舍。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '狡猾的，诡计多端的',
                     'example_translation' => '狡猾的狐狸悄悄潜入了鸡舍。',
                 ],
@@ -2734,11 +2734,11 @@ return [
             'pronunciation' => '/ˈsniki/',
             'example_sentence' => 'The sneaky cat stole a fish from the kitchen table.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '偷偷摸摸的',
                     'example_translation' => '那隻鬼鬼祟祟的貓從廚房桌上偷了一條魚。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '鬼鬼祟祟的，偷偷摸摸的',
                     'example_translation' => '那只鬼鬼祟祟的猫从厨房桌上偷了一条鱼。',
                 ],
@@ -2754,11 +2754,11 @@ return [
             'pronunciation' => '/ˈveɪpɝ/',
             'example_sentence' => 'Water vapor rises from the hot spring.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '汽',
                     'example_translation' => '水蒸氣從溫泉中升起。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '蒸气，水汽',
                     'example_translation' => '水蒸气从温泉中升起。',
                 ],
@@ -2774,11 +2774,11 @@ return [
             'pronunciation' => '/ˈɫaʊdˌspikɝ/',
             'example_sentence' => 'The loudspeaker announced the departure of the train.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '喇叭',
                     'example_translation' => '擴音器宣布了火車的出發時間。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '扬声器，扩音器',
                     'example_translation' => '扬声器广播了列车发车的消息。',
                 ],
@@ -2794,11 +2794,11 @@ return [
             'pronunciation' => '/ˈsɪmfəni/',
             'example_sentence' => 'The symphony filled the concert hall with beautiful music.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '交響樂',
                     'example_translation' => '交響曲在音樂廳中迴盪著美妙的旋律。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '交响乐，交响曲',
                     'example_translation' => '交响曲在音乐厅里响起了优美的旋律。',
                 ],
@@ -2814,11 +2814,11 @@ return [
             'pronunciation' => '/əˈpɹɛs/',
             'example_sentence' => 'The government used harsh laws to oppress the people.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '壓迫',
                     'example_translation' => '政府用嚴厲的法律來壓迫人民。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '压迫，压制',
                     'example_translation' => '政府使用严厉的法律来压迫人民。',
                 ],
@@ -2836,11 +2836,11 @@ return [
             'pronunciation' => '/ˌɪnˈtɹud/',
             'example_sentence' => 'I didn\'t want to intrude on their private conversation.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '侵入',
                     'example_translation' => '我不想打擾他們的私人談話。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '打扰；侵入',
                     'example_translation' => '我不想打扰他们的私人交谈。',
                 ],
@@ -2856,11 +2856,11 @@ return [
             'pronunciation' => '/ˈkævəti/',
             'example_sentence' => 'The dentist found a small cavity in one of his back teeth today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '空腔',
                     'example_translation' => '牙醫今天在他的一顆後牙中發現了一個小齲洞。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '龋洞；空腔',
                     'example_translation' => '牙医今天在他的一颗后牙里发现了一个小龋洞。',
                 ],
@@ -2876,11 +2876,11 @@ return [
             'pronunciation' => '/ˈstɛpˌfɑðɝ/',
             'example_sentence' => 'My stepfather taught me how to ride a bicycle.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '繼父',
                     'example_translation' => '我的繼父教我如何騎腳踏車。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '继父',
                     'example_translation' => '我的继父教我骑自行车。',
                 ],
@@ -2896,11 +2896,11 @@ return [
             'pronunciation' => '/ˌkɑmpɹiˈhɛnsɪv/',
             'example_sentence' => 'The report provides a comprehensive analysis of the local market.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '綜合的',
                     'example_translation' => '報告對當地市場進行了全面的分析。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => ' comprehensive/全面的；综合的',
                     'example_translation' => '该报告对当地市场进行了全面的分析。',
                 ],
@@ -2916,11 +2916,11 @@ return [
             'pronunciation' => '/ˈdɪvɪˌdɛnd/',
             'example_sentence' => 'The company decided to pay a special dividend to shareholders.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '股利',
                     'example_translation' => '公司決定向股東支付特別股息。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '股息；红利',
                     'example_translation' => '公司决定向股东支付特别股息。',
                 ],
@@ -2936,11 +2936,11 @@ return [
             'pronunciation' => '/ˈstɹeɪt/',
             'example_sentence' => 'Ships must pass through the narrow strait to reach the harbor.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '海峽',
                     'example_translation' => '船隻必須通過狹窄的海峽才能到達港口。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '海峡',
                     'example_translation' => '船只必须穿过狭窄的海峡才能到达港口。',
                 ],
@@ -2956,11 +2956,11 @@ return [
             'pronunciation' => '/ɪɡˈzæmənɝ/',
             'example_sentence' => 'The examiner reviewed each student\'s test paper carefully.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '考官',
                     'example_translation' => '考官仔細地審閱了每位學生的試卷。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '考官；检查员',
                     'example_translation' => '考官仔细审查了每位学生的试卷。',
                 ],
@@ -2976,11 +2976,11 @@ return [
             'pronunciation' => '/ˈwɪɹi/',
             'example_sentence' => 'The long journey made the travelers weary.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '厭倦',
                     'example_translation' => '漫長的旅途使旅人們感到疲倦。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '疲惫的；使疲倦',
                     'example_translation' => '漫长的旅程让旅行者们感到疲惫。',
                 ],
@@ -2996,11 +2996,11 @@ return [
             'pronunciation' => '/ˌsaɪkoʊˈθɛɹəpi/',
             'example_sentence' => 'Psychotherapy can help people overcome anxiety and depression.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '心理治療',
                     'example_translation' => '心理治療可以幫助人們克服焦慮和憂鬱。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '心理治疗',
                     'example_translation' => '心理治疗可以帮助人们克服焦虑和抑郁。',
                 ],
@@ -3016,11 +3016,11 @@ return [
             'pronunciation' => '/ˈɫaɪˈfɫɔŋ/',
             'example_sentence' => 'Learning a new language can be a lifelong journey.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '終身',
                     'example_translation' => '學習一門新語言可以是一段終身的旅程。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '终身的；毕生的',
                     'example_translation' => '学习一门新语言可以是一段终身的旅程。',
                 ],
@@ -3038,11 +3038,11 @@ return [
             'pronunciation' => '/ˈpɹivˌju/',
             'example_sentence' => 'The movie preview looked exciting.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '預覽',
                     'example_translation' => '電影預告片看起來很精彩。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '预告片；预览',
                     'example_translation' => '这部电影的预告片看起来很精彩。',
                 ],
@@ -3058,11 +3058,11 @@ return [
             'pronunciation' => '/ˌjunəfəˈkeɪʃən/',
             'example_sentence' => 'The unification of the two companies created a stronger organization.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '統一',
                     'example_translation' => '兩家公司的統一創造了一個更強大的組織。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '统一；联合',
                     'example_translation' => '两家公司的合并建立了一个更强大的组织。',
                 ],
@@ -3078,11 +3078,11 @@ return [
             'pronunciation' => '/ˈmæstɝi/',
             'example_sentence' => 'His mastery of the piano impressed everyone at the concert.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '精通',
                     'example_translation' => '他對鋼琴的精通讓音樂會上的每個人都印象深刻。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '精通；熟练掌握',
                     'example_translation' => '他对钢琴的精通给音乐会上的每一个人都留下了深刻印象。',
                 ],
@@ -3098,11 +3098,11 @@ return [
             'pronunciation' => '/ˈpɑɹɫəmənt/',
             'example_sentence' => 'The parliament passed a new law to protect the environment.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '議會',
                     'example_translation' => '國會通過了一項保護環境的新法律。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '议会；国会',
                     'example_translation' => '议会通过了一项保护环境的新法律。',
                 ],
@@ -3118,11 +3118,11 @@ return [
             'pronunciation' => '/dɪˈstɹɛs/',
             'example_sentence' => 'The news of the accident caused a lot of distress to her family.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '苦惱',
                     'example_translation' => '意外的消息給她的家人帶來了許多痛苦。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '痛苦；使苦恼',
                     'example_translation' => '事故的消息给她的家人带来了巨大的痛苦。',
                 ],
@@ -3138,11 +3138,11 @@ return [
             'pronunciation' => '/əˈstɹeɪ/',
             'example_sentence' => 'The little dog went astray and couldn\'t find its way home.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '誤入歧途',
                     'example_translation' => '小狗走丟了，找不到回家的路。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '迷路地；偏离正道地',
                     'example_translation' => '小狗迷路了，找不到回家的路。',
                 ],
@@ -3158,11 +3158,11 @@ return [
             'pronunciation' => '/ˈɡɫæmɝ/',
             'example_sentence' => 'The glamour of Hollywood attracts many aspiring actors.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '魅力',
                     'example_translation' => '好萊塢的魅力吸引了許多有抱負的演員。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '魅力；吸引力',
                     'example_translation' => '好莱坞的魅力吸引了许多有抱负的演员。',
                 ],
@@ -3178,11 +3178,11 @@ return [
             'pronunciation' => '/ˌhoʊmoʊˈsɛkˌʃəwəɫ/',
             'example_sentence' => 'Homosexual couples can now legally marry in many countries.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '同性戀者',
                     'example_translation' => '同性戀伴侶現在在許多國家可以合法結婚。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '同性恋的；同性恋者',
                     'example_translation' => '同性伴侣现在可以在许多国家合法结婚。',
                 ],
@@ -3198,11 +3198,11 @@ return [
             'pronunciation' => '/ˈdʒɔɪəs/',
             'example_sentence' => 'The joyous crowd celebrated the victory together.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '歡樂',
                     'example_translation' => '歡樂的人群一起慶祝勝利。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '充满欢喜的；令人高兴的',
                     'example_translation' => '欢喜的人群一起庆祝胜利。',
                 ],
@@ -3218,11 +3218,11 @@ return [
             'pronunciation' => '/ˌdɪsbɪˈɫif/',
             'example_sentence' => 'She stared at the results in complete disbelief early this morning.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '懷疑',
                     'example_translation' => '今天一早，她完全不敢相信地盯著結果看。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '怀疑；难以置信',
                     'example_translation' => '今天一大早，她满脸不可置信地盯着结果看。',
                 ],
@@ -3240,11 +3240,11 @@ return [
             'pronunciation' => '/ɛnˈɹoʊɫmənt/',
             'example_sentence' => 'The school is currently open for enrollment for the new year.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '註冊',
                     'example_translation' => '學校目前正開放新學年的報名。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '入学；注册；报名',
                     'example_translation' => '学校目前正接受新学年的报名。',
                 ],
@@ -3260,11 +3260,11 @@ return [
             'pronunciation' => '/ˈnɛˌɹeɪt/',
             'example_sentence' => 'She asked him to narrate the story of his childhood.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '敘事',
                     'example_translation' => '她請他講述他童年的故事。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '讲述；叙述',
                     'example_translation' => '她请他讲述他童年的故事。',
                 ],
@@ -3280,11 +3280,11 @@ return [
             'pronunciation' => '/pɹəˈspɛktɪv/',
             'example_sentence' => 'Prospective students must submit their applications by March.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '預期',
                     'example_translation' => '未來的學生必須在三月前提交申請。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '预期的；未来的；潜在的',
                     'example_translation' => '未来的学生必须在三月前提交申请。',
                 ],
@@ -3300,11 +3300,11 @@ return [
             'pronunciation' => '/ˈdoʊz/',
             'example_sentence' => 'The old man started to doze in his chair after the big meal.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '瞌睡',
                     'example_translation' => '大餐後老人開始在椅子上打瞌睡。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '打瞌睡；小睡',
                     'example_translation' => '吃饱饭后，老人在椅子上打起了瞌睡。',
                 ],
@@ -3320,11 +3320,11 @@ return [
             'pronunciation' => '/dɪˈstɹækʃən/',
             'example_sentence' => 'The constant noise was a major distraction for the students.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '分散注意力',
                     'example_translation' => '持續不斷的噪音對學生來說是一個主要的干擾。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '分心；干扰；令人分心的事物',
                     'example_translation' => '持续不断的噪音对学生来说是一个主要的干扰。',
                 ],
@@ -3340,11 +3340,11 @@ return [
             'pronunciation' => '/ˈvɪɫə/',
             'example_sentence' => 'They rented a villa by the sea for the summer vacation.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '別墅',
                     'example_translation' => '他們在海邊租了一棟別墅度暑假。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '别墅',
                     'example_translation' => '他们租了一栋海边别墅度暑假。',
                 ],
@@ -3360,11 +3360,11 @@ return [
             'pronunciation' => '/ˈwɔtɝˌpɹuf/',
             'example_sentence' => 'This jacket is waterproof, so you can wear it in the rain.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '防水的',
                     'example_translation' => '這件夾克是防水的，所以你可以在雨中穿著它。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '防水的；使防水',
                     'example_translation' => '这件夹克是防水的，所以你可以在雨中穿它。',
                 ],
@@ -3380,11 +3380,11 @@ return [
             'pronunciation' => '/θɝˈmɑmətɝ/',
             'example_sentence' => 'The thermometer shows that the water is boiling hot.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '溫度計',
                     'example_translation' => '溫度計顯示水正滾燙。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '温度计；体温计',
                     'example_translation' => '温度计显示水正滚烫。',
                 ],
@@ -3400,11 +3400,11 @@ return [
             'pronunciation' => '/ˈfəs/',
             'example_sentence' => 'Don\'t make such a fuss over a small mistake.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '大驚小怪',
                     'example_translation' => '不要為一個小錯誤大驚小怪。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '大惊小怪；忙乱',
                     'example_translation' => '不要为了一点小错误大惊小怪。',
                 ],
@@ -3420,11 +3420,11 @@ return [
             'pronunciation' => '/vaɪˈbɹeɪʃən/',
             'example_sentence' => 'I could feel the vibration of the engine through the floor.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '振動',
                     'example_translation' => '我可以透過地板感受到引擎的振動。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '振动；震动',
                     'example_translation' => '我可以透过地板感受到发动机的振动。',
                 ],
@@ -3442,11 +3442,11 @@ return [
             'pronunciation' => '/ˈaʊtˌskɝts/',
             'example_sentence' => 'They built a new school on the outskirts of the city.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '郊區',
                     'example_translation' => '他們在城市的郊區建了一所新學校。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '郊区；市郊',
                     'example_translation' => '他们在城市的郊区建了一所新学校。',
                 ],
@@ -3462,11 +3462,11 @@ return [
             'pronunciation' => '/əkˌjumjəˈɫeɪʃən/',
             'example_sentence' => 'The accumulation of wealth was not his main goal in life.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '累積',
                     'example_translation' => '財富的積累不是他的人生主要目標。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '积累；积聚',
                     'example_translation' => '财富的积累不是他人生的主要目标。',
                 ],
@@ -3482,11 +3482,11 @@ return [
             'pronunciation' => '/ˈkɫɪɹəns/',
             'example_sentence' => 'There is a clearance sale at the local department store today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '清除',
                     'example_translation' => '當地百貨公司今天正在進行清倉大拍賣。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '清仓；清除；许可',
                     'example_translation' => '当地的大型百货公司今天正在进行清仓大甩卖。',
                 ],
@@ -3502,11 +3502,11 @@ return [
             'pronunciation' => '/ˈtɛmˌpoʊ/',
             'example_sentence' => 'The tempo of the music gradually increased.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '速度',
                     'example_translation' => '音樂的節奏逐漸加快了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '节奏；速度',
                     'example_translation' => '音乐的节奏逐渐加快了。',
                 ],
@@ -3522,11 +3522,11 @@ return [
             'pronunciation' => '/ˈpəf/',
             'example_sentence' => 'A puff of smoke rose from the chimney.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '噗',
                     'example_translation' => '一陣煙從煙囪裡升起。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '一口气；一缕；喷出',
                     'example_translation' => '烟囱里升起了一缕烟。',
                 ],
@@ -3542,11 +3542,11 @@ return [
             'pronunciation' => '/ˈɡɹaʊɫ/',
             'example_sentence' => 'The dog let out a low growl when the stranger approached.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '咆哮',
                     'example_translation' => '當陌生人靠近時，那隻狗發出了低沉的吼聲。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '咆哮；低吼',
                     'example_translation' => '当陌生人靠近时，那只狗发出了低沉的吼声。',
                 ],
@@ -3562,11 +3562,11 @@ return [
             'pronunciation' => '/ˈsɝˌneɪm/',
             'example_sentence' => 'My surname is Chen.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '姓',
                     'example_translation' => '我的姓氏是陳。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '姓；姓氏',
                     'example_translation' => '我的姓氏是陈。',
                 ],
@@ -3582,11 +3582,11 @@ return [
             'pronunciation' => '/ˈnud/',
             'example_sentence' => 'The artist painted a nude figure on the canvas.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '裸體',
                     'example_translation' => '這位藝術家在畫布上畫了一個裸體人像。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '裸体的；裸体画',
                     'example_translation' => '这位艺术家在画布上画了一个裸体人像。',
                 ],
@@ -3602,11 +3602,11 @@ return [
             'pronunciation' => '/ˈkɫoʊn/',
             'example_sentence' => 'Scientists managed to clone a sheep for the first time in 1996.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '複製',
                     'example_translation' => '科學家們於 1996 年首次成功複製了一隻羊。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '克隆；复制',
                     'example_translation' => '科学家们于 1996 年首次成功克隆了一只羊。',
                 ],
@@ -3622,11 +3622,11 @@ return [
             'pronunciation' => '/ˈɛksɝpt/, /ɛkˈsɝpt/',
             'example_sentence' => 'She read an excerpt from the novel during the book club meeting.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '摘抄',
                     'example_translation' => '她在讀書會上朗讀了這本小說的一段摘錄。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '摘录；节选',
                     'example_translation' => '她在读书会上朗读了这本小说的一段摘录。',
                 ],
@@ -3644,11 +3644,11 @@ return [
             'pronunciation' => '/ɹiˈvoʊɫt/, /ɹɪˈvoʊɫt/',
             'example_sentence' => 'The people started a revolt against the unjust king.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '反叛',
                     'example_translation' => '人民發動了一場反抗不公正國王的起義。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '反抗；起义；反叛',
                     'example_translation' => '人民发动了一场反抗不公正国王的起义。',
                 ],
@@ -3664,11 +3664,11 @@ return [
             'pronunciation' => '/ˌɛɹɪθˈmɛtɪk/, /ɝˈɪθməˌtɪk/',
             'example_sentence' => 'Elementary school students need to learn basic arithmetic.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '算術',
                     'example_translation' => '小學生需要學習基礎算術。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '算术',
                     'example_translation' => '小学生需要学习基础算术。',
                 ],
@@ -3684,11 +3684,11 @@ return [
             'pronunciation' => '/ˈdəsk/',
             'example_sentence' => 'The birds started to return to their nests as dusk approached.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '黃昏',
                     'example_translation' => '黃昏臨近，鳥兒開始回巢。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '黄昏；薄暮',
                     'example_translation' => '黄昏临近，鸟儿开始回巢。',
                 ],
@@ -3704,11 +3704,11 @@ return [
             'pronunciation' => '/əˈkəstəm/',
             'example_sentence' => 'It took her a while to accustom herself to the new job.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '習慣',
                     'example_translation' => '她花了一段時間才讓自己適應新工作。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '使习惯',
                     'example_translation' => '她花了一段时间才让自己适应新工作。',
                 ],
@@ -3724,11 +3724,11 @@ return [
             'pronunciation' => '/ˈmɝtʃənˌdaɪz/',
             'example_sentence' => 'The store displayed its merchandise in the front window.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '商品',
                     'example_translation' => '這家商店把商品展示在前面的櫥窗裡。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '商品；货物',
                     'example_translation' => '这家商店把商品展示在前面的橱窗里。',
                 ],
@@ -3744,11 +3744,11 @@ return [
             'pronunciation' => '/kæˈfin/',
             'example_sentence' => 'I am trying to reduce my intake of caffeine for better health.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '咖啡因',
                     'example_translation' => '為了健康，我正試著減少咖啡因的攝入量。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '咖啡因',
                     'example_translation' => '为了健康，我正试着减少咖啡因的摄入量。',
                 ],
@@ -3764,11 +3764,11 @@ return [
             'pronunciation' => '/ˈhɛdʒ/',
             'example_sentence' => 'They planted a tall green hedge around their house.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '對沖',
                     'example_translation' => '他在房子周圍種了一道高大的綠色樹籬。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '树篱；对冲',
                     'example_translation' => '他在房子周围种了一道高大的绿色树篱。',
                 ],
@@ -3784,11 +3784,11 @@ return [
             'pronunciation' => '/ˈkɑɹdənəɫ/, /ˈkɑɹdɪnəɫ/',
             'example_sentence' => 'The cardinal points on a compass are North, South, East, and West.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '樞機主教',
                     'example_translation' => '羅盤上的基本方位是北、南、東、西。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '主要的；红衣主教',
                     'example_translation' => '罗盘上的基本方位是北、南、东、西。',
                 ],
@@ -3804,11 +3804,11 @@ return [
             'pronunciation' => '/əˈɫumənəm/',
             'example_sentence' => 'The window frames are made of lightweight aluminum metal.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '鋁',
                     'example_translation' => '窗框是由輕質鋁金屬製成的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '铝',
                     'example_translation' => '窗框是由轻质铝金属制成的。',
                 ],
@@ -3824,11 +3824,11 @@ return [
             'pronunciation' => '/ˈpɝtʃ/',
             'example_sentence' => 'The bird found a perch on the highest branch.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '棲息',
                     'example_translation' => '那隻鳥在最高的樹枝上找到了一個棲息處。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '栖息；栖息处',
                     'example_translation' => '那只鸟在最高的树枝上找到了一个栖息处。',
                 ],
@@ -3846,11 +3846,11 @@ return [
             'pronunciation' => '/dɪˈzæstɹəs/',
             'example_sentence' => 'The project was a disastrous failure due to a lack of planning.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '災難性的',
                     'example_translation' => '由於缺乏規劃，該專案遭到了災難性的失敗。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '灾难性的；极糟糕的',
                     'example_translation' => '由于缺乏规划，该项目遭到了灾难性的失败。',
                 ],
@@ -3866,11 +3866,11 @@ return [
             'pronunciation' => '/ˈkɑmənˌpɫeɪs/',
             'example_sentence' => 'Mobile phones have become commonplace in our daily lives now.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '平凡',
                     'example_translation' => '手機現在在我們的日常生活中已經變得很普遍了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '平凡的；司空见惯的',
                     'example_translation' => '手机现在在我们的日常生活中已经变得很普遍了。',
                 ],
@@ -3886,11 +3886,11 @@ return [
             'pronunciation' => '/ˈtoʊkən/',
             'example_sentence' => 'He gave her a small gift as a token of his gratitude.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '代幣',
                     'example_translation' => '他送給她一份小禮物以表感激。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '象征；代币',
                     'example_translation' => '他送给她一份小礼物以表感激。',
                 ],
@@ -3906,11 +3906,11 @@ return [
             'pronunciation' => '/ˈhɑɹti/',
             'example_sentence' => 'We enjoyed a hearty meal after the long hike.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '爽朗',
                     'example_translation' => '在長途健行之後，我們享用了一頓豐盛的餐點。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '丰盛的；衷心的',
                     'example_translation' => '在长途健行之后，我们享用了一顿丰盛的餐点。',
                 ],
@@ -3926,11 +3926,11 @@ return [
             'pronunciation' => '/ˈʃɹik/',
             'example_sentence' => 'She let out a shriek when she saw the spider.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '尖叫',
                     'example_translation' => '她看到蜘蛛時發出了一聲尖叫。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '尖叫',
                     'example_translation' => '她看到蜘蛛时发出了一声尖叫。',
                 ],
@@ -3946,11 +3946,11 @@ return [
             'pronunciation' => '/ɪkˈsɛɫ/',
             'example_sentence' => 'She excels at mathematics and science.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '卓越',
                     'example_translation' => '她在數學和科學方面表現出色。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '擅长；出众',
                     'example_translation' => '她在数学和科学方面表现出色。',
                 ],
@@ -3966,11 +3966,11 @@ return [
             'pronunciation' => '/ˈsæɫvədʒ/, /ˈsæɫvɪdʒ/',
             'example_sentence' => 'They managed to salvage some furniture from the burning house.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '打撈',
                     'example_translation' => '他們設法從燃燒的房子裡搶救了一些家具。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '抢救；挽救；打捞',
                     'example_translation' => '他们设法从燃烧的房子里抢救了一些家具。',
                 ],
@@ -3986,11 +3986,11 @@ return [
             'pronunciation' => '/ˈmoʊbəˌɫaɪz/',
             'example_sentence' => 'We need to mobilize all available resources to help the disaster victims.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '動員',
                     'example_translation' => '我們需要動員所有可用的資源來幫助災民。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '动员；调动',
                     'example_translation' => '我们需要动员所有可用的资源来帮助灾民。',
                 ],
@@ -4006,11 +4006,11 @@ return [
             'pronunciation' => '/ˈbɫitʃ/',
             'example_sentence' => 'She used some strong bleach to remove the stain from the shirt.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '漂白',
                     'example_translation' => '她用了一些強力漂白水去除了襯衫上的污漬。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '漂白剂；漂白',
                     'example_translation' => '她用了一些强效漂白水去除了衬衫上的污渍。',
                 ],
@@ -4026,11 +4026,11 @@ return [
             'pronunciation' => '/ˈɫɑtɝi/',
             'example_sentence' => 'He won the lottery and became a millionaire overnight.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '抽籤',
                     'example_translation' => '他贏了樂透，一夜之間成了百萬富翁。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '彩票；抽签',
                     'example_translation' => '他中了彩票，一夜之间成了百万富翁。',
                 ],
@@ -4048,11 +4048,11 @@ return [
             'pronunciation' => '/dɪˈsaɪpəɫ/',
             'example_sentence' => 'In the old story, the wise master had several loyal disciples.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '弟子',
                     'example_translation' => '在古老的故事中，這位智者有幾個忠實的弟子。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '弟子，门徒',
                     'example_translation' => '在那个古老的故事中，智慧的大师有几个忠诚的弟子。',
                 ],
@@ -4068,11 +4068,11 @@ return [
             'pronunciation' => '/ˈɹɪpəɫ/',
             'example_sentence' => 'A stone thrown into the pond created a ripple on the surface.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '波紋',
                     'example_translation' => '一顆石頭丟進池塘，在水面上產生了漣漪。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '涟漪，波纹',
                     'example_translation' => '扔进池塘里的一块石头在水面上泛起了一道涟漪。',
                 ],
@@ -4088,11 +4088,11 @@ return [
             'pronunciation' => '/ˌoʊvɝˈwɝk/',
             'example_sentence' => 'Overwork can lead to serious health problems.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '過度勞累',
                     'example_translation' => '過度工作可能導致嚴重的健康問題。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '过度劳累，工作过度',
                     'example_translation' => '过度劳累可能会导致严重的健康问题。',
                 ],
@@ -4108,11 +4108,11 @@ return [
             'pronunciation' => '/ˈdʒɑɫi/',
             'example_sentence' => 'The jolly old man laughed and handed out gifts to the children.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '快樂的',
                     'example_translation' => '那位快樂的老人笑著把禮物分給孩子們。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '快乐的，愉快的',
                     'example_translation' => '那位快乐的老人笑着把礼物分发给孩子们。',
                 ],
@@ -4128,11 +4128,11 @@ return [
             'pronunciation' => '/ˈskɛptəkəɫ/, /ˈskɛptɪkəɫ/',
             'example_sentence' => 'She was skeptical about his explanation for being late.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '持懷疑態度的',
                     'example_translation' => '她對他遲到的解釋感到懷疑。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '持怀疑态度的',
                     'example_translation' => '她对他迟到的解释持怀疑态度。',
                 ],
@@ -4148,11 +4148,11 @@ return [
             'pronunciation' => '/ˈɫukɹətɪv/',
             'example_sentence' => 'The entrepreneur built a lucrative business selling handmade jewelry online.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '有利可圖的',
                     'example_translation' => '這位企業家在網上販售手工珠寶，建立了一個利潤豐厚的事業。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '赚钱的，获利丰厚的',
                     'example_translation' => '这位企业家通过在网上销售手工珠宝建立了一项获利丰厚的生意。',
                 ],
@@ -4168,11 +4168,11 @@ return [
             'pronunciation' => '/ˈɫɑdʒ/',
             'example_sentence' => 'We stayed at a small lodge in the mountains.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '小屋',
                     'example_translation' => '我們住在山裡的一間小屋。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '小屋，山庄',
                     'example_translation' => '我们住在山里的一间小屋里。',
                 ],
@@ -4188,11 +4188,11 @@ return [
             'pronunciation' => '/ˈdɛstɪnd/',
             'example_sentence' => 'He believed that he was destined to become a successful doctor.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '注定的',
                     'example_translation' => '他相信自己命中注定會成為一名成功的醫生。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '注定的，命中注定的',
                     'example_translation' => '他相信自己注定会成为一名成功的医生。',
                 ],
@@ -4208,11 +4208,11 @@ return [
             'pronunciation' => '/ˈsɪnəˌnɪm/',
             'example_sentence' => '"Happy" and "joyful" are synonyms that can be used interchangeably.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '代名詞',
                     'example_translation' => '「快樂」和「愉悅」是可以互換使用的同義詞。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '同义词',
                     'example_translation' => '“Happy”和“joyful”是可互换使用的同义词。',
                 ],
@@ -4228,11 +4228,11 @@ return [
             'pronunciation' => '/ˌdʒiəˈɡɹæfɪkəɫ/',
             'example_sentence' => 'Geographical features such as mountains and rivers shape the boundaries of countries.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '地理的',
                     'example_translation' => '地理特徵如山脈和河流塑造了國家的邊界。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '地理的，地理学的',
                     'example_translation' => '山脉和河流等地理特征塑造了国家的边界。',
                 ],
@@ -4250,11 +4250,11 @@ return [
             'pronunciation' => '/ˈmɑɹvəɫ/',
             'example_sentence' => 'The Great Wall is a marvel of ancient engineering.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '奇蹟',
                     'example_translation' => '長城是古代工程的奇蹟。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '奇迹，令人惊叹的事物',
                     'example_translation' => '长城是古代工程学的一个奇迹。',
                 ],
@@ -4270,11 +4270,11 @@ return [
             'pronunciation' => '/ˈkɹətʃ/',
             'example_sentence' => 'He had to use crutches for several weeks after breaking his leg.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '拐杖',
                     'example_translation' => '斷腿後他不得不撐了幾週的拐杖。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '拐杖',
                     'example_translation' => '骨折后，他不得不撑了几个星期的拐杖。',
                 ],
@@ -4290,11 +4290,11 @@ return [
             'pronunciation' => '/ˈfɹeɪɡɹəns/',
             'example_sentence' => 'The fragrance of fresh flowers filled the entire room.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '香味',
                     'example_translation' => '新鮮花朵的香味充滿了整個房間。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '香味，芳香',
                     'example_translation' => '鲜花的香味弥漫了整个房间。',
                 ],
@@ -4310,11 +4310,11 @@ return [
             'pronunciation' => '/ˈmoʊ/',
             'example_sentence' => 'I need to mow the lawn before it rains.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '刈',
                     'example_translation' => '我需要在下雨前割草坪。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '割（草）',
                     'example_translation' => '我需要在下雨前修剪草坪。',
                 ],
@@ -4330,11 +4330,11 @@ return [
             'pronunciation' => '/ˈɫeɪmən/',
             'example_sentence' => 'A layman would find it difficult to understand these technical terms.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '外行人',
                     'example_translation' => '一個外行人會覺得這些專業術語很難理解。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '外行，门外汉',
                     'example_translation' => '外行人会觉得这些专业术语很难理解。',
                 ],
@@ -4350,11 +4350,11 @@ return [
             'pronunciation' => '/ˈbæs/, /ˈbeɪs/',
             'example_sentence' => 'He plays the bass guitar in a local jazz band on the weekends.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '低音',
                     'example_translation' => '他週末在當地的爵士樂隊裡彈貝斯。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '低音，贝斯',
                     'example_translation' => '他周末在当地的一支爵士乐队里弹贝斯。',
                 ],
@@ -4370,11 +4370,11 @@ return [
             'pronunciation' => '/ˈɝdʒənsi/',
             'example_sentence' => 'There is a sense of urgency in completing this project.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '緊迫性',
                     'example_translation' => '完成這個專案有一種緊迫感。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '紧迫，紧急',
                     'example_translation' => '完成这个项目有一种紧迫感。',
                 ],
@@ -4390,11 +4390,11 @@ return [
             'pronunciation' => '/dɪˈtɝ/',
             'example_sentence' => 'The high cost of the project managed to deter many investors today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '阻止',
                     'example_translation' => '專案的高昂成本今天成功嚇退了許多投資者。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '吓退，使断念',
                     'example_translation' => '该项目高昂的成本在今天成功吓退了许多投资者。',
                 ],
@@ -4410,11 +4410,11 @@ return [
             'pronunciation' => '/ˈaɪsbɝɡ/',
             'example_sentence' => 'The ship hit an iceberg and sank.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '冰山',
                     'example_translation' => '船撞上了冰山然後沉沒了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '冰山',
                     'example_translation' => '船撞上了冰山并沉没了。',
                 ],
@@ -4430,11 +4430,11 @@ return [
             'pronunciation' => '/ˈfɪʃɝi/',
             'example_sentence' => 'The fishery provides fresh seafood to the local market every morning.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '漁業',
                     'example_translation' => '這個漁場每天早上為當地市場提供新鮮的海鮮。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '渔场，水产业',
                     'example_translation' => '该渔场每天早晨为当地市场提供新鲜的海鲜。',
                 ],
@@ -4452,11 +4452,11 @@ return [
             'pronunciation' => '/ˈpɪkˌpɑkət/',
             'example_sentence' => 'The pickpocket stole my wallet on the crowded bus.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '扒手',
                     'example_translation' => '扒手在擁擠的公車上偷了我的錢包。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '扒手，小偷',
                     'example_translation' => '扒手在拥挤的公交车上偷了我的钱包。',
                 ],
@@ -4472,11 +4472,11 @@ return [
             'pronunciation' => '/əˈnɔɪəns/',
             'example_sentence' => 'He couldn\'t hide his annoyance when the train was delayed.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '煩惱',
                     'example_translation' => '火車延誤時，他無法掩飾自己的惱怒。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '恼怒，烦恼',
                     'example_translation' => '火车延误时，他无法掩饰自己的恼怒。',
                 ],
@@ -4492,11 +4492,11 @@ return [
             'pronunciation' => '/səˈpɹɛs/',
             'example_sentence' => 'She tried to suppress her laughter during the meeting.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '壓制',
                     'example_translation' => '她試圖在會議中壓抑自己的笑聲。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '压抑，镇压，抑制',
                     'example_translation' => '她试图在会议期间压抑自己的笑声。',
                 ],
@@ -4512,11 +4512,11 @@ return [
             'pronunciation' => '/ˈkɛmɪst/',
             'example_sentence' => 'He works as a research chemist for a large pharmaceutical firm.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '化學家',
                     'example_translation' => '他在一家大型製藥公司擔任研究化學家。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '化学家，药剂师',
                     'example_translation' => '他在一家大型制药公司担任研究化学家。',
                 ],
@@ -4532,11 +4532,11 @@ return [
             'pronunciation' => '/ˈspɔɹtsmənˌʃɪp/',
             'example_sentence' => 'Good sportsmanship means respecting your opponents whether you win or lose.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '體育精神',
                     'example_translation' => '良好的運動家精神意味著無論輸贏都要尊重對手。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '体育精神，运动员风度',
                     'example_translation' => '良好的体育精神意味着无论输赢都要尊重对手。',
                 ],
@@ -4552,11 +4552,11 @@ return [
             'pronunciation' => '/ˈpɹitʃ/',
             'example_sentence' => 'He likes to preach about the importance of healthy eating.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '傳道',
                     'example_translation' => '他喜歡宣揚健康飲食的重要性。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '宣扬，传道，讲道',
                     'example_translation' => '他喜欢宣扬健康饮食的重要性。',
                 ],
@@ -4572,11 +4572,11 @@ return [
             'pronunciation' => '/ˌɪnˈfɛkʃəs/',
             'example_sentence' => 'Her laughter was so infectious that everyone in the room started smiling.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '傳染性的',
                     'example_translation' => '她的笑聲非常有感染力，房間裡的每個人都開始微笑。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '有感染力的，传染性的',
                     'example_translation' => '她的笑声非常有感染力，房间里的每个人都开始微笑。',
                 ],
@@ -4592,11 +4592,11 @@ return [
             'pronunciation' => '/ɛnˈhænsmənt/',
             'example_sentence' => 'The new software is designed to enhance the overall performance.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '增強',
                     'example_translation' => '這款新軟體旨在提升整體性能。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '增强，提升，提高',
                     'example_translation' => '这款新软件旨在提升整体性能。',
                 ],
@@ -4612,11 +4612,11 @@ return [
             'pronunciation' => '/ˈnɑvəs/',
             'example_sentence' => 'As a novice, she still has a lot to learn about cooking.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '新手',
                     'example_translation' => '身為一個新手，她在烹飪方面還有很多要學習的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '新手，初学者',
                     'example_translation' => '作为一个新手，她在烹饪方面还有很多要学习的。',
                 ],
@@ -4632,11 +4632,11 @@ return [
             'pronunciation' => '/ˈbɹaɪb/',
             'example_sentence' => 'He was accused of trying to bribe the official to get the contract.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '賄賂',
                     'example_translation' => '他被指控企圖賄賂官員以獲得合約。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '贿赂',
                     'example_translation' => '他被指控企图贿赂官员以获得合同。',
                 ],
@@ -4654,11 +4654,11 @@ return [
             'pronunciation' => '/kənˈsɛʃən/',
             'example_sentence' => 'The government made a major concession during the negotiations.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '讓步',
                     'example_translation' => '政府在談判期間做出了重大讓步。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '让步，妥协',
                     'example_translation' => '政府在谈判期间做出了重大让步。',
                 ],
@@ -4674,11 +4674,11 @@ return [
             'pronunciation' => '/ˌeɪviˈeɪʃən/',
             'example_sentence' => 'He is very interested in the history of civil aviation.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '航空',
                     'example_translation' => '他對民航史非常感興趣。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '航空，航空学',
                     'example_translation' => '他对民用航空史非常感兴趣。',
                 ],
@@ -4694,11 +4694,11 @@ return [
             'pronunciation' => '/ˈɫændˌɫeɪdi/',
             'example_sentence' => 'The landlady knocked on the door to collect the rent.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '房東',
                     'example_translation' => '房東太太敲門來收房租。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '女房东',
                     'example_translation' => '女房东敲门来收房租。',
                 ],
@@ -4714,11 +4714,11 @@ return [
             'pronunciation' => '/ˈpjʊɹəˌfaɪ/',
             'example_sentence' => 'We need to purify the water before drinking it.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '淨化',
                     'example_translation' => '我們需要在飲用之前淨化這些水。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '净化，提纯',
                     'example_translation' => '我们需要在饮用之前净化这些水。',
                 ],
@@ -4734,11 +4734,11 @@ return [
             'pronunciation' => '/ˈɹeɪdiˌeɪt/, /ˈɹeɪdiət/',
             'example_sentence' => 'The sun radiates warmth across the field.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '輻射',
                     'example_translation' => '太陽向田野散發溫暖。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '散发，辐射',
                     'example_translation' => '太阳向田野散发出温暖。',
                 ],
@@ -4754,11 +4754,11 @@ return [
             'pronunciation' => '/ˈɫunɝ/',
             'example_sentence' => 'The lunar eclipse was visible across the entire continent.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '農曆',
                     'example_translation' => '月蝕在整個大陸都能看見。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '月球的，月亮的',
                     'example_translation' => '整个大陆都可以看到这次月食。',
                 ],
@@ -4774,11 +4774,11 @@ return [
             'pronunciation' => '/ˈtək/',
             'example_sentence' => 'She tucked the blanket around the sleeping child.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '塔克',
                     'example_translation' => '她把毯子掖好，裹住熟睡的孩子。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '塞进，掖好',
                     'example_translation' => '她把毯子掖好，盖在熟睡的孩子身上。',
                 ],
@@ -4794,11 +4794,11 @@ return [
             'pronunciation' => '/ˈpɹoʊz/',
             'example_sentence' => 'Her prose is clear and elegant, making the book a pleasure to read.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '散文',
                     'example_translation' => '她的散文清晰優雅，讓這本書讀起來令人愉悅。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '散文，散文体',
                     'example_translation' => '她的散文清晰优雅，让这本书读起来令人愉悦。',
                 ],
@@ -4814,11 +4814,11 @@ return [
             'pronunciation' => '/ˈnævəˌɡeɪt/',
             'example_sentence' => 'She learned how to navigate through the busy streets of the city.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '導航',
                     'example_translation' => '她學會了如何在繁忙的城市街道中穿行。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '穿行，导航，航行',
                     'example_translation' => '她学会了如何在繁忙的城市街道中穿行。',
                 ],
@@ -4834,11 +4834,11 @@ return [
             'pronunciation' => '/ɹiˈstɹeɪnt/, /ɹɪˈstɹeɪnt/',
             'example_sentence' => 'She showed great restraint by not responding to the rude comment.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '克制',
                     'example_translation' => '她展現了極大的克制，沒有回應那句無禮的評論。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '克制，抑制',
                     'example_translation' => '她表现出了极大的克制，没有回应那句无礼的言论。',
                 ],
@@ -4856,11 +4856,11 @@ return [
             'pronunciation' => '/ˈkəmpəs/',
             'example_sentence' => 'The hikers used a compass to find their way through the forest.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '羅盤',
                     'example_translation' => '徒步旅行者使用羅盤在森林中找路。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '指南针，罗盘',
                     'example_translation' => '徒步旅行者使用指南针在森林中找路。',
                 ],
@@ -4876,11 +4876,11 @@ return [
             'pronunciation' => '/ˈsəbsɪˌdaɪz/',
             'example_sentence' => 'The government decided to subsidize public transportation to make it more affordable.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '資助',
                     'example_translation' => '政府決定補貼大眾運輸，使其更加經濟實惠。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '资助，补贴',
                     'example_translation' => '政府决定补贴公共交通，使其更加实惠。',
                 ],
@@ -4896,11 +4896,11 @@ return [
             'pronunciation' => '/ˈsoʊʃəˌɫɪzəm/',
             'example_sentence' => 'Socialism emphasizes public ownership of the means of production.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '社會主義',
                     'example_translation' => '社會主義強調生產資料的公有制。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '社会主义',
                     'example_translation' => '社会主义强调生产资料的公有制。',
                 ],
@@ -4916,11 +4916,11 @@ return [
             'pronunciation' => '/əˈfɪɫiˌeɪt/, /əˈfɪɫiət/',
             'example_sentence' => 'The local station is an affiliate of a larger national network.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '附屬機構',
                     'example_translation' => '當地電台是大型國家網絡的分支機構。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '附属机构，分会',
                     'example_translation' => '当地电视台是大型国家电视网的分支机构。',
                 ],
@@ -4936,11 +4936,11 @@ return [
             'pronunciation' => '/ˈspɛɹoʊ/',
             'example_sentence' => 'A sparrow is sitting on the fence.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '麻雀',
                     'example_translation' => '一隻麻雀正停在籬笆上。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '麻雀',
                     'example_translation' => '一只麻雀正停在栅栏上。',
                 ],
@@ -4956,11 +4956,11 @@ return [
             'pronunciation' => '/ˈdɪkteɪtɝ/, /dɪkˈteɪtɝ/',
             'example_sentence' => 'The country was ruled by a powerful and cruel dictator for years.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '獨裁者',
                     'example_translation' => '這個國家被一位強大且殘忍的獨裁者統治了多年。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '独裁者',
                     'example_translation' => '这个国家被一位强大且残忍的独裁者统治了多年。',
                 ],
@@ -4976,11 +4976,11 @@ return [
             'pronunciation' => '/ˈfɪn/',
             'example_sentence' => 'The shark\'s fin cut through the water.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '鰭',
                     'example_translation' => '鯊魚的鰭劃破了水面。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '鳍',
                     'example_translation' => '鲨鱼的鳍划破了水面。',
                 ],
@@ -4996,11 +4996,11 @@ return [
             'pronunciation' => '/ˈəʃɝ/',
             'example_sentence' => 'The usher led us to our seats in the theater.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '引座員',
                     'example_translation' => '引座員帶領我們到劇院的座位。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '引座员，招待员',
                     'example_translation' => '引座员引领我们到剧院的座位上。',
                 ],
@@ -5016,11 +5016,11 @@ return [
             'pronunciation' => '/ˈfɹækʃɝ/, /ˈfɹæktʃɝ/',
             'example_sentence' => 'The doctor confirmed that she had a fracture in her left arm.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '斷裂',
                     'example_translation' => '醫生確認她的左臂有一處骨折。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '骨折，断裂',
                     'example_translation' => '医生确认她的左臂有一处骨折。',
                 ],
@@ -5036,11 +5036,11 @@ return [
             'pronunciation' => '/ˈswɔɹm/',
             'example_sentence' => 'A swarm of bees flew out of the hive.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '蜂群',
                     'example_translation' => '一群蜜蜂從蜂巢中飛了出來。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '蜂群，一大群',
                     'example_translation' => '一群蜜蜂从蜂箱里飞了出来。',
                 ],
@@ -5058,11 +5058,11 @@ return [
             'pronunciation' => '/kəmˈpaɪɫ/',
             'example_sentence' => 'The scientist is busy trying to compile all the research data.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '編譯',
                     'example_translation' => '科學家正忙於匯編所有的研究數據。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '汇编，编纂',
                     'example_translation' => '科学家正忙于汇编所有的研究数据。',
                 ],
@@ -5078,11 +5078,11 @@ return [
             'pronunciation' => '/ˈbɹeɪs/',
             'example_sentence' => 'The engineer added a metal brace to support the old bridge.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '支撐',
                     'example_translation' => '工程師增加了一個金屬支架來支撐這座老橋。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '支架，支撑物',
                     'example_translation' => '工程师增加了一个金属支架来支撑这座老桥。',
                 ],
@@ -5098,11 +5098,11 @@ return [
             'pronunciation' => '/ˌɪmˈpɪɹiəɫ/',
             'example_sentence' => 'The imperial palace was open to visitors for the first time.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '帝國的',
                     'example_translation' => '這座皇家宮殿首次對遊客開放。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '帝国的，皇室的',
                     'example_translation' => '这座皇家宫殿首次对游客开放。',
                 ],
@@ -5118,11 +5118,11 @@ return [
             'pronunciation' => '/ˈdɪˌtætʃ/, /diˈtætʃ/',
             'example_sentence' => 'You can easily detach the lens from the digital camera body today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '分離',
                     'example_translation' => '你可以很容易地從數位相機機身上拆下鏡頭。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '拆卸，分离',
                     'example_translation' => '你可以很容易地从数码相机机身上拆下镜头。',
                 ],
@@ -5138,11 +5138,11 @@ return [
             'pronunciation' => '/ˈɛɹˌweɪ/',
             'example_sentence' => 'The doctor cleared the patient\'s airway to help him breathe.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '氣道',
                     'example_translation' => '醫生清理了病人的呼吸道以幫助他呼吸。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '气道，呼吸道',
                     'example_translation' => '医生清理了患者的气道以帮助他呼吸。',
                 ],
@@ -5158,11 +5158,11 @@ return [
             'pronunciation' => '/ˌɪnˈdʒəstɪs/',
             'example_sentence' => 'They fought against injustice in their community.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '不公正',
                     'example_translation' => '他們對抗社區中的不公正。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '不公正，不平等',
                     'example_translation' => '他们对抗社区中的不公正现象。',
                 ],
@@ -5178,11 +5178,11 @@ return [
             'pronunciation' => '/ˈpoʊtənt/',
             'example_sentence' => 'The medicine is very potent and should be taken with caution.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '有力的',
                     'example_translation' => '這種藥非常強效，應該謹慎服用。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '强效的，有力的',
                     'example_translation' => '这种药效力很强，应谨慎服用。',
                 ],
@@ -5198,11 +5198,11 @@ return [
             'pronunciation' => '/ˈɪntəməsi/',
             'example_sentence' => 'The intimacy between the two friends grew stronger over the years.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '親密感',
                     'example_translation' => '兩位朋友之間的親密感隨著歲月而越來越深厚。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '亲密，亲密感',
                     'example_translation' => '两位朋友之间的亲密感随着岁月流逝而日益深厚。',
                 ],
@@ -5218,11 +5218,11 @@ return [
             'pronunciation' => '/ˈɫʊɹ/',
             'example_sentence' => 'The bright lure attracted many fish to the hook.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '餌',
                     'example_translation' => '明亮的誘餌吸引了許多魚上鉤。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '诱饵，吸引力',
                     'example_translation' => '明亮的假饵吸引了许多鱼上钩。',
                 ],
@@ -5238,11 +5238,11 @@ return [
             'pronunciation' => '/kənˈvin/',
             'example_sentence' => 'The committee will convene next week to discuss the new plan.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '召開',
                     'example_translation' => '委員會將於下週開會討論新計劃。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '召开，召集',
                     'example_translation' => '委员会将于下周开会讨论新计划。',
                 ],
@@ -5260,11 +5260,11 @@ return [
             'pronunciation' => '/ˈpəŋktʃuəɫ/',
             'example_sentence' => 'She is always punctual for meetings.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '準時',
                     'example_translation' => '她開會總是很準時。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '准时的，守时的',
                     'example_translation' => '她开会总是很准时。',
                 ],
@@ -5280,11 +5280,11 @@ return [
             'pronunciation' => '/əˈbɹiviˌeɪt/',
             'example_sentence' => 'We usually abbreviate the word \'Doctor\' to \'Dr.\' in writing.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '縮寫',
                     'example_translation' => '在書寫中，我們通常將 \'Doctor\' 縮寫為 \'Dr.\'。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '缩写，缩短',
                     'example_translation' => '在书写中，我们通常将“Doctor”缩写为“Dr.”。',
                 ],
@@ -5300,11 +5300,11 @@ return [
             'pronunciation' => '/ɹɪˈfɹɛʃmənt/',
             'example_sentence' => 'A cold drink can refresh you on a hot day.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '茶點',
                     'example_translation' => '在炎熱的天氣裡，一杯冷飲可以讓你恢復精神。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '茶点，点心；恢复精力',
                     'example_translation' => '在炎热的天气里，一杯冷饮可以让你恢复精神。',
                 ],
@@ -5320,11 +5320,11 @@ return [
             'pronunciation' => '/ˈɫoʊnsəm/',
             'example_sentence' => 'The old man felt lonesome after his wife passed away.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '寂寞',
                     'example_translation' => '那位老人在妻子過世後感到孤寂。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '孤独的，寂寞的',
                     'example_translation' => '那位老人在妻子过世后感到孤独。',
                 ],
@@ -5340,11 +5340,11 @@ return [
             'pronunciation' => '/ˈstætʃɝ/',
             'example_sentence' => 'Despite his short stature, he became one of the greatest basketball players in history.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '身材',
                     'example_translation' => '儘管他身材矮小，他仍成為歷史上最偉大的籃球員之一。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '身材，身高；声望',
                     'example_translation' => '尽管他身材矮小，他仍成为历史上最伟大的篮球运动员之一。',
                 ],
@@ -5360,11 +5360,11 @@ return [
             'pronunciation' => '/məˈnɑtəni/',
             'example_sentence' => 'The monotony of his daily routine made him long for adventure.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '單調',
                     'example_translation' => '他日常生活的單調乏味讓他渴望冒險。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '单调，乏味',
                     'example_translation' => '他日常生活的单调乏味让他渴望冒险。',
                 ],
@@ -5380,11 +5380,11 @@ return [
             'pronunciation' => '/ˈdim/',
             'example_sentence' => 'The committee managed to deem the proposal suitable for funding.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '認為',
                     'example_translation' => '委員會認為該提案適合撥款。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '认为，视为',
                     'example_translation' => '委员会认为该提案适合给予资助。',
                 ],
@@ -5400,11 +5400,11 @@ return [
             'pronunciation' => '/ˈkɫaɪˌmæks/',
             'example_sentence' => 'The movie reached its exciting climax in the final few scenes.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '高潮',
                     'example_translation' => '這部電影在最後幾場戲中達到了令人興奮的高潮。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '高潮，顶点',
                     'example_translation' => '这部电影在最后几场戏中达到了令人兴奋的高潮。',
                 ],
@@ -5420,11 +5420,11 @@ return [
             'pronunciation' => '/əˈbɫaɪdʒ/',
             'example_sentence' => 'I would be happy to oblige your request for help.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '義務',
                     'example_translation' => '我很樂意滿足你的請求來提供幫助。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '效劳，帮忙；迫使',
                     'example_translation' => '我很乐意帮忙满足你的请求。',
                 ],
@@ -5440,11 +5440,11 @@ return [
             'pronunciation' => '/ˈnɑstɹɪɫ/',
             'example_sentence' => 'The dog\'s nostril twitched as it smelled the food.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '鼻孔',
                     'example_translation' => '那隻狗的鼻孔在聞到食物時抽動了一下。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '鼻孔',
                     'example_translation' => '那只狗闻到食物时鼻孔抽动了一下。',
                 ],
@@ -5462,11 +5462,11 @@ return [
             'pronunciation' => '/ˈdʒænətɝ/',
             'example_sentence' => 'The janitor mopped the floor every evening.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '看門人',
                     'example_translation' => '管理員每天晚上都會拖地。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '保洁员，看门人',
                     'example_translation' => '保洁员每天晚上都会拖地。',
                 ],
@@ -5482,11 +5482,11 @@ return [
             'pronunciation' => '/ˈskəɫptɝ/',
             'example_sentence' => 'The sculptor carved a beautiful statue from marble.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '雕塑家',
                     'example_translation' => '雕塑家用大理石雕刻了一座美麗的雕像。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '雕塑家，雕刻家',
                     'example_translation' => '雕塑家用大理石雕刻了一座美丽的雕像。',
                 ],
@@ -5502,11 +5502,11 @@ return [
             'pronunciation' => '/əˈsæsəˌneɪt/',
             'example_sentence' => 'There was a failed plot to assassinate the national leader.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '暗殺',
                     'example_translation' => '曾有過一起暗殺國家領導人的未遂陰謀。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '暗杀，刺杀',
                     'example_translation' => '曾有过一起暗杀国家领导人的未遂阴谋。',
                 ],
@@ -5522,11 +5522,11 @@ return [
             'pronunciation' => '/ˈkaʊntɝˌpɑɹt/',
             'example_sentence' => 'The minister met with his foreign counterpart early today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '對方',
                     'example_translation' => '部長今天一早會見了他的外國同行。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '职位相当的人，对应的人或物',
                     'example_translation' => '部长今天一大早就会见了外方对应官员。',
                 ],
@@ -5542,11 +5542,11 @@ return [
             'pronunciation' => '/ˌɹɛfɝˈɛndəm/',
             'example_sentence' => 'The government held a referendum to decide the issue.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '公投',
                     'example_translation' => '政府舉行了一場公投來決定這個議題。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '公民投票，公投',
                     'example_translation' => '政府举行了公民投票来决定这个问题。',
                 ],
@@ -5562,11 +5562,11 @@ return [
             'pronunciation' => '/ˈsɛɫɝi/',
             'example_sentence' => 'I like to add some fresh chopped celery to my vegetable soup.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '芹菜',
                     'example_translation' => '我喜歡在蔬菜湯裡加一些新鮮切碎的芹菜。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '芹菜',
                     'example_translation' => '我喜欢在蔬菜汤里加一些新鲜切碎的芹菜。',
                 ],
@@ -5582,11 +5582,11 @@ return [
             'pronunciation' => '/ˈsɫæŋ/',
             'example_sentence' => 'He used a lot of slang in his speech.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '俚語',
                     'example_translation' => '他在演講中使用了很多俚語。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '俚语',
                     'example_translation' => '他在演讲中使用了很多俚语。',
                 ],
@@ -5602,11 +5602,11 @@ return [
             'pronunciation' => '/ˈkəstəˌmɛɹi/',
             'example_sentence' => 'It is customary to exchange gifts during the traditional festival.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '習慣的',
                     'example_translation' => '節日期間交換禮物是習俗。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '习惯的，传统的',
                     'example_translation' => '在传统节日期间交换礼物是习俗。',
                 ],
@@ -5622,11 +5622,11 @@ return [
             'pronunciation' => '/əˈpɫɔd/',
             'example_sentence' => 'The audience began to applaud loudly after the performance.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '掌聲',
                     'example_translation' => '演出結束後，觀眾開始大聲鼓掌。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '鼓掌，赞许',
                     'example_translation' => '演出结束后，观众开始大声鼓掌。',
                 ],
@@ -5642,11 +5642,11 @@ return [
             'pronunciation' => '/ˈkɑŋkwɛst/',
             'example_sentence' => 'The history book discusses the conquest of the ancient empire.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '征服',
                     'example_translation' => '這本歷史書討論了對古代帝國的征服。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '征服，战胜',
                     'example_translation' => '这本历史书讨论了对古代帝国的征服。',
                 ],
@@ -5664,11 +5664,11 @@ return [
             'pronunciation' => '/ˈsutˌkeɪs/',
             'example_sentence' => 'I packed my suitcase the night before the trip.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '行李箱',
                     'example_translation' => '我在旅行前一晚整理好了我的行李箱。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '手提箱，行李箱',
                     'example_translation' => '我在旅行前一天晚上整理好了行李箱。',
                 ],
@@ -5684,11 +5684,11 @@ return [
             'pronunciation' => '/daɪˈvɝsəˌfaɪ/, /dɪˈvɝsəˌfaɪ/',
             'example_sentence' => 'The company plans to diversify its range of digital products.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '多樣化',
                     'example_translation' => '公司計劃使其數位產品系列多樣化。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '使多样化，从事多种经营',
                     'example_translation' => '公司计划使其数字产品系列多样化。',
                 ],
@@ -5704,11 +5704,11 @@ return [
             'pronunciation' => '/ˈdwɛɫɪŋ/',
             'example_sentence' => 'The ancient dwellings were built into the side of the rocky cliff.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '住宅',
                     'example_translation' => '古代居所是建在岩石懸崖邊上的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '住宅，住所',
                     'example_translation' => '古代住宅建造在悬崖峭壁边。',
                 ],
@@ -5724,11 +5724,11 @@ return [
             'pronunciation' => '/ˈdæzəɫ/',
             'example_sentence' => 'The bright lights of the city managed to dazzle the tourists.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '炫',
                     'example_translation' => '城市燦爛的燈光讓遊客們感到眩目。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '使眼花，使惊叹',
                     'example_translation' => '城市璀璨的灯光让游客们赞叹不已。',
                 ],
@@ -5744,11 +5744,11 @@ return [
             'pronunciation' => '/ɪkˈspaɪɹ/',
             'example_sentence' => 'My driver\'s license will expire next month.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '到期',
                     'example_translation' => '我的駕照下個月就要到期了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '到期，失效',
                     'example_translation' => '我的驾照下个月就要到期了。',
                 ],
@@ -5764,11 +5764,11 @@ return [
             'pronunciation' => '/ˌsaɪməɫˈteɪniəs/',
             'example_sentence' => 'The simultaneous release of the movie in multiple countries surprised everyone.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '同時',
                     'example_translation' => '這部電影在多個國家同時上映令所有人感到驚訝。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '同时的，同时发生的',
                     'example_translation' => '这部电影在多个国家同时上映，让所有人感到惊喜。',
                 ],
@@ -5784,11 +5784,11 @@ return [
             'pronunciation' => '/mɛnˈtæɫəti/, /mɛnˈtæɫɪti/',
             'example_sentence' => 'A winning mentality is essential for success in competitive sports.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '心理',
                     'example_translation' => '在競技運動中，致勝的心態對成功至關重要。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '心态，思想方式',
                     'example_translation' => '必胜的心态对于竞技体育的成功至关重要。',
                 ],
@@ -5804,11 +5804,11 @@ return [
             'pronunciation' => '/ˈdɹɛsɪŋ/',
             'example_sentence' => 'I like to add some fresh lemon dressing to my green salad.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '敷料',
                     'example_translation' => '我喜歡在綠色沙拉中加入一些新鮮的檸檬醬。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '调味料，沙拉酱',
                     'example_translation' => '我喜欢在蔬菜沙拉里加一些新鲜的柠檬沙拉酱。',
                 ],
@@ -5824,11 +5824,11 @@ return [
             'pronunciation' => '/ˌsupɪɹiˈɔɹɪti/',
             'example_sentence' => 'She always had a sense of superiority over her classmates.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '優勢',
                     'example_translation' => '她總是對同學有一種優越感。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '优越感，优势',
                     'example_translation' => '她总是对同学有一种优越感。',
                 ],
@@ -5844,11 +5844,11 @@ return [
             'pronunciation' => '/ˌvækˈsin/',
             'example_sentence' => 'The vaccine protects children from dangerous diseases.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '疫苗',
                     'example_translation' => '疫苗保護兒童免受危險疾病的侵害。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '疫苗',
                     'example_translation' => '疫苗保护儿童免受危险疾病的侵害。',
                 ],
@@ -5866,11 +5866,11 @@ return [
             'pronunciation' => '/əˈtɛndənt/',
             'example_sentence' => 'The flight attendant was very helpful during our journey.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '服務生',
                     'example_translation' => '飛機乘務員在我們的旅程中非常熱心。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '服务员，随从',
                     'example_translation' => '空乘人员在我们的旅途中提供了非常大的帮助。',
                 ],
@@ -5886,11 +5886,11 @@ return [
             'pronunciation' => '/ˈaɪˌsaɪt/',
             'example_sentence' => 'My eyesight has gotten worse over the past few years.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '視力',
                     'example_translation' => '我的視力在過去幾年裡變差了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '视力',
                     'example_translation' => '在过去几年里，我的视力变差了。',
                 ],
@@ -5906,11 +5906,11 @@ return [
             'pronunciation' => '/səbsˈkɹaɪb/',
             'example_sentence' => 'I subscribe to several magazines every year.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '訂閱',
                     'example_translation' => '我每年訂閱好幾本雜誌。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '订阅，定期订购',
                     'example_translation' => '我每年都会订阅几本杂志。',
                 ],
@@ -5926,11 +5926,11 @@ return [
             'pronunciation' => '/fɝˈtɪɫəti/, /fɝˈtɪɫɪti/',
             'example_sentence' => 'The soil\'s fertility made it perfect for growing crops.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '生育力',
                     'example_translation' => '土壤的肥沃度使其非常適合種植農作物。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '肥沃，生育能力',
                     'example_translation' => '土壤的肥沃度使其非常适合种植农作物。',
                 ],
@@ -5946,11 +5946,11 @@ return [
             'pronunciation' => '/ˈhaɪˌdʒin/',
             'example_sentence' => 'Good hygiene helps prevent the spread of diseases.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '衛生',
                     'example_translation' => '良好的衛生習慣有助於預防疾病的傳播。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '卫生，卫生学',
                     'example_translation' => '良好的卫生习惯有助于防止疾病的传播。',
                 ],
@@ -5966,11 +5966,11 @@ return [
             'pronunciation' => '/daɪˈvɝʒən/, /dɪˈvɝʒən/',
             'example_sentence' => 'The broad boulevard provided a welcome diversion for us today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '導流',
                     'example_translation' => '寬闊的大馬路今天為我們提供了一個受歡迎的消遣。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '消遣，转移',
                     'example_translation' => '宽阔的大街今天为我们提供了一个受欢迎的消遣场所。',
                 ],
@@ -5986,11 +5986,11 @@ return [
             'pronunciation' => '/ˌædəpˈteɪʃən/',
             'example_sentence' => 'The movie is a successful adaptation of a famous novel.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '適應',
                     'example_translation' => '這部電影是由一部著名小說成功改編的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '改编本，适应',
                     'example_translation' => '这部电影是由一部著名小说成功改编的。',
                 ],
@@ -6006,11 +6006,11 @@ return [
             'pronunciation' => '/ɹɪˈdʒɔɪs/',
             'example_sentence' => 'We rejoice at the good news.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '麾',
                     'example_translation' => '我們為這個好消息感到歡欣。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '欣喜，欢庆',
                     'example_translation' => '我们为这个好消息感到欢欣鼓舞。',
                 ],
@@ -6026,11 +6026,11 @@ return [
             'pronunciation' => '/ˈvɪɫən/',
             'example_sentence' => 'The villain in the story was defeated by the hero.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '惡棍',
                     'example_translation' => '故事中的壞人被英雄打敗了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '反派，恶棍',
                     'example_translation' => '故事中的反派被英雄击败了。',
                 ],
@@ -6046,11 +6046,11 @@ return [
             'pronunciation' => '/ˈsteɪʃəˌnɛɹi/',
             'example_sentence' => 'I bought some stationery for the new school year.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '靜止的',
                     'example_translation' => '我為新學年買了一些文具。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '文具，信纸',
                     'example_translation' => '我为新学期买了一些文具。',
                 ],
@@ -6068,11 +6068,11 @@ return [
             'pronunciation' => '/səkˈsɛsɪv/',
             'example_sentence' => 'The team won three successive championships.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '連續',
                     'example_translation' => '該隊贏得了三次連續的冠軍。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '连续的；接连的',
                     'example_translation' => '该队赢得了三次连续的冠军。',
                 ],
@@ -6088,11 +6088,11 @@ return [
             'pronunciation' => '/ˈʃəfəɫ/',
             'example_sentence' => 'She decided to shuffle the cards before dealing them out.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '隨機播放',
                     'example_translation' => '她決定在發牌前先洗牌。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '洗牌；拖脚行走',
                     'example_translation' => '她决定在发牌前先洗牌。',
                 ],
@@ -6108,11 +6108,11 @@ return [
             'pronunciation' => '/ˈmɑɹdʒənəɫ/',
             'example_sentence' => 'The marginal cost of producing one more unit is very low.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '邊緣',
                     'example_translation' => '生產多一個單位的邊際成本非常低。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '微小的；边际的',
                     'example_translation' => '生产多一个单位的边际成本非常低。',
                 ],
@@ -6128,11 +6128,11 @@ return [
             'pronunciation' => '/dɪˈsɛnt/',
             'example_sentence' => 'There was a lot of dissent among the members of the board today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '異議',
                     'example_translation' => '董事會成員之間今天有很多不同意見。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '异议；反对意见',
                     'example_translation' => '今天董事会成员之间存在许多不同意见。',
                 ],
@@ -6148,11 +6148,11 @@ return [
             'pronunciation' => '/ˈbɹɔdən/',
             'example_sentence' => 'Traveling is a great way to broaden your mind and experience.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '擴大',
                     'example_translation' => '旅行是開闊眼界和增加經驗的好方法。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '扩大；开阔',
                     'example_translation' => '旅行是开阔眼界和丰富经验的好方法。',
                 ],
@@ -6168,11 +6168,11 @@ return [
             'pronunciation' => '/ækˈsɛsɝi/',
             'example_sentence' => 'She bought a beautiful silk scarf as an accessory for her dress.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '配件',
                     'example_translation' => '她買了一條漂亮的絲巾作為連衣裙的配飾。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '配饰；附件',
                     'example_translation' => '她买了一条漂亮的丝巾作为连衣裙的配饰。',
                 ],
@@ -6188,11 +6188,11 @@ return [
             'pronunciation' => '/ˈpɛɹəɫ/',
             'example_sentence' => 'The hikers were in great peril during the storm.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '危險',
                     'example_translation' => '登山者在暴風雨中處於極大的危險之中。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '危险；极度危险',
                     'example_translation' => '登山者在暴风雨中处于极大的危险之中。',
                 ],
@@ -6208,11 +6208,11 @@ return [
             'pronunciation' => '/ˈsɪmətɹi/',
             'example_sentence' => 'The building\'s symmetry made it look balanced and elegant.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '對稱',
                     'example_translation' => '這棟建築的對稱性使它看起來平衡而優雅。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '对称；对称性',
                     'example_translation' => '这栋建筑的对称性使它看起来平衡而优雅。',
                 ],
@@ -6228,11 +6228,11 @@ return [
             'pronunciation' => '/ˈaʊˈtɹaɪt/',
             'example_sentence' => 'She won the competition outright.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '徹底的',
                     'example_translation' => '她徹底贏得了比賽。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '彻底地；完全的',
                     'example_translation' => '她彻底赢得了比赛。',
                 ],
@@ -6248,11 +6248,11 @@ return [
             'pronunciation' => '/ˈsɝmən/',
             'example_sentence' => 'The pastor delivered a powerful sermon on forgiveness.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '講道',
                     'example_translation' => '牧師發表了一篇關於寬恕的有力講道。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '讲道；布道',
                     'example_translation' => '牧师发表了一篇关于宽恕的有力讲道。',
                 ],
@@ -6270,11 +6270,11 @@ return [
             'pronunciation' => '/ˌsænəˈteɪʃən/, /ˌsænɪˈteɪʃən/',
             'example_sentence' => 'Good sanitation is essential for preventing the spread of disease.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '衛生',
                     'example_translation' => '良好的衛生設施對於防止疾病傳播至關重要。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '卫生；卫生设施',
                     'example_translation' => '良好的卫生设施对于防止疾病传播至关重要。',
                 ],
@@ -6290,11 +6290,11 @@ return [
             'pronunciation' => '/ˈæɫəˌɡeɪtɝ/',
             'example_sentence' => 'We saw a large alligator swimming in the river in Florida.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '鱷魚',
                     'example_translation' => '我們在佛羅里達看見一條大鱷魚在河裡游泳。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '短吻鳄',
                     'example_translation' => '我们在佛罗里达看到一条大鳄鱼在河里游泳。',
                 ],
@@ -6310,11 +6310,11 @@ return [
             'pronunciation' => '/ˈɡɹeɪz/',
             'example_sentence' => 'The cattle graze peacefully in the meadow.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '輕擦',
                     'example_translation' => '牛群在草地上安靜地吃草。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '吃草；擦伤',
                     'example_translation' => '牛群在草地上安静地吃草。',
                 ],
@@ -6330,11 +6330,11 @@ return [
             'pronunciation' => '/kənˈsaɪs/',
             'example_sentence' => 'Please keep your report concise and focus on the main points.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '簡潔的',
                     'example_translation' => '請保持報告簡潔，並專注於要點。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '简洁的；简明扼要的',
                     'example_translation' => '请保持报告简洁，并专注于要点。',
                 ],
@@ -6350,11 +6350,11 @@ return [
             'pronunciation' => '/iˈvoʊk/, /ɪˈvoʊk/',
             'example_sentence' => 'The painting evokes memories of my childhood.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '喚起',
                     'example_translation' => '這幅畫喚起了我童年的回憶。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '唤起；引起',
                     'example_translation' => '这幅画唤起了我童年的回忆。',
                 ],
@@ -6370,11 +6370,11 @@ return [
             'pronunciation' => '/hɝˈæsmənt/',
             'example_sentence' => 'She filed a complaint about workplace harassment.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '騷擾',
                     'example_translation' => '她提出了一項關於職場騷擾的投訴。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '骚扰',
                     'example_translation' => '她提出了一项关于职场骚扰的投诉。',
                 ],
@@ -6390,11 +6390,11 @@ return [
             'pronunciation' => '/ˈɪmənənt/',
             'example_sentence' => 'The storm is imminent, so we should stay indoors.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '迫在眉睫的',
                     'example_translation' => '暴風雨即將來臨，所以我們應該待在室內。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '迫在眉睫的；即将来临的',
                     'example_translation' => '暴风雨即将来临，所以我们应该待在室内。',
                 ],
@@ -6410,11 +6410,11 @@ return [
             'pronunciation' => '/juˈtɛnsəɫ/',
             'example_sentence' => 'Please hand me a cooking utensil from the drawer.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '用具',
                     'example_translation' => '請從抽屜裡遞給我一個烹飪用具。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '用具；器具',
                     'example_translation' => '请从抽屉里递给我一个烹饪用具。',
                 ],
@@ -6430,11 +6430,11 @@ return [
             'pronunciation' => '/ˈɔɹdɝɫi/',
             'example_sentence' => 'The nurse kept the ward clean and orderly.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '秩序',
                     'example_translation' => '護士保持病房乾淨整齊。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '整洁的；有秩序的',
                     'example_translation' => '护士保持病房干净整洁。',
                 ],
@@ -6450,11 +6450,11 @@ return [
             'pronunciation' => '/ðɛˈɹæftɝ/',
             'example_sentence' => 'He graduated in 2010 and thereafter worked as a teacher.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '此後',
                     'example_translation' => '他在2010年畢業，此後擔任教師。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '此后；以后',
                     'example_translation' => '他在2010年毕业，此后担任教师。',
                 ],
@@ -6472,11 +6472,11 @@ return [
             'pronunciation' => '/ˈhɛdˌfoʊnz/',
             'example_sentence' => 'I left my headphones on the desk.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '耳機',
                     'example_translation' => '我把耳機留在桌上了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '耳机',
                     'example_translation' => '我把耳机留在桌上了。',
                 ],
@@ -6492,11 +6492,11 @@ return [
             'pronunciation' => '/ˈʃeɪvɝ/',
             'example_sentence' => 'He bought a new electric shaver for his trip.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '刮鬍刀',
                     'example_translation' => '他為旅行買了一個新的電動刮鬍刀。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '剃须刀',
                     'example_translation' => '他为了旅行买了一把新的电动剃须刀。',
                 ],
@@ -6512,11 +6512,11 @@ return [
             'pronunciation' => '/ˈfɔɫtɝ/',
             'example_sentence' => 'She began to falter as she climbed the steep mountain path.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '動搖',
                     'example_translation' => '她在攀爬陡峭的山路時開始步履蹣跚。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '动摇，蹒跚，衰退',
                     'example_translation' => '她在攀登陡峭的山路时开始步履蹒跚。',
                 ],
@@ -6532,11 +6532,11 @@ return [
             'pronunciation' => '/ˈɹɛɫɪk/',
             'example_sentence' => 'The ancient relic was displayed in the museum.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '遺跡',
                     'example_translation' => '這件古老的遺物被展示在博物館裡。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '遗物，遗迹',
                     'example_translation' => '这件古老的遗物展示在博物馆里。',
                 ],
@@ -6552,11 +6552,11 @@ return [
             'pronunciation' => '/ɹiˈɫaɪənt/, /ɹɪˈɫaɪənt/',
             'example_sentence' => 'The company is heavily reliant on a single supplier for its materials.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '依賴的',
                     'example_translation' => '這家公司在材料方面嚴重依賴單一供應商。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '依赖的，依靠的',
                     'example_translation' => '这家公司在原材料方面严重依赖单一供应商。',
                 ],
@@ -6572,11 +6572,11 @@ return [
             'pronunciation' => '/səkˈsɛʃən/',
             'example_sentence' => 'A succession of storms hit the coast last week.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '演替',
                     'example_translation' => '上週一連串的暴風雨襲擊了海岸。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '连续，一连串，继承',
                     'example_translation' => '上周一连串的暴风雨袭击了海岸。',
                 ],
@@ -6592,11 +6592,11 @@ return [
             'pronunciation' => '/ˈæŋkɝ/',
             'example_sentence' => 'The sailors dropped the heavy anchor to stop the ship.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '錨',
                     'example_translation' => '水手們放下沉重的錨來停船。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '锚；抛锚，固定',
                     'example_translation' => '水手们放下沉重的锚以使船停住。',
                 ],
@@ -6612,11 +6612,11 @@ return [
             'pronunciation' => '/ˈʃɔɹtˈsaɪtɪd/',
             'example_sentence' => 'It would be shortsighted to ignore the long-term effects of climate change.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '短視的',
                     'example_translation' => '忽視氣候變遷的長期影響是目光短淺的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '短视的，目光短浅的',
                     'example_translation' => '忽视气候变化的长期影响是目光短浅的。',
                 ],
@@ -6632,11 +6632,11 @@ return [
             'pronunciation' => '/ˌtɹəsˈti/',
             'example_sentence' => 'The trustee managed the fund on behalf of the beneficiaries.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '受託人',
                     'example_translation' => '受託人代表受益人管理該基金。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '受托人，理事',
                     'example_translation' => '受托人代表受益人管理该基金。',
                 ],
@@ -6652,11 +6652,11 @@ return [
             'pronunciation' => '/ˈmɔɹnfəɫ/',
             'example_sentence' => 'She played a mournful melody on the violin.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '悲哀',
                     'example_translation' => '她用小提琴演奏了一首哀傷的旋律。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '悲伤的，哀怨的',
                     'example_translation' => '她用小提琴演奏了一曲哀伤的旋律。',
                 ],
@@ -6674,11 +6674,11 @@ return [
             'pronunciation' => '/ˈtɛnənt/',
             'example_sentence' => 'The tenant signed a one-year lease for the apartment.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '租戶',
                     'example_translation' => '租戶簽了一份為期一年的公寓租約。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '租户，房客',
                     'example_translation' => '租户签署了一份为期一年的公寓租赁合同。',
                 ],
@@ -6694,11 +6694,11 @@ return [
             'pronunciation' => '/ˈtɛkˌstaɪɫ/',
             'example_sentence' => 'The textile industry has a long history in this region.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '紡織品',
                     'example_translation' => '這個地區的紡織業有著悠久的歷史。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '纺织品；纺织的',
                     'example_translation' => '纺织业在该地区有着悠久的历史。',
                 ],
@@ -6714,11 +6714,11 @@ return [
             'pronunciation' => '/ˈɫaɪtən/',
             'example_sentence' => 'We can lighten the load by removing unnecessary items.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '減輕',
                     'example_translation' => '我們可以透過移除不必要的物品來減輕負擔。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '减轻，变亮',
                     'example_translation' => '我们可以通过移除不必要的物品来减轻负担。',
                 ],
@@ -6734,11 +6734,11 @@ return [
             'pronunciation' => '/ˈbʊzəm/',
             'example_sentence' => 'She held the small child close to her bosom to keep him warm.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '懷',
                     'example_translation' => '她把小孩緊貼在胸前保暖。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '胸怀，怀抱',
                     'example_translation' => '她把小孩紧抱在怀里给他取暖。',
                 ],
@@ -6754,11 +6754,11 @@ return [
             'pronunciation' => '/ˈsɛɫsiəs/',
             'example_sentence' => 'The temperature dropped to five degrees Celsius during the night.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '攝氏度',
                     'example_translation' => '夜間氣溫降到了攝氏五度。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '摄氏度',
                     'example_translation' => '夜间气温降到了摄氏五度。',
                 ],
@@ -6774,11 +6774,11 @@ return [
             'pronunciation' => '/ˈbɫeɪz/',
             'example_sentence' => 'The firemen worked hard to put out the sudden large blaze.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '火焰',
                     'example_translation' => '消防員努力撲滅了那場突如其來的大火。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '大火，烈火；熊熊燃烧',
                     'example_translation' => '消防员努力扑灭了那场突如其来的大火。',
                 ],
@@ -6794,11 +6794,11 @@ return [
             'pronunciation' => '/əˈfɝm/',
             'example_sentence' => 'The witness was asked to affirm the truth of her statement.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '確認',
                     'example_translation' => '證人被要求確認其陳述的真實性。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '确认，断言，申明',
                     'example_translation' => '证人被要求确认其证言的真实性。',
                 ],
@@ -6814,11 +6814,11 @@ return [
             'pronunciation' => '/ˈoʊdɝ/',
             'example_sentence' => 'The odor from the garbage was terrible.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '氣味',
                     'example_translation' => '垃圾發出的氣味很可怕。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '气味，难闻的气味',
                     'example_translation' => '垃圾发出的气味难闻极了。',
                 ],
@@ -6834,11 +6834,11 @@ return [
             'pronunciation' => '/ˈɹæʃ/',
             'example_sentence' => 'He made a rash decision that he later regretted.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '皮疹',
                     'example_translation' => '他做了一個草率的決定，後來感到後悔。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '轻率的，鲁莽的；皮疹',
                     'example_translation' => '他做了一个草率的决定，后来感到后悔。',
                 ],
@@ -6854,11 +6854,11 @@ return [
             'pronunciation' => '/ˈhɔnt/',
             'example_sentence' => 'Some people believe that ghosts haunt the old house.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '出沒',
                     'example_translation' => '有些人相信這棟老房子有鬼出沒。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '常出没于，萦绕',
                     'example_translation' => '有些人相信这栋老房子有鬼魂出没。',
                 ],
@@ -6876,11 +6876,11 @@ return [
             'pronunciation' => '/ˈpækət/, /ˈpækɪt/',
             'example_sentence' => 'I received a packet in the mail today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '包包',
                     'example_translation' => '我今天收到了一個郵件包裹。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '小包；包裹',
                     'example_translation' => '我今天收到了一个邮寄包裹。',
                 ],
@@ -6896,11 +6896,11 @@ return [
             'pronunciation' => '/ˌɪmˈpɫɪsət/',
             'example_sentence' => 'There was an implicit understanding between them that no one would mention the incident.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '隱含的',
                     'example_translation' => '他們之間有一個心照不宣的默契，沒有人會提起那件事。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '暗含的；默契的',
                     'example_translation' => '他们之间有一种默契，谁也不会提及那件事。',
                 ],
@@ -6916,11 +6916,11 @@ return [
             'pronunciation' => '/ˈtɹɛʒɝi/',
             'example_sentence' => 'The national treasury is responsible for management.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '國庫',
                     'example_translation' => '國家財政部負責理財。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '国库；财政部',
                     'example_translation' => '国家财政部负责进行管理。',
                 ],
@@ -6936,11 +6936,11 @@ return [
             'pronunciation' => '/ˈəndɝˌpæs/',
             'example_sentence' => 'The car drove through the underpass to avoid the busy intersection.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '地下通道',
                     'example_translation' => '那輛車開過地下道以避開繁忙的十字路口。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '地下通道',
                     'example_translation' => '汽车驶过地下通道以避开拥挤的交叉路口。',
                 ],
@@ -6956,11 +6956,11 @@ return [
             'pronunciation' => '/səˈɫut/',
             'example_sentence' => 'The soldiers gave a salute to the general.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '禮炮',
                     'example_translation' => '士兵們向將軍敬禮。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '敬礼；致敬',
                     'example_translation' => '士兵们向将军敬礼。',
                 ],
@@ -6976,11 +6976,11 @@ return [
             'pronunciation' => '/əˈteɪnmənt/',
             'example_sentence' => 'Success requires hard work and the attainment of goals.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '達成',
                     'example_translation' => '成功需要努力工作並實現目標。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '达成；获得',
                     'example_translation' => '成功需要努力工作以及目标的实现。',
                 ],
@@ -6996,11 +6996,11 @@ return [
             'pronunciation' => '/ˈædmɝəɫ/',
             'example_sentence' => 'The admiral commanded the entire national fleet during the war.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '上將',
                     'example_translation' => '海軍上將在戰爭期間指揮著整個國家艦隊。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '海军上将；提督',
                     'example_translation' => '海军上将在战争期间指挥着整个国家舰队。',
                 ],
@@ -7016,11 +7016,11 @@ return [
             'pronunciation' => '/kæˈʃɪɹ/',
             'example_sentence' => 'The cashier at the supermarket was very helpful and friendly.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '出納員',
                     'example_translation' => '超市的收銀員非常熱心且友好。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '收银员；出纳员',
                     'example_translation' => '超市的收银员非常热情且友好。',
                 ],
@@ -7036,11 +7036,11 @@ return [
             'pronunciation' => '/ˈsɫæʃ/',
             'example_sentence' => 'He slashed the price of the product in half.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '削減',
                     'example_translation' => '他將產品的價格砍了一半。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '大幅削减；砍',
                     'example_translation' => '他把产品价格削减了一半。',
                 ],
@@ -7056,11 +7056,11 @@ return [
             'pronunciation' => '/ˌɔɹiˈɛnəɫ/, /ˌɔɹiˈɛntəɫ/',
             'example_sentence' => 'The museum has a large collection of oriental art.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '東方的',
                     'example_translation' => '這座博物館收藏了大量的東方藝術品。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '东方的',
                     'example_translation' => '这家博物馆收藏了大量东方艺术品。',
                 ],
@@ -7078,11 +7078,11 @@ return [
             'pronunciation' => '/bɪˈfɔɹˌhænd/',
             'example_sentence' => 'You should book your tickets beforehand to ensure a seat.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '預先',
                     'example_translation' => '你應該事先訂票以確保有座位。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '事先；预先',
                     'example_translation' => '你应该事先订票以确保有座位。',
                 ],
@@ -7098,11 +7098,11 @@ return [
             'pronunciation' => '/ˌɪnˈsɪstəns/',
             'example_sentence' => 'His insistence on perfection made the project take longer than expected.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '堅持',
                     'example_translation' => '他對完美的堅持使這個專案花了比預期更長的時間。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '坚持；坚决要求',
                     'example_translation' => '他对完美的坚持使得这个项目所花的时间比预期要长。',
                 ],
@@ -7118,11 +7118,11 @@ return [
             'pronunciation' => '/ˈbɹəðɝˌhʊd/',
             'example_sentence' => 'The organization promotes a sense of global brotherhood and peace.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '兄弟情誼',
                     'example_translation' => '該機構致力於促進全球兄弟情誼與和平。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '兄弟情谊；手足之情',
                     'example_translation' => '该组织致力于促进全球手足情谊与和平。',
                 ],
@@ -7138,11 +7138,11 @@ return [
             'pronunciation' => '/ˈfjuz/',
             'example_sentence' => 'The fuse blew because the circuit was overloaded.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '保險絲',
                     'example_translation' => '保險絲因為電路過載而燒斷了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '保险丝',
                     'example_translation' => '保险丝因为电路过载而烧断了。',
                 ],
@@ -7158,11 +7158,11 @@ return [
             'pronunciation' => '/ˈsteɪpəɫ/',
             'example_sentence' => 'Rice is a staple food in many Asian countries.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '主食',
                     'example_translation' => '米飯是許多亞洲國家的主食。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '主食；主要部分',
                     'example_translation' => '大米是许多亚洲国家的主食。',
                 ],
@@ -7178,11 +7178,11 @@ return [
             'pronunciation' => '/ˈfɔɹtɪˌfaɪ/',
             'example_sentence' => 'They decided to fortify the castle walls before the enemy arrived.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '強化',
                     'example_translation' => '他們決定在敵人到達之前加固城堡的牆壁。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '加固；增强',
                     'example_translation' => '他们决定在敌人到达之前加固城堡的城墙。',
                 ],
@@ -7198,11 +7198,11 @@ return [
             'pronunciation' => '/əˈspaɪɹ/',
             'example_sentence' => 'Many young people aspire to become successful entrepreneurs.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '渴望',
                     'example_translation' => '許多年輕人渴望成為成功的企業家。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '渴望；立志',
                     'example_translation' => '许多年轻人渴望成为成功的企业家。',
                 ],
@@ -7218,11 +7218,11 @@ return [
             'pronunciation' => '/ˈɫɛdʒəˌsɫeɪtɝ/',
             'example_sentence' => 'The legislator proposed a new bill to improve public education.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '立法者',
                     'example_translation' => '這位立法者提出了一項改善公共教育的新法案。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '立法者；议员',
                     'example_translation' => '该立法者提出了一项改善公共教育的新法案。',
                 ],
@@ -7238,11 +7238,11 @@ return [
             'pronunciation' => '/ˈkəɫtəˌveɪt/',
             'example_sentence' => 'The farmer is busy trying to cultivate a new type of rice today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '培育',
                     'example_translation' => '農民今天正忙著培育一種新型的大米。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '培育；耕作',
                     'example_translation' => '农民今天正忙着培育一种新型水稻。',
                 ],
@@ -7258,11 +7258,11 @@ return [
             'pronunciation' => '/ɹiˈzaɪd/, /ɹɪˈzaɪd/',
             'example_sentence' => 'They reside in a small village near the mountains.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '居住',
                     'example_translation' => '他們居住在山邊的一個小村莊裡。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '居住；定居',
                     'example_translation' => '他们居住在靠近大山的一个小村庄里。',
                 ],
@@ -7280,11 +7280,11 @@ return [
             'pronunciation' => '/ˈoʊvɝˌɫæp/',
             'example_sentence' => 'There is some overlap between the two projects.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '重疊',
                     'example_translation' => '這兩個專案之間有一些重疊。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '重叠；交叉',
                     'example_translation' => '这两个项目之间有一些重叠。',
                 ],
@@ -7300,11 +7300,11 @@ return [
             'pronunciation' => '/ˈæzmə/',
             'example_sentence' => 'She has suffered from asthma since she was a little child.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '氣喘',
                     'example_translation' => '她從小就患有哮喘。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '哮喘',
                     'example_translation' => '她从小就患有哮喘。',
                 ],
@@ -7320,11 +7320,11 @@ return [
             'pronunciation' => '/ˈmjuz/',
             'example_sentence' => 'The artist found her muse in the beauty of nature.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '沉思',
                     'example_translation' => '這位藝術家在大自然的美景中找到了她的靈感來源。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '灵感源泉；缪斯',
                     'example_translation' => '这位艺术家在大自然的美景中找到了她的灵感源泉。',
                 ],
@@ -7340,11 +7340,11 @@ return [
             'pronunciation' => '/ˈmænjəsˌkɹɪpt/',
             'example_sentence' => 'The author submitted her manuscript to the publisher.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '稿',
                     'example_translation' => '作者將她的手稿提交給出版社。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '手稿；原稿',
                     'example_translation' => '作者将她的手稿提交给了出版社。',
                 ],
@@ -7360,11 +7360,11 @@ return [
             'pronunciation' => '/voʊˈkeɪʃən/',
             'example_sentence' => 'Teaching has always been her true vocation.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '職業',
                     'example_translation' => '教書一直是她真正的志業。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '职业；天职；使命',
                     'example_translation' => '教学一直是她真正的天职。',
                 ],
@@ -7380,11 +7380,11 @@ return [
             'pronunciation' => '/ˈbɔɪˌkɑt/',
             'example_sentence' => 'Many people decided to boycott the products of the company.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '聯合抵制',
                     'example_translation' => '許多人決定抵制該公司的產品。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '联合抵制；拒绝参加',
                     'example_translation' => '许多人决定抵制该公司的产品。',
                 ],
@@ -7400,11 +7400,11 @@ return [
             'pronunciation' => '/ˈɔɹɡəˌnaɪzɝ/',
             'example_sentence' => 'She bought a desk organizer to keep her supplies neat.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '主辦單位',
                     'example_translation' => '她買了一個桌面收納盒來保持文具整齊。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '整理盒；收纳盒；组织者',
                     'example_translation' => '她买了一个桌面收纳盒来保持文具整洁。',
                 ],
@@ -7420,11 +7420,11 @@ return [
             'pronunciation' => '/ˈvɝdʒɪn/',
             'example_sentence' => 'She is a virgin who has never been in a relationship.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '處女',
                     'example_translation' => '她是一個從未談過戀愛的處女。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '处女；未经开发的',
                     'example_translation' => '她是一个从未谈过恋爱的处女。',
                 ],
@@ -7440,11 +7440,11 @@ return [
             'pronunciation' => '/ˈɹɪŋkəɫ/',
             'example_sentence' => 'She noticed a wrinkle on her shirt before the meeting.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '皺紋',
                     'example_translation' => '她在會議前注意到襯衫上有一道皺摺。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '褶皱；皱纹',
                     'example_translation' => '她在开会前注意到衬衫上有一道褶皱。',
                 ],
@@ -7460,11 +7460,11 @@ return [
             'pronunciation' => '/ˈsɑvɹən/',
             'example_sentence' => 'Every sovereign nation has the right to govern itself.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '主權',
                     'example_translation' => '每個主權國家都有權自我治理。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '主权的；拥有主权的',
                     'example_translation' => '每个主权国家都有自我管理的权利。',
                 ],
@@ -7482,11 +7482,11 @@ return [
             'pronunciation' => '/ˈhɑˈspɪtəbəɫ/',
             'example_sentence' => 'The local people were very friendly and hospitable.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '好客',
                     'example_translation' => '當地人非常友好且好客。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '好客的；殷勤的',
                     'example_translation' => '当地人非常友好且好客。',
                 ],
@@ -7502,11 +7502,11 @@ return [
             'pronunciation' => '/pɝˈsɪstənt/',
             'example_sentence' => 'She made a persistent effort to improve her skills.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '執著的',
                     'example_translation' => '她持續不斷地努力提升自己的技能。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '坚持不懈的；持续的',
                     'example_translation' => '她做出了坚持不懈的努力来提升自己的技能。',
                 ],
@@ -7522,11 +7522,11 @@ return [
             'pronunciation' => '/ˈmeɪpəɫ/',
             'example_sentence' => 'The leaves of the maple tree turn bright red in the autumn.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '楓',
                     'example_translation' => '楓樹的葉子在秋天會變成鮮紅色。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '枫树；枫木',
                     'example_translation' => '枫树的叶子在秋天会变成鲜红色。',
                 ],
@@ -7542,11 +7542,11 @@ return [
             'pronunciation' => '/ˈmɛdəˌteɪt/',
             'example_sentence' => 'She likes to meditate every morning before work.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '幽思',
                     'example_translation' => '她喜歡每天早上上班前冥想。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '冥想；沉思',
                     'example_translation' => '她喜欢每天早上上班前冥想。',
                 ],
@@ -7562,11 +7562,11 @@ return [
             'pronunciation' => '/ˈmɑnstɹəs/',
             'example_sentence' => 'The castle was guarded by a monstrous dragon.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '滔天',
                     'example_translation' => '那座城堡由一條巨大的龍守衛著。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '巨大的；怪异的',
                     'example_translation' => '那座城堡由一条巨大的巨龙守卫着。',
                 ],
@@ -7582,11 +7582,11 @@ return [
             'pronunciation' => '/səˈspɛnʃən/',
             'example_sentence' => 'The bridge\'s suspension cables swayed gently in the wind.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '暫停',
                     'example_translation' => '橋的懸吊鋼纜在風中輕輕搖晃。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '悬挂；暂停',
                     'example_translation' => '桥的悬索在风中轻轻摇晃。',
                 ],
@@ -7602,11 +7602,11 @@ return [
             'pronunciation' => '/ˌɪntəˈneɪʃən/',
             'example_sentence' => 'Her rising intonation at the end of the sentence made it sound like a question.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '語調',
                     'example_translation' => '她在句尾上揚的語調讓那句話聽起來像是個問題。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '语调；声调',
                     'example_translation' => '她在句尾上扬的语调让那句话听起来像是一个疑问句。',
                 ],
@@ -7622,11 +7622,11 @@ return [
             'pronunciation' => '/ˌæbɝˈɪdʒənəɫ/',
             'example_sentence' => 'The museum has a large collection of aboriginal art and tools.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '原住民',
                     'example_translation' => '博物館收藏了大量的原住民藝術品和工具。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '土著的；原住民的',
                     'example_translation' => '博物馆收藏了大量的原住民艺术品和工具。',
                 ],
@@ -7642,11 +7642,11 @@ return [
             'pronunciation' => '/ɪˈkweɪt/',
             'example_sentence' => 'You should not equate money with happiness.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '等同',
                     'example_translation' => '你不應該把金錢與幸福畫上等號。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '等同；把…相提并论',
                     'example_translation' => '你不应该把金钱与幸福画上等号。',
                 ],
@@ -7662,11 +7662,11 @@ return [
             'pronunciation' => '/ˈpiˌkɑk/',
             'example_sentence' => 'The peacock spread its beautiful tail feathers in the garden.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '孔雀',
                     'example_translation' => '孔雀在花園裡展開了牠美麗的尾羽。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '孔雀',
                     'example_translation' => '孔雀在花园里展开了它美丽的尾羽。',
                 ],
@@ -7684,11 +7684,11 @@ return [
             'pronunciation' => '/ˈtɹɑpɪk/',
             'example_sentence' => 'The ship crossed the tropic on its way south.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '熱帶',
                     'example_translation' => '這艘船在南行途中穿越了回歸線。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '热带；回归线',
                     'example_translation' => '这艘船在向南航行的途中穿过了回归线。',
                 ],
@@ -7704,11 +7704,11 @@ return [
             'pronunciation' => '/kənˈdɛns/',
             'example_sentence' => 'The steam began to condense into water droplets on the window.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '凝結',
                     'example_translation' => '蒸汽開始在窗戶上凝結成水滴。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '凝结；浓缩',
                     'example_translation' => '水蒸气开始在窗户上凝结成水滴。',
                 ],
@@ -7724,11 +7724,11 @@ return [
             'pronunciation' => '/ˌkɑnʃiˈɛnʃəs/',
             'example_sentence' => 'She is a conscientious student who always does her homework.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '盡責的',
                     'example_translation' => '她是一個認真的學生，總是做作業。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '认真负责的；尽职尽责的',
                     'example_translation' => '她是一个认真负责的学生，总是按时做作业。',
                 ],
@@ -7744,11 +7744,11 @@ return [
             'pronunciation' => '/ˈvɪɡɝ/',
             'example_sentence' => 'She tackled the project with great vigor.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '活力',
                     'example_translation' => '她以極大的活力投入這個專案。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '活力；精力',
                     'example_translation' => '她以极大的活力投入到这个项目中。',
                 ],
@@ -7764,11 +7764,11 @@ return [
             'pronunciation' => '/ˈfjum/',
             'example_sentence' => 'She was fuming after reading the unfair review.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '煙',
                     'example_translation' => '她在讀完那篇不公平的評論後氣得冒煙。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '发怒；冒烟',
                     'example_translation' => '读完那篇不公正的评论后，她气得冒火。',
                 ],
@@ -7784,11 +7784,11 @@ return [
             'pronunciation' => '/ˌɪnˈdɪfɝəns/, /ˌɪnˈdɪfɹəns/',
             'example_sentence' => 'His indifference to the problem made everything worse.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '漠不關心',
                     'example_translation' => '他對這個問題的漠不關心使一切變得更糟。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '漠不关心；冷漠',
                     'example_translation' => '他对这个问题的漠不关心使一切变得更糟糕。',
                 ],
@@ -7804,11 +7804,11 @@ return [
             'pronunciation' => '/ˈdʒæzmən/, /ˈdʒæzmɪn/',
             'example_sentence' => 'The jasmine in the garden smells very sweet.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '茉莉花',
                     'example_translation' => '花園裡的茉莉花聞起來很香。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '茉莉花',
                     'example_translation' => '花园里的茉莉花闻起来非常香甜。',
                 ],
@@ -7824,11 +7824,11 @@ return [
             'pronunciation' => '/ˈkætəˌpɪɫɝ/, /ˈkætɝˌpɪɫɝ/',
             'example_sentence' => 'The little girl was watching a green caterpillar on a leaf today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '毛蟲',
                     'example_translation' => '小女孩今天正在看葉子上的一隻綠色毛毛蟲。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '毛毛虫；幼虫',
                     'example_translation' => '小女孩今天一直在看着树叶上的一条绿色的毛毛虫。',
                 ],
@@ -7844,11 +7844,11 @@ return [
             'pronunciation' => '/oʊˈeɪsɪs/',
             'example_sentence' => 'The desert travelers finally found an oasis with fresh water.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '綠洲',
                     'example_translation' => '沙漠旅行者終於找到了一片有淡水的綠洲。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '绿洲',
                     'example_translation' => '沙漠中的旅行者们终于找到了一片有淡水的绿洲。',
                 ],
@@ -7864,11 +7864,11 @@ return [
             'pronunciation' => '/ˌɪnˈvɛɹiəbɫi/',
             'example_sentence' => 'She invariably arrives early to every meeting.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '總是',
                     'example_translation' => '她總是每次開會都提早到。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '总是；不变地',
                     'example_translation' => '每次开会她总是提早到达。',
                 ],
@@ -7886,11 +7886,11 @@ return [
             'pronunciation' => '/ˈhaɪtən/',
             'example_sentence' => 'The bright lights heighten the excitement of the festival.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '增高',
                     'example_translation' => '明亮的燈光增強了節慶的興奮感。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '提高；增强',
                     'example_translation' => '明亮的灯光增强了节日的兴奋感。',
                 ],
@@ -7906,11 +7906,11 @@ return [
             'pronunciation' => '/pɝˈsɪstəns/',
             'example_sentence' => 'Her persistence in practicing piano every day finally paid off when she won the competition.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '堅持',
                     'example_translation' => '她每天堅持練琴的毅力終於在她贏得比賽時得到了回報。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '坚持；毅力',
                     'example_translation' => '她每天坚持练琴的毅力终于在她赢得比赛时得到了回报。',
                 ],
@@ -7926,11 +7926,11 @@ return [
             'pronunciation' => '/ˌɪnˈdus/',
             'example_sentence' => 'The doctor tried to induce labor with medication.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '誘發',
                     'example_translation' => '醫生試圖用藥物來引產。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '引起；引产；诱导',
                     'example_translation' => '医生试图用药物来进行催产。',
                 ],
@@ -7946,11 +7946,11 @@ return [
             'pronunciation' => '/ˌkɔɹəˈspɑndəns/',
             'example_sentence' => 'She handles all the department\'s official correspondence today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '一致',
                     'example_translation' => '她今天處理部門所有的官方通信。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '通信；信件；一致',
                     'example_translation' => '她今天负责处理部门所有的官方往来信件。',
                 ],
@@ -7966,11 +7966,11 @@ return [
             'pronunciation' => '/ˌɪnˈfɝ/',
             'example_sentence' => 'From the evidence, we can infer that the experiment was successful.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '推論',
                     'example_translation' => '從證據中，我們可以推斷實驗是成功的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '推断；推论',
                     'example_translation' => '从证据中，我们可以推断出实验是成功的。',
                 ],
@@ -7986,11 +7986,11 @@ return [
             'pronunciation' => '/ˈwʊdˌpɛkɝ/',
             'example_sentence' => 'The woodpecker tapped on the tree trunk looking for insects.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '啄木鳥',
                     'example_translation' => '啄木鳥在樹幹上敲擊尋找昆蟲。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '啄木鸟',
                     'example_translation' => '啄木鸟在树干上敲击寻找昆虫。',
                 ],
@@ -8006,11 +8006,11 @@ return [
             'pronunciation' => '/əbˈsɛs/',
             'example_sentence' => 'She tends to obsess over every small detail.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '纏住',
                     'example_translation' => '她傾向於對每個小細節都過度執著。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '迷住；过分执着',
                     'example_translation' => '她倾向于对每一个小细节都过分执着。',
                 ],
@@ -8026,11 +8026,11 @@ return [
             'pronunciation' => '/ˈniɹˌsaɪtɪd/',
             'example_sentence' => 'She is nearsighted and needs to wear glasses to see the board clearly.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '近視的',
                     'example_translation' => '她有近視，需要戴眼鏡才能看清楚黑板。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '近视的',
                     'example_translation' => '她患有近视，需要戴眼镜才能看清黑板。',
                 ],
@@ -8046,11 +8046,11 @@ return [
             'pronunciation' => '/ɪnˈhæbətənt/, /ɪnˈhæbɪtənt/',
             'example_sentence' => 'The inhabitants of the island live a peaceful life.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '居民',
                     'example_translation' => '這座島嶼的居民過著平靜的生活。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '居民；居住者',
                     'example_translation' => '这座岛上的居民过着平静的生活。',
                 ],
@@ -8066,11 +8066,11 @@ return [
             'pronunciation' => '/ˈvaɪn/',
             'example_sentence' => 'The vine climbed up the old stone wall.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '藤',
                     'example_translation' => '藤蔓攀爬上了古老的石牆。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '藤蔓；葡萄树',
                     'example_translation' => '藤蔓沿着古老的石墙攀爬上去。',
                 ],
@@ -8088,11 +8088,11 @@ return [
             'pronunciation' => '/ˈɪɹɪˌteɪt/',
             'example_sentence' => 'His constant complaining began to irritate everyone in the office.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '刺激',
                     'example_translation' => '他不斷的抱怨開始惹惱辦公室裡的每個人。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '使发怒；刺激',
                     'example_translation' => '他不断的抱怨开始惹恼办公室里的每个人。',
                 ],
@@ -8108,11 +8108,11 @@ return [
             'pronunciation' => '/ˈɡɫeɪʃɝ/',
             'example_sentence' => 'The glacier moved slowly down the mountain valley.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '冰河',
                     'example_translation' => '冰川緩緩地沿著山谷向下移動。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '冰川',
                     'example_translation' => '冰川沿着山谷缓慢地向下移动。',
                 ],
@@ -8128,11 +8128,11 @@ return [
             'pronunciation' => '/ˈtʃæɹətəbəɫ/, /ˈtʃɛɹətəbəɫ/',
             'example_sentence' => 'She decided to donate her savings to a local charitable group.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '慈善',
                     'example_translation' => '她決定將積蓄捐給當地的一個慈善團體。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '慈善的；有爱心的',
                     'example_translation' => '她决定将积蓄捐给当地的一个慈善团体。',
                 ],
@@ -8148,11 +8148,11 @@ return [
             'pronunciation' => '/ɪkˈspɛndətʃɝ/, /ɪkˈspɛndɪtʃɝ/',
             'example_sentence' => 'The government\'s expenditure on education has increased this year.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '支出',
                     'example_translation' => '政府今年在教育方面的支出增加了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '支出；开销',
                     'example_translation' => '政府今年在教育方面的支出增加了。',
                 ],
@@ -8168,11 +8168,11 @@ return [
             'pronunciation' => '/dɪˈspoʊz/',
             'example_sentence' => 'We need to find a way to dispose of the old computer tonight.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '處置',
                     'example_translation' => '我們需要找到一個方法在今晚處理掉這台舊電腦。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '处理；处置',
                     'example_translation' => '我们需要找到一个今晚处理掉这台旧电脑的方法。',
                 ],
@@ -8188,11 +8188,11 @@ return [
             'pronunciation' => '/ˈstɹoʊɫ/',
             'example_sentence' => 'We took a leisurely stroll through the park after dinner.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '漫步',
                     'example_translation' => '晚餐後，我們在公園裡悠閒地散步。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '散步；漫步',
                     'example_translation' => '晚餐后，我们在公园里悠闲地散步。',
                 ],
@@ -8208,11 +8208,11 @@ return [
             'pronunciation' => '/ˌpɹihɪˈstɔɹɪk/',
             'example_sentence' => 'Prehistoric animals roamed the earth millions of years ago.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '史前',
                     'example_translation' => '史前動物在數百萬年前漫遊於地球上。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '史前的',
                     'example_translation' => '史前动物在数百万年前漫游于地球上。',
                 ],
@@ -8228,11 +8228,11 @@ return [
             'pronunciation' => '/kəmˈpɛɹətɪv/',
             'example_sentence' => 'She is currently doing a comparative study of the two languages.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '比較',
                     'example_translation' => '她目前正在對這兩種語言進行比較研究。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '比较的；相对的',
                     'example_translation' => '她目前正在对这两种语言进行比较研究。',
                 ],
@@ -8248,11 +8248,11 @@ return [
             'pronunciation' => '/ˈfeɪbəɫ/',
             'example_sentence' => 'The fable of the tortoise and the hare teaches us that slow and steady wins the race.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '寓言',
                     'example_translation' => '龜兔賽跑的寓言教導我們，穩扎穩打才能贏得比賽。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '寓言',
                     'example_translation' => '龟兔赛跑的寓言告诉我们，稳扎稳打才能赢得比赛。',
                 ],
@@ -8268,11 +8268,11 @@ return [
             'pronunciation' => '/ˈsoʊʃəɫəst/, /ˈsoʊʃəɫɪst/',
             'example_sentence' => 'He is a socialist who believes in equal distribution of wealth.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '社會主義者',
                     'example_translation' => '他是一個社會主義者，相信財富應該平等分配。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '社会主义者',
                     'example_translation' => '他是一个社会主义者，相信财富应该平等分配。',
                 ],
@@ -8290,11 +8290,11 @@ return [
             'pronunciation' => '/ˌædəˈɫɛsəns/, /ˌædoʊˈɫɛsəns/',
             'example_sentence' => 'Adolescence is a time of great physical and emotional change.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '青春期',
                     'example_translation' => '青春期是一個生理和情感發生巨大變化的時期。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '青春期',
                     'example_translation' => '青春期是一个身体和心理发生巨大变化的时期。',
                 ],
@@ -8310,11 +8310,11 @@ return [
             'pronunciation' => '/dɪˈsɛnt/',
             'example_sentence' => 'The climbers started their dangerous descent from the mountain peak.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '血統',
                     'example_translation' => '登山者開始從山頂進行危險的下行。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '下降；血统',
                     'example_translation' => '登山者们开始从山顶进行危险的下降。',
                 ],
@@ -8330,11 +8330,11 @@ return [
             'pronunciation' => '/ˈaʊˌtɹeɪdʒ/',
             'example_sentence' => 'The news of the scandal caused public outrage.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '暴行',
                     'example_translation' => '這起醜聞的消息引發了公眾的憤怒。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '愤怒；暴行',
                     'example_translation' => '这起丑闻的消息引发了公众的愤怒。',
                 ],
@@ -8350,11 +8350,11 @@ return [
             'pronunciation' => '/ɫɔnˈdʒɛvəti/',
             'example_sentence' => 'A healthy diet contributes to longevity.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '長壽',
                     'example_translation' => '健康的飲食有助於長壽。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '长寿；长命',
                     'example_translation' => '健康的饮食有助于长寿。',
                 ],
@@ -8370,11 +8370,11 @@ return [
             'pronunciation' => '/ˈɫiθəɫ/',
             'example_sentence' => 'The doctor warned that such a high dose could be lethal.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '致命',
                     'example_translation' => '醫生警告說，這麼高的劑量可能是致命的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '致命的',
                     'example_translation' => '医生警告说，这么高的剂量可能是致命的。',
                 ],
@@ -8390,11 +8390,11 @@ return [
             'pronunciation' => '/dɪˈspoʊzəɫ/',
             'example_sentence' => 'The proper disposal of chemical waste is essential for safety.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '處理',
                     'example_translation' => '正確處理化學廢物對安全至關重要。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '处理；清理',
                     'example_translation' => '妥善处理化学废物对安全至关重要。',
                 ],
@@ -8410,11 +8410,11 @@ return [
             'pronunciation' => '/ˈvɝsətəɫ/, /vɝsəˈtaɪɫ/',
             'example_sentence' => 'She is a versatile musician who can play five different instruments.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '多才多藝的',
                     'example_translation' => '她是一位多才多藝的音樂家，能演奏五種不同的樂器。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '多才多艺的；多功能的',
                     'example_translation' => '她是一位多才多艺的音乐家，能演奏五种不同的乐器。',
                 ],
@@ -8430,11 +8430,11 @@ return [
             'pronunciation' => '/ˈfɝtəˌɫaɪzɝ/',
             'example_sentence' => 'The farmer spread fertilizer on the field to help the crops grow.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '肥料',
                     'example_translation' => '農夫在田裡撒肥料以幫助作物生長。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '肥料',
                     'example_translation' => '农夫在田里施肥以帮助作物生长。',
                 ],
@@ -8450,11 +8450,11 @@ return [
             'pronunciation' => '/ədˈmɪnəstɝ/',
             'example_sentence' => 'The task of the committee is to administer the new funds.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '管理',
                     'example_translation' => '委員會的任務是管理這筆新資金。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '管理；执行',
                     'example_translation' => '委员会的任务是管理这笔新资金。',
                 ],
@@ -8470,11 +8470,11 @@ return [
             'pronunciation' => '/ˈkɑɹdˌbɔɹd/',
             'example_sentence' => 'We put all the old books in several large cardboard boxes.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '紙板',
                     'example_translation' => '我們把所有的舊書放在幾個大的紙箱裡。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '纸板',
                     'example_translation' => '我们把所有的旧书装进几个大纸箱里。',
                 ],
@@ -8492,11 +8492,11 @@ return [
             'pronunciation' => '/ˌkɑntɹəˈdɪkt/',
             'example_sentence' => 'His actions managed to contradict the statements he had made.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '頂撞',
                     'example_translation' => '他的行為與他之前所做的陳述相矛盾。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '与……矛盾；反驳',
                     'example_translation' => '他的行为与他之前的表述相矛盾。',
                 ],
@@ -8512,11 +8512,11 @@ return [
             'pronunciation' => '/ˈʃɑɹpən/',
             'example_sentence' => 'I need to sharpen my pencil before the exam.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '銳化',
                     'example_translation' => '我需要在考試前削尖我的鉛筆。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '削尖；磨快',
                     'example_translation' => '我需要在考试前削尖铅笔。',
                 ],
@@ -8532,11 +8532,11 @@ return [
             'pronunciation' => '/ˈeɪɫjəˌneɪt/',
             'example_sentence' => 'His rude behavior started to alienate his close friends.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '離間',
                     'example_translation' => '他的粗魯行為開始疏遠他的親密朋友。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '疏远；使孤立',
                     'example_translation' => '他无礼的行为开始使他的亲密朋友疏远他。',
                 ],
@@ -8552,11 +8552,11 @@ return [
             'pronunciation' => '/ˈsiˌɡəɫ/',
             'example_sentence' => 'A seagull flew over the ocean waves.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '海鷗',
                     'example_translation' => '一隻海鷗飛越了海浪。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '海鸥',
                     'example_translation' => '一只海鸥飞过了海浪。',
                 ],
@@ -8572,11 +8572,11 @@ return [
             'pronunciation' => '/ˈɫæd/',
             'example_sentence' => 'The young lad ran across the field.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '小伙子',
                     'example_translation' => '那個年輕的小夥子跑過田野。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '小伙子；少年',
                     'example_translation' => '那个年轻的小伙子跑过了田野。',
                 ],
@@ -8592,11 +8592,11 @@ return [
             'pronunciation' => '/ˈɡɑspəɫ/, /ˈɡɔspəɫ/',
             'example_sentence' => 'The gospel of love and forgiveness is central to Christian teaching.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '福音',
                     'example_translation' => '愛與寬恕的福音是基督教教導的核心。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '福音',
                     'example_translation' => '爱与宽恕的福音是基督教教义的核心。',
                 ],
@@ -8612,11 +8612,11 @@ return [
             'pronunciation' => '/ˈkæɫkjəˌɫeɪtɝ/',
             'example_sentence' => 'You can use a calculator to help with these complex math problems.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '計算機',
                     'example_translation' => '你可以使用計算機來幫助解決這些複雜的數學問題。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '计算器',
                     'example_translation' => '你可以使用计算器来帮助解决这些复杂的数学问题。',
                 ],
@@ -8632,11 +8632,11 @@ return [
             'pronunciation' => '/əˈdɪkʃən/',
             'example_sentence' => 'Gaming addiction can have a negative impact on young people.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '癮',
                     'example_translation' => '遊戲成癮會對年輕人產生負面影響。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '上瘾；成瘾',
                     'example_translation' => '游戏成瘾会对年轻人产生负面影响。',
                 ],
@@ -8652,11 +8652,11 @@ return [
             'pronunciation' => '/ˈskɹuˌdɹaɪvɝ/',
             'example_sentence' => 'I need a screwdriver to fix this loose cabinet handle.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '螺絲起子',
                     'example_translation' => '我需要一把螺絲起子來修理這個鬆掉的櫥櫃把手。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '螺丝刀',
                     'example_translation' => '我需要一把螺丝刀来修这个松动的柜子把手。',
                 ],
@@ -8672,11 +8672,11 @@ return [
             'pronunciation' => '/ˌdɪfɝˈɛnʃiˌeɪt/, /ˌdɪfɝˈɛntʃiˌeɪt/',
             'example_sentence' => 'It is difficult to differentiate between these two similar birds.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '區分',
                     'example_translation' => '很難區分這兩種相似的鳥類。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '区分；辨别',
                     'example_translation' => '很难区分这两只相似的鸟类。',
                 ],
@@ -8694,11 +8694,11 @@ return [
             'pronunciation' => '/ˈɡɑɹmənt/',
             'example_sentence' => 'She works in a factory that produces high-end garments.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '服裝',
                     'example_translation' => '她在一家生產高端服裝的工廠工作。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '服装；衣服',
                     'example_translation' => '她在一家生产高端服装的工厂工作。',
                 ],
@@ -8714,11 +8714,11 @@ return [
             'pronunciation' => '/ˈɹædɪʃ/',
             'example_sentence' => 'I like to add sliced radish to my salad.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '蘿蔔',
                     'example_translation' => '我喜歡在沙拉裡加切片的蘿蔔。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '小萝卜；萝卜',
                     'example_translation' => '我喜欢在沙拉里加切片的萝卜。',
                 ],
@@ -8734,11 +8734,11 @@ return [
             'pronunciation' => '/ˈmeɪnˌɫænd/, /ˈmeɪnɫənd/',
             'example_sentence' => 'We took a ferry from the island back to the mainland.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '大陸',
                     'example_translation' => '我們搭渡輪從島上回到了大陸。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '大陆；本土',
                     'example_translation' => '我们坐轮渡从岛上返回了大陆。',
                 ],
@@ -8754,11 +8754,11 @@ return [
             'pronunciation' => '/ˌfæsəˈneɪʃən/',
             'example_sentence' => 'Her fascination with astronomy began when she was a child.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '魅力',
                     'example_translation' => '她對天文學的著迷始於童年時期。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '入迷；着迷',
                     'example_translation' => '她对天文学的着迷始于童年时期。',
                 ],
@@ -8774,11 +8774,11 @@ return [
             'pronunciation' => '/ˈhaɪˌɹɑɹki/, /ˈhaɪɝˌɑɹki/',
             'example_sentence' => 'The company has a strict hierarchy that everyone must follow.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '等級制度',
                     'example_translation' => '這家公司有嚴格的階層制度，每個人都必須遵守。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '等级制度；阶层',
                     'example_translation' => '这家公司有着每个人都必须遵守的严格等级制度。',
                 ],
@@ -8794,11 +8794,11 @@ return [
             'pronunciation' => '/ˈʃɹəb/',
             'example_sentence' => 'The gardener trimmed the shrub in the front yard.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '灌木',
                     'example_translation' => '園丁修剪了前院的灌木。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '灌木',
                     'example_translation' => '园丁修剪了前院的灌木。',
                 ],
@@ -8814,11 +8814,11 @@ return [
             'pronunciation' => '/ˈbʊkɫɪt/',
             'example_sentence' => 'The information is available in a small booklet at the entrance.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '小冊子',
                     'example_translation' => '入口處的小冊子上有相關資訊。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '小册子',
                     'example_translation' => '相关信息可以在入口处的小册子上找到。',
                 ],
@@ -8834,11 +8834,11 @@ return [
             'pronunciation' => '/ˈbip/',
             'example_sentence' => 'I heard a short beep coming from the microwave in the kitchen.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '嘟',
                     'example_translation' => '我聽到廚房的微波爐發出了一聲短促的嗶嗶聲。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '哔哔声；嘟嘟声',
                     'example_translation' => '我听到厨房里的微波炉发出了一声短促的哔哔声。',
                 ],
@@ -8854,11 +8854,11 @@ return [
             'pronunciation' => '/ˈɫævɪʃ/',
             'example_sentence' => 'The hotel prepared a lavish banquet for the guests.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '奢侈的',
                     'example_translation' => '飯店為賓客準備了一場奢華的宴會。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '奢华的；盛大的',
                     'example_translation' => '酒店为宾客准备了一场奢华的宴会。',
                 ],
@@ -8874,11 +8874,11 @@ return [
             'pronunciation' => '/ˈpɹaɪsɫəs/',
             'example_sentence' => 'The painting in the museum is priceless.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '無價',
                     'example_translation' => '博物館裡的那幅畫是無價的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '无价的；极其珍贵的',
                     'example_translation' => '博物馆里的那幅画是无价之宝。',
                 ],
@@ -8896,11 +8896,11 @@ return [
             'pronunciation' => '/dɪˈspɛns/',
             'example_sentence' => 'The machine is designed to dispense fresh coffee automatically.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '分配',
                     'example_translation' => '這台機器設計用於自動供應新鮮咖啡。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '分发；提供',
                     'example_translation' => '这台机器旨在自动供应新鲜咖啡。',
                 ],
@@ -8916,11 +8916,11 @@ return [
             'pronunciation' => '/ˈwɔɫˌnət/',
             'example_sentence' => 'She cracked open a walnut and ate it as a snack.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '核桃',
                     'example_translation' => '她敲開了一顆核桃當零食吃。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '核桃',
                     'example_translation' => '她剥开一颗核桃当零食吃。',
                 ],
@@ -8936,11 +8936,11 @@ return [
             'pronunciation' => '/aʊtˈnəmbɝ/',
             'example_sentence' => 'The girls outnumber the boys in this class.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '數量多於',
                     'example_translation' => '這個班級裡女生的人數超過男生。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '数量多于',
                     'example_translation' => '这个班级里女生的人数超过男生。',
                 ],
@@ -8956,11 +8956,11 @@ return [
             'pronunciation' => '/ˈfɫɔ/',
             'example_sentence' => 'The diamond has a small flaw that is hard to see.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '缺陷',
                     'example_translation' => '這顆鑽石有一個很難看見的小瑕疵。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '瑕疵；缺陷',
                     'example_translation' => '这颗钻石有一个难以察觉的小瑕疵。',
                 ],
@@ -8976,11 +8976,11 @@ return [
             'pronunciation' => '/ˈɛvɝˌɡɹin/',
             'example_sentence' => 'Evergreen trees stay green throughout the year.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '常綠',
                     'example_translation' => '常綠樹整年都保持綠色。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '常绿的；常绿植物',
                     'example_translation' => '常绿树整年都保持绿色。',
                 ],
@@ -8996,11 +8996,11 @@ return [
             'pronunciation' => '/ˈwæɡ/',
             'example_sentence' => 'The dog wagged its tail happily.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '搖擺',
                     'example_translation' => '那隻狗開心地搖著尾巴。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '摇摆；摇动',
                     'example_translation' => '那只狗开心地摇着尾巴。',
                 ],
@@ -9016,11 +9016,11 @@ return [
             'pronunciation' => '/ˈspɑtˌɫaɪt/',
             'example_sentence' => 'The spotlight was on the lead actor during the entire performance.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '聚光燈',
                     'example_translation' => '在整場演出中，聚光燈都打在主角身上。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '聚光灯；关注焦点',
                     'example_translation' => '在整场演出中，聚光灯都打在主角身上。',
                 ],
@@ -9036,11 +9036,11 @@ return [
             'pronunciation' => '/ˈɑpɝətɪv/',
             'example_sentence' => 'The new policy becomes operative next month.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '操作性的',
                     'example_translation' => '新政策將於下個月生效。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '生效的；起作用的',
                     'example_translation' => '新政策将于下个月生效。',
                 ],
@@ -9056,11 +9056,11 @@ return [
             'pronunciation' => '/ˌəndɝˈweɪ/',
             'example_sentence' => 'The project is already underway.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '進行',
                     'example_translation' => '這個專案已經在進行中了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '在进行中',
                     'example_translation' => '该项目已经在进行中了。',
                 ],
@@ -9076,11 +9076,11 @@ return [
             'pronunciation' => '/ˈɹæp/',
             'example_sentence' => 'He got a bad rap for something he didn\'t do.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '饒舌',
                     'example_translation' => '他因為沒做過的事而背了黑鍋。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '指责；罪名',
                     'example_translation' => '他因为没做过的事而背了黑锅。',
                 ],
@@ -9098,11 +9098,11 @@ return [
             'pronunciation' => '/kənˈtɛnʃən/',
             'example_sentence' => 'The issue remains a major point of contention between them.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '爭論',
                     'example_translation' => '這個問題仍然是他們之間的一個主要爭論點。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '争论；争端',
                     'example_translation' => '这个问题仍然是他们之间的一个主要争论点。',
                 ],
@@ -9118,11 +9118,11 @@ return [
             'pronunciation' => '/ˈkɹæm/',
             'example_sentence' => 'I need to cram for my history exam tomorrow morning early.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '補習班',
                     'example_translation' => '我需要為明天一早的歷史考試臨時抱佛腳。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '临时抱佛脚；塞满',
                     'example_translation' => '我需要为明天一大早的历史考试临时抱佛脚。',
                 ],
@@ -9138,11 +9138,11 @@ return [
             'pronunciation' => '/ˈskɔɹn/',
             'example_sentence' => 'She looked at him with scorn after he broke his promise.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '輕蔑',
                     'example_translation' => '她在他違背諾言後輕蔑地看著他。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '轻蔑；鄙视',
                     'example_translation' => '在他违背诺言后，她用轻蔑的眼神看着他。',
                 ],
@@ -9158,11 +9158,11 @@ return [
             'pronunciation' => '/pɹəˈsɛʃən/, /pɹoʊˈsɛʃən/',
             'example_sentence' => 'The procession moved slowly through the streets of the old city.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '遊行',
                     'example_translation' => '遊行隊伍緩緩地穿過老城的街道。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '队伍；行列',
                     'example_translation' => '游行队伍缓缓地穿过老城的街道。',
                 ],
@@ -9178,11 +9178,11 @@ return [
             'pronunciation' => '/nəˈmoʊnjə/, /nuˈmoʊnjə/',
             'example_sentence' => 'She was hospitalized for pneumonia last winter.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '肺炎',
                     'example_translation' => '她去年冬天因肺炎住院了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '肺炎',
                     'example_translation' => '她去年冬天因肺炎住院了。',
                 ],
@@ -9198,11 +9198,11 @@ return [
             'pronunciation' => '/dɪˈtɛnʃən/',
             'example_sentence' => 'The students were given detention for their rude behavior today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '拘留',
                     'example_translation' => '學生們因今天的粗魯行為而被留校察看。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '留校惩罚；拘留',
                     'example_translation' => '学生们因今天的无礼行为而被留校惩罚。',
                 ],
@@ -9218,11 +9218,11 @@ return [
             'pronunciation' => '/ˈɫɛsən/',
             'example_sentence' => 'Exercise can lessen stress and improve your mood.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '減少',
                     'example_translation' => '運動可以減輕壓力並改善你的心情。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '减少；减轻',
                     'example_translation' => '运动可以减轻压力并改善心情。',
                 ],
@@ -9238,11 +9238,11 @@ return [
             'pronunciation' => '/ˈɹaɪvəɫɹi/',
             'example_sentence' => 'The rivalry between the two teams made every game exciting.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '對抗',
                     'example_translation' => '兩支隊伍之間的競爭使每場比賽都令人興奮。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '竞争；对抗',
                     'example_translation' => '两支队伍之间的竞争使每场比赛都令人兴奋。',
                 ],
@@ -9258,11 +9258,11 @@ return [
             'pronunciation' => '/ˈɫɪtɝəɫ/',
             'example_sentence' => 'This is a literal translation of the poem.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '文字',
                     'example_translation' => '這是這首詩的逐字翻譯。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '字面的；逐字的',
                     'example_translation' => '这是这首诗的字面翻译。',
                 ],
@@ -9278,11 +9278,11 @@ return [
             'pronunciation' => '/məˈdʒɛstɪk/',
             'example_sentence' => 'The majestic mountain towered above the clouds.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '雄偉',
                     'example_translation' => '雄偉的山峰高聳入雲。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '雄伟的；庄严的',
                     'example_translation' => '雄伟的山峰高耸入云。',
                 ],
@@ -9300,11 +9300,11 @@ return [
             'pronunciation' => '/ˈsɫəmp/',
             'example_sentence' => 'The economy went into a slump last year.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '暴跌',
                     'example_translation' => '去年經濟陷入了衰退。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '暴跌；衰退；不景气',
                     'example_translation' => '去年经济陷入了衰退。',
                 ],
@@ -9320,11 +9320,11 @@ return [
             'pronunciation' => '/ˈpædəɫ/',
             'example_sentence' => 'She used a paddle to row the small boat across the lake.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '槳',
                     'example_translation' => '她用槳把小船划過湖面。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '桨；划桨',
                     'example_translation' => '她用桨划着小船穿过了湖面。',
                 ],
@@ -9340,11 +9340,11 @@ return [
             'pronunciation' => '/ˈkeɪp/',
             'example_sentence' => 'The lighthouse is located on a rocky cape overlooking the ocean.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '岬',
                     'example_translation' => '燈塔坐落在一個俯瞰大海的岩石海角上。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '岬，海角',
                     'example_translation' => '灯塔位于一座俯瞰大海的岩石海角上。',
                 ],
@@ -9360,11 +9360,11 @@ return [
             'pronunciation' => '/ˈsɝdʒɪkəɫ/',
             'example_sentence' => 'The doctor made a surgical incision to remove the tumor.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '外科',
                     'example_translation' => '醫生做了一個外科手術的切口來移除腫瘤。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '外科的；手术的',
                     'example_translation' => '医生做了一个外科切口来切除肿瘤。',
                 ],
@@ -9380,11 +9380,11 @@ return [
             'pronunciation' => '/kənˈtɛstənt/',
             'example_sentence' => 'There were more than fifty contestants in the local race today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '選手',
                     'example_translation' => '當地的比賽今天有五十多名參賽者。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '参赛者，选手',
                     'example_translation' => '今天当地的比赛有五十多名参赛者。',
                 ],
@@ -9400,11 +9400,11 @@ return [
             'pronunciation' => '/ɹiˈhɝs/',
             'example_sentence' => 'The actors need to rehearse the scene before the performance.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '排練',
                     'example_translation' => '演員們需要在演出前排練這個場景。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '排练，预演',
                     'example_translation' => '演员们需要在演出前排练这个场景。',
                 ],
@@ -9420,11 +9420,11 @@ return [
             'pronunciation' => '/ˈɫænˌsɫaɪd/, /ˈɫændˌsɫaɪd/',
             'example_sentence' => 'The landslide blocked the mountain road after heavy rain.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '土石流',
                     'example_translation' => '暴雨過後，山崩堵住了山路。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '山体滑坡，泥石流',
                     'example_translation' => '大雨过后，山体滑坡封锁了山路。',
                 ],
@@ -9440,11 +9440,11 @@ return [
             'pronunciation' => '/ˈfɛɹənˌhaɪt/',
             'example_sentence' => 'Water boils at 212 degrees Fahrenheit.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '華氏度',
                     'example_translation' => '水在華氏212度時沸騰。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '华氏度',
                     'example_translation' => '水在华氏212度时沸腾。',
                 ],
@@ -9460,11 +9460,11 @@ return [
             'pronunciation' => '/ˌdaɪəˈbitiz/',
             'example_sentence' => 'He was recently diagnosed with type two diabetes by his doctor.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '糖尿病',
                     'example_translation' => '他最近被醫生診斷出患有二型糖尿病。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '糖尿病',
                     'example_translation' => '他最近被医生诊断出患有二型糖尿病。',
                 ],
@@ -9480,11 +9480,11 @@ return [
             'pronunciation' => '/ˈdɔɹm/',
             'example_sentence' => 'The students live in a modern dormitory near the university.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '宿舍',
                     'example_translation' => '學生們住在大學附近的現代化宿舍裡。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '宿舍',
                     'example_translation' => '学生们住在大学附近的现代化宿舍里。',
                 ],
@@ -9502,11 +9502,11 @@ return [
             'pronunciation' => '/ˈdaʊnwɝd/',
             'example_sentence' => 'The price of oil has started to trend downward recently.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '向下',
                     'example_translation' => '油價最近開始呈現下降趨勢。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '向下地，朝下地',
                     'example_translation' => '最近油价开始呈现下降趋势。',
                 ],
@@ -9522,11 +9522,11 @@ return [
             'pronunciation' => '/ˌɹɛfɝˈi/',
             'example_sentence' => 'The referee blew the whistle to stop the game.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '裁判',
                     'example_translation' => '裁判吹哨停止了比賽。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '裁判员；担任裁判',
                     'example_translation' => '裁判吹哨中止了比赛。',
                 ],
@@ -9542,11 +9542,11 @@ return [
             'pronunciation' => '/ˈnɑɫədʒəbəɫ/',
             'example_sentence' => 'She is very knowledgeable about world history.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '知識淵博的',
                     'example_translation' => '她對世界歷史非常博學。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '知识渊博的，博学的',
                     'example_translation' => '她对世界历史非常了解。',
                 ],
@@ -9562,11 +9562,11 @@ return [
             'pronunciation' => '/ˈvɛt/',
             'example_sentence' => 'The vet examined the sick puppy carefully.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '獸醫',
                     'example_translation' => '獸醫仔細地檢查了那隻生病的小狗。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '兽医',
                     'example_translation' => '兽医仔细地检查了生病的小狗。',
                 ],
@@ -9582,11 +9582,11 @@ return [
             'pronunciation' => '/ˈmjut/',
             'example_sentence' => 'The audience remained mute throughout the performance.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '沉默的',
                     'example_translation' => '觀眾在整場演出中保持沉默。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '沉默的；无声的；静音',
                     'example_translation' => '观众在整场演出过程中保持沉默。',
                 ],
@@ -9602,11 +9602,11 @@ return [
             'pronunciation' => '/moʊˈmɛntəm/',
             'example_sentence' => 'The project gained momentum after the new team joined.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '勢頭',
                     'example_translation' => '這個專案在新團隊加入後獲得了動力。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '势头；动力',
                     'example_translation' => '新团队加入后，该项目获得了势头。',
                 ],
@@ -9622,11 +9622,11 @@ return [
             'pronunciation' => '/ˈsuð/',
             'example_sentence' => 'She sang a lullaby to soothe the crying baby.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '舒緩',
                     'example_translation' => '她唱了一首搖籃曲來安撫哭泣的嬰兒。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '安抚；缓解；使平静',
                     'example_translation' => '她唱了一首摇篮曲来安抚哭泣的婴儿。',
                 ],
@@ -9642,11 +9642,11 @@ return [
             'pronunciation' => '/ˈɹɛkɫəs/',
             'example_sentence' => 'Reckless driving can lead to serious accidents.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '魯莽',
                     'example_translation' => '魯莽的駕駛可能導致嚴重的事故。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '鲁莽的，轻率的',
                     'example_translation' => '鲁莽驾驶可能会导致严重事故。',
                 ],
@@ -9662,11 +9662,11 @@ return [
             'pronunciation' => '/ˈməsˌtæʃ/',
             'example_sentence' => 'He grew a thick mustache over the summer.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '鬍子',
                     'example_translation' => '他在夏天留了一撇濃密的鬍子。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '嘴唇上方的胡须，八字胡',
                     'example_translation' => '他在夏天留了一撇浓密的胡子。',
                 ],
@@ -9682,11 +9682,11 @@ return [
             'pronunciation' => '/ɹoʊˈteɪʃən/',
             'example_sentence' => 'The rotation of the Earth causes day and night.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '旋轉',
                     'example_translation' => '地球的自轉造成了白天和黑夜。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '旋转，自转；轮换',
                     'example_translation' => '地球的自转导致了昼夜交替。',
                 ],
@@ -9704,11 +9704,11 @@ return [
             'pronunciation' => '/ˈhaɪˌdʒæk/',
             'example_sentence' => 'The terrorists attempted to hijack the plane.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '劫持',
                     'example_translation' => '恐怖分子企圖劫持那架飛機。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '劫持；强行控制',
                     'example_translation' => '恐怖分子试图劫持那架飞机。',
                 ],
@@ -9724,11 +9724,11 @@ return [
             'pronunciation' => '/ˌækjəˈzeɪʃən/, /ˌækjuˈzeɪʃən/',
             'example_sentence' => 'He denied the accusation that he had stolen the money.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '指控',
                     'example_translation' => '他否認了關於他偷錢的指控。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '指控；控告',
                     'example_translation' => '他否认了关于他偷钱的指控。',
                 ],
@@ -9744,11 +9744,11 @@ return [
             'pronunciation' => '/ˈnæɡ/',
             'example_sentence' => 'She always nags him about cleaning his room.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '嘮叨',
                     'example_translation' => '她總是嘮叨他要打掃房間。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '唠叨；不断烦扰',
                     'example_translation' => '她总是唠叨要他打扫房间。',
                 ],
@@ -9764,11 +9764,11 @@ return [
             'pronunciation' => '/dɪsˈkɹit/',
             'example_sentence' => 'Please be discreet and don\'t mention the news to anyone yet today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '慎重',
                     'example_translation' => '請謹慎行事，今天先不要向任何人提及這個消息。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '谨慎的；慎重的',
                     'example_translation' => '请谨慎行事，今天先不要向任何人提及这个消息。',
                 ],
@@ -9784,11 +9784,11 @@ return [
             'pronunciation' => '/ˈɹeɪˌdiənt/, /ˈɹeɪdjənt/',
             'example_sentence' => 'The radiant sun warmed the fields on a spring morning.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '容光煥發的',
                     'example_translation' => '燦爛的陽光在春天的早晨溫暖了田野。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '灿烂的；容光焕发的',
                     'example_translation' => '灿烂的阳光在春晨温暖了田野。',
                 ],
@@ -9804,11 +9804,11 @@ return [
             'pronunciation' => '/pəˈnɪnsəɫə/',
             'example_sentence' => 'The peninsula is surrounded by water on three sides.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '半島',
                     'example_translation' => '半島三面環水。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '半岛',
                     'example_translation' => '该半岛三面环水。',
                 ],
@@ -9824,11 +9824,11 @@ return [
             'pronunciation' => '/ˈaɪvi/',
             'example_sentence' => 'Ivy grows along the old brick wall.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '常春藤',
                     'example_translation' => '常春藤沿著老舊的磚牆生長。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '常春藤',
                     'example_translation' => '常春藤沿着古老的砖墙生长。',
                 ],
@@ -9844,11 +9844,11 @@ return [
             'pronunciation' => '/ˈɔfsˌpɹɪŋ/',
             'example_sentence' => 'The lioness protected her offspring from danger.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '後代',
                     'example_translation' => '母獅子保護她的後代免受危險。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '后代；幼崽；子女',
                     'example_translation' => '母狮保护她的幼崽免受危险。',
                 ],
@@ -9864,11 +9864,11 @@ return [
             'pronunciation' => '/ˈtɹænsˌkɹɪpt/',
             'example_sentence' => 'Could you please provide a copy of your transcript?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '成績單',
                     'example_translation' => '能請你提供一份你的成績單嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '成绩单；文字记录',
                     'example_translation' => '能请您提供一份您的成绩单吗？',
                 ],
@@ -9884,11 +9884,11 @@ return [
             'pronunciation' => '/əˈmɪd/',
             'example_sentence' => 'Amid the chaos, she remained calm.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '之中',
                     'example_translation' => '在混亂之中，她保持冷靜。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '在……之中',
                     'example_translation' => '在混乱之中，她保持着平静。',
                 ],
@@ -9906,11 +9906,11 @@ return [
             'pronunciation' => '/ˈsɪmbəˌɫaɪz/',
             'example_sentence' => 'The dove symbolizes peace.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '象徵',
                     'example_translation' => '鴿子象徵和平。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '象征；代表',
                     'example_translation' => '鸽子象征着和平。',
                 ],
@@ -9926,11 +9926,11 @@ return [
             'pronunciation' => '/ˈsævədʒ/, /ˈsævɪdʒ/',
             'example_sentence' => 'The savage storm destroyed everything in its path.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '野蠻的',
                     'example_translation' => '那場猛烈的暴風雨摧毀了沿途的一切。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '野蛮的；猛烈的；凶猛的',
                     'example_translation' => '那场猛烈的暴风雨摧毁了沿途的一切。',
                 ],
@@ -9946,11 +9946,11 @@ return [
             'pronunciation' => '/ˈtɹaɪfəɫ/',
             'example_sentence' => 'It was just a trifle, so don\'t worry about it tonight.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '瑣事',
                     'example_translation' => '那只是一件小事，所以今晚別擔心。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '琐事；小事',
                     'example_translation' => '那只是一件小事，所以今晚别担心。',
                 ],
@@ -9966,11 +9966,11 @@ return [
             'pronunciation' => '/ˈsɛnsəs/',
             'example_sentence' => 'The government conducts a national census every ten years here.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '人口普查',
                     'example_translation' => '政府在這裡每十年進行一次全國人口普查。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '人口普查',
                     'example_translation' => '政府在这里每十年进行一次全国人口普查。',
                 ],
@@ -9986,11 +9986,11 @@ return [
             'pronunciation' => '/ˈɫəʃ/',
             'example_sentence' => 'The garden was lush and green after the spring rain.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '鬱鬱蔥蔥',
                     'example_translation' => '春雨過後，花園裡的植物茂盛翠綠。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '郁郁葱葱的；茂盛的',
                     'example_translation' => '春雨过后，花园里的植物郁郁葱葱，一片翠绿。',
                 ],
@@ -10006,11 +10006,11 @@ return [
             'pronunciation' => '/ˈdum/',
             'example_sentence' => 'The dark clouds seemed to portend a sense of upcoming doom.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '厄運',
                     'example_translation' => '烏雲似乎預示著即將到來的厄運。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '厄运；毁灭',
                     'example_translation' => '乌云似乎预示着即将来临的厄运。',
                 ],
@@ -10026,11 +10026,11 @@ return [
             'pronunciation' => '/ˈwɔɹd/',
             'example_sentence' => 'The nurse checked on every patient in the ward.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '病房',
                     'example_translation' => '護士查看了病房裡的每一位病人。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '病房',
                     'example_translation' => '护士查看了病房里的每一位病人。',
                 ],
@@ -10046,11 +10046,11 @@ return [
             'pronunciation' => '/ˈɹeɪn/',
             'example_sentence' => 'The king\'s reign lasted for thirty years.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '在位',
                     'example_translation' => '國王的統治持續了三十年。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '统治；在位',
                     'example_translation' => '国王的统治持续了三十年。',
                 ],
@@ -10066,11 +10066,11 @@ return [
             'pronunciation' => '/ˈhɑstəɫ/',
             'example_sentence' => 'We stayed in a small youth hostel during our trip.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '旅館',
                     'example_translation' => '我們旅行期間住在一家小型青年旅舍。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '青年旅舍；旅馆',
                     'example_translation' => '我们旅行期间住在一家小型青年旅舍。',
                 ],
@@ -10086,11 +10086,11 @@ return [
             'pronunciation' => '/ˈɪnkɫaɪn/, /ˌɪnˈkɫaɪn/',
             'example_sentence' => 'I incline to agree with your opinion.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '傾斜',
                     'example_translation' => '我傾向於同意你的看法。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '倾向于；倾斜',
                     'example_translation' => '我倾向于同意你的观点。',
                 ],
@@ -10108,11 +10108,11 @@ return [
             'pronunciation' => '/ˈsɪmpəˌθaɪz/',
             'example_sentence' => 'I sympathize with your difficult situation.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '同情',
                     'example_translation' => '我同情你的困難處境。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '同情；理解',
                     'example_translation' => '我同情你的艰难处境。',
                 ],
@@ -10128,11 +10128,11 @@ return [
             'pronunciation' => '/ˈɫaɪəbəɫ/',
             'example_sentence' => 'The company is liable for any damages caused by its products.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '容易',
                     'example_translation' => '該公司對其產品造成的任何損害負有責任。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '有责任的；有义务的',
                     'example_translation' => '公司对其产品造成的任何损失承担法律责任。',
                 ],
@@ -10148,11 +10148,11 @@ return [
             'pronunciation' => '/ˈpɹɑvɝb/',
             'example_sentence' => 'An old proverb can teach us a lot about life.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '諺語',
                     'example_translation' => '一句古老的諺語能教會我們很多人生道理。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '谚语；格言',
                     'example_translation' => '一句古老的谚语能教会我们很多人生道理。',
                 ],
@@ -10168,11 +10168,11 @@ return [
             'pronunciation' => '/ˈɛskɔɹt/, /ɛˈskɔɹt/',
             'example_sentence' => 'The police provided an escort for the important visitor.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '護送',
                     'example_translation' => '警方為重要訪客提供了護送。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '护送；警卫',
                     'example_translation' => '警方为这位重要访客提供了护送。',
                 ],
@@ -10188,11 +10188,11 @@ return [
             'pronunciation' => '/ɹiˈmeɪndɝ/, /ɹɪˈmeɪndɝ/',
             'example_sentence' => 'I kept the remainder of the cake in the fridge.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '餘',
                     'example_translation' => '我把剩餘的蛋糕放在冰箱裡。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '剩余部分；其余',
                     'example_translation' => '我把剩下的蛋糕放在冰箱里了。',
                 ],
@@ -10208,11 +10208,11 @@ return [
             'pronunciation' => '/ˈɔfˈʃɔɹ/',
             'example_sentence' => 'The company moved its operations to an offshore facility.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '離岸',
                     'example_translation' => '該公司將其業務轉移到一個離岸設施。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '离岸的；海外的',
                     'example_translation' => '该公司将其业务转移到了一个离岸设施。',
                 ],
@@ -10228,11 +10228,11 @@ return [
             'pronunciation' => '/ˈpoʊˌni/',
             'example_sentence' => 'The little girl rode her pony around the farm.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '小馬',
                     'example_translation' => '小女孩騎著她的小馬在農場裡繞圈。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '小马',
                     'example_translation' => '小女孩骑着她的小马在农场里转圈。',
                 ],
@@ -10248,11 +10248,11 @@ return [
             'pronunciation' => '/ˈdɹɛsɝ/',
             'example_sentence' => 'She kept her clothes in a large wooden dresser in her room.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '梳妝台',
                     'example_translation' => '她把衣服放在臥室的一個大木梳妝台裡。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '梳妆台；带抽屉的衣柜',
                     'example_translation' => '她把衣服放在她房间的一个大木柜里。',
                 ],
@@ -10268,11 +10268,11 @@ return [
             'pronunciation' => '/ˈsɪmpɫəˌfaɪ/',
             'example_sentence' => 'We need to simplify the process to save time.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '簡化',
                     'example_translation' => '我們需要簡化流程以節省時間。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '简化',
                     'example_translation' => '我们需要简化流程以节省时间。',
                 ],
@@ -10288,11 +10288,11 @@ return [
             'pronunciation' => '/ˈsɑɹoʊfəɫ/',
             'example_sentence' => 'She looked sorrowful when she heard the bad news.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '悲傷',
                     'example_translation' => '當她聽到壞消息時，她看起來很悲傷。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '悲伤的；伤心的',
                     'example_translation' => '听到那个坏消息时，她看起来很悲伤。',
                 ],
@@ -10310,11 +10310,11 @@ return [
             'pronunciation' => '/ɹɪˈfaɪnmənt/',
             'example_sentence' => 'We need to refine our strategy before launching the product.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '精煉',
                     'example_translation' => '我們需要在產品上市前改進我們的策略。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '改进；提炼',
                     'example_translation' => '我们需要在产品推出前对我们的策略进行改进。',
                 ],
@@ -10330,11 +10330,11 @@ return [
             'pronunciation' => '/ˈkɑnsoʊɫ/, /kənˈsoʊɫ/',
             'example_sentence' => 'I tried to console my friend after she lost her favorite pet.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '安慰',
                     'example_translation' => '在我的朋友失去了她最喜愛的寵物後，我試著安慰她。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '安慰；抚慰',
                     'example_translation' => '在我朋友失去她最爱的宠物后，我试图安慰她。',
                 ],
@@ -10350,11 +10350,11 @@ return [
             'pronunciation' => '/ˈtɝˌmɔɪɫ/',
             'example_sentence' => 'The country was in turmoil after the sudden change of government.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '動盪',
                     'example_translation' => '這個國家在政府突然更迭後陷入了動盪。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '混乱；动荡',
                     'example_translation' => '该国在政权突然更迭后陷入了动荡。',
                 ],
@@ -10370,11 +10370,11 @@ return [
             'pronunciation' => '/dɪˈteɪn/',
             'example_sentence' => 'The police managed to detain the suspect for further interview.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '扣留',
                     'example_translation' => '警方成功拘留了嫌疑人以接受進一步面談。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '扣留；拘留',
                     'example_translation' => '警方成功拘留了嫌疑人以作进一步审问。',
                 ],
@@ -10390,11 +10390,11 @@ return [
             'pronunciation' => '/dɪkˈteɪtɝˌʃɪp/',
             'example_sentence' => 'The people fought bravely to end the national dictatorship today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '專政',
                     'example_translation' => '人民今天英勇作戰，終結了國家的獨裁統治。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '独裁；专政',
                     'example_translation' => '人民英勇斗争，以在今天结束国家的独裁统治。',
                 ],
@@ -10410,11 +10410,11 @@ return [
             'pronunciation' => '/ˌɪnˈhæbət/',
             'example_sentence' => 'Wild animals inhabit the dense forests of this region.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '棲息',
                     'example_translation' => '野生動物棲息在這個地區的茂密森林中。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '栖息于；居住于',
                     'example_translation' => '野生动物栖息在这个地区的茂密森林中。',
                 ],
@@ -10430,11 +10430,11 @@ return [
             'pronunciation' => '/ˈwoʊ/',
             'example_sentence' => 'The country suffered great woe during the war.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '禍患',
                     'example_translation' => '這個國家在戰爭期間遭受了巨大的悲痛。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '苦难；悲哀',
                     'example_translation' => '这个国家在战争期间遭受了巨大的苦难。',
                 ],
@@ -10450,11 +10450,11 @@ return [
             'pronunciation' => '/ˈɡeɪdʒ/',
             'example_sentence' => 'The mechanic checked the pressure gauge before starting the engine.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '測量',
                     'example_translation' => '技師在啟動引擎前檢查了壓力計。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '测量仪器；计量仪表',
                     'example_translation' => '技师在启动发动机前检查了压力表。',
                 ],
@@ -10470,11 +10470,11 @@ return [
             'pronunciation' => '/ˈfaɪɝˌpɹuf/',
             'example_sentence' => 'This building is fireproof.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '防火',
                     'example_translation' => '這棟建築是防火的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '防火的；耐火的',
                     'example_translation' => '这栋建筑是防火的。',
                 ],
@@ -10490,11 +10490,11 @@ return [
             'pronunciation' => '/ˌtɛɫəkəmˌjunəˈkeɪʃənz/',
             'example_sentence' => 'Telecommunications have revolutionized the way people communicate across the world.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '電信',
                     'example_translation' => '電信徹底改變了人們在世界各地溝通的方式。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '电信；远程通信',
                     'example_translation' => '电信彻底改变了全世界人们沟通的方式。',
                 ],
@@ -10512,11 +10512,11 @@ return [
             'pronunciation' => '/ˈkɑnsənənt/',
             'example_sentence' => 'The English language has many different types of consonants.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '輔音',
                     'example_translation' => '英語有許多不同類型的輔音。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '辅音',
                     'example_translation' => '英语有许多不同类型的辅音。',
                 ],
@@ -10532,11 +10532,11 @@ return [
             'pronunciation' => '/ˈhɪpəˌkɹɪt/',
             'example_sentence' => 'He is such a hypocrite, saying one thing but doing another.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '偽君子',
                     'example_translation' => '他真是個偽君子，說一套做一套。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '伪君子',
                     'example_translation' => '他真是个伪君子，言行不一。',
                 ],
@@ -10552,11 +10552,11 @@ return [
             'pronunciation' => '/ˈsnikɝz/',
             'example_sentence' => 'I bought a new pair of sneakers for running.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '運動鞋',
                     'example_translation' => '我買了一雙新的運動鞋來跑步。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '运动鞋',
                     'example_translation' => '我买了一双新的运动鞋用来跑步。',
                 ],
@@ -10572,11 +10572,11 @@ return [
             'pronunciation' => '/pɝsəˈvɪɹ/',
             'example_sentence' => 'You must persevere if you want to achieve your goals.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '堅持',
                     'example_translation' => '如果你想實現目標，就必須堅持不懈。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '坚持不懈',
                     'example_translation' => '如果你想实现目标，就必须坚持不懈。',
                 ],
@@ -10592,11 +10592,11 @@ return [
             'pronunciation' => '/ˌpeɪtɹiˈɑtɪk/',
             'example_sentence' => 'The patriotic citizens proudly waved their flags during the national holiday.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '愛國',
                     'example_translation' => '愛國的市民們在國定假日驕傲地揮舞著旗幟。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '爱国的',
                     'example_translation' => '爱国的市民们在国庆节期间自豪地挥舞着旗帜。',
                 ],
@@ -10612,11 +10612,11 @@ return [
             'pronunciation' => '/dʒiˈɑmətɹi/',
             'example_sentence' => 'I studied geometry in high school.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '幾何學',
                     'example_translation' => '我在高中學過幾何學。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '几何学',
                     'example_translation' => '我在高中学过几何学。',
                 ],
@@ -10632,11 +10632,11 @@ return [
             'pronunciation' => '/ˈfɹæntɪk/',
             'example_sentence' => 'The frantic mother searched everywhere for her lost child.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '瘋狂的',
                     'example_translation' => '那位焦急的母親到處尋找她走失的孩子。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '焦急万分的',
                     'example_translation' => '那位焦急万分的母亲到处寻找她走失的孩子。',
                 ],
@@ -10652,11 +10652,11 @@ return [
             'pronunciation' => '/kəˈɫɪɡɹəfi/',
             'example_sentence' => 'She is studying traditional Chinese calligraphy in her free time.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '書法',
                     'example_translation' => '她在空閒時間學習中國傳統書法。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '书法',
                     'example_translation' => '她在空闲时间学习中国传统书法。',
                 ],
@@ -10672,11 +10672,11 @@ return [
             'pronunciation' => '/ˌsupɝˈstɪʃəs/',
             'example_sentence' => 'She is very superstitious and never walks under a ladder.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '迷信的',
                     'example_translation' => '她非常迷信，從不從梯子下面走過。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '迷信的',
                     'example_translation' => '她非常迷信，从不从梯子下面走过。',
                 ],
@@ -10692,11 +10692,11 @@ return [
             'pronunciation' => '/ˈsəfəˌkeɪt/',
             'example_sentence' => 'The smoke in the room was so thick it could suffocate anyone trapped inside.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '窒息',
                     'example_translation' => '房間裡的煙霧濃厚到足以讓任何被困在裡面的人窒息。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '窒息',
                     'example_translation' => '房间里的烟雾非常浓厚，足以使任何困在里面的人窒息。',
                 ],
@@ -10714,11 +10714,11 @@ return [
             'pronunciation' => '/ˈvænəti/, /ˈvænɪti/',
             'example_sentence' => 'His vanity prevented him from admitting his mistakes.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '虛榮',
                     'example_translation' => '他的虛榮心使他無法承認自己的錯誤。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '虚荣心',
                     'example_translation' => '他的虚荣心使他无法承认自己的错误。',
                 ],
@@ -10734,11 +10734,11 @@ return [
             'pronunciation' => '/ˈstɛpˌtʃaɪɫd/',
             'example_sentence' => 'She treats her stepchild as if he were her own son.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '繼子女',
                     'example_translation' => '她對待繼子就像對待自己的親生兒子一樣。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '继子女',
                     'example_translation' => '她对待继子就像对待自己的亲生儿子一样。',
                 ],
@@ -10754,11 +10754,11 @@ return [
             'pronunciation' => '/kəmˈpjutɝˌaɪz/',
             'example_sentence' => 'The company plans to computerize its entire inventory system.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '電腦化',
                     'example_translation' => '公司計劃將其整個庫存系統電腦化。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '计算机化',
                     'example_translation' => '公司计划将其整个库存系统计算机化。',
                 ],
@@ -10774,11 +10774,11 @@ return [
             'pronunciation' => '/ˈpɹoʊtəˌtaɪp/',
             'example_sentence' => 'The engineer built a prototype of the new device.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '原型',
                     'example_translation' => '工程師建造了新設備的原型。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '原型',
                     'example_translation' => '工程师制作了新设备的原型。',
                 ],
@@ -10794,11 +10794,11 @@ return [
             'pronunciation' => '/noʊˈtɔɹiəs/',
             'example_sentence' => 'The city is notorious for its heavy traffic jams.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '臭名昭著',
                     'example_translation' => '這座城市因嚴重的交通堵塞而臭名昭著。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '臭名昭著的',
                     'example_translation' => '这座城市因严重的交通拥堵而臭名昭著。',
                 ],
@@ -10814,11 +10814,11 @@ return [
             'pronunciation' => '/ˈɡæŋstɝ/',
             'example_sentence' => 'The gangster was arrested by the police last night.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '流氓',
                     'example_translation' => '那個黑幫分子昨晚被警察逮捕了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '黑帮分子',
                     'example_translation' => '那个黑帮分子昨晚被警察逮捕了。',
                 ],
@@ -10834,11 +10834,11 @@ return [
             'pronunciation' => '/ˈkɫoʊʒɝ/',
             'example_sentence' => 'The sudden closure of the factory caused many people to cry.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '關閉',
                     'example_translation' => '工廠的突然關閉讓許多人流下了眼淚。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '关闭',
                     'example_translation' => '工厂的突然关闭让许多人落泪。',
                 ],
@@ -10854,11 +10854,11 @@ return [
             'pronunciation' => '/iˈvækjəˌeɪt/, /ɪˈvækjəˌeɪt/',
             'example_sentence' => 'The government ordered residents to evacuate before the hurricane arrived.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '撤離',
                     'example_translation' => '政府下令居民在颶風來臨前撤離。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '撤离',
                     'example_translation' => '政府下令居民在飓风来临前撤离。',
                 ],
@@ -10874,11 +10874,11 @@ return [
             'pronunciation' => '/fəˌmɪɫˈjɛɹəti/',
             'example_sentence' => 'His familiarity with the software made him the go-to person for tech support.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '熟悉度',
                     'example_translation' => '他對這套軟體的熟悉程度使他成為技術支援的首選人物。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '熟悉',
                     'example_translation' => '他对这款软件的熟悉程度使他成为技术支持的首选人员。',
                 ],
@@ -10894,11 +10894,11 @@ return [
             'pronunciation' => '/ˈnukɫiəs/',
             'example_sentence' => 'The nucleus of an atom contains protons and neutrons.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '核',
                     'example_translation' => '原子的核包含質子和中子。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '核',
                     'example_translation' => '原子的核包含质子和中子。',
                 ],
@@ -10916,11 +10916,11 @@ return [
             'pronunciation' => '/ˈɫɛŋθi/',
             'example_sentence' => 'The meeting was lengthy and exhausting.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '冗長',
                     'example_translation' => '這場會議冗長且令人疲憊。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '冗长的',
                     'example_translation' => '这次会议冗长且令人疲惫。',
                 ],
@@ -10936,11 +10936,11 @@ return [
             'pronunciation' => '/ˈpɑpjəˌɫeɪt/',
             'example_sentence' => 'Scientists populate the database with new research findings every month.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '填充',
                     'example_translation' => '科學家們每個月都會將新的研究成果填入資料庫中。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '填充；居住于',
                     'example_translation' => '科学家们每月都会用新的研究成果填充该数据库。',
                 ],
@@ -10956,11 +10956,11 @@ return [
             'pronunciation' => '/ˈmɑɹ/',
             'example_sentence' => 'The scratch will mar the surface of the table.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '三月',
                     'example_translation' => '那道刮痕會損壞桌子的表面。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '损毁；破坏',
                     'example_translation' => '划痕会毁坏桌子的表面。',
                 ],
@@ -10976,11 +10976,11 @@ return [
             'pronunciation' => '/ˈɑsəm/, /ˈɔsəm/',
             'example_sentence' => 'The sunset over the ocean tonight was absolutely awesome.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '驚人的',
                     'example_translation' => '今晚海上的日落絕對是棒極了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '极好的；令人惊叹的',
                     'example_translation' => '今晚海上的日落简直太棒了。',
                 ],
@@ -10996,11 +10996,11 @@ return [
             'pronunciation' => '/ˌɛkˈsɛntɹɪk/, /ɪkˈsɛntɹɪk/',
             'example_sentence' => 'He is a bit eccentric, but he is a very talented artist today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '偏心',
                     'example_translation' => '他有點古怪，但他今天是一位非常有才華的藝術家。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '古怪的；怪人',
                     'example_translation' => '他有点古怪，但如今是一位非常有才华的艺术家。',
                 ],
@@ -11016,11 +11016,11 @@ return [
             'pronunciation' => '/ˈbɹɪŋk/',
             'example_sentence' => 'The two countries were on the brink of a major national crisis.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '邊緣',
                     'example_translation' => '兩國正處於重大國家危機的邊緣。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '边缘',
                     'example_translation' => '两国正处于重大国家危机的边缘。',
                 ],
@@ -11036,11 +11036,11 @@ return [
             'pronunciation' => '/voʊˈkeɪʃənəɫ/',
             'example_sentence' => 'Vocational training can help students develop practical skills for specific careers.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '職業',
                     'example_translation' => '職業訓練可以幫助學生培養特定職業所需的實用技能。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '职业的',
                     'example_translation' => '职业培训可以帮助学生培养特定职业所需的实用技能。',
                 ],
@@ -11056,11 +11056,11 @@ return [
             'pronunciation' => '/ˈspɫɛndɝ/',
             'example_sentence' => 'The splendor of the sunset took our breath away.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '輝煌',
                     'example_translation' => '日落的壯麗讓我們屏息讚嘆。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '壮丽；辉煌',
                     'example_translation' => '日落的壮丽让我们屏息赞叹。',
                 ],
@@ -11076,11 +11076,11 @@ return [
             'pronunciation' => '/ˈfɹik/',
             'example_sentence' => 'He is a total freak when it comes to cleanliness.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '怪物',
                     'example_translation' => '他在清潔方面完全是個怪人。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '怪人；狂热者',
                     'example_translation' => '在洁癖这方面，他完全是个怪人。',
                 ],
@@ -11096,11 +11096,11 @@ return [
             'pronunciation' => '/ˈpɹɪvəˌtaɪz/',
             'example_sentence' => 'The government decided to privatize the national railway system.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '私有化',
                     'example_translation' => '政府決定將國家鐵路系統私有化。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '使私有化；民营化',
                     'example_translation' => '政府决定将国家铁路系统私有化。',
                 ],
@@ -11118,11 +11118,11 @@ return [
             'pronunciation' => '/ˈaʊtwɝd/',
             'example_sentence' => 'The outward appearance of the building was impressive.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '向外',
                     'example_translation' => '這棟建築的外觀令人印象深刻。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '外在的；向外的',
                     'example_translation' => '这栋建筑的外观令人印象深刻。',
                 ],
@@ -11138,11 +11138,11 @@ return [
             'pronunciation' => '/ˈkɹækɝ/',
             'example_sentence' => 'I like to have some cheese and crackers for my afternoon snack.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '餅乾',
                     'example_translation' => '我下午喜歡吃一些起司和餅乾。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '薄饼干',
                     'example_translation' => '我喜欢下午吃一些芝士和饼干作为零食。',
                 ],
@@ -11158,11 +11158,11 @@ return [
             'pronunciation' => '/ˈbɹeɪˌkəp/',
             'example_sentence' => 'The sudden breakup of the company caused many people to lose jobs.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '拆散',
                     'example_translation' => '公司的突然解體導致許多人失業。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '解体；分裂；分手',
                     'example_translation' => '公司的突然解体导致许多人失业。',
                 ],
@@ -11178,11 +11178,11 @@ return [
             'pronunciation' => '/ˈvaɪbɹeɪt/',
             'example_sentence' => 'The phone started to vibrate on the table.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '顫動',
                     'example_translation' => '手機開始在桌上振動。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '振动',
                     'example_translation' => '手机开始在桌子上振动。',
                 ],
@@ -11198,11 +11198,11 @@ return [
             'pronunciation' => '/ˌɔdəˈtɔɹiəm/',
             'example_sentence' => 'The concert was held in the university\'s large auditorium.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '禮堂',
                     'example_translation' => '音樂會在大學的大禮堂舉行。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '礼堂；会堂',
                     'example_translation' => '音乐会在大学的大礼堂举行。',
                 ],
@@ -11218,11 +11218,11 @@ return [
             'pronunciation' => '/ˈʃɹɛd/',
             'example_sentence' => 'There is not a shred of evidence to support his claim.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '撕碎',
                     'example_translation' => '沒有絲毫證據支持他的說法。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '碎片；丝毫',
                     'example_translation' => '没有任何一丝一毫的证据支持他的说法。',
                 ],
@@ -11238,11 +11238,11 @@ return [
             'pronunciation' => '/ˈnɛɹeɪtɝ/',
             'example_sentence' => 'The narrator of the story kept the audience engaged from beginning to end.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '敘述者',
                     'example_translation' => '這個故事的敘述者從頭到尾都讓觀眾全神貫注。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '讲述者；叙述者',
                     'example_translation' => '这个故事的讲述者从头到尾都吸引着观众。',
                 ],
@@ -11258,11 +11258,11 @@ return [
             'pronunciation' => '/ˈɪɹətəbəɫ/',
             'example_sentence' => 'The hot weather made everyone irritable.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '煩躁的',
                     'example_translation' => '炎熱的天氣讓每個人都變得煩躁。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '易怒的；烦躁的',
                     'example_translation' => '炎热的天气让每个人都变得烦躁。',
                 ],
@@ -11278,11 +11278,11 @@ return [
             'pronunciation' => '/ˈɑktəˌpʊs/',
             'example_sentence' => 'The octopus has eight long arms.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '章魚',
                     'example_translation' => '章魚有八條長長的手臂。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '章鱼',
                     'example_translation' => '章鱼有八条长腕。',
                 ],
@@ -11298,11 +11298,11 @@ return [
             'pronunciation' => '/kənˈspɪɹəsi/',
             'example_sentence' => 'The police managed to uncover a conspiracy to steal the money.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '陰謀',
                     'example_translation' => '警方成功揭穿了一起偷錢的陰謀。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '阴谋',
                     'example_translation' => '警方成功揭穿了一起盗窃钱财的阴谋。',
                 ],
@@ -11320,11 +11320,11 @@ return [
             'pronunciation' => '/ˈpɛndɪŋ/',
             'example_sentence' => 'The decision is still pending.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '待辦的',
                     'example_translation' => '這個決定仍然懸而未決。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '悬而未决的',
                     'example_translation' => '该决定仍悬而未决。',
                 ],
@@ -11340,11 +11340,11 @@ return [
             'pronunciation' => '/ˈkweɪk/',
             'example_sentence' => 'The ground began to quake during the earthquake.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '地震',
                     'example_translation' => '地面在地震期間開始震動。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '震动；地震',
                     'example_translation' => '地震发生时地面开始震动。',
                 ],
@@ -11360,11 +11360,11 @@ return [
             'pronunciation' => '/dɪˈskəmfɝt/',
             'example_sentence' => 'The patient complained of minor discomfort in his back tonight.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '不舒服',
                     'example_translation' => '病人投訴今晚背部有輕微的不適感。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '不适',
                     'example_translation' => '患者抱怨今晚背部有轻微不适。',
                 ],
@@ -11380,11 +11380,11 @@ return [
             'pronunciation' => '/ˈsəmən/',
             'example_sentence' => 'The king summoned his knights to the castle.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '召喚',
                     'example_translation' => '國王召喚他的騎士們到城堡。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '召唤',
                     'example_translation' => '国王把他的骑士们召集到城堡。',
                 ],
@@ -11400,11 +11400,11 @@ return [
             'pronunciation' => '/ˈpoʊɫɝ/',
             'example_sentence' => 'Polar bears live in the Arctic region.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '極性',
                     'example_translation' => '北極熊生活在北極地區。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '极地的',
                     'example_translation' => '北极熊生活在北极地区。',
                 ],
@@ -11420,11 +11420,11 @@ return [
             'pronunciation' => '/ˌpɹoʊəˈbɪʃən/',
             'example_sentence' => 'The prohibition of smoking in public places protects everyone\'s health.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '禁止',
                     'example_translation' => '公共場所的禁煙規定保護了每個人的健康。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '禁止',
                     'example_translation' => '公共场所禁止吸烟的规定保护了每个人的健康。',
                 ],
@@ -11440,11 +11440,11 @@ return [
             'pronunciation' => '/tʃɪmˈpænzi/',
             'example_sentence' => 'Chimpanzees are highly intelligent animals that live in forests.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '黑猩猩',
                     'example_translation' => '黑猩猩是生活在森林裡的非常聰明的動物。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '黑猩猩',
                     'example_translation' => '黑猩猩是生活在森林里的高智商动物。',
                 ],
@@ -11460,11 +11460,11 @@ return [
             'pronunciation' => '/vaɪəˈɫɪnəst/',
             'example_sentence' => 'The violinist performed beautifully on stage.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '小提琴家',
                     'example_translation' => '小提琴家在舞台上表演得非常出色。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '小提琴演奏家',
                     'example_translation' => '小提琴手在舞台上表演得很出色。',
                 ],
@@ -11480,11 +11480,11 @@ return [
             'pronunciation' => '/ˈsniz/',
             'example_sentence' => 'She let out a loud sneeze during the meeting.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '噴嚏',
                     'example_translation' => '她在會議中打了一個大噴嚏。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '打喷嚏',
                     'example_translation' => '她在会议期间打了一个大喷嚏。',
                 ],
@@ -11500,11 +11500,11 @@ return [
             'pronunciation' => '/ˈkəɹi/, /ˈkɝi/',
             'example_sentence' => 'I would like to have a bowl of spicy chicken curry for dinner.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '咖哩',
                     'example_translation' => '我晚餐想喝一碗辛辣的雞肉咖哩。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '咖喱',
                     'example_translation' => '我晚餐想吃一碗辣鸡肉咖喱。',
                 ],
@@ -11522,11 +11522,11 @@ return [
             'pronunciation' => '/ˈfɫəŋk/',
             'example_sentence' => 'If you flunk the exam, you\'ll have to take the course again.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '不及格',
                     'example_translation' => '如果你考試不及格，你就必須重修這門課。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '不及格',
                     'example_translation' => '如果你考试挂科了，就必须重修这门课。',
                 ],
@@ -11542,11 +11542,11 @@ return [
             'pronunciation' => '/ˈɔɹθəˌdɑks/',
             'example_sentence' => 'He follows orthodox methods of teaching.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '正統',
                     'example_translation' => '他遵循正統的教學方法。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '正统的',
                     'example_translation' => '他遵循传统的教学方法。',
                 ],
@@ -11562,11 +11562,11 @@ return [
             'pronunciation' => '/iˈtɝnəti/, /ɪˈtɝnəti/',
             'example_sentence' => 'Love feels like an eternity when you are waiting.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '永恆',
                     'example_translation' => '當你在等待時，愛感覺像是永恆。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '永恒',
                     'example_translation' => '当你在等待时，爱感觉就像是永恒。',
                 ],
@@ -11582,11 +11582,11 @@ return [
             'pronunciation' => '/ˈbɫɑnd/',
             'example_sentence' => 'The tall blond man waved at his friends across the street.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '金髮（男）',
                     'example_translation' => '那位高大的金髮男子向街對面的朋友揮手。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '金发男子',
                     'example_translation' => '那位高大的金发男子向街对面的朋友挥了挥手。',
                 ],
@@ -11602,11 +11602,11 @@ return [
             'pronunciation' => '/ˈbɫɑnd/',
             'example_sentence' => 'She has long, beautiful blonde hair and bright blue eyes.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '金髮（女）',
                     'example_translation' => '她有著長而漂亮的金色頭髮和亮藍色的眼睛。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '金发女子',
                     'example_translation' => '她留着长长的美丽金发，有着明亮的蓝色眼睛。',
                 ],
@@ -11622,11 +11622,11 @@ return [
             'pronunciation' => '/ˈspæn/',
             'example_sentence' => 'The bridge spans the entire river.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '跨距',
                     'example_translation' => '這座橋橫跨整條河流。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '横跨',
                     'example_translation' => '这座桥横跨整条河流。',
                 ],
@@ -11642,11 +11642,11 @@ return [
             'pronunciation' => '/ˈpɹoʊb/',
             'example_sentence' => 'The space probe sent back images of Mars.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '探測',
                     'example_translation' => '太空探測器傳回了火星的影像。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '探测器',
                     'example_translation' => '太空探测器传回了火星的图像。',
                 ],
@@ -11662,11 +11662,11 @@ return [
             'pronunciation' => '/ˌænəˈɫɪtɪkəɫ/',
             'example_sentence' => 'She has an analytical mind and is good at solving puzzles.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '分析性的',
                     'example_translation' => '她有分析頭腦，擅長解決謎題。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '分析性的',
                     'example_translation' => '她具有分析性头脑，擅长解谜。',
                 ],
@@ -11682,11 +11682,11 @@ return [
             'pronunciation' => '/ˈstən/',
             'example_sentence' => 'The magician\'s final trick stunned the entire audience.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '擊暈',
                     'example_translation' => '魔術師的最後一個把戲震驚了全場觀眾。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '使震惊',
                     'example_translation' => '魔术师的最后一个魔术震惊了全场观众。',
                 ],
@@ -11702,11 +11702,11 @@ return [
             'pronunciation' => '/ˈtʃɪɫi/',
             'example_sentence' => 'I like to add some hot chili to my soup to give it more flavor.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '辣椒',
                     'example_translation' => '我喜歡在湯裡加一些熱辣椒來增加風味。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '辣椒',
                     'example_translation' => '我喜欢在汤里加些辣辣椒来增加风味。',
                 ],
@@ -11724,11 +11724,11 @@ return [
             'pronunciation' => '/əˈkɔɹdɪŋɫi/',
             'example_sentence' => 'The rules have changed, and you must act accordingly.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '因此',
                     'example_translation' => '規則已經改變，你必須相應地採取行動。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '相应地；据此',
                     'example_translation' => '规则已经改变，你必须采取相应的行动。',
                 ],
@@ -11744,11 +11744,11 @@ return [
             'pronunciation' => '/ˈtidiəs/',
             'example_sentence' => 'The task was so tedious that I almost fell asleep.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '乏味',
                     'example_translation' => '這項任務太乏味了，我差點睡著。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '冗长乏味的；枯燥的',
                     'example_translation' => '这项任务太枯燥乏味了，我差点睡着。',
                 ],
@@ -11764,11 +11764,11 @@ return [
             'pronunciation' => '/ˌɛnˈɫaɪtənmənt/',
             'example_sentence' => 'The book provided a lot of enlightenment on the complex issue.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '啟蒙',
                     'example_translation' => '這本書對這個複雜的問題提供了很多啟迪。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '启发；启迪',
                     'example_translation' => '这本书对这个复杂的问题提供了很多启迪。',
                 ],
@@ -11784,11 +11784,11 @@ return [
             'pronunciation' => '/kəˈɫɛstɝˌɔɫ/, /kəˈɫɛstɝəɫ/',
             'example_sentence' => 'The doctor advised him to lower his intake of high cholesterol.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '膽固醇',
                     'example_translation' => '醫生建議他減少高膽固醇的攝入。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '胆固醇',
                     'example_translation' => '医生建议他减少高胆固醇食物的摄入。',
                 ],
@@ -11804,11 +11804,11 @@ return [
             'pronunciation' => '/ɹiˈspɛktɪv/, /ɹɪˈspɛktɪv/',
             'example_sentence' => 'The students returned to their respective classrooms.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '各自',
                     'example_translation' => '學生們回到了各自的教室。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '各自的；分别的',
                     'example_translation' => '学生们回到了各自的教室。',
                 ],
@@ -11824,11 +11824,11 @@ return [
             'pronunciation' => '/ˌmɪsəˈɫeɪniəs/',
             'example_sentence' => 'She kept a drawer full of miscellaneous items like pens, tape, and rubber bands.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '各種各樣的',
                     'example_translation' => '她有一個抽屜，裡面放滿了各式各樣的物品，像是筆、膠帶和橡皮筋。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '各种各样的；杂七杂八的',
                     'example_translation' => '她的抽屉里塞满了笔、胶带和橡皮筋等各种杂物。',
                 ],
@@ -11844,11 +11844,11 @@ return [
             'pronunciation' => '/ˈhændiˌkɹæft/',
             'example_sentence' => 'She sells beautiful handicraft at the local market.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '手工業',
                     'example_translation' => '她在當地市場販售美麗的手工藝品。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '手工艺品',
                     'example_translation' => '她在当地市场出售精致的手工艺品。',
                 ],
@@ -11864,11 +11864,11 @@ return [
             'pronunciation' => '/ˈtʃænt/',
             'example_sentence' => 'The monks began to chant their prayers in the quiet temple.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '唄',
                     'example_translation' => '僧侶們開始在安靜的寺廟裡吟誦禱告。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '吟诵；诵经；反复呼喊',
                     'example_translation' => '僧侣们开始在安静的寺庙里诵经祷告。',
                 ],
@@ -11884,11 +11884,11 @@ return [
             'pronunciation' => '/ˈɹɪɡɝəs/',
             'example_sentence' => 'The scientist conducted a rigorous experiment to test the hypothesis.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '嚴格的',
                     'example_translation' => '這位科學家進行了一項嚴格的實驗來測試這個假設。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '严格的；严密的',
                     'example_translation' => '这位科学家进行了严格的实验来验证这个假设。',
                 ],
@@ -11904,11 +11904,11 @@ return [
             'pronunciation' => '/ˈaʊtˌɡoʊɪŋ/',
             'example_sentence' => 'She is very outgoing and makes friends easily.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '外向的',
                     'example_translation' => '她非常外向，很容易交到朋友。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '外向的；好交际的',
                     'example_translation' => '她性格非常外向，很容易交到朋友。',
                 ],
@@ -11926,11 +11926,11 @@ return [
             'pronunciation' => '/kəˈɫoʊkwiəɫ/',
             'example_sentence' => 'The book uses a lot of colloquial English that is hard to learn.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '口語化的',
                     'example_translation' => '這本書使用了大量的口語化英語，很難學。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '口语的；通俗的',
                     'example_translation' => '这本书使用了大量的口语化英语，很难掌握。',
                 ],
@@ -11946,11 +11946,11 @@ return [
             'pronunciation' => '/ˈkɪn/',
             'example_sentence' => 'My kin gathered together for the holiday celebration.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '親屬',
                     'example_translation' => '我的親人們聚在一起慶祝節日。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '亲属；家属',
                     'example_translation' => '我的亲人们聚在一起庆祝节日。',
                 ],
@@ -11966,11 +11966,11 @@ return [
             'pronunciation' => '/ˈæɫdʒəbɹə/',
             'example_sentence' => 'He is finding it difficult to solve the complex algebra problems.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '代數',
                     'example_translation' => '他覺得解決複雜的代數問題很困難。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '代数学',
                     'example_translation' => '他觉得解这些复杂的代数题很困难。',
                 ],
@@ -11986,11 +11986,11 @@ return [
             'pronunciation' => '/ˈhɑɹnəs/, /ˈhɑɹnɪs/',
             'example_sentence' => 'The explorers used a strong harness for the climb.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '馬具',
                     'example_translation' => '探險家在攀登時使用了強韌的安全帶。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '安全带；背带；马具',
                     'example_translation' => '探险家们在攀登时使用了坚固的安全带。',
                 ],
@@ -12006,11 +12006,11 @@ return [
             'pronunciation' => '/ˈpɛɹəˌdɑks/',
             'example_sentence' => 'It is a paradox that the more we learn, the more we realize how little we know.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '悖論',
                     'example_translation' => '這是一個矛盾：我們學得越多，就越意識到自己知道的有多少。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '悖论；矛盾的现象',
                     'example_translation' => '这是一个矛盾的现象：我们学得越多，就越意识到自己所知甚少。',
                 ],
@@ -12026,11 +12026,11 @@ return [
             'pronunciation' => '/ˌɪnˈfɫɪkt/',
             'example_sentence' => 'The storm inflicted severe damage on the coastal town.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '造成',
                     'example_translation' => '這場風暴對沿海小鎮造成了嚴重的損害。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '造成（伤害、打击等）',
                     'example_translation' => '这场暴风雨给沿海小镇造成了严重的破坏。',
                 ],
@@ -12046,11 +12046,11 @@ return [
             'pronunciation' => '/ˈdwɔɹf/',
             'example_sentence' => 'In the old fairy tale, the hero met a group of friendly dwarfs.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '矮人',
                     'example_translation' => '在古老的童話故事中，英雄遇到了一群友好的矮人。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '小矮人；侏儒',
                     'example_translation' => '在古老的童话故事里，主人公遇到了一群友好的小矮人。',
                 ],
@@ -12066,11 +12066,11 @@ return [
             'pronunciation' => '/ˈbɫɑt/',
             'example_sentence' => 'He used a soft cloth to blot the ink from the wooden table.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '印跡',
                     'example_translation' => '他用軟布擦乾木桌上的墨水。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '吸干；擦去；污点',
                     'example_translation' => '他用一块软布吸干了木桌上的墨水。',
                 ],
@@ -12086,11 +12086,11 @@ return [
             'pronunciation' => '/pɹɪˈsid/',
             'example_sentence' => 'Thunder precedes lightning in our perception, though lightning actually occurs first.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '領先於',
                     'example_translation' => '在我們的感知中，雷聲先於閃電，儘管閃電實際上先發生。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '先于；在……之前发生',
                     'example_translation' => '在我们的感知中雷声先于闪电，尽管实际上闪电先发生。',
                 ],
@@ -12106,11 +12106,11 @@ return [
             'pronunciation' => '/ˈɛɫəˌveɪt/',
             'example_sentence' => 'The manager decided to elevate him to a higher position today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '提升',
                     'example_translation' => '經理今天決定將他提升到更高的職位。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '提拔；提升',
                     'example_translation' => '经理今天决定将他提拔到更高的职位。',
                 ],
@@ -12128,11 +12128,11 @@ return [
             'pronunciation' => '/ˈsɝəp/, /ˈsɪɹəp/',
             'example_sentence' => 'She poured maple syrup over her pancakes.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '糖漿',
                     'example_translation' => '她把楓糖漿淋在鬆餅上。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '糖浆',
                     'example_translation' => '她把枫糖浆浇在松饼上。',
                 ],
@@ -12148,11 +12148,11 @@ return [
             'pronunciation' => '/ˈɫɪtɝət/',
             'example_sentence' => 'She is a highly literate woman who reads several books a week.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '識字的',
                     'example_translation' => '她是一位識字程度很高的女性，每週閱讀好幾本書。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '有文化的，识字的',
                     'example_translation' => '她是一位极具文化修养的女性，每周读好几本书。',
                 ],
@@ -12168,11 +12168,11 @@ return [
             'pronunciation' => '/ˈpɑstʃɝ/',
             'example_sentence' => 'Good posture is important for your health.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '姿勢',
                     'example_translation' => '良好的姿勢對你的健康很重要。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '姿势，体态',
                     'example_translation' => '良好的姿势对身体健康很重要。',
                 ],
@@ -12188,11 +12188,11 @@ return [
             'pronunciation' => '/ɹɪˈfɹɛʃmənts/',
             'example_sentence' => 'We served refreshments at the meeting.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '茶點',
                     'example_translation' => '我們在會議上提供了茶點。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '茶点，点心',
                     'example_translation' => '我们在会议上提供了茶点。',
                 ],
@@ -12208,11 +12208,11 @@ return [
             'pronunciation' => '/sɪnˈθɛtɪk/',
             'example_sentence' => 'Synthetic materials are widely used in modern clothing.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '合成的',
                     'example_translation' => '合成材料廣泛用於現代服裝中。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '合成的，人造的',
                     'example_translation' => '合成材料广泛应用于现代服装中。',
                 ],
@@ -12228,11 +12228,11 @@ return [
             'pronunciation' => '/əˈstɹɑnəmi/',
             'example_sentence' => 'She is very interested in astronomy and space exploration.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '天文學',
                     'example_translation' => '她對天文學和太空探索非常感興趣。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '天文学',
                     'example_translation' => '她对天文学和太空探索非常感兴趣。',
                 ],
@@ -12248,11 +12248,11 @@ return [
             'pronunciation' => '/əˈbəndəns/',
             'example_sentence' => 'The garden was filled with an abundance of colorful flowers.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '豐富',
                     'example_translation' => '花園裡開滿了豐富多彩的花朵。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '丰富，充裕',
                     'example_translation' => '花园里开满了各式各样绚丽的花朵。',
                 ],
@@ -12268,11 +12268,11 @@ return [
             'pronunciation' => '/miˈdivəɫ/, /mɪˈdivəɫ/, /mɪdˈjivəɫ/',
             'example_sentence' => 'The castle has a medieval design.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '中世紀',
                     'example_translation' => '這座城堡有中世紀的設計。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '中世纪的',
                     'example_translation' => '这座城堡具有中世纪的建筑风格。',
                 ],
@@ -12288,11 +12288,11 @@ return [
             'pronunciation' => '/ˈvaɪs/',
             'example_sentence' => 'Gambling can become a dangerous vice if left unchecked.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '副',
                     'example_translation' => '賭博如果不加以控制，可能會成為一種危險的惡習。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '恶习，不道德行为',
                     'example_translation' => '赌博如果不加控制，可能会变成一种危险的恶习。',
                 ],
@@ -12308,11 +12308,11 @@ return [
             'pronunciation' => '/ˈɹiˌɫeɪ/',
             'example_sentence' => 'The runner passed the baton in the relay.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '中繼',
                     'example_translation' => '那位跑者在接力賽中傳遞了接力棒。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '接力赛；转播，传递',
                     'example_translation' => '跑者在接力赛中传递了接力棒。',
                 ],
@@ -12330,11 +12330,11 @@ return [
             'pronunciation' => '/ˈækni/',
             'example_sentence' => 'Many teenagers suffer from acne during their adolescent years.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '粉刺',
                     'example_translation' => '許多青少年在青春期都會受到痤瘡的困擾。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '痤疮，粉刺',
                     'example_translation' => '许多青少年在青春期都会受到痤疮的困扰。',
                 ],
@@ -12350,11 +12350,11 @@ return [
             'pronunciation' => '/ˈvɪktɝ/',
             'example_sentence' => 'The victor celebrated his triumph on the battlefield.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '勝利者',
                     'example_translation' => '勝利者在戰場上慶祝他的勝利。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '胜利者，获胜者',
                     'example_translation' => '胜利者在战场上庆祝他的胜利。',
                 ],
@@ -12370,11 +12370,11 @@ return [
             'pronunciation' => '/səbˈdʒɛktɪv/',
             'example_sentence' => 'Art appreciation is often subjective.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '主觀',
                     'example_translation' => '藝術欣賞往往是主觀的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '主观的',
                     'example_translation' => '艺术欣赏往往是主观的。',
                 ],
@@ -12390,11 +12390,11 @@ return [
             'pronunciation' => '/ˌhɛtɝoʊˈsɛkʃəwəɫ/',
             'example_sentence' => 'Heterosexual couples make up the majority of marriages in most countries.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '異性',
                     'example_translation' => '異性戀伴侶在大多數國家的婚姻中佔多數。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '异性恋的',
                     'example_translation' => '在大多数国家，异性恋伴侣占婚姻的绝大多数。',
                 ],
@@ -12410,11 +12410,11 @@ return [
             'pronunciation' => '/ˈjɝn/',
             'example_sentence' => 'She yearns for the freedom she once had.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '嚮往',
                     'example_translation' => '她渴望她曾經擁有的自由。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '渴望，向往',
                     'example_translation' => '她渴望得到曾经拥有的自由。',
                 ],
@@ -12430,11 +12430,11 @@ return [
             'pronunciation' => '/ˈheɪɫ/',
             'example_sentence' => 'Hail began to fall during the storm.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '冰雹',
                     'example_translation' => '暴風雨期間開始下冰雹。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '冰雹；下冰雹',
                     'example_translation' => '暴风雨期间开始下冰雹。',
                 ],
@@ -12450,11 +12450,11 @@ return [
             'pronunciation' => '/ˈhɔɹs/',
             'example_sentence' => 'After shouting at the concert all night, her voice became hoarse.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '沙啞',
                     'example_translation' => '在演唱會上喊了一整晚之後，她的聲音變得沙啞了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '嘶哑的，沙哑的',
                     'example_translation' => '在演唱会上喊了一整晚后，她的声音变哑了。',
                 ],
@@ -12470,11 +12470,11 @@ return [
             'pronunciation' => '/dɪˈspoʊzəbəɫ/',
             'example_sentence' => 'Please use disposable cups and plates for the large party.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '一次性的',
                     'example_translation' => '請在大派對上使用一次性杯子和盤子。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '一次性的',
                     'example_translation' => '大型聚会上请使用一次性杯子和餐盘。',
                 ],
@@ -12490,11 +12490,11 @@ return [
             'pronunciation' => '/dɪˈspaɪz/',
             'example_sentence' => 'I despise people who are cruel to animals and the environment.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '鄙視',
                     'example_translation' => '我蔑視那些虐待動物和破壞環境的人。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '鄙视，看不起',
                     'example_translation' => '我鄙视那些虐待动物和破坏环境的人。',
                 ],
@@ -12510,11 +12510,11 @@ return [
             'pronunciation' => '/ˈnɪkəɫ/',
             'example_sentence' => 'A nickel is worth five cents.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '鎳',
                     'example_translation' => '一枚鎳幣值五分錢。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '镍；五分硬币',
                     'example_translation' => '一枚五分硬币价值五美分。',
                 ],
@@ -12532,11 +12532,11 @@ return [
             'pronunciation' => '/əˈwaɪɫ/',
             'example_sentence' => 'Please sit down and rest awhile before you continue walking.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '一會兒',
                     'example_translation' => '在繼續走之前，請坐下來休息一會兒。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '一会儿，片刻',
                     'example_translation' => '在继续走之前，请坐下来休息一会儿。',
                 ],
@@ -12552,11 +12552,11 @@ return [
             'pronunciation' => '/ˈmɔɹtəɫ/',
             'example_sentence' => 'All humans are mortal.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '凡人',
                     'example_translation' => '所有人類都是凡人。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '凡人；终有一死的',
                     'example_translation' => '所有人都是会死的。',
                 ],
@@ -12572,11 +12572,11 @@ return [
             'pronunciation' => '/ˈɹɛkən/',
             'example_sentence' => 'I reckon we should leave before it gets dark.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '估計',
                     'example_translation' => '我認為我們應該在天黑之前離開。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '认为；估计',
                     'example_translation' => '我认为我们应该在天黑之前离开。',
                 ],
@@ -12592,11 +12592,11 @@ return [
             'pronunciation' => '/ˈsteɪbəˌɫaɪz/',
             'example_sentence' => 'The doctor worked hard to stabilize the patient\'s condition.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '穩定',
                     'example_translation' => '醫生努力穩定病人的狀況。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '（使）稳定',
                     'example_translation' => '医生努力稳定病人的病情。',
                 ],
@@ -12612,11 +12612,11 @@ return [
             'pronunciation' => '/ˌɹɛkɹiˈeɪʃənəɫ/',
             'example_sentence' => 'Recreational activities such as hiking and swimming help people relax.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '休閒的',
                     'example_translation' => '休閒活動如健行和游泳有助於人們放鬆。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '消遣的，娱乐的，休闲的',
                     'example_translation' => '徒步和游泳等休闲活动有助于人们放松。',
                 ],
@@ -12632,11 +12632,11 @@ return [
             'pronunciation' => '/ˈbædʒ/',
             'example_sentence' => 'The police officer showed his official badge to gain entry to the site.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '徽章',
                     'example_translation' => '警官出示了他的官方徽章以進入現場。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '徽章，证章',
                     'example_translation' => '警官出示了他的官方警徽以进入现场。',
                 ],
@@ -12652,11 +12652,11 @@ return [
             'pronunciation' => '/ˈbɫənt/',
             'example_sentence' => 'The pencil is blunt, so I need to find a sharpener to fix it.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '鈍',
                     'example_translation' => '鉛筆鈍了，我需要找個削筆器。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '钝的；直率的；使变钝',
                     'example_translation' => '铅笔变钝了，所以我需要找个削笔刀削一下。',
                 ],
@@ -12672,11 +12672,11 @@ return [
             'pronunciation' => '/ˌæmbɪɡˈjuəti/',
             'example_sentence' => 'There is a lot of ambiguity in his explanation of the event.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '歧義',
                     'example_translation' => '他對事件的解釋中有很多模糊之處。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '模棱两可，歧义',
                     'example_translation' => '他对事件的解释中有许多模糊之处。',
                 ],
@@ -12692,11 +12692,11 @@ return [
             'pronunciation' => '/spɑnˈteɪniəs/',
             'example_sentence' => 'The child\'s spontaneous laughter filled the room with joy.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '自發性的',
                     'example_translation' => '那個孩子自發的笑聲讓房間充滿了歡樂。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '自发的，自然流露的',
                     'example_translation' => '孩子自发的笑声让房间里充满了欢声笑语。',
                 ],
@@ -12712,11 +12712,11 @@ return [
             'pronunciation' => '/vaɪˈtæɫəti/',
             'example_sentence' => 'The city\'s vitality can be seen in its bustling streets and lively markets.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '活力',
                     'example_translation' => '這座城市的活力可以從其繁忙的街道和熱鬧的市場中看出。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '活力，生命力',
                     'example_translation' => '这座城市的活力可以从其繁忙的街道和热闹的集市中看出。',
                 ],
@@ -12734,11 +12734,11 @@ return [
             'pronunciation' => '/ædˈvaɪzɝi/',
             'example_sentence' => 'He serves in an advisory role for the new government project.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '諮詢',
                     'example_translation' => '他在新政府專案中擔任顧問角色。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '咨询的，顾问的',
                     'example_translation' => '他在新政府项目中担任顾问角色。',
                 ],
@@ -12754,11 +12754,11 @@ return [
             'pronunciation' => '/pɹɛˈstiʒ/',
             'example_sentence' => 'The university has gained great prestige for its research programs.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '聲望',
                     'example_translation' => '這所大學因其研究計畫而獲得了極高的聲望。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '声望，威望',
                     'example_translation' => '这所大学因其研究项目而赢得了极高的声望。',
                 ],
@@ -12774,11 +12774,11 @@ return [
             'pronunciation' => '/ˈbætʃəɫɝ/, /ˈbætʃɫɝ/',
             'example_sentence' => 'He is a bachelor who lives alone in a small apartment.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '學士',
                     'example_translation' => '他是個單身漢，獨自住在一個小公寓裡。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '单身汉；学士',
                     'example_translation' => '他是个单身汉，独自住在小公寓里。',
                 ],
@@ -12794,11 +12794,11 @@ return [
             'pronunciation' => '/ˌɪnˈdəstɹiəˌɫaɪz/',
             'example_sentence' => 'Many countries began to industrialize in the nineteenth century.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '工業化',
                     'example_translation' => '許多國家在十九世紀開始工業化。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '（使）工业化',
                     'example_translation' => '许多国家在十九世纪开始实现工业化。',
                 ],
@@ -12814,11 +12814,11 @@ return [
             'pronunciation' => '/ˈtwaɪˌɫaɪt/',
             'example_sentence' => 'The city looked beautiful in the twilight.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '暮',
                     'example_translation' => '這座城市在暮色中看起來很美。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '黄昏，暮色',
                     'example_translation' => '这座城市在黄昏时分显得非常美丽。',
                 ],
@@ -12834,11 +12834,11 @@ return [
             'pronunciation' => '/ˈkəb/',
             'example_sentence' => 'We saw a small bear cub playing in the woods early this morning.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '幼獸',
                     'example_translation' => '我們今天一早看到一隻小熊在森林裡玩耍。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '幼兽（熊、狮、狼等）',
                     'example_translation' => '今天一大早我们看见一只小熊幼崽在树林里玩耍。',
                 ],
@@ -12854,11 +12854,11 @@ return [
             'pronunciation' => '/juˈnænəməs/',
             'example_sentence' => 'The decision to adopt the new policy was unanimous.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '一致',
                     'example_translation' => '採納新政策的決定是一致通過的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '全体一致的，意见一致的',
                     'example_translation' => '采纳新政策的决定是一致通过的。',
                 ],
@@ -12874,11 +12874,11 @@ return [
             'pronunciation' => '/ˌɪmˈpɛɹətɪv/',
             'example_sentence' => 'It is imperative that we finish the project on time.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '至關重要的',
                     'example_translation' => '我們必須準時完成這個專案，這是至關重要的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '极重要的；迫切的；必要的事',
                     'example_translation' => '我们必须按时完成这个项目，这是至关重要的。',
                 ],
@@ -12894,11 +12894,11 @@ return [
             'pronunciation' => '/ˈfɑɹməsɪst/',
             'example_sentence' => 'The pharmacist carefully checked the prescription before dispensing the medication.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '藥師',
                     'example_translation' => '藥劑師在配藥前仔細檢查了處方。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '药剂师',
                     'example_translation' => '药剂师在配药前仔细检查了处方。',
                 ],
@@ -12914,11 +12914,11 @@ return [
             'pronunciation' => '/ˈkɝfju/',
             'example_sentence' => 'The city imposed a strict night curfew during the recent crisis.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '宵禁',
                     'example_translation' => '在最近的危機期間，該市實施了嚴格的夜間宵禁。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '宵禁',
                     'example_translation' => '在最近的危机期间，该市实施了严格的夜间宵禁。',
                 ],
@@ -12936,11 +12936,11 @@ return [
             'pronunciation' => '/ˈɔdɪt/',
             'example_sentence' => 'The company\'s accounts undergo a thorough audit every year.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '審計',
                     'example_translation' => '公司的帳目每年都要進行徹底審計。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '审计',
                     'example_translation' => '公司的账目每年都要进行彻底审计。',
                 ],
@@ -12956,11 +12956,11 @@ return [
             'pronunciation' => '/əˈkædəmi/',
             'example_sentence' => 'He was accepted into the prestigious national military academy.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '學院',
                     'example_translation' => '他被著名的國家軍事學院錄取了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '学院',
                     'example_translation' => '他被著名的国家军事学院录取了。',
                 ],
@@ -12976,11 +12976,11 @@ return [
             'pronunciation' => '/ˈspoʊksˌpɝsən/',
             'example_sentence' => 'The spokesperson issued a statement on behalf of the company.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '發言人',
                     'example_translation' => '發言人代表公司發表了一份聲明。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '发言人',
                     'example_translation' => '发言人代表公司发表了一份声明。',
                 ],
@@ -12996,11 +12996,11 @@ return [
             'pronunciation' => '/ˈspoʊksmən/',
             'example_sentence' => 'The spokesman answered questions from reporters at the press conference.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '男發言人',
                     'example_translation' => '男發言人在記者會上回答了記者的問題。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '男发言人',
                     'example_translation' => '男发言人在新闻发布会上回答了记者的提问。',
                 ],
@@ -13016,11 +13016,11 @@ return [
             'pronunciation' => '/ˈspoʊksˌwʊmən/',
             'example_sentence' => 'The spokeswoman confirmed that the company would launch a new product.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '女發言人',
                     'example_translation' => '女發言人確認公司將推出一款新產品。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '女发言人',
                     'example_translation' => '女发言人确认公司将推出一款新产品。',
                 ],
@@ -13036,11 +13036,11 @@ return [
             'pronunciation' => '/kəmˈpjut/',
             'example_sentence' => 'The scientist used a powerful computer to compute the complex data.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '計算',
                     'example_translation' => '科學家使用強大的電腦來計算複雜的數據。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '计算',
                     'example_translation' => '科学家使用一台强大的计算机来计算复杂的数据。',
                 ],
@@ -13056,11 +13056,11 @@ return [
             'pronunciation' => '/ˈbɹɛdθ/',
             'example_sentence' => 'The breadth of the river is more than fifty meters at this point.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '寬度',
                     'example_translation' => '河流在此處的寬度超過五十米。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '宽度',
                     'example_translation' => '河流在此处的宽度超过五十米。',
                 ],
@@ -13076,11 +13076,11 @@ return [
             'pronunciation' => '/baɪˈɫætɝəɫ/',
             'example_sentence' => 'The two countries agreed to increase their bilateral trade today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '雙邊',
                     'example_translation' => '兩國今天同意增加雙邊貿易。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '双边的',
                     'example_translation' => '两国今天同意增加双边贸易。',
                 ],
@@ -13096,11 +13096,11 @@ return [
             'pronunciation' => '/ˈskɪm/',
             'example_sentence' => 'She likes to skim the newspaper every morning before work.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '撇去',
                     'example_translation' => '她喜歡每天早上上班前快速瀏覽報紙。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '浏览',
                     'example_translation' => '她喜欢每天早上上班前浏览报纸。',
                 ],
@@ -13116,11 +13116,11 @@ return [
             'pronunciation' => '/ˈpɛɹəˌɫaɪz/',
             'example_sentence' => 'The news seemed to paralyze him with shock.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '癱瘓',
                     'example_translation' => '這個消息似乎使他震驚得動彈不得。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '使瘫痪',
                     'example_translation' => '这个消息似乎让他震惊得动弹不得。',
                 ],
@@ -13138,11 +13138,11 @@ return [
             'pronunciation' => '/ˈɛndɝəns/',
             'example_sentence' => 'The long race was a test of the athletes\' physical endurance.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '耐力',
                     'example_translation' => '長跑是對運動員體能耐力的考驗。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '耐力',
                     'example_translation' => '长跑是对运动员体能耐力的考验。',
                 ],
@@ -13158,11 +13158,11 @@ return [
             'pronunciation' => '/ˈænəˌmeɪt/, /ˈænəmət/',
             'example_sentence' => 'The studio uses modern tech to animate its new movies.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '動畫化',
                     'example_translation' => '工作室使用現代技術為其新電影製作動畫。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '制作动画',
                     'example_translation' => '工作室使用现代技术为其新电影制作动画。',
                 ],
@@ -13178,11 +13178,11 @@ return [
             'pronunciation' => '/ˈɫɛzbiən/',
             'example_sentence' => 'She is a well-known lesbian author who writes about love and identity.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '女同性戀',
                     'example_translation' => '她是一位著名的女同性戀作家，書寫關於愛與身分認同的作品。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '女同性恋的',
                     'example_translation' => '她是一位著名的女同性恋作家，创作关于爱与身份认同的作品。',
                 ],
@@ -13198,11 +13198,11 @@ return [
             'pronunciation' => '/ˈpɛbəɫ/',
             'example_sentence' => 'I picked up a smooth pebble from the riverbank.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '卵石',
                     'example_translation' => '我從河岸撿起一顆光滑的鵝卵石。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '鹅卵石',
                     'example_translation' => '我从河岸捡起一颗光滑的鹅卵石。',
                 ],
@@ -13218,11 +13218,11 @@ return [
             'pronunciation' => '/ˈstæɡɝ/',
             'example_sentence' => 'The news of his sudden resignation staggered everyone in the office.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '錯開',
                     'example_translation' => '他突然辭職的消息震驚了辦公室裡的每一個人。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '使震惊',
                     'example_translation' => '他突然辞职的消息震惊了办公室里的每一个人。',
                 ],
@@ -13238,11 +13238,11 @@ return [
             'pronunciation' => '/ɹɪfˈjut/',
             'example_sentence' => 'The scientist was able to refute the theory with new evidence.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '反駁',
                     'example_translation' => '這位科學家能夠用新證據反駁這個理論。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '反驳',
                     'example_translation' => '这位科学家能够用新证据反驳这个理论。',
                 ],
@@ -13258,11 +13258,11 @@ return [
             'pronunciation' => '/ˈɡɫaɪd/',
             'example_sentence' => 'The birds began to glide peacefully over the valley.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '滑行',
                     'example_translation' => '鳥兒開始在山谷上空平靜地滑翔。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '滑翔',
                     'example_translation' => '鸟儿开始在山谷上空平静地滑翔。',
                 ],
@@ -13278,11 +13278,11 @@ return [
             'pronunciation' => '/ˈɫəɫəˌbaɪ/',
             'example_sentence' => 'She sang a lullaby to help the baby fall asleep.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '催眠曲',
                     'example_translation' => '她唱了一首搖籃曲來幫助寶寶入睡。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '摇篮曲',
                     'example_translation' => '她唱了一首摇篮曲来帮助宝宝入睡。',
                 ],
@@ -13298,11 +13298,11 @@ return [
             'pronunciation' => '/ɹoʊˈbəst/',
             'example_sentence' => 'The company has a robust security system to protect its data.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '強壯的',
                     'example_translation' => '這家公司有一套健全的安全系統來保護其資料。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '强健的',
                     'example_translation' => '这家公司有一套强健的安全系统来保护其数据。',
                 ],
@@ -13318,11 +13318,11 @@ return [
             'pronunciation' => '/ˈdwɛɫ/',
             'example_sentence' => 'Many strange creatures dwell in the deep parts of the forest.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '住',
                     'example_translation' => '許多奇特的生物居住在森林深處。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '居住',
                     'example_translation' => '许多奇特的生物居住在森林深处。',
                 ],
@@ -13340,11 +13340,11 @@ return [
             'pronunciation' => '/ˈmɝˌmeɪd/',
             'example_sentence' => 'The little mermaid sat on a rock and sang a beautiful song.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '美人魚',
                     'example_translation' => '小美人魚坐在岩石上，唱著一首美麗的歌。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '美人鱼',
                     'example_translation' => '小美人鱼坐在岩石上，唱着一首动听的歌。',
                 ],
@@ -13360,11 +13360,11 @@ return [
             'pronunciation' => '/dɪˈspɛnsəbəɫ/',
             'example_sentence' => 'Some items in the kitchen are useful, but they are dispensable.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '可有可無的',
                     'example_translation' => '廚房裡有些物品很有用，但它們並非不可或缺。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '可有可无的，非必需的',
                     'example_translation' => '厨房里的某些物品很有用，但它们并非不可或缺。',
                 ],
@@ -13380,11 +13380,11 @@ return [
             'pronunciation' => '/ˈɡɹəmbəɫ/',
             'example_sentence' => 'The workers grumble about the long hours every day.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '嘰',
                     'example_translation' => '工人們每天都抱怨工時太長。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '抱怨，发牢骚',
                     'example_translation' => '工人们每天都抱怨工作时间太长。',
                 ],
@@ -13400,11 +13400,11 @@ return [
             'pronunciation' => '/tɔɹˈneɪˌdoʊ/',
             'example_sentence' => 'A powerful tornado caused major damage to the town.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '龍捲風',
                     'example_translation' => '一場強大的龍捲風對小鎮造成了重大破壞。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '龙卷风',
                     'example_translation' => '一场强烈的龙卷风对小镇造成了重大破坏。',
                 ],
@@ -13420,11 +13420,11 @@ return [
             'pronunciation' => '/ˈswɑmp/, /ˈswɔmp/',
             'example_sentence' => 'The explorers got lost in the dark swamp.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '沼澤',
                     'example_translation' => '探險家們在黑暗的沼澤中迷了路。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '沼泽，湿地',
                     'example_translation' => '探险家们在黑暗的沼泽中迷路了。',
                 ],
@@ -13440,11 +13440,11 @@ return [
             'pronunciation' => '/ˈhoʊɫˌseɪɫ/',
             'example_sentence' => 'They buy goods at wholesale prices and sell them at retail.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '批發的',
                     'example_translation' => '他們以批發價格購買商品，然後以零售價格出售。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '批发的',
                     'example_translation' => '他们以批发价购买商品，然后以零售价售出。',
                 ],
@@ -13460,11 +13460,11 @@ return [
             'pronunciation' => '/pɹiˈvɛnɪv/, /pɹiˈvɛntɪv/, /pɹɪˈvɛnɪv/, /pɹɪˈvɛntɪv/',
             'example_sentence' => 'Preventive measures can reduce the risk of heart disease.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '預防性的',
                     'example_translation' => '預防措施可以降低心臟病的風險。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '预防性的',
                     'example_translation' => '预防性措施可以降低患心脏病的风险。',
                 ],
@@ -13480,11 +13480,11 @@ return [
             'pronunciation' => '/daɪˈɹɛktɪv/, /dɝˈɛktɪv/, /diˈɹɛktɪv/, /dɪˈɹɛktɪv/',
             'example_sentence' => 'The manager issued a new directive regarding company safety rules.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '指示',
                     'example_translation' => '經理發布了關於公司安全規則的新指令。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '指令，指示',
                     'example_translation' => '经理发布了一项关于公司安全规章的新指令。',
                 ],
@@ -13500,11 +13500,11 @@ return [
             'pronunciation' => '/ˈoʊvɝˈhiɹ/',
             'example_sentence' => 'I overheard them talking about the surprise party.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '無意中聽到',
                     'example_translation' => '我無意中聽到他們在談論驚喜派對。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '无意中听到，偷听到',
                     'example_translation' => '我无意中听到他们在谈论惊喜派对的事。',
                 ],
@@ -13520,11 +13520,11 @@ return [
             'pronunciation' => '/aʊˈtɹeɪdʒəs/',
             'example_sentence' => 'The price of the ticket was outrageous.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '令人髮指的',
                     'example_translation' => '這張票的價格太離譜了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '离谱的，荒谬的',
                     'example_translation' => '门票的价格太离谱了。',
                 ],
@@ -13542,11 +13542,11 @@ return [
             'pronunciation' => '/ˈhwɪski/',
             'example_sentence' => 'He ordered a glass of whiskey at the bar.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '威士忌',
                     'example_translation' => '他在酒吧點了一杯威士忌。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '威士忌酒',
                     'example_translation' => '他在酒吧点了一杯威士忌。',
                 ],
@@ -13562,11 +13562,11 @@ return [
             'pronunciation' => '/ˌɪnˈstɪŋktɪv/',
             'example_sentence' => 'She had an instinctive fear of snakes.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '本能的',
                     'example_translation' => '她對蛇有一種本能的恐懼。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '本能的，直觉的',
                     'example_translation' => '她对蛇有一种本能的恐惧。',
                 ],
@@ -13582,11 +13582,11 @@ return [
             'pronunciation' => '/ˈfoʊˌkɫɔɹ/',
             'example_sentence' => 'Folklore is passed down from generation to generation through storytelling.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '民俗學',
                     'example_translation' => '民間傳說透過說故事的方式一代一代地流傳下來。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '民间传说，民俗',
                     'example_translation' => '民间传说是通过讲故事的方式一代一代流传下来的。',
                 ],
@@ -13602,11 +13602,11 @@ return [
             'pronunciation' => '/ˈkæptɪv/',
             'example_sentence' => 'The captive birds were released back into the wild this morning.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '俘虜',
                     'example_translation' => '被圈養的鳥類今天早上被放歸大自然。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '圈养的，被捕获的',
                     'example_translation' => '圈养的鸟类今天早上被放归大自然。',
                 ],
@@ -13622,11 +13622,11 @@ return [
             'pronunciation' => '/əˈkɫeɪm/',
             'example_sentence' => 'The movie received international acclaim from many critics.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '歡呼',
                     'example_translation' => '這部電影受到了許多影評人的國際讚譽。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '赞誉，高度评价',
                     'example_translation' => '这部电影获得了许多影评人的国际赞誉。',
                 ],
@@ -13642,11 +13642,11 @@ return [
             'pronunciation' => '/ɹɪˈɫɛntɫɪs/',
             'example_sentence' => 'The relentless rain continued for days without stopping.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '狠',
                     'example_translation' => '無情的雨連續下了好幾天都沒有停。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '持续不断的，无情的',
                     'example_translation' => '持续不断的雨连着下了好几天都没停。',
                 ],
@@ -13662,11 +13662,11 @@ return [
             'pronunciation' => '/ˈkɪndəɫ/',
             'example_sentence' => 'The campfire was hard to kindle in the rain.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '點燃',
                     'example_translation' => '營火在雨中很難點燃。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '点燃，燃烧',
                     'example_translation' => '在雨中，营火很难被点燃。',
                 ],
@@ -13682,11 +13682,11 @@ return [
             'pronunciation' => '/ˈstætʃut/',
             'example_sentence' => 'The new statute requires all businesses to register with the government.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '法令',
                     'example_translation' => '這項新法規要求所有企業都必須向政府登記。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '法规，法令',
                     'example_translation' => '这项新法规要求所有企业向政府登记。',
                 ],
@@ -13702,11 +13702,11 @@ return [
             'pronunciation' => '/ˈəpwɝd/',
             'example_sentence' => 'The balloon floated upward into the sky.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '向上',
                     'example_translation' => '氣球向上飄入天空。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '向上地',
                     'example_translation' => '气球向上飘入天空。',
                 ],
@@ -13722,11 +13722,11 @@ return [
             'pronunciation' => '/dɪˈdəkt/',
             'example_sentence' => 'The company will deduct the tax directly from your monthly salary.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '扣除',
                     'example_translation' => '公司將直接從你的月薪中扣除稅款。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '扣除，减去',
                     'example_translation' => '公司将直接从你的月薪中扣除税款。',
                 ],
@@ -13744,11 +13744,11 @@ return [
             'pronunciation' => '/ɪnˌsaɪkɫəˈpidiə/, /ɪnˌsaɪkɫoʊˈpidiə/',
             'example_sentence' => 'I used to enjoy reading the large encyclopedia when I was a kid.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '百科全書',
                     'example_translation' => '我小時候喜歡讀大型百科全書。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '百科全书',
                     'example_translation' => '我小时候喜欢看大型百科全书。',
                 ],
@@ -13764,11 +13764,11 @@ return [
             'pronunciation' => '/ˈfjʊɹi/',
             'example_sentence' => 'His fury was obvious when he slammed the door shut.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '憤怒',
                     'example_translation' => '當他猛力摔上門時，他的憤怒顯而易見。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '狂怒；激怒',
                     'example_translation' => '当他摔上门时，他的怒火显而易见。',
                 ],
@@ -13784,11 +13784,11 @@ return [
             'pronunciation' => '/ˈɹeɪdiəs/',
             'example_sentence' => 'The radius of the circle is five centimeters.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '半徑',
                     'example_translation' => '這個圓的半徑是五公分。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '半径',
                     'example_translation' => '这个圆的半径是五厘米。',
                 ],
@@ -13804,11 +13804,11 @@ return [
             'pronunciation' => '/ˈtɹaʊt/',
             'example_sentence' => 'I caught a trout in the river this morning.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '鱒魚',
                     'example_translation' => '我今天早上在河裡釣到了一條鱒魚。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '鳟鱼',
                     'example_translation' => '我今天早上在河里钓到了一条鳟鱼。',
                 ],
@@ -13824,11 +13824,11 @@ return [
             'pronunciation' => '/ˈsɪnɪkəɫ/',
             'example_sentence' => 'He has a very cynical outlook on politics and local government.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '憤世嫉俗的',
                     'example_translation' => '他對政治和地方政府持有非常憤世嫉俗的觀點。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '愤世嫉俗的；冷嘲热讽的',
                     'example_translation' => '他对政治和地方政府抱有非常愤世嫉俗的看法。',
                 ],
@@ -13844,11 +13844,11 @@ return [
             'pronunciation' => '/ˈdifɛkt/, /dɪˈfɛkt/',
             'example_sentence' => 'The company recalled the products due to a serious design defect.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '缺點',
                     'example_translation' => '公司因嚴重的設計缺陷召回了這些產品。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '缺陷；瑕疵',
                     'example_translation' => '公司因严重的设计缺陷召回了这些产品。',
                 ],
@@ -13864,11 +13864,11 @@ return [
             'pronunciation' => '/fɔɹˈseɪk/',
             'example_sentence' => 'He decided to forsake his old habits and start a new life.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '背叛',
                     'example_translation' => '他決定拋棄舊習慣，開始新的生活。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '抛弃；放弃',
                     'example_translation' => '他决定抛弃旧习惯，开始新的生活。',
                 ],
@@ -13884,11 +13884,11 @@ return [
             'pronunciation' => '/ˈbɑksɪŋ/',
             'example_sentence' => 'He decided to join the local boxing club to stay fit and strong.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '拳擊',
                     'example_translation' => '他決定加入當地的拳擊俱樂部以保持健康強壯。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '拳击',
                     'example_translation' => '他决定加入当地的拳击俱乐部以保持健康强壮。',
                 ],
@@ -13904,11 +13904,11 @@ return [
             'pronunciation' => '/ˈvɛɫvət/',
             'example_sentence' => 'The curtains were made of soft red velvet.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '天鵝絨',
                     'example_translation' => '窗簾是用柔軟的紅色天鵝絨做的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '天鹅绒；丝绒',
                     'example_translation' => '窗帘是由柔软的红色天鹅绒制成的。',
                 ],
@@ -13924,11 +13924,11 @@ return [
             'pronunciation' => '/ˌmɛdəˈteɪʃən/',
             'example_sentence' => 'Daily meditation helps reduce stress and improve focus.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '冥想',
                     'example_translation' => '每日的冥想有助於減輕壓力並提升專注力。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '冥想',
                     'example_translation' => '每天冥想有助于减轻压力并提高专注力。',
                 ],
@@ -13946,11 +13946,11 @@ return [
             'pronunciation' => '/ˈmɪŋɡəɫ/',
             'example_sentence' => 'The guests began to mingle at the party.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '交融',
                     'example_translation' => '賓客們開始在派對上交流。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '应酬；交际；混合',
                     'example_translation' => '宾客们开始在派对上交流互动。',
                 ],
@@ -13966,11 +13966,11 @@ return [
             'pronunciation' => '/hjuˈmɪɫiˌeɪt/',
             'example_sentence' => 'The bully tried to humiliate his classmate in front of everyone.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '羞辱',
                     'example_translation' => '那個霸凌者試圖在所有人面前羞辱他的同學。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '羞辱；使屈辱',
                     'example_translation' => '那个欺凌者试图当众羞辱他的同班同学。',
                 ],
@@ -13986,11 +13986,11 @@ return [
             'pronunciation' => '/ˈkɑmənˌwɛɫθ/',
             'example_sentence' => 'The nation is a member of the global British Commonwealth.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '聯邦',
                     'example_translation' => '該國是全球英聯邦的成員。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '联邦；英联邦',
                     'example_translation' => '该国是全球英联邦的成员。',
                 ],
@@ -14006,11 +14006,11 @@ return [
             'pronunciation' => '/ˈjoʊɡə/',
             'example_sentence' => 'She practices yoga every morning to stay healthy.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '瑜珈',
                     'example_translation' => '她每天早上練瑜伽來保持健康。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '瑜伽',
                     'example_translation' => '她每天早上练瑜伽来保持健康。',
                 ],
@@ -14026,11 +14026,11 @@ return [
             'pronunciation' => '/əˈvɝt/',
             'example_sentence' => 'The pilot managed to avert a major disaster at the airport.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '避免',
                     'example_translation' => '飛行員成功避開了機場的一場重大災難。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '避免；防止',
                     'example_translation' => '飞行员成功避免了机场的一场重大灾难。',
                 ],
@@ -14046,11 +14046,11 @@ return [
             'pronunciation' => '/ˈmædəm/',
             'example_sentence' => 'Madam, your table is ready.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '女士',
                     'example_translation' => '女士，您的桌位準備好了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '女士；夫人',
                     'example_translation' => '女士，您的餐桌已经准备好了。',
                 ],
@@ -14066,11 +14066,11 @@ return [
             'pronunciation' => '/ˌkɑntəˈnuəti/',
             'example_sentence' => 'The company ensures the continuity of its services to all.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '連續性',
                     'example_translation' => '公司確保其服務對所有人的連續性。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '连续性；持续性',
                     'example_translation' => '公司确保面向所有人的服务连续性。',
                 ],
@@ -14086,11 +14086,11 @@ return [
             'pronunciation' => '/dɪˈfɔɫt/',
             'example_sentence' => 'The company\'s default settings are usually sufficient for most.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '預設',
                     'example_translation' => '公司的默認設置通常對大多數人來說已經足夠。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '默认；预设',
                     'example_translation' => '公司的默认设置通常对大多数人来说已经足够。',
                 ],
@@ -14106,11 +14106,11 @@ return [
             'pronunciation' => '/ˈmædʒəsti/',
             'example_sentence' => 'The majesty of the mountain took our breath away.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '威嚴',
                     'example_translation' => '山的壯麗令我們屏息讚嘆。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '雄伟；威严',
                     'example_translation' => '高山的壮丽震撼了我们。',
                 ],
@@ -14126,11 +14126,11 @@ return [
             'pronunciation' => '/ˌɛkspɝˈeɪʃən/',
             'example_sentence' => 'The expiration of his passport caused problems at the airport.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '過期',
                     'example_translation' => '他的護照過期在機場造成了問題。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '期满；过期',
                     'example_translation' => '他的护照过期在机场造成了麻烦。',
                 ],
@@ -14148,11 +14148,11 @@ return [
             'pronunciation' => '/ˈbækˌboʊn/',
             'example_sentence' => 'The spine, or backbone, is a crucial part of the human skeletal system.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '骨幹',
                     'example_translation' => '脊柱，也就是脊梁骨，是人體骨骼系統中至關重要的部分。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '脊柱，脊梁',
                     'example_translation' => '脊柱，也就是脊梁骨，是人体骨骼系统中至关重要的部分。',
                 ],
@@ -14168,11 +14168,11 @@ return [
             'pronunciation' => '/ˈfɹiˌweɪ/',
             'example_sentence' => 'The freeway was congested during rush hour.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '高速公路',
                     'example_translation' => '高速公路在尖峰時段非常擁擠。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '高速公路',
                     'example_translation' => '高速公路在高峰时段非常拥堵。',
                 ],
@@ -14188,11 +14188,11 @@ return [
             'pronunciation' => '/ˈwɔɹˌdɹoʊb/',
             'example_sentence' => 'She opened the wardrobe to choose a dress for the party.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '衣櫃',
                     'example_translation' => '她打開衣櫃，挑選一件參加派對的洋裝。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '衣柜',
                     'example_translation' => '她打开衣柜，挑选一件参加派对的连衣裙。',
                 ],
@@ -14208,11 +14208,11 @@ return [
             'pronunciation' => '/ˈvɪnjɝd/',
             'example_sentence' => 'The vineyard produces excellent wine every autumn.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '葡萄園',
                     'example_translation' => '這座葡萄園每年秋天都生產優質的葡萄酒。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '葡萄园',
                     'example_translation' => '这座葡萄园每年秋天都生产优质的葡萄酒。',
                 ],
@@ -14228,11 +14228,11 @@ return [
             'pronunciation' => '/ˈɫɪˌbɝˌeɪt/',
             'example_sentence' => 'They fought to liberate the country from oppression.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '解放',
                     'example_translation' => '他們奮力解放這個國家，使其脫離壓迫。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '解放',
                     'example_translation' => '他们奋力解放这个国家，使其摆脱压迫。',
                 ],
@@ -14248,11 +14248,11 @@ return [
             'pronunciation' => '/ˈikwəˌɫaɪz/',
             'example_sentence' => 'The government plans to equalize funding across all public schools.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '均衡',
                     'example_translation' => '政府計畫平均分配所有公立學校的經費。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '使平等，均衡',
                     'example_translation' => '政府计划均等分配所有公立学校的经费。',
                 ],
@@ -14268,11 +14268,11 @@ return [
             'pronunciation' => '/ˈpɑndɝ/',
             'example_sentence' => 'She sat quietly to ponder the difficult question.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '思考',
                     'example_translation' => '她靜靜地坐著思考這個困難的問題。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '沉思，仔细思考',
                     'example_translation' => '她静静地坐着思考这个难题。',
                 ],
@@ -14288,11 +14288,11 @@ return [
             'pronunciation' => '/ˌɹɛməˈnɪsənt/',
             'example_sentence' => 'The old photograph was reminiscent of her childhood summers.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '令人懷念的',
                     'example_translation' => '這張老照片令人想起她童年的夏天。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '令人想起……的，使人怀念的',
                     'example_translation' => '这张老照片让人想起她童年的夏天。',
                 ],
@@ -14308,11 +14308,11 @@ return [
             'pronunciation' => '/ˈoʊˌzoʊn/',
             'example_sentence' => 'The ozone layer protects us from harmful ultraviolet rays.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '臭氧',
                     'example_translation' => '臭氧層保護我們免受有害紫外線的傷害。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '臭氧',
                     'example_translation' => '臭氧层保护我们免受有害紫外线的伤害。',
                 ],
@@ -14328,11 +14328,11 @@ return [
             'pronunciation' => '/əˈpɹɛntəs/, /əˈpɹɛntɪs/',
             'example_sentence' => 'He is working as an apprentice to a professional chef.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '學徒',
                     'example_translation' => '他正跟著一位專業廚師當學徒。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '学徒，徒弟',
                     'example_translation' => '他正跟着一位专业厨师当学徒。',
                 ],
@@ -14350,11 +14350,11 @@ return [
             'pronunciation' => '/ɔɹˈdiɫ/',
             'example_sentence' => 'The job interview was a real ordeal for him.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '考驗',
                     'example_translation' => '那場工作面試對他來說真是一場煎熬。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '煎熬，严峻考验',
                     'example_translation' => '那场求职面试对他来说真是一场煎熬。',
                 ],
@@ -14370,11 +14370,11 @@ return [
             'pronunciation' => '/səˈɫɛktɪv/',
             'example_sentence' => 'She is very selective about the food she eats.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '選擇性的',
                     'example_translation' => '她對自己吃的食物非常挑剔。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '选择性的，挑剔的',
                     'example_translation' => '她对自己吃的食物非常挑剔。',
                 ],
@@ -14390,11 +14390,11 @@ return [
             'pronunciation' => '/ˌkoʊəˈɫɪʃən/',
             'example_sentence' => 'The two political parties formed a coalition to rule the nation.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '聯盟',
                     'example_translation' => '這兩個政黨結成聯盟來統治國家。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '联盟，联合',
                     'example_translation' => '这两个政党结成联盟来统治国家。',
                 ],
@@ -14410,11 +14410,11 @@ return [
             'pronunciation' => '/ˈæmpɫəˌfaɪ/',
             'example_sentence' => 'The speaker used a microphone to amplify her soft voice.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '放大',
                     'example_translation' => '演講者使用麥克風來放大她柔和的聲音。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '放大，增强',
                     'example_translation' => '演讲者使用麦克风来放大她柔和的声音。',
                 ],
@@ -14430,11 +14430,11 @@ return [
             'pronunciation' => '/ˈkoʊstˌɫaɪn/',
             'example_sentence' => 'The country has a long and beautiful rocky coastline today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '海岸線',
                     'example_translation' => '這個國家今天擁有一條長而美麗的岩石海岸線。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '海岸线',
                     'example_translation' => '这个国家如今拥有一条漫长而美丽的岩石海岸线。',
                 ],
@@ -14450,11 +14450,11 @@ return [
             'pronunciation' => '/ˈdʒeɪd/',
             'example_sentence' => 'She wore a beautiful jade pendant around her neck.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '玉',
                     'example_translation' => '她脖子上戴著一個美麗的玉墜。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '玉，翡翠',
                     'example_translation' => '她脖子上戴着一个美丽的玉坠。',
                 ],
@@ -14470,11 +14470,11 @@ return [
             'pronunciation' => '/ˈhwɔɹf/, /ˈwɔɹf/',
             'example_sentence' => 'The ship was tied up at the wharf.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '碼頭',
                     'example_translation' => '船被繫在碼頭上。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '码头',
                     'example_translation' => '船被系在码头上。',
                 ],
@@ -14490,11 +14490,11 @@ return [
             'pronunciation' => '/æbˈstɹækʃən/',
             'example_sentence' => 'Modern art often deals with abstraction rather than reality.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '抽象',
                     'example_translation' => '現代藝術通常涉及抽象而非現實。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '抽象，抽象概念',
                     'example_translation' => '现代艺术通常涉及抽象而非现实。',
                 ],
@@ -14510,11 +14510,11 @@ return [
             'pronunciation' => '/dɪsˈmeɪ/',
             'example_sentence' => 'To our great dismay, the beautiful old library was closed today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '沮喪',
                     'example_translation' => '令我們大為沮喪的是，美麗的老圖書館今天關門了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '沮丧，惊恐',
                     'example_translation' => '令我们大为沮丧的是，那座美丽的老图书馆今天关门了。',
                 ],
@@ -14530,11 +14530,11 @@ return [
             'pronunciation' => '/ˈoʊθ/',
             'example_sentence' => 'He took an oath to serve his country faithfully.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '誓言',
                     'example_translation' => '他宣誓要忠誠地為國家服務。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '誓言，誓约',
                     'example_translation' => '他宣誓要忠诚地为国家服务。',
                 ],
@@ -14552,11 +14552,11 @@ return [
             'pronunciation' => '/ˈsɫəm/',
             'example_sentence' => 'Many families in the slum lack access to clean water.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '貧民窟',
                     'example_translation' => '貧民窟裡的許多家庭缺乏乾淨的飲用水。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '贫民窟',
                     'example_translation' => '贫民窟里的许多家庭缺乏干净的饮用水。',
                 ],
@@ -14572,11 +14572,11 @@ return [
             'pronunciation' => '/səˈmɛnt/, /sɪˈmɛnt/',
             'example_sentence' => 'The workers used cement to fix the broken concrete sidewalk.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '水泥',
                     'example_translation' => '工人們用水泥修補損壞的混凝土人行道。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '水泥',
                     'example_translation' => '工人们用水泥修补破损的混凝土人行道。',
                 ],
@@ -14592,11 +14592,11 @@ return [
             'pronunciation' => '/dɪˈstɝbəns/',
             'example_sentence' => 'The sudden disturbance in the street woke up the residents.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '幹擾',
                     'example_translation' => '街上突然發生的騷亂吵醒了居民。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '骚乱，干扰',
                     'example_translation' => '街上突然发生的骚乱吵醒了居民。',
                 ],
@@ -14612,11 +14612,11 @@ return [
             'pronunciation' => '/ˈmudi/',
             'example_sentence' => 'He has been very moody lately and doesn\'t want to talk to anyone.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '喜怒無常',
                     'example_translation' => '他最近非常情緒化，不想跟任何人說話。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '喜怒无常的，情绪化的',
                     'example_translation' => '他最近非常情绪化，不想跟任何人说话。',
                 ],
@@ -14632,11 +14632,11 @@ return [
             'pronunciation' => '/ˈdubiəs/',
             'example_sentence' => 'I am a bit dubious about the success of the new project today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '可疑',
                     'example_translation' => '我對新專案今天的成功持懷疑態度。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '怀疑的，可疑的',
                     'example_translation' => '我对新项目今天的成功持怀疑态度。',
                 ],
@@ -14652,11 +14652,11 @@ return [
             'pronunciation' => '/ˌɪmˈpɹɪzənmənt/',
             'example_sentence' => 'The judge decided to imprison him for five years.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '監禁',
                     'example_translation' => '法官決定將他監禁五年。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '监禁，关押',
                     'example_translation' => '法官决定判处他五年监禁。',
                 ],
@@ -14672,11 +14672,11 @@ return [
             'pronunciation' => '/əˈnæɫədʒi/',
             'example_sentence' => 'He used a simple analogy to explain the complex scientific concept.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '類比',
                     'example_translation' => '他用一個簡單的比喻來解釋這個複雜的科學概念。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '类比，比喻',
                     'example_translation' => '他用了一个简单的比喻来解释这个复杂的科学概念。',
                 ],
@@ -14692,11 +14692,11 @@ return [
             'pronunciation' => '/ˈɡoʊɫˌkipɝ/',
             'example_sentence' => 'The goalkeeper made a fantastic save during the match.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '守門員',
                     'example_translation' => '守門員在比賽中做出了一次精彩的撲救。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '守门员',
                     'example_translation' => '守门员在比赛中做出了一次精彩的扑救。',
                 ],
@@ -14712,11 +14712,11 @@ return [
             'pronunciation' => '/ˈkɛɹˌteɪkɝ/',
             'example_sentence' => 'The school caretaker is busy cleaning the main hall early today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '看門人',
                     'example_translation' => '學校管理員今天一早正忙著清掃大廳。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '看管人，看门人',
                     'example_translation' => '学校管理员今天一早正忙着清扫大厅。',
                 ],
@@ -14732,11 +14732,11 @@ return [
             'pronunciation' => '/ˈɫoʊtəs/',
             'example_sentence' => 'The lotus blooms beautifully in the pond.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '蓮花',
                     'example_translation' => '蓮花在池塘中美麗地綻放。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '莲花',
                     'example_translation' => '莲花在池塘中美丽地绽放。',
                 ],
@@ -14754,11 +14754,11 @@ return [
             'pronunciation' => '/ˈtɛɹəs/',
             'example_sentence' => 'We sat on the terrace and enjoyed the sunset.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '陽台',
                     'example_translation' => '我們坐在露台上欣賞日落。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '露台，阳台',
                     'example_translation' => '我们坐在露台上欣赏日落。',
                 ],
@@ -14774,11 +14774,11 @@ return [
             'pronunciation' => '/ˈkɔɹəɫ/',
             'example_sentence' => 'The ocean floor is covered with beautiful and colorful coral.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '珊瑚',
                     'example_translation' => '海底覆蓋著美麗多彩的珊瑚。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '珊瑚',
                     'example_translation' => '海底覆盖着美丽多彩的珊瑚。',
                 ],
@@ -14794,11 +14794,11 @@ return [
             'pronunciation' => '/wɪθˈhoʊɫd/',
             'example_sentence' => 'The company decided to withhold the bonus until the project was completed.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '扣壓',
                     'example_translation' => '公司決定在專案完成之前扣留獎金。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '扣留，隐瞒',
                     'example_translation' => '公司决定在项目完成之前扣发奖金。',
                 ],
@@ -14814,11 +14814,11 @@ return [
             'pronunciation' => '/ɹiˈtɹiv/, /ɹɪˈtɹiv/',
             'example_sentence' => 'The dog was trained to retrieve the ball.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '取回',
                     'example_translation' => '這隻狗被訓練去取回球。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '取回，找回',
                     'example_translation' => '这只狗经过训练可以取回球。',
                 ],
@@ -14834,11 +14834,11 @@ return [
             'pronunciation' => '/ˈspɝ/',
             'example_sentence' => 'The good news spurred him to work even harder.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '支線',
                     'example_translation' => '這個好消息激勵他更加努力工作。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '激励，刺激',
                     'example_translation' => '这个好消息激励他更加努力工作。',
                 ],
@@ -14854,11 +14854,11 @@ return [
             'pronunciation' => '/ˌɪnˈtɝpɹətɝ/',
             'example_sentence' => 'She works as an interpreter for an international organization.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '口譯員',
                     'example_translation' => '她在一國際組織擔任翻譯員。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '口译员，翻译员',
                     'example_translation' => '她在一家国际组织担任口译员。',
                 ],
@@ -14874,11 +14874,11 @@ return [
             'pronunciation' => '/ˈsoʊʃəbəɫ/',
             'example_sentence' => 'She is a sociable person who enjoys meeting new people.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '善於交際',
                     'example_translation' => '她是一個善於交際的人，喜歡認識新朋友。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '善于交际的，好交际的',
                     'example_translation' => '她是一个善于交际的人，喜欢结识新朋友。',
                 ],
@@ -14894,11 +14894,11 @@ return [
             'pronunciation' => '/ˈkɔɹtˌjɑɹd/',
             'example_sentence' => 'The beautiful old house has a large and quiet stone courtyard.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '庭院',
                     'example_translation' => '這棟漂亮的老房子有一個大而安靜的石造院子。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '庭院，院子',
                     'example_translation' => '这栋漂亮的老房子有一个大而安静的石造院子。',
                 ],
@@ -14914,11 +14914,11 @@ return [
             'pronunciation' => '/ˈkɹækˌdaʊn/',
             'example_sentence' => 'The police started a crackdown on illegal activities in the city.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '鎮壓',
                     'example_translation' => '警方開始在市內打擊非法活動。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '严厉打击，镇压',
                     'example_translation' => '警方开始在市内打击非法活动。',
                 ],
@@ -14934,11 +14934,11 @@ return [
             'pronunciation' => '/ˈɔɹnəmənt/',
             'example_sentence' => 'She hung a glass ornament on the Christmas tree.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '裝飾品',
                     'example_translation' => '她在聖誕樹上掛了一個玻璃裝飾品。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '装饰品，饰物',
                     'example_translation' => '她在圣诞树上挂了一个玻璃装饰品。',
                 ],
@@ -14956,11 +14956,11 @@ return [
             'pronunciation' => '/ˈmɪstʃəvəs/',
             'example_sentence' => 'The mischievous boy hid his sister\'s shoes under the bed.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '惡作劇',
                     'example_translation' => '那個淘氣的男孩把他姐姐的鞋子藏在床底下。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '淘气的，顽皮的',
                     'example_translation' => '那个淘气的男孩把他姐姐的鞋子藏在了床底下。',
                 ],
@@ -14976,11 +14976,11 @@ return [
             'pronunciation' => '/ˈsəpɫəmənt/, /ˌsəpɫəˈmɛnt/',
             'example_sentence' => 'Taking a vitamin supplement can improve your health.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '補充',
                     'example_translation' => '服用維生素補充品可以改善你的健康。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '补充物，营养补助品；补充',
                     'example_translation' => '服用维生素补充剂可以改善你的健康。',
                 ],
@@ -14996,11 +14996,11 @@ return [
             'pronunciation' => '/ˈɡeɪ/',
             'example_sentence' => 'The festival had a gay and lively atmosphere.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '同性戀',
                     'example_translation' => '這個節慶有著歡樂而熱鬧的氣氛。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '欢快的，快乐的；同性恋的',
                     'example_translation' => '节日有着欢快而热闹的气氛。',
                 ],
@@ -15016,11 +15016,11 @@ return [
             'pronunciation' => '/pəˈtɹoʊɫiəm/',
             'example_sentence' => 'Petroleum is one of the most important natural resources in the world.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '石油',
                     'example_translation' => '石油是世界上最重要的自然資源之一。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '石油',
                     'example_translation' => '石油是世界上最重要的自然资源之一。',
                 ],
@@ -15036,11 +15036,11 @@ return [
             'pronunciation' => '/ˌɹeɪdioʊˈæktɪv/',
             'example_sentence' => 'The radioactive waste must be stored in a safe container.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '放射性的',
                     'example_translation' => '放射性廢料必須儲存在安全的容器中。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '放射性的',
                     'example_translation' => '放射性废料必须储存在安全的容器中。',
                 ],
@@ -15056,11 +15056,11 @@ return [
             'pronunciation' => '/səˈbɔɹdəˌneɪt/, /səˈbɔɹdənət/',
             'example_sentence' => 'He was asked to subordinate his personal interests to the goals of the team.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '下屬',
                     'example_translation' => '他被要求將個人利益置於團隊目標之下。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '下级的；部下；使置于次要地位',
                     'example_translation' => '他被要求将个人利益置于团队目标之下。',
                 ],
@@ -15076,11 +15076,11 @@ return [
             'pronunciation' => '/dɪˈpɫit/',
             'example_sentence' => 'The drought will deplete the reservoir\'s water supply.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '',
                     'example_translation' => '乾旱將會耗盡水庫的水源供應。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '耗尽，使空虚',
                     'example_translation' => '干旱将会耗尽水库的供水。',
                 ],
@@ -15096,11 +15096,11 @@ return [
             'pronunciation' => '/ˌɪˈnumɝəbəɫ/',
             'example_sentence' => 'There are innumerable stars in the night sky.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '無數',
                     'example_translation' => '夜空中有無數的星星。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '无数的，数不清的',
                     'example_translation' => '夜空中有无数的星星。',
                 ],
@@ -15116,11 +15116,11 @@ return [
             'pronunciation' => '/ˈoʊvɝˌfɫoʊ/, /ˌoʊvɝˈfɫoʊ/',
             'example_sentence' => 'The river will overflow if the rain continues.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '溢出',
                     'example_translation' => '如果雨繼續下，河流將會氾濫。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '溢出，泛滥；溢出物',
                     'example_translation' => '如果雨继续下，河流将会泛滥。',
                 ],
@@ -15136,11 +15136,11 @@ return [
             'pronunciation' => '/ˈkɹɑkəˌdaɪɫ/',
             'example_sentence' => 'We saw a large crocodile basking in the sun by the river bank.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '鱷魚',
                     'example_translation' => '我們看到一條大鱷魚在河岸邊曬太陽。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '鳄鱼',
                     'example_translation' => '我们看到一条大鳄鱼在河岸边晒太阳。',
                 ],
@@ -15158,11 +15158,11 @@ return [
             'pronunciation' => '/dɪˈskɫoʊʒɝ/',
             'example_sentence' => 'The full disclosure of the data is required for the investigation.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '揭露',
                     'example_translation' => '調查需要對數據進行全面披露。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '公开，披露',
                     'example_translation' => '调查需要全面披露数据。',
                 ],
@@ -15178,11 +15178,11 @@ return [
             'pronunciation' => '/ˈtaɪɝsəm/',
             'example_sentence' => 'The long meeting was tiresome and everyone wanted to leave.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '令人厭煩的',
                     'example_translation' => '冗長的會議令人厭煩，每個人都想離開。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '令人厌烦的',
                     'example_translation' => '冗长的会议令人厌烦，每个人都想离开。',
                 ],
@@ -15198,11 +15198,11 @@ return [
             'pronunciation' => '/ˈtwɪŋkəɫ/',
             'example_sentence' => 'The stars twinkle in the night sky.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '閃爍',
                     'example_translation' => '星星在夜空中閃爍。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '闪烁，闪耀',
                     'example_translation' => '星星在夜空中闪烁。',
                 ],
@@ -15218,11 +15218,11 @@ return [
             'pronunciation' => '/ˈmɑˌnɑɹk/',
             'example_sentence' => 'The country is ruled by a constitutional monarch who has limited power.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '君主',
                     'example_translation' => '這個國家由一位權力有限的君主立憲統治。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '君主，帝王',
                     'example_translation' => '这个国家由一位权力有限的立宪君主统治。',
                 ],
@@ -15238,11 +15238,11 @@ return [
             'pronunciation' => '/ˈɛkˌsɛs/, /ɪkˈsɛs/',
             'example_sentence' => 'You should cut back on excess spending.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '過量的',
                     'example_translation' => '你應該減少過多的開支。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '过量的，额外的；过度，过量',
                     'example_translation' => '你应该减少过度的开支。',
                 ],
@@ -15258,11 +15258,11 @@ return [
             'pronunciation' => '/pɹəˈpɛɫ/',
             'example_sentence' => 'The wind propels the sailboat across the lake.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '推進',
                     'example_translation' => '風推動帆船穿越湖面。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '推进，驱动',
                     'example_translation' => '风推动帆船穿过湖面。',
                 ],
@@ -15278,11 +15278,11 @@ return [
             'pronunciation' => '/ˈhəntʃ/',
             'example_sentence' => 'I had a hunch that it would rain today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '直覺',
                     'example_translation' => '我有一種預感今天會下雨。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '预感，直觉',
                     'example_translation' => '我有一种预感今天会下雨。',
                 ],
@@ -15298,11 +15298,11 @@ return [
             'pronunciation' => '/ˌsupɝˈfɪʃəɫ/',
             'example_sentence' => 'The investigation was superficial and missed many important details.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '淺',
                     'example_translation' => '這項調查很膚淺，遺漏了許多重要的細節。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '肤浅的，表面上的',
                     'example_translation' => '这项调查很肤浅，遗漏了许多重要的细节。',
                 ],
@@ -15318,11 +15318,11 @@ return [
             'pronunciation' => '/ˈɹoʊm/',
             'example_sentence' => 'The children roam freely in the park after school.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '漫遊',
                     'example_translation' => '孩子們放學後在公園裡自由漫步。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '漫游，漫步',
                     'example_translation' => '孩子们放学后在公园里自由漫步。',
                 ],
@@ -15338,11 +15338,11 @@ return [
             'pronunciation' => '/ænˌtɪsəˈpeɪʃən/, /æntɪsəˈpeɪʃən/',
             'example_sentence' => 'The children were full of anticipation before the holiday trip.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '預期',
                     'example_translation' => '孩子們在度假旅行前充滿了期待。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '期盼，预料',
                     'example_translation' => '孩子们在度假旅行前充满了期待。',
                 ],
@@ -15360,11 +15360,11 @@ return [
             'pronunciation' => '/ˈpɔɹtɝ/',
             'example_sentence' => 'The porter carried our luggage to the hotel room.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '搬運工',
                     'example_translation' => '搬運工把我們的行李搬到了旅館房間。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '搬运工',
                     'example_translation' => '搬运工把我们的行李搬到了酒店房间。',
                 ],
@@ -15380,11 +15380,11 @@ return [
             'pronunciation' => '/ˌsɑɫəˈdɛɹəti/',
             'example_sentence' => 'The workers showed solidarity by standing together during the strike.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '團結',
                     'example_translation' => '工人們在罷工期間團結一致，展現了團結精神。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '团结',
                     'example_translation' => '工人们在罢工期间团结一致，展现了团结精神。',
                 ],
@@ -15400,11 +15400,11 @@ return [
             'pronunciation' => '/ˌɛdəˈtɔɹiəɫ/',
             'example_sentence' => 'The newspaper published an editorial about the new education law.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '社論',
                     'example_translation' => '報紙發表了一篇關於新教育法的社論。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '社论；编辑的',
                     'example_translation' => '报纸发表了一篇关于新教育法的社论。',
                 ],
@@ -15420,11 +15420,11 @@ return [
             'pronunciation' => '/ˈpəbɫɪˌsaɪz/',
             'example_sentence' => 'The company used social media to publicize its new product launch.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '宣傳',
                     'example_translation' => '該公司利用社群媒體來宣傳其新產品的發布。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '宣传',
                     'example_translation' => '该公司利用社交媒体来宣传其新产品的发布。',
                 ],
@@ -15440,11 +15440,11 @@ return [
             'pronunciation' => '/ˈɫɑndʒəˌtud/',
             'example_sentence' => 'The ship\'s longitude was recorded as 120 degrees west.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '經度',
                     'example_translation' => '這艘船的經度被記錄為西經120度。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '经度',
                     'example_translation' => '这艘船的经度记录为西经120度。',
                 ],
@@ -15460,11 +15460,11 @@ return [
             'pronunciation' => '/dɪkˈteɪʃən/',
             'example_sentence' => 'The students had a short vocabulary dictation in class today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '聽寫',
                     'example_translation' => '學生們今天在課堂上進行了一次簡短的單詞聽寫。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '听写',
                     'example_translation' => '学生们今天在课堂上进行了一次简短的单词听写。',
                 ],
@@ -15480,11 +15480,11 @@ return [
             'pronunciation' => '/ˈhæmpɝ/',
             'example_sentence' => 'Heavy rain hampered the rescue efforts.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '阻礙',
                     'example_translation' => '大雨妨礙了救援工作。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '阻碍',
                     'example_translation' => '大雨妨碍了救援工作。',
                 ],
@@ -15500,11 +15500,11 @@ return [
             'pronunciation' => '/ˈmaʊnd/',
             'example_sentence' => 'The children built a mound of sand on the beach.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '塚',
                     'example_translation' => '孩子們在海灘上堆了一座沙丘。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '土堆，沙丘',
                     'example_translation' => '孩子们在海滩上堆了一座小沙丘。',
                 ],
@@ -15520,11 +15520,11 @@ return [
             'pronunciation' => '/ˈpɛtɹoʊɫ/',
             'example_sentence' => 'The car is running low on petrol.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '汽油',
                     'example_translation' => '這輛車的汽油快要用完了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '汽油',
                     'example_translation' => '这辆车的汽油快要用完了。',
                 ],
@@ -15540,11 +15540,11 @@ return [
             'pronunciation' => '/ˈdɛnəɫ/, /ˈdɛntəɫ/',
             'example_sentence' => 'Good dental hygiene is essential for maintaining healthy teeth.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '牙科',
                     'example_translation' => '良好的口腔衛生對於保持牙齒健康至關重要。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '牙科的，牙齿的',
                     'example_translation' => '良好的口腔卫生对于保持牙齿健康至关重要。',
                 ],
@@ -15562,11 +15562,11 @@ return [
             'pronunciation' => '/ˈskɹoʊɫ/',
             'example_sentence' => 'The ancient scroll was discovered in a cave near the sea.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '捲動',
                     'example_translation' => '這卷古老的卷軸是在海邊的一個洞穴中被發現的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '卷轴；滚动',
                     'example_translation' => '这卷古老的卷轴是在海边的一个洞穴中被发现的。',
                 ],
@@ -15582,11 +15582,11 @@ return [
             'pronunciation' => '/pɹiˈzaɪd/, /pɹɪˈzaɪd/',
             'example_sentence' => 'The judge will preside over the trial next week.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '主持',
                     'example_translation' => '法官將於下週主持審判。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '主持',
                     'example_translation' => '法官将于下周主持审判。',
                 ],
@@ -15602,11 +15602,11 @@ return [
             'pronunciation' => '/ˈaʊtˌsɛt/',
             'example_sentence' => 'From the outset, she knew the project would be challenging.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '一開始',
                     'example_translation' => '從一開始，她就知道這個專案會很有挑戰性。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '开端，一开始',
                     'example_translation' => '从一开始，她就知道这个项目会很有挑战性。',
                 ],
@@ -15622,11 +15622,11 @@ return [
             'pronunciation' => '/bɹoʊˈʃʊɹ/',
             'example_sentence' => 'The travel brochure has many beautiful pictures of the island.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '小冊子',
                     'example_translation' => '旅遊手冊上有許多關於這座島嶼的美麗照片。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '小册子',
                     'example_translation' => '旅游手册上有许多关于这座岛屿的美丽照片。',
                 ],
@@ -15642,11 +15642,11 @@ return [
             'pronunciation' => '/ˈsnɔɹ/',
             'example_sentence' => 'He tends to snore loudly when he sleeps on his back.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '鼾',
                     'example_translation' => '他仰睡時往往會打鼾打得很大聲。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '打鼾',
                     'example_translation' => '他仰睡时往往会打鼾打得很大声。',
                 ],
@@ -15662,11 +15662,11 @@ return [
             'pronunciation' => '/ˈfɹɪkʃən/',
             'example_sentence' => 'There is a lot of friction between the two surfaces.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '摩擦',
                     'example_translation' => '這兩個表面之間有很大摩擦。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '摩擦',
                     'example_translation' => '这两个表面之间有很大摩擦。',
                 ],
@@ -15682,11 +15682,11 @@ return [
             'pronunciation' => '/əˈɫaɪn/',
             'example_sentence' => 'Make sure to align the edges of the two pieces of wood.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '對齊',
                     'example_translation' => '務必對齊這兩塊木頭的邊緣。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '对齐',
                     'example_translation' => '务必对齐这两块木头的边缘。',
                 ],
@@ -15702,11 +15702,11 @@ return [
             'pronunciation' => '/ˈmaɪɡɹənt/',
             'example_sentence' => 'Many migrant workers send money back to their families.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '移民',
                     'example_translation' => '許多移工將錢寄回給他們的家人。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '移民，移工',
                     'example_translation' => '许多移工将钱寄回给他们的家人。',
                 ],
@@ -15722,11 +15722,11 @@ return [
             'pronunciation' => '/ˈkɹɔsɪŋ/',
             'example_sentence' => 'The hikers reached the river crossing early yesterday morning.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '穿越',
                     'example_translation' => '徒步旅行者昨天一早到達了渡河口。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '穿越，渡口',
                     'example_translation' => '徒步旅行者昨天一早到达了渡河口。',
                 ],
@@ -15742,11 +15742,11 @@ return [
             'pronunciation' => '/ɛnˈdaʊmənt/',
             'example_sentence' => 'The university received a large endowment for its science lab.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '捐贈',
                     'example_translation' => '大學收到了一筆用於其科學實驗室的巨額捐款。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '捐赠，基金',
                     'example_translation' => '大学收到了一笔用于其科学实验室的巨额捐款。',
                 ],
@@ -15764,11 +15764,11 @@ return [
             'pronunciation' => '/pɹəˈvɪnʃəɫ/',
             'example_sentence' => 'The provincial government announced new policies to improve rural education.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '省',
                     'example_translation' => '省級政府宣布了新政策以改善農村教育。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '省的；地方的',
                     'example_translation' => '省政府宣布了改善农村教育的新政策。',
                 ],
@@ -15784,11 +15784,11 @@ return [
             'pronunciation' => '/əˈstɹɑnəmɝ/',
             'example_sentence' => 'The astronomer used a powerful telescope to study the stars.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '天文學家',
                     'example_translation' => '天文學家使用強大的望遠鏡觀察星星。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '天文学家',
                     'example_translation' => '天文学家使用高倍望远镜研究恒星。',
                 ],
@@ -15804,11 +15804,11 @@ return [
             'pronunciation' => '/ˈsɪvəˌɫaɪz/',
             'example_sentence' => 'The goal of education is to help civilize the young generation.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '教化',
                     'example_translation' => '教育的目標是幫助教化年輕一代。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '教化；使文明',
                     'example_translation' => '教育的目标是帮助教化年轻一代。',
                 ],
@@ -15824,11 +15824,11 @@ return [
             'pronunciation' => '/ˈdɪsəpɫəˌnɛɹi/',
             'example_sentence' => 'The student faced disciplinary action for his rude behavior today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '紀律處分',
                     'example_translation' => '學生因今天的粗魯行為而面臨紀律處分。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '纪律的；惩戒的',
                     'example_translation' => '该学生今天因粗鲁行为面临纪律处分。',
                 ],
@@ -15844,11 +15844,11 @@ return [
             'pronunciation' => '/pɹəˈfɪʃənsi/',
             'example_sentence' => 'Her proficiency in mathematics impressed all of her teachers.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '熟練程度',
                     'example_translation' => '她在數學方面的精通讓所有老師都印象深刻。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '精通；熟练',
                     'example_translation' => '她在数学方面的精通给所有老师留下了深刻印象。',
                 ],
@@ -15864,11 +15864,11 @@ return [
             'pronunciation' => '/ˈɛdəbəɫ/',
             'example_sentence' => 'Many types of mushrooms in the forest are edible and tasty.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '食用',
                     'example_translation' => '森林裡的許多種類的蘑菇都是可以食用且美味的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '可食用的',
                     'example_translation' => '森林里许多种类的蘑菇都是可食用且美味的。',
                 ],
@@ -15884,11 +15884,11 @@ return [
             'pronunciation' => '/kəmˈjunəkətɪv/',
             'example_sentence' => 'She is a very communicative person who enjoys meeting people.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '交際的',
                     'example_translation' => '她是一個非常善於交際的人，喜歡與人見面。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '善于交际的；外向的',
                     'example_translation' => '她是一个非常善于交际的人，喜欢结识朋友。',
                 ],
@@ -15904,11 +15904,11 @@ return [
             'pronunciation' => '/daɪˈvɝt/, /dɪˈvɝt/',
             'example_sentence' => 'The police decided to divert the traffic due to the accident.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '轉移',
                     'example_translation' => '警方決定引導交通繞行，因為發生了事故。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '转移；使绕道',
                     'example_translation' => '由于发生事故，警察决定引导交通绕行。',
                 ],
@@ -15924,11 +15924,11 @@ return [
             'pronunciation' => '/ˈkɹæmp/',
             'example_sentence' => 'He had a sudden leg cramp while he was swimming in the sea.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '抽筋',
                     'example_translation' => '他在海裡游泳時腿部突然抽筋。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '抽筋；痉挛',
                     'example_translation' => '他在海里游泳时腿部突然抽筋。',
                 ],
@@ -15944,11 +15944,11 @@ return [
             'pronunciation' => '/əˈsɛnd/',
             'example_sentence' => 'The hikers began to ascend the steep mountain path at dawn.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '上升',
                     'example_translation' => '徒步旅行者在黎明時分開始攀登陡峭的山路。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '上升；攀登',
                     'example_translation' => '登山者们在黎明时开始攀登陡峭的山路。',
                 ],
@@ -15966,11 +15966,11 @@ return [
             'pronunciation' => '/ˈpɹɛsɪdənt/',
             'example_sentence' => 'This court ruling sets an important precedent for future cases.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '先例',
                     'example_translation' => '這項法院裁決為未來的案件樹立了重要的先例。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '先例；前例',
                     'example_translation' => '这项法院裁决为未来的案件树立了重要的先例。',
                 ],
@@ -15986,11 +15986,11 @@ return [
             'pronunciation' => '/ˌɑɹkiˈɑɫədʒi/',
             'example_sentence' => 'He decided to study archaeology and ancient civilizations.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '考古學',
                     'example_translation' => '他決定學習考古學和古代文明。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '考古学',
                     'example_translation' => '他决定学习考古学和古代文明。',
                 ],
@@ -16006,11 +16006,11 @@ return [
             'pronunciation' => '/sɪˈɡɑɹ/',
             'example_sentence' => 'The old man was sitting on the porch smoking a large cigar.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '雪茄',
                     'example_translation' => '老人坐在門廊上抽著一支大雪茄。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '雪茄',
                     'example_translation' => '老爷爷坐在门廊上抽着一支大雪茄。',
                 ],
@@ -16026,11 +16026,11 @@ return [
             'pronunciation' => '/ˈɡɹeɪpˌfɹut/',
             'example_sentence' => 'I like to eat grapefruit for breakfast.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '柚子',
                     'example_translation' => '我喜歡早餐吃葡萄柚。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '葡萄柚；西柚',
                     'example_translation' => '我喜欢早餐吃葡萄柚。',
                 ],
@@ -16046,11 +16046,11 @@ return [
             'pronunciation' => '/ɛsˈθɛtɪk/',
             'example_sentence' => 'The building\'s design has a modern and pleasing aesthetic.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '美學的',
                     'example_translation' => '這棟建築的設計具有現代且令人愉悅的美感。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '美学的；审美的',
                     'example_translation' => '这座建筑的设计具有现代且令人愉悦的美感。',
                 ],
@@ -16066,11 +16066,11 @@ return [
             'pronunciation' => '/səˈspɛns/',
             'example_sentence' => 'The suspense of waiting for the exam results was unbearable.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '懸念',
                     'example_translation' => '等待考試結果的懸念令人難以忍受。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '悬念；焦虑不安',
                     'example_translation' => '等待考试结果时的紧张悬念令人难以忍受。',
                 ],
@@ -16086,11 +16086,11 @@ return [
             'pronunciation' => '/ˈmeɪdən/',
             'example_sentence' => 'The ship embarked on its maiden voyage across the Atlantic Ocean.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '少女',
                     'example_translation' => '這艘船展開了它橫越大西洋的首航。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '初次的；少女',
                     'example_translation' => '这艘船展开了横跨大西洋的首次航行。',
                 ],
@@ -16106,11 +16106,11 @@ return [
             'pronunciation' => '/əkˈjumjəˌɫeɪt/',
             'example_sentence' => 'Dust began to accumulate on the books on the top shelf.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '累積',
                     'example_translation' => '最頂層架子上的書開始積起灰塵。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '积累；积聚',
                     'example_translation' => '最顶层架子上的书开始积聚灰尘。',
                 ],
@@ -16126,11 +16126,11 @@ return [
             'pronunciation' => '/ˌɪˈɫumɪnɪt/',
             'example_sentence' => 'The candles illuminate the room beautifully.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '照亮',
                     'example_translation' => '蠟燭把房間照得很美。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '照亮；阐明',
                     'example_translation' => '蜡烛把房间照得非常漂亮。',
                 ],
@@ -16146,11 +16146,11 @@ return [
             'pronunciation' => '/əˈkɫɪps/, /iˈkɫɪps/, /ɪˈkɫɪps/',
             'example_sentence' => 'There will be a total lunar eclipse late tomorrow night here.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '蝕',
                     'example_translation' => '明天深夜這裡將出現月全食。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '食；蚀；使失色',
                     'example_translation' => '明天深夜这里将出现月全食。',
                 ],
@@ -16168,11 +16168,11 @@ return [
             'pronunciation' => '/ˈmidiˌeɪt/',
             'example_sentence' => 'The teacher helped mediate the dispute between the two students.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '調解',
                     'example_translation' => '老師幫忙調解了兩個學生之間的爭端。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '调解',
                     'example_translation' => '老师帮忙调解了两个学生之间的纠纷。',
                 ],
@@ -16188,11 +16188,11 @@ return [
             'pronunciation' => '/ˌɹɛvəˈɫeɪʃən/',
             'example_sentence' => 'The revelation of the secret shocked everyone.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '啟示',
                     'example_translation' => '這個秘密的揭露震驚了所有人。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '揭露',
                     'example_translation' => '秘密的揭露震惊了所有人。',
                 ],
@@ -16208,11 +16208,11 @@ return [
             'pronunciation' => '/pɹɛˈmɪɹ/',
             'example_sentence' => 'The premiere of the new movie attracted many famous actors.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '首播',
                     'example_translation' => '這部新電影的首映吸引了許多著名演員。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '首映',
                     'example_translation' => '这部新电影的首映吸引了许多著名演员。',
                 ],
@@ -16228,11 +16228,11 @@ return [
             'pronunciation' => '/ˈhɝdəɫ/',
             'example_sentence' => 'The runner cleared the final hurdle and won the race.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '欄',
                     'example_translation' => '那位跑者越過了最後一個欄架，贏得了比賽。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '栏架',
                     'example_translation' => '那位跑者越过了最后一个栏架，赢得了比赛。',
                 ],
@@ -16248,11 +16248,11 @@ return [
             'pronunciation' => '/sɪˈdus/',
             'example_sentence' => 'He tried to seduce her with his charm and wit.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '勾引',
                     'example_translation' => '他試圖用他的魅力和機智來誘惑她。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '诱惑',
                     'example_translation' => '他试图用他的魅力和风趣来诱惑她。',
                 ],
@@ -16268,11 +16268,11 @@ return [
             'pronunciation' => '/ˈpoʊɫtɹi/',
             'example_sentence' => 'We raise poultry on our farm.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '家禽',
                     'example_translation' => '我們在農場裡養家禽。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '家禽',
                     'example_translation' => '我们在农场里饲养家禽。',
                 ],
@@ -16288,11 +16288,11 @@ return [
             'pronunciation' => '/ˈnæʃənəˌɫɪzəm/',
             'example_sentence' => 'Nationalism can be a powerful force in shaping a country\'s politics.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '民族主義',
                     'example_translation' => '民族主義可以是塑造一個國家政治的強大力量。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '民族主义',
                     'example_translation' => '民族主义可以是塑造一个国家政治的强大力量。',
                 ],
@@ -16308,11 +16308,11 @@ return [
             'pronunciation' => '/ˈnɝtʃɝ/',
             'example_sentence' => 'Parents nurture their children with love and patience.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '培育',
                     'example_translation' => '父母用愛和耐心養育他們的孩子。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '抚育',
                     'example_translation' => '父母用爱和耐心抚育他们的孩子。',
                 ],
@@ -16328,11 +16328,11 @@ return [
             'pronunciation' => '/ˈɫætəˌtud/',
             'example_sentence' => 'The city is located at a high latitude.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '緯度',
                     'example_translation' => '這座城市位於高緯度地區。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '纬度',
                     'example_translation' => '这座城市位于高纬度地区。',
                 ],
@@ -16348,11 +16348,11 @@ return [
             'pronunciation' => '/ˈjunəˌfaɪ/',
             'example_sentence' => 'The leader worked hard to unify the country.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '統一',
                     'example_translation' => '這位領導者努力統一國家。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '统一',
                     'example_translation' => '这位领导人努力统一国家。',
                 ],
@@ -16370,11 +16370,11 @@ return [
             'pronunciation' => '/ˈfaʊɫ/',
             'example_sentence' => 'The farmer raises fowl in the backyard.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '雞',
                     'example_translation' => '農夫在後院飼養家禽。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '家禽',
                     'example_translation' => '农夫在后院饲养家禽。',
                 ],
@@ -16390,11 +16390,11 @@ return [
             'pronunciation' => '/ˈɹəɡəd/',
             'example_sentence' => 'The rugged mountain trail challenged even the most experienced hikers.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '崎嶇',
                     'example_translation' => '崎嶇的山路即使是最有經驗的登山者也感到困難。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '崎岖的',
                     'example_translation' => '崎岖的山路让即使是最有经验的登山者也感到棘手。',
                 ],
@@ -16410,11 +16410,11 @@ return [
             'pronunciation' => '/kæpˈtɪvəti/',
             'example_sentence' => 'It is difficult for wild animals to live in a state of captivity.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '囚禁',
                     'example_translation' => '野生動物很難在圈養狀態下生活。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '圈养',
                     'example_translation' => '野生动物很难在圈养状态下生活。',
                 ],
@@ -16430,11 +16430,11 @@ return [
             'pronunciation' => '/ˈʃæbi/',
             'example_sentence' => 'The old man wore a shabby coat that was full of holes.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '破舊',
                     'example_translation' => '那位老人穿著一件破舊的外套，上面滿是破洞。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '破旧的',
                     'example_translation' => '那位老人穿了一件破旧的外套，上面满是破洞。',
                 ],
@@ -16450,11 +16450,11 @@ return [
             'pronunciation' => '/ˈaɪˌɫɪd/',
             'example_sentence' => 'Her eyelid twitched when the bright light shone in her eyes.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '眼皮',
                     'example_translation' => '當強光照進她的眼睛時，她的眼瞼抽動了一下。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '眼皮',
                     'example_translation' => '当强光照进她的眼睛时，她的眼皮抽动了一下。',
                 ],
@@ -16470,11 +16470,11 @@ return [
             'pronunciation' => '/ˈəpwɝd/',
             'example_sentence' => 'The stock showed an upward trend this year.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '向上',
                     'example_translation' => '這支股票今年呈現上升的趨勢。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '向上的',
                     'example_translation' => '这只股票今年呈现上升趋势。',
                 ],
@@ -16490,11 +16490,11 @@ return [
             'pronunciation' => '/ˈsaɪkɪk/',
             'example_sentence' => 'She claimed to have psychic abilities that allowed her to predict the future.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '精神',
                     'example_translation' => '她聲稱擁有通靈的能力，能夠預測未來。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '通灵的',
                     'example_translation' => '她声称拥有通灵能力，能够预测未来。',
                 ],
@@ -16510,11 +16510,11 @@ return [
             'pronunciation' => '/ˈmɪmɪk/',
             'example_sentence' => 'The parrot can mimic human speech.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '模仿',
                     'example_translation' => '這隻鸚鵡能模仿人類的語言。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '模仿',
                     'example_translation' => '这只鹦鹉能模仿人类说话。',
                 ],
@@ -16530,11 +16530,11 @@ return [
             'pronunciation' => '/ˈɫaɪvˌstɑk/',
             'example_sentence' => 'The farmer raises livestock such as cattle and sheep.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '家畜',
                     'example_translation' => '農夫飼養牲畜，例如牛和羊。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '牲畜',
                     'example_translation' => '农夫饲养牲畜，例如牛和羊。',
                 ],
@@ -16550,11 +16550,11 @@ return [
             'pronunciation' => '/ˌkɑnsəˈɫeɪʃən/',
             'example_sentence' => 'His kind words provided much consolation during her illness.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '安慰',
                     'example_translation' => '他親切的話語在她生病期間給予了她許多慰藉。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '安慰',
                     'example_translation' => '在她生病期间，他亲切的话语给予了她极大的安慰。',
                 ],
@@ -16572,11 +16572,11 @@ return [
             'pronunciation' => '/ˈfɑɹməsi/',
             'example_sentence' => 'I went to the pharmacy to pick up my medicine.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '藥局',
                     'example_translation' => '我去藥局拿我的藥。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '药房；药店',
                     'example_translation' => '我去药房取药。',
                 ],
@@ -16592,11 +16592,11 @@ return [
             'pronunciation' => '/ˈɹiɫəˈzeɪʃən/',
             'example_sentence' => 'The realization that he had lost his keys made him panic.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '實現',
                     'example_translation' => '他意識到自己弄丟了鑰匙，這讓他感到恐慌。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '意识；实现',
                     'example_translation' => '他意识到自己丢了钥匙，这让他感到恐慌。',
                 ],
@@ -16612,11 +16612,11 @@ return [
             'pronunciation' => '/sɝˈæmɪk/',
             'example_sentence' => 'She bought a beautiful ceramic vase for her dining room table.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '陶瓷製品',
                     'example_translation' => '她為餐桌買了一個漂亮的陶瓷花瓶。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '陶瓷的；陶瓷制品',
                     'example_translation' => '她为餐桌买了一个漂亮的陶瓷花瓶。',
                 ],
@@ -16632,11 +16632,11 @@ return [
             'pronunciation' => '/ˈstaɪɫɪʃ/',
             'example_sentence' => 'She wore a stylish dress to the party.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '時髦的',
                     'example_translation' => '她穿了一件時髦的洋裝去參加派對。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '时髦的；时尚的',
                     'example_translation' => '她穿了一件时髦的连衣裙去参加派对。',
                 ],
@@ -16652,11 +16652,11 @@ return [
             'pronunciation' => '/ˈfoʊ/',
             'example_sentence' => 'The hero faced his foe in the final battle.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '敵人',
                     'example_translation' => '英雄在最後的戰鬥中面對了他的敵人。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '敌人',
                     'example_translation' => '英雄在决战中面对了他的敌人。',
                 ],
@@ -16672,11 +16672,11 @@ return [
             'pronunciation' => '/ˈpɹɑsəkˌjut/',
             'example_sentence' => 'The government decided to prosecute the company for violating environmental laws.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '起訴',
                     'example_translation' => '政府決定起訴該公司違反環境法規。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '起诉；检举',
                     'example_translation' => '政府决定对该公司违反环保法律的行为提起起诉。',
                 ],
@@ -16692,11 +16692,11 @@ return [
             'pronunciation' => '/ˈɛməɡɹənt/',
             'example_sentence' => 'The country has many emigrants who live and work in the USA.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '移民',
                     'example_translation' => '這個國家有許多在美國生活和工作的移民。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '（移居外国的）移民',
                     'example_translation' => '这个国家有许多移居美国生活和工作的移民。',
                 ],
@@ -16712,11 +16712,11 @@ return [
             'pronunciation' => '/ˈɹɛkənˌsaɪɫ/',
             'example_sentence' => 'They tried to reconcile their differences after the argument.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '調和',
                     'example_translation' => '他們試圖在爭吵後和解彼此的分歧。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '和解；调和',
                     'example_translation' => '争吵过后，他们试图化解彼此的分歧。',
                 ],
@@ -16732,11 +16732,11 @@ return [
             'pronunciation' => '/ˈɔɪstɝ/',
             'example_sentence' => 'The oyster tastes fresh and delicious.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '牡蠣',
                     'example_translation' => '這個牡蠣嚐起來新鮮又美味。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '牡蛎；生蚝',
                     'example_translation' => '这个生蚝尝起来新鲜又美味。',
                 ],
@@ -16752,11 +16752,11 @@ return [
             'pronunciation' => '/ˈkɝb/',
             'example_sentence' => 'The government is implementing new laws to curb local pollution.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '抑制',
                     'example_translation' => '政府正在實施新法律以遏制當地污染。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '控制；抑制',
                     'example_translation' => '政府正在实施新法律以遏制当地的污染。',
                 ],
@@ -16774,11 +16774,11 @@ return [
             'pronunciation' => '/ˈkɹeɪtɝ/',
             'example_sentence' => 'The moon\'s surface is covered with many large and deep craters.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '火山口',
                     'example_translation' => '月球表面覆蓋著許多大而深的隕石坑。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '陨石坑；火山口',
                     'example_translation' => '月球表面覆盖着许多大而深的陨石坑。',
                 ],
@@ -16794,11 +16794,11 @@ return [
             'pronunciation' => '/ˌdɛdəˈkeɪʃən/',
             'example_sentence' => 'Success requires a lot of hard work and persistent dedication.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '奉獻',
                     'example_translation' => '成功需要大量的努力和堅持不懈的奉獻。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '奉献；全心投入',
                     'example_translation' => '成功需要大量的努力和坚持不懈的奉献。',
                 ],
@@ -16814,11 +16814,11 @@ return [
             'pronunciation' => '/ˈpæsˌtaɪm/',
             'example_sentence' => 'Reading is my favorite pastime.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '消遣',
                     'example_translation' => '閱讀是我最喜愛的消遣。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '消遣；业余爱好',
                     'example_translation' => '阅读是我最喜欢的消遣方式。',
                 ],
@@ -16834,11 +16834,11 @@ return [
             'pronunciation' => '/ˈsteɪʃəˌnɛɹi/',
             'example_sentence' => 'The car remained stationary at the red light.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '固定式',
                     'example_translation' => '那輛車在紅燈前保持靜止不動。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '静止的；固定的',
                     'example_translation' => '那辆车在红灯前保持静止不动。',
                 ],
@@ -16854,11 +16854,11 @@ return [
             'pronunciation' => '/ˌɹipɹəˈdus/',
             'example_sentence' => 'The scientists were unable to reproduce the results of the experiment.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '複製',
                     'example_translation' => '科學家們無法重現該實驗的結果。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '复制；重现；繁殖',
                     'example_translation' => '科学家们无法重现该实验的结果。',
                 ],
@@ -16874,11 +16874,11 @@ return [
             'pronunciation' => '/ˈɹip/',
             'example_sentence' => 'You reap what you sow.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '收穫',
                     'example_translation' => '你種什麼就收什麼。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '收割；收获',
                     'example_translation' => '种瓜得瓜，种豆得豆（因果报应）。',
                 ],
@@ -16894,11 +16894,11 @@ return [
             'pronunciation' => '/ɪkˈskɫuʒən/',
             'example_sentence' => 'The exclusion of certain members from the club caused controversy.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '排除',
                     'example_translation' => '將某些成員排除在俱樂部之外引發了爭議。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '排除；排外',
                     'example_translation' => '将某些成员排除在俱乐部之外引发了争议。',
                 ],
@@ -16914,11 +16914,11 @@ return [
             'pronunciation' => '/ˈtɛɫɝ/',
             'example_sentence' => 'The teller counted the money quickly.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '出納員',
                     'example_translation' => '出納員快速地數了錢。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '出纳员；柜员',
                     'example_translation' => '出纳员快速地数了钱。',
                 ],
@@ -16934,11 +16934,11 @@ return [
             'pronunciation' => '/ˈtæn/',
             'example_sentence' => 'She got a nice tan after spending a week at the beach.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '曬黑',
                     'example_translation' => '她在海灘待了一週後曬出了漂亮的古銅色。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '晒黑；古铜色',
                     'example_translation' => '她在海滩呆了一周后晒出了漂亮的古铜色皮肤。',
                 ],
@@ -16954,11 +16954,11 @@ return [
             'pronunciation' => '/ɛnˈɹɪtʃmənt/',
             'example_sentence' => 'Traveling is a great way to enrich your life and experience.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '豐富',
                     'example_translation' => '旅行是充實生活和增加經驗的好方法。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '丰富；充实',
                     'example_translation' => '旅行是充实生活和丰富阅历的好方法。',
                 ],
@@ -16976,11 +16976,11 @@ return [
             'pronunciation' => '/ˈɫoʊʃən/',
             'example_sentence' => 'She applied lotion to her hands to keep them soft.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '洗劑',
                     'example_translation' => '她在手上塗了乳液以保持柔軟。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '乳液，护肤霜',
                     'example_translation' => '她在手上抹了乳液以保持皮肤柔嫩。',
                 ],
@@ -16996,11 +16996,11 @@ return [
             'pronunciation' => '/ɹiˈvaɪvəɫ/, /ɹɪˈvaɪvəɫ/',
             'example_sentence' => 'The revival of traditional arts has attracted many young people.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '復興',
                     'example_translation' => '傳統藝術的復興吸引了許多年輕人。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '复兴，苏醒',
                     'example_translation' => '传统艺术的复兴吸引了许多年轻人。',
                 ],
@@ -17016,11 +17016,11 @@ return [
             'pronunciation' => '/ˈpjʊɹəti/, /ˈpjʊɹɪti/',
             'example_sentence' => 'The purity of the water was tested before drinking.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '純度',
                     'example_translation' => '飲用前測試了水的純度。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '纯度，纯洁',
                     'example_translation' => '饮用前对水的纯净度进行了检测。',
                 ],
@@ -17036,11 +17036,11 @@ return [
             'pronunciation' => '/ɝˈɪdʒəˌneɪt/',
             'example_sentence' => 'The idea originated from a simple conversation.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '起源',
                     'example_translation' => '這個想法源自於一次簡單的對話。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '起源，发源',
                     'example_translation' => '这个想法源于一次简单的对话。',
                 ],
@@ -17056,11 +17056,11 @@ return [
             'pronunciation' => '/ˈveɪɫ/',
             'example_sentence' => 'She wore a thin veil over her face.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '面紗',
                     'example_translation' => '她在臉上戴了一層薄面紗。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '面纱，遮蔽物',
                     'example_translation' => '她脸上戴着一层薄薄的面纱。',
                 ],
@@ -17076,11 +17076,11 @@ return [
             'pronunciation' => '/ˈtʃɛˌkəp/',
             'example_sentence' => 'I have an appointment with my doctor for a regular checkup.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '清理',
                     'example_translation' => '我約了醫生進行定期體檢。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '体检，检查',
                     'example_translation' => '我预约了医生做定期体检。',
                 ],
@@ -17096,11 +17096,11 @@ return [
             'pronunciation' => '/ˈsɝtəˌfaɪ/',
             'example_sentence' => 'The doctor was asked to certify the cause of the patient\'s death.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '證明',
                     'example_translation' => '醫生被要求證明病人的死因。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '证明，出具证明',
                     'example_translation' => '医生被要求证实患者的死因。',
                 ],
@@ -17116,11 +17116,11 @@ return [
             'pronunciation' => '/ˈsməɡəɫ/',
             'example_sentence' => 'He tried to smuggle diamonds across the border.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '走私',
                     'example_translation' => '他試圖走私鑽石過境。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '走私，偷运',
                     'example_translation' => '他试图将钻石走私过境。',
                 ],
@@ -17136,11 +17136,11 @@ return [
             'pronunciation' => '/ˈtɔɹənt/',
             'example_sentence' => 'A torrent of rain flooded the streets.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '激流',
                     'example_translation' => '一場傾盆大雨淹沒了街道。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '倾盆大雨，急流',
                     'example_translation' => '一场倾盆大雨淹没了街道。',
                 ],
@@ -17156,11 +17156,11 @@ return [
             'pronunciation' => '/ɪnˈdɛvɝ/',
             'example_sentence' => 'Success is the result of persistent effort and sincere endeavor.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '努力',
                     'example_translation' => '成功是持久努力和真誠奮鬥的結果。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '努力，奋斗',
                     'example_translation' => '成功是持之以恒的努力和真诚奋斗的结果。',
                 ],
@@ -17178,11 +17178,11 @@ return [
             'pronunciation' => '/ˈfɫɝɪʃ/',
             'example_sentence' => 'The garden will flourish with enough sunlight and water.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '繁榮',
                     'example_translation' => '這座花園只要有充足的陽光和水分就會蓬勃生長。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '繁荣，茁壮成长',
                     'example_translation' => '只要有充足的阳光和水分，花园就会茁壮成长。',
                 ],
@@ -17198,11 +17198,11 @@ return [
             'pronunciation' => '/ˈhɛɫθfəɫ/',
             'example_sentence' => 'Eating healthful foods can improve your energy levels.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '健康的',
                     'example_translation' => '吃有益健康的食物可以提升你的精力。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '有益健康的',
                     'example_translation' => '食用有益健康的食物可以提高你的精力水平。',
                 ],
@@ -17218,11 +17218,11 @@ return [
             'pronunciation' => '/ˈdɹæstɪk/',
             'example_sentence' => 'The company had to take drastic measures to reduce its costs.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '激烈的',
                     'example_translation' => '公司不得不採取嚴厲措施來降低成本。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '剧烈的，严厉的',
                     'example_translation' => '公司不得不采取果断措施来降低成本。',
                 ],
@@ -17238,11 +17238,11 @@ return [
             'pronunciation' => '/ˈdɪsˌtʃɑɹdʒ/, /dɪsˈtʃɑɹdʒ/',
             'example_sentence' => 'The patient was finally ready for discharge from the hospital.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '釋放',
                     'example_translation' => '病人終於準備好從醫院出院了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '准许出院，释放',
                     'example_translation' => '患者终于准备好出院了。',
                 ],
@@ -17258,11 +17258,11 @@ return [
             'pronunciation' => '/ˈɹuθɫəs/',
             'example_sentence' => 'The ruthless dictator showed no mercy to his enemies.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '無情',
                     'example_translation' => '那個殘酷的獨裁者對他的敵人毫不留情。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '无情的，残忍的',
                     'example_translation' => '那个无情的独裁者对他的敌人毫不留情。',
                 ],
@@ -17278,11 +17278,11 @@ return [
             'pronunciation' => '/saɪˈkaɪətɹi/, /sɪˈkaɪətɹi/',
             'example_sentence' => 'She decided to study psychiatry because she wanted to help people with mental health issues.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '精神病學',
                     'example_translation' => '她決定學習精神醫學，因為她想幫助有心理健康問題的人。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '精神病学',
                     'example_translation' => '她决定学习精神病学，因为她想帮助有心理健康问题的人。',
                 ],
@@ -17298,11 +17298,11 @@ return [
             'pronunciation' => '/ˈaʊtɪŋ/',
             'example_sentence' => 'The family outing to the beach was enjoyable.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '郊遊',
                     'example_translation' => '這次家庭郊遊去海灘非常愉快。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '远足，郊游',
                     'example_translation' => '全家去海滩郊游非常愉快。',
                 ],
@@ -17318,11 +17318,11 @@ return [
             'pronunciation' => '/ˈhaɪbɹəd/, /ˈhaɪbɹɪd/',
             'example_sentence' => 'The company adopted a hybrid work model that combines remote and in-office days.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '雜交種',
                     'example_translation' => '這家公司採用了一種混合工作模式，結合了遠端和進辦公室的工作日。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '混合的，杂交的',
                     'example_translation' => '该公司采用了结合远程工作和办公室办公的混合工作模式。',
                 ],
@@ -17338,11 +17338,11 @@ return [
             'pronunciation' => '/ˈɡɹoʊn/',
             'example_sentence' => 'He couldn\'t help but groan in pain after the fall.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '呻吟',
                     'example_translation' => '摔倒後，他忍不住痛苦地呻吟。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '呻吟',
                     'example_translation' => '跌倒后，他忍不住痛苦地呻吟起来。',
                 ],
@@ -17358,11 +17358,11 @@ return [
             'pronunciation' => '/ˌstɪmjəˈɫeɪʃən/',
             'example_sentence' => 'The brain needs constant stimulation to stay active.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '刺激',
                     'example_translation' => '大腦需要持續的刺激才能保持活躍。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '刺激',
                     'example_translation' => '大脑需要不断受到刺激才能保持活跃。',
                 ],
@@ -17380,11 +17380,11 @@ return [
             'pronunciation' => '/ˈaɪˌɫæʃ/',
             'example_sentence' => 'She found an eyelash on her cheek and made a wish.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '睫毛',
                     'example_translation' => '她在臉頰上發現了一根睫毛，然後許了個願。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '睫毛',
                     'example_translation' => '她在脸颊上发现了一根睫毛，然后许了个愿。',
                 ],
@@ -17400,11 +17400,11 @@ return [
             'pronunciation' => '/ˈaʊns/',
             'example_sentence' => 'Please add an ounce of sugar to the mixture.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '盎司',
                     'example_translation' => '請在混合物中加入一盎司的糖。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '盎司',
                     'example_translation' => '请在混合物中加入一盎司的糖。',
                 ],
@@ -17420,11 +17420,11 @@ return [
             'pronunciation' => '/ˈtɹɛk/',
             'example_sentence' => 'The trek through the mountains took three days.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '跋涉',
                     'example_translation' => '穿越山區的長途跋涉花了三天時間。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '长途跋涉；艰苦的旅程',
                     'example_translation' => '穿越山区的长途跋涉花了三天时间。',
                 ],
@@ -17440,11 +17440,11 @@ return [
             'pronunciation' => '/ˈpɫeɪˌɹaɪt/',
             'example_sentence' => 'The playwright wrote a new drama for the theater.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '劇作家',
                     'example_translation' => '這位劇作家為劇院寫了一部新的戲劇。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '剧作家',
                     'example_translation' => '这位剧作家为剧院写了一部新的戏剧。',
                 ],
@@ -17460,11 +17460,11 @@ return [
             'pronunciation' => '/ˈhækɝ/',
             'example_sentence' => 'The hacker broke into the company\'s database and stole sensitive information.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '駭客',
                     'example_translation' => '駭客入侵了公司的資料庫並竊取了敏感資訊。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '黑客',
                     'example_translation' => '黑客入侵了公司的数据库并窃取了敏感信息。',
                 ],
@@ -17480,11 +17480,11 @@ return [
             'pronunciation' => '/ˈbɹɔθ/',
             'example_sentence' => 'My mother made some delicious chicken broth for dinner tonight.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '高湯',
                     'example_translation' => '我母親今晚做了一些美味的雞肉清湯。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '肉汤；清汤',
                     'example_translation' => '我母亲今晚做了一些美味的鸡汤。',
                 ],
@@ -17500,11 +17500,11 @@ return [
             'pronunciation' => '/ˈsɛɫjəɫɝ/',
             'example_sentence' => 'Modern cellular technology has changed the way we communicate.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '細胞的',
                     'example_translation' => '現代蜂窩技術改變了我們的通訊方式。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '细胞的；蜂窝状的；移动通信的',
                     'example_translation' => '现代蜂窝移动技术改变了我们的通信方式。',
                 ],
@@ -17520,11 +17520,11 @@ return [
             'pronunciation' => '/ˈsɑɫəm/',
             'example_sentence' => 'The solemn ceremony honored the fallen soldiers.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '莊嚴',
                     'example_translation' => '這場莊嚴的儀式向陣亡的士兵致敬。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '庄严的；严肃的',
                     'example_translation' => '这场庄严的仪式向阵亡的士兵致敬。',
                 ],
@@ -17540,11 +17540,11 @@ return [
             'pronunciation' => '/ɹiˈɫaɪəns/, /ɹɪˈɫaɪəns/',
             'example_sentence' => 'Our reliance on technology grows every year.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '依賴',
                     'example_translation' => '我們對科技的依賴每年都在增長。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '依赖；依靠',
                     'example_translation' => '我们对科技的依赖每年都在增加。',
                 ],
@@ -17560,11 +17560,11 @@ return [
             'pronunciation' => '/kənˌfɛdɝˈeɪʃən/',
             'example_sentence' => 'The provinces formed a confederation to manage local affairs.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '聯盟',
                     'example_translation' => '各省組成了一個聯邦來管理地方事務。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '联盟；邦联',
                     'example_translation' => '各省组成了联盟来管理地方事务。',
                 ],
@@ -17582,11 +17582,11 @@ return [
             'pronunciation' => '/ˈnɝɪʃmənt/',
             'example_sentence' => 'Good food nourishes both body and mind.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '營養',
                     'example_translation' => '好的食物滋養身體和心靈。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '营养；滋养物',
                     'example_translation' => '好的食物滋养身体和心灵。',
                 ],
@@ -17602,11 +17602,11 @@ return [
             'pronunciation' => '/pɹəˈvɪʒənəɫ/',
             'example_sentence' => 'The provisional agreement will be reviewed next month.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '臨時',
                     'example_translation' => '臨時協議將於下個月進行審查。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '临时的；暂定的',
                     'example_translation' => '临时协议将于下个月进行审查。',
                 ],
@@ -17622,11 +17622,11 @@ return [
             'pronunciation' => '/kənˈsɝv/',
             'example_sentence' => 'It is important to conserve water and energy in our daily lives.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '養護',
                     'example_translation' => '在日常生活中節約水和能源是很重要的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '节约；保护；保存',
                     'example_translation' => '在日常生活中节约水和能源是很重要的。',
                 ],
@@ -17642,11 +17642,11 @@ return [
             'pronunciation' => '/ˈsɝvɪŋ/',
             'example_sentence' => 'One serving of rice is enough for me.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '服務',
                     'example_translation' => '一份米飯對我來說就夠了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '（食物的）一份',
                     'example_translation' => '一份米饭对我来说足够了。',
                 ],
@@ -17662,11 +17662,11 @@ return [
             'pronunciation' => '/ənˈveɪɫ/',
             'example_sentence' => 'The company will unveil its new product at the conference tomorrow.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '揭幕',
                     'example_translation' => '該公司將在明天的會議上揭示其新產品。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '揭幕；公布；推出',
                     'example_translation' => '该公司将在明天的会议上推出其新产品。',
                 ],
@@ -17682,11 +17682,11 @@ return [
             'pronunciation' => '/ˈɫeɪˌaʊt/',
             'example_sentence' => 'The layout of the room was simple and elegant.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '佈局',
                     'example_translation' => '房間的布局簡單而優雅。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '布局；版面设计',
                     'example_translation' => '房间的布局简单而优雅。',
                 ],
@@ -17702,11 +17702,11 @@ return [
             'pronunciation' => '/ˈoʊtˌmiɫ/',
             'example_sentence' => 'I have oatmeal for breakfast every morning.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '麥片',
                     'example_translation' => '我每天早上吃燕麥片當早餐。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '燕麦片；燕麦粥',
                     'example_translation' => '我每天早上吃燕麦片当作早餐。',
                 ],
@@ -17722,11 +17722,11 @@ return [
             'pronunciation' => '/ˌɪnˈdɪɡnənt/',
             'example_sentence' => 'She was indignant when she discovered someone had taken credit for her work.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '憤怒',
                     'example_translation' => '當她發現有人將她的工作據為己有時，她感到非常憤慨。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '愤慨的；义愤的',
                     'example_translation' => '当她发现有人将她的工作据为己有时，她感到非常愤慨。',
                 ],
@@ -17742,11 +17742,11 @@ return [
             'pronunciation' => '/ˈmɑnəˌtɛɹi/',
             'example_sentence' => 'The government implemented new monetary policies to control inflation.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '貨幣',
                     'example_translation' => '政府實施了新的貨幣政策來控制通貨膨脹。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '货币的；金融的',
                     'example_translation' => '政府实施了新的货币政策来控制通货膨胀。',
                 ],
@@ -17762,11 +17762,11 @@ return [
             'pronunciation' => '[antonym]',
             'example_sentence' => 'The word \'happy\' is the antonym of the word \'sad\'.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '反義詞',
                     'example_translation' => '\'happy\' 這個單詞是 \'sad\' 的反義詞。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '反义词',
                     'example_translation' => '单词“happy”是单词“sad”的反义词。',
                 ],
@@ -17784,11 +17784,11 @@ return [
             'pronunciation' => '/ɹɪˈnaʊnd/',
             'example_sentence' => 'The city is renowned for its beautiful architecture.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '著名的',
                     'example_translation' => '這座城市以其美麗的建築而聞名。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '著名的',
                     'example_translation' => '这座城市以其美丽的建筑而闻名。',
                 ],
@@ -17804,11 +17804,11 @@ return [
             'pronunciation' => '/əˈbaʊnd/',
             'example_sentence' => 'The coastal waters of the island abound with many types of fish.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '盛產',
                     'example_translation' => '島嶼的沿海水域盛產多種魚類。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '大量存在',
                     'example_translation' => '该岛的沿海水域盛产多种鱼类。',
                 ],
@@ -17824,11 +17824,11 @@ return [
             'pronunciation' => '/ˈvɪɡɝəs/',
             'example_sentence' => 'She maintains a vigorous exercise routine every morning.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '蓬勃',
                     'example_translation' => '她每天早上維持著一套充滿活力的運動習慣。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '精力充沛的',
                     'example_translation' => '她每天早上都保持着一套精力充沛的锻炼习惯。',
                 ],
@@ -17844,11 +17844,11 @@ return [
             'pronunciation' => '/ˈtʃɛɹˌpɝsən/',
             'example_sentence' => 'The chairperson called the meeting to order.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '主席',
                     'example_translation' => '主席宣布會議開始。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '主席',
                     'example_translation' => '主席宣布会议开始。',
                 ],
@@ -17864,11 +17864,11 @@ return [
             'pronunciation' => '/ˈmɑɹʃəɫ/',
             'example_sentence' => 'He has practiced martial arts since childhood.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '武術',
                     'example_translation' => '他從小就練習武術。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '军事的',
                     'example_translation' => '他从小就练习武术。',
                 ],
@@ -17884,11 +17884,11 @@ return [
             'pronunciation' => '/ˈtʃɛɹmən/',
             'example_sentence' => 'The chairman of the board announced the company\'s new strategy.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '男主席',
                     'example_translation' => '董事會男主席宣布了公司的新策略。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '主席',
                     'example_translation' => '董事长宣布了公司的新战略。',
                 ],
@@ -17904,11 +17904,11 @@ return [
             'pronunciation' => '/ˈtʃɛɹˌwʊmən/',
             'example_sentence' => 'The chairwoman led the discussion at the international conference.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '女主席',
                     'example_translation' => '女主席主持了國際會議上的討論。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '女主席',
                     'example_translation' => '女主席主持了国际会议上的讨论。',
                 ],
@@ -17924,11 +17924,11 @@ return [
             'pronunciation' => '/əˈkɝəns/',
             'example_sentence' => 'The occurrence of earthquakes is common in this region.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '發生',
                     'example_translation' => '地震的發生在這個地區很常見。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '发生',
                     'example_translation' => '地震的发生在该地区很常见。',
                 ],
@@ -17944,11 +17944,11 @@ return [
             'pronunciation' => '/ˌsupɝənˈtɛndənt/, /ˌsupɝɪnˈtɛndənt/',
             'example_sentence' => 'The superintendent inspected every floor of the building before approving the safety report.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '主管',
                     'example_translation' => '管理員在批准安全報告之前檢查了大樓的每一層。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '主管',
                     'example_translation' => '监工在批准安全报告之前检查了大楼的每一层。',
                 ],
@@ -17964,11 +17964,11 @@ return [
             'pronunciation' => '/ˌɪntɝˈvin/',
             'example_sentence' => 'The teacher had to intervene when the students started arguing.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '幹預',
                     'example_translation' => '當學生們開始爭吵時，老師不得不介入。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '干预',
                     'example_translation' => '当学生们开始争吵时，老师不得不介入。',
                 ],
@@ -17986,11 +17986,11 @@ return [
             'pronunciation' => '/ˈskɹutəni/',
             'example_sentence' => 'The project came under close scrutiny after the errors were discovered.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '審查',
                     'example_translation' => '這個專案在發現錯誤後受到了嚴格的審查。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '审查',
                     'example_translation' => '该项目在发现错误后受到了严格的审查。',
                 ],
@@ -18006,11 +18006,11 @@ return [
             'pronunciation' => '/kəˈtæstɹəfi/',
             'example_sentence' => 'The earthquake was a major catastrophe for the coastal city.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '災難',
                     'example_translation' => '地震對這座沿海城市來說是一場重大災難。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '灾难',
                     'example_translation' => '地震对这座沿海城市来说是一场重大灾难。',
                 ],
@@ -18026,11 +18026,11 @@ return [
             'pronunciation' => '/ˈɑbstənət/',
             'example_sentence' => 'The obstinate child refused to eat his vegetables.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '頑固',
                     'example_translation' => '那個固執的孩子拒絕吃他的蔬菜。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '固执的',
                     'example_translation' => '那个固执的孩子拒绝吃蔬菜。',
                 ],
@@ -18046,11 +18046,11 @@ return [
             'pronunciation' => '/ˈpɹɛdəˌsɛsɝ/',
             'example_sentence' => 'My predecessor left detailed notes about the project.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '前任',
                     'example_translation' => '我的前任留下了關於這個專案的詳細筆記。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '前任',
                     'example_translation' => '我的前任留下了关于这个项目的详细笔记。',
                 ],
@@ -18066,11 +18066,11 @@ return [
             'pronunciation' => '/ˈsteɪtsmən/',
             'example_sentence' => 'He was respected as a great statesman who served his country for decades.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '政治家',
                     'example_translation' => '他被尊為一位偉大的政治家，為國家服務了數十年。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '政治家',
                     'example_translation' => '他被尊为一位伟大的政治家，为国家服务了数十年。',
                 ],
@@ -18086,11 +18086,11 @@ return [
             'pronunciation' => '/ˈəˌpɹaɪt/, /əˈpɹaɪt/',
             'example_sentence' => 'She stood upright with perfect posture.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '直立',
                     'example_translation' => '她挺直身子站著，姿態完美。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '直立的',
                     'example_translation' => '她挺直身子站着，姿态完美。',
                 ],
@@ -18106,11 +18106,11 @@ return [
             'pronunciation' => '/ˌæntaɪbaɪˈɑtɪk/, /ˌæntibaɪˈɑtɪk/',
             'example_sentence' => 'The doctor prescribed a course of antibiotics for the infection.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '抗生素',
                     'example_translation' => '醫生開了一療程的抗生素來治療感染。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '抗生素',
                     'example_translation' => '医生开了一疗程的抗生素来治疗感染。',
                 ],
@@ -18126,11 +18126,11 @@ return [
             'pronunciation' => '/ˈhəvɝ/',
             'example_sentence' => 'The helicopter began to hover over the rescue scene.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '徘徊',
                     'example_translation' => '直升機開始在救援現場上空盤旋。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '盘旋',
                     'example_translation' => '直升机开始在救援现场上空盘旋。',
                 ],
@@ -18146,11 +18146,11 @@ return [
             'pronunciation' => '/ˈɹoʊˌteɪt/',
             'example_sentence' => 'The Earth rotates on its axis once every 24 hours.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '旋轉',
                     'example_translation' => '地球每24小時繞其軸心旋轉一次。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '旋转',
                     'example_translation' => '地球每24小时绕其轴心旋转一次。',
                 ],
@@ -18166,11 +18166,11 @@ return [
             'pronunciation' => '/ˈbaɪˌpæs/',
             'example_sentence' => 'The government decided to build a bypass to reduce the traffic.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '旁路',
                     'example_translation' => '政府決定修一條繞行路以減少交通。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '旁路',
                     'example_translation' => '政府决定修一条旁路以减少交通拥堵。',
                 ],
@@ -18188,11 +18188,11 @@ return [
             'pronunciation' => '/ˈfaɪɝˌkɹækɝ/',
             'example_sentence' => 'The firecracker exploded with a loud bang.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '鞭炮',
                     'example_translation' => '鞭炮發出巨大的響聲爆炸了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '鞭炮',
                     'example_translation' => '鞭炮发出了巨大的响声爆炸了。',
                 ],
@@ -18208,11 +18208,11 @@ return [
             'pronunciation' => '/ˈtɹeɪdˌmɑɹk/',
             'example_sentence' => 'The company just registered a new trademark today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '商標',
                     'example_translation' => '公司今天剛註冊了一個新商標。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '商标',
                     'example_translation' => '该公司今天刚注册了一项新商标。',
                 ],
@@ -18228,11 +18228,11 @@ return [
             'pronunciation' => '/kɑzˈmɛtɪks/',
             'example_sentence' => 'The company produces a wide range of high-quality cosmetics.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '化妝品',
                     'example_translation' => '這家公司生產各種高品質的化妝品。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '化妆品',
                     'example_translation' => '这家公司生产各种高质量的化妆品。',
                 ],
@@ -18248,11 +18248,11 @@ return [
             'pronunciation' => '/ˈsɛtˌbæk/',
             'example_sentence' => 'The project faced a major setback due to unexpected costs.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '挫折',
                     'example_translation' => '這個專案因為意外的費用而遭遇了重大挫折。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '挫折',
                     'example_translation' => '由于意想不到的开支，该项目遇到了重大挫折。',
                 ],
@@ -18268,11 +18268,11 @@ return [
             'pronunciation' => '/ˈspɛktəkəɫ/',
             'example_sentence' => 'The sunset over the Grand Canyon was a breathtaking spectacle.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '奇觀',
                     'example_translation' => '大峽谷的日落是一幅令人嘆為觀止的奇觀。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '壮观景象',
                     'example_translation' => '大峡谷的日落是一幅令人叹为观止的壮观景象。',
                 ],
@@ -18288,11 +18288,11 @@ return [
             'pronunciation' => '/ˌɪnˈvæɫjəbəɫ/',
             'example_sentence' => 'Your experience has been invaluable to our team.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '無價',
                     'example_translation' => '你的經驗對我們的團隊來說是無價的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '极其宝贵的',
                     'example_translation' => '你的经验对我们的团队来说是极其宝贵的。',
                 ],
@@ -18308,11 +18308,11 @@ return [
             'pronunciation' => '/ˈdɛfən/',
             'example_sentence' => 'The loud noise of the explosion was enough to deafen everyone.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '震耳欲聾',
                     'example_translation' => '爆炸的巨響足以震聾每個人。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '使震耳欲聋',
                     'example_translation' => '爆炸的巨响足以震聋所有人。',
                 ],
@@ -18328,11 +18328,11 @@ return [
             'pronunciation' => '/ˈhɑɹdən/',
             'example_sentence' => 'The cold weather will harden the wet cement overnight.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '硬化',
                     'example_translation' => '寒冷的天氣會在一夜之間使濕水泥變硬。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '变硬',
                     'example_translation' => '寒冷的天气会使湿水泥在一夜之间变硬。',
                 ],
@@ -18348,11 +18348,11 @@ return [
             'pronunciation' => '/ˈɹɛsəɫ/',
             'example_sentence' => 'The two boys wrestle each other on the mat.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '搏鬥',
                     'example_translation' => '兩個男孩在墊子上互相摔角。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '摔跤',
                     'example_translation' => '两个男孩在垫子上互相摔跤。',
                 ],
@@ -18368,11 +18368,11 @@ return [
             'pronunciation' => '/ˈkɑɹtən/',
             'example_sentence' => 'Please buy a carton of fresh milk from the grocery store nearby.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '紙盒',
                     'example_translation' => '請從附近的雜貨店買一盒鮮牛奶。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '纸盒',
                     'example_translation' => '请从附近的杂货店买一盒鲜牛奶。',
                 ],
@@ -18390,11 +18390,11 @@ return [
             'pronunciation' => '/ˈkɔɹps/',
             'example_sentence' => 'The police found the corpse of the victim in the old forest.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '屍體',
                     'example_translation' => '警方在老森林裡發現了受害者的屍體。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '尸体',
                     'example_translation' => '警方在老森林里发现了受害者的尸体。',
                 ],
@@ -18410,11 +18410,11 @@ return [
             'pronunciation' => '/ˈkoʊzi/',
             'example_sentence' => 'The small living room felt very cozy with the fireplace lit.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '舒適',
                     'example_translation' => '有了壁爐，小客廳感覺非常溫馨。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '温馨舒适的',
                     'example_translation' => '生起壁炉后，小客厅感觉非常温馨舒适。',
                 ],
@@ -18430,11 +18430,11 @@ return [
             'pronunciation' => '/ˈaʊtˌɫʊk/',
             'example_sentence' => 'The outlook for the economy remains positive.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '前景',
                     'example_translation' => '經濟前景依然樂觀。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '前景',
                     'example_translation' => '经济前景依然乐观。',
                 ],
@@ -18450,11 +18450,11 @@ return [
             'pronunciation' => '/dɪsˈɡɹeɪs/',
             'example_sentence' => 'His behavior at the party was a complete disgrace to his family.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '恥辱',
                     'example_translation' => '他在派對上的行為對他的家人來說完全是一種恥辱。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '耻辱',
                     'example_translation' => '他在派对上的行为对他家人来说完全是一种耻辱。',
                 ],
@@ -18470,11 +18470,11 @@ return [
             'pronunciation' => '/ˈbjʊɹəˌkɹæt/, /ˈbjʊɹoʊˌkɹæt/',
             'example_sentence' => 'He is a high-ranking bureaucrat in the Ministry of Education.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '官僚',
                     'example_translation' => '他是教育部的一名高級官員。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '官僚',
                     'example_translation' => '他是教育部的一名高级官员。',
                 ],
@@ -18490,11 +18490,11 @@ return [
             'pronunciation' => '/ˈɑnɝˌɛɹi/',
             'example_sentence' => 'He received an honorary degree from the university.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '名譽',
                     'example_translation' => '他從該大學獲得了榮譽學位。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '荣誉的',
                     'example_translation' => '他获得了该大学授予的荣誉学位。',
                 ],
@@ -18510,11 +18510,11 @@ return [
             'pronunciation' => '/ɹɪˈfɫɛktɪv/',
             'example_sentence' => 'She sat in a reflective mood, thinking about her childhood.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '反光的',
                     'example_translation' => '她坐在那裡陷入沉思，回想著她的童年。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '沉思的',
                     'example_translation' => '她坐在那里陷入沉思，回想着自己的童年。',
                 ],
@@ -18530,11 +18530,11 @@ return [
             'pronunciation' => '/ˌɹɛstɝˈeɪʃən/',
             'example_sentence' => 'The restoration of the old building took several years.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '恢復',
                     'example_translation' => '這座老建築的修復花了好幾年。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '修复',
                     'example_translation' => '这座旧建筑的修复工作花了几年时间。',
                 ],
@@ -18550,11 +18550,11 @@ return [
             'pronunciation' => '/ˈɹif/',
             'example_sentence' => 'The coral reef is home to many colorful fish.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '礁',
                     'example_translation' => '珊瑚礁是許多色彩繽紛的魚類的家園。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '礁',
                     'example_translation' => '珊瑚礁是许多色彩斑斓的鱼类的家园。',
                 ],
@@ -18570,11 +18570,11 @@ return [
             'pronunciation' => '/ˈspeɪsˌkɹæft/',
             'example_sentence' => 'The spacecraft orbited the Earth for three days before landing.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '太空船',
                     'example_translation' => '太空船在降落前繞地球運行了三天。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '宇宙飞船',
                     'example_translation' => '宇宙飞船在着陆前绕地球飞行了三天。',
                 ],
@@ -18592,11 +18592,11 @@ return [
             'pronunciation' => '/ˈtʃɛsˌnət/, /ˈtʃɛstˌnət/',
             'example_sentence' => 'We roasted some fresh chestnuts over the open fire tonight.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '栗',
                     'example_translation' => '今晚我們在明火上烤了一些新鮮的栗子。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '栗子，板栗；栗色的',
                     'example_translation' => '今晚我们在明火上烤了一些新鲜的栗子。',
                 ],
@@ -18612,11 +18612,11 @@ return [
             'pronunciation' => '/ɫuˈtɛnənt/',
             'example_sentence' => 'The lieutenant led his platoon through the dense forest.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '中尉',
                     'example_translation' => '中尉帶領他的排穿過茂密的森林。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '中尉，副官',
                     'example_translation' => '中尉带领他的排穿过茂密的森林。',
                 ],
@@ -18632,11 +18632,11 @@ return [
             'pronunciation' => '/ˈkɑmpɫəmənt/',
             'example_sentence' => 'The red wine is a perfect complement to the delicious meal.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '補充',
                     'example_translation' => '紅酒是這頓美餐的完美補充。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '补充，补足物；衬托，与……相配',
                     'example_translation' => '红酒是这顿美餐的完美补充。',
                 ],
@@ -18652,11 +18652,11 @@ return [
             'pronunciation' => '/ˈænθəm/',
             'example_sentence' => 'The crowd sang the national anthem before the game started.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '國歌',
                     'example_translation' => '比賽開始前，人群唱起了國歌。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '国歌，赞歌',
                     'example_translation' => '比赛开始前，人群唱起了国歌。',
                 ],
@@ -18672,11 +18672,11 @@ return [
             'pronunciation' => '/ˈbəɫki/',
             'example_sentence' => 'The boxes were too bulky to fit in the trunk of his small car.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '笨重',
                     'example_translation' => '盒子太大太笨重了，放不進他小車的後車廂。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '庞大的，笨重的',
                     'example_translation' => '盒子太大太笨重了，放不进他小车的后备箱。',
                 ],
@@ -18692,11 +18692,11 @@ return [
             'pronunciation' => '/ˌkwɑɫəfəˈkeɪʃən/',
             'example_sentence' => 'She has the right qualification for this job.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '資質',
                     'example_translation' => '她擁有這份工作所需的資格。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '资格，资质，条件',
                     'example_translation' => '她拥有胜任这份工作所需的资格。',
                 ],
@@ -18712,11 +18712,11 @@ return [
             'pronunciation' => '/ˈɡɫim/',
             'example_sentence' => 'A gleam of light shone through the curtains.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '微光',
                     'example_translation' => '一道微光從窗簾中透了進來。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '微光，闪光；发微光',
                     'example_translation' => '一道微光透过窗帘照了进来。',
                 ],
@@ -18732,11 +18732,11 @@ return [
             'pronunciation' => '/ˈmæɡnəˌfaɪ/',
             'example_sentence' => 'A microscope can magnify tiny objects so we can see them clearly.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '放大',
                     'example_translation' => '顯微鏡可以放大微小的物體，讓我們能夠清楚地看到它們。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '放大，夸大',
                     'example_translation' => '显微镜可以放大微小的物体，让我们能够清楚地看到它们。',
                 ],
@@ -18752,11 +18752,11 @@ return [
             'pronunciation' => '/ˈmɪstɹəs/',
             'example_sentence' => 'In the old story, the wealthy merchant had a secret mistress.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '情婦',
                     'example_translation' => '在古老的故事中，這位富商有一位秘密的情婦。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '情妇，女主人',
                     'example_translation' => '在古老的故事中，这位富商有一位秘密的情妇。',
                 ],
@@ -18772,11 +18772,11 @@ return [
             'pronunciation' => '/ˈɛməˌɡɹeɪt/',
             'example_sentence' => 'They decided to emigrate to Australia for a better life today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '移民',
                     'example_translation' => '他們決定今天移民到澳大利亞以過上更好的生活。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '移居国外，移民',
                     'example_translation' => '他们今天决定移居澳大利亚以过上更好的生活。',
                 ],
@@ -18794,11 +18794,11 @@ return [
             'pronunciation' => '/ˈsɫeɪ/',
             'example_sentence' => 'The knight will slay the dragon.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '殺戮',
                     'example_translation' => '騎士將會殺死那條龍。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '杀害，杀戮，杀死',
                     'example_translation' => '骑士将会杀死那条龙。',
                 ],
@@ -18814,11 +18814,11 @@ return [
             'pronunciation' => '/ˈpeɪtɹiət/',
             'example_sentence' => 'He is a true patriot who loves his country.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '愛國者',
                     'example_translation' => '他是一個真正愛國的愛國者。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '爱国者',
                     'example_translation' => '他是一个真正热爱自己国家的爱国者。',
                 ],
@@ -18834,11 +18834,11 @@ return [
             'pronunciation' => '/ˈspɔɹtsmən/',
             'example_sentence' => 'He is a great sportsman who has won many medals.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '男運動員',
                     'example_translation' => '他是一位優秀的男運動員，贏得了許多獎牌。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '男运动员，体育爱好者',
                     'example_translation' => '他是一位优秀的男运动员，赢得了许多奖牌。',
                 ],
@@ -18854,11 +18854,11 @@ return [
             'pronunciation' => '/ˈspɔɹtsˌwʊmən/',
             'example_sentence' => 'The sportswoman trained hard for the upcoming Olympic games.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '女運動員',
                     'example_translation' => '這位女運動員為即將到來的奧運會努力訓練。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '女运动员',
                     'example_translation' => '这位女运动员为即将到来的奥运会努力训练。',
                 ],
@@ -18874,11 +18874,11 @@ return [
             'pronunciation' => '/ˈfɹeɪɡɹənt/',
             'example_sentence' => 'The garden was filled with fragrant roses.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '香',
                     'example_translation' => '花園裡充滿了芬芳的玫瑰。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '芳香的，香的',
                     'example_translation' => '花园里充满了芬芳的玫瑰。',
                 ],
@@ -18894,11 +18894,11 @@ return [
             'pronunciation' => '/ˈəndɝˈɛstəˌmeɪt/, /ˈəndɝˈɛstəmət/',
             'example_sentence' => 'Don\'t underestimate the power of kindness.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '低估',
                     'example_translation' => '不要低估善良的力量。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '低估，看轻',
                     'example_translation' => '不要低估善良的力量。',
                 ],
@@ -18914,11 +18914,11 @@ return [
             'pronunciation' => '/əˈbaɪd/',
             'example_sentence' => 'You must abide by the rules of the club if you want to stay.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '遵守',
                     'example_translation' => '如果你想留下來，你必須遵守俱樂部的規則。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '遵守，忍受',
                     'example_translation' => '如果你想留下来，你必须遵守俱乐部的规则。',
                 ],
@@ -18934,11 +18934,11 @@ return [
             'pronunciation' => '/dɪˈfaɪəns/',
             'example_sentence' => 'The students showed their defiance by protesting in the street.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '蔑視',
                     'example_translation' => '學生們通過在街頭抗議來展示他們的蔑視。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '违抗，反抗，蔑视',
                     'example_translation' => '学生们通过在街头抗议来展示他们的反抗。',
                 ],
@@ -18954,11 +18954,11 @@ return [
             'pronunciation' => '/ˈɹɔɪəɫti/',
             'example_sentence' => 'The king received a royalty from every book sold in the kingdom.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '版稅',
                     'example_translation' => '國王從王國中每本售出的書籍中收取了版稅。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '版税，专利使用费；王室',
                     'example_translation' => '国王从王国中每本售出的书籍中收取版税。',
                 ],
@@ -18974,11 +18974,11 @@ return [
             'pronunciation' => '/ˈbɹeɪkˌdaʊn/',
             'example_sentence' => 'The report provides a detailed breakdown of the company\'s costs.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '分解',
                     'example_translation' => '報告提供了公司成本的詳細明細。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '明细，分解；故障',
                     'example_translation' => '报告提供了公司成本的详细明细。',
                 ],
@@ -18996,11 +18996,11 @@ return [
             'pronunciation' => '/ˈkæpʃən/',
             'example_sentence' => 'Please provide a short caption for the photograph in the report.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '標題',
                     'example_translation' => '請為報告中的照片提供一段短說明。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '说明文字',
                     'example_translation' => '请为报告中的照片提供一段简短的说明。',
                 ],
@@ -19016,11 +19016,11 @@ return [
             'pronunciation' => '/ˌɪnˈtɪmɪˌdeɪt/',
             'example_sentence' => 'The bully tried to intimidate the younger students.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '威嚇',
                     'example_translation' => '那個霸凌者試圖恐嚇年幼的學生。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '恐吓',
                     'example_translation' => '那个欺凌者试图恐吓低年级的学生。',
                 ],
@@ -19036,11 +19036,11 @@ return [
             'pronunciation' => '/tɹænsˈpɫænt/',
             'example_sentence' => 'The patient underwent a successful heart transplant.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '移植',
                     'example_translation' => '病人成功進行了心臟移植手術。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '移植',
                     'example_translation' => '患者成功接受了心脏移植手术。',
                 ],
@@ -19056,11 +19056,11 @@ return [
             'pronunciation' => '/ˌənkənˈdɪʃənəɫ/',
             'example_sentence' => 'The mother\'s unconditional love for her children never wavered.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '無條件的',
                     'example_translation' => '母親對孩子們無條件的愛從未動搖過。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '无条件的',
                     'example_translation' => '母亲对孩子们无条件的爱从未动摇过。',
                 ],
@@ -19076,11 +19076,11 @@ return [
             'pronunciation' => '/ˌpɫænˈteɪʃən/',
             'example_sentence' => 'The workers harvested sugar cane on the plantation.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '種植園',
                     'example_translation' => '工人們在種植園裡收割甘蔗。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '种植园',
                     'example_translation' => '工人们在种植园里收割甘蔗。',
                 ],
@@ -19096,11 +19096,11 @@ return [
             'pronunciation' => '/ɹɪˈdəndənsi/',
             'example_sentence' => 'The company laid off workers due to redundancy.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '冗餘',
                     'example_translation' => '公司因為人員冗餘而裁員。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '裁员',
                     'example_translation' => '公司因人员过剩而裁员。',
                 ],
@@ -19116,11 +19116,11 @@ return [
             'pronunciation' => '/ˈdʒəŋkʃən/',
             'example_sentence' => 'Turn left at the junction ahead.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '交界處',
                     'example_translation' => '在前方的路口左轉。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '交叉路口',
                     'example_translation' => '在前方的交叉路口左转。',
                 ],
@@ -19136,11 +19136,11 @@ return [
             'pronunciation' => '/ˈɔɹiˌɛnt/',
             'example_sentence' => 'We need to orient ourselves before heading into the forest.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '東方',
                     'example_translation' => '我們需要先辨別方向，再進入森林。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '确定方向',
                     'example_translation' => '在进入森林之前，我们需要先确定方向。',
                 ],
@@ -19156,11 +19156,11 @@ return [
             'pronunciation' => '/ˈoʊvɝˈdu/',
             'example_sentence' => 'Don\'t overdo it at the gym, or you might injure yourself.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '過度',
                     'example_translation' => '不要在健身房過度運動，否則你可能會受傷。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '过度',
                     'example_translation' => '不要在健身房过度运动，否则你可能会受伤。',
                 ],
@@ -19176,11 +19176,11 @@ return [
             'pronunciation' => '/ˈsinɪk/',
             'example_sentence' => 'The scenic route along the coast offers breathtaking views of the ocean.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '風景優美的',
                     'example_translation' => '沿著海岸的風景優美路線提供了令人驚嘆的海洋景色。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '风景优美的',
                     'example_translation' => '沿海的风景优美路线提供了令人惊叹的大海景色。',
                 ],
@@ -19198,11 +19198,11 @@ return [
             'pronunciation' => '/ˈmɑtoʊ/',
             'example_sentence' => 'Our school motto is "Knowledge is power."',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '座右銘',
                     'example_translation' => '我們學校的座右銘是「知識就是力量。」',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '座右铭',
                     'example_translation' => '我们学校的座右铭是“知识就是力量”。',
                 ],
@@ -19218,11 +19218,11 @@ return [
             'pronunciation' => '/ˈfibəɫ/',
             'example_sentence' => 'The old man\'s feeble hands trembled as he held the cup.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '微弱',
                     'example_translation' => '老人虛弱的雙手在握著杯子時顫抖著。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '虚弱的',
                     'example_translation' => '老人虚弱的手在端着杯子时不住地颤抖。',
                 ],
@@ -19238,11 +19238,11 @@ return [
             'pronunciation' => '/ˈɪntɹiɡ/, /ˌɪnˈtɹiɡ/',
             'example_sentence' => 'The spy novel was full of intrigue and mystery.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '陰謀',
                     'example_translation' => '這本間諜小說充滿了陰謀與神秘。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '阴谋',
                     'example_translation' => '这本间谍小说充满了阴谋与神秘感。',
                 ],
@@ -19258,11 +19258,11 @@ return [
             'pronunciation' => '/ˈstɛpˌməðɝ/',
             'example_sentence' => 'My stepmother always makes sure I feel welcome at home.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '後媽',
                     'example_translation' => '我的繼母總是確保我在家裡感到受歡迎。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '继母',
                     'example_translation' => '我的继母总是确保我在家里感到受欢迎。',
                 ],
@@ -19278,11 +19278,11 @@ return [
             'pronunciation' => '/ˈwɔɹənt/',
             'example_sentence' => 'The police obtained a warrant to search the building.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '保證',
                     'example_translation' => '警方取得了搜查該建築物的搜索令。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '搜查令',
                     'example_translation' => '警方取得了搜查该建筑物的搜查令。',
                 ],
@@ -19298,11 +19298,11 @@ return [
             'pronunciation' => '/ˈvaʊəɫ/',
             'example_sentence' => 'The English word "vowel" has five examples: a, e, i, o, u.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '母音',
                     'example_translation' => '英文單字「母音」有五個例子：a、e、i、o、u。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '元音',
                     'example_translation' => '英语中的“元音”有五个例子：a、e、i、o、u。',
                 ],
@@ -19318,11 +19318,11 @@ return [
             'pronunciation' => '/ˈɑɹˌkaɪv/',
             'example_sentence' => 'The historic documents are kept in the national archive.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '檔案',
                     'example_translation' => '歷史文件保存在國家檔案館中。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '档案馆',
                     'example_translation' => '历史文件保存在国家档案馆中。',
                 ],
@@ -19338,11 +19338,11 @@ return [
             'pronunciation' => '/ˈətɝ/',
             'example_sentence' => 'The project was an utter failure.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '說出',
                     'example_translation' => '這個專案是徹底的失敗。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '彻底的',
                     'example_translation' => '这个项目是个彻底的失败。',
                 ],
@@ -19358,11 +19358,11 @@ return [
             'pronunciation' => '/ˈɡæɫəp/',
             'example_sentence' => 'The horse broke into a gallop across the open field.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '馳騁',
                     'example_translation' => '那匹馬在開闊的田野上開始飛奔。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '飞奔',
                     'example_translation' => '那匹马在开阔的田野上开始飞奔。',
                 ],
@@ -19378,11 +19378,11 @@ return [
             'pronunciation' => '/ˈfɫeɪk/',
             'example_sentence' => 'A flake of snow landed on her nose.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '薄片',
                     'example_translation' => '一片雪花落在她的鼻子上。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '薄片',
                     'example_translation' => '一片雪花落在她的鼻子上。',
                 ],
@@ -19400,11 +19400,11 @@ return [
             'pronunciation' => '/ˌɪnˈtɹudɝ/',
             'example_sentence' => 'The intruder broke into the house through the back window.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '入侵者',
                     'example_translation' => '入侵者從後窗闖入了房子。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '入侵者',
                     'example_translation' => '入侵者从后窗闯入了房子。',
                 ],
@@ -19420,11 +19420,11 @@ return [
             'pronunciation' => '/pɹiˈsɪʒən/',
             'example_sentence' => 'The surgeon worked with great precision during the operation.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '精確',
                     'example_translation' => '這位外科醫生在手術過程中以極高的精確度進行操作。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '精确',
                     'example_translation' => '外科医生在手术过程中以极高的精准度进行操作。',
                 ],
@@ -19440,11 +19440,11 @@ return [
             'pronunciation' => '/ˈpɪntʃ/',
             'example_sentence' => 'She added a pinch of salt to the soup.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '捏',
                     'example_translation' => '她在湯裡加了一撮鹽。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '捏，少量',
                     'example_translation' => '她在汤里加了一撮盐。',
                 ],
@@ -19460,11 +19460,11 @@ return [
             'pronunciation' => '/ˈkjukəmbɝ/',
             'example_sentence' => 'I like to add some fresh sliced cucumber to my green salad.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '黃瓜',
                     'example_translation' => '我喜歡在綠色沙拉中加入一些新鮮的切片黃瓜。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '黄瓜',
                     'example_translation' => '我喜欢在蔬菜沙拉里加入一些新鲜的切片黄瓜。',
                 ],
@@ -19480,11 +19480,11 @@ return [
             'pronunciation' => '/ˈmɔɹn/',
             'example_sentence' => 'We mourn the loss of a great leader.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '哀悼',
                     'example_translation' => '我們哀悼一位偉大領袖的逝世。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '哀悼',
                     'example_translation' => '我们哀悼一位伟大领袖的逝世。',
                 ],
@@ -19500,11 +19500,11 @@ return [
             'pronunciation' => '/ˈɫoʊɡoʊ/',
             'example_sentence' => 'The company redesigned its logo to look more modern.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '標識',
                     'example_translation' => '這家公司重新設計了它的標誌，使其看起來更現代。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '标志',
                     'example_translation' => '这家公司重新设计了它的标志，使其看起来更加现代。',
                 ],
@@ -19520,11 +19520,11 @@ return [
             'pronunciation' => '/ˈtɛnətɪv/, /ˈtɛntətɪv/',
             'example_sentence' => 'We have a tentative plan to launch the product next month.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '暫定的',
                     'example_translation' => '我們有一個暫定的計畫，下個月推出產品。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '暂定的',
                     'example_translation' => '我们有一个暂定的计划，下个月推出产品。',
                 ],
@@ -19540,11 +19540,11 @@ return [
             'pronunciation' => '/əˈstim/',
             'example_sentence' => 'She held her teacher in high esteem.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '尊重',
                     'example_translation' => '她非常尊敬她的老師。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '尊重',
                     'example_translation' => '她非常尊敬她的老师。',
                 ],
@@ -19560,11 +19560,11 @@ return [
             'pronunciation' => '/ˈpik/',
             'example_sentence' => 'She took a peek at the answer sheet when no one was looking.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '窺視',
                     'example_translation' => '她趁沒人注意時偷看了一眼答案紙。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '窥视',
                     'example_translation' => '她趁没人注意时偷看了一眼答案页。',
                 ],
@@ -19580,11 +19580,11 @@ return [
             'pronunciation' => '/ˈaʊtwɝd/',
             'example_sentence' => 'The door opens outward.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '向外',
                     'example_translation' => '門向外開。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '向外',
                     'example_translation' => '门是向外开的。',
                 ],
@@ -19602,11 +19602,11 @@ return [
             'pronunciation' => '/ˈɔɹfənədʒ/',
             'example_sentence' => 'The children at the orphanage received new books and toys from the donors.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '孤兒院',
                     'example_translation' => '孤兒院的孩子們收到了捐贈者送來的新書和玩具。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '孤儿院',
                     'example_translation' => '孤儿院的孩子们收到了捐赠者送来的新书和玩具。',
                 ],
@@ -19622,11 +19622,11 @@ return [
             'pronunciation' => '/ˈʃətɝ/',
             'example_sentence' => 'She closed the shutter to block the sunlight.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '快門',
                     'example_translation' => '她關上百葉窗來擋住陽光。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '百叶窗',
                     'example_translation' => '她关上百叶窗来挡住阳光。',
                 ],
@@ -19642,11 +19642,11 @@ return [
             'pronunciation' => '/ˈbʊɫəˌvɑɹd/',
             'example_sentence' => 'The broad boulevard was lined with large green maple trees.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '大道',
                     'example_translation' => '寬闊的大馬路兩旁種滿了大綠楓樹。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '林荫大道',
                     'example_translation' => '宽阔的大道两旁种满了高大的绿枫树。',
                 ],
@@ -19662,11 +19662,11 @@ return [
             'pronunciation' => '/ˈspaɪɹəɫ/',
             'example_sentence' => 'The staircase has a spiral design.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '螺旋',
                     'example_translation' => '這個樓梯有螺旋設計。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '螺旋形的',
                     'example_translation' => '这个楼梯采用了螺旋设计。',
                 ],
@@ -19682,11 +19682,11 @@ return [
             'pronunciation' => '/ˈjɑt/',
             'example_sentence' => 'The yacht sailed across the calm blue sea.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '遊艇',
                     'example_translation' => '那艘遊艇在平靜的藍色海面上航行。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '游艇',
                     'example_translation' => '那艘游艇在平静的蓝色海面上航行。',
                 ],
@@ -19702,11 +19702,11 @@ return [
             'pronunciation' => '/ˌmɑdɝnaɪˈzeɪʃə/, /ˌmɑdɝnəˈzeɪʃən/',
             'example_sentence' => 'The modernization of the city\'s infrastructure took several years to complete.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '現代化',
                     'example_translation' => '這座城市基礎設施的現代化花了好幾年才完成。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '现代化',
                     'example_translation' => '这座城市基础设施的现代化花了几年时间才完成。',
                 ],
@@ -19722,11 +19722,11 @@ return [
             'pronunciation' => '/mɝˈæɫ/',
             'example_sentence' => 'The team\'s morale improved after they won the championship.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '士氣',
                     'example_translation' => '團隊的士氣在贏得冠軍後提升了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '士气',
                     'example_translation' => '团队的士气在赢得冠军后得到了提升。',
                 ],
@@ -19742,11 +19742,11 @@ return [
             'pronunciation' => '/ˈæɫtəˌtud/',
             'example_sentence' => 'The aircraft was flying at a very high altitude over the sea.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '高度',
                     'example_translation' => '飛機正在海面上空的高海拔飛行。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '高度',
                     'example_translation' => '飞机在海面上空很高的高度飞行。',
                 ],
@@ -19762,11 +19762,11 @@ return [
             'pronunciation' => '/ˈhɔˌspɪtəˌɫaɪz/',
             'example_sentence' => 'The doctor decided to hospitalize the patient immediately.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '住院',
                     'example_translation' => '醫生決定立即將病人住院治療。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '送……住院',
                     'example_translation' => '医生决定立即让患者住院。',
                 ],
@@ -19782,11 +19782,11 @@ return [
             'pronunciation' => '/ˈhɛɹoʊən/',
             'example_sentence' => 'Heroin is a highly addictive and illegal drug.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '海洛因',
                     'example_translation' => '海洛因是一種高度成癮且非法的毒品。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '海洛因',
                     'example_translation' => '海洛因是一种极具成瘾性且非法的毒品。',
                 ],
@@ -19804,11 +19804,11 @@ return [
             'pronunciation' => '/ˈbɹʊk/',
             'example_sentence' => 'The small brook flowed peacefully through the green valley today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '溪',
                     'example_translation' => '那條小溪今天平靜地流過綠色的山谷。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '小溪',
                     'example_translation' => '今天，那条小溪平静地流过绿色的山谷。',
                 ],
@@ -19824,11 +19824,11 @@ return [
             'pronunciation' => '/ˈeɪkɝ/',
             'example_sentence' => 'The farmer owns more than fifty acres of fertile land.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '英畝',
                     'example_translation' => '農民擁有五十多英畝肥沃的土地。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '英亩',
                     'example_translation' => '这位农民拥有五十多英亩肥沃的土地。',
                 ],
@@ -19844,11 +19844,11 @@ return [
             'pronunciation' => '/ˈpɪmpəɫ/',
             'example_sentence' => 'She noticed a small pimple on her forehead before the party.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '疙瘩',
                     'example_translation' => '她在派對前注意到額頭上長了一顆小痘痘。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '痘痘',
                     'example_translation' => '派对前，她注意到自己额头上长了一颗小痘痘。',
                 ],
@@ -19864,11 +19864,11 @@ return [
             'pronunciation' => '/ˈɹiˌtɔɹt/',
             'example_sentence' => 'She had a quick retort for every criticism.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '反駁',
                     'example_translation' => '她對每一個批評都有快速的反駁。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '反驳',
                     'example_translation' => '她对每一个批评都有迅速的反驳。',
                 ],
@@ -19884,11 +19884,11 @@ return [
             'pronunciation' => '/ˈɫɪŋɝ/, /ˈɫɪŋɡɝ/',
             'example_sentence' => 'The smell of coffee lingered in the kitchen all morning.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '縈繞',
                     'example_translation' => '咖啡的香味整個早上都瀰漫在廚房裡。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '萦绕',
                     'example_translation' => '整个早上，咖啡的香味一直萦绕在厨房里。',
                 ],
@@ -19904,11 +19904,11 @@ return [
             'pronunciation' => '/ˈkɛɹˌfɹi/',
             'example_sentence' => 'I had a very happy and carefree childhood in the countryside.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '暢快',
                     'example_translation' => '我在鄉下度過了一個非常快樂且無憂無慮的童年。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '无忧无虑的',
                     'example_translation' => '我在乡村度过了一个非常快乐且无忧无虑的童年。',
                 ],
@@ -19924,11 +19924,11 @@ return [
             'pronunciation' => '/ɪɡˈzɝt/',
             'example_sentence' => 'You should exert more effort in your studies.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '發揮',
                     'example_translation' => '你應該在學業上付出更多努力。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '付出',
                     'example_translation' => '你应该在学业上付出更多努力。',
                 ],
@@ -19944,11 +19944,11 @@ return [
             'pronunciation' => '/ˈɪnˌteɪk/',
             'example_sentence' => 'You should increase your daily water intake during hot weather.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '攝取量',
                     'example_translation' => '在炎熱的天氣裡，你應該增加每日的水分攝取量。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '摄入量',
                     'example_translation' => '在炎热的天气里，你应当增加每日的水分摄入量。',
                 ],
@@ -19964,11 +19964,11 @@ return [
             'pronunciation' => '/ˈɫaɪnɪŋ/',
             'example_sentence' => 'The coat has a silk lining.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '牙髓保護層',
                     'example_translation' => '這件外套有絲綢內裡。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '衬里',
                     'example_translation' => '这件外套有丝绸内衬。',
                 ],
@@ -19984,11 +19984,11 @@ return [
             'pronunciation' => '/səbsˈkɹɪpʃən/',
             'example_sentence' => 'My magazine subscription expires next month.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '訂閱',
                     'example_translation' => '我的雜誌訂閱下個月到期。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '订阅',
                     'example_translation' => '我的杂志订阅将于下个月到期。',
                 ],
@@ -20006,11 +20006,11 @@ return [
             'pronunciation' => '/ˈbɑdəɫi/',
             'example_sentence' => 'He suffered some minor bodily injuries during the accident.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '身體上的',
                     'example_translation' => '他在事故中受了一些輕微的身體損傷。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '身体的',
                     'example_translation' => '他在事故中受了一些轻微的身体伤害。',
                 ],
@@ -20026,11 +20026,11 @@ return [
             'pronunciation' => '/ˈɪnəˌɫɛkt/, /ˈɪntəˌɫɛkt/',
             'example_sentence' => 'She is a woman of great intellect.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '智力',
                     'example_translation' => '她是一位才智出眾的女性。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '才智',
                     'example_translation' => '她是一位非常有才智的女性。',
                 ],
@@ -20046,11 +20046,11 @@ return [
             'pronunciation' => '/ˈnævəˈɡeɪʃən/, /ˌnævəˈɡeɪʃən/',
             'example_sentence' => 'The navigation system guided us to the correct destination.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '導航',
                     'example_translation' => '導航系統引導我們到達了正確的目的地。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '导航',
                     'example_translation' => '导航系统引导我们到达了正确的目的地。',
                 ],
@@ -20066,11 +20066,11 @@ return [
             'pronunciation' => '/ˈsɫɑpi/',
             'example_sentence' => 'His sloppy handwriting was difficult to read.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '馬虎的',
                     'example_translation' => '他潦草的字跡很難閱讀。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '马虎的',
                     'example_translation' => '他潦草的字迹很难辨认。',
                 ],
@@ -20086,11 +20086,11 @@ return [
             'pronunciation' => '/ˌɪnˈkwaɪɹ/',
             'example_sentence' => 'I\'d like to inquire about the schedule for tomorrow\'s meeting.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '查詢',
                     'example_translation' => '我想詢問明天會議的時間安排。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '询问',
                     'example_translation' => '我想询问一下明天会议的时间安排。',
                 ],
@@ -20106,11 +20106,11 @@ return [
             'pronunciation' => '/ˌɪnvənˈtɔɹi/',
             'example_sentence' => 'The store needs to check its inventory before placing a new order.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '存貨',
                     'example_translation' => '這家店在下新訂單之前需要檢查庫存。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '库存',
                     'example_translation' => '这家店在下新订单之前需要检查库存。',
                 ],
@@ -20126,11 +20126,11 @@ return [
             'pronunciation' => '/ˈbjutɪˌfaɪ/',
             'example_sentence' => 'The city plans to beautify the parks with new flowers and trees.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '美化',
                     'example_translation' => '市府計劃用新的花木來美化公園。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '美化',
                     'example_translation' => '该市计划用新的花草树木来美化公园。',
                 ],
@@ -20146,11 +20146,11 @@ return [
             'pronunciation' => '/dɪˈvaʊɝ/',
             'example_sentence' => 'The hungry children managed to devour the entire chocolate cake.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '吞食',
                     'example_translation' => '飢餓的孩子們吃掉了整個巧克力蛋糕。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '狼吞虎咽地吃',
                     'example_translation' => '饥饿的孩子们吃光了整个巧克力蛋糕。',
                 ],
@@ -20166,11 +20166,11 @@ return [
             'pronunciation' => '/ˈsɑɫəˌtɛɹi/',
             'example_sentence' => 'The solitary lighthouse stood on the edge of the cliff.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '孤',
                     'example_translation' => '那座孤獨的燈塔矗立在懸崖邊緣。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '孤独的',
                     'example_translation' => '那座孤独的灯塔矗立在悬崖边上。',
                 ],
@@ -20186,11 +20186,11 @@ return [
             'pronunciation' => '/hɪˈɹoʊɪk/',
             'example_sentence' => 'The soldier was honored for his brave and heroic acts.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '英勇',
                     'example_translation' => '這位士兵因其勇敢英雄的行為而受到表彰。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '英勇的',
                     'example_translation' => '这位士兵因其勇敢英勇的行为而受到表彰。',
                 ],

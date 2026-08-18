@@ -3,7 +3,7 @@
     import { onMount } from 'svelte';
     import AudioButton from '@/components/AudioButton.svelte';
     import StickyActionBar from '@/components/StickyActionBar.svelte';
-    import { currentLocaleRouteKey, interpolate, localized, translations } from '@/lib/locale.svelte';
+    import { currentLocale, interpolate, localized, translations } from '@/lib/locale.svelte';
     import { deriveGroupStatus, getGuestGroupProgress } from '@/lib/progress';
     import { definitionOf, exampleTranslationOf } from '@/lib/groupQuiz';
     import type { VocabularyItem } from '@/lib/groupQuiz';
@@ -61,10 +61,10 @@
      * page happened to arrive in, which is the whole of the defect this replaces.
      */
     let breadcrumbs = $derived<Breadcrumb[]>([
-        { label: t['home'], url: homeRoute.url({ locale: currentLocaleRouteKey() }) },
+        { label: t['home'], url: homeRoute.url({ locale: currentLocale() }) },
         {
             label: localized<LevelTranslationItem>(level.translations)?.name ?? '',
-            url: levelRoute.url({ locale: currentLocaleRouteKey(), level: level.id }),
+            url: levelRoute.url({ locale: currentLocale(), level: level.id }),
         },
         { label: interpolate(t['group_title'], { id: String(group.sequence) }) },
     ]);
@@ -79,8 +79,8 @@
 
     let quizHref = $derived(
         activeProgress.stage > 0
-            ? quizRoute.url({ locale: currentLocaleRouteKey(), group: group.id })
-            : introduceRoute.url({ locale: currentLocaleRouteKey(), group: group.id }),
+            ? quizRoute.url({ locale: currentLocale(), group: group.id })
+            : introduceRoute.url({ locale: currentLocale(), group: group.id }),
     );
 
     onMount(() => {

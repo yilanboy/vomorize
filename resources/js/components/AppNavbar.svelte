@@ -12,7 +12,7 @@
         DropdownMenuTrigger,
     } from '@/components/ui/dropdown-menu';
     import { getFirstCharacter } from '@/lib/initials';
-    import { currentLocale, currentLocaleRouteKey, translations } from '@/lib/locale.svelte';
+    import { currentLocale, translations } from '@/lib/locale.svelte';
     import { getGuestProgressMap, clearGuestProgress } from '@/lib/progress';
     import { home, login, register } from '@/routes';
 
@@ -69,7 +69,7 @@
     <div class="mx-auto flex max-w-4xl items-center justify-between px-4 py-3 sm:px-6">
         <div class="flex items-center space-x-6">
             <Link
-                href={home({ locale: currentLocaleRouteKey() })}
+                href={home({ locale: currentLocale() })}
                 class="flex items-center space-x-2 text-xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50"
             >
                 <svg
@@ -93,13 +93,13 @@
 
             <nav class="hidden space-x-4 sm:flex">
                 <Link
-                    href={home({ locale: currentLocaleRouteKey() })}
+                    href={home({ locale: currentLocale() })}
                     class="rounded-md px-3 py-1.5 text-sm font-medium text-zinc-500 hover:bg-zinc-200 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-50"
                 >
                     {t['home']}
                 </Link>
                 <Link
-                    href={`/${currentLocaleRouteKey()}/quiz/custom`}
+                    href={`/${currentLocale()}/quiz/custom`}
                     class="rounded-md px-3 py-1.5 text-sm font-medium text-zinc-500 hover:bg-zinc-200 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-50"
                 >
                     {t['custom_quiz']}
@@ -140,13 +140,13 @@
             {:else}
                 <div class="flex items-center space-x-2">
                     <Link
-                        href={login({ locale: currentLocaleRouteKey() })}
+                        href={login({ locale: currentLocale() })}
                         class="rounded-lg px-3 py-1.5 text-sm font-medium text-zinc-500 hover:bg-zinc-200 hover:text-zinc-900 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-50"
                     >
                         {t['login']}
                     </Link>
                     <Link
-                        href={register({ locale: currentLocaleRouteKey() })}
+                        href={register({ locale: currentLocale() })}
                         class="rounded-lg bg-zinc-900 px-3 py-1.5 text-sm font-medium text-white shadow-xs hover:bg-zinc-800 dark:bg-zinc-50 dark:text-zinc-950 dark:hover:bg-zinc-200"
                     >
                         {t['register']}

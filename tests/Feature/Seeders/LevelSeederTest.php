@@ -12,7 +12,7 @@ test('default level seeder creates translations for every level', function () {
 
     Level::with('translations')->each(function (Level $level): void {
         expect($level->translations->pluck('locale')->sort()->values()->all())
-            ->toBe(['ja', 'zh_CN', 'zh_TW']);
+            ->toBe(['ja', 'zh-cn', 'zh-tw']);
     });
 });
 

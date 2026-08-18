@@ -9,7 +9,7 @@ test('default level vocabulary seeder creates translations for every vocabulary'
 
     Vocabulary::with('translations')->each(function (Vocabulary $vocabulary): void {
         expect($vocabulary->translations->pluck('locale')->sort()->values()->all())
-            ->toBe(['ja', 'zh_CN', 'zh_TW']);
+            ->toBe(['ja', 'zh-cn', 'zh-tw']);
     });
 });
 

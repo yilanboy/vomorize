@@ -74,8 +74,7 @@
 #### `resources/js/lib/locale.svelte.ts`
 - **變更內容**：
   - 移除前端 `localStorage` 讀寫邏輯與 `initializeLocale()` 函式。
-  - 重構 `currentLocale()`：直接從 Inertia 的 `page.props.locale` 取得目前語系。
-  - 新增 `currentLocaleRouteKey()`：提供 kebab-case 格式（如 `zh-tw`）供前端路由使用。
+  - 重構 `currentLocale()`：直接從 Inertia 的 `page.props.locale` 取得目前語系（如 `zh-tw`）。
 - **用途**：徹底將 Single Source of Truth 轉移至 URL 與 Inertia Page Props，消除客戶端本地儲存可能產生的狀態分歧與閃爍。
 
 #### `resources/js/app.ts`
@@ -103,7 +102,7 @@
   - `resources/js/pages/groups/Result.svelte`
   - `resources/js/pages/quiz/Custom.svelte`
 - **變更內容**：
-  - 將原本寫死或缺少語系參數的路由呼叫（如 `register({ locale: 'zh-tw' })`、`href="/quiz/custom"`）全面改為動態傳入 `currentLocaleRouteKey()`（例如 `register({ locale: currentLocaleRouteKey() })`、`href={`/${currentLocaleRouteKey()}/quiz/custom`}`）。
+  - 將原本寫死或缺少語系參數的路由呼叫（如 `register({ locale: 'zh-tw' })`、`href="/quiz/custom"`）全面改為動態傳入 `currentLocale()`（例如 `register({ locale: currentLocale() })`、`href={`/${currentLocale()}/quiz/custom`}`）。
 - **用途**：保證使用者在網站內任何點擊、換頁、提交表單、重試測驗時，皆能維持在當前選擇的語系路徑下。
 
 ---

@@ -7,7 +7,7 @@
     import StickyActionBar from '@/components/StickyActionBar.svelte';
     import { answerFor, buildPracticeQuestions } from '@/lib/groupQuiz';
     import type { QuizQuestion, QuizVocabulary } from '@/lib/groupQuiz';
-    import { currentLocaleRouteKey, interpolate, translations } from '@/lib/locale.svelte';
+    import { currentLocale, interpolate, translations } from '@/lib/locale.svelte';
     import { getGuestProgressMap } from '@/lib/progress';
     import { custom as customQuizRoute } from '@/routes/quiz';
     import { count as countRoute, fetch as sampleRoute } from '@/routes/quiz/custom';
@@ -126,7 +126,7 @@
         poolCount.group_ids = declaredGroupIds;
 
         poolCount
-            .post(countRoute.url({ locale: currentLocaleRouteKey() }), {
+            .post(countRoute.url({ locale: currentLocale() }), {
                 onSuccess: (response) => {
                     resolvedGuestPoolSize = response.learned_word_count;
                 },
@@ -169,7 +169,7 @@
         sample.group_ids = declaredGroupIds;
 
         sample
-            .post(sampleRoute.url({ locale: currentLocaleRouteKey() }), {
+            .post(sampleRoute.url({ locale: currentLocale() }), {
                 onSuccess: ({ targets, distractors }) => {
                     questions = buildPracticeQuestions(targets, distractors);
                     currentIndex = 0;
@@ -213,7 +213,7 @@
 </script>
 
 {#if phase === 'QUIZ'}
-    <QuizLeaveGuard exitUrl={customQuizRoute.url({ locale: currentLocaleRouteKey() })} />
+    <QuizLeaveGuard exitUrl={customQuizRoute.url({ locale: currentLocale() })} />
 {/if}
 
 <div class="flex flex-1 flex-col">
@@ -269,7 +269,7 @@
                         {t['no_learned_vocab_desc']}
                     </p>
                     <Link
-                        href={`/${currentLocaleRouteKey()}`}
+                        href={`/${currentLocale()}`}
                         class="mt-4 inline-flex items-center rounded-xl bg-zinc-900 px-4 py-2 text-sm font-semibold text-white hover:bg-zinc-800 dark:bg-zinc-50 dark:text-zinc-950 dark:hover:bg-zinc-200"
                     >
                         {t['go_learn']}

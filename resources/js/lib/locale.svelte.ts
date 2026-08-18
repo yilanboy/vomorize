@@ -3,9 +3,11 @@ import { page } from '@inertiajs/svelte';
 /**
  * The locale every other locale falls back to, mirroring the server's own fallback.
  */
-export const DEFAULT_LOCALE = 'zh_TW';
+export const DEFAULT_LOCALE = 'zh-tw';
 
-export const SUPPORTED_LOCALES = ['zh_TW', 'zh_CN', 'ja'] as const;
+export function availableLocales(): string[] {
+    return page.props.available_locales;
+}
 
 /**
  * The single answer to "what language are we in".
@@ -14,13 +16,6 @@ export const SUPPORTED_LOCALES = ['zh_TW', 'zh_CN', 'ja'] as const;
  */
 export function currentLocale(): string {
     return page.props.locale || DEFAULT_LOCALE;
-}
-
-/**
- * The route key format of the current locale (e.g. 'zh-tw', 'zh-cn', 'ja').
- */
-export function currentLocaleRouteKey(): string {
-    return (page.props.locale_route_key as string) || 'zh-tw';
 }
 
 /**

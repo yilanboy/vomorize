@@ -29,7 +29,7 @@ beforeEach(function () {
 
         VocabularyTranslation::create([
             'vocabulary_id' => $vocab->id,
-            'locale' => 'zh_TW',
+            'locale' => 'zh-tw',
             'definition' => "釋義 {$i}",
             'example_translation' => "例句翻譯 {$i}",
         ]);
@@ -81,7 +81,7 @@ it('carries every locale of vocabulary content into the group overview', functio
     $this->get("/zh-tw/groups/{$this->group->id}")
         ->assertOk()
         ->assertInertia(fn ($page) => $page
-            ->where('vocabularies.0.translations.zh_TW.definition', '釋義 1')
+            ->where('vocabularies.0.translations.zh-tw.definition', '釋義 1')
             ->where('vocabularies.0.translations.ja.definition', '釈義 1')
             ->missing('vocabularies.0.definition')
             ->missing('vocabularies.0.is_fallback')

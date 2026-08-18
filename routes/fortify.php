@@ -1,6 +1,5 @@
 <?php
 
-use App\Enums\Locale;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Validation\Rules\Password;
@@ -8,7 +7,7 @@ use Inertia\Inertia;
 use Laravel\Fortify\Features;
 
 Route::prefix('{locale}')
-    ->whereIn('locale', Locale::routeKeys())
+    ->whereIn('locale', config('app.available_locales'))
     ->group(function () {
         Route::get('/login', fn (Request $request) => Inertia::render('auth/Login', [
             'canResetPassword' => Features::enabled(Features::resetPasswords()),

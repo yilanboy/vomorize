@@ -2,6 +2,7 @@
     import { Link, page } from '@inertiajs/svelte';
     import AppHead from '@/components/AppHead.svelte';
     import { toUrl } from '@/lib/utils';
+    import { currentLocale } from '@/lib/locale.svelte';
     import { home, login } from '@/routes';
     import { register } from '@/routes';
 
@@ -20,20 +21,20 @@
         <nav class="flex items-center justify-end gap-4">
             {#if auth.user}
                 <Link
-                    href={toUrl(home())}
+                    href={toUrl(home({ locale: currentLocale() }))}
                     class="inline-block rounded-sm border border-zinc-200 px-5 py-1.5 text-sm leading-normal text-zinc-900 hover:border-zinc-400 dark:border-zinc-800 dark:text-zinc-50 dark:hover:border-zinc-600"
                 >
                     Home
                 </Link>
             {:else}
                 <Link
-                    href={toUrl(login())}
+                    href={toUrl(login({ locale: currentLocale() }))}
                     class="inline-block rounded-sm border border-transparent px-5 py-1.5 text-sm leading-normal text-zinc-900 hover:border-zinc-200 dark:text-zinc-50 dark:hover:border-zinc-800"
                 >
                     Log in
                 </Link>
                 <Link
-                    href={toUrl(register())}
+                    href={toUrl(register({ locale: currentLocale() }))}
                     class="inline-block rounded-sm border border-zinc-200 px-5 py-1.5 text-sm leading-normal text-zinc-900 hover:border-zinc-400 dark:border-zinc-800 dark:text-zinc-50 dark:hover:border-zinc-600"
                 >
                     Register

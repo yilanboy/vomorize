@@ -34,7 +34,7 @@ beforeEach(function () {
 
             VocabularyTranslation::create([
                 'vocabulary_id' => $id,
-                'locale' => 'zh_TW',
+                'locale' => 'zh-tw',
                 'definition' => "def_{$id}",
             ]);
         }
@@ -248,7 +248,7 @@ it('sends only what a question renders for each word', function () {
 
     expect($word['word'])->toBe('word_1')
         ->and($word['audio_url'])->toBe('https://assets.vomorize.com/vocabulary/1/word.mp3')
-        ->and($word['translations']['zh_TW']['definition'])->toBe('def_1')
+        ->and($word['translations']['zh-tw']['definition'])->toBe('def_1')
         ->and($word['translations']['ja']['definition'])->toBe('ja_def_1')
         ->and($word['translations']['ja'])->not->toHaveKey('example_translation')
         ->and($word)->not->toHaveKey('part_of_speech')

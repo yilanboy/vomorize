@@ -101,7 +101,7 @@ it('keeps a migrated learner on the review phase after an earlier device left a 
 
         VocabularyTranslation::create([
             'vocabulary_id' => $vocabulary->id,
-            'locale' => 'zh_TW',
+            'locale' => 'zh-tw',
             'definition' => "釋義 {$i}",
             'example_translation' => "例句翻譯 {$i}",
         ]);

@@ -16,7 +16,7 @@
     import { Input } from '@/components/ui/input';
     import { Label } from '@/components/ui/label';
     import { Spinner } from '@/components/ui/spinner';
-    import { currentLocaleRouteKey, translations } from '@/lib/locale.svelte';
+    import { currentLocale, translations } from '@/lib/locale.svelte';
     import { register } from '@/routes';
     import { store } from '@/routes/login';
     import { request } from '@/routes/password';
@@ -60,7 +60,7 @@
                 <div class="flex items-center justify-between">
                     <Label for="password">{t['password']}</Label>
                     {#if canResetPassword}
-                        <TextLink href={request({ locale: currentLocaleRouteKey() })} class="text-sm"
+                        <TextLink href={request({ locale: currentLocale() })} class="text-sm"
                             >{t['forgot_password']}</TextLink
                         >
                     {/if}
@@ -121,7 +121,7 @@
 
         <div class="text-center text-sm text-zinc-500 dark:text-zinc-400">
             {t['no_account']}
-            <TextLink href={register({ locale: currentLocaleRouteKey() })}>{t['sign_up']}</TextLink>
+            <TextLink href={register({ locale: currentLocale() })}>{t['sign_up']}</TextLink>
         </div>
     {/snippet}
 </Form>
