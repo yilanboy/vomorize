@@ -38,7 +38,8 @@ Route::prefix('{locale}')
         Route::get('/groups/{group}/introduce', [GroupQuizController::class, 'introduce'])->name('groups.introduce');
         Route::get('/groups/{group}/quiz', [GroupQuizController::class, 'quiz'])->name('groups.quiz');
         Route::get('/groups/{group}/result', [GroupQuizController::class, 'result'])->name('groups.result');
-        Route::post('/groups/{group}/progress', [GroupProgressController::class, 'store'])->name('groups.progress.store');
+        Route::post('/groups/{group}/progress', [GroupProgressController::class, 'store'])
+            ->name('groups.progress.store');
 
         // Custom Quiz
         Route::get('/quiz/custom', [CustomQuizController::class, 'index'])->name('quiz.custom');

@@ -108,7 +108,7 @@
         </div>
 
         <div class="flex items-center space-x-3">
-            <LanguageSwitcher currentLocale={currentLocale()} {availableLocales} />
+            <LanguageSwitcher />
             <ThemeToggle />
 
             {#if page.props.auth?.user}

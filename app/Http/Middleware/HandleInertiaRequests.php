@@ -45,13 +45,8 @@ class HandleInertiaRequests extends Middleware
                 'user' => $request->user(),
             ],
             'locale' => $locale,
+            'available_locales' => Locale::getLabels(),
             'locale_route_key' => str_replace('_', '-', strtolower($locale)),
-            // 'available_locales' => Locale::labels(),
-            'available_locales' => [
-                'zh_TW' => '繁體中文',
-                'zh_CN' => '简体中文',
-                'ja' => '日本語',
-            ],
             /**
              * Every supported locale, not just the resolved one, so the client can switch
              * language without a round trip. Iterating the list that already gates the switch

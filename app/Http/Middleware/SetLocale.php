@@ -11,7 +11,7 @@ use Symfony\Component\HttpFoundation\Response;
 
 class SetLocale
 {
-    public const DEFAULT_LOCALE = 'zh_TW';
+    public const string DEFAULT_LOCALE = 'zh_TW';
 
     /**
      * Handle an incoming request.
@@ -25,9 +25,14 @@ class SetLocale
 
             if ($matchedLocale) {
                 app()->setLocale($matchedLocale->value);
+                Cookie::queue(Cookie::make(
+                    name: 'locale',
+                    value: $matchedLocale->routeKey(),
+                    minutes: 525600,
+                    path: '/',
+                ));
+                $request->route()->forgetParameter('locale');
                 URL::defaults(['locale' => $matchedLocale->routeKey()]);
-                Cookie::queue(Cookie::make('locale', $matchedLocale->routeKey(), 525600, '/', null, null, false));
-                $request->route()?->forgetParameter('locale');
 
                 return $next($request);
             }

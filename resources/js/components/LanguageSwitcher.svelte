@@ -1,7 +1,7 @@
 <script lang="ts">
     import Languages from '@lucide/svelte/icons/languages';
     import Check from '@lucide/svelte/icons/check';
-    import { router } from '@inertiajs/svelte';
+    import { router, page } from '@inertiajs/svelte';
     import {
         DropdownMenu,
         DropdownMenuContent,
@@ -9,24 +9,19 @@
         DropdownMenuTrigger,
     } from '@/components/ui/dropdown-menu';
     import { Button } from '@/components/ui/button';
+    import { currentLocale } from '@/lib/locale.svelte';
 
-    let {
-        currentLocale = 'zh_TW',
-        availableLocales = { zh_TW: '繁體中文', zh_CN: '简体中文', ja: '日本語' },
-    } = $props<{
-        currentLocale?: string;
-        availableLocales?: Record<string, string>;
-    }>();
+    let availableLocales = $derived(
+        (page.props.available_locales as Record<string, string>) || { zh_TW: '繁體中文' },
+    );
 
     function selectLocale(code: string) {
-        if (code === currentLocale) {
+        if (code === currentLocale()) {
             return;
         }
 
         const targetRouteKey = code.toLowerCase().replace('_', '-');
-        if (typeof document !== 'undefined') {
-            document.cookie = `locale=${targetRouteKey};path=/;max-age=31536000;SameSite=Lax`;
-        }
+
         router.visit(`/${targetRouteKey}`);
     }
 </script>
@@ -55,7 +50,7 @@
                 class="flex cursor-pointer items-center justify-between px-3 py-2 text-sm font-medium"
             >
                 <span>{name}</span>
-                {#if code === currentLocale}
+                {#if code === currentLocale()}
                     <Check class="h-4 w-4 text-zinc-900 dark:text-zinc-50" />
                 {/if}
             </DropdownMenuItem>

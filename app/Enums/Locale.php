@@ -21,6 +21,15 @@ enum Locale: string
         };
     }
 
+    public static function getLabels(): array
+    {
+        return [
+            self::JP->value => '日本語',
+            self::ZH_CN->value => '简体中文',
+            self::ZH_TW->value => '繁體中文',
+        ];
+    }
+
     /**
      * @return string[]
      */
@@ -42,8 +51,11 @@ enum Locale: string
 
         $normalized = str_replace('_', '-', strtolower($routeKey));
 
-        return collect(self::cases())->first(
-            fn (self $locale) => $locale->routeKey() === $normalized
-        );
+        return match ($normalized) {
+            'ja' => self::JP,
+            'zh-cn' => self::ZH_CN,
+            'zh-tw' => self::ZH_TW,
+            default => null,
+        };
     }
 }
