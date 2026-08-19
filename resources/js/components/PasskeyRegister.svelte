@@ -70,7 +70,10 @@
         {t['add_passkey']}
     </Button>
 {:else}
-    <form onsubmit={handleSubmit} class="space-y-4 rounded-xl border border-zinc-200 bg-zinc-100/30 p-4 dark:border-zinc-800 dark:bg-zinc-800/30">
+    <form
+        onsubmit={handleSubmit}
+        class="space-y-4 rounded-xl border border-zinc-200 bg-zinc-100/30 p-4 dark:border-zinc-800 dark:bg-zinc-800/30"
+    >
         <div class="grid gap-2.5">
             <Label for="passkey-name">{t['passkey_name']}</Label>
             <Input
@@ -91,9 +94,7 @@
 
         <div class="flex gap-2">
             <Button type="submit" disabled={passkeyRegister.isLoading || !name.trim()}>
-                {passkeyRegister.isLoading
-                    ? t['registering_passkey']
-                    : t['confirm_add_passkey']}
+                {passkeyRegister.isLoading ? t['registering_passkey'] : t['confirm_add_passkey']}
             </Button>
             <Button type="button" variant="ghost" onclick={handleCancel}>
                 {t['cancel']}

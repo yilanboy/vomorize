@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Illuminate\Http\Request;
+use Inertia\Inertia;
 use Inertia\Middleware;
 
 class HandleInertiaRequests extends Middleware
@@ -43,24 +44,15 @@ class HandleInertiaRequests extends Middleware
             'auth' => [
                 'user' => $request->user(),
             ],
+            'available_locales' => Inertia::once(fn () => config('app.available_locales')),
             'locale' => $locale,
-            'available_locales' => [
-                'zh_TW' => '繁體中文',
-                'zh_CN' => '简体中文',
-                'ja' => '日本語',
-            ],
-            /**
-             * Every supported locale, not just the resolved one, so the client can switch
-             * language without a round trip. Iterating the list that already gates the switch
-             * endpoint's validation keeps the two from disagreeing about what is switchable.
-             */
-            'translations' => [
-                'app' => collect(SetLocale::SUPPORTED_LOCALES)
-                    ->mapWithKeys(fn (string $supported): array => [
-                        $supported => trans('app', [], $supported),
+            'translations' => Inertia::once(fn () => [
+                'app' => collect(config('app.available_locales'))
+                    ->mapWithKeys(fn (string $locale): array => [
+                        $locale => trans(key: 'app', locale: $locale),
                     ])
                     ->all(),
-            ],
+            ]),
         ];
     }
 }

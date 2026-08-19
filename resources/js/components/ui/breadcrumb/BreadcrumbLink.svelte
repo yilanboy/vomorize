@@ -14,7 +14,8 @@
         [key: string]: unknown;
     } = $props();
 
-    const classes = () => cn('transition-colors hover:text-zinc-900 dark:hover:text-zinc-50', className);
+    const classes = () =>
+        cn('transition-colors hover:text-zinc-900 dark:hover:text-zinc-50', className);
 </script>
 
 {#if asChild}

@@ -29,7 +29,9 @@
 </script>
 
 {#if canManageTwoFactor}
-    <div class="rounded-2xl border border-zinc-200 bg-zinc-50 p-6 shadow-xs sm:p-8 dark:border-zinc-800 dark:bg-zinc-900">
+    <div
+        class="rounded-2xl border border-zinc-200 bg-zinc-50 p-6 shadow-xs sm:p-8 dark:border-zinc-800 dark:bg-zinc-900"
+    >
         <div class="mb-6 space-y-1">
             <h2 class="text-lg font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
                 {t['two_factor_auth']}

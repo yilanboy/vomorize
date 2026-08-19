@@ -6,7 +6,7 @@
     import GroupQuizQuestion from '@/components/GroupQuizQuestion.svelte';
     import QuizLeaveGuard, { disarmLeaveGuard } from '@/components/QuizLeaveGuard.svelte';
     import StickyActionBar from '@/components/StickyActionBar.svelte';
-    import { translations } from '@/lib/locale.svelte';
+    import { currentLocale, translations } from '@/lib/locale.svelte';
     import { calculateNextState, saveGuestGroupProgress } from '@/lib/progress';
     import {
         answerFor,
@@ -84,7 +84,12 @@
         disarmLeaveGuard();
 
         if (score < 90) {
-            router.visit(resultRoute.url(group.id, { query: { phase: 'introduce', score } }));
+            router.visit(
+                resultRoute.url(
+                    { locale: currentLocale(), group: group.id },
+                    { query: { phase: 'introduce', score } },
+                ),
+            );
 
             return;
         }
@@ -98,18 +103,26 @@
                 last_reviewed_at: nextState.last_reviewed_at,
                 next_review_at: nextState.next_review_at,
             });
-            router.visit(resultRoute.url(group.id, { query: { phase: 'introduce', score } }));
+            router.visit(
+                resultRoute.url(
+                    { locale: currentLocale(), group: group.id },
+                    { query: { phase: 'introduce', score } },
+                ),
+            );
 
             return;
         }
 
         router.post(
-            progressRoute.store.url(group.id),
+            progressRoute.store.url({ locale: currentLocale(), group: group.id }),
             { phase: 'introduce', score },
             {
                 onSuccess: () =>
                     router.visit(
-                        resultRoute.url(group.id, { query: { phase: 'introduce', score } }),
+                        resultRoute.url(
+                            { locale: currentLocale(), group: group.id },
+                            { query: { phase: 'introduce', score } },
+                        ),
                     ),
             },
         );
@@ -120,11 +133,13 @@
     });
 </script>
 
-<QuizLeaveGuard exitUrl={levelRoute.url(group.level_id)} />
+<QuizLeaveGuard exitUrl={levelRoute.url({ locale: currentLocale(), level: group.level_id })} />
 
 <div class="flex flex-1 flex-col">
     <main class="mx-auto w-full max-w-2xl flex-1 px-4 py-8 sm:px-6">
-        <div class="mb-4 flex items-center justify-between text-sm text-zinc-500 dark:text-zinc-400">
+        <div
+            class="mb-4 flex items-center justify-between text-sm text-zinc-500 dark:text-zinc-400"
+        >
             <span
                 >{t['start_learning']} · {batchStart +
                     (mode === 'cards' ? cardIndex : questionIndex) +
@@ -134,7 +149,9 @@
         </div>
 
         {#if mode === 'cards' && currentVocabulary}
-            <div class="space-y-6 rounded-2xl border border-zinc-200 bg-zinc-50 p-6 shadow-xs dark:border-zinc-800 dark:bg-zinc-900">
+            <div
+                class="space-y-6 rounded-2xl border border-zinc-200 bg-zinc-50 p-6 shadow-xs dark:border-zinc-800 dark:bg-zinc-900"
+            >
                 <div class="flex items-start justify-between gap-4">
                     <div>
                         <h1 class="text-3xl font-extrabold text-zinc-900 dark:text-zinc-50">
@@ -144,12 +161,11 @@
                             {currentVocabulary.part_of_speech} · {currentVocabulary.pronunciation}
                         </p>
                     </div>
-                    <AudioButton
-                        url={currentVocabulary.audio_url}
-                        label={t['pronunciation']}
-                    />
+                    <AudioButton url={currentVocabulary.audio_url} label={t['pronunciation']} />
                 </div>
-                <div class="rounded-xl border border-zinc-200 bg-zinc-100/40 p-4 dark:border-zinc-800 dark:bg-zinc-800/40">
+                <div
+                    class="rounded-xl border border-zinc-200 bg-zinc-100/40 p-4 dark:border-zinc-800 dark:bg-zinc-800/40"
+                >
                     <p class="text-lg font-semibold text-zinc-900 dark:text-zinc-50">
                         {definitionOf(currentVocabulary)}
                     </p>
@@ -190,16 +206,14 @@
                 onclick={nextCard}
                 class="w-full rounded-xl bg-zinc-900 py-3 text-sm font-semibold text-white dark:bg-zinc-50 dark:text-zinc-950"
             >
-                {cardIndex < batch.length - 1
-                    ? t['continue']
-                    : t['start_quiz']}
+                {cardIndex < batch.length - 1 ? t['continue'] : t['start_quiz']}
             </button>
         {:else if currentQuestion}
             <button
                 type="button"
                 onclick={nextQuestion}
                 disabled={!answered}
-                class="w-full rounded-xl bg-zinc-900 py-3 text-sm font-semibold text-white dark:bg-zinc-50 dark:text-zinc-950 disabled:opacity-50"
+                class="w-full rounded-xl bg-zinc-900 py-3 text-sm font-semibold text-white disabled:opacity-50 dark:bg-zinc-50 dark:text-zinc-950"
             >
                 {t['continue']}
             </button>

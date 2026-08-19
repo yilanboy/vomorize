@@ -52,7 +52,7 @@
 {#if open()}
     <div
         class={cn(
-            'absolute z-50 min-w-48 rounded-md border bg-zinc-50 p-2 text-zinc-900 dark:bg-zinc-900 dark:text-zinc-50 shadow-md',
+            'absolute z-50 min-w-48 rounded-md border bg-zinc-50 p-2 text-zinc-900 shadow-md dark:bg-zinc-900 dark:text-zinc-50',
             alignClasses[align] ?? alignClasses.start,
             sideClasses[side] ?? sideClasses.bottom,
             className,

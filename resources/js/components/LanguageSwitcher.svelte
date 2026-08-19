@@ -1,6 +1,7 @@
 <script lang="ts">
     import Languages from '@lucide/svelte/icons/languages';
     import Check from '@lucide/svelte/icons/check';
+    import { router } from '@inertiajs/svelte';
     import {
         DropdownMenu,
         DropdownMenuContent,
@@ -8,33 +9,22 @@
         DropdownMenuTrigger,
     } from '@/components/ui/dropdown-menu';
     import { Button } from '@/components/ui/button';
-    import { setLocale } from '@/lib/locale.svelte';
+    import { currentLocale, availableLocales } from '@/lib/locale.svelte';
 
-    let {
-        currentLocale = 'zh_TW',
-        availableLocales = { zh_TW: '繁體中文', zh_CN: '简体中文', ja: '日本語' },
-    } = $props<{
-        currentLocale?: string;
-        availableLocales?: Record<string, string>;
-    }>();
+    function getLabel(locale: string) {
+        return {
+            'zh-tw': '繁體中文',
+            'zh-cn': '简体中文',
+            ja: '日本語',
+        }[locale];
+    }
 
-    /**
-     * The language changes here and now; remembering it is a background errand.
-     *
-     * Deliberately not a router visit. A visit is what the quiz leave guard intercepts, so
-     * submitting the choice is what used to make changing language indistinguishable from
-     * walking out of a quiz. Nothing is awaited either: every locale is already in the browser,
-     * so there is nothing the response could tell us that the page needs.
-     *
-     * `keepalive` is load-bearing rather than decorative — without it, switching and immediately
-     * tapping a link cancels the request in flight and the choice is silently never saved.
-     */
-    function selectLocale(code: string) {
-        if (code === currentLocale) {
+    function selectLocale(locale: string) {
+        if (locale === currentLocale()) {
             return;
         }
 
-        setLocale(code);
+        router.visit(`/${locale}`);
     }
 </script>
 
@@ -56,13 +46,13 @@
         {/snippet}
     </DropdownMenuTrigger>
     <DropdownMenuContent align="end" class="w-40">
-        {#each Object.entries(availableLocales) as [code, name]}
+        {#each availableLocales() as locale (locale)}
             <DropdownMenuItem
-                onclick={() => selectLocale(code)}
+                onclick={() => selectLocale(locale)}
                 class="flex cursor-pointer items-center justify-between px-3 py-2 text-sm font-medium"
             >
-                <span>{name}</span>
-                {#if code === currentLocale}
+                <span>{getLabel(locale)}</span>
+                {#if locale === currentLocale()}
                     <Check class="h-4 w-4 text-zinc-900 dark:text-zinc-50" />
                 {/if}
             </DropdownMenuItem>

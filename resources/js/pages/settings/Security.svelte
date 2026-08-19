@@ -41,12 +41,14 @@
 <AppHead title={t['security_settings']} />
 
 <div class="space-y-6">
-    <div class="rounded-2xl border border-zinc-200 bg-zinc-50 p-6 shadow-xs sm:p-8 dark:border-zinc-800 dark:bg-zinc-900">
+    <div
+        class="rounded-2xl border border-zinc-200 bg-zinc-50 p-6 shadow-xs sm:p-8 dark:border-zinc-800 dark:bg-zinc-900"
+    >
         <div class="mb-6 space-y-1">
-        <h2 class="text-lg font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
+            <h2 class="text-lg font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
                 {t['update_password']}
             </h2>
-        <p class="text-sm text-zinc-500 dark:text-zinc-400">
+            <p class="text-sm text-zinc-500 dark:text-zinc-400">
                 {t['update_password_subtitle']}
             </p>
         </div>
@@ -83,9 +85,7 @@
                 </div>
 
                 <div class="grid gap-2.5">
-                    <Label for="password_confirmation"
-                        >{t['confirm_new_password']}</Label
-                    >
+                    <Label for="password_confirmation">{t['confirm_new_password']}</Label>
                     <PasswordInput
                         id="password_confirmation"
                         name="password_confirmation"
@@ -98,9 +98,7 @@
 
                 <div class="pt-2">
                     <Button type="submit" disabled={processing} data-test="update-password-button">
-                        {processing
-                            ? t['updating']
-                            : t['save_password']}
+                        {processing ? t['updating'] : t['save_password']}
                     </Button>
                 </div>
             {/snippet}

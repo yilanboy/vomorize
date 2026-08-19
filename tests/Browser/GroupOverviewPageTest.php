@@ -19,9 +19,7 @@ test('group overview labels will switch by locale', function (string $locale, st
     $stage = 0;
     $vocabulary = $group->vocabularies->first();
 
-    visit(route('groups.show', ['group' => $group->id]))
-        ->click('@language-switcher')
-        ->click($localeLabel)
+    visit(route('groups.show', ['locale' => $locale, 'group' => $group->id]))
         ->assertSeeIn('@group-title', Lang::get('app.group_title', ['id' => $group->id], $locale))
         ->assertSeeIn('@core-vocab-count',
             Lang::get('app.core_vocab_count', ['count' => $group->vocabularies->count()], $locale))

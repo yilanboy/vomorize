@@ -14,7 +14,7 @@ beforeEach(function () {
                 'pronunciation' => '/test/',
                 'example_sentence' => 'This is a test sentence.',
                 'translations' => [
-                    'zh_TW' => [
+                    'zh-tw' => [
                         'definition' => '測試詞',
                         'example_translation' => '這是一個測試句子。',
                     ],
@@ -39,7 +39,7 @@ it('translates pending vocabulary items and updates level files', function () {
             'translations' => [
                 [
                     'word' => 'test_word_1',
-                    'zh_CN' => [
+                    'zh-cn' => [
                         'definition' => '测试词',
                         'example_translation' => '这是一个测试句子。',
                     ],
@@ -64,8 +64,8 @@ it('translates pending vocabulary items and updates level files', function () {
 
     $updatedData = require $this->testLevelPath;
 
-    expect($updatedData['group_1'][0]['translations'])->toHaveKeys(['zh_TW', 'zh_CN', 'ja'])
-        ->and($updatedData['group_1'][0]['translations']['zh_CN']['definition'])->toBe('测试词')
+    expect($updatedData['group_1'][0]['translations'])->toHaveKeys(['zh-tw', 'zh-cn', 'ja'])
+        ->and($updatedData['group_1'][0]['translations']['zh-cn']['definition'])->toBe('测试词')
         ->and($updatedData['group_1'][0]['translations']['ja']['definition'])->toBe('テスト単語');
 });
 
@@ -78,11 +78,11 @@ it('skips items that already have translations unless --force is used', function
                 'pronunciation' => '/test/',
                 'example_sentence' => 'Translated sentence.',
                 'translations' => [
-                    'zh_TW' => [
+                    'zh-tw' => [
                         'definition' => '測試',
                         'example_translation' => '測試句。',
                     ],
-                    'zh_CN' => [
+                    'zh-cn' => [
                         'definition' => '测试',
                         'example_translation' => '测试句。',
                     ],
@@ -115,11 +115,11 @@ it('translates items when --force is specified even if translations exist', func
                 'pronunciation' => '/test/',
                 'example_sentence' => 'Forced sentence.',
                 'translations' => [
-                    'zh_TW' => [
+                    'zh-tw' => [
                         'definition' => '測試',
                         'example_translation' => '測試句。',
                     ],
-                    'zh_CN' => [
+                    'zh-cn' => [
                         'definition' => '旧',
                         'example_translation' => '旧句。',
                     ],
@@ -139,7 +139,7 @@ it('translates items when --force is specified even if translations exist', func
             'translations' => [
                 [
                     'word' => 'forced_word',
-                    'zh_CN' => [
+                    'zh-cn' => [
                         'definition' => '新',
                         'example_translation' => '新句。',
                     ],
@@ -160,7 +160,7 @@ it('translates items when --force is specified even if translations exist', func
     VocabularyTranslatorAgent::assertPrompted(fn (AgentPrompt $prompt) => str_contains($prompt->prompt, 'forced_word'));
 
     $updatedData = require $this->testLevelPath;
-    expect($updatedData['group_1'][0]['translations']['zh_CN']['definition'])->toBe('新');
+    expect($updatedData['group_1'][0]['translations']['zh-cn']['definition'])->toBe('新');
 });
 
 it('respects --dry-run option and does not write changes to disk', function () {
@@ -169,7 +169,7 @@ it('respects --dry-run option and does not write changes to disk', function () {
             'translations' => [
                 [
                     'word' => 'test_word_1',
-                    'zh_CN' => [
+                    'zh-cn' => [
                         'definition' => '测试',
                         'example_translation' => '测试句。',
                     ],
@@ -202,7 +202,7 @@ it('translates specified locales when --locales option is passed', function () {
                     'word' => 'test_word_1',
                     'results' => [
                         [
-                            'locale' => 'zh_TW',
+                            'locale' => 'zh-tw',
                             'definition' => '新測試詞',
                             'example_translation' => '這是一個新測試句子。',
                         ],
@@ -214,17 +214,17 @@ it('translates specified locales when --locales option is passed', function () {
 
     $this->artisan('vocabulary:translate', [
         '--level' => '99',
-        '--locales' => 'zh_TW',
+        '--locales' => 'zh-tw',
         '--force' => true,
     ])->assertSuccessful();
 
     VocabularyTranslatorAgent::assertPrompted(function (AgentPrompt $prompt) {
-        return str_contains($prompt->prompt, 'zh_TW') && str_contains($prompt->prompt, 'test_word_1');
+        return str_contains($prompt->prompt, 'zh-tw') && str_contains($prompt->prompt, 'test_word_1');
     });
 
     $updatedData = require $this->testLevelPath;
 
-    expect($updatedData['group_1'][0]['translations']['zh_TW']['definition'])->toBe('新測試詞');
+    expect($updatedData['group_1'][0]['translations']['zh-tw']['definition'])->toBe('新測試詞');
 });
 
 it('includes existing translations in payload to preserve meaning across locales', function () {
@@ -233,7 +233,7 @@ it('includes existing translations in payload to preserve meaning across locales
             'translations' => [
                 [
                     'word' => 'test_word_1',
-                    'zh_CN' => [
+                    'zh-cn' => [
                         'definition' => '测试词',
                         'example_translation' => '这是一个测试句子。',
                     ],
@@ -244,7 +244,7 @@ it('includes existing translations in payload to preserve meaning across locales
 
     $this->artisan('vocabulary:translate', [
         '--level' => '99',
-        '--locales' => 'zh_CN',
+        '--locales' => 'zh-cn',
     ])->assertSuccessful();
 
     VocabularyTranslatorAgent::assertPrompted(function (AgentPrompt $prompt) {

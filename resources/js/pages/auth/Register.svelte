@@ -15,7 +15,7 @@
     import { Input } from '@/components/ui/input';
     import { Label } from '@/components/ui/label';
     import { Spinner } from '@/components/ui/spinner';
-    import { translations } from '@/lib/locale.svelte';
+    import { currentLocale, translations } from '@/lib/locale.svelte';
     import { login } from '@/routes';
     import { store } from '@/routes/register';
 
@@ -100,7 +100,9 @@
                     <span class="w-full border-t border-zinc-200 dark:border-zinc-800"></span>
                 </div>
                 <div class="relative flex justify-center text-sm font-medium uppercase">
-                    <span class="bg-zinc-50 px-2 text-zinc-500 dark:bg-zinc-900 dark:text-zinc-400">{t['or']}</span>
+                    <span class="bg-zinc-50 px-2 text-zinc-500 dark:bg-zinc-900 dark:text-zinc-400"
+                        >{t['or']}</span
+                    >
                 </div>
             </div>
 
@@ -120,7 +122,7 @@
 
         <div class="text-center text-sm text-zinc-500 dark:text-zinc-400">
             {t['already_have_account']}
-            <TextLink href={login()}>{t['login']}</TextLink>
+            <TextLink href={login({ locale: currentLocale() })}>{t['login']}</TextLink>
         </div>
     {/snippet}
 </Form>

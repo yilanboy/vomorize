@@ -16,7 +16,7 @@ class TranslateVocabularyCommand extends Command
      */
     protected $signature = 'vocabulary:translate
                             {--level= : Specific level number(s) to process, separated by comma (e.g. 1 or 1,2)}
-                            {--locales= : Specific locale(s) to translate, separated by comma (e.g. zh_CN,ja,zh_TW or zh_TW)}
+                            {--locales= : Specific locale(s) to translate, separated by comma (e.g. zh-cn,ja,zh-tw or zh-tw)}
                             {--locale= : Alias for --locales}
                             {--model=gemini-3.6-flash : AI model to use}
                             {--batch-size=20 : Number of items per AI request}
@@ -99,7 +99,7 @@ class TranslateVocabularyCommand extends Command
             return array_values(array_unique($locales));
         }
 
-        return ['zh_CN', 'ja'];
+        return ['zh-cn', 'ja'];
     }
 
     /**

@@ -28,7 +28,7 @@ beforeEach(function () {
 
         VocabularyTranslation::create([
             'vocabulary_id' => $vocabulary->id,
-            'locale' => 'zh_TW',
+            'locale' => 'zh-tw',
             'definition' => "釋義 {$i}",
             'example_translation' => "例句翻譯 {$i}",
         ]);
@@ -41,7 +41,7 @@ beforeEach(function () {
  * change language mid-phase without the question set being rebuilt underneath them.
  */
 it('carries every locale of vocabulary content into both quiz phases', function (string $route) {
-    foreach (['zh_CN' => '释义', 'ja' => '釈義'] as $locale => $noun) {
+    foreach (['zh-cn' => '释义', 'ja' => '釈義'] as $locale => $noun) {
         for ($i = 1; $i <= 4; $i++) {
             VocabularyTranslation::create([
                 'vocabulary_id' => $i,
@@ -52,11 +52,11 @@ it('carries every locale of vocabulary content into both quiz phases', function 
         }
     }
 
-    $this->get("/groups/{$this->group->id}{$route}")
+    $this->get("/zh-tw/groups/{$this->group->id}{$route}")
         ->assertOk()
         ->assertInertia(fn ($page) => $page
-            ->where('vocabularies.0.translations.zh_TW.definition', '釋義 1')
-            ->where('vocabularies.0.translations.zh_CN.definition', '释义 1')
+            ->where('vocabularies.0.translations.zh-tw.definition', '釋義 1')
+            ->where('vocabularies.0.translations.zh-cn.definition', '释义 1')
             ->where('vocabularies.0.translations.ja.definition', '釈義 1')
             ->where('vocabularies.0.translations.ja.example_translation', 'ja 例句 1')
             ->missing('vocabularies.0.definition')
@@ -69,7 +69,7 @@ it('carries every locale of vocabulary content into both quiz phases', function 
 ]);
 
 it('renders the introduction for a group without completed introduction', function () {
-    $response = $this->get("/groups/{$this->group->id}/introduce");
+    $response = $this->get("/zh-tw/groups/{$this->group->id}/introduce");
 
     $response->assertOk()
         ->assertInertia(fn ($page) => $page
@@ -89,23 +89,23 @@ it('redirects a user with a completed introduction away from the introduction ro
     ]);
 
     $this->actingAs($user)
-        ->get("/groups/{$this->group->id}/introduce")
-        ->assertRedirect("/groups/{$this->group->id}/quiz");
+        ->get("/zh-tw/groups/{$this->group->id}/introduce")
+        ->assertRedirect("/zh-tw/groups/{$this->group->id}/quiz");
 });
 
 it('redirects a user without a completed introduction away from the review route', function () {
     $user = User::factory()->create();
 
     $this->actingAs($user)
-        ->get("/groups/{$this->group->id}/quiz")
-        ->assertRedirect("/groups/{$this->group->id}/introduce");
+        ->get("/zh-tw/groups/{$this->group->id}/quiz")
+        ->assertRedirect("/zh-tw/groups/{$this->group->id}/introduce");
 });
 
 it('marks the introduction complete and advances progress when its score passes', function () {
     Carbon::setTestNow('2026-07-28 12:00:00');
     $user = User::factory()->create();
 
-    $response = $this->actingAs($user)->postJson("/groups/{$this->group->id}/progress", [
+    $response = $this->actingAs($user)->postJson("/zh-tw/groups/{$this->group->id}/progress", [
         'phase' => 'introduce',
         'score' => 90,
     ]);
@@ -126,7 +126,7 @@ it('marks the introduction complete and advances progress when its score passes'
 it('does not persist a failed introduction attempt', function () {
     $user = User::factory()->create();
 
-    $this->actingAs($user)->postJson("/groups/{$this->group->id}/progress", [
+    $this->actingAs($user)->postJson("/zh-tw/groups/{$this->group->id}/progress", [
         'phase' => 'introduce',
         'score' => 89,
     ])->assertOk();
@@ -147,7 +147,7 @@ it('applies a one day pending period after a failed review', function () {
         'stage' => 2,
     ]);
 
-    $this->actingAs($user)->postJson("/groups/{$this->group->id}/progress", [
+    $this->actingAs($user)->postJson("/zh-tw/groups/{$this->group->id}/progress", [
         'phase' => 'quiz',
         'score' => 89,
     ])->assertOk();
@@ -157,7 +157,7 @@ it('applies a one day pending period after a failed review', function () {
 });
 
 it('renders a result page with the submitted session result', function () {
-    $response = $this->get("/groups/{$this->group->id}/result?score=90&phase=quiz");
+    $response = $this->get("/zh-tw/groups/{$this->group->id}/result?score=90&phase=quiz");
 
     $response->assertOk()
         ->assertInertia(fn ($page) => $page
@@ -167,13 +167,13 @@ it('renders a result page with the submitted session result', function () {
         );
 });
 test('example', function () {
-    $response = $this->get('/');
+    $response = $this->get(route('home'));
 
     $response->assertStatus(200);
 });
 
 it('lets a guest through to the review phase, since only their browser knows their progress', function () {
-    $this->get("/groups/{$this->group->id}/quiz")
+    $this->get("/zh-tw/groups/{$this->group->id}/quiz")
         ->assertOk()
         ->assertInertia(fn ($page) => $page
             ->component('groups/Quiz')
@@ -195,13 +195,13 @@ it('holds a member out of the review phase until the cooldown elapses', function
     ]);
 
     $this->actingAs($user)
-        ->get("/groups/{$this->group->id}/quiz")
-        ->assertRedirect("/groups/{$this->group->id}");
+        ->get("/zh-tw/groups/{$this->group->id}/quiz")
+        ->assertRedirect("/zh-tw/groups/{$this->group->id}");
 
     $this->travel(13)->hours();
 
     $this->actingAs($user)
-        ->get("/groups/{$this->group->id}/quiz")
+        ->get("/zh-tw/groups/{$this->group->id}/quiz")
         ->assertOk()
         ->assertInertia(fn ($page) => $page->component('groups/Quiz'));
 });
@@ -210,7 +210,7 @@ it('advances a member one stage per passing review until the group is complete',
     Carbon::setTestNow('2026-07-28 12:00:00');
     $user = User::factory()->create();
 
-    $this->actingAs($user)->postJson("/groups/{$this->group->id}/progress", [
+    $this->actingAs($user)->postJson("/zh-tw/groups/{$this->group->id}/progress", [
         'phase' => 'introduce',
         'score' => 100,
     ])->assertOk()->assertJsonPath('progress.stage', 1);
@@ -219,14 +219,14 @@ it('advances a member one stage per passing review until the group is complete',
     foreach ([12, 24, 48, 96, 168] as $index => $cooldownHours) {
         $this->travel($cooldownHours + 1)->hours();
 
-        $this->actingAs($user)->postJson("/groups/{$this->group->id}/progress", [
+        $this->actingAs($user)->postJson("/zh-tw/groups/{$this->group->id}/progress", [
             'phase' => 'quiz',
             'score' => 100,
         ])->assertOk()->assertJsonPath('progress.stage', $index + 2);
     }
 
     $this->actingAs($user)
-        ->get("/groups/{$this->group->id}")
+        ->get("/zh-tw/groups/{$this->group->id}")
         ->assertOk()
         ->assertInertia(fn ($page) => $page
             ->where('progress.stage', 6)

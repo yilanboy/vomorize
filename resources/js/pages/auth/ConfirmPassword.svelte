@@ -59,9 +59,7 @@
                     data-test="confirm-password-button"
                 >
                     {#if processing}<Spinner />{/if}
-                    {processing
-                        ? t['confirming']
-                        : t['confirm_password_button']}
+                    {processing ? t['confirming'] : t['confirm_password_button']}
                 </Button>
             </div>
         </div>

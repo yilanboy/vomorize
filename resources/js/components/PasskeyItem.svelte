@@ -35,7 +35,9 @@
 
 <div class="flex items-center justify-between border-b p-4 last:border-b-0">
     <div class="flex items-center gap-4">
-        <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-zinc-100 dark:bg-zinc-800">
+        <div
+            class="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-zinc-100 dark:bg-zinc-800"
+        >
             <KeyRound class="h-5 w-5 text-zinc-500 dark:text-zinc-400" />
         </div>
         <div class="space-y-1">
@@ -88,9 +90,7 @@
                     {/snippet}
                 </DialogClose>
                 <Button variant="destructive" disabled={isDeleting} onclick={handleDelete}>
-                    {isDeleting
-                        ? t['removing_passkey']
-                        : t['remove_passkey_button']}
+                    {isDeleting ? t['removing_passkey'] : t['remove_passkey_button']}
                 </Button>
             </DialogFooter>
         </DialogContent>

@@ -13,7 +13,9 @@
 </script>
 
 <Avatar class="h-8 w-8 overflow-hidden rounded-full">
-    <AvatarFallback class="rounded-full bg-zinc-200 font-semibold text-zinc-900 dark:bg-zinc-800 dark:text-zinc-50">
+    <AvatarFallback
+        class="rounded-full bg-zinc-200 font-semibold text-zinc-900 dark:bg-zinc-800 dark:text-zinc-50"
+    >
         {getFirstCharacter(user.name)}
     </AvatarFallback>
 </Avatar>

@@ -15,7 +15,7 @@ test('it carries the level names the breadcrumb trail is built from', function (
     $user = User::factory()->create();
     $level = Level::create(['id' => 1]);
 
-    foreach (['zh_TW' => '等級 1', 'zh_CN' => '等级 1', 'ja' => 'レベル 1'] as $locale => $name) {
+    foreach (['zh-tw' => '等級 1', 'zh-cn' => '等级 1', 'ja' => 'レベル 1'] as $locale => $name) {
         LevelTranslation::create([
             'level_id' => $level->id,
             'locale' => $locale,
@@ -39,8 +39,8 @@ test('it carries the level names the breadcrumb trail is built from', function (
     $names = collect($response->viewData('page')['props']['level']['translations'])
         ->pluck('name', 'locale');
 
-    expect($names['zh_TW'])->toBe('等級 1')
-        ->and($names['zh_CN'])->toBe('等级 1')
+    expect($names['zh-tw'])->toBe('等級 1')
+        ->and($names['zh-cn'])->toBe('等级 1')
         ->and($names['ja'])->toBe('レベル 1');
 });
 
@@ -58,8 +58,8 @@ test('it carries the group label template for every locale', function () {
 
     $response->assertOk();
     $response->assertInertia(fn (Assert $page) => $page
-        ->where('translations.app.zh_TW.group_title', '組別 :id')
-        ->where('translations.app.zh_CN.group_title', '组别 :id')
+        ->where('translations.app.zh-tw.group_title', '組別 :id')
+        ->where('translations.app.zh-cn.group_title', '组别 :id')
         ->where('translations.app.ja.group_title', 'グループ :id')
     );
 });

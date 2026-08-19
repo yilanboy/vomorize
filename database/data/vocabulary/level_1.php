@@ -8,11 +8,11 @@ return [
             'pronunciation' => '/ˈsaɪn/',
             'example_sentence' => 'Please sign your name at the bottom of this legal document.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '簽名',
                     'example_translation' => '請在這份法律文件的底部簽名。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '标志；迹象；签名',
                     'example_translation' => '请在这份法律文件的底部签名。',
                 ],
@@ -28,11 +28,11 @@ return [
             'pronunciation' => '/ˈɫəvɫi/',
             'example_sentence' => 'Thank you for the lovely flowers, they look beautiful in this vase.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '迷人的',
                     'example_translation' => '謝謝你送的漂亮花朵，它們放在這個花瓶裡看起來很美。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '迷人的；漂亮的',
                     'example_translation' => '谢谢你送的漂亮花朵，它们放在这个花瓶里看起来很美。',
                 ],
@@ -48,11 +48,11 @@ return [
             'pronunciation' => '/ˈtaɪɝd/',
             'example_sentence' => 'I feel very tired after working all day in the busy office.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '疲勞的',
                     'example_translation' => '在忙碌的辦公室工作了一整天後，我感到非常疲倦。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '疲倦的；累的',
                     'example_translation' => '在忙碌的办公室工作了一整天后，我感到非常疲倦。',
                 ],
@@ -68,11 +68,11 @@ return [
             'pronunciation' => '[T-shirt]',
             'example_sentence' => 'He likes wearing a simple white T-shirt and blue jeans.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => 'T恤',
                     'example_translation' => '他喜歡穿簡單的白色T恤和藍色牛仔褲。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => 'T恤',
                     'example_translation' => '他喜欢穿简单的白色T恤和蓝色牛仔裤。',
                 ],
@@ -88,11 +88,11 @@ return [
             'pronunciation' => '/əˈnəðɝ/',
             'example_sentence' => 'Would you like another cup of tea?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '另一個',
                     'example_translation' => '你想再來一杯茶嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '另一个的；又一',
                     'example_translation' => '你想再来一杯茶吗？',
                 ],
@@ -108,11 +108,11 @@ return [
             'pronunciation' => '/ˈɫɛs/',
             'example_sentence' => 'Try to use less salt in your cooking for better health.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '較少的',
                     'example_translation' => '做飯時試著少放點鹽，這樣對健康更好。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '较少的；更少地',
                     'example_translation' => '做饭时试着少放点盐，这样对健康更好。',
                 ],
@@ -128,11 +128,11 @@ return [
             'pronunciation' => '/ˈbɛɫt/',
             'example_sentence' => 'Fasten your seat belt.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '腰帶；安全帶',
                     'example_translation' => '繫好你的安全帶。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '皮带；安全带',
                     'example_translation' => '系好你的安全带。',
                 ],
@@ -148,11 +148,11 @@ return [
             'pronunciation' => '/ˈsɛnd/',
             'example_sentence' => 'Don\'t forget to send a thank-you note to your aunt for the gift.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '傳送，寄出',
                     'example_translation' => '別忘了給你阿姨寄一張感謝信，謝謝她的禮物。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '发送；寄出',
                     'example_translation' => '别忘了给你阿姨寄一张感谢信，谢谢她的礼物。',
                 ],
@@ -168,11 +168,11 @@ return [
             'pronunciation' => '/ˈɡʊd/, /ɡɪd/',
             'example_sentence' => 'It is a good idea to read a few pages of a book before bed.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '好的',
                     'example_translation' => '睡前讀幾頁書是個好主意。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '好的；优质的',
                     'example_translation' => '睡前读几页书是个好主意。',
                 ],
@@ -188,11 +188,11 @@ return [
             'pronunciation' => '/ˈmæθ/',
             'example_sentence' => 'She is very good at mathematics and always gets top marks.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '數學',
                     'example_translation' => '她非常擅長數學，總是拿到最高分。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '数学',
                     'example_translation' => '她非常擅长数学，总是拿到最高分。',
                 ],
@@ -210,11 +210,11 @@ return [
             'pronunciation' => '/ˈkəmfɝtəbəɫ/',
             'example_sentence' => 'This new sofa is very comfortable to sit on.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '舒服的',
                     'example_translation' => '這張新沙發坐起來非常舒服。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '舒适的；舒服的',
                     'example_translation' => '这张新沙发坐起来非常舒适。',
                 ],
@@ -230,11 +230,11 @@ return [
             'pronunciation' => '/ˈsɑɹi/',
             'example_sentence' => 'I am very sorry for the delay in replying to your email.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '抱歉的',
                     'example_translation' => '非常抱歉耽誤了回覆您的電子郵件。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '抱歉的；对不起的',
                     'example_translation' => '非常抱歉耽误了回复您的电子邮件。',
                 ],
@@ -250,11 +250,11 @@ return [
             'pronunciation' => '/ˈhəndɝd/, /ˈhəndɹəd/, /ˈhəndɹɪd/, /ˈhənɝd/',
             'example_sentence' => 'There were more than five hundred people at the concert.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '百',
                     'example_translation' => '音樂會上有五百多人。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '百',
                     'example_translation' => '音乐会上有五百多人。',
                 ],
@@ -270,11 +270,11 @@ return [
             'pronunciation' => '/ˈaʊtˈsaɪd/',
             'example_sentence' => 'It is very cold outside today, so make sure to wear your coat.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '在外面',
                     'example_translation' => '今天外面很冷，一定要穿上外套。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '在外面；外部的',
                     'example_translation' => '今天外面很冷，一定要穿上外套。',
                 ],
@@ -290,11 +290,11 @@ return [
             'pronunciation' => '/ˈpʊɫ/',
             'example_sentence' => 'Please pull the door to open it, don\'t push, it is fragile.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '拉',
                     'example_translation' => '請拉門打開它，不要推，它很脆弱。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '拉；拖',
                     'example_translation' => '请拉门打开它，不要推，它很脆弱。',
                 ],
@@ -310,11 +310,11 @@ return [
             'pronunciation' => '/ˈɫɔŋ/',
             'example_sentence' => 'The river is very long and winds through several different countries.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '長的',
                     'example_translation' => '這條河很長，蜿蜒流過幾個不同的國家。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '长的；长久的',
                     'example_translation' => '这条河很长，蜿蜒流过几个不同的国家。',
                 ],
@@ -330,11 +330,11 @@ return [
             'pronunciation' => '/ˈʃɑɹp/',
             'example_sentence' => 'Be careful with that knife, it has a very sharp metal blade.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '鋒利的',
                     'example_translation' => '小心那把刀，它有一個非常鋒利的金屬刀刃。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '锋利的；尖锐的',
                     'example_translation' => '小心那把刀，它有一个非常锋利的金属刀刃。',
                 ],
@@ -350,11 +350,11 @@ return [
             'pronunciation' => '/ˈæt/',
             'example_sentence' => 'I\'ll see you at the cinema tonight.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '在',
                     'example_translation' => '今晚我們在電影院見。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '在……',
                     'example_translation' => '今晚我们在电影院见。',
                 ],
@@ -370,11 +370,11 @@ return [
             'pronunciation' => '/ˈsæd/',
             'example_sentence' => 'The movie has a very sad ending that made many people cry.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '傷心的',
                     'example_translation' => '這部電影有一個非常悲傷的結局，讓很多人流淚。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '伤心的；悲伤的',
                     'example_translation' => '这部电影有一个非常悲伤的结局，让很多人流泪。',
                 ],
@@ -390,11 +390,11 @@ return [
             'pronunciation' => '/ˈfən/',
             'example_sentence' => 'We had a lot of fun playing games at the birthday party.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '樂趣',
                     'example_translation' => '我們在生日派對上玩遊戲玩得很開心。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '乐趣；好玩的事',
                     'example_translation' => '表在生日派对上玩游戏玩得很开心。',
                 ],
@@ -412,11 +412,11 @@ return [
             'pronunciation' => '/ˈki/',
             'example_sentence' => 'I can\'t find my house keys, did I leave them in the car?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '鑰匙',
                     'example_translation' => '我找不到我的房門鑰匙了，我是把它們忘在車裡了嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '钥匙',
                     'example_translation' => '我找不到我的房门钥匙了，我是把它们忘在车里了吗？',
                 ],
@@ -432,11 +432,11 @@ return [
             'pronunciation' => '/ˈsmɔɫ/',
             'example_sentence' => 'They live in a small but very cozy house in the countryside.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '小的',
                     'example_translation' => '他們住在鄉下一棟雖然小但非常溫馨的房子裡。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '小的',
                     'example_translation' => '他们住在乡下一栋虽然小但非常温馨的房子里。',
                 ],
@@ -452,11 +452,11 @@ return [
             'pronunciation' => '/ˈɡɫæsəz/, /ˈɡɫæsɪz/',
             'example_sentence' => 'I need to wear my glasses to see the text on the screen clearly.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '眼鏡',
                     'example_translation' => '我需要戴上眼鏡才能看清螢幕上的文字。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '眼镜',
                     'example_translation' => '我需要戴上眼镜才能看清屏幕上的文字。',
                 ],
@@ -472,11 +472,11 @@ return [
             'pronunciation' => '/ˈɫæŋɡwədʒ/',
             'example_sentence' => 'English is a very important language for international communication.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '語言',
                     'example_translation' => '英語是國際交流中非常重要的語言。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '语言',
                     'example_translation' => '英语是国际交流中非常重要的语言。',
                 ],
@@ -492,11 +492,11 @@ return [
             'pronunciation' => '/ˈpɛɹ/',
             'example_sentence' => 'He bought a new pair of leather shoes for his job interview.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '一對',
                     'example_translation' => '他買了一雙新皮鞋去參加工作面試。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '一双',
                     'example_translation' => '他买了一双新皮鞋去参加工作面试。',
                 ],
@@ -512,11 +512,11 @@ return [
             'pronunciation' => '/ˈɫidɝ/',
             'example_sentence' => 'A good leader always listens to the opinions of their team.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '領導者',
                     'example_translation' => '一位好的領導者總是聽取團隊成員的意見。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '领导者',
                     'example_translation' => '一位好的领导者总是听取团队成员的意见。',
                 ],
@@ -532,11 +532,11 @@ return [
             'pronunciation' => '/ˈaʊt/',
             'example_sentence' => 'She went out to buy some milk and bread from the local shop.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '出去',
                     'example_translation' => '她出去到當地的商店買些牛奶和麵包。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '出去',
                     'example_translation' => '她出去到当地的商店买些牛奶和面包。',
                 ],
@@ -552,11 +552,11 @@ return [
             'pronunciation' => '/ˈməðɝ/',
             'example_sentence' => 'My mother is a wonderful cook and she makes the best pies.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '母親',
                     'example_translation' => '我母親是個了不起的廚師，她做的派最好吃。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '母亲',
                     'example_translation' => '我母亲是个了不起的厨师，她做的派最好吃。',
                 ],
@@ -572,11 +572,11 @@ return [
             'pronunciation' => '/ˈɡɹoʊ/',
             'example_sentence' => 'Children grow very fast during their early years.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '生長',
                     'example_translation' => '孩子們在早期生長得非常快。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '生长',
                     'example_translation' => '孩子们在早期生长得非常快。',
                 ],
@@ -592,11 +592,11 @@ return [
             'pronunciation' => '/ˈʃaʊt/',
             'example_sentence' => 'Please don\'t shout in the library, as others are studying.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '喊',
                     'example_translation' => '請不要在圖書館大聲喧嘩，因為別人在學習。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '喊',
                     'example_translation' => '请不要在图书馆大声喧哗，因为别人正在学习。',
                 ],
@@ -614,11 +614,11 @@ return [
             'pronunciation' => '/ˈpæst/',
             'example_sentence' => 'We shouldn\'t worry too much about mistakes we made in the past.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '過去的',
                     'example_translation' => '我們不應該太擔心過去犯的錯誤。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '过去的',
                     'example_translation' => '我们不应该太担心过去犯的错误。',
                 ],
@@ -634,11 +634,11 @@ return [
             'pronunciation' => '/ˈvɪzɪtɝ/',
             'example_sentence' => 'The museum attracts thousands of visitors from all over the world.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '遊客',
                     'example_translation' => '這座博物館吸引了來自世界各地的成千上萬的遊客。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '游客',
                     'example_translation' => '这座博物馆吸引了来自世界各地的成千上万的游客。',
                 ],
@@ -654,11 +654,11 @@ return [
             'pronunciation' => '/ˈsoʊ/',
             'example_sentence' => 'The weather was very cold, so we decided to stay at home.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '所以',
                     'example_translation' => '天氣非常冷，所以我們決定待在家裡。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '所以',
                     'example_translation' => '天气非常冷，所以我们决定待在家里的。',
                 ],
@@ -674,11 +674,11 @@ return [
             'pronunciation' => '/ˈɫɪst/',
             'example_sentence' => 'I have a long list of things that I need to buy today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '清單',
                     'example_translation' => '我有一長串今天需要買的東西。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '清单',
                     'example_translation' => '我有一长串今天需要买的东西。',
                 ],
@@ -694,11 +694,11 @@ return [
             'pronunciation' => '/ˈtwaɪs/',
             'example_sentence' => 'I have visited that beautiful museum at least twice before.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '兩次',
                     'example_translation' => '我至少去過那座美麗的博物館兩次。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '两次',
                     'example_translation' => '我至少去过那座美丽的博物馆两次。',
                 ],
@@ -714,11 +714,11 @@ return [
             'pronunciation' => '/ˈhæbət/',
             'example_sentence' => 'It is important to develop the habit of reading every day.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '習慣',
                     'example_translation' => '養成每天閱讀的習慣非常重要。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '习惯',
                     'example_translation' => '养成每天阅读的习惯非常重要。',
                 ],
@@ -734,11 +734,11 @@ return [
             'pronunciation' => '/ˌoʊˈkeɪ/',
             'example_sentence' => 'Everything will be okay, so don\'t worry too much about it.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '好的',
                     'example_translation' => '一切都會好起來的，所以別太擔心。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '好的',
                     'example_translation' => '一切都会好起来的，所以别太担心。',
                 ],
@@ -754,11 +754,11 @@ return [
             'pronunciation' => '/ˈɹoʊˌbɑt/, /ˈɹoʊˌbət/',
             'example_sentence' => 'Scientists are developing robots that can perform complex tasks.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '機器人',
                     'example_translation' => '科學家正在開發可以執行複雜任務的機器人。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '机器人',
                     'example_translation' => '科学家正在开发可以执行复杂任务的机器人。',
                 ],
@@ -774,11 +774,11 @@ return [
             'pronunciation' => '/ˈbeɪbi/',
             'example_sentence' => 'The baby is sleeping peacefully.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '嬰兒',
                     'example_translation' => '嬰兒正在安靜地睡覺。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '婴儿',
                     'example_translation' => '婴儿正在安静地睡觉。',
                 ],
@@ -794,11 +794,11 @@ return [
             'pronunciation' => '/ˌɪmˈpɔɹtənt/',
             'example_sentence' => 'It is important to remember to take your keys with you.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '重要的',
                     'example_translation' => '記住隨身攜帶鑰匙是很重要的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '重要的',
                     'example_translation' => '记住随身携带钥匙是很重要的。',
                 ],
@@ -816,11 +816,11 @@ return [
             'pronunciation' => '/ˈbæɡ/',
             'example_sentence' => 'I bought a new leather bag.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '包包',
                     'example_translation' => '我買了一個新的皮包。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '包，袋',
                     'example_translation' => '我买了一个新的皮包。',
                 ],
@@ -836,11 +836,11 @@ return [
             'pronunciation' => '/iˈnəf/, /ɪˈnəf/',
             'example_sentence' => 'There is enough food for everyone at the party.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '足夠的',
                     'example_translation' => '派對上有足夠每個人吃的食物。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '足够的',
                     'example_translation' => '派对上有足够每个人吃的食物。',
                 ],
@@ -856,11 +856,11 @@ return [
             'pronunciation' => '/ˈʃaʊɝ/',
             'example_sentence' => 'I usually take a quick shower in the morning to wake up.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '淋浴',
                     'example_translation' => '我通常早上洗個快澡來讓自己清醒。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '淋浴',
                     'example_translation' => '我通常早上洗个快澡来让自己清醒。',
                 ],
@@ -876,11 +876,11 @@ return [
             'pronunciation' => '/ˈkɑmən/',
             'example_sentence' => 'It is common for people to feel nervous before an interview.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '常見的',
                     'example_translation' => '人們在面試前感到緊張是很常見的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '常见的，共同的',
                     'example_translation' => '人们在面试前感到紧张是很常见的。',
                 ],
@@ -896,11 +896,11 @@ return [
             'pronunciation' => '/ˈɫænd/',
             'example_sentence' => 'The plane will land at the international airport in ten minutes.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '降落',
                     'example_translation' => '飛機將在十分鐘內降落在國際機場。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '土地，降落',
                     'example_translation' => '飞机将在十分钟内降落在国际机场。',
                 ],
@@ -916,11 +916,11 @@ return [
             'pronunciation' => '/ˈsɫoʊ/',
             'example_sentence' => 'The traffic was very slow this morning due to the heavy rain.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '慢的',
                     'example_translation' => '由於大雨，今天早上的交通非常緩慢。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '慢的，减速',
                     'example_translation' => '由于大雨，今天早上的交通非常缓慢。',
                 ],
@@ -936,11 +936,11 @@ return [
             'pronunciation' => '/ˈkɫoʊs/, /ˈkɫoʊz/',
             'example_sentence' => 'Please close the window, it is getting cold.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '關閉',
                     'example_translation' => '請關上窗戶，天氣變冷了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '关，近的',
                     'example_translation' => '请关上窗户，天气变冷了。',
                 ],
@@ -956,11 +956,11 @@ return [
             'pronunciation' => '/ˈsɛɫfoʊn/',
             'example_sentence' => 'I forgot my cellphone at home this morning.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '智慧型手機',
                     'example_translation' => '我今天早上把手機忘在家裡了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '手机',
                     'example_translation' => '我今天早上把手机忘家里了。',
                 ],
@@ -976,11 +976,11 @@ return [
             'pronunciation' => '/ˈsaɪəns/',
             'example_sentence' => 'I find science very interesting, especially biology and physics.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '科學',
                     'example_translation' => '我覺得科學非常有趣，尤其是生物和物理。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '科学',
                     'example_translation' => '我觉得科学非常有趣，尤其是生物和物理。',
                 ],
@@ -996,11 +996,11 @@ return [
             'pronunciation' => '/ˈbɔɪ/',
             'example_sentence' => 'The young boy was playing with his toy car.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '男孩',
                     'example_translation' => '那個小男孩正在玩他的玩具車。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '男孩',
                     'example_translation' => '那个小男孩正在玩他的玩具车。',
                 ],
@@ -1018,11 +1018,11 @@ return [
             'pronunciation' => '/ˈɪntʃ/',
             'example_sentence' => 'The tailor measured the length of the fabric in inches.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '英吋',
                     'example_translation' => '裁縫測量了布料的長度，單位是英吋。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '英寸',
                     'example_translation' => '裁缝测量了布料的长度，单位是英寸。',
                 ],
@@ -1038,11 +1038,11 @@ return [
             'pronunciation' => '/ˈhwɛðɝ/, /ˈwɛðɝ/',
             'example_sentence' => 'I am not sure whether I should go to the party tonight.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '是否',
                     'example_translation' => '我不確定我今晚是否應該去參加派對。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '是否',
                     'example_translation' => '我不确定我今晚是否应该去参加派对。',
                 ],
@@ -1058,11 +1058,11 @@ return [
             'pronunciation' => '/ˈɛɹ/',
             'example_sentence' => 'We need fresh air in this room.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '空氣',
                     'example_translation' => '我們這間房間需要新鮮空氣。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '空气',
                     'example_translation' => '我们这间房间需要新鲜空气。',
                 ],
@@ -1078,11 +1078,11 @@ return [
             'pronunciation' => '/ˈkʊki/',
             'example_sentence' => 'She baked some delicious oatmeal cookies for the party.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '餅乾',
                     'example_translation' => '她為派對烤了一些美味的燕麥餅乾。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '饼干',
                     'example_translation' => '她为派对烤了一些美味的燕麦饼干。',
                 ],
@@ -1098,11 +1098,11 @@ return [
             'pronunciation' => '/ˈhaʊs/',
             'example_sentence' => 'They live in a beautiful small house with a large garden.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '房子',
                     'example_translation' => '他們住在一棟帶有大花園的漂亮小房子裡。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '房子',
                     'example_translation' => '他们住在一栋带有大花园的漂亮小房子里。',
                 ],
@@ -1118,11 +1118,11 @@ return [
             'pronunciation' => '/ˈnɑt/',
             'example_sentence' => 'I am not sure if I can come to the party on Friday night.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '不',
                     'example_translation' => '我不確定我週五晚上能不能來參加派對。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '不，不是',
                     'example_translation' => '我不确定我周五晚上能不能来参加派对。',
                 ],
@@ -1138,11 +1138,11 @@ return [
             'pronunciation' => '/ˈpɑpˌkɔɹn/',
             'example_sentence' => 'I love eating fresh popcorn while watching a movie at home.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '爆米花',
                     'example_translation' => '我喜歡在家看電影時吃新鮮的爆米花。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '爆米花',
                     'example_translation' => '我喜欢在家看电影时吃新鲜的爆米花。',
                 ],
@@ -1158,11 +1158,11 @@ return [
             'pronunciation' => '/ˈʃɪp/',
             'example_sentence' => 'The large cargo ship arrived at the port early this morning.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '船',
                     'example_translation' => '那艘大型貨船今天一早抵達港口。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '船，运送',
                     'example_translation' => '那艘大型货船今天一早抵达港口。',
                 ],
@@ -1178,11 +1178,11 @@ return [
             'pronunciation' => '/ˈdɛsk/',
             'example_sentence' => 'She always keeps her desk neat and organized.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '書桌',
                     'example_translation' => '她總是保持書桌整潔有序。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '书桌，办公桌',
                     'example_translation' => '她总是保持书桌整洁有序。',
                 ],
@@ -1198,11 +1198,11 @@ return [
             'pronunciation' => '/ˈnun/',
             'example_sentence' => 'We agreed to meet at the library at noon to study together.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '中午',
                     'example_translation' => '我們約好中午在圖書館見面一起學習。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '中午，正午',
                     'example_translation' => '我们约好中午在图书馆见面一起学习。',
                 ],
@@ -1220,11 +1220,11 @@ return [
             'pronunciation' => '/ˈnaɪt/',
             'example_sentence' => 'The stars were shining very brightly in the clear night sky.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '夜晚',
                     'example_translation' => '星星在晴朗的夜空中閃爍得非常明亮。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '夜晚',
                     'example_translation' => '星星在晴朗的夜空中闪烁得非常明亮。',
                 ],
@@ -1240,11 +1240,11 @@ return [
             'pronunciation' => '/ˈfɑðɝ/',
             'example_sentence' => 'My father is a teacher and he loves his job.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '父親',
                     'example_translation' => '我的父親是一位老師，他很愛他的工作。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '父亲',
                     'example_translation' => '我的父亲是一名教师，他很热爱他的工作。',
                 ],
@@ -1260,11 +1260,11 @@ return [
             'pronunciation' => '/ˈfoʊˌtoʊ/',
             'example_sentence' => 'He took a beautiful photograph of the sunset over the ocean.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '照片',
                     'example_translation' => '他拍了一張海上日落的美麗照片。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '照片',
                     'example_translation' => '他拍了一张海上日落的美丽照片。',
                 ],
@@ -1280,11 +1280,11 @@ return [
             'pronunciation' => '/ˈhiɹ/',
             'example_sentence' => 'Did you hear that strange noise coming from the kitchen?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '聽到',
                     'example_translation' => '你聽見廚房傳來的那個奇怪的聲音了嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '听见',
                     'example_translation' => '你听见厨房传来的那个奇怪的声音了吗？',
                 ],
@@ -1300,11 +1300,11 @@ return [
             'pronunciation' => '/ˈɡɹup/',
             'example_sentence' => 'We worked in a group to finish the science project.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '團體',
                     'example_translation' => '我們分組工作完成了科學專案。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '组；小组',
                     'example_translation' => '我们分组合作完成了科学项目。',
                 ],
@@ -1320,11 +1320,11 @@ return [
             'pronunciation' => '/ˈθɪŋ/',
             'example_sentence' => 'There are many interesting things to see in this museum.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '事物',
                     'example_translation' => '這座博物館裡有很多有趣的東西可以看。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '东西；事物',
                     'example_translation' => '这座博物馆里有很多有趣的东西可以看。',
                 ],
@@ -1340,11 +1340,11 @@ return [
             'pronunciation' => '/ˈfɹut/',
             'example_sentence' => 'Eating fresh fruit every day is good for your overall health.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '水果',
                     'example_translation' => '每天吃新鮮水果對你的整體健康有好處。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '水果',
                     'example_translation' => '每天吃新鲜水果对你的整体健康有好处。',
                 ],
@@ -1360,11 +1360,11 @@ return [
             'pronunciation' => '/əˈɡoʊ/',
             'example_sentence' => 'I moved here five years ago.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '前',
                     'example_translation' => '我五年前搬到這裡。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '以前',
                     'example_translation' => '我五年前搬到了这里。',
                 ],
@@ -1380,11 +1380,11 @@ return [
             'pronunciation' => '/ˈkɹeɪzi/',
             'example_sentence' => 'You must be crazy to go out in such a heavy storm.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '瘋狂的',
                     'example_translation' => '在這麼大的暴風雨中出門，你一定是瘋了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '疯的；发疯的',
                     'example_translation' => '在这么大的暴风雨中出门，你一定是疯了。',
                 ],
@@ -1400,11 +1400,11 @@ return [
             'pronunciation' => '/əˈbɪɫəˌti/',
             'example_sentence' => 'She has the ability to speak four languages.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '能力',
                     'example_translation' => '她有能力說四種語言。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '能力',
                     'example_translation' => '她有能力说四种语言。',
                 ],
@@ -1422,11 +1422,11 @@ return [
             'pronunciation' => '/ˈɛniˌθɪŋ/',
             'example_sentence' => 'Is there anything I can do for you?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '任何事物',
                     'example_translation' => '有什麼我可以為你做的嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '任何事物',
                     'example_translation' => '有什么我可以为您效劳的吗？',
                 ],
@@ -1442,11 +1442,11 @@ return [
             'pronunciation' => '/ˈfɑɫ/, /ˈfɔɫ/',
             'example_sentence' => 'Be careful not to fall on the slippery wet floor.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '跌倒；跌落',
                     'example_translation' => '小心別在濕滑的地板上摔倒。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '跌倒；落下',
                     'example_translation' => '小心别在湿滑的地板上摔倒。',
                 ],
@@ -1462,11 +1462,11 @@ return [
             'pronunciation' => '/ˈɫaɪn/',
             'example_sentence' => 'Please wait in line until it is your turn to be served.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '隊伍；行列',
                     'example_translation' => '請排隊等候，直到輪到你為止。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '线；队伍',
                     'example_translation' => '请排队等候，直到轮到你为止。',
                 ],
@@ -1482,11 +1482,11 @@ return [
             'pronunciation' => '/ˈdək/',
             'example_sentence' => 'Look at those cute little ducks swimming in the pond.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '鴨子',
                     'example_translation' => '看那些在池塘裡游泳的可愛小鴨。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '鸭子',
                     'example_translation' => '看那些在池塘里游泳的可爱小鸭。',
                 ],
@@ -1502,11 +1502,11 @@ return [
             'pronunciation' => '/ˈɫəv/',
             'example_sentence' => 'I really love the peaceful atmosphere of the countryside at night.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '喜愛；愛',
                     'example_translation' => '我真的很喜歡鄉下夜晚寧靜的氣氛。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '爱；喜欢',
                     'example_translation' => '我真的很喜欢乡村夜晚宁静的氛围。',
                 ],
@@ -1522,11 +1522,11 @@ return [
             'pronunciation' => '/ˈtu/, /tə/, /tɪ/',
             'example_sentence' => 'I am going to the library to study for my final exams.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '到',
                     'example_translation' => '我要去圖書館為期末考試做準備。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '向；到',
                     'example_translation' => '我要去图书馆为期末考试做准备。',
                 ],
@@ -1542,11 +1542,11 @@ return [
             'pronunciation' => '/ˈɹɪtʃ/',
             'example_sentence' => 'The cake was very rich and creamy, I could only eat one piece.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '濃郁的',
                     'example_translation' => '這蛋糕口感非常濃郁細膩，我只能吃一塊。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '富有的；浓郁的',
                     'example_translation' => '这块蛋糕口感非常浓郁，我只能吃一块。',
                 ],
@@ -1562,11 +1562,11 @@ return [
             'pronunciation' => '/ˈtaɪ/',
             'example_sentence' => 'He learned how to tie his own shoelaces when he was five.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '繫',
                     'example_translation' => '他五歲時就學會了自己繫鞋帶。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '系；绑',
                     'example_translation' => '他五岁时就学会了自己系鞋带。',
                 ],
@@ -1582,11 +1582,11 @@ return [
             'pronunciation' => '/ˈbi/',
             'example_sentence' => 'A bee is collecting honey from the flowers.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '蜜蜂',
                     'example_translation' => '一隻蜜蜂正在花叢中採蜜。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '蜜蜂',
                     'example_translation' => '一只蜜蜂正在花丛中采蜜。',
                 ],
@@ -1602,11 +1602,11 @@ return [
             'pronunciation' => '/ˈtaʊəɫ/, /ˈtaʊɫ/',
             'example_sentence' => 'Please use a clean towel to dry your hands after washing.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '毛巾',
                     'example_translation' => '洗手後請用乾淨的毛巾擦乾。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '毛巾',
                     'example_translation' => '洗手后请用干净的毛巾擦干。',
                 ],
@@ -1624,11 +1624,11 @@ return [
             'pronunciation' => '/ˈsmɛɫ/',
             'example_sentence' => 'I love the smell of fresh coffee in the kitchen in the morning.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '氣味',
                     'example_translation' => '我喜歡廚房裡清晨新鮮咖啡的味道。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '气味，闻到',
                     'example_translation' => '我喜欢早晨厨房里新鲜咖啡的气味。',
                 ],
@@ -1644,11 +1644,11 @@ return [
             'pronunciation' => '/ˈɫoʊ/',
             'example_sentence' => 'The sun was low in the sky, casting long shadows across the field.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '低的',
                     'example_translation' => '太陽在天空中很低，在田野上投下長長的影子。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '低的，低地',
                     'example_translation' => '太阳在天空中很低，在田野上投下长长的影子。',
                 ],
@@ -1664,11 +1664,11 @@ return [
             'pronunciation' => '/ˈkɫəb/',
             'example_sentence' => 'I joined a book club to meet new people.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '俱樂部，社團',
                     'example_translation' => '我加入了一個讀書俱樂部來結識新朋友。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '俱乐部，社团',
                     'example_translation' => '我加入了一个读书俱乐部，以便结识新朋友。',
                 ],
@@ -1684,11 +1684,11 @@ return [
             'pronunciation' => '/ˈsəni/',
             'example_sentence' => 'It is a beautiful sunny day, perfect for a walk in the park.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '陽光明媚的',
                     'example_translation' => '今天天氣晴朗，非常適合在公園裡散步。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '阳光明媚的，晴朗的',
                     'example_translation' => '今天是一个阳光明媚的好天气，非常适合去公园散步。',
                 ],
@@ -1704,11 +1704,11 @@ return [
             'pronunciation' => '/ˈkəvɝ/',
             'example_sentence' => 'Snow began to cover the ground as the temperature dropped.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '覆蓋',
                     'example_translation' => '隨著氣溫下降，雪開始覆蓋地面。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '覆盖，遮盖',
                     'example_translation' => '随着气温下降，积雪开始覆盖地面。',
                 ],
@@ -1724,11 +1724,11 @@ return [
             'pronunciation' => '/ˈʃuz/',
             'example_sentence' => 'I need to buy a new pair of running shoes for my training.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '鞋子',
                     'example_translation' => '我需要買一雙新的跑步鞋進行訓練。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '鞋子',
                     'example_translation' => '我需要买一双新的跑步鞋来进行训练。',
                 ],
@@ -1744,11 +1744,11 @@ return [
             'pronunciation' => '/ˈtoʊtəɫ/',
             'example_sentence' => 'The total cost of the project was much higher than expected.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '總的',
                     'example_translation' => '該專案的總成本比預期的要高得多。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '总的，总数',
                     'example_translation' => '该项目的总成本远高于预期。',
                 ],
@@ -1764,11 +1764,11 @@ return [
             'pronunciation' => '/ˈfæn/',
             'example_sentence' => 'He is a big fan of classical music and jazz.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '粉絲',
                     'example_translation' => '他是古典音樂和爵士樂的忠實粉絲。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '粉丝，迷，扇子',
                     'example_translation' => '他是古典音乐和爵士乐的忠实粉丝。',
                 ],
@@ -1784,11 +1784,11 @@ return [
             'pronunciation' => '/ˈmɪɫk/',
             'example_sentence' => 'I like to have a cold glass of milk with my chocolate cookies.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '牛奶',
                     'example_translation' => '我喜歡喝一杯冰牛奶配我的巧克力餅乾。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '牛奶',
                     'example_translation' => '我喜欢喝一杯冰牛奶配我的巧克力饼干。',
                 ],
@@ -1804,11 +1804,11 @@ return [
             'pronunciation' => '/əˈɫɔŋ/',
             'example_sentence' => 'We walked along the beach at sunset.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '沿著',
                     'example_translation' => '我們在日落時沿著海灘散步。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '沿着，顺着',
                     'example_translation' => '表现在日落时分沿着海滩散步。',
                 ],
@@ -1826,11 +1826,11 @@ return [
             'pronunciation' => '/ˈɹeɪn/',
             'example_sentence' => 'The heavy rain lasted all night and flooded some local streets.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '雨',
                     'example_translation' => '大雨持續了整晚，淹沒了當地的一些街道。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '雨，下雨',
                     'example_translation' => '大雨持续了一整晚，淹没了当地的一些街道。',
                 ],
@@ -1846,11 +1846,11 @@ return [
             'pronunciation' => '/ˈdɑɹk/',
             'example_sentence' => 'It was getting dark, so they turned on the street lights.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '黑暗的',
                     'example_translation' => '天快黑了，所以他們打開了路燈。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '黑暗的，暗的',
                     'example_translation' => '天渐渐黑了，所以他们打开了路灯。',
                 ],
@@ -1866,11 +1866,11 @@ return [
             'pronunciation' => '/aɪˈdiə/',
             'example_sentence' => 'That is a brilliant idea, we should definitely try it out.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '主意',
                     'example_translation' => '那是個絕妙的主意，我們絕對應該試一試。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '主意，想法',
                     'example_translation' => '那是个绝妙的主意，我们绝对应该试一试。',
                 ],
@@ -1886,11 +1886,11 @@ return [
             'pronunciation' => '/ˈmin/',
             'example_sentence' => 'What does this word mean? I have never seen it before.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '意思是',
                     'example_translation' => '這個單字是什麼意思？我以前從來沒見過它。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '意思是，意味着',
                     'example_translation' => '这个单词是什么意思？我以前从来没见过它。',
                 ],
@@ -1906,11 +1906,11 @@ return [
             'pronunciation' => '/ˈænsɝ/',
             'example_sentence' => 'I don\'t know the answer to this question.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '答案',
                     'example_translation' => '我不知道這個問題的答案。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '答案，回答',
                     'example_translation' => '我不知道这个问题的答案。',
                 ],
@@ -1926,11 +1926,11 @@ return [
             'pronunciation' => '/ˌəndɝˈstænd/',
             'example_sentence' => 'I don\'t quite understand what he meant by that statement.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '理解',
                     'example_translation' => '我不大明白他那番話是什麼意思。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '理解，明白',
                     'example_translation' => '我不大明白他那番话是什么意思。',
                 ],
@@ -1946,11 +1946,11 @@ return [
             'pronunciation' => '/ˈhɪɫ/',
             'example_sentence' => 'We had a picnic on the top of the hill with a great view.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '小山',
                     'example_translation' => '我們在山頂野餐，那裡的景色非常好。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '小山，丘陵',
                     'example_translation' => '表现在山顶野餐，那里的景色非常好。',
                 ],
@@ -1966,11 +1966,11 @@ return [
             'pronunciation' => '/ˈɔnˌɫaɪn/',
             'example_sentence' => 'I prefer to do my grocery shopping online to save some time.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '線上的',
                     'example_translation' => '我更喜歡在線上買雜貨以節省時間。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '在线的，网上的',
                     'example_translation' => '我更喜欢在网上买杂货以节省时间。',
                 ],
@@ -1986,11 +1986,11 @@ return [
             'pronunciation' => '/ˈfæt/',
             'example_sentence' => 'You should avoid eating too much fat and sugar.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '脂肪',
                     'example_translation' => '你應該避免攝取過多的脂肪和糖。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '脂肪，肥胖的',
                     'example_translation' => '你应该避免摄入过多的脂肪和糖。',
                 ],
@@ -2006,11 +2006,11 @@ return [
             'pronunciation' => '/ˈteɪbəɫ/',
             'example_sentence' => 'Please put the flowers in the middle of the dining table.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '桌子',
                     'example_translation' => '請把花放在餐桌中央。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '桌子，餐桌',
                     'example_translation' => '请把花放在餐桌中央。',
                 ],
@@ -2028,11 +2028,11 @@ return [
             'pronunciation' => '/ˈpɑsəbəɫ/',
             'example_sentence' => 'Is it possible to finish the project by the end of this week?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '可能的',
                     'example_translation' => '有可能在本週末前完成這個專案嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '可能的',
                     'example_translation' => '有可能在本周末前完成这个项目吗？',
                 ],
@@ -2048,11 +2048,11 @@ return [
             'pronunciation' => '/ɪkˈspɛnsɪv/',
             'example_sentence' => 'This brand of watch is very expensive because of its high quality.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '昂貴的',
                     'example_translation' => '這個品牌的手錶因為品質高而非常昂貴。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '昂贵的',
                     'example_translation' => '这个品牌的手表因其高品质而非常昂贵。',
                 ],
@@ -2068,11 +2068,11 @@ return [
             'pronunciation' => '/ˈvɪzɪt/',
             'example_sentence' => 'I would love to visit Japan one day to learn about its culture.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '造訪',
                     'example_translation' => '我很想有一天去日本看看，了解一下那裡的文化。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '访问；游览',
                     'example_translation' => '我很想有一天去日本看看，了解一下那里的文化。',
                 ],
@@ -2088,11 +2088,11 @@ return [
             'pronunciation' => '/ˈwɑk/, /ˈwɔk/',
             'example_sentence' => 'Let\'s go for a walk in the park after we finish our dinner.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '散步',
                     'example_translation' => '晚飯後我們去公園散步吧。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '散步；行走',
                     'example_translation' => '吃完晚饭后我们去公园散步吧。',
                 ],
@@ -2108,11 +2108,11 @@ return [
             'pronunciation' => '/ˈwəns/',
             'example_sentence' => 'I have only been to Japan once, but I would love to go back.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '一次',
                     'example_translation' => '我只去過一次日本，但我很想再去。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '一次；曾经',
                     'example_translation' => '我只去过一次日本，但我很想再去。',
                 ],
@@ -2128,11 +2128,11 @@ return [
             'pronunciation' => '/ˈwɛɫ/',
             'example_sentence' => 'She did very well on her English test and got a high grade.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '出色地',
                     'example_translation' => '她英語考試考得很好，拿到了高分。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '很好地',
                     'example_translation' => '她英语考试考得很好，拿到了高分。',
                 ],
@@ -2148,11 +2148,11 @@ return [
             'pronunciation' => '/ˈjuʒəɫi/, /ˈjuʒəwəɫi/',
             'example_sentence' => 'I usually have a quick breakfast before I leave for work.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '通常',
                     'example_translation' => '我通常在上班前吃頓簡單的早餐。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '通常',
                     'example_translation' => '我通常在上班前吃顿简单的早餐。',
                 ],
@@ -2168,11 +2168,11 @@ return [
             'pronunciation' => '/ˈɹən/',
             'example_sentence' => 'I like to run a few miles every morning to stay fit and healthy.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '跑步',
                     'example_translation' => '我喜歡每天早上跑幾英里以保持健康。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '跑步',
                     'example_translation' => '我喜欢每天早上跑几英里以保持健康。',
                 ],
@@ -2188,11 +2188,11 @@ return [
             'pronunciation' => '/ˈfækt/',
             'example_sentence' => 'It is an undeniable fact that the Earth revolves around the Sun.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '事實',
                     'example_translation' => '地球繞著太陽轉是一個不可否認的事實。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '事实',
                     'example_translation' => '地球绕着太阳转是一个不可否认的事实。',
                 ],
@@ -2208,11 +2208,11 @@ return [
             'pronunciation' => '/ˈmiɫ/',
             'example_sentence' => 'Breakfast is considered by many to be the most important meal.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '一餐',
                     'example_translation' => '早餐被許多人認為是一天中最重要的一餐。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '一餐；膳食',
                     'example_translation' => '许多人认为早餐是一天中最重要的一餐。',
                 ],
@@ -2230,11 +2230,11 @@ return [
             'pronunciation' => '/ˈsun/',
             'example_sentence' => 'I hope that the winter will be over soon and spring will arrive.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '很快',
                     'example_translation' => '我希望冬天很快就會結束，春天將會到來。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '很快',
                     'example_translation' => '我希望冬天很快就会结束，春天将会到来。',
                 ],
@@ -2250,11 +2250,11 @@ return [
             'pronunciation' => '/ˈdɪʃ/',
             'example_sentence' => 'She prepared a delicious pasta dish for our guests.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '菜餚',
                     'example_translation' => '她為我們的客人準備了一道美味的義大利麵。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '菜肴；盘子',
                     'example_translation' => '她为我们的客人准备了一道美味的意大利面。',
                 ],
@@ -2270,11 +2270,11 @@ return [
             'pronunciation' => '/ˌɪnˈvaɪt/',
             'example_sentence' => 'They would like to invite you to their wedding ceremony.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '邀請',
                     'example_translation' => '他們想邀請你參加他們的婚禮。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '邀请',
                     'example_translation' => '他们想邀请你参加他们的婚礼。',
                 ],
@@ -2290,11 +2290,11 @@ return [
             'pronunciation' => '/ˈɔɫˌweɪz/, /ˈɔɫwiz/',
             'example_sentence' => 'He is always on time for work.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '總是',
                     'example_translation' => '他上班總是準時。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '总是；一直',
                     'example_translation' => '他上班总是很准时。',
                 ],
@@ -2310,11 +2310,11 @@ return [
             'pronunciation' => '/ˈhæŋ/',
             'example_sentence' => 'I\'m going to hang this new painting in the living room.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '懸掛',
                     'example_translation' => '我打算把這幅新畫掛在客廳裡。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '悬挂',
                     'example_translation' => '我打算把这幅新画挂在客厅里。',
                 ],
@@ -2330,11 +2330,11 @@ return [
             'pronunciation' => '/ˈskwɛɹ/',
             'example_sentence' => 'There is a large public square in the center of the old town.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '廣場',
                     'example_translation' => '在舊城區中心有一個大型公共廣場。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '广场；正方形',
                     'example_translation' => '在老城区中心有一个大型公共广场。',
                 ],
@@ -2350,11 +2350,11 @@ return [
             'pronunciation' => '/ˈfɫaʊɝ/',
             'example_sentence' => 'Spring is the season when many flowers begin to bloom.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '花',
                     'example_translation' => '春天是許多花朵開始綻放的季節。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '花',
                     'example_translation' => '春天是许多花朵开始绽放的季节。',
                 ],
@@ -2370,11 +2370,11 @@ return [
             'pronunciation' => '/ˈmɪstɝ/',
             'example_sentence' => 'Mr. Smith is our new English teacher and he is very kind.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '先生',
                     'example_translation' => '史密斯先生是我們的新英語老師，他非常友善。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '先生',
                     'example_translation' => '史密斯先生是我们的新英语老师，他非常友善。',
                 ],
@@ -2390,11 +2390,11 @@ return [
             'pronunciation' => '/ˈdɹɪŋk/',
             'example_sentence' => 'It is important to drink plenty of water every day.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '喝',
                     'example_translation' => '每天喝充足的水很重要。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '喝；饮料',
                     'example_translation' => '每天喝充足的水很重要。',
                 ],
@@ -2410,11 +2410,11 @@ return [
             'pronunciation' => '/ˈsɛɫəˌbɹeɪt/',
             'example_sentence' => 'They had a party to celebrate their anniversary.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '慶祝',
                     'example_translation' => '他們開了個派對來慶祝他們的週年紀念。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '庆祝',
                     'example_translation' => '他们举办了一个派对来庆祝他们的周年纪念日。',
                 ],
@@ -2432,11 +2432,11 @@ return [
             'pronunciation' => '/ˈmeɪk/',
             'example_sentence' => 'She decided to make a special cake for her mother\'s birthday.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '製作',
                     'example_translation' => '她決定為她母親的生日做一個特別的蛋糕。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '制作',
                     'example_translation' => '她决定在她母亲生日时做一个特别的蛋糕。',
                 ],
@@ -2452,11 +2452,11 @@ return [
             'pronunciation' => '/ˌhaʊˈɛvɝ/',
             'example_sentence' => 'He worked very hard; however, he didn\'t pass the difficult exam.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '然而',
                     'example_translation' => '他工作非常努力；然而，他沒能通過那場很難的考試。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '然而',
                     'example_translation' => '他非常努力地工作；然而，他没能通过那场艰难的考试。',
                 ],
@@ -2472,11 +2472,11 @@ return [
             'pronunciation' => '/ˈpɔɪnt/',
             'example_sentence' => 'The teacher used a laser pointer to point to the new formula.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '指向',
                     'example_translation' => '老師用雷射筆指向那個新公式。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '指，要点',
                     'example_translation' => '老师用激光笔指向那个新公式。',
                 ],
@@ -2492,11 +2492,11 @@ return [
             'pronunciation' => '/ˈkɔɹs/',
             'example_sentence' => 'She is taking an online course to improve her coding skills.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '課程',
                     'example_translation' => '她正在修一門線上課程以提高她的程式設計技能。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '课程',
                     'example_translation' => '她正在修一门在线课程，以提高她的编程技能。',
                 ],
@@ -2512,11 +2512,11 @@ return [
             'pronunciation' => '/ˈnɔɪzi/',
             'example_sentence' => 'The restaurant was very noisy, so it was hard to have a talk.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '吵雜的',
                     'example_translation' => '那家餐廳非常吵鬧，所以很難進行交談。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '吵闹的',
                     'example_translation' => '那家餐厅非常吵闹，所以很难进行交谈。',
                 ],
@@ -2532,11 +2532,11 @@ return [
             'pronunciation' => '/fɝˈɡɛt/, /fɔɹˈɡɛt/',
             'example_sentence' => 'I always forget where I put my keys when I am in a hurry.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '忘記',
                     'example_translation' => '當我匆忙時，我總是忘記把鑰匙放在哪裡了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '忘记',
                     'example_translation' => '当我很着急时，我总是忘记把钥匙放在哪里了。',
                 ],
@@ -2552,11 +2552,11 @@ return [
             'pronunciation' => '/ˈstɑɹt/',
             'example_sentence' => 'The meeting is scheduled to start at exactly nine o\'clock.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '開始',
                     'example_translation' => '會議定於九點整開始。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '开始',
                     'example_translation' => '会议定于九点整开始。',
                 ],
@@ -2572,11 +2572,11 @@ return [
             'pronunciation' => '/ˈɹiɫi/, /ˈɹɪɫi/',
             'example_sentence' => 'I am really looking forward to meeting your family next week.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '真的',
                     'example_translation' => '我真的很期待下週見到你的家人。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '真正地，确实',
                     'example_translation' => '我真的很期待下周见你的家人。',
                 ],
@@ -2592,11 +2592,11 @@ return [
             'pronunciation' => '/ˈwɔtɝ/',
             'example_sentence' => 'It is important to drink plenty of water to stay hydrated.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '水',
                     'example_translation' => '喝充足的水以保持水分是很重要的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '水',
                     'example_translation' => '喝充足的水以保持水分是非常重要的。',
                 ],
@@ -2612,11 +2612,11 @@ return [
             'pronunciation' => '/ˈmeɪn/',
             'example_sentence' => 'The main reason for his success is his persistent hard work.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '主要的',
                     'example_translation' => '他成功的主要原因是他堅持不懈的努力。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '主要的',
                     'example_translation' => '他成功的主要原因是他坚持不懈的努力。',
                 ],
@@ -2634,11 +2634,11 @@ return [
             'pronunciation' => '/ˈtɛmpəɫ/',
             'example_sentence' => 'We visited an ancient temple during our trip to Japan.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '寺廟',
                     'example_translation' => '我們在日本旅行期間參觀了一座古老的寺廟。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '寺庙',
                     'example_translation' => '我们在日本旅行期间参观了一座古老的寺庙。',
                 ],
@@ -2654,11 +2654,11 @@ return [
             'pronunciation' => '/ˈstədi/',
             'example_sentence' => 'I need to study hard for my final exams next week.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '學習',
                     'example_translation' => '我需要為下週的期末考試努力學習。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '学习',
                     'example_translation' => '我需要为下周的期末考试努力学习。',
                 ],
@@ -2674,11 +2674,11 @@ return [
             'pronunciation' => '/ˈθɪk/',
             'example_sentence' => 'The forest was so thick that it was hard to find our way.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '茂密的',
                     'example_translation' => '森林非常茂密，很難找到路。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '茂密的，厚的',
                     'example_translation' => '森林非常茂密，以至于很难找到路。',
                 ],
@@ -2694,11 +2694,11 @@ return [
             'pronunciation' => '/ˈɡɹæs/',
             'example_sentence' => 'The children are playing happily on the green grass in the park.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '草',
                     'example_translation' => '孩子們在公園的綠草地上開心地玩耍。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '草，草地',
                     'example_translation' => '孩子们在公园的绿草地上开心地玩耍。',
                 ],
@@ -2714,11 +2714,11 @@ return [
             'pronunciation' => '/ˈnəmbɝ/',
             'example_sentence' => 'Please write your phone number on this piece of paper.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '號碼',
                     'example_translation' => '請把你的電話號碼寫在這張紙上。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '号码，数字',
                     'example_translation' => '请把你的电话号码写在这张纸上。',
                 ],
@@ -2734,11 +2734,11 @@ return [
             'pronunciation' => '/ˈsɫɪm/',
             'example_sentence' => 'She has a very slim figure because she exercises regularly.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '苗條的',
                     'example_translation' => '她的身材非常苗條，因為她經常運動。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '苗条的',
                     'example_translation' => '她的身材非常苗条，因为她经常运动。',
                 ],
@@ -2754,11 +2754,11 @@ return [
             'pronunciation' => '/ˈkʊk/',
             'example_sentence' => 'My father is a great cook, he makes the best pasta.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '廚師',
                     'example_translation' => '我父親是個了不起的廚師，他做的義大利麵最好吃。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '厨师',
                     'example_translation' => '我的父亲是个了不起的厨师，他做的意大利面最好吃。',
                 ],
@@ -2774,11 +2774,11 @@ return [
             'pronunciation' => '/ˈbæˌθɹum/',
             'example_sentence' => 'Where is the bathroom?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '洗手間',
                     'example_translation' => '洗手間在哪裡？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '浴室，洗手间',
                     'example_translation' => '洗手间在哪里？',
                 ],
@@ -2794,11 +2794,11 @@ return [
             'pronunciation' => '/ˌɡʊdˈbaɪ/',
             'example_sentence' => 'They said goodbye to each other at the airport and promised to write.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '再見',
                     'example_translation' => '他們在機場互相道別，並答應寫信。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '再见',
                     'example_translation' => '他们在机场互相道别，并承诺会写信。',
                 ],
@@ -2814,11 +2814,11 @@ return [
             'pronunciation' => '/ˈsoʊɫdʒɝ/',
             'example_sentence' => 'The soldier returned home to a warm welcome from his family.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '士兵',
                     'example_translation' => '士兵回到家中，受到了家人的熱烈歡迎。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '士兵',
                     'example_translation' => '士兵回到家中，受到了家人的热烈欢迎。',
                 ],
@@ -2836,11 +2836,11 @@ return [
             'pronunciation' => '/təˈmɑˌɹoʊ/, /tuˈmɑˌɹoʊ/',
             'example_sentence' => 'Tomorrow is another day, so don\'t worry too much about today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '明天',
                     'example_translation' => '明天又是新的一天，所以不要太擔心今天。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '明天',
                     'example_translation' => '明天又是新的一天，所以不要太担心今天。',
                 ],
@@ -2856,11 +2856,11 @@ return [
             'pronunciation' => '/ˈtɹək/',
             'example_sentence' => 'The large truck was carrying goods to the local supermarkets.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '卡車',
                     'example_translation' => '那輛大卡車正運送貨物到當地的超市。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '卡车',
                     'example_translation' => '那辆大卡车正在运送货物到当地的超市。',
                 ],
@@ -2876,11 +2876,11 @@ return [
             'pronunciation' => '/ˈweɪt/',
             'example_sentence' => 'Please wait for me near the entrance of the cinema, thank you.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '等待',
                     'example_translation' => '請在電影院入口附近等我，謝謝。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '等待',
                     'example_translation' => '请在电影院入口附近等我，谢谢。',
                 ],
@@ -2896,11 +2896,11 @@ return [
             'pronunciation' => '/ˈfɹɛndɫi/, /ˈfɹɛnɫi/',
             'example_sentence' => 'The local people are very friendly and always willing to help.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '友善的',
                     'example_translation' => '當地人非常友善，總是很樂意提供幫助。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '友善的',
                     'example_translation' => '当地人非常友善，总是很乐意提供帮助。',
                 ],
@@ -2916,11 +2916,11 @@ return [
             'pronunciation' => '/ˈɹaʊnd/',
             'example_sentence' => 'The children sat in a large round circle on the green grass.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '圓形的',
                     'example_translation' => '孩子們在大草地上坐成一個大圓圈。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '圆形',
                     'example_translation' => '孩子们在大草地上坐成一个大圆圈。',
                 ],
@@ -2936,11 +2936,11 @@ return [
             'pronunciation' => '/ˈhaɪd/',
             'example_sentence' => 'The little boy tried to hide behind the large curtains.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '隱藏',
                     'example_translation' => '那個小男孩試圖躲在大窗簾後面。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '隐藏',
                     'example_translation' => '那个小男孩试图躲在大窗帘后面。',
                 ],
@@ -2956,11 +2956,11 @@ return [
             'pronunciation' => '/ˈnɑɫədʒ/',
             'example_sentence' => 'Books are a great source of knowledge and inspiration.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '知識',
                     'example_translation' => '書是知識和靈感的泉源。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '知识',
                     'example_translation' => '书是知识和灵感的泉源。',
                 ],
@@ -2976,11 +2976,11 @@ return [
             'pronunciation' => '/ˈhɛɫpfəɫ/',
             'example_sentence' => 'The information you provided was very helpful for my research.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '有幫助的',
                     'example_translation' => '你提供的資訊對我的研究非常有幫助。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '有帮助的',
                     'example_translation' => '你提供的信息对我的研究非常有帮助。',
                 ],
@@ -2996,11 +2996,11 @@ return [
             'pronunciation' => '/ˈfɪnɪʃ/',
             'example_sentence' => 'I need to finish this report before I can go home today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '結束',
                     'example_translation' => '我需要在今天回家前完成這份報告。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '结束',
                     'example_translation' => '我需要在今天回家前完成这份报告。',
                 ],
@@ -3016,11 +3016,11 @@ return [
             'pronunciation' => '/ˈpɹaʊd/',
             'example_sentence' => 'His parents are very proud of his academic achievements.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '自豪的',
                     'example_translation' => '他的父母為他的學業成就感到非常自豪。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '自豪的',
                     'example_translation' => '他的父母为他的学业成就感到非常自豪。',
                 ],
@@ -3038,11 +3038,11 @@ return [
             'pronunciation' => '/ˈsit/',
             'example_sentence' => 'Please have a seat and the doctor will be with you shortly.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '座位',
                     'example_translation' => '請坐，醫生馬上就會過來。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '座位',
                     'example_translation' => '请坐，医生马上就会过来。',
                 ],
@@ -3058,11 +3058,11 @@ return [
             'pronunciation' => '/ˈtɹaɪ/',
             'example_sentence' => 'You should try your best to achieve your goals in life.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '嘗試',
                     'example_translation' => '你應該盡力去實現你的人生目標。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '尝试',
                     'example_translation' => '你应该尽力去实现你的人生目标。',
                 ],
@@ -3078,11 +3078,11 @@ return [
             'pronunciation' => '/ˈnɑk/',
             'example_sentence' => 'I heard a loud knock at the door, but nobody was there.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '敲',
                     'example_translation' => '我聽到一聲響亮的敲門聲，但門外沒人。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '敲',
                     'example_translation' => '我听到一声响亮的敲门声，但门外没人。',
                 ],
@@ -3098,11 +3098,11 @@ return [
             'pronunciation' => '/ˈmɛɹid/',
             'example_sentence' => 'They have been happily married for more than twenty years.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '已婚',
                     'example_translation' => '他們已經幸福地結婚二十多年了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '已婚的',
                     'example_translation' => '他们已经幸福地结婚二十多年了。',
                 ],
@@ -3118,11 +3118,11 @@ return [
             'pronunciation' => '/ˈpeɪmənt/',
             'example_sentence' => 'You can choose to pay for your order by cash or credit card.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '付款',
                     'example_translation' => '你可以選擇用現金或信用卡支付訂單。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '付款',
                     'example_translation' => '你可以选择用现金或信用卡支付订单。',
                 ],
@@ -3138,11 +3138,11 @@ return [
             'pronunciation' => '/ˈɫaɪf/',
             'example_sentence' => 'She wants to dedicate her life to helping people in need.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '人生',
                     'example_translation' => '她想把自己的一生奉獻給幫助有需要的人。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '生活',
                     'example_translation' => '她想把自己的一生奉献给帮助有需要的人。',
                 ],
@@ -3158,11 +3158,11 @@ return [
             'pronunciation' => '/ˈkaʊtʃ/',
             'example_sentence' => 'We bought a new leather couch for the living room.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '長椅',
                     'example_translation' => '我們為客廳買了一個新的皮沙發。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '长沙发',
                     'example_translation' => '我们为客厅买了一个新的皮沙发。',
                 ],
@@ -3178,11 +3178,11 @@ return [
             'pronunciation' => '/ˈɛɡ/',
             'example_sentence' => 'I like to have a boiled egg and a piece of toast for breakfast.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '蛋',
                     'example_translation' => '我喜歡早餐吃一個水煮蛋和一片吐司。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '蛋',
                     'example_translation' => '我喜欢早餐吃一个水煮蛋和一片吐司。',
                 ],
@@ -3198,11 +3198,11 @@ return [
             'pronunciation' => '/ˈɹeɪdiˌoʊ/',
             'example_sentence' => 'My grandfather still enjoys listening to the news on the radio.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '收音機',
                     'example_translation' => '我爺爺仍然喜歡聽收音機裡的廣播新聞。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '收音机',
                     'example_translation' => '我爷爷仍然喜欢听收音机里的广播新闻。',
                 ],
@@ -3218,11 +3218,11 @@ return [
             'pronunciation' => '/ˈskuɫ/',
             'example_sentence' => 'My little sister is starting primary school this September.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '學校',
                     'example_translation' => '我的小妹妹今年九月要開始上小學了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '学校',
                     'example_translation' => '我的小妹妹今年九月要开始上小学了。',
                 ],
@@ -3240,11 +3240,11 @@ return [
             'pronunciation' => '/ˈnjuz/, /ˈnuz/',
             'example_sentence' => 'I just heard some very exciting news about your new project.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '消息',
                     'example_translation' => '我剛聽到了關於你新專案的一些非常令人興奮的消息。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '新闻；消息',
                     'example_translation' => '我刚听到了关于你新项目的一些非常令人兴奋的消息。',
                 ],
@@ -3260,11 +3260,11 @@ return [
             'pronunciation' => '/ˈtʃip/',
             'example_sentence' => 'These oranges are very cheap at this market.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '便宜的',
                     'example_translation' => '這些橘子在這個市場很便宜。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '便宜的；廉价的',
                     'example_translation' => '这些橘子在这个市场卖得很便宜。',
                 ],
@@ -3280,11 +3280,11 @@ return [
             'pronunciation' => '/ˈɔɹdɝ/',
             'example_sentence' => 'The manager gave an order to start the project immediately.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '命令',
                     'example_translation' => '經理下令立即開始該專案。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '命令；指示',
                     'example_translation' => '经理下令立即开始该项目。',
                 ],
@@ -3300,11 +3300,11 @@ return [
             'pronunciation' => '/ˈhɛɫp/',
             'example_sentence' => 'Can you please help me with these heavy shopping bags?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '幫助',
                     'example_translation' => '能請你幫我提這些沉重的購物袋嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '帮助；协助',
                     'example_translation' => '能请你帮我拿一下这些沉重的购物袋吗？',
                 ],
@@ -3320,11 +3320,11 @@ return [
             'pronunciation' => '/ˈhu/',
             'example_sentence' => 'Who is the person in charge of this new research project?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '誰',
                     'example_translation' => '誰是這個新研究專案的負責人？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '谁；什么人',
                     'example_translation' => '谁是这个新研究项目的负责人？',
                 ],
@@ -3340,11 +3340,11 @@ return [
             'pronunciation' => '/ˈkwɪk/',
             'example_sentence' => 'She gave a quick answer to the question and then sat down.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '快的',
                     'example_translation' => '她快速回答了問題，然後坐了下來。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '快的；迅速的',
                     'example_translation' => '她快速地回答了问题，然后坐了下来。',
                 ],
@@ -3360,11 +3360,11 @@ return [
             'pronunciation' => '/ˈɡɹeɪt/',
             'example_sentence' => 'He is a great leader who inspires everyone around him.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '偉大的',
                     'example_translation' => '他是一位能激勵身邊每個人的偉大領袖。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '伟大的；出色的',
                     'example_translation' => '他是一位能够激励身边的每一个人的伟大领袖。',
                 ],
@@ -3380,11 +3380,11 @@ return [
             'pronunciation' => '/ˈspɛɫ/',
             'example_sentence' => 'Could you please tell me how to spell your last name correctly?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '拼寫',
                     'example_translation' => '您可以告訴我您的姓氏要怎麼正確拼寫嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '拼写',
                     'example_translation' => '你能告诉我你的姓氏怎么拼写吗？',
                 ],
@@ -3400,11 +3400,11 @@ return [
             'pronunciation' => '/ˈhɑbi/',
             'example_sentence' => 'My favorite hobby is collecting rare old coins.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '嗜好',
                     'example_translation' => '我最喜歡的愛好是收集稀有的舊硬幣。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '业余爱好',
                     'example_translation' => '我最喜欢的爱好是收集稀有的古钱币。',
                 ],
@@ -3420,11 +3420,11 @@ return [
             'pronunciation' => '/ˈbɝd/',
             'example_sentence' => 'Look at that beautiful bird in the tree.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '鳥',
                     'example_translation' => '看看樹上那隻美麗的鳥。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '鸟',
                     'example_translation' => '看看树上那只美丽的鸟。',
                 ],
@@ -3442,11 +3442,11 @@ return [
             'pronunciation' => '/ˈtɹi/',
             'example_sentence' => 'There are many different types of trees in this large forest.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '樹',
                     'example_translation' => '這個大森林裡有許多不同種類的樹木。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '树；树木',
                     'example_translation' => '这片大森林里有许多不同种类的树木。',
                 ],
@@ -3462,11 +3462,11 @@ return [
             'pronunciation' => '/ˈɫaɪ/',
             'example_sentence' => 'It is always better to tell the truth than to tell a lie.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '謊言',
                     'example_translation' => '說實話總是比說謊好。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '谎言；撒谎',
                     'example_translation' => '讲实话总是比撒谎要好。',
                 ],
@@ -3482,11 +3482,11 @@ return [
             'pronunciation' => '/ˈkɪk/',
             'example_sentence' => 'He tried to kick the ball into the goal but he missed.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '踢',
                     'example_translation' => '他試圖把球踢進球門，但是沒踢中。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '踢',
                     'example_translation' => '他试图把球踢进球门，但没踢中。',
                 ],
@@ -3502,11 +3502,11 @@ return [
             'pronunciation' => '/ˈɝɫi/',
             'example_sentence' => 'I usually wake up early in the morning to go for a run.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '早的',
                     'example_translation' => '我通常早上起得很早去跑步。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '早的；提早的',
                     'example_translation' => '我通常早上起得很早去跑步。',
                 ],
@@ -3522,11 +3522,11 @@ return [
             'pronunciation' => '/ˈpɫeɪt/',
             'example_sentence' => 'Please put the dirty plates in the dishwasher after dinner.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '盤子',
                     'example_translation' => '晚餐後請把髒盤子放進洗碗機。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '盘子',
                     'example_translation' => '晚餐后请把脏盘子放进洗碗机里。',
                 ],
@@ -3542,11 +3542,11 @@ return [
             'pronunciation' => '/ˈʃoʊɫdɝ/',
             'example_sentence' => 'He carried the small child on his shoulders through the crowd.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '肩膀',
                     'example_translation' => '他扛著小孩穿過人群。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '肩膀',
                     'example_translation' => '他扛着小孩子穿过了人群。',
                 ],
@@ -3562,11 +3562,11 @@ return [
             'pronunciation' => '/pəˈteɪˌtoʊ/',
             'example_sentence' => 'I like to have some mashed potatoes with my roast chicken.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '馬鈴薯',
                     'example_translation' => '我喜歡在吃烤雞時配一些馬鈴薯泥。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '土豆；马铃薯',
                     'example_translation' => '我喜欢在吃烤鸡时配一些土豆泥。',
                 ],
@@ -3582,11 +3582,11 @@ return [
             'pronunciation' => '/ˈbətɝ/',
             'example_sentence' => 'Would you like some butter on your toast?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '奶油',
                     'example_translation' => '你想在吐司上加點奶油嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '黄油',
                     'example_translation' => '你想在吐司上抹点黄油吗？',
                 ],
@@ -3602,11 +3602,11 @@ return [
             'pronunciation' => '/ˈpɛt/',
             'example_sentence' => 'Having a pet can bring a lot of joy and companionship to a home.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '寵物',
                     'example_translation' => '養寵物可以給家裡帶來許多快樂和陪伴。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '宠物',
                     'example_translation' => '养宠物能给家里带来许多快乐和陪伴。',
                 ],
@@ -3622,11 +3622,11 @@ return [
             'pronunciation' => '/ˈɹɔŋ/',
             'example_sentence' => 'I am afraid that you have provided the wrong phone number.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '錯誤的',
                     'example_translation' => '我恐怕你提供了錯誤的電話號碼。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '错误的；不对的',
                     'example_translation' => '恐怕你提供了错误的电话号码。',
                 ],
@@ -3644,11 +3644,11 @@ return [
             'pronunciation' => '/ˈɡɛt/, /ˈɡɪt/',
             'example_sentence' => 'Could you help me get that box down from the top shelf?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '拿取',
                     'example_translation' => '你能幫我把那個盒子從最上面的架子上拿下來嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '拿取；得到',
                     'example_translation' => '你能帮我把那个盒子从最上面的架子上拿下来吗？',
                 ],
@@ -3664,11 +3664,11 @@ return [
             'pronunciation' => '/ˈfaɪnd/',
             'example_sentence' => 'I can\'t find my keys, have you seen them anywhere?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '找到',
                     'example_translation' => '我找不到我的鑰匙了，你在哪裡見過嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '找到；发现',
                     'example_translation' => '我找不到我的钥匙了，你在哪儿看见过吗？',
                 ],
@@ -3684,11 +3684,11 @@ return [
             'pronunciation' => '/ˈkæmɝə/, /ˈkæmɹə/',
             'example_sentence' => 'He took a lot of pictures with his new camera.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '相機',
                     'example_translation' => '他用他的新相機拍了很多照片。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '相机',
                     'example_translation' => '他用他的新相机拍了很多照片。',
                 ],
@@ -3704,11 +3704,11 @@ return [
             'pronunciation' => '/ˈbɛst/',
             'example_sentence' => 'He is my best friend.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '最好的',
                     'example_translation' => '他是我最好的朋友。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '最好的',
                     'example_translation' => ' pessimism他是我的好朋友。',
                 ],
@@ -3724,11 +3724,11 @@ return [
             'pronunciation' => '/ˈfɹi/',
             'example_sentence' => 'The best things in life are often free, like a beautiful sunset.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '免費的',
                     'example_translation' => '生活中最好的東西往往是免費的，比如美麗的日落。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '免费的；自由的',
                     'example_translation' => '生活中最好的东西往往是免费的，比如美丽的日落。',
                 ],
@@ -3744,11 +3744,11 @@ return [
             'pronunciation' => '/ˈɫɛd/, /ˈɫid/',
             'example_sentence' => 'She will lead the team to success with her excellent vision.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '帶領',
                     'example_translation' => '她將以其卓越的遠見帶領團隊走向成功。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '带领；引导',
                     'example_translation' => '她将以其卓越的远见带领团队走向成功。',
                 ],
@@ -3764,11 +3764,11 @@ return [
             'pronunciation' => '/wɪˈðaʊt/, /wɪˈθaʊt/',
             'example_sentence' => 'I can\'t imagine my life without music and literature.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '沒有',
                     'example_translation' => '我無法想像沒有音樂和文學的生活。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '没有；无',
                     'example_translation' => '我无法想象没有音乐和文学的生活。',
                 ],
@@ -3784,11 +3784,11 @@ return [
             'pronunciation' => '/ˈteɪk/',
             'example_sentence' => 'Don\'t forget to take your umbrella with you, it might rain.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '拿；帶',
                     'example_translation' => '別忘了帶傘，可能會下雨。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '拿；带去',
                     'example_translation' => '别忘了带伞，可能会下雨。',
                 ],
@@ -3804,11 +3804,11 @@ return [
             'pronunciation' => '/ˈtaɪɡɝ/',
             'example_sentence' => 'The tiger is one of the most powerful wild animals in the world.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '老虎',
                     'example_translation' => '老虎是世界上最強大的野生動物之一。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '老虎',
                     'example_translation' => '老虎是世界上最强大的野生动物之一。',
                 ],
@@ -3824,11 +3824,11 @@ return [
             'pronunciation' => '/ˈhæpən/',
             'example_sentence' => 'I wonder what will happen if we don\'t finish the work on time.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '發生',
                     'example_translation' => '我想知道如果我們不能按時完成工作會發生什麼。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '发生',
                     'example_translation' => '我想知道如果我们不能按时完成工作会发生什么。',
                 ],
@@ -3846,11 +3846,11 @@ return [
             'pronunciation' => '/ˈkoʊt/',
             'example_sentence' => 'Don\'t forget to wear your coat, it is snowing outside.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '外套',
                     'example_translation' => '別忘了穿上你的外套，外面正在下雪。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '外套；大衣',
                     'example_translation' => '别忘了穿上你的外套，外面正在下雪。',
                 ],
@@ -3866,11 +3866,11 @@ return [
             'pronunciation' => '/ˈɔɫsoʊ/',
             'example_sentence' => 'She also likes to play the piano.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '也',
                     'example_translation' => '她也喜歡彈鋼琴。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '也；还',
                     'example_translation' => '她也喜欢弹钢琴。',
                 ],
@@ -3886,11 +3886,11 @@ return [
             'pronunciation' => '/ˈɡɫæs/',
             'example_sentence' => 'Be careful not to step on any broken glass on the floor.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '玻璃',
                     'example_translation' => '小心不要踩到地板上的碎玻璃。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '玻璃；玻璃杯',
                     'example_translation' => '小心不要踩到地板上的碎玻璃。',
                 ],
@@ -3906,11 +3906,11 @@ return [
             'pronunciation' => '/ˈɫaɪv/, /ˈɫɪv/',
             'example_sentence' => 'They live in a small apartment near the city center.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '居住',
                     'example_translation' => '他們住在市中心附近的一個小公寓裡。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '居住；生活',
                     'example_translation' => '他们住在市中心附近的一个小公寓里。',
                 ],
@@ -3926,11 +3926,11 @@ return [
             'pronunciation' => '/ˈɫeɪzi/',
             'example_sentence' => 'Don\'t be lazy, you need to work hard to achieve your goals.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '懶惰的',
                     'example_translation' => '別偷懶，你需要努力工作才能實現你的目標。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '懒惰的',
                     'example_translation' => '别偷懒，你需要努力工作才能实现你的目标。',
                 ],
@@ -3946,11 +3946,11 @@ return [
             'pronunciation' => '/ˈoʊn/',
             'example_sentence' => 'He wants to start his own business after he graduates from college.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '自己的',
                     'example_translation' => '他想在大學畢業後創辦自己的事業。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '自己的；拥有',
                     'example_translation' => '他想在大学毕业后创办自己的事业。',
                 ],
@@ -3966,11 +3966,11 @@ return [
             'pronunciation' => '/ˈɹeɪz/',
             'example_sentence' => 'The company decided to raise the salaries of its employees.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '增加',
                     'example_translation' => '公司決定提高員工的工資。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '提高；增加',
                     'example_translation' => '公司决定提高员工的工资。',
                 ],
@@ -3986,11 +3986,11 @@ return [
             'pronunciation' => '/əˈtæk/',
             'example_sentence' => 'The army launched a surprise attack.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '攻擊',
                     'example_translation' => '軍隊發動了突襲。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '攻击；袭击',
                     'example_translation' => '军队发动了突袭。',
                 ],
@@ -4006,11 +4006,11 @@ return [
             'pronunciation' => '/ˈdeɪt/',
             'example_sentence' => 'What is the date today? I need to write it on this form.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '日期',
                     'example_translation' => '今天是幾號？我需要把它寫在這張表格上。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '日期',
                     'example_translation' => '今天是几号？我需要把它写在这张表格上。',
                 ],
@@ -4026,11 +4026,11 @@ return [
             'pronunciation' => '/hi/',
             'example_sentence' => 'He is a very talented musician who plays the piano beautifully.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '他',
                     'example_translation' => '他是一位非常有才華的音樂家，鋼琴彈得很美。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '他',
                     'example_translation' => '他是一位非常有才华的音乐家，钢琴弹得很美。',
                 ],
@@ -4048,11 +4048,11 @@ return [
             'pronunciation' => '/hɪm/',
             'example_sentence' => 'I gave him a book as a birthday present.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '他（受格）',
                     'example_translation' => '我送他一本書作為生日禮物。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '他（宾格）',
                     'example_translation' => '我送他一本书作为生日礼物。',
                 ],
@@ -4068,11 +4068,11 @@ return [
             'pronunciation' => '/hɪz/',
             'example_sentence' => 'His car is parked outside the building.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '他的',
                     'example_translation' => '他的車停在大樓外面。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '他的',
                     'example_translation' => '他的车停在大楼外面。',
                 ],
@@ -4088,11 +4088,11 @@ return [
             'pronunciation' => '/hɪmˈsɛɫf/',
             'example_sentence' => 'He made breakfast for himself this morning.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '他自己',
                     'example_translation' => '他今天早上自己做了早餐。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '他自己',
                     'example_translation' => '他今天早上自己做了早餐。',
                 ],
@@ -4108,11 +4108,11 @@ return [
             'pronunciation' => '/ˈðoʊz/',
             'example_sentence' => 'Those mountains in the distance are covered with white snow.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '那些',
                     'example_translation' => '遠處的那些山都被白雪覆蓋著。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '那些',
                     'example_translation' => '远处的那些山都被白雪覆盖着。',
                 ],
@@ -4128,11 +4128,11 @@ return [
             'pronunciation' => '/ˈkɫɑk/',
             'example_sentence' => 'I have an old wooden clock on my wall.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '鐘',
                     'example_translation' => '我牆上掛著一個舊木鐘。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '钟',
                     'example_translation' => '我墙上挂着一个旧木钟。',
                 ],
@@ -4148,11 +4148,11 @@ return [
             'pronunciation' => '/ˈkæt/',
             'example_sentence' => 'My cat likes to sleep on the sofa.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '貓',
                     'example_translation' => '我的貓喜歡在沙發上睡覺。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '猫',
                     'example_translation' => '我的猫喜欢在沙发上睡觉。',
                 ],
@@ -4168,11 +4168,11 @@ return [
             'pronunciation' => '/ˈhəŋɡɹi/',
             'example_sentence' => 'I feel very hungry because I didn\'t have any breakfast today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '飢餓的',
                     'example_translation' => '我感到非常餓，因為我今天沒吃早餐。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '饥饿的',
                     'example_translation' => '我感到非常饿，因为我今天没吃早餐。',
                 ],
@@ -4188,11 +4188,11 @@ return [
             'pronunciation' => '/ˈwɛt/',
             'example_sentence' => 'Don\'t forget your umbrella, your clothes might get wet in the rain.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '濕的',
                     'example_translation' => '別忘了帶傘，你的衣服可能會被雨淋濕。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '湿的',
                     'example_translation' => '别忘了带伞，你的衣服可能会被雨淋湿。',
                 ],
@@ -4208,11 +4208,11 @@ return [
             'pronunciation' => '/ˈkætʃ/',
             'example_sentence' => 'The boy tried to catch the ball.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '抓住',
                     'example_translation' => '那個男孩試圖接住球。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '抓住',
                     'example_translation' => '那个男孩试图接住球。',
                 ],
@@ -4228,11 +4228,11 @@ return [
             'pronunciation' => '/ˈwɪn/',
             'example_sentence' => 'He worked very hard to win the first place in the competition.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '贏，贏得',
                     'example_translation' => '他非常努力工作以在比賽中獲得第一名。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '赢',
                     'example_translation' => '他非常努力，在比赛中获得了第一名。',
                 ],
@@ -4250,11 +4250,11 @@ return [
             'pronunciation' => '/bɪˈɡɪn/',
             'example_sentence' => 'The movie will begin in five minutes.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '開始',
                     'example_translation' => '電影將在五分鐘內開始。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '开始',
                     'example_translation' => '电影将在五分钟内开始。',
                 ],
@@ -4270,11 +4270,11 @@ return [
             'pronunciation' => '/ˈsaɪt/',
             'example_sentence' => 'The view from the top of the mountain was a magnificent sight.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '景觀',
                     'example_translation' => '山頂上的景色是壯麗的景觀。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '景观，视线',
                     'example_translation' => '山顶上的景色是壮丽的景观。',
                 ],
@@ -4290,11 +4290,11 @@ return [
             'pronunciation' => '/ˈfɛstəvəɫ/, /ˈfɛstɪvəɫ/',
             'example_sentence' => 'The spring festival is the most important holiday in our culture.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '節慶',
                     'example_translation' => '春節是我們文化中最重大的節日。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '节日，节庆',
                     'example_translation' => '春节是我们文化中最重大的节日。',
                 ],
@@ -4310,11 +4310,11 @@ return [
             'pronunciation' => '/ˈjɛs/',
             'example_sentence' => 'Yes, I would love to go to the party with you tonight.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '是的',
                     'example_translation' => '是的，我很想和你一起去今晚的派對。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '是的',
                     'example_translation' => '是的，我很想和你一起去今晚的派对。',
                 ],
@@ -4330,11 +4330,11 @@ return [
             'pronunciation' => '/ˈmeɪ/',
             'example_sentence' => 'You may leave the room now if you have finished your test.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '可以',
                     'example_translation' => '如果你完成了考試，你現在可以離開房間了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '可以，可能',
                     'example_translation' => '如果你完成了考试，你现在可以离开房间了。',
                 ],
@@ -4350,11 +4350,11 @@ return [
             'pronunciation' => '/ˈsaɪd/',
             'example_sentence' => 'Please stand on the left side of the escalator, thank you.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '邊',
                     'example_translation' => '請站在扶梯的左側，謝謝。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '边，侧',
                     'example_translation' => '请站在自动扶梯的左侧，谢谢。',
                 ],
@@ -4370,11 +4370,11 @@ return [
             'pronunciation' => '/ˈdɑktɝ/',
             'example_sentence' => 'You should go see a doctor if you feel unwell.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '醫生',
                     'example_translation' => '如果你覺得不舒服，應該去看看醫生。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '医生',
                     'example_translation' => '如果你感觉不舒服，应该去看医生。',
                 ],
@@ -4390,11 +4390,11 @@ return [
             'pronunciation' => '/ˈpɛɹənts/',
             'example_sentence' => 'His parents are coming to visit him during the winter break.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '父母',
                     'example_translation' => '他的父母要在寒假期間來看望他。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '父母',
                     'example_translation' => '他的父母要在寒假期间来看望他。',
                 ],
@@ -4410,11 +4410,11 @@ return [
             'pronunciation' => '/ˈsəm/',
             'example_sentence' => 'Would you like some more tea or a piece of chocolate cake?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '一些',
                     'example_translation' => '你還想再來點茶，還是想吃一塊巧克力蛋糕？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '一些',
                     'example_translation' => '你想再来点茶，还是想吃一块巧克力蛋糕？',
                 ],
@@ -4430,11 +4430,11 @@ return [
             'pronunciation' => '/ˈmɪsɪz/',
             'example_sentence' => 'Mrs. Brown has been living in this neighborhood for forty years.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '太太',
                     'example_translation' => '布朗太太在這一帶已經住了四十年了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '夫人，太太',
                     'example_translation' => '布朗太太在这个社区已经住了四十年了。',
                 ],
@@ -4452,11 +4452,11 @@ return [
             'pronunciation' => '/ˈɫəki/',
             'example_sentence' => 'I feel very lucky to have such a supportive and kind family.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '幸運的',
                     'example_translation' => '我感到非常幸運，能有這樣一個支持我、愛護我的家庭。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '幸运的',
                     'example_translation' => '我感到非常幸运，能拥有这样一个支持我、关爱我的家庭。',
                 ],
@@ -4472,11 +4472,11 @@ return [
             'pronunciation' => '/ˈʃʊɡɝ/',
             'example_sentence' => 'I prefer my coffee without any sugar or cream, thank you.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '糖',
                     'example_translation' => '我更喜歡不加糖或奶油的咖啡，謝謝。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '糖',
                     'example_translation' => '我更喜欢不加糖或奶精的咖啡，谢谢。',
                 ],
@@ -4492,11 +4492,11 @@ return [
             'pronunciation' => '/ˈɫaɪən/',
             'example_sentence' => 'The lion is often referred to as the king of the jungle.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '獅子',
                     'example_translation' => '獅子常被稱為叢林之王。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '狮子',
                     'example_translation' => '狮子常被称为百兽之王。',
                 ],
@@ -4512,11 +4512,11 @@ return [
             'pronunciation' => '/ˈbɹaɪt/',
             'example_sentence' => 'The sun is very bright today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '明亮的',
                     'example_translation' => '今天的陽光非常燦爛。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '明亮的',
                     'example_translation' => '今天的阳光非常耀眼。',
                 ],
@@ -4532,11 +4532,11 @@ return [
             'pronunciation' => '/ˈɫɝn/',
             'example_sentence' => 'I want to learn how to cook traditional Italian dishes.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '學習',
                     'example_translation' => '我想學習如何烹飪傳統的義大利菜。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '学习',
                     'example_translation' => '我想学习如何烹饪传统意大利菜。',
                 ],
@@ -4552,11 +4552,11 @@ return [
             'pronunciation' => '/ˈkæɹət/, /ˈkɛɹət/',
             'example_sentence' => 'Carrots are a good source of vitamin A.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '紅蘿蔔',
                     'example_translation' => '胡蘿蔔是維生素A的良好來源。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '胡萝卜',
                     'example_translation' => '胡萝卜是维生素A的良好来源。',
                 ],
@@ -4572,11 +4572,11 @@ return [
             'pronunciation' => '/ˌeɪˈɛm/',
             'example_sentence' => 'The class starts at nine a.m.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '上午',
                     'example_translation' => '課程在上午九點開始。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '上午',
                     'example_translation' => '课程在上午九点开始。',
                 ],
@@ -4592,11 +4592,11 @@ return [
             'pronunciation' => '/ˈtətʃ/',
             'example_sentence' => 'Please do not touch the paintings in the art gallery.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '觸碰',
                     'example_translation' => '請不要觸摸藝廊裡的畫作。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '触摸',
                     'example_translation' => '请勿触摸美术馆里的画作。',
                 ],
@@ -4612,11 +4612,11 @@ return [
             'pronunciation' => '/ˈbɹəðɝ/',
             'example_sentence' => 'My older brother is studying engineering in college.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '兄弟',
                     'example_translation' => '我的哥哥正在大學學習工程學。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '兄弟，哥哥，弟弟',
                     'example_translation' => '我的哥哥正在大学学习工程学。',
                 ],
@@ -4632,11 +4632,11 @@ return [
             'pronunciation' => '/ˈɑn/, /ˈɔn/',
             'example_sentence' => 'The book you are looking for is on the top shelf of the bookcase.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '在……上面',
                     'example_translation' => '你要找的那本書在書架的最頂層。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '在……上面',
                     'example_translation' => '你要找的那本书在书架的最顶层。',
                 ],
@@ -4654,11 +4654,11 @@ return [
             'pronunciation' => '/ˈbeɪsˈbɔɫ/',
             'example_sentence' => 'Baseball is very popular in Taiwan.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '棒球',
                     'example_translation' => '棒球在台灣非常受歡迎。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '棒球',
                     'example_translation' => '棒球在中国台湾非常受欢迎。',
                 ],
@@ -4674,11 +4674,11 @@ return [
             'pronunciation' => '/ˈðə/, /ðə/, /ði/',
             'example_sentence' => 'The sun rises in the east and sets in the west every day.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '這',
                     'example_translation' => '太陽每天從東方升起，從西方落下。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '这；那（定冠词）',
                     'example_translation' => '太阳每天从东方升起，从西方落下。',
                 ],
@@ -4694,11 +4694,11 @@ return [
             'pronunciation' => '/ˈnɛk/',
             'example_sentence' => 'She was wearing a beautiful silver necklace around her neck.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '脖子',
                     'example_translation' => '她脖子上戴著一條漂亮的銀項鍊。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '脖子，颈部',
                     'example_translation' => '她脖子上戴着一条漂亮的银项链。',
                 ],
@@ -4714,11 +4714,11 @@ return [
             'pronunciation' => '/əˈbɹɔd/',
             'example_sentence' => 'My brother is studying abroad in Japan.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '國外',
                     'example_translation' => '我哥哥正在日本留學。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '在国外，到国外',
                     'example_translation' => '我的哥哥正在日本留学。',
                 ],
@@ -4734,11 +4734,11 @@ return [
             'pronunciation' => '/ˈəŋkəɫ/',
             'example_sentence' => 'My uncle is a very talented artist who lives in Paris.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '叔叔',
                     'example_translation' => '我叔叔是一位非常有才華的藝術家，住在巴黎。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '叔叔，伯父，舅舅，姑父，姨父',
                     'example_translation' => '我叔叔是一位非常有才华的艺术家，住在巴黎。',
                 ],
@@ -4754,11 +4754,11 @@ return [
             'pronunciation' => '/piˈænə/, /piˈænoʊ/',
             'example_sentence' => 'She has been learning to play the piano since she was five.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '鋼琴',
                     'example_translation' => '她從五歲起就開始學習彈鋼琴。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '钢琴',
                     'example_translation' => '她从五岁起就开始学习弹钢琴。',
                 ],
@@ -4774,11 +4774,11 @@ return [
             'pronunciation' => '/ˈaɪtəm/',
             'example_sentence' => 'There are several interesting items for sale at the auction.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '物品',
                     'example_translation' => '拍賣會上有幾件有趣的物品在出售。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '物品，项目',
                     'example_translation' => '拍卖会上有一些有趣的物品出售。',
                 ],
@@ -4794,11 +4794,11 @@ return [
             'pronunciation' => '/ˈɹuɫ/',
             'example_sentence' => 'It is important to follow the safety rules while in the lab.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '規則',
                     'example_translation' => '在實驗室裡遵守安全規則是很重要的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '规则，规定',
                     'example_translation' => '在实验室里遵守安全规则非常重要。',
                 ],
@@ -4814,11 +4814,11 @@ return [
             'pronunciation' => '/kɝˈɛkt/',
             'example_sentence' => 'Please check if the information you provided is correct.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '正確的',
                     'example_translation' => '請檢查你提供的資訊是否正確。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '正确的',
                     'example_translation' => '请检查您提供的信息是否正确。',
                 ],
@@ -4834,11 +4834,11 @@ return [
             'pronunciation' => '/ˈsɪɹiəs/',
             'example_sentence' => 'He has a very serious expression on his face this morning.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '嚴肅的',
                     'example_translation' => '他今天早上臉上帶著非常嚴肅的表情。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '严肃的，认真的',
                     'example_translation' => '今天早上他脸上带着非常严肃的表情。',
                 ],
@@ -4856,11 +4856,11 @@ return [
             'pronunciation' => '/ˈpɑɹk/',
             'example_sentence' => 'We went for a long walk in the national park last Sunday.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '公園',
                     'example_translation' => '我們上週日去國家公園散了很久的步。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '公园',
                     'example_translation' => '上周日我们去国家公园散了很久的步。',
                 ],
@@ -4876,11 +4876,11 @@ return [
             'pronunciation' => '/ˈnɪɹ/',
             'example_sentence' => 'The library is near the park, so we can walk there after lunch.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '靠近',
                     'example_translation' => '圖書館在公園附近，所以我們午飯後可以走過去。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '靠近',
                     'example_translation' => '图书馆在公园附近，所以我们午饭后可以走过去。',
                 ],
@@ -4896,11 +4896,11 @@ return [
             'pronunciation' => '/əˈɡɹi/',
             'example_sentence' => 'I completely agree with your opinion.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '同意',
                     'example_translation' => '我完全同意你的觀點。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '同意',
                     'example_translation' => '我完全同意你的观点。',
                 ],
@@ -4916,11 +4916,11 @@ return [
             'pronunciation' => '/ˈsi/',
             'example_sentence' => 'We spent our summer vacation by the beautiful blue sea.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '海',
                     'example_translation' => '我們在美麗的藍色大海邊度過了暑假。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '大海',
                     'example_translation' => '我们在美丽的蓝色大海边度过了暑假。',
                 ],
@@ -4936,11 +4936,11 @@ return [
             'pronunciation' => '/ˈtɹæfɪk/',
             'example_sentence' => 'The traffic was very heavy this morning due to an accident.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '交通',
                     'example_translation' => '由於發生了一起事故，今天早上的交通非常擁擠。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '交通',
                     'example_translation' => '由于发生了一起事故，今天早上的交通非常拥堵。',
                 ],
@@ -4956,11 +4956,11 @@ return [
             'pronunciation' => '/ˈɫəntʃ/',
             'example_sentence' => 'Would you like to have some lunch with me at the new cafe?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '午餐',
                     'example_translation' => '你想和我一起去那家新咖啡館吃午飯嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '午餐',
                     'example_translation' => '你想和我一起去那家新咖啡馆吃午饭吗？',
                 ],
@@ -4976,11 +4976,11 @@ return [
             'pronunciation' => '/ˈnid/',
             'example_sentence' => 'I need to go to the grocery store to buy some fresh milk.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '需要',
                     'example_translation' => '我需要去雜貨店買一些新鮮牛奶。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '需要',
                     'example_translation' => '我需要去杂货店买一些新鲜牛奶。',
                 ],
@@ -4996,11 +4996,11 @@ return [
             'pronunciation' => '/ˈkæn/, /kən/',
             'example_sentence' => 'She can speak three languages fluently.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '能',
                     'example_translation' => '她能流利地說三種語言。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '能，会',
                     'example_translation' => '她能流利地讲三种语言。',
                 ],
@@ -5016,11 +5016,11 @@ return [
             'pronunciation' => '/ˈkɑpi/',
             'example_sentence' => 'Could you please make a copy of this report for me?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '副本',
                     'example_translation' => '能請你幫我複印一份這份報告嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '复印，副本',
                     'example_translation' => '你能帮我复印一份这份报告吗？',
                 ],
@@ -5036,11 +5036,11 @@ return [
             'pronunciation' => '/əˈbəv/',
             'example_sentence' => 'The birds were flying high above the trees.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '在……上方',
                     'example_translation' => '鳥兒在樹林高處飛翔。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '在……上方',
                     'example_translation' => '鸟儿在树林上方高高飞翔。',
                 ],
@@ -5058,11 +5058,11 @@ return [
             'pronunciation' => '/ˈdʒɔɪn/',
             'example_sentence' => 'Would you like to join us for dinner at the new restaurant?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '加入',
                     'example_translation' => '你願意和我們一起去那家新餐廳吃晚飯嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '加入',
                     'example_translation' => '你想和我们一起去那家新餐厅吃晚餐吗？',
                 ],
@@ -5078,11 +5078,11 @@ return [
             'pronunciation' => '/ˈɛɹˌpɔɹt/',
             'example_sentence' => 'I will meet you at the airport.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '飛機場',
                     'example_translation' => '我會在機場接你。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '机场',
                     'example_translation' => '我会在机场接你。',
                 ],
@@ -5098,11 +5098,11 @@ return [
             'pronunciation' => '/ˈdeɪ/',
             'example_sentence' => 'Have a wonderful day! I will see you again tomorrow.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '天',
                     'example_translation' => '祝你有美好的一天！我們明天再見。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '一天，白天',
                     'example_translation' => '祝你有美好的一天！我们明天再见。',
                 ],
@@ -5118,11 +5118,11 @@ return [
             'pronunciation' => '/ˈbæt/',
             'example_sentence' => 'He hit the ball hard with his bat.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '球棒',
                     'example_translation' => '他用球棒用力擊球。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '球棒',
                     'example_translation' => '他用球棒用力击球。',
                 ],
@@ -5138,11 +5138,11 @@ return [
             'pronunciation' => '/ˈhɑt/',
             'example_sentence' => 'Be careful, the soup is very hot and might burn your tongue.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '熱的',
                     'example_translation' => '當心，湯很燙，可能會燙傷你的舌頭。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '热的，烫的',
                     'example_translation' => '小心，汤很烫，可能会烫伤你的舌头。',
                 ],
@@ -5158,11 +5158,11 @@ return [
             'pronunciation' => '/ˈfiɫ/',
             'example_sentence' => 'I feel much better today after a good night\'s sleep.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '感覺',
                     'example_translation' => '好好睡了一覺後，我今天感覺好多了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '感觉',
                     'example_translation' => '睡了个好觉后，我今天感觉好多了。',
                 ],
@@ -5178,11 +5178,11 @@ return [
             'pronunciation' => '/ˈfɹənt/',
             'example_sentence' => 'Please wait for me in front of the library at ten o\'clock.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '正面',
                     'example_translation' => '請在十點鐘在圖書館門前等我。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '前面，正面',
                     'example_translation' => '请十点钟在图书馆门前等我。',
                 ],
@@ -5198,11 +5198,11 @@ return [
             'pronunciation' => '/ˈkɔɹnɝ/',
             'example_sentence' => 'There is a small bakery on the corner of the street.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '角落',
                     'example_translation' => '街角有一家小麵包店。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '角落，街角',
                     'example_translation' => '街角有一家小面包店。',
                 ],
@@ -5218,11 +5218,11 @@ return [
             'pronunciation' => '/ˈpuɫ/',
             'example_sentence' => 'We went for a swim in the local swimming pool yesterday.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '水池',
                     'example_translation' => '我們昨天去當地的游泳池游泳了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '水池，游泳池',
                     'example_translation' => '我们昨天去当地的游泳池游泳了。',
                 ],
@@ -5238,11 +5238,11 @@ return [
             'pronunciation' => '/ˈɛndʒəˈnɪɹ/',
             'example_sentence' => 'He is a software engineer working for a tech company.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '工程師',
                     'example_translation' => '他是一家科技公司的軟體工程師。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '工程师',
                     'example_translation' => '他是一家科技公司的软件工程师。',
                 ],
@@ -5260,11 +5260,11 @@ return [
             'pronunciation' => '/ˈpɪŋk/',
             'example_sentence' => 'She wore a beautiful pink dress to her best friend\'s wedding.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '粉紅色的',
                     'example_translation' => '她穿著一件漂亮的粉紅色禮服去參加她最好朋友的婚禮。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '粉红色的',
                     'example_translation' => '她穿着一件漂亮的粉红色礼服去参加她最好朋友的婚礼。',
                 ],
@@ -5280,11 +5280,11 @@ return [
             'pronunciation' => '/ˈsaʊnd/',
             'example_sentence' => 'I heard a strange sound coming from the garden last night.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '聲音',
                     'example_translation' => '我昨晚聽到花園裡傳來一聲怪響。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '声音',
                     'example_translation' => '我昨晚听到花园里传来一阵奇怪的声音。',
                 ],
@@ -5300,11 +5300,11 @@ return [
             'pronunciation' => '/ˈdɔɡ/',
             'example_sentence' => 'He takes his dog for a walk in the park every evening.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '狗',
                     'example_translation' => '他每天晚上都帶他的狗去公園散步。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '狗',
                     'example_translation' => '他每天晚上都带他的狗去公园散步。',
                 ],
@@ -5320,11 +5320,11 @@ return [
             'pronunciation' => '/ˈsneɪk/',
             'example_sentence' => 'We saw a long green snake slithering through the tall grass.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '蛇',
                     'example_translation' => '我們看見一條長長的綠蛇在長草叢中爬行。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '蛇',
                     'example_translation' => '我们看见一条长长的绿蛇在高草丛中爬行。',
                 ],
@@ -5340,11 +5340,11 @@ return [
             'pronunciation' => '/ˈpəbɫɪk/',
             'example_sentence' => 'The information was made public to ensure transparency.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '公開的',
                     'example_translation' => '該資訊已向公眾披露以確保透明度。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '公众的；公开的',
                     'example_translation' => '该信息已被公开以确保透明度。',
                 ],
@@ -5360,11 +5360,11 @@ return [
             'pronunciation' => '/ˈsəmˌwɛɹ/',
             'example_sentence' => 'I am sure I have seen that man somewhere before, but where?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '某處',
                     'example_translation' => '我敢肯定我以前在哪裡見過那個人，但在哪裡呢？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '在某处',
                     'example_translation' => '我敢肯定我以前在哪儿见过那个人，但在哪儿呢？',
                 ],
@@ -5380,11 +5380,11 @@ return [
             'pronunciation' => '/ˈɫɛmən/',
             'example_sentence' => 'I like to add a squeeze of fresh lemon to my water.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '檸檬',
                     'example_translation' => '我喜歡在水裡加一點新鮮檸檬汁。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '柠檬',
                     'example_translation' => '我喜欢在水里挤一点新鲜柠檬汁。',
                 ],
@@ -5400,11 +5400,11 @@ return [
             'pronunciation' => '/ˈɡɹeɪ/',
             'example_sentence' => 'The sky turned gray as the storm clouds moved in.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '灰色的',
                     'example_translation' => '暴風雨雲移入時，天空變成了灰色。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '灰色的',
                     'example_translation' => '暴风雨云靠近时，天空变成了灰色。',
                 ],
@@ -5420,11 +5420,11 @@ return [
             'pronunciation' => '/ˈsəbdʒɪkt/, /səbˈdʒɛkt/',
             'example_sentence' => 'Mathematics is my favorite subject because I like logic.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '科目',
                     'example_translation' => '數學是我最喜歡的科目，因為我喜歡邏輯。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '学科，科目',
                     'example_translation' => '数学是我最喜欢的学科，因为我喜欢逻辑。',
                 ],
@@ -5440,11 +5440,11 @@ return [
             'pronunciation' => '/ˈdaʊn/',
             'example_sentence' => 'He sat down on the bench to rest for a while.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '向下',
                     'example_translation' => '他在長椅上坐下來休息一會兒。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '向下',
                     'example_translation' => '他在长椅上坐下来休息了一会儿。',
                 ],
@@ -5462,11 +5462,11 @@ return [
             'pronunciation' => '/ˈpɑɹt/',
             'example_sentence' => 'This is the most interesting part of the story we just read.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '部分',
                     'example_translation' => '這是我們剛剛讀過的故事中最有趣的部分。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '部分',
                     'example_translation' => '这是我们刚才读过的故事中最有趣的部分。',
                 ],
@@ -5482,11 +5482,11 @@ return [
             'pronunciation' => '/ˈwiˌkɛnd/, /ˈwiˌkɪnd/',
             'example_sentence' => 'We are planning to go hiking in the mountains this weekend.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '週末',
                     'example_translation' => '我們正計劃這個週末去山裡徒步旅行。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '周末',
                     'example_translation' => '我们计划这个周末去山里徒步旅行。',
                 ],
@@ -5502,11 +5502,11 @@ return [
             'pronunciation' => '/ˈnoʊ/',
             'example_sentence' => 'No, I have never seen that movie before, is it any good?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '不',
                     'example_translation' => '不，我以前沒看過那部電影，好看嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '不',
                     'example_translation' => '不，我以前没看过那部电影，好看吗？',
                 ],
@@ -5522,11 +5522,11 @@ return [
             'pronunciation' => '/ˈɛvɝi/, /ˈɛvɹi/',
             'example_sentence' => 'Every student in the class passed the final exam.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '每一個',
                     'example_translation' => '班上的每個學生都通過了期末考試。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '每一个',
                     'example_translation' => '班上的每个学生都通过了期末考试。',
                 ],
@@ -5542,11 +5542,11 @@ return [
             'pronunciation' => '/ˈkaʊ/',
             'example_sentence' => 'The cows are grazing peacefully in the green field.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '母牛',
                     'example_translation' => '母牛正在綠色的田野裡安詳地吃草。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '母牛，奶牛',
                     'example_translation' => '母牛正安详地在绿色的草地上吃草。',
                 ],
@@ -5562,11 +5562,11 @@ return [
             'pronunciation' => '/ˌæftɝˈnun/',
             'example_sentence' => 'I usually take a nap in the afternoon.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '下午',
                     'example_translation' => '我通常在下午午睡。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '下午',
                     'example_translation' => '我通常在下午小憩一会儿。',
                 ],
@@ -5582,11 +5582,11 @@ return [
             'pronunciation' => '/ˈɪn/, /ɪn/',
             'example_sentence' => 'There is a small cat sleeping in that cardboard box.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '在……裡面',
                     'example_translation' => '有一隻小貓睡在那個紙箱裡。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '在……里面',
                     'example_translation' => '有一只小猫睡在那个纸箱里。',
                 ],
@@ -5602,11 +5602,11 @@ return [
             'pronunciation' => '/ˈdɹim/',
             'example_sentence' => 'My dream is to travel around the world one day.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '夢想',
                     'example_translation' => '我的夢想是有一天能環遊世界。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '梦想',
                     'example_translation' => '我的梦想是有朝一日能环游世界。',
                 ],
@@ -5622,11 +5622,11 @@ return [
             'pronunciation' => '/biˈɫoʊ/, /bɪˈɫoʊ/',
             'example_sentence' => 'The temperature is below zero.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '在……以下',
                     'example_translation' => '溫度在零度以下。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '在……以下',
                     'example_translation' => '气温在零度以下。',
                 ],
@@ -5642,11 +5642,11 @@ return [
             'pronunciation' => '/ˈmidiəm/',
             'example_sentence' => 'The steak was cooked to a perfect medium and was very juicy.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '（肉類）五分熟的',
                     'example_translation' => '這塊牛排煎到了完美的五分熟，而且非常多汁。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '中等的；（烤肉）五分熟的',
                     'example_translation' => '牛排烤得刚好五分熟，非常多汁。',
                 ],
@@ -5664,11 +5664,11 @@ return [
             'pronunciation' => '/ˈkɫaɪm/',
             'example_sentence' => 'It took us three hours to climb to the top of the mountain.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '攀登；爬',
                     'example_translation' => '我們花了三個小時才爬到山頂。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '攀登；爬',
                     'example_translation' => '我们花了三个小时才爬到山顶。',
                 ],
@@ -5684,11 +5684,11 @@ return [
             'pronunciation' => '/ˈfeɪɫ/',
             'example_sentence' => 'Don\'t be afraid to fail, because you can learn from your mistakes.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '失敗',
                     'example_translation' => '不要害怕失敗，因為你可以從錯誤中學習。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '失败',
                     'example_translation' => '不要害怕失败，因为你可以从错误中学习。',
                 ],
@@ -5704,11 +5704,11 @@ return [
             'pronunciation' => '/ˈɫɛt/',
             'example_sentence' => 'Please let me know if you need any further information.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '讓',
                     'example_translation' => '如果你需要進一步的資訊，請告訴我。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '让；允许',
                     'example_translation' => '如果你需要更多信息，请告诉我。',
                 ],
@@ -5724,11 +5724,11 @@ return [
             'pronunciation' => '/ˈfɹɛnd/',
             'example_sentence' => 'A true friend is someone who is always there for you.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '朋友',
                     'example_translation' => '真正的朋友是那個永遠在你身邊支持你的人。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '朋友',
                     'example_translation' => '真正的朋友是那个永远在你身边支持你的人。',
                 ],
@@ -5744,11 +5744,11 @@ return [
             'pronunciation' => '/ˈpʊʃ/',
             'example_sentence' => 'You need to push the button firmly to start the heavy machine.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '按；推',
                     'example_translation' => '你需要用力按下按鈕來啟動這台重型機器。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '推；按',
                     'example_translation' => '你需要用力按下按钮来启动这台重型机器。',
                 ],
@@ -5764,11 +5764,11 @@ return [
             'pronunciation' => '/ˈfɑɫoʊ/',
             'example_sentence' => 'Please follow the signs to find the exit of the building.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '跟隨',
                     'example_translation' => '請跟著指示牌走，找到大樓的出口。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '跟随；遵循',
                     'example_translation' => '请沿着指示牌走，找到大楼的出口。',
                 ],
@@ -5784,11 +5784,11 @@ return [
             'pronunciation' => '/ˈkaɪnd/',
             'example_sentence' => 'What kind of music do you like to listen to when you study?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '種類',
                     'example_translation' => '你學習時喜歡聽哪種音樂？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '种类',
                     'example_translation' => '你学习时喜欢听哪种音乐？',
                 ],
@@ -5804,11 +5804,11 @@ return [
             'pronunciation' => '/ˈitʃ/',
             'example_sentence' => 'Each student has a different way of learning.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '每個',
                     'example_translation' => '每個學生都有不同的學習方式。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '每个；各自',
                     'example_translation' => '每个学生都有不同的学习方式。',
                 ],
@@ -5824,11 +5824,11 @@ return [
             'pronunciation' => '/səˈpɹaɪzd/, /sɝˈpɹaɪzd/',
             'example_sentence' => 'She was very surprised to see her old friend at the party.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '驚訝',
                     'example_translation' => '見到老朋友出現在派對上，她感到非常驚訝。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '惊讶的；吃惊的',
                     'example_translation' => '见到老朋友出现在派对上，她感到非常惊讶。',
                 ],
@@ -5844,11 +5844,11 @@ return [
             'pronunciation' => '/ɪkˈsaɪtɪŋ/',
             'example_sentence' => 'The football match was really exciting until the last minute.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '令人興奮的',
                     'example_translation' => '這場足球賽直到最後一分鐘都非常令人興奮。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '令人兴奋的；刺激的',
                     'example_translation' => '这场足球赛直到最后一分钟都非常令人兴奋。',
                 ],
@@ -5866,11 +5866,11 @@ return [
             'pronunciation' => '/ˈkɪŋ/',
             'example_sentence' => 'The king and queen lived in a magnificent large castle.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '國王',
                     'example_translation' => '國王和王后住在一座宏偉的大城堡裡。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '国王',
                     'example_translation' => '国王和王后住在一座宏伟的大城堡里。',
                 ],
@@ -5886,11 +5886,11 @@ return [
             'pronunciation' => '/təˈmɑˌtoʊ/, /təˈmeɪˌtoʊ/',
             'example_sentence' => 'I like to add some fresh sliced tomatoes to my sandwiches.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '番茄',
                     'example_translation' => '我喜歡在三明治裡加一些新鮮的番茄片。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '番茄；西红柿',
                     'example_translation' => '我喜欢在三明治里加一些新鲜的切片番茄。',
                 ],
@@ -5906,11 +5906,11 @@ return [
             'pronunciation' => '/ʃi/',
             'example_sentence' => 'She is a kind teacher who cares about her students.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '她',
                     'example_translation' => '她是一位關心學生的善良老師。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '她',
                     'example_translation' => '她是一位关心学生的善良老师。',
                 ],
@@ -5926,11 +5926,11 @@ return [
             'pronunciation' => '/hɝ/',
             'example_sentence' => 'I saw her at the park yesterday afternoon.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '她（受格／所有格）',
                     'example_translation' => '我昨天下午在公園看到她。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '她（宾格/所有格）',
                     'example_translation' => '我昨天下午在公园看到她。',
                 ],
@@ -5946,11 +5946,11 @@ return [
             'pronunciation' => '/hɝz/',
             'example_sentence' => 'This book is hers, not mine.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '她的（所有代詞）',
                     'example_translation' => '這本書是她的，不是我的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '她的（名词性物主代词）',
                     'example_translation' => '这本书是她的，不是我的。',
                 ],
@@ -5966,11 +5966,11 @@ return [
             'pronunciation' => '/hɝˈsɛɫf/',
             'example_sentence' => 'She finished the project all by herself.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '她自己',
                     'example_translation' => '她獨自完成了整個專案。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '她自己',
                     'example_translation' => '她独自完成了整个项目。',
                 ],
@@ -5986,11 +5986,11 @@ return [
             'pronunciation' => '/ˈməni/',
             'example_sentence' => 'It is important to learn how to manage your money wisely.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '錢',
                     'example_translation' => '學會如何明智地理財是很重要的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '钱；金钱',
                     'example_translation' => '学会如何明智地理财是很重要的。',
                 ],
@@ -6006,11 +6006,11 @@ return [
             'pronunciation' => '/ˈkoʊɫd/',
             'example_sentence' => 'It was so cold last night that the water in the pond froze.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '寒冷的',
                     'example_translation' => '昨晚非常冷，池塘裡的水都結冰了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '寒冷的',
                     'example_translation' => '昨晚非常冷，池塘里的水都结冰了。',
                 ],
@@ -6026,11 +6026,11 @@ return [
             'pronunciation' => '/ˈmaʊθ/',
             'example_sentence' => 'Please don\'t talk with your mouth full of food, it is rude.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '嘴',
                     'example_translation' => '嘴裡含著食物時請不要說話，這很不禮貌。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '嘴；口',
                     'example_translation' => '嘴里含着食物时请不要说话，这很不礼貌。',
                 ],
@@ -6046,11 +6046,11 @@ return [
             'pronunciation' => '/ˈpɑɹti/',
             'example_sentence' => 'We are going to have a surprise party for her thirtieth birthday.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '派對',
                     'example_translation' => '我們要為她的三十歲生日辦一個驚喜派對。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '派对；聚会',
                     'example_translation' => '我们要为她的三十岁生日办一个惊喜派对。',
                 ],
@@ -6068,11 +6068,11 @@ return [
             'pronunciation' => '/ˈaɪs/',
             'example_sentence' => 'Would you like some ice in your drink to keep it cool?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '冰',
                     'example_translation' => '你想要在飲料裡加點冰塊來保冷嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '冰，冰块',
                     'example_translation' => '你想在饮料里加点冰块保凉吗？',
                 ],
@@ -6088,11 +6088,11 @@ return [
             'pronunciation' => '/ˈsupɝˌmɑɹkɪt/',
             'example_sentence' => 'I need to go to the supermarket to buy some fresh vegetables.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '超級市場',
                     'example_translation' => '我需要去超市買一些新鮮蔬菜。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '超市，超级市场',
                     'example_translation' => '我需要去超市买一些新鲜蔬菜。',
                 ],
@@ -6108,11 +6108,11 @@ return [
             'pronunciation' => '/ˈæd/',
             'example_sentence' => 'Please add some sugar to my coffee.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '添加',
                     'example_translation' => '請在我的咖啡裡加點糖。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '添加，加',
                     'example_translation' => '请在我的咖啡里加点糖。',
                 ],
@@ -6128,11 +6128,11 @@ return [
             'pronunciation' => '/ˈkəzən/',
             'example_sentence' => 'My cousin from Canada is coming to visit us this summer.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '堂（表）兄弟姊妹',
                     'example_translation' => '我住在加拿大的表弟今年夏天要來拜訪我們。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '堂（表）兄弟姐妹',
                     'example_translation' => '我住在加拿大的表弟今年夏天要来拜访我们。',
                 ],
@@ -6148,11 +6148,11 @@ return [
             'pronunciation' => '/ˈɪf/, /ɪf/',
             'example_sentence' => 'If it rains tomorrow, we will have to cancel our picnic.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '如果',
                     'example_translation' => '如果明天下雨，我們就不得不取消野餐。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '如果，假如',
                     'example_translation' => '如果明天下雨，我们就不得不取消野餐。',
                 ],
@@ -6168,11 +6168,11 @@ return [
             'pronunciation' => '/ˈmitɪŋ/',
             'example_sentence' => 'The manager called a sudden meeting to discuss the new project.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '會議',
                     'example_translation' => '經理召集了一次突擊會議來討論新專案。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '会议',
                     'example_translation' => '经理召集了一次紧急会议来讨论新项目。',
                 ],
@@ -6188,11 +6188,11 @@ return [
             'pronunciation' => '/ˈæŋɡɹi/',
             'example_sentence' => 'My boss was angry because I was late.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '生氣的',
                     'example_translation' => '我的老闆因為我遲到而生氣了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '生气的，愤怒的',
                     'example_translation' => '我的老板因为我迟到而生气了。',
                 ],
@@ -6208,11 +6208,11 @@ return [
             'pronunciation' => '/ˈnɛks/, /ˈnɛkst/',
             'example_sentence' => 'The next bus to the city center will arrive in ten minutes.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '下一個',
                     'example_translation' => '下一班開往市中心的公車將在十分鐘內到達。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '下一个的，紧接着的',
                     'example_translation' => '下一班开往市中心的大巴将在十分钟内到达。',
                 ],
@@ -6228,11 +6228,11 @@ return [
             'pronunciation' => '/ˈhoʊm/',
             'example_sentence' => 'There is no place like home, it is where I feel most relaxed.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '家',
                     'example_translation' => '沒有比家更好的地方了，在那裡我感到最放鬆。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '家，住所',
                     'example_translation' => '没有什么地方比得上家，家是我感到最放松的地方。',
                 ],
@@ -6248,11 +6248,11 @@ return [
             'pronunciation' => '/ɪkˈsɛpt/',
             'example_sentence' => 'Everyone was present at the meeting except for John.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '除了',
                     'example_translation' => '除了約翰，每個人都出席了會議。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '除……之外',
                     'example_translation' => '除了约翰，每个人都出席了会议。',
                 ],
@@ -6270,11 +6270,11 @@ return [
             'pronunciation' => '/ˈdʒoʊk/',
             'example_sentence' => 'He told such a funny joke that everyone in the room laughed.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '笑話',
                     'example_translation' => '他講了一個非常有意思的笑話，房間裡的每個人都笑了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '笑话，玩笑',
                     'example_translation' => '他讲了一个非常有意思的笑话，房间里的每个人都笑了。',
                 ],
@@ -6290,11 +6290,11 @@ return [
             'pronunciation' => '/ˈʃoʊ/',
             'example_sentence' => 'Could you please show me the way to the nearest train station?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '指引',
                     'example_translation' => '能請你告訴我到最近的火車站怎麼走嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '指引，给……看',
                     'example_translation' => '你能指给我看去最近火车站的路吗？',
                 ],
@@ -6310,11 +6310,11 @@ return [
             'pronunciation' => '/ˈhæm/',
             'example_sentence' => 'Would you like some ham and cheese in your omelet?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '火腿',
                     'example_translation' => '你想要在煎蛋捲裡加一些火腿和起司嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '火腿',
                     'example_translation' => '你需要在煎蛋卷里加一些火腿和奶酪吗？',
                 ],
@@ -6330,11 +6330,11 @@ return [
             'pronunciation' => '/ˈɹoʊɫ/',
             'example_sentence' => 'Please roll up the carpet before you start painting the walls.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '卷',
                     'example_translation' => '開始刷牆前，請把地毯捲起來。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '卷，卷起',
                     'example_translation' => '开始刷墙前，请把地毯卷起来。',
                 ],
@@ -6350,11 +6350,11 @@ return [
             'pronunciation' => '/ˈhɪt/',
             'example_sentence' => 'He accidentally hit his head on the low ceiling.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '打',
                     'example_translation' => '他不小心在低矮的天花板上撞到了頭。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '撞，打',
                     'example_translation' => '他不小心在低矮的天花板上撞到了头。',
                 ],
@@ -6370,11 +6370,11 @@ return [
             'pronunciation' => '/ˌbiˈfɔɹ/, /bɪˈfɔɹ/',
             'example_sentence' => 'Wash your hands before eating.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '在……之前',
                     'example_translation' => '吃飯前要洗手。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '在……之前',
                     'example_translation' => '吃饭前要洗手。',
                 ],
@@ -6390,11 +6390,11 @@ return [
             'pronunciation' => '/ˈmɪdəɫ/',
             'example_sentence' => 'There is a small circular table in the middle of the room.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '中間',
                     'example_translation' => '房間中央有一張圓形的小桌子。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '中间，中央',
                     'example_translation' => '房间中央有一张圆形的小桌子。',
                 ],
@@ -6410,11 +6410,11 @@ return [
             'pronunciation' => '/ˈnɛvɝ/',
             'example_sentence' => 'I have never been to Paris, but I would love to go there one day.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '從未',
                     'example_translation' => '我從來沒去過巴黎，但我很想有一天能去那裡。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '从不，决不',
                     'example_translation' => '我从没去过巴黎，但我希望有一天能去那里。',
                 ],
@@ -6430,11 +6430,11 @@ return [
             'pronunciation' => '/ˈməŋki/',
             'example_sentence' => 'We saw some monkeys swinging from the trees at the zoo.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '猴',
                     'example_translation' => '我們在動物園看到一些猴子在樹上盪來盪去。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '猴子',
                     'example_translation' => '我们在动物园看到一些猴子在树上荡来荡去。',
                 ],
@@ -6450,11 +6450,11 @@ return [
             'pronunciation' => '/ˈɹɛst/',
             'example_sentence' => 'You look very tired, you should definitely take a short rest now.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '休息',
                     'example_translation' => '你看起來很累，現在絕對應該休息一下。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '休息',
                     'example_translation' => '你看头很累，现在绝对应该休息一下。',
                 ],
@@ -6472,11 +6472,11 @@ return [
             'pronunciation' => '/ˈæpəɫ/',
             'example_sentence' => 'An apple a day keeps the doctor away.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '蘋果',
                     'example_translation' => '一日一蘋果，醫生遠離我。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '苹果',
                     'example_translation' => '一天一苹果，医生远离我。',
                 ],
@@ -6492,11 +6492,11 @@ return [
             'pronunciation' => '/ˈθaʊzən/, /ˈθaʊzənd/',
             'example_sentence' => 'There were more than two thousand people at the concert.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '千',
                     'example_translation' => '音樂會上有兩千多人。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '千',
                     'example_translation' => '音乐会上有两千多人。',
                 ],
@@ -6512,11 +6512,11 @@ return [
             'pronunciation' => '/ˈpɛn/',
             'example_sentence' => 'I need a blue pen to sign these important legal documents.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '筆',
                     'example_translation' => '我需要一支藍色筆來簽署這些重要的法律文件。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '笔',
                     'example_translation' => '我需要一支蓝色笔签署这些重要的法律文件。',
                 ],
@@ -6532,11 +6532,11 @@ return [
             'pronunciation' => '/ˈtitʃɝ/',
             'example_sentence' => 'Mr. Brown is a very patient teacher who helps all his students.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '老師',
                     'example_translation' => '布朗先生是一位非常耐心的老師，他幫助所有的學生。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '老师',
                     'example_translation' => '布朗先生是一位非常耐心的老师，他帮助所有的学生。',
                 ],
@@ -6552,11 +6552,11 @@ return [
             'pronunciation' => '/ˈkæp/',
             'example_sentence' => 'He was wearing a baseball cap to shade his eyes.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '帽子',
                     'example_translation' => '他戴著一頂棒球帽來遮擋眼睛。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '帽子',
                     'example_translation' => '他戴着一顶棒球帽遮挡眼睛。',
                 ],
@@ -6572,11 +6572,11 @@ return [
             'pronunciation' => '/ˈhɛɫθi/',
             'example_sentence' => 'Eating a balanced diet helps you stay healthy and strong.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '健康的',
                     'example_translation' => '均衡飲食有助於你保持健康強壯。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '健康的',
                     'example_translation' => '保持均衡的饮食有助于你保持健康强壮。',
                 ],
@@ -6592,11 +6592,11 @@ return [
             'pronunciation' => '/ˈkɪs/',
             'example_sentence' => 'The mother gave her young child a kiss on the forehead.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '吻',
                     'example_translation' => '母親在幼子的額頭上吻了一下。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '吻',
                     'example_translation' => '母亲在幼子的额头上吻了一下。',
                 ],
@@ -6612,11 +6612,11 @@ return [
             'pronunciation' => '/ˈjus/, /ˈjuz/',
             'example_sentence' => 'I use my computer every day for work and communication.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '使用',
                     'example_translation' => '我每天用電腦工作和交流。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '使用',
                     'example_translation' => '我每天用电脑工作和交流。',
                 ],
@@ -6632,11 +6632,11 @@ return [
             'pronunciation' => '/ˈspeɪs/',
             'example_sentence' => 'There is not enough space in my room for a large bookcase.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '空間',
                     'example_translation' => '我房間裡沒有足夠的空間放一個大書架。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '空间',
                     'example_translation' => '我房间里没有足够的空间放一个大书架。',
                 ],
@@ -6652,11 +6652,11 @@ return [
             'pronunciation' => '/ˈkɑɹ/',
             'example_sentence' => 'He drives a blue car to work every day.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '車',
                     'example_translation' => '他每天開著一輛藍色的車去上班。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '汽车',
                     'example_translation' => '他每天开着一辆蓝色的车去上班。',
                 ],
@@ -6674,11 +6674,11 @@ return [
             'pronunciation' => '/ˈpeɪpɝ/',
             'example_sentence' => 'Could you please give me a piece of paper to write a note?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '紙',
                     'example_translation' => '你能給我一張紙寫個便條嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '纸',
                     'example_translation' => '你能给我一张纸写个便条吗？',
                 ],
@@ -6694,11 +6694,11 @@ return [
             'pronunciation' => '/ˈfuɫ/',
             'example_sentence' => 'Don\'t be a fool and believe everything you hear on the internet.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '傻子',
                     'example_translation' => '別傻了，不要相信你在網上聽到的一切。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '傻瓜',
                     'example_translation' => '别傻了，不要相信你在网上听到的一切。',
                 ],
@@ -6714,11 +6714,11 @@ return [
             'pronunciation' => '/ɹiˈpɔɹt/, /ɹɪˈpɔɹt/',
             'example_sentence' => 'He is busy writing a detailed progress report for his manager.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '報告',
                     'example_translation' => '他正忙著為他的經理寫一份詳細的進度報告。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '报告',
                     'example_translation' => '他正忙着给经理写一份详细的进度报告。',
                 ],
@@ -6734,11 +6734,11 @@ return [
             'pronunciation' => '/ˈkɪtʃən/',
             'example_sentence' => 'My mother is in the kitchen preparing a delicious dinner.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '廚房',
                     'example_translation' => '我母親正在廚房準備美味的晚餐。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '厨房',
                     'example_translation' => '我母亲正在厨房准备美味的晚餐。',
                 ],
@@ -6754,11 +6754,11 @@ return [
             'pronunciation' => '/ˈðɛn/',
             'example_sentence' => 'We had dinner at a restaurant and then went for a walk.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '然後',
                     'example_translation' => '我們在餐廳吃了晚飯，然後去散了步。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '然后',
                     'example_translation' => '我们在餐厅吃了晚饭，然后去散了步。',
                 ],
@@ -6774,11 +6774,11 @@ return [
             'pronunciation' => '/ˈfɔɹk/',
             'example_sentence' => 'Please use a fork and a knife to eat your steak.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '叉子',
                     'example_translation' => '請用刀叉吃你的牛排。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '叉子',
                     'example_translation' => '请用刀叉吃你的牛排。',
                 ],
@@ -6794,11 +6794,11 @@ return [
             'pronunciation' => '/ˈbɪznəs/, /ˈbɪznɪs/',
             'example_sentence' => 'He is traveling to London on business next week.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '公務；公事',
                     'example_translation' => '他下週要到倫敦出差。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '商业',
                     'example_translation' => '他下周要到伦敦出差。',
                 ],
@@ -6814,11 +6814,11 @@ return [
             'pronunciation' => '/ˈbaɪ/',
             'example_sentence' => 'I want to buy a new laptop for my work.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '買',
                     'example_translation' => '我想買一台新筆記本電腦用於工作。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '买',
                     'example_translation' => '我想买一台新笔记本电脑用于工作。',
                 ],
@@ -6834,11 +6834,11 @@ return [
             'pronunciation' => '/ˈspɛnd/',
             'example_sentence' => 'I like to spend my free time reading books and listening to music.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '花費',
                     'example_translation' => '我喜歡把空閒時間花在看書和聽音樂上。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '花费',
                     'example_translation' => '我喜欢把空闲时间花在看书和听音乐上。',
                 ],
@@ -6854,11 +6854,11 @@ return [
             'pronunciation' => '/ˈhaɪ/',
             'example_sentence' => 'The birds were flying very high up in the blue sky.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '高的',
                     'example_translation' => '鳥兒在蔚藍的天空中飛得很高。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '高的',
                     'example_translation' => '鸟儿在蔚蓝的天空中飞得很高。',
                 ],
@@ -6876,11 +6876,11 @@ return [
             'pronunciation' => '/ˈtɹeɪn/',
             'example_sentence' => 'I am taking the early morning train to the city tomorrow.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '火車',
                     'example_translation' => '我明天要坐清晨的火車去市區。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '火车；训练',
                     'example_translation' => '我明天要乘早班火车去市区。',
                 ],
@@ -6896,11 +6896,11 @@ return [
             'pronunciation' => '/ˈjɪɹ/',
             'example_sentence' => 'I have lived in this beautiful city for more than ten years.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '年',
                     'example_translation' => '我在這座美麗的城市已經住了十多年了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '年；年份',
                     'example_translation' => '我在这座美丽的城市已经生活了十多年。',
                 ],
@@ -6916,11 +6916,11 @@ return [
             'pronunciation' => '/ˈhaʊˌswaɪf/',
             'example_sentence' => 'She decided to become a full-time housewife to care for her kids.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '家庭主婦',
                     'example_translation' => '她決定成為一名全職家庭主婦來照顧孩子。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '家庭主妇',
                     'example_translation' => '她决定成为一名全职家庭主妇来照顾孩子。',
                 ],
@@ -6936,11 +6936,11 @@ return [
             'pronunciation' => '/ˈnɝs/',
             'example_sentence' => 'My sister is a nurse and she works in a very large hospital.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '護士',
                     'example_translation' => '我姐姐是一名護士，她在一家很大的醫院工作。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '护士',
                     'example_translation' => '我姐姐是一名护士，在一家很大医院工作。',
                 ],
@@ -6956,11 +6956,11 @@ return [
             'pronunciation' => '/ˈɛɫəfənt/',
             'example_sentence' => 'The elephant is the largest land animal in the world.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '大象',
                     'example_translation' => '大象是世界上陸地上最大的動物。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '大象',
                     'example_translation' => '大象是世界上陆地上最大的动物。',
                 ],
@@ -6976,11 +6976,11 @@ return [
             'pronunciation' => '/ˈfɝst/',
             'example_sentence' => 'Monday is the first day of the week for most people.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '第一的',
                     'example_translation' => '對大多數人來說，星期一是一週的第一天。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '第一的；首先',
                     'example_translation' => '对大多数人来说，星期一是一周的第一天。',
                 ],
@@ -6996,11 +6996,11 @@ return [
             'pronunciation' => '/ˈhɔɹs/',
             'example_sentence' => 'He learned how to ride a horse when he was a young boy.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '馬',
                     'example_translation' => '他小時候學過如何騎馬。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '马',
                     'example_translation' => '他小时候学会了骑马。',
                 ],
@@ -7016,11 +7016,11 @@ return [
             'pronunciation' => '/ˈtʃɔkɫət/',
             'example_sentence' => 'She bought a box of dark chocolates for her mother.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '巧克力',
                     'example_translation' => '她給她母親買了一盒黑巧克力。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '巧克力',
                     'example_translation' => '她给妈妈买了一盒黑巧克力。',
                 ],
@@ -7036,11 +7036,11 @@ return [
             'pronunciation' => '/ˈfaɪt/',
             'example_sentence' => 'The two brothers often fight over their toys.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '打架；爭吵',
                     'example_translation' => '這兩兄弟經常為了玩具打架。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '打架；争吵',
                     'example_translation' => '这两兄弟经常为了玩具打架。',
                 ],
@@ -7056,11 +7056,11 @@ return [
             'pronunciation' => '/ˈfeɪs/',
             'example_sentence' => 'He had a big smile on his face when he heard the good news.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '臉',
                     'example_translation' => '聽到好消息時，他臉上帶著燦爛的笑容。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '脸；面对',
                     'example_translation' => '听到那个好消息时，他脸上洋溢着灿烂的微笑。',
                 ],
@@ -7078,11 +7078,11 @@ return [
             'pronunciation' => '/ˈpis/',
             'example_sentence' => 'Would you like another piece of chocolate cake for dessert?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '塊；片',
                     'example_translation' => '你還想再來一塊巧克力蛋糕當甜點嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '块；片；件',
                     'example_translation' => '你还想再吃一块巧克力蛋糕当甜点吗？',
                 ],
@@ -7098,11 +7098,11 @@ return [
             'pronunciation' => '/pɝˈhæps/',
             'example_sentence' => 'Perhaps we should wait for a few more minutes for him to arrive.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '也許',
                     'example_translation' => '也許我們應該再等幾分鐘等他到達。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '也许，可能',
                     'example_translation' => '也许我们应该再等他几分钟。',
                 ],
@@ -7118,11 +7118,11 @@ return [
             'pronunciation' => '/ˈɡɑd/',
             'example_sentence' => 'The ancient Greeks worshipped many different gods.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '神',
                     'example_translation' => '古希臘人崇拜許多不同的神。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '神，上帝',
                     'example_translation' => '古希腊人崇拜许多不同的神。',
                 ],
@@ -7138,11 +7138,11 @@ return [
             'pronunciation' => '/ˈɡɑdəs/',
             'example_sentence' => 'Athena was a powerful goddess in ancient Greek mythology.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '女神',
                     'example_translation' => '雅典娜是古希臘神話中一位強大的女神。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '女神',
                     'example_translation' => '雅典娜是古希腊神话中一位强大的女神。',
                 ],
@@ -7158,11 +7158,11 @@ return [
             'pronunciation' => '/ˈbitʃ/',
             'example_sentence' => 'We spent the whole day at the beach.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '海灘',
                     'example_translation' => '我們在海邊待了一整天。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '海滩，沙滩',
                     'example_translation' => '我们在海滩度过了整整一天。',
                 ],
@@ -7178,11 +7178,11 @@ return [
             'pronunciation' => '/ˈpɹɑbɫəm/',
             'example_sentence' => 'We need to find a sustainable solution to this complex problem.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '問題',
                     'example_translation' => '我們需要為這個複雜的問題找到一個可持續的解決方案。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '问题，难题',
                     'example_translation' => '我们需要为这个复杂的问题找到一个可持续的解决方案。',
                 ],
@@ -7198,11 +7198,11 @@ return [
             'pronunciation' => '/ˈstɹɪŋ/',
             'example_sentence' => 'He used a piece of string to tie the small package together.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '細繩',
                     'example_translation' => '他用一段繩子把那個小包裹紮了起來。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '细绳，线',
                     'example_translation' => '他用一根绳子把那个小包裹系了起来。',
                 ],
@@ -7218,11 +7218,11 @@ return [
             'pronunciation' => '/ˈvɛdʒtəbəɫ/',
             'example_sentence' => 'Eating plenty of fresh vegetables is essential for your health.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '蔬菜',
                     'example_translation' => '多吃新鮮蔬菜對你的健康至關重要。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '蔬菜',
                     'example_translation' => '多吃新鲜蔬菜对你的健康至关重要。',
                 ],
@@ -7238,11 +7238,11 @@ return [
             'pronunciation' => '/ˈpɹoʊˌɡɹæm/',
             'example_sentence' => 'The new computer program is much faster and more efficient.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '程式',
                     'example_translation' => '這個新的電腦程式速度更快，效率更高。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '程序；项目',
                     'example_translation' => '这个新的计算机程序速度更快，效率更高。',
                 ],
@@ -7258,11 +7258,11 @@ return [
             'pronunciation' => '/ˈɹoʊd/',
             'example_sentence' => 'The road was very busy with traffic during the rush hour.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '道路',
                     'example_translation' => '在尖峰時段，這條道路的交通非常繁忙。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '道路，公路',
                     'example_translation' => '在高峰时段，这条路上的交通非常繁忙。',
                 ],
@@ -7280,11 +7280,11 @@ return [
             'pronunciation' => '/ˈɛnɝ/, /ˈɛntɝ/',
             'example_sentence' => 'Please knock on the door before you enter the room.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '進入',
                     'example_translation' => '進房間前請先敲門。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '进入',
                     'example_translation' => '进房间前请先敲门。',
                 ],
@@ -7300,11 +7300,11 @@ return [
             'pronunciation' => '/ˈbaɪk/',
             'example_sentence' => 'I ride my bike to school every day.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '自行車',
                     'example_translation' => '我每天騎自行車去上學。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '自行车',
                     'example_translation' => '我每天骑自行车去上学。',
                 ],
@@ -7320,11 +7320,11 @@ return [
             'pronunciation' => '/ˈstudənt/',
             'example_sentence' => 'She is a very hardworking student who always gets good marks.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '學生',
                     'example_translation' => '她是一個非常努力的學生，總是拿到好成績。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '学生',
                     'example_translation' => '她是一个非常努力的学生，总是拿到好成绩。',
                 ],
@@ -7340,11 +7340,11 @@ return [
             'pronunciation' => '/ˈtiˈvi/',
             'example_sentence' => 'I like to watch the news on television every evening.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '電視',
                     'example_translation' => '我喜歡每天晚上在電視上看新聞。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '电视',
                     'example_translation' => '我喜欢每天晚上在电视上看新闻。',
                 ],
@@ -7360,11 +7360,11 @@ return [
             'pronunciation' => '/ˈbæk/',
             'example_sentence' => 'He came back from work late last night.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '回到原處、返回',
                     'example_translation' => '他昨晚很晚才下班回來。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '回原处；向后；背部',
                     'example_translation' => '他昨晚很晚才下班回来。',
                 ],
@@ -7380,11 +7380,11 @@ return [
             'pronunciation' => '/ˈpɫɛʒɝ/',
             'example_sentence' => 'It was a great pleasure to meet you and talk about our project.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '樂趣',
                     'example_translation' => '很高興見到你並談論我們的專案。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '乐趣；高兴',
                     'example_translation' => '很高兴见到你并讨论我们的项目。',
                 ],
@@ -7400,11 +7400,11 @@ return [
             'pronunciation' => '/ˈweɪk/',
             'example_sentence' => 'I usually wake up at seven o\'clock in the morning every day.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '醒來；喚醒',
                     'example_translation' => '我通常每天早上七點鐘醒來。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '醒来；唤醒',
                     'example_translation' => '我通常每天早上七点钟醒来。',
                 ],
@@ -7420,11 +7420,11 @@ return [
             'pronunciation' => '/ˈɑnəst/',
             'example_sentence' => 'To be honest, I didn\'t really enjoy the movie very much.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '誠實的',
                     'example_translation' => '老實說，我並不是真的很喜歡那部電影。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '诚实的；老实的',
                     'example_translation' => '老实说，我不是很喜欢那部电影。',
                 ],
@@ -7440,11 +7440,11 @@ return [
             'pronunciation' => '/ˈhæv/',
             'example_sentence' => 'I have two brothers and one sister in my family.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '有',
                     'example_translation' => '我有兩個哥哥和一個姐姐。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '有',
                     'example_translation' => '我家有两个哥哥和一个姐姐。',
                 ],
@@ -7460,11 +7460,11 @@ return [
             'pronunciation' => '/ˈbɪɫd/',
             'example_sentence' => 'They plan to build a new hospital in this area.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '建造',
                     'example_translation' => '他們計劃在這個地區建造一座新醫院。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '建造；建筑',
                     'example_translation' => '他们计划在这个地区建造一座新医院。',
                 ],
@@ -7482,11 +7482,11 @@ return [
             'pronunciation' => '/ˈɫaɪt/',
             'example_sentence' => 'The morning light filtered through the thin white curtains.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '光，光線',
                     'example_translation' => '晨光透過薄薄的白窗簾照進來。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '光；明亮的',
                     'example_translation' => '清晨的光线透过薄薄的白窗帘照进来。',
                 ],
@@ -7502,11 +7502,11 @@ return [
             'pronunciation' => '/ˈsəmθɪŋ/',
             'example_sentence' => 'I think I have forgotten something important, but I am not sure.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '某物',
                     'example_translation' => '我想我忘了一些重要的東西，但我不敢肯定。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '某事；某物',
                     'example_translation' => '我想我忘记了一些重要的东西，但我不敢肯定。',
                 ],
@@ -7522,11 +7522,11 @@ return [
             'pronunciation' => '/ˈtɔɪɫət/',
             'example_sentence' => 'Could you please tell me where the nearest public toilet is?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '洗手間',
                     'example_translation' => '能請你告訴我最近的公共廁所在哪裡嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '洗手间；厕所',
                     'example_translation' => '能请你告诉我最近的公共厕所在哪里吗？',
                 ],
@@ -7542,11 +7542,11 @@ return [
             'pronunciation' => '/ˈɪnˌsaɪd/, /ˌɪnˈsaɪd/',
             'example_sentence' => 'It is much warmer inside the house than it is outside.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '裡面',
                     'example_translation' => '房子裡面比外面暖和得多。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '在里面；内部',
                     'example_translation' => '房子里面比外面暖和得多。',
                 ],
@@ -7562,11 +7562,11 @@ return [
             'pronunciation' => '/ˈwɔɫ/',
             'example_sentence' => 'He hung a large picture of a mountain on his bedroom wall.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '牆壁',
                     'example_translation' => '他在臥室牆上掛了一張大山的照片。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '墙；墙壁',
                     'example_translation' => '他在卧室墙上挂了一幅大山的照片。',
                 ],
@@ -7582,11 +7582,11 @@ return [
             'pronunciation' => '/ˈɹizən/',
             'example_sentence' => 'What is the main reason why you decided to move to this city?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '原因',
                     'example_translation' => '你決定搬到這座城市的主要原因是什麼？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '原因；理由',
                     'example_translation' => '你决定搬到这座城市的主要原因是什么？',
                 ],
@@ -7602,11 +7602,11 @@ return [
             'pronunciation' => '/ˈfɑɹ/',
             'example_sentence' => 'The nearest hospital is not far from our house.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '遠的',
                     'example_translation' => '最近的醫院離我們家不遠。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '远的；远地',
                     'example_translation' => '最近的医院离我们家不远。',
                 ],
@@ -7622,11 +7622,11 @@ return [
             'pronunciation' => '/ˈθɪn/',
             'example_sentence' => 'The walls of this old house are very thin, so I can hear noises.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '薄的',
                     'example_translation' => '這棟老房子的牆很薄，所以我能聽到噪音。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '薄的；瘦的',
                     'example_translation' => '这栋老房子的墙很薄，所以我能听到噪音。',
                 ],
@@ -7642,11 +7642,11 @@ return [
             'pronunciation' => '/ˈdɔtɝ/',
             'example_sentence' => 'Their daughter is starting her first year of primary school.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '女兒',
                     'example_translation' => '他們的女兒正要開始讀小學一年級。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '女儿',
                     'example_translation' => '他们的女儿正在读小学一年级。',
                 ],
@@ -7662,11 +7662,11 @@ return [
             'pronunciation' => '/ˈtɹɪp/',
             'example_sentence' => 'We are planning a trip to the mountains for our next vacation.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '旅行',
                     'example_translation' => '我們正計劃下次休假去山裡旅行。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '旅行',
                     'example_translation' => '我们正计划下次假期去山里旅行。',
                 ],
@@ -7684,11 +7684,11 @@ return [
             'pronunciation' => '/ˈɛniwən/',
             'example_sentence' => 'Does anyone know where my keys are?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '任何人',
                     'example_translation' => '有人知道我的鑰匙在哪裡嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '任何人',
                     'example_translation' => '有人知道我的钥匙在哪里吗？',
                 ],
@@ -7704,11 +7704,11 @@ return [
             'pronunciation' => '/ˈtiˌneɪdʒɝ/',
             'example_sentence' => 'Most teenagers enjoy spending time with their friends online.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '青少年',
                     'example_translation' => '大多數青少年喜歡和朋友一起在網路上度過時光。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '青少年',
                     'example_translation' => '大多数青少年喜欢和朋友一起在网上度过时光。',
                 ],
@@ -7724,11 +7724,11 @@ return [
             'pronunciation' => '/ˈtoʊ/',
             'example_sentence' => 'He accidentally stubbed his toe against the corner of the table.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '腳趾',
                     'example_translation' => '他不小心把腳趾撞到了桌角。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '脚趾',
                     'example_translation' => '他不小心把脚趾撞到了桌角上。',
                 ],
@@ -7744,11 +7744,11 @@ return [
             'pronunciation' => '/ˈbəs/',
             'example_sentence' => 'I missed the bus this morning, so I had to walk.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '公車',
                     'example_translation' => '我今天早上錯過了公車，所以我不得不走路。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '公交车',
                     'example_translation' => '我今天早上错过了公交车，所以不得不走路。',
                 ],
@@ -7764,11 +7764,11 @@ return [
             'pronunciation' => '/ˈɔɫˌmoʊst/',
             'example_sentence' => 'I have almost finished my homework.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '幾乎',
                     'example_translation' => '我快要完成作業了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '几乎',
                     'example_translation' => '我快要完成作业了。',
                 ],
@@ -7784,11 +7784,11 @@ return [
             'pronunciation' => '/səkˈsɛsfəɫ/',
             'example_sentence' => 'She is a very successful businesswoman who owns three companies.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '成功的',
                     'example_translation' => '她是一位非常成功的女商人，擁有三家公司。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '成功的',
                     'example_translation' => '她是一位非常成功的女商人，拥有三家公司。',
                 ],
@@ -7804,11 +7804,11 @@ return [
             'pronunciation' => '/ˈwaɪnd/, /ˈwɪnd/',
             'example_sentence' => 'The strong wind made it difficult to walk along the beach.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '風',
                     'example_translation' => '強風使得沿海灘散步變得很困難。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '风',
                     'example_translation' => '强风使得沿海滩散步变得很困难。',
                 ],
@@ -7824,11 +7824,11 @@ return [
             'pronunciation' => '/ˈbʊk/',
             'example_sentence' => 'I am reading a very interesting book.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '書',
                     'example_translation' => '我正在讀一本非常有意思的書。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '书',
                     'example_translation' => '我正在读一本非常有意思的书。',
                 ],
@@ -7844,11 +7844,11 @@ return [
             'pronunciation' => '/ˈbɹɛd/',
             'example_sentence' => 'I usually have some fresh bread for breakfast.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '麵包',
                     'example_translation' => '我早餐通常吃一些新鮮麵包。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '面包',
                     'example_translation' => '我早餐通常吃一些新鲜面包。',
                 ],
@@ -7864,11 +7864,11 @@ return [
             'pronunciation' => '/ˈɪntu/, /ɪnˈtu/, /ɪntə/',
             'example_sentence' => 'The cat jumped into the box and fell asleep immediately.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '進入',
                     'example_translation' => '貓跳進盒子裡，立刻就睡著了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '进入，到……里面',
                     'example_translation' => '猫跳进盒子里面，立刻就睡着了。',
                 ],
@@ -7886,11 +7886,11 @@ return [
             'pronunciation' => '/ˈweɪv/',
             'example_sentence' => 'The waves were crashing against the rocks during the storm.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '海浪',
                     'example_translation' => '暴風雨期間，海浪拍打著岩石。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '海浪',
                     'example_translation' => '暴风雨期间，海浪拍打着岩石。',
                 ],
@@ -7906,11 +7906,11 @@ return [
             'pronunciation' => '/ˈbɹɪŋ/',
             'example_sentence' => 'Please bring your umbrella, as it might rain.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '帶來',
                     'example_translation' => '請帶上雨傘，因為可能會下雨。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '带来',
                     'example_translation' => '请带上雨伞，因为可能会下雨。',
                 ],
@@ -7926,11 +7926,11 @@ return [
             'pronunciation' => '/ˈhɛɫθ/',
             'example_sentence' => 'Good health is the most valuable thing in life.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '健康',
                     'example_translation' => '良好的健康是生命中最重要的東西。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '健康',
                     'example_translation' => '良好的健康是生命中最宝贵的东西。',
                 ],
@@ -7946,11 +7946,11 @@ return [
             'pronunciation' => '/ˈæz/, /ˈɛz/',
             'example_sentence' => 'He works as a doctor in a big hospital.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '作為',
                     'example_translation' => '他在一家大醫院當醫生。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '作为',
                     'example_translation' => '他在一家大医院当医生。',
                 ],
@@ -7966,11 +7966,11 @@ return [
             'pronunciation' => '/ˈkɫɝk/',
             'example_sentence' => 'The clerk at the front desk was very helpful.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '職員',
                     'example_translation' => '前台的辦事員非常樂於助人。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '办事员，前台服务人员',
                     'example_translation' => '前台的服务人员非常乐于助人。',
                 ],
@@ -7986,11 +7986,11 @@ return [
             'pronunciation' => '/ˈfɫaɪ/',
             'example_sentence' => 'I would love to be able to fly like a bird in the sky.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '飛',
                     'example_translation' => '我希望能像鳥兒一樣在天空中飛翔。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '飞，飞行',
                     'example_translation' => '我希望能像鸟儿一样在天空中飞翔。',
                 ],
@@ -8006,11 +8006,11 @@ return [
             'pronunciation' => '/ˈfɑɹənɝ/, /ˈfɑɹnɝ/, /ˈfɔɹənɝ/, /ˈfɔɹnɝ/',
             'example_sentence' => 'The city attracts many foreigners who come here to study and work.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '外國人',
                     'example_translation' => '這座城市吸引了許多來這裡學習和工作的外國人。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '外国人',
                     'example_translation' => '这座城市吸引了许多来这里学习和工作的外国人。',
                 ],
@@ -8026,11 +8026,11 @@ return [
             'pronunciation' => '/ˈθɪŋk/',
             'example_sentence' => 'I think that we should start the project as soon as possible.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '認為',
                     'example_translation' => '我認為我們應該儘快開始這個專案。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '思考，认为',
                     'example_translation' => '我认为我们应该尽快开始这个项目。',
                 ],
@@ -8046,11 +8046,11 @@ return [
             'pronunciation' => '/ɛnˈdʒɔɪmənt/',
             'example_sentence' => 'I really enjoy spending time with my family and friends.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '享受',
                     'example_translation' => '我真的很享受和家人朋友在一起的時光。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '乐趣，享受',
                     'example_translation' => '我真的很享受和家人朋友在一起的时光。',
                 ],
@@ -8066,11 +8066,11 @@ return [
             'pronunciation' => '/ˈkæɹi/, /ˈkɛɹi/',
             'example_sentence' => 'He helped me carry the heavy boxes.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '攜帶，搬運',
                     'example_translation' => '他幫我搬那些沉重的盒子。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '搬运，携带',
                     'example_translation' => '他帮我搬那些沉重的盒子。',
                 ],
@@ -8088,11 +8088,11 @@ return [
             'pronunciation' => '/ˈɑɹm/',
             'example_sentence' => 'He broke his arm while playing soccer.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '手臂',
                     'example_translation' => '他在踢足球時弄斷了手臂。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '手臂；武装',
                     'example_translation' => '他在踢足球时摔断了手臂。',
                 ],
@@ -8108,11 +8108,11 @@ return [
             'pronunciation' => '/ˈɫɑt/, /ˈɫɔt/',
             'example_sentence' => 'There were a lot of people waiting at the bus stop this morning.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '很多',
                     'example_translation' => '今天早上公車站有很多人在等車。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '许多；大量',
                     'example_translation' => '今天早上公交车站有很多人在等车。',
                 ],
@@ -8128,11 +8128,11 @@ return [
             'pronunciation' => '/ˈbɛntʃ/',
             'example_sentence' => 'They sat on a park bench.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '長椅',
                     'example_translation' => '他們坐在公園的長椅上。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '长椅',
                     'example_translation' => '他们坐在公园的长椅上。',
                 ],
@@ -8148,11 +8148,11 @@ return [
             'pronunciation' => '/ˈhæpi/',
             'example_sentence' => 'The news made her very happy and she couldn\'t stop smiling.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '快樂的',
                     'example_translation' => '這個消息讓她非常高興，她笑得合不攏嘴。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '快乐的；高兴的',
                     'example_translation' => '这个消息让她非常高兴，她笑得合不拢嘴。',
                 ],
@@ -8168,11 +8168,11 @@ return [
             'pronunciation' => '/ˈmidiə/',
             'example_sentence' => 'Social media has changed the way people communicate with each other.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '媒體',
                     'example_translation' => '社交媒體改變了人們互相交流的方式。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '媒体',
                     'example_translation' => '社交媒体改变了人们相互交流的方式。',
                 ],
@@ -8188,11 +8188,11 @@ return [
             'pronunciation' => '/ˈwɝd/',
             'example_sentence' => 'Please try to learn ten new English words every single day.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '單字',
                     'example_translation' => '請試著每天學習十個新的英語單字。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '单词；话语',
                     'example_translation' => '请尝试每天学习十个新的英语单词。',
                 ],
@@ -8208,11 +8208,11 @@ return [
             'pronunciation' => '/ˈtɔk/',
             'example_sentence' => 'I need to talk to you about our plans for the weekend trip.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '談話',
                     'example_translation' => '我需要和你談談我們週末旅行的計劃。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '谈话；讲话',
                     'example_translation' => '我需要和你谈谈我们周末旅行的计划。',
                 ],
@@ -8228,11 +8228,11 @@ return [
             'pronunciation' => '/ˈɡɪft/',
             'example_sentence' => 'She received a very special gift for her graduation.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '禮物',
                     'example_translation' => '她收到了一份非常特別的畢業禮物。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '礼物；天赋',
                     'example_translation' => '她收到了一份非常特别的毕业礼物。',
                 ],
@@ -8248,11 +8248,11 @@ return [
             'pronunciation' => '/ˈhɑɫəˌdeɪ/, /ˈhɑɫɪˌdeɪ/',
             'example_sentence' => 'We are planning to go to the mountains for our summer holiday.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '假期',
                     'example_translation' => '我們計劃去山裡度暑假。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '节日；假期',
                     'example_translation' => '我们计划去山里度暑假。',
                 ],
@@ -8268,11 +8268,11 @@ return [
             'pronunciation' => '/ˈdɪɡ/',
             'example_sentence' => 'The dog loves to dig holes in the garden to hide its bones.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '挖',
                     'example_translation' => '這隻狗喜歡在花園裡挖洞來藏它的骨頭。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '挖掘；挖',
                     'example_translation' => '这只狗喜欢在花园里挖洞来藏它的骨头。',
                 ],
@@ -8290,11 +8290,11 @@ return [
             'pronunciation' => '/ˈwɝɫd/',
             'example_sentence' => 'I would love to travel around the world and see different cultures.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '世界',
                     'example_translation' => '我很想環遊世界，了解不同的文化。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '世界',
                     'example_translation' => '我很想环游世界，了解不同的文化。',
                 ],
@@ -8310,11 +8310,11 @@ return [
             'pronunciation' => '/ˈtʃuz/',
             'example_sentence' => 'Please choose the color that you like best.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '選擇',
                     'example_translation' => '請選擇你最喜歡的顏色。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '选择；挑选',
                     'example_translation' => '请选择你最喜欢的颜色。',
                 ],
@@ -8330,11 +8330,11 @@ return [
             'pronunciation' => '/ˈfʊɫ/',
             'example_sentence' => 'The bus was so full that I had to stand all the way home.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '滿的',
                     'example_translation' => '公車太擠了，我不得不一路站回家。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '满的；饱的',
                     'example_translation' => '公交车太挤了，我不得不一路站回家。',
                 ],
@@ -8350,11 +8350,11 @@ return [
             'pronunciation' => '/ˈɔfɪs/',
             'example_sentence' => 'He works in a modern office in the center of the city.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '辦公室',
                     'example_translation' => '他在市中心一間現代化的辦公室工作。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '办公室',
                     'example_translation' => '他在市中心一间现代化的办公室工作。',
                 ],
@@ -8370,11 +8370,11 @@ return [
             'pronunciation' => '/ˈtɹit/',
             'example_sentence' => 'You should always treat others with kindness and respect.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '對待',
                     'example_translation' => '你應該始終以友善和尊重的態度對待他人。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '对待；治疗；款待',
                     'example_translation' => '你应该始终以友善和尊重的态度对待他人。',
                 ],
@@ -8390,11 +8390,11 @@ return [
             'pronunciation' => '/ˈɫæf/',
             'example_sentence' => 'The children couldn\'t help but laugh at the funny clown.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '笑',
                     'example_translation' => '孩子們忍不住對那個滑稽的小丑哈哈大笑。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '笑；大笑',
                     'example_translation' => '孩子们忍不住对着那个滑稽的小丑哈哈大笑。',
                 ],
@@ -8410,11 +8410,11 @@ return [
             'pronunciation' => '/ˈdʒəmp/',
             'example_sentence' => 'The cat can jump very high to catch the colorful butterfly.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '跳',
                     'example_translation' => '那隻貓能跳得很高去捉那隻色彩繽紛的蝴蝶。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '跳跃；跳',
                     'example_translation' => '那只猫能跳得很高去抓那只色彩缤纷的蝴蝶。',
                 ],
@@ -8430,11 +8430,11 @@ return [
             'pronunciation' => '/ˈboʊθ/',
             'example_sentence' => 'Both of my sisters are teachers.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '兩個都',
                     'example_translation' => '我的兩個姐姐都是老師。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '两个都',
                     'example_translation' => '我的两个姐姐都是老师。',
                 ],
@@ -8450,11 +8450,11 @@ return [
             'pronunciation' => '/ˈti/',
             'example_sentence' => 'Would you like to have some hot tea or would you prefer coffee?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '茶',
                     'example_translation' => '你想要喝點熱茶，還是更喜歡咖啡？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '茶；茶叶',
                     'example_translation' => '你想喝点热茶，还是更喜欢喝咖啡？',
                 ],
@@ -8470,11 +8470,11 @@ return [
             'pronunciation' => '/ˈtʃæns/',
             'example_sentence' => 'This is a great chance for you to learn something new.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '機會',
                     'example_translation' => '這是你學習新東西的好機會。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '机会',
                     'example_translation' => '这是你学习新东西的好机会。',
                 ],
@@ -8492,11 +8492,11 @@ return [
             'pronunciation' => '/ˈkaɪt/',
             'example_sentence' => 'It is a perfect windy day to go and fly a kite in the park.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '風箏',
                     'example_translation' => '今天風很大，非常適合去公園放風箏。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '风筝',
                     'example_translation' => '今天风很大，非常适合去公园放风筝。',
                 ],
@@ -8512,11 +8512,11 @@ return [
             'pronunciation' => '/ˈɛksɝˌsaɪz/',
             'example_sentence' => 'Taking regular exercise is one of the best ways to stay healthy.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '鍛鍊',
                     'example_translation' => '規律運動是保持健康的最佳方式之一。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '锻炼，运动',
                     'example_translation' => '定期进行体育锻炼是保持健康的最佳方式之一。',
                 ],
@@ -8532,11 +8532,11 @@ return [
             'pronunciation' => '/ˈkjut/',
             'example_sentence' => 'That puppy is so cute, I want to take it home.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '可愛的',
                     'example_translation' => '那隻小狗真可愛，我想把它帶回家。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '可爱的',
                     'example_translation' => '那只小狗太可爱了，我想把它带回家。',
                 ],
@@ -8552,11 +8552,11 @@ return [
             'pronunciation' => '/ˈtʃɛɹ/',
             'example_sentence' => 'Please have a seat on that comfortable chair.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '椅子',
                     'example_translation' => '請在那把舒服的椅子上坐下。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '椅子',
                     'example_translation' => '请在那把舒适的椅子上坐下。',
                 ],
@@ -8572,11 +8572,11 @@ return [
             'pronunciation' => '/ˈnɔɹθ/',
             'example_sentence' => 'The birds fly north in the spring to find more food.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '北方，向北',
                     'example_translation' => '鳥兒在春天向北飛以尋找更多食物。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '北方，向北',
                     'example_translation' => '鸟儿在春天飞往北方以寻找更多的食物。',
                 ],
@@ -8592,11 +8592,11 @@ return [
             'pronunciation' => '/ˈʃæɫ/',
             'example_sentence' => 'Shall we go for a walk in the park after we finish our lunch?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '將',
                     'example_translation' => '我們午飯後去公園散步好嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '将，要（用于征求意见）',
                     'example_translation' => '我们吃完午饭后去公园散步好吗？',
                 ],
@@ -8612,11 +8612,11 @@ return [
             'pronunciation' => '/ˈwɝk/',
             'example_sentence' => 'He is busy with his work and doesn\'t have much free time.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '工作',
                     'example_translation' => '他正忙於工作，沒有多少空閒時間。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '工作',
                     'example_translation' => '他忙于工作，没有多少空闲时间。',
                 ],
@@ -8632,11 +8632,11 @@ return [
             'pronunciation' => '/ˈhɛˌdeɪk/',
             'example_sentence' => 'I have a terrible headache, so I need to rest for a while.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '頭痛',
                     'example_translation' => '我頭痛得很厲害，所以我需要休息一會兒。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '头痛',
                     'example_translation' => '我头痛得厉害，所以需要休息一会儿。',
                 ],
@@ -8652,11 +8652,11 @@ return [
             'pronunciation' => '/ˈsəmˌwən/',
             'example_sentence' => 'Someone left their umbrella in the library this afternoon.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '某人',
                     'example_translation' => '有人今天下午把雨傘忘在圖書館了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '某人，有人',
                     'example_translation' => '有人今天下午把雨伞落在了图书馆。',
                 ],
@@ -8672,11 +8672,11 @@ return [
             'pronunciation' => '/ˈpaɪp/',
             'example_sentence' => 'The plumber came to fix the leaking water pipe in the kitchen.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '管道',
                     'example_translation' => '水管工來修理廚房漏水的水管。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '水管，管道',
                     'example_translation' => '水管工来修理厨房漏水的水管。',
                 ],
@@ -8694,11 +8694,11 @@ return [
             'pronunciation' => '/ˈsɔŋ/',
             'example_sentence' => 'This is my favorite song, it always makes me feel happy.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '歌曲',
                     'example_translation' => '這是我最喜歡的歌，它總是讓我感到快樂。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '歌曲',
                     'example_translation' => '这是我最喜欢的歌，它总是让我感到快乐。',
                 ],
@@ -8714,11 +8714,11 @@ return [
             'pronunciation' => '/ˈmɛnju/',
             'example_sentence' => 'Could you please bring us the menu so we can order our dinner?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '菜單',
                     'example_translation' => '能請你給我們拿一下菜單嗎？這樣我們可以點餐。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '菜单',
                     'example_translation' => '能请您把菜单拿给我们吗？这样我们可以点晚餐。',
                 ],
@@ -8734,11 +8734,11 @@ return [
             'pronunciation' => '/ˈɫuz/',
             'example_sentence' => 'I hope I don\'t lose my umbrella again, I just bought this one.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '遺失，弄丟',
                     'example_translation' => '我希望我不會再弄丟雨傘了，這把是我剛買的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '丢失，遗失',
                     'example_translation' => '希望我不会再弄丢雨伞了，这把是我刚买的。',
                 ],
@@ -8754,11 +8754,11 @@ return [
             'pronunciation' => '/ˈseɪm/',
             'example_sentence' => 'My brother and I have exactly the same color of eyes.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '相同的',
                     'example_translation' => '我和我哥哥的眼睛顏色完全一樣。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '相同的，一样的',
                     'example_translation' => '我和我哥哥的眼睛颜色完全一样。',
                 ],
@@ -8774,11 +8774,11 @@ return [
             'pronunciation' => '/ˈmuvi/',
             'example_sentence' => 'What is the best movie you have ever seen in your entire life?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '電影',
                     'example_translation' => '你一生中看過最好的電影是什麼？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '电影',
                     'example_translation' => '你一生中看过的最好的电影是什么？',
                 ],
@@ -8794,11 +8794,11 @@ return [
             'pronunciation' => '/mɪˈsteɪk/',
             'example_sentence' => 'It is a common mistake to confuse these two similar words.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '錯誤',
                     'example_translation' => '混淆這兩個相似的單詞是一個常見的錯誤。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '错误',
                     'example_translation' => '混淆这两个相似的单词是一个常见的错误。',
                 ],
@@ -8814,11 +8814,11 @@ return [
             'pronunciation' => '/ˈɡɹeɪd/',
             'example_sentence' => 'She is very happy because she got a good grade on her English test.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '成績，分數',
                     'example_translation' => '她很高興，因為她英語考試得了個好分數。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '成绩，分数；年级',
                     'example_translation' => '她很高兴，因为她在英语考试中得了好成绩。',
                 ],
@@ -8834,11 +8834,11 @@ return [
             'pronunciation' => '/ˈkət/',
             'example_sentence' => 'Please use a sharp knife to cut the birthday cake.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '切',
                     'example_translation' => '請用鋒利的刀切生日蛋糕。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '切，割',
                     'example_translation' => '请用一把锋利的刀切生日蛋糕。',
                 ],
@@ -8854,11 +8854,11 @@ return [
             'pronunciation' => '/ˈθɹoʊ/',
             'example_sentence' => 'The boy tried to throw the ball as far as he could.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '丟',
                     'example_translation' => '那個男孩試圖把球扔得越遠越好。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '扔，投，掷',
                     'example_translation' => '那个男孩试图把球扔得尽可能远。',
                 ],
@@ -8874,11 +8874,11 @@ return [
             'pronunciation' => '/ˈɔɹəndʒ/, /ˈɔɹɪndʒ/',
             'example_sentence' => 'I would like a glass of fresh orange juice with my breakfast.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '柳橙，橘子；橙色的',
                     'example_translation' => '我早餐想要一杯新鮮的橙汁。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '橙子，橙色的',
                     'example_translation' => '我早餐想要一杯新鲜的橙汁。',
                 ],
@@ -8896,11 +8896,11 @@ return [
             'pronunciation' => '/ˈɹɛsˌtɹɑnt/, /ˈɹɛstɝˌɑnt/',
             'example_sentence' => 'There is a great Italian restaurant just around the corner.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '餐廳',
                     'example_translation' => '拐角處有一家很棒的義大利餐廳。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '餐厅，餐馆',
                     'example_translation' => '拐角处有一家很棒的意大利餐厅。',
                 ],
@@ -8916,11 +8916,11 @@ return [
             'pronunciation' => '/ˈmɛdəsən/',
             'example_sentence' => 'The doctor prescribed some medicine to help with my cough.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '藥物',
                     'example_translation' => '醫生開了一些藥來治療我的咳嗽。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '药物，医学',
                     'example_translation' => '医生开了一些药来治疗我的咳嗽。',
                 ],
@@ -8936,11 +8936,11 @@ return [
             'pronunciation' => '/ˈɛɫs/',
             'example_sentence' => 'Is there anything else you would like to order?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '別的',
                     'example_translation' => '你還有什麼別的想點的嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '其他的，另外的',
                     'example_translation' => '您还有什么别的想点的吗？',
                 ],
@@ -8956,11 +8956,11 @@ return [
             'pronunciation' => '/ˈsɝtən/',
             'example_sentence' => 'Are you certain that you locked the door?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '肯定的，確信的',
                     'example_translation' => '你確定你鎖門了嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '确定的，肯定的',
                     'example_translation' => '你确定你锁门了吗？',
                 ],
@@ -8976,11 +8976,11 @@ return [
             'pronunciation' => '/ˈtɔɫ/',
             'example_sentence' => 'He is very tall, just like his father and older brother.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '高的',
                     'example_translation' => '他很高，就像他的父親和哥哥一樣。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '高的',
                     'example_translation' => '他很高，就像他的父亲和哥哥一样。',
                 ],
@@ -8996,11 +8996,11 @@ return [
             'pronunciation' => '/ˈbæskətˌbɔɫ/',
             'example_sentence' => 'He likes to play basketball with his friends.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '籃球',
                     'example_translation' => '他喜歡和朋友們一起打籃球。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '篮球',
                     'example_translation' => '他喜欢和朋友们一起打篮球。',
                 ],
@@ -9016,11 +9016,11 @@ return [
             'pronunciation' => '/ˈɪntɝvˌju/',
             'example_sentence' => 'She has a job interview at a local hospital tomorrow.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '面試',
                     'example_translation' => '她明天在當地一家醫院有一個工作面試。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '面试，采访',
                     'example_translation' => '她明天在当地一家医院有一场工作面试。',
                 ],
@@ -9036,11 +9036,11 @@ return [
             'pronunciation' => '/ˈɡeɪm/',
             'example_sentence' => 'Would you like to play a game of chess with me this afternoon?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '遊戲',
                     'example_translation' => '你想在今天下午跟我玩一局象棋嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '游戏，比赛',
                     'example_translation' => '今天下午你想和我下局国际象棋吗？',
                 ],
@@ -9056,11 +9056,11 @@ return [
             'pronunciation' => '/ˈmædʒɪk/',
             'example_sentence' => 'The magician performed a wonderful magic trick that amazed everyone.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '魔法',
                     'example_translation' => '魔術師表演了一個精彩的魔術，讓每個人都感到驚訝。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '魔法的，魔术',
                     'example_translation' => '魔术师表演了一个精彩的魔术，让每个人都感到惊奇。',
                 ],
@@ -9076,11 +9076,11 @@ return [
             'pronunciation' => '/ˈsid/',
             'example_sentence' => 'The gardener planted some flower seeds in the front garden.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '種子',
                     'example_translation' => '園丁在前花園種了一些花種子。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '种子',
                     'example_translation' => '园丁在前院种了一些花种。',
                 ],
@@ -9098,11 +9098,11 @@ return [
             'pronunciation' => '/ˈɫɛvəɫ/',
             'example_sentence' => 'This English course is suitable for intermediate level students.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '等級',
                     'example_translation' => '這門英語課程適合中級水平的學生。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '水平，等级',
                     'example_translation' => '这门英语课程适合中级水平的学生。',
                 ],
@@ -9118,11 +9118,11 @@ return [
             'pronunciation' => '/ˈmætɝ/',
             'example_sentence' => 'It doesn\'t matter if you make a mistake, as long as you learn.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '要緊，有關係；事情',
                     'example_translation' => '如果你犯了錯誤也沒關係，只要你學到東西就行。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '事情，要紧',
                     'example_translation' => '犯错没关系，只要你能从中学习就好。',
                 ],
@@ -9138,11 +9138,11 @@ return [
             'pronunciation' => '/ˈtaɪm/',
             'example_sentence' => 'Time flies quickly when you are having a lot of fun with friends.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '時間',
                     'example_translation' => '當你和朋友玩得很開心時，時間過得很快。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '时间，计时',
                     'example_translation' => '当你和朋友玩得很开心时，时间过得很快。',
                 ],
@@ -9158,11 +9158,11 @@ return [
             'pronunciation' => '/wi/',
             'example_sentence' => 'We are going to the movies tonight.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '我們',
                     'example_translation' => '我們今晚要去看電影。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '我们',
                     'example_translation' => '我们今晚要去看电影。',
                 ],
@@ -9178,11 +9178,11 @@ return [
             'pronunciation' => '/əs/',
             'example_sentence' => 'Please join us for dinner this weekend.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '我們（受格）',
                     'example_translation' => '請這個週末加入我們共進晚餐。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '我们（宾格）',
                     'example_translation' => '请这个周末和我们共进晚餐。',
                 ],
@@ -9198,11 +9198,11 @@ return [
             'pronunciation' => '/aʊɝ/',
             'example_sentence' => 'Our house is at the end of this street.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '我們的',
                     'example_translation' => '我們家在這條街的盡頭。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '我们的',
                     'example_translation' => '我们的家在这条街的尽头。',
                 ],
@@ -9218,11 +9218,11 @@ return [
             'pronunciation' => '/aʊɝˈsɛɫvz/',
             'example_sentence' => 'We taught ourselves how to play the guitar.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '我們自己',
                     'example_translation' => '我們自學了彈吉他。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '我们自己',
                     'example_translation' => '我们自学了弹吉他。',
                 ],
@@ -9238,11 +9238,11 @@ return [
             'pronunciation' => '/kəmˈpjutɝ/',
             'example_sentence' => 'I use my computer to write emails and surf the internet.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '電腦',
                     'example_translation' => '我用電腦寫電子郵件和上網。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '电脑，计算机',
                     'example_translation' => '我用电脑写电子邮件和上网。',
                 ],
@@ -9258,11 +9258,11 @@ return [
             'pronunciation' => '/pɹiˈpɛɹ/',
             'example_sentence' => 'He is busy preparing for his English presentation tomorrow.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '準備',
                     'example_translation' => '他正忙於準備明天的英語演講。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '准备',
                     'example_translation' => '他正忙着准备明天的英语演讲。',
                 ],
@@ -9278,11 +9278,11 @@ return [
             'pronunciation' => '/ˈɡoʊst/',
             'example_sentence' => 'Some people believe that ghosts haunt this old house at night.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '鬼，鬼魂',
                     'example_translation' => '有些人相信這棟老房子晚上有鬼出沒。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '鬼魂，幽灵',
                     'example_translation' => '有些人相信这栋老房子晚上有鬼魂出没。',
                 ],
@@ -9300,11 +9300,11 @@ return [
             'pronunciation' => '/ˈhɑɹd/',
             'example_sentence' => 'He works very hard to provide a good life for his family.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '努力地',
                     'example_translation' => '他工作非常努力，為家人提供良好的生活。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '努力地；艰难的；硬的',
                     'example_translation' => '他非常努力地工作，为家人提供良好的生活。',
                 ],
@@ -9320,11 +9320,11 @@ return [
             'pronunciation' => '/təˈnaɪt/, /tʊˈnaɪt/',
             'example_sentence' => 'Would you like to go to the cinema with me tonight?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '今晚',
                     'example_translation' => '你今晚想和我一起去電影院嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '今晚；今夜',
                     'example_translation' => '你今晚想和我一起去看电影吗？',
                 ],
@@ -9340,11 +9340,11 @@ return [
             'pronunciation' => '/ˈɡaɪ/',
             'example_sentence' => 'He is a really nice guy and always helps others.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '傢伙',
                     'example_translation' => '他是個非常好的人，總是在幫助別人。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '家伙；人',
                     'example_translation' => '他真是个非常好的人，总是帮助别人。',
                 ],
@@ -9360,11 +9360,11 @@ return [
             'pronunciation' => '/ˈneɪm/',
             'example_sentence' => 'Please write your full name clearly at the top of the application.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '姓名',
                     'example_translation' => '請在申請表的頂部清晰地寫下你的全名。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '姓名；名字',
                     'example_translation' => '请在申请表的顶部清晰地写下你的全名。',
                 ],
@@ -9380,11 +9380,11 @@ return [
             'pronunciation' => '/ɪɡˈzæmpəɫ/',
             'example_sentence' => 'Can you give me an example of how to use this word?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '例子',
                     'example_translation' => '你能給我一個如何使用這個單詞的例子嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '例子；榜样',
                     'example_translation' => '你能给我举一个如何使用这个单词的例子吗？',
                 ],
@@ -9400,11 +9400,11 @@ return [
             'pronunciation' => '/ˈkwaɪt/',
             'example_sentence' => 'The movie was quite interesting, but it was a bit too long.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '相當',
                     'example_translation' => '那部電影相當有趣，但就是有點太長了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '相当；非常',
                     'example_translation' => '那部电影相当有趣，就是有点太长了。',
                 ],
@@ -9420,11 +9420,11 @@ return [
             'pronunciation' => '/ˈɛnvəˌɫoʊp/',
             'example_sentence' => 'She put the letter into an envelope and sealed it.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '信封',
                     'example_translation' => '她把信放進信封並封好了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '信封',
                     'example_translation' => '她把信装进信封并封好了口。',
                 ],
@@ -9440,11 +9440,11 @@ return [
             'pronunciation' => '/ˈsɪstɝ/',
             'example_sentence' => 'My younger sister is studying to become a professional nurse.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '姐妹',
                     'example_translation' => '我的妹妹正在學習成為一名專業護士。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '姐妹（姐或妹）',
                     'example_translation' => '我的妹妹正在学习成为一名专业护士。',
                 ],
@@ -9460,11 +9460,11 @@ return [
             'pronunciation' => '/ˈvɪdioʊ/',
             'example_sentence' => 'We watched an educational video about the environment today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '影片',
                     'example_translation' => '我們今天看了一段關於環境的教育影片。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '视频；录像',
                     'example_translation' => '我们今天观看了一段关于环境教育的视频。',
                 ],
@@ -9480,11 +9480,11 @@ return [
             'pronunciation' => '/ˈmit/',
             'example_sentence' => 'I am going to meet my old school friends at the cafe later.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '見面',
                     'example_translation' => '我打算晚些時候在咖啡館見見我的老校友。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '见面；会面；遇见',
                     'example_translation' => '我打算稍后在咖啡馆和我的老同学见面。',
                 ],
@@ -9502,11 +9502,11 @@ return [
             'pronunciation' => '/əˈɫaʊ/',
             'example_sentence' => 'My parents don\'t allow me to stay out late.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '允許',
                     'example_translation' => '我父母不允許我太晚回家。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '允许；准许',
                     'example_translation' => '我的父母不允许我在外面呆得很晚。',
                 ],
@@ -9522,11 +9522,11 @@ return [
             'pronunciation' => '/ˈmɪnət/, /maɪˈnut/, /maɪnˈjut/',
             'example_sentence' => 'Please wait a minute, I need to finish writing this email.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '分鐘',
                     'example_translation' => '請等一分鐘，我需要寫完這封電子郵件。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '分钟',
                     'example_translation' => '请稍等一下，我需要写完这封电子邮件。',
                 ],
@@ -9542,11 +9542,11 @@ return [
             'pronunciation' => '/ˈbɫoʊ/',
             'example_sentence' => 'The wind began to blow strongly.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '吹',
                     'example_translation' => '風開始強勁地吹。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '吹；吹动',
                     'example_translation' => '风开始猛烈地吹起来。',
                 ],
@@ -9562,11 +9562,11 @@ return [
             'pronunciation' => '/ˈfɑɹm/',
             'example_sentence' => 'They live on a small farm and grow their own vegetables.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '農場',
                     'example_translation' => '他們住在一個小農場，自己種蔬菜。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '农场；农庄',
                     'example_translation' => '他们住在一座小农场里，自己种蔬菜。',
                 ],
@@ -9582,11 +9582,11 @@ return [
             'pronunciation' => '/ˈnaɪf/',
             'example_sentence' => 'Please be careful when you are using that sharp bread knife.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '刀',
                     'example_translation' => '使用那把鋒利的麵包刀時請小心。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '刀',
                     'example_translation' => '使用那把锋利的切面包刀时请小心。',
                 ],
@@ -9602,11 +9602,11 @@ return [
             'pronunciation' => '/ˈkəntɹi/',
             'example_sentence' => 'I would love to travel to a different country every year.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '國家',
                     'example_translation' => '我希望能每年都去一個不同的國家旅行。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '国家；乡村',
                     'example_translation' => '我希望每年都能去不同的国家旅行。',
                 ],
@@ -9622,11 +9622,11 @@ return [
             'pronunciation' => '/ɹiˈpit/, /ɹɪˈpit/',
             'example_sentence' => 'Could you please repeat that? I didn\'t quite catch what you said.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '重複',
                     'example_translation' => '你能再說一遍嗎？我剛才沒太聽清楚你說的話。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '重复；重说',
                     'example_translation' => '你能再重复一遍吗？我刚才没太听清你说的话。',
                 ],
@@ -9642,11 +9642,11 @@ return [
             'pronunciation' => '/ˈɛnd/',
             'example_sentence' => 'The movie has a very surprising end that no one expected.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '結尾',
                     'example_translation' => '這部電影有一個誰也沒料到的令人驚訝的結局。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '结局；终点；结束',
                     'example_translation' => '这部电影有一个谁也没有料到的意外结局。',
                 ],
@@ -9662,11 +9662,11 @@ return [
             'pronunciation' => '/ˈfɪŋɡɝ/',
             'example_sentence' => 'He accidentally cut his finger while he was preparing dinner.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '手指',
                     'example_translation' => '他在準備晚餐時不小心割傷了手指。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '手指',
                     'example_translation' => '他在做晚饭时不小心割伤了手指。',
                 ],
@@ -9682,11 +9682,11 @@ return [
             'pronunciation' => '/ˈwɪʃ/',
             'example_sentence' => 'I wish that I could travel around the world and see everything.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '希望',
                     'example_translation' => '我希望能環遊世界，看到一切。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '希望；祝愿',
                     'example_translation' => '我希望自己能环游世界，亲眼看看一切。',
                 ],
@@ -9704,11 +9704,11 @@ return [
             'pronunciation' => '/ˈtʃɪkən/',
             'example_sentence' => 'The farmer keeps a lot of chickens in the backyard.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '雞',
                     'example_translation' => '農民在後院養了很多雞。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '鸡',
                     'example_translation' => '农民在后院养了很多鸡。',
                 ],
@@ -9724,11 +9724,11 @@ return [
             'pronunciation' => '/ˈhoʊɫd/',
             'example_sentence' => 'Please hold the ladder for me while I climb up.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '抓住',
                     'example_translation' => '當我爬上去時，請幫我扶住梯子。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '抓住，扶住',
                     'example_translation' => '我往上爬的时候，请帮我扶住梯子。',
                 ],
@@ -9744,11 +9744,11 @@ return [
             'pronunciation' => '/ˈmɪɫjən/',
             'example_sentence' => 'There are more than seven million people living in this city.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '百萬',
                     'example_translation' => '這座城市有七百多萬人口。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '百万',
                     'example_translation' => '这座城市有七百多万人居住。',
                 ],
@@ -9764,11 +9764,11 @@ return [
             'pronunciation' => '/ˈkɫaʊd/',
             'example_sentence' => 'There are some dark clouds in the sky, maybe it will rain.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '雲',
                     'example_translation' => '天空中有一些烏雲，也許會下雨。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '云',
                     'example_translation' => '天空中有一些乌云，也许要下雨了。',
                 ],
@@ -9784,11 +9784,11 @@ return [
             'pronunciation' => '/ˈɹoʊz/',
             'example_sentence' => 'He gave her a single red rose as a token of his deep love.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '玫瑰',
                     'example_translation' => '他給了她一朵紅玫瑰，作為他深沉愛意的象徵。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '玫瑰',
                     'example_translation' => '他给了她一朵红玫瑰，作为他深情的象征。',
                 ],
@@ -9804,11 +9804,11 @@ return [
             'pronunciation' => '/ˈsmaɪɫ/',
             'example_sentence' => 'She had a big smile on her face when she saw her friends.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '微笑',
                     'example_translation' => '見到朋友時，她臉上帶著燦爛的笑容。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '微笑',
                     'example_translation' => '看到朋友时，她的脸上挂着灿烂的微笑。',
                 ],
@@ -9824,11 +9824,11 @@ return [
             'pronunciation' => '/ˈspɹɪŋ/, /spɝˈɪŋ/',
             'example_sentence' => 'Spring is the season when everything in nature starts to grow.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '春天',
                     'example_translation' => '春天是大自然萬物開始生長的季節。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '春天',
                     'example_translation' => '春天是大自然万物开始生长的季节。',
                 ],
@@ -9844,11 +9844,11 @@ return [
             'pronunciation' => '/ˈsɪns/',
             'example_sentence' => 'I have lived in this beautiful city since I was a little child.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '自從',
                     'example_translation' => '我從小就住在這座美麗的城市。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '自从',
                     'example_translation' => '我从小就住在这座美丽的城市。',
                 ],
@@ -9864,11 +9864,11 @@ return [
             'pronunciation' => '/ˈʃeɪk/',
             'example_sentence' => 'The earthquake was strong enough to shake the entire building.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '搖',
                     'example_translation' => '地震強度足以震動整棟建築。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '摇晃，震动',
                     'example_translation' => '地震剧烈得足以摇晃整栋建筑物。',
                 ],
@@ -9884,11 +9884,11 @@ return [
             'pronunciation' => '/ˈfæst/',
             'example_sentence' => 'He is a very fast runner and wins many races.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '快速地',
                     'example_translation' => '他是個跑得很快的運動員，贏過很多比賽。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '快的，快速地',
                     'example_translation' => '他是一个跑得很快的跑者，赢得了许多比赛。',
                 ],
@@ -9906,11 +9906,11 @@ return [
             'pronunciation' => '/ˈbɪɡ/',
             'example_sentence' => 'New York is a very big city.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '大的',
                     'example_translation' => '紐約是一個非常大的城市。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '大的',
                     'example_translation' => '纽约是一座非常大的城市。',
                 ],
@@ -9926,11 +9926,11 @@ return [
             'pronunciation' => '/ˈjunəˌfɔɹm/',
             'example_sentence' => 'All students are required to wear their school uniform every day.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '制服',
                     'example_translation' => '所有學生都被要求每天穿校服。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '制服，校服',
                     'example_translation' => '所有学生每天都必须穿校服。',
                 ],
@@ -9946,11 +9946,11 @@ return [
             'pronunciation' => '/ˈkip/',
             'example_sentence' => 'Please keep the room neat and clean for our guests tomorrow.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '保持',
                     'example_translation' => '請保持房間整潔，迎接我們明天的客人。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '保持',
                     'example_translation' => '请保持房间整洁，以迎接我们明天的客人。',
                 ],
@@ -9966,11 +9966,11 @@ return [
             'pronunciation' => '/ˈpɪɡ/',
             'example_sentence' => 'The farmer feeds the pigs with corn and vegetables every day.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '豬',
                     'example_translation' => '農民每天用玉米和蔬菜餵豬。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '猪',
                     'example_translation' => '农民每天用玉米和蔬菜喂猪。',
                 ],
@@ -9986,11 +9986,11 @@ return [
             'pronunciation' => '/əˈɡeɪn/, /əˈɡɛn/',
             'example_sentence' => 'Can you say that again, please?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '再次',
                     'example_translation' => '請你再說一遍好嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '再次，又',
                     'example_translation' => '请问你能再说一遍吗？',
                 ],
@@ -10006,11 +10006,11 @@ return [
             'pronunciation' => '/ˈɫɛft/',
             'example_sentence' => 'The library is on the left side of the street, next to the park.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '左邊',
                     'example_translation' => '圖書館在街道的左側，就在公園旁邊。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '左边的，左侧',
                     'example_translation' => '图书馆在街道的左边，就在公园旁边。',
                 ],
@@ -10026,11 +10026,11 @@ return [
             'pronunciation' => '/ˈjɛstɝˌdeɪ/, /ˈjɛstɝdi/',
             'example_sentence' => 'I went to the shopping center with my sister yesterday afternoon.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '昨天',
                     'example_translation' => '我昨天下午和我姐姐去了購物中心。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '昨天',
                     'example_translation' => '我昨天下午和姐姐去了购物中心。',
                 ],
@@ -10046,11 +10046,11 @@ return [
             'pronunciation' => '/ˈðæn/, /ðən/',
             'example_sentence' => 'She is two years older than her brother who is also a student.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '比',
                     'example_translation' => '她比她也是學生的哥哥大兩歲。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '比',
                     'example_translation' => '她比她同样是学生的弟弟大两岁。',
                 ],
@@ -10066,11 +10066,11 @@ return [
             'pronunciation' => '/ˈɪntɝəst/, /ˈɪntɝɪst/, /ˈɪntɹəst/, /ˈɪntɹɪst/',
             'example_sentence' => 'He has a keen interest in learning about different cultures.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '興趣',
                     'example_translation' => '他對學習不同的文化有著濃厚的興趣。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '兴趣，爱好',
                     'example_translation' => '他对了解不同的文化有着浓厚的兴趣。',
                 ],
@@ -10086,11 +10086,11 @@ return [
             'pronunciation' => '/ˈɹeɪnˌboʊ/',
             'example_sentence' => 'After the storm, a beautiful rainbow appeared in the blue sky.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '彩虹',
                     'example_translation' => '暴風雨過後，藍天中出現了一道美麗的彩虹。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '彩虹',
                     'example_translation' => '暴风雨过后，蓝天上出现了一道美丽的彩虹。',
                 ],
@@ -10108,11 +10108,11 @@ return [
             'pronunciation' => '/ˈɫʊk/',
             'example_sentence' => 'Please look at the board while I explain the new math formula.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '看',
                     'example_translation' => '當我解釋新的數學公式時，請看黑板。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '看',
                     'example_translation' => '在我解释新的数学公式时，请看黑板。',
                 ],
@@ -10128,11 +10128,11 @@ return [
             'pronunciation' => '/iˈmeɪɫ/',
             'example_sentence' => 'I will send you an email with all the details of the meeting.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '電子郵件',
                     'example_translation' => '我會給你發一封包含會議所有細節的電子郵件。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '电子邮件',
                     'example_translation' => '我会给你发一封包含会议所有细节的电子邮件。',
                 ],
@@ -10148,11 +10148,11 @@ return [
             'pronunciation' => '/ˈfɹɛʃ/',
             'example_sentence' => 'I love the smell of fresh flowers in the early morning.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '新鮮的',
                     'example_translation' => '我喜歡清晨鮮花的香味。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '新鲜的',
                     'example_translation' => '我喜欢清晨鲜花的香味。',
                 ],
@@ -10168,11 +10168,11 @@ return [
             'pronunciation' => '/ˈkɑfi/, /ˈkɔfi/',
             'example_sentence' => 'I always start my morning with a cup of hot coffee.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '咖啡',
                     'example_translation' => '我總是以一杯熱咖啡開始我的早晨。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '咖啡',
                     'example_translation' => '我总是一杯热咖啡开始我的早晨。',
                 ],
@@ -10188,11 +10188,11 @@ return [
             'pronunciation' => '/ˈməd/',
             'example_sentence' => 'The children were covered in mud after playing outside in the rain.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '土',
                     'example_translation' => '孩子們在外面雨中玩耍後，全身都沾滿了泥。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '泥巴',
                     'example_translation' => '孩子们在外面雨中玩耍后，全身都沾满了泥巴。',
                 ],
@@ -10208,11 +10208,11 @@ return [
             'pronunciation' => '/ˈhiɹ/',
             'example_sentence' => 'Please wait here for a moment, the doctor will see you shortly.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '這裡',
                     'example_translation' => '請在這裡等一會兒，醫生馬上就會見你。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '这里',
                     'example_translation' => '请在这里等一会儿，医生马上就会为您看诊。',
                 ],
@@ -10228,11 +10228,11 @@ return [
             'pronunciation' => '/ˈɫɪp/',
             'example_sentence' => 'She applied some bright red lipstick to her upper lip.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '唇',
                     'example_translation' => '她在上唇塗了一些鮮紅色的口紅。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '嘴唇',
                     'example_translation' => '她在上唇涂了一些鲜红色的口红。',
                 ],
@@ -10248,11 +10248,11 @@ return [
             'pronunciation' => '/ˈænt/',
             'example_sentence' => 'An ant can carry much more than its own weight.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '螞蟻',
                     'example_translation' => '螞蟻能搬動比自己重得多的東西。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '蚂蚁',
                     'example_translation' => '蚂蚁能搬动比自己重得多的东西。',
                 ],
@@ -10268,11 +10268,11 @@ return [
             'pronunciation' => '/ˈdʒɑb/, /ˈdʒoʊb/',
             'example_sentence' => 'She is looking for a new job that offers better opportunities.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '工作',
                     'example_translation' => '她正在尋找一份能提供更好機會的新工作。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '工作',
                     'example_translation' => '她正在寻找一份能提供更好机会的新工作。',
                 ],
@@ -10288,11 +10288,11 @@ return [
             'pronunciation' => '/ˈəndɝ/',
             'example_sentence' => 'The cat was hiding under the table during the thunderstorm.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '在下面',
                     'example_translation' => '雷雨期間，貓躲在桌子下面。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '在……下面',
                     'example_translation' => '雷雨期间，猫躲在桌子下面。',
                 ],
@@ -10310,11 +10310,11 @@ return [
             'pronunciation' => '/ˈpɑkət/',
             'example_sentence' => 'He put his phone in his pocket and walked out of the room.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '口袋',
                     'example_translation' => '他把手機放進口袋，走出了房間。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '口袋',
                     'example_translation' => '他把手机放口袋里，走出了房间。',
                 ],
@@ -10330,11 +10330,11 @@ return [
             'pronunciation' => '/ˈpɝsən/',
             'example_sentence' => 'He is a very kind person who is always helping others in need.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '人',
                     'example_translation' => '他是個非常善良的人，總是幫助有需要的人。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '人',
                     'example_translation' => '他是一个非常善良的人，总是帮助有需要的人。',
                 ],
@@ -10350,11 +10350,11 @@ return [
             'pronunciation' => '/ˈbɫu/',
             'example_sentence' => 'The sky is blue today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '藍色的',
                     'example_translation' => '今天的天空很藍。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '蓝色的',
                     'example_translation' => '今天的天空很蓝。',
                 ],
@@ -10370,11 +10370,11 @@ return [
             'pronunciation' => '/ˈfəni/',
             'example_sentence' => 'He told a very funny joke that made everyone in the room laugh.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '有趣的',
                     'example_translation' => '他講了一個非常有趣的笑話，讓房間裡的每個人都笑了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '搞笑的',
                     'example_translation' => '他讲了一个非常搞笑的笑话，让房间里的每个人都笑了。',
                 ],
@@ -10390,11 +10390,11 @@ return [
             'pronunciation' => '/ˈæftɝ/',
             'example_sentence' => 'We went for a walk after dinner.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '後',
                     'example_translation' => '晚餐後我們去散步了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '在……之后',
                     'example_translation' => '晚餐后我们去散步了。',
                 ],
@@ -10410,11 +10410,11 @@ return [
             'pronunciation' => '/ˈpʊt/',
             'example_sentence' => 'Please put your books away before you start your dinner.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '放',
                     'example_translation' => '開始吃晚飯前，請把你的書收起來。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '放',
                     'example_translation' => '开始吃晚饭前，请把你的书收起来。',
                 ],
@@ -10430,11 +10430,11 @@ return [
             'pronunciation' => '/ˈbɹeɪk/',
             'example_sentence' => 'Let\'s take a short break after this meeting.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '休息',
                     'example_translation' => '會議結束後我們休息一下吧。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '休息',
                     'example_translation' => '会议结束后我们休息一下吧。',
                 ],
@@ -10450,11 +10450,11 @@ return [
             'pronunciation' => '/ˈdʒus/',
             'example_sentence' => 'I usually have a glass of fresh orange juice with my breakfast.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '汁',
                     'example_translation' => '我早餐通常喝一杯新鮮的橙汁。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '果汁',
                     'example_translation' => '我早餐通常喝一杯新鲜的橙汁。',
                 ],
@@ -10470,11 +10470,11 @@ return [
             'pronunciation' => '/ˈhəni/',
             'example_sentence' => 'Bees produce honey from the nectar of flowers.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '蜂蜜',
                     'example_translation' => '蜜蜂從花蜜中釀造蜂蜜。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '蜂蜜',
                     'example_translation' => '蜜蜂从花蜜中酿造蜂蜜。',
                 ],
@@ -10490,11 +10490,11 @@ return [
             'pronunciation' => '/ˈspɛʃəɫ/',
             'example_sentence' => 'She prepared a special meal for her husband\'s birthday.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '特別的',
                     'example_translation' => '她為丈夫的生日準備了一頓特別的飯。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '特别的',
                     'example_translation' => '她为丈夫的生日准备了一顿特别的饭。',
                 ],
@@ -10512,11 +10512,11 @@ return [
             'pronunciation' => '/ˈfaɪɝ/, /ˈfaɪɹ/',
             'example_sentence' => 'The campers built a small fire to keep themselves warm.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '火',
                     'example_translation' => '露營者生了一小堆火來取暖。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '火；火灾；焚烧',
                     'example_translation' => '露营者生了一小堆火来取暖。',
                 ],
@@ -10532,11 +10532,11 @@ return [
             'pronunciation' => '/ˈɡɹændˌməðɝ/',
             'example_sentence' => 'My grandmother makes the most delicious apple pie in the world.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '祖母',
                     'example_translation' => '我奶奶做的蘋果派是世界上最美味的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '祖母；奶奶；外婆',
                     'example_translation' => '我奶奶做的苹果派是世界上最美味的。',
                 ],
@@ -10552,11 +10552,11 @@ return [
             'pronunciation' => '/ˈɫeɪtɝ/',
             'example_sentence' => 'I am a bit busy right now, can I call you back a little later?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '之後',
                     'example_translation' => '我現在有點忙，能過一會兒再給你回電話嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '后来；稍后',
                     'example_translation' => '我现在有点忙，能过一会儿再给你回电话吗？',
                 ],
@@ -10572,11 +10572,11 @@ return [
             'pronunciation' => '/ˈkɹaɪ/',
             'example_sentence' => 'The baby started to cry because he was hungry.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '哭',
                     'example_translation' => '寶寶因為餓了開始哭。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '哭；哭泣；叫喊',
                     'example_translation' => '宝宝因为饿了开始哭。',
                 ],
@@ -10592,11 +10592,11 @@ return [
             'pronunciation' => '/ˈdɪnɝ/',
             'example_sentence' => 'We are going to have a special dinner at a French restaurant.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '晚餐',
                     'example_translation' => '我們打算在一家法國餐廳吃一頓特別的晚餐。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '晚餐；正餐',
                     'example_translation' => '我们打算在一家法国餐厅吃一顿特别的晚餐。',
                 ],
@@ -10612,11 +10612,11 @@ return [
             'pronunciation' => '/ˈɫɛɡ/',
             'example_sentence' => 'He fell off his bike and unfortunately broke his left leg.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '腿',
                     'example_translation' => '他不小心從自行車上摔下來，弄斷了左腿。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '腿',
                     'example_translation' => '他不小心从自行车上摔下来，弄断了左腿。',
                 ],
@@ -10632,11 +10632,11 @@ return [
             'pronunciation' => '/əˈpɑɹtmənt/',
             'example_sentence' => 'They live in a small apartment in the city.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '公寓',
                     'example_translation' => '他們住在城市裡的一個小公寓。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '公寓',
                     'example_translation' => '他们住在城市里的一个小公寓。',
                 ],
@@ -10652,11 +10652,11 @@ return [
             'pronunciation' => '/həˈɫoʊ/, /hɛˈɫoʊ/',
             'example_sentence' => 'She said hello to everyone as she entered the room.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '你好',
                     'example_translation' => '她進房間時向每個人打了招呼。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '你好；打招呼',
                     'example_translation' => '她进房间时向每个人打了招呼。',
                 ],
@@ -10672,11 +10672,11 @@ return [
             'pronunciation' => '/ˈbaʊ/, /ˈboʊ/',
             'example_sentence' => 'The archer drew his bow and aimed at the target.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '弓',
                     'example_translation' => '弓箭手拉開弓，瞄準目標。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '弓；鞠躬',
                     'example_translation' => '弓箭手拉开弓，瞄准目标。',
                 ],
@@ -10692,11 +10692,11 @@ return [
             'pronunciation' => '/ˈstɹit/',
             'example_sentence' => 'The street was very quiet during the early hours of the morning.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '街道',
                     'example_translation' => '清晨時分，街道非常安靜。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '街道；马路',
                     'example_translation' => '清晨时分，街道非常安静。',
                 ],
@@ -10714,11 +10714,11 @@ return [
             'pronunciation' => '/ˈsaʊθ/',
             'example_sentence' => 'The birds fly south during the winter to find warmer weather.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '南',
                     'example_translation' => '鳥兒在冬天向南飛以尋找更溫暖的天氣。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '南；南方',
                     'example_translation' => '鸟儿在冬天向南飞以寻找更温暖的天气。',
                 ],
@@ -10734,11 +10734,11 @@ return [
             'pronunciation' => '/ˈhwət/, /ˈwət/',
             'example_sentence' => 'What are you planning to do during the summer vacation?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '什麼',
                     'example_translation' => '你打算在暑假期間做什麼？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '什么',
                     'example_translation' => '你打算在暑假期间做什么？',
                 ],
@@ -10754,11 +10754,11 @@ return [
             'pronunciation' => '/ˈhəzbənd/',
             'example_sentence' => 'My husband is an architect and he designs modern houses.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '丈夫',
                     'example_translation' => '我丈夫是一位建築師，他設計現代化的房子。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '丈夫',
                     'example_translation' => '我丈夫是一位建筑师，他设计现代化的房子。',
                 ],
@@ -10774,11 +10774,11 @@ return [
             'pronunciation' => '/ˈɡɑɹdən/',
             'example_sentence' => 'We spent the afternoon planting new flowers in our garden.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '花園',
                     'example_translation' => '我們下午在花園裡種了些新花。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '花园；菜园',
                     'example_translation' => '我们下午在花园里种了些新花。',
                 ],
@@ -10794,11 +10794,11 @@ return [
             'pronunciation' => '/ˈkəm/',
             'example_sentence' => 'Please come to my office as soon as you are ready.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '來',
                     'example_translation' => '你準備好後請儘快來我辦公室。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '来；来到',
                     'example_translation' => '你准备好后请尽快来我办公室。',
                 ],
@@ -10814,11 +10814,11 @@ return [
             'pronunciation' => '/ˈjɛt/',
             'example_sentence' => 'I haven\'t finished reading the book yet, but it is interesting.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '然而',
                     'example_translation' => '我還沒看完那本書，但它很有趣。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '还；然而',
                     'example_translation' => '我还没看完那本书，但它很有趣。',
                 ],
@@ -10834,11 +10834,11 @@ return [
             'pronunciation' => '/aɪ/',
             'example_sentence' => 'I love reading books on quiet weekend mornings.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '我',
                     'example_translation' => '我喜歡在安靜的週末早上讀書。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '我',
                     'example_translation' => '我喜欢在安静的周末早上读书。',
                 ],
@@ -10854,11 +10854,11 @@ return [
             'pronunciation' => '/mi/',
             'example_sentence' => 'Please call me when you arrive at the airport.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '我（受格）',
                     'example_translation' => '你到機場時請打電話給我。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '我（宾格）',
                     'example_translation' => '你到机场时请打电话给我。',
                 ],
@@ -10874,11 +10874,11 @@ return [
             'pronunciation' => '/maɪ/',
             'example_sentence' => 'My favorite color is dark blue.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '我的',
                     'example_translation' => '我最喜歡的顏色是深藍色。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '我的',
                     'example_translation' => '我最喜欢的颜色是深蓝色。',
                 ],
@@ -10894,11 +10894,11 @@ return [
             'pronunciation' => '/maɪˈsɛɫf/',
             'example_sentence' => 'I made this cake all by myself.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '我自己',
                     'example_translation' => '這個蛋糕是我自己做的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '我自己',
                     'example_translation' => '这个蛋糕是我自己做的。',
                 ],
@@ -10916,11 +10916,11 @@ return [
             'pronunciation' => '/kəˈɫɛkt/',
             'example_sentence' => 'He likes to collect rare stamps from all over the world.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '收集',
                     'example_translation' => '他喜歡收集來自世界各地的稀有郵票。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '收集',
                     'example_translation' => '他喜欢收集来自世界各地的稀有邮票。',
                 ],
@@ -10936,11 +10936,11 @@ return [
             'pronunciation' => '/ˈtu/',
             'example_sentence' => 'It is a bit too cold today to go for a swim in the sea.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '太',
                     'example_translation' => '今天有點太冷了，不適合去海裡游泳。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '太，过于',
                     'example_translation' => '今天有点太冷了，不适合去海里游泳。',
                 ],
@@ -10956,11 +10956,11 @@ return [
             'pronunciation' => '/ˈfoʊn/',
             'example_sentence' => 'Please give me a phone call when you arrive at the airport.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '電話',
                     'example_translation' => '抵達機場後請給我打個電話。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '电话',
                     'example_translation' => '你到达机场后请给我打个电话。',
                 ],
@@ -10976,11 +10976,11 @@ return [
             'pronunciation' => '/ˈpɫeɪs/',
             'example_sentence' => 'This is a very quiet place, perfect for reading and studying.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '地方',
                     'example_translation' => '這是一個非常安靜的地方，非常適合閱讀和學習。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '地方，场所',
                     'example_translation' => '这是一个非常安静的地方，非常适合阅读和学习。',
                 ],
@@ -10996,11 +10996,11 @@ return [
             'pronunciation' => '/ˈsɛkənd/',
             'example_sentence' => 'This is the second time that I have visited this beautiful city.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '第二',
                     'example_translation' => '這是我第二次訪問這座美麗的城市。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '第二',
                     'example_translation' => '这是我第二次访问这座美丽的城市。',
                 ],
@@ -11016,11 +11016,11 @@ return [
             'pronunciation' => '/ˈɹɛdi/',
             'example_sentence' => 'Are you ready to go? The taxi is waiting outside the building.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '準備好的',
                     'example_translation' => '你準備好出發了嗎？計程車在大樓外等著。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '准备好的',
                     'example_translation' => '你准备好出发了吗？出租车在大楼外等着。',
                 ],
@@ -11036,11 +11036,11 @@ return [
             'pronunciation' => '/ˈbɑˌɹoʊ/',
             'example_sentence' => 'Can I borrow your pen for a moment?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '借',
                     'example_translation' => '我可以借你的筆用一下嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '借，借入',
                     'example_translation' => '我可以借用一下你的笔吗？',
                 ],
@@ -11056,11 +11056,11 @@ return [
             'pronunciation' => '/ˈtɹəbəɫ/',
             'example_sentence' => 'Please let me know if you have any trouble finding the place.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '麻煩',
                     'example_translation' => '如果你在找地方時遇到困難，請告訴我。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '麻烦，困难',
                     'example_translation' => '如果你在找地方时遇到困难，请告诉我。',
                 ],
@@ -11076,11 +11076,11 @@ return [
             'pronunciation' => '/ˈpɫænət/',
             'example_sentence' => 'Mars is known as the red planet because of its iron-rich soil.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '行星',
                     'example_translation' => '火星因其富含鐵的土壤而被稱為紅色星球。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '行星',
                     'example_translation' => '火星因其富含铁的土壤而被被称为红色星球。',
                 ],
@@ -11096,11 +11096,11 @@ return [
             'pronunciation' => '/ˈɡɛs/',
             'example_sentence' => 'Can you guess how many jelly beans are in this jar?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '猜測',
                     'example_translation' => '你能猜出這罐子裡有多少顆果凍豆嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '猜，猜测',
                     'example_translation' => '你能猜出这个罐子里有多少颗果冻豆吗？',
                 ],
@@ -11118,11 +11118,11 @@ return [
             'pronunciation' => '/ˈpækədʒ/, /ˈpækɪdʒ/',
             'example_sentence' => 'A large package was delivered to our house early this morning.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '包裹',
                     'example_translation' => '今天一早一個大包裹被送到了我們家。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '包裹',
                     'example_translation' => '今天一大早，一个大包裹送到了我们家。',
                 ],
@@ -11138,11 +11138,11 @@ return [
             'pronunciation' => '/ˈtuɫ/',
             'example_sentence' => 'The mechanic used a specialized tool to fix the car engine.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '工具',
                     'example_translation' => '技工用專門的工具修理了汽車引擎。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '工具',
                     'example_translation' => '维修工使用了一种专用工具来修理汽车发动机。',
                 ],
@@ -11158,11 +11158,11 @@ return [
             'pronunciation' => '/ˈfɫɔɹ/',
             'example_sentence' => 'Please don\'t leave your wet umbrella on the wooden floor.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '地板',
                     'example_translation' => '請不要把濕雨傘放在木地板上。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '地板，地面',
                     'example_translation' => '请不要把湿雨伞放在木地板上。',
                 ],
@@ -11178,11 +11178,11 @@ return [
             'pronunciation' => '/ˈɛɹiə/',
             'example_sentence' => 'This area is famous for its beautiful parks.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '區域',
                     'example_translation' => '這個地區以其美麗的公園而聞名。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '区域，地区',
                     'example_translation' => '这个地区以其美丽的公园而闻名。',
                 ],
@@ -11198,11 +11198,11 @@ return [
             'pronunciation' => '/ˈbətɝˌfɫaɪ/',
             'example_sentence' => 'A beautiful butterfly landed on the colorful flower.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '蝴蝶',
                     'example_translation' => '一隻美麗的蝴蝶落在五顏六色的花朵上。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '蝴蝶',
                     'example_translation' => '一只美丽的蝴蝶落在了五颜六色的花朵上。',
                 ],
@@ -11218,11 +11218,11 @@ return [
             'pronunciation' => '/ˈdʒækət/, /ˈdʒækɪt/',
             'example_sentence' => 'He put on his warm leather jacket before going out into the cold.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '夾克',
                     'example_translation' => '他在出門進入寒冷的天氣前穿上了溫暖的皮夾克。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '夹克，短上衣',
                     'example_translation' => '他在出门进入寒冷的天气前穿上了温暖的皮夹克。',
                 ],
@@ -11238,11 +11238,11 @@ return [
             'pronunciation' => '/ˈsɛnt/',
             'example_sentence' => 'A dollar is equal to one hundred cents.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '分',
                     'example_translation' => '一美元等於一百分。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '分（货币单位）',
                     'example_translation' => '一美元等于一百分。',
                 ],
@@ -11258,11 +11258,11 @@ return [
             'pronunciation' => '/ˈnoʊz/',
             'example_sentence' => 'He has a very long nose, just like his father and grandfather.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '鼻子',
                     'example_translation' => '他有一隻很長的鼻子，就像他的父親和祖父一樣。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '鼻子',
                     'example_translation' => '他有一只很长的鼻子，就像他的父亲和祖父一样。',
                 ],
@@ -11278,11 +11278,11 @@ return [
             'pronunciation' => '/ˈɛni/',
             'example_sentence' => 'Is there any milk in the fridge?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '任何',
                     'example_translation' => '冰箱裡有牛奶嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '任何，一些',
                     'example_translation' => '冰箱里有牛奶吗？',
                 ],
@@ -11298,11 +11298,11 @@ return [
             'pronunciation' => '/ˈsɛnɝ/, /ˈsɛntɝ/',
             'example_sentence' => 'There is a big shopping center in the middle of the city.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '中心',
                     'example_translation' => '市中心有一個大型購物中心。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '中心',
                     'example_translation' => '市中心有一个大型购物中心。',
                 ],
@@ -11320,11 +11320,11 @@ return [
             'pronunciation' => '/ˈpɹaɪs/',
             'example_sentence' => 'The price of vegetables has gone up a lot in the last few weeks.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '價格',
                     'example_translation' => '蔬菜價格在過去幾週上漲了很多。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '价格，售价',
                     'example_translation' => '蔬菜价格在过去几周上涨了很多。',
                 ],
@@ -11340,11 +11340,11 @@ return [
             'pronunciation' => '/ˈwɛst/',
             'example_sentence' => 'California is located on the west coast of the United States.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '西方',
                     'example_translation' => '加州位於美國西海岸。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '西方；西方的；向西',
                     'example_translation' => '加州位于美国西海岸。',
                 ],
@@ -11360,11 +11360,11 @@ return [
             'pronunciation' => '/ˈɔfəsɝ/, /ˈɔfɪsɝ/',
             'example_sentence' => 'The police officer stopped the car for speeding on the highway.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '官',
                     'example_translation' => '警官因在高速公路上超速而攔下了那輛車。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '官员；警官；军官',
                     'example_translation' => '警官因在高速公路上超速而拦下了那辆车。',
                 ],
@@ -11380,11 +11380,11 @@ return [
             'pronunciation' => '/ˈaɪɫənd/',
             'example_sentence' => 'We took a boat to explore the beautiful small island.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '島',
                     'example_translation' => '我們乘船去探索那個美麗的小島。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '岛，岛屿',
                     'example_translation' => '我们乘船去探索那个美丽的小岛。',
                 ],
@@ -11400,11 +11400,11 @@ return [
             'pronunciation' => '/ˈkɪd/',
             'example_sentence' => 'The kids are playing happily in the garden this afternoon.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '孩子',
                     'example_translation' => '孩子們今天下午在花園裡玩得很開心。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '小孩；开玩笑',
                     'example_translation' => '孩子们今天下午在花园里玩得很开心。',
                 ],
@@ -11420,11 +11420,11 @@ return [
             'pronunciation' => '/ˈskɝt/',
             'example_sentence' => 'She wore a long, elegant black skirt to the formal dinner.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '裙子',
                     'example_translation' => '她穿著一條長而優雅的黑裙子參加正式晚宴。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '裙子',
                     'example_translation' => '她穿着一条优雅的长黑裙参加正式晚宴。',
                 ],
@@ -11440,11 +11440,11 @@ return [
             'pronunciation' => '/ˈɛɹɝ/',
             'example_sentence' => 'The system failed because of a minor technical error.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '錯誤',
                     'example_translation' => '系統因為一個小的技術錯誤而崩潰了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '错误，差错',
                     'example_translation' => '系统因为一个小的技术错误而崩溃了。',
                 ],
@@ -11460,11 +11460,11 @@ return [
             'pronunciation' => '/ˈbaɪ/',
             'example_sentence' => 'The library is located by the park.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '經過',
                     'example_translation' => '圖書館位於公園旁邊。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '在……旁；通过；依靠',
                     'example_translation' => '图书馆位于公园旁边。',
                 ],
@@ -11480,11 +11480,11 @@ return [
             'pronunciation' => '/ˈɡeɪt/',
             'example_sentence' => 'Please make sure to close the front gate when you leave.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '門',
                     'example_translation' => '離開時請務必關上大門。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '大门，门',
                     'example_translation' => '离开时请务必关上大门。',
                 ],
@@ -11500,11 +11500,11 @@ return [
             'pronunciation' => '/ˈsəmˌtaɪmz/, /səmˈtaɪmz/',
             'example_sentence' => 'Sometimes I prefer to spend my weekends alone at home.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '有時',
                     'example_translation' => '有時我更喜歡獨自在家度過週末。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '有时，偶尔',
                     'example_translation' => '有时我更喜欢独自在家度过周末。',
                 ],
@@ -11522,11 +11522,11 @@ return [
             'pronunciation' => '/ɝˈaɪv/',
             'example_sentence' => 'The train will arrive at five o\'clock.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '到達',
                     'example_translation' => '火車將在五點鐘到達。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '到达，抵达',
                     'example_translation' => '火车将在五点钟到达。',
                 ],
@@ -11542,11 +11542,11 @@ return [
             'pronunciation' => '/ɪkˈspɪɹiəns/',
             'example_sentence' => 'He has many years of experience working in the financial industry.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '經驗',
                     'example_translation' => '他在金融行業工作多年，經驗豐富。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '经验；经历；体验',
                     'example_translation' => '他在金融行业工作多年，经验丰富。',
                 ],
@@ -11562,11 +11562,11 @@ return [
             'pronunciation' => '/ˈpɫænt/',
             'example_sentence' => 'The gardener is busy planting new flowers in the front garden.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '植物',
                     'example_translation' => '園丁正忙著在前花園種新花。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '植物；种植',
                     'example_translation' => '园丁正忙着在前花园种新花。',
                 ],
@@ -11582,11 +11582,11 @@ return [
             'pronunciation' => '/ˈwɑtʃ/, /ˈwɔtʃ/',
             'example_sentence' => 'I like to watch the sunset over the ocean from my balcony.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '手錶',
                     'example_translation' => '我喜歡在陽台上看海上的日落。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '观看；手表',
                     'example_translation' => '我喜欢在阳台上看海上的日落。',
                 ],
@@ -11602,11 +11602,11 @@ return [
             'pronunciation' => '/əˈweɪ/',
             'example_sentence' => 'Stay away from the fire.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '離開',
                     'example_translation' => '遠離火源。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '离开，远离',
                     'example_translation' => '远离火源。',
                 ],
@@ -11622,11 +11622,11 @@ return [
             'pronunciation' => '/ˈstænd/',
             'example_sentence' => 'Please stand behind the yellow line for your own safety.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '站立',
                     'example_translation' => '為了您的安全，請站在黃線後面。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '站立；忍受',
                     'example_translation' => '为了您的安全，请站在黄线后面。',
                 ],
@@ -11642,11 +11642,11 @@ return [
             'pronunciation' => '/ˈsɪŋ/',
             'example_sentence' => 'She loves to sing along to her favorite songs on the radio.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '唱歌',
                     'example_translation' => '她喜歡跟著收音機裡最喜歡的歌曲一起唱歌。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '唱歌，演唱',
                     'example_translation' => '她喜欢跟着收音机里最喜欢的歌曲一起唱歌。',
                 ],
@@ -11662,11 +11662,11 @@ return [
             'pronunciation' => '/ˈwɪndoʊ/',
             'example_sentence' => 'Please open the window to let some fresh air into the room.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '窗戶',
                     'example_translation' => '請打開窗戶，讓新鮮空氣進入房間。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '窗户',
                     'example_translation' => '请打开窗户，让新鲜空气进入房间。',
                 ],
@@ -11682,11 +11682,11 @@ return [
             'pronunciation' => '/ˈɔf/',
             'example_sentence' => 'Please turn off the lights when you leave the room, thank you.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '離開',
                     'example_translation' => '離開房間時請關燈，謝謝。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '离开；关闭；脱落',
                     'example_translation' => '离开房间时请关灯，谢谢。',
                 ],
@@ -11702,11 +11702,11 @@ return [
             'pronunciation' => '/ˈdæns/',
             'example_sentence' => 'They like to dance to popular music at parties.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '舞蹈',
                     'example_translation' => '他們喜歡在派對上隨著流行音樂跳舞。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '舞蹈；跳舞',
                     'example_translation' => '他们喜欢在派对上随着流行音乐跳舞。',
                 ],
@@ -11724,11 +11724,11 @@ return [
             'pronunciation' => '/ˈɡɫəvz/',
             'example_sentence' => 'It is so cold outside that you should wear your leather gloves.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '手套',
                     'example_translation' => '外面太冷了，你應該戴上你的皮手套。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '手套',
                     'example_translation' => '外面太冷了，你应该戴上你的皮手套。',
                 ],
@@ -11744,11 +11744,11 @@ return [
             'pronunciation' => '/ˈdiɫ/',
             'example_sentence' => 'They managed to close a big deal with the new client.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '交易',
                     'example_translation' => '他們成功地與新客戶達成了一筆大交易。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '交易',
                     'example_translation' => '他们成功地与新客户达成了一笔大交易。',
                 ],
@@ -11764,11 +11764,11 @@ return [
             'pronunciation' => '/ˈfæktɝi/',
             'example_sentence' => 'My uncle works in a factory that produces electronic components.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '工廠',
                     'example_translation' => '我叔叔在一家生產電子零件的工廠工作。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '工厂',
                     'example_translation' => '我叔叔在一家生产电子零件的工厂工作。',
                 ],
@@ -11784,11 +11784,11 @@ return [
             'pronunciation' => '/ɪkˈsaɪtəd/, /ɪkˈsaɪtɪd/',
             'example_sentence' => 'The children were very excited about going to the zoo.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '興奮的',
                     'example_translation' => '孩子們對去動物園感到非常興奮。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '兴奋的',
                     'example_translation' => '孩子们对去动物园感到非常兴奋。',
                 ],
@@ -11804,11 +11804,11 @@ return [
             'pronunciation' => '/ˈwik/',
             'example_sentence' => 'He felt a bit weak after recovering from a long illness.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '虛弱的',
                     'example_translation' => '在大病初癒後，他感到有些虛弱。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '虚弱的',
                     'example_translation' => '在大病初愈后，他感到有些虚弱。',
                 ],
@@ -11824,11 +11824,11 @@ return [
             'pronunciation' => '/ˈstɛɹ/',
             'example_sentence' => 'The cat ran up the stairs and disappeared into the bedroom.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '樓梯',
                     'example_translation' => '貓跑上樓梯，消失在臥室裡。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '楼梯',
                     'example_translation' => '猫跑上楼梯，消失在卧室里。',
                 ],
@@ -11844,11 +11844,11 @@ return [
             'pronunciation' => '/ˈbɑtəm/',
             'example_sentence' => 'The answers are at the bottom of the page.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '底部',
                     'example_translation' => '答案在頁面的底部。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '底部',
                     'example_translation' => '答案在页面的底部。',
                 ],
@@ -11864,11 +11864,11 @@ return [
             'pronunciation' => '/ˈbɹɪdʒ/',
             'example_sentence' => 'The bridge connects the two sides of the river.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '橋',
                     'example_translation' => '這座橋連接了河流的兩岸。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '桥',
                     'example_translation' => '这座桥连接了河流的两岸。',
                 ],
@@ -11884,11 +11884,11 @@ return [
             'pronunciation' => '/ˈvɔɪs/',
             'example_sentence' => 'She has a very soft and pleasant voice that is easy to listen to.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '嗓音',
                     'example_translation' => '她的聲音非常柔和悅耳，聽起來很舒服。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '嗓音',
                     'example_translation' => '她的声音非常柔和悦耳，听起来很舒服。',
                 ],
@@ -11904,11 +11904,11 @@ return [
             'pronunciation' => '/ˈkæmp/',
             'example_sentence' => 'We decided to camp in the forest for the weekend.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '營',
                     'example_translation' => '我們決定週末在森林裡露營。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '露营，营地',
                     'example_translation' => '我们决定周末在森林里露营。',
                 ],
@@ -11926,11 +11926,11 @@ return [
             'pronunciation' => '/ˈbɑs/, /ˈbɔs/',
             'example_sentence' => 'My boss is very kind and supportive.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '老闆',
                     'example_translation' => '我的老闆非常友善且支持我。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '老板',
                     'example_translation' => '我的老板非常友善且支持我。',
                 ],
@@ -11946,11 +11946,11 @@ return [
             'pronunciation' => '/ˈfɪɫ/',
             'example_sentence' => 'Could you please fill this glass with some orange juice?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '充滿',
                     'example_translation' => '你能幫我把這個杯子裝滿柳橙汁嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '装满',
                     'example_translation' => '你能帮我把这个杯子装满橙汁吗？',
                 ],
@@ -11966,11 +11966,11 @@ return [
             'pronunciation' => '/ˈwaɪd/',
             'example_sentence' => 'The river is very wide and deep in this part of the countryside.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '寬的',
                     'example_translation' => '這條河在這個鄉村地區非常寬且深。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '宽的',
                     'example_translation' => '这条河在这个乡村地区非常宽且深。',
                 ],
@@ -11986,11 +11986,11 @@ return [
             'pronunciation' => '/ˈækʃən/',
             'example_sentence' => 'Actions speak louder than words.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '行動',
                     'example_translation' => '行動勝於言語。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '行动',
                     'example_translation' => '行动胜于言语。',
                 ],
@@ -12006,11 +12006,11 @@ return [
             'pronunciation' => '/ˈstɑɹ/',
             'example_sentence' => 'The stars were shining very brightly in the clear night sky.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '星星',
                     'example_translation' => '星星在晴朗的夜空中閃爍得非常明亮。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '星星',
                     'example_translation' => '星星在晴朗的夜空中闪烁得非常明亮。',
                 ],
@@ -12026,11 +12026,11 @@ return [
             'pronunciation' => '/ˈfaɪn/',
             'example_sentence' => 'Everything will be fine, so don\'t worry too much.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '美好的',
                     'example_translation' => '一切都會好起來的，所以別太擔心。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '美好的，好的',
                     'example_translation' => '一切都会好起来的，所以别太担心。',
                 ],
@@ -12046,11 +12046,11 @@ return [
             'pronunciation' => '/ˈmaʊs/',
             'example_sentence' => 'The cat was trying to catch a small mouse in the garden.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '老鼠',
                     'example_translation' => '那隻貓正試圖在花園裡抓一隻小老鼠。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '老鼠',
                     'example_translation' => '那只猫正试图在花园里抓一只小老鼠。',
                 ],
@@ -12066,11 +12066,11 @@ return [
             'pronunciation' => '/ˈsizən/',
             'example_sentence' => 'Spring is my favorite season because of all the blooming flowers.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '季節',
                     'example_translation' => '春天是我最喜歡的季節，因為百花盛開。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '季节',
                     'example_translation' => '春天是我最喜欢的季节，因为百花盛开。',
                 ],
@@ -12086,11 +12086,11 @@ return [
             'pronunciation' => '/ˈpipəɫ/',
             'example_sentence' => 'There were many people waiting in line for the new movie.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '人們',
                     'example_translation' => '有很多人在排隊等著看新電影。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '人们',
                     'example_translation' => '有很多人在排队等着看新电影。',
                 ],
@@ -12106,11 +12106,11 @@ return [
             'pronunciation' => '/ˈfæməɫi/, /ˈfæmɫi/',
             'example_sentence' => 'Family support is very important during difficult times.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '家庭',
                     'example_translation' => '家人的支持在困難時期非常重要。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '家庭，家人',
                     'example_translation' => '家人的支持在困难时期非常重要。',
                 ],
@@ -12128,11 +12128,11 @@ return [
             'pronunciation' => '/ˈhæt/',
             'example_sentence' => 'Don\'t forget to wear a hat to protect your face from the sun.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '帽子',
                     'example_translation' => '別忘了戴頂帽子，保護你的臉不被太陽曬。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '帽子',
                     'example_translation' => '别忘了戴顶帽子，保护你的脸不被太阳晒。',
                 ],
@@ -12148,11 +12148,11 @@ return [
             'pronunciation' => '/ˈtɪkət/, /ˈtɪkɪt/',
             'example_sentence' => 'Don\'t forget to bring your train tickets with you tomorrow.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '票',
                     'example_translation' => '別忘了帶上你明天的火車票。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '票；券',
                     'example_translation' => '别忘了带上你明天的火车票。',
                 ],
@@ -12168,11 +12168,11 @@ return [
             'pronunciation' => '/ˈpæs/',
             'example_sentence' => 'The years pass quickly when you are having a lot of fun.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '經過',
                     'example_translation' => '當你玩得很開心時，時間過得很快。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '经过；（时间）逝去',
                     'example_translation' => '当你玩得很开心时，时间过得很快。',
                 ],
@@ -12188,11 +12188,11 @@ return [
             'pronunciation' => '/ˈɡɹænˌfɑðɝ/, /ˈɡɹændˌfɑðɝ/',
             'example_sentence' => 'My grandfather loves to tell us stories about his life when he was young.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '祖父',
                     'example_translation' => '我爺爺喜歡給我們講他年輕時的故事。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '祖父；爷爷；外公',
                     'example_translation' => '我爷爷喜欢给我们讲他年轻时的故事。',
                 ],
@@ -12208,11 +12208,11 @@ return [
             'pronunciation' => '/ˈɹaɪs/',
             'example_sentence' => 'Rice is a staple food for many people in various Asian countries.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '米',
                     'example_translation' => '大米是許多亞洲國家人們的主食。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '大米；米饭',
                     'example_translation' => '大米是许多亚洲国家人们的主食。',
                 ],
@@ -12228,11 +12228,11 @@ return [
             'pronunciation' => '/ˈpeɪdʒ/',
             'example_sentence' => 'Please turn to page twenty of your textbook and read the first paragraph.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '頁',
                     'example_translation' => '請翻到課本第二十頁並閱讀第一段。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '页',
                     'example_translation' => '请翻到课本第二十页并阅读第一段。',
                 ],
@@ -12248,11 +12248,11 @@ return [
             'pronunciation' => '/ˈmɛni/',
             'example_sentence' => 'There are many different types of trees in this large forest.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '許多',
                     'example_translation' => '這個大森林裡有許多不同種類的樹。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '许多的；许多',
                     'example_translation' => '这个大森林里有许多不同种类的树木。',
                 ],
@@ -12268,11 +12268,11 @@ return [
             'pronunciation' => '/pəˈɫaɪt/',
             'example_sentence' => 'It is important to be polite and say thank you to people.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '有禮貌的',
                     'example_translation' => '有禮貌並向人們道謝是很重要的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '有礼貌的',
                     'example_translation' => '讲礼貌并向人们致谢是很重要的。',
                 ],
@@ -12288,11 +12288,11 @@ return [
             'pronunciation' => '/ˈmun/',
             'example_sentence' => 'The full moon was shining brightly in the clear night sky.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '月亮',
                     'example_translation' => '圓月在晴朗的夜空中明亮地照耀著。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '月亮',
                     'example_translation' => '满月在晴朗的夜空中明亮地照耀着。',
                 ],
@@ -12308,11 +12308,11 @@ return [
             'pronunciation' => '/ˈbɛˌdɹum/',
             'example_sentence' => 'My bedroom is the smallest room in the house.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '臥室',
                     'example_translation' => '我的臥室是這房子裡最小的房間。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '卧室',
                     'example_translation' => '我的卧室是这栋房子里最小的房间。',
                 ],
@@ -12330,11 +12330,11 @@ return [
             'pronunciation' => '/ˈbɔɹd/',
             'example_sentence' => 'He was bored with the long movie.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '無聊的',
                     'example_translation' => '他對那部漫長的電影感到無聊。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '感到无聊的；厌烦的',
                     'example_translation' => '他对那部漫长的电影感到厌烦。',
                 ],
@@ -12350,11 +12350,11 @@ return [
             'pronunciation' => '/ˈnju/, /ˈnu/',
             'example_sentence' => 'We just bought a new car and we are very happy with it.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '新的',
                     'example_translation' => '我們剛買了一輛新車，我們對它非常滿意。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '新的',
                     'example_translation' => '我们刚买了一辆新车，对它非常满意。',
                 ],
@@ -12370,11 +12370,11 @@ return [
             'pronunciation' => '/ˈtitʃ/',
             'example_sentence' => 'My mother used to teach English at a local primary school.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '教',
                     'example_translation' => '我母親曾在當地的一所小學教英語。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '教；教授',
                     'example_translation' => '我母亲曾在当地的一所小学教英语。',
                 ],
@@ -12390,11 +12390,11 @@ return [
             'pronunciation' => '/ˈæktɝ/',
             'example_sentence' => 'He is a very famous actor in Hollywood.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '男演員',
                     'example_translation' => '他是好萊塢一位非常著名的男演員。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '男演员；演员',
                     'example_translation' => '他是好莱坞一位非常著名的男演员。',
                 ],
@@ -12410,11 +12410,11 @@ return [
             'pronunciation' => '/ˈæktɹəs/',
             'example_sentence' => 'She is a famous actress who has won many awards.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '女演員',
                     'example_translation' => '她是一位獲得許多獎項的著名女演員。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '女演员',
                     'example_translation' => '她是一位获得过许多奖项的著名女演员。',
                 ],
@@ -12430,11 +12430,11 @@ return [
             'pronunciation' => '/ˈbɛd/',
             'example_sentence' => 'It\'s time to go to bed.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '床',
                     'example_translation' => '該上床睡覺了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '床',
                     'example_translation' => '该上床睡觉了。',
                 ],
@@ -12450,11 +12450,11 @@ return [
             'pronunciation' => '/ˈweɪ/',
             'example_sentence' => 'Could you please tell me the best way to get to the airport?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '方式',
                     'example_translation' => '能請你告訴我到機場最好的路徑嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '方式；路线；道路',
                     'example_translation' => '能请你告诉我去机场最好的路线吗？',
                 ],
@@ -12470,11 +12470,11 @@ return [
             'pronunciation' => '/ˈɫɑɹdʒ/',
             'example_sentence' => 'New York is a very large city with a huge population.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '大的',
                     'example_translation' => '紐約是一個人口眾多的特大城市。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '大的；巨大的',
                     'example_translation' => '纽约是一座人口众多的特大城市。',
                 ],
@@ -12490,11 +12490,11 @@ return [
             'pronunciation' => '/ˈfaɪnəɫi/',
             'example_sentence' => 'After many hours of work, we finally finished the project.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '最後',
                     'example_translation' => '經過好幾個小時的工作，我們終於完成了這個專案。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '终于；最后',
                     'example_translation' => '经过好几个小时的工作，我们终于完成了这个项目。',
                 ],
@@ -12510,11 +12510,11 @@ return [
             'pronunciation' => '/ˈtim/',
             'example_sentence' => 'Our team worked very hard to finish the project on time.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '團隊',
                     'example_translation' => '我們團隊非常努力地按時完成了專案。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '团队；队',
                     'example_translation' => '我们的团队非常努力地按时完成了项目。',
                 ],
@@ -12532,11 +12532,11 @@ return [
             'pronunciation' => '/ˈðoʊ/',
             'example_sentence' => 'Although it was raining, they still went out for a long walk.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '雖然；儘管',
                     'example_translation' => '雖然在下雨，他們還是出去走了很長一段路。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '虽然，尽管',
                     'example_translation' => '虽然下着雨，他们依然出去散了很久的步。',
                 ],
@@ -12552,11 +12552,11 @@ return [
             'pronunciation' => '/ˈdɹɑp/, /ˈdɹɔp/',
             'example_sentence' => 'Be careful not to drop that fragile glass vase.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '使掉落；弄掉',
                     'example_translation' => '小心不要把那個易碎的玻璃花瓶弄掉了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '掉落，降低',
                     'example_translation' => '小心不要把那个易碎的玻璃花瓶弄掉了。',
                 ],
@@ -12572,11 +12572,11 @@ return [
             'pronunciation' => '/ˈpɪkˌnɪk/',
             'example_sentence' => 'We had a wonderful picnic by the lake on a sunny afternoon.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '野餐',
                     'example_translation' => '我們在一個陽光明媚的下午在湖邊野餐，非常愉快。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '野餐',
                     'example_translation' => '我们在一个阳光明媚的下午去湖边野餐，玩得非常开心。',
                 ],
@@ -12592,11 +12592,11 @@ return [
             'pronunciation' => '/ˈdeɪndʒɝəs/',
             'example_sentence' => 'It is dangerous to drive too fast on a rainy day.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '危險的',
                     'example_translation' => '雨天開車太快是很危險的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '危险的',
                     'example_translation' => '下雨天开得太快是很危险的。',
                 ],
@@ -12612,11 +12612,11 @@ return [
             'pronunciation' => '/iˈɹeɪsɝ/, /ɪˈɹeɪsɝ/',
             'example_sentence' => 'Can I use your eraser to fix this mistake in my drawing?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '橡皮擦',
                     'example_translation' => '我可以用你的橡皮擦掉我畫中的這個錯誤嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '橡皮',
                     'example_translation' => '我能借用你的橡皮修改一下画中的错误吗？',
                 ],
@@ -12632,11 +12632,11 @@ return [
             'pronunciation' => '/ˈðæt/, /ðət/',
             'example_sentence' => 'I am sure that we will find a solution to this problem soon.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '（引導子句，無實義）',
                     'example_translation' => '我確定我們會很快找到這個問題的解決方案。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '那，那个；引导从句',
                     'example_translation' => '我确信我们很快就会找到解决这个问题的方法。',
                 ],
@@ -12652,11 +12652,11 @@ return [
             'pronunciation' => '/ˈmɛmbɝ/',
             'example_sentence' => 'She has been an active member of the local tennis club for years.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '成員；會員',
                     'example_translation' => '她多年來一直是當地網球俱樂部的活躍成員。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '成员，会员',
                     'example_translation' => '多年来，她一直是当地网球俱乐部的一名活跃成员。',
                 ],
@@ -12672,11 +12672,11 @@ return [
             'pronunciation' => '/ˈnuzˌpeɪpɝ/',
             'example_sentence' => 'My grandfather reads the newspaper every morning over breakfast.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '報紙',
                     'example_translation' => '我爺爺每天吃早餐時都會讀報紙。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '报纸',
                     'example_translation' => '我爷爷每天早晨吃早餐时都会看报纸。',
                 ],
@@ -12692,11 +12692,11 @@ return [
             'pronunciation' => '/səˈpɹaɪz/, /sɝˈpɹaɪz/',
             'example_sentence' => 'His visit was a very pleasant surprise for the whole family.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '驚喜',
                     'example_translation' => '他的來訪對全家人來說都是一個驚喜。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '惊喜，惊奇',
                     'example_translation' => '他的到来给全家人带来了一个巨大的惊喜。',
                 ],
@@ -12712,11 +12712,11 @@ return [
             'pronunciation' => '/ˈhwaɪt/, /ˈwaɪt/',
             'example_sentence' => 'She wore a beautiful white dress to the graduation ceremony.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '白色的',
                     'example_translation' => '她穿著一件漂亮的白色禮服參加畢業典禮。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '白色的',
                     'example_translation' => '她穿着一件漂亮的白色连衣裙参加了毕业典礼。',
                 ],
@@ -12734,11 +12734,11 @@ return [
             'pronunciation' => '/bɪˈɫɔŋ/',
             'example_sentence' => 'This book doesn\'t belong to me.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '屬於',
                     'example_translation' => '這本書不屬於我。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '属于',
                     'example_translation' => '这本书不属于我。',
                 ],
@@ -12754,11 +12754,11 @@ return [
             'pronunciation' => '/əˈpɪɹ/',
             'example_sentence' => 'The moon will appear soon after sunset.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '出現',
                     'example_translation' => '月亮將在日落後不久出現。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '出现',
                     'example_translation' => '日落后不久月亮就会出现。',
                 ],
@@ -12774,11 +12774,11 @@ return [
             'pronunciation' => '/ˈoʊnɫi/',
             'example_sentence' => 'There is only one apple left in the basket, who wants it?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '僅有的；唯一的',
                     'example_translation' => '籃子裡只剩下一個蘋果了，誰要？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '只有，仅有的',
                     'example_translation' => '篮子里只剩下一个苹果了，谁想要？',
                 ],
@@ -12794,11 +12794,11 @@ return [
             'pronunciation' => '/ˈnoʊtəs/, /ˈnoʊtɪs/',
             'example_sentence' => 'I didn\'t notice that you had changed your hair color today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '注意到',
                     'example_translation' => '我沒注意到你今天換了髮色。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '注意到，注意',
                     'example_translation' => '我没注意到你今天换了发色。',
                 ],
@@ -12814,11 +12814,11 @@ return [
             'pronunciation' => '/ˈteɪp/',
             'example_sentence' => 'She used some sticky tape to fix the broken book cover.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '膠帶',
                     'example_translation' => '她用一些膠帶修補了破損的書皮。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '胶带，磁带',
                     'example_translation' => '她用一些胶带修补了破损的书皮。',
                 ],
@@ -12834,11 +12834,11 @@ return [
             'pronunciation' => '/ˈnoʊˌbɑˌdi/, /ˈnoʊbədi/',
             'example_sentence' => 'Nobody knows the answer to that difficult question, unfortunately.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '沒有人',
                     'example_translation' => '遺憾的是，沒有人知道那個難題的答案。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '没有人',
                     'example_translation' => '遗憾的是，没有人知道那个难题的答案。',
                 ],
@@ -12854,11 +12854,11 @@ return [
             'pronunciation' => '/ˈbɹaʊn/',
             'example_sentence' => 'The bear has thick brown fur to keep it warm.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '棕色的',
                     'example_translation' => '這隻熊有厚實的棕色皮毛來保暖。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '棕色的',
                     'example_translation' => '这只熊长着厚厚的棕色毛发以保暖。',
                 ],
@@ -12874,11 +12874,11 @@ return [
             'pronunciation' => '/ˈaʊɝ/, /ˈaʊɹ/',
             'example_sentence' => 'The journey to the countryside takes about an hour by car.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '小時',
                     'example_translation' => '乘車去郊區大約需要一個小時。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '小时',
                     'example_translation' => '乘车去郊区大约需要一个小时。',
                 ],
@@ -12894,11 +12894,11 @@ return [
             'pronunciation' => '/ˈdɹɛs/',
             'example_sentence' => 'She chose a beautiful white dress for her wedding day.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '禮服；連身裙',
                     'example_translation' => '她為婚禮選了一件漂亮的白色禮服。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '连衣裙，礼服',
                     'example_translation' => '她为婚礼选择了一件漂亮的白色礼服。',
                 ],
@@ -12914,11 +12914,11 @@ return [
             'pronunciation' => '/ˈɹum/',
             'example_sentence' => 'There is not enough room in my suitcase for all these books.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '空間',
                     'example_translation' => '我的行李箱裡沒有足夠的空間放下所有這些書。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '空间，房间',
                     'example_translation' => '我的行李箱里没有足够的空间装下所有这些书。',
                 ],
@@ -12936,11 +12936,11 @@ return [
             'pronunciation' => '/ˈoʊpən/',
             'example_sentence' => 'Could you please open the window to let some fresh air in?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '打開',
                     'example_translation' => '你能打開窗戶讓新鮮空氣進來嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '打开；开着的；营业的',
                     'example_translation' => '你能打开窗户让新鲜空气进来吗？',
                 ],
@@ -12956,11 +12956,11 @@ return [
             'pronunciation' => '/ˈʃɑp/',
             'example_sentence' => 'There is a small gift shop near the entrance of the museum.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '店鋪',
                     'example_translation' => '博物館入口附近有一個小禮品店。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '商店，店铺',
                     'example_translation' => '博物馆入口附近有一个小礼品店。',
                 ],
@@ -12976,11 +12976,11 @@ return [
             'pronunciation' => '/ˈkuɫ/',
             'example_sentence' => 'The weather is finally starting to get cool in the evening.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '涼爽的',
                     'example_translation' => '天氣終於開始在晚上變得涼爽。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '凉爽的；酷的',
                     'example_translation' => '天气终于开始在晚上变得凉爽了。',
                 ],
@@ -12996,11 +12996,11 @@ return [
             'pronunciation' => '/ˈbɛɫ/',
             'example_sentence' => 'I heard the school bell ringing.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '鐘',
                     'example_translation' => '我聽到學校鐘聲響了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '铃，钟',
                     'example_translation' => '我听见学校的铃声响了。',
                 ],
@@ -13016,11 +13016,11 @@ return [
             'pronunciation' => '/ˈmɑɹk/',
             'example_sentence' => 'Please make a mark on the map where you want us to meet.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '標記',
                     'example_translation' => '請在你想讓我們見面的地方在地圖上做個標記。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '标记，记号',
                     'example_translation' => '请在你想让我们见面的地方在地图上做个标记。',
                 ],
@@ -13036,11 +13036,11 @@ return [
             'pronunciation' => '/ðeɪ/',
             'example_sentence' => 'They are coming to visit us next weekend.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '他們',
                     'example_translation' => '他們下週末要來看我們。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '他们，她们，它们',
                     'example_translation' => '他们下周末来看我们。',
                 ],
@@ -13056,11 +13056,11 @@ return [
             'pronunciation' => '/ðɛm/',
             'example_sentence' => 'I will send them an email tomorrow morning.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '他們（受格）',
                     'example_translation' => '我明天早上會寄電子郵件給他們。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '他们（宾格）',
                     'example_translation' => '我明天早上会给他们发电子邮件。',
                 ],
@@ -13076,11 +13076,11 @@ return [
             'pronunciation' => '/ðɛɹ/',
             'example_sentence' => 'Their children go to the same school as ours.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '他們的',
                     'example_translation' => '他們的孩子和我們的孩子上同一所學校。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '他们的，她们的，它们的',
                     'example_translation' => '他们的孩子和我们的孩子在同一所学校上学。',
                 ],
@@ -13096,11 +13096,11 @@ return [
             'pronunciation' => '/ðɛmˈsɛɫvz/',
             'example_sentence' => 'The students completed the project themselves.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '他們自己',
                     'example_translation' => '學生們自己完成了這個專案。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '他们自己',
                     'example_translation' => '学生们自己完成了这个项目。',
                 ],
@@ -13116,11 +13116,11 @@ return [
             'pronunciation' => '/ˈsən/',
             'example_sentence' => 'Their son is studying hard to become a professional pilot.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '兒子',
                     'example_translation' => '他們的兒子正在努力學習，想成為一名專業飛行員。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '儿子',
                     'example_translation' => '他们的儿子正在努力学习，想成为一名专业飞行员。',
                 ],
@@ -13138,11 +13138,11 @@ return [
             'pronunciation' => '/ˈsɪt/',
             'example_sentence' => 'Please sit down and make yourself comfortable in this chair.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '坐',
                     'example_translation' => '請坐下，讓自己在這把椅子上坐得舒服些。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '坐',
                     'example_translation' => '请坐，在这张椅子上舒舒服服地休息一下。',
                 ],
@@ -13158,11 +13158,11 @@ return [
             'pronunciation' => '/ˈmeɪɫ/',
             'example_sentence' => 'I need to go to the post office to send this important mail.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '郵件',
                     'example_translation' => '我需要去郵局寄這封重要的郵件。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '邮件，邮寄',
                     'example_translation' => '我需要去邮局寄这封重要的邮件。',
                 ],
@@ -13178,11 +13178,11 @@ return [
             'pronunciation' => '/ˈɫaɪbɹɛˌɹi/',
             'example_sentence' => 'I often go to the library to study in a quiet environment.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '圖書館',
                     'example_translation' => '我經常去圖書館在安靜的環境中學習。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '图书馆',
                     'example_translation' => '我经常去图书馆，在安静的环境里学习。',
                 ],
@@ -13198,11 +13198,11 @@ return [
             'pronunciation' => '/ˈswit/',
             'example_sentence' => 'These oranges are very sweet and juicy, would you like one?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '甜的',
                     'example_translation' => '這些橙子非常甜美多汁，你想要一個嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '甜的',
                     'example_translation' => '这些橙子非常甜美多汁，你想吃一个吗？',
                 ],
@@ -13218,11 +13218,11 @@ return [
             'pronunciation' => '/ˈpɹæktəs/, /ˈpɹæktɪs/',
             'example_sentence' => 'If you want to play the piano well, you need a lot of practice.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '實踐',
                     'example_translation' => '如果你想把鋼琴彈好，你需要大量的練習。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '练习，实践',
                     'example_translation' => '如果你想把钢琴弹好，你需要大量的练习。',
                 ],
@@ -13238,11 +13238,11 @@ return [
             'pronunciation' => '/bəˈnænə/',
             'example_sentence' => 'He ate a banana for breakfast.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '香蕉',
                     'example_translation' => '他早餐吃了一根香蕉。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '香蕉',
                     'example_translation' => '他早餐吃了一根香蕉。',
                 ],
@@ -13258,11 +13258,11 @@ return [
             'pronunciation' => '/ˈfʊt/',
             'example_sentence' => 'I usually go to work on foot because it is very close to my home.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '腳',
                     'example_translation' => '我通常步行去上班，因為離我家很近。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '脚，英尺',
                     'example_translation' => '我通常步行去上班，因为公司离我家很近。',
                 ],
@@ -13278,11 +13278,11 @@ return [
             'pronunciation' => '/ˈɹæbət/, /ˈɹæbɪt/',
             'example_sentence' => 'The little white rabbit was hopping around in the green field.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '兔子',
                     'example_translation' => '那隻小白兔正在綠色的田野裡跳來跳去。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '兔子',
                     'example_translation' => '那只小白兔正在绿色的田野里跳来跳去。',
                 ],
@@ -13298,11 +13298,11 @@ return [
             'pronunciation' => '/ˈmaʊntən/',
             'example_sentence' => 'We spent the weekend hiking in the beautiful green mountains.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '山',
                     'example_translation' => '我們週末在美麗的青山中徒步旅行。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '山，山脉',
                     'example_translation' => '我们周末在美丽青山中徒步旅行。',
                 ],
@@ -13318,11 +13318,11 @@ return [
             'pronunciation' => '/ˈnaʊ/',
             'example_sentence' => 'I am very busy right now, can I call you back in an hour?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '現在',
                     'example_translation' => '我現在非常忙，能一個小時後給你回電話嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '现在',
                     'example_translation' => '我现在非常忙，能过一个小时给你回电话吗？',
                 ],
@@ -13340,11 +13340,11 @@ return [
             'pronunciation' => '/ˈstupəd/, /ˈstupɪd/',
             'example_sentence' => 'Don\'t feel stupid for asking questions, it\'s how we learn.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '愚蠢的',
                     'example_translation' => '不要因為提問而覺得自己笨，這就是我們學習的方式。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '愚蠢的',
                     'example_translation' => '不要因为提问而觉得自己笨，这就是我们学习的方式。',
                 ],
@@ -13360,11 +13360,11 @@ return [
             'pronunciation' => '/ˈdɪkʃəˌnɛɹi/',
             'example_sentence' => 'If you don\'t know the word, you can look it up in the dictionary.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '字典',
                     'example_translation' => '如果你不認識這個單詞，你可以查字典。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '词典，字典',
                     'example_translation' => '如果你不认识这个单词，你可以查词典。',
                 ],
@@ -13380,11 +13380,11 @@ return [
             'pronunciation' => '/ˈfju/',
             'example_sentence' => 'There are only a few cookies left in the jar.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '很少',
                     'example_translation' => '罐子裡只剩下幾塊餅乾了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '很少，几个',
                     'example_translation' => '罐子里只剩下几块饼干了。',
                 ],
@@ -13400,11 +13400,11 @@ return [
             'pronunciation' => '/ˈɹɪŋ/',
             'example_sentence' => 'She was wearing a beautiful diamond ring on her left hand.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '戒指',
                     'example_translation' => '她的左手戴著一枚漂亮的鑽石戒指。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '戒指',
                     'example_translation' => '她的左手戴着一枚漂亮的钻石戒指。',
                 ],
@@ -13420,11 +13420,11 @@ return [
             'pronunciation' => '/ˈtʃɛk/',
             'example_sentence' => 'Wait, let me check my schedule for tomorrow.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '查看',
                     'example_translation' => '等等，讓我看看我明天的行程安排。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '检查，查看',
                     'example_translation' => '等等，让我看看我明天的行程安排。',
                 ],
@@ -13440,11 +13440,11 @@ return [
             'pronunciation' => '/ˈɫɪtəɫ/',
             'example_sentence' => 'He has a little sister who is starting kindergarten this year.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '小的',
                     'example_translation' => '他有一個正在上幼兒園的小妹妹。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '小的，幼小的',
                     'example_translation' => '他有一个正在上幼儿园的小妹妹。',
                 ],
@@ -13460,11 +13460,11 @@ return [
             'pronunciation' => '/ˈnæʃənəɫ/, /ˈnæʃnəɫ/',
             'example_sentence' => 'The 4th of July is a very important national holiday in the USA.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '國家的',
                     'example_translation' => '七月四日是美國一個非常重要的國家假日。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '国家的，全国性的',
                     'example_translation' => '七月四日是美国一个非常重要的国家节日。',
                 ],
@@ -13480,11 +13480,11 @@ return [
             'pronunciation' => '/təˈdeɪ/, /tuˈdeɪ/',
             'example_sentence' => 'Today is a beautiful sunny day, perfect for a picnic by the lake.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '今天',
                     'example_translation' => '今天天氣晴朗，非常適合在湖邊野餐。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '今天',
                     'example_translation' => '今天天气晴朗，非常适合在湖边野餐。',
                 ],
@@ -13500,11 +13500,11 @@ return [
             'pronunciation' => '/ˈfeɪməs/',
             'example_sentence' => 'The city is famous for its beautiful historical buildings.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '著名的',
                     'example_translation' => '這座城市以其美麗的歷史建築而聞名。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '著名的',
                     'example_translation' => '这座城市以其美丽的历史建筑而闻名。',
                 ],
@@ -13520,11 +13520,11 @@ return [
             'pronunciation' => '/ˈɫæmp/',
             'example_sentence' => 'She turned on the desk lamp so she could see her book better.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '燈',
                     'example_translation' => '她打開檯燈，以便能看清她的書。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '灯',
                     'example_translation' => '她打开台灯，以便能看清她的书。',
                 ],
@@ -13542,11 +13542,11 @@ return [
             'pronunciation' => '/ˈwɝi/',
             'example_sentence' => 'Don\'t worry too much about the test, you have studied hard.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '擔心',
                     'example_translation' => '別太擔心考試，你已經努力學習了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '担心',
                     'example_translation' => '别太担心考试，你已经努力学习了。',
                 ],
@@ -13562,11 +13562,11 @@ return [
             'pronunciation' => '/ˈhɪstɝi/, /ˈhɪstɹi/',
             'example_sentence' => 'I really enjoy learning about the ancient history of Egypt.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '歷史',
                     'example_translation' => '我非常喜歡學習埃及的古代歷史。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '历史',
                     'example_translation' => '我非常喜欢学习埃及的古代历史。',
                 ],
@@ -13582,11 +13582,11 @@ return [
             'pronunciation' => '/ˈeɪbəɫ/',
             'example_sentence' => 'Will you be able to come to the party?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '有能力的',
                     'example_translation' => '你能來參加聚會嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '能够的，有能力的',
                     'example_translation' => '你能来参加聚会吗？',
                 ],
@@ -13602,11 +13602,11 @@ return [
             'pronunciation' => '/ˈθɹoʊt/',
             'example_sentence' => 'I have a sore throat and a slight fever today, unfortunately.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '喉',
                     'example_translation' => '遺憾的是，我今天喉嚨痛，還有點輕微發燒。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '喉咙',
                     'example_translation' => '遗憾的是，我今天喉咙痛，还有点轻微发烧。',
                 ],
@@ -13622,11 +13622,11 @@ return [
             'pronunciation' => '/ˈkɫæs/',
             'example_sentence' => 'I have an English class at nine o\'clock tomorrow.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '班級',
                     'example_translation' => '我明天九點有一節英語課。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '班级，课',
                     'example_translation' => '我明天九点有一节英语课。',
                 ],
@@ -13642,11 +13642,11 @@ return [
             'pronunciation' => '/ˈɹoʊp/',
             'example_sentence' => 'The sailors used a thick rope to tie the boat to the dock.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '繩索',
                     'example_translation' => '水手們用粗繩把船繫在碼頭上。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '绳索',
                     'example_translation' => '水手们用粗绳把船系在码头上。',
                 ],
@@ -13662,11 +13662,11 @@ return [
             'pronunciation' => '/ˈθæŋk/',
             'example_sentence' => 'I would like to thank you for all your help and support.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '感謝',
                     'example_translation' => '我想對你所有的幫助和支持表示感謝。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '感谢',
                     'example_translation' => '我想对你所有的帮助和支持表示感谢。',
                 ],
@@ -13682,11 +13682,11 @@ return [
             'pronunciation' => '/ˌdɪˈsaɪd/',
             'example_sentence' => 'I can\'t decide which dress to wear to the wedding.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '決定',
                     'example_translation' => '我決定不了穿哪件禮服去參加婚禮。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '决定',
                     'example_translation' => '我决定不了穿哪件礼服去参加婚礼。',
                 ],
@@ -13702,11 +13702,11 @@ return [
             'pronunciation' => '/ˈɫaɪk/',
             'example_sentence' => 'I really like the new design of your mobile phone application.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '喜歡',
                     'example_translation' => '我真的很喜歡你手機應用的新設計。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '喜欢',
                     'example_translation' => '我真的很喜欢你手机应用的新设计。',
                 ],
@@ -13722,11 +13722,11 @@ return [
             'pronunciation' => '/ˈɹaɪt/',
             'example_sentence' => 'Is this the right way to the library? I am a bit lost.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '正確的',
                     'example_translation' => '這是去圖書館的路嗎？我有點迷路了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '正确的',
                     'example_translation' => '这是去图书馆的路吗？我有点迷路了。',
                 ],
@@ -13744,11 +13744,11 @@ return [
             'pronunciation' => '/ˈsɛntəns/',
             'example_sentence' => 'Please try to write a complete sentence using the new word.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '句子',
                     'example_translation' => '請試著用這個新單詞寫一個完整的句子。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '句子；判决',
                     'example_translation' => '请尝试用这个新词写出一个完整的句子。',
                 ],
@@ -13764,11 +13764,11 @@ return [
             'pronunciation' => '/ˈkɫɪɹ/',
             'example_sentence' => 'The sky is clear today, with no clouds at all.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '清除',
                     'example_translation' => '今天天空晴朗，一點雲也沒有。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '晴朗的；清楚的；清除',
                     'example_translation' => '今天天空很晴朗，一点云也没有。',
                 ],
@@ -13784,11 +13784,11 @@ return [
             'pronunciation' => '/ˈdɹaɪv/',
             'example_sentence' => 'Can you drive me to the train station tomorrow morning?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '駕駛',
                     'example_translation' => '明天早上你能開車送我去火車站嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '驾驶；开车',
                     'example_translation' => '明天早上你能开车送我去火车站吗？',
                 ],
@@ -13804,11 +13804,11 @@ return [
             'pronunciation' => '/ˈwɪð/, /ˈwɪθ/, /wɪð/, /wɪθ/',
             'example_sentence' => 'I went to the cinema with my best friend last Friday night.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '和',
                     'example_translation' => '我上週五晚上和我最好的朋友去了電影院。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '和……一起；用；带有',
                     'example_translation' => '上周五晚上我和我最好的朋友去了电影院。',
                 ],
@@ -13824,11 +13824,11 @@ return [
             'pronunciation' => '/ˈeɪdʒ/',
             'example_sentence' => 'What is your age?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '年齡',
                     'example_translation' => '你多大年紀？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '年龄；时代',
                     'example_translation' => '你多大年纪？',
                 ],
@@ -13844,11 +13844,11 @@ return [
             'pronunciation' => '/ˈmoʊs/, /ˈmoʊst/',
             'example_sentence' => 'Most people in this town work in the local electronics factory.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '最多',
                     'example_translation' => '鎮上的大多數人在當地的電子工廠工作。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '大多数的；最',
                     'example_translation' => '这个小镇上的大多数人在当地的电子厂工作。',
                 ],
@@ -13864,11 +13864,11 @@ return [
             'pronunciation' => '/ˈpɑpjəɫɝ/',
             'example_sentence' => 'The new restaurant is very popular and always full of people.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '受歡迎的',
                     'example_translation' => '這家新餐廳非常受歡迎，總是坐滿了人。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '受欢迎的；流行的',
                     'example_translation' => '这家新餐厅非常受欢迎，总是坐满了人。',
                 ],
@@ -13884,11 +13884,11 @@ return [
             'pronunciation' => '/ˈænt/, /ˈɔnt/',
             'example_sentence' => 'My aunt lives in New York.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '阿姨',
                     'example_translation' => '我阿姨住在紐約。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '阿姨；姑姑；伯母；婶婶；舅母',
                     'example_translation' => '我的阿姨住在纽约。',
                 ],
@@ -13904,11 +13904,11 @@ return [
             'pronunciation' => '/ˈɹaɪt/',
             'example_sentence' => 'I need to write a long letter to my grandmother in France.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '寫',
                     'example_translation' => '我需要給我在法國的祖母寫一封長信。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '写；写作',
                     'example_translation' => '我需要给我在法国的祖母写一封长信。',
                 ],
@@ -13924,11 +13924,11 @@ return [
             'pronunciation' => '/ˈmətʃ/',
             'example_sentence' => 'How much does this beautiful silk scarf cost? It looks expensive.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '很多',
                     'example_translation' => '這條漂亮的絲巾多少錢？它看起來很貴。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '许多的；非常',
                     'example_translation' => '这条漂亮的丝巾多少钱？它看起来很贵。',
                 ],
@@ -13946,11 +13946,11 @@ return [
             'pronunciation' => '/ˈkɪɫ/',
             'example_sentence' => 'Frost can kill young plants if they are not protected.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '殺',
                     'example_translation' => '如果不加保護，霜凍會凍死幼苗。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '杀死；弄死',
                     'example_translation' => '如果不加保护，霜冻会冻死幼苗。',
                 ],
@@ -13966,11 +13966,11 @@ return [
             'pronunciation' => '/ˈbif/',
             'example_sentence' => 'Do you prefer beef or chicken?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '牛肉',
                     'example_translation' => '你比較喜歡牛肉還是雞肉？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '牛肉',
                     'example_translation' => '你比较喜欢牛肉还是鸡肉？',
                 ],
@@ -13986,11 +13986,11 @@ return [
             'pronunciation' => '/ˈit/',
             'example_sentence' => 'What would you like to eat for dinner tonight?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '吃',
                     'example_translation' => '你今晚想吃什麼當晚餐？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '吃',
                     'example_translation' => '你今晚想吃什么当晚餐？',
                 ],
@@ -14006,11 +14006,11 @@ return [
             'pronunciation' => '/ˈtaʊn/',
             'example_sentence' => 'They live in a small, peaceful town in the south of Italy.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '鎮',
                     'example_translation' => '他們住在義大利南部一個安靜的小鎮上。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '城镇；镇',
                     'example_translation' => '他们住在意大利南部一个宁静的小镇上。',
                 ],
@@ -14026,11 +14026,11 @@ return [
             'pronunciation' => '/ˈɹaɪz/',
             'example_sentence' => 'The sun will rise at exactly six o\'clock tomorrow morning.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '上升',
                     'example_translation' => '太陽將在明天早上六點整升起。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '上升；升起',
                     'example_translation' => '太阳将在明天早上六点整升起。',
                 ],
@@ -14046,11 +14046,11 @@ return [
             'pronunciation' => '/kənˈvinjənt/',
             'example_sentence' => 'The location of the hotel is very convenient for tourists.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '方便的',
                     'example_translation' => '這家酒店的位置對遊客來說非常方便。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '方便的；便利的',
                     'example_translation' => '这家酒店的位置对游客来说非常方便。',
                 ],
@@ -14066,11 +14066,11 @@ return [
             'pronunciation' => '/ˈstɔɹi/',
             'example_sentence' => 'My grandfather told us a very interesting story about his youth.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '故事',
                     'example_translation' => '我爺爺給我們講了一個關於他年輕時的非常有趣的故事。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '故事',
                     'example_translation' => '我爷爷给我们讲了一个关于他年轻时非常有趣的故事。',
                 ],
@@ -14086,11 +14086,11 @@ return [
             'pronunciation' => '/ˈkɛɹfəɫ/',
             'example_sentence' => 'Please be careful when you cross the street.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '小心',
                     'example_translation' => '過馬路時請小心。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '小心的；仔细的',
                     'example_translation' => '过马路时请小心。',
                 ],
@@ -14106,11 +14106,11 @@ return [
             'pronunciation' => '/ˈhwɪtʃ/, /ˈwɪtʃ/',
             'example_sentence' => 'Which of these two colors do you prefer for your new room?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '哪個',
                     'example_translation' => '這兩種顏色中，你更喜歡哪一種用於你的新房間？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '哪一个；哪一些',
                     'example_translation' => '这两种颜色中，你更喜欢哪一种用于你的新房间？',
                 ],
@@ -14126,11 +14126,11 @@ return [
             'pronunciation' => '/ˈspik/',
             'example_sentence' => 'Could you please speak a bit more slowly? I am still learning.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '說話',
                     'example_translation' => '你能請你說得慢一點嗎？我還在學習中。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '说话；讲话',
                     'example_translation' => '你能稍微说慢一点吗？我还在学习中。',
                 ],
@@ -14148,11 +14148,11 @@ return [
             'pronunciation' => '/ˈɹɛɫətɪv/',
             'example_sentence' => 'All of my close relatives are coming over for dinner tonight.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '親戚',
                     'example_translation' => '我所有的近親今晚都要過來吃晚飯。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '亲戚；相对的',
                     'example_translation' => '今晚我所有的近亲都要过来吃晚饭。',
                 ],
@@ -14168,11 +14168,11 @@ return [
             'pronunciation' => '/ˈtɝn/',
             'example_sentence' => 'Please turn left at the next intersection to find the library.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '轉彎',
                     'example_translation' => '請在下一個路口左轉找圖書館。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '转弯；转动',
                     'example_translation' => '请在下一个路口左转去找图书馆。',
                 ],
@@ -14188,11 +14188,11 @@ return [
             'pronunciation' => '/ˈizi/',
             'example_sentence' => 'The math problem was much easier than I expected.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '簡單的',
                     'example_translation' => '這道數學題比我預想的要簡單得多。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '简单的；容易的',
                     'example_translation' => '这道数学题比我预想的要简单得多。',
                 ],
@@ -14208,11 +14208,11 @@ return [
             'pronunciation' => '/ˈboʊɫ/',
             'example_sentence' => 'She put the fruit in a large ceramic bowl.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '碗',
                     'example_translation' => '她把水果放進一個大的陶瓷碗裡。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '碗',
                     'example_translation' => '她把水果装进了一个大陶瓷碗里。',
                 ],
@@ -14228,11 +14228,11 @@ return [
             'pronunciation' => '/ˈɡɪv/',
             'example_sentence' => 'Can you give me a hand with these heavy suitcases?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '給',
                     'example_translation' => '你能幫我搬一下這些沉重的行李箱嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '给；给予',
                     'example_translation' => '你能帮我提一下这些沉重的行李箱吗？',
                 ],
@@ -14248,11 +14248,11 @@ return [
             'pronunciation' => '/hoʊˈtɛɫ/',
             'example_sentence' => 'We booked a comfortable hotel room near the city center.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '飯店',
                     'example_translation' => '我們預訂了市中心附近一間舒適的飯店房間。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '酒店；宾馆',
                     'example_translation' => '我们预订了市中心附近一家舒适的酒店房间。',
                 ],
@@ -14268,11 +14268,11 @@ return [
             'pronunciation' => '/ˈbæskət/',
             'example_sentence' => 'There are some apples in the basket.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '籃子',
                     'example_translation' => '籃子裡有一些蘋果。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '篮子',
                     'example_translation' => '篮子里有一些苹果。',
                 ],
@@ -14288,11 +14288,11 @@ return [
             'pronunciation' => '/ˈbɑdi/',
             'example_sentence' => 'Regular exercise is good for your body.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '身體',
                     'example_translation' => '規律運動對你的身體有好處。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '身体',
                     'example_translation' => '定期运动对你的身体有好处。',
                 ],
@@ -14308,11 +14308,11 @@ return [
             'pronunciation' => '/pəˈɫis/',
             'example_sentence' => 'The police arrived quickly to investigate the scene of the accident.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '警察',
                     'example_translation' => '警察迅速趕到現場調查事故。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '警察',
                     'example_translation' => '警察迅速赶到现场调查事故。',
                 ],
@@ -14328,11 +14328,11 @@ return [
             'pronunciation' => '/ˈpɑt/',
             'example_sentence' => 'She put a large pot of water on the stove to boil for pasta.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '鍋',
                     'example_translation' => '她在爐子上放了一大鍋水來煮義大利麵。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '锅；壶',
                     'example_translation' => '她在炉子上放了一大锅水来煮意面。',
                 ],
@@ -14350,11 +14350,11 @@ return [
             'pronunciation' => '/ˈkwaɪət/',
             'example_sentence' => 'Please be quiet in the library so others can concentrate.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '安靜的',
                     'example_translation' => '請在圖書館保持安靜，以便他人能集中注意力。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '安静的',
                     'example_translation' => '请在图书馆保持安静，以便他人能集中注意力。',
                 ],
@@ -14370,11 +14370,11 @@ return [
             'pronunciation' => '/ˈbæd/',
             'example_sentence' => 'Eating too much sugar is bad for your teeth.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '壞的',
                     'example_translation' => '吃太多糖對你的牙齒不好。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '坏的；有害的',
                     'example_translation' => '吃太多糖对你的牙齿不好。',
                 ],
@@ -14390,11 +14390,11 @@ return [
             'pronunciation' => '/ˈɫist/',
             'example_sentence' => 'You should drink at least eight glasses of water every day.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '至少',
                     'example_translation' => '你每天至少應該喝八杯水。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '最小的；最少的；至少',
                     'example_translation' => '你每天至少应该喝八杯水。',
                 ],
@@ -14410,11 +14410,11 @@ return [
             'pronunciation' => '/ˈhɝt/',
             'example_sentence' => 'I accidentally hurt my ankle while I was playing basketball.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '弄傷',
                     'example_translation' => '打籃球時我不小心傷到了腳踝。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '弄伤；伤害',
                     'example_translation' => '打篮球时我不小心弄伤了脚踝。',
                 ],
@@ -14430,11 +14430,11 @@ return [
             'pronunciation' => '/ˈsɛvɝəɫ/, /ˈsɛvɹəɫ/',
             'example_sentence' => 'I have read several books by this famous local author.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '幾個',
                     'example_translation' => '我讀過這位當地著名作家的幾本書。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '几个；若干',
                     'example_translation' => '我读过这位当地著名作家的几本书。',
                 ],
@@ -14450,11 +14450,11 @@ return [
             'pronunciation' => '/ˈɡɹin/',
             'example_sentence' => 'The forest is filled with many different shades of green.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '綠色',
                     'example_translation' => '森林裡充滿了許多不同深淺的綠色。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '绿色的；绿色',
                     'example_translation' => '森林里充满着许多深浅不同的绿色。',
                 ],
@@ -14470,11 +14470,11 @@ return [
             'pronunciation' => '/ˈdʒinz/',
             'example_sentence' => 'I like wearing a pair of comfortable blue jeans on the weekend.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '牛仔褲',
                     'example_translation' => '我喜歡在週末穿一條舒服的藍色牛仔褲。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '牛仔裤',
                     'example_translation' => '我喜欢在周末穿一条舒服的蓝色牛仔裤。',
                 ],
@@ -14490,11 +14490,11 @@ return [
             'pronunciation' => '/ˈpɹɛzənt/, /pɝˈzɛnt/, /pɹiˈzɛnt/',
             'example_sentence' => 'The children were very happy with the birthday presents they got.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '禮物',
                     'example_translation' => '孩子們對收到的生日禮物感到非常高興。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '礼物；出席的；赠送',
                     'example_translation' => '孩子们对他们收到的生日礼物感到非常高兴。',
                 ],
@@ -14510,11 +14510,11 @@ return [
             'pronunciation' => '/ˈwɑnt/, /ˈwɔnt/',
             'example_sentence' => 'I want to become a professional photographer in the future.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '想',
                     'example_translation' => '我想成為一名專業攝影師。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '想要；希望',
                     'example_translation' => '我将来想成为一名专业摄影师。',
                 ],
@@ -14530,11 +14530,11 @@ return [
             'pronunciation' => '/ˈbɫɑk/',
             'example_sentence' => 'They live just one block away.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '街區',
                     'example_translation' => '他們就住在一個街區外。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '街区；阻挡',
                     'example_translation' => '他们就住在离这里一个街区远的地方。',
                 ],
@@ -14552,11 +14552,11 @@ return [
             'pronunciation' => '/ˈkɑst/, /ˈkɔst/',
             'example_sentence' => 'The total cost of the trip was much higher than expected.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '成本',
                     'example_translation' => '這次旅行的總費用比預期的要高得多。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '费用，成本；花费',
                     'example_translation' => '这次旅行的总费用比预期的要高得多。',
                 ],
@@ -14572,11 +14572,11 @@ return [
             'pronunciation' => '/ˈhaʊ/',
             'example_sentence' => 'How do you plan to spend your time during the summer vacation?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '如何',
                     'example_translation' => '你打算如何度過暑假？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '怎样，如何',
                     'example_translation' => '你打算如何度过暑假？',
                 ],
@@ -14592,11 +14592,11 @@ return [
             'pronunciation' => '/ɹɪˈpɔɹtɝ/',
             'example_sentence' => 'The news reporter was at the scene to interview the witnesses.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '記者',
                     'example_translation' => '新聞記者在現場採訪目擊者。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '记者',
                     'example_translation' => '新闻记者在现场采访目击者。',
                 ],
@@ -14612,11 +14612,11 @@ return [
             'pronunciation' => '/ˈdɝɪŋ/, /ˈdjʊɹɪŋ/, /ˈdʊɹɪŋ/',
             'example_sentence' => 'Please remain silent during the movie performance.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '期間',
                     'example_translation' => '電影放映期間請保持安靜。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '在……期间',
                     'example_translation' => '电影放映期间请保持安静。',
                 ],
@@ -14632,11 +14632,11 @@ return [
             'pronunciation' => '/ˈɫɛsən/',
             'example_sentence' => 'The first lesson of the day begins at eight o\'clock sharp.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '課',
                     'example_translation' => '今天的第一節課在八點整開始。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '课，课程；教训',
                     'example_translation' => '今天的第一节课在八点整开始。',
                 ],
@@ -14652,11 +14652,11 @@ return [
             'pronunciation' => '/ˈnoʊt/',
             'example_sentence' => 'Please take a note of the time and date of the next meeting.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '筆記',
                     'example_translation' => '請記錄下下次會議的時間和日期。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '笔记，记录；注意',
                     'example_translation' => '请记录下下次会议的时间和日期。',
                 ],
@@ -14672,11 +14672,11 @@ return [
             'pronunciation' => '/ˈnɔɪz/',
             'example_sentence' => 'I heard a loud noise coming from the kitchen late last night.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '噪音',
                     'example_translation' => '我昨晚很晚聽到廚房傳來一聲巨響。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '噪音，杂音，声音',
                     'example_translation' => '我昨晚很晚听到厨房传来一声巨响。',
                 ],
@@ -14692,11 +14692,11 @@ return [
             'pronunciation' => '/ˈkɔɫ/',
             'example_sentence' => 'Please call me if you need any help.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '稱呼',
                     'example_translation' => '如果你需要任何幫助，請給我打電話。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '打电话；呼唤，称呼',
                     'example_translation' => '如果你需要任何帮助，请给我打电话。',
                 ],
@@ -14712,11 +14712,11 @@ return [
             'pronunciation' => '/ˈsɝvəs/, /ˈsɝvɪs/',
             'example_sentence' => 'The service at this new restaurant is excellent and fast.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '服務',
                     'example_translation' => '這家新餐廳的服務非常好且迅速。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '服务',
                     'example_translation' => '这家新餐厅的服务非常好且迅速。',
                 ],
@@ -14732,11 +14732,11 @@ return [
             'pronunciation' => '/ˈdip/',
             'example_sentence' => 'The water in this part of the lake is very deep.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '深的',
                     'example_translation' => '湖的這個部分水非常深。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '深的；深刻地',
                     'example_translation' => '湖的这个部分水非常深。',
                 ],
@@ -14754,11 +14754,11 @@ return [
             'pronunciation' => '/ˈʃɔɹt/',
             'example_sentence' => 'The story was quite short, but it had a very powerful message.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '短的',
                     'example_translation' => '故事很短，但卻傳遞了非常強大的資訊。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '短的，矮的',
                     'example_translation' => '故事很短，但却传递了非常强的信息。',
                 ],
@@ -14774,11 +14774,11 @@ return [
             'pronunciation' => '/ˈkwɔɹtɝ/',
             'example_sentence' => 'The meeting is scheduled to begin at a quarter past nine.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '四分之一',
                     'example_translation' => '會議定於九點十五分開始。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '四分之一，一刻钟',
                     'example_translation' => '会议定于九点十五分开始。',
                 ],
@@ -14794,11 +14794,11 @@ return [
             'pronunciation' => '/ˈaɪ/',
             'example_sentence' => 'She has beautiful blue eyes that sparkle when she smiles.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '眼睛',
                     'example_translation' => '她有一雙美麗的藍色眼睛，笑起來時閃閃發光。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '眼睛',
                     'example_translation' => '她有一双美丽的蓝色眼睛，微笑时闪闪发光。',
                 ],
@@ -14814,11 +14814,11 @@ return [
             'pronunciation' => '/ˈdɹaɪvɝ/',
             'example_sentence' => 'The taxi driver was very friendly and knew the city well.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '司機',
                     'example_translation' => '計程車司機非常友善，而且對這座城市很熟悉。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '司机，驾驶员',
                     'example_translation' => '出租车司机非常友善，而且对这座城市很熟悉。',
                 ],
@@ -14834,11 +14834,11 @@ return [
             'pronunciation' => '/ˈmeɪbi/',
             'example_sentence' => 'Maybe we should call him to see if he is still coming tonight.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '或許',
                     'example_translation' => '也許我們應該給他打個電話，看看他今晚是否還來。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '也许，或许',
                     'example_translation' => '也许我们应该给他打个电话，看看他今晚是否还来。',
                 ],
@@ -14854,11 +14854,11 @@ return [
             'pronunciation' => '/ˈɹoʊ/',
             'example_sentence' => 'There were several rows of empty seats at the back of the room.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '排',
                     'example_translation' => '房間後部有幾排空座位。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '排，行；划船',
                     'example_translation' => '房间后部有几排空座位。',
                 ],
@@ -14874,11 +14874,11 @@ return [
             'pronunciation' => '/ˈfjutʃɝ/',
             'example_sentence' => 'Nobody can predict the future with absolute certainty.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '未來',
                     'example_translation' => '沒有人能絕對肯定地預測未來。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '未来，将来；未来的',
                     'example_translation' => '没有人能绝对肯定地预测未来。',
                 ],
@@ -14894,11 +14894,11 @@ return [
             'pronunciation' => '/ˈθiətɝ/',
             'example_sentence' => 'We are going to the theater to see a new play tonight.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '劇院',
                     'example_translation' => '我們今晚要去劇院看一齣新戲。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '剧院，电影院',
                     'example_translation' => '我们今晚要去剧院看一出新戏。',
                 ],
@@ -14914,11 +14914,11 @@ return [
             'pronunciation' => '/ˈbin/',
             'example_sentence' => 'I like to eat green beans.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '豆',
                     'example_translation' => '我喜歡吃綠豆。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '豆，豆类',
                     'example_translation' => '我喜欢吃菜豆。',
                 ],
@@ -14934,11 +14934,11 @@ return [
             'pronunciation' => '/ˈðɛɹ/',
             'example_sentence' => 'Please wait for me there, I will be back in a few minutes.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '那裡',
                     'example_translation' => '請在那裡等我，我幾分鐘後就回來。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '那里，那边',
                     'example_translation' => '请在那里等我，我几分钟后就回来。',
                 ],
@@ -14956,11 +14956,11 @@ return [
             'pronunciation' => '/ˈbæŋk/',
             'example_sentence' => 'I need to go to the bank to withdraw some money.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '銀行',
                     'example_translation' => '我需要去銀行領一些錢。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '银行',
                     'example_translation' => '我需要去银行取一些钱。',
                 ],
@@ -14976,11 +14976,11 @@ return [
             'pronunciation' => '/ˈpɪn/',
             'example_sentence' => 'She used a small silver pin to fasten her beautiful silk scarf.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '別針',
                     'example_translation' => '她用一個小銀針固定她漂亮的絲巾。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '别针',
                     'example_translation' => '她用一枚小银针固定她漂亮的丝巾。',
                 ],
@@ -14996,11 +14996,11 @@ return [
             'pronunciation' => '/ˈɹut/',
             'example_sentence' => 'The roots of the old oak tree go deep into the fertile soil.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '根',
                     'example_translation' => '這棵老橡樹的根深紮在肥沃的土壤中。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '根',
                     'example_translation' => '这棵老橡树的根深深扎进肥沃的土壤中。',
                 ],
@@ -15016,11 +15016,11 @@ return [
             'pronunciation' => '/bɪˈkɑz/, /bɪˈkəz/, /bɪˈkɔz/, /bɪkəz/',
             'example_sentence' => 'She didn\'t go to school because she was sick.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '因為',
                     'example_translation' => '她因為生病沒去上學。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '因为',
                     'example_translation' => '她因为生病没去上学。',
                 ],
@@ -15036,11 +15036,11 @@ return [
             'pronunciation' => '/ˈækt/',
             'example_sentence' => 'It is time to act and solve the problem.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '行為',
                     'example_translation' => '是時候採取行動解決問題了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '行动',
                     'example_translation' => '是时候采取行动解决问题了。',
                 ],
@@ -15056,11 +15056,11 @@ return [
             'pronunciation' => '/ˈhwaɪɫ/, /ˈwaɪɫ/',
             'example_sentence' => 'I like to listen to music while I am studying or working.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '儘管',
                     'example_translation' => '我喜歡在學習或工作時聽音樂。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '在……期间',
                     'example_translation' => '我喜欢在学习或工作时听音乐。',
                 ],
@@ -15076,11 +15076,11 @@ return [
             'pronunciation' => '/ˈsæɫəd/',
             'example_sentence' => 'I usually have a fresh green salad for my lunch every day.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '沙拉',
                     'example_translation' => '我午餐通常每天都吃新鮮的綠色沙拉。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '沙拉',
                     'example_translation' => '我每天午餐通常都会吃新鲜的蔬菜沙拉。',
                 ],
@@ -15096,11 +15096,11 @@ return [
             'pronunciation' => '/ˈdɔɹ/',
             'example_sentence' => 'Please remember to lock the door when you leave.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '門',
                     'example_translation' => '請記得離開時鎖門。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '门',
                     'example_translation' => '请记得离开时锁门。',
                 ],
@@ -15116,11 +15116,11 @@ return [
             'pronunciation' => '/ˈməst/',
             'example_sentence' => 'You must follow the rules of the school to stay out of trouble.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '必須',
                     'example_translation' => '你必須遵守學校的規則，以免惹上麻煩。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '必须',
                     'example_translation' => '你必须遵守学校的规定，以免惹麻烦。',
                 ],
@@ -15136,11 +15136,11 @@ return [
             'pronunciation' => '/ˈɔfən/, /ˈɔftən/',
             'example_sentence' => 'How often do you go to the gym to exercise every week?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '常',
                     'example_translation' => '你每週去健身房鍛鍊幾次？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '经常',
                     'example_translation' => '你每周去健身房锻炼几次？',
                 ],
@@ -15158,11 +15158,11 @@ return [
             'pronunciation' => '/ˈɔɫ/',
             'example_sentence' => 'All the students passed the exam.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '全部',
                     'example_translation' => '所有的學生都通過了考試。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '全部',
                     'example_translation' => '所有的学生都通过了考试。',
                 ],
@@ -15178,11 +15178,11 @@ return [
             'pronunciation' => '/ˈɡɝɫ/',
             'example_sentence' => 'The little girl is learning how to play the violin.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '女孩',
                     'example_translation' => '那個小女孩正在學習拉小提琴。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '女孩',
                     'example_translation' => '那个小女孩正在学习拉小提琴。',
                 ],
@@ -15198,11 +15198,11 @@ return [
             'pronunciation' => '/ˈstɑp/',
             'example_sentence' => 'Please stop talking and listen to what the teacher is saying.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '停止',
                     'example_translation' => '請停止說話，聽老師在說什麼。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '停止',
                     'example_translation' => '请停止说话，听老师在说什么。',
                 ],
@@ -15218,11 +15218,11 @@ return [
             'pronunciation' => '/ˈdu/',
             'example_sentence' => 'What do you like to do in your free time?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '做',
                     'example_translation' => '你空閒時間喜歡做什麼？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '做',
                     'example_translation' => '你空闲时间喜欢做什么？',
                 ],
@@ -15238,11 +15238,11 @@ return [
             'pronunciation' => '/ˈist/',
             'example_sentence' => 'The sun rises in the east and sets in the west.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '東方',
                     'example_translation' => '太陽從東方升起，從西方落下。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '东方',
                     'example_translation' => '太阳从东方升起，在西方落下。',
                 ],
@@ -15258,11 +15258,11 @@ return [
             'pronunciation' => '/ˈbəɡ/',
             'example_sentence' => 'There is a small bug crawling on the window.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '漏洞',
                     'example_translation' => '有一隻小昆蟲在窗戶上爬。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '小虫',
                     'example_translation' => '有一只小虫子在窗户上爬。',
                 ],
@@ -15278,11 +15278,11 @@ return [
             'pronunciation' => '/ˈnoʊ/',
             'example_sentence' => 'Do you know the answer to the last question on the test?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '知道',
                     'example_translation' => '你知道考試最後一題的答案嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '知道',
                     'example_translation' => '你知道考试最后一题的答案吗？',
                 ],
@@ -15298,11 +15298,11 @@ return [
             'pronunciation' => '/ˈmit/',
             'example_sentence' => 'I am trying to eat less meat and more vegetables for my health.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '肉',
                     'example_translation' => '為了健康，我正試著少吃肉，多吃蔬菜。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '肉',
                     'example_translation' => '为了健康，我正在尝试少吃肉，多吃蔬菜。',
                 ],
@@ -15318,11 +15318,11 @@ return [
             'pronunciation' => '/ˈdʒəst/, /dʒɪst/',
             'example_sentence' => 'I have just finished my homework and now I am going to rest.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '只是',
                     'example_translation' => '我剛剛完成了我的家庭作業，現在我要去休息了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '刚刚',
                     'example_translation' => '我刚刚做完作业，现在要休息了。',
                 ],
@@ -15338,11 +15338,11 @@ return [
             'pronunciation' => '/ˈstɹeɪndʒ/',
             'example_sentence' => 'I heard a strange noise coming from the kitchen late at night.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '奇怪的',
                     'example_translation' => '我昨晚很晚聽到廚房傳來一聲怪響。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '奇怪的',
                     'example_translation' => '我深夜听到厨房传来奇怪的声音。',
                 ],
@@ -15360,11 +15360,11 @@ return [
             'pronunciation' => '/ˈhwaɪ/, /ˈwaɪ/',
             'example_sentence' => 'Why did you decide to learn a foreign language like English?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '為什麼',
                     'example_translation' => '你為什麼決定學習像英語這樣的一門外語？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '为什么',
                     'example_translation' => '你为什么决定学习英语这样的一门外语？',
                 ],
@@ -15380,11 +15380,11 @@ return [
             'pronunciation' => '/ˈkwɛstʃən/, /ˈkwɛʃən/',
             'example_sentence' => 'If you have any questions, please feel free to ask me later.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '問題',
                     'example_translation' => '如果你有任何問題，請隨時問我。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '问题；提问',
                     'example_translation' => '如果你有任何问题，请随时问我。',
                 ],
@@ -15400,11 +15400,11 @@ return [
             'pronunciation' => '/ˈʃʊɹ/',
             'example_sentence' => 'Are you sure that you have locked all the doors and windows?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '確定的',
                     'example_translation' => '你確定你鎖好了所有的門窗嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '确信的，肯定的',
                     'example_translation' => '你确定你锁好了所有的门窗吗？',
                 ],
@@ -15420,11 +15420,11 @@ return [
             'pronunciation' => '/ˈfud/',
             'example_sentence' => 'Healthy food is essential for maintaining a strong body.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '食物',
                     'example_translation' => '健康的食物對於保持強壯的身體至關重要。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '食物，食品',
                     'example_translation' => '健康的食物对于保持强壮的身体至关重要。',
                 ],
@@ -15440,11 +15440,11 @@ return [
             'pronunciation' => '/ˈɹuɫɝ/',
             'example_sentence' => 'I need a ruler to measure the length of this piece of paper.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '尺',
                     'example_translation' => '我需要一把尺來測量這張紙的長度。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '直尺；统治者',
                     'example_translation' => '我需要一把尺子来测量这张纸的长度。',
                 ],
@@ -15460,11 +15460,11 @@ return [
             'pronunciation' => '/ˈkəp/',
             'example_sentence' => 'I would like a cup of hot tea with some honey.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '杯子',
                     'example_translation' => '我想喝一杯加了蜂蜜的熱茶。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '杯子',
                     'example_translation' => '我想喝一杯加了蜂蜜的热茶。',
                 ],
@@ -15480,11 +15480,11 @@ return [
             'pronunciation' => '/ɹiˈmɛmbɝ/, /ɹɪˈmɛmbɝ/',
             'example_sentence' => 'Please remember to turn off the air conditioner before you leave.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '記得',
                     'example_translation' => '請記得在離開前關掉冷氣。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '记住，记得',
                     'example_translation' => '请记得在离开前关掉空调。',
                 ],
@@ -15500,11 +15500,11 @@ return [
             'pronunciation' => '/vaɪəˈɫɪn/',
             'example_sentence' => 'She has been learning to play the violin since she was a child.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '小提琴',
                     'example_translation' => '她從小就開始學習拉小提琴。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '小提琴',
                     'example_translation' => '她从小就开始学习拉小提琴。',
                 ],
@@ -15520,11 +15520,11 @@ return [
             'pronunciation' => '/ˈsaɪz/',
             'example_sentence' => 'I am not sure if this shirt is the right size for my brother.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '尺寸',
                     'example_translation' => '我不確定這件襯衫對我哥哥來說尺寸是否合適。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '尺寸，大小',
                     'example_translation' => '我不确定这件衬衫对我哥哥来说尺寸是否合适。',
                 ],
@@ -15540,11 +15540,11 @@ return [
             'pronunciation' => '/ˈtɛɹəbəɫ/',
             'example_sentence' => 'The weather was terrible yesterday, with heavy rain and wind.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '糟糕的',
                     'example_translation' => '昨天的天氣很糟糕，伴隨著大雨和強風。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '糟糕的，极坏的',
                     'example_translation' => '昨天的天气很糟糕，伴随着大雨和强风。',
                 ],
@@ -15562,11 +15562,11 @@ return [
             'pronunciation' => '/ˈɪntɝəstɪŋ/, /ˈɪntɝɪstɪŋ/, /ˈɪntɹəstɪŋ/, /ˈɪntɹɪstɪŋ/',
             'example_sentence' => 'The book I am reading is really interesting and informative.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '有趣的',
                     'example_translation' => '我正在讀的這本書非常有趣且見聞廣博。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '有趣的，引人入胜的',
                     'example_translation' => '我正在读的这本书非常有趣且富有益处。',
                 ],
@@ -15582,11 +15582,11 @@ return [
             'pronunciation' => '/ˈpeɪnt/',
             'example_sentence' => 'She used bright colors to paint a beautiful picture of the garden.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '畫',
                     'example_translation' => '她用鮮豔的顏色畫了一幅美麗的花園畫。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '画；油漆',
                     'example_translation' => '她用鲜艳的颜色画了一幅美丽的花园画。',
                 ],
@@ -15602,11 +15602,11 @@ return [
             'pronunciation' => '/ˈmaɪnd/',
             'example_sentence' => 'I don\'t mind waiting for a few minutes if you are busy right now.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '介意',
                     'example_translation' => '如果你現在正忙，我不介意等幾分鐘。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '介意；头脑',
                     'example_translation' => '如果你现在正忙，我不介意等几分钟。',
                 ],
@@ -15622,11 +15622,11 @@ return [
             'pronunciation' => '/ˈtæksi/',
             'example_sentence' => 'I had to take a taxi because I was running late for my meeting.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '計程車',
                     'example_translation' => '因為我開會快遲到了，所以我不得不搭計程車。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '出租车',
                     'example_translation' => '因为我赶时间去开会，我不得不打出租车。',
                 ],
@@ -15642,11 +15642,11 @@ return [
             'pronunciation' => '/ˈkɫin/',
             'example_sentence' => 'Please make sure that your hands are clean before eating.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '乾淨的',
                     'example_translation' => '請確保吃東西前手是乾淨的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '干净的；打扫',
                     'example_translation' => '请确保吃东西前手是干净的。',
                 ],
@@ -15662,11 +15662,11 @@ return [
             'pronunciation' => '/ˈmɪz/',
             'example_sentence' => 'Ms. Green is the manager of the marketing department.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '女士',
                     'example_translation' => '格林女士是行銷部的經理。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '女士',
                     'example_translation' => '格林女士是市场部的经理。',
                 ],
@@ -15682,11 +15682,11 @@ return [
             'pronunciation' => '/ˈɫɛtɝ/',
             'example_sentence' => 'She wrote a long letter to her old friend in France.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '信',
                     'example_translation' => '她給她在法國的老朋友寫了一封長信。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '信件；字母',
                     'example_translation' => '她给她在法国的老朋友写了一封长信。',
                 ],
@@ -15702,11 +15702,11 @@ return [
             'pronunciation' => '/ˈpɹɪti/',
             'example_sentence' => 'She wore a very pretty blue dress to the graduation ceremony.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '漂亮的',
                     'example_translation' => '她穿著一件非常漂亮的藍色禮服參加畢業典禮。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '漂亮的；相当',
                     'example_translation' => '她穿着一件非常漂亮的蓝色礼服参加毕业典礼。',
                 ],
@@ -15722,11 +15722,11 @@ return [
             'pronunciation' => '/ˈbətən/',
             'example_sentence' => 'Press the red button to start the machine.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '按鈕',
                     'example_translation' => '按下紅色按鈕啟動機器。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '按钮；纽扣',
                     'example_translation' => '按下红色按钮启动机器。',
                 ],
@@ -15742,11 +15742,11 @@ return [
             'pronunciation' => '/ˈbət/',
             'example_sentence' => 'I like the color, but the size is too small.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '但是',
                     'example_translation' => '我喜歡這個顏色，但尺寸太小了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '但是，可是',
                     'example_translation' => '我喜欢这个颜色，但尺寸太小了。',
                 ],
@@ -15764,11 +15764,11 @@ return [
             'pronunciation' => '/ˈmɑdɝn/',
             'example_sentence' => 'The city is full of modern buildings and advanced technology.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '現代的',
                     'example_translation' => '這座城市充滿了現代化建築和先進技術。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '现代的',
                     'example_translation' => '这座城市充满了现代建筑和先进技术。',
                 ],
@@ -15784,11 +15784,11 @@ return [
             'pronunciation' => '/ˈbɛɹ/',
             'example_sentence' => 'The grizzly bear is a powerful animal.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '熊',
                     'example_translation' => '灰熊是一種強大的動物。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '熊',
                     'example_translation' => '灰熊是一种强大的动物。',
                 ],
@@ -15804,11 +15804,11 @@ return [
             'pronunciation' => '/ˈɫɪsən/',
             'example_sentence' => 'You should listen carefully to the instructions of your teacher.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '聽',
                     'example_translation' => '你應該仔細聽老師的指示。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '听，倾听',
                     'example_translation' => '你应该仔细听老师的指导。',
                 ],
@@ -15824,11 +15824,11 @@ return [
             'pronunciation' => '/ˈsɛɫ/',
             'example_sentence' => 'They are planning to sell their old car and buy a newer model.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '賣',
                     'example_translation' => '他們計劃賣掉舊車，買一輛更新型號的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '卖，出售',
                     'example_translation' => '他们计划卖掉旧车，买一辆新款的。',
                 ],
@@ -15844,11 +15844,11 @@ return [
             'pronunciation' => '/ˌbiˈsaɪd/, /bɪˈsaɪd/',
             'example_sentence' => 'Come and sit beside me.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '旁',
                     'example_translation' => '過來坐在我旁邊。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '在……旁边',
                     'example_translation' => '过来坐在我旁边。',
                 ],
@@ -15864,11 +15864,11 @@ return [
             'pronunciation' => '/ˈjusfəɫ/',
             'example_sentence' => 'The dictionary is a very useful tool for learning new words.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '有用',
                     'example_translation' => '字典是學習新單詞的非常有用的工具。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '有用的',
                     'example_translation' => '词典是学习新单词非常有用的工具。',
                 ],
@@ -15884,11 +15884,11 @@ return [
             'pronunciation' => '/ˈtɛnəs/, /ˈtɛnɪs/',
             'example_sentence' => 'He likes to play tennis with his friends on the weekend.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '網球',
                     'example_translation' => '他喜歡週末和朋友們一起打網球。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '网球',
                     'example_translation' => '他喜欢在周末和朋友们打网球。',
                 ],
@@ -15904,11 +15904,11 @@ return [
             'pronunciation' => '/ˈdɹaɪ/',
             'example_sentence' => 'The laundry is already dry thanks to the sunny weather.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '乾燥',
                     'example_translation' => '多虧了晴朗的天氣，洗好的衣服已經乾了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '干燥的，干的',
                     'example_translation' => '多亏了晴朗的天气，洗好的衣服已经干了。',
                 ],
@@ -15924,11 +15924,11 @@ return [
             'pronunciation' => '/ˈbænd/',
             'example_sentence' => 'The school band practiced every Friday.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '樂團',
                     'example_translation' => '學校樂隊每週五都練習。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '乐队',
                     'example_translation' => '学校乐队每周五都会进行练习。',
                 ],
@@ -15944,11 +15944,11 @@ return [
             'pronunciation' => '/ˈdɹəm/',
             'example_sentence' => 'He has been practicing the drums since he was a child.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '鼓',
                     'example_translation' => '他自小就在練習打鼓。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '鼓',
                     'example_translation' => '他从童年起就一直在练习打鼓。',
                 ],
@@ -15966,11 +15966,11 @@ return [
             'pronunciation' => '/ˈfɪʃ/',
             'example_sentence' => 'We went to the river to see if we could catch some fish.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '魚',
                     'example_translation' => '我們去河邊看看能不能抓到一些魚。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '鱼',
                     'example_translation' => '我们去河边看看能不能抓到一些鱼。',
                 ],
@@ -15986,11 +15986,11 @@ return [
             'pronunciation' => '/ˈhæf/',
             'example_sentence' => 'I only ate half of the sandwich because I wasn\'t very hungry.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '一半',
                     'example_translation' => '我只吃了一半的三明治，因為我不是很餓。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '一半',
                     'example_translation' => '我只吃了一半三明治，因为不是很饿。',
                 ],
@@ -16006,11 +16006,11 @@ return [
             'pronunciation' => '/ˈsɔɹ/',
             'example_sentence' => 'I have a sore throat, so I need to drink some warm water.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '瘡',
                     'example_translation' => '我喉嚨痛，所以我需要喝點溫水。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '疼痛的，酸痛的',
                     'example_translation' => '我喉咙痛，所以我需要喝点温水。',
                 ],
@@ -16026,11 +16026,11 @@ return [
             'pronunciation' => '/ˈɛɹˌpɫeɪn/',
             'example_sentence' => 'The airplane will take off in ten minutes.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '飛機',
                     'example_translation' => '飛機將在十分鐘內起飛。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '飞机',
                     'example_translation' => '飞机将在十分钟内起飞。',
                 ],
@@ -16046,11 +16046,11 @@ return [
             'pronunciation' => '/ˈɫoʊnɫi/',
             'example_sentence' => 'He felt a bit lonely after his best friend moved away.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '孤獨',
                     'example_translation' => '好朋友搬走後，他感到有些孤獨。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '孤独的，寂寞的',
                     'example_translation' => '最好的朋友搬走后，他感到有点孤独。',
                 ],
@@ -16066,11 +16066,11 @@ return [
             'pronunciation' => '/ˈfɹɑɡ/',
             'example_sentence' => 'We heard the sound of frogs croaking in the pond at night.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '青蛙',
                     'example_translation' => '我們聽到晚上池塘裡青蛙鳴叫的聲音。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '青蛙',
                     'example_translation' => '我们晚上听到池塘里青蛙鸣叫的声音。',
                 ],
@@ -16086,11 +16086,11 @@ return [
             'pronunciation' => '/ˈəðɝ/',
             'example_sentence' => 'I have two pens; one is blue and the other is bright red.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '其他',
                     'example_translation' => '我有兩支筆；一支是藍色的，另一支是鮮紅色的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '其他的，另外的',
                     'example_translation' => '我有两支笔；一支是蓝色的，另一支是鲜红色的。',
                 ],
@@ -16106,11 +16106,11 @@ return [
             'pronunciation' => '/ˈeɪ/',
             'example_sentence' => 'I saw a cat in the garden.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '一個',
                     'example_translation' => '我在花園裡看到一隻貓。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '一（个）',
                     'example_translation' => '我在花园里看见了一只猫。',
                 ],
@@ -16126,11 +16126,11 @@ return [
             'pronunciation' => '/ˈmɪs/',
             'example_sentence' => 'I really miss my family when I am traveling far away from home.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '錯過',
                     'example_translation' => '當我在遠離家鄉旅行時，我真的很想念我的家人。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '想念，思念',
                     'example_translation' => '当我在离家很远的地方旅行时，我非常想念我的家人。',
                 ],
@@ -16146,11 +16146,11 @@ return [
             'pronunciation' => '/ˈmɔɹnɪŋ/',
             'example_sentence' => 'I usually go for a run in the early morning to start my day.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '早晨',
                     'example_translation' => '我通常在清晨去跑步，以此開始我的一天。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '早晨，上午',
                     'example_translation' => '我通常在清晨去跑步，以此开启新的一天。',
                 ],
@@ -16168,11 +16168,11 @@ return [
             'pronunciation' => '/ˈtʃɝtʃ/',
             'example_sentence' => 'The old church is located at the top of the hill.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '教會',
                     'example_translation' => '那座古老的教堂位於山頂上。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '教堂',
                     'example_translation' => '那座古老的教堂位于山顶上。',
                 ],
@@ -16188,11 +16188,11 @@ return [
             'pronunciation' => '/ˈsoʊfə/',
             'example_sentence' => 'We bought a new comfortable sofa for our small living room.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '沙發',
                     'example_translation' => '我們為我們的小客廳買了一個新的舒服沙發。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '沙发',
                     'example_translation' => '我们为我们的小客厅买了一款舒适的新沙发。',
                 ],
@@ -16208,11 +16208,11 @@ return [
             'pronunciation' => '/ˈhɛd/',
             'example_sentence' => 'He was wearing a blue helmet to protect his head.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '頭',
                     'example_translation' => '他戴著藍色安全帽來保護頭部。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '头；头部',
                     'example_translation' => '他戴着蓝色头盔来保护头部。',
                 ],
@@ -16228,11 +16228,11 @@ return [
             'pronunciation' => '/ˈstɹɔŋ/',
             'example_sentence' => 'You need to be strong and stay positive during difficult times.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '強的',
                     'example_translation' => '在困難時期，你需要堅強並保持積極。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '坚强的；强壮的',
                     'example_translation' => '在困难时期，你需要保持坚强和积极。',
                 ],
@@ -16248,11 +16248,11 @@ return [
             'pronunciation' => '/ˈwaɪf/',
             'example_sentence' => 'His wife is a professional musician who plays the violin.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '妻子',
                     'example_translation' => '他的妻子是一位拉小提琴的專業音樂家。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '妻子',
                     'example_translation' => '他的妻子是一位拉小提琴的专业音乐家。',
                 ],
@@ -16268,11 +16268,11 @@ return [
             'pronunciation' => '/ˈtɪp/',
             'example_sentence' => 'The waiter was very helpful, so we left him a generous tip.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '提示',
                     'example_translation' => '服務生非常熱心，所以我們給了他一筆豐厚的小費。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '小费；提示',
                     'example_translation' => '服务员非常热心，所以我们给了他丰厚的小费。',
                 ],
@@ -16288,11 +16288,11 @@ return [
             'pronunciation' => '/ˈsnoʊ/',
             'example_sentence' => 'The children were excited to see the first snow of the season.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '雪',
                     'example_translation' => '孩子們見到本季的第一場雪感到很興奮。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '雪；下雪',
                     'example_translation' => '孩子们看到这个季节的第一场雪非常兴奋。',
                 ],
@@ -16308,11 +16308,11 @@ return [
             'pronunciation' => '/ˈjəŋ/',
             'example_sentence' => 'The young girl is learning how to play the piano beautifully.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '年輕的',
                     'example_translation' => '那個小女孩正在學習如何把鋼琴彈得優美。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '年轻的',
                     'example_translation' => '那个年轻的小女孩正在学习如何优美地弹奏钢琴。',
                 ],
@@ -16328,11 +16328,11 @@ return [
             'pronunciation' => '/ˈfaɪɫ/',
             'example_sentence' => 'Please save your work in a new file on the computer.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '文件',
                     'example_translation' => '請將你的工作保存在電腦的一個新文件中。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '文件；文件夹',
                     'example_translation' => '请把你的工作保存在电脑里的新文件中。',
                 ],
@@ -16348,11 +16348,11 @@ return [
             'pronunciation' => '/ˈpɪk/',
             'example_sentence' => 'You can pick any of these books that you would like to read.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '挑選',
                     'example_translation' => '你可以從中挑選任何一本你想讀的書。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '挑选；选择',
                     'example_translation' => '你可以从这些书中挑选任何你想读的。',
                 ],
@@ -16370,11 +16370,11 @@ return [
             'pronunciation' => '/ˈbɑtəɫ/',
             'example_sentence' => 'Please pass me that bottle of water.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '瓶子',
                     'example_translation' => '請把那瓶水遞給我。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '瓶子',
                     'example_translation' => '请把那瓶水递给我。',
                 ],
@@ -16390,11 +16390,11 @@ return [
             'pronunciation' => '/ˈmæp/',
             'example_sentence' => 'We used a detailed map to find our way through the mountain.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '地圖',
                     'example_translation' => '我們用一張詳盡的地圖在山中找路。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '地图',
                     'example_translation' => '我们用一份详细的地图在山中寻找路径。',
                 ],
@@ -16410,11 +16410,11 @@ return [
             'pronunciation' => '/ˈkəɫɝ/, /ˈkɔɫɝ/',
             'example_sentence' => 'Blue is my favorite color, it reminds me of the ocean.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '顏色',
                     'example_translation' => '藍色是我最喜歡的顏色，它讓我想起大海。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '颜色；色彩',
                     'example_translation' => '蓝色是我最喜欢的颜色，它让我想起大海。',
                 ],
@@ -16430,11 +16430,11 @@ return [
             'pronunciation' => '/ˈsɪŋɝ/',
             'example_sentence' => 'He is a very famous singer who has fans all over the world.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '歌手',
                     'example_translation' => '他是一位非常有名的歌手，全世界都有他的粉絲。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '歌手',
                     'example_translation' => '他是一位非常有名的歌手，在全世界都有粉丝。',
                 ],
@@ -16450,11 +16450,11 @@ return [
             'pronunciation' => '/ˈmæd/',
             'example_sentence' => 'He was mad at himself for making such a silly mistake on the test.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '瘋狂的',
                     'example_translation' => '他因為在考試中犯了這麼愚蠢的錯誤而生氣。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '生气的；发疯的',
                     'example_translation' => '他因为在考试中犯了这么愚蠢的错误而生自己的气。',
                 ],
@@ -16470,11 +16470,11 @@ return [
             'pronunciation' => '/ənˈtɪɫ/',
             'example_sentence' => 'The library is open until eight o\'clock every evening.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '直到',
                     'example_translation' => '圖書館每天晚上開放到八點。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '直到……为止',
                     'example_translation' => '图书馆每天晚上开放到八点。',
                 ],
@@ -16490,11 +16490,11 @@ return [
             'pronunciation' => '/ˈsɔɫt/',
             'example_sentence' => 'You should use a little less salt in your food for better health.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '鹽',
                     'example_translation' => '為了健康，你應該在食物中少放點鹽。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '盐',
                     'example_translation' => '为了健康，你应该在食物里少放一点盐。',
                 ],
@@ -16510,11 +16510,11 @@ return [
             'pronunciation' => '/ˈseɪ/',
             'example_sentence' => 'What did he say to you when you met him at the station today?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '說',
                     'example_translation' => '你在車站見到他時，他對你說了什麼？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '说；讲',
                     'example_translation' => '今天你在车站碰到他时，他对你说了什么？',
                 ],
@@ -16530,11 +16530,11 @@ return [
             'pronunciation' => '/əˈbaʊt/',
             'example_sentence' => 'What is this book about?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '關於',
                     'example_translation' => '這本書是關於什麼的？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '关于；大约',
                     'example_translation' => '这本书是关于什么的？',
                 ],
@@ -16550,11 +16550,11 @@ return [
             'pronunciation' => '/ˈtɑpɪk/',
             'example_sentence' => 'The topic of the presentation was the impact of climate change.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '話題',
                     'example_translation' => '演講的主題是氣候變遷的影響。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '话题；主题',
                     'example_translation' => '演示的主题是气候变化的影响。',
                 ],
@@ -16572,11 +16572,11 @@ return [
             'pronunciation' => '/ˈtʃaɪɫd/',
             'example_sentence' => 'Every child deserves a happy and healthy childhood.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '孩子',
                     'example_translation' => '每個孩子都值得擁有快樂健康的童年。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '儿童；孩子',
                     'example_translation' => '每个孩子都值得拥有快乐健康的童年。',
                 ],
@@ -16592,11 +16592,11 @@ return [
             'pronunciation' => '/ˈdʒɔɪ/',
             'example_sentence' => 'The birth of their first child brought much joy to the family.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '喜悅',
                     'example_translation' => '他們第一個孩子的出生給全家帶來了許多喜悅。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '喜悦；乐趣',
                     'example_translation' => '他们第一个孩子的出生给全家带来了许多喜悦。',
                 ],
@@ -16612,11 +16612,11 @@ return [
             'pronunciation' => '/ˈəp/',
             'example_sentence' => 'Please look up at the sky and see all the beautiful stars.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '向上',
                     'example_translation' => '請抬頭看看天空，看看那些美麗的星星。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '向上地；在上面',
                     'example_translation' => '请抬头看看天空，看看那些美丽的星星。',
                 ],
@@ -16632,11 +16632,11 @@ return [
             'pronunciation' => '/ju/',
             'example_sentence' => 'You are my best friend in the whole world.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '你；你們',
                     'example_translation' => '你是我在這個世界上最好的朋友。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '你；你们',
                     'example_translation' => '你是我在这个世界上最好的朋友。',
                 ],
@@ -16652,11 +16652,11 @@ return [
             'pronunciation' => '/jɔɹ/',
             'example_sentence' => 'Your phone is ringing on the kitchen counter.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '你的；你們的',
                     'example_translation' => '你的手機在廚房檯面上響。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '你的；你们的',
                     'example_translation' => '你的手机在厨房台面上响。',
                 ],
@@ -16672,11 +16672,11 @@ return [
             'pronunciation' => '/jɔɹz/',
             'example_sentence' => 'This umbrella is yours, not mine.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '你的；你們的（所有代詞）',
                     'example_translation' => '這把雨傘是你的，不是我的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '你的；你们的（物主代词）',
                     'example_translation' => '这把雨伞是你的，不是我的。',
                 ],
@@ -16692,11 +16692,11 @@ return [
             'pronunciation' => '/jɔɹˈsɛɫvz/',
             'example_sentence' => 'Please help yourselves to some cake and drinks.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '你們自己',
                     'example_translation' => '請你們自己拿些蛋糕和飲料。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '你们自己',
                     'example_translation' => '请你们自己拿些蛋糕和饮料。',
                 ],
@@ -16712,11 +16712,11 @@ return [
             'pronunciation' => '/ˈwɛðɝ/',
             'example_sentence' => 'The weather has been very pleasant during the last few days.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '天氣',
                     'example_translation' => '過去幾天的天氣一直非常宜人。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '天气',
                     'example_translation' => '过去几天的天气一直非常宜人。',
                 ],
@@ -16732,11 +16732,11 @@ return [
             'pronunciation' => '/ˈpɫiz/',
             'example_sentence' => 'Could you please help me carry these heavy boxes upstairs?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '請',
                     'example_translation' => '能請你幫我把這些沉重的盒子搬到樓上嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '请；使高兴',
                     'example_translation' => '能请你帮我把这些沉重的箱子搬到楼上吗？',
                 ],
@@ -16752,11 +16752,11 @@ return [
             'pronunciation' => '/ˈsɫip/',
             'example_sentence' => 'It is important to get enough sleep to maintain your health.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '睡覺',
                     'example_translation' => '保證充足的睡眠對維持健康很重要。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '睡觉；睡眠',
                     'example_translation' => '保证充足的睡眠对维持健康很重要。',
                 ],
@@ -16774,11 +16774,11 @@ return [
             'pronunciation' => '/təˈɡɛðɝ/',
             'example_sentence' => 'Let\'s work together to find a solution to this difficult problem.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '一起',
                     'example_translation' => '讓我們一起努力，找到解決這個難題的辦法。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '一起；共同',
                     'example_translation' => '让我们一起努力，找到解决这个难题的办法。',
                 ],
@@ -16794,11 +16794,11 @@ return [
             'pronunciation' => '/ˈʃɔɹts/',
             'example_sentence' => 'He prefers wearing shorts and a T-shirt in the hot summer.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '短褲',
                     'example_translation' => '他喜歡在炎熱的夏天穿短褲和T恤。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '短裤',
                     'example_translation' => '他喜欢在炎热的夏天穿短裤和T恤。',
                 ],
@@ -16814,11 +16814,11 @@ return [
             'pronunciation' => '/ˈvɛɹi/',
             'example_sentence' => 'The movie was very interesting and kept me entertained.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '非常',
                     'example_translation' => '這部電影非常有趣，讓我看得很開心。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '非常；很',
                     'example_translation' => '这部电影非常有趣，让我看得很开心。',
                 ],
@@ -16834,11 +16834,11 @@ return [
             'pronunciation' => '/ˈɹitʃ/',
             'example_sentence' => 'We finally managed to reach the top of the mountain at sunset.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '抵達',
                     'example_translation' => '我們終於在日落時分登上了山頂。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '到达；伸手拿到',
                     'example_translation' => '我们终于在日落时分登上了山顶。',
                 ],
@@ -16854,11 +16854,11 @@ return [
             'pronunciation' => '/ˈbɹɛkfəst/',
             'example_sentence' => 'What did you have for breakfast this morning?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '早餐',
                     'example_translation' => '你今天早上早餐吃了什麼？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '早餐',
                     'example_translation' => '你今天早上早餐吃了什么？',
                 ],
@@ -16874,11 +16874,11 @@ return [
             'pronunciation' => '/ˈseɪv/',
             'example_sentence' => 'I am trying to save some money to buy a new laptop next year.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '節省',
                     'example_translation' => '我正試著存點錢，明年買台新筆記型電腦。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '攒钱；节省；拯救',
                     'example_translation' => '我正试着攒点钱，明年买台新笔记本电脑。',
                 ],
@@ -16894,11 +16894,11 @@ return [
             'pronunciation' => '/ˈstɹeɪt/',
             'example_sentence' => 'Go straight ahead for two blocks and you will see the library.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '直的',
                     'example_translation' => '一直往前走兩個街區，你就會看到圖書館。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '笔直地；直的',
                     'example_translation' => '一直往前走两个街区，你就会看到图书馆。',
                 ],
@@ -16914,11 +16914,11 @@ return [
             'pronunciation' => '/əˈfɹeɪd/',
             'example_sentence' => 'Don\'t be afraid of the dark.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '害怕的',
                     'example_translation' => '不要害怕黑暗。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '害怕的；担心的',
                     'example_translation' => '不要害怕黑暗。',
                 ],
@@ -16934,11 +16934,11 @@ return [
             'pronunciation' => '/ˈmjuzɪk/',
             'example_sentence' => 'Listening to classical music helps me relax and concentrate.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '音樂',
                     'example_translation' => '聽古典音樂有助於我放鬆並集中注意力。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '音乐',
                     'example_translation' => '听古典音乐有助于我放松并集中注意力。',
                 ],
@@ -16954,11 +16954,11 @@ return [
             'pronunciation' => '/ˈaɪðɝ/, /ˈiðɝ/',
             'example_sentence' => 'You can choose either the blue one or the red one.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '任何一個',
                     'example_translation' => '你可以選擇藍色的一個或紅色的一個。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '任一的；两者之一',
                     'example_translation' => '你可以选择蓝色的一个或红色的一个。',
                 ],
@@ -16976,11 +16976,11 @@ return [
             'pronunciation' => '/ˈmaɪn/',
             'example_sentence' => 'The pencil on the desk is mine, can you please pass it to me?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '礦',
                     'example_translation' => '桌上的鉛筆是我的，能請你把它遞給我嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '我的；矿山',
                     'example_translation' => '桌子上的铅笔是我的，你能把它递给我吗？',
                 ],
@@ -16996,11 +16996,11 @@ return [
             'pronunciation' => '/ˈɫiv/',
             'example_sentence' => 'What time does your train leave for the city tomorrow morning?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '離開',
                     'example_translation' => '你的火車明天早上幾點開往市區？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '离开；出发',
                     'example_translation' => '明天早上你的火车几点开往市区？',
                 ],
@@ -17016,11 +17016,11 @@ return [
             'pronunciation' => '/ˈhwɛn/, /ˈhwɪn/, /ˈwɛn/, /ˈwɪn/',
             'example_sentence' => 'When is the best time to visit the national park in your opinion?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '什麼時候',
                     'example_translation' => '你認為什麼時候是參觀國家公園的最佳時間？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '什么时候；当……时',
                     'example_translation' => '你认为什么时候是游览国家公园的最佳时间？',
                 ],
@@ -17036,11 +17036,11 @@ return [
             'pronunciation' => '/ˈhaɪt/',
             'example_sentence' => 'He is about the same height as his older brother.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '高度',
                     'example_translation' => '他和他哥哥的身高差不多。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '高度；身高',
                     'example_translation' => '他和他哥哥的身高差不多。',
                 ],
@@ -17056,11 +17056,11 @@ return [
             'pronunciation' => '/ˈhɛn/',
             'example_sentence' => 'The hen is sitting on her eggs to keep them warm.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '母雞',
                     'example_translation' => '母雞正蹲在蛋上孵蛋。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '母鸡',
                     'example_translation' => '母鸡正蹲在蛋上保温。',
                 ],
@@ -17076,11 +17076,11 @@ return [
             'pronunciation' => '/ˈbæθ/',
             'example_sentence' => 'I\'m going to take a hot bath.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '洗澡',
                     'example_translation' => '我打算洗個熱水澡。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '洗澡；沐浴',
                     'example_translation' => '我打算洗个热水澡。',
                 ],
@@ -17096,11 +17096,11 @@ return [
             'pronunciation' => '/ˈɔɹ/, /ɝ/',
             'example_sentence' => 'Would you like to have tea or coffee with your breakfast today?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '或者',
                     'example_translation' => '你今天早餐想喝茶還是咖啡？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '或者；还是',
                     'example_translation' => '你今天早餐想喝茶还是咖啡？',
                 ],
@@ -17116,11 +17116,11 @@ return [
             'pronunciation' => '/ˈwik/',
             'example_sentence' => 'I have a very busy week ahead with several important meetings.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '星期',
                     'example_translation' => '我下週非常忙，有幾個重要的會議。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '周；星期',
                     'example_translation' => '我接下来的一周非常忙，有几个重要的会议。',
                 ],
@@ -17136,11 +17136,11 @@ return [
             'pronunciation' => '/ˈɹeɪni/',
             'example_sentence' => 'I prefer staying at home and reading a book on a rainy day.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '下雨的',
                     'example_translation' => '我更喜歡在雨天待在家裡看書。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '下雨的；多雨的',
                     'example_translation' => '在雨天，我更喜欢呆在家里看书。',
                 ],
@@ -17156,11 +17156,11 @@ return [
             'pronunciation' => '/ˈsup/',
             'example_sentence' => 'My mother made some delicious chicken soup for dinner today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '湯',
                     'example_translation' => '我母親今天晚飯做了美味的雞湯。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '汤',
                     'example_translation' => '我妈妈今天晚餐做了一些美味的鸡汤。',
                 ],
@@ -17178,11 +17178,11 @@ return [
             'pronunciation' => '/ˈwɛɫkəm/',
             'example_sentence' => 'You are always welcome to visit us whenever you are in town.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '歡迎',
                     'example_translation' => '歡迎你隨時來拜訪我們。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '欢迎；受欢迎的',
                     'example_translation' => '无论何时来到我们镇上，都欢迎随时来拜访我们。',
                 ],
@@ -17198,11 +17198,11 @@ return [
             'pronunciation' => '/ˈpɪktʃɝ/',
             'example_sentence' => 'There is a large picture of a mountain hanging on the wall.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '圖片',
                     'example_translation' => '牆上掛著一張大山的照片。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '图画；照片',
                     'example_translation' => '墙上挂着一张大的山脉照片。',
                 ],
@@ -17218,11 +17218,11 @@ return [
             'pronunciation' => '/ˈtʃeɪndʒ/',
             'example_sentence' => 'We need to change our plans because of the weather.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '改變',
                     'example_translation' => '因為天氣的原因，我們需要改變計劃。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '改变；变化',
                     'example_translation' => '由于天气原因，我们需要改变计划。',
                 ],
@@ -17238,11 +17238,11 @@ return [
             'pronunciation' => '/ˈbɑks/',
             'example_sentence' => 'The old photographs were kept in a wooden box.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '盒子',
                     'example_translation' => '舊照片被保存在一個木盒裡。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '盒子；箱子',
                     'example_translation' => '老照片保存在一个木盒里。',
                 ],
@@ -17258,11 +17258,11 @@ return [
             'pronunciation' => '/ˈæsk/',
             'example_sentence' => 'If you have a question, just ask me.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '問',
                     'example_translation' => '如果你有問題，就問我吧。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '问；询问',
                     'example_translation' => '如果你有问题，直接问我就可以了。',
                 ],
@@ -17278,11 +17278,11 @@ return [
             'pronunciation' => '/ˈsɪk/',
             'example_sentence' => 'She stayed at home today because she was feeling very sick.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '生病的',
                     'example_translation' => '她今天待在家裡，因為她感到很不舒服。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '生病的；不舒服的',
                     'example_translation' => '她今天待在家，因为她觉得身体很不舒服。',
                 ],
@@ -17298,11 +17298,11 @@ return [
             'pronunciation' => '/ˈbaɪt/',
             'example_sentence' => 'Be careful, that dog might bite.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '咬',
                     'example_translation' => '小心，那隻狗可能會咬人。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '咬',
                     'example_translation' => '小心，那条狗可能会咬人。',
                 ],
@@ -17318,11 +17318,11 @@ return [
             'pronunciation' => '/ˈɫaʊd/',
             'example_sentence' => 'The music was so loud that I could barely hear what he was saying.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '大聲',
                     'example_translation' => '音樂聲太大了，我幾乎聽不見他在說什麼。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '大声的；响亮的',
                     'example_translation' => '音乐声太大了，我几乎听不清他在说什么。',
                 ],
@@ -17338,11 +17338,11 @@ return [
             'pronunciation' => '/ˈmɑɹkət/, /ˈmɑɹkɪt/',
             'example_sentence' => 'I like to buy fresh vegetables and fruits at the local market.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '市場',
                     'example_translation' => '我喜歡在當地市場買新鮮的蔬菜和水果。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '市场；集市',
                     'example_translation' => '我喜欢在当地的市场购买新鲜蔬菜和水果。',
                 ],
@@ -17358,11 +17358,11 @@ return [
             'pronunciation' => '/ˈkɑɹd/',
             'example_sentence' => 'She sent me a beautiful birthday card.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '卡片',
                     'example_translation' => '她給我寄了一張漂亮的生日卡。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '卡片；贺卡',
                     'example_translation' => '她给我寄了一张漂亮的生日卡片。',
                 ],
@@ -17380,11 +17380,11 @@ return [
             'pronunciation' => '/ˈθɝd/',
             'example_sentence' => 'This is the third time that I have been to this restaurant.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '第三',
                     'example_translation' => '這是我第三次來這家餐廳了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '第三',
                     'example_translation' => '这是我第三次来这家餐厅了。',
                 ],
@@ -17400,11 +17400,11 @@ return [
             'pronunciation' => '/ˈtaɪp/',
             'example_sentence' => 'What type of music do you like to listen to when you study?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '類型',
                     'example_translation' => '你學習時喜歡聽哪種音樂？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '类型；种类',
                     'example_translation' => '你学习时喜欢听哪种类型的音乐？',
                 ],
@@ -17420,11 +17420,11 @@ return [
             'pronunciation' => '/ˈhoʊp/',
             'example_sentence' => 'I hope that you have a wonderful time on your vacation.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '希望',
                     'example_translation' => '我希望你的假期過得愉快。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '希望',
                     'example_translation' => '我希望你的假期过得愉快。',
                 ],
@@ -17440,11 +17440,11 @@ return [
             'pronunciation' => '[o’clock]',
             'example_sentence' => 'The meeting is scheduled to begin at exactly ten o\'clock.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '點鐘',
                     'example_translation' => '會議定於十點整開始。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '点钟',
                     'example_translation' => '会议定于十点整开始。',
                 ],
@@ -17460,11 +17460,11 @@ return [
             'pronunciation' => '/ɪt/',
             'example_sentence' => 'It is raining outside, so take an umbrella.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '它',
                     'example_translation' => '外面在下雨，所以帶把雨傘。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '它',
                     'example_translation' => '外面在下雨，所以带把伞吧。',
                 ],
@@ -17480,11 +17480,11 @@ return [
             'pronunciation' => '/ɪts/',
             'example_sentence' => 'The cat licked its paws after the meal.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '它的',
                     'example_translation' => '貓在飯後舔自己的爪子。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '它的',
                     'example_translation' => '猫在饭后舔自己的爪子。',
                 ],
@@ -17500,11 +17500,11 @@ return [
             'pronunciation' => '/ɪtˈsɛɫf/',
             'example_sentence' => 'The door opened by itself in the strong wind.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '它自己',
                     'example_translation' => '門在大風中自己打開了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '它自己',
                     'example_translation' => '门在大风中自己打开了。',
                 ],
@@ -17520,11 +17520,11 @@ return [
             'pronunciation' => '/ˈəv/',
             'example_sentence' => 'This is a beautiful picture of the mountains during sunset.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '的',
                     'example_translation' => '這是一張美麗的山脈日落照片。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '的',
                     'example_translation' => '这是一张美丽的山脉日落照片。',
                 ],
@@ -17540,11 +17540,11 @@ return [
             'pronunciation' => '/ˈʃɝt/',
             'example_sentence' => 'He wore a clean white shirt for his important job interview.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '襯衫',
                     'example_translation' => '他穿了一件乾淨的白襯衫去參加重要的工作面試。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '衬衫',
                     'example_translation' => '他穿了一件干净的白衬衫去参加重要的工作面试。',
                 ],
@@ -17560,11 +17560,11 @@ return [
             'pronunciation' => '/ˈivɪn/',
             'example_sentence' => 'He was so tired that he couldn\'t even keep his eyes open.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '甚至',
                     'example_translation' => '他太累了，甚至連眼睛都睜不開。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '甚至；连……也',
                     'example_translation' => '他太累了，甚至连眼睛都睁不开。',
                 ],
@@ -17582,11 +17582,11 @@ return [
             'pronunciation' => '/ˈmɔɹ/',
             'example_sentence' => 'Would you like some more tea or would you prefer some coffee?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '更多的',
                     'example_translation' => '你還想再來點茶，還是想喝點咖啡？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '更多的',
                     'example_translation' => '你想再来点茶，还是想喝点咖啡？',
                 ],
@@ -17602,11 +17602,11 @@ return [
             'pronunciation' => '/ˈwɪɫ/, /wəɫ/',
             'example_sentence' => 'I will call you as soon as I arrive at the train station tomorrow.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '將要',
                     'example_translation' => '我明天一到火車站就給你打電話。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '将要；会',
                     'example_translation' => '我明天一到火车站就给你打电话。',
                 ],
@@ -17622,11 +17622,11 @@ return [
             'pronunciation' => '/ˈʃip/',
             'example_sentence' => 'The farmer has a large flock of sheep grazing in the field.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '羊',
                     'example_translation' => '農民有一大群羊在田野裡吃草。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '绵羊；羊',
                     'example_translation' => '农夫有一大群羊在田野里吃草。',
                 ],
@@ -17642,11 +17642,11 @@ return [
             'pronunciation' => '/ˈɝθ/',
             'example_sentence' => 'We must do our best to protect the environment of the Earth.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '地球',
                     'example_translation' => '我們必須盡力保護地球的環境。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '地球',
                     'example_translation' => '我们必须尽力保护地球的环境。',
                 ],
@@ -17662,11 +17662,11 @@ return [
             'pronunciation' => '/ˈjɑɹd/',
             'example_sentence' => 'The children were playing hide and seek in the large backyard.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '庭院',
                     'example_translation' => '孩子們在大後院裡玩躲貓貓。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '院子；庭院',
                     'example_translation' => '孩子们在大后院里玩躲猫猫。',
                 ],
@@ -17682,11 +17682,11 @@ return [
             'pronunciation' => '/ˈɛvɝ/',
             'example_sentence' => 'Have you ever visited the Great Wall of China?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '曾經',
                     'example_translation' => '你曾經去過中國的長城嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '曾经',
                     'example_translation' => '你曾经去过中国的长城吗？',
                 ],
@@ -17702,11 +17702,11 @@ return [
             'pronunciation' => '/ˈkeɪs/',
             'example_sentence' => 'The police are still investigating the case.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '案件',
                     'example_translation' => '警方仍在調查這起案件。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '案件；情况',
                     'example_translation' => '警方仍在调查这起案件。',
                 ],
@@ -17722,11 +17722,11 @@ return [
             'pronunciation' => '/ˈɫæst/',
             'example_sentence' => 'This is the last chance for you to submit your assignment.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '最後的',
                     'example_translation' => '這是你提交作業的最後一次機會。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '最后的',
                     'example_translation' => '这是你提交作业的最后一次机会。',
                 ],
@@ -17742,11 +17742,11 @@ return [
             'pronunciation' => '/ˌpiˈɛm/',
             'example_sentence' => 'The meeting is scheduled to end at exactly four p.m. tomorrow.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '下午',
                     'example_translation' => '會議定於明天下午四點整結束。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '下午',
                     'example_translation' => '会议定于明天下午四点整结束。',
                 ],
@@ -17762,11 +17762,11 @@ return [
             'pronunciation' => '/ˈhoʊmˌwɝk/',
             'example_sentence' => 'The students were given a lot of homework over the weekend.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '家庭作業',
                     'example_translation' => '學生們週末被佈置了很多家庭作業。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '家庭作业',
                     'example_translation' => '学生们周末被布置了很多家庭作业。',
                 ],
@@ -17784,11 +17784,11 @@ return [
             'pronunciation' => '/məˈʃin/',
             'example_sentence' => 'The factory installed a new machine to speed up the production.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '機器',
                     'example_translation' => '工廠安裝了一台新機器以加快生產速度。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '机器',
                     'example_translation' => '工厂安装了一台新机器以加快生产速度。',
                 ],
@@ -17804,11 +17804,11 @@ return [
             'pronunciation' => '/ˈpaʊɝ/',
             'example_sentence' => 'Knowledge is power, so you should never stop learning new things.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '力量',
                     'example_translation' => '知識就是力量，所以你永遠不應該停止學習新事物。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '力量',
                     'example_translation' => '知识就是力量，所以你不应该停止学习新事物。',
                 ],
@@ -17824,11 +17824,11 @@ return [
             'pronunciation' => '/ˈdɛθ/',
             'example_sentence' => 'The news of his sudden death was a shock to everyone.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '死亡',
                     'example_translation' => '他突然去世的消息讓每個人都感到震驚。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '死亡',
                     'example_translation' => '他突然去世的消息让每个人都感到震惊。',
                 ],
@@ -17844,11 +17844,11 @@ return [
             'pronunciation' => '/ˈfɔɹ/, /fɝ/, /fɹɝ/',
             'example_sentence' => 'This special gift is for my best friend who is moving away.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '為了',
                     'example_translation' => '這份特別的禮物是送給我即將搬走的好朋友的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '为了',
                     'example_translation' => '这份特别的礼物是送给我即将搬走的好朋友的。',
                 ],
@@ -17864,11 +17864,11 @@ return [
             'pronunciation' => '/ˈseɪɫ/',
             'example_sentence' => 'There is a big sale at the department store this weekend.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '銷售',
                     'example_translation' => '百貨公司這個週末有大減價。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '销售',
                     'example_translation' => '百货公司这个周末有特卖活动。',
                 ],
@@ -17884,11 +17884,11 @@ return [
             'pronunciation' => '/ˈnaɪs/, /ˈnis/',
             'example_sentence' => 'It is a very nice day today, perfect for a walk in the forest.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '好的',
                     'example_translation' => '今天天氣非常好，非常適合去森林裡散步。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '好的',
                     'example_translation' => '今天天气非常好，非常适合去森林里散步。',
                 ],
@@ -17904,11 +17904,11 @@ return [
             'pronunciation' => '/ˈdɪɹ/',
             'example_sentence' => 'Thank you for your kind letter, my dear friend.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '親愛的',
                     'example_translation' => '謝謝你親切的來信，我親愛的朋友。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '亲爱的',
                     'example_translation' => '谢谢你亲切的来信，我亲爱的朋友。',
                 ],
@@ -17924,11 +17924,11 @@ return [
             'pronunciation' => '/ˈbi/, /bi/',
             'example_sentence' => 'I want to be a pilot one day.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '是',
                     'example_translation' => '我希望有一天能成為一名飛行員。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '是',
                     'example_translation' => '我希望有一天能成为一名飞行员。',
                 ],
@@ -17944,11 +17944,11 @@ return [
             'pronunciation' => '/ˈɛvɹiˌθɪŋ/',
             'example_sentence' => 'I have packed everything I need for my trip.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '一切',
                     'example_translation' => '我已經收拾好了旅行所需的一切。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '一切',
                     'example_translation' => '我已经收拾好了旅行所需的一切。',
                 ],
@@ -17964,11 +17964,11 @@ return [
             'pronunciation' => '/ˈhɑˌspɪtəɫ/',
             'example_sentence' => 'My sister works as a nurse in the city\'s largest hospital.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '醫院',
                     'example_translation' => '我姐姐在市內最大的醫院當護士。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '医院',
                     'example_translation' => '我姐姐在市内最大的医院当护士。',
                 ],
@@ -17986,11 +17986,11 @@ return [
             'pronunciation' => '/ˈfɑɹən/, /ˈfɔɹən/',
             'example_sentence' => 'Learning a foreign language opens up many new opportunities.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '外國的',
                     'example_translation' => '學習一門外語會開啟許多新的機會。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '外国的',
                     'example_translation' => '学习一门外语会开启许多新的机会。',
                 ],
@@ -18006,11 +18006,11 @@ return [
             'pronunciation' => '/ˈsteɪʃən/',
             'example_sentence' => 'I will meet you at the train station tomorrow morning at eight.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '車站',
                     'example_translation' => '我明天早上八點在火車站接你。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '车站',
                     'example_translation' => '我明天早上八点在火车站接你。',
                 ],
@@ -18026,11 +18026,11 @@ return [
             'pronunciation' => '/ˈwʊmən/',
             'example_sentence' => 'The young woman is a very talented doctor in the local hospital.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '女士',
                     'example_translation' => '那位年輕女性是當地醫院一位非常有才華的醫生。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '女性',
                     'example_translation' => '那位年轻女性是当地医院一位非常有才华的医生。',
                 ],
@@ -18046,11 +18046,11 @@ return [
             'pronunciation' => '/ˈsən/',
             'example_sentence' => 'The sun was shining brightly in the clear blue sky today.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '太陽',
                     'example_translation' => '今天太陽在晴朗的藍天中明亮地照耀著。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '太阳',
                     'example_translation' => '今天太阳在晴朗的蓝天中明亮地照耀着。',
                 ],
@@ -18066,11 +18066,11 @@ return [
             'pronunciation' => '/ˈdɑɫɝ/, /ˈdɔɫɝ/',
             'example_sentence' => 'The book cost me about twenty dollars.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '美元',
                     'example_translation' => '這本書花了我大約二十美元。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '美元',
                     'example_translation' => '这本书花了我大约二十美元。',
                 ],
@@ -18086,11 +18086,11 @@ return [
             'pronunciation' => '/ˈbɔɫ/',
             'example_sentence' => 'The dog is playing with a ball.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '球',
                     'example_translation' => '這隻狗正在玩球。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '球',
                     'example_translation' => '这只狗正在玩球。',
                 ],
@@ -18106,11 +18106,11 @@ return [
             'pronunciation' => '/ˈsmoʊk/',
             'example_sentence' => 'You should not smoke in public places, as it is prohibited.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '抽煙',
                     'example_translation' => '你不應該在公共場所吸煙，因為這是被禁止的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '抽烟',
                     'example_translation' => '你不应该在公共场所吸烟，因为这是被禁止的。',
                 ],
@@ -18126,11 +18126,11 @@ return [
             'pronunciation' => '/ˈskaɪ/',
             'example_sentence' => 'The sky turned a beautiful shade of pink during the sunset.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '天空',
                     'example_translation' => '日落時分，天空變成了美麗的粉紅色。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '天空',
                     'example_translation' => '日落时分，天空变成了美丽的粉红色。',
                 ],
@@ -18146,11 +18146,11 @@ return [
             'pronunciation' => '/ˈtɛɫ/',
             'example_sentence' => 'Could you please tell me where the nearest post office is?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '告訴',
                     'example_translation' => '能請你告訴我最近的郵局在哪裡嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '告诉',
                     'example_translation' => '能请你告诉我最近的邮局在哪里吗？',
                 ],
@@ -18166,11 +18166,11 @@ return [
             'pronunciation' => '/ˈfɹəm/',
             'example_sentence' => 'Where are you from? I am originally from a small town in Italy.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '從',
                     'example_translation' => '你來自哪裡？我原籍義大利的一個小鎮。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '从',
                     'example_translation' => '你来自哪里？我原籍意大利的一个小镇。',
                 ],
@@ -18188,11 +18188,11 @@ return [
             'pronunciation' => '/ˈɹiɫ/',
             'example_sentence' => 'It is important to focus on real problems and find practical solutions.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '真實的',
                     'example_translation' => '專注於現實問題並找到實際的解決方案是很重要的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '真实的；现实的',
                     'example_translation' => '专注于现实问题并找到实际的解决方案是很重要的。',
                 ],
@@ -18208,11 +18208,11 @@ return [
             'pronunciation' => '/ˈdɪfɝənt/, /ˈdɪfɹənt/',
             'example_sentence' => 'They have very different opinions on how to solve the problem.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '不同的',
                     'example_translation' => '對於如何解決這個問題，他們有非常不同的意見。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '不同的',
                     'example_translation' => '对于如何解决这个问题，他们有着非常不同的意见。',
                 ],
@@ -18228,11 +18228,11 @@ return [
             'pronunciation' => '/ˈneɪtʃɝ/',
             'example_sentence' => 'I love spending time in nature, surrounded by trees and flowers.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '自然',
                     'example_translation' => '我喜歡待在大自然中，被樹木和花朵環繞。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '自然；大自然',
                     'example_translation' => '我喜欢待在大自然中，被树木和花朵环绕。',
                 ],
@@ -18248,11 +18248,11 @@ return [
             'pronunciation' => '/ˈɹɛd/',
             'example_sentence' => 'She wore a beautiful bright red dress to the company party.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '紅色的',
                     'example_translation' => '她穿著一件漂亮的鮮紅色禮服參加公司派對。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '红色的；红色',
                     'example_translation' => '她穿着一件漂亮的鲜红色礼服参加公司派对。',
                 ],
@@ -18268,11 +18268,11 @@ return [
             'pronunciation' => '/ˈpɫeɪɝ/',
             'example_sentence' => 'He is a professional football player who plays for a top team.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '玩家',
                     'example_translation' => '他是一位為頂級球隊效力的職業足球運動員。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '运动员；选手；玩家',
                     'example_translation' => '他是一位为顶尖球队效力的职业足球运动员。',
                 ],
@@ -18288,11 +18288,11 @@ return [
             'pronunciation' => '/ˈɛksəɫənt/',
             'example_sentence' => 'The performance was excellent and received a standing ovation.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '出色的',
                     'example_translation' => '演出非常精彩，獲得了全場起立鼓掌。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '出色的；优秀的',
                     'example_translation' => '演出非常精彩，赢得了全场起立鼓掌。',
                 ],
@@ -18308,11 +18308,11 @@ return [
             'pronunciation' => '/ˈhit/',
             'example_sentence' => 'The intense heat of the sun was almost unbearable.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '熱',
                     'example_translation' => '太陽的酷熱幾乎讓人受不了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '热；高温；加热',
                     'example_translation' => '太阳的强烈酷热几乎令人无法忍受。',
                 ],
@@ -18328,11 +18328,11 @@ return [
             'pronunciation' => '/ˈɫɔɪɝ/, /ˈɫɔjɝ/',
             'example_sentence' => 'You should consult a lawyer before signing any legal documents.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '律師',
                     'example_translation' => '在簽署任何法律文件之前，你應該諮詢律師。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '律师',
                     'example_translation' => '在签署任何法律文件之前，你应该咨询律师。',
                 ],
@@ -18348,11 +18348,11 @@ return [
             'pronunciation' => '/ˈsɪti/',
             'example_sentence' => 'I really enjoy the busy and exciting life in the city.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '城市',
                     'example_translation' => '我真的很喜歡城市裡忙碌而令人興奮的生活。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '城市',
                     'example_translation' => '我真的很喜欢城市里繁忙而充满活力的生活。',
                 ],
@@ -18368,11 +18368,11 @@ return [
             'pronunciation' => '/ˈjɛɫoʊ/',
             'example_sentence' => 'The leaves of the trees turned bright yellow in the autumn.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '黃色的',
                     'example_translation' => '樹上的葉子在秋天變成了鮮黃色。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '黄色的；黄色',
                     'example_translation' => '树上的叶子在秋天变成了鲜黄色。',
                 ],
@@ -18390,11 +18390,11 @@ return [
             'pronunciation' => '/ˈsɛkɹəˌtɛɹi/',
             'example_sentence' => 'The secretary is busy organizing the files for the meeting.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '秘書',
                     'example_translation' => '秘書正忙著整理會議文件。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '秘书',
                     'example_translation' => '秘书正忙着整理会议的文件。',
                 ],
@@ -18410,11 +18410,11 @@ return [
             'pronunciation' => '/ˈmoʊmənt/',
             'example_sentence' => 'Please wait for a moment, I will be with you very shortly.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '片刻',
                     'example_translation' => '請稍等片刻，我馬上就來。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '时刻；片刻',
                     'example_translation' => '请稍等片刻，我马上就来。',
                 ],
@@ -18430,11 +18430,11 @@ return [
             'pronunciation' => '/ˈkɫoʊðz/, /ˈkɫoʊz/',
             'example_sentence' => 'She is folding her clean clothes and putting them away.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '衣服',
                     'example_translation' => '她正在摺疊乾淨的衣服並把它們收起來。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '衣服',
                     'example_translation' => '她正在叠干净的衣服并把它们收起来。',
                 ],
@@ -18450,11 +18450,11 @@ return [
             'pronunciation' => '/ˈtɑp/, /ˈtɔp/',
             'example_sentence' => 'We finally reached the top of the mountain at sunset.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '頂部',
                     'example_translation' => '我們終於在日落時分到達了山頂。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '顶端；顶部',
                     'example_translation' => '我们终于在日落时分到达了山顶。',
                 ],
@@ -18470,11 +18470,11 @@ return [
             'pronunciation' => '/ˈpænts/',
             'example_sentence' => 'I need to buy a new pair of black pants for the formal party.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '褲子',
                     'example_translation' => '我需要買一條新的黑褲子去參加正式派對。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '裤子',
                     'example_translation' => '我需要买一条新的黑色裤子去参加正式派对。',
                 ],
@@ -18490,11 +18490,11 @@ return [
             'pronunciation' => '/bɪˈkəm/',
             'example_sentence' => 'He wants to become a doctor.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '變得',
                     'example_translation' => '他想成為一名醫生。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '成为；变得',
                     'example_translation' => '他想成为一名医生。',
                 ],
@@ -18510,11 +18510,11 @@ return [
             'pronunciation' => '/ˈpɑnd/',
             'example_sentence' => 'There are many small frogs and fishes living in this quiet pond.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '池塘',
                     'example_translation' => '這個安靜的池塘裡住著許多小青蛙和小魚。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '池塘',
                     'example_translation' => '这个安静的池塘里生活着许多小青蛙和小鱼。',
                 ],
@@ -18530,11 +18530,11 @@ return [
             'pronunciation' => '/ˈɹɛd/, /ˈɹid/',
             'example_sentence' => 'She likes to read a few chapters of a novel before she goes to bed.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '讀',
                     'example_translation' => '她喜歡在睡前讀幾章小說。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '读；阅读',
                     'example_translation' => '她喜欢在睡觉前读几章小说。',
                 ],
@@ -18550,11 +18550,11 @@ return [
             'pronunciation' => '/ˈhuz/',
             'example_sentence' => 'Whose book is this? I found it on the table in the library.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '誰',
                     'example_translation' => '這是誰的書？我在圖書館的桌子上發現的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '谁的',
                     'example_translation' => '这是谁的书？我在图书馆的桌子上找到的。',
                 ],
@@ -18570,11 +18570,11 @@ return [
             'pronunciation' => '/ˈɛvɹiˌwən/',
             'example_sentence' => 'Everyone is invited to the party on Friday night.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '每個人',
                     'example_translation' => '每個人都被邀請參加週五晚上的派對。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '每个人；大家',
                     'example_translation' => '每个人都被邀请参加周五晚上的派对。',
                 ],
@@ -18592,11 +18592,11 @@ return [
             'pronunciation' => '/ˈkwin/',
             'example_sentence' => 'The queen was wearing a magnificent crown and a long royal robe.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '女王',
                     'example_translation' => '女王戴著華麗的王冠，穿著長長的皇室袍子。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '女王；王后',
                     'example_translation' => '女王戴着华丽的皇冠，穿着长长的皇室长袍。',
                 ],
@@ -18612,11 +18612,11 @@ return [
             'pronunciation' => '/ˈdɛd/',
             'example_sentence' => 'The flowers in the vase are dead because they didn\'t have water.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '死的',
                     'example_translation' => '花瓶裡的花枯死了，因為沒有水。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '枯萎的；死亡的',
                     'example_translation' => '花瓶里的花枯死了，因为没有水。',
                 ],
@@ -18632,11 +18632,11 @@ return [
             'pronunciation' => '/ˈɡɹaʊnd/',
             'example_sentence' => 'Please don\'t sit on the cold ground, you might get sick.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '地面',
                     'example_translation' => '請不要坐在冰冷的地面上，你可能會生病。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '地面；地上',
                     'example_translation' => '请不要坐在冰冷的地面上，你可能会生病。',
                 ],
@@ -18652,11 +18652,11 @@ return [
             'pronunciation' => '/ˈheɪt/',
             'example_sentence' => 'I really hate it when people are late for meetings.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '恨',
                     'example_translation' => '我真的很討厭人們開會遲到。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '讨厌；憎恨',
                     'example_translation' => '我真的很讨厌别人开会迟到。',
                 ],
@@ -18672,11 +18672,11 @@ return [
             'pronunciation' => '/ˈsɝkəɫ/',
             'example_sentence' => 'The children sat in a circle around the teacher.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '圓圈',
                     'example_translation' => '孩子們在老師周圍坐成一個圈。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '圆圈；环形',
                     'example_translation' => '孩子们在老师周围坐成了一圈。',
                 ],
@@ -18692,11 +18692,11 @@ return [
             'pronunciation' => '/ˈhænd/',
             'example_sentence' => 'Please wash your hands thoroughly with soap before eating.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '手',
                     'example_translation' => '吃飯前請用肥皂徹底洗手。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '手',
                     'example_translation' => '饭前请用肥皂彻底洗手。',
                 ],
@@ -18712,11 +18712,11 @@ return [
             'pronunciation' => '/ˈteɪst/',
             'example_sentence' => 'This soup has a very interesting taste, what did you add to it?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '品嚐',
                     'example_translation' => '這湯的味道很有趣，你加了什麼進去？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '味道；品尝',
                     'example_translation' => '这道汤的味道很有意思，你加了什么进去？',
                 ],
@@ -18732,11 +18732,11 @@ return [
             'pronunciation' => '/ˈpɫæn/',
             'example_sentence' => 'We need to make a detailed plan for our summer vacation trip.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '計劃',
                     'example_translation' => '我們需要為我們的暑假旅行制定一個詳盡的計劃。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '计划',
                     'example_translation' => '我们需要为暑假旅行制定一个详细的计划。',
                 ],
@@ -18752,11 +18752,11 @@ return [
             'pronunciation' => '/ˈɫeɪk/',
             'example_sentence' => 'We went for a peaceful walk along the edge of the lake.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '湖',
                     'example_translation' => '我們沿著湖邊安靜地散步。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '湖；湖泊',
                     'example_translation' => '我们沿着湖边平静地散步。',
                 ],
@@ -18772,11 +18772,11 @@ return [
             'pronunciation' => '/ˈwɛɹ/',
             'example_sentence' => 'She always wears a helmet when she rides her bicycle.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '穿',
                     'example_translation' => '她騎自行車時總是戴著頭盔。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '穿；戴',
                     'example_translation' => '她骑自行车时总是戴着头盔。',
                 ],
@@ -18794,11 +18794,11 @@ return [
             'pronunciation' => '/ˈwɔɹm/',
             'example_sentence' => 'The weather is starting to get warm as spring approaches.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '溫暖的',
                     'example_translation' => '隨著春天臨近，天氣開始變暖。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '温暖的；变暖',
                     'example_translation' => '随着春天的临近，天气开始变暖了。',
                 ],
@@ -18814,11 +18814,11 @@ return [
             'pronunciation' => '/ˈbɔɹɪŋ/',
             'example_sentence' => 'The lecture was quite boring.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '無聊的',
                     'example_translation' => '那場講座相當枯燥無味。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '无聊的；枯燥的',
                     'example_translation' => '那场讲座相当枯燥乏味。',
                 ],
@@ -18834,11 +18834,11 @@ return [
             'pronunciation' => '/ˈθɹu/',
             'example_sentence' => 'We walked through the dense forest to find the hidden lake.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '透過',
                     'example_translation' => '我們穿過茂密的森林，找到了那個隱藏的湖泊。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '穿过；通过',
                     'example_translation' => '我们穿过茂密的森林，找到了那个隐蔽的湖泊。',
                 ],
@@ -18854,11 +18854,11 @@ return [
             'pronunciation' => '/ˈwaɪz/',
             'example_sentence' => 'It was a very wise decision to save some money for the future.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '明智的',
                     'example_translation' => '為未來存點錢是一個非常明智的決定。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '明智的；聪明的',
                     'example_translation' => '为将来存点钱是一个非常明智的决定。',
                 ],
@@ -18874,11 +18874,11 @@ return [
             'pronunciation' => '/ˈðiz/',
             'example_sentence' => 'These flowers are very beautiful, where did you buy them?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '這些',
                     'example_translation' => '這些花非常漂亮，你在哪裡買的？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '这些',
                     'example_translation' => '这些花非常漂亮，你在哪里买的？',
                 ],
@@ -18894,11 +18894,11 @@ return [
             'pronunciation' => '/bɪˈɫiv/',
             'example_sentence' => 'I believe that you can do it.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '相信',
                     'example_translation' => '我相信你能做到。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '相信',
                     'example_translation' => '我相信你能做到。',
                 ],
@@ -18914,11 +18914,11 @@ return [
             'pronunciation' => '/ˈfɑɹmɝ/',
             'example_sentence' => 'The farmer works hard from sunrise to sunset every day.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '農民',
                     'example_translation' => '那位農民每天從日出工作到日落，非常辛苦。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '农民；农夫',
                     'example_translation' => '那位农民每天从日出到日落都在辛苦劳作。',
                 ],
@@ -18934,11 +18934,11 @@ return [
             'pronunciation' => '/ˈsmɑɹt/',
             'example_sentence' => 'He is a very smart student and always gets excellent marks.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '聰明的',
                     'example_translation' => '他是個非常聰明的學生，總是拿到優異的分數。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '聪明的',
                     'example_translation' => '他是一个非常聪明的学生，总是取得优异的成绩。',
                 ],
@@ -18954,11 +18954,11 @@ return [
             'pronunciation' => '/ˈdɑɫ/',
             'example_sentence' => 'The little girl has a large collection of beautiful dolls.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '玩具娃娃',
                     'example_translation' => '那個小女孩收藏了很多漂亮的玩偶。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '玩偶；娃娃',
                     'example_translation' => '那个小女孩收藏了许多漂亮的玩偶。',
                 ],
@@ -18974,11 +18974,11 @@ return [
             'pronunciation' => '/ˈpɹɑbəˌbɫi/, /ˈpɹɑbɫi/',
             'example_sentence' => 'I will probably go to the gym later if I finish my work early.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '大概',
                     'example_translation' => '如果我早點完成工作，晚些時候我可能會去健身房。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '大概；可能',
                     'example_translation' => '如果我早点完成工作，待会儿可能会去健身房。',
                 ],
@@ -18996,11 +18996,11 @@ return [
             'pronunciation' => '/ˈɑɹt/',
             'example_sentence' => 'She is studying modern art.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '藝術',
                     'example_translation' => '她正在研究現代藝術。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '艺术',
                     'example_translation' => '她正在研究现代艺术。',
                 ],
@@ -19016,11 +19016,11 @@ return [
             'pronunciation' => '/ˈbjutəfəɫ/',
             'example_sentence' => 'What a beautiful sunset!',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '美麗的',
                     'example_translation' => '多麼美麗的日落啊！',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '美丽的',
                     'example_translation' => '多么美丽的日落啊！',
                 ],
@@ -19036,11 +19036,11 @@ return [
             'pronunciation' => '/ˈɹɑk/',
             'example_sentence' => 'The children were busy collecting smooth rocks by the seaside.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '岩石',
                     'example_translation' => '孩子們正忙著在海邊收集光滑的石頭。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '岩石，石头',
                     'example_translation' => '孩子们正忙着在海边收集光滑的石头。',
                 ],
@@ -19056,11 +19056,11 @@ return [
             'pronunciation' => '/ˈkaʊnt/',
             'example_sentence' => 'The little girl is learning how to count from one to ten.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '數數',
                     'example_translation' => '那個小女孩正在學習如何從一數到十。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '数数',
                     'example_translation' => '那个小女孩正在学习如何从一数到十。',
                 ],
@@ -19076,11 +19076,11 @@ return [
             'pronunciation' => '/ˈnəθɪŋ/',
             'example_sentence' => 'There is nothing in the fridge, so we need to go shopping.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '沒有什麼',
                     'example_translation' => '冰箱裡什麼都沒有，所以我們需要去購物。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '没有什么',
                     'example_translation' => '冰箱里什么都没有，所以我们需要去购物。',
                 ],
@@ -19096,11 +19096,11 @@ return [
             'pronunciation' => '/ˈhɛɹ/',
             'example_sentence' => 'She has long, beautiful black hair that she takes great care of.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '頭髮',
                     'example_translation' => '她留著長而漂亮的黑髮，她非常用心地保養。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '头发',
                     'example_translation' => '她留着长而漂亮的黑发，她非常用心保养。',
                 ],
@@ -19116,11 +19116,11 @@ return [
             'pronunciation' => '/ˈðɪs/, /ðɪs/',
             'example_sentence' => 'This is a very interesting book about the history of art.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '這',
                     'example_translation' => '這是一本關於藝術史的非常有意思的書。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '这，这个',
                     'example_translation' => '这是一本关于艺术史的非常有意思的书。',
                 ],
@@ -19136,11 +19136,11 @@ return [
             'pronunciation' => '/ˈtuθ/',
             'example_sentence' => 'You should brush your teeth at least twice a day to keep them healthy.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '牙齒',
                     'example_translation' => '你應該每天至少刷兩次牙以保持健康。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '牙齿',
                     'example_translation' => '你应该每天至少刷两次牙以保持健康。',
                 ],
@@ -19156,11 +19156,11 @@ return [
             'pronunciation' => '/ˈpɛnsəɫ/',
             'example_sentence' => 'Please use a pencil so you can easily erase any mistakes.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '鉛筆',
                     'example_translation' => '請用鉛筆，這樣你就可以輕鬆擦掉任何錯誤。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '铅笔',
                     'example_translation' => '请用铅笔，这样你就可以轻松擦掉任何错误。',
                 ],
@@ -19176,11 +19176,11 @@ return [
             'pronunciation' => '/ˈpaɪ/',
             'example_sentence' => 'My grandmother makes the best apple pie I have ever tasted.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '派',
                     'example_translation' => '我奶奶做的蘋果派是我吃過最好吃的。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '馅饼，派',
                     'example_translation' => '我奶奶做的苹果派是我吃过最好吃的。',
                 ],
@@ -19198,11 +19198,11 @@ return [
             'pronunciation' => '/ˈteɪɫ/',
             'example_sentence' => 'The happy dog wagged its tail when it saw its owner return.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '尾巴',
                     'example_translation' => '那隻開心的狗見到主人回來時搖了搖尾巴。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '尾巴',
                     'example_translation' => '那只开心的狗见到主人回来时摇了摇尾巴。',
                 ],
@@ -19218,11 +19218,11 @@ return [
             'pronunciation' => '/ˈfid/',
             'example_sentence' => 'Don\'t forget to feed the cat before you leave for work.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '餵食',
                     'example_translation' => '別忘了出門上班前餵貓。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '喂养，喂食',
                     'example_translation' => '别忘了出门上班前喂猫。',
                 ],
@@ -19238,11 +19238,11 @@ return [
             'pronunciation' => '/ˈmjuziəm/, /mjuˈziəm/',
             'example_sentence' => 'We visited the national museum to learn about ancient history.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '博物館',
                     'example_translation' => '我們參觀了國家博物館以學習古代歷史。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '博物馆',
                     'example_translation' => '我们参观了国家博物馆以了解古代历史。',
                 ],
@@ -19258,11 +19258,11 @@ return [
             'pronunciation' => '/bɪˈhaɪnd/',
             'example_sentence' => 'The cat is hiding behind the sofa.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '在……後面',
                     'example_translation' => '貓躲在沙發後面。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '在……后面',
                     'example_translation' => '猫躲在沙发后面。',
                 ],
@@ -19278,11 +19278,11 @@ return [
             'pronunciation' => '/ˈhɑɹt/',
             'example_sentence' => 'She has a very kind heart and always helps people in need.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '心',
                     'example_translation' => '她有一顆非常善良的心，總是幫助有需要的人。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '心，心脏',
                     'example_translation' => '她有一颗非常善良的心，总是帮助有需要的人。',
                 ],
@@ -19298,11 +19298,11 @@ return [
             'pronunciation' => '/ˈbɪzi/',
             'example_sentence' => 'She is very busy preparing for her final exams.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '忙碌的',
                     'example_translation' => '她正忙於準備期末考試。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '忙碌的',
                     'example_translation' => '她正忙于准备期末考试。',
                 ],
@@ -19318,11 +19318,11 @@ return [
             'pronunciation' => '/ˈmənθ/',
             'example_sentence' => 'January is usually the coldest month of the year in this area.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '月',
                     'example_translation' => '一月通常是這個地區一年中最冷的一個月。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '月，月份',
                     'example_translation' => '一月通常是这个地区一年中最冷的一个月。',
                 ],
@@ -19338,11 +19338,11 @@ return [
             'pronunciation' => '/ˈɫeɪt/',
             'example_sentence' => 'I am sorry for being late, I missed the first bus this morning.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '晚的',
                     'example_translation' => '對不起，我遲到了，我今天早上錯過了第一班公車。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '迟的，晚的',
                     'example_translation' => '对不起，我迟到了，我今天早上错过了第一班公交车。',
                 ],
@@ -19358,11 +19358,11 @@ return [
             'pronunciation' => '/ˈsi/',
             'example_sentence' => 'I can see the mountains from the window of my bedroom.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '看見',
                     'example_translation' => '我從臥室的窗戶可以看到山。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '看见',
                     'example_translation' => '我从卧室的窗户可以看到山。',
                 ],
@@ -19378,11 +19378,11 @@ return [
             'pronunciation' => '/ɝˈaʊn/, /ɝˈaʊnd/',
             'example_sentence' => 'We walked around the lake.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '在……周圍',
                     'example_translation' => '我們繞著湖散步。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '在……周围，围绕',
                     'example_translation' => '我们绕着湖散步。',
                 ],
@@ -19400,11 +19400,11 @@ return [
             'pronunciation' => '/ˈstɪɫ/',
             'example_sentence' => 'It is already late, but he is still working in his office.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '仍然',
                     'example_translation' => '已經很晚了，但他還在辦公室工作。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '仍然',
                     'example_translation' => '已经很晚了，但他还在办公室工作。',
                 ],
@@ -19420,11 +19420,11 @@ return [
             'pronunciation' => '/ˈivnɪŋ/',
             'example_sentence' => 'We went for a pleasant walk by the lake this evening.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '晚上',
                     'example_translation' => '今天傍晚我們去湖邊散了一會兒步。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '晚上',
                     'example_translation' => '今天傍晚我们去湖边散了一会儿步。',
                 ],
@@ -19440,11 +19440,11 @@ return [
             'pronunciation' => '/ˈpæk/',
             'example_sentence' => 'I need to pack my suitcase for my business trip to London.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '收拾',
                     'example_translation' => '我需要為去倫敦的出差收拾行李。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '收拾',
                     'example_translation' => '我需要为去伦敦的出差收拾行李。',
                 ],
@@ -19460,11 +19460,11 @@ return [
             'pronunciation' => '/ˈɡoʊ/',
             'example_sentence' => 'We are going to go to the beach for our summer vacation.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '去',
                     'example_translation' => '我們打算去海邊度暑假。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '去',
                     'example_translation' => '我们打算去海滩度暑假。',
                 ],
@@ -19480,11 +19480,11 @@ return [
             'pronunciation' => '/ˈtɛst/',
             'example_sentence' => 'I need to study hard for my history test tomorrow morning.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '測試',
                     'example_translation' => '我需要為明天的歷史考試努力學習。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '测试',
                     'example_translation' => '我需要为明天的历史考试努力复习。',
                 ],
@@ -19500,11 +19500,11 @@ return [
             'pronunciation' => '/ɡɪˈtɑɹ/',
             'example_sentence' => 'He has been learning to play the guitar for three years.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '吉他',
                     'example_translation' => '他學習彈吉他已經三年了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '吉他',
                     'example_translation' => '他学习弹吉他已经三年了。',
                 ],
@@ -19520,11 +19520,11 @@ return [
             'pronunciation' => '/ˈboʊt/',
             'example_sentence' => 'We took a boat to the island.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '船',
                     'example_translation' => '我們乘船去了島上。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '船',
                     'example_translation' => '我们乘船去了岛上。',
                 ],
@@ -19540,11 +19540,11 @@ return [
             'pronunciation' => '/ˈhɛvi/',
             'example_sentence' => 'Could you help me move this heavy box to the storage room?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '重的',
                     'example_translation' => '你能幫我把這個沉重的盒子搬到儲藏室嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '沉重的',
                     'example_translation' => '你能帮我把这个沉重的箱子搬到储藏室吗？',
                 ],
@@ -19560,11 +19560,11 @@ return [
             'pronunciation' => '/ˈbɫæk/',
             'example_sentence' => 'She wore a black dress to the party.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '黑色的',
                     'example_translation' => '她穿著黑色的連衣裙去參加聚會。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '黑色的',
                     'example_translation' => '她穿了一件黑色连衣裙去参加派对。',
                 ],
@@ -19580,11 +19580,11 @@ return [
             'pronunciation' => '/ˈɹaɪtɝ/',
             'example_sentence' => 'She is a very famous writer who has written many bestsellers.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '作家',
                     'example_translation' => '她是一位非常有名的作家，寫過許多暢銷書。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '作家',
                     'example_translation' => '她是一位非常著名的作家，写过许多畅销书。',
                 ],
@@ -19602,11 +19602,11 @@ return [
             'pronunciation' => '/ˈdʒaɪənt/',
             'example_sentence' => 'The giant redwood trees in California are truly impressive.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '巨大的',
                     'example_translation' => '加州巨大的紅杉樹確實令人印象深刻。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '巨大的',
                     'example_translation' => '加利福尼亚州巨大的红杉树确实令人印象深刻。',
                 ],
@@ -19622,11 +19622,11 @@ return [
             'pronunciation' => '/ˈsɝ/',
             'example_sentence' => 'Yes, sir, I will make sure the report is finished by tomorrow.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '先生',
                     'example_translation' => '是的，先生，我會確保報告在明天前完成。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '先生',
                     'example_translation' => '是的，先生，我会确保报告在明天前完成。',
                 ],
@@ -19642,11 +19642,11 @@ return [
             'pronunciation' => '/dɪˈfaɪn/',
             'example_sentence' => 'It is difficult to define the exact meaning of this abstract word.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '定義',
                     'example_translation' => '很難定義這個抽象單詞的確切含義。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '定义',
                     'example_translation' => '很难定义这个抽象词汇的确切含义。',
                 ],
@@ -19662,11 +19662,11 @@ return [
             'pronunciation' => '/ˈtʃiz/',
             'example_sentence' => 'I like to put some cheese on my pizza.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '起司',
                     'example_translation' => '我喜歡在我的披薩上加一些起司。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '奶酪',
                     'example_translation' => '我喜欢在披萨上加一些奶酪。',
                 ],
@@ -19682,11 +19682,11 @@ return [
             'pronunciation' => '/ˈhwɛɹ/, /ˈwɛɹ/',
             'example_sentence' => 'Where did you buy that beautiful silk scarf? I really like it.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '在哪裡',
                     'example_translation' => '你在哪裡買的這條漂亮的絲巾？我真的很喜歡。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '在哪里',
                     'example_translation' => '你在哪里买的那条漂亮的丝巾？我真的很喜欢。',
                 ],
@@ -19702,11 +19702,11 @@ return [
             'pronunciation' => '/ˈɡɫæd/',
             'example_sentence' => 'I am so glad that you could make it to my birthday party.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '高興的',
                     'example_translation' => '我真高興你能來參加我的生日派對。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '高兴的',
                     'example_translation' => '你能来参加我的生日派对，我感到很高兴。',
                 ],
@@ -19722,11 +19722,11 @@ return [
             'pronunciation' => '/ˈwəndɝfəɫ/',
             'example_sentence' => 'We had a wonderful time at the surprise party last night.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '精彩的',
                     'example_translation' => '我們昨晚在驚喜派對上度過了一段美好的時光。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '精彩的',
                     'example_translation' => '我们昨晚在惊喜派对上度过了一段美好的时光。',
                 ],
@@ -19742,11 +19742,11 @@ return [
             'pronunciation' => '/ˈɹaɪd/',
             'example_sentence' => 'I like to ride my bicycle in the park on sunny afternoons.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '騎',
                     'example_translation' => '我喜歡在陽光明媚的下午在公園裡騎自行車。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '骑',
                     'example_translation' => '我喜欢在阳光明媚的下午在公园里骑自行车。',
                 ],
@@ -19762,11 +19762,11 @@ return [
             'pronunciation' => '/ˈtʃɔɪs/',
             'example_sentence' => 'You have to make a choice between these two options.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '選擇',
                     'example_translation' => '你必須在兩者之間做出選擇。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '选择',
                     'example_translation' => '你必须在这两个选项之间做出选择。',
                 ],
@@ -19782,11 +19782,11 @@ return [
             'pronunciation' => '/ˈsteɪ/',
             'example_sentence' => 'We decided to stay at home and watch a movie because of the rain.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '停留',
                     'example_translation' => '因為下雨，我們決定待在家裡看電影。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '停留',
                     'example_translation' => '因为下雨，我们决定待在家看电影。',
                 ],
@@ -19804,11 +19804,11 @@ return [
             'pronunciation' => '/ˈsɪmpəɫ/',
             'example_sentence' => 'The rules of the game are very simple and easy to understand.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '簡單的',
                     'example_translation' => '遊戲規則非常簡單易懂。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '简单的',
                     'example_translation' => '这个游戏的规则非常简单易懂。',
                 ],
@@ -19824,11 +19824,11 @@ return [
             'pronunciation' => '/əˈkɹɔs/',
             'example_sentence' => 'The cat ran across the street.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '穿過',
                     'example_translation' => '貓跑過了街道。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '穿过，跨越',
                     'example_translation' => '猫跑过了街道。',
                 ],
@@ -19844,11 +19844,11 @@ return [
             'pronunciation' => '/ˈtaɪdi/',
             'example_sentence' => 'Please make sure your room is neat and tidy before you go out.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '整齊的',
                     'example_translation' => '出門前請確保你的房間整潔。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '整洁的，整理',
                     'example_translation' => '出门前请确保你的房间整洁。',
                 ],
@@ -19864,11 +19864,11 @@ return [
             'pronunciation' => '/ˈstɔɹ/',
             'example_sentence' => 'There is a small convenience store just across the street.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '店鋪',
                     'example_translation' => '就在這條街對面有一家小便利店。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '商店，店铺',
                     'example_translation' => '就在这条街对面有一家小便利店。',
                 ],
@@ -19884,11 +19884,11 @@ return [
             'pronunciation' => '/ɪksˈpɫeɪn/',
             'example_sentence' => 'Can you explain the rules of the game to me one more time?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '解釋',
                     'example_translation' => '你能再給我解釋一遍遊戲規則嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '解释，说明',
                     'example_translation' => '你能再给我解释一遍游戏规则吗？',
                 ],
@@ -19904,11 +19904,11 @@ return [
             'pronunciation' => '/ˈɔɪɫ/',
             'example_sentence' => 'You should use a little bit of olive oil for a healthier salad.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '油',
                     'example_translation' => '你應該用一點橄欖油來做更健康的沙拉。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '油，食用油',
                     'example_translation' => '你应该用一点橄榄油，做出更健康的沙拉。',
                 ],
@@ -19924,11 +19924,11 @@ return [
             'pronunciation' => '/ˈni/',
             'example_sentence' => 'He fell down and hurt his knee while he was playing soccer.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '膝蓋',
                     'example_translation' => '他在踢足球時摔倒並傷到了膝蓋。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '膝盖',
                     'example_translation' => '他在踢足球时摔倒并伤到了膝盖。',
                 ],
@@ -19944,11 +19944,11 @@ return [
             'pronunciation' => '/ˈdɪfəkəɫt/',
             'example_sentence' => 'The math exam was so difficult that many students failed.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '難的',
                     'example_translation' => '數學考試太難了，以至於很多學生都沒及格。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '困难的，难的',
                     'example_translation' => '数学考试太难了，以至于很多学生都没及格。',
                 ],
@@ -19964,11 +19964,11 @@ return [
             'pronunciation' => '/ˈɪnˌsɛkt/',
             'example_sentence' => 'There are many different types of insects in the forest.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '昆蟲',
                     'example_translation' => '森林裡有許多不同種類的昆蟲。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '昆虫',
                     'example_translation' => '森林里有许多不同种类的昆虫。',
                 ],
@@ -19984,11 +19984,11 @@ return [
             'pronunciation' => '/ˈwɝkɝ/',
             'example_sentence' => 'The construction workers are busy building the new hospital.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '勞工',
                     'example_translation' => '建築工人們正忙著建造新醫院。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '工人，工作者',
                     'example_translation' => '建筑工人们正忙着建造新医院。',
                 ],
@@ -20006,11 +20006,11 @@ return [
             'pronunciation' => '/ˈɹɪvɝ/',
             'example_sentence' => 'We spent the whole afternoon fishing by the peaceful river.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '河',
                     'example_translation' => '我們整個下午都在平靜的河邊釣魚。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '河流，江',
                     'example_translation' => '我们整个下午都在平静的河边钓鱼。',
                 ],
@@ -20026,11 +20026,11 @@ return [
             'pronunciation' => '/ˈpuɹ/',
             'example_sentence' => 'The charity provides food and clothing for the poor families.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '貧窮的',
                     'example_translation' => '該慈善機構為貧困家庭提供食物和衣服。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '贫穷的，贫困的',
                     'example_translation' => '该慈善机构为贫困家庭提供食物和衣服。',
                 ],
@@ -20046,11 +20046,11 @@ return [
             'pronunciation' => '/ˈseɪf/',
             'example_sentence' => 'Is it safe to walk alone in this neighborhood late at night?',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '安全的',
                     'example_translation' => '在這一帶晚上單獨走路安全嗎？',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '安全的',
                     'example_translation' => '深夜在这附近一个人走安全吗？',
                 ],
@@ -20066,11 +20066,11 @@ return [
             'pronunciation' => '/ˈkɹɔs/',
             'example_sentence' => 'Be careful when you cross the busy intersection.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '叉',
                     'example_translation' => '穿過繁忙的十字路口時要小心。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '穿过，越过',
                     'example_translation' => '穿过繁忙的十字路口时要小心。',
                 ],
@@ -20086,11 +20086,11 @@ return [
             'pronunciation' => '/ˈnɛt/',
             'example_sentence' => 'The fisherman used a large net to catch a lot of fish in the sea.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '網',
                     'example_translation' => '漁夫用大網在海裡抓了很多魚。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '网，网子',
                     'example_translation' => '渔夫用一张大网在海里捕了很多鱼。',
                 ],
@@ -20106,11 +20106,11 @@ return [
             'pronunciation' => '/ˌɔɫˈðoʊ/',
             'example_sentence' => 'Although it was raining, they went out.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '雖然',
                     'example_translation' => '雖然在下雨，他們還是出門了。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '虽然，尽管',
                     'example_translation' => '虽然在下雨，他们还是出门了。',
                 ],
@@ -20126,11 +20126,11 @@ return [
             'pronunciation' => '/ˈoʊvɝ/',
             'example_sentence' => 'The birds were flying high over the mountains during the sunset.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '超過',
                     'example_translation' => '日落時分，鳥兒在高山上空飛翔。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '在……上方，越过',
                     'example_translation' => '日落时分，鸟儿在高山上空飞翔。',
                 ],
@@ -20146,11 +20146,11 @@ return [
             'pronunciation' => '/ˈmæn/',
             'example_sentence' => 'The young man is studying hard to become a professional pilot.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '男人',
                     'example_translation' => '那個年輕人正在努力學習，想成為一名專業飛行員。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '男人，男子',
                     'example_translation' => '那个年轻人正在努力学习，想成为一名专业飞行员。',
                 ],
@@ -20166,11 +20166,11 @@ return [
             'pronunciation' => '/ˈdɹɔ/',
             'example_sentence' => 'She loves to draw pictures of animals and landscapes.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '畫',
                     'example_translation' => '她喜歡畫動物和風景畫。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '画，绘制',
                     'example_translation' => '她喜欢画动物和风景画。',
                 ],
@@ -20186,11 +20186,11 @@ return [
             'pronunciation' => '/ˈdaɪ/',
             'example_sentence' => 'Plants will die if they don\'t get enough sunlight and water.',
             'translations' => [
-                'zh_TW' => [
+                'zh-tw' => [
                     'definition' => '死',
                     'example_translation' => '如果沒有足夠的陽光和水，植物就會枯死。',
                 ],
-                'zh_CN' => [
+                'zh-cn' => [
                     'definition' => '死亡，枯萎',
                     'example_translation' => '如果得不到足够的阳光和水，植物就会枯死。',
                 ],

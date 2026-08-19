@@ -16,9 +16,7 @@ test('level show page labels will switch by locale', function (string $locale, s
     $level = Level::find(1)->load('translations');
     $translation = $level->translations->firstWhere('locale', $locale);
 
-    visit(route('levels.show', ['level' => $level->id]))
-        ->click('@language-switcher')
-        ->click($localeLabel)
+    visit(route('levels.show', ['locale' => $locale, 'level' => $level->id]))
         ->assertSeeIn('@level-name', $translation->name)
         ->assertSeeIn('@level-description', $translation->description);
 })->with('locale');

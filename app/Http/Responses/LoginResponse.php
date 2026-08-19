@@ -27,7 +27,7 @@ class LoginResponse implements LoginResponseContract
 
         return redirect()->intended(
             $request->user()?->hasVerifiedEmail()
-                ? Fortify::redirects('login', config('fortify.home'))
+                ? Fortify::redirects('login', route('home'))
                 : route('verification.notice')
         );
     }

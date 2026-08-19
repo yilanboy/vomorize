@@ -15,8 +15,8 @@ test('registration screen can be rendered', function () {
     $response->assertOk()
         ->assertInertia(fn ($page) => $page
             ->component('auth/Register')
-            ->has('translations.app.zh_TW.register_title')
-            ->has('translations.app.zh_TW.create_account')
+            ->has('translations.app.zh-tw.register_title')
+            ->has('translations.app.zh-tw.create_account')
         );
 });
 

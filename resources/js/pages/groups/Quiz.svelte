@@ -12,7 +12,7 @@
     } from '@/lib/progress';
     import { answerFor, buildReviewQuestions } from '@/lib/groupQuiz';
     import type { QuizQuestion, VocabularyItem } from '@/lib/groupQuiz';
-    import { translations } from '@/lib/locale.svelte';
+    import { currentLocale, translations } from '@/lib/locale.svelte';
     import progressRoute from '@/routes/groups/progress';
     import { introduce as introduceRoute, result as resultRoute } from '@/routes/groups';
     import { show as levelRoute } from '@/routes/levels';
@@ -63,16 +63,24 @@
                 last_reviewed_at: nextState.last_reviewed_at,
                 next_review_at: nextState.next_review_at,
             });
-            router.visit(resultRoute.url(group.id, { query: { phase: 'quiz', score } }));
+            router.visit(
+                resultRoute.url(
+                    { locale: currentLocale(), group: group.id },
+                    { query: { phase: 'quiz', score } },
+                ),
+            );
         } else {
             router.post(
-                progressRoute.store.url(group.id),
+                progressRoute.store.url({ locale: currentLocale(), group: group.id }),
                 { phase: 'quiz', score },
                 {
                     preserveScroll: true,
                     onSuccess: () =>
                         router.visit(
-                            resultRoute.url(group.id, { query: { phase: 'quiz', score } }),
+                            resultRoute.url(
+                                { locale: currentLocale(), group: group.id },
+                                { query: { phase: 'quiz', score } },
+                            ),
                         ),
                 },
             );
@@ -95,7 +103,7 @@
         if (isGuest && (getGuestGroupProgress(group.id)?.stage ?? 0) === 0) {
             // A correction the app makes on the learner's behalf, not their decision.
             disarmLeaveGuard();
-            router.visit(introduceRoute.url(group.id));
+            router.visit(introduceRoute.url({ locale: currentLocale(), group: group.id }));
 
             return;
         }
@@ -104,12 +112,14 @@
     });
 </script>
 
-<QuizLeaveGuard exitUrl={levelRoute.url(group.level_id)} />
+<QuizLeaveGuard exitUrl={levelRoute.url({ locale: currentLocale(), level: group.level_id })} />
 
 {#if currentQuestion}
     <div class="flex flex-1 flex-col">
         <main class="mx-auto w-full max-w-2xl flex-1 px-4 py-8 sm:px-6">
-            <div class="mb-4 flex items-center justify-between text-sm text-zinc-500 dark:text-zinc-400">
+            <div
+                class="mb-4 flex items-center justify-between text-sm text-zinc-500 dark:text-zinc-400"
+            >
                 <span>{t['start_review']}</span>
                 <span>{currentIndex + 1} / {questions.length} · {correctAnswers} ✓</span>
             </div>
@@ -134,7 +144,7 @@
                 type="button"
                 onclick={nextQuestion}
                 disabled={!answered}
-                class="w-full rounded-xl bg-zinc-900 py-3 text-sm font-semibold text-white dark:bg-zinc-50 dark:text-zinc-950 disabled:opacity-50"
+                class="w-full rounded-xl bg-zinc-900 py-3 text-sm font-semibold text-white disabled:opacity-50 dark:bg-zinc-50 dark:text-zinc-950"
             >
                 {t['continue']}
             </button>

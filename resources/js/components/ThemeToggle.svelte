@@ -15,11 +15,7 @@
      * therefore sees whichever icon matches the theme their device resolved to.
      */
     let isDark = $derived(resolvedAppearance() === 'dark');
-    let label = $derived(
-        isDark
-            ? t['switch_to_light_theme']
-            : t['switch_to_dark_theme'],
-    );
+    let label = $derived(isDark ? t['switch_to_light_theme'] : t['switch_to_dark_theme']);
 
     /**
      * Writing the resolved opposite rather than flipping the stored value means a visitor

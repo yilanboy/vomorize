@@ -1,7 +1,8 @@
 <script lang="ts">
     import { page, Link } from '@inertiajs/svelte';
-    import { localized, translations } from '@/lib/locale.svelte';
+    import { currentLocale, localized, translations } from '@/lib/locale.svelte';
     import { getGuestProgressMap, deriveGroupStatus } from '@/lib/progress';
+    import { onMount } from 'svelte';
 
     interface LevelTranslationItem {
         locale: string;
@@ -69,7 +70,7 @@
         <div>
             <h1
                 data-test="home-title"
-                class="text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-3xl"
+                class="text-2xl font-bold tracking-tight text-zinc-900 sm:text-3xl dark:text-zinc-50"
             >
                 {t['home_title']}
             </h1>
@@ -79,7 +80,7 @@
         </div>
 
         <Link
-            href="/quiz/custom"
+            href={`/${currentLocale()}/quiz/custom`}
             data-test="custom-quiz"
             class="inline-flex items-center justify-center rounded-xl bg-zinc-900 px-4 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-zinc-800 dark:bg-zinc-50 dark:text-zinc-950 dark:hover:bg-zinc-200"
         >
@@ -90,7 +91,7 @@
     <div class="grid gap-4 sm:grid-cols-2">
         {#each displayLevels as level}
             <Link
-                href={`/levels/${level.id}`}
+                href={`/${currentLocale()}/levels/${level.id}`}
                 class="group relative flex flex-col justify-between rounded-2xl border border-zinc-200 bg-zinc-50 p-5 shadow-xs transition hover:border-zinc-400 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-zinc-600"
             >
                 <div>
