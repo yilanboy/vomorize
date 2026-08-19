@@ -373,9 +373,7 @@
                 disabled={sample.processing}
                 class="w-full rounded-xl bg-zinc-900 py-3 text-sm font-semibold text-white shadow-xs hover:bg-zinc-800 disabled:opacity-50 dark:bg-zinc-50 dark:text-zinc-950 dark:hover:bg-zinc-200"
             >
-                {sample.processing
-                    ? t['loading']
-                    : t['start_quiz_count']}
+                {sample.processing ? t['loading'] : t['start_quiz_count']}
             </button>
         </StickyActionBar>
     {:else if phase === 'QUIZ' && currentQuestion}

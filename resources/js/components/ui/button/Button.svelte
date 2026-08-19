@@ -14,11 +14,15 @@
         'inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400 dark:focus-visible:ring-zinc-600 focus-visible:ring-offset-2 focus-visible:ring-offset-zinc-100 dark:focus-visible:ring-offset-zinc-950 disabled:pointer-events-none disabled:opacity-50';
 
     const variants: Record<Variant, string> = {
-        default: 'bg-zinc-900 text-white dark:bg-zinc-50 dark:text-zinc-950 shadow hover:bg-zinc-800 dark:hover:bg-zinc-200',
-        secondary: 'bg-zinc-200 text-zinc-900 dark:bg-zinc-800 dark:text-zinc-50 shadow-sm hover:bg-zinc-300 dark:hover:bg-zinc-700',
+        default:
+            'bg-zinc-900 text-white dark:bg-zinc-50 dark:text-zinc-950 shadow hover:bg-zinc-800 dark:hover:bg-zinc-200',
+        secondary:
+            'bg-zinc-200 text-zinc-900 dark:bg-zinc-800 dark:text-zinc-50 shadow-sm hover:bg-zinc-300 dark:hover:bg-zinc-700',
         ghost: 'hover:bg-zinc-200 hover:text-zinc-900 dark:hover:bg-zinc-800 dark:hover:text-zinc-50',
-        destructive: 'bg-red-600 text-white dark:bg-red-500 shadow hover:bg-red-700 dark:hover:bg-red-600',
-        outline: 'border border-zinc-300 bg-white dark:border-zinc-700 dark:bg-zinc-800 hover:bg-zinc-100 hover:text-zinc-900 dark:hover:bg-zinc-700 dark:hover:text-zinc-50',
+        destructive:
+            'bg-red-600 text-white dark:bg-red-500 shadow hover:bg-red-700 dark:hover:bg-red-600',
+        outline:
+            'border border-zinc-300 bg-white dark:border-zinc-700 dark:bg-zinc-800 hover:bg-zinc-100 hover:text-zinc-900 dark:hover:bg-zinc-700 dark:hover:text-zinc-50',
         link: 'text-zinc-900 dark:text-zinc-50 underline-offset-4 hover:underline',
     };
 

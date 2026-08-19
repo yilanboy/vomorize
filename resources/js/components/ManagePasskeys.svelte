@@ -28,7 +28,9 @@
 </script>
 
 {#if canManagePasskeys}
-    <div class="rounded-2xl border border-zinc-200 bg-zinc-50 p-6 shadow-xs sm:p-8 dark:border-zinc-800 dark:bg-zinc-900">
+    <div
+        class="rounded-2xl border border-zinc-200 bg-zinc-50 p-6 shadow-xs sm:p-8 dark:border-zinc-800 dark:bg-zinc-900"
+    >
         <div class="mb-6 space-y-1">
             <h2 class="text-lg font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
                 {t['passkeys']}
@@ -38,7 +40,9 @@
             </p>
         </div>
 
-        <div class="overflow-hidden rounded-xl border border-zinc-200 bg-zinc-100/30 dark:border-zinc-800 dark:bg-zinc-800/30">
+        <div
+            class="overflow-hidden rounded-xl border border-zinc-200 bg-zinc-100/30 dark:border-zinc-800 dark:bg-zinc-800/30"
+        >
             {#if passkeys.length > 0}
                 {#each passkeys as passkey (passkey.id)}
                     <PasskeyItem {passkey} onDelete={handleDelete} />

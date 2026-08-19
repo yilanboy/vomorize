@@ -58,7 +58,7 @@
         ></button>
         <div
             class={cn(
-                'fixed relative flex flex-col gap-4 overflow-y-auto border-none bg-zinc-50 dark:bg-zinc-900 p-6 shadow-lg',
+                'fixed relative flex flex-col gap-4 overflow-y-auto border-none bg-zinc-50 p-6 shadow-lg dark:bg-zinc-900',
                 sideClasses[side] ?? sideClasses.right,
                 sizeClasses[side] ?? sizeClasses.right,
                 className,
@@ -68,7 +68,7 @@
         >
             <button
                 type="button"
-                class="absolute top-4 right-4 rounded-xs opacity-70 ring-offset-zinc-100 dark:ring-offset-zinc-950 transition-opacity hover:opacity-100 focus-visible:ring-2 focus-visible:ring-zinc-400 dark:focus-visible:ring-zinc-600 focus-visible:ring-offset-2 focus-visible:outline-hidden disabled:pointer-events-none"
+                class="absolute top-4 right-4 rounded-xs opacity-70 ring-offset-zinc-100 transition-opacity hover:opacity-100 focus-visible:ring-2 focus-visible:ring-zinc-400 focus-visible:ring-offset-2 focus-visible:outline-hidden disabled:pointer-events-none dark:ring-offset-zinc-950 dark:focus-visible:ring-zinc-600"
                 aria-label="Close"
                 onclick={close}
             >

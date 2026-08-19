@@ -31,12 +31,14 @@
 <AppHead title={t['profile_settings']} />
 
 <div class="space-y-6">
-    <div class="rounded-2xl border border-zinc-200 bg-zinc-50 p-6 shadow-xs sm:p-8 dark:border-zinc-800 dark:bg-zinc-900">
+    <div
+        class="rounded-2xl border border-zinc-200 bg-zinc-50 p-6 shadow-xs sm:p-8 dark:border-zinc-800 dark:bg-zinc-900"
+    >
         <div class="mb-6 space-y-1">
-        <h2 class="text-lg font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
+            <h2 class="text-lg font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
                 {t['profile_settings']}
             </h2>
-        <p class="text-sm text-zinc-500 dark:text-zinc-400">
+            <p class="text-sm text-zinc-500 dark:text-zinc-400">
                 {t['profile_subtitle']}
             </p>
         </div>

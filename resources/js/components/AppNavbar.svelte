@@ -57,9 +57,6 @@
         }
     });
 
-    let availableLocales = $derived(
-        (page.props.available_locales as Record<string, string>) || { zh_TW: '繁體中文' },
-    );
     let t = $derived(translations());
 </script>
 

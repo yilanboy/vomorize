@@ -100,7 +100,9 @@
                     <span class="w-full border-t border-zinc-200 dark:border-zinc-800"></span>
                 </div>
                 <div class="relative flex justify-center text-sm font-medium uppercase">
-                    <span class="bg-zinc-50 px-2 text-zinc-500 dark:bg-zinc-900 dark:text-zinc-400">{t['or']}</span>
+                    <span class="bg-zinc-50 px-2 text-zinc-500 dark:bg-zinc-900 dark:text-zinc-400"
+                        >{t['or']}</span
+                    >
                 </div>
             </div>
 

@@ -35,7 +35,7 @@
 
 <main class="mx-auto w-full max-w-4xl px-4 py-8 sm:px-6">
     <div class="mb-8">
-        <h1 class="text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50 sm:text-3xl">
+        <h1 class="text-2xl font-bold tracking-tight text-zinc-900 sm:text-3xl dark:text-zinc-50">
             {t['settings']}
         </h1>
         <p class="mt-1 text-sm text-zinc-500 dark:text-zinc-400">

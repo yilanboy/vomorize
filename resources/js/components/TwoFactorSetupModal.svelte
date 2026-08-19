@@ -113,18 +113,24 @@
 <Dialog bind:open={isOpen}>
     <DialogContent class="sm:max-w-md">
         <div class="flex flex-col items-center justify-center">
-            <div class="mb-3 w-auto rounded-full border border-zinc-200 bg-zinc-50 p-0.5 shadow-sm dark:border-zinc-800 dark:bg-zinc-900">
+            <div
+                class="mb-3 w-auto rounded-full border border-zinc-200 bg-zinc-50 p-0.5 shadow-sm dark:border-zinc-800 dark:bg-zinc-900"
+            >
                 <div
                     class="relative overflow-hidden rounded-full border border-zinc-200 bg-zinc-100 p-2.5 dark:border-zinc-800 dark:bg-zinc-800"
                 >
                     <div class="absolute inset-0 grid grid-cols-5 opacity-50">
                         {#each { length: 5 } as _, i (i)}
-                            <div class="border-r border-zinc-200 last:border-r-0 dark:border-zinc-700"></div>
+                            <div
+                                class="border-r border-zinc-200 last:border-r-0 dark:border-zinc-700"
+                            ></div>
                         {/each}
                     </div>
                     <div class="absolute inset-0 grid grid-rows-5 opacity-50">
                         {#each { length: 5 } as _, i (i)}
-                            <div class="border-b border-zinc-200 last:border-b-0 dark:border-zinc-700"></div>
+                            <div
+                                class="border-b border-zinc-200 last:border-b-0 dark:border-zinc-700"
+                            ></div>
                         {/each}
                     </div>
                     <ScanLine class="relative z-20 size-6 text-zinc-900 dark:text-zinc-50" />
@@ -179,7 +185,9 @@
                     </div>
 
                     <div class="relative flex w-full items-center justify-center">
-                        <div class="absolute inset-0 top-1/2 h-px w-full bg-zinc-200 dark:bg-zinc-800"></div>
+                        <div
+                            class="absolute inset-0 top-1/2 h-px w-full bg-zinc-200 dark:bg-zinc-800"
+                        ></div>
                         <span class="relative bg-zinc-50 px-2 py-1 dark:bg-zinc-900">
                             {t['or_manual_code']}
                         </span>

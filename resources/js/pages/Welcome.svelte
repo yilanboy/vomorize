@@ -15,7 +15,7 @@
 </AppHead>
 
 <div
-    class="flex min-h-screen flex-col items-center bg-zinc-100 p-6 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-50 lg:justify-center lg:p-8"
+    class="flex min-h-screen flex-col items-center bg-zinc-100 p-6 text-zinc-900 lg:justify-center lg:p-8 dark:bg-zinc-950 dark:text-zinc-50"
 >
     <header class="mb-6 w-full max-w-[335px] text-sm not-has-[nav]:hidden lg:max-w-4xl">
         <nav class="flex items-center justify-end gap-4">
@@ -49,7 +49,7 @@
             class="flex w-full max-w-[335px] flex-col-reverse overflow-hidden rounded-lg lg:max-w-4xl lg:flex-row"
         >
             <div
-                class="flex-1 rounded-br-lg rounded-bl-lg bg-zinc-50 p-6 pb-12 text-[13px] leading-5 text-zinc-900 shadow-xs dark:bg-zinc-900 dark:text-zinc-50 lg:rounded-tl-lg lg:rounded-br-none lg:p-20"
+                class="flex-1 rounded-br-lg rounded-bl-lg bg-zinc-50 p-6 pb-12 text-[13px] leading-5 text-zinc-900 shadow-xs lg:rounded-tl-lg lg:rounded-br-none lg:p-20 dark:bg-zinc-900 dark:text-zinc-50"
             >
                 <h1 class="mb-1 font-medium">Let's get started</h1>
                 <p class="mb-2 text-zinc-500 dark:text-zinc-400">
@@ -64,7 +64,8 @@
                             <span
                                 class="flex h-3.5 w-3.5 items-center justify-center rounded-full border border-zinc-200 bg-zinc-100 shadow-xs dark:border-zinc-800 dark:bg-zinc-950"
                             >
-                                <span class="h-1.5 w-1.5 rounded-full bg-zinc-500/40 dark:bg-zinc-400/40"
+                                <span
+                                    class="h-1.5 w-1.5 rounded-full bg-zinc-500/40 dark:bg-zinc-400/40"
                                 ></span>
                             </span>
                         </span>
@@ -100,7 +101,8 @@
                             <span
                                 class="flex h-3.5 w-3.5 items-center justify-center rounded-full border border-zinc-200 bg-zinc-100 shadow-xs dark:border-zinc-800 dark:bg-zinc-950"
                             >
-                                <span class="h-1.5 w-1.5 rounded-full bg-zinc-500/40 dark:bg-zinc-400/40"
+                                <span
+                                    class="h-1.5 w-1.5 rounded-full bg-zinc-500/40 dark:bg-zinc-400/40"
                                 ></span>
                             </span>
                         </span>

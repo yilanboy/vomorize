@@ -21,7 +21,9 @@
 </script>
 
 <main class="mx-auto w-full max-w-2xl px-4 py-8 sm:px-6">
-    <div class="space-y-6 rounded-2xl border border-zinc-200 bg-zinc-50 p-8 text-center shadow-xs dark:border-zinc-800 dark:bg-zinc-900">
+    <div
+        class="space-y-6 rounded-2xl border border-zinc-200 bg-zinc-50 p-8 text-center shadow-xs dark:border-zinc-800 dark:bg-zinc-900"
+    >
         <div
             class="mx-auto flex h-16 w-16 items-center justify-center rounded-full {result.passed
                 ? 'bg-emerald-500/10 text-emerald-700 dark:text-emerald-300'
@@ -56,9 +58,7 @@
                     href={retryHref}
                     class="inline-flex flex-1 justify-center rounded-xl bg-zinc-900 px-4 py-3 text-sm font-semibold text-white dark:bg-zinc-50 dark:text-zinc-950"
                 >
-                    {result.phase === 'introduce'
-                        ? t['retry']
-                        : t['retry_in']}
+                    {result.phase === 'introduce' ? t['retry'] : t['retry_in']}
                 </Link>
             {/if}
             <Link

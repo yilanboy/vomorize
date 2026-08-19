@@ -60,9 +60,7 @@
                 {:else}
                     <Eye class="size-4" />
                 {/if}
-                {isRecoveryCodesVisible
-                    ? t['hide_recovery_codes']
-                    : t['view_recovery_codes']}
+                {isRecoveryCodesVisible ? t['hide_recovery_codes'] : t['view_recovery_codes']}
             </Button>
 
             {#if isRecoveryCodesVisible && twoFactorAuth.state.recoveryCodesList.length}
@@ -109,7 +107,7 @@
                             {/each}
                         {/if}
                     </div>
-                    <p class="text-sm text-zinc-500 dark:text-zinc-400 select-none">
+                    <p class="text-sm text-zinc-500 select-none dark:text-zinc-400">
                         {t['recovery_codes_instruction']}
                     </p>
                 </div>

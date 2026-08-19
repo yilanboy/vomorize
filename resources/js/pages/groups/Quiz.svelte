@@ -103,9 +103,7 @@
         if (isGuest && (getGuestGroupProgress(group.id)?.stage ?? 0) === 0) {
             // A correction the app makes on the learner's behalf, not their decision.
             disarmLeaveGuard();
-            router.visit(
-                introduceRoute.url({ locale: currentLocale(), group: group.id }),
-            );
+            router.visit(introduceRoute.url({ locale: currentLocale(), group: group.id }));
 
             return;
         }
@@ -119,7 +117,9 @@
 {#if currentQuestion}
     <div class="flex flex-1 flex-col">
         <main class="mx-auto w-full max-w-2xl flex-1 px-4 py-8 sm:px-6">
-            <div class="mb-4 flex items-center justify-between text-sm text-zinc-500 dark:text-zinc-400">
+            <div
+                class="mb-4 flex items-center justify-between text-sm text-zinc-500 dark:text-zinc-400"
+            >
                 <span>{t['start_review']}</span>
                 <span>{currentIndex + 1} / {questions.length} · {correctAnswers} ✓</span>
             </div>
@@ -144,7 +144,7 @@
                 type="button"
                 onclick={nextQuestion}
                 disabled={!answered}
-                class="w-full rounded-xl bg-zinc-900 py-3 text-sm font-semibold text-white dark:bg-zinc-50 dark:text-zinc-950 disabled:opacity-50"
+                class="w-full rounded-xl bg-zinc-900 py-3 text-sm font-semibold text-white disabled:opacity-50 dark:bg-zinc-50 dark:text-zinc-950"
             >
                 {t['continue']}
             </button>

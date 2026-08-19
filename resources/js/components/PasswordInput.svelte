@@ -14,7 +14,7 @@
     <button
         type="button"
         onclick={() => (showPassword = !showPassword)}
-        class="absolute inset-y-0 right-0 flex items-center rounded-r-md px-3 text-zinc-500 hover:text-zinc-900 dark:text-zinc-400 dark:hover:text-zinc-50 focus-visible:ring-[3px] focus-visible:ring-zinc-400 dark:focus-visible:ring-zinc-600 focus-visible:outline-none"
+        class="absolute inset-y-0 right-0 flex items-center rounded-r-md px-3 text-zinc-500 hover:text-zinc-900 focus-visible:ring-[3px] focus-visible:ring-zinc-400 focus-visible:outline-none dark:text-zinc-400 dark:hover:text-zinc-50 dark:focus-visible:ring-zinc-600"
         aria-label={showPassword ? 'Hide password' : 'Show password'}
         tabindex={-1}
     >

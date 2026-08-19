@@ -14,7 +14,7 @@
 <div
     data-slot="card"
     class={cn(
-        'flex flex-col gap-6 rounded-xl border bg-zinc-50 py-6 text-zinc-900 dark:bg-zinc-900 dark:text-zinc-50 shadow-sm',
+        'flex flex-col gap-6 rounded-xl border bg-zinc-50 py-6 text-zinc-900 shadow-sm dark:bg-zinc-900 dark:text-zinc-50',
         className,
     )}
 >
