@@ -15,11 +15,21 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function (Request $request) {
     $cookieLocale = $request->cookie('locale');
 
-    if ($cookieLocale && in_array(strtolower($cookieLocale), config('app.available_locales'), true)) {
-        return redirect('/'.strtolower($cookieLocale));
+    if (in_array($cookieLocale, config('app.available_locales'), true)) {
+        return redirect('/'.$cookieLocale);
     }
 
-    return redirect('/zh-tw');
+    $preferredLocale = $request->getPreferredLanguage();
+
+    if (in_array($preferredLocale, ['ja_JP', 'ja'])) {
+        return redirect('/ja');
+    }
+
+    if (in_array($preferredLocale, ['zh_CN', 'zh_Hans'])) {
+        return redirect('/zh-cn');
+    }
+
+    return redirect('/'.config('app.locale'));
 })->name('root');
 
 // Localized routes

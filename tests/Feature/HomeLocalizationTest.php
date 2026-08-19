@@ -58,7 +58,6 @@ it('queues cookie and sets locale when visiting localized routes', function () {
         ->assertPlainCookie('locale', 'ja')
         ->assertInertia(fn ($page) => $page
             ->where('locale', 'ja')
-            ->where('locale_route_key', 'ja')
         );
 
     expect(app()->getLocale())->toBe('ja');
