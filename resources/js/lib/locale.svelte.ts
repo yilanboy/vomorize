@@ -48,10 +48,10 @@ export function interpolate(template: string, replacements: Record<string, strin
  * Content the learner is here to read — level names, vocabulary — is translated in the database
  * rather than in the interface copy, so every page that shows it needs the same fallback chain.
  */
-export function localized<T extends { locale: string }>(rows: T[] | undefined): T | undefined {
-    return (
-        rows?.find((row) => row.locale === currentLocale()) ??
-        rows?.find((row) => row.locale === DEFAULT_LOCALE) ??
-        rows?.[0]
-    );
+export function localized<T>(translations: Record<string, T> | undefined | null): T | undefined {
+    if (!translations) {
+        return undefined;
+    }
+
+    return translations[currentLocale()] || translations[DEFAULT_LOCALE] || translations[0];
 }

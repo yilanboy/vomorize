@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Group;
 use App\Models\LearningProgress;
 use App\Models\Level;
+use App\Models\LevelTranslation;
 use App\Services\SpacedRepetitionService;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
@@ -61,10 +62,12 @@ class LevelController extends Controller
         return Inertia::render('level/Show', [
             'level' => [
                 'id' => $level->id,
-                'translations' => $level->translations->map(fn ($t) => [
-                    'locale' => $t->locale,
-                    'name' => $t->name,
-                    'description' => $t->description,
+                'translations' => $level->translations->mapWithKeys(fn (LevelTranslation $t) => [
+                    $t->locale => [
+                        'locale' => $t->locale,
+                        'name' => $t->name,
+                        'description' => $t->description,
+                    ],
                 ]),
             ],
             'groups' => $groups,

@@ -72,9 +72,11 @@ class GroupController extends Controller
              */
             'level' => [
                 'id' => $group->level->id,
-                'translations' => $group->level->translations->map(fn (LevelTranslation $t) => [
-                    'locale' => $t->locale,
-                    'name' => $t->name,
+                'translations' => $group->level->translations->mapWithKeys(fn (LevelTranslation $t) => [
+                    $t->locale => [
+                        'locale' => $t->locale,
+                        'name' => $t->name,
+                    ],
                 ]),
             ],
             'progress' => [

@@ -12,10 +12,11 @@
 
     interface LevelItem {
         id: number;
-        translations: LevelTranslationItem[];
+        translations: Record<string, LevelTranslationItem>;
         total_groups: number;
         completed_groups: number;
         ready_groups: number;
+        pending_groups: number;
     }
 
     let { levels = [] } = $props<{ levels: LevelItem[] }>();
@@ -31,12 +32,13 @@
         const guestMap = getGuestProgressMap();
         const now = Date.now();
 
-        return levels.map((lvl) => {
+        return levels.map((level: LevelItem) => {
             let completed = 0;
             let ready = 0;
+            let pending = 0;
 
-            const startId = (lvl.id - 1) * 100 + 1;
-            const endId = lvl.id * 100;
+            const startId = (level.id - 1) * 100 + 1;
+            const endId = level.id * 100;
 
             for (let gid = startId; gid <= endId; gid++) {
                 const p = guestMap[gid];
@@ -48,14 +50,17 @@
                         completed++;
                     } else if (status === 'ready') {
                         ready++;
+                    } else if (['locked', 'penalty'].includes(status)) {
+                        pending++;
                     }
                 }
             }
 
             return {
-                ...lvl,
+                ...level,
                 completed_groups: completed,
                 ready_groups: ready,
+                pending_groups: pending,
             };
         });
     });
@@ -89,7 +94,7 @@
     </div>
 
     <div class="grid gap-4 sm:grid-cols-2">
-        {#each displayLevels as level}
+        {#each displayLevels as level (level.id)}
             <Link
                 href={`/${currentLocale()}/levels/${level.id}`}
                 class="group relative flex flex-col justify-between rounded-2xl border border-zinc-200 bg-zinc-50 p-5 shadow-xs transition hover:border-zinc-400 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900 dark:hover:border-zinc-600"
@@ -124,6 +129,12 @@
                         <span class="font-medium text-orange-500">
                             {level.ready_groups}
                             {t['ready']}
+                        </span>
+                    {/if}
+                    {#if level.pending_groups > 0}
+                        <span class="font-medium text-yellow-500">
+                            {level.pending_groups}
+                            {t['pending']}
                         </span>
                     {/if}
                 </div>

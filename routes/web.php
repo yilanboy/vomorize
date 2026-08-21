@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function (Request $request) {
     $cookieLocale = $request->cookie('locale');
 
-    if (in_array($cookieLocale, config('app.available_locales'), true)) {
+    if (is_string($cookieLocale) && in_array($cookieLocale, config('app.available_locales'), true)) {
         return redirect('/'.$cookieLocale);
     }
 

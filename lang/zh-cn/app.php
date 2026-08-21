@@ -3,6 +3,7 @@
 return [
     'completed' => '已完成',
     'ready' => '可复习',
+    'pending' => '等待中',
     'cooldown' => '冷却中',
     'actionable' => '可开始',
     'locked' => '锁定中',

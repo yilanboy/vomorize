@@ -29,7 +29,7 @@
 
     interface LevelData {
         id: number;
-        translations: LevelTranslationData[];
+        translations: Record<string, LevelTranslationData>;
     }
 
     let { level, groups = [] } = $props<{

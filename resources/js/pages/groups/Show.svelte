@@ -23,7 +23,7 @@
 
     interface LevelData {
         id: number;
-        translations: LevelTranslationItem[];
+        translations: Record<string, LevelTranslationItem>;
     }
 
     interface GroupData {

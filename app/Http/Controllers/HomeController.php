@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Group;
 use App\Models\LearningProgress;
 use App\Models\Level;
+use App\Models\LevelTranslation;
 use App\Services\SpacedRepetitionService;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
@@ -14,40 +15,59 @@ class HomeController extends Controller
 {
     public function __invoke(Request $request): Response
     {
-        $levels = Level::with('translations')->orderBy('id')->get()->map(function (Level $level) use ($request) {
-            $totalGroups = 100;
-            $completedCount = 0;
-            $readyCount = 0;
+        $user = $request->user();
 
-            if ($request->user()) {
+        $levels = Level::query()
+            ->with('translations')
+            ->orderBy('id')
+            ->get()
+            ->map(function (Level $level) use ($user) {
                 $groupIds = Group::where('level_id', $level->id)->pluck('id');
-                $progressRecords = LearningProgress::where('user_id', $request->user()->id)
-                    ->whereIn('group_id', $groupIds)
-                    ->get();
 
-                $now = now();
-                foreach ($progressRecords as $p) {
-                    $status = SpacedRepetitionService::deriveStatus($p->stage, $p->last_score, $p->next_review_at, $now);
-                    if ($status === 'completed') {
-                        $completedCount++;
-                    } elseif ($status === 'ready') {
-                        $readyCount++;
+                $totalGroups = count($groupIds);
+                $completedCount = 0;
+                $readyCount = 0;
+                $pendingCount = 0;
+
+                if ($user) {
+                    $progressRecords = LearningProgress::where('user_id', $user->id)
+                        ->whereIn('group_id', $groupIds)
+                        ->get();
+
+                    $now = now();
+                    foreach ($progressRecords as $progressRecord) {
+                        $status = SpacedRepetitionService::deriveStatus(
+                            $progressRecord->stage,
+                            $progressRecord->last_score,
+                            $progressRecord->next_review_at,
+                            $now
+                        );
+
+                        if ($status === 'completed') {
+                            $completedCount++;
+                        } elseif ($status === 'ready') {
+                            $readyCount++;
+                        } elseif (in_array($status, ['penalty', 'locked'])) {
+                            $pendingCount++;
+                        }
                     }
                 }
-            }
 
-            return [
-                'id' => $level->id,
-                'translations' => $level->translations->map(fn ($t) => [
-                    'locale' => $t->locale,
-                    'name' => $t->name,
-                    'description' => $t->description,
-                ]),
-                'total_groups' => $totalGroups,
-                'completed_groups' => $completedCount,
-                'ready_groups' => $readyCount,
-            ];
-        });
+                return [
+                    'id' => $level->id,
+                    'translations' => $level->translations->mapWithKeys(fn (LevelTranslation $item) => [
+                        $item->locale => [
+                            'locale' => $item->locale,
+                            'name' => $item->name,
+                            'description' => $item->description,
+                        ],
+                    ]),
+                    'total_groups' => $totalGroups,
+                    'completed_groups' => $completedCount,
+                    'ready_groups' => $readyCount,
+                    'pending_groups' => $pendingCount,
+                ];
+            });
 
         return Inertia::render('Home', [
             'levels' => $levels,
