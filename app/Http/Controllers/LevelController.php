@@ -21,7 +21,7 @@ class LevelController extends Controller
         $progressMap = [];
         if ($user) {
             $records = LearningProgress::where('user_id', $user->id)
-                ->whereIn('group_id', Group::where('level_id', $level->id)->pluck('id'))
+                ->where('level_id', $level->id)
                 ->get();
 
             foreach ($records as $r) {

@@ -19,6 +19,11 @@ class Level extends Model
         return $this->hasMany(Group::class)->orderBy('sequence');
     }
 
+    public function vocabularies(): HasMany
+    {
+        return $this->hasMany(Vocabulary::class);
+    }
+
     public function translations(): HasMany
     {
         return $this->hasMany(LevelTranslation::class);

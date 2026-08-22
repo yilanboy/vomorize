@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Group;
 use App\Models\LearningProgress;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
@@ -18,6 +19,7 @@ class ProgressMigrationController extends Controller
 
         $validated = $request->validate([
             'guest_progress' => ['required', 'array'],
+            'guest_progress.*.level_id' => ['required', 'integer', 'exists:level,id'],
             'guest_progress.*.group_id' => ['required', 'integer', 'exists:groups,id'],
             'guest_progress.*.stage' => ['required', 'integer', 'min:0', 'max:6'],
             'guest_progress.*.last_score' => ['nullable', 'integer', 'min:0', 'max:100'],
@@ -29,6 +31,7 @@ class ProgressMigrationController extends Controller
 
         foreach ($validated['guest_progress'] as $item) {
             $groupId = $item['group_id'];
+            $levelId = $item['level_id'] ?? Group::where('id', $groupId)->value('level_id');
             $guestStage = (int) $item['stage'];
             $guestScore = $item['last_score'] !== null ? (int) $item['last_score'] : null;
             $guestLastReviewed = $item['last_reviewed_at'] ? Carbon::parse($item['last_reviewed_at']) : null;
@@ -41,6 +44,7 @@ class ProgressMigrationController extends Controller
             if (! $existing) {
                 LearningProgress::create([
                     'user_id' => $user->id,
+                    'level_id' => $levelId,
                     'group_id' => $groupId,
                     'stage' => $guestStage,
                     'last_score' => $guestScore,

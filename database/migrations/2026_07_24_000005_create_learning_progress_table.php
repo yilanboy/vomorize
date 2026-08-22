@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::create('learning_progress', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained('users')->cascadeOnDelete();
+            $table->foreignId('level_id')->constrained('levels')->cascadeOnDelete();
             $table->foreignId('group_id')->constrained('groups')->cascadeOnDelete();
             $table->integer('stage')->default(0);
             // TODO: really need to think about this nullable

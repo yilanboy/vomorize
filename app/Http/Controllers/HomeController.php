@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Group;
 use App\Models\LearningProgress;
 use App\Models\Level;
 use App\Models\LevelTranslation;
@@ -19,19 +18,17 @@ class HomeController extends Controller
 
         $levels = Level::query()
             ->with('translations')
+            ->withCount('groups')
             ->orderBy('id')
             ->get()
             ->map(function (Level $level) use ($user) {
-                $groupIds = Group::where('level_id', $level->id)->pluck('id');
-
-                $totalGroups = count($groupIds);
                 $completedCount = 0;
                 $readyCount = 0;
                 $pendingCount = 0;
 
                 if ($user) {
                     $progressRecords = LearningProgress::where('user_id', $user->id)
-                        ->whereIn('group_id', $groupIds)
+                        ->where('level_id', $level->id)
                         ->get();
 
                     $now = now();
@@ -62,7 +59,7 @@ class HomeController extends Controller
                             'description' => $item->description,
                         ],
                     ]),
-                    'total_groups' => $totalGroups,
+                    'total_groups' => $level->groups_count,
                     'completed_groups' => $completedCount,
                     'ready_groups' => $readyCount,
                     'pending_groups' => $pendingCount,

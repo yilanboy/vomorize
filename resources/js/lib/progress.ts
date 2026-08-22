@@ -1,4 +1,5 @@
 export interface GuestGroupProgress {
+    level_id: number;
     group_id: number;
     stage: number;
     last_score: number | null;

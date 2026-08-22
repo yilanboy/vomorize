@@ -97,6 +97,7 @@
         if (isGuest) {
             const nextState = calculateNextState(progress?.stage ?? 0, score);
             saveGuestGroupProgress(group.id, {
+                level_id: group.level_id,
                 group_id: group.id,
                 stage: nextState.stage,
                 last_score: nextState.last_score,

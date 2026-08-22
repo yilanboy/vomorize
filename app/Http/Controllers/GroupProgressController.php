@@ -45,6 +45,7 @@ class GroupProgressController extends Controller
         $currentStage = $progress->exists ? $progress->stage : 0;
         $nextState = SpacedRepetitionService::calculateNextState($currentStage, $score);
 
+        $progress->level_id = $group->level_id;
         $progress->stage = $nextState['stage'];
         $progress->last_score = $nextState['last_score'];
         $progress->last_reviewed_at = $nextState['last_reviewed_at'];

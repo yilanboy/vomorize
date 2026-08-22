@@ -30,6 +30,7 @@
         }
 
         const guestMap = getGuestProgressMap();
+        const guestRecords = Object.values(guestMap);
         const now = Date.now();
 
         return levels.map((level: LevelItem) => {
@@ -37,22 +38,17 @@
             let ready = 0;
             let pending = 0;
 
-            const startId = (level.id - 1) * 100 + 1;
-            const endId = level.id * 100;
+            const levelRecords = guestRecords.filter((r) => r.level_id === level.id);
 
-            for (let gid = startId; gid <= endId; gid++) {
-                const p = guestMap[gid];
+            for (const p of levelRecords) {
+                const status = deriveGroupStatus(p.stage, p.last_score, p.next_review_at, now);
 
-                if (p) {
-                    const status = deriveGroupStatus(p.stage, p.last_score, p.next_review_at, now);
-
-                    if (status === 'completed') {
-                        completed++;
-                    } else if (status === 'ready') {
-                        ready++;
-                    } else if (['locked', 'penalty'].includes(status)) {
-                        pending++;
-                    }
+                if (status === 'completed') {
+                    completed++;
+                } else if (status === 'ready') {
+                    ready++;
+                } else if (['locked', 'penalty'].includes(status)) {
+                    pending++;
                 }
             }
 
