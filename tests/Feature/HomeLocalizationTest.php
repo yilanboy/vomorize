@@ -32,21 +32,9 @@ it('redirects root to default zh-tw when no header or cookie is present', functi
         ->assertRedirect('/zh-tw');
 });
 
-it('redirects root to Japanese for a first-time Japanese visitor based on Accept-Language', function () {
-    get('/', ['Accept-Language' => 'ja-JP,ja;q=0.9'])
-        ->assertStatus(302)
-        ->assertRedirect('/ja');
-});
-
-it('redirects root to Simplified Chinese for a first-time Chinese visitor based on Accept-Language', function () {
-    get('/', ['Accept-Language' => 'zh-CN,zh;q=0.9'])
-        ->assertStatus(302)
-        ->assertRedirect('/zh-cn');
-});
-
-it('prioritizes cookie over Accept-Language header on root visits', function () {
+it('redirects root to zh-cn when cookie is present', function () {
     withUnencryptedCookie('locale', 'zh-cn')
-        ->get('/', ['Accept-Language' => 'ja-JP,ja;q=0.9'])
+        ->get('/')
         ->assertStatus(302)
         ->assertRedirect('/zh-cn');
 });

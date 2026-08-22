@@ -13,20 +13,10 @@ use Illuminate\Support\Facades\Route;
 
 // Root redirect
 Route::get('/', function (Request $request) {
-    $cookieLocale = $request->cookie('locale');
+    $locale = app()->getLocale();
 
-    if (is_string($cookieLocale) && in_array($cookieLocale, config('app.available_locales'), true)) {
-        return redirect('/'.$cookieLocale);
-    }
-
-    $preferredLocale = $request->getPreferredLanguage();
-
-    if (in_array($preferredLocale, ['ja_JP', 'ja'])) {
-        return redirect('/ja');
-    }
-
-    if (in_array($preferredLocale, ['zh_CN', 'zh_Hans'])) {
-        return redirect('/zh-cn');
+    if (is_string($locale) && in_array($locale, config('app.available_locales'), true)) {
+        return redirect('/'.$locale);
     }
 
     return redirect('/'.config('app.locale'));
