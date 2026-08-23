@@ -78,9 +78,9 @@ return [
     |
     */
 
-    'locale' => env('APP_LOCALE', 'zh-tw'),
+    'locale' => env('APP_LOCALE', 'zh_TW'),
 
-    'fallback_locale' => env('APP_FALLBACK_LOCALE', 'zh-cn'),
+    'fallback_locale' => env('APP_FALLBACK_LOCALE', 'zh_CN'),
 
     'faker_locale' => env('APP_FAKER_LOCALE', 'en_US'),
 
@@ -121,11 +121,5 @@ return [
     'maintenance' => [
         'driver' => env('APP_MAINTENANCE_DRIVER', 'file'),
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
-    ],
-
-    'available_locales' => [
-        'ja',
-        'zh-cn',
-        'zh-tw',
     ],
 ];

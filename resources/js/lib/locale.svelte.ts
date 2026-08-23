@@ -3,7 +3,7 @@ import { page } from '@inertiajs/svelte';
 /**
  * The locale every other locale falls back to, mirroring the server's own fallback.
  */
-export const DEFAULT_LOCALE = 'zh-tw';
+export const DEFAULT_LOCALE = 'zh_TW';
 
 export function availableLocales(): string[] {
     return page.props.available_locales;
@@ -12,10 +12,24 @@ export function availableLocales(): string[] {
 /**
  * The single answer to "what language are we in".
  *
- * Resolved directly from the URL-based Inertia page props.
+ * Resolved directly from the URL-based Inertia page props (e.g. 'zh_TW', 'zh_CN', 'ja').
  */
 export function currentLocale(): string {
     return page.props.locale || DEFAULT_LOCALE;
+}
+
+/**
+ * Converts an internal locale ('zh_TW') into a URL route key ('zh-tw').
+ */
+export function toLocaleUrlKey(locale: string): string {
+    return locale.toLowerCase().replace('_', '-');
+}
+
+/**
+ * The current URL route key ('zh-tw', 'zh-cn', 'ja').
+ */
+export function currentLocaleUrlKey(): string {
+    return toLocaleUrlKey(currentLocale());
 }
 
 /**
@@ -53,5 +67,9 @@ export function localized<T>(translations: Record<string, T> | undefined | null)
         return undefined;
     }
 
-    return translations[currentLocale()] || translations[DEFAULT_LOCALE] || translations[0];
+    return (
+        translations[currentLocale()] ||
+        translations[DEFAULT_LOCALE] ||
+        Object.values(translations)[0]
+    );
 }

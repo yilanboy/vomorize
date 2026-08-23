@@ -6,7 +6,7 @@
     import GroupQuizQuestion from '@/components/GroupQuizQuestion.svelte';
     import QuizLeaveGuard, { disarmLeaveGuard } from '@/components/QuizLeaveGuard.svelte';
     import StickyActionBar from '@/components/StickyActionBar.svelte';
-    import { currentLocale, translations } from '@/lib/locale.svelte';
+    import { currentLocaleUrlKey, translations } from '@/lib/locale.svelte';
     import { calculateNextState, saveGuestGroupProgress } from '@/lib/progress';
     import {
         answerFor,
@@ -86,7 +86,7 @@
         if (score < 90) {
             router.visit(
                 resultRoute.url(
-                    { locale: currentLocale(), group: group.id },
+                    { locale: currentLocaleUrlKey(), group: group.id },
                     { query: { phase: 'introduce', score } },
                 ),
             );
@@ -106,7 +106,7 @@
             });
             router.visit(
                 resultRoute.url(
-                    { locale: currentLocale(), group: group.id },
+                    { locale: currentLocaleUrlKey(), group: group.id },
                     { query: { phase: 'introduce', score } },
                 ),
             );
@@ -115,13 +115,13 @@
         }
 
         router.post(
-            progressRoute.store.url({ locale: currentLocale(), group: group.id }),
+            progressRoute.store.url({ locale: currentLocaleUrlKey(), group: group.id }),
             { phase: 'introduce', score },
             {
                 onSuccess: () =>
                     router.visit(
                         resultRoute.url(
-                            { locale: currentLocale(), group: group.id },
+                            { locale: currentLocaleUrlKey(), group: group.id },
                             { query: { phase: 'introduce', score } },
                         ),
                     ),
@@ -134,7 +134,9 @@
     });
 </script>
 
-<QuizLeaveGuard exitUrl={levelRoute.url({ locale: currentLocale(), level: group.level_id })} />
+<QuizLeaveGuard
+    exitUrl={levelRoute.url({ locale: currentLocaleUrlKey(), level: group.level_id })}
+/>
 
 <div class="flex flex-1 flex-col">
     <main class="mx-auto w-full max-w-2xl flex-1 px-4 py-8 sm:px-6">

@@ -1,7 +1,7 @@
 <script lang="ts">
     import { page, Link } from '@inertiajs/svelte';
     import Check from '@lucide/svelte/icons/check';
-    import { currentLocale, localized, translations } from '@/lib/locale.svelte';
+    import { currentLocaleUrlKey, localized, translations } from '@/lib/locale.svelte';
     import { getGuestProgressMap, deriveGroupStatus, calculateFillPercent } from '@/lib/progress';
 
     /**
@@ -191,7 +191,7 @@
         <div>
             <div class="flex items-center space-x-3">
                 <Link
-                    href={`/${currentLocale()}`}
+                    href={`/${currentLocaleUrlKey()}`}
                     class="text-sm font-semibold text-zinc-900 underline-offset-4 hover:underline dark:text-zinc-50"
                 >
                     &larr; {t['home']}
@@ -233,7 +233,7 @@
                     ? calculateFillPercent(g.last_reviewed_at, g.next_review_at, nowMs)
                     : 0}
             <Link
-                href={`/${currentLocale()}/groups/${g.id}`}
+                href={`/${currentLocaleUrlKey()}/groups/${g.id}`}
                 data-test="group-tile"
                 data-group-id={g.id}
                 aria-label={`${t['group']} ${g.sequence}: ${getStatusLabel(g.status)}`}

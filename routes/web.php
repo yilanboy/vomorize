@@ -1,5 +1,6 @@
 <?php
 
+use App\Enums\Locale;
 use App\Http\Controllers\Auth\GitHubAuthController;
 use App\Http\Controllers\CustomQuizController;
 use App\Http\Controllers\GroupController;
@@ -13,18 +14,14 @@ use Illuminate\Support\Facades\Route;
 
 // Root redirect
 Route::get('/', function (Request $request) {
-    $locale = app()->getLocale();
+    $locale = Locale::tryFrom(app()->getLocale()) ?? Locale::ChineseT;
 
-    if (is_string($locale) && in_array($locale, config('app.available_locales'), true)) {
-        return redirect('/'.$locale);
-    }
-
-    return redirect('/'.config('app.locale'));
+    return redirect('/'.$locale->routeKey());
 })->name('root');
 
 // Localized routes
 Route::prefix('{locale}')
-    ->whereIn('locale', config('app.available_locales'))
+    ->whereIn('locale', Locale::routeKeys())
     ->group(function () {
         // Home & Learning routes
         Route::get('/', HomeController::class)->name('home');

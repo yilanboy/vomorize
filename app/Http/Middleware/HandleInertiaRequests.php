@@ -2,6 +2,7 @@
 
 namespace App\Http\Middleware;
 
+use App\Enums\Locale;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
 use Inertia\Middleware;
@@ -44,10 +45,10 @@ class HandleInertiaRequests extends Middleware
             'auth' => [
                 'user' => $request->user(),
             ],
-            'available_locales' => Inertia::once(fn () => config('app.available_locales')),
+            'available_locales' => Inertia::once(fn () => Locale::values()),
             'locale' => $locale,
             'translations' => Inertia::once(fn () => [
-                'app' => collect(config('app.available_locales'))
+                'app' => collect(Locale::values())
                     ->mapWithKeys(fn (string $locale): array => [
                         $locale => trans(key: 'app', locale: $locale),
                     ])

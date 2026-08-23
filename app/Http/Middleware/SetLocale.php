@@ -1,7 +1,10 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Http\Middleware;
 
+use App\Enums\Locale;
 use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cookie;
@@ -15,35 +18,44 @@ class SetLocale
      */
     public function handle(Request $request, Closure $next): Response
     {
-        $routeLocale = $request->route('locale');
-        // Fallback for unlocalized routes or if route parameter is missing
+        $routeLocaleKey = $request->route('locale');
         $cookieLocale = $request->cookie('locale');
 
-        // There is a locale value in route
-        if (in_array($routeLocale, config('app.available_locales'), true)) {
-            app()->setLocale($routeLocale);
+        // Route contains a locale parameter
+        if (is_string($routeLocaleKey)) {
+            $locale = Locale::fromRouteKey($routeLocaleKey);
 
-            if ($cookieLocale !== $routeLocale) {
-                Cookie::queue(Cookie::make(
-                    name: 'locale',
-                    value: $routeLocale,
-                    minutes: 525600,
-                    path: '/',
-                ));
+            if ($locale !== null) {
+                app()->setLocale($locale->value);
+
+                $routeKey = $locale->routeKey();
+
+                if ($cookieLocale !== $locale->value) {
+                    Cookie::queue(Cookie::make(
+                        name: 'locale',
+                        value: $locale->value,
+                        minutes: 525600,
+                        path: '/',
+                    ));
+                }
+
+                $request->route()->forgetParameter('locale');
+                URL::defaults(['locale' => $routeKey]);
+
+                return $next($request);
             }
-
-            $request->route()->forgetParameter('locale');
-            URL::defaults(['locale' => $routeLocale]);
-
-            return $next($request);
         }
 
-        if (in_array($cookieLocale, config('app.available_locales'))) {
-            app()->setLocale($cookieLocale);
-            URL::defaults(['locale' => $cookieLocale]);
+        // Fallback for unlocalized routes or root path
+        $resolvedLocale = Locale::tryFromValueOrRouteKey(is_string($cookieLocale) ? $cookieLocale : null);
+
+        if ($resolvedLocale !== null) {
+            app()->setLocale($resolvedLocale->value);
+            URL::defaults(['locale' => $resolvedLocale->routeKey()]);
         } else {
-            app()->setLocale(config('app.locale'));
-            URL::defaults(['locale' => config('app.locale')]);
+            $defaultLocale = Locale::tryFromValueOrRouteKey(config('app.locale')) ?? Locale::ChineseT;
+            app()->setLocale($defaultLocale->value);
+            URL::defaults(['locale' => $defaultLocale->routeKey()]);
         }
 
         return $next($request);

@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Enums\Locale;
 use App\Models\Vocabulary;
 use App\Models\VocabularyTranslation;
 use Illuminate\Database\Eloquent\Factories\Factory;
@@ -20,7 +21,7 @@ class VocabularyTranslationFactory extends Factory
     {
         return [
             'vocabulary_id' => Vocabulary::factory(),
-            'locale' => $this->faker->randomElement(config('app.available_locales')),
+            'locale' => $this->faker->randomElement(Locale::values()),
             'definition' => $this->faker->word,
             'example_translation' => $this->faker->sentence,
         ];

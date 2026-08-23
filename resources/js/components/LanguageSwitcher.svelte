@@ -9,14 +9,16 @@
         DropdownMenuTrigger,
     } from '@/components/ui/dropdown-menu';
     import { Button } from '@/components/ui/button';
-    import { currentLocale, availableLocales } from '@/lib/locale.svelte';
+    import { currentLocale, availableLocales, toLocaleUrlKey } from '@/lib/locale.svelte';
 
     function getLabel(locale: string) {
-        return {
-            'zh-tw': '繁體中文',
-            'zh-cn': '简体中文',
-            ja: '日本語',
-        }[locale];
+        return (
+            {
+                zh_TW: '繁體中文',
+                zh_CN: '简体中文',
+                ja: '日本語',
+            }[locale] || locale
+        );
     }
 
     function selectLocale(locale: string) {
@@ -24,7 +26,7 @@
             return;
         }
 
-        router.visit(`/${locale}`);
+        router.visit(`/${toLocaleUrlKey(locale)}`);
     }
 </script>
 
