@@ -16,7 +16,7 @@ return new class extends Migration
             $table->foreignId('vocabulary_id')->constrained('vocabularies')->cascadeOnDelete();
             $table->string('locale', 10);
             $table->text('definition');
-            $table->text('example_translation')->nullable();
+            $table->text('example_translation');
             $table->timestamps();
 
             $table->unique(['vocabulary_id', 'locale']);

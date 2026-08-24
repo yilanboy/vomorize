@@ -19,11 +19,11 @@ class ProgressMigrationController extends Controller
 
         $validated = $request->validate([
             'guest_progress' => ['required', 'array'],
-            'guest_progress.*.level_id' => ['required', 'integer', 'exists:level,id'],
+            'guest_progress.*.level_id' => ['required', 'integer', 'exists:levels,id'],
             'guest_progress.*.group_id' => ['required', 'integer', 'exists:groups,id'],
             'guest_progress.*.stage' => ['required', 'integer', 'min:0', 'max:6'],
-            'guest_progress.*.last_score' => ['nullable', 'integer', 'min:0', 'max:100'],
-            'guest_progress.*.last_reviewed_at' => ['nullable', 'string'],
+            'guest_progress.*.last_score' => ['required', 'integer', 'min:0', 'max:100'],
+            'guest_progress.*.last_reviewed_at' => ['required', 'string'],
             'guest_progress.*.next_review_at' => ['nullable', 'string'],
         ]);
 
@@ -33,8 +33,8 @@ class ProgressMigrationController extends Controller
             $groupId = $item['group_id'];
             $levelId = $item['level_id'] ?? Group::where('id', $groupId)->value('level_id');
             $guestStage = (int) $item['stage'];
-            $guestScore = $item['last_score'] !== null ? (int) $item['last_score'] : null;
-            $guestLastReviewed = $item['last_reviewed_at'] ? Carbon::parse($item['last_reviewed_at']) : null;
+            $guestScore = (int) $item['last_score'];
+            $guestLastReviewed = Carbon::parse($item['last_reviewed_at']);
             $guestNextReview = $item['next_review_at'] ? Carbon::parse($item['next_review_at']) : null;
 
             $existing = LearningProgress::where('user_id', $user->id)
@@ -62,13 +62,10 @@ class ProgressMigrationController extends Controller
             if ($guestStage > $existing->stage) {
                 $useGuest = true;
             } elseif ($guestStage === $existing->stage) {
-                $eScore = $existing->last_score ?? -1;
-                $gScore = $guestScore ?? -1;
-
-                if ($gScore > $eScore) {
+                if ($guestScore > $existing->last_score) {
                     $useGuest = true;
-                } elseif ($gScore === $eScore && $guestLastReviewed) {
-                    if (! $existing->last_reviewed_at || $guestLastReviewed->isAfter($existing->last_reviewed_at)) {
+                } elseif ($guestScore === $existing->last_score) {
+                    if ($guestLastReviewed->isAfter($existing->last_reviewed_at)) {
                         $useGuest = true;
                     }
                 }

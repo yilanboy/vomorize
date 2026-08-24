@@ -15077,7 +15077,7 @@ return [
             'example_sentence' => 'The drought will deplete the reservoir\'s water supply.',
             'translations' => [
                 'zh_TW' => [
-                    'definition' => '',
+                    'definition' => '耗盡，使空虛',
                     'example_translation' => '乾旱將會耗盡水庫的水源供應。',
                 ],
                 'zh_CN' => [

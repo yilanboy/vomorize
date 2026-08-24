@@ -162,19 +162,13 @@ class CustomQuizController extends Controller
     /**
      * Groups where the learner finished at least one session.
      *
-     * A failed first attempt still records a review, so its words qualify while the stage is still
-     * zero — those are the words most worth practising. A group opened and abandoned before its
-     * first session finished has neither a stage nor a review, and does not qualify.
+     * Every persisted learning progress record represents a completed session.
      *
      * @return Collection<int, int>
      */
     private function learnedGroupIds(int $userId): Collection
     {
         return LearningProgress::where('user_id', $userId)
-            ->where(function ($query) {
-                $query->where('stage', '>=', 1)
-                    ->orWhereNotNull('last_reviewed_at');
-            })
             ->pluck('group_id');
     }
 

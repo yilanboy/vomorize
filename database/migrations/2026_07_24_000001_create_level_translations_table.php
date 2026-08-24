@@ -16,7 +16,7 @@ return new class extends Migration
             $table->foreignId('level_id')->constrained('levels')->cascadeOnDelete();
             $table->string('locale', 10);
             $table->string('name');
-            $table->text('description')->nullable();
+            $table->text('description');
             $table->timestamps();
 
             $table->unique(['level_id', 'locale']);

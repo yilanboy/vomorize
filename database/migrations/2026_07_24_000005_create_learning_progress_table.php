@@ -17,9 +17,8 @@ return new class extends Migration
             $table->foreignId('level_id')->constrained('levels')->cascadeOnDelete();
             $table->foreignId('group_id')->constrained('groups')->cascadeOnDelete();
             $table->integer('stage')->default(0);
-            // TODO: really need to think about this nullable
-            $table->integer('last_score')->nullable();
-            $table->timestamp('last_reviewed_at')->nullable();
+            $table->integer('last_score');
+            $table->timestamp('last_reviewed_at');
             $table->timestamp('next_review_at')->nullable();
             $table->timestamps();
 

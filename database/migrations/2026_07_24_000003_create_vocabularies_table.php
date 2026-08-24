@@ -15,9 +15,9 @@ return new class extends Migration
             $table->id();
             $table->foreignId('group_id')->constrained('groups')->cascadeOnDelete();
             $table->string('word');
-            $table->string('part_of_speech')->nullable();
-            $table->string('pronunciation')->nullable();
-            $table->text('example_sentence')->nullable();
+            $table->string('part_of_speech');
+            $table->string('pronunciation');
+            $table->text('example_sentence');
             $table->timestamps();
 
             $table->unique(['group_id', 'word']);
