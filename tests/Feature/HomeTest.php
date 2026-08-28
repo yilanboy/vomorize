@@ -2,13 +2,13 @@
 
 use App\Enums\Locale as LocaleEnum;
 use App\Models\Level;
-use Database\Seeders\DefaultSeeder;
+use Database\Seeders\DefaultVocabularySeeder;
 use Inertia\Testing\AssertableInertia as Assert;
 
 use function Pest\Laravel\get;
 
 beforeEach(function () {
-    $this->seed(DefaultSeeder::class);
+    $this->seed(DefaultVocabularySeeder::class);
 });
 
 it('will contain all levels', function (string $routeKey) {

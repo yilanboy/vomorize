@@ -1,11 +1,11 @@
 <?php
 
 use App\Models\Level;
-use Database\Seeders\DefaultSeeder;
+use Database\Seeders\DefaultVocabularySeeder;
 use Illuminate\Support\Facades\Lang;
 
 beforeEach(function () {
-    $this->seed(DefaultSeeder::class);
+    $this->seed(DefaultVocabularySeeder::class);
 });
 
 test('root page has no smoke', function () {

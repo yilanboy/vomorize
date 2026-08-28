@@ -2,10 +2,10 @@
 
 use App\Models\Vocabulary;
 use App\Models\VocabularyTranslation;
-use Database\Seeders\DefaultSeeder;
+use Database\Seeders\DefaultVocabularySeeder;
 
 test('default level vocabulary seeder creates translations for every vocabulary', function () {
-    $this->seed(DefaultSeeder::class);
+    $this->seed(DefaultVocabularySeeder::class);
 
     Vocabulary::with('translations')->each(function (Vocabulary $vocabulary): void {
         expect($vocabulary->translations->pluck('locale')->sort()->values()->all())
@@ -14,19 +14,19 @@ test('default level vocabulary seeder creates translations for every vocabulary'
 });
 
 test('default level vocabulary seeder is idempotent', function () {
-    $this->seed(DefaultSeeder::class);
+    $this->seed(DefaultVocabularySeeder::class);
 
     expect(Vocabulary::count())->toBe(7000)
         ->and(VocabularyTranslation::count())->toBe(21_000);
 
-    $this->seed(DefaultSeeder::class);
+    $this->seed(DefaultVocabularySeeder::class);
 
     expect(Vocabulary::count())->toBe(7000)
         ->and(VocabularyTranslation::count())->toBe(21_000);
 });
 
 test('default vocabulary seeders create 1000 translated words for levels 1 through 7', function () {
-    $this->seed(DefaultSeeder::class);
+    $this->seed(DefaultVocabularySeeder::class);
 
     foreach (range(1, 7) as $levelId) {
         expect(Vocabulary::whereHas('group', fn ($query) => $query->where('level_id', $levelId))->count())

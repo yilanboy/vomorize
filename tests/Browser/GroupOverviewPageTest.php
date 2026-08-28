@@ -2,11 +2,11 @@
 
 use App\Models\Group;
 use App\Models\Vocabulary;
-use Database\Seeders\DefaultSeeder;
+use Database\Seeders\DefaultVocabularySeeder;
 use Illuminate\Support\Facades\Lang;
 
 beforeEach(function () {
-    $this->seed(DefaultSeeder::class);
+    $this->seed(DefaultVocabularySeeder::class);
 });
 
 test('group overview page has no smoke', function () {

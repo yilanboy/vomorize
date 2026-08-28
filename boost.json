@@ -12,10 +12,10 @@
         "ai-sdk-development",
         "fortify-development",
         "laravel-best-practices",
+        "testing-best-practices",
         "octane-development",
         "socialite-development",
         "wayfinder-development",
-        "pest-testing",
         "inertia-svelte-development",
         "tailwindcss-development",
         "deploying-laravel-cloud"

@@ -1,10 +1,10 @@
 <?php
 
 use App\Models\Level;
-use Database\Seeders\DefaultSeeder;
+use Database\Seeders\DefaultVocabularySeeder;
 
 beforeEach(function () {
-    $this->seed(DefaultSeeder::class);
+    $this->seed(DefaultVocabularySeeder::class);
 });
 
 test('level show page has no smoke', function () {
