@@ -14,19 +14,26 @@ test('audio generation', function () {
     $vocabulary = Vocabulary::factory()->create([
         'id' => 1,
         'word' => 'test',
+        'part_of_speech' => 'n.',
+        'pronunciation' => '/tɛst/',
         'example_sentence' => 'This is a test sentence',
     ]);
 
     $this->artisan('generate:audio')
         ->expectsQuestion('Start from vocabulary ID', $vocabulary->id)
         ->expectsQuestion('Maximum number of vocabularies to process', 1)
+        ->expectsQuestion('What audio do you want to generate?', ['Word', 'Sentence'])
         ->assertSuccessful();
 
     Storage::assertExists("vocabulary/$vocabulary->id/word.mp3");
     Storage::assertExists("vocabulary/$vocabulary->id/sentence.mp3");
 
     Audio::assertGenerated(function (AudioPrompt $prompt) {
-        return $prompt->text === 'test' && $prompt->isFemale();
+        return $prompt->text === 'test'
+            && $prompt->isFemale()
+            && str_contains($prompt->instructions, '/tɛst/')
+            && str_contains($prompt->instructions, 'n.')
+            && str_contains($prompt->instructions, 'This is a test sentence');
     });
 
     Audio::assertGenerated(function (AudioPrompt $prompt) {
@@ -40,6 +47,7 @@ test('respects startFrom and limit options', function () {
     $this->artisan('generate:audio')
         ->expectsQuestion('Start from vocabulary ID', 3)
         ->expectsQuestion('Maximum number of vocabularies to process', 2)
+        ->expectsQuestion('What audio do you want to generate?', ['Word', 'Sentence'])
         ->assertSuccessful();
 
     Storage::assertMissing('vocabulary/1/word.mp3');
@@ -68,6 +76,7 @@ it('fails on invalid vocabulary ID', function () {
     $this->artisan('generate:audio')
         ->expectsQuestion('Start from vocabulary ID', 999)
         ->expectsQuestion('Maximum number of vocabularies to process', 10)
+        ->expectsQuestion('What audio do you want to generate?', ['Word', 'Sentence'])
         ->expectsPromptsInfo('No vocabularies found to process.')
         ->assertSuccessful();
 });
@@ -83,5 +92,13 @@ it('fails on invalid limit number', function () {
         ->expectsQuestion('Start from vocabulary ID', 1)
         ->expectsQuestion('Maximum number of vocabularies to process', -1)
         ->expectsPromptsError('Invalid limit value')
+        ->assertFailed();
+});
+
+test('fails on invalid audio type selection', function () {
+    $this->artisan('generate:audio')
+        ->expectsQuestion('Start from vocabulary ID', 1)
+        ->expectsQuestion('Maximum number of vocabularies to process', 10)
+        ->expectsQuestion('What audio do you want to generate?', [])
         ->assertFailed();
 });

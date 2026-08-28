@@ -12,6 +12,7 @@ use Throwable;
 use function Illuminate\Support\seconds;
 use function Laravel\Prompts\error;
 use function Laravel\Prompts\info;
+use function Laravel\Prompts\multiselect;
 use function Laravel\Prompts\number;
 
 #[Signature('generate:audio')]
@@ -49,6 +50,13 @@ class GenerateAudio extends Command
             $this->fail();
         }
 
+        $audioTypes = multiselect(
+            label: 'What audio do you want to generate?',
+            options: ['Word', 'Sentence'],
+            default: ['Word', 'Sentence'],
+            required: true
+        );
+
         $vocabularies = Vocabulary::query()
             ->where('id', '>=', $startFrom)
             ->limit((int) $limit)
@@ -63,40 +71,50 @@ class GenerateAudio extends Command
         info("Found {$vocabularies->count()} vocabularies to process.");
 
         foreach ($vocabularies as $vocabulary) {
-            info("Generating word audio for [ID: {$vocabulary->id}] {$vocabulary->word}");
-
             $wordPath = "vocabulary/$vocabulary->id/word.mp3";
             $sentencePath = "vocabulary/$vocabulary->id/sentence.mp3";
 
-            retry(
-                5,
-                function () use ($vocabulary, $wordPath) {
-                    Audio::of($vocabulary->word)
-                        ->female()
-                        ->instructions(
-                            'Speak the vocabulary clearly as a professional English teacher.',
-                        )
-                        ->generate()
-                        ->storeAs($wordPath);
-                },
-                seconds(10),
-            );
+            if (in_array('Word', $audioTypes)) {
+                info("Generating word audio for [ID: {$vocabulary->id}] {$vocabulary->word}");
 
-            info("Generating example sentence audio for [ID: {$vocabulary->id}]: \"{$vocabulary->example_sentence}\"");
+                $wordInstructions = collect([
+                    'Speak this English word clearly and accurately as a native English speaker in standard dictionary citation form.',
+                    $vocabulary->pronunciation ? "IPA / Pronunciation: {$vocabulary->pronunciation}." : null,
+                    $vocabulary->part_of_speech ? "Part of speech: {$vocabulary->part_of_speech}." : null,
+                    $vocabulary->example_sentence ? "Context sentence for reference: \"{$vocabulary->example_sentence}\"." : null,
+                    'Ensure correct syllable stress and natural falling intonation. Pronounce ONLY the target word itself, without reading the context sentence, phonetics, or any extra explanation.',
+                ])->filter()->implode(' ');
 
-            retry(
-                5,
-                function () use ($vocabulary, $sentencePath) {
-                    Audio::of($vocabulary->example_sentence)
-                        ->female()
-                        ->instructions(
-                            'Speak the sentence as a native English speaker.',
-                        )
-                        ->generate()
-                        ->storeAs($sentencePath);
-                },
-                seconds(10),
-            );
+                retry(
+                    5,
+                    function () use ($vocabulary, $wordPath, $wordInstructions) {
+                        Audio::of($vocabulary->word)
+                            ->female()
+                            ->instructions($wordInstructions)
+                            ->generate()
+                            ->storeAs($wordPath);
+                    },
+                    seconds(10),
+                );
+            }
+
+            if (in_array('Sentence', $audioTypes)) {
+                info("Generating example sentence audio for [ID: {$vocabulary->id}]: \"{$vocabulary->example_sentence}\"");
+
+                retry(
+                    5,
+                    function () use ($vocabulary, $sentencePath) {
+                        Audio::of($vocabulary->example_sentence)
+                            ->female()
+                            ->instructions(
+                                'Speak the sentence naturally and clearly as a native English speaker with natural rhythm, stress, and intonation.',
+                            )
+                            ->generate()
+                            ->storeAs($sentencePath);
+                    },
+                    seconds(10),
+                );
+            }
         }
 
         info("Audio generation completed for {$vocabularies->count()} vocabularies. From {$vocabularies->first()->id} to {$vocabularies->last()->id}");
