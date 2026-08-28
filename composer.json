@@ -18,11 +18,13 @@
         "laravel/fortify": "^1.37.2",
         "laravel/framework": "^13.17",
         "laravel/octane": "*",
+        "laravel/prompts": "^0.3.24",
         "laravel/socialite": "^5.29",
         "laravel/tinker": "^3.0",
         "laravel/wayfinder": "^0.1.14",
         "league/flysystem-aws-s3-v3": "^3.0",
-        "symfony/http-client": "*"
+        "symfony/http-client": "*",
+        "ext-pcntl": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.24",
@@ -36,7 +38,10 @@
         "nunomaduro/collision": "^8.9.3",
         "pestphp/pest": "^5.0",
         "pestphp/pest-plugin-browser": "^5.0",
-        "pestphp/pest-plugin-laravel": "^5.0"
+        "pestphp/pest-plugin-laravel": "^5.0",
+        "pestphp/pest-plugin-phpstan": "^5.2",
+        "pestphp/pest-plugin-rector": "^5.0",
+        "rector/rector": "^2.6"
     },
     "autoload": {
         "psr-4": {
