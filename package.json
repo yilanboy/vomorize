@@ -3,13 +3,11 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "build": "vite build",
-        "build:ssr": "vite build && vite build --ssr",
-        "dev": "vite",
-        "format": "oxfmt --write resources/",
-        "format:check": "oxfmt --check resources/",
-        "lint": "oxlint resources/ --fix",
-        "lint:check": "oxlint resources/",
+        "build": "vp build",
+        "build:ssr": "vp build && vp build --ssr",
+        "dev": "vp dev",
+        "check": "vp check",
+        "check:fix": "vp check --fix",
         "types:check": "svelte-check --tsconfig ./tsconfig.json"
     },
     "dependencies": {
@@ -29,18 +27,15 @@
     },
     "devDependencies": {
         "@laravel/vite-plugin-wayfinder": "^0.1.7",
-        "@stylistic/eslint-plugin": "^5.10.0",
         "@tailwindcss/vite": "^4.3.3",
         "@types/node": "^22.20.1",
         "@typescript/native": "npm:typescript@^7.0.2",
         "concurrently": "^9.2.4",
-        "eslint-plugin-svelte": "^3.23.0",
-        "oxfmt": "^0.60.0",
-        "oxlint": "^1.80.0",
         "playwright": "^1.62.1",
         "svelte-check": "^4.7.6",
         "typescript": "^6.0.3",
-        "vite": "^8.2.2"
+        "vite": "^8.2.2",
+        "vite-plus": "0.3.0"
     },
     "optionalDependencies": {
         "@rollup/rollup-linux-x64-gnu": "4.9.5",

@@ -56,7 +56,9 @@ const getStoredAppearance = (): Appearance => {
 
     const stored = localStorage.getItem('appearance');
 
-    return stored === 'light' || stored === 'dark' || stored === 'system' ? stored : 'system';
+    return stored === 'light' || stored === 'dark' || stored === 'system'
+        ? stored
+        : 'system';
 };
 
 const handleSystemThemeChange = (): void => {
@@ -68,7 +70,10 @@ const detachThemeChangeListener = (): void => {
         return;
     }
 
-    themeChangeMediaQuery.removeEventListener('change', handleSystemThemeChange);
+    themeChangeMediaQuery.removeEventListener(
+        'change',
+        handleSystemThemeChange,
+    );
     themeChangeMediaQuery = null;
 };
 

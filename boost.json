@@ -1,7 +1,5 @@
 {
-    "agents": [
-        "junie"
-    ],
+    "agents": ["junie"],
     "cloud": true,
     "guidelines": true,
     "mcp": true,

@@ -48,7 +48,10 @@ export function translations(): Record<string, string> {
 /**
  * Replaces Laravel-style `:key` placeholders in a translated string.
  */
-export function interpolate(template: string, replacements: Record<string, string> = {}): string {
+export function interpolate(
+    template: string,
+    replacements: Record<string, string> = {},
+): string {
     for (const [key, value] of Object.entries(replacements)) {
         template = template.replace(`:${key}`, value);
     }
@@ -62,7 +65,9 @@ export function interpolate(template: string, replacements: Record<string, strin
  * Content the learner is here to read — level names, vocabulary — is translated in the database
  * rather than in the interface copy, so every page that shows it needs the same fallback chain.
  */
-export function localized<T>(translations: Record<string, T> | undefined | null): T | undefined {
+export function localized<T>(
+    translations: Record<string, T> | undefined | null,
+): T | undefined {
     if (!translations) {
         return undefined;
     }

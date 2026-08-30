@@ -36,13 +36,17 @@ export function calculateNextState(
     if (passed) {
         const newStage = Math.min(6, currentStage + 1);
         const nextReviewAtMs =
-            newStage === 6 ? null : nowMs + (INTERVALS_MS[newStage] ?? INTERVALS_MS[1]);
+            newStage === 6
+                ? null
+                : nowMs + (INTERVALS_MS[newStage] ?? INTERVALS_MS[1]);
 
         return {
             stage: newStage,
             last_score: score,
             last_reviewed_at: nowIso,
-            next_review_at: nextReviewAtMs ? new Date(nextReviewAtMs).toISOString() : null,
+            next_review_at: nextReviewAtMs
+                ? new Date(nextReviewAtMs).toISOString()
+                : null,
             passed: true,
         };
     } else {
@@ -63,7 +67,9 @@ export function calculateNextState(
             stage: newStage,
             last_score: score,
             last_reviewed_at: nowIso,
-            next_review_at: nextReviewAtMs ? new Date(nextReviewAtMs).toISOString() : null,
+            next_review_at: nextReviewAtMs
+                ? new Date(nextReviewAtMs).toISOString()
+                : null,
             passed: false,
         };
     }
@@ -79,7 +85,8 @@ export function deriveGroupStatus(
         return 'completed';
     }
 
-    const isLocked = nextReviewAtIso !== null && new Date(nextReviewAtIso).getTime() > nowMs;
+    const isLocked =
+        nextReviewAtIso !== null && new Date(nextReviewAtIso).getTime() > nowMs;
 
     if (isLocked) {
         if (lastScore !== null && lastScore < 90) {
@@ -140,13 +147,18 @@ export function getGuestProgressMap(): Record<number, GuestGroupProgress> {
     }
 }
 
-export function getGuestGroupProgress(groupId: number): GuestGroupProgress | null {
+export function getGuestGroupProgress(
+    groupId: number,
+): GuestGroupProgress | null {
     const map = getGuestProgressMap();
 
     return map[groupId] ?? null;
 }
 
-export function saveGuestGroupProgress(groupId: number, progress: GuestGroupProgress): void {
+export function saveGuestGroupProgress(
+    groupId: number,
+    progress: GuestGroupProgress,
+): void {
     if (typeof localStorage === 'undefined') {
         return;
     }

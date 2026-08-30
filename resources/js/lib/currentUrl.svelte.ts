@@ -22,7 +22,10 @@ export type CurrentUrlState = {
 
 export function currentUrlState(): CurrentUrlState {
     const currentUrl = $derived.by(() => {
-        const origin = typeof window === 'undefined' ? 'http://localhost' : window.location.origin;
+        const origin =
+            typeof window === 'undefined'
+                ? 'http://localhost'
+                : window.location.origin;
 
         try {
             return new URL(page.url, origin).pathname;

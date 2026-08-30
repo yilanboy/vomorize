@@ -1,6 +1,9 @@
 import { currentLocale, DEFAULT_LOCALE } from '@/lib/locale.svelte';
 
-export type QuizType = 'word_to_translation' | 'translation_to_word' | 'audio_to_translation';
+export type QuizType =
+    | 'word_to_translation'
+    | 'translation_to_word'
+    | 'audio_to_translation';
 
 /**
  * Every way a word can be asked about. The review rotation indexes into this, so the order is part
@@ -98,7 +101,9 @@ export function exampleTranslationOf(vocabulary: VocabularyItem): string {
  * One type asks for the word, which no locale changes; the other two ask for the definition.
  */
 export function answerFor(vocabulary: QuizVocabulary, type: QuizType): string {
-    return type === 'translation_to_word' ? vocabulary.word : definitionOf(vocabulary);
+    return type === 'translation_to_word'
+        ? vocabulary.word
+        : definitionOf(vocabulary);
 }
 
 export function buildQuestion(
@@ -117,13 +122,17 @@ export function buildQuestion(
     };
 }
 
-export function buildIntroductionQuestions(vocabularies: QuizVocabulary[]): QuizQuestion[] {
+export function buildIntroductionQuestions(
+    vocabularies: QuizVocabulary[],
+): QuizQuestion[] {
     return vocabularies.map((vocabulary) =>
         buildQuestion(vocabulary, vocabularies, 'word_to_translation'),
     );
 }
 
-export function buildReviewQuestions(vocabularies: QuizVocabulary[]): QuizQuestion[] {
+export function buildReviewQuestions(
+    vocabularies: QuizVocabulary[],
+): QuizQuestion[] {
     const vocabularyPairs = vocabularies.map((vocabulary, index) => {
         const firstType = QUIZ_TYPES[index % QUIZ_TYPES.length];
         const secondType = QUIZ_TYPES[(index + 1) % QUIZ_TYPES.length];
@@ -138,7 +147,9 @@ export function buildReviewQuestions(vocabularies: QuizVocabulary[]): QuizQuesti
     });
     const shuffledPairs = shuffle(vocabularyPairs);
 
-    return [0, 1].flatMap((round) => shuffledPairs.map((pair) => pair.questions[round]));
+    return [0, 1].flatMap((round) =>
+        shuffledPairs.map((pair) => pair.questions[round]),
+    );
 }
 
 /**
