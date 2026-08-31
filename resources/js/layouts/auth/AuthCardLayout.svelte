@@ -31,13 +31,17 @@
                     <div class="space-y-2 text-center">
                         {#if translatedTitle}
                             <h1
+                                data-test="auth-title"
                                 class="text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50"
                             >
                                 {translatedTitle}
                             </h1>
                         {/if}
                         {#if translatedDescription}
-                            <p class="text-base text-zinc-500 dark:text-zinc-400">
+                            <p
+                                data-test="auth-description"
+                                class="text-base text-zinc-500 dark:text-zinc-400"
+                            >
                                 {translatedDescription}
                             </p>
                         {/if}

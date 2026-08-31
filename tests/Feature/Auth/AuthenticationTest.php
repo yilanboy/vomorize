@@ -1,17 +1,27 @@
 <?php
 
+use App\Enums\Locale;
 use App\Models\User;
 use Illuminate\Support\Facades\RateLimiter;
+use Inertia\Testing\AssertableInertia as Assert;
 use Laravel\Fortify\Features;
 
-test('login screen can be rendered', function () {
-    $response = $this->get(route('login'));
+test('login screen can be rendered', function (Locale $locale) {
+    $response = $this->get(route('login', ['locale' => $locale->routeKey()]));
 
-    $response->assertOk();
-});
+    $response
+        ->assertOk()
+        ->assertInertia(fn (Assert $page) => $page
+            ->component('auth/Login')
+            ->where('locale', $locale->value)
+            ->has('translations.app.'.$locale->value)
+        );
+})->with(Locale::cases());
 
-test('users can authenticate using the login screen', function () {
+test('users can authenticate using the login screen', function (string $locale) {
     $user = User::factory()->create();
+
+    app()->setLocale($locale);
 
     $response = $this->post(route('login.store'), [
         'email' => $user->email,
@@ -23,9 +33,9 @@ test('users can authenticate using the login screen', function () {
         ->assertRedirect(route('home', absolute: false))
         ->assertSessionHas('inertia.flash_data.toast', [
             'type' => 'success',
-            'message' => '登入成功！',
+            'message' => __('app.login_success'),
         ]);
-});
+})->with(Locale::values());
 
 test('unverified users are redirected to verification notice after login', function () {
     $user = User::factory()->unverified()->create();

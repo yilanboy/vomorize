@@ -12,7 +12,7 @@
         DropdownMenuTrigger,
     } from '@/components/ui/dropdown-menu';
     import { getFirstCharacter } from '@/lib/initials';
-    import { currentLocale, currentLocaleUrlKey, translations } from '@/lib/locale.svelte';
+    import { currentLocaleUrlKey, translations } from '@/lib/locale.svelte';
     import { getGuestProgressMap, clearGuestProgress } from '@/lib/progress';
     import { home, login, register } from '@/routes';
 
