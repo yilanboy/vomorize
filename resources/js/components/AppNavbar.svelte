@@ -38,8 +38,11 @@
                 headers: {
                     'Content-Type': 'application/json',
                     'X-CSRF-TOKEN':
-                        (document.querySelector('meta[name="csrf-token"]') as HTMLMetaElement)
-                            ?.content || '',
+                        (
+                            document.querySelector(
+                                'meta[name="csrf-token"]',
+                            ) as HTMLMetaElement
+                        )?.content || '',
                     Accept: 'application/json',
                 },
                 body: JSON.stringify({ guest_progress: list }),
@@ -63,7 +66,9 @@
 <header
     class="sticky top-0 z-40 border-b border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900"
 >
-    <div class="mx-auto flex max-w-4xl items-center justify-between px-4 py-3 sm:px-6">
+    <div
+        class="mx-auto flex max-w-4xl items-center justify-between px-4 py-3 sm:px-6"
+    >
         <div class="flex items-center space-x-6">
             <Link
                 href={home({ locale: currentLocaleUrlKey() })}
@@ -124,7 +129,9 @@
                                     <AvatarFallback
                                         class="rounded-full bg-zinc-200 font-semibold text-zinc-900 dark:bg-zinc-800 dark:text-zinc-50"
                                     >
-                                        {getFirstCharacter(page.props.auth.user.name)}
+                                        {getFirstCharacter(
+                                            page.props.auth.user.name,
+                                        )}
                                     </AvatarFallback>
                                 </Avatar>
                             </Button>

@@ -14,7 +14,9 @@
 
     let t = $derived(translations());
     let message = $derived(
-        correct ? t['correct'] : t['quiz_wrong_answer'].replace(':answer', correctAnswer),
+        correct
+            ? t['correct']
+            : t['quiz_wrong_answer'].replace(':answer', correctAnswer),
     );
 </script>
 

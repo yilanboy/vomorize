@@ -3,7 +3,9 @@
     import { onMount } from 'svelte';
     import AnswerFeedbackBar from '@/components/AnswerFeedbackBar.svelte';
     import GroupQuizQuestion from '@/components/GroupQuizQuestion.svelte';
-    import QuizLeaveGuard, { disarmLeaveGuard } from '@/components/QuizLeaveGuard.svelte';
+    import QuizLeaveGuard, {
+        disarmLeaveGuard,
+    } from '@/components/QuizLeaveGuard.svelte';
     import StickyActionBar from '@/components/StickyActionBar.svelte';
     import {
         calculateNextState,
@@ -14,7 +16,10 @@
     import type { QuizQuestion, VocabularyItem } from '@/lib/groupQuiz';
     import { currentLocaleUrlKey, translations } from '@/lib/locale.svelte';
     import progressRoute from '@/routes/groups/progress';
-    import { introduce as introduceRoute, result as resultRoute } from '@/routes/groups';
+    import {
+        introduce as introduceRoute,
+        result as resultRoute,
+    } from '@/routes/groups';
     import { show as levelRoute } from '@/routes/levels';
 
     let {
@@ -35,7 +40,9 @@
     let answered = $state(false);
     let correctAnswers = $state(0);
     let currentQuestion = $derived(questions[currentIndex]);
-    let isCorrect = $derived(answered && selectedId === currentQuestion?.vocabulary.id);
+    let isCorrect = $derived(
+        answered && selectedId === currentQuestion?.vocabulary.id,
+    );
 
     function answer(vocabularyId: number, correct: boolean): void {
         selectedId = vocabularyId;
@@ -72,14 +79,20 @@
             );
         } else {
             router.post(
-                progressRoute.store.url({ locale: currentLocaleUrlKey(), group: group.id }),
+                progressRoute.store.url({
+                    locale: currentLocaleUrlKey(),
+                    group: group.id,
+                }),
                 { phase: 'quiz', score },
                 {
                     preserveScroll: true,
                     onSuccess: () =>
                         router.visit(
                             resultRoute.url(
-                                { locale: currentLocaleUrlKey(), group: group.id },
+                                {
+                                    locale: currentLocaleUrlKey(),
+                                    group: group.id,
+                                },
                                 { query: { phase: 'quiz', score } },
                             ),
                         ),
@@ -104,7 +117,12 @@
         if (isGuest && (getGuestGroupProgress(group.id)?.stage ?? 0) === 0) {
             // A correction the app makes on the learner's behalf, not their decision.
             disarmLeaveGuard();
-            router.visit(introduceRoute.url({ locale: currentLocaleUrlKey(), group: group.id }));
+            router.visit(
+                introduceRoute.url({
+                    locale: currentLocaleUrlKey(),
+                    group: group.id,
+                }),
+            );
 
             return;
         }
@@ -114,7 +132,10 @@
 </script>
 
 <QuizLeaveGuard
-    exitUrl={levelRoute.url({ locale: currentLocaleUrlKey(), level: group.level_id })}
+    exitUrl={levelRoute.url({
+        locale: currentLocaleUrlKey(),
+        level: group.level_id,
+    })}
 />
 
 {#if currentQuestion}
@@ -124,7 +145,9 @@
                 class="mb-4 flex items-center justify-between text-sm text-zinc-500 dark:text-zinc-400"
             >
                 <span>{t['start_review']}</span>
-                <span>{currentIndex + 1} / {questions.length} · {correctAnswers} ✓</span>
+                <span
+                    >{currentIndex + 1} / {questions.length} · {correctAnswers} ✓</span
+                >
             </div>
             <GroupQuizQuestion
                 question={currentQuestion}
@@ -138,7 +161,10 @@
             <AnswerFeedbackBar
                 {answered}
                 correct={isCorrect}
-                correctAnswer={answerFor(currentQuestion.vocabulary, currentQuestion.type)}
+                correctAnswer={answerFor(
+                    currentQuestion.vocabulary,
+                    currentQuestion.type,
+                )}
             />
         </div>
 

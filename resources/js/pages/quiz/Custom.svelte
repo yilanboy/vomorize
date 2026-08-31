@@ -3,14 +3,23 @@
     import { onMount } from 'svelte';
     import AnswerFeedbackBar from '@/components/AnswerFeedbackBar.svelte';
     import GroupQuizQuestion from '@/components/GroupQuizQuestion.svelte';
-    import QuizLeaveGuard, { disarmLeaveGuard } from '@/components/QuizLeaveGuard.svelte';
+    import QuizLeaveGuard, {
+        disarmLeaveGuard,
+    } from '@/components/QuizLeaveGuard.svelte';
     import StickyActionBar from '@/components/StickyActionBar.svelte';
     import { answerFor, buildPracticeQuestions } from '@/lib/groupQuiz';
     import type { QuizQuestion, QuizVocabulary } from '@/lib/groupQuiz';
-    import { currentLocaleUrlKey, interpolate, translations } from '@/lib/locale.svelte';
+    import {
+        currentLocaleUrlKey,
+        interpolate,
+        translations,
+    } from '@/lib/locale.svelte';
     import { getGuestProgressMap } from '@/lib/progress';
     import { custom as customQuizRoute } from '@/routes/quiz';
-    import { count as countRoute, fetch as sampleRoute } from '@/routes/quiz/custom';
+    import {
+        count as countRoute,
+        fetch as sampleRoute,
+    } from '@/routes/quiz/custom';
 
     /**
      * Words to test, plus words that exist only to be wrong answers. The two arrive separately
@@ -28,7 +37,8 @@
     /** Selected on arrival so practice can be started in one tap. */
     const DEFAULT_COUNT = 30;
 
-    let { learned_word_count = null }: { learned_word_count: number | null } = $props();
+    let { learned_word_count = null }: { learned_word_count: number | null } =
+        $props();
 
     let t = $derived(translations());
 
@@ -40,9 +50,13 @@
     let correctAnswers = $state(0);
 
     let currentQuestion = $derived(questions[currentIndex]);
-    let isCorrect = $derived(answered && selectedId === currentQuestion?.vocabulary.id);
+    let isCorrect = $derived(
+        answered && selectedId === currentQuestion?.vocabulary.id,
+    );
     let score = $derived(
-        questions.length > 0 ? Math.round((correctAnswers / questions.length) * 100) : 0,
+        questions.length > 0
+            ? Math.round((correctAnswers / questions.length) * 100)
+            : 0,
     );
 
     /**
@@ -73,13 +87,17 @@
     /** Undefined until the pool size resolves and the default can be settled. */
     let pickedCount = $state<number | undefined>(undefined);
 
-    let availablePresets = $derived(PRESET_COUNTS.filter((preset) => preset <= poolSize));
+    let availablePresets = $derived(
+        PRESET_COUNTS.filter((preset) => preset <= poolSize),
+    );
     let defaultCount = $derived(
         availablePresets.includes(DEFAULT_COUNT)
             ? DEFAULT_COUNT
             : (availablePresets[availablePresets.length - 1] ?? null),
     );
-    let chosenCount = $derived(pickedCount === undefined ? defaultCount : pickedCount);
+    let chosenCount = $derived(
+        pickedCount === undefined ? defaultCount : pickedCount,
+    );
 
     /** How many questions the chosen length produces. */
     let questionCount = $derived(chosenCount ?? 0);
@@ -103,11 +121,17 @@
      * instead of navigating. The hook carries CSRF, the in-flight flag, and error handling, so none
      * of that is hand-rolled here. Two instances, because each tracks its own request state.
      */
-    const sample = useHttp<{ count: number | null; group_ids: number[] }, SampleResponse>({
+    const sample = useHttp<
+        { count: number | null; group_ids: number[] },
+        SampleResponse
+    >({
         count: null,
         group_ids: [],
     });
-    const poolCount = useHttp<{ group_ids: number[] }, { learned_word_count: number }>({
+    const poolCount = useHttp<
+        { group_ids: number[] },
+        { learned_word_count: number }
+    >({
         group_ids: [],
     });
 
@@ -117,7 +141,10 @@
      */
     function guestLearnedGroupIds(): number[] {
         return Object.entries(getGuestProgressMap())
-            .filter(([, progress]) => progress.stage >= 1 || progress.last_reviewed_at)
+            .filter(
+                ([, progress]) =>
+                    progress.stage >= 1 || progress.last_reviewed_at,
+            )
             .map(([groupId]) => Number(groupId));
     }
 
@@ -213,7 +240,9 @@
 </script>
 
 {#if phase === 'QUIZ'}
-    <QuizLeaveGuard exitUrl={customQuizRoute.url({ locale: currentLocaleUrlKey() })} />
+    <QuizLeaveGuard
+        exitUrl={customQuizRoute.url({ locale: currentLocaleUrlKey() })}
+    />
 {/if}
 
 <div class="flex flex-1 flex-col">
@@ -238,7 +267,9 @@
                 <div
                     class="rounded-2xl border border-zinc-200 bg-zinc-50 p-8 text-center shadow-xs dark:border-zinc-800 dark:bg-zinc-900"
                 >
-                    <p class="text-sm font-medium text-zinc-500 dark:text-zinc-400">
+                    <p
+                        class="text-sm font-medium text-zinc-500 dark:text-zinc-400"
+                    >
                         {t['load_failed']}
                     </p>
                     <button
@@ -262,7 +293,9 @@
                 <div
                     class="rounded-2xl border border-zinc-200 bg-zinc-50 p-8 text-center shadow-xs dark:border-zinc-800 dark:bg-zinc-900"
                 >
-                    <p class="text-sm font-medium text-zinc-500 dark:text-zinc-400">
+                    <p
+                        class="text-sm font-medium text-zinc-500 dark:text-zinc-400"
+                    >
                         {t['no_learned_vocab']}
                     </p>
                     <p class="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
@@ -279,11 +312,17 @@
                 <div
                     class="rounded-2xl border border-zinc-200 bg-zinc-50 p-6 shadow-xs dark:border-zinc-800 dark:bg-zinc-900"
                 >
-                    <p class="text-center text-sm font-medium text-zinc-900 dark:text-zinc-50">
-                        {interpolate(t['learned_word_count'], { count: formatCount(poolSize) })}
+                    <p
+                        class="text-center text-sm font-medium text-zinc-900 dark:text-zinc-50"
+                    >
+                        {interpolate(t['learned_word_count'], {
+                            count: formatCount(poolSize),
+                        })}
                     </p>
 
-                    <p class="mt-6 mb-3 text-sm font-bold text-zinc-900 dark:text-zinc-50">
+                    <p
+                        class="mt-6 mb-3 text-sm font-bold text-zinc-900 dark:text-zinc-50"
+                    >
                         {t['question_count']}
                     </p>
 
@@ -313,7 +352,9 @@
                 class="mb-4 flex items-center justify-between text-sm text-zinc-500 dark:text-zinc-400"
             >
                 <span>{t['custom_quiz']}</span>
-                <span>{currentIndex + 1} / {questions.length} · {correctAnswers} ✓</span>
+                <span
+                    >{currentIndex + 1} / {questions.length} · {correctAnswers} ✓</span
+                >
             </div>
 
             <GroupQuizQuestion
@@ -345,11 +386,14 @@
                 </div>
 
                 <div>
-                    <h2 class="text-2xl font-bold text-zinc-900 dark:text-zinc-50">
+                    <h2
+                        class="text-2xl font-bold text-zinc-900 dark:text-zinc-50"
+                    >
                         {t['practice_quiz_finished']}
                     </h2>
                     <p class="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
-                        {t['score']}：<strong class="text-2xl text-zinc-900 dark:text-zinc-50"
+                        {t['score']}：<strong
+                            class="text-2xl text-zinc-900 dark:text-zinc-50"
                             >{score}%</strong
                         >
                         ({correctAnswers}/{questions.length})
@@ -362,7 +406,9 @@
     {#if phase === 'SELECT' && !isResolvingPoolSize && chosenCount !== null}
         <StickyActionBar>
             {#if loadFailed}
-                <p class="mb-2 text-center text-sm font-medium text-rose-600 dark:text-rose-400">
+                <p
+                    class="mb-2 text-center text-sm font-medium text-rose-600 dark:text-rose-400"
+                >
                     {t['load_failed']}
                 </p>
             {/if}
@@ -381,7 +427,10 @@
             <AnswerFeedbackBar
                 {answered}
                 correct={isCorrect}
-                correctAnswer={answerFor(currentQuestion.vocabulary, currentQuestion.type)}
+                correctAnswer={answerFor(
+                    currentQuestion.vocabulary,
+                    currentQuestion.type,
+                )}
             />
         </div>
 
@@ -408,7 +457,9 @@
                 >
                     {sample.processing
                         ? t['loading']
-                        : interpolate(t['retry_quiz_count'], { count: formatCount(questionCount) })}
+                        : interpolate(t['retry_quiz_count'], {
+                              count: formatCount(questionCount),
+                          })}
                 </button>
 
                 <button

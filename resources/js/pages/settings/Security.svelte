@@ -25,7 +25,9 @@
     import { Label } from '@/components/ui/label';
 
     const canManageTwoFactor = $derived(Boolean(page.props.canManageTwoFactor));
-    const requiresConfirmation = $derived(Boolean(page.props.requiresConfirmation));
+    const requiresConfirmation = $derived(
+        Boolean(page.props.requiresConfirmation),
+    );
     const twoFactorEnabled = $derived(Boolean(page.props.twoFactorEnabled));
     const canManagePasskeys = $derived(Boolean(page.props.canManagePasskeys));
     const passkeys = $derived(
@@ -45,7 +47,9 @@
         class="rounded-2xl border border-zinc-200 bg-zinc-50 p-6 shadow-xs sm:p-8 dark:border-zinc-800 dark:bg-zinc-900"
     >
         <div class="mb-6 space-y-1">
-            <h2 class="text-lg font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
+            <h2
+                class="text-lg font-bold tracking-tight text-zinc-900 dark:text-zinc-50"
+            >
                 {t['update_password']}
             </h2>
             <p class="text-sm text-zinc-500 dark:text-zinc-400">
@@ -58,11 +62,16 @@
             class="space-y-5"
             options={{ preserveScroll: true }}
             resetOnSuccess
-            resetOnError={['password', 'password_confirmation', 'current_password']}
+            resetOnError={[
+                'password',
+                'password_confirmation',
+                'current_password',
+            ]}
         >
             {#snippet children({ errors, processing })}
                 <div class="grid gap-2.5">
-                    <Label for="current_password">{t['current_password']}</Label>
+                    <Label for="current_password">{t['current_password']}</Label
+                    >
                     <PasswordInput
                         id="current_password"
                         name="current_password"
@@ -85,7 +94,9 @@
                 </div>
 
                 <div class="grid gap-2.5">
-                    <Label for="password_confirmation">{t['confirm_new_password']}</Label>
+                    <Label for="password_confirmation"
+                        >{t['confirm_new_password']}</Label
+                    >
                     <PasswordInput
                         id="password_confirmation"
                         name="password_confirmation"
@@ -97,7 +108,11 @@
                 </div>
 
                 <div class="pt-2">
-                    <Button type="submit" disabled={processing} data-test="update-password-button">
+                    <Button
+                        type="submit"
+                        disabled={processing}
+                        data-test="update-password-button"
+                    >
                         {processing ? t['updating'] : t['save_password']}
                     </Button>
                 </div>
@@ -105,7 +120,11 @@
         </Form>
     </div>
 
-    <ManageTwoFactor {canManageTwoFactor} {requiresConfirmation} {twoFactorEnabled} />
+    <ManageTwoFactor
+        {canManageTwoFactor}
+        {requiresConfirmation}
+        {twoFactorEnabled}
+    />
 
     <ManagePasskeys {canManagePasskeys} {passkeys} />
 </div>

@@ -24,7 +24,10 @@
     let t = $derived(translations());
 
     async function toggleRecoveryCodesVisibility() {
-        if (!isRecoveryCodesVisible && !twoFactorAuth.state.recoveryCodesList.length) {
+        if (
+            !isRecoveryCodesVisible &&
+            !twoFactorAuth.state.recoveryCodesList.length
+        ) {
             await twoFactorAuth.fetchRecoveryCodes();
         }
 
@@ -53,14 +56,18 @@
         </CardDescription>
     </CardHeader>
     <CardContent>
-        <div class="flex flex-col gap-3 select-none sm:flex-row sm:items-center sm:justify-between">
+        <div
+            class="flex flex-col gap-3 select-none sm:flex-row sm:items-center sm:justify-between"
+        >
             <Button onclick={toggleRecoveryCodesVisibility} class="w-fit">
                 {#if isRecoveryCodesVisible}
                     <EyeOff class="size-4" />
                 {:else}
                     <Eye class="size-4" />
                 {/if}
-                {isRecoveryCodesVisible ? t['hide_recovery_codes'] : t['view_recovery_codes']}
+                {isRecoveryCodesVisible
+                    ? t['hide_recovery_codes']
+                    : t['view_recovery_codes']}
             </Button>
 
             {#if isRecoveryCodesVisible && twoFactorAuth.state.recoveryCodesList.length}
@@ -70,7 +77,11 @@
                     onSuccess={() => twoFactorAuth.fetchRecoveryCodes()}
                 >
                     {#snippet children({ processing })}
-                        <Button variant="secondary" type="submit" disabled={processing}>
+                        <Button
+                            variant="secondary"
+                            type="submit"
+                            disabled={processing}
+                        >
                             <RefreshCw class="size-4" />
                             {t['regenerate_recovery_codes']}
                         </Button>
@@ -107,7 +118,9 @@
                             {/each}
                         {/if}
                     </div>
-                    <p class="text-sm text-zinc-500 select-none dark:text-zinc-400">
+                    <p
+                        class="text-sm text-zinc-500 select-none dark:text-zinc-400"
+                    >
                         {t['recovery_codes_instruction']}
                     </p>
                 </div>

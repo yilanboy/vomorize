@@ -40,7 +40,12 @@
 <DropdownMenuGroup>
     <DropdownMenuItem asChild>
         {#snippet children(props)}
-            <Link class={props.class} href={toUrl(edit())} prefetch onclick={props.onClick}>
+            <Link
+                class={props.class}
+                href={toUrl(edit())}
+                prefetch
+                onclick={props.onClick}
+            >
                 <Settings class="mr-2 h-4 w-4" />
                 {t['settings']}
             </Link>

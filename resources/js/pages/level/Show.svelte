@@ -1,8 +1,16 @@
 <script lang="ts">
     import { page, Link } from '@inertiajs/svelte';
     import Check from '@lucide/svelte/icons/check';
-    import { currentLocaleUrlKey, localized, translations } from '@/lib/locale.svelte';
-    import { getGuestProgressMap, deriveGroupStatus, calculateFillPercent } from '@/lib/progress';
+    import {
+        currentLocaleUrlKey,
+        localized,
+        translations,
+    } from '@/lib/locale.svelte';
+    import {
+        getGuestProgressMap,
+        deriveGroupStatus,
+        calculateFillPercent,
+    } from '@/lib/progress';
 
     /**
      * The five statuses collapse into three tiers, so that visual weight tracks what a
@@ -47,7 +55,9 @@
      * reasoning there. The mark is server-render-only: by the time the client renders, local
      * storage is in hand and the tiles below are drawn from it.
      */
-    let statusesAreInferred = $derived(isGuest && typeof window === 'undefined');
+    let statusesAreInferred = $derived(
+        isGuest && typeof window === 'undefined',
+    );
 
     /**
      * A group's status is a function of the current moment, so a page left open would
@@ -69,13 +79,19 @@
      * status stands and only its one time-dependent edge is advanced.
      */
     let displayGroups = $derived.by<GroupItem[]>(() => {
-        const guestMap = isGuest && typeof window !== 'undefined' ? getGuestProgressMap() : {};
+        const guestMap =
+            isGuest && typeof window !== 'undefined'
+                ? getGuestProgressMap()
+                : {};
 
         return groups.map((g: GroupItem) => {
             const p = guestMap[g.id];
 
             if (!p) {
-                return { ...g, status: promoteIfDue(g.status, g.next_review_at, nowMs) };
+                return {
+                    ...g,
+                    status: promoteIfDue(g.status, g.next_review_at, nowMs),
+                };
             }
 
             return {
@@ -84,18 +100,28 @@
                 last_score: p.last_score,
                 last_reviewed_at: p.last_reviewed_at,
                 next_review_at: p.next_review_at,
-                status: deriveGroupStatus(p.stage, p.last_score, p.next_review_at, nowMs),
+                status: deriveGroupStatus(
+                    p.stage,
+                    p.last_score,
+                    p.next_review_at,
+                    nowMs,
+                ),
             };
         });
     });
 
-    let completedCount = $derived(displayGroups.filter((g) => g.status === 'completed').length);
+    let completedCount = $derived(
+        displayGroups.filter((g) => g.status === 'completed').length,
+    );
     let actionableCount = $derived(
         displayGroups.filter((g) => tierOf(g.status) === 'actionable').length,
     );
 
     let levelTranslation = $derived<Omit<LevelTranslationData, 'locale'>>(
-        localized<LevelTranslationData>(level.translations) ?? { name: '', description: '' },
+        localized<LevelTranslationData>(level.translations) ?? {
+            name: '',
+            description: '',
+        },
     );
 
     /**
@@ -115,7 +141,10 @@
             return status;
         }
 
-        if (nextReviewAtIso !== null && new Date(nextReviewAtIso).getTime() > atMs) {
+        if (
+            nextReviewAtIso !== null &&
+            new Date(nextReviewAtIso).getTime() > atMs
+        ) {
             return status;
         }
 
@@ -187,7 +216,9 @@
 </script>
 
 <main class="mx-auto w-full max-w-4xl px-4 py-8 sm:px-6">
-    <div class="mb-6 flex flex-col justify-between gap-4 sm:flex-row sm:items-center">
+    <div
+        class="mb-6 flex flex-col justify-between gap-4 sm:flex-row sm:items-center"
+    >
         <div>
             <div class="flex items-center space-x-3">
                 <Link
@@ -196,8 +227,11 @@
                 >
                     &larr; {t['home']}
                 </Link>
-                <span class="text-sm text-zinc-500/50 dark:text-zinc-400/50">/</span>
-                <span class="text-sm font-medium text-zinc-500 dark:text-zinc-400"
+                <span class="text-sm text-zinc-500/50 dark:text-zinc-400/50"
+                    >/</span
+                >
+                <span
+                    class="text-sm font-medium text-zinc-500 dark:text-zinc-400"
                     >{levelTranslation.name}</span
                 >
             </div>
@@ -208,7 +242,10 @@
             >
                 {levelTranslation.name}
             </h1>
-            <p data-test="level-description" class="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
+            <p
+                data-test="level-description"
+                class="mt-1 text-sm text-zinc-500 dark:text-zinc-400"
+            >
                 {levelTranslation.description}
             </p>
         </div>
@@ -216,7 +253,8 @@
         <div
             class="inline-flex items-center space-x-2 rounded-full border border-zinc-200 bg-zinc-50 px-3.5 py-1.5 text-sm font-medium text-zinc-900 shadow-xs dark:border-zinc-800 dark:bg-zinc-900 dark:text-zinc-50"
         >
-            <span class="inline-block h-2 w-2 rounded-full bg-emerald-500"></span>
+            <span class="inline-block h-2 w-2 rounded-full bg-emerald-500"
+            ></span>
             <span class={statusesAreInferred ? 'summary-unverified' : ''}
                 >{completedCount}/{groups.length}
                 {t['completed']} · {actionableCount}
@@ -225,12 +263,18 @@
         </div>
     </div>
 
-    <div class="grid grid-cols-4 gap-3 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10">
+    <div
+        class="grid grid-cols-4 gap-3 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10"
+    >
         {#each displayGroups as g, index}
             {@const tier = tierOf(g.status)}
             {@const fill =
                 tier === 'pending'
-                    ? calculateFillPercent(g.last_reviewed_at, g.next_review_at, nowMs)
+                    ? calculateFillPercent(
+                          g.last_reviewed_at,
+                          g.next_review_at,
+                          nowMs,
+                      )
                     : 0}
             <Link
                 href={`/${currentLocaleUrlKey()}/groups/${g.id}`}

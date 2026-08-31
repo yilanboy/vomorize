@@ -24,7 +24,9 @@
     class="rounded-2xl border border-red-600/30 bg-zinc-50 p-6 shadow-xs sm:p-8 dark:border-red-400/30 dark:bg-zinc-900"
 >
     <div class="mb-4 space-y-1">
-        <h2 class="text-lg font-bold tracking-tight text-red-600 dark:text-red-400">
+        <h2
+            class="text-lg font-bold tracking-tight text-red-600 dark:text-red-400"
+        >
             {t['delete_account']}
         </h2>
         <p class="text-sm text-zinc-500 dark:text-zinc-400">
@@ -36,7 +38,9 @@
         class="rounded-xl border border-red-600/30 bg-red-600/10 p-4 text-sm dark:border-red-400/30 dark:bg-red-400/10"
     >
         <div class="flex items-start gap-3">
-            <AlertTriangle class="mt-0.5 h-5 w-5 shrink-0 text-red-600 dark:text-red-400" />
+            <AlertTriangle
+                class="mt-0.5 h-5 w-5 shrink-0 text-red-600 dark:text-red-400"
+            />
             <div class="space-y-1 text-red-600 dark:text-red-400">
                 <p class="font-semibold">
                     {t['delete_account_warning_title']}
@@ -50,7 +54,10 @@
         <div class="mt-4">
             <Dialog>
                 <DialogTrigger>
-                    <Button variant="destructive" data-test="delete-user-button">
+                    <Button
+                        variant="destructive"
+                        data-test="delete-user-button"
+                    >
                         {t['delete_account']}
                     </Button>
                 </DialogTrigger>
@@ -67,7 +74,9 @@
                                 >
                                     {t['confirm_delete_account_title']}
                                 </DialogTitle>
-                                <DialogDescription class="text-sm text-zinc-500 dark:text-zinc-400">
+                                <DialogDescription
+                                    class="text-sm text-zinc-500 dark:text-zinc-400"
+                                >
                                     {t['confirm_delete_account_desc']}
                                 </DialogDescription>
                             </div>
@@ -97,7 +106,9 @@
                                     disabled={processing}
                                     data-test="confirm-delete-user-button"
                                 >
-                                    {processing ? t['deleting'] : t['confirm_delete_account']}
+                                    {processing
+                                        ? t['deleting']
+                                        : t['confirm_delete_account']}
                                 </Button>
                             </DialogFooter>
                         {/snippet}

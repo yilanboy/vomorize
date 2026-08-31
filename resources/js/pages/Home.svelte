@@ -1,6 +1,10 @@
 <script lang="ts">
     import { page, Link } from '@inertiajs/svelte';
-    import { currentLocaleUrlKey, localized, translations } from '@/lib/locale.svelte';
+    import {
+        currentLocaleUrlKey,
+        localized,
+        translations,
+    } from '@/lib/locale.svelte';
     import { getGuestProgressMap, deriveGroupStatus } from '@/lib/progress';
     import { onMount } from 'svelte';
 
@@ -38,10 +42,17 @@
             let ready = 0;
             let pending = 0;
 
-            const levelRecords = guestRecords.filter((r) => r.level_id === level.id);
+            const levelRecords = guestRecords.filter(
+                (r) => r.level_id === level.id,
+            );
 
             for (const p of levelRecords) {
-                const status = deriveGroupStatus(p.stage, p.last_score, p.next_review_at, now);
+                const status = deriveGroupStatus(
+                    p.stage,
+                    p.last_score,
+                    p.next_review_at,
+                    now,
+                );
 
                 if (status === 'completed') {
                     completed++;
@@ -61,13 +72,22 @@
         });
     });
 
-    function getLevelTranslation(level: LevelItem): Omit<LevelTranslationItem, 'locale'> {
-        return localized<LevelTranslationItem>(level.translations) ?? { name: '', description: '' };
+    function getLevelTranslation(
+        level: LevelItem,
+    ): Omit<LevelTranslationItem, 'locale'> {
+        return (
+            localized<LevelTranslationItem>(level.translations) ?? {
+                name: '',
+                description: '',
+            }
+        );
     }
 </script>
 
 <main class="mx-auto w-full max-w-4xl px-4 py-8 sm:px-6">
-    <div class="mb-8 flex flex-col justify-between gap-4 sm:flex-row sm:items-center">
+    <div
+        class="mb-8 flex flex-col justify-between gap-4 sm:flex-row sm:items-center"
+    >
         <div>
             <h1
                 data-test="home-title"
@@ -75,7 +95,10 @@
             >
                 {t['home_title']}
             </h1>
-            <p data-test="home-subtitle" class="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
+            <p
+                data-test="home-subtitle"
+                class="mt-1 text-sm text-zinc-500 dark:text-zinc-400"
+            >
                 {t['home_subtitle']}
             </p>
         </div>
@@ -120,7 +143,9 @@
                 <div
                     class="mt-4 flex items-center justify-between border-t border-zinc-200 pt-3 text-sm text-zinc-500 dark:border-zinc-800 dark:text-zinc-400"
                 >
-                    <span data-test={`level-stats-${level.id}`}>{t['level_stats']}</span>
+                    <span data-test={`level-stats-${level.id}`}
+                        >{t['level_stats']}</span
+                    >
                     {#if level.ready_groups > 0}
                         <span class="font-medium text-orange-500">
                             {level.ready_groups}

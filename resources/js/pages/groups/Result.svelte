@@ -15,7 +15,10 @@
     let t = $derived(translations());
     let retryHref = $derived(
         result.phase === 'introduce'
-            ? introduceRoute.url({ locale: currentLocaleUrlKey(), group: group.id })
+            ? introduceRoute.url({
+                  locale: currentLocaleUrlKey(),
+                  group: group.id,
+              })
             : quizRoute.url({ locale: currentLocaleUrlKey(), group: group.id }),
     );
 </script>
@@ -32,9 +35,12 @@
             {result.passed ? '✓' : '×'}
         </div>
         <div>
-            <h1 class="text-2xl font-bold text-zinc-900 dark:text-zinc-50">{t['summary']}</h1>
+            <h1 class="text-2xl font-bold text-zinc-900 dark:text-zinc-50">
+                {t['summary']}
+            </h1>
             <p class="mt-2 text-sm text-zinc-500 dark:text-zinc-400">
-                {t['score']}：<strong class="text-2xl text-zinc-900 dark:text-zinc-50"
+                {t['score']}：<strong
+                    class="text-2xl text-zinc-900 dark:text-zinc-50"
                     >{result.score}%</strong
                 >
             </p>
@@ -62,7 +68,10 @@
                 </Link>
             {/if}
             <Link
-                href={showRoute.url({ locale: currentLocaleUrlKey(), group: group.id })}
+                href={showRoute.url({
+                    locale: currentLocaleUrlKey(),
+                    group: group.id,
+                })}
                 class="inline-flex flex-1 justify-center rounded-xl border border-zinc-200 px-4 py-3 text-sm font-semibold text-zinc-900 dark:border-zinc-800 dark:text-zinc-50"
             >
                 {t['back_to_group']}

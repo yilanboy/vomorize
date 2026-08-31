@@ -10,7 +10,11 @@
 </script>
 
 <div class="relative">
-    <Input type={showPassword ? 'text' : 'password'} class={cn('pr-10', className)} {...rest} />
+    <Input
+        type={showPassword ? 'text' : 'password'}
+        class={cn('pr-10', className)}
+        {...rest}
+    />
     <button
         type="button"
         onclick={() => (showPassword = !showPassword)}

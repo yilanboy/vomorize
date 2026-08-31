@@ -69,7 +69,9 @@
             <Separator class="w-full" />
         </div>
         <div class="relative flex justify-center text-sm uppercase">
-            <span class="bg-zinc-100 px-2 text-zinc-500 dark:bg-zinc-950 dark:text-zinc-400">
+            <span
+                class="bg-zinc-100 px-2 text-zinc-500 dark:bg-zinc-950 dark:text-zinc-400"
+            >
                 {props.separator ?? 'Or continue with email'}
             </span>
         </div>

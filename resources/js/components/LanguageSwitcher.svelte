@@ -9,7 +9,11 @@
         DropdownMenuTrigger,
     } from '@/components/ui/dropdown-menu';
     import { Button } from '@/components/ui/button';
-    import { currentLocale, availableLocales, toLocaleUrlKey } from '@/lib/locale.svelte';
+    import {
+        currentLocale,
+        availableLocales,
+        toLocaleUrlKey,
+    } from '@/lib/locale.svelte';
 
     function getLabel(locale: string) {
         return (

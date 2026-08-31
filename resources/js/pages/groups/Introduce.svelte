@@ -4,7 +4,9 @@
     import AnswerFeedbackBar from '@/components/AnswerFeedbackBar.svelte';
     import AudioButton from '@/components/AudioButton.svelte';
     import GroupQuizQuestion from '@/components/GroupQuizQuestion.svelte';
-    import QuizLeaveGuard, { disarmLeaveGuard } from '@/components/QuizLeaveGuard.svelte';
+    import QuizLeaveGuard, {
+        disarmLeaveGuard,
+    } from '@/components/QuizLeaveGuard.svelte';
     import StickyActionBar from '@/components/StickyActionBar.svelte';
     import { currentLocaleUrlKey, translations } from '@/lib/locale.svelte';
     import { calculateNextState, saveGuestGroupProgress } from '@/lib/progress';
@@ -43,7 +45,9 @@
     const batch = $derived(vocabularies.slice(batchStart, batchStart + 2));
     const currentVocabulary = $derived(batch[cardIndex]);
     const currentQuestion = $derived(questions[batchStart + questionIndex]);
-    const isCorrect = $derived(answered && selectedId === currentQuestion?.vocabulary.id);
+    const isCorrect = $derived(
+        answered && selectedId === currentQuestion?.vocabulary.id,
+    );
 
     function nextCard(): void {
         if (cardIndex < batch.length - 1) {
@@ -115,7 +119,10 @@
         }
 
         router.post(
-            progressRoute.store.url({ locale: currentLocaleUrlKey(), group: group.id }),
+            progressRoute.store.url({
+                locale: currentLocaleUrlKey(),
+                group: group.id,
+            }),
             { phase: 'introduce', score },
             {
                 onSuccess: () =>
@@ -135,7 +142,10 @@
 </script>
 
 <QuizLeaveGuard
-    exitUrl={levelRoute.url({ locale: currentLocaleUrlKey(), level: group.level_id })}
+    exitUrl={levelRoute.url({
+        locale: currentLocaleUrlKey(),
+        level: group.level_id,
+    })}
 />
 
 <div class="flex flex-1 flex-col">
@@ -157,24 +167,35 @@
             >
                 <div class="flex items-start justify-between gap-4">
                     <div>
-                        <h1 class="text-3xl font-extrabold text-zinc-900 dark:text-zinc-50">
+                        <h1
+                            class="text-3xl font-extrabold text-zinc-900 dark:text-zinc-50"
+                        >
                             {currentVocabulary.word}
                         </h1>
-                        <p class="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
+                        <p
+                            class="mt-1 text-sm text-zinc-500 dark:text-zinc-400"
+                        >
                             {currentVocabulary.part_of_speech} · {currentVocabulary.pronunciation}
                         </p>
                     </div>
-                    <AudioButton url={currentVocabulary.audio_url} label={t['pronunciation']} />
+                    <AudioButton
+                        url={currentVocabulary.audio_url}
+                        label={t['pronunciation']}
+                    />
                 </div>
                 <div
                     class="rounded-xl border border-zinc-200 bg-zinc-100/40 p-4 dark:border-zinc-800 dark:bg-zinc-800/40"
                 >
-                    <p class="text-lg font-semibold text-zinc-900 dark:text-zinc-50">
+                    <p
+                        class="text-lg font-semibold text-zinc-900 dark:text-zinc-50"
+                    >
                         {definitionOf(currentVocabulary)}
                     </p>
                 </div>
                 <div class="border-t border-zinc-200 pt-4 dark:border-zinc-800">
-                    <p class="text-sm font-medium text-zinc-900 dark:text-zinc-50">
+                    <p
+                        class="text-sm font-medium text-zinc-900 dark:text-zinc-50"
+                    >
                         {currentVocabulary.example_sentence}
                     </p>
                     <p class="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
@@ -197,7 +218,10 @@
             <AnswerFeedbackBar
                 {answered}
                 correct={isCorrect}
-                correctAnswer={answerFor(currentQuestion.vocabulary, currentQuestion.type)}
+                correctAnswer={answerFor(
+                    currentQuestion.vocabulary,
+                    currentQuestion.type,
+                )}
             />
         </div>
     {/if}

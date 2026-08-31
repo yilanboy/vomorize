@@ -7,8 +7,17 @@
     import AlertError from '@/components/AlertError.svelte';
     import InputError from '@/components/InputError.svelte';
     import { Button } from '@/components/ui/button';
-    import { Dialog, DialogContent, DialogDescription, DialogTitle } from '@/components/ui/dialog';
-    import { InputOTP, InputOTPGroup, InputOTPSlot } from '@/components/ui/input-otp';
+    import {
+        Dialog,
+        DialogContent,
+        DialogDescription,
+        DialogTitle,
+    } from '@/components/ui/dialog';
+    import {
+        InputOTP,
+        InputOTPGroup,
+        InputOTPSlot,
+    } from '@/components/ui/input-otp';
     import { Spinner } from '@/components/ui/spinner';
     import { translations } from '@/lib/locale.svelte';
     import { themeState } from '@/lib/theme.svelte';
@@ -133,7 +142,9 @@
                             ></div>
                         {/each}
                     </div>
-                    <ScanLine class="relative z-20 size-6 text-zinc-900 dark:text-zinc-50" />
+                    <ScanLine
+                        class="relative z-20 size-6 text-zinc-900 dark:text-zinc-50"
+                    />
                 </div>
             </div>
             <div class="my-3 space-y-1 text-center">
@@ -144,12 +155,16 @@
             </div>
         </div>
 
-        <div class="relative flex w-auto flex-col items-center justify-center space-y-5">
+        <div
+            class="relative flex w-auto flex-col items-center justify-center space-y-5"
+        >
             {#if !showVerificationStep}
                 {#if twoFactorAuth.state.errors.length}
                     <AlertError errors={twoFactorAuth.state.errors} />
                 {:else}
-                    <div class="relative mx-auto flex max-w-md items-center overflow-hidden">
+                    <div
+                        class="relative mx-auto flex max-w-md items-center overflow-hidden"
+                    >
                         <div
                             class="relative mx-auto aspect-square w-64 overflow-hidden rounded-lg border border-zinc-200 dark:border-zinc-800"
                         >
@@ -160,7 +175,9 @@
                                     <Spinner class="size-6" />
                                 </div>
                             {:else}
-                                <div class="relative z-10 overflow-hidden border p-5">
+                                <div
+                                    class="relative z-10 overflow-hidden border p-5"
+                                >
                                     <div
                                         class="flex aspect-square size-full items-center justify-center [&>svg]:size-full"
                                         style={resolvedAppearance() === 'dark'
@@ -184,16 +201,22 @@
                         </Button>
                     </div>
 
-                    <div class="relative flex w-full items-center justify-center">
+                    <div
+                        class="relative flex w-full items-center justify-center"
+                    >
                         <div
                             class="absolute inset-0 top-1/2 h-px w-full bg-zinc-200 dark:bg-zinc-800"
                         ></div>
-                        <span class="relative bg-zinc-50 px-2 py-1 dark:bg-zinc-900">
+                        <span
+                            class="relative bg-zinc-50 px-2 py-1 dark:bg-zinc-900"
+                        >
                             {t['or_manual_code']}
                         </span>
                     </div>
 
-                    <div class="flex w-full items-center justify-center space-x-2">
+                    <div
+                        class="flex w-full items-center justify-center space-x-2"
+                    >
                         <div
                             class="flex w-full items-stretch overflow-hidden rounded-xl border border-zinc-200 dark:border-zinc-800"
                         >
@@ -212,7 +235,10 @@
                                 />
                                 <button
                                     onclick={() =>
-                                        copyToClipboard(twoFactorAuth.state.manualSetupKey || '')}
+                                        copyToClipboard(
+                                            twoFactorAuth.state
+                                                .manualSetupKey || '',
+                                        )}
                                     class="relative block h-auto border-l border-zinc-200 px-3 hover:bg-zinc-100 dark:border-zinc-800 dark:hover:bg-zinc-800"
                                 >
                                     {#if copied}
@@ -234,7 +260,10 @@
                 >
                     {#snippet children({ errors: formErrors, processing })}
                         <input type="hidden" name="code" value={code} />
-                        <div bind:this={pinInputContainerRef} class="relative w-full space-y-3">
+                        <div
+                            bind:this={pinInputContainerRef}
+                            class="relative w-full space-y-3"
+                        >
                             <div
                                 class="flex w-full flex-col items-center justify-center space-y-3 py-2"
                             >
@@ -252,7 +281,9 @@
                                     </InputOTPGroup>
                                 </InputOTP>
                                 <InputError
-                                    message={formErrors?.['confirmTwoFactorAuthentication.code']}
+                                    message={formErrors?.[
+                                        'confirmTwoFactorAuthentication.code'
+                                    ]}
                                 />
                             </div>
 
@@ -261,7 +292,8 @@
                                     type="button"
                                     variant="outline"
                                     class="w-auto flex-1"
-                                    onclick={() => (showVerificationStep = false)}
+                                    onclick={() =>
+                                        (showVerificationStep = false)}
                                     disabled={processing}
                                 >
                                     {t['back']}

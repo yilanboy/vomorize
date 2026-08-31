@@ -64,6 +64,8 @@
 
     <div class="space-x-1 text-center text-sm text-zinc-500 dark:text-zinc-400">
         <span>Or, return to</span>
-        <TextLink href={login({ locale: currentLocaleUrlKey() })}>log in</TextLink>
+        <TextLink href={login({ locale: currentLocaleUrlKey() })}
+            >log in</TextLink
+        >
     </div>
 </div>

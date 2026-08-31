@@ -1,7 +1,11 @@
 <script lang="ts">
     import AudioButton from '@/components/AudioButton.svelte';
     import LargeAudioButton from '@/components/LargeAudioButton.svelte';
-    import { playAudio, playCorrectSound, playWrongSound } from '@/lib/audio.svelte';
+    import {
+        playAudio,
+        playCorrectSound,
+        playWrongSound,
+    } from '@/lib/audio.svelte';
     import { answerFor, definitionOf } from '@/lib/groupQuiz';
     import type { QuizQuestion, QuizVocabulary } from '@/lib/groupQuiz';
     import { translations } from '@/lib/locale.svelte';
@@ -74,15 +78,21 @@
         data-question-type={question.type}
         class="flex min-h-40 flex-col items-center justify-center gap-6 text-center"
     >
-        <p class="text-sm font-semibold text-zinc-900 dark:text-zinc-50">{prompt}</p>
+        <p class="text-sm font-semibold text-zinc-900 dark:text-zinc-50">
+            {prompt}
+        </p>
 
         {#if question.type === 'word_to_translation'}
-            <h2 class="text-4xl font-bold wrap-break-word text-zinc-900 dark:text-zinc-50">
+            <h2
+                class="text-4xl font-bold wrap-break-word text-zinc-900 dark:text-zinc-50"
+            >
                 {question.vocabulary.word}
             </h2>
             <AudioButton url={question.vocabulary.audio_url} />
         {:else if question.type === 'translation_to_word'}
-            <h2 class="text-4xl font-bold wrap-break-word text-zinc-900 dark:text-zinc-50">
+            <h2
+                class="text-4xl font-bold wrap-break-word text-zinc-900 dark:text-zinc-50"
+            >
                 {definitionOf(question.vocabulary)}
             </h2>
         {:else}
@@ -97,9 +107,12 @@
             a group sharing a definition also no longer collide on the same key.
         -->
         {#each question.options as option (option.id)}
-            {@const answeredCorrect = answered && option.id === question.vocabulary.id}
+            {@const answeredCorrect =
+                answered && option.id === question.vocabulary.id}
             {@const answeredWrong =
-                answered && selectedId === option.id && option.id !== question.vocabulary.id}
+                answered &&
+                selectedId === option.id &&
+                option.id !== question.vocabulary.id}
             <button
                 type="button"
                 onclick={() => select(option)}

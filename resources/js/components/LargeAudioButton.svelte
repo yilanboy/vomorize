@@ -43,7 +43,7 @@
         disabled={isBusy}
         aria-label={label || t['pronunciation']}
         data-audio-url={url}
-        class="inline-flex h-20 w-20 cursor-pointer items-center justify-center rounded-full border border-zinc-200 bg-white text-zinc-900 shadow-xs hover:bg-zinc-25 hover:text-zinc-900 focus:outline-hidden disabled:opacity-50 dark:border-zinc-800 dark:bg-zinc-800 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-50"
+        class="hover:bg-zinc-25 inline-flex h-20 w-20 cursor-pointer items-center justify-center rounded-full border border-zinc-200 bg-white text-zinc-900 shadow-xs hover:text-zinc-900 focus:outline-hidden disabled:opacity-50 dark:border-zinc-800 dark:bg-zinc-800 dark:text-zinc-50 dark:hover:bg-zinc-700 dark:hover:text-zinc-50"
     >
         {#if isBusy}
             <span
@@ -68,6 +68,8 @@
     </button>
 
     {#if isUnavailable}
-        <span class="text-sm font-medium text-amber-600">{t['audio_unavailable']}</span>
+        <span class="text-sm font-medium text-amber-600"
+            >{t['audio_unavailable']}</span
+        >
     {/if}
 </div>

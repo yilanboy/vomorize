@@ -174,7 +174,11 @@
         </div>
 
         <DialogFooter class="gap-2">
-            <Button variant="outline" class="text-red-600 dark:text-red-400" onclick={leave}>
+            <Button
+                variant="outline"
+                class="text-red-600 dark:text-red-400"
+                onclick={leave}
+            >
                 {t['leave_quiz_confirm']}
             </Button>
 

@@ -32,7 +32,9 @@
         class="rounded-2xl border border-zinc-200 bg-zinc-50 p-6 shadow-xs sm:p-8 dark:border-zinc-800 dark:bg-zinc-900"
     >
         <div class="mb-6 space-y-1">
-            <h2 class="text-lg font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
+            <h2
+                class="text-lg font-bold tracking-tight text-zinc-900 dark:text-zinc-50"
+            >
                 {t['passkeys']}
             </h2>
             <p class="text-sm text-zinc-500 dark:text-zinc-400">
@@ -52,7 +54,9 @@
                     <div
                         class="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-zinc-100 dark:bg-zinc-800"
                     >
-                        <KeyRound class="h-6 w-6 text-zinc-500 dark:text-zinc-400" />
+                        <KeyRound
+                            class="h-6 w-6 text-zinc-500 dark:text-zinc-400"
+                        />
                     </div>
                     <p class="font-semibold text-zinc-900 dark:text-zinc-50">
                         {t['no_passkeys']}

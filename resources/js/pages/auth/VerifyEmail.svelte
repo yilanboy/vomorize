@@ -84,7 +84,9 @@
                     <Mail class="h-8 w-8" />
                 </div>
 
-                <h1 class="text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
+                <h1
+                    class="text-3xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50"
+                >
                     {t['verify_email_title']}
                 </h1>
                 <p class="mt-2 text-base text-zinc-500 dark:text-zinc-400">
@@ -95,8 +97,11 @@
                     <div
                         class="mt-4 rounded-lg bg-zinc-100 px-3.5 py-2 text-sm font-medium text-zinc-500 dark:bg-zinc-800 dark:text-zinc-400"
                     >
-                        <span class="text-zinc-500 dark:text-zinc-400">{t['sent_to_email']}</span>
-                        <span class="font-semibold text-zinc-900 dark:text-zinc-50"
+                        <span class="text-zinc-500 dark:text-zinc-400"
+                            >{t['sent_to_email']}</span
+                        >
+                        <span
+                            class="font-semibold text-zinc-900 dark:text-zinc-50"
                             >{user.email}</span
                         >
                     </div>

@@ -35,7 +35,9 @@
 
 <main class="mx-auto w-full max-w-4xl px-4 py-8 sm:px-6">
     <div class="mb-8">
-        <h1 class="text-2xl font-bold tracking-tight text-zinc-900 sm:text-3xl dark:text-zinc-50">
+        <h1
+            class="text-2xl font-bold tracking-tight text-zinc-900 sm:text-3xl dark:text-zinc-50"
+        >
             {t['settings']}
         </h1>
         <p class="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
@@ -50,7 +52,10 @@
                 aria-label="Settings navigation"
             >
                 {#each sidebarNavItems as item (toUrl(item.href))}
-                    {@const isActive = url.isCurrentUrl(item.href, url.currentUrl)}
+                    {@const isActive = url.isCurrentUrl(
+                        item.href,
+                        url.currentUrl,
+                    )}
                     <Link
                         href={toUrl(item.href)}
                         class="flex shrink-0 items-center gap-2.5 rounded-xl px-3.5 py-2.5 text-sm font-medium transition-all {isActive

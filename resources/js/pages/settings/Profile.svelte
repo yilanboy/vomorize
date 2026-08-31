@@ -35,7 +35,9 @@
         class="rounded-2xl border border-zinc-200 bg-zinc-50 p-6 shadow-xs sm:p-8 dark:border-zinc-800 dark:bg-zinc-900"
     >
         <div class="mb-6 space-y-1">
-            <h2 class="text-lg font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
+            <h2
+                class="text-lg font-bold tracking-tight text-zinc-900 dark:text-zinc-50"
+            >
                 {t['profile_settings']}
             </h2>
             <p class="text-sm text-zinc-500 dark:text-zinc-400">
@@ -94,7 +96,9 @@
                         </TextLink>
 
                         {#if page.props.status === 'verification-link-sent'}
-                            <div class="mt-2 text-sm font-semibold text-emerald-700">
+                            <div
+                                class="mt-2 text-sm font-semibold text-emerald-700"
+                            >
                                 {t['verification_link_sent']}
                             </div>
                         {/if}
@@ -102,7 +106,11 @@
                 {/if}
 
                 <div class="pt-2">
-                    <Button type="submit" disabled={processing} data-test="update-profile-button">
+                    <Button
+                        type="submit"
+                        disabled={processing}
+                        data-test="update-profile-button"
+                    >
                         {processing ? t['saving'] : t['save_changes']}
                     </Button>
                 </div>

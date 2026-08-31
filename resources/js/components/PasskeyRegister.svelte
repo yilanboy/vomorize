@@ -93,8 +93,13 @@
         {/if}
 
         <div class="flex gap-2">
-            <Button type="submit" disabled={passkeyRegister.isLoading || !name.trim()}>
-                {passkeyRegister.isLoading ? t['registering_passkey'] : t['confirm_add_passkey']}
+            <Button
+                type="submit"
+                disabled={passkeyRegister.isLoading || !name.trim()}
+            >
+                {passkeyRegister.isLoading
+                    ? t['registering_passkey']
+                    : t['confirm_add_passkey']}
             </Button>
             <Button type="button" variant="ghost" onclick={handleCancel}>
                 {t['cancel']}

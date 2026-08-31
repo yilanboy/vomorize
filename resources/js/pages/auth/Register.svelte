@@ -15,7 +15,11 @@
     import { Input } from '@/components/ui/input';
     import { Label } from '@/components/ui/label';
     import { Spinner } from '@/components/ui/spinner';
-    import { currentLocale, currentLocaleUrlKey, translations } from '@/lib/locale.svelte';
+    import {
+        currentLocale,
+        currentLocaleUrlKey,
+        translations,
+    } from '@/lib/locale.svelte';
     import { login } from '@/routes';
     import { store } from '@/routes/register';
 
@@ -73,7 +77,9 @@
             </div>
 
             <div class="grid gap-2.5">
-                <Label for="password_confirmation">{t['confirm_password']}</Label>
+                <Label for="password_confirmation"
+                    >{t['confirm_password']}</Label
+                >
                 <PasswordInput
                     id="password_confirmation"
                     required
@@ -97,10 +103,15 @@
 
             <div class="relative py-2">
                 <div class="absolute inset-0 flex items-center">
-                    <span class="w-full border-t border-zinc-200 dark:border-zinc-800"></span>
+                    <span
+                        class="w-full border-t border-zinc-200 dark:border-zinc-800"
+                    ></span>
                 </div>
-                <div class="relative flex justify-center text-sm font-medium uppercase">
-                    <span class="bg-zinc-50 px-2 text-zinc-500 dark:bg-zinc-900 dark:text-zinc-400"
+                <div
+                    class="relative flex justify-center text-sm font-medium uppercase"
+                >
+                    <span
+                        class="bg-zinc-50 px-2 text-zinc-500 dark:bg-zinc-900 dark:text-zinc-400"
                         >{t['or']}</span
                     >
                 </div>
@@ -122,7 +133,9 @@
 
         <div class="text-center text-sm text-zinc-500 dark:text-zinc-400">
             {t['already_have_account']}
-            <TextLink href={login({ locale: currentLocaleUrlKey() })}>{t['login']}</TextLink>
+            <TextLink href={login({ locale: currentLocaleUrlKey() })}
+                >{t['login']}</TextLink
+            >
         </div>
     {/snippet}
 </Form>

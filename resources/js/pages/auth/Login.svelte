@@ -16,7 +16,11 @@
     import { Input } from '@/components/ui/input';
     import { Label } from '@/components/ui/label';
     import { Spinner } from '@/components/ui/spinner';
-    import { currentLocale, currentLocaleUrlKey, translations } from '@/lib/locale.svelte';
+    import {
+        currentLocale,
+        currentLocaleUrlKey,
+        translations,
+    } from '@/lib/locale.svelte';
     import { register } from '@/routes';
     import { store } from '@/routes/login';
     import { request } from '@/routes/password';
@@ -40,7 +44,11 @@
     </div>
 {/if}
 
-<Form {...store.form()} resetOnSuccess={['password']} class="flex flex-col gap-6">
+<Form
+    {...store.form()}
+    resetOnSuccess={['password']}
+    class="flex flex-col gap-6"
+>
     {#snippet children({ errors, processing })}
         <div class="grid gap-4">
             <div class="grid gap-2.5">
@@ -58,7 +66,9 @@
 
             <div class="grid gap-2.5">
                 <div class="flex items-center justify-between">
-                    <Label for="password" data-test="password-label">{t['password']}</Label>
+                    <Label for="password" data-test="password-label"
+                        >{t['password']}</Label
+                    >
                     {#if canResetPassword}
                         <TextLink
                             href={request({ locale: currentLocaleUrlKey() })}
@@ -103,9 +113,13 @@
 
             <div class="relative py-2">
                 <div class="absolute inset-0 flex items-center">
-                    <span class="w-full border-t border-zinc-200 dark:border-zinc-800"></span>
+                    <span
+                        class="w-full border-t border-zinc-200 dark:border-zinc-800"
+                    ></span>
                 </div>
-                <div class="relative flex justify-center text-sm font-medium uppercase">
+                <div
+                    class="relative flex justify-center text-sm font-medium uppercase"
+                >
                     <span
                         data-test="or-divider"
                         class="bg-zinc-50 px-2 text-zinc-500 dark:bg-zinc-900 dark:text-zinc-400"
@@ -136,8 +150,8 @@
             <span data-test="no-account-text">{t['no_account']}</span>
             <TextLink
                 href={register({ locale: currentLocaleUrlKey() })}
-                data-test="sign-up-link"
-            >{t['sign_up']}</TextLink>
+                data-test="sign-up-link">{t['sign_up']}</TextLink
+            >
         </div>
     {/snippet}
 </Form>

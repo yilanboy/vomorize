@@ -54,8 +54,13 @@
             <p class="text-sm text-zinc-500 dark:text-zinc-400">
                 {t['added_at'].replace(':time', passkey.created_at_diff)}
                 {#if passkey.last_used_at_diff}
-                    <span class="mx-1 text-zinc-500/50 dark:text-zinc-400/50">/</span>
-                    {t['last_used_at'].replace(':time', passkey.last_used_at_diff)}
+                    <span class="mx-1 text-zinc-500/50 dark:text-zinc-400/50"
+                        >/</span
+                    >
+                    {t['last_used_at'].replace(
+                        ':time',
+                        passkey.last_used_at_diff,
+                    )}
                 {/if}
             </p>
         </div>
@@ -89,8 +94,14 @@
                         </Button>
                     {/snippet}
                 </DialogClose>
-                <Button variant="destructive" disabled={isDeleting} onclick={handleDelete}>
-                    {isDeleting ? t['removing_passkey'] : t['remove_passkey_button']}
+                <Button
+                    variant="destructive"
+                    disabled={isDeleting}
+                    onclick={handleDelete}
+                >
+                    {isDeleting
+                        ? t['removing_passkey']
+                        : t['remove_passkey_button']}
                 </Button>
             </DialogFooter>
         </DialogContent>

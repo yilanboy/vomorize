@@ -4,7 +4,11 @@
     import InputError from '@/components/InputError.svelte';
     import { Button } from '@/components/ui/button';
     import { Input } from '@/components/ui/input';
-    import { InputOTP, InputOTPGroup, InputOTPSlot } from '@/components/ui/input-otp';
+    import {
+        InputOTP,
+        InputOTPGroup,
+        InputOTPSlot,
+    } from '@/components/ui/input-otp';
     import { store } from '@/routes/two-factor/login';
     import type { TwoFactorConfigContent } from '@/types';
 
@@ -47,10 +51,17 @@
 
 <div class="space-y-6">
     {#if !showRecoveryInput}
-        <Form {...store.form()} class="space-y-4" resetOnError onError={() => (code = '')}>
+        <Form
+            {...store.form()}
+            class="space-y-4"
+            resetOnError
+            onError={() => (code = '')}
+        >
             {#snippet children({ errors, processing, clearErrors })}
                 <input type="hidden" name="code" value={code} />
-                <div class="flex flex-col items-center justify-center space-y-3 text-center">
+                <div
+                    class="flex flex-col items-center justify-center space-y-3 text-center"
+                >
                     <div class="flex w-full items-center justify-center">
                         <InputOTP
                             id="otp"
@@ -68,8 +79,12 @@
                     </div>
                     <InputError message={errors.code} />
                 </div>
-                <Button type="submit" class="w-full" disabled={processing}>Continue</Button>
-                <div class="text-center text-sm text-zinc-500 dark:text-zinc-400">
+                <Button type="submit" class="w-full" disabled={processing}
+                    >Continue</Button
+                >
+                <div
+                    class="text-center text-sm text-zinc-500 dark:text-zinc-400"
+                >
                     <span>or you can </span>
                     <button
                         type="button"
@@ -91,9 +106,13 @@
                     required
                 />
                 <InputError message={errors.recovery_code} />
-                <Button type="submit" class="w-full" disabled={processing}>Continue</Button>
+                <Button type="submit" class="w-full" disabled={processing}
+                    >Continue</Button
+                >
 
-                <div class="text-center text-sm text-zinc-500 dark:text-zinc-400">
+                <div
+                    class="text-center text-sm text-zinc-500 dark:text-zinc-400"
+                >
                     <span>or you can </span>
                     <button
                         type="button"

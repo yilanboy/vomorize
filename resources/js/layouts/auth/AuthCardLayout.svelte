@@ -25,7 +25,9 @@
     <div>
         <AppNavbar />
 
-        <div class="flex flex-col items-center justify-center px-4 py-12 sm:px-6">
+        <div
+            class="flex flex-col items-center justify-center px-4 py-12 sm:px-6"
+        >
             <div class="w-full max-w-md space-y-6">
                 {#if translatedTitle || translatedDescription}
                     <div class="space-y-2 text-center">
