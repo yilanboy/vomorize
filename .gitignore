@@ -33,3 +33,10 @@ yarn-error.log
 **/caddy
 frankenphp
 frankenphp-worker.php
+
+/.agents
+/.ai
+/.junie
+AGENTS.md
+.mcp.json
+boost.json
