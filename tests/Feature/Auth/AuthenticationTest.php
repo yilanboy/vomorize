@@ -37,8 +37,10 @@ test('users can authenticate using the login screen', function (string $locale) 
         ]);
 })->with(Locale::values());
 
-test('unverified users are redirected to verification notice after login', function () {
+test('unverified users are redirected to verification notice after login', function (Locale $locale) {
     $user = User::factory()->unverified()->create();
+
+    app()->setLocale($locale->value);
 
     $response = $this->post(route('login.store'), [
         'email' => $user->email,
@@ -46,8 +48,14 @@ test('unverified users are redirected to verification notice after login', funct
     ]);
 
     $this->assertAuthenticated();
-    $response->assertRedirect(route('verification.notice', absolute: false));
-});
+    $response->assertRedirect(
+        route(
+            name: 'verification.notice',
+            parameters: ['locale' => $locale->routeKey()],
+            absolute: false
+        )
+    );
+})->with(Locale::cases());
 
 test('users can authenticate with remember me enabled', function () {
     $user = User::factory()->create();

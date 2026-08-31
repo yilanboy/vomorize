@@ -15,11 +15,7 @@
     import { Input } from '@/components/ui/input';
     import { Label } from '@/components/ui/label';
     import { Spinner } from '@/components/ui/spinner';
-    import {
-        currentLocale,
-        currentLocaleUrlKey,
-        translations,
-    } from '@/lib/locale.svelte';
+    import { currentLocaleUrlKey, translations } from '@/lib/locale.svelte';
     import { login } from '@/routes';
     import { store } from '@/routes/register';
 
@@ -38,7 +34,7 @@
     {#snippet children({ errors, processing })}
         <div class="grid gap-4">
             <div class="grid gap-2.5">
-                <Label for="name">{t['name']}</Label>
+                <Label for="name" data-test="name-label">{t['name']}</Label>
                 <Input
                     id="name"
                     type="text"
@@ -51,7 +47,7 @@
             </div>
 
             <div class="grid gap-2.5">
-                <Label for="email">{t['email']}</Label>
+                <Label for="email" data-test="email-label">{t['email']}</Label>
                 <Input
                     id="email"
                     type="email"
@@ -64,7 +60,7 @@
             </div>
 
             <div class="grid gap-2.5">
-                <Label for="password">{t['password']}</Label>
+                <Label for="password" data-test="password-label">{t['password']}</Label>
                 <PasswordInput
                     id="password"
                     required
@@ -77,7 +73,7 @@
             </div>
 
             <div class="grid gap-2.5">
-                <Label for="password_confirmation"
+                <Label for="password_confirmation" data-test="confirm-password-label"
                     >{t['confirm_password']}</Label
                 >
                 <PasswordInput
@@ -111,6 +107,7 @@
                     class="relative flex justify-center text-sm font-medium uppercase"
                 >
                     <span
+                        data-test="or-divider"
                         class="bg-zinc-50 px-2 text-zinc-500 dark:bg-zinc-900 dark:text-zinc-400"
                         >{t['or']}</span
                     >
@@ -119,7 +116,11 @@
 
             <Button variant="outline" class="w-full" asChild>
                 {#snippet children(props)}
-                    <a href="/auth/github" {...props}>
+                    <a
+                        href="/auth/github"
+                        data-test="github-register-button"
+                        {...props}
+                    >
                         <svg class="h-4 w-4 fill-current" viewBox="0 0 24 24">
                             <path
                                 d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.39-1.305.705-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"
@@ -132,10 +133,11 @@
         </div>
 
         <div class="text-center text-sm text-zinc-500 dark:text-zinc-400">
-            {t['already_have_account']}
-            <TextLink href={login({ locale: currentLocaleUrlKey() })}
-                >{t['login']}</TextLink
-            >
+            <span data-test="already-have-account-text">{t['already_have_account']}</span>
+            <TextLink
+                href={login({ locale: currentLocaleUrlKey() })}
+                data-test="login-link"
+            >{t['login']}</TextLink>
         </div>
     {/snippet}
 </Form>
