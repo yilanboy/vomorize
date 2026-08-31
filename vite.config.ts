@@ -67,6 +67,7 @@ export default defineConfig({
         semi: true,
         singleAttributePerLine: false,
         htmlWhitespaceSensitivity: 'css',
+        svelte: true,
         ignorePatterns: [
             '.github/**',
             'composer.json',
