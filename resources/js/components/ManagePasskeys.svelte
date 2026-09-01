@@ -34,7 +34,7 @@
             description="Manage your passkeys for passwordless sign-in"
         />
 
-        <div class="overflow-hidden rounded-lg border border-border">
+        <div class="border-border overflow-hidden rounded-lg border">
             {#if passkeys.length > 0}
                 {#each passkeys as passkey (passkey.id)}
                     <PasskeyItem {passkey} onDelete={handleDelete} />
@@ -42,12 +42,12 @@
             {:else}
                 <div class="p-8 text-center">
                     <div
-                        class="mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl bg-muted"
+                        class="bg-muted mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-2xl"
                     >
-                        <KeyRound class="h-7 w-7 text-muted-foreground" />
+                        <KeyRound class="text-muted-foreground h-7 w-7" />
                     </div>
                     <p class="font-medium">No passkeys yet</p>
-                    <p class="mt-1 text-sm text-muted-foreground">
+                    <p class="text-muted-foreground mt-1 text-sm">
                         Add a passkey to sign in without a password
                     </p>
                 </div>

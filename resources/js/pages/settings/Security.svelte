@@ -12,10 +12,7 @@
 </script>
 
 <script lang="ts">
-    import {
-        Form ,
-        page,
-    } from '@inertiajs/svelte';
+    import { Form, page } from '@inertiajs/svelte';
     import SecurityController from '@/actions/App/Http/Controllers/Settings/SecurityController';
     import AppHead from '@/components/AppHead.svelte';
     import Heading from '@/components/Heading.svelte';

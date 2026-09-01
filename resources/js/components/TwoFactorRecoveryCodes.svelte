@@ -98,13 +98,13 @@
                 <div class="mt-3 space-y-3">
                     <div
                         bind:this={recoveryCodeSectionRef}
-                        class="grid gap-1 rounded-lg bg-muted p-4 font-mono text-sm"
+                        class="bg-muted grid gap-1 rounded-lg p-4 font-mono text-sm"
                     >
                         {#if !twoFactorAuth.state.recoveryCodesList.length}
                             <div class="space-y-2">
                                 {#each { length: 8 } as _, n (n)}
                                     <div
-                                        class="h-4 animate-pulse rounded bg-muted-foreground/20"
+                                        class="bg-muted-foreground/20 h-4 animate-pulse rounded"
                                     ></div>
                                 {/each}
                             </div>
@@ -114,7 +114,7 @@
                             {/each}
                         {/if}
                     </div>
-                    <p class="text-xs text-muted-foreground select-none">
+                    <p class="text-muted-foreground text-xs select-none">
                         Each recovery code can be used once to access your
                         account and will be removed after use. If you need more,
                         click <span class="font-bold">Regenerate codes</span> above.

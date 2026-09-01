@@ -21,7 +21,7 @@
     class="relative grid h-dvh flex-col items-center justify-center px-8 sm:px-0 lg:max-w-none lg:grid-cols-2 lg:px-0"
 >
     <div
-        class="relative hidden h-full flex-col bg-muted p-10 text-white lg:flex dark:border-r"
+        class="bg-muted relative hidden h-full flex-col p-10 text-white lg:flex dark:border-r"
     >
         <div class="absolute inset-0 bg-zinc-900"></div>
         <Link
@@ -41,7 +41,7 @@
                     <h1 class="text-xl font-medium tracking-tight">{title}</h1>
                 {/if}
                 {#if description}
-                    <p class="text-sm text-muted-foreground">{description}</p>
+                    <p class="text-muted-foreground text-sm">{description}</p>
                 {/if}
             </div>
             {@render children?.()}

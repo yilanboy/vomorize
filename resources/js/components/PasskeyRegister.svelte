@@ -60,7 +60,7 @@
 </script>
 
 {#if !passkeyRegister.isSupported}
-    <div class="text-sm text-muted-foreground">
+    <div class="text-muted-foreground text-sm">
         Passkeys are not supported in this browser.
     </div>
 {:else if !showForm}
@@ -70,7 +70,7 @@
 {:else}
     <form
         onsubmit={handleSubmit}
-        class="space-y-4 rounded-lg border border-border bg-muted/50 p-4"
+        class="border-border bg-muted/50 space-y-4 rounded-lg border p-4"
     >
         <div class="grid gap-2">
             <Label for="passkey-name">Passkey name</Label>
@@ -79,10 +79,10 @@
                 type="text"
                 bind:value={name}
                 placeholder="e.g., MacBook Pro, iPhone"
-                class="mt-1 block w-full border-foreground/20"
+                class="border-foreground/20 mt-1 block w-full"
                 autofocus
             />
-            <p class="text-xs text-muted-foreground">
+            <p class="text-muted-foreground text-xs">
                 A name helps you identify this passkey later.
             </p>
         </div>

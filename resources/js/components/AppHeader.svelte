@@ -80,7 +80,7 @@
 </script>
 
 <div>
-    <div class="border-b border-sidebar-border/80">
+    <div class="border-sidebar-border/80 border-b">
         <div class="mx-auto flex h-16 items-center px-4 md:max-w-7xl">
             <!-- Mobile Menu -->
             <div class="lg:hidden">
@@ -112,7 +112,7 @@
                                 {#each mainNavItems as item (toUrl(item.href))}
                                     <Link
                                         href={toUrl(item.href)}
-                                        class="flex items-center gap-x-3 rounded-lg px-3 py-2 text-sm font-medium hover:bg-accent {url.whenCurrentUrl(
+                                        class="hover:bg-accent flex items-center gap-x-3 rounded-lg px-3 py-2 text-sm font-medium {url.whenCurrentUrl(
                                             item.href,
                                             url.currentUrl,
                                             activeItemStyles,
@@ -208,7 +208,7 @@
                                                 target="_blank"
                                                 rel="noopener noreferrer"
                                                 {...props}
-                                                class="inline-flex items-center justify-center rounded-md text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground h-9 w-9 group cursor-pointer"
+                                                class="hover:bg-accent hover:text-accent-foreground group inline-flex h-9 w-9 cursor-pointer items-center justify-center rounded-md text-sm font-medium transition-colors"
                                             >
                                                 <span class="sr-only"
                                                     >{item.title}</span
@@ -234,7 +234,7 @@
                             <Button
                                 variant="ghost"
                                 size="icon"
-                                class="relative size-10 w-auto rounded-full p-1 focus-within:ring-2 focus-within:ring-primary"
+                                class="focus-within:ring-primary relative size-10 w-auto rounded-full p-1 focus-within:ring-2"
                                 onclick={props.onclick}
                                 aria-expanded={props['aria-expanded']}
                                 data-state={props['data-state']}
@@ -268,7 +268,7 @@
     </div>
 
     {#if breadcrumbs.length > 1}
-        <div class="flex w-full border-b border-sidebar-border/70">
+        <div class="border-sidebar-border/70 flex w-full border-b">
             <div
                 class="mx-auto flex h-12 w-full items-center justify-start px-4 text-neutral-500 md:max-w-7xl"
             >

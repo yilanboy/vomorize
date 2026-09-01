@@ -75,7 +75,7 @@
 
             {#if Boolean(page.props.mustVerifyEmail) && !user.email_verified_at}
                 <div>
-                    <p class="-mt-4 text-sm text-muted-foreground">
+                    <p class="text-muted-foreground -mt-4 text-sm">
                         Your email address is unverified.
                         <TextLink href={send()} as="button">
                             Click here to re-send the verification email.
