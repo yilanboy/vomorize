@@ -1,5 +1,6 @@
 <?php
 
+use App\Enums\Locale;
 use App\Http\Middleware\EnsureEmailIsVerified;
 use App\Http\Middleware\HandleAppearance;
 use App\Http\Middleware\HandleInertiaRequests;
@@ -17,6 +18,19 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
+        $middleware->redirectGuestsTo(function (Request $request) {
+            $locale = $request->route('locale')
+                ?? $request->cookie('locale')
+                ?? config('app.locale');
+
+            $locale = is_string($locale) ? $locale : null;
+
+            $routeKey = Locale::tryFromValueOrRouteKey($locale)?->routeKey()
+                ?? Locale::ChineseT->routeKey();
+
+            return route('login', ['locale' => $routeKey]);
+        });
+
         $middleware->encryptCookies(except: ['appearance', 'locale']);
 
         $middleware->web(append: [
