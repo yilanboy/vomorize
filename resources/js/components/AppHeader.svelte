@@ -55,7 +55,7 @@
     const url = currentUrlState();
 
     const activeItemStyles =
-        'text-neutral-900 dark:bg-neutral-800 dark:text-neutral-100';
+        'text-zinc-900 dark:bg-zinc-800 dark:text-zinc-100';
 
     const mainNavItems: NavItem[] = [
         {
@@ -249,7 +249,7 @@
                                         />
                                     {/if}
                                     <AvatarFallback
-                                        class="rounded-lg bg-neutral-200 font-semibold text-black dark:bg-neutral-700 dark:text-white"
+                                        class="rounded-lg bg-zinc-200 font-semibold text-black dark:bg-zinc-700 dark:text-white"
                                     >
                                         {getInitials(auth.user?.name ?? '')}
                                     </AvatarFallback>
@@ -270,7 +270,7 @@
     {#if breadcrumbs.length > 1}
         <div class="border-sidebar-border/70 flex w-full border-b">
             <div
-                class="mx-auto flex h-12 w-full items-center justify-start px-4 text-neutral-500 md:max-w-7xl"
+                class="mx-auto flex h-12 w-full items-center justify-start px-4 text-zinc-500 md:max-w-7xl"
             >
                 <Breadcrumbs {breadcrumbs} />
             </div>
