@@ -1,5 +1,6 @@
 <script lang="ts">
     import { Link, router } from '@inertiajs/svelte';
+    import LayoutGrid from '@lucide/svelte/icons/layout-grid';
     import LogOut from '@lucide/svelte/icons/log-out';
     import Settings from '@lucide/svelte/icons/settings';
     import {
@@ -9,8 +10,9 @@
         DropdownMenuSeparator,
     } from '@/components/ui/dropdown-menu';
     import UserInfo from '@/components/UserInfo.svelte';
+    import { t } from '@/lib/i18n';
     import { toUrl } from '@/lib/utils';
-    import { logout } from '@/routes';
+    import { dashboard, logout } from '@/routes';
     import { edit } from '@/routes/profile';
     import type { User } from '@/types';
 
@@ -39,12 +41,25 @@
         {#snippet children(props)}
             <Link
                 class={props.class}
+                href={toUrl(dashboard())}
+                prefetch
+                onclick={props.onClick}
+            >
+                <LayoutGrid class="mr-2 h-4 w-4" />
+                {t('ui.nav.dashboard')}
+            </Link>
+        {/snippet}
+    </DropdownMenuItem>
+    <DropdownMenuItem asChild>
+        {#snippet children(props)}
+            <Link
+                class={props.class}
                 href={toUrl(edit())}
                 prefetch
                 onclick={props.onClick}
             >
                 <Settings class="mr-2 h-4 w-4" />
-                Settings
+                {t('ui.nav.settings')}
             </Link>
         {/snippet}
     </DropdownMenuItem>
@@ -53,14 +68,14 @@
 <DropdownMenuItem asChild>
     {#snippet children(props)}
         <Link
-            class={props.class}
+            class="{props.class} text-destructive focus:text-destructive"
             href={logout()}
             as="button"
             onclick={handleLogout(props.onClick)}
             data-test="logout-button"
         >
             <LogOut class="mr-2 h-4 w-4" />
-            Log out
+            {t('ui.nav.logout')}
         </Link>
     {/snippet}
 </DropdownMenuItem>

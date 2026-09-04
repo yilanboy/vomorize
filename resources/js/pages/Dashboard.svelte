@@ -18,26 +18,26 @@
 
 <AppHead title="Dashboard" />
 
-<div class="flex h-full flex-1 flex-col gap-4 overflow-x-auto rounded-xl p-4">
+<div class="mx-auto flex w-full max-w-7xl flex-1 flex-col gap-6 p-4 sm:p-6 lg:p-8">
     <div class="grid auto-rows-min gap-4 md:grid-cols-3">
         <div
-            class="border-sidebar-border/70 dark:border-sidebar-border relative aspect-video overflow-hidden rounded-xl border"
+            class="relative aspect-video overflow-hidden rounded-xl border border-border"
         >
             <PlaceholderPattern />
         </div>
         <div
-            class="border-sidebar-border/70 dark:border-sidebar-border relative aspect-video overflow-hidden rounded-xl border"
+            class="relative aspect-video overflow-hidden rounded-xl border border-border"
         >
             <PlaceholderPattern />
         </div>
         <div
-            class="border-sidebar-border/70 dark:border-sidebar-border relative aspect-video overflow-hidden rounded-xl border"
+            class="relative aspect-video overflow-hidden rounded-xl border border-border"
         >
             <PlaceholderPattern />
         </div>
     </div>
     <div
-        class="border-sidebar-border/70 dark:border-sidebar-border relative min-h-screen flex-1 rounded-xl border md:min-h-min"
+        class="relative min-h-[400px] flex-1 rounded-xl border border-border"
     >
         <PlaceholderPattern />
     </div>

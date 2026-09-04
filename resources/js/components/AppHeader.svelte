@@ -1,13 +1,9 @@
 <script lang="ts">
     import { Link, page } from '@inertiajs/svelte';
-    import BookOpen from '@lucide/svelte/icons/book-open';
-    import Folder from '@lucide/svelte/icons/folder';
-    import LayoutGrid from '@lucide/svelte/icons/layout-grid';
     import Menu from '@lucide/svelte/icons/menu';
-    import Search from '@lucide/svelte/icons/search';
-    import AppLogo from '@/components/AppLogo.svelte';
     import AppLogoIcon from '@/components/AppLogoIcon.svelte';
-    import Breadcrumbs from '@/components/Breadcrumbs.svelte';
+    import MobileNavSheet from '@/components/MobileNavSheet.svelte';
+    import ThemeToggle from '@/components/ThemeToggle.svelte';
     import {
         Avatar,
         AvatarFallback,
@@ -19,229 +15,120 @@
         DropdownMenuContent,
         DropdownMenuTrigger,
     } from '@/components/ui/dropdown-menu';
-    import {
-        NavigationMenu,
-        NavigationMenuItem,
-        NavigationMenuList,
-        navigationMenuTriggerStyle,
-    } from '@/components/ui/navigation-menu';
-    import {
-        Sheet,
-        SheetContent,
-        SheetHeader,
-        SheetTitle,
-        SheetTrigger,
-    } from '@/components/ui/sheet';
-    import {
-        Tooltip,
-        TooltipContent,
-        TooltipProvider,
-        TooltipTrigger,
-    } from '@/components/ui/tooltip';
     import UserMenuContent from '@/components/UserMenuContent.svelte';
     import { currentUrlState } from '@/lib/currentUrl.svelte';
+    import { t } from '@/lib/i18n';
     import { getInitials } from '@/lib/initials';
-    import { toUrl } from '@/lib/utils';
-    import { dashboard } from '@/routes';
-    import type { BreadcrumbItem, NavItem } from '@/types';
+    import { cn, toUrl } from '@/lib/utils';
+    import { dashboard, login } from '@/routes';
+    import type { BreadcrumbItem } from '@/types';
 
     let {
         breadcrumbs = [],
+        class: className = '',
     }: {
         breadcrumbs?: BreadcrumbItem[];
+        class?: string;
     } = $props();
 
     const auth = $derived(page.props.auth);
     const url = currentUrlState();
 
-    const activeItemStyles =
-        'text-zinc-900 dark:bg-zinc-800 dark:text-zinc-100';
-
-    const mainNavItems: NavItem[] = [
-        {
-            title: 'Dashboard',
-            href: dashboard(),
-            icon: LayoutGrid,
-        },
-    ];
-
-    const rightNavItems: NavItem[] = [
-        {
-            title: 'Repository',
-            href: 'https://github.com/laravel/svelte-starter-kit',
-            icon: Folder,
-        },
-        {
-            title: 'Documentation',
-            href: 'https://laravel.com/docs/starter-kits#svelte',
-            icon: BookOpen,
-        },
-    ];
+    let mobileNavOpen = $state(false);
 </script>
 
-<div>
-    <div class="border-sidebar-border/80 border-b">
-        <div class="mx-auto flex h-16 items-center px-4 md:max-w-7xl">
-            <!-- Mobile Menu -->
-            <div class="lg:hidden">
-                <Sheet>
-                    <SheetTrigger asChild>
-                        {#snippet children(props)}
-                            <Button
-                                variant="ghost"
-                                size="icon"
-                                class="mr-2 h-9 w-9"
-                                onclick={props.onclick}
-                                aria-expanded={props['aria-expanded']}
-                            >
-                                <Menu class="h-5 w-5" />
-                            </Button>
-                        {/snippet}
-                    </SheetTrigger>
-                    <SheetContent side="left" class="w-[300px] p-6">
-                        <SheetTitle class="sr-only">Navigation menu</SheetTitle>
-                        <SheetHeader class="flex justify-start text-left">
-                            <AppLogoIcon
-                                class="size-6 fill-current text-black dark:text-white"
-                            />
-                        </SheetHeader>
-                        <div
-                            class="flex h-full flex-1 flex-col justify-between space-y-4 pt-6 pb-10"
-                        >
-                            <nav class="-mx-3 space-y-1">
-                                {#each mainNavItems as item (toUrl(item.href))}
-                                    <Link
-                                        href={toUrl(item.href)}
-                                        class="hover:bg-accent flex items-center gap-x-3 rounded-lg px-3 py-2 text-sm font-medium {url.whenCurrentUrl(
-                                            item.href,
-                                            url.currentUrl,
-                                            activeItemStyles,
-                                            '',
-                                        ) ?? ''}"
-                                    >
-                                        {#if item.icon}
-                                            <item.icon class="h-5 w-5" />
-                                        {/if}
-                                        {item.title}
-                                    </Link>
-                                {/each}
-                            </nav>
-                            <div class="flex flex-col space-y-4">
-                                {#each rightNavItems as item (toUrl(item.href))}
-                                    <a
-                                        href={toUrl(item.href)}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        class="flex items-center space-x-2 text-sm font-medium"
-                                    >
-                                        {#if item.icon}
-                                            <item.icon class="h-5 w-5" />
-                                        {/if}
-                                        <span>{item.title}</span>
-                                    </a>
-                                {/each}
-                            </div>
-                        </div>
-                    </SheetContent>
-                </Sheet>
-            </div>
+<header
+    class={cn(
+        'sticky top-0 z-40 h-16 w-full border-b border-border bg-background transition-colors duration-300',
+        className,
+    )}
+>
+    <div
+        class="mx-auto flex h-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8"
+    >
+        <!-- Left: Mobile Menu Toggle & Brand Logo -->
+        <div class="flex items-center gap-2 lg:gap-6">
+            <!-- Mobile Menu Button (< lg) -->
+            <button
+                type="button"
+                class="inline-flex size-9 cursor-pointer items-center justify-center rounded-lg text-zinc-500 transition-colors duration-200 hover:bg-zinc-200/50 hover:text-zinc-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-200 lg:hidden dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-100 dark:focus-visible:ring-zinc-700"
+                onclick={() => (mobileNavOpen = true)}
+                aria-label={t('ui.nav.open_menu')}
+            >
+                <Menu class="size-5" />
+            </button>
 
-            <Link href={toUrl(dashboard())} class="flex items-center gap-x-2">
-                <AppLogo />
+            <!-- Brand Logo -->
+            <Link
+                href="/levels"
+                class="flex items-center gap-2.5 font-bold text-foreground transition-opacity hover:opacity-90"
+            >
+                <div
+                    class="flex size-8 items-center justify-center rounded-lg bg-primary text-primary-foreground shadow-xs"
+                >
+                    <AppLogoIcon class="size-5 fill-current" />
+                </div>
+                <span class="text-xl font-bold tracking-tight">Vomorize</span>
+            </Link>
+        </div>
+
+        <!-- Center: Desktop Navigation Links (lg:) -->
+        <nav class="hidden items-center gap-1.5 lg:flex">
+            {#if auth.user}
+                <Link
+                    href={toUrl(dashboard())}
+                    class={{
+                        'inline-flex items-center rounded-lg px-3.5 py-2 text-sm font-medium transition-colors': true,
+                        'bg-accent font-semibold text-foreground': url.isCurrentUrl(dashboard(), url.currentUrl),
+                        'text-muted-foreground hover:bg-accent/60 hover:text-foreground': !url.isCurrentUrl(dashboard(), url.currentUrl),
+                    }}
+                >
+                    {t('ui.nav.dashboard')}
+                </Link>
+            {/if}
+
+            <Link
+                href="/levels"
+                class={{
+                    'inline-flex items-center rounded-lg px-3.5 py-2 text-sm font-medium transition-colors': true,
+                    'bg-accent font-semibold text-foreground': url.isCurrentOrParentUrl('/levels', url.currentUrl),
+                    'text-muted-foreground hover:bg-accent/60 hover:text-foreground': !url.isCurrentOrParentUrl('/levels', url.currentUrl),
+                }}
+            >
+                {t('ui.nav.levels')}
             </Link>
 
-            <!-- Desktop Menu -->
-            <div class="hidden h-full lg:flex lg:flex-1">
-                <NavigationMenu class="ml-10 flex h-full items-stretch">
-                    <NavigationMenuList
-                        class="flex h-full items-stretch space-x-2"
-                    >
-                        {#each mainNavItems as item (toUrl(item.href))}
-                            <NavigationMenuItem
-                                class="relative flex h-full items-center"
-                            >
-                                <Link
-                                    class="{navigationMenuTriggerStyle()} {url.whenCurrentUrl(
-                                        item.href,
-                                        url.currentUrl,
-                                        activeItemStyles,
-                                        '',
-                                    ) ?? ''} h-9 cursor-pointer px-4"
-                                    href={toUrl(item.href)}
-                                >
-                                    {#if item.icon}
-                                        <item.icon class="mr-2 h-4 w-4" />
-                                    {/if}
-                                    {item.title}
-                                </Link>
-                                {#if url.isCurrentUrl(item.href, url.currentUrl)}
-                                    <div
-                                        class="absolute bottom-0 left-0 h-0.5 w-full translate-y-px bg-black dark:bg-white"
-                                    ></div>
-                                {/if}
-                            </NavigationMenuItem>
-                        {/each}
-                    </NavigationMenuList>
-                </NavigationMenu>
-            </div>
+            <Link
+                href="/quiz"
+                class={{
+                    'inline-flex items-center rounded-lg px-3.5 py-2 text-sm font-medium transition-colors': true,
+                    'bg-accent font-semibold text-foreground': url.isCurrentOrParentUrl('/quiz', url.currentUrl),
+                    'text-muted-foreground hover:bg-accent/60 hover:text-foreground': !url.isCurrentOrParentUrl('/quiz', url.currentUrl),
+                }}
+            >
+                {t('ui.nav.quiz')}
+            </Link>
+        </nav>
 
-            <div class="ml-auto flex items-center space-x-2">
-                <div class="relative flex items-center space-x-1">
-                    <Button
-                        variant="ghost"
-                        size="icon"
-                        class="group h-9 w-9 cursor-pointer"
-                    >
-                        <Search
-                            class="size-5 opacity-80 group-hover:opacity-100"
-                        />
-                    </Button>
+        <!-- Right: ThemeToggle + Member Avatar / Login -->
+        <div class="flex items-center gap-2">
+            <!-- Theme Toggle Dropdown -->
+            <ThemeToggle />
 
-                    <div class="hidden space-x-1 lg:flex">
-                        {#each rightNavItems as item (toUrl(item.href))}
-                            <TooltipProvider delayDuration={0}>
-                                <Tooltip>
-                                    <TooltipTrigger>
-                                        {#snippet child({ props })}
-                                            <a
-                                                href={toUrl(item.href)}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                {...props}
-                                                class="hover:bg-accent hover:text-accent-foreground group inline-flex h-9 w-9 cursor-pointer items-center justify-center rounded-md text-sm font-medium transition-colors"
-                                            >
-                                                <span class="sr-only"
-                                                    >{item.title}</span
-                                                >
-                                                <item.icon
-                                                    class="size-5 opacity-80 group-hover:opacity-100"
-                                                />
-                                            </a>
-                                        {/snippet}
-                                    </TooltipTrigger>
-                                    <TooltipContent>
-                                        <p>{item.title}</p>
-                                    </TooltipContent>
-                                </Tooltip>
-                            </TooltipProvider>
-                        {/each}
-                    </div>
-                </div>
-
+            <!-- Member Avatar or Guest Login -->
+            {#if auth.user}
                 <DropdownMenu>
                     <DropdownMenuTrigger asChild>
                         {#snippet children(props)}
                             <Button
                                 variant="ghost"
                                 size="icon"
-                                class="focus-within:ring-primary relative size-10 w-auto rounded-full p-1 focus-within:ring-2"
+                                class="relative size-9 cursor-pointer rounded-full p-0 ring-offset-background transition-all hover:ring-2 hover:ring-primary/40 focus-visible:ring-2 focus-visible:ring-ring"
                                 onclick={props.onclick}
                                 aria-expanded={props['aria-expanded']}
                                 data-state={props['data-state']}
                             >
-                                <Avatar
-                                    class="size-8 overflow-hidden rounded-full"
-                                >
+                                <Avatar class="size-8">
                                     {#if auth.user?.avatar}
                                         <AvatarImage
                                             src={auth.user.avatar}
@@ -249,7 +136,7 @@
                                         />
                                     {/if}
                                     <AvatarFallback
-                                        class="rounded-lg bg-zinc-200 font-semibold text-black dark:bg-zinc-700 dark:text-white"
+                                        class="bg-muted font-semibold text-foreground"
                                     >
                                         {getInitials(auth.user?.name ?? '')}
                                     </AvatarFallback>
@@ -258,22 +145,21 @@
                         {/snippet}
                     </DropdownMenuTrigger>
                     <DropdownMenuContent align="end" class="w-56">
-                        {#if auth.user}
-                            <UserMenuContent user={auth.user} />
-                        {/if}
+                        <UserMenuContent user={auth.user} />
                     </DropdownMenuContent>
                 </DropdownMenu>
-            </div>
+            {:else}
+                <Button asChild size="sm">
+                    {#snippet children(props)}
+                        <Link href={toUrl(login())} class={props.class}>
+                            {t('ui.nav.login')}
+                        </Link>
+                    {/snippet}
+                </Button>
+            {/if}
         </div>
     </div>
+</header>
 
-    {#if breadcrumbs.length > 1}
-        <div class="border-sidebar-border/70 flex w-full border-b">
-            <div
-                class="mx-auto flex h-12 w-full items-center justify-start px-4 text-zinc-500 md:max-w-7xl"
-            >
-                <Breadcrumbs {breadcrumbs} />
-            </div>
-        </div>
-    {/if}
-</div>
+<!-- Mobile Navigation Drawer -->
+<MobileNavSheet bind:open={mobileNavOpen} />

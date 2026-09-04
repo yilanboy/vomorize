@@ -44,4 +44,22 @@ class HandleInertiaRequests extends Middleware
             'sidebarOpen' => ! $request->hasCookie('sidebar_state') || $request->cookie('sidebar_state') === 'true',
         ];
     }
+
+    /**
+     * Define the props that are shared once per session visit.
+     *
+     * @see https://inertiajs.com/shared-data
+     *
+     * @return array<string, mixed>
+     */
+    public function shareOnce(Request $request): array
+    {
+        return [
+            ...parent::shareOnce($request),
+            'locale' => fn () => app()->getLocale(),
+            'translations' => fn () => [
+                'ui' => trans('ui'),
+            ],
+        ];
+    }
 }
