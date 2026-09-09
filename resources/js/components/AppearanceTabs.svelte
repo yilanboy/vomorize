@@ -23,9 +23,7 @@
     }
 </script>
 
-<div
-    class="inline-flex gap-1 rounded-lg bg-zinc-100 p-1 dark:bg-zinc-800"
->
+<div class="inline-flex gap-1 rounded-lg bg-zinc-100 p-1 dark:bg-zinc-800">
     {#each tabs as { value, Icon, label } (value)}
         <button
             onclick={() => handleAppearanceChange(value)}

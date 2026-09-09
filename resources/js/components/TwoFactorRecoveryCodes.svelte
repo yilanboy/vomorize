@@ -114,7 +114,9 @@
                             {/each}
                         {/if}
                     </div>
-                    <p class="text-muted-foreground text-xs select-none">
+                    <p
+                        class="text-muted-foreground text-sm leading-relaxed select-none"
+                    >
                         Each recovery code can be used once to access your
                         account and will be removed after use. If you need more,
                         click <span class="font-bold">Regenerate codes</span> above.

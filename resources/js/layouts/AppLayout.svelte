@@ -17,7 +17,7 @@
 </script>
 
 <div
-    class="flex min-h-screen flex-col bg-background text-foreground transition-colors duration-300"
+    class="bg-background text-foreground flex min-h-screen flex-col transition-colors duration-300"
 >
     <AppHeader {breadcrumbs} />
 

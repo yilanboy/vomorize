@@ -15,14 +15,8 @@ export function t(
     const props = page.props as Record<string, any>;
     const translations = props?.translations ?? {};
 
-    // 移除開頭可選的 'ui.' 前綴以支援兩種寫法 (ui.nav.levels 或 nav.levels)
-    let path = key;
-    if (path.startsWith('ui.')) {
-        path = path.slice(3);
-    }
-
-    const segments = path.split('.');
-    let current: any = translations.ui ?? translations;
+    const segments = key.split('.');
+    let current: any = translations;
 
     for (const segment of segments) {
         if (current && typeof current === 'object' && segment in current) {
@@ -39,7 +33,10 @@ export function t(
 
     let result = current;
     for (const [placeholder, value] of Object.entries(replacements)) {
-        result = result.replace(new RegExp(`:${placeholder}`, 'g'), String(value));
+        result = result.replace(
+            new RegExp(`:${placeholder}`, 'g'),
+            String(value),
+        );
     }
 
     return result;

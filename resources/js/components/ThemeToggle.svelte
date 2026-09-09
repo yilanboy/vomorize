@@ -77,7 +77,7 @@
                             <span>{t(option.key)}</span>
                         </div>
                         {#if appearance.value === option.value}
-                            <Check class="size-4 text-primary" />
+                            <Check class="text-primary size-4" />
                         {/if}
                     </button>
                 {/snippet}

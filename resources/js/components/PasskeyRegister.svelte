@@ -82,7 +82,7 @@
                 class="border-foreground/20 mt-1 block w-full"
                 autofocus
             />
-            <p class="text-muted-foreground text-xs">
+            <p class="text-muted-foreground text-sm">
                 A name helps you identify this passkey later.
             </p>
         </div>

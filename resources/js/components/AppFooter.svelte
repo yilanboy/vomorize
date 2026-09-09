@@ -10,12 +10,12 @@
 
 <footer
     class={cn(
-        'border-t border-border bg-background transition-colors duration-300',
+        'border-border bg-background border-t transition-colors duration-300',
         className,
     )}
 >
     <div
-        class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 py-6 text-sm text-muted-foreground sm:flex-row sm:px-6 lg:px-8"
+        class="text-muted-foreground mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 py-6 text-sm sm:flex-row sm:px-6 lg:px-8"
     >
         <div class="text-center sm:text-left">
             <span>{t('ui.footer.copyright', { year: currentYear })}</span>
@@ -26,7 +26,7 @@
                 href="https://github.com/yilanboy/vomorize"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="inline-flex items-center gap-2 text-muted-foreground transition-colors duration-200 hover:text-foreground"
+                class="text-muted-foreground hover:text-foreground inline-flex items-center gap-2 transition-colors duration-200"
                 aria-label={t('ui.nav.github')}
             >
                 <Github class="size-4.5" />
