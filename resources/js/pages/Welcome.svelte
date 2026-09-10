@@ -155,7 +155,7 @@
             <div class="flex flex-col items-start text-left lg:col-span-7">
                 <!-- Pill Badge -->
                 <div
-                    class="border-blue-200 bg-blue-50 text-blue-700 dark:border-blue-900/60 dark:bg-blue-950/40 dark:text-blue-400 inline-flex items-center gap-2 rounded-full border px-3.5 py-1.5 text-sm font-semibold tracking-wide"
+                    class="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-3.5 py-1.5 text-sm font-semibold tracking-wide text-blue-700 dark:border-blue-900/60 dark:bg-blue-950/40 dark:text-blue-400"
                 >
                     <Sparkles class="size-4" />
                     <span>{t('ui.welcome.hero.badge')}</span>
@@ -182,11 +182,13 @@
                     <Button
                         asChild
                         size="lg"
-                        class="bg-blue-600 hover:bg-blue-700 text-white shadow-md shadow-blue-500/20 w-full sm:w-auto text-base font-semibold"
+                        class="w-full bg-blue-600 text-base font-semibold text-white shadow-md shadow-blue-500/20 hover:bg-blue-700 sm:w-auto"
                     >
                         {#snippet children(props)}
                             <Link href="/levels" class={props.class}>
-                                <span>{t('ui.welcome.hero.start_learning')}</span>
+                                <span
+                                    >{t('ui.welcome.hero.start_learning')}</span
+                                >
                                 <ArrowRight class="size-4.5" />
                             </Link>
                         {/snippet}
@@ -200,7 +202,9 @@
                     >
                         {#snippet children(props)}
                             <a href="#levels" class={props.class}>
-                                <span>{t('ui.welcome.hero.explore_levels')}</span>
+                                <span
+                                    >{t('ui.welcome.hero.explore_levels')}</span
+                                >
                             </a>
                         {/snippet}
                     </Button>
@@ -242,7 +246,7 @@
                     class="text-muted-foreground mt-8 flex flex-wrap items-center gap-2 text-sm font-medium"
                 >
                     <span
-                        class="text-emerald-600 dark:text-emerald-400 flex items-center gap-1.5 font-semibold"
+                        class="flex items-center gap-1.5 font-semibold text-emerald-600 dark:text-emerald-400"
                     >
                         <CheckCircle2 class="size-4.5" />
                         <span>{t('ui.welcome.hero.free_notice')}</span>
@@ -272,7 +276,7 @@
                             class="text-foreground flex items-center gap-1.5 font-semibold"
                         >
                             <BookOpen
-                                class="text-blue-600 dark:text-blue-400 size-4.5"
+                                class="size-4.5 text-blue-600 dark:text-blue-400"
                             />
                             <span>Vomorize</span>
                         </span>
@@ -290,7 +294,8 @@
                                 onclick={playDemoAudio}
                                 class={{
                                     'text-muted-foreground hover:text-foreground rounded-full p-1 transition-colors': true,
-                                    'text-blue-600 animate-pulse': isPlayingAudio,
+                                    'animate-pulse text-blue-600':
+                                        isPlayingAudio,
                                 }}
                                 title={t('ui.welcome.hero.play_audio')}
                             >
@@ -304,9 +309,11 @@
                         class="border-border/80 bg-muted/40 relative flex flex-col rounded-2xl border p-5 text-left"
                     >
                         <!-- Tag Row -->
-                        <div class="mb-3 flex w-full items-center justify-between">
+                        <div
+                            class="mb-3 flex w-full items-center justify-between"
+                        >
                             <span
-                                class="border-blue-200 bg-blue-50 text-blue-700 dark:border-blue-900/60 dark:bg-blue-950/50 dark:text-blue-300 rounded-md border px-2.5 py-0.5 text-sm font-bold uppercase tracking-wide"
+                                class="rounded-md border border-blue-200 bg-blue-50 px-2.5 py-0.5 text-sm font-bold tracking-wide text-blue-700 uppercase dark:border-blue-900/60 dark:bg-blue-950/50 dark:text-blue-300"
                             >
                                 {t('ui.welcome.hero.demo_pos')}
                             </span>
@@ -328,8 +335,9 @@
                                 type="button"
                                 onclick={playDemoAudio}
                                 class={{
-                                    'flex size-6 items-center justify-center rounded-full bg-blue-100 text-blue-700 hover:bg-blue-200 dark:bg-blue-950/70 dark:text-blue-300 transition-colors': true,
-                                    'ring-2 ring-blue-500 ring-offset-1': isPlayingAudio,
+                                    'flex size-6 items-center justify-center rounded-full bg-blue-100 text-blue-700 transition-colors hover:bg-blue-200 dark:bg-blue-950/70 dark:text-blue-300': true,
+                                    'ring-2 ring-blue-500 ring-offset-1':
+                                        isPlayingAudio,
                                 }}
                                 title={t('ui.welcome.hero.play_audio')}
                             >
@@ -345,7 +353,7 @@
                         <!-- Meaning -->
                         <div class="border-border/60 w-full border-t pt-3 pb-3">
                             <span
-                                class="text-muted-foreground mb-1 block text-sm font-bold uppercase tracking-wider"
+                                class="text-muted-foreground mb-1 block text-sm font-bold tracking-wider uppercase"
                             >
                                 {t('ui.welcome.hero.demo_definition_label')}
                             </span>
@@ -361,16 +369,16 @@
 
                         <!-- Contextual Example -->
                         <div
-                            class="border-border bg-card shadow-2xs mb-4 w-full rounded-xl border p-3.5"
+                            class="border-border bg-card mb-4 w-full rounded-xl border p-3.5 shadow-2xs"
                         >
                             <span
-                                class="text-muted-foreground mb-1 block text-sm font-bold uppercase tracking-wider"
+                                class="text-muted-foreground mb-1 block text-sm font-bold tracking-wider uppercase"
                             >
                                 {t('ui.welcome.hero.demo_example_label')}
                             </span>
                             <p class="text-foreground text-sm leading-relaxed">
                                 Her natural <span
-                                    class="text-blue-600 dark:text-blue-400 font-bold underline decoration-blue-300 decoration-2 underline-offset-2"
+                                    class="font-bold text-blue-600 underline decoration-blue-300 decoration-2 underline-offset-2 dark:text-blue-400"
                                     >resilience</span
                                 >
                                 helped her overcome immense challenges.
@@ -379,10 +387,10 @@
 
                         <!-- Mastery Status Badge (Emerald Green) -->
                         <div
-                            class="border-emerald-200 bg-emerald-50 text-emerald-700 dark:border-emerald-900/60 dark:bg-emerald-950/40 dark:text-emerald-300 flex items-center justify-center gap-1.5 rounded-xl border px-3.5 py-2 text-sm font-medium"
+                            class="flex items-center justify-center gap-1.5 rounded-xl border border-emerald-200 bg-emerald-50 px-3.5 py-2 text-sm font-medium text-emerald-700 dark:border-emerald-900/60 dark:bg-emerald-950/40 dark:text-emerald-300"
                         >
                             <CheckCircle2
-                                class="text-emerald-600 dark:text-emerald-400 size-4"
+                                class="size-4 text-emerald-600 dark:text-emerald-400"
                             />
                             <span>{t('ui.welcome.hero.demo_srs_badge')}</span>
                         </div>
@@ -395,8 +403,10 @@
                             onclick={() => (demoState = 'forgot')}
                             class={{
                                 'flex items-center justify-center gap-1.5 rounded-xl px-3.5 py-2.5 text-sm font-semibold transition-colors': true,
-                                'bg-secondary hover:bg-secondary/80 text-secondary-foreground': demoState !== 'forgot',
-                                'bg-red-100 text-red-700 dark:bg-red-950/60 dark:text-red-300 ring-2 ring-red-500': demoState === 'forgot',
+                                'bg-secondary hover:bg-secondary/80 text-secondary-foreground':
+                                    demoState !== 'forgot',
+                                'bg-red-100 text-red-700 ring-2 ring-red-500 dark:bg-red-950/60 dark:text-red-300':
+                                    demoState === 'forgot',
                             }}
                         >
                             <RotateCcw class="text-muted-foreground size-4" />
@@ -406,9 +416,11 @@
                             type="button"
                             onclick={() => (demoState = 'mastered')}
                             class={{
-                                'shadow-2xs flex items-center justify-center gap-1.5 rounded-xl px-3.5 py-2.5 text-sm font-bold transition-colors': true,
-                                'bg-emerald-600 hover:bg-emerald-700 text-white': demoState !== 'mastered',
-                                'bg-emerald-700 text-white ring-2 ring-emerald-400': demoState === 'mastered',
+                                'flex items-center justify-center gap-1.5 rounded-xl px-3.5 py-2.5 text-sm font-bold shadow-2xs transition-colors': true,
+                                'bg-emerald-600 text-white hover:bg-emerald-700':
+                                    demoState !== 'mastered',
+                                'bg-emerald-700 text-white ring-2 ring-emerald-400':
+                                    demoState === 'mastered',
                             }}
                         >
                             <Check class="size-4" />
@@ -428,7 +440,7 @@
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="mx-auto mb-14 max-w-3xl text-center sm:mb-16">
                 <span
-                    class="border-blue-200 bg-blue-50 text-blue-700 dark:border-blue-900/60 dark:bg-blue-950/40 dark:text-blue-400 inline-block rounded-full border px-3.5 py-1.5 text-sm font-bold uppercase tracking-wider"
+                    class="inline-block rounded-full border border-blue-200 bg-blue-50 px-3.5 py-1.5 text-sm font-bold tracking-wider text-blue-700 uppercase dark:border-blue-900/60 dark:bg-blue-950/40 dark:text-blue-400"
                 >
                     {t('ui.welcome.srs.badge')}
                 </span>
@@ -448,7 +460,7 @@
             <div class="mb-12 grid grid-cols-1 gap-8 lg:grid-cols-2">
                 <!-- Left Card: 傳統死記硬背 (Red Alert Theme) -->
                 <div
-                    class="border-red-200/90 bg-red-50/40 dark:border-red-950/60 dark:bg-red-950/20 relative overflow-hidden rounded-2xl border p-6 sm:p-8"
+                    class="relative overflow-hidden rounded-2xl border border-red-200/90 bg-red-50/40 p-6 sm:p-8 dark:border-red-950/60 dark:bg-red-950/20"
                 >
                     <div
                         class="mb-5 flex flex-wrap items-center justify-between gap-2"
@@ -464,12 +476,14 @@
                             </h3>
                         </div>
                         <span
-                            class="border-red-200 bg-red-100 text-red-700 dark:border-red-900/60 dark:bg-red-950/50 dark:text-red-300 rounded-full border px-3 py-1 text-sm font-semibold"
+                            class="rounded-full border border-red-200 bg-red-100 px-3 py-1 text-sm font-semibold text-red-700 dark:border-red-900/60 dark:bg-red-950/50 dark:text-red-300"
                         >
                             {t('ui.welcome.srs.cramming_badge')}
                         </span>
                     </div>
-                    <p class="text-muted-foreground mb-6 text-sm leading-relaxed">
+                    <p
+                        class="text-muted-foreground mb-6 text-sm leading-relaxed"
+                    >
                         {t('ui.welcome.srs.cramming_desc')}
                     </p>
 
@@ -478,7 +492,8 @@
                             <div
                                 class="text-muted-foreground mb-1.5 flex items-center justify-between text-sm"
                             >
-                                <span>{t('ui.welcome.srs.cramming_day_0')}</span>
+                                <span>{t('ui.welcome.srs.cramming_day_0')}</span
+                                >
                                 <span
                                     class="text-foreground font-mono font-semibold"
                                     >{t(
@@ -489,14 +504,15 @@
                             <div
                                 class="bg-muted h-2.5 w-full overflow-hidden rounded-full"
                             >
-                                <div class="bg-slate-400 h-full w-full"></div>
+                                <div class="h-full w-full bg-slate-400"></div>
                             </div>
                         </div>
                         <div>
                             <div
                                 class="text-muted-foreground mb-1.5 flex items-center justify-between text-sm"
                             >
-                                <span>{t('ui.welcome.srs.cramming_day_3')}</span>
+                                <span>{t('ui.welcome.srs.cramming_day_3')}</span
+                                >
                                 <span
                                     class="font-mono font-semibold text-red-600 dark:text-red-400"
                                     >{t(
@@ -507,14 +523,16 @@
                             <div
                                 class="bg-muted h-2.5 w-full overflow-hidden rounded-full"
                             >
-                                <div class="bg-red-400 h-full w-[35%]"></div>
+                                <div class="h-full w-[35%] bg-red-400"></div>
                             </div>
                         </div>
                         <div>
                             <div
                                 class="text-muted-foreground mb-1.5 flex items-center justify-between text-sm"
                             >
-                                <span>{t('ui.welcome.srs.cramming_day_15')}</span>
+                                <span
+                                    >{t('ui.welcome.srs.cramming_day_15')}</span
+                                >
                                 <span
                                     class="font-mono font-semibold text-red-600 dark:text-red-400"
                                     >{t(
@@ -525,14 +543,16 @@
                             <div
                                 class="bg-muted h-2.5 w-full overflow-hidden rounded-full"
                             >
-                                <div class="bg-red-500 h-full w-[12%]"></div>
+                                <div class="h-full w-[12%] bg-red-500"></div>
                             </div>
                         </div>
                         <div>
                             <div
                                 class="text-muted-foreground mb-1.5 flex items-center justify-between text-sm"
                             >
-                                <span>{t('ui.welcome.srs.cramming_day_30')}</span>
+                                <span
+                                    >{t('ui.welcome.srs.cramming_day_30')}</span
+                                >
                                 <span
                                     class="font-mono font-bold text-red-700 dark:text-red-300"
                                     >{t(
@@ -543,7 +563,7 @@
                             <div
                                 class="bg-muted h-2.5 w-full overflow-hidden rounded-full"
                             >
-                                <div class="bg-red-600 h-full w-[14%]"></div>
+                                <div class="h-full w-[14%] bg-red-600"></div>
                             </div>
                         </div>
                     </div>
@@ -551,7 +571,7 @@
 
                 <!-- Right Card: Vomorize SRS 間隔演算法 (Emerald Green Theme) -->
                 <div
-                    class="border-emerald-200/90 bg-emerald-50/40 dark:border-emerald-950/60 dark:bg-emerald-950/20 relative overflow-hidden rounded-2xl border p-6 sm:p-8"
+                    class="relative overflow-hidden rounded-2xl border border-emerald-200/90 bg-emerald-50/40 p-6 sm:p-8 dark:border-emerald-950/60 dark:bg-emerald-950/20"
                 >
                     <div
                         class="mb-5 flex flex-wrap items-center justify-between gap-2"
@@ -567,12 +587,14 @@
                             </h3>
                         </div>
                         <span
-                            class="border-emerald-200 bg-emerald-100 text-emerald-700 dark:border-emerald-900/60 dark:bg-emerald-950/50 dark:text-emerald-300 rounded-full border px-3 py-1 text-sm font-semibold"
+                            class="rounded-full border border-emerald-200 bg-emerald-100 px-3 py-1 text-sm font-semibold text-emerald-700 dark:border-emerald-900/60 dark:bg-emerald-950/50 dark:text-emerald-300"
                         >
                             {t('ui.welcome.srs.vomorize_badge')}
                         </span>
                     </div>
-                    <p class="text-muted-foreground mb-6 text-sm leading-relaxed">
+                    <p
+                        class="text-muted-foreground mb-6 text-sm leading-relaxed"
+                    >
                         {t('ui.welcome.srs.vomorize_desc')}
                     </p>
 
@@ -581,72 +603,88 @@
                             <div
                                 class="text-muted-foreground mb-1.5 flex items-center justify-between text-sm"
                             >
-                                <span>{t('ui.welcome.srs.vomorize_step_1')}</span>
                                 <span
-                                    class="text-emerald-700 dark:text-emerald-400 font-mono font-semibold"
+                                    >{t('ui.welcome.srs.vomorize_step_1')}</span
+                                >
+                                <span
+                                    class="font-mono font-semibold text-emerald-700 dark:text-emerald-400"
                                     >{t(
                                         'ui.welcome.srs.vomorize_step_1_val',
                                     )}</span
                                 >
                             </div>
                             <div
-                                class="bg-emerald-100/70 dark:bg-emerald-950/40 h-2.5 w-full overflow-hidden rounded-full"
+                                class="h-2.5 w-full overflow-hidden rounded-full bg-emerald-100/70 dark:bg-emerald-950/40"
                             >
-                                <div class="bg-emerald-500 h-full w-[98%]"></div>
+                                <div
+                                    class="h-full w-[98%] bg-emerald-500"
+                                ></div>
                             </div>
                         </div>
                         <div>
                             <div
                                 class="text-muted-foreground mb-1.5 flex items-center justify-between text-sm"
                             >
-                                <span>{t('ui.welcome.srs.vomorize_step_2')}</span>
                                 <span
-                                    class="text-emerald-700 dark:text-emerald-400 font-mono font-semibold"
+                                    >{t('ui.welcome.srs.vomorize_step_2')}</span
+                                >
+                                <span
+                                    class="font-mono font-semibold text-emerald-700 dark:text-emerald-400"
                                     >{t(
                                         'ui.welcome.srs.vomorize_step_2_val',
                                     )}</span
                                 >
                             </div>
                             <div
-                                class="bg-emerald-100/70 dark:bg-emerald-950/40 h-2.5 w-full overflow-hidden rounded-full"
+                                class="h-2.5 w-full overflow-hidden rounded-full bg-emerald-100/70 dark:bg-emerald-950/40"
                             >
-                                <div class="bg-emerald-500 h-full w-[96%]"></div>
+                                <div
+                                    class="h-full w-[96%] bg-emerald-500"
+                                ></div>
                             </div>
                         </div>
                         <div>
                             <div
                                 class="text-muted-foreground mb-1.5 flex items-center justify-between text-sm"
                             >
-                                <span>{t('ui.welcome.srs.vomorize_step_3')}</span>
                                 <span
-                                    class="text-emerald-700 dark:text-emerald-400 font-mono font-semibold"
+                                    >{t('ui.welcome.srs.vomorize_step_3')}</span
+                                >
+                                <span
+                                    class="font-mono font-semibold text-emerald-700 dark:text-emerald-400"
                                     >{t(
                                         'ui.welcome.srs.vomorize_step_3_val',
                                     )}</span
                                 >
                             </div>
                             <div
-                                class="bg-emerald-100/70 dark:bg-emerald-950/40 h-2.5 w-full overflow-hidden rounded-full"
+                                class="h-2.5 w-full overflow-hidden rounded-full bg-emerald-100/70 dark:bg-emerald-950/40"
                             >
-                                <div class="bg-emerald-600 h-full w-[95%]"></div>
+                                <div
+                                    class="h-full w-[95%] bg-emerald-600"
+                                ></div>
                             </div>
                         </div>
                         <div>
                             <div
                                 class="text-muted-foreground mb-1.5 flex items-center justify-between text-sm"
                             >
-                                <span>{t('ui.welcome.srs.vomorize_step_4')}</span>
                                 <span
-                                    class="text-emerald-700 dark:text-emerald-300 font-mono font-bold"
+                                    >{t('ui.welcome.srs.vomorize_step_4')}</span
+                                >
+                                <span
+                                    class="font-mono font-bold text-emerald-700 dark:text-emerald-300"
                                     >{t(
                                         'ui.welcome.srs.vomorize_step_4_val',
                                     )}</span
                                 >
                             </div>
                             <div
-                                class="bg-emerald-100/70 dark:bg-emerald-950/40 h-2.5 w-full overflow-hidden rounded-full"
+                                class="h-2.5 w-full overflow-hidden rounded-full bg-emerald-100/70 dark:bg-emerald-950/40"
                             >
-                                <div class="bg-emerald-600 h-full w-[96%]"></div>
+                                <div
+                                    class="h-full w-[96%] bg-emerald-600"
+                                ></div>
                             </div>
                         </div>
                     </div>
@@ -656,11 +694,13 @@
             <!-- 5-Step Timeline Sequence -->
             <div class="border-border bg-card rounded-2xl border p-6 sm:p-8">
                 <h4
-                    class="text-muted-foreground mb-6 text-center text-sm font-bold uppercase tracking-wider"
+                    class="text-muted-foreground mb-6 text-center text-sm font-bold tracking-wider uppercase"
                 >
                     {t('ui.welcome.srs.timeline_title')}
                 </h4>
-                <div class="grid grid-cols-1 gap-3.5 sm:grid-cols-3 lg:grid-cols-5">
+                <div
+                    class="grid grid-cols-1 gap-3.5 sm:grid-cols-3 lg:grid-cols-5"
+                >
                     {#each srsTimelineSteps as item (item.step)}
                         <div
                             class={{
@@ -672,7 +712,7 @@
                         >
                             <span
                                 class={{
-                                    'size-7 rounded-full flex items-center justify-center text-sm font-bold mb-2': true,
+                                    'mb-2 flex size-7 items-center justify-center rounded-full text-sm font-bold': true,
                                     'bg-blue-50 text-blue-700 dark:bg-blue-950 dark:text-blue-300':
                                         !item.isFinal,
                                     'bg-emerald-600 text-white': item.isFinal,
@@ -692,9 +732,9 @@
                             </span>
                             <span
                                 class={{
-                                    'text-sm mt-1 leading-snug': true,
+                                    'mt-1 text-sm leading-snug': true,
                                     'text-muted-foreground': !item.isFinal,
-                                    'text-emerald-700 dark:text-emerald-400 font-medium':
+                                    'font-medium text-emerald-700 dark:text-emerald-400':
                                         item.isFinal,
                                 }}
                             >
@@ -711,7 +751,7 @@
     <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" id="features">
         <div class="mx-auto max-w-3xl text-center">
             <span
-                class="border-blue-200 bg-blue-50 text-blue-700 dark:border-blue-900/60 dark:bg-blue-950/40 dark:text-blue-400 inline-block rounded-full border px-3.5 py-1.5 text-sm font-bold uppercase tracking-wider"
+                class="inline-block rounded-full border border-blue-200 bg-blue-50 px-3.5 py-1.5 text-sm font-bold tracking-wider text-blue-700 uppercase dark:border-blue-900/60 dark:bg-blue-950/40 dark:text-blue-400"
             >
                 {t('ui.welcome.features.badge')}
             </span>
@@ -762,10 +802,10 @@
                                 class="flex flex-wrap items-center gap-2.5 text-sm font-medium"
                             >
                                 <span
-                                    class="border-emerald-200 bg-emerald-50 text-emerald-700 dark:border-emerald-900/60 dark:bg-emerald-950/40 dark:text-emerald-300 inline-flex items-center gap-1.5 rounded-md border px-2.5 py-1"
+                                    class="inline-flex items-center gap-1.5 rounded-md border border-emerald-200 bg-emerald-50 px-2.5 py-1 text-emerald-700 dark:border-emerald-900/60 dark:bg-emerald-950/40 dark:text-emerald-300"
                                 >
                                     <CheckCircle2
-                                        class="text-emerald-600 dark:text-emerald-400 size-4"
+                                        class="size-4 text-emerald-600 dark:text-emerald-400"
                                     />
                                     <span
                                         >{t(
@@ -774,7 +814,7 @@
                                     >
                                 </span>
                                 <span
-                                    class="border-red-200 bg-red-50 text-red-700 dark:border-red-900/60 dark:bg-red-950/40 dark:text-red-300 inline-flex items-center gap-1.5 rounded-md border px-2.5 py-1"
+                                    class="inline-flex items-center gap-1.5 rounded-md border border-red-200 bg-red-50 px-2.5 py-1 text-red-700 dark:border-red-900/60 dark:bg-red-950/40 dark:text-red-300"
                                 >
                                     <CircleAlert
                                         class="size-4 text-red-600 dark:text-red-400"
@@ -788,7 +828,7 @@
                             </div>
                         {:else if feature.pillKey}
                             <div
-                                class="text-blue-700 dark:text-blue-400 flex items-center gap-2 text-sm font-medium"
+                                class="flex items-center gap-2 text-sm font-medium text-blue-700 dark:text-blue-400"
                             >
                                 <Check class="size-4.5" />
                                 <span>{t(feature.pillKey)}</span>
@@ -808,7 +848,7 @@
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="mx-auto mb-12 max-w-3xl text-center">
                 <span
-                    class="border-blue-200 bg-blue-50 text-blue-700 dark:border-blue-900/60 dark:bg-blue-950/40 dark:text-blue-400 inline-block rounded-full border px-3.5 py-1.5 text-sm font-bold uppercase tracking-wider"
+                    class="inline-block rounded-full border border-blue-200 bg-blue-50 px-3.5 py-1.5 text-sm font-bold tracking-wider text-blue-700 uppercase dark:border-blue-900/60 dark:bg-blue-950/40 dark:text-blue-400"
                 >
                     {t('ui.welcome.levels.badge')}
                 </span>
@@ -835,7 +875,7 @@
                         <div>
                             <div class="mb-3 flex items-center justify-between">
                                 <span
-                                    class="border-blue-200 bg-blue-50 text-blue-700 dark:border-blue-900/60 dark:bg-blue-950/40 dark:text-blue-300 inline-flex items-center rounded-md border px-2.5 py-1 text-sm font-extrabold"
+                                    class="inline-flex items-center rounded-md border border-blue-200 bg-blue-50 px-2.5 py-1 text-sm font-extrabold text-blue-700 dark:border-blue-900/60 dark:bg-blue-950/40 dark:text-blue-300"
                                 >
                                     {t('ui.welcome.levels.level_badge', {
                                         id: level.id,
@@ -991,7 +1031,9 @@
                     {t('ui.welcome.cta.subtitle')}
                 </p>
 
-                <div class="mt-8 flex flex-col items-center justify-center gap-3.5 sm:flex-row">
+                <div
+                    class="mt-8 flex flex-col items-center justify-center gap-3.5 sm:flex-row"
+                >
                     <Button
                         asChild
                         size="lg"

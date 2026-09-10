@@ -2,12 +2,13 @@
     import type { UrlMethodPair } from '@inertiajs/core';
     import { router } from '@inertiajs/svelte';
     import { usePasskeyVerify } from '@laravel/passkeys/svelte';
-    import KeyRound from '@lucide/svelte/icons/key-round';
+    import Fingerprint from '@lucide/svelte/icons/fingerprint';
     import { untrack } from 'svelte';
     import InputError from '@/components/InputError.svelte';
     import { Button } from '@/components/ui/button';
     import { Separator } from '@/components/ui/separator';
     import { Spinner } from '@/components/ui/spinner';
+    import { cn } from '@/lib/utils';
 
     type Props = {
         routes?: {
@@ -17,6 +18,8 @@
         label?: string;
         loadingLabel?: string;
         separator?: string;
+        showSeparator?: boolean;
+        class?: string;
     };
 
     let props: Props = $props();
@@ -43,18 +46,20 @@
         <Button
             type="button"
             variant="outline"
-            class="w-full"
+            class={cn('w-full', props.class)}
             onclick={passkeyVerify.verify}
             disabled={passkeyVerify.isLoading}
         >
             {#if passkeyVerify.isLoading}
                 <Spinner />
             {:else}
-                <KeyRound class="h-4 w-4" />
+                <Fingerprint class="size-4" />
             {/if}
-            {passkeyVerify.isLoading
-                ? (props.loadingLabel ?? 'Authenticating...')
-                : (props.label ?? 'Sign in with a passkey')}
+            <span>
+                {passkeyVerify.isLoading
+                    ? (props.loadingLabel ?? 'Authenticating...')
+                    : (props.label ?? 'Sign in with a passkey')}
+            </span>
         </Button>
 
         {#if passkeyVerify.error}
@@ -64,14 +69,20 @@
         {/if}
     </div>
 
-    <div class="relative my-6">
-        <div class="absolute inset-0 flex items-center">
-            <Separator class="w-full" />
+    {#if props.showSeparator ?? true}
+        <div class="relative my-6">
+            <div class="absolute inset-0 flex items-center">
+                <Separator class="w-full" />
+            </div>
+            <div
+                class="relative flex justify-center text-sm font-medium uppercase"
+            >
+                <span
+                    class="bg-card text-muted-foreground px-3 text-xs font-medium lowercase first-letter:uppercase"
+                >
+                    {props.separator ?? 'Or continue with email'}
+                </span>
+            </div>
         </div>
-        <div class="relative flex justify-center text-sm font-medium uppercase">
-            <span class="bg-background text-muted-foreground px-2">
-                {props.separator ?? 'Or continue with email'}
-            </span>
-        </div>
-    </div>
+    {/if}
 {/if}
