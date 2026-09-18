@@ -1,16 +1,3 @@
-<script module lang="ts">
-    import { edit } from '@/routes/profile';
-
-    export const layout = {
-        breadcrumbs: [
-            {
-                title: 'Profile settings',
-                href: edit(),
-            },
-        ],
-    };
-</script>
-
 <script lang="ts">
     import { Form, page } from '@inertiajs/svelte';
     import ProfileController from '@/actions/App/Http/Controllers/Settings/ProfileController';
@@ -22,20 +9,21 @@
     import { Button } from '@/components/ui/button';
     import { Input } from '@/components/ui/input';
     import { Label } from '@/components/ui/label';
+    import { t } from '@/lib/i18n';
     import { send } from '@/routes/verification';
 
     const user = $derived(page.props.auth.user);
 </script>
 
-<AppHead title="Profile settings" />
+<AppHead title={t('ui.settings.profile.breadcrumbs')} />
 
-<h1 class="sr-only">Profile settings</h1>
+<h1 class="sr-only">{t('ui.settings.profile.breadcrumbs')}</h1>
 
 <div class="flex flex-col space-y-6">
     <Heading
         variant="small"
-        title="Profile"
-        description="Update your name and email address"
+        title={t('ui.settings.profile.title')}
+        description={t('ui.settings.profile.subtitle')}
     />
 
     <Form
@@ -45,7 +33,7 @@
     >
         {#snippet children({ errors, processing })}
             <div class="grid gap-2">
-                <Label for="name">Name</Label>
+                <Label for="name">{t('ui.settings.profile.name')}</Label>
                 <Input
                     id="name"
                     name="name"
@@ -53,13 +41,13 @@
                     value={user.name}
                     required
                     autocomplete="name"
-                    placeholder="Full name"
+                    placeholder={t('ui.settings.profile.name_placeholder')}
                 />
                 <InputError class="mt-2" message={errors.name} />
             </div>
 
             <div class="grid gap-2">
-                <Label for="email">Email address</Label>
+                <Label for="email">{t('ui.settings.profile.email')}</Label>
                 <Input
                     id="email"
                     type="email"
@@ -68,7 +56,7 @@
                     value={user.email}
                     required
                     autocomplete="username"
-                    placeholder="Email address"
+                    placeholder={t('ui.settings.profile.email_placeholder')}
                 />
                 <InputError class="mt-2" message={errors.email} />
             </div>
@@ -76,16 +64,15 @@
             {#if Boolean(page.props.mustVerifyEmail) && !user.email_verified_at}
                 <div>
                     <p class="text-muted-foreground -mt-4 text-sm">
-                        Your email address is unverified.
+                        {t('ui.settings.profile.email_unverified')}
                         <TextLink href={send()} as="button">
-                            Click here to re-send the verification email.
+                            {t('ui.settings.profile.resend_verification')}
                         </TextLink>
                     </p>
 
                     {#if page.props.status === 'verification-link-sent'}
                         <div class="mt-2 text-sm font-medium text-green-600">
-                            A new verification link has been sent to your email
-                            address.
+                            {t('ui.settings.profile.verification_sent')}
                         </div>
                     {/if}
                 </div>
@@ -95,8 +82,10 @@
                 <Button
                     type="submit"
                     disabled={processing}
-                    data-test="update-profile-button">Save</Button
+                    data-test="update-profile-button"
                 >
+                    {t('ui.settings.profile.save')}
+                </Button>
             </div>
         {/snippet}
     </Form>

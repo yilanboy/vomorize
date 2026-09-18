@@ -5,6 +5,7 @@
     import Heading from '@/components/Heading.svelte';
     import PasskeyItem from '@/components/PasskeyItem.svelte';
     import PasskeyRegister from '@/components/PasskeyRegister.svelte';
+    import { t } from '@/lib/i18n';
     import type { Passkey } from '@/types/auth';
 
     export type Props = {
@@ -30,8 +31,8 @@
     <div class="space-y-6">
         <Heading
             variant="small"
-            title="Passkeys"
-            description="Manage your passkeys for passwordless sign-in"
+            title={t('ui.settings.security.passkeys.title')}
+            description={t('ui.settings.security.passkeys.subtitle')}
         />
 
         <div class="border-border overflow-hidden rounded-lg border">
@@ -46,9 +47,11 @@
                     >
                         <KeyRound class="text-muted-foreground h-7 w-7" />
                     </div>
-                    <p class="font-medium">No passkeys yet</p>
+                    <p class="font-medium">
+                        {t('ui.settings.security.passkeys.empty_title')}
+                    </p>
                     <p class="text-muted-foreground mt-1 text-sm">
-                        Add a passkey to sign in without a password
+                        {t('ui.settings.security.passkeys.empty_desc')}
                     </p>
                 </div>
             {/if}

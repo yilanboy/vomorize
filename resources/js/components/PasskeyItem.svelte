@@ -11,6 +11,7 @@
         DialogTitle,
         DialogTrigger,
     } from '@/components/ui/dialog';
+    import { t } from '@/lib/i18n';
     import type { Passkey } from '@/types/auth';
 
     let {
@@ -50,10 +51,14 @@
                 {/if}
             </div>
             <p class="text-muted-foreground text-sm">
-                Added {passkey.created_at_diff}
+                {t('ui.settings.security.passkeys.item.added', {
+                    time: passkey.created_at_diff,
+                })}
                 {#if passkey.last_used_at_diff}
                     <span class="text-muted-foreground/50 mx-1">/</span>
-                    Last used {passkey.last_used_at_diff}
+                    {t('ui.settings.security.passkeys.item.last_used', {
+                        time: passkey.last_used_at_diff,
+                    })}
                 {/if}
             </p>
         </div>
@@ -69,22 +74,29 @@
                     onclick={props.onClick}
                 >
                     <Trash2 class="h-4 w-4" />
-                    <span class="sr-only">Remove</span>
+                    <span class="sr-only">
+                        {t('ui.settings.security.passkeys.item.remove_sr')}
+                    </span>
                 </Button>
             {/snippet}
         </DialogTrigger>
 
         <DialogContent>
-            <DialogTitle>Remove passkey</DialogTitle>
+            <DialogTitle>
+                {t('ui.settings.security.passkeys.delete_dialog.title')}
+            </DialogTitle>
             <DialogDescription>
-                Are you sure you want to remove the "{passkey.name}" passkey?
-                You will no longer be able to use it to sign in.
+                {t('ui.settings.security.passkeys.delete_dialog.description', {
+                    name: passkey.name,
+                })}
             </DialogDescription>
             <DialogFooter>
                 <DialogClose asChild>
                     {#snippet children(props)}
                         <Button variant="secondary" onclick={props.onClick}>
-                            Cancel
+                            {t(
+                                'ui.settings.security.passkeys.delete_dialog.cancel',
+                            )}
                         </Button>
                     {/snippet}
                 </DialogClose>
@@ -93,7 +105,13 @@
                     disabled={isDeleting}
                     onclick={handleDelete}
                 >
-                    {isDeleting ? 'Removing...' : 'Remove passkey'}
+                    {isDeleting
+                        ? t(
+                              'ui.settings.security.passkeys.delete_dialog.loading',
+                          )
+                        : t(
+                              'ui.settings.security.passkeys.delete_dialog.confirm',
+                          )}
                 </Button>
             </DialogFooter>
         </DialogContent>

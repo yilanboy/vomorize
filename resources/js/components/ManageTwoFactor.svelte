@@ -6,6 +6,7 @@
     import TwoFactorRecoveryCodes from '@/components/TwoFactorRecoveryCodes.svelte';
     import TwoFactorSetupModal from '@/components/TwoFactorSetupModal.svelte';
     import { Button } from '@/components/ui/button';
+    import { t } from '@/lib/i18n';
     import { twoFactorAuthState } from '@/lib/twoFactorAuth.svelte';
     import { disable, enable } from '@/routes/two-factor';
 
@@ -31,22 +32,23 @@
     <div class="space-y-6">
         <Heading
             variant="small"
-            title="Two-factor authentication"
-            description="Manage your two-factor authentication settings"
+            title={t('ui.settings.security.two_factor.title')}
+            description={t('ui.settings.security.two_factor.subtitle')}
         />
 
         {#if !twoFactorEnabled}
             <div class="flex flex-col items-start justify-start space-y-4">
                 <p class="text-muted-foreground text-sm">
-                    When you enable two-factor authentication, you will be
-                    prompted for a secure pin during login. This pin can be
-                    retrieved from a TOTP-supported application on your phone.
+                    {t('ui.settings.security.two_factor.description')}
                 </p>
 
                 <div>
                     {#if twoFactorAuth.hasSetupData()}
                         <Button onclick={() => (showSetupModal = true)}>
-                            <ShieldCheck class="size-4" />Continue setup
+                            <ShieldCheck class="size-4" />
+                            {t(
+                                'ui.settings.security.two_factor.continue_setup',
+                            )}
                         </Button>
                     {:else}
                         <Form
@@ -55,7 +57,9 @@
                         >
                             {#snippet children({ processing })}
                                 <Button type="submit" disabled={processing}>
-                                    Enable 2FA
+                                    {t(
+                                        'ui.settings.security.two_factor.enable_button',
+                                    )}
                                 </Button>
                             {/snippet}
                         </Form>
@@ -65,9 +69,7 @@
         {:else}
             <div class="flex flex-col items-start justify-start space-y-4">
                 <p class="text-muted-foreground text-sm">
-                    You will be prompted for a secure, random pin during login,
-                    which you can retrieve from the TOTP-supported application
-                    on your phone.
+                    {t('ui.settings.security.two_factor.enabled_description')}
                 </p>
 
                 <div class="relative inline">
@@ -78,7 +80,9 @@
                                 type="submit"
                                 disabled={processing}
                             >
-                                Disable 2FA
+                                {t(
+                                    'ui.settings.security.two_factor.disable_button',
+                                )}
                             </Button>
                         {/snippet}
                     </Form>

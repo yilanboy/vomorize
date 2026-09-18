@@ -19,6 +19,7 @@
         InputOTPSlot,
     } from '@/components/ui/input-otp';
     import { Spinner } from '@/components/ui/spinner';
+    import { t } from '@/lib/i18n';
     import { themeState } from '@/lib/theme.svelte';
     import { twoFactorAuthState } from '@/lib/twoFactorAuth.svelte';
     import { confirm } from '@/routes/two-factor';
@@ -45,27 +46,42 @@
     const modalConfig: TwoFactorConfigContent = $derived.by(() => {
         if (twoFactorEnabled) {
             return {
-                title: 'Two-factor authentication enabled',
-                description:
-                    'Two-factor authentication is now enabled. Scan the QR code or enter the setup key in your authenticator app.',
-                buttonText: 'Close',
+                title: t(
+                    'ui.settings.security.two_factor.modal.enabled_title',
+                ),
+                description: t(
+                    'ui.settings.security.two_factor.modal.enabled_desc',
+                ),
+                buttonText: t(
+                    'ui.settings.security.two_factor.modal.close',
+                ),
             };
         }
 
         if (showVerificationStep) {
             return {
-                title: 'Verify authentication code',
-                description:
-                    'Enter the 6-digit code from your authenticator app',
-                buttonText: 'Continue',
+                title: t(
+                    'ui.settings.security.two_factor.modal.verify_title',
+                ),
+                description: t(
+                    'ui.settings.security.two_factor.modal.verify_desc',
+                ),
+                buttonText: t(
+                    'ui.settings.security.two_factor.modal.continue',
+                ),
             };
         }
 
         return {
-            title: 'Enable two-factor authentication',
-            description:
-                'To finish enabling two-factor authentication, scan the QR code or enter the setup key in your authenticator app',
-            buttonText: 'Continue',
+            title: t(
+                'ui.settings.security.two_factor.modal.setup_title',
+            ),
+            description: t(
+                'ui.settings.security.two_factor.modal.setup_desc',
+            ),
+            buttonText: t(
+                'ui.settings.security.two_factor.modal.continue',
+            ),
         };
     });
 
@@ -185,7 +201,9 @@
                                     >
                                         <img
                                             src={qrCodeDataUrl}
-                                            alt="Two-factor authentication QR code"
+                                            alt={t(
+                                                'ui.settings.security.two_factor.modal.qr_alt',
+                                            )}
                                             class="size-full"
                                         />
                                     </div>
@@ -206,9 +224,11 @@
                         <div
                             class="bg-border absolute inset-0 top-1/2 h-px w-full"
                         ></div>
-                        <span class="bg-card relative px-2 py-1"
-                            >or, enter the code manually</span
-                        >
+                        <span class="bg-card relative px-2 py-1">
+                            {t(
+                                'ui.settings.security.two_factor.modal.or_manual',
+                            )}
+                        </span>
                     </div>
 
                     <div
@@ -293,14 +313,18 @@
                                         (showVerificationStep = false)}
                                     disabled={processing}
                                 >
-                                    Back
+                                    {t(
+                                        'ui.settings.security.two_factor.modal.back',
+                                    )}
                                 </Button>
                                 <Button
                                     type="submit"
                                     class="w-auto flex-1"
                                     disabled={processing || code.length < 6}
                                 >
-                                    Confirm
+                                    {t(
+                                        'ui.settings.security.two_factor.modal.confirm',
+                                    )}
                                 </Button>
                             </div>
                         </div>

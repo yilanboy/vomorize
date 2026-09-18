@@ -4,6 +4,7 @@
     import { Button } from '@/components/ui/button';
     import { Input } from '@/components/ui/input';
     import { Label } from '@/components/ui/label';
+    import { t } from '@/lib/i18n';
 
     let {
         onSuccess,
@@ -61,11 +62,11 @@
 
 {#if !passkeyRegister.isSupported}
     <div class="text-muted-foreground text-sm">
-        Passkeys are not supported in this browser.
+        {t('ui.settings.security.passkeys.not_supported')}
     </div>
 {:else if !showForm}
     <Button variant="outline" onclick={() => (showForm = true)}>
-        Add passkey
+        {t('ui.settings.security.passkeys.add_button')}
     </Button>
 {:else}
     <form
@@ -73,17 +74,21 @@
         class="border-border bg-muted/50 space-y-4 rounded-lg border p-4"
     >
         <div class="grid gap-2">
-            <Label for="passkey-name">Passkey name</Label>
+            <Label for="passkey-name">
+                {t('ui.settings.security.passkeys.form.name')}
+            </Label>
             <Input
                 id="passkey-name"
                 type="text"
                 bind:value={name}
-                placeholder="e.g., MacBook Pro, iPhone"
+                placeholder={t(
+                    'ui.settings.security.passkeys.form.name_placeholder',
+                )}
                 class="border-foreground/20 mt-1 block w-full"
                 autofocus
             />
             <p class="text-muted-foreground text-sm">
-                A name helps you identify this passkey later.
+                {t('ui.settings.security.passkeys.form.name_hint')}
             </p>
         </div>
 
@@ -97,11 +102,11 @@
                 disabled={passkeyRegister.isLoading || !name.trim()}
             >
                 {passkeyRegister.isLoading
-                    ? 'Registering...'
-                    : 'Register passkey'}
+                    ? t('ui.settings.security.passkeys.form.loading')
+                    : t('ui.settings.security.passkeys.form.submit')}
             </Button>
             <Button type="button" variant="ghost" onclick={handleCancel}>
-                Cancel
+                {t('ui.settings.security.passkeys.form.cancel')}
             </Button>
         </div>
     </form>

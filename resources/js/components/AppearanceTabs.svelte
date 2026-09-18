@@ -3,6 +3,7 @@
     import Moon from '@lucide/svelte/icons/moon';
     import Sun from '@lucide/svelte/icons/sun';
     import type { Component, SvelteComponent } from 'svelte';
+    import { t } from '@/lib/i18n';
     import { themeState } from '@/lib/theme.svelte';
     import type { Appearance } from '@/types';
 
@@ -12,11 +13,24 @@
         | Component<{ class?: string }>
         | (new (...args: any[]) => SvelteComponent<{ class?: string }>);
 
-    const tabs: { value: Appearance; Icon: IconComponent; label: string }[] = [
-        { value: 'light', Icon: Sun, label: 'Light' },
-        { value: 'dark', Icon: Moon, label: 'Dark' },
-        { value: 'system', Icon: Monitor, label: 'System' },
-    ];
+    const tabs: { value: Appearance; Icon: IconComponent; labelKey: string }[] =
+        [
+            {
+                value: 'light',
+                Icon: Sun,
+                labelKey: 'ui.settings.appearance.tabs.light',
+            },
+            {
+                value: 'dark',
+                Icon: Moon,
+                labelKey: 'ui.settings.appearance.tabs.dark',
+            },
+            {
+                value: 'system',
+                Icon: Monitor,
+                labelKey: 'ui.settings.appearance.tabs.system',
+            },
+        ];
 
     function handleAppearanceChange(value: Appearance) {
         updateAppearance(value);
@@ -24,7 +38,7 @@
 </script>
 
 <div class="inline-flex gap-1 rounded-lg bg-zinc-100 p-1 dark:bg-zinc-800">
-    {#each tabs as { value, Icon, label } (value)}
+    {#each tabs as { value, Icon, labelKey } (value)}
         <button
             onclick={() => handleAppearanceChange(value)}
             class="flex items-center rounded-md px-3.5 py-1.5 transition-colors {appearance.value ===
@@ -33,7 +47,7 @@
                 : 'text-zinc-500 hover:bg-zinc-200/60 hover:text-black dark:text-zinc-400 dark:hover:bg-zinc-700/60'}"
         >
             <Icon class="-ml-1 h-4 w-4" />
-            <span class="ml-1.5 text-sm">{label}</span>
+            <span class="ml-1.5 text-sm">{t(labelKey)}</span>
         </button>
     {/each}
 </div>

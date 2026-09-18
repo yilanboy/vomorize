@@ -15,28 +15,31 @@
         DialogTrigger,
     } from '@/components/ui/dialog';
     import { Label } from '@/components/ui/label';
+    import { t } from '@/lib/i18n';
 </script>
 
 <div class="space-y-6">
     <Heading
         variant="small"
-        title="Delete account"
-        description="Delete your account and all of its resources"
+        title={t('ui.settings.profile.delete_account.title')}
+        description={t('ui.settings.profile.delete_account.subtitle')}
     />
     <div
         class="space-y-4 rounded-lg border border-red-100 bg-red-50 p-4 dark:border-red-200/10 dark:bg-red-700/10"
     >
         <div class="relative space-y-0.5 text-red-600 dark:text-red-100">
-            <p class="font-medium">Warning</p>
+            <p class="font-medium">
+                {t('ui.settings.profile.delete_account.warning_title')}
+            </p>
             <p class="text-sm">
-                Please proceed with caution, this cannot be undone.
+                {t('ui.settings.profile.delete_account.warning_desc')}
             </p>
         </div>
         <Dialog>
             <DialogTrigger>
-                <Button variant="destructive" data-test="delete-user-button"
-                    >Delete account</Button
-                >
+                <Button variant="destructive" data-test="delete-user-button">
+                    {t('ui.settings.profile.delete_account.button')}
+                </Button>
             </DialogTrigger>
             <DialogContent>
                 <Form
@@ -46,33 +49,41 @@
                 >
                     {#snippet children({ errors, processing })}
                         <div class="space-y-3">
-                            <DialogTitle
-                                >Are you sure you want to delete your account?</DialogTitle
-                            >
+                            <DialogTitle>
+                                {t(
+                                    'ui.settings.profile.delete_account.dialog_title',
+                                )}
+                            </DialogTitle>
                             <DialogDescription>
-                                Once your account is deleted, all of its
-                                resources and data will also be permanently
-                                deleted. Please enter your password to confirm
-                                you would like to permanently delete your
-                                account.
+                                {t(
+                                    'ui.settings.profile.delete_account.dialog_desc',
+                                )}
                             </DialogDescription>
                         </div>
 
                         <div class="grid gap-2">
-                            <Label for="password" class="sr-only"
-                                >Password</Label
-                            >
+                            <Label for="password" class="sr-only">
+                                {t(
+                                    'ui.settings.profile.delete_account.password',
+                                )}
+                            </Label>
                             <PasswordInput
                                 id="password"
                                 name="password"
-                                placeholder="Password"
+                                placeholder={t(
+                                    'ui.settings.profile.delete_account.password_placeholder',
+                                )}
                             />
                             <InputError message={errors.password} />
                         </div>
 
                         <DialogFooter class="gap-2">
                             <DialogClose>
-                                <Button variant="secondary">Cancel</Button>
+                                <Button variant="secondary">
+                                    {t(
+                                        'ui.settings.profile.delete_account.cancel',
+                                    )}
+                                </Button>
                             </DialogClose>
 
                             <Button
@@ -81,7 +92,9 @@
                                 disabled={processing}
                                 data-test="confirm-delete-user-button"
                             >
-                                Delete account
+                                {t(
+                                    'ui.settings.profile.delete_account.confirm',
+                                )}
                             </Button>
                         </DialogFooter>
                     {/snippet}

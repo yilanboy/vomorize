@@ -14,6 +14,7 @@
         CardHeader,
         CardTitle,
     } from '@/components/ui/card';
+    import { t } from '@/lib/i18n';
     import { twoFactorAuthState } from '@/lib/twoFactorAuth.svelte';
     import { regenerateRecoveryCodes } from '@/routes/two-factor';
 
@@ -47,11 +48,11 @@
 <Card class="w-full">
     <CardHeader>
         <CardTitle class="flex gap-3">
-            <LockKeyhole class="size-4" />2FA recovery codes
+            <LockKeyhole class="size-4" />
+            {t('ui.settings.security.two_factor.recovery_codes.title')}
         </CardTitle>
         <CardDescription>
-            Recovery codes let you regain access if you lose your 2FA device.
-            Store them in a secure password manager.
+            {t('ui.settings.security.two_factor.recovery_codes.description')}
         </CardDescription>
     </CardHeader>
     <CardContent>
@@ -61,10 +62,11 @@
             <Button onclick={toggleRecoveryCodesVisibility} class="w-fit">
                 {#if isRecoveryCodesVisible}
                     <EyeOff class="size-4" />
+                    {t('ui.settings.security.two_factor.recovery_codes.hide')}
                 {:else}
                     <Eye class="size-4" />
+                    {t('ui.settings.security.two_factor.recovery_codes.view')}
                 {/if}
-                {isRecoveryCodesVisible ? 'Hide' : 'View'} recovery codes
             </Button>
 
             {#if isRecoveryCodesVisible && twoFactorAuth.state.recoveryCodesList.length}
@@ -79,7 +81,10 @@
                             type="submit"
                             disabled={processing}
                         >
-                            <RefreshCw class="size-4" /> Regenerate codes
+                            <RefreshCw class="size-4" />
+                            {t(
+                                'ui.settings.security.two_factor.recovery_codes.regenerate',
+                            )}
                         </Button>
                     {/snippet}
                 </Form>
@@ -117,9 +122,9 @@
                     <p
                         class="text-muted-foreground text-sm leading-relaxed select-none"
                     >
-                        Each recovery code can be used once to access your
-                        account and will be removed after use. If you need more,
-                        click <span class="font-bold">Regenerate codes</span> above.
+                        {t(
+                            'ui.settings.security.two_factor.recovery_codes.notice',
+                        )}
                     </p>
                 </div>
             {/if}
