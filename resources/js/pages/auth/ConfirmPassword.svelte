@@ -1,65 +1,73 @@
-<script module lang="ts">
-    export const layout = {
-        title: 'Confirm password',
-        description:
-            'This is a secure area of the application. Please confirm your password before continuing.',
-    };
-</script>
-
 <script lang="ts">
-    import { Form } from '@inertiajs/svelte';
-    import AppHead from '@/components/AppHead.svelte';
-    import InputError from '@/components/InputError.svelte';
-    import PasswordInput from '@/components/PasswordInput.svelte';
-    import { Button } from '@/components/ui/button';
-    import { Label } from '@/components/ui/label';
-    import { Spinner } from '@/components/ui/spinner';
-    import { store } from '@/routes/password/confirm';
+    import { Form, setLayoutProps } from '@inertiajs/svelte';
     import {
         index as confirmOptions,
         store as confirmStore,
     } from '@/actions/Laravel/Passkeys/Http/Controllers/PasskeyConfirmationController';
+    import AppHead from '@/components/AppHead.svelte';
+    import InputError from '@/components/InputError.svelte';
     import PasskeyVerify from '@/components/PasskeyVerify.svelte';
+    import PasswordInput from '@/components/PasswordInput.svelte';
+    import { Button } from '@/components/ui/button';
+    import { Label } from '@/components/ui/label';
+    import { Spinner } from '@/components/ui/spinner';
+    import { t } from '@/lib/i18n';
+    import { store } from '@/routes/password/confirm';
+
+    setLayoutProps({
+        title: t('ui.auth.confirm_password.title'),
+        description: t('ui.auth.confirm_password.subtitle'),
+    });
 </script>
 
-<AppHead title="Confirm password" />
+<AppHead title={t('ui.auth.confirm_password.title')} />
 
-<PasskeyVerify
-    routes={{
-        options: confirmOptions(),
-        submit: confirmStore(),
-    }}
-    label="Confirm with passkey"
-    loadingLabel="Confirming..."
-    separator="Or confirm with password"
-/>
+<div class="space-y-5">
+    <Form {...store.form()} resetOnSuccess class="flex flex-col gap-5">
+        {#snippet children({ errors, processing })}
+            <div class="grid gap-4">
+                <div class="grid gap-1.5">
+                    <Label
+                        for="password"
+                        class="text-foreground text-xs font-semibold"
+                    >
+                        {t('ui.auth.confirm_password.password')}
+                    </Label>
+                    <PasswordInput
+                        id="password"
+                        name="password"
+                        required
+                        autocomplete="current-password"
+                        placeholder={t(
+                            'ui.auth.confirm_password.password_placeholder',
+                        )}
+                        class="h-11 rounded-xl"
+                    />
+                    <InputError message={errors.password} />
+                </div>
 
-<Form {...store.form()} resetOnSuccess>
-    {#snippet children({ errors, processing })}
-        <div class="space-y-6">
-            <div class="grid gap-2">
-                <Label for="password">Password</Label>
-                <PasswordInput
-                    id="password"
-                    name="password"
-                    class="mt-1 block w-full"
-                    required
-                    autocomplete="current-password"
-                />
-                <InputError message={errors.password} />
-            </div>
-
-            <div class="flex items-center">
                 <Button
                     type="submit"
-                    class="w-full"
+                    class="mt-1 h-11 w-full rounded-xl font-semibold shadow-xs"
                     disabled={processing}
                     data-test="confirm-password-button"
                 >
-                    {#if processing}<Spinner />{/if}
-                    Confirm password
+                    {#if processing}<Spinner class="mr-2" />{/if}
+                    {t('ui.auth.confirm_password.submit')}
                 </Button>
             </div>
-        </div>
-    {/snippet}
-</Form>
+        {/snippet}
+    </Form>
+
+    <PasskeyVerify
+        routes={{
+            options: confirmOptions(),
+            submit: confirmStore(),
+        }}
+        label={t('ui.auth.confirm_password.passkey_button')}
+        loadingLabel={t('ui.auth.confirm_password.passkey_loading')}
+        separator={t('ui.auth.confirm_password.or_passkey')}
+        separatorPosition="before"
+        class="border-border/70 hover:bg-accent/60 h-11 rounded-xl font-medium transition-colors"
+    />
+</div>

@@ -152,9 +152,7 @@
     </div>
 
     <!-- Footer: 還沒有帳號？立即免費註冊 -->
-    <div
-        class="border-border/60 text-muted-foreground border-t pt-3 text-center text-sm"
-    >
+    <div class="text-muted-foreground pt-3 text-center text-sm">
         <span>{t('ui.auth.login.no_account')}</span>
         <TextLink
             href={register()}

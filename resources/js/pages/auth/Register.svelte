@@ -119,9 +119,7 @@
             </Button>
         </div>
 
-        <div
-            class="border-border/60 text-muted-foreground border-t pt-3 text-center text-sm"
-        >
+        <div class=" text-muted-foreground pt-3 text-center text-sm">
             <span>{t('ui.auth.register.has_account')}</span>
             <TextLink
                 href={login()}

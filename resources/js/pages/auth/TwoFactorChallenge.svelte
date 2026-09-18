@@ -9,6 +9,7 @@
         InputOTPGroup,
         InputOTPSlot,
     } from '@/components/ui/input-otp';
+    import { t } from '@/lib/i18n';
     import { store } from '@/routes/two-factor/login';
     import type { TwoFactorConfigContent } from '@/types';
 
@@ -18,18 +19,16 @@
     const authConfigContent: TwoFactorConfigContent = $derived.by(() => {
         if (showRecoveryInput) {
             return {
-                title: 'Recovery code',
-                description:
-                    'Please confirm access to your account by entering one of your emergency recovery codes.',
-                buttonText: 'login using an authentication code',
+                title: t('ui.auth.two_factor.recovery_code_title'),
+                description: t('ui.auth.two_factor.recovery_code_subtitle'),
+                buttonText: t('ui.auth.two_factor.switch_to_auth_code'),
             };
         }
 
         return {
-            title: 'Authentication code',
-            description:
-                'Enter the authentication code provided by your authenticator application.',
-            buttonText: 'login using a recovery code',
+            title: t('ui.auth.two_factor.auth_code_title'),
+            description: t('ui.auth.two_factor.auth_code_subtitle'),
+            buttonText: t('ui.auth.two_factor.switch_to_recovery'),
         };
     });
 
@@ -47,7 +46,7 @@
     }
 </script>
 
-<AppHead title="Two-factor authentication" />
+<AppHead title={t('ui.auth.two_factor.title')} />
 
 <div class="space-y-6">
     {#if !showRecoveryInput}
@@ -79,11 +78,15 @@
                     </div>
                     <InputError message={errors.code} />
                 </div>
-                <Button type="submit" class="w-full" disabled={processing}
-                    >Continue</Button
+                <Button
+                    type="submit"
+                    class="h-11 w-full rounded-xl font-semibold shadow-xs"
+                    disabled={processing}
                 >
+                    {t('ui.auth.two_factor.submit')}
+                </Button>
                 <div class="text-muted-foreground text-center text-sm">
-                    <span>or you can </span>
+                    <span>{t('ui.auth.two_factor.or_you_can')} </span>
                     <button
                         type="button"
                         class="text-foreground underline decoration-zinc-300 underline-offset-4 transition-colors duration-300 ease-out hover:decoration-current! dark:decoration-zinc-500"
@@ -100,16 +103,21 @@
                 <Input
                     name="recovery_code"
                     type="text"
-                    placeholder="Enter recovery code"
+                    placeholder={t('ui.auth.two_factor.recovery_placeholder')}
                     required
+                    class="h-11 rounded-xl"
                 />
                 <InputError message={errors.recovery_code} />
-                <Button type="submit" class="w-full" disabled={processing}
-                    >Continue</Button
+                <Button
+                    type="submit"
+                    class="h-11 w-full rounded-xl font-semibold shadow-xs"
+                    disabled={processing}
                 >
+                    {t('ui.auth.two_factor.submit')}
+                </Button>
 
                 <div class="text-muted-foreground text-center text-sm">
-                    <span>or you can </span>
+                    <span>{t('ui.auth.two_factor.or_you_can')} </span>
                     <button
                         type="button"
                         class="text-foreground underline decoration-zinc-300 underline-offset-4 transition-colors duration-300 ease-out hover:decoration-current! dark:decoration-zinc-500"

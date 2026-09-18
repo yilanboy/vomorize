@@ -202,6 +202,7 @@ return [
             'email' => '電子郵件',
             'email_placeholder' => 'name@example.com',
             'submit' => '寄送重設密碼連結',
+            'or_return_to' => '或，',
             'back_to_login' => '返回登入',
         ],
         'reset_password' => [
@@ -231,6 +232,7 @@ return [
             'switch_to_auth_code' => '改用驗證器動態碼登入',
             'recovery_placeholder' => '請輸入緊急恢復代碼',
             'submit' => '驗證並繼續',
+            'or_you_can' => '或，您可以',
         ],
         'confirm_password' => [
             'title' => '安全確認',
@@ -240,6 +242,7 @@ return [
             'submit' => '確認密碼',
             'passkey_button' => '使用通行密鑰確認身分',
             'passkey_loading' => '正在確認中...',
+            'or_passkey' => '或使用通行密鑰確認',
             'or_password' => '或輸入密碼確認',
         ],
     ],

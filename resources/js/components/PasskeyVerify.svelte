@@ -19,6 +19,7 @@
         loadingLabel?: string;
         separator?: string;
         showSeparator?: boolean;
+        separatorPosition?: 'before' | 'after';
         class?: string;
     };
 
@@ -42,6 +43,23 @@
 </script>
 
 {#if passkeyVerify.isSupported}
+    {#if (props.showSeparator ?? true) && props.separatorPosition === 'before'}
+        <div class="relative my-6">
+            <div class="absolute inset-0 flex items-center">
+                <Separator class="w-full" />
+            </div>
+            <div
+                class="relative flex justify-center text-sm font-medium"
+            >
+                <span
+                    class="bg-card text-muted-foreground px-3 text-xs font-medium"
+                >
+                    {props.separator ?? 'Or continue with passkey'}
+                </span>
+            </div>
+        </div>
+    {/if}
+
     <div class="grid gap-2">
         <Button
             type="button"
@@ -69,7 +87,7 @@
         {/if}
     </div>
 
-    {#if props.showSeparator ?? true}
+    {#if (props.showSeparator ?? true) && props.separatorPosition !== 'before'}
         <div class="relative my-6">
             <div class="absolute inset-0 flex items-center">
                 <Separator class="w-full" />
