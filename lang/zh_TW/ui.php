@@ -367,4 +367,13 @@ return [
             ],
         ],
     ],
+    'levels_page' => [
+        'title' => '單字等級',
+        'subtitle' => '日常生活 7,000 常用單字，循序漸進分級題庫。',
+        'breadcrumb' => '單字等級',
+        'level_badge' => '等級 :id',
+        'stats' => ':words 字 · :groups 組',
+        'mastery' => '已掌握 :rate%',
+        'enter_level' => '進入等級',
+    ],
 ];

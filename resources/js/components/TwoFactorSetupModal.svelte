@@ -46,42 +46,28 @@
     const modalConfig: TwoFactorConfigContent = $derived.by(() => {
         if (twoFactorEnabled) {
             return {
-                title: t(
-                    'ui.settings.security.two_factor.modal.enabled_title',
-                ),
+                title: t('ui.settings.security.two_factor.modal.enabled_title'),
                 description: t(
                     'ui.settings.security.two_factor.modal.enabled_desc',
                 ),
-                buttonText: t(
-                    'ui.settings.security.two_factor.modal.close',
-                ),
+                buttonText: t('ui.settings.security.two_factor.modal.close'),
             };
         }
 
         if (showVerificationStep) {
             return {
-                title: t(
-                    'ui.settings.security.two_factor.modal.verify_title',
-                ),
+                title: t('ui.settings.security.two_factor.modal.verify_title'),
                 description: t(
                     'ui.settings.security.two_factor.modal.verify_desc',
                 ),
-                buttonText: t(
-                    'ui.settings.security.two_factor.modal.continue',
-                ),
+                buttonText: t('ui.settings.security.two_factor.modal.continue'),
             };
         }
 
         return {
-            title: t(
-                'ui.settings.security.two_factor.modal.setup_title',
-            ),
-            description: t(
-                'ui.settings.security.two_factor.modal.setup_desc',
-            ),
-            buttonText: t(
-                'ui.settings.security.two_factor.modal.continue',
-            ),
+            title: t('ui.settings.security.two_factor.modal.setup_title'),
+            description: t('ui.settings.security.two_factor.modal.setup_desc'),
+            buttonText: t('ui.settings.security.two_factor.modal.continue'),
         };
     });
 

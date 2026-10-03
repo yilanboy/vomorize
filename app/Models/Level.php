@@ -33,4 +33,12 @@ class Level extends Model
     {
         return $this->hasMany(Vocabulary::class);
     }
+
+    /**
+     * @return HasMany<LearningProgress, $this>
+     */
+    public function learningProgress(): HasMany
+    {
+        return $this->hasMany(LearningProgress::class);
+    }
 }

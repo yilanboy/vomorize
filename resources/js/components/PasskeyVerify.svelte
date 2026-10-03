@@ -48,9 +48,7 @@
             <div class="absolute inset-0 flex items-center">
                 <Separator class="w-full" />
             </div>
-            <div
-                class="relative flex justify-center text-sm font-medium"
-            >
+            <div class="relative flex justify-center text-sm font-medium">
                 <span
                     class="bg-card text-muted-foreground px-3 text-xs font-medium"
                 >
