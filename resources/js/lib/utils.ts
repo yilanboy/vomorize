@@ -1,5 +1,5 @@
 import type { LinkComponentBaseProps } from '@inertiajs/core';
-export { cn } from "cn";
+export { cn } from 'cn';
 
 export function toUrl(
     href: NonNullable<LinkComponentBaseProps['href']>,
@@ -12,3 +12,7 @@ export type WithoutChildren<T> = T extends { children?: any }
     ? Omit<T, 'children'>
     : T;
 export type WithoutChildrenOrChild<T> = WithoutChildren<WithoutChild<T>>;
+
+export function back() {
+    window.history.back();
+}
