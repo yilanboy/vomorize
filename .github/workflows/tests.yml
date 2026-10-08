@@ -12,6 +12,8 @@ permissions:
 jobs:
   ci:
     runs-on: ubuntu-latest
+    env:
+      APP_LOCALE: zh_TW
 
     steps:
       - name: Checkout code
