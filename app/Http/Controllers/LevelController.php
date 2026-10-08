@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Actions\GetLevelOverview;
-use App\Models\Level;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
