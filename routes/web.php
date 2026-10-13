@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/levels', [LevelController::class, 'index'])->name('levels.index');
+Route::get('/levels/{level}', [LevelController::class, 'show'])->name('levels.show');
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::inertia('dashboard', 'Dashboard')->name('dashboard');
