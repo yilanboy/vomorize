@@ -27,11 +27,11 @@ test('guest can access level detail page and sees inertia levels/Show component'
         ->where('level.groups_count', 10)
         ->has('groups', 10)
         ->where('groups.0.sequence', 1)
-        ->where('groups.0.status', 'ready')
+        ->where('groups.0.status', 'not_started')
         ->where('groups.1.status', 'not_started')
         ->where('counts.all', 10)
-        ->where('counts.ready', 1)
-        ->where('counts.not_started', 9)
+        ->where('counts.ready', 0)
+        ->where('counts.not_started', 10)
         ->where('counts.cooldown', 0)
         ->where('counts.completed', 0)
     );
@@ -138,7 +138,7 @@ test('calculates group learning statuses and counts correctly for authenticated 
     );
 });
 
-test('first unstarted group becomes ready when no reviews are due', function () {
+test('unstarted groups remain not_started and only cooled down groups are ready', function () {
     $user = User::factory()->create();
     $level = Level::factory()->create();
 
@@ -156,17 +156,17 @@ test('first unstarted group becomes ready when no reviews are due', function () 
     ]);
 
     // Group 2 & 3: Unstarted
-    // Since group 1 is in cooldown and no other review is due, Group 2 should be marked 'ready'
+    // Unstarted groups remain not_started; only groups with stage >= 1 and cooled down are ready
     $response = $this->actingAs($user)->get(route('levels.show', $level));
 
     $response->assertOk();
     $response->assertInertia(fn (Assert $page) => $page
         ->component('levels/Show')
         ->where('counts.cooldown', 1)
-        ->where('counts.ready', 1)
-        ->where('counts.not_started', 1)
+        ->where('counts.ready', 0)
+        ->where('counts.not_started', 2)
         ->where('groups.0.status', 'cooldown')
-        ->where('groups.1.status', 'ready')
+        ->where('groups.1.status', 'not_started')
         ->where('groups.2.status', 'not_started')
     );
 });

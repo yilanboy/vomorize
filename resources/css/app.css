@@ -1,5 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap');
 @import 'tailwindcss';
-
 @import 'tw-animate-css';
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
@@ -8,6 +8,8 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
+    --font-bubble: Fredoka, ui-rounded, 'SF Pro Rounded', system-ui, sans-serif;
+
     --font-sans:
         Inter, 'Noto Sans TC', ui-sans-serif, system-ui, sans-serif,
         'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',

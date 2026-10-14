@@ -60,7 +60,7 @@
     let filteredGroups = $derived(
         activeFilter === 'all'
             ? groups
-            : groups.filter((g) => g.status === activeFilter)
+            : groups.filter((g) => g.status === activeFilter),
     );
 
     const breadcrumbs = $derived<BreadcrumbItem[]>([
@@ -110,7 +110,7 @@
         >
             {t('ui.level_detail.subtitle', {
                 words: (
-                    level.vocabularies_count ?? (level.groups_count * 10)
+                    level.vocabularies_count ?? level.groups_count * 10
                 ).toLocaleString(),
                 groups: level.groups_count,
             })}
@@ -131,11 +131,12 @@
                 'inline-flex items-center gap-2 rounded-xl px-4 py-2 text-sm font-medium transition-all duration-200': true,
                 'bg-slate-900 text-white shadow-xs dark:bg-slate-100 dark:text-slate-900':
                     activeFilter === 'all',
-                'bg-card text-foreground border-border border hover:bg-muted/80':
+                'bg-card text-foreground border-border hover:bg-muted/80 border':
                     activeFilter !== 'all',
             }}
         >
-            <span>{t('ui.level_detail.filters.all', { count: counts.all })}</span
+            <span
+                >{t('ui.level_detail.filters.all', { count: counts.all })}</span
             >
         </button>
 
@@ -257,7 +258,7 @@
                     class={{
                         'group relative flex aspect-square flex-col items-center justify-center rounded-xl p-2 transition-all duration-200 sm:p-3': true,
                         // Completed
-                        'shadow-2xs border border-emerald-300 bg-emerald-50/90 text-emerald-800 hover:border-emerald-400 hover:shadow-sm dark:border-emerald-800/80 dark:bg-emerald-950/30 dark:text-emerald-300 dark:hover:border-emerald-700':
+                        'border border-emerald-300 bg-emerald-50/90 text-emerald-800 shadow-2xs hover:border-emerald-400 hover:shadow-sm dark:border-emerald-800/80 dark:bg-emerald-950/30 dark:text-emerald-300 dark:hover:border-emerald-700':
                             group.status === 'completed',
                         // Ready
                         'border-2 border-blue-500 bg-blue-50/90 text-blue-700 shadow-xs ring-2 ring-blue-500/20 hover:border-blue-600 hover:shadow-md dark:border-blue-500 dark:bg-blue-950/50 dark:text-blue-300 dark:ring-blue-400/20 dark:hover:border-blue-400':
@@ -266,7 +267,7 @@
                         'border border-amber-300 bg-amber-50/80 text-amber-800 hover:border-amber-400 hover:shadow-sm dark:border-amber-800/80 dark:bg-amber-950/30 dark:text-amber-300 dark:hover:border-amber-700':
                             group.status === 'cooldown',
                         // Not Started
-                        'bg-card text-muted-foreground border-border border hover:border-slate-400 hover:text-foreground hover:shadow-2xs dark:border-slate-800 dark:bg-slate-900/40 dark:text-slate-400 dark:hover:border-slate-600 dark:hover:text-slate-200':
+                        'bg-card text-muted-foreground border-border hover:text-foreground border hover:border-slate-400 hover:shadow-2xs dark:border-slate-800 dark:bg-slate-900/40 dark:text-slate-400 dark:hover:border-slate-600 dark:hover:text-slate-200':
                             group.status === 'not_started',
                     }}
                 >
@@ -292,28 +293,13 @@
                     </div>
 
                     <!-- Center: Sequence Number Only -->
-                    <span class="text-lg font-bold sm:text-xl">
+                    <span
+                        class="font-bubble text-lg font-semibold tracking-wide sm:text-xl"
+                    >
                         {group.sequence}
                     </span>
                 </Link>
             {/each}
         </div>
     {/if}
-
-    <!-- Bottom Helper Text & Stats -->
-    <footer
-        class="border-border/60 text-muted-foreground mt-8 flex flex-col items-start justify-between gap-4 border-t pt-6 text-sm sm:flex-row sm:items-center"
-    >
-        <p class="leading-relaxed">
-            {t('ui.level_detail.footer_hint')}
-        </p>
-        <span class="whitespace-nowrap font-medium">
-            {t('ui.level_detail.footer_stats', {
-                words: (
-                    level.vocabularies_count ?? (level.groups_count * 10)
-                ).toLocaleString(),
-                groups: level.groups_count,
-            })}
-        </span>
-    </footer>
 </div>
