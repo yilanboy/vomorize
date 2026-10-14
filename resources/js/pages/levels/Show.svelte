@@ -141,84 +141,92 @@
         </button>
 
         <!-- Ready -->
-        <button
-            type="button"
-            onclick={() => (activeFilter = 'ready')}
-            class={{
-                'inline-flex items-center gap-2 rounded-xl border px-4 py-2 text-sm font-medium transition-all duration-200': true,
-                'border-blue-600 bg-blue-600 text-white shadow-xs dark:border-blue-600 dark:bg-blue-600 dark:text-white':
-                    activeFilter === 'ready',
-                'border-blue-200 bg-blue-50/80 text-blue-700 hover:bg-blue-100/80 dark:border-blue-900/60 dark:bg-blue-950/40 dark:text-blue-300':
-                    activeFilter !== 'ready',
-            }}
-        >
-            <Zap class="size-4" />
-            <span
-                >{t('ui.level_detail.filters.ready', {
-                    count: counts.ready,
-                })}</span
+        {#if counts.ready > 0}
+            <button
+                type="button"
+                onclick={() => (activeFilter = 'ready')}
+                class={{
+                    'inline-flex items-center gap-2 rounded-xl border px-4 py-2 text-sm font-medium transition-all duration-200': true,
+                    'border-blue-600 bg-blue-600 text-white shadow-xs dark:border-blue-600 dark:bg-blue-600 dark:text-white':
+                        activeFilter === 'ready',
+                    'border-blue-200 bg-blue-50/80 text-blue-700 hover:bg-blue-100/80 dark:border-blue-900/60 dark:bg-blue-950/40 dark:text-blue-300':
+                        activeFilter !== 'ready',
+                }}
             >
-        </button>
+                <Zap class="size-4" />
+                <span
+                    >{t('ui.level_detail.filters.ready', {
+                        count: counts.ready,
+                    })}</span
+                >
+            </button>
+        {/if}
 
         <!-- Cooldown -->
-        <button
-            type="button"
-            onclick={() => (activeFilter = 'cooldown')}
-            class={{
-                'inline-flex items-center gap-2 rounded-xl border px-4 py-2 text-sm font-medium transition-all duration-200': true,
-                'border-amber-600 bg-amber-600 text-white shadow-xs dark:border-amber-600 dark:bg-amber-600 dark:text-white':
-                    activeFilter === 'cooldown',
-                'border-amber-200 bg-amber-50/80 text-amber-800 hover:bg-amber-100/80 dark:border-amber-900/60 dark:bg-amber-950/40 dark:text-amber-300':
-                    activeFilter !== 'cooldown',
-            }}
-        >
-            <Clock class="size-4" />
-            <span
-                >{t('ui.level_detail.filters.cooldown', {
-                    count: counts.cooldown,
-                })}</span
+        {#if counts.cooldown > 0}
+            <button
+                type="button"
+                onclick={() => (activeFilter = 'cooldown')}
+                class={{
+                    'inline-flex items-center gap-2 rounded-xl border px-4 py-2 text-sm font-medium transition-all duration-200': true,
+                    'border-amber-600 bg-amber-600 text-white shadow-xs dark:border-amber-600 dark:bg-amber-600 dark:text-white':
+                        activeFilter === 'cooldown',
+                    'border-amber-200 bg-amber-50/80 text-amber-800 hover:bg-amber-100/80 dark:border-amber-900/60 dark:bg-amber-950/40 dark:text-amber-300':
+                        activeFilter !== 'cooldown',
+                }}
             >
-        </button>
+                <Clock class="size-4" />
+                <span
+                    >{t('ui.level_detail.filters.cooldown', {
+                        count: counts.cooldown,
+                    })}</span
+                >
+            </button>
+        {/if}
 
         <!-- Not Started -->
-        <button
-            type="button"
-            onclick={() => (activeFilter = 'not_started')}
-            class={{
-                'inline-flex items-center gap-2 rounded-xl border px-4 py-2 text-sm font-medium transition-all duration-200': true,
-                'border-slate-700 bg-slate-700 text-white shadow-xs dark:border-slate-200 dark:bg-slate-200 dark:text-slate-900':
-                    activeFilter === 'not_started',
-                'bg-card text-muted-foreground border-border hover:bg-muted/80 dark:border-slate-800 dark:bg-slate-900/40 dark:text-slate-400':
-                    activeFilter !== 'not_started',
-            }}
-        >
-            <Circle class="size-4 stroke-[1.5]" />
-            <span
-                >{t('ui.level_detail.filters.not_started', {
-                    count: counts.not_started,
-                })}</span
+        {#if counts.not_started > 0}
+            <button
+                type="button"
+                onclick={() => (activeFilter = 'not_started')}
+                class={{
+                    'inline-flex items-center gap-2 rounded-xl border px-4 py-2 text-sm font-medium transition-all duration-200': true,
+                    'border-slate-700 bg-slate-700 text-white shadow-xs dark:border-slate-200 dark:bg-slate-200 dark:text-slate-900':
+                        activeFilter === 'not_started',
+                    'bg-card text-muted-foreground border-border hover:bg-muted/80 dark:border-slate-800 dark:bg-slate-900/40 dark:text-slate-400':
+                        activeFilter !== 'not_started',
+                }}
             >
-        </button>
+                <Circle class="size-4 stroke-[1.5]" />
+                <span
+                    >{t('ui.level_detail.filters.not_started', {
+                        count: counts.not_started,
+                    })}</span
+                >
+            </button>
+        {/if}
 
         <!-- Completed -->
-        <button
-            type="button"
-            onclick={() => (activeFilter = 'completed')}
-            class={{
-                'inline-flex items-center gap-2 rounded-xl border px-4 py-2 text-sm font-medium transition-all duration-200': true,
-                'border-emerald-600 bg-emerald-600 text-white shadow-xs dark:border-emerald-600 dark:bg-emerald-600 dark:text-white':
-                    activeFilter === 'completed',
-                'border-emerald-200 bg-emerald-50/80 text-emerald-800 hover:bg-emerald-100/80 dark:border-emerald-900/60 dark:bg-emerald-950/40 dark:text-emerald-300':
-                    activeFilter !== 'completed',
-            }}
-        >
-            <CheckCircle2 class="size-4" />
-            <span
-                >{t('ui.level_detail.filters.completed', {
-                    count: counts.completed,
-                })}</span
+        {#if counts.completed > 0}
+            <button
+                type="button"
+                onclick={() => (activeFilter = 'completed')}
+                class={{
+                    'inline-flex items-center gap-2 rounded-xl border px-4 py-2 text-sm font-medium transition-all duration-200': true,
+                    'border-emerald-600 bg-emerald-600 text-white shadow-xs dark:border-emerald-600 dark:bg-emerald-600 dark:text-white':
+                        activeFilter === 'completed',
+                    'border-emerald-200 bg-emerald-50/80 text-emerald-800 hover:bg-emerald-100/80 dark:border-emerald-900/60 dark:bg-emerald-950/40 dark:text-emerald-300':
+                        activeFilter !== 'completed',
+                }}
             >
-        </button>
+                <CheckCircle2 class="size-4" />
+                <span
+                    >{t('ui.level_detail.filters.completed', {
+                        count: counts.completed,
+                    })}</span
+                >
+            </button>
+        {/if}
     </div>
 
     <!-- 100-Group Matrix (10x10 Grid) -->
@@ -294,7 +302,7 @@
 
                     <!-- Center: Sequence Number Only -->
                     <span
-                        class="font-bubble text-lg font-semibold tracking-wide sm:text-xl"
+                        class="font-bubble text-lg font-semibold tracking-wide sm:text-2xl"
                     >
                         {group.sequence}
                     </span>
