@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use App\Actions\CalculateGroupStatusCounts;
+use App\Actions\GetLevelDetail;
 use App\Actions\GetLevelGroups;
-use App\Actions\GetLevelOverview;
-use App\Actions\GetLevelSummary;
+use App\Actions\GetLevelProgress;
+use App\Actions\GetLevels;
+use App\Actions\GetLevelsProgress;
 use App\Models\Level;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -17,13 +18,14 @@ class LevelController extends Controller
     /**
      * Display the vocabulary levels overview page.
      */
-    public function index(Request $request, GetLevelOverview $getLevelOverview): Response
+    public function index(Request $request, GetLevels $getLevels, GetLevelsProgress $getLevelsProgress): Response
     {
         /** @var User|null $user */
         $user = $request->user();
 
         return Inertia::render('Levels', [
-            'levels' => $getLevelOverview->handle($user),
+            'levels' => $getLevels->handle(),
+            'progress' => $user instanceof User ? $getLevelsProgress->handle($user) : null,
         ]);
     }
 
@@ -33,21 +35,17 @@ class LevelController extends Controller
     public function show(
         Request $request,
         Level $level,
+        GetLevelDetail $getLevelDetail,
         GetLevelGroups $getLevelGroups,
-        CalculateGroupStatusCounts $calculateGroupStatusCounts,
-        GetLevelSummary $getLevelSummary
+        GetLevelProgress $getLevelProgress,
     ): Response {
         /** @var User|null $user */
         $user = $request->user();
 
-        $groups = $getLevelGroups->handle($level, $user);
-        $counts = $calculateGroupStatusCounts->handle($groups);
-        $levelSummary = $getLevelSummary->handle($level, $groups);
-
         return Inertia::render('levels/Show', [
-            'level' => $levelSummary,
-            'groups' => $groups,
-            'counts' => $counts,
+            'level' => $getLevelDetail->handle($level),
+            'groups' => $getLevelGroups->handle($level),
+            'progress' => $user instanceof User ? $getLevelProgress->handle($level, $user) : null,
         ]);
     }
 }

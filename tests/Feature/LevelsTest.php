@@ -40,7 +40,7 @@ test('levels page shares ui translation keys for levels_page', function () {
     );
 });
 
-test('levels page passes levels data loaded from database with zero mastery for guest', function () {
+test('levels page passes levels data loaded from database with null progress for guest', function () {
     $level = Level::factory()->create([
         'name' => '等級 1',
         'description' => '基礎入門：核心常用 1,000 單字',
@@ -57,13 +57,11 @@ test('levels page passes levels data loaded from database with zero mastery for 
         ->where('levels.0.description', '基礎入門：核心常用 1,000 單字')
         ->where('levels.0.vocabularies_count', 0)
         ->where('levels.0.groups_count', 0)
-        ->where('levels.0.total_stages', 0)
-        ->where('levels.0.max_stages', 0)
-        ->where('levels.0.mastery_percentage', 0)
+        ->where('progress', null)
     );
 });
 
-test('levels page calculates mastery percentage correctly based on 6 stages per group', function () {
+test('levels page calculates mastery percentage correctly based on 6 stages per group for authenticated user', function () {
     $user = User::factory()->create();
 
     $level = Level::factory()->create([
@@ -100,9 +98,9 @@ test('levels page calculates mastery percentage correctly based on 6 stages per 
         ->has('levels', 1)
         ->where('levels.0.id', $level->id)
         ->where('levels.0.groups_count', 4)
-        ->where('levels.0.total_stages', 12)
-        ->where('levels.0.max_stages', 24)
-        ->where('levels.0.mastery_percentage', 50)
+        ->where("progress.{$level->id}.total_stages", 12)
+        ->where("progress.{$level->id}.max_stages", 24)
+        ->where("progress.{$level->id}.mastery_percentage", 50)
     );
 });
 
@@ -146,8 +144,38 @@ test('levels page calculates mastery percentage accurately for 100 groups standa
         ->has('levels', 1)
         ->where('levels.0.id', $level->id)
         ->where('levels.0.groups_count', 100)
-        ->where('levels.0.total_stages', 90)
-        ->where('levels.0.max_stages', 600)
-        ->where('levels.0.mastery_percentage', 15)
+        ->where("progress.{$level->id}.total_stages", 90)
+        ->where("progress.{$level->id}.max_stages", 600)
+        ->where("progress.{$level->id}.mastery_percentage", 15)
+    );
+});
+
+test('levels page calculates decimal mastery percentage for early progress', function () {
+    $user = User::factory()->create();
+
+    $level = Level::factory()->create([
+        'name' => '等級 1',
+    ]);
+
+    $groups = Group::factory()->count(100)->create([
+        'level_id' => $level->id,
+    ]);
+
+    // User completed 1 stage of 1 group: 1 / 600 = 0.16666...% -> 0.17%
+    LearningProgress::factory()->create([
+        'user_id' => $user->id,
+        'level_id' => $level->id,
+        'group_id' => $groups[0]->id,
+        'stage' => 1,
+    ]);
+
+    $response = $this->actingAs($user)->get(route('levels.index'));
+
+    $response->assertOk();
+    $response->assertInertia(fn (Assert $page) => $page
+        ->component('Levels')
+        ->where("progress.{$level->id}.total_stages", 1)
+        ->where("progress.{$level->id}.max_stages", 600)
+        ->where("progress.{$level->id}.mastery_percentage", 0.17)
     );
 });

@@ -18,6 +18,11 @@ class GroupFactory extends Factory
      */
     protected static array $sequences = [];
 
+    public static function resetSequences(): void
+    {
+        static::$sequences = [];
+    }
+
     public function definition(): array
     {
         return [

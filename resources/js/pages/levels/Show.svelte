@@ -5,6 +5,7 @@
     import Clock from '@lucide/svelte/icons/clock';
     import RotateCcw from '@lucide/svelte/icons/rotate-ccw';
     import Zap from '@lucide/svelte/icons/zap';
+    import { show as showGroup } from '@/actions/App/Http/Controllers/GroupController';
     import AppHead from '@/components/AppHead.svelte';
     import { t } from '@/lib/i18n';
     import type { BreadcrumbItem } from '@/types';
@@ -15,19 +16,19 @@
         description: string;
         vocabularies_count: number;
         groups_count: number;
-        total_stages: number;
-        max_stages: number;
-        mastery_percentage: number;
     }
 
     interface GroupData {
         id: number;
         sequence: number;
+        vocabularies_count: number;
+    }
+
+    interface GroupProgressData {
         status: 'ready' | 'cooldown' | 'not_started' | 'completed';
         stage: number;
         next_review_at: string | null;
         cooldown_remaining_seconds: number | null;
-        vocabularies_count: number;
     }
 
     interface StatusCounts {
@@ -38,32 +39,48 @@
         completed: number;
     }
 
+    interface LevelProgressData {
+        groups: Record<number, GroupProgressData>;
+        counts: StatusCounts;
+    }
+
     let {
         level,
         groups = [],
-        counts = {
-            all: 0,
-            ready: 0,
-            cooldown: 0,
-            not_started: 0,
-            completed: 0,
-        },
+        progress = null,
     }: {
         level: LevelData;
         groups?: GroupData[];
-        counts?: StatusCounts;
+        progress?: LevelProgressData | null;
     } = $props();
 
     type FilterKey = 'all' | 'ready' | 'cooldown' | 'not_started' | 'completed';
     let activeFilter = $state<FilterKey>('all');
 
+    function getGroupStatus(
+        groupId: number,
+    ): 'ready' | 'cooldown' | 'not_started' | 'completed' {
+        return progress?.groups?.[groupId]?.status ?? 'not_started';
+    }
+
+    const counts = $derived(
+        progress?.counts ?? {
+            all: groups.length,
+            ready: 0,
+            cooldown: 0,
+            not_started: groups.length,
+            completed: 0,
+        },
+    );
+
     let filteredGroups = $derived(
         activeFilter === 'all'
             ? groups
-            : groups.filter((g) => g.status === activeFilter),
+            : groups.filter((g) => getGroupStatus(g.id) === activeFilter),
     );
 
-    const breadcrumbs = $derived<BreadcrumbItem[]>([
+    // svelte-ignore state_referenced_locally
+    const breadcrumbs: BreadcrumbItem[] = [
         {
             title: t('ui.level_detail.breadcrumb_levels'),
             href: '/levels',
@@ -72,15 +89,13 @@
             title: t('ui.level_detail.breadcrumb_level', { id: level.id }),
             href: `/levels/${level.id}`,
         },
-    ]);
+    ];
 
-    $effect(() => {
-        setLayoutProps({
-            breadcrumbs: breadcrumbs,
-        });
+    setLayoutProps({
+        breadcrumbs,
     });
 
-    function getStatusLabel(status: GroupData['status']): string {
+    function getStatusLabel(status: GroupProgressData['status']): string {
         switch (status) {
             case 'completed':
                 return t('ui.level_detail.completed_label');
@@ -253,43 +268,44 @@
             class="grid grid-cols-4 gap-2.5 sm:grid-cols-5 sm:gap-3 md:grid-cols-8 lg:grid-cols-10"
         >
             {#each filteredGroups as group (group.id)}
+                {@const groupStatus = getGroupStatus(group.id)}
                 <Link
-                    href={`/levels/${level.id}/groups/${group.sequence}`}
+                    href={showGroup.url(group.id)}
                     title={t('ui.level_detail.card_aria', {
                         number: group.sequence,
-                        status: getStatusLabel(group.status),
+                        status: getStatusLabel(groupStatus),
                     })}
                     aria-label={t('ui.level_detail.card_aria', {
                         number: group.sequence,
-                        status: getStatusLabel(group.status),
+                        status: getStatusLabel(groupStatus),
                     })}
                     class={{
                         'group relative flex aspect-square flex-col items-center justify-center rounded-xl p-2 transition-all duration-200 sm:p-3': true,
                         // Completed
                         'border border-emerald-300 bg-emerald-50/90 text-emerald-800 shadow-2xs hover:border-emerald-400 hover:shadow-sm dark:border-emerald-800/80 dark:bg-emerald-950/30 dark:text-emerald-300 dark:hover:border-emerald-700':
-                            group.status === 'completed',
+                            groupStatus === 'completed',
                         // Ready
                         'border-2 border-blue-500 bg-blue-50/90 text-blue-700 shadow-xs ring-2 ring-blue-500/20 hover:border-blue-600 hover:shadow-md dark:border-blue-500 dark:bg-blue-950/50 dark:text-blue-300 dark:ring-blue-400/20 dark:hover:border-blue-400':
-                            group.status === 'ready',
+                            groupStatus === 'ready',
                         // Cooldown
                         'border border-amber-300 bg-amber-50/80 text-amber-800 hover:border-amber-400 hover:shadow-sm dark:border-amber-800/80 dark:bg-amber-950/30 dark:text-amber-300 dark:hover:border-amber-700':
-                            group.status === 'cooldown',
+                            groupStatus === 'cooldown',
                         // Not Started
                         'bg-card text-muted-foreground border-border hover:text-foreground border hover:border-slate-400 hover:shadow-2xs dark:border-slate-800 dark:bg-slate-900/40 dark:text-slate-400 dark:hover:border-slate-600 dark:hover:text-slate-200':
-                            group.status === 'not_started',
+                            groupStatus === 'not_started',
                     }}
                 >
                     <!-- Status micro icon in top-right corner -->
                     <div class="absolute top-1.5 right-1.5 sm:top-2 sm:right-2">
-                        {#if group.status === 'completed'}
+                        {#if groupStatus === 'completed'}
                             <CheckCircle2
                                 class="size-3.5 text-emerald-600 sm:size-4 dark:text-emerald-400"
                             />
-                        {:else if group.status === 'ready'}
+                        {:else if groupStatus === 'ready'}
                             <Zap
                                 class="size-3.5 fill-blue-500/20 text-blue-600 sm:size-4 dark:text-blue-400"
                             />
-                        {:else if group.status === 'cooldown'}
+                        {:else if groupStatus === 'cooldown'}
                             <Clock
                                 class="size-3.5 text-amber-600 sm:size-4 dark:text-amber-400"
                             />

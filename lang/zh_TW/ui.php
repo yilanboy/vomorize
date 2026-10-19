@@ -406,4 +406,27 @@ return [
         'completed_label' => '已達永久記憶',
         'not_started_label' => '尚未開始',
     ],
+    'group_detail' => [
+        'title' => '等級 :level_id · 第 :sequence 組',
+        'breadcrumb_levels' => '單字等級',
+        'breadcrumb_level' => '等級 :id',
+        'breadcrumb_group' => '第 :sequence 組',
+        'status' => [
+            'all' => '全部',
+            'ready' => '可以開始',
+            'cooldown' => '冷卻中',
+            'not_started' => '尚未開始',
+            'completed' => '已經完成',
+        ],
+        'play_word_audio' => '播放單字發音 (Space)',
+        'play_sentence_audio' => '播放例句發音 (S)',
+        'example_label' => '情境例句',
+        'sticky_bar' => [
+            'summary' => '第 :sequence 組 · :count 個核心單字',
+            'start_stage_1' => '開始第一階段測驗 (Stage 1) →',
+            'start_review' => '開始複習測驗 (Stage :stage) →',
+            'cooldown' => '冷卻中 (:time)',
+            'mastered' => '隨時自我測驗 →',
+        ],
+    ],
 ];
