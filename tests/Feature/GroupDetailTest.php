@@ -166,9 +166,42 @@ test('group detail page shares ui translation keys for group_detail', function (
         ->has('translations.ui.group_detail.sticky_bar.start_review')
         ->has('translations.ui.group_detail.sticky_bar.cooldown')
         ->has('translations.ui.group_detail.sticky_bar.mastered')
+        ->has('translations.ui.group_detail.prev_group')
+        ->has('translations.ui.group_detail.next_group')
         ->has('translations.ui.time.days')
         ->has('translations.ui.time.hours')
         ->has('translations.ui.time.minutes')
         ->has('translations.ui.time.seconds')
+    );
+});
+
+test('group detail page includes prev and next group IDs when adjacent groups exist', function () {
+    $level = Level::factory()->create();
+    $group1 = Group::factory()->create(['level_id' => $level->id, 'sequence' => 1]);
+    $group2 = Group::factory()->create(['level_id' => $level->id, 'sequence' => 2]);
+    $group3 = Group::factory()->create(['level_id' => $level->id, 'sequence' => 3]);
+
+    // Group 1: prev is null, next is Group 2
+    $response1 = $this->get(route('groups.show', $group1));
+    $response1->assertOk();
+    $response1->assertInertia(fn (Assert $page) => $page
+        ->where('group.prev_group_id', null)
+        ->where('group.next_group_id', $group2->id)
+    );
+
+    // Group 2: prev is Group 1, next is Group 3
+    $response2 = $this->get(route('groups.show', $group2));
+    $response2->assertOk();
+    $response2->assertInertia(fn (Assert $page) => $page
+        ->where('group.prev_group_id', $group1->id)
+        ->where('group.next_group_id', $group3->id)
+    );
+
+    // Group 3: prev is Group 2, next is null
+    $response3 = $this->get(route('groups.show', $group3));
+    $response3->assertOk();
+    $response3->assertInertia(fn (Assert $page) => $page
+        ->where('group.prev_group_id', $group2->id)
+        ->where('group.next_group_id', null)
     );
 });

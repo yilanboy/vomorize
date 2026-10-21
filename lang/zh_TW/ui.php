@@ -427,6 +427,8 @@ return [
         'play_word_audio' => '播放單字發音 (Space)',
         'play_sentence_audio' => '播放例句發音 (S)',
         'example_label' => '情境例句',
+        'prev_group' => '上一組',
+        'next_group' => '下一組',
         'sticky_bar' => [
             'summary' => '第 :sequence 組 · :count 個核心單字',
             'start_stage_1' => '開始第一階段測驗 (Stage 1) →',

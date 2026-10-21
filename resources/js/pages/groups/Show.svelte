@@ -1,11 +1,14 @@
 <script lang="ts">
     import { onMount } from 'svelte';
-    import { setLayoutProps } from '@inertiajs/svelte';
+    import { Link, setLayoutProps } from '@inertiajs/svelte';
     import CheckCircle2 from '@lucide/svelte/icons/check-circle-2';
+    import ChevronLeft from '@lucide/svelte/icons/chevron-left';
+    import ChevronRight from '@lucide/svelte/icons/chevron-right';
     import Circle from '@lucide/svelte/icons/circle';
     import Clock from '@lucide/svelte/icons/clock';
     import Volume2 from '@lucide/svelte/icons/volume-2';
     import Zap from '@lucide/svelte/icons/zap';
+    import { show as showGroup } from '@/actions/App/Http/Controllers/GroupController';
     import AppHead from '@/components/AppHead.svelte';
     import { audioPlayer } from '@/lib/audioPlayer.svelte';
     import { t } from '@/lib/i18n';
@@ -17,6 +20,8 @@
         level_id: number;
         level_name: string;
         vocabularies_count: number;
+        prev_group_id?: number | null;
+        next_group_id?: number | null;
     }
 
     interface GroupProgressData {
@@ -62,28 +67,6 @@
     // svelte-ignore state_referenced_locally
     let cooldownSeconds = $state(progress?.cooldown_remaining_seconds ?? 0);
 
-    onMount(() => {
-        if (cooldownSeconds <= 0) return;
-
-        const targetTime = progress?.next_review_at
-            ? new Date(progress.next_review_at).getTime()
-            : Date.now() + cooldownSeconds * 1000;
-
-        const timer = setInterval(() => {
-            const remaining = Math.max(
-                0,
-                Math.ceil((targetTime - Date.now()) / 1000),
-            );
-            cooldownSeconds = remaining;
-
-            if (remaining <= 0) {
-                clearInterval(timer);
-            }
-        }, 1000);
-
-        return () => clearInterval(timer);
-    });
-
     // svelte-ignore state_referenced_locally
     const breadcrumbs: BreadcrumbItem[] = [
         {
@@ -106,17 +89,6 @@
 
     setLayoutProps({
         breadcrumbs,
-    });
-
-    // Background preload all 10 word audio and sentence audio files via Web Audio API
-    $effect(() => {
-        if (vocabularies.length > 0) {
-            const urls = vocabularies.flatMap((v) => [
-                v.word_audio_url,
-                v.sentence_audio_url,
-            ]);
-            audioPlayer.preload(urls);
-        }
     });
 
     function formatCooldownTime(totalSeconds: number): string {
@@ -169,6 +141,47 @@
             }
         }
     }
+
+    function preloadVocabulariesAudio(): void {
+        if (vocabularies.length === 0) return;
+
+        const urls = vocabularies.flatMap((v) => [
+            v.word_audio_url,
+            v.sentence_audio_url,
+        ]);
+        audioPlayer.preload(urls);
+    }
+
+    function startCooldownCountdown(): (() => void) | void {
+        if (cooldownSeconds <= 0) return;
+
+        const targetTime = progress?.next_review_at
+            ? new Date(progress.next_review_at).getTime()
+            : Date.now() + cooldownSeconds * 1000;
+
+        const timer = setInterval(() => {
+            const remaining = Math.max(
+                0,
+                Math.ceil((targetTime - Date.now()) / 1000),
+            );
+            cooldownSeconds = remaining;
+
+            if (remaining <= 0) {
+                clearInterval(timer);
+            }
+        }, 1000);
+
+        return () => clearInterval(timer);
+    }
+
+    onMount(() => {
+        preloadVocabulariesAudio();
+        const cleanupCooldown = startCooldownCountdown();
+
+        return () => {
+            cleanupCooldown?.();
+        };
+    });
 </script>
 
 <svelte:window onkeydown={handleKeyDown} />
@@ -181,7 +194,7 @@
 />
 
 <div class="mx-auto max-w-4xl px-4 pt-6 pb-32 sm:px-6 sm:pt-8 sm:pb-36">
-    <!-- Header: Title & Status Badge Only (No Subtitle, No Extra Back Link, No Prev/Next Buttons) -->
+    <!-- Header: Title, Status Badge & Prev/Next Group Navigation -->
     <header
         class="border-border/60 mb-6 flex flex-wrap items-center justify-between gap-4 border-b pb-5"
     >
@@ -225,6 +238,47 @@
                     <Circle class="size-3.5 stroke-[1.5]" />
                     <span>{t('ui.group_detail.status.not_started')}</span>
                 </span>
+            {/if}
+        </div>
+
+        <!-- Prev / Next Group Navigation -->
+        <div class="flex items-center gap-2">
+            {#if group.prev_group_id}
+                <Link
+                    href={showGroup.url(group.prev_group_id)}
+                    class="border-border hover:bg-muted text-foreground bg-card inline-flex items-center gap-1 rounded-xl border px-3 py-1.5 text-sm font-medium transition-colors"
+                >
+                    <ChevronLeft class="size-4" />
+                    <span>{t('ui.group_detail.prev_group')}</span>
+                </Link>
+            {:else}
+                <button
+                    type="button"
+                    disabled
+                    class="border-border/50 bg-muted/30 text-muted-foreground/40 inline-flex cursor-not-allowed items-center gap-1 rounded-xl border px-3 py-1.5 text-sm font-medium"
+                >
+                    <ChevronLeft class="size-4" />
+                    <span>{t('ui.group_detail.prev_group')}</span>
+                </button>
+            {/if}
+
+            {#if group.next_group_id}
+                <Link
+                    href={showGroup.url(group.next_group_id)}
+                    class="border-border hover:bg-muted text-foreground bg-card inline-flex items-center gap-1 rounded-xl border px-3 py-1.5 text-sm font-medium transition-colors"
+                >
+                    <span>{t('ui.group_detail.next_group')}</span>
+                    <ChevronRight class="size-4" />
+                </Link>
+            {:else}
+                <button
+                    type="button"
+                    disabled
+                    class="border-border/50 bg-muted/30 text-muted-foreground/40 inline-flex cursor-not-allowed items-center gap-1 rounded-xl border px-3 py-1.5 text-sm font-medium"
+                >
+                    <span>{t('ui.group_detail.next_group')}</span>
+                    <ChevronRight class="size-4" />
+                </button>
             {/if}
         </div>
     </header>
