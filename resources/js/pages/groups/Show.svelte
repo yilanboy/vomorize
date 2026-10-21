@@ -120,24 +120,26 @@
     });
 
     function formatCooldownTime(totalSeconds: number): string {
-        if (totalSeconds <= 0) return '0 秒';
+        if (totalSeconds <= 0) {
+            return t('ui.time.seconds', { count: 0 });
+        }
 
         const days = Math.floor(totalSeconds / 86400);
         if (days > 0) {
-            return `${days} 天`;
+            return t('ui.time.days', { count: days });
         }
 
         const hours = Math.floor(totalSeconds / 3600);
         if (hours > 0) {
-            return `${hours} 小時`;
+            return t('ui.time.hours', { count: hours });
         }
 
         const minutes = Math.floor(totalSeconds / 60);
         if (minutes > 0) {
-            return `${minutes} 分鐘`;
+            return t('ui.time.minutes', { count: minutes });
         }
 
-        return `${totalSeconds} 秒`;
+        return t('ui.time.seconds', { count: totalSeconds });
     }
 
     // Keyboard shortcuts (Space: play word audio, S: play sentence audio)

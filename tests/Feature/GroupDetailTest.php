@@ -166,5 +166,9 @@ test('group detail page shares ui translation keys for group_detail', function (
         ->has('translations.ui.group_detail.sticky_bar.start_review')
         ->has('translations.ui.group_detail.sticky_bar.cooldown')
         ->has('translations.ui.group_detail.sticky_bar.mastered')
+        ->has('translations.ui.time.days')
+        ->has('translations.ui.time.hours')
+        ->has('translations.ui.time.minutes')
+        ->has('translations.ui.time.seconds')
     );
 });

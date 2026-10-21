@@ -9,6 +9,12 @@ return [
         'back' => '返回',
         'close' => '關閉',
     ],
+    'time' => [
+        'days' => ':count 天',
+        'hours' => ':count 小時',
+        'minutes' => ':count 分鐘',
+        'seconds' => ':count 秒',
+    ],
     'nav' => [
         'dashboard' => '學習總覽',
         'levels' => '單字等級',
