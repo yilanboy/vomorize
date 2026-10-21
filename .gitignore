@@ -28,7 +28,6 @@ yarn-error.log
 /.vscode
 /.zed
 
-/.ai
 /.agents
 /.claude
 /.junie
@@ -42,3 +41,4 @@ skills-lock.json
 spec.md
 /docs
 /.scratch
+.env.before_lerd

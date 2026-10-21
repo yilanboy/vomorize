@@ -13,16 +13,25 @@
         description: string;
         vocabularies_count: number;
         groups_count: number;
-        total_stages?: number;
-        max_stages?: number;
+    }
+
+    interface LevelProgressItem {
+        total_stages: number;
+        max_stages: number;
         mastery_percentage: number;
     }
 
     let {
         levels = [],
+        progress = null,
     }: {
         levels?: LevelItem[];
+        progress?: Record<number, LevelProgressItem> | null;
     } = $props();
+
+    function getMastery(levelId: number): number {
+        return progress?.[levelId]?.mastery_percentage ?? 0;
+    }
 
     const breadcrumbs: BreadcrumbItem[] = [
         {
@@ -59,27 +68,17 @@
                 class="group bg-card text-card-foreground border-border relative flex flex-col justify-between rounded-2xl border p-6 shadow-2xs transition-all duration-300 hover:-translate-y-1 hover:border-blue-500/50 hover:shadow-md dark:hover:border-blue-500/40"
             >
                 <div>
-                    <!-- Level Name -->
-                    <h2
-                        class="text-foreground text-lg font-bold transition-colors group-hover:text-blue-600 dark:group-hover:text-blue-400"
-                    >
-                        {level.name}
-                    </h2>
+                    <!-- Header: Title & Stats Badge -->
+                    <div class="flex items-start justify-between gap-3">
+                        <h2
+                            class="text-foreground text-lg font-bold transition-colors group-hover:text-blue-600 dark:group-hover:text-blue-400"
+                        >
+                            {level.name}
+                        </h2>
 
-                    <!-- Level Description -->
-                    <p
-                        class="text-muted-foreground mt-2 line-clamp-2 text-sm leading-relaxed"
-                    >
-                        {level.description}
-                    </p>
-                </div>
-
-                <!-- Footer: Stats, Progress, and Action -->
-                <div class="border-border/60 mt-6 border-t pt-4">
-                    <div
-                        class="text-muted-foreground mb-2 flex items-center justify-between text-sm"
-                    >
-                        <span>
+                        <span
+                            class="bg-muted/60 text-muted-foreground shrink-0 rounded-md px-2.5 py-0.5 text-sm font-medium"
+                        >
                             {t('ui.levels_page.stats', {
                                 words: (
                                     level.vocabularies_count ?? 1000
@@ -89,38 +88,38 @@
                         </span>
                     </div>
 
-                    <!-- Progress Bar (Emerald) -->
-                    <div
-                        class="bg-muted mb-4 h-2 w-full overflow-hidden rounded-full"
+                    <!-- Level Description -->
+                    <p
+                        class="text-muted-foreground mt-3 line-clamp-2 text-sm leading-relaxed"
                     >
-                        <div
-                            class="h-full rounded-full bg-emerald-500 transition-all duration-500"
-                            style={`width: ${level.mastery_percentage}%`}
-                        ></div>
-                    </div>
+                        {level.description}
+                    </p>
+                </div>
 
-                    <div class="flex items-center justify-between">
-                        <!-- Action Link -->
-                        <div
-                            class="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 transition-colors group-hover:text-blue-700 dark:text-blue-400 dark:group-hover:text-blue-300"
-                        >
-                            <span>{t('ui.levels_page.enter_level')}</span>
-                            <ArrowRight
-                                class="size-4 transition-transform duration-300 group-hover:translate-x-1"
-                            />
-                        </div>
-
-                        <!-- Mastery Status -->
-                        <span
-                            class="inline-flex items-center gap-1.5 text-sm font-semibold text-emerald-600 dark:text-emerald-400"
-                        >
-                            <CheckCircle2 class="size-4" />
-                            <span>
-                                {t('ui.levels_page.mastery', {
-                                    rate: level.mastery_percentage,
-                                })}
-                            </span>
+                <!-- Footer: Mastery and Action -->
+                <div
+                    class="border-border/60 mt-6 flex items-center justify-between border-t pt-4"
+                >
+                    <!-- Mastery Status -->
+                    <span
+                        class="inline-flex items-center gap-1.5 text-sm font-semibold text-emerald-600 dark:text-emerald-400"
+                    >
+                        <CheckCircle2 class="size-4" />
+                        <span>
+                            {t('ui.levels_page.mastery', {
+                                rate: getMastery(level.id),
+                            })}
                         </span>
+                    </span>
+
+                    <!-- Action Link -->
+                    <div
+                        class="inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 transition-colors group-hover:text-blue-700 dark:text-blue-400 dark:group-hover:text-blue-300"
+                    >
+                        <span>{t('ui.levels_page.enter_level')}</span>
+                        <ArrowRight
+                            class="size-4 transition-transform duration-300 group-hover:translate-x-1"
+                        />
                     </div>
                 </div>
             </Link>

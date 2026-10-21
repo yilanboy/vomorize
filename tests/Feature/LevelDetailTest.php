@@ -6,7 +6,7 @@ use App\Models\Level;
 use App\Models\User;
 use Inertia\Testing\AssertableInertia as Assert;
 
-test('guest can access level detail page and sees inertia levels/Show component', function () {
+test('guest can access level detail page and sees inertia levels/Show component with null progress', function () {
     $level = Level::factory()->create([
         'name' => '基礎入門',
         'description' => '核心常用 1,000 單字',
@@ -27,13 +27,7 @@ test('guest can access level detail page and sees inertia levels/Show component'
         ->where('level.groups_count', 10)
         ->has('groups', 10)
         ->where('groups.0.sequence', 1)
-        ->where('groups.0.status', 'not_started')
-        ->where('groups.1.status', 'not_started')
-        ->where('counts.all', 10)
-        ->where('counts.ready', 0)
-        ->where('counts.not_started', 10)
-        ->where('counts.cooldown', 0)
-        ->where('counts.completed', 0)
+        ->where('progress', null)
     );
 });
 
@@ -123,18 +117,15 @@ test('calculates group learning statuses and counts correctly for authenticated 
     $response->assertOk();
     $response->assertInertia(fn (Assert $page) => $page
         ->component('levels/Show')
-        ->where('counts.all', 4)
-        ->where('counts.completed', 1)
-        ->where('counts.ready', 1)
-        ->where('counts.cooldown', 1)
-        ->where('counts.not_started', 1)
-        ->where('level.total_stages', 11) // 6 + 2 + 3 = 11
-        ->where('level.max_stages', 24)   // 4 * 6 = 24
-        ->where('level.mastery_percentage', 46) // round((11/24)*100) = 46%
-        ->where('groups.0.status', 'completed')
-        ->where('groups.1.status', 'ready')
-        ->where('groups.2.status', 'cooldown')
-        ->where('groups.3.status', 'not_started')
+        ->where('progress.counts.all', 4)
+        ->where('progress.counts.completed', 1)
+        ->where('progress.counts.ready', 1)
+        ->where('progress.counts.cooldown', 1)
+        ->where('progress.counts.not_started', 1)
+        ->where("progress.groups.{$groups[0]->id}.status", 'completed')
+        ->where("progress.groups.{$groups[1]->id}.status", 'ready')
+        ->where("progress.groups.{$groups[2]->id}.status", 'cooldown')
+        ->missing("progress.groups.{$groups[3]->id}")
     );
 });
 
@@ -162,11 +153,12 @@ test('unstarted groups remain not_started and only cooled down groups are ready'
     $response->assertOk();
     $response->assertInertia(fn (Assert $page) => $page
         ->component('levels/Show')
-        ->where('counts.cooldown', 1)
-        ->where('counts.ready', 0)
-        ->where('counts.not_started', 2)
-        ->where('groups.0.status', 'cooldown')
-        ->where('groups.1.status', 'not_started')
-        ->where('groups.2.status', 'not_started')
+        ->where('progress.counts.all', 3)
+        ->where('progress.counts.cooldown', 1)
+        ->where('progress.counts.ready', 0)
+        ->where('progress.counts.not_started', 2)
+        ->where("progress.groups.{$groups[0]->id}.status", 'cooldown')
+        ->missing("progress.groups.{$groups[1]->id}")
+        ->missing("progress.groups.{$groups[2]->id}")
     );
 });

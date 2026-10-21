@@ -6,7 +6,20 @@ use Database\Factories\LearningProgressFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Support\Carbon;
 
+/**
+ * @property int $id
+ * @property int $user_id
+ * @property int $level_id
+ * @property int $group_id
+ * @property int $stage
+ * @property int $last_score
+ * @property Carbon $last_reviewed_at
+ * @property Carbon|null $next_review_at
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ */
 class LearningProgress extends Model
 {
     /** @use HasFactory<LearningProgressFactory> */

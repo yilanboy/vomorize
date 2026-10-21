@@ -17,7 +17,7 @@ class DetermineGroupStatus
     public function handle(?LearningProgress $progress, ?CarbonInterface $now = null): array
     {
         $now ??= now();
-        $stage = (int) ($progress?->stage ?? 0);
+        $stage = $progress->stage ?? 0;
 
         if ($stage >= 6) {
             return [
