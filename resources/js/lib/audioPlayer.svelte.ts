@@ -11,18 +11,12 @@ const inFlightFetches = new Map<string, Promise<AudioBuffer | null>>();
 let currentPlayingId = $state<string | null>(null);
 
 function getAudioContext(): AudioContext | null {
-    if (typeof window === 'undefined') {
+    if (typeof window === 'undefined' || !window.AudioContext) {
         return null;
     }
 
     if (!audioContext) {
-        const AudioCtx =
-            window.AudioContext ||
-            (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
-
-        if (AudioCtx) {
-            audioContext = new AudioCtx();
-        }
+        audioContext = new window.AudioContext();
     }
 
     return audioContext;
@@ -36,14 +30,20 @@ if (typeof window !== 'undefined') {
         }
     };
 
-    window.addEventListener('pointerdown', unlockAudio, { passive: true, capture: true });
-    window.addEventListener('keydown', unlockAudio, { passive: true, capture: true });
+    window.addEventListener('pointerdown', unlockAudio, {
+        passive: true,
+        capture: true,
+    });
+    window.addEventListener('keydown', unlockAudio, {
+        passive: true,
+        capture: true,
+    });
 }
 
-async function ensureResumed(ctx: AudioContext): Promise<void> {
-    if (ctx.state === 'suspended') {
+async function ensureResumed(context: AudioContext): Promise<void> {
+    if (context.state === 'suspended') {
         try {
-            await ctx.resume();
+            await context.resume();
         } catch {
             // Ignore resume failure
         }
@@ -69,13 +69,14 @@ async function fetchAndDecode(url: string): Promise<AudioBuffer | null> {
             }
 
             const arrayBuffer = await response.arrayBuffer();
-            const ctx = getAudioContext();
-            if (!ctx) {
+            const context = getAudioContext();
+            if (!context) {
                 return null;
             }
 
-            const audioBuffer = await ctx.decodeAudioData(arrayBuffer);
+            const audioBuffer = await context.decodeAudioData(arrayBuffer);
             bufferCache.set(url, audioBuffer);
+
             return audioBuffer;
         } catch {
             return null;
@@ -85,6 +86,7 @@ async function fetchAndDecode(url: string): Promise<AudioBuffer | null> {
     })();
 
     inFlightFetches.set(url, fetchPromise);
+
     return fetchPromise;
 }
 
@@ -118,21 +120,21 @@ export const audioPlayer = {
     async play(url: string, id: string): Promise<void> {
         this.stop();
 
-        const ctx = getAudioContext();
-        if (!ctx) {
+        const context = getAudioContext();
+        if (!context) {
             return;
         }
 
-        await ensureResumed(ctx);
+        await ensureResumed(context);
 
         const buffer = bufferCache.get(url) || (await fetchAndDecode(url));
         if (!buffer) {
             return;
         }
 
-        const source = ctx.createBufferSource();
+        const source = context.createBufferSource();
         source.buffer = buffer;
-        source.connect(ctx.destination);
+        source.connect(context.destination);
 
         currentPlayingId = id;
         activeSource = source;
