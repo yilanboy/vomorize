@@ -25,7 +25,7 @@
         </div>
 
         <h3 class="text-foreground mb-2 text-lg font-bold">
-            {recommendedNextGroup?.group_title ?? '全部進度已開啟'}
+            {recommendedNextGroup?.group_title ?? t('ui.dashboard.action_center.all_started')}
         </h3>
 
         <p class="text-muted-foreground mb-6 text-sm leading-relaxed">

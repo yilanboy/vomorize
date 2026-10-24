@@ -36,11 +36,11 @@
             {#if isEmptyState}
                 {t('ui.dashboard.welcome_new')}
             {:else}
-                歡迎回來，{userName}！目前有
+                {t('ui.dashboard.welcome_active_prefix', { name: userName })}
                 <span class="font-semibold text-blue-600 dark:text-blue-400">
-                    {dueCount} 個單字群組
+                    {t('ui.dashboard.welcome_active_count', { count: dueCount })}
                 </span>
-                已完成冷卻，隨時可以開始複習測驗。
+                {t('ui.dashboard.welcome_active_suffix')}
             {/if}
         </p>
     </div>

@@ -103,11 +103,11 @@
                         <div
                             class="text-muted-foreground flex flex-wrap items-center gap-3 text-sm"
                         >
-                            <span>共 {review.words_count} 個單字</span>
+                            <span>{t('ui.dashboard.action_center.words_count', { count: review.words_count })}</span>
                             <span>·</span>
                             <span>
-                                上次得分：<strong class="text-foreground font-medium"
-                                    >{review.last_score ?? '--'} 分</strong
+                                {t('ui.dashboard.action_center.last_score_label')}<strong class="text-foreground font-medium"
+                                    >{review.last_score !== null ? t('ui.dashboard.action_center.score_value', { score: review.last_score }) : t('ui.dashboard.action_center.no_score')}</strong
                                 >
                             </span>
                             <span>·</span>

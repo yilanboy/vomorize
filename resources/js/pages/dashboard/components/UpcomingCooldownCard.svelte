@@ -28,7 +28,7 @@
         const diffMs = target - nowTimestamp;
 
         if (diffMs <= 0) {
-            return '已可複習';
+            return t('ui.dashboard.action_center.ready_to_review');
         }
 
         const totalSecs = Math.floor(diffMs / 1000);
@@ -37,7 +37,9 @@
         const secs = totalSecs % 60;
 
         const pad = (n: number) => n.toString().padStart(2, '0');
-        return `倒數 ${pad(hours)}:${pad(mins)}:${pad(secs)}`;
+        return t('ui.dashboard.action_center.countdown_format', {
+            time: `${pad(hours)}:${pad(mins)}:${pad(secs)}`,
+        });
     }
 </script>
 
@@ -61,7 +63,7 @@
 
     {#if upcomingReviews.length === 0}
         <div class="py-4 text-center text-sm text-muted-foreground">
-            目前無進行中的冷卻倒數群組
+            {t('ui.dashboard.action_center.upcoming_empty')}
         </div>
     {:else}
         <div class="grid grid-cols-1 gap-4 md:grid-cols-3">

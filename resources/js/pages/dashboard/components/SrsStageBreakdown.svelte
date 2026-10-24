@@ -25,11 +25,15 @@
                 </h2>
             </div>
             <p class="text-muted-foreground text-sm">
-                目前已接觸
+                {t('ui.dashboard.srs.contacted_prefix')}
                 <strong class="text-foreground font-semibold">
-                    {srsDistribution.total_contacted_groups} 個群組
+                    {t('ui.dashboard.srs.contacted_groups', {
+                        count: srsDistribution.total_contacted_groups,
+                    })}
                 </strong>
-                （共 {srsDistribution.total_contacted_words} 個單字）之記憶階段推進狀態
+                {t('ui.dashboard.srs.contacted_suffix', {
+                    words: srsDistribution.total_contacted_words,
+                })}
             </p>
         </div>
 
@@ -50,7 +54,11 @@
                             <div
                                 class="{stage.color_class} transition-all"
                                 style="width: {stage.percentage}%"
-                                title="{stage.label}: {stage.groups_count} 組 ({stage.percentage}%)"
+                                title={t('ui.dashboard.srs.bar_title', {
+                                    label: stage.label,
+                                    groups: stage.groups_count,
+                                    percent: stage.percentage,
+                                })}
                             ></div>
                         {/if}
                     {/each}
@@ -74,7 +82,10 @@
                     </div>
 
                     <div class="text-foreground text-sm font-bold">
-                        {stage.groups_count} 組 ({stage.words_count} 字)
+                        {t('ui.dashboard.srs.group_word_summary', {
+                            groups: stage.groups_count,
+                            words: stage.words_count,
+                        })}
                     </div>
 
                     <div

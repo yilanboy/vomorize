@@ -40,7 +40,7 @@
                 </div>
                 <div class="text-foreground mt-2 text-3xl font-bold">
                     {kpis.streak.current}
-                    <span class="text-muted-foreground text-lg font-medium">天</span>
+                    <span class="text-muted-foreground text-lg font-medium">{t('ui.dashboard.kpis.unit_day')}</span>
                 </div>
             </div>
 
@@ -89,7 +89,7 @@
                     class="mt-2 text-3xl font-bold text-blue-600 dark:text-blue-400"
                 >
                     {kpis.learning_words.words_count}
-                    <span class="text-muted-foreground text-lg font-medium">字</span>
+                    <span class="text-muted-foreground text-lg font-medium">{t('ui.dashboard.kpis.unit_word')}</span>
                 </div>
             </div>
 
@@ -128,7 +128,7 @@
                     class="mt-2 text-3xl font-bold text-emerald-600 dark:text-emerald-400"
                 >
                     {kpis.mastered_words.words_count}
-                    <span class="text-muted-foreground text-lg font-medium">字</span>
+                    <span class="text-muted-foreground text-lg font-medium">{t('ui.dashboard.kpis.unit_word')}</span>
                 </div>
             </div>
 
@@ -172,7 +172,7 @@
                 </div>
                 <div class="text-foreground mt-2 text-3xl font-bold">
                     {kpis.due_groups.count}
-                    <span class="text-muted-foreground text-lg font-medium">組</span>
+                    <span class="text-muted-foreground text-lg font-medium">{t('ui.dashboard.kpis.unit_group')}</span>
                 </div>
             </div>
 
