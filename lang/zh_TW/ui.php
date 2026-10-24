@@ -493,6 +493,13 @@ return [
             'last_score_label' => '上次得分：',
             'score_value' => ':score 分',
             'no_score' => '-- 分',
+            'badge_retake' => '重測 Stage :stage',
+            'badge_final' => '終極驗收 Stage :stage',
+            'badge_challenge' => '挑戰 Stage :stage',
+            'hint_failed' => '上次得分：:score 分 (未及格)',
+            'hint_permanent_memory' => '即將達成永久記憶',
+            'hint_cooldown_elapsed' => '冷卻完畢',
+            'stage_advance_label' => '進階 Stage :stage',
         ],
         'onboarding' => [
             'badge' => '新手上路指引',
@@ -519,10 +526,41 @@ return [
             'bar_title' => ':label: :groups 組 (:percent%)',
             'empty_bar' => '尚無數據進展',
             'group_word_summary' => ':groups 組 (:words 字)',
+            'stages' => [
+                'stage_0' => [
+                    'label' => '待重測',
+                    'description' => '未及格待複習',
+                ],
+                'stage_1_2' => [
+                    'label' => '初識記憶',
+                    'description' => '短週期強化中',
+                ],
+                'stage_3_4' => [
+                    'label' => '短期鞏固',
+                    'description' => '間隔 3~7 天',
+                ],
+                'stage_5' => [
+                    'label' => '長期記憶',
+                    'description' => '間隔 15 天',
+                ],
+                'stage_6' => [
+                    'label' => '永久精通',
+                    'description' => '永久記憶固化',
+                ],
+            ],
         ],
         'levels' => [
             'title' => '各等級學習進度',
             'view_all' => '查看全部等級',
+            'subtitles' => [
+                1 => '基礎入門',
+                2 => '初級進階',
+                3 => '中級應用',
+                4 => '中高級加強',
+                5 => '高級深造',
+                6 => '大師精通',
+                7 => '額外補充',
+            ],
             'mastery_tag' => ':rate% 掌握',
             'level_stats' => '已精通 :mastered 組 · 學習中 :learning 組 / 共 :total 組 (:words 字)',
             'enter_level' => '進入等級',

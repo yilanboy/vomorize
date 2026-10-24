@@ -61,23 +61,23 @@ readonly class GetActionCenterQueue
 
             $levelId = $progress->level_id;
             $sequence = $progress->group !== null ? $progress->group->sequence : $progress->group_id;
-            $groupTitle = "等級 {$levelId} · 第 {$sequence} 組";
+            $groupTitle = (string) __('ui.group_detail.title', ['level_id' => $levelId, 'sequence' => $sequence]);
 
             if ($isFailed || $isCooldownElapsed) {
                 $targetStage = $isFailed ? max(1, $stage) : min(6, $stage + 1);
 
                 if ($isFailed) {
-                    $badgeText = "重測 Stage {$targetStage}";
+                    $badgeText = (string) __('ui.dashboard.action_center.badge_retake', ['stage' => $targetStage]);
                     $badgeVariant = 'warning';
-                    $statusHint = '上次得分：'.$progress->last_score.' 分 (未及格)';
+                    $statusHint = (string) __('ui.dashboard.action_center.hint_failed', ['score' => $progress->last_score]);
                 } elseif ($targetStage >= 6) {
-                    $badgeText = '終極驗收 Stage 6';
+                    $badgeText = (string) __('ui.dashboard.action_center.badge_final', ['stage' => 6]);
                     $badgeVariant = 'success';
-                    $statusHint = '即將達成永久記憶';
+                    $statusHint = (string) __('ui.dashboard.action_center.hint_permanent_memory');
                 } else {
-                    $badgeText = "挑戰 Stage {$targetStage}";
+                    $badgeText = (string) __('ui.dashboard.action_center.badge_challenge', ['stage' => $targetStage]);
                     $badgeVariant = 'primary';
-                    $statusHint = '冷卻完畢';
+                    $statusHint = (string) __('ui.dashboard.action_center.hint_cooldown_elapsed');
                 }
 
                 $dueReviews[] = [
@@ -102,7 +102,7 @@ readonly class GetActionCenterQueue
                     'group_id' => $progress->group_id,
                     'level_id' => $levelId,
                     'group_title' => $groupTitle,
-                    'stage_label' => '進階 Stage '.min(6, $stage + 1),
+                    'stage_label' => (string) __('ui.dashboard.action_center.stage_advance_label', ['stage' => min(6, $stage + 1)]),
                     'next_review_at' => $nextReviewAt->toIso8601String(),
                     'cooldown_remaining_seconds' => max(0, (int) $now->diffInSeconds($nextReviewAt, false)),
                     'raw_next_review_at' => $nextReviewAt,
@@ -158,7 +158,7 @@ readonly class GetActionCenterQueue
                 'group_id' => $nextGroup->id,
                 'level_id' => $nextGroup->level_id,
                 'group_sequence' => $nextGroup->sequence,
-                'group_title' => "等級 {$nextGroup->level_id} · 第 {$nextGroup->sequence} 組",
+                'group_title' => (string) __('ui.group_detail.title', ['level_id' => $nextGroup->level_id, 'sequence' => $nextGroup->sequence]),
                 'words_count' => 10,
                 'start_url' => "/groups/{$nextGroup->id}",
             ];
