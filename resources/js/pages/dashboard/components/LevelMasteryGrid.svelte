@@ -48,7 +48,10 @@
                             {level.name}
                         </span>
                         <span
-                            class="text-sm font-bold {level.mastery_percentage > 0 ? 'text-emerald-600 dark:text-emerald-400' : 'text-muted-foreground'}"
+                            class="text-sm font-bold {level.mastery_percentage >
+                            0
+                                ? 'text-emerald-600 dark:text-emerald-400'
+                                : 'text-muted-foreground'}"
                         >
                             {t('ui.dashboard.levels.mastery_tag', {
                                 rate: level.mastery_percentage,
@@ -70,7 +73,9 @@
                     </p>
 
                     <!-- Progress bar -->
-                    <div class="bg-muted mb-4 h-2 w-full overflow-hidden rounded-full">
+                    <div
+                        class="bg-muted mb-4 h-2 w-full overflow-hidden rounded-full"
+                    >
                         <div
                             class="h-2 rounded-full bg-emerald-600 transition-all dark:bg-emerald-500"
                             style="width: {level.mastery_percentage}%"
@@ -80,7 +85,7 @@
 
                 <a
                     href={level.url}
-                    class="bg-muted/40 hover:bg-blue-50 hover:text-blue-700 text-foreground border-border hover:border-blue-200 inline-flex h-11 w-full items-center justify-center gap-1 rounded-lg border text-sm font-semibold transition dark:hover:border-blue-800 dark:hover:bg-blue-950/60 dark:hover:text-blue-300"
+                    class="bg-muted/40 text-foreground border-border inline-flex h-11 w-full items-center justify-center gap-1 rounded-lg border text-sm font-semibold transition hover:border-blue-200 hover:bg-blue-50 hover:text-blue-700 dark:hover:border-blue-800 dark:hover:bg-blue-950/60 dark:hover:text-blue-300"
                 >
                     <span>{t('ui.dashboard.levels.enter_level')}</span>
                     <ArrowRight class="size-4" />
@@ -90,7 +95,7 @@
 
         <!-- Card 8: 全庫掌握進度 -->
         <div
-            class="bg-blue-50/70 border-blue-200 text-card-foreground flex flex-col justify-between rounded-xl border p-5 shadow-2xs dark:border-blue-900/60 dark:bg-blue-950/30"
+            class="text-card-foreground flex flex-col justify-between rounded-xl border border-blue-200 bg-blue-50/70 p-5 shadow-2xs dark:border-blue-900/60 dark:bg-blue-950/30"
         >
             <div>
                 <div class="mb-2 flex items-center justify-between">
@@ -123,10 +128,13 @@
                     })}
                 </p>
 
-                <div class="bg-blue-100 mb-4 h-2 w-full overflow-hidden rounded-full dark:bg-blue-950">
+                <div
+                    class="mb-4 h-2 w-full overflow-hidden rounded-full bg-blue-100 dark:bg-blue-950"
+                >
                     <div
                         class="h-2 rounded-full bg-blue-600 transition-all dark:bg-blue-500"
-                        style="width: {levelProgress.overall.mastery_percentage}%"
+                        style="width: {levelProgress.overall
+                            .mastery_percentage}%"
                     ></div>
                 </div>
             </div>

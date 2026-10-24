@@ -15,7 +15,7 @@
 </script>
 
 <div
-    class="bg-card border-blue-200 rounded-2xl border p-6 shadow-2xs sm:p-8 dark:border-blue-900/60"
+    class="bg-card rounded-2xl border border-blue-200 p-6 shadow-2xs sm:p-8 dark:border-blue-900/60"
 >
     <div class="grid grid-cols-1 items-center gap-8 lg:grid-cols-12">
         <!-- Left 7 columns -->
@@ -46,10 +46,9 @@
                     >
                         {t('ui.dashboard.onboarding.recommended_prefix')}
                     </span>
-                    <span
-                        class="text-foreground ml-1 text-sm font-bold"
-                    >
-                        {recommendedNextGroup?.group_title ?? t('ui.dashboard.onboarding.recommended_group')}
+                    <span class="text-foreground ml-1 text-sm font-bold">
+                        {recommendedNextGroup?.group_title ??
+                            t('ui.dashboard.onboarding.recommended_group')}
                     </span>
                     <p class="text-muted-foreground mt-0.5 text-sm">
                         {t('ui.dashboard.onboarding.recommended_hint')}

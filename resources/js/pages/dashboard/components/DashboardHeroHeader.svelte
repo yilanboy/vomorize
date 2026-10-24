@@ -38,7 +38,9 @@
             {:else}
                 {t('ui.dashboard.welcome_active_prefix', { name: userName })}
                 <span class="font-semibold text-blue-600 dark:text-blue-400">
-                    {t('ui.dashboard.welcome_active_count', { count: dueCount })}
+                    {t('ui.dashboard.welcome_active_count', {
+                        count: dueCount,
+                    })}
                 </span>
                 {t('ui.dashboard.welcome_active_suffix')}
             {/if}
@@ -50,7 +52,7 @@
             type="button"
             class="border-border bg-card text-foreground hover:bg-muted/70 inline-flex h-11 items-center justify-center rounded-lg border px-4 py-2 text-sm font-medium shadow-2xs transition"
         >
-            <SlidersHorizontal class="mr-2 size-4 text-muted-foreground" />
+            <SlidersHorizontal class="text-muted-foreground mr-2 size-4" />
             <span>{t('ui.dashboard.actions.custom_quiz')}</span>
         </button>
 
@@ -70,7 +72,9 @@
             >
                 <Play class="size-4 fill-white" />
                 <span>
-                    {t('ui.dashboard.actions.start_review', { count: dueCount })}
+                    {t('ui.dashboard.actions.start_review', {
+                        count: dueCount,
+                    })}
                 </span>
             </a>
         {/if}

@@ -1,4 +1,4 @@
 domains:
-  - vomorize
+    - vomorize
 services:
-  - mailpit
+    - mailpit

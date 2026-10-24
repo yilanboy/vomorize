@@ -12,7 +12,7 @@
 </script>
 
 <div
-    class="bg-blue-50/70 border-blue-200 text-card-foreground flex h-full flex-col justify-between rounded-xl border p-6 shadow-2xs dark:border-blue-900/60 dark:bg-blue-950/30"
+    class="text-card-foreground flex h-full flex-col justify-between rounded-xl border border-blue-200 bg-blue-50/70 p-6 shadow-2xs dark:border-blue-900/60 dark:bg-blue-950/30"
 >
     <div>
         <div class="mb-3 flex items-center justify-between">
@@ -25,7 +25,8 @@
         </div>
 
         <h3 class="text-foreground mb-2 text-lg font-bold">
-            {recommendedNextGroup?.group_title ?? t('ui.dashboard.action_center.all_started')}
+            {recommendedNextGroup?.group_title ??
+                t('ui.dashboard.action_center.all_started')}
         </h3>
 
         <p class="text-muted-foreground mb-6 text-sm leading-relaxed">

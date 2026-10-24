@@ -40,7 +40,9 @@
                 </div>
                 <div class="text-foreground mt-2 text-3xl font-bold">
                     {kpis.streak.current}
-                    <span class="text-muted-foreground text-lg font-medium">{t('ui.dashboard.kpis.unit_day')}</span>
+                    <span class="text-muted-foreground text-lg font-medium"
+                        >{t('ui.dashboard.kpis.unit_day')}</span
+                    >
                 </div>
             </div>
 
@@ -89,7 +91,9 @@
                     class="mt-2 text-3xl font-bold text-blue-600 dark:text-blue-400"
                 >
                     {kpis.learning_words.words_count}
-                    <span class="text-muted-foreground text-lg font-medium">{t('ui.dashboard.kpis.unit_word')}</span>
+                    <span class="text-muted-foreground text-lg font-medium"
+                        >{t('ui.dashboard.kpis.unit_word')}</span
+                    >
                 </div>
             </div>
 
@@ -98,7 +102,10 @@
                     class="text-muted-foreground flex items-center gap-1.5 text-sm"
                 >
                     <span
-                        class="size-2 rounded-full {kpis.learning_words.groups_count > 0 ? 'bg-blue-500' : 'bg-muted-foreground/40'}"
+                        class="size-2 rounded-full {kpis.learning_words
+                            .groups_count > 0
+                            ? 'bg-blue-500'
+                            : 'bg-muted-foreground/40'}"
                     ></span>
                     <span>
                         {t('ui.dashboard.kpis.learning_words_desc', {
@@ -128,7 +135,9 @@
                     class="mt-2 text-3xl font-bold text-emerald-600 dark:text-emerald-400"
                 >
                     {kpis.mastered_words.words_count}
-                    <span class="text-muted-foreground text-lg font-medium">{t('ui.dashboard.kpis.unit_word')}</span>
+                    <span class="text-muted-foreground text-lg font-medium"
+                        >{t('ui.dashboard.kpis.unit_word')}</span
+                    >
                 </div>
             </div>
 
@@ -137,7 +146,10 @@
                     class="text-muted-foreground flex items-center gap-1.5 text-sm"
                 >
                     <span
-                        class="size-2 rounded-full {kpis.mastered_words.groups_count > 0 ? 'bg-emerald-500' : 'bg-muted-foreground/40'}"
+                        class="size-2 rounded-full {kpis.mastered_words
+                            .groups_count > 0
+                            ? 'bg-emerald-500'
+                            : 'bg-muted-foreground/40'}"
                     ></span>
                     <span>
                         {#if kpis.mastered_words.groups_count > 0}
@@ -165,14 +177,19 @@
                         {t('ui.dashboard.kpis.due_groups')}
                     </span>
                     <div
-                        class="flex size-10 items-center justify-center rounded-lg {kpis.due_groups.has_due ? 'bg-blue-50 text-blue-600 dark:bg-blue-950/40 dark:text-blue-400' : 'bg-muted text-muted-foreground'}"
+                        class="flex size-10 items-center justify-center rounded-lg {kpis
+                            .due_groups.has_due
+                            ? 'bg-blue-50 text-blue-600 dark:bg-blue-950/40 dark:text-blue-400'
+                            : 'bg-muted text-muted-foreground'}"
                     >
                         <Clock class="size-5" />
                     </div>
                 </div>
                 <div class="text-foreground mt-2 text-3xl font-bold">
                     {kpis.due_groups.count}
-                    <span class="text-muted-foreground text-lg font-medium">{t('ui.dashboard.kpis.unit_group')}</span>
+                    <span class="text-muted-foreground text-lg font-medium"
+                        >{t('ui.dashboard.kpis.unit_group')}</span
+                    >
                 </div>
             </div>
 
@@ -190,7 +207,7 @@
                     <p
                         class="text-muted-foreground flex items-center gap-1.5 text-sm"
                     >
-                        <span class="size-2 rounded-full bg-muted-foreground/40"
+                        <span class="bg-muted-foreground/40 size-2 rounded-full"
                         ></span>
                         <span>{t('ui.dashboard.kpis.due_groups_empty')}</span>
                     </p>

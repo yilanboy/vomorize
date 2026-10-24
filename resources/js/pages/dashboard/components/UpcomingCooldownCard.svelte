@@ -49,20 +49,18 @@
     <div
         class="border-border/60 mb-4 flex flex-col justify-between gap-2 border-b pb-3 sm:flex-row sm:items-center"
     >
-        <h3
-            class="text-foreground flex items-center gap-2 text-base font-bold"
-        >
+        <h3 class="text-foreground flex items-center gap-2 text-base font-bold">
             <Hourglass class="size-4 text-amber-600 dark:text-amber-400" />
             <span>{t('ui.dashboard.action_center.upcoming_title')}</span>
         </h3>
         <span class="text-muted-foreground flex items-center gap-1.5 text-sm">
-            <Info class="size-4 shrink-0 text-muted-foreground/70" />
+            <Info class="text-muted-foreground/70 size-4 shrink-0" />
             <span>{t('ui.dashboard.action_center.upcoming_hint')}</span>
         </span>
     </div>
 
     {#if upcomingReviews.length === 0}
-        <div class="py-4 text-center text-sm text-muted-foreground">
+        <div class="text-muted-foreground py-4 text-center text-sm">
             {t('ui.dashboard.action_center.upcoming_empty')}
         </div>
     {:else}
@@ -81,7 +79,7 @@
                     </div>
 
                     <span
-                        class="border-amber-200/60 bg-amber-50 text-amber-700 font-mono text-sm font-medium rounded px-2.5 py-1 border dark:border-amber-900/60 dark:bg-amber-950/40 dark:text-amber-300"
+                        class="rounded border border-amber-200/60 bg-amber-50 px-2.5 py-1 font-mono text-sm font-medium text-amber-700 dark:border-amber-900/60 dark:bg-amber-950/40 dark:text-amber-300"
                     >
                         {formatCountdown(review.next_review_at)}
                     </span>
