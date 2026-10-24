@@ -40,15 +40,7 @@ readonly class GetDashboardLevelProgress
             ->orderBy('id')
             ->get();
 
-        $subtitles = [
-            1 => '基礎入門',
-            2 => '初級進階',
-            3 => '中級應用',
-            4 => '中高級加強',
-            5 => '高級深造',
-            6 => '大師精通',
-            7 => '額外補充',
-        ];
+        $subtitles = (array) __('ui.dashboard.levels.subtitles');
 
         $levelItems = [];
         $totalMasteredGroups = 0;
