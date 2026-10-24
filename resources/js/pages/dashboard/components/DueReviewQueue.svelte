@@ -17,11 +17,14 @@
     } = $props();
 </script>
 
-<div class="bg-card text-card-foreground border-border rounded-xl border p-6 shadow-2xs">
-    <!-- Header -->
-    <div
-        class="border-border/60 mb-5 flex items-center justify-between border-b pb-3"
-    >
+<div
+    class="bg-card text-card-foreground border-border flex h-full flex-col justify-between rounded-xl border p-6 shadow-2xs"
+>
+    <div>
+        <!-- Header -->
+        <div
+            class="border-border/60 mb-5 flex items-center justify-between border-b pb-3"
+        >
         <div class="flex items-center gap-2.5">
             <ListFilter class="size-5 text-blue-600 dark:text-blue-400" />
             <h2 class="text-foreground text-lg font-bold">
@@ -139,4 +142,5 @@
             {/each}
         </div>
     {/if}
+    </div>
 </div>
