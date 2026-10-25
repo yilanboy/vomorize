@@ -575,4 +575,55 @@ return [
     'sync' => [
         'success' => '已成功同步本機 :count 個群組的學習進度！',
     ],
+    'intro' => [
+        'top_bar' => [
+            'leave' => '離開',
+            'leave_dialog_title' => '確定要放棄本次學習？',
+            'leave_dialog_desc' => '離開後目前的測驗進度將不會被儲存，需要重新開始。',
+            'leave_dialog_cancel' => '繼續學習',
+            'leave_dialog_confirm' => '確認離開',
+            'progress' => ':current / :total',
+            'auto_play' => '自動發音',
+            'auto_play_on' => '自動發音已開啟',
+            'auto_play_off' => '自動發音已關閉',
+        ],
+        'card' => [
+            'badge' => '單字預習',
+            'play_word' => '單字發音',
+            'play_sentence' => '例句發音',
+            'definition_label' => '中文釋義',
+            'example_label' => '情境例句',
+            'continue' => '我記住了，下一題',
+            'keyboard_hint' => '按 Space 鍵繼續',
+        ],
+    ],
+    'quiz' => [
+        'question_types' => [
+            'word_to_definition' => '看單字選釋義',
+            'definition_to_word' => '看釋義選單字',
+            'audio_to_definition' => '聽發音選釋義',
+        ],
+        'audio_prompt' => [
+            'play_hint' => '點擊或按 Space 播放發音',
+            'playing' => '正在播放發音...',
+        ],
+        'options' => [
+            'keyboard_hint' => '按數字鍵 1-4 快速作答',
+        ],
+        'result' => [
+            'title_passed' => '恭喜通關！Stage 1 學習達成',
+            'title_failed' => '測驗未達標準，請再接再厲',
+            'score_label' => '本次得分',
+            'score_points' => ':score 分',
+            'pass_threshold' => '（及格標準 80 分）',
+            'cooldown_notice' => '已啟動 SRS 間隔記憶！12 小時冷卻完畢後將自動開放 Stage 2 複習。',
+            'failed_notice' => 'Stage 1 需達 80 分方能啟動 SRS 間隔排程。建議針對錯誤單字加強記憶後再次挑戰！',
+            'mistakes_title' => '本次錯誤單字回顧 (:count)',
+            'all_correct' => '太棒了！20 題全部答對，表現完美！',
+            'btn_retry' => '重新挑戰 Stage 1',
+            'btn_done' => '完成學習並返回',
+            'btn_dashboard' => '前往學習總覽',
+            'correct_counterpart' => '正確配對',
+        ],
+    ],
 ];
