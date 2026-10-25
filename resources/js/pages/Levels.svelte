@@ -1,11 +1,16 @@
 <script lang="ts">
-    import { Link } from '@inertiajs/svelte';
+    import { onMount } from 'svelte';
+    import { Link, setLayoutProps } from '@inertiajs/svelte';
     import ArrowRight from '@lucide/svelte/icons/arrow-right';
     import CheckCircle2 from '@lucide/svelte/icons/check-circle-2';
     import AppHead from '@/components/AppHead.svelte';
     import { t } from '@/lib/i18n';
+    import {
+        computeLevelsProgressMap,
+        learningProgressDb,
+        type LevelProgressSummaryItem,
+    } from '@/lib/learningProgressDb';
     import type { BreadcrumbItem } from '@/types';
-    import { setLayoutProps } from '@inertiajs/svelte';
 
     interface LevelItem {
         id: number;
@@ -15,23 +20,33 @@
         groups_count: number;
     }
 
-    interface LevelProgressItem {
-        total_stages: number;
-        max_stages: number;
-        mastery_percentage: number;
-    }
-
     let {
         levels = [],
         progress = null,
     }: {
         levels?: LevelItem[];
-        progress?: Record<number, LevelProgressItem> | null;
+        progress?: Record<number, LevelProgressSummaryItem> | null;
     } = $props();
 
+    let localProgress = $state<Record<number, LevelProgressSummaryItem> | null>(
+        null,
+    );
+    const activeProgress = $derived(progress ?? localProgress);
+
     function getMastery(levelId: number): number {
-        return progress?.[levelId]?.mastery_percentage ?? 0;
+        return activeProgress?.[levelId]?.mastery_percentage ?? 0;
     }
+
+    onMount(async () => {
+        if (progress !== null) {
+            return;
+        }
+
+        const records = await learningProgressDb.getAllProgress();
+        if (records.length > 0) {
+            localProgress = computeLevelsProgressMap(records, levels);
+        }
+    });
 
     const breadcrumbs: BreadcrumbItem[] = [
         {

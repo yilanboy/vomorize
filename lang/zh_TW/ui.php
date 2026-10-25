@@ -572,4 +572,7 @@ return [
             'smart_recommend' => '開啟智慧推薦',
         ],
     ],
+    'sync' => [
+        'success' => '已成功同步本機 :count 個群組的學習進度！',
+    ],
 ];

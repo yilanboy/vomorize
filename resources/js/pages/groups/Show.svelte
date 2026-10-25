@@ -12,6 +12,11 @@
     import AppHead from '@/components/AppHead.svelte';
     import { audioPlayer } from '@/lib/audioPlayer.svelte';
     import { t } from '@/lib/i18n';
+    import {
+        determineLocalGroupStatus,
+        learningProgressDb,
+        type GroupProgressSummary,
+    } from '@/lib/learningProgressDb';
     import type { BreadcrumbItem } from '@/types';
 
     interface GroupData {
@@ -22,13 +27,6 @@
         vocabularies_count: number;
         prev_group_id?: number | null;
         next_group_id?: number | null;
-    }
-
-    interface GroupProgressData {
-        status: 'not_started' | 'cooldown' | 'ready' | 'completed';
-        stage: number;
-        next_review_at: string | null;
-        cooldown_remaining_seconds: number | null;
     }
 
     interface VocabularyData {
@@ -50,18 +48,20 @@
     }: {
         group: GroupData;
         vocabularies?: VocabularyData[];
-        progress?: GroupProgressData | null;
+        progress?: GroupProgressSummary | null;
     } = $props();
 
     let focusedIndex = $state(0);
+    let localProgress = $state<GroupProgressSummary | null>(null);
 
     const currentProgress = $derived(
-        progress ?? {
-            status: 'not_started',
-            stage: 0,
-            next_review_at: null,
-            cooldown_remaining_seconds: null,
-        },
+        progress ??
+            localProgress ?? {
+                status: 'not_started',
+                stage: 0,
+                next_review_at: null,
+                cooldown_remaining_seconds: null,
+            },
     );
 
     // svelte-ignore state_referenced_locally
@@ -152,12 +152,18 @@
         audioPlayer.preload(urls);
     }
 
-    function startCooldownCountdown(): (() => void) | void {
-        if (cooldownSeconds <= 0) return;
+    function startCooldownCountdown(
+        activeProgress: GroupProgressSummary | null,
+    ): (() => void) | void {
+        const initialRemaining =
+            activeProgress?.cooldown_remaining_seconds ?? 0;
+        if (initialRemaining <= 0) return;
 
-        const targetTime = progress?.next_review_at
-            ? new Date(progress.next_review_at).getTime()
-            : Date.now() + cooldownSeconds * 1000;
+        cooldownSeconds = initialRemaining;
+
+        const targetTime = activeProgress?.next_review_at
+            ? new Date(activeProgress.next_review_at).getTime()
+            : Date.now() + initialRemaining * 1000;
 
         const timer = setInterval(() => {
             const remaining = Math.max(
@@ -176,9 +182,28 @@
 
     onMount(() => {
         preloadVocabulariesAudio();
-        const cleanupCooldown = startCooldownCountdown();
+
+        let cleanupCooldown: (() => void) | void;
+        let isMounted = true;
+
+        if (progress !== null) {
+            cleanupCooldown = startCooldownCountdown(progress);
+        } else {
+            void learningProgressDb
+                .getGroupProgress(group.id)
+                .then((record) => {
+                    if (!isMounted || !record) {
+                        return;
+                    }
+
+                    const resolved = determineLocalGroupStatus(record);
+                    localProgress = resolved;
+                    cleanupCooldown = startCooldownCountdown(resolved);
+                });
+        }
 
         return () => {
+            isMounted = false;
             cleanupCooldown?.();
         };
     });
