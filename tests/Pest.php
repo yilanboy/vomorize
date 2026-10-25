@@ -20,7 +20,7 @@ pest()->extend(TestCase::class)
     ->beforeEach(function () {
         GroupFactory::resetSequences();
     })
-    ->in('Feature');
+    ->in('Feature', 'Browser');
 
 /*
 |--------------------------------------------------------------------------
