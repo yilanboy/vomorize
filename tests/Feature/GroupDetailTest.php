@@ -81,15 +81,9 @@ test('group detail page calculates learning status for authenticated user correc
     $level = Level::factory()->create();
     $group = Group::factory()->create(['level_id' => $level->id]);
 
-    // 0. Authenticated user without progress starts at not_started and stage 0
+    // 0. Authenticated user without progress is redirected to intro
     $response = $this->actingAs($user)->get(route('groups.show', $group));
-    $response->assertOk();
-    $response->assertInertia(fn (Assert $page) => $page
-        ->component('groups/Show')
-        ->where('progress.status', 'not_started')
-        ->where('progress.stage', 0)
-        ->where('progress.cooldown_remaining_seconds', null)
-    );
+    $response->assertRedirect(route('groups.intro', $group));
 
     // 1. In Cooldown
     $futureReviewAt = now()->addHours(3);

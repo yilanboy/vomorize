@@ -160,7 +160,7 @@ readonly class GetActionCenterQueue
                 'group_sequence' => $nextGroup->sequence,
                 'group_title' => (string) __('ui.group_detail.title', ['level_id' => $nextGroup->level_id, 'sequence' => $nextGroup->sequence]),
                 'words_count' => 10,
-                'start_url' => "/groups/{$nextGroup->id}",
+                'start_url' => "/groups/{$nextGroup->id}/intro",
             ];
         }
 
