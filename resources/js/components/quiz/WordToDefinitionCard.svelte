@@ -3,27 +3,31 @@
     import QuizOptions from '@/components/quiz/QuizOptions.svelte';
     import { audioPlayer } from '@/lib/audioPlayer.svelte';
     import { t } from '@/lib/i18n';
-    import type { QuizOptionPayload, QuizQuestionPayload } from '@/types/quiz';
+    import type {
+        QuizOptionPayload,
+        QuizQuestionPayload,
+        VocabularyPayload,
+    } from '@/types/quiz';
 
     let {
         question,
+        vocabulary,
         selectedOptionId = null,
         onSelect,
         disabled = false,
     }: {
         question: QuizQuestionPayload;
+        vocabulary: VocabularyPayload;
         selectedOptionId?: number | null;
         onSelect: (option: QuizOptionPayload) => void;
         disabled?: boolean;
     } = $props();
 
-    const targetWord = $derived(question.target_word);
-
     function playAudio() {
-        if (targetWord.word_audio_url) {
+        if (vocabulary.word_audio_url) {
             void audioPlayer.play(
-                targetWord.word_audio_url,
-                `quiz-word-${targetWord.id}`,
+                vocabulary.word_audio_url,
+                `quiz-word-${vocabulary.id}`,
             );
         }
     }
@@ -44,7 +48,7 @@
             <span
                 class="bg-secondary text-secondary-foreground inline-flex items-center rounded-md px-2.5 py-0.5 text-sm font-medium"
             >
-                {targetWord.part_of_speech}
+                {vocabulary.part_of_speech}
             </span>
         </div>
 
@@ -53,17 +57,17 @@
                 <h2
                     class="text-foreground text-3xl font-extrabold tracking-tight sm:text-4xl"
                 >
-                    {targetWord.word}
+                    {vocabulary.word}
                 </h2>
                 <span class="text-muted-foreground font-mono text-base">
-                    {targetWord.pronunciation}
+                    {vocabulary.pronunciation}
                 </span>
             </div>
 
             <button
                 type="button"
                 class="hover:bg-muted/80 text-foreground border-border/80 flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border transition-colors {audioPlayer.isPlaying(
-                    `quiz-word-${targetWord.id}`,
+                    `quiz-word-${vocabulary.id}`,
                 )
                     ? 'border-primary bg-primary/10 text-primary'
                     : 'bg-background'}"
@@ -72,7 +76,7 @@
             >
                 <Volume2
                     class="h-5 w-5 {audioPlayer.isPlaying(
-                        `quiz-word-${targetWord.id}`,
+                        `quiz-word-${vocabulary.id}`,
                     )
                         ? 'text-primary animate-pulse'
                         : 'text-muted-foreground'}"
@@ -84,6 +88,8 @@
     <!-- Options List -->
     <QuizOptions
         options={question.options}
+        correctOptionId={question.correct_option_id}
+        quizType={question.quiz_type}
         {selectedOptionId}
         {onSelect}
         {disabled}

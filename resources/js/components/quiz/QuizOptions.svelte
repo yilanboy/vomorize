@@ -3,15 +3,19 @@
     import CheckCircle2 from '@lucide/svelte/icons/check-circle-2';
     import XCircle from '@lucide/svelte/icons/x-circle';
     import { t } from '@/lib/i18n';
-    import type { QuizOptionPayload } from '@/types/quiz';
+    import type { QuizOptionPayload, QuizType } from '@/types/quiz';
 
     let {
-        options,
+        options = [],
+        correctOptionId,
+        quizType,
         selectedOptionId = null,
         onSelect,
         disabled = false,
     }: {
         options: QuizOptionPayload[];
+        correctOptionId: number;
+        quizType: QuizType;
         selectedOptionId?: number | null;
         onSelect: (option: QuizOptionPayload) => void;
         disabled?: boolean;
@@ -22,6 +26,16 @@
             return;
         }
         onSelect(option);
+    }
+
+    function getCounterpart(option: QuizOptionPayload): string {
+        if (
+            quizType === 'word_to_definition' ||
+            quizType === 'audio_to_definition'
+        ) {
+            return `${option.part_of_speech} ${option.word}`;
+        }
+        return `${option.part_of_speech} ${option.definition}`;
     }
 
     onMount(() => {
@@ -61,7 +75,7 @@
     {#each options as option, index (option.id)}
         {@const isSelected = selectedOptionId === option.id}
         {@const isAnswered = selectedOptionId !== null}
-        {@const isCorrect = option.is_correct}
+        {@const isCorrect = option.id === correctOptionId}
         {@const isWrongSelection = isSelected && !isCorrect}
 
         <button
@@ -99,11 +113,11 @@
                         {option.text}
                     </span>
 
-                    {#if isAnswered && isCorrect && option.counterpart}
+                    {#if isAnswered && isCorrect}
                         <span
                             class="text-sm font-normal text-emerald-700 dark:text-emerald-300"
                         >
-                            {option.counterpart}
+                            {getCounterpart(option)}
                         </span>
                     {/if}
                 </div>

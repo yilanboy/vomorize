@@ -13,9 +13,9 @@ export interface VocabularyPayload {
 export interface QuizOptionPayload {
     id: number;
     text: string;
-    is_correct: boolean;
     part_of_speech: string;
-    counterpart: string;
+    word: string;
+    definition: string;
 }
 
 export type QuizType =
@@ -24,26 +24,20 @@ export type QuizType =
     | 'audio_to_definition';
 
 export interface QuizQuestionPayload {
-    id: number;
-    type: QuizType;
-    prompt: string;
-    target_word: VocabularyPayload;
+    quiz_type: QuizType;
+    stem: string;
+    audio_url: string;
     options: QuizOptionPayload[];
+    correct_option_id: number;
 }
 
-export interface IntroStep {
+export interface SessionStep {
+    id: string;
     step_index: number;
-    kind: 'intro';
-    data: VocabularyPayload;
+    kind: 'intro' | 'quiz';
+    vocabulary: VocabularyPayload;
+    quiz: QuizQuestionPayload | null;
 }
-
-export interface QuizStep {
-    step_index: number;
-    kind: 'quiz';
-    data: QuizQuestionPayload;
-}
-
-export type SessionStep = IntroStep | QuizStep;
 
 export interface Stage1SessionData {
     steps: SessionStep[];

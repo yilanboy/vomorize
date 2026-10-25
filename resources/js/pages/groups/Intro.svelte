@@ -86,7 +86,7 @@
         isAdvancing = false;
 
         if (currentIndex + 1 >= totalSteps) {
-            handleQuizCompletion();
+            void handleQuizCompletion();
         } else {
             currentIndex += 1;
         }
@@ -104,9 +104,9 @@
         selectedOptionId = option.id;
         isAdvancing = true;
 
-        if (currentStep.kind === 'quiz') {
-            const question = currentStep.data;
-            if (option.is_correct) {
+        if (currentStep.kind === 'quiz' && currentStep.quiz) {
+            const isCorrect = option.id === currentStep.quiz.correct_option_id;
+            if (isCorrect) {
                 correctAnswersCount += 1;
                 if (session.correct_audio_url) {
                     void audioPlayer.play(
@@ -120,7 +120,7 @@
                 }
 
                 // Add target word to mistakes if not already added
-                const target = question.target_word;
+                const target = currentStep.vocabulary;
                 if (!mistakes.some((m) => m.id === target.id)) {
                     mistakes = [
                         ...mistakes,
@@ -259,18 +259,12 @@
             }
 
             for (const step of session.steps) {
-                if (step.kind === 'intro') {
-                    if (step.data.word_audio_url) {
-                        urlsToPreload.push(step.data.word_audio_url);
+                if (step.vocabulary) {
+                    if (step.vocabulary.word_audio_url) {
+                        urlsToPreload.push(step.vocabulary.word_audio_url);
                     }
-                    if (step.data.sentence_audio_url) {
-                        urlsToPreload.push(step.data.sentence_audio_url);
-                    }
-                } else if (step.kind === 'quiz') {
-                    if (step.data.target_word.word_audio_url) {
-                        urlsToPreload.push(
-                            step.data.target_word.word_audio_url,
-                        );
+                    if (step.vocabulary.sentence_audio_url) {
+                        urlsToPreload.push(step.vocabulary.sentence_audio_url);
                     }
                 }
             }
@@ -393,28 +387,31 @@
         {:else if currentStep}
             {#if currentStep.kind === 'intro'}
                 <VocabularyIntroCard
-                    vocabulary={currentStep.data}
+                    vocabulary={currentStep.vocabulary}
                     {autoPlay}
                     onContinue={handleIntroContinue}
                 />
-            {:else if currentStep.kind === 'quiz'}
-                {#if currentStep.data.type === 'word_to_definition'}
+            {:else if currentStep.kind === 'quiz' && currentStep.quiz}
+                {#if currentStep.quiz.quiz_type === 'word_to_definition'}
                     <WordToDefinitionCard
-                        question={currentStep.data}
+                        question={currentStep.quiz}
+                        vocabulary={currentStep.vocabulary}
                         {selectedOptionId}
                         onSelect={handleQuizOptionSelect}
                         disabled={isAdvancing}
                     />
-                {:else if currentStep.data.type === 'definition_to_word'}
+                {:else if currentStep.quiz.quiz_type === 'definition_to_word'}
                     <DefinitionToWordCard
-                        question={currentStep.data}
+                        question={currentStep.quiz}
+                        vocabulary={currentStep.vocabulary}
                         {selectedOptionId}
                         onSelect={handleQuizOptionSelect}
                         disabled={isAdvancing}
                     />
-                {:else if currentStep.data.type === 'audio_to_definition'}
+                {:else if currentStep.quiz.quiz_type === 'audio_to_definition'}
                     <AudioToDefinitionCard
-                        question={currentStep.data}
+                        question={currentStep.quiz}
+                        vocabulary={currentStep.vocabulary}
                         {selectedOptionId}
                         {autoPlay}
                         onSelect={handleQuizOptionSelect}

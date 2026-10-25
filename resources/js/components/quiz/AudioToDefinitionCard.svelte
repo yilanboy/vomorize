@@ -4,38 +4,43 @@
     import QuizOptions from '@/components/quiz/QuizOptions.svelte';
     import { audioPlayer } from '@/lib/audioPlayer.svelte';
     import { t } from '@/lib/i18n';
-    import type { QuizOptionPayload, QuizQuestionPayload } from '@/types/quiz';
+    import type {
+        QuizOptionPayload,
+        QuizQuestionPayload,
+        VocabularyPayload,
+    } from '@/types/quiz';
 
     let {
         question,
+        vocabulary,
         selectedOptionId = null,
         autoPlay = true,
         onSelect,
         disabled = false,
     }: {
         question: QuizQuestionPayload;
+        vocabulary: VocabularyPayload;
         selectedOptionId?: number | null;
         autoPlay?: boolean;
         onSelect: (option: QuizOptionPayload) => void;
         disabled?: boolean;
     } = $props();
 
-    const targetWord = $derived(question.target_word);
+    const audioUrl = $derived(
+        question.audio_url || vocabulary.word_audio_url || '',
+    );
     const audioPlaying = $derived(
-        audioPlayer.isPlaying(`quiz-audio-${targetWord.id}`),
+        audioPlayer.isPlaying(`quiz-audio-${vocabulary.id}`),
     );
 
     function playAudio() {
-        if (targetWord.word_audio_url) {
-            void audioPlayer.play(
-                targetWord.word_audio_url,
-                `quiz-audio-${targetWord.id}`,
-            );
+        if (audioUrl) {
+            void audioPlayer.play(audioUrl, `quiz-audio-${vocabulary.id}`);
         }
     }
 
     onMount(() => {
-        if (autoPlay && targetWord.word_audio_url) {
+        if (autoPlay && audioUrl) {
             playAudio();
         }
 
@@ -79,7 +84,7 @@
                 <span
                     class="bg-secondary text-secondary-foreground inline-flex items-center rounded-md px-2.5 py-0.5 text-sm font-medium"
                 >
-                    {targetWord.part_of_speech}
+                    {vocabulary.part_of_speech}
                 </span>
             {/if}
         </div>
@@ -108,10 +113,10 @@
             {#if selectedOptionId !== null}
                 <div class="flex items-baseline gap-2 pt-1">
                     <span class="text-foreground text-xl font-bold">
-                        {targetWord.word}
+                        {vocabulary.word}
                     </span>
                     <span class="text-muted-foreground font-mono text-base">
-                        {targetWord.pronunciation}
+                        {vocabulary.pronunciation}
                     </span>
                 </div>
             {/if}
@@ -121,6 +126,8 @@
     <!-- Options List -->
     <QuizOptions
         options={question.options}
+        correctOptionId={question.correct_option_id}
+        quizType={question.quiz_type}
         {selectedOptionId}
         {onSelect}
         {disabled}
