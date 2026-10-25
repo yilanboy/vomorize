@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { onMount } from 'svelte';
     import { Link, setLayoutProps } from '@inertiajs/svelte';
     import CheckCircle2 from '@lucide/svelte/icons/check-circle-2';
     import Circle from '@lucide/svelte/icons/circle';
@@ -8,6 +9,12 @@
     import { show as showGroup } from '@/actions/App/Http/Controllers/GroupController';
     import AppHead from '@/components/AppHead.svelte';
     import { t } from '@/lib/i18n';
+    import {
+        computeLevelProgressData,
+        learningProgressDb,
+        type GroupProgressSummary,
+        type LevelGroupsProgressData,
+    } from '@/lib/learningProgressDb';
     import type { BreadcrumbItem } from '@/types';
 
     interface LevelData {
@@ -24,26 +31,6 @@
         vocabularies_count: number;
     }
 
-    interface GroupProgressData {
-        status: 'ready' | 'cooldown' | 'not_started' | 'completed';
-        stage: number;
-        next_review_at: string | null;
-        cooldown_remaining_seconds: number | null;
-    }
-
-    interface StatusCounts {
-        all: number;
-        ready: number;
-        cooldown: number;
-        not_started: number;
-        completed: number;
-    }
-
-    interface LevelProgressData {
-        groups: Record<number, GroupProgressData>;
-        counts: StatusCounts;
-    }
-
     let {
         level,
         groups = [],
@@ -51,20 +38,22 @@
     }: {
         level: LevelData;
         groups?: GroupData[];
-        progress?: LevelProgressData | null;
+        progress?: LevelGroupsProgressData | null;
     } = $props();
 
     type FilterKey = 'all' | 'ready' | 'cooldown' | 'not_started' | 'completed';
     let activeFilter = $state<FilterKey>('all');
+    let localProgress = $state<LevelGroupsProgressData | null>(null);
+    const activeProgress = $derived(progress ?? localProgress);
 
     function getGroupStatus(
         groupId: number,
     ): 'ready' | 'cooldown' | 'not_started' | 'completed' {
-        return progress?.groups?.[groupId]?.status ?? 'not_started';
+        return activeProgress?.groups?.[groupId]?.status ?? 'not_started';
     }
 
     const counts = $derived(
-        progress?.counts ?? {
+        activeProgress?.counts ?? {
             all: groups.length,
             ready: 0,
             cooldown: 0,
@@ -78,6 +67,17 @@
             ? groups
             : groups.filter((g) => getGroupStatus(g.id) === activeFilter),
     );
+
+    onMount(async () => {
+        if (progress !== null) {
+            return;
+        }
+
+        const records = await learningProgressDb.getLevelProgressList(level.id);
+        if (records.length > 0) {
+            localProgress = computeLevelProgressData(records, groups.length);
+        }
+    });
 
     // svelte-ignore state_referenced_locally
     const breadcrumbs: BreadcrumbItem[] = [
@@ -95,7 +95,7 @@
         breadcrumbs,
     });
 
-    function getStatusLabel(status: GroupProgressData['status']): string {
+    function getStatusLabel(status: GroupProgressSummary['status']): string {
         switch (status) {
             case 'completed':
                 return t('ui.level_detail.completed_label');
