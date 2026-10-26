@@ -25,6 +25,10 @@ class LearningProgress extends Model
     /** @use HasFactory<LearningProgressFactory> */
     use HasFactory;
 
+    public const int STAGE_MASTERED = 6;
+
+    public const int STAGE_UNSTARTED = 0;
+
     protected $table = 'learning_progress';
 
     protected $fillable = [
