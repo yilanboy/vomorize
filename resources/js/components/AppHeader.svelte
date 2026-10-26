@@ -3,7 +3,6 @@
     import Menu from '@lucide/svelte/icons/menu';
     import AppLogoIcon from '@/components/AppLogoIcon.svelte';
     import MobileNavSheet from '@/components/MobileNavSheet.svelte';
-    import SiteLanguageSwitcher from '@/components/SiteLanguageSwitcher.svelte';
     import ThemeToggle from '@/components/ThemeToggle.svelte';
     import {
         Avatar,
@@ -102,26 +101,10 @@
             >
                 {t('ui.nav.levels')}
             </Link>
-
-            <Link
-                href="/quiz"
-                class={{
-                    'inline-flex items-center rounded-lg px-3.5 py-2 text-sm font-medium transition-colors': true,
-                    'bg-accent text-foreground font-semibold':
-                        url.isCurrentOrParentUrl('/quiz', url.currentUrl),
-                    'text-muted-foreground hover:bg-accent/60 hover:text-foreground':
-                        !url.isCurrentOrParentUrl('/quiz', url.currentUrl),
-                }}
-            >
-                {t('ui.nav.quiz')}
-            </Link>
         </nav>
 
-        <!-- Right: SiteLanguageSwitcher + ThemeToggle + Member Avatar / Login -->
+        <!-- Right: ThemeToggle + Member Avatar / Login -->
         <div class="flex items-center gap-1.5 sm:gap-2">
-            <!-- Site Language Switcher (Desktop only; mobile uses drawer) -->
-            <SiteLanguageSwitcher class="hidden lg:inline-flex" />
-
             <!-- Theme Toggle Dropdown -->
             <ThemeToggle />
 

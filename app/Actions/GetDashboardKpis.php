@@ -49,7 +49,9 @@ readonly class GetDashboardKpis
             }
 
             if ($stage < 6) {
-                $isFailed = $progress->last_score < 80;
+                $isFailed =
+                    $progress->last_score < 80
+                    || $stage === 5 && $progress->next_review_at === null && $progress->last_score < 90;
                 $isCooldownElapsed = $progress->next_review_at === null || $progress->next_review_at->lte($now);
 
                 if ($isFailed || $isCooldownElapsed) {

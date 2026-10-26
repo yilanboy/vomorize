@@ -83,7 +83,7 @@ test('member who already passed stage 1 accessing group intro is redirected to g
     $response->assertRedirect(route('groups.show', $group));
 });
 
-test('member can save quiz progress via post and receives updated progress json', function () {
+test('member can save quiz progress via inertia post and stays on intro for result summary', function () {
     $user = User::factory()->create();
     $level = Level::factory()->create();
     $group = Group::factory()->create(['level_id' => $level->id]);
@@ -93,18 +93,13 @@ test('member can save quiz progress via post and receives updated progress json'
         'group_id' => $group->id,
     ]);
 
-    $response = $this->actingAs($user)->postJson(route('groups.progress.save', $group), [
-        'score' => 90,
-    ]);
-
-    $response->assertOk()
-        ->assertJson([
-            'success' => true,
-            'progress' => [
-                'stage' => 1,
-                'status' => 'cooldown',
-            ],
+    $response = $this->actingAs($user)
+        ->from(route('groups.intro', $group))
+        ->post(route('groups.progress.save', $group), [
+            'score' => 90,
         ]);
+
+    $response->assertRedirect(route('groups.intro', $group));
 
     $this->assertDatabaseHas('learning_progress', [
         'user_id' => $user->id,
@@ -112,6 +107,15 @@ test('member can save quiz progress via post and receives updated progress json'
         'stage' => 1,
         'last_score' => 90,
     ]);
+
+    // Following the redirect with flashed quiz_completed renders groups/Intro with updated progress
+    $followUp = $this->actingAs($user)->get(route('groups.intro', $group));
+    $followUp->assertOk()
+        ->assertInertia(fn (Assert $page) => $page
+            ->component('groups/Intro')
+            ->where('progress.stage', 1)
+            ->where('progress.status', 'cooldown')
+        );
 });
 
 test('saving progress requires valid score between 0 and 100', function () {
@@ -119,10 +123,9 @@ test('saving progress requires valid score between 0 and 100', function () {
     $level = Level::factory()->create();
     $group = Group::factory()->create(['level_id' => $level->id]);
 
-    $response = $this->actingAs($user)->postJson(route('groups.progress.save', $group), [
+    $response = $this->actingAs($user)->post(route('groups.progress.save', $group), [
         'score' => 150,
     ]);
 
-    $response->assertUnprocessable()
-        ->assertJsonValidationErrors(['score']);
+    $response->assertSessionHasErrors(['score']);
 });

@@ -2,3 +2,5 @@ domains:
     - vomorize
 services:
     - mailpit
+workers:
+    - vite

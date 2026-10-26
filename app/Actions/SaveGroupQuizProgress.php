@@ -33,6 +33,19 @@ readonly class SaveGroupQuizProgress
                 ->first();
 
             $currentStage = $existing instanceof LearningProgress ? $existing->stage : 0;
+
+            if ($existing instanceof LearningProgress && $currentStage >= LearningProgress::STAGE_MASTERED) {
+                $existing->update([
+                    'last_score' => max($existing->last_score, $score),
+                    'last_reviewed_at' => $now,
+                    'next_review_at' => null,
+                ]);
+
+                $this->recordTodayCheckIn($user, $now);
+
+                return $existing;
+            }
+
             $targetStage = min(6, $currentStage + 1);
             $passThreshold = $targetStage >= 6 ? 90 : 80;
             $isPassed = $score >= $passThreshold;

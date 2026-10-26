@@ -1,16 +1,6 @@
-import { router, useHttp } from '@inertiajs/svelte';
-import { toast } from 'svelte-sonner';
+import { router } from '@inertiajs/svelte';
 import { store as syncProgress } from '@/actions/App/Http/Controllers/ProgressSyncController';
-import {
-    learningProgressDb,
-    type LocalLearningProgress,
-} from '@/lib/learningProgressDb';
-
-interface SyncProgressResponse {
-    success: boolean;
-    synced_count: number;
-    message: string;
-}
+import { learningProgressDb } from '@/lib/learningProgressDb';
 
 let isSyncing = false;
 
@@ -24,32 +14,35 @@ async function syncGuestProgressIfPresent(): Promise<void> {
     try {
         const records = await learningProgressDb.getAllProgress();
         if (records.length === 0) {
+            isSyncing = false;
             return;
         }
 
-        const http = useHttp<
-            { local_progress: LocalLearningProgress[] },
-            SyncProgressResponse
-        >({
-            local_progress: records,
-        });
-
-        const response = await http.submit(syncProgress());
-
-        if (response?.success) {
-            await learningProgressDb.clearAllProgress();
-
-            if (response.synced_count > 0) {
-                if (response.message) {
-                    toast.success(response.message);
-                }
-
-                router.reload();
-            }
-        }
+        router.post(
+            syncProgress.url(),
+            {
+                local_progress: records.map((record) => ({
+                    group_id: record.group_id,
+                    level_id: record.level_id,
+                    stage: record.stage,
+                    last_score: record.last_score,
+                    last_reviewed_at: record.last_reviewed_at,
+                    next_review_at: record.next_review_at,
+                })),
+            },
+            {
+                preserveState: true,
+                preserveScroll: true,
+                onSuccess: () => {
+                    void learningProgressDb.clearAllProgress();
+                },
+                onFinish: () => {
+                    isSyncing = false;
+                },
+            },
+        );
     } catch {
         // Keep local IndexedDB records intact on network failure so next navigation retries
-    } finally {
         isSyncing = false;
     }
 }

@@ -10,6 +10,7 @@
     import Zap from '@lucide/svelte/icons/zap';
     import {
         intro as introGroup,
+        quiz as quizGroup,
         show as showGroup,
     } from '@/actions/App/Http/Controllers/GroupController';
     import AppHead from '@/components/AppHead.svelte';
@@ -477,15 +478,15 @@
                 </span>
             </button>
         {:else if currentProgress.status === 'completed'}
-            <button
-                type="button"
+            <Link
+                href={quizGroup.url(group.id)}
                 class="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-6 py-2.5 text-sm font-semibold text-white shadow-xs transition-all hover:bg-emerald-700 active:scale-[0.98] sm:px-8 sm:py-3 sm:text-base dark:bg-emerald-600 dark:hover:bg-emerald-500"
             >
                 <span>{t('ui.group_detail.sticky_bar.mastered')}</span>
-            </button>
+            </Link>
         {:else}
-            <button
-                type="button"
+            <Link
+                href={quizGroup.url(group.id)}
                 class="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-6 py-2.5 text-sm font-semibold text-white shadow-xs transition-all hover:bg-blue-700 active:scale-[0.98] sm:px-8 sm:py-3 sm:text-base dark:bg-blue-600 dark:hover:bg-blue-500"
             >
                 <span
@@ -493,7 +494,7 @@
                         stage: Math.min(6, currentProgress.stage + 1),
                     })}</span
                 >
-            </button>
+            </Link>
         {/if}
     </div>
 </aside>
