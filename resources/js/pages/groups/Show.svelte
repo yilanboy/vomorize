@@ -1,6 +1,6 @@
 <script lang="ts">
     import { onMount } from 'svelte';
-    import { Link, setLayoutProps } from '@inertiajs/svelte';
+    import { Link, router, setLayoutProps } from '@inertiajs/svelte';
     import CheckCircle2 from '@lucide/svelte/icons/check-circle-2';
     import ChevronLeft from '@lucide/svelte/icons/chevron-left';
     import ChevronRight from '@lucide/svelte/icons/chevron-right';
@@ -8,7 +8,10 @@
     import Clock from '@lucide/svelte/icons/clock';
     import Volume2 from '@lucide/svelte/icons/volume-2';
     import Zap from '@lucide/svelte/icons/zap';
-    import { show as showGroup } from '@/actions/App/Http/Controllers/GroupController';
+    import {
+        intro as introGroup,
+        show as showGroup,
+    } from '@/actions/App/Http/Controllers/GroupController';
     import AppHead from '@/components/AppHead.svelte';
     import { audioPlayer } from '@/lib/audioPlayer.svelte';
     import { t } from '@/lib/i18n';
@@ -192,7 +195,14 @@
             void learningProgressDb
                 .getGroupProgress(group.id)
                 .then((record) => {
-                    if (!isMounted || !record) {
+                    if (!isMounted) {
+                        return;
+                    }
+
+                    if (!record || record.stage < 1) {
+                        router.visit(introGroup.url(group.id), {
+                            replace: true,
+                        });
                         return;
                     }
 
@@ -442,12 +452,12 @@
 
         <!-- Action Button on the right -->
         {#if currentProgress.status === 'not_started'}
-            <button
-                type="button"
+            <Link
+                href={introGroup.url(group.id)}
                 class="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-6 py-2.5 text-sm font-semibold text-white shadow-xs transition-all hover:bg-blue-700 active:scale-[0.98] sm:px-8 sm:py-3 sm:text-base dark:bg-blue-600 dark:hover:bg-blue-500"
             >
                 <span>{t('ui.group_detail.sticky_bar.start_stage_1')}</span>
-            </button>
+            </Link>
         {:else if currentProgress.status === 'cooldown' && cooldownSeconds > 0}
             <button
                 type="button"

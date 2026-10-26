@@ -11,26 +11,23 @@ test('returns not_started when progress is null', function () {
     $action = new DetermineGroupStatus;
     $result = $action->handle(null);
 
-    expect($result['status'])->toBe(GroupStatus::NotStarted)
-        ->and($result['cooldown_remaining_seconds'])->toBeNull();
+    expect($result['status'])->toBe(GroupStatus::NotStarted)->and($result['cooldown_remaining_seconds'])->toBeNull();
 });
 
 test('returns not_started when stage is 0', function () {
-    $progress = new LearningProgress(['stage' => 0]);
+    $progress = new LearningProgress(['stage' => LearningProgress::STAGE_UNSTARTED]);
     $action = new DetermineGroupStatus;
     $result = $action->handle($progress);
 
-    expect($result['status'])->toBe(GroupStatus::NotStarted)
-        ->and($result['cooldown_remaining_seconds'])->toBeNull();
+    expect($result['status'])->toBe(GroupStatus::NotStarted)->and($result['cooldown_remaining_seconds'])->toBeNull();
 });
 
 test('returns completed when stage is 6 or greater', function () {
-    $progress = new LearningProgress(['stage' => 6]);
+    $progress = new LearningProgress(['stage' => LearningProgress::STAGE_MASTERED]);
     $action = new DetermineGroupStatus;
     $result = $action->handle($progress);
 
-    expect($result['status'])->toBe(GroupStatus::Completed)
-        ->and($result['cooldown_remaining_seconds'])->toBeNull();
+    expect($result['status'])->toBe(GroupStatus::Completed)->and($result['cooldown_remaining_seconds'])->toBeNull();
 });
 
 test('returns cooldown with remaining seconds when next_review_at is in future', function () {
@@ -45,8 +42,7 @@ test('returns cooldown with remaining seconds when next_review_at is in future',
     $action = new DetermineGroupStatus;
     $result = $action->handle($progress, $now);
 
-    expect($result['status'])->toBe(GroupStatus::Cooldown)
-        ->and($result['cooldown_remaining_seconds'])->toBe(1800);
+    expect($result['status'])->toBe(GroupStatus::Cooldown)->and($result['cooldown_remaining_seconds'])->toBe(1800);
 });
 
 test('returns ready when stage is between 1 and 5 and next_review_at is in past', function () {
@@ -61,8 +57,7 @@ test('returns ready when stage is between 1 and 5 and next_review_at is in past'
     $action = new DetermineGroupStatus;
     $result = $action->handle($progress, $now);
 
-    expect($result['status'])->toBe(GroupStatus::Ready)
-        ->and($result['cooldown_remaining_seconds'])->toBeNull();
+    expect($result['status'])->toBe(GroupStatus::Ready)->and($result['cooldown_remaining_seconds'])->toBeNull();
 });
 
 test('returns ready when stage is between 1 and 5 and next_review_at is null', function () {
@@ -74,6 +69,5 @@ test('returns ready when stage is between 1 and 5 and next_review_at is null', f
     $action = new DetermineGroupStatus;
     $result = $action->handle($progress);
 
-    expect($result['status'])->toBe(GroupStatus::Ready)
-        ->and($result['cooldown_remaining_seconds'])->toBeNull();
+    expect($result['status'])->toBe(GroupStatus::Ready)->and($result['cooldown_remaining_seconds'])->toBeNull();
 });

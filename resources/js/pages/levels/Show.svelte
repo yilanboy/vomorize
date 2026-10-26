@@ -6,7 +6,10 @@
     import Clock from '@lucide/svelte/icons/clock';
     import RotateCcw from '@lucide/svelte/icons/rotate-ccw';
     import Zap from '@lucide/svelte/icons/zap';
-    import { show as showGroup } from '@/actions/App/Http/Controllers/GroupController';
+    import {
+        intro as introGroup,
+        show as showGroup,
+    } from '@/actions/App/Http/Controllers/GroupController';
     import AppHead from '@/components/AppHead.svelte';
     import { t } from '@/lib/i18n';
     import {
@@ -270,7 +273,9 @@
             {#each filteredGroups as group (group.id)}
                 {@const groupStatus = getGroupStatus(group.id)}
                 <Link
-                    href={showGroup.url(group.id)}
+                    href={groupStatus === 'not_started'
+                        ? introGroup.url(group.id)
+                        : showGroup.url(group.id)}
                     title={t('ui.level_detail.card_aria', {
                         number: group.sequence,
                         status: getStatusLabel(groupStatus),

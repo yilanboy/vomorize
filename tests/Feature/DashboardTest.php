@@ -203,7 +203,7 @@ test('action center provides ordered due reviews, upcoming cooldowns, and next r
         ->where('stats.action_center.upcoming_reviews.0.stage_label', '進階 Stage 3')
         // Recommended next group is Group 5
         ->where('stats.action_center.recommended_next_group.group_id', $groups[4]->id)
-        ->where('stats.action_center.recommended_next_group.start_url', "/groups/{$groups[4]->id}")
+        ->where('stats.action_center.recommended_next_group.start_url', "/groups/{$groups[4]->id}/intro")
     );
 });
 

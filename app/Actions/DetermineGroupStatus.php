@@ -19,14 +19,14 @@ class DetermineGroupStatus
         $now ??= now();
         $stage = $progress->stage ?? 0;
 
-        if ($stage >= 6) {
+        if ($stage >= LearningProgress::STAGE_MASTERED) {
             return [
                 'status' => GroupStatus::Completed,
                 'cooldown_remaining_seconds' => null,
             ];
         }
 
-        if ($stage > 0) {
+        if ($stage > LearningProgress::STAGE_UNSTARTED) {
             if ($progress?->next_review_at && $progress->next_review_at->isAfter($now)) {
                 return [
                     'status' => GroupStatus::Cooldown,

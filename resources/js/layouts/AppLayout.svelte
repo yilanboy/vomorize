@@ -7,10 +7,12 @@
 
     let {
         breadcrumbs = [],
+        showHeader = true,
         showFooter = true,
         children,
     }: {
         breadcrumbs?: BreadcrumbItem[];
+        showHeader?: boolean;
         showFooter?: boolean;
         children?: Snippet;
     } = $props();
@@ -19,7 +21,9 @@
 <div
     class="bg-background text-foreground flex min-h-screen flex-col transition-colors duration-300"
 >
-    <AppHeader {breadcrumbs} />
+    {#if showHeader}
+        <AppHeader {breadcrumbs} />
+    {/if}
 
     <main class="flex-1">
         {@render children?.()}
