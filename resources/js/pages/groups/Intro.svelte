@@ -5,6 +5,7 @@
     import Volume2 from '@lucide/svelte/icons/volume-2';
     import VolumeX from '@lucide/svelte/icons/volume-x';
     import X from '@lucide/svelte/icons/x';
+    import { saveProgress } from '@/actions/App/Http/Controllers/GroupController';
     import AppHead from '@/components/AppHead.svelte';
     import AudioToDefinitionCard from '@/components/quiz/AudioToDefinitionCard.svelte';
     import DefinitionToWordCard from '@/components/quiz/DefinitionToWordCard.svelte';
@@ -160,20 +161,16 @@
         quizCompleted = true;
 
         if (progress !== null) {
-            // Authenticated user: save via backend API
-            try {
-                await fetch(`/groups/${group.id}/progress`, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'X-XSRF-TOKEN': getXsrfToken(),
-                        Accept: 'application/json',
-                    },
-                    body: JSON.stringify({ score: computedScore }),
-                });
-            } catch {
-                // Silently handle error
-            }
+            // Authenticated user: save via Inertia router
+            router.post(
+                saveProgress.url(group.id),
+                { score: computedScore },
+                {
+                    preserveState: true,
+                    preserveScroll: true,
+                    only: ['progress'],
+                },
+            );
         } else {
             // Guest: save to IndexedDB
             await learningProgressDb.recordQuizResult(
@@ -182,20 +179,6 @@
                 computedScore,
             );
         }
-    }
-
-    function getXsrfToken(): string {
-        if (typeof document === 'undefined') {
-            return '';
-        }
-        const cookies = document.cookie.split(';');
-        for (const cookie of cookies) {
-            const [name, value] = cookie.trim().split('=');
-            if (name === 'XSRF-TOKEN') {
-                return decodeURIComponent(value);
-            }
-        }
-        return '';
     }
 
     function requestLeave(action?: () => void) {
@@ -229,7 +212,14 @@
 
     function handleRetry() {
         audioPlayer.stop();
-        router.reload();
+        currentIndex = 0;
+        selectedOptionId = null;
+        isAdvancing = false;
+        correctAnswersCount = 0;
+        mistakes = [];
+        quizCompleted = false;
+        finalScore = 0;
+        router.reload({ only: ['session', 'progress'] });
     }
 
     function handleDone() {
@@ -477,14 +467,14 @@
             <DialogFooter class="flex flex-col gap-2 pt-4 sm:flex-row">
                 <button
                     type="button"
-                    class="hover:bg-muted text-foreground border-border/80 flex min-h-[44px] flex-1 items-center justify-center rounded-xl border text-sm font-semibold transition-colors"
+                    class="hover:bg-muted text-foreground border-border/80 flex min-h-11 flex-1 items-center justify-center rounded-xl border text-sm font-semibold transition-colors"
                     onclick={cancelLeave}
                 >
                     {t('ui.intro.top_bar.leave_dialog_cancel')}
                 </button>
                 <button
                     type="button"
-                    class="flex min-h-[44px] flex-1 items-center justify-center rounded-xl bg-red-600 text-sm font-semibold text-white transition-colors hover:bg-red-700"
+                    class="flex min-h-11 flex-1 items-center justify-center rounded-xl bg-red-600 text-sm font-semibold text-white transition-colors hover:bg-red-700"
                     onclick={confirmLeave}
                 >
                     {t('ui.intro.top_bar.leave_dialog_confirm')}

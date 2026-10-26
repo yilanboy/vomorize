@@ -35,7 +35,7 @@ readonly class GetSrsStageBreakdown
 
         foreach ($userProgress as $progress) {
             $stage = $progress->stage;
-            $isFailed = $progress->last_score < 80;
+            $isFailed = $progress->last_score < 80 || ($stage === 5 && $progress->next_review_at === null && $progress->last_score < 90);
 
             if ($stage === 0 || ($stage < 6 && $isFailed)) {
                 $stage0++;

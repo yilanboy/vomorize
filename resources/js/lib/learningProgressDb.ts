@@ -255,6 +255,18 @@ export function calculateNextQuizProgress(
     now: Date = new Date(),
 ): LocalLearningProgress {
     const currentStage = currentRecord?.stage ?? 0;
+
+    if (currentStage >= 6) {
+        return {
+            group_id: groupId,
+            level_id: levelId,
+            stage: 6,
+            last_score: Math.max(currentRecord?.last_score ?? 90, score),
+            last_reviewed_at: now.toISOString(),
+            next_review_at: null,
+        };
+    }
+
     const targetStage = Math.min(6, currentStage + 1);
     const passThreshold = targetStage >= 6 ? 90 : 80;
     const isPassed = score >= passThreshold;

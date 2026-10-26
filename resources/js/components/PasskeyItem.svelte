@@ -65,13 +65,13 @@
     </div>
 
     <Dialog>
-        <DialogTrigger asChild>
-            {#snippet children(props)}
+        <DialogTrigger>
+            {#snippet child({ props })}
                 <Button
                     variant="ghost"
                     size="sm"
                     class="text-destructive hover:bg-destructive/10 hover:text-destructive"
-                    onclick={props.onClick}
+                    {...props}
                 >
                     <Trash2 class="h-4 w-4" />
                     <span class="sr-only">
@@ -91,9 +91,9 @@
                 })}
             </DialogDescription>
             <DialogFooter>
-                <DialogClose asChild>
-                    {#snippet children(props)}
-                        <Button variant="secondary" onclick={props.onClick}>
+                <DialogClose>
+                    {#snippet child({ props })}
+                        <Button variant="secondary" {...props}>
                             {t(
                                 'ui.settings.security.passkeys.delete_dialog.cancel',
                             )}

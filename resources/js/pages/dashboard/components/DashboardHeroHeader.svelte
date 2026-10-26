@@ -1,7 +1,6 @@
 <script lang="ts">
     import ArrowRight from '@lucide/svelte/icons/arrow-right';
     import Play from '@lucide/svelte/icons/play';
-    import SlidersHorizontal from '@lucide/svelte/icons/sliders-horizontal';
     import { t } from '@/lib/i18n';
 
     let {
@@ -48,14 +47,6 @@
     </div>
 
     <div class="flex flex-wrap items-center gap-3">
-        <button
-            type="button"
-            class="border-border bg-card text-foreground hover:bg-muted/70 inline-flex h-11 items-center justify-center rounded-lg border px-4 py-2 text-sm font-medium shadow-2xs transition"
-        >
-            <SlidersHorizontal class="text-muted-foreground mr-2 size-4" />
-            <span>{t('ui.dashboard.actions.custom_quiz')}</span>
-        </button>
-
         {#if isEmptyState}
             <a
                 href={recommendedUrl}

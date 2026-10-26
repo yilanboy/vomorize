@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Actions\GenerateReviewQuizSession;
 use App\Actions\GenerateStage1Session;
 use App\Actions\GetGroupDetail;
 use App\Actions\GetGroupProgress;
@@ -10,7 +11,6 @@ use App\Actions\SaveGroupQuizProgress;
 use App\Http\Requests\SaveGroupProgressRequest;
 use App\Models\Group;
 use App\Models\User;
-use Illuminate\Http\JsonResponse;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
@@ -58,7 +58,7 @@ class GroupController extends Controller
         /** @var User|null $user */
         $user = $request->user();
 
-        if ($user instanceof User) {
+        if ($user instanceof User && ! $request->session()->get('quiz_completed')) {
             $progress = $getGroupProgress->handle($group, $user);
             if ($progress['stage'] >= 1) {
                 return redirect()->route('groups.show', $group);
@@ -67,7 +67,38 @@ class GroupController extends Controller
 
         return Inertia::render('groups/Intro', [
             'group' => $getGroupDetail->handle($group),
-            'session' => $generateStage1Session->handle($group),
+            'session' => fn () => $generateStage1Session->handle($group),
+            'progress' => $user instanceof User ? $getGroupProgress->handle($group, $user) : null,
+        ]);
+    }
+
+    /**
+     * Display the stage 2~6 vocabulary review quiz session.
+     */
+    public function quiz(
+        Request $request,
+        Group $group,
+        GetGroupDetail $getGroupDetail,
+        GenerateReviewQuizSession $generateReviewQuizSession,
+        GetGroupProgress $getGroupProgress,
+    ): Response|RedirectResponse {
+        /** @var User|null $user */
+        $user = $request->user();
+
+        if ($user instanceof User && ! $request->session()->get('quiz_completed')) {
+            $progress = $getGroupProgress->handle($group, $user);
+            if ($progress['stage'] < 1) {
+                return redirect()->route('groups.intro', $group);
+            }
+
+            if ($progress['status'] === 'cooldown') {
+                return redirect()->route('groups.show', $group);
+            }
+        }
+
+        return Inertia::render('groups/Quiz', [
+            'group' => $getGroupDetail->handle($group),
+            'session' => fn () => $generateReviewQuizSession->handle($group),
             'progress' => $user instanceof User ? $getGroupProgress->handle($group, $user) : null,
         ]);
     }
@@ -79,19 +110,15 @@ class GroupController extends Controller
         SaveGroupProgressRequest $request,
         Group $group,
         SaveGroupQuizProgress $saveGroupQuizProgress,
-        GetGroupProgress $getGroupProgress,
-    ): JsonResponse {
+    ): RedirectResponse {
         /** @var User $user */
         $user = $request->user();
         $validated = $request->validated();
         $score = (int) $validated['score'];
 
         $saveGroupQuizProgress->handle($user, $group, $score);
-        $progress = $getGroupProgress->handle($group, $user);
+        $request->session()->flash('quiz_completed', true);
 
-        return response()->json([
-            'success' => true,
-            'progress' => $progress,
-        ]);
+        return back();
     }
 }

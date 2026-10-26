@@ -37,9 +37,15 @@
         </div>
         <Dialog>
             <DialogTrigger>
-                <Button variant="destructive" data-test="delete-user-button">
-                    {t('ui.settings.profile.delete_account.button')}
-                </Button>
+                {#snippet child({ props })}
+                    <Button
+                        variant="destructive"
+                        data-test="delete-user-button"
+                        {...props}
+                    >
+                        {t('ui.settings.profile.delete_account.button')}
+                    </Button>
+                {/snippet}
             </DialogTrigger>
             <DialogContent>
                 <Form
@@ -79,11 +85,13 @@
 
                         <DialogFooter class="gap-2">
                             <DialogClose>
-                                <Button variant="secondary">
-                                    {t(
-                                        'ui.settings.profile.delete_account.cancel',
-                                    )}
-                                </Button>
+                                {#snippet child({ props })}
+                                    <Button variant="secondary" {...props}>
+                                        {t(
+                                            'ui.settings.profile.delete_account.cancel',
+                                        )}
+                                    </Button>
+                                {/snippet}
                             </DialogClose>
 
                             <Button

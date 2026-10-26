@@ -2,9 +2,7 @@
     import { Link, page } from '@inertiajs/svelte';
     import BookOpen from '@lucide/svelte/icons/book-open';
     import LayoutGrid from '@lucide/svelte/icons/layout-grid';
-    import Sparkles from '@lucide/svelte/icons/sparkles';
     import AppLogoIcon from '@/components/AppLogoIcon.svelte';
-    import SiteLanguageSwitcher from '@/components/SiteLanguageSwitcher.svelte';
     import {
         Sheet,
         SheetContent,
@@ -93,30 +91,8 @@
                         <BookOpen class="size-4.5" />
                         <span>{t('ui.nav.levels')}</span>
                     </Link>
-
-                    <Link
-                        href="/quiz"
-                        class={{
-                            'hover:bg-accent hover:text-accent-foreground flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors': true,
-                            'bg-accent text-foreground font-semibold':
-                                url.isCurrentOrParentUrl(
-                                    '/quiz',
-                                    url.currentUrl,
-                                ),
-                            'text-muted-foreground': !url.isCurrentOrParentUrl(
-                                '/quiz',
-                                url.currentUrl,
-                            ),
-                        }}
-                        onclick={close}
-                    >
-                        <Sparkles class="size-4.5" />
-                        <span>{t('ui.nav.quiz')}</span>
-                    </Link>
                 </nav>
             </div>
         </div>
-
-        <SiteLanguageSwitcher variant="mobile" />
     </SheetContent>
 </Sheet>

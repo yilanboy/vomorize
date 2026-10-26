@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { Link } from '@inertiajs/svelte';
+    import { Link, page } from '@inertiajs/svelte';
     import Award from '@lucide/svelte/icons/award';
     import CheckCircle2 from '@lucide/svelte/icons/check-circle-2';
     import RotateCcw from '@lucide/svelte/icons/rotate-ccw';
@@ -12,8 +12,10 @@
     let {
         score,
         passed,
-        groupId,
+        groupId: _groupId,
         levelId,
+        stage = 1,
+        isMasteredRetake = false,
         mistakes = [],
         onRetry,
         onDone,
@@ -22,10 +24,92 @@
         passed: boolean;
         groupId: number;
         levelId?: number;
+        stage?: number;
+        isMasteredRetake?: boolean;
         mistakes?: MistakeReviewItem[];
         onRetry: () => void;
         onDone: () => void;
     } = $props();
+
+    const isAuthenticated = $derived(Boolean(page.props.auth?.user));
+    const passThresholdScore = $derived(stage >= 6 ? 90 : 80);
+
+    function getStageCooldownLabel(currentStage: number): string {
+        switch (currentStage) {
+            case 1:
+                return t('ui.time.hours', { count: 12 });
+            case 2:
+                return t('ui.time.days', { count: 1 });
+            case 3:
+                return t('ui.time.days', { count: 2 });
+            case 4:
+                return t('ui.time.days', { count: 4 });
+            case 5:
+                return t('ui.time.days', { count: 7 });
+            default:
+                return '';
+        }
+    }
+
+    const resultTitle = $derived.by(() => {
+        if (isMasteredRetake) {
+            return t('ui.quiz.result.title_self_test');
+        }
+        if (!passed) {
+            return t('ui.quiz.result.title_failed');
+        }
+        if (stage >= 6) {
+            return t('ui.quiz.result.title_mastered');
+        }
+        if (stage === 1) {
+            return t('ui.quiz.result.title_passed');
+        }
+        return t('ui.quiz.result.title_passed_stage', { stage });
+    });
+
+    const thresholdLabel = $derived.by(() => {
+        if (isMasteredRetake) {
+            return t('ui.quiz.result.self_test_subtitle');
+        }
+        if (stage === 1) {
+            return t('ui.quiz.result.pass_threshold');
+        }
+        return t('ui.quiz.result.pass_threshold_score', {
+            score: passThresholdScore,
+        });
+    });
+
+    const noticeBannerText = $derived.by(() => {
+        if (isMasteredRetake) {
+            return t('ui.quiz.result.self_test_notice');
+        }
+        if (passed) {
+            if (stage >= 6) {
+                return t('ui.quiz.result.mastered_notice');
+            }
+            if (stage === 1) {
+                return t('ui.quiz.result.cooldown_notice');
+            }
+            return t('ui.quiz.result.cooldown_notice_stage', {
+                stage,
+                cooldown: getStageCooldownLabel(stage),
+                next_stage: stage + 1,
+            });
+        }
+        if (stage === 1) {
+            return t('ui.quiz.result.failed_notice');
+        }
+        return t('ui.quiz.result.failed_notice_stage', {
+            stage,
+            threshold: passThresholdScore,
+        });
+    });
+
+    const retryButtonLabel = $derived(
+        stage === 1
+            ? t('ui.quiz.result.btn_retry')
+            : t('ui.quiz.result.btn_retry_stage', { stage }),
+    );
 
     function playAudio(url: string, id: string) {
         if (url) {
@@ -55,12 +139,10 @@
 
         <div class="flex flex-col gap-1.5">
             <h2 class="text-foreground text-2xl font-bold tracking-tight">
-                {passed
-                    ? t('ui.quiz.result.title_passed')
-                    : t('ui.quiz.result.title_failed')}
+                {resultTitle}
             </h2>
             <p class="text-muted-foreground text-sm font-medium">
-                {t('ui.quiz.result.pass_threshold')}
+                {thresholdLabel}
             </p>
         </div>
 
@@ -83,9 +165,7 @@
                 ? 'border-emerald-500/30 bg-emerald-500/10 text-emerald-900 dark:text-emerald-200'
                 : 'border-amber-500/30 bg-amber-500/10 text-amber-900 dark:text-amber-200'}"
         >
-            {passed
-                ? t('ui.quiz.result.cooldown_notice')
-                : t('ui.quiz.result.failed_notice')}
+            {noticeBannerText}
         </div>
     </div>
 
@@ -190,12 +270,21 @@
                 {t('ui.quiz.result.btn_done')}
             </button>
 
-            <Link
-                href="/dashboard"
-                class="hover:bg-muted text-foreground border-border/80 flex min-h-[46px] w-full items-center justify-center rounded-xl border text-sm font-semibold transition-colors"
-            >
-                {t('ui.quiz.result.btn_dashboard')}
-            </Link>
+            {#if isAuthenticated || !levelId}
+                <Link
+                    href="/dashboard"
+                    class="hover:bg-muted text-foreground border-border/80 flex min-h-[46px] w-full items-center justify-center rounded-xl border text-sm font-semibold transition-colors"
+                >
+                    {t('ui.quiz.result.btn_dashboard')}
+                </Link>
+            {:else}
+                <Link
+                    href={`/levels/${levelId}`}
+                    class="hover:bg-muted text-foreground border-border/80 flex min-h-[46px] w-full items-center justify-center rounded-xl border text-sm font-semibold transition-colors"
+                >
+                    {t('ui.quiz.result.btn_back_level')}
+                </Link>
+            {/if}
         {:else}
             <button
                 type="button"
@@ -203,7 +292,7 @@
                 onclick={onRetry}
             >
                 <RotateCcw class="h-4 w-4" />
-                <span>{t('ui.quiz.result.btn_retry')}</span>
+                <span>{retryButtonLabel}</span>
             </button>
 
             <button

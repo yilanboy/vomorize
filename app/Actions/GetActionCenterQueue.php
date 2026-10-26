@@ -56,7 +56,8 @@ readonly class GetActionCenterQueue
                 continue;
             }
 
-            $isFailed = $progress->last_score < 80;
+            $isStage6Failed = $stage === 5 && $progress->next_review_at === null && $progress->last_score < 90;
+            $isFailed = $progress->last_score < 80 || $isStage6Failed;
             $isCooldownElapsed = $progress->next_review_at === null || $progress->next_review_at->lte($now);
 
             $levelId = $progress->level_id;
@@ -64,7 +65,7 @@ readonly class GetActionCenterQueue
             $groupTitle = (string) __('ui.group_detail.title', ['level_id' => $levelId, 'sequence' => $sequence]);
 
             if ($isFailed || $isCooldownElapsed) {
-                $targetStage = $isFailed ? max(1, $stage) : min(6, $stage + 1);
+                $targetStage = $isStage6Failed ? 6 : ($isFailed ? max(1, $stage) : min(6, $stage + 1));
 
                 if ($isFailed) {
                     $badgeText = (string) __('ui.dashboard.action_center.badge_retake', ['stage' => $targetStage]);

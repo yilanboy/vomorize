@@ -24,33 +24,30 @@ test('authenticated user can sync new local progress records into empty account'
     $reviewedAt = now()->subHours(2)->startOfSecond();
     $nextReviewAt = now()->addHours(10)->startOfSecond();
 
-    $response = $this->actingAs($user)->postJson(route('progress.sync'), [
-        'local_progress' => [
-            [
-                'group_id' => $group1->id,
-                'level_id' => $level2->id, // intentionally mismatched to verify server resolves true level_id from group
-                'stage' => 2,
-                'last_score' => 95,
-                'last_reviewed_at' => $reviewedAt->toIso8601String(),
-                'next_review_at' => $nextReviewAt->toIso8601String(),
+    $response = $this->actingAs($user)
+        ->from(route('dashboard'))
+        ->post(route('progress.sync'), [
+            'local_progress' => [
+                [
+                    'group_id' => $group1->id,
+                    'level_id' => $level2->id, // intentionally mismatched to verify server resolves true level_id from group
+                    'stage' => 2,
+                    'last_score' => 95,
+                    'last_reviewed_at' => $reviewedAt->toIso8601String(),
+                    'next_review_at' => $nextReviewAt->toIso8601String(),
+                ],
+                [
+                    'group_id' => $group2->id,
+                    'level_id' => $level2->id,
+                    'stage' => 6,
+                    'last_score' => 100,
+                    'last_reviewed_at' => $reviewedAt->toIso8601String(),
+                    'next_review_at' => null,
+                ],
             ],
-            [
-                'group_id' => $group2->id,
-                'level_id' => $level2->id,
-                'stage' => 6,
-                'last_score' => 100,
-                'last_reviewed_at' => $reviewedAt->toIso8601String(),
-                'next_review_at' => null,
-            ],
-        ],
-    ]);
-
-    $response->assertOk()
-        ->assertExactJson([
-            'success' => true,
-            'synced_count' => 2,
-            'message' => __('ui.sync.success', ['count' => 2]),
         ]);
+
+    $response->assertRedirect(route('dashboard'));
 
     $progress1 = $user->learningProgress()->where('group_id', $group1->id)->first();
     expect($progress1)->not->toBeNull()
@@ -106,38 +103,38 @@ test('conflict resolution overwrites only when local stage is strictly higher an
         'last_reviewed_at' => $yesterday,
     ]);
 
-    $response = $this->actingAs($user)->postJson(route('progress.sync'), [
-        'local_progress' => [
-            [
-                'group_id' => $groupHigherLocal->id,
-                'level_id' => $level->id,
-                'stage' => 3,
-                'last_score' => 95,
-                'last_reviewed_at' => $now->toIso8601String(),
-                'next_review_at' => $now->copy()->addDays(2)->toIso8601String(),
+    $response = $this->actingAs($user)
+        ->from(route('dashboard'))
+        ->post(route('progress.sync'), [
+            'local_progress' => [
+                [
+                    'group_id' => $groupHigherLocal->id,
+                    'level_id' => $level->id,
+                    'stage' => 3,
+                    'last_score' => 95,
+                    'last_reviewed_at' => $now->toIso8601String(),
+                    'next_review_at' => $now->copy()->addDays(2)->toIso8601String(),
+                ],
+                [
+                    'group_id' => $groupLowerLocal->id,
+                    'level_id' => $level->id,
+                    'stage' => 2,
+                    'last_score' => 100,
+                    'last_reviewed_at' => $now->toIso8601String(),
+                    'next_review_at' => $now->copy()->addDay()->toIso8601String(),
+                ],
+                [
+                    'group_id' => $groupEqualStage->id,
+                    'level_id' => $level->id,
+                    'stage' => 2,
+                    'last_score' => 100,
+                    'last_reviewed_at' => $now->toIso8601String(),
+                    'next_review_at' => $now->copy()->addDay()->toIso8601String(),
+                ],
             ],
-            [
-                'group_id' => $groupLowerLocal->id,
-                'level_id' => $level->id,
-                'stage' => 2,
-                'last_score' => 100,
-                'last_reviewed_at' => $now->toIso8601String(),
-                'next_review_at' => $now->copy()->addDay()->toIso8601String(),
-            ],
-            [
-                'group_id' => $groupEqualStage->id,
-                'level_id' => $level->id,
-                'stage' => 2,
-                'last_score' => 100,
-                'last_reviewed_at' => $now->toIso8601String(),
-                'next_review_at' => $now->copy()->addDay()->toIso8601String(),
-            ],
-        ],
-    ]);
+        ]);
 
-    $response->assertOk()
-        ->assertJsonPath('synced_count', 1)
-        ->assertJsonPath('message', __('ui.sync.success', ['count' => 1]));
+    $response->assertRedirect(route('dashboard'));
 
     $higher = $user->learningProgress()->where('group_id', $groupHigherLocal->id)->first();
     expect($higher?->stage)->toBe(3)
@@ -162,20 +159,22 @@ test('clamps future last_reviewed_at beyond 5 minutes of clock skew to current s
 
     $futureReviewedAt = now()->addHours(2);
 
-    $response = $this->actingAs($user)->postJson(route('progress.sync'), [
-        'local_progress' => [
-            [
-                'group_id' => $group->id,
-                'level_id' => $level->id,
-                'stage' => 1,
-                'last_score' => 85,
-                'last_reviewed_at' => $futureReviewedAt->toIso8601String(),
-                'next_review_at' => $futureReviewedAt->copy()->addHours(12)->toIso8601String(),
+    $response = $this->actingAs($user)
+        ->from(route('dashboard'))
+        ->post(route('progress.sync'), [
+            'local_progress' => [
+                [
+                    'group_id' => $group->id,
+                    'level_id' => $level->id,
+                    'stage' => 1,
+                    'last_score' => 85,
+                    'last_reviewed_at' => $futureReviewedAt->toIso8601String(),
+                    'next_review_at' => $futureReviewedAt->copy()->addHours(12)->toIso8601String(),
+                ],
             ],
-        ],
-    ]);
+        ]);
 
-    $response->assertOk();
+    $response->assertRedirect(route('dashboard'));
 
     $progress = $user->learningProgress()->where('group_id', $group->id)->first();
     expect($progress?->last_reviewed_at->equalTo(now()->startOfSecond()))->toBeTrue();
@@ -194,18 +193,20 @@ test('updates user daily streak when synced progress contains a review from toda
         'last_studied_date' => null,
     ]);
 
-    $this->actingAs($newUser)->postJson(route('progress.sync'), [
-        'local_progress' => [
-            [
-                'group_id' => $group->id,
-                'level_id' => $level->id,
-                'stage' => 1,
-                'last_score' => 90,
-                'last_reviewed_at' => now()->subMinutes(10)->toIso8601String(),
-                'next_review_at' => now()->addHours(12)->toIso8601String(),
+    $this->actingAs($newUser)
+        ->from(route('dashboard'))
+        ->post(route('progress.sync'), [
+            'local_progress' => [
+                [
+                    'group_id' => $group->id,
+                    'level_id' => $level->id,
+                    'stage' => 1,
+                    'last_score' => 90,
+                    'last_reviewed_at' => now()->subMinutes(10)->toIso8601String(),
+                    'next_review_at' => now()->addHours(12)->toIso8601String(),
+                ],
             ],
-        ],
-    ])->assertOk();
+        ])->assertRedirect(route('dashboard'));
 
     $newUser->refresh();
     expect($newUser->current_streak)->toBe(1)
@@ -219,18 +220,20 @@ test('updates user daily streak when synced progress contains a review from toda
         'last_studied_date' => now()->subDay(),
     ]);
 
-    $this->actingAs($continuingUser)->postJson(route('progress.sync'), [
-        'local_progress' => [
-            [
-                'group_id' => $group->id,
-                'level_id' => $level->id,
-                'stage' => 1,
-                'last_score' => 90,
-                'last_reviewed_at' => now()->toIso8601String(),
-                'next_review_at' => now()->addHours(12)->toIso8601String(),
+    $this->actingAs($continuingUser)
+        ->from(route('dashboard'))
+        ->post(route('progress.sync'), [
+            'local_progress' => [
+                [
+                    'group_id' => $group->id,
+                    'level_id' => $level->id,
+                    'stage' => 1,
+                    'last_score' => 90,
+                    'last_reviewed_at' => now()->toIso8601String(),
+                    'next_review_at' => now()->addHours(12)->toIso8601String(),
+                ],
             ],
-        ],
-    ])->assertOk();
+        ])->assertRedirect(route('dashboard'));
 
     $continuingUser->refresh();
     expect($continuingUser->current_streak)->toBe(4)
@@ -238,18 +241,20 @@ test('updates user daily streak when synced progress contains a review from toda
         ->and($continuingUser->last_studied_date?->isToday())->toBeTrue();
 
     // 3. Syncing again on the same day does not double-increment streak
-    $this->actingAs($continuingUser)->postJson(route('progress.sync'), [
-        'local_progress' => [
-            [
-                'group_id' => $group->id,
-                'level_id' => $level->id,
-                'stage' => 2,
-                'last_score' => 95,
-                'last_reviewed_at' => now()->toIso8601String(),
-                'next_review_at' => now()->addDay()->toIso8601String(),
+    $this->actingAs($continuingUser)
+        ->from(route('dashboard'))
+        ->post(route('progress.sync'), [
+            'local_progress' => [
+                [
+                    'group_id' => $group->id,
+                    'level_id' => $level->id,
+                    'stage' => 2,
+                    'last_score' => 95,
+                    'last_reviewed_at' => now()->toIso8601String(),
+                    'next_review_at' => now()->addDay()->toIso8601String(),
+                ],
             ],
-        ],
-    ])->assertOk();
+        ])->assertRedirect(route('dashboard'));
 
     $continuingUser->refresh();
     expect($continuingUser->current_streak)->toBe(4);
