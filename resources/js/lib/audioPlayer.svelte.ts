@@ -5,6 +5,7 @@
 
 let audioContext: AudioContext | null = null;
 let activeSource: AudioBufferSourceNode | null = null;
+let playGeneration = 0;
 const bufferCache = new Map<string, AudioBuffer>();
 const inFlightFetches = new Map<string, Promise<AudioBuffer | null>>();
 
@@ -119,6 +120,7 @@ export const audioPlayer = {
      */
     async play(url: string, id: string): Promise<void> {
         this.stop();
+        const generation = ++playGeneration;
 
         const context = getAudioContext();
         if (!context) {
@@ -126,9 +128,12 @@ export const audioPlayer = {
         }
 
         await ensureResumed(context);
+        if (generation !== playGeneration) {
+            return;
+        }
 
         const buffer = bufferCache.get(url) || (await fetchAndDecode(url));
-        if (!buffer) {
+        if (!buffer || generation !== playGeneration) {
             return;
         }
 
@@ -162,6 +167,7 @@ export const audioPlayer = {
      * Immediately stop active playback.
      */
     stop(): void {
+        playGeneration += 1;
         if (activeSource) {
             try {
                 activeSource.stop();

@@ -20,6 +20,28 @@ test('stage 1 intro page loads without javascript errors', function () {
         ->assertNoSmoke();
 });
 
+test('stage 1 intro page guards against leaving and browser back from the very first step', function () {
+    $level = Level::factory()->create(['name' => '基礎入門']);
+    $group = Group::factory()->create(['level_id' => $level->id, 'sequence' => 1]);
+
+    Vocabulary::factory()->count(10)->create([
+        'level_id' => $level->id,
+        'group_id' => $group->id,
+    ]);
+
+    $page = visit("/groups/{$group->id}/intro");
+
+    $page->click('button[title="離開"]')
+        ->assertSee('確定要放棄本次學習？')
+        ->click('繼續學習')
+        ->assertDontSee('確定要放棄本次學習？');
+
+    $page->script('window.history.back()');
+
+    $page->assertSee('確定要放棄本次學習？')
+        ->assertNoSmoke();
+});
+
 test('group show page for passed group loads without javascript errors', function () {
     $user = User::factory()->create();
     $level = Level::factory()->create();

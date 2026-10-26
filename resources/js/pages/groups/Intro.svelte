@@ -64,6 +64,11 @@
 
     let isLeaveDialogOpen = $state(false);
     let pendingLeaveAction = $state<(() => void) | null>(null);
+    let bypassNavigationGuard = false;
+
+    function isGuardActive(): boolean {
+        return !quizCompleted && !bypassNavigationGuard;
+    }
 
     const totalSteps = $derived(session?.steps?.length ?? 30);
     const currentStep = $derived(session?.steps?.[currentIndex] ?? null);
@@ -194,7 +199,7 @@
     }
 
     function requestLeave(action?: () => void) {
-        if (quizCompleted || currentIndex === 0) {
+        if (!isGuardActive()) {
             if (action) {
                 action();
             } else {
@@ -209,11 +214,11 @@
 
     function confirmLeave() {
         isLeaveDialogOpen = false;
-        quizCompleted = true; // prevent re-triggering guard
+        bypassNavigationGuard = true;
         if (pendingLeaveAction) {
             pendingLeaveAction();
         } else {
-            router.visit(`/levels/${group.level_id}`);
+            router.visit(`/levels/${group.level_id}`, { replace: true });
         }
     }
 
@@ -243,6 +248,7 @@
         if (!progress) {
             void learningProgressDb.getGroupProgress(group.id).then((local) => {
                 if (local && local.stage >= 1) {
+                    bypassNavigationGuard = true;
                     router.visit(`/groups/${group.id}`, { replace: true });
                 }
             });
@@ -272,22 +278,44 @@
             void audioPlayer.preload(urlsToPreload);
         }
 
-        // Browser beforeunload guard
+        // 1. Browser beforeunload guard (reload / close tab)
         const handleBeforeUnload = (e: BeforeUnloadEvent) => {
-            if (!quizCompleted && currentIndex > 0) {
+            if (isGuardActive()) {
                 e.preventDefault();
-                e.returnValue = '';
             }
         };
 
         window.addEventListener('beforeunload', handleBeforeUnload);
 
-        // Inertia navigation guard
+        // 2. Browser back button / mobile swipe back guard (intercept in capture phase before Inertia)
+        window.history.pushState(
+            window.history.state,
+            '',
+            window.location.href,
+        );
+        const handlePopState = (e: PopStateEvent) => {
+            if (isGuardActive()) {
+                e.stopImmediatePropagation();
+                window.history.pushState(
+                    window.history.state,
+                    '',
+                    window.location.href,
+                );
+                requestLeave(() => {
+                    router.visit(`/levels/${group.level_id}`, {
+                        replace: true,
+                    });
+                });
+            }
+        };
+
+        window.addEventListener('popstate', handlePopState, { capture: true });
+
+        // 3. Inertia in-app navigation guard
         const removeInertiaListener = router.on('before', (event) => {
-            if (!quizCompleted && currentIndex > 0) {
+            if (isGuardActive()) {
                 event.preventDefault();
                 requestLeave(() => {
-                    // Replay visit
                     router.visit(event.detail.visit.url.href);
                 });
             }
@@ -295,6 +323,9 @@
 
         return () => {
             window.removeEventListener('beforeunload', handleBeforeUnload);
+            window.removeEventListener('popstate', handlePopState, {
+                capture: true,
+            });
             removeInertiaListener();
             audioPlayer.stop();
         };
@@ -385,40 +416,42 @@
                 onDone={handleDone}
             />
         {:else if currentStep}
-            {#if currentStep.kind === 'intro'}
-                <VocabularyIntroCard
-                    vocabulary={currentStep.vocabulary}
-                    {autoPlay}
-                    onContinue={handleIntroContinue}
-                />
-            {:else if currentStep.kind === 'quiz' && currentStep.quiz}
-                {#if currentStep.quiz.quiz_type === 'word_to_definition'}
-                    <WordToDefinitionCard
-                        question={currentStep.quiz}
+            {#key currentStep.id}
+                {#if currentStep.kind === 'intro'}
+                    <VocabularyIntroCard
                         vocabulary={currentStep.vocabulary}
-                        {selectedOptionId}
-                        onSelect={handleQuizOptionSelect}
-                        disabled={isAdvancing}
-                    />
-                {:else if currentStep.quiz.quiz_type === 'definition_to_word'}
-                    <DefinitionToWordCard
-                        question={currentStep.quiz}
-                        vocabulary={currentStep.vocabulary}
-                        {selectedOptionId}
-                        onSelect={handleQuizOptionSelect}
-                        disabled={isAdvancing}
-                    />
-                {:else if currentStep.quiz.quiz_type === 'audio_to_definition'}
-                    <AudioToDefinitionCard
-                        question={currentStep.quiz}
-                        vocabulary={currentStep.vocabulary}
-                        {selectedOptionId}
                         {autoPlay}
-                        onSelect={handleQuizOptionSelect}
-                        disabled={isAdvancing}
+                        onContinue={handleIntroContinue}
                     />
+                {:else if currentStep.kind === 'quiz' && currentStep.quiz}
+                    {#if currentStep.quiz.quiz_type === 'word_to_definition'}
+                        <WordToDefinitionCard
+                            question={currentStep.quiz}
+                            vocabulary={currentStep.vocabulary}
+                            {selectedOptionId}
+                            onSelect={handleQuizOptionSelect}
+                            disabled={isAdvancing}
+                        />
+                    {:else if currentStep.quiz.quiz_type === 'definition_to_word'}
+                        <DefinitionToWordCard
+                            question={currentStep.quiz}
+                            vocabulary={currentStep.vocabulary}
+                            {selectedOptionId}
+                            onSelect={handleQuizOptionSelect}
+                            disabled={isAdvancing}
+                        />
+                    {:else if currentStep.quiz.quiz_type === 'audio_to_definition'}
+                        <AudioToDefinitionCard
+                            question={currentStep.quiz}
+                            vocabulary={currentStep.vocabulary}
+                            {selectedOptionId}
+                            {autoPlay}
+                            onSelect={handleQuizOptionSelect}
+                            disabled={isAdvancing}
+                        />
+                    {/if}
                 {/if}
-            {/if}
+            {/key}
         {/if}
     </main>
 
