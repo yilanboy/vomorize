@@ -1,7 +1,6 @@
 <script lang="ts">
     import { Form, setLayoutProps } from '@inertiajs/svelte';
     import AppHead from '@/components/AppHead.svelte';
-    import Github from '@/components/icons/Github.svelte';
     import InputError from '@/components/InputError.svelte';
     import PasskeyVerify from '@/components/PasskeyVerify.svelte';
     import PasswordInput from '@/components/PasswordInput.svelte';
@@ -128,7 +127,7 @@
         </span>
     </div>
 
-    <!-- Alternative login actions (GitHub + Passkey) -->
+    <!-- Alternative login actions (Passkey) -->
     <div class="grid gap-2.5">
         <PasskeyVerify
             label={t('ui.auth.login.passkey_button')}
@@ -136,19 +135,6 @@
             showSeparator={false}
             class="border-border/70 hover:bg-accent/60 h-11 rounded-xl font-medium transition-colors"
         />
-
-        <Button
-            variant="outline"
-            class="border-border/70 hover:bg-accent/60 h-11 w-full rounded-xl font-medium transition-colors"
-            asChild
-        >
-            {#snippet children(props)}
-                <a href="/auth/github/redirect" class={props.class}>
-                    <Github class="size-4" />
-                    <span>{t('ui.auth.login.github_button')}</span>
-                </a>
-            {/snippet}
-        </Button>
     </div>
 
     <!-- Footer: 還沒有帳號？立即免費註冊 -->
