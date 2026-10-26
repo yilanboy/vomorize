@@ -20,10 +20,14 @@ class DatabaseSeeder extends Seeder
             VocabularySeeder::class,
         ]);
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
-            'password' => bcrypt('password'),
-        ]);
+        if (app()->environment('local', 'testing')) {
+            User::query()->firstOrCreate(
+                ['email' => 'test@example.com'],
+                [
+                    'name' => 'Test User',
+                    'password' => bcrypt('password'),
+                ]
+            );
+        }
     }
 }
