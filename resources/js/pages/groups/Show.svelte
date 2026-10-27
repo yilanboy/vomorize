@@ -93,6 +93,7 @@
 
     setLayoutProps({
         breadcrumbs,
+        showFooter: false,
     });
 
     function formatCooldownTime(totalSeconds: number): string {

@@ -360,11 +360,11 @@
             <!-- Left: Leave button -->
             <button
                 type="button"
-                class="hover:bg-muted text-muted-foreground hover:text-foreground flex h-10 w-10 items-center justify-center rounded-xl transition-colors"
+                class="hover:bg-muted text-muted-foreground hover:text-foreground flex size-10 items-center justify-center rounded-xl transition-colors"
                 onclick={() => requestLeave()}
                 title={t('ui.intro.top_bar.leave')}
             >
-                <X class="h-5 w-5" />
+                <X class="size-5" />
             </button>
 
             <!-- Center: Progress indicator -->
@@ -403,9 +403,9 @@
                     : t('ui.intro.top_bar.auto_play_off')}
             >
                 {#if autoPlay}
-                    <Volume2 class="h-5 w-5" />
+                    <Volume2 class="size-5" />
                 {:else}
-                    <VolumeX class="h-5 w-5" />
+                    <VolumeX class="size-5" />
                 {/if}
             </button>
         </div>
@@ -468,7 +468,7 @@
                 <div
                     class="mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-500/10 text-amber-600 dark:bg-amber-500/20 dark:text-amber-400"
                 >
-                    <AlertTriangle class="h-6 w-6" />
+                    <AlertTriangle class="size-6" />
                 </div>
                 <DialogTitle class="text-lg font-bold">
                     {t('ui.intro.top_bar.leave_dialog_title')}

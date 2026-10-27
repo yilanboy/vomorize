@@ -37,6 +37,7 @@ test('stage 1 intro page guards against leaving and browser back from the very f
 
     $page
         ->assertSee('30')
+        ->wait(2)
         ->click('button[title="離開"]')
         ->assertSee('確定要放棄本次學習？')
         ->click('繼續學習')
@@ -100,6 +101,7 @@ test('stage 2 review quiz page loads without javascript errors and guards agains
 
     $page
         ->assertSee('20')
+        ->wait(2)
         ->click('button[title="離開"]')
         ->assertSee('確定要放棄本次學習？')
         ->click('繼續學習')
