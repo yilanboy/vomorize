@@ -1,7 +1,5 @@
 <script lang="ts">
-    import Volume2 from '@lucide/svelte/icons/volume-2';
     import QuizOptions from '@/components/quiz/QuizOptions.svelte';
-    import { audioPlayer } from '@/lib/audioPlayer.svelte';
     import { t } from '@/lib/i18n';
     import type {
         QuizOptionPayload,
@@ -22,15 +20,6 @@
         onSelect: (option: QuizOptionPayload) => void;
         disabled?: boolean;
     } = $props();
-
-    function playAudio() {
-        if (vocabulary.word_audio_url) {
-            void audioPlayer.play(
-                vocabulary.word_audio_url,
-                `quiz-def-${vocabulary.id}`,
-            );
-        }
-    }
 </script>
 
 <div
@@ -59,35 +48,22 @@
                 {question.stem}
             </h2>
 
-            {#if selectedOptionId !== null}
-                <div
-                    class="bg-muted/50 border-border/60 flex items-center justify-between rounded-xl border p-3"
-                >
-                    <div class="flex items-baseline gap-2">
-                        <span class="text-foreground text-lg font-bold">
-                            {vocabulary.word}
-                        </span>
-                        <span class="text-muted-foreground font-mono text-sm">
-                            {vocabulary.pronunciation}
-                        </span>
-                    </div>
-
-                    <button
-                        type="button"
-                        class="hover:bg-muted text-foreground border-border/80 flex h-9 w-9 items-center justify-center rounded-lg border transition-colors"
-                        onclick={playAudio}
-                        title={t('ui.intro.card.play_word')}
-                    >
-                        <Volume2
-                            class="h-4 w-4 {audioPlayer.isPlaying(
-                                `quiz-def-${vocabulary.id}`,
-                            )
-                                ? 'text-primary animate-pulse'
-                                : 'text-muted-foreground'}"
-                        />
-                    </button>
+            <div
+                class="flex min-h-[50px] items-center rounded-xl border p-3 transition-opacity duration-150 {selectedOptionId !==
+                null
+                    ? 'border-border/60 bg-muted/50 visible opacity-100'
+                    : 'invisible border-transparent bg-transparent opacity-0 select-none'}"
+                aria-hidden={selectedOptionId === null}
+            >
+                <div class="flex items-baseline gap-2">
+                    <span class="text-foreground text-lg font-bold">
+                        {vocabulary.word}
+                    </span>
+                    <span class="text-muted-foreground font-mono text-sm">
+                        {vocabulary.pronunciation}
+                    </span>
                 </div>
-            {/if}
+            </div>
         </div>
     </div>
 

@@ -80,13 +80,15 @@
                 {t('ui.quiz.question_types.audio_to_definition')}
             </span>
 
-            {#if selectedOptionId !== null}
-                <span
-                    class="bg-secondary text-secondary-foreground inline-flex items-center rounded-md px-2.5 py-0.5 text-sm font-medium"
-                >
-                    {vocabulary.part_of_speech}
-                </span>
-            {/if}
+            <span
+                class="bg-secondary text-secondary-foreground inline-flex items-center rounded-md px-2.5 py-0.5 text-sm font-medium transition-opacity duration-150 {selectedOptionId !==
+                null
+                    ? 'visible opacity-100'
+                    : 'invisible opacity-0 select-none'}"
+                aria-hidden={selectedOptionId === null}
+            >
+                {vocabulary.part_of_speech}
+            </span>
         </div>
 
         <!-- Speaker Prompt -->
@@ -110,16 +112,20 @@
                     : t('ui.quiz.audio_prompt.play_hint')}
             </span>
 
-            {#if selectedOptionId !== null}
-                <div class="flex items-baseline gap-2 pt-1">
-                    <span class="text-foreground text-xl font-bold">
-                        {vocabulary.word}
-                    </span>
-                    <span class="text-muted-foreground font-mono text-base">
-                        {vocabulary.pronunciation}
-                    </span>
-                </div>
-            {/if}
+            <div
+                class="flex min-h-[32px] items-baseline gap-2 pt-1 transition-opacity duration-150 {selectedOptionId !==
+                null
+                    ? 'visible opacity-100'
+                    : 'invisible opacity-0 select-none'}"
+                aria-hidden={selectedOptionId === null}
+            >
+                <span class="text-foreground text-xl font-bold">
+                    {vocabulary.word}
+                </span>
+                <span class="text-muted-foreground font-mono text-base">
+                    {vocabulary.pronunciation}
+                </span>
+            </div>
         </div>
     </div>
 

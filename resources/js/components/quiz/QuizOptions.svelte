@@ -8,14 +8,14 @@
     let {
         options = [],
         correctOptionId,
-        quizType,
+        quizType = 'word_to_definition',
         selectedOptionId = null,
         onSelect,
         disabled = false,
     }: {
         options: QuizOptionPayload[];
         correctOptionId: number;
-        quizType: QuizType;
+        quizType?: QuizType;
         selectedOptionId?: number | null;
         onSelect: (option: QuizOptionPayload) => void;
         disabled?: boolean;
@@ -26,16 +26,6 @@
             return;
         }
         onSelect(option);
-    }
-
-    function getCounterpart(option: QuizOptionPayload): string {
-        if (
-            quizType === 'word_to_definition' ||
-            quizType === 'audio_to_definition'
-        ) {
-            return `${option.part_of_speech} ${option.word}`;
-        }
-        return `${option.part_of_speech} ${option.definition}`;
     }
 
     onMount(() => {
@@ -92,13 +82,13 @@
         >
             <div class="flex flex-1 items-center gap-3.5">
                 <span
-                    class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg font-mono text-sm font-semibold transition-colors {isAnswered
+                    class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg border border-transparent font-mono text-sm font-semibold transition-colors {isAnswered
                         ? isCorrect
                             ? 'bg-emerald-500 text-white dark:bg-emerald-600'
                             : isWrongSelection
                               ? 'bg-red-500 text-white dark:bg-red-600'
                               : 'bg-muted text-muted-foreground'
-                        : 'group-hover:border-primary/40 bg-muted/80 text-foreground group-hover:bg-primary group-hover:text-primary-foreground border border-transparent'}"
+                        : 'group-hover:border-primary/40 bg-muted/80 text-foreground group-hover:bg-primary group-hover:text-primary-foreground'}"
                 >
                     {index + 1}
                 </span>
@@ -112,30 +102,22 @@
                     >
                         {option.text}
                     </span>
-
-                    {#if isAnswered && isCorrect}
-                        <span
-                            class="text-sm font-normal text-emerald-700 dark:text-emerald-300"
-                        >
-                            {getCounterpart(option)}
-                        </span>
-                    {/if}
                 </div>
             </div>
 
-            {#if isAnswered}
-                <div class="shrink-0">
+            <div class="flex size-5 shrink-0 items-center justify-center">
+                {#if isAnswered}
                     {#if isCorrect}
                         <CheckCircle2
-                            class="h-5 w-5 text-emerald-600 dark:text-emerald-400"
+                            class="size-5 text-emerald-600 dark:text-emerald-400"
                         />
                     {:else if isWrongSelection}
                         <XCircle
-                            class="h-5 w-5 text-red-600 dark:text-red-400"
+                            class="size-5 text-red-600 dark:text-red-400"
                         />
                     {/if}
-                </div>
-            {/if}
+                {/if}
+            </div>
         </button>
     {/each}
 
