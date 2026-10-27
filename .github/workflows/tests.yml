@@ -22,15 +22,11 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '8.5'
+          php-version: "8.5"
           tools: composer:v2
 
       - name: Setup pnpm
-        uses: pnpm/setup@v1
-        with:
-          version: 12
-          runtime: node@26
-          cache: true
+        uses: pnpm/setup@v3
 
       - name: Setup Application
         run: composer setup
