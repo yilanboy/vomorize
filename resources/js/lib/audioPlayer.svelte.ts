@@ -5,11 +5,16 @@
 
 let audioContext: AudioContext | null = null;
 let activeSource: AudioBufferSourceNode | null = null;
+let masterGain: GainNode | null = null;
 let playGeneration = 0;
 const bufferCache = new Map<string, AudioBuffer>();
 const inFlightFetches = new Map<string, Promise<AudioBuffer | null>>();
 
 let currentPlayingId = $state<string | null>(null);
+
+// Default volume: 0.5 = 50% volume, 1 = original volume
+const DEFAULT_VOLUME = 0.5;
+let volume = $state(DEFAULT_VOLUME);
 
 function getAudioContext(): AudioContext | null {
     if (typeof window === 'undefined' || !window.AudioContext) {
@@ -18,6 +23,9 @@ function getAudioContext(): AudioContext | null {
 
     if (!audioContext) {
         audioContext = new window.AudioContext();
+        masterGain = audioContext.createGain();
+        masterGain.gain.value = volume;
+        masterGain.connect(audioContext.destination);
     }
 
     return audioContext;
@@ -100,6 +108,26 @@ export const audioPlayer = {
         return currentPlayingId === id;
     },
 
+    get volume(): number {
+        return volume;
+    },
+
+    setVolume(value: number): void {
+        if (!Number.isFinite(value)) {
+            return;
+        }
+
+        volume = Math.min(1, Math.max(0, value));
+
+        if (masterGain && audioContext) {
+            masterGain.gain.setTargetAtTime(
+                volume,
+                audioContext.currentTime,
+                0.01,
+            );
+        }
+    },
+
     /**
      * Preload and decode a list of audio URLs into memory.
      */
@@ -139,7 +167,7 @@ export const audioPlayer = {
 
         const source = context.createBufferSource();
         source.buffer = buffer;
-        source.connect(context.destination);
+        source.connect(masterGain ?? context.destination);
 
         currentPlayingId = id;
         activeSource = source;
