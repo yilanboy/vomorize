@@ -16,6 +16,13 @@
         onContinue: () => void;
     } = $props();
 
+    const isWordPlaying = $derived(
+        vocabulary ? audioPlayer.isPlaying(`word-${vocabulary.id}`) : false,
+    );
+    const isSentencePlaying = $derived(
+        vocabulary ? audioPlayer.isPlaying(`sentence-${vocabulary.id}`) : false,
+    );
+
     function playWordAudio() {
         if (vocabulary?.word_audio_url) {
             void audioPlayer.play(
@@ -65,7 +72,7 @@
 
 {#if vocabulary}
     <div
-        class="border-border/80 bg-card mx-auto flex w-full max-w-xl flex-col gap-6 rounded-2xl border p-6 shadow-sm sm:p-8"
+        class="border-border/80 bg-card mx-auto flex min-h-[540px] w-full max-w-xl flex-col justify-between rounded-2xl border p-6 shadow-sm sm:h-[580px] sm:min-h-[580px] sm:p-8"
     >
         <!-- Header Badge & Word Title -->
         <div class="flex flex-col gap-3">
@@ -95,87 +102,96 @@
             </div>
         </div>
 
-        <!-- Pronunciation Controls -->
-        <div class="flex flex-wrap items-center gap-3">
-            <button
-                type="button"
-                class="hover:bg-muted/80 inline-flex min-h-[44px] items-center gap-2 rounded-xl border px-4 py-2 text-sm font-medium transition-colors {audioPlayer.isPlaying(
-                    `word-${vocabulary.id}`,
-                )
-                    ? 'border-primary bg-primary/10 text-primary'
-                    : 'border-border/80 bg-background text-foreground'}"
-                onclick={playWordAudio}
-            >
-                <Volume2
-                    class="h-4 w-4 {audioPlayer.isPlaying(
-                        `word-${vocabulary.id}`,
-                    )
-                        ? 'text-primary animate-pulse'
-                        : 'text-muted-foreground'}"
-                />
-                <span>{t('ui.intro.card.play_word')}</span>
-            </button>
-
-            {#if vocabulary.sentence_audio_url}
+        <!-- Middle Content Area (Pronunciation, Definition, Example) -->
+        <div class="flex flex-1 flex-col justify-center gap-3 py-2 sm:gap-3.5">
+            <!-- Pronunciation Controls -->
+            <div class="flex flex-wrap items-center gap-2.5">
                 <button
                     type="button"
-                    class="hover:bg-muted/80 inline-flex min-h-[44px] items-center gap-2 rounded-xl border px-4 py-2 text-sm font-medium transition-colors {audioPlayer.isPlaying(
-                        `sentence-${vocabulary.id}`,
-                    )
-                        ? 'border-primary bg-primary/10 text-primary'
-                        : 'border-border/80 bg-background text-foreground'}"
-                    onclick={playSentenceAudio}
+                    class={{
+                        'hover:bg-muted/80 inline-flex min-h-[40px] items-center gap-2 rounded-xl border px-3.5 py-1.5 text-sm font-medium transition-colors': true,
+                        'border-primary bg-primary/10 text-primary':
+                            isWordPlaying,
+                        'border-border/80 bg-background text-foreground':
+                            !isWordPlaying,
+                    }}
+                    onclick={playWordAudio}
                 >
                     <Volume2
-                        class="h-4 w-4 {audioPlayer.isPlaying(
-                            `sentence-${vocabulary.id}`,
-                        )
-                            ? 'text-primary animate-pulse'
-                            : 'text-muted-foreground'}"
+                        class={{
+                            'h-4 w-4': true,
+                            'text-primary animate-pulse': isWordPlaying,
+                            'text-muted-foreground': !isWordPlaying,
+                        }}
                     />
-                    <span>{t('ui.intro.card.play_sentence')}</span>
+                    <span>{t('ui.intro.card.play_word')}</span>
                 </button>
+
+                {#if vocabulary.sentence_audio_url}
+                    <button
+                        type="button"
+                        class={{
+                            'hover:bg-muted/80 inline-flex min-h-[40px] items-center gap-2 rounded-xl border px-3.5 py-1.5 text-sm font-medium transition-colors': true,
+                            'border-primary bg-primary/10 text-primary':
+                                isSentencePlaying,
+                            'border-border/80 bg-background text-foreground':
+                                !isSentencePlaying,
+                        }}
+                        onclick={playSentenceAudio}
+                    >
+                        <Volume2
+                            class={{
+                                'h-4 w-4': true,
+                                'text-primary animate-pulse': isSentencePlaying,
+                                'text-muted-foreground': !isSentencePlaying,
+                            }}
+                        />
+                        <span>{t('ui.intro.card.play_sentence')}</span>
+                    </button>
+                {/if}
+            </div>
+
+            <!-- Chinese Definition Section -->
+            <div
+                class="bg-muted/40 border-border/50 flex flex-col gap-1 rounded-xl border p-3.5"
+            >
+                <span class="text-muted-foreground text-xs font-medium">
+                    {t('ui.intro.card.definition_label')}
+                </span>
+                <p class="text-foreground text-base font-bold sm:text-lg">
+                    {vocabulary.definition}
+                </p>
+            </div>
+
+            <!-- Example Sentence Section -->
+            {#if vocabulary.example_sentence}
+                <div
+                    class="bg-muted/40 border-border/50 flex max-h-[140px] flex-col gap-1.5 overflow-y-auto rounded-xl border p-3.5"
+                >
+                    <span class="text-muted-foreground text-xs font-medium">
+                        {t('ui.intro.card.example_label')}
+                    </span>
+                    <p
+                        class="text-foreground text-sm leading-relaxed font-medium sm:text-base"
+                    >
+                        {vocabulary.example_sentence}
+                    </p>
+                    {#if vocabulary.example_translation}
+                        <p
+                            class="text-muted-foreground text-xs leading-relaxed sm:text-sm"
+                        >
+                            {vocabulary.example_translation}
+                        </p>
+                    {/if}
+                </div>
             {/if}
         </div>
 
-        <!-- Chinese Definition Section -->
-        <div
-            class="bg-muted/40 border-border/50 flex flex-col gap-1.5 rounded-xl border p-4"
-        >
-            <span class="text-muted-foreground text-sm font-medium">
-                {t('ui.intro.card.definition_label')}
-            </span>
-            <p class="text-foreground text-lg font-bold">
-                {vocabulary.definition}
-            </p>
-        </div>
-
-        <!-- Example Sentence Section -->
-        {#if vocabulary.example_sentence}
-            <div
-                class="bg-muted/40 border-border/50 flex flex-col gap-2 rounded-xl border p-4"
-            >
-                <span class="text-muted-foreground text-sm font-medium">
-                    {t('ui.intro.card.example_label')}
-                </span>
-                <p
-                    class="text-foreground text-base leading-relaxed font-medium"
-                >
-                    {vocabulary.example_sentence}
-                </p>
-                {#if vocabulary.example_translation}
-                    <p class="text-muted-foreground text-sm leading-relaxed">
-                        {vocabulary.example_translation}
-                    </p>
-                {/if}
-            </div>
-        {/if}
-
         <!-- Bottom Action Button -->
-        <div class="flex flex-col gap-2 pt-2">
+        <div class="mt-auto flex flex-col gap-2 pt-2">
             <button
                 type="button"
-                class="bg-primary hover:bg-primary/90 text-primary-foreground flex min-h-[52px] w-full items-center justify-center gap-2 rounded-xl text-base font-semibold shadow-sm transition-all active:scale-[0.99]"
+                class="bg-primary hover:bg-primary/90 text-primary-foreground flex min-h-[50px] w-full items-center justify-center gap-2 rounded-xl text-base font-semibold shadow-sm transition-all active:scale-[0.99]"
                 onclick={onContinue}
             >
                 <span>{t('ui.intro.card.continue')}</span>

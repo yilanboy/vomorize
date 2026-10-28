@@ -41,10 +41,13 @@
     {#each tabs as { value, Icon, labelKey } (value)}
         <button
             onclick={() => handleAppearanceChange(value)}
-            class="flex items-center rounded-md px-3.5 py-1.5 transition-colors {appearance.value ===
-            value
-                ? 'bg-white shadow-xs dark:bg-zinc-700 dark:text-zinc-100'
-                : 'text-zinc-500 hover:bg-zinc-200/60 hover:text-black dark:text-zinc-400 dark:hover:bg-zinc-700/60'}"
+            class={{
+                'flex items-center rounded-md px-3.5 py-1.5 transition-colors': true,
+                'bg-white shadow-xs dark:bg-zinc-700 dark:text-zinc-100':
+                    appearance.value === value,
+                'text-zinc-500 hover:bg-zinc-200/60 hover:text-black dark:text-zinc-400 dark:hover:bg-zinc-700/60':
+                    appearance.value !== value,
+            }}
         >
             <Icon class="-ml-1 h-4 w-4" />
             <span class="ml-1.5 text-sm">{t(labelKey)}</span>

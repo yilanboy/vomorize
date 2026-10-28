@@ -102,10 +102,12 @@
                     class="text-muted-foreground flex items-center gap-1.5 text-sm"
                 >
                     <span
-                        class="size-2 rounded-full {kpis.learning_words
-                            .groups_count > 0
-                            ? 'bg-blue-500'
-                            : 'bg-muted-foreground/40'}"
+                        class={{
+                            'size-2 rounded-full': true,
+                            'bg-blue-500': kpis.learning_words.groups_count > 0,
+                            'bg-muted-foreground/40':
+                                kpis.learning_words.groups_count <= 0,
+                        }}
                     ></span>
                     <span>
                         {t('ui.dashboard.kpis.learning_words_desc', {
@@ -146,10 +148,13 @@
                     class="text-muted-foreground flex items-center gap-1.5 text-sm"
                 >
                     <span
-                        class="size-2 rounded-full {kpis.mastered_words
-                            .groups_count > 0
-                            ? 'bg-emerald-500'
-                            : 'bg-muted-foreground/40'}"
+                        class={{
+                            'size-2 rounded-full': true,
+                            'bg-emerald-500':
+                                kpis.mastered_words.groups_count > 0,
+                            'bg-muted-foreground/40':
+                                kpis.mastered_words.groups_count <= 0,
+                        }}
                     ></span>
                     <span>
                         {#if kpis.mastered_words.groups_count > 0}
@@ -177,10 +182,13 @@
                         {t('ui.dashboard.kpis.due_groups')}
                     </span>
                     <div
-                        class="flex size-10 items-center justify-center rounded-lg {kpis
-                            .due_groups.has_due
-                            ? 'bg-blue-50 text-blue-600 dark:bg-blue-950/40 dark:text-blue-400'
-                            : 'bg-muted text-muted-foreground'}"
+                        class={{
+                            'flex size-10 items-center justify-center rounded-lg': true,
+                            'bg-blue-50 text-blue-600 dark:bg-blue-950/40 dark:text-blue-400':
+                                kpis.due_groups.has_due,
+                            'bg-muted text-muted-foreground':
+                                !kpis.due_groups.has_due,
+                        }}
                     >
                         <Clock class="size-5" />
                     </div>

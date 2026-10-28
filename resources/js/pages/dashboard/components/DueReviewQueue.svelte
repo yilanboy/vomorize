@@ -137,9 +137,12 @@
                                 </span>
                                 <span>·</span>
                                 <span
-                                    class={review.badge_variant === 'warning'
-                                        ? 'font-medium text-red-600 dark:text-red-400'
-                                        : 'font-medium text-emerald-600 dark:text-emerald-400'}
+                                    class={{
+                                        'font-medium text-red-600 dark:text-red-400':
+                                            review.badge_variant === 'warning',
+                                        'font-medium text-emerald-600 dark:text-emerald-400':
+                                            review.badge_variant !== 'warning',
+                                    }}
                                 >
                                     {review.status_hint}
                                 </span>

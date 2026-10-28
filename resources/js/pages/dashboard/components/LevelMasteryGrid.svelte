@@ -48,10 +48,13 @@
                             {level.name}
                         </span>
                         <span
-                            class="text-sm font-bold {level.mastery_percentage >
-                            0
-                                ? 'text-emerald-600 dark:text-emerald-400'
-                                : 'text-muted-foreground'}"
+                            class={{
+                                'text-sm font-bold': true,
+                                'text-emerald-600 dark:text-emerald-400':
+                                    level.mastery_percentage > 0,
+                                'text-muted-foreground':
+                                    level.mastery_percentage <= 0,
+                            }}
                         >
                             {t('ui.dashboard.levels.mastery_tag', {
                                 rate: level.mastery_percentage,

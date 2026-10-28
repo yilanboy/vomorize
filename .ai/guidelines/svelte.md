@@ -37,6 +37,82 @@
 
 ---
 
+## Dynamic Class Attributes: Objects Over Ternaries
+
+In Svelte components, **always use Svelte's native object syntax (`class={{ ... }}`)** for dynamic class names. **Strictly avoid ternary operators** (`{cond ? 'a' : 'b'}`) inside class attributes or string templates.
+
+### 1. Native HTML Elements (`class={{ ... }}`)
+
+Place static base utility classes as a key mapped to `true`, and map dynamic classes to their respective boolean conditions:
+
+```svelte
+<!-- ❌ Anti-pattern: String interpolation with ternary operators -->
+<div
+    class="flex items-center gap-2 {isError
+        ? 'text-red-500 bg-red-50'
+        : 'text-green-500 bg-green-50'}"
+>
+    ...
+</div>
+
+<!-- ✅ Correct: Declarative object syntax -->
+<div
+    class={{
+        'flex items-center gap-2': true,
+        'text-red-500 bg-red-50': isError,
+        'text-green-500 bg-green-50': !isError,
+    }}
+>
+    ...
+</div>
+```
+
+### 2. Multi-Condition & Computed Class Names
+
+For multiple mutually exclusive states, declare each branch clearly. Computed class names can use standard JavaScript bracket notation (`[computedKey]`):
+
+```svelte
+<!-- ✅ Multi-condition state -->
+<button
+    class={{
+        'flex h-12 w-12 items-center justify-center rounded-xl transition-all': true,
+        'border-primary bg-primary text-white shadow-lg': isPlaying,
+        'border-primary/50 bg-primary/10 animate-pulse':
+            !isPlaying && isPending,
+        'border-border/80 bg-muted text-foreground': !isPlaying && !isPending,
+    }}
+>
+    ...
+</button>
+
+<!-- ✅ Computed class name with bracket notation -->
+<span
+    class={{
+        'size-2.5 rounded-full': true,
+        [stage.colorClass]: stage.count > 0,
+        'bg-muted-foreground/30': stage.count <= 0,
+    }}
+></span>
+```
+
+### 3. Custom Svelte Component Props (`cn(...)`)
+
+Custom Svelte components (such as shadcn-svelte UI components like `<Button>`) accept `class?: string` rather than native element object bindings. When passing dynamic classes to a component prop, use the `cn(...)` utility with an object argument instead of ternary operators:
+
+```svelte
+<!-- ❌ Anti-pattern -->
+<Button class="w-full {isActive ? 'bg-muted' : ''}" />
+
+<!-- ✅ Correct: Pass object into cn() -->
+<Button
+    class={cn('w-full', {
+        'bg-muted': isActive,
+    })}
+/>
+```
+
+---
+
 ## Inertia.js (v3) Svelte Page Component Lifecycle
 
 1. **Page Components are Remounted on Every Navigation by Default**:

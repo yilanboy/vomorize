@@ -6,7 +6,7 @@
     import { Separator } from '@/components/ui/separator';
     import { currentUrlState } from '@/lib/currentUrl.svelte';
     import { t } from '@/lib/i18n';
-    import { toUrl } from '@/lib/utils';
+    import { cn, toUrl } from '@/lib/utils';
     import { edit as editAppearance } from '@/routes/appearance';
     import { edit as editProfile } from '@/routes/profile';
     import { edit as editSecurity } from '@/routes/security';
@@ -51,12 +51,12 @@
                 {#each sidebarNavItems as item (toUrl(item.href))}
                     <Button
                         variant="ghost"
-                        class="w-full justify-start {url.isCurrentUrl(
-                            item.href,
-                            url.currentUrl,
-                        )
-                            ? 'bg-muted'
-                            : ''}"
+                        class={cn('w-full justify-start', {
+                            'bg-muted': url.isCurrentUrl(
+                                item.href,
+                                url.currentUrl,
+                            ),
+                        })}
                         asChild
                     >
                         {#snippet children(props)}

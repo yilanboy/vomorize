@@ -23,10 +23,10 @@
 </script>
 
 <div
-    class="border-border/80 bg-card mx-auto flex w-full max-w-xl flex-col gap-6 rounded-2xl border p-6 shadow-sm sm:p-8"
+    class="border-border/80 bg-card mx-auto flex min-h-135 w-full max-w-xl flex-col justify-between rounded-2xl border p-6 shadow-sm sm:h-145 sm:min-h-145 sm:p-8"
 >
     <!-- Card Header / Stem -->
-    <div class="flex flex-col gap-3">
+    <div class="flex h-40 flex-col justify-between sm:h-42.5">
         <div class="flex items-center justify-between">
             <span
                 class="bg-primary/10 text-primary border-primary/20 inline-flex items-center rounded-full border px-3 py-1 font-mono text-sm font-semibold"
@@ -41,18 +41,21 @@
             </span>
         </div>
 
-        <div class="flex flex-col gap-2">
+        <div class="flex flex-1 flex-col justify-center gap-2 py-1">
             <h2
-                class="text-foreground text-2xl font-bold tracking-tight sm:text-3xl"
+                class="text-foreground line-clamp-2 text-2xl font-bold tracking-tight sm:text-3xl"
             >
                 {question.stem}
             </h2>
 
             <div
-                class="flex min-h-[50px] items-center rounded-xl border p-3 transition-opacity duration-150 {selectedOptionId !==
-                null
-                    ? 'border-border/60 bg-muted/50 visible opacity-100'
-                    : 'invisible border-transparent bg-transparent opacity-0 select-none'}"
+                class={{
+                    'flex min-h-11.5 items-center rounded-xl border p-2.5 transition-opacity duration-150': true,
+                    'border-border/60 bg-muted/50 visible opacity-100':
+                        selectedOptionId !== null,
+                    'invisible border-transparent bg-transparent opacity-0 select-none':
+                        selectedOptionId === null,
+                }}
                 aria-hidden={selectedOptionId === null}
             >
                 <div class="flex items-baseline gap-2">
@@ -68,12 +71,14 @@
     </div>
 
     <!-- Options List -->
-    <QuizOptions
-        options={question.options}
-        correctOptionId={question.correct_option_id}
-        quizType={question.quiz_type}
-        {selectedOptionId}
-        {onSelect}
-        {disabled}
-    />
+    <div class="mt-auto">
+        <QuizOptions
+            options={question.options}
+            correctOptionId={question.correct_option_id}
+            quizType={question.quiz_type}
+            {selectedOptionId}
+            {onSelect}
+            {disabled}
+        />
+    </div>
 </div>

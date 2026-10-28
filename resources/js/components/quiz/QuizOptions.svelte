@@ -70,42 +70,52 @@
 
         <button
             type="button"
-            class="group relative flex min-h-[56px] w-full items-center justify-between gap-3 rounded-xl border p-4 text-left transition-all duration-200 {isAnswered
-                ? isCorrect
-                    ? 'border-emerald-500 bg-emerald-500/10 text-emerald-900 shadow-sm dark:bg-emerald-950/40 dark:text-emerald-200'
-                    : isWrongSelection
-                      ? 'border-red-500 bg-red-500/10 text-red-900 shadow-sm dark:bg-red-950/40 dark:text-red-200'
-                      : 'border-border/50 opacity-40'
-                : 'border-border/70 hover:border-primary/50 hover:bg-muted/50 bg-card active:scale-[0.99]'}"
+            class={{
+                'group relative flex min-h-14 w-full items-center justify-between gap-3 rounded-xl border p-4 text-left transition-all duration-200': true,
+                'border-emerald-500 bg-emerald-500/10 text-emerald-900 shadow-sm dark:bg-emerald-950/40 dark:text-emerald-200':
+                    isAnswered && isCorrect,
+                'border-red-500 bg-red-500/10 text-red-900 shadow-sm dark:bg-red-950/40 dark:text-red-200':
+                    isAnswered && !isCorrect && isWrongSelection,
+                'border-border/50 opacity-40':
+                    isAnswered && !isCorrect && !isWrongSelection,
+                'border-border/70 hover:border-primary/50 hover:bg-muted/50 bg-card active:scale-[0.99]':
+                    !isAnswered,
+            }}
             onclick={() => handleSelect(option)}
             disabled={disabled || isAnswered}
         >
-            <div class="flex flex-1 items-center gap-3.5">
+            <span class="flex flex-1 items-center gap-3.5">
                 <span
-                    class="flex h-7 w-7 shrink-0 items-center justify-center rounded-lg border border-transparent font-mono text-sm font-semibold transition-colors {isAnswered
-                        ? isCorrect
-                            ? 'bg-emerald-500 text-white dark:bg-emerald-600'
-                            : isWrongSelection
-                              ? 'bg-red-500 text-white dark:bg-red-600'
-                              : 'bg-muted text-muted-foreground'
-                        : 'group-hover:border-primary/40 bg-muted/80 text-foreground group-hover:bg-primary group-hover:text-primary-foreground'}"
+                    class={{
+                        'flex size-7 shrink-0 items-center justify-center rounded-lg border border-transparent font-mono text-sm font-semibold transition-colors': true,
+                        'bg-emerald-500 text-white dark:bg-emerald-600':
+                            isAnswered && isCorrect,
+                        'bg-red-500 text-white dark:bg-red-600':
+                            isAnswered && !isCorrect && isWrongSelection,
+                        'bg-muted text-muted-foreground':
+                            isAnswered && !isCorrect && !isWrongSelection,
+                        'group-hover:border-primary/40 bg-muted/80 text-foreground group-hover:bg-primary group-hover:text-primary-foreground':
+                            !isAnswered,
+                    }}
                 >
                     {index + 1}
                 </span>
 
-                <div class="flex flex-1 flex-col justify-center">
+                <span class="flex flex-1 flex-col justify-center">
                     <span
-                        class="text-base leading-snug font-medium {isAnswered &&
-                        (isCorrect || isWrongSelection)
-                            ? 'font-semibold'
-                            : 'text-foreground'}"
+                        class={{
+                            'text-base leading-snug font-medium': true,
+                            'font-semibold':
+                                isAnswered && (isCorrect || isWrongSelection),
+                            'text-foreground': !isAnswered,
+                        }}
                     >
                         {option.text}
                     </span>
-                </div>
-            </div>
+                </span>
+            </span>
 
-            <div class="flex size-5 shrink-0 items-center justify-center">
+            <span class="flex size-5 shrink-0 items-center justify-center">
                 {#if isAnswered}
                     {#if isCorrect}
                         <CheckCircle2
@@ -117,7 +127,7 @@
                         />
                     {/if}
                 {/if}
-            </div>
+            </span>
         </button>
     {/each}
 

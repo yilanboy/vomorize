@@ -23,6 +23,10 @@
         disabled?: boolean;
     } = $props();
 
+    const isPlaying = $derived(
+        audioPlayer.isPlaying(`quiz-word-${vocabulary.id}`),
+    );
+
     function playAudio() {
         if (vocabulary.word_audio_url) {
             void audioPlayer.play(
@@ -34,10 +38,10 @@
 </script>
 
 <div
-    class="border-border/80 bg-card mx-auto flex w-full max-w-xl flex-col gap-6 rounded-2xl border p-6 shadow-sm sm:p-8"
+    class="border-border/80 bg-card mx-auto flex min-h-[540px] w-full max-w-xl flex-col justify-between rounded-2xl border p-6 shadow-sm sm:h-[580px] sm:min-h-[580px] sm:p-8"
 >
     <!-- Card Header / Stem -->
-    <div class="flex flex-col gap-3">
+    <div class="flex h-[160px] flex-col justify-between sm:h-[170px]">
         <div class="flex items-center justify-between">
             <span
                 class="bg-primary/10 text-primary border-primary/20 inline-flex items-center rounded-full border px-3 py-1 font-mono text-sm font-semibold"
@@ -52,7 +56,7 @@
             </span>
         </div>
 
-        <div class="flex items-center justify-between gap-4">
+        <div class="flex flex-1 items-center justify-between gap-4 py-2">
             <div class="flex flex-wrap items-baseline gap-3">
                 <h2
                     class="text-foreground text-3xl font-extrabold tracking-tight sm:text-4xl"
@@ -66,32 +70,34 @@
 
             <button
                 type="button"
-                class="hover:bg-muted/80 text-foreground border-border/80 flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border transition-colors {audioPlayer.isPlaying(
-                    `quiz-word-${vocabulary.id}`,
-                )
-                    ? 'border-primary bg-primary/10 text-primary'
-                    : 'bg-background'}"
+                class={{
+                    'hover:bg-muted/80 text-foreground border-border/80 flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border transition-colors': true,
+                    'border-primary bg-primary/10 text-primary': isPlaying,
+                    'bg-background': !isPlaying,
+                }}
                 onclick={playAudio}
                 title={t('ui.intro.card.play_word')}
             >
                 <Volume2
-                    class="h-5 w-5 {audioPlayer.isPlaying(
-                        `quiz-word-${vocabulary.id}`,
-                    )
-                        ? 'text-primary animate-pulse'
-                        : 'text-muted-foreground'}"
+                    class={{
+                        'h-5 w-5': true,
+                        'text-primary animate-pulse': isPlaying,
+                        'text-muted-foreground': !isPlaying,
+                    }}
                 />
             </button>
         </div>
     </div>
 
     <!-- Options List -->
-    <QuizOptions
-        options={question.options}
-        correctOptionId={question.correct_option_id}
-        quizType={question.quiz_type}
-        {selectedOptionId}
-        {onSelect}
-        {disabled}
-    />
+    <div class="mt-auto">
+        <QuizOptions
+            options={question.options}
+            correctOptionId={question.correct_option_id}
+            quizType={question.quiz_type}
+            {selectedOptionId}
+            {onSelect}
+            {disabled}
+        />
+    </div>
 </div>

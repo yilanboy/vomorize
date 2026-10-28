@@ -74,10 +74,12 @@
                 >
                     <div class="mb-1 flex items-center gap-2">
                         <span
-                            class="size-2.5 shrink-0 rounded-full {stage.groups_count >
-                            0
-                                ? stage.color_class
-                                : 'bg-muted-foreground/30'}"
+                            class={{
+                                'size-2.5 shrink-0 rounded-full': true,
+                                [stage.color_class]: stage.groups_count > 0,
+                                'bg-muted-foreground/30':
+                                    stage.groups_count <= 0,
+                            }}
                         ></span>
                         <span class="text-foreground text-sm font-semibold">
                             {stage.label}
@@ -92,10 +94,14 @@
                     </div>
 
                     <div
-                        class="mt-1 text-sm {stage.is_alert &&
-                        stage.groups_count > 0
-                            ? 'font-medium text-red-600 dark:text-red-400'
-                            : 'text-muted-foreground'}"
+                        class={{
+                            'mt-1 text-sm': true,
+                            'font-medium text-red-600 dark:text-red-400':
+                                stage.is_alert && stage.groups_count > 0,
+                            'text-muted-foreground': !(
+                                stage.is_alert && stage.groups_count > 0
+                            ),
+                        }}
                     >
                         {stage.description}
                     </div>

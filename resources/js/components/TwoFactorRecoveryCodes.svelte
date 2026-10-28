@@ -91,9 +91,11 @@
             {/if}
         </div>
         <div
-            class="relative overflow-hidden transition-all duration-300 {isRecoveryCodesVisible
-                ? 'h-auto opacity-100'
-                : 'h-0 opacity-0'}"
+            class={{
+                'relative overflow-hidden transition-all duration-300': true,
+                'h-auto opacity-100': isRecoveryCodesVisible,
+                'h-0 opacity-0': !isRecoveryCodesVisible,
+            }}
         >
             {#if twoFactorAuth.state.errors.length}
                 <div class="mt-6">

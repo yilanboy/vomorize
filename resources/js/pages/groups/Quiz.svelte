@@ -394,9 +394,11 @@
             <!-- Right: Auto-play toggle button -->
             <button
                 type="button"
-                class="hover:bg-muted flex h-10 w-10 items-center justify-center rounded-xl transition-colors {autoPlay
-                    ? 'text-primary'
-                    : 'text-muted-foreground'}"
+                class={{
+                    'hover:bg-muted flex h-10 w-10 items-center justify-center rounded-xl transition-colors': true,
+                    'text-primary': autoPlay,
+                    'text-muted-foreground': !autoPlay,
+                }}
                 onclick={toggleAutoPlay}
                 title={autoPlay
                     ? t('ui.intro.top_bar.auto_play_on')

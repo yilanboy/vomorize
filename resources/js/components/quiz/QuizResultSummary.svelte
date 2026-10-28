@@ -121,14 +121,21 @@
 <div class="mx-auto flex w-full max-w-xl flex-col gap-6 pb-12">
     <!-- Score & Status Card -->
     <div
-        class="bg-card flex flex-col items-center gap-5 rounded-2xl border p-6 text-center shadow-sm sm:p-8 {passed
-            ? 'border-emerald-500/30 bg-emerald-500/5 dark:bg-emerald-950/20'
-            : 'border-amber-500/30 bg-amber-500/5 dark:bg-amber-950/20'}"
+        class={{
+            'bg-card flex flex-col items-center gap-5 rounded-2xl border p-6 text-center shadow-sm sm:p-8': true,
+            'border-emerald-500/30 bg-emerald-500/5 dark:bg-emerald-950/20':
+                passed,
+            'border-amber-500/30 bg-amber-500/5 dark:bg-amber-950/20': !passed,
+        }}
     >
         <div
-            class="flex h-16 w-16 items-center justify-center rounded-2xl {passed
-                ? 'bg-emerald-500/10 text-emerald-600 dark:bg-emerald-500/20 dark:text-emerald-400'
-                : 'bg-amber-500/10 text-amber-600 dark:bg-amber-500/20 dark:text-amber-400'}"
+            class={{
+                'flex h-16 w-16 items-center justify-center rounded-2xl': true,
+                'bg-emerald-500/10 text-emerald-600 dark:bg-emerald-500/20 dark:text-emerald-400':
+                    passed,
+                'bg-amber-500/10 text-amber-600 dark:bg-amber-500/20 dark:text-amber-400':
+                    !passed,
+            }}
         >
             {#if passed}
                 <Award class="h-8 w-8" />
@@ -148,9 +155,11 @@
 
         <div class="flex items-baseline gap-2">
             <span
-                class="text-5xl font-extrabold tracking-tight {passed
-                    ? 'text-emerald-600 dark:text-emerald-400'
-                    : 'text-amber-600 dark:text-amber-400'}"
+                class={{
+                    'text-5xl font-extrabold tracking-tight': true,
+                    'text-emerald-600 dark:text-emerald-400': passed,
+                    'text-amber-600 dark:text-amber-400': !passed,
+                }}
             >
                 {score}
             </span>
@@ -161,9 +170,13 @@
 
         <!-- Cooldown / Retry Notice Banner -->
         <div
-            class="rounded-xl border p-4 text-left text-sm leading-relaxed font-medium {passed
-                ? 'border-emerald-500/30 bg-emerald-500/10 text-emerald-900 dark:text-emerald-200'
-                : 'border-amber-500/30 bg-amber-500/10 text-amber-900 dark:text-amber-200'}"
+            class={{
+                'rounded-xl border p-4 text-left text-sm leading-relaxed font-medium': true,
+                'border-emerald-500/30 bg-emerald-500/10 text-emerald-900 dark:text-emerald-200':
+                    passed,
+                'border-amber-500/30 bg-amber-500/10 text-amber-900 dark:text-amber-200':
+                    !passed,
+            }}
         >
             {noticeBannerText}
         </div>
@@ -214,11 +227,17 @@
                                     title={t('ui.intro.card.play_word')}
                                 >
                                     <Volume2
-                                        class="h-4 w-4 {audioPlayer.isPlaying(
-                                            `mistake-${mistake.id}`,
-                                        )
-                                            ? 'text-primary animate-pulse'
-                                            : 'text-muted-foreground'}"
+                                        class={{
+                                            'h-4 w-4': true,
+                                            'text-primary animate-pulse':
+                                                audioPlayer.isPlaying(
+                                                    `mistake-${mistake.id}`,
+                                                ),
+                                            'text-muted-foreground':
+                                                !audioPlayer.isPlaying(
+                                                    `mistake-${mistake.id}`,
+                                                ),
+                                        }}
                                     />
                                 </button>
                             {/if}

@@ -69,10 +69,10 @@
 </script>
 
 <div
-    class="border-border/80 bg-card mx-auto flex w-full max-w-xl flex-col gap-6 rounded-2xl border p-6 shadow-sm sm:p-8"
+    class="border-border/80 bg-card mx-auto flex min-h-135 w-full max-w-xl flex-col justify-between rounded-2xl border p-6 shadow-sm sm:h-145 sm:min-h-145 sm:p-8"
 >
     <!-- Card Header / Stem -->
-    <div class="flex flex-col gap-4">
+    <div class="flex h-40 flex-col justify-between sm:h-42.5">
         <div class="flex items-center justify-between">
             <span
                 class="bg-primary/10 text-primary border-primary/20 inline-flex items-center rounded-full border px-3 py-1 font-mono text-sm font-semibold"
@@ -81,10 +81,12 @@
             </span>
 
             <span
-                class="bg-secondary text-secondary-foreground inline-flex items-center rounded-md px-2.5 py-0.5 text-sm font-medium transition-opacity duration-150 {selectedOptionId !==
-                null
-                    ? 'visible opacity-100'
-                    : 'invisible opacity-0 select-none'}"
+                class={{
+                    'bg-secondary text-secondary-foreground inline-flex items-center rounded-md px-2.5 py-0.5 text-sm font-medium transition-opacity duration-150': true,
+                    'visible opacity-100': selectedOptionId !== null,
+                    'invisible opacity-0 select-none':
+                        selectedOptionId === null,
+                }}
                 aria-hidden={selectedOptionId === null}
             >
                 {vocabulary.part_of_speech}
@@ -92,37 +94,46 @@
         </div>
 
         <!-- Speaker Prompt -->
-        <div class="flex flex-col items-center justify-center gap-3 py-2">
+        <div
+            class="flex flex-1 flex-col items-center justify-center gap-1.5 py-1"
+        >
             <button
                 type="button"
-                class="relative flex h-20 w-20 items-center justify-center rounded-2xl border transition-all duration-300 {audioPlaying
-                    ? 'border-primary bg-primary text-primary-foreground shadow-primary/25 scale-105 shadow-lg'
-                    : !autoPlay && selectedOptionId === null
-                      ? 'border-primary/50 bg-primary/10 text-primary animate-pulse'
-                      : 'border-border/80 bg-muted/60 hover:bg-muted text-foreground hover:scale-105 active:scale-95'}"
+                class={{
+                    'relative flex h-16 w-16 items-center justify-center rounded-2xl border transition-all duration-300': true,
+                    'border-primary bg-primary text-primary-foreground shadow-primary/25 scale-105 shadow-lg':
+                        audioPlaying,
+                    'border-primary/50 bg-primary/10 text-primary animate-pulse':
+                        !audioPlaying && !autoPlay && selectedOptionId === null,
+                    'border-border/80 bg-muted/60 hover:bg-muted text-foreground hover:scale-105 active:scale-95':
+                        !audioPlaying &&
+                        (autoPlay || selectedOptionId !== null),
+                }}
                 onclick={playAudio}
                 title={t('ui.quiz.audio_prompt.play_hint')}
             >
-                <Volume2 class="h-9 w-9" />
+                <Volume2 class="h-8 w-8" />
             </button>
 
-            <span class="text-muted-foreground text-sm font-medium">
+            <span class="text-muted-foreground text-xs font-medium">
                 {audioPlaying
                     ? t('ui.quiz.audio_prompt.playing')
                     : t('ui.quiz.audio_prompt.play_hint')}
             </span>
 
             <div
-                class="flex min-h-[32px] items-baseline gap-2 pt-1 transition-opacity duration-150 {selectedOptionId !==
-                null
-                    ? 'visible opacity-100'
-                    : 'invisible opacity-0 select-none'}"
+                class={{
+                    'flex min-h-6.5 items-baseline gap-2 transition-opacity duration-150': true,
+                    'visible opacity-100': selectedOptionId !== null,
+                    'invisible opacity-0 select-none':
+                        selectedOptionId === null,
+                }}
                 aria-hidden={selectedOptionId === null}
             >
-                <span class="text-foreground text-xl font-bold">
+                <span class="text-foreground text-lg font-bold">
                     {vocabulary.word}
                 </span>
-                <span class="text-muted-foreground font-mono text-base">
+                <span class="text-muted-foreground font-mono text-sm">
                     {vocabulary.pronunciation}
                 </span>
             </div>
@@ -130,12 +141,14 @@
     </div>
 
     <!-- Options List -->
-    <QuizOptions
-        options={question.options}
-        correctOptionId={question.correct_option_id}
-        quizType={question.quiz_type}
-        {selectedOptionId}
-        {onSelect}
-        {disabled}
-    />
+    <div class="mt-auto">
+        <QuizOptions
+            options={question.options}
+            correctOptionId={question.correct_option_id}
+            quizType={question.quiz_type}
+            {selectedOptionId}
+            {onSelect}
+            {disabled}
+        />
+    </div>
 </div>
