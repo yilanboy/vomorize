@@ -311,6 +311,8 @@ return [
             'two_factor' => [
                 'title' => '雙重身分驗證 (2FA)',
                 'subtitle' => '管理您的雙重身分驗證與備用恢復代碼',
+                'status_enabled' => '已啟用',
+                'status_disabled' => '尚未啟用',
                 'description' => '啟用雙重身分驗證後，每次登入時除了密碼外，還需提供由手機 Authenticator App 產生的動態安全驗證碼。',
                 'enabled_description' => '每次登入時，您都需要輸入手機 Authenticator App 中產生的 6 位數安全動態驗證碼以確認身分。',
                 'enable_button' => '啟用 2FA',

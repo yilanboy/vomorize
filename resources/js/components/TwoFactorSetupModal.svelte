@@ -123,7 +123,7 @@
 </script>
 
 <Dialog bind:open={isOpen}>
-    <DialogContent class="sm:max-w-md">
+    <DialogContent class="rounded-2xl p-6 sm:max-w-md sm:p-7">
         <div class="flex flex-col items-center justify-center">
             <div
                 class="border-border bg-card mb-3 w-auto rounded-full border p-0.5 shadow-sm"
@@ -149,8 +149,13 @@
                 </div>
             </div>
             <div class="my-3 space-y-1 text-center">
-                <DialogTitle>{modalConfig.title}</DialogTitle>
-                <DialogDescription>
+                <DialogTitle
+                    class="text-foreground text-xl font-bold tracking-tight"
+                    >{modalConfig.title}</DialogTitle
+                >
+                <DialogDescription
+                    class="text-muted-foreground text-sm leading-relaxed"
+                >
                     {modalConfig.description}
                 </DialogDescription>
             </div>
@@ -167,7 +172,7 @@
                         class="relative mx-auto flex max-w-md items-center overflow-hidden"
                     >
                         <div
-                            class="border-border relative mx-auto aspect-square w-64 overflow-hidden rounded-lg border"
+                            class="border-border relative mx-auto aspect-square w-64 overflow-hidden rounded-xl border bg-white p-4"
                         >
                             {#if !twoFactorAuth.state.qrCodeSvg}
                                 <div
@@ -177,29 +182,28 @@
                                 </div>
                             {:else}
                                 <div
-                                    class="relative z-10 overflow-hidden border p-5"
+                                    class="flex aspect-square size-full items-center justify-center [&>svg]:size-full"
+                                    style={resolvedAppearance() === 'dark'
+                                        ? 'filter: invert(1) brightness(1.5)'
+                                        : undefined}
                                 >
-                                    <div
-                                        class="flex aspect-square size-full items-center justify-center [&>svg]:size-full"
-                                        style={resolvedAppearance() === 'dark'
-                                            ? 'filter: invert(1) brightness(1.5)'
-                                            : undefined}
-                                    >
-                                        <img
-                                            src={qrCodeDataUrl}
-                                            alt={t(
-                                                'ui.settings.security.two_factor.modal.qr_alt',
-                                            )}
-                                            class="size-full"
-                                        />
-                                    </div>
+                                    <img
+                                        src={qrCodeDataUrl}
+                                        alt={t(
+                                            'ui.settings.security.two_factor.modal.qr_alt',
+                                        )}
+                                        class="size-full"
+                                    />
                                 </div>
                             {/if}
                         </div>
                     </div>
 
-                    <div class="flex w-full items-center space-x-5">
-                        <Button class="w-full" onclick={handleModalNextStep}>
+                    <div class="w-full">
+                        <Button
+                            class="h-11 w-full rounded-xl text-sm font-semibold"
+                            onclick={handleModalNextStep}
+                        >
                             {modalConfig.buttonText}
                         </Button>
                     </div>
@@ -210,22 +214,22 @@
                         <div
                             class="bg-border absolute inset-0 top-1/2 h-px w-full"
                         ></div>
-                        <span class="bg-card relative px-2 py-1">
+                        <span
+                            class="bg-card text-muted-foreground relative px-3 py-1 text-sm font-medium"
+                        >
                             {t(
                                 'ui.settings.security.two_factor.modal.or_manual',
                             )}
                         </span>
                     </div>
 
-                    <div
-                        class="flex w-full items-center justify-center space-x-2"
-                    >
+                    <div class="flex w-full items-center justify-center">
                         <div
                             class="border-border flex w-full items-stretch overflow-hidden rounded-xl border"
                         >
                             {#if !twoFactorAuth.state.manualSetupKey}
                                 <div
-                                    class="bg-muted flex h-full w-full items-center justify-center p-3"
+                                    class="bg-muted flex h-12 w-full items-center justify-center p-3"
                                 >
                                     <Spinner />
                                 </div>
@@ -234,20 +238,26 @@
                                     type="text"
                                     readonly
                                     value={twoFactorAuth.state.manualSetupKey}
-                                    class="bg-background text-foreground h-full w-full p-3"
+                                    class="bg-background text-foreground h-12 w-full px-3.5 font-mono text-sm"
                                 />
                                 <button
+                                    type="button"
                                     onclick={() =>
                                         copyToClipboard(
                                             twoFactorAuth.state
                                                 .manualSetupKey || '',
                                         )}
-                                    class="border-border hover:bg-muted relative block h-auto border-l px-3"
+                                    class="border-border hover:bg-muted relative block h-auto border-l px-3.5 transition-colors"
+                                    aria-label="Copy secret key"
                                 >
                                     {#if copied}
-                                        <Check class="w-4 text-green-500" />
+                                        <Check
+                                            class="size-4 text-emerald-600 dark:text-emerald-400"
+                                        />
                                     {:else}
-                                        <Copy class="w-4" />
+                                        <Copy
+                                            class="text-muted-foreground size-4"
+                                        />
                                     {/if}
                                 </button>
                             {/if}
@@ -265,7 +275,7 @@
                         <input type="hidden" name="code" value={code} />
                         <div
                             bind:this={pinInputContainerRef}
-                            class="relative w-full space-y-3"
+                            class="relative w-full space-y-4"
                         >
                             <div
                                 class="flex w-full flex-col items-center justify-center space-y-3 py-2"
@@ -290,11 +300,11 @@
                                 />
                             </div>
 
-                            <div class="flex w-full items-center space-x-5">
+                            <div class="flex w-full items-center gap-3">
                                 <Button
                                     type="button"
                                     variant="outline"
-                                    class="w-auto flex-1"
+                                    class="h-11 flex-1 rounded-xl text-sm font-medium"
                                     onclick={() =>
                                         (showVerificationStep = false)}
                                     disabled={processing}
@@ -305,9 +315,12 @@
                                 </Button>
                                 <Button
                                     type="submit"
-                                    class="w-auto flex-1"
+                                    class="h-11 flex-1 rounded-xl text-sm font-semibold"
                                     disabled={processing || code.length < 6}
                                 >
+                                    {#if processing}
+                                        <Spinner class="size-4" />
+                                    {/if}
                                     {t(
                                         'ui.settings.security.two_factor.modal.confirm',
                                     )}

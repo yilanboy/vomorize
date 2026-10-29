@@ -1,9 +1,11 @@
 <script lang="ts">
     import { usePasskeyRegister } from '@laravel/passkeys/svelte';
+    import Plus from '@lucide/svelte/icons/plus';
     import InputError from '@/components/InputError.svelte';
     import { Button } from '@/components/ui/button';
     import { Input } from '@/components/ui/input';
     import { Label } from '@/components/ui/label';
+    import { Spinner } from '@/components/ui/spinner';
     import { t } from '@/lib/i18n';
 
     let {
@@ -65,16 +67,24 @@
         {t('ui.settings.security.passkeys.not_supported')}
     </div>
 {:else if !showForm}
-    <Button variant="outline" onclick={() => (showForm = true)}>
-        {t('ui.settings.security.passkeys.add_button')}
+    <Button
+        variant="outline"
+        onclick={() => (showForm = true)}
+        class="h-11 gap-2 rounded-xl px-4 text-sm font-semibold shadow-xs transition-all"
+    >
+        <Plus class="size-4" />
+        <span>{t('ui.settings.security.passkeys.add_button')}</span>
     </Button>
 {:else}
     <form
         onsubmit={handleSubmit}
-        class="border-border bg-muted/50 space-y-4 rounded-lg border p-4"
+        class="border-border/80 bg-muted/20 space-y-4 rounded-xl border p-5"
     >
-        <div class="grid gap-2">
-            <Label for="passkey-name">
+        <div class="grid gap-1.5">
+            <Label
+                for="passkey-name"
+                class="text-foreground text-sm font-semibold"
+            >
                 {t('ui.settings.security.passkeys.form.name')}
             </Label>
             <Input
@@ -84,10 +94,10 @@
                 placeholder={t(
                     'ui.settings.security.passkeys.form.name_placeholder',
                 )}
-                class="border-foreground/20 mt-1 block w-full"
+                class="h-12 w-full rounded-xl text-sm"
                 autofocus
             />
-            <p class="text-muted-foreground text-sm">
+            <p class="text-muted-foreground text-sm leading-relaxed">
                 {t('ui.settings.security.passkeys.form.name_hint')}
             </p>
         </div>
@@ -96,16 +106,27 @@
             <InputError message={passkeyRegister.error} />
         {/if}
 
-        <div class="flex gap-2">
+        <div class="flex gap-2.5 pt-1">
             <Button
                 type="submit"
+                class="h-11 gap-2 rounded-xl px-5 text-sm font-semibold shadow-xs transition-all"
                 disabled={passkeyRegister.isLoading || !name.trim()}
             >
-                {passkeyRegister.isLoading
-                    ? t('ui.settings.security.passkeys.form.loading')
-                    : t('ui.settings.security.passkeys.form.submit')}
+                {#if passkeyRegister.isLoading}
+                    <Spinner class="size-4" />
+                {/if}
+                <span>
+                    {passkeyRegister.isLoading
+                        ? t('ui.settings.security.passkeys.form.loading')
+                        : t('ui.settings.security.passkeys.form.submit')}
+                </span>
             </Button>
-            <Button type="button" variant="ghost" onclick={handleCancel}>
+            <Button
+                type="button"
+                variant="outline"
+                class="h-11 rounded-xl px-4 text-sm font-medium"
+                onclick={handleCancel}
+            >
                 {t('ui.settings.security.passkeys.form.cancel')}
             </Button>
         </div>
