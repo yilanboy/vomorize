@@ -17,7 +17,7 @@
     import AppHead from '@/components/AppHead.svelte';
     import { Button } from '@/components/ui/button';
     import { t } from '@/lib/i18n';
-    import { toUrl } from '@/lib/utils';
+    import { cn, toUrl } from '@/lib/utils';
     import { dashboard, login } from '@/routes';
 
     const auth = $derived(page.props.auth);
@@ -57,11 +57,25 @@
         }
     }
 
-    // Demo card action state
+    // Interactive Demo Card State
     let demoState = $state<'initial' | 'mastered' | 'forgot'>('initial');
 
     // Sample mastery percentages for levels preview on landing page
     const levelMasteryPercentages = [70, 55, 40, 25, 15, 10, 5];
+
+    function parseLevelInfo(item: LevelData) {
+        if (item.description?.includes('：')) {
+            const [title, ...rest] = item.description.split('：');
+            return {
+                title: title.trim(),
+                description: rest.join('：').trim(),
+            };
+        }
+        return {
+            title: item.name,
+            description: item.description,
+        };
+    }
 
     const srsTimelineSteps = [
         {
@@ -105,7 +119,7 @@
             iconClass:
                 'text-blue-600 bg-blue-50 dark:bg-blue-950/40 dark:text-blue-400',
             borderHoverClass:
-                'hover:border-blue-400 dark:hover:border-blue-600',
+                'hover:border-blue-300 dark:hover:border-blue-700',
             isQuiz: false,
         },
         {
@@ -116,17 +130,18 @@
             iconClass:
                 'text-blue-600 bg-blue-50 dark:bg-blue-950/40 dark:text-blue-400',
             borderHoverClass:
-                'hover:border-blue-400 dark:hover:border-blue-600',
+                'hover:border-blue-300 dark:hover:border-blue-700',
             isQuiz: false,
         },
         {
             icon: Target,
             titleKey: 'ui.welcome.features.quiz_title',
             descKey: 'ui.welcome.features.quiz_desc',
+            pillKey: null,
             iconClass:
                 'text-emerald-600 bg-emerald-50 dark:bg-emerald-950/40 dark:text-emerald-400',
             borderHoverClass:
-                'hover:border-emerald-400 dark:hover:border-emerald-600',
+                'hover:border-emerald-300 dark:hover:border-emerald-700',
             isQuiz: true,
         },
         {
@@ -137,7 +152,7 @@
             iconClass:
                 'text-slate-700 bg-slate-100 dark:bg-slate-800 dark:text-slate-300',
             borderHoverClass:
-                'hover:border-slate-400 dark:hover:border-slate-600',
+                'hover:border-slate-300 dark:hover:border-slate-700',
             isQuiz: false,
         },
     ];
@@ -145,32 +160,34 @@
 
 <AppHead title={t('ui.welcome.hero.title')} />
 
-<div class="space-y-20 py-8 sm:space-y-28 sm:py-16">
+<main
+    class="space-y-20 py-8 selection:bg-blue-600 selection:text-white sm:space-y-28 sm:py-16"
+>
     <!-- 1. Hero Section -->
-    <section class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div
-            class="grid grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-8"
+            class="grid grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-12 xl:gap-16"
         >
             <!-- Left Hero Content -->
             <div class="flex flex-col items-start text-left lg:col-span-7">
                 <!-- Pill Badge -->
                 <div
-                    class="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50 px-3.5 py-1.5 text-sm font-semibold tracking-wide text-blue-700 dark:border-blue-900/60 dark:bg-blue-950/40 dark:text-blue-400"
+                    class="inline-flex items-center gap-2 rounded-full border border-blue-200/80 bg-blue-50/80 px-3.5 py-1.5 text-sm font-semibold tracking-wide text-blue-700 dark:border-blue-900/60 dark:bg-blue-950/40 dark:text-blue-300"
                 >
-                    <Sparkles class="size-4" />
+                    <Sparkles class="size-4 text-blue-600 dark:text-blue-400" />
                     <span>{t('ui.welcome.hero.badge')}</span>
                 </div>
 
                 <!-- Main Headline -->
                 <h1
-                    class="text-foreground mt-6 text-3xl font-extrabold tracking-tight sm:text-4xl md:text-5xl lg:leading-[1.15]"
+                    class="text-foreground mt-6 text-3xl font-extrabold tracking-tight sm:text-4xl md:text-5xl lg:text-6xl lg:leading-[1.12]"
                 >
                     {t('ui.welcome.hero.title')}
                 </h1>
 
                 <!-- Subheadline -->
                 <p
-                    class="text-muted-foreground mt-5 max-w-xl text-base leading-relaxed sm:text-lg"
+                    class="text-muted-foreground mt-6 max-w-2xl text-base leading-relaxed sm:text-lg sm:leading-relaxed"
                 >
                     {t('ui.welcome.hero.subtitle')}
                 </p>
@@ -182,7 +199,9 @@
                     <Button
                         asChild
                         size="lg"
-                        class="w-full bg-blue-600 text-base font-semibold text-white shadow-md shadow-blue-500/20 hover:bg-blue-700 sm:w-auto"
+                        class={cn(
+                            'w-full bg-blue-600 text-base font-semibold text-white shadow-md shadow-blue-500/20 transition-colors hover:bg-blue-700 focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 sm:w-auto',
+                        )}
                     >
                         {#snippet children(props)}
                             <Link href="/levels" class={props.class}>
@@ -198,7 +217,7 @@
                         asChild
                         variant="outline"
                         size="lg"
-                        class="w-full text-base sm:w-auto"
+                        class={cn('w-full text-base sm:w-auto')}
                     >
                         {#snippet children(props)}
                             <a href="#levels" class={props.class}>
@@ -214,7 +233,7 @@
                             asChild
                             variant="ghost"
                             size="lg"
-                            class="w-full text-base sm:w-auto"
+                            class={cn('w-full text-base sm:w-auto')}
                         >
                             {#snippet children(props)}
                                 <Link
@@ -230,7 +249,7 @@
                             asChild
                             variant="ghost"
                             size="lg"
-                            class="w-full text-base sm:w-auto"
+                            class={cn('w-full text-base sm:w-auto')}
                         >
                             {#snippet children(props)}
                                 <Link href={toUrl(login())} class={props.class}>
@@ -256,24 +275,16 @@
 
             <!-- Right Hero Product Visual / Interactive Flashcard -->
             <div class="relative flex justify-center lg:col-span-5">
-                <!-- Pure Blue & Fresh Emerald Glow Highlights -->
+                <!-- Tactile Flashcard Container -->
                 <div
-                    class="pointer-events-none absolute -top-6 -right-6 -z-10 size-64 rounded-full bg-blue-500/10 blur-3xl"
-                ></div>
-                <div
-                    class="pointer-events-none absolute -bottom-8 -left-6 -z-10 size-64 rounded-full bg-emerald-500/10 blur-3xl"
-                ></div>
-
-                <!-- Flashcard Container -->
-                <div
-                    class="border-border bg-card relative w-full max-w-[390px] rounded-3xl border p-6 shadow-xl transition-all"
+                    class="border-border/80 bg-card relative w-full max-w-[400px] rounded-3xl border p-6 shadow-xl shadow-slate-900/5 transition-all sm:p-7 dark:shadow-black/40"
                 >
                     <!-- Header Preview -->
                     <div
                         class="border-border/60 text-muted-foreground mb-4 flex items-center justify-between border-b pb-3 text-sm font-medium"
                     >
                         <span
-                            class="text-foreground flex items-center gap-1.5 font-semibold"
+                            class="text-foreground flex items-center gap-2 font-semibold"
                         >
                             <BookOpen
                                 class="size-4.5 text-blue-600 dark:text-blue-400"
@@ -293,11 +304,12 @@
                                 type="button"
                                 onclick={playDemoAudio}
                                 class={{
-                                    'text-muted-foreground hover:text-foreground rounded-full p-1 transition-colors': true,
-                                    'animate-pulse text-blue-600':
+                                    'text-muted-foreground hover:text-foreground rounded-full p-1.5 transition-colors focus-visible:ring-2 focus-visible:ring-blue-500': true,
+                                    'animate-pulse text-blue-600 dark:text-blue-400':
                                         isPlayingAudio,
                                 }}
                                 title={t('ui.welcome.hero.play_audio')}
+                                aria-label={t('ui.welcome.hero.play_audio')}
                             >
                                 <Volume2 class="size-4.5" />
                             </button>
@@ -324,7 +336,7 @@
                             </span>
                         </div>
 
-                        <!-- Main Target Word -->
+                        <!-- Main Target Word & Pronunciation -->
                         <div class="mb-1 flex items-baseline gap-2.5">
                             <h2
                                 class="text-foreground text-3xl font-extrabold tracking-tight"
@@ -335,13 +347,14 @@
                                 type="button"
                                 onclick={playDemoAudio}
                                 class={{
-                                    'flex size-6 items-center justify-center rounded-full bg-blue-100 text-blue-700 transition-colors hover:bg-blue-200 dark:bg-blue-950/70 dark:text-blue-300': true,
+                                    'flex size-7 items-center justify-center rounded-full bg-blue-100 text-blue-700 transition-colors hover:bg-blue-200 dark:bg-blue-950/70 dark:text-blue-300': true,
                                     'ring-2 ring-blue-500 ring-offset-1':
                                         isPlayingAudio,
                                 }}
                                 title={t('ui.welcome.hero.play_audio')}
+                                aria-label={t('ui.welcome.hero.play_audio')}
                             >
-                                <Volume2 class="size-3.5" />
+                                <Volume2 class="size-4" />
                             </button>
                         </div>
                         <p
@@ -350,8 +363,10 @@
                             {t('ui.welcome.hero.demo_phonetic')}
                         </p>
 
-                        <!-- Meaning -->
-                        <div class="border-border/60 w-full border-t pt-3 pb-3">
+                        <!-- Meaning Definition -->
+                        <div
+                            class="border-border/60 w-full border-t pt-3.5 pb-3"
+                        >
                             <span
                                 class="text-muted-foreground mb-1 block text-sm font-bold tracking-wider uppercase"
                             >
@@ -385,14 +400,39 @@
                             </p>
                         </div>
 
-                        <!-- Mastery Status Badge (Emerald Green) -->
+                        <!-- Mastery Status Badge (Emerald Green / Dynamic State) -->
                         <div
-                            class="flex items-center justify-center gap-1.5 rounded-xl border border-emerald-200 bg-emerald-50 px-3.5 py-2 text-sm font-medium text-emerald-700 dark:border-emerald-900/60 dark:bg-emerald-950/40 dark:text-emerald-300"
+                            class={{
+                                'flex items-center justify-center gap-1.5 rounded-xl border px-3.5 py-2 text-sm font-medium transition-all': true,
+                                'border-emerald-200 bg-emerald-50 text-emerald-700 dark:border-emerald-900/60 dark:bg-emerald-950/40 dark:text-emerald-300':
+                                    demoState !== 'forgot',
+                                'border-red-200 bg-red-50 text-red-700 dark:border-red-900/60 dark:bg-red-950/40 dark:text-red-300':
+                                    demoState === 'forgot',
+                            }}
                         >
-                            <CheckCircle2
-                                class="size-4 text-emerald-600 dark:text-emerald-400"
-                            />
-                            <span>{t('ui.welcome.hero.demo_srs_badge')}</span>
+                            {#if demoState === 'mastered'}
+                                <Check
+                                    class="size-4 text-emerald-600 dark:text-emerald-400"
+                                />
+                                <span
+                                    >{t('ui.welcome.hero.demo_mastered')} · SRS 間隔推進至
+                                    7 天</span
+                                >
+                            {:else if demoState === 'forgot'}
+                                <RotateCcw
+                                    class="size-4 text-red-600 dark:text-red-400"
+                                />
+                                <span
+                                    >{t('ui.welcome.hero.demo_forgot')} · 20 分鐘後再次強化</span
+                                >
+                            {:else}
+                                <CheckCircle2
+                                    class="size-4 text-emerald-600 dark:text-emerald-400"
+                                />
+                                <span
+                                    >{t('ui.welcome.hero.demo_srs_badge')}</span
+                                >
+                            {/if}
                         </div>
                     </div>
 
@@ -402,7 +442,7 @@
                             type="button"
                             onclick={() => (demoState = 'forgot')}
                             class={{
-                                'flex items-center justify-center gap-1.5 rounded-xl px-3.5 py-2.5 text-sm font-semibold transition-colors': true,
+                                'flex items-center justify-center gap-1.5 rounded-xl px-3.5 py-2.5 text-sm font-semibold transition-colors focus-visible:ring-2 focus-visible:ring-red-500': true,
                                 'bg-secondary hover:bg-secondary/80 text-secondary-foreground':
                                     demoState !== 'forgot',
                                 'bg-red-100 text-red-700 ring-2 ring-red-500 dark:bg-red-950/60 dark:text-red-300':
@@ -416,7 +456,7 @@
                             type="button"
                             onclick={() => (demoState = 'mastered')}
                             class={{
-                                'flex items-center justify-center gap-1.5 rounded-xl px-3.5 py-2.5 text-sm font-bold shadow-2xs transition-colors': true,
+                                'flex items-center justify-center gap-1.5 rounded-xl px-3.5 py-2.5 text-sm font-bold shadow-2xs transition-colors focus-visible:ring-2 focus-visible:ring-emerald-500': true,
                                 'bg-emerald-600 text-white hover:bg-emerald-700':
                                     demoState !== 'mastered',
                                 'bg-emerald-700 text-white ring-2 ring-emerald-400':
@@ -434,18 +474,14 @@
 
     <!-- 2. SRS Cognitive Science / Ebbinghaus Comparison Section -->
     <section
-        class="border-border/80 bg-card/40 relative border-y py-16 sm:py-24"
+        class="border-border/80 bg-muted/30 border-y py-16 sm:py-24"
         id="srs-science"
     >
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <!-- Section Header (Clean title without banned kickers/eyebrows) -->
             <div class="mx-auto mb-14 max-w-3xl text-center sm:mb-16">
-                <span
-                    class="inline-block rounded-full border border-blue-200 bg-blue-50 px-3.5 py-1.5 text-sm font-bold tracking-wider text-blue-700 uppercase dark:border-blue-900/60 dark:bg-blue-950/40 dark:text-blue-400"
-                >
-                    {t('ui.welcome.srs.badge')}
-                </span>
                 <h2
-                    class="text-foreground mt-4 text-2xl font-extrabold tracking-tight sm:text-3xl md:text-4xl"
+                    class="text-foreground text-2xl font-extrabold tracking-tight sm:text-3xl md:text-4xl"
                 >
                     {t('ui.welcome.srs.title')}
                 </h2>
@@ -458,25 +494,25 @@
 
             <!-- Side-by-Side Comparison Cards -->
             <div class="mb-12 grid grid-cols-1 gap-8 lg:grid-cols-2">
-                <!-- Left Card: 傳統死記硬背 (Red Alert Theme) -->
+                <!-- Left Card: 傳統死記硬背 (Alert Red Theme) -->
                 <div
-                    class="relative overflow-hidden rounded-2xl border border-red-200/90 bg-red-50/40 p-6 sm:p-8 dark:border-red-950/60 dark:bg-red-950/20"
+                    class="bg-card border-border/90 relative overflow-hidden rounded-2xl border p-6 shadow-xs sm:p-8"
                 >
                     <div
                         class="mb-5 flex flex-wrap items-center justify-between gap-2"
                     >
                         <div class="flex items-center gap-2.5">
                             <div
-                                class="flex size-8 items-center justify-center rounded-lg bg-red-100 font-bold text-red-600 dark:bg-red-950/70 dark:text-red-400"
+                                class="flex size-9 items-center justify-center rounded-xl bg-red-100 font-bold text-red-600 dark:bg-red-950/70 dark:text-red-400"
                             >
-                                <TriangleAlert class="size-4.5" />
+                                <TriangleAlert class="size-5" />
                             </div>
                             <h3 class="text-foreground text-lg font-bold">
                                 {t('ui.welcome.srs.cramming_title')}
                             </h3>
                         </div>
                         <span
-                            class="rounded-full border border-red-200 bg-red-100 px-3 py-1 text-sm font-semibold text-red-700 dark:border-red-900/60 dark:bg-red-950/50 dark:text-red-300"
+                            class="rounded-full border border-red-200 bg-red-50 px-3 py-1 text-sm font-semibold text-red-700 dark:border-red-900/60 dark:bg-red-950/50 dark:text-red-300"
                         >
                             {t('ui.welcome.srs.cramming_badge')}
                         </span>
@@ -504,7 +540,9 @@
                             <div
                                 class="bg-muted h-2.5 w-full overflow-hidden rounded-full"
                             >
-                                <div class="h-full w-full bg-slate-400"></div>
+                                <div
+                                    class="h-full w-full bg-slate-400 dark:bg-slate-500"
+                                ></div>
                             </div>
                         </div>
                         <div>
@@ -571,23 +609,23 @@
 
                 <!-- Right Card: Vomorize SRS 間隔演算法 (Emerald Green Theme) -->
                 <div
-                    class="relative overflow-hidden rounded-2xl border border-emerald-200/90 bg-emerald-50/40 p-6 sm:p-8 dark:border-emerald-950/60 dark:bg-emerald-950/20"
+                    class="bg-card border-border/90 relative overflow-hidden rounded-2xl border p-6 shadow-xs sm:p-8"
                 >
                     <div
                         class="mb-5 flex flex-wrap items-center justify-between gap-2"
                     >
                         <div class="flex items-center gap-2.5">
                             <div
-                                class="flex size-8 items-center justify-center rounded-lg bg-emerald-100 font-bold text-emerald-700 dark:bg-emerald-950/70 dark:text-emerald-400"
+                                class="flex size-9 items-center justify-center rounded-xl bg-emerald-100 font-bold text-emerald-700 dark:bg-emerald-950/70 dark:text-emerald-400"
                             >
-                                <Check class="size-4.5" />
+                                <Check class="size-5" />
                             </div>
                             <h3 class="text-foreground text-lg font-bold">
                                 {t('ui.welcome.srs.vomorize_title')}
                             </h3>
                         </div>
                         <span
-                            class="rounded-full border border-emerald-200 bg-emerald-100 px-3 py-1 text-sm font-semibold text-emerald-700 dark:border-emerald-900/60 dark:bg-emerald-950/50 dark:text-emerald-300"
+                            class="rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-sm font-semibold text-emerald-700 dark:border-emerald-900/60 dark:bg-emerald-950/50 dark:text-emerald-300"
                         >
                             {t('ui.welcome.srs.vomorize_badge')}
                         </span>
@@ -692,12 +730,14 @@
             </div>
 
             <!-- 5-Step Timeline Sequence -->
-            <div class="border-border bg-card rounded-2xl border p-6 sm:p-8">
-                <h4
-                    class="text-muted-foreground mb-6 text-center text-sm font-bold tracking-wider uppercase"
+            <div
+                class="border-border bg-card rounded-2xl border p-6 shadow-xs sm:p-8"
+            >
+                <h3
+                    class="text-foreground mb-6 text-center text-base font-bold sm:text-lg"
                 >
                     {t('ui.welcome.srs.timeline_title')}
-                </h4>
+                </h3>
                 <div
                     class="grid grid-cols-1 gap-3.5 sm:grid-cols-3 lg:grid-cols-5"
                 >
@@ -705,7 +745,7 @@
                         <div
                             class={{
                                 'flex flex-col items-center rounded-xl border p-4 text-center transition-all': true,
-                                'bg-card border-border': !item.isFinal,
+                                'bg-card border-border/80': !item.isFinal,
                                 'border-emerald-200 bg-emerald-50/70 dark:border-emerald-900/60 dark:bg-emerald-950/30':
                                     item.isFinal,
                             }}
@@ -750,13 +790,8 @@
     <!-- 3. Core Features Section -->
     <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8" id="features">
         <div class="mx-auto max-w-3xl text-center">
-            <span
-                class="inline-block rounded-full border border-blue-200 bg-blue-50 px-3.5 py-1.5 text-sm font-bold tracking-wider text-blue-700 uppercase dark:border-blue-900/60 dark:bg-blue-950/40 dark:text-blue-400"
-            >
-                {t('ui.welcome.features.badge')}
-            </span>
             <h2
-                class="text-foreground mt-4 text-2xl font-extrabold tracking-tight sm:text-3xl md:text-4xl"
+                class="text-foreground text-2xl font-extrabold tracking-tight sm:text-3xl md:text-4xl"
             >
                 {t('ui.welcome.features.title')}
             </h2>
@@ -840,20 +875,15 @@
         </div>
     </section>
 
-    <!-- 4. 8-Card Balanced Levels Grid (4 columns x 2 rows, perfectly uniform, NO CEFR) -->
+    <!-- 4. 8-Card Balanced Levels Grid (4 columns x 2 rows, perfectly uniform) -->
     <section
         class="border-border/80 bg-muted/20 border-t py-16 sm:py-24"
         id="levels"
     >
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div class="mx-auto mb-12 max-w-3xl text-center">
-                <span
-                    class="inline-block rounded-full border border-blue-200 bg-blue-50 px-3.5 py-1.5 text-sm font-bold tracking-wider text-blue-700 uppercase dark:border-blue-900/60 dark:bg-blue-950/40 dark:text-blue-400"
-                >
-                    {t('ui.welcome.levels.badge')}
-                </span>
                 <h2
-                    class="text-foreground mt-4 text-2xl font-extrabold tracking-tight sm:text-3xl md:text-4xl"
+                    class="text-foreground text-2xl font-extrabold tracking-tight sm:text-3xl md:text-4xl"
                 >
                     {t('ui.welcome.levels.title')}
                 </h2>
@@ -868,9 +898,10 @@
             <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
                 <!-- Cards 1 to 7: Curriculum Levels -->
                 {#each levels.slice(0, 7) as level, index (level.id)}
+                    {@const parsed = parseLevelInfo(level)}
                     <Link
                         href={`/levels/${level.id}`}
-                        class="group border-border bg-card relative flex h-full flex-col justify-between rounded-2xl border p-5 shadow-2xs transition-all duration-300 hover:-translate-y-1 hover:border-blue-400 hover:shadow-md dark:hover:border-blue-600"
+                        class="group border-border bg-card relative flex h-full flex-col justify-between rounded-2xl border p-5 shadow-2xs transition-all duration-300 hover:-translate-y-1 hover:border-blue-400 hover:shadow-md focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 dark:hover:border-blue-600"
                     >
                         <div>
                             <div class="mb-3 flex items-center justify-between">
@@ -882,15 +913,15 @@
                                     })}
                                 </span>
                             </div>
-                            <h4
+                            <h3
                                 class="text-foreground text-base font-bold transition-colors group-hover:text-blue-600 dark:group-hover:text-blue-400"
                             >
-                                {level.name}
-                            </h4>
+                                {parsed.title}
+                            </h3>
                             <p
                                 class="text-muted-foreground mt-1.5 line-clamp-2 text-sm leading-relaxed"
                             >
-                                {level.description}
+                                {parsed.description}
                             </p>
                         </div>
 
@@ -944,7 +975,7 @@
                 <!-- Card 8: Dedicated Overview Navigation Card -->
                 <Link
                     href="/levels"
-                    class="group to-card dark:to-card relative flex h-full flex-col justify-between rounded-2xl border-2 border-dashed border-blue-200 bg-gradient-to-b from-blue-50/70 p-5 shadow-2xs transition-all duration-300 hover:-translate-y-1 hover:border-blue-400 hover:shadow-md dark:border-blue-900/60 dark:from-blue-950/20 dark:hover:border-blue-600"
+                    class="group to-card dark:to-card relative flex h-full flex-col justify-between rounded-2xl border-2 border-dashed border-blue-200 bg-gradient-to-b from-blue-50/70 p-5 shadow-2xs transition-all duration-300 hover:-translate-y-1 hover:border-blue-400 hover:shadow-md focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 dark:border-blue-900/60 dark:from-blue-950/20 dark:hover:border-blue-600"
                 >
                     <div>
                         <div class="mb-3 flex items-center justify-between">
@@ -954,11 +985,11 @@
                                 {t('ui.welcome.levels.browse_all_badge')}
                             </span>
                         </div>
-                        <h4
+                        <h3
                             class="text-foreground text-base font-bold transition-colors group-hover:text-blue-600 dark:group-hover:text-blue-400"
                         >
                             {t('ui.welcome.levels.browse_all_title')}
-                        </h4>
+                        </h3>
                         <p
                             class="text-muted-foreground mt-1.5 text-sm leading-relaxed"
                         >
@@ -1011,14 +1042,6 @@
         <div
             class="relative overflow-hidden rounded-3xl bg-blue-600 p-8 text-center text-white shadow-xl sm:p-14 dark:bg-blue-700"
         >
-            <!-- Pure Blue / Subtle White Ambient Highlights -->
-            <div
-                class="pointer-events-none absolute -top-24 -right-24 size-72 rounded-full bg-white/10 blur-2xl"
-            ></div>
-            <div
-                class="pointer-events-none absolute -bottom-24 -left-24 size-72 rounded-full bg-blue-900/40 blur-2xl"
-            ></div>
-
             <div class="relative z-10 mx-auto max-w-2xl">
                 <h2
                     class="text-3xl leading-tight font-extrabold tracking-tight sm:text-4xl md:text-5xl"
@@ -1037,7 +1060,9 @@
                     <Button
                         asChild
                         size="lg"
-                        class="w-full bg-white text-base font-bold text-blue-600 shadow-lg transition-all hover:bg-blue-50 hover:shadow-xl sm:w-auto"
+                        class={cn(
+                            'w-full bg-white text-base font-bold text-blue-600 shadow-lg transition-all hover:bg-blue-50 hover:shadow-xl sm:w-auto',
+                        )}
                     >
                         {#snippet children(props)}
                             <Link href="/levels/1" class={props.class}>
@@ -1057,4 +1082,4 @@
             </div>
         </div>
     </section>
-</div>
+</main>

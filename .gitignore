@@ -28,6 +28,7 @@ yarn-error.log
 /.vscode
 /.zed
 
+/.agent
 /.agents
 /.claude
 /.junie
@@ -41,5 +42,7 @@ skills-lock.json
 spec.md
 /docs
 /.scratch
+/.impeccable/config.local.json
+/.impeccable/scratch/
 .env.before_lerd
 /skills/
