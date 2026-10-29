@@ -342,7 +342,7 @@
 
 <AppHead
     title="{t('ui.group_detail.title', {
-        level_id: group.level_id,
+        level_name: group.level_name,
         sequence: group.sequence,
     })} - {activeIsMasteredRetake
         ? t('ui.quiz.self_test_badge')

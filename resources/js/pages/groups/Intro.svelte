@@ -324,7 +324,7 @@
 
 <AppHead
     title="{t('ui.group_detail.title', {
-        level_id: group.level_id,
+        level_name: group.level_name,
         sequence: group.sequence,
     })} - {t('ui.intro.card.badge')}"
 />

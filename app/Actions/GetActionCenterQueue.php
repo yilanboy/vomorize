@@ -61,8 +61,13 @@ readonly class GetActionCenterQueue
             $isCooldownElapsed = $progress->next_review_at === null || $progress->next_review_at->lte($now);
 
             $levelId = $progress->level_id;
+            $levelName = $progress->group !== null ? $progress->group->level->name : "等級 {$levelId}";
             $sequence = $progress->group !== null ? $progress->group->sequence : $progress->group_id;
-            $groupTitle = (string) __('ui.group_detail.title', ['level_id' => $levelId, 'sequence' => $sequence]);
+            $groupTitle = (string) __('ui.group_detail.title', [
+                'level_name' => $levelName,
+                'level_id' => $levelId,
+                'sequence' => $sequence,
+            ]);
 
             if ($isFailed || $isCooldownElapsed) {
                 $targetStage = $isStage6Failed ? 6 : ($isFailed ? max(1, $stage) : min(6, $stage + 1));
@@ -147,6 +152,7 @@ readonly class GetActionCenterQueue
 
         /** @var Group|null $nextGroup */
         $nextGroup = Group::query()
+            ->with('level')
             ->when(! empty($startedGroupIds), fn ($query) => $query->whereNotIn('id', $startedGroupIds))
             ->orderBy('level_id')
             ->orderBy('sequence')
@@ -155,11 +161,16 @@ readonly class GetActionCenterQueue
         $recommendedNextGroup = null;
 
         if ($nextGroup !== null) {
+            $nextGroupLevelName = $nextGroup->level->name;
             $recommendedNextGroup = [
                 'group_id' => $nextGroup->id,
                 'level_id' => $nextGroup->level_id,
                 'group_sequence' => $nextGroup->sequence,
-                'group_title' => (string) __('ui.group_detail.title', ['level_id' => $nextGroup->level_id, 'sequence' => $nextGroup->sequence]),
+                'group_title' => (string) __('ui.group_detail.title', [
+                    'level_name' => $nextGroupLevelName,
+                    'level_id' => $nextGroup->level_id,
+                    'sequence' => $nextGroup->sequence,
+                ]),
                 'words_count' => 10,
                 'start_url' => "/groups/{$nextGroup->id}/intro",
             ];

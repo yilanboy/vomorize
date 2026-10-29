@@ -407,7 +407,7 @@ return [
         'not_started_label' => '尚未開始',
     ],
     'group_detail' => [
-        'title' => '等級 :level_id · 第 :sequence 組',
+        'title' => ':level_name · 第 :sequence 組',
         'breadcrumb_levels' => '單字等級',
         'breadcrumb_level' => '等級 :id',
         'breadcrumb_group' => '第 :sequence 組',
@@ -423,6 +423,9 @@ return [
         'example_label' => '情境例句',
         'prev_group' => '上一組',
         'next_group' => '下一組',
+        'stage_indicator' => '第 :stage / 6 階段',
+        'stage_completed' => '已完成全部 6 階段',
+        'keyboard_hint' => '快捷鍵：Space 朗讀單字 · S 朗讀例句 · ↑↓ 切換',
         'sticky_bar' => [
             'summary' => '第 :sequence 組 · :count 個核心單字',
             'start_stage_1' => '開始第一階段測驗 (Stage 1) →',
