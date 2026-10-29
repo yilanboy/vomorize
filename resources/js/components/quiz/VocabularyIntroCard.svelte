@@ -23,7 +23,7 @@
         vocabulary ? audioPlayer.isPlaying(`sentence-${vocabulary.id}`) : false,
     );
 
-    function playWordAudio() {
+    function playWordAudio(): void {
         if (vocabulary?.word_audio_url) {
             void audioPlayer.play(
                 vocabulary.word_audio_url,
@@ -32,7 +32,7 @@
         }
     }
 
-    function playSentenceAudio() {
+    function playSentenceAudio(): void {
         if (vocabulary?.sentence_audio_url) {
             void audioPlayer.play(
                 vocabulary.sentence_audio_url,
@@ -72,19 +72,21 @@
 
 {#if vocabulary}
     <div
-        class="border-border/80 bg-card mx-auto flex min-h-[540px] w-full max-w-xl flex-col justify-between rounded-2xl border p-6 shadow-sm sm:h-[580px] sm:min-h-[580px] sm:p-8"
+        class="border-border/80 bg-card mx-auto flex h-[560px] w-full max-w-xl flex-col justify-between rounded-2xl border p-6 shadow-2xs sm:h-[580px] sm:p-8"
     >
         <!-- Header Badge & Word Title -->
-        <div class="flex flex-col gap-3">
+        <div class="flex flex-col gap-2.5">
             <div class="flex items-center justify-between">
                 <span
-                    class="bg-primary/10 text-primary border-primary/20 inline-flex items-center rounded-full border px-3 py-1 font-mono text-sm font-semibold"
+                    class="inline-flex items-center gap-1.5 rounded-full border border-blue-200/80 bg-blue-50/80 px-3 py-0.5 text-sm font-semibold tracking-wide text-blue-700 dark:border-blue-800/60 dark:bg-blue-950/50 dark:text-blue-300"
                 >
-                    {t('ui.intro.card.badge')}
+                    <span class="size-2 animate-pulse rounded-full bg-blue-600"
+                    ></span>
+                    <span>{t('ui.intro.card.badge')}</span>
                 </span>
 
                 <span
-                    class="bg-secondary text-secondary-foreground inline-flex items-center rounded-md px-2.5 py-0.5 text-sm font-medium"
+                    class="bg-muted text-foreground/80 rounded-md px-2.5 py-0.5 text-sm font-semibold"
                 >
                     {vocabulary.part_of_speech}
                 </span>
@@ -109,21 +111,15 @@
                 <button
                     type="button"
                     class={{
-                        'hover:bg-muted/80 inline-flex min-h-[40px] items-center gap-2 rounded-xl border px-3.5 py-1.5 text-sm font-medium transition-colors': true,
-                        'border-primary bg-primary/10 text-primary':
+                        'inline-flex min-h-[40px] items-center gap-2 rounded-xl border px-3.5 py-1.5 text-sm font-medium transition-all duration-150 active:scale-95': true,
+                        'animate-pulse border-blue-600 bg-blue-600 text-white shadow-xs ring-4 ring-blue-500/20':
                             isWordPlaying,
-                        'border-border/80 bg-background text-foreground':
+                        'border-border/70 bg-muted/40 text-muted-foreground dark:bg-muted/30 hover:border-blue-300 hover:bg-blue-50 hover:text-blue-600 dark:hover:border-blue-800/60 dark:hover:bg-blue-950/60 dark:hover:text-blue-300':
                             !isWordPlaying,
                     }}
                     onclick={playWordAudio}
                 >
-                    <Volume2
-                        class={{
-                            'h-4 w-4': true,
-                            'text-primary animate-pulse': isWordPlaying,
-                            'text-muted-foreground': !isWordPlaying,
-                        }}
-                    />
+                    <Volume2 class="size-4.5" />
                     <span>{t('ui.intro.card.play_word')}</span>
                 </button>
 
@@ -131,21 +127,15 @@
                     <button
                         type="button"
                         class={{
-                            'hover:bg-muted/80 inline-flex min-h-[40px] items-center gap-2 rounded-xl border px-3.5 py-1.5 text-sm font-medium transition-colors': true,
-                            'border-primary bg-primary/10 text-primary':
+                            'inline-flex min-h-[40px] items-center gap-2 rounded-xl border px-3.5 py-1.5 text-sm font-medium transition-all duration-150 active:scale-95': true,
+                            'animate-pulse border-blue-600 bg-blue-600 text-white shadow-xs ring-4 ring-blue-500/20':
                                 isSentencePlaying,
-                            'border-border/80 bg-background text-foreground':
+                            'border-border/70 bg-muted/40 text-muted-foreground dark:bg-muted/30 hover:border-blue-300 hover:bg-blue-50 hover:text-blue-600 dark:hover:border-blue-800/60 dark:hover:bg-blue-950/60 dark:hover:text-blue-300':
                                 !isSentencePlaying,
                         }}
                         onclick={playSentenceAudio}
                     >
-                        <Volume2
-                            class={{
-                                'h-4 w-4': true,
-                                'text-primary animate-pulse': isSentencePlaying,
-                                'text-muted-foreground': !isSentencePlaying,
-                            }}
-                        />
+                        <Volume2 class="size-4.5" />
                         <span>{t('ui.intro.card.play_sentence')}</span>
                     </button>
                 {/if}
@@ -153,9 +143,9 @@
 
             <!-- Chinese Definition Section -->
             <div
-                class="bg-muted/40 border-border/50 flex flex-col gap-1 rounded-xl border p-3.5"
+                class="border-border/60 bg-muted/30 flex flex-col gap-1 rounded-xl border p-3.5"
             >
-                <span class="text-muted-foreground text-xs font-medium">
+                <span class="text-muted-foreground text-sm font-semibold">
                     {t('ui.intro.card.definition_label')}
                 </span>
                 <p class="text-foreground text-base font-bold sm:text-lg">
@@ -166,9 +156,11 @@
             <!-- Example Sentence Section -->
             {#if vocabulary.example_sentence}
                 <div
-                    class="bg-muted/40 border-border/50 flex max-h-[140px] flex-col gap-1.5 overflow-y-auto rounded-xl border p-3.5"
+                    class="border-border/60 bg-muted/30 flex max-h-[140px] flex-col gap-1 overflow-y-auto rounded-xl border p-3.5"
                 >
-                    <span class="text-muted-foreground text-xs font-medium">
+                    <span
+                        class="text-sm font-semibold text-blue-600 dark:text-blue-400"
+                    >
                         {t('ui.intro.card.example_label')}
                     </span>
                     <p
@@ -177,9 +169,7 @@
                         {vocabulary.example_sentence}
                     </p>
                     {#if vocabulary.example_translation}
-                        <p
-                            class="text-muted-foreground text-xs leading-relaxed sm:text-sm"
-                        >
+                        <p class="text-muted-foreground text-sm leading-normal">
                             {vocabulary.example_translation}
                         </p>
                     {/if}
@@ -191,11 +181,11 @@
         <div class="mt-auto flex flex-col gap-2 pt-2">
             <button
                 type="button"
-                class="bg-primary hover:bg-primary/90 text-primary-foreground flex min-h-[50px] w-full items-center justify-center gap-2 rounded-xl text-base font-semibold shadow-sm transition-all active:scale-[0.99]"
+                class="flex min-h-[50px] w-full items-center justify-center gap-2 rounded-xl bg-blue-600 text-base font-semibold text-white shadow-xs transition-all hover:bg-blue-700 active:scale-[0.98]"
                 onclick={onContinue}
             >
                 <span>{t('ui.intro.card.continue')}</span>
-                <ArrowRight class="h-4 w-4" />
+                <ArrowRight class="size-4.5" />
             </button>
 
             <p class="text-muted-foreground text-center text-sm">

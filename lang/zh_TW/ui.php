@@ -428,10 +428,10 @@ return [
         'keyboard_hint' => '快捷鍵：Space 朗讀單字 · S 朗讀例句 · ↑↓ 切換',
         'sticky_bar' => [
             'summary' => '第 :sequence 組 · :count 個核心單字',
-            'start_stage_1' => '開始第一階段測驗 (Stage 1) →',
-            'start_review' => '開始複習測驗 (Stage :stage) →',
+            'start_stage_1' => '開始第一階段測驗 (Stage 1)',
+            'start_review' => '開始複習測驗 (Stage :stage)',
             'cooldown' => '冷卻中 (:time)',
-            'mastered' => '隨時自我測驗 →',
+            'mastered' => '隨時自我測驗',
         ],
     ],
     'dashboard' => [

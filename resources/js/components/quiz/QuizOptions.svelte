@@ -21,7 +21,7 @@
         disabled?: boolean;
     } = $props();
 
-    function handleSelect(option: QuizOptionPayload) {
+    function handleSelect(option: QuizOptionPayload): void {
         if (disabled || selectedOptionId !== null) {
             return;
         }
@@ -61,7 +61,7 @@
     });
 </script>
 
-<div class="flex flex-col gap-3">
+<div class="flex flex-col gap-2.5 sm:gap-3">
     {#each options as option, index (option.id)}
         {@const isSelected = selectedOptionId === option.id}
         {@const isAnswered = selectedOptionId !== null}
@@ -71,30 +71,30 @@
         <button
             type="button"
             class={{
-                'group relative flex min-h-14 w-full items-center justify-between gap-3 rounded-xl border p-4 text-left transition-all duration-200': true,
-                'border-emerald-500 bg-emerald-500/10 text-emerald-900 shadow-sm dark:bg-emerald-950/40 dark:text-emerald-200':
+                'group relative flex min-h-[52px] w-full items-center justify-between gap-3 rounded-xl border p-3.5 text-left transition-all duration-150 sm:min-h-[56px] sm:p-4': true,
+                'border-emerald-600 bg-emerald-500/10 text-emerald-950 shadow-xs dark:border-emerald-500 dark:bg-emerald-950/40 dark:text-emerald-200':
                     isAnswered && isCorrect,
-                'border-red-500 bg-red-500/10 text-red-900 shadow-sm dark:bg-red-950/40 dark:text-red-200':
+                'border-red-600 bg-red-500/10 text-red-950 shadow-xs dark:border-red-500 dark:bg-red-950/40 dark:text-red-200':
                     isAnswered && !isCorrect && isWrongSelection,
-                'border-border/50 opacity-40':
+                'border-border/40 bg-card/40 opacity-40 select-none':
                     isAnswered && !isCorrect && !isWrongSelection,
-                'border-border/70 hover:border-primary/50 hover:bg-muted/50 bg-card active:scale-[0.99]':
+                'border-border/80 bg-card hover:border-blue-400 hover:bg-blue-50/40 active:scale-[0.99] dark:hover:border-blue-700 dark:hover:bg-blue-950/20':
                     !isAnswered,
             }}
             onclick={() => handleSelect(option)}
             disabled={disabled || isAnswered}
         >
-            <span class="flex flex-1 items-center gap-3.5">
+            <span class="flex flex-1 items-center gap-3">
                 <span
                     class={{
-                        'flex size-7 shrink-0 items-center justify-center rounded-lg border border-transparent font-mono text-sm font-semibold transition-colors': true,
-                        'bg-emerald-500 text-white dark:bg-emerald-600':
+                        'flex size-7 shrink-0 items-center justify-center rounded-lg border font-mono text-sm font-semibold transition-colors': true,
+                        'border-emerald-600 bg-emerald-600 text-white dark:border-emerald-500 dark:bg-emerald-500':
                             isAnswered && isCorrect,
-                        'bg-red-500 text-white dark:bg-red-600':
+                        'border-red-600 bg-red-600 text-white dark:border-red-500 dark:bg-red-500':
                             isAnswered && !isCorrect && isWrongSelection,
-                        'bg-muted text-muted-foreground':
+                        'bg-muted text-muted-foreground border-transparent':
                             isAnswered && !isCorrect && !isWrongSelection,
-                        'group-hover:border-primary/40 bg-muted/80 text-foreground group-hover:bg-primary group-hover:text-primary-foreground':
+                        'border-border/70 bg-muted/80 text-foreground group-hover:border-blue-600 group-hover:bg-blue-600 group-hover:text-white':
                             !isAnswered,
                     }}
                 >
@@ -104,7 +104,7 @@
                 <span class="flex flex-1 flex-col justify-center">
                     <span
                         class={{
-                            'text-base leading-snug font-medium': true,
+                            'text-sm leading-snug font-medium sm:text-base': true,
                             'font-semibold':
                                 isAnswered && (isCorrect || isWrongSelection),
                             'text-foreground': !isAnswered,
@@ -131,7 +131,7 @@
         </button>
     {/each}
 
-    <p class="text-muted-foreground text-center text-sm">
+    <p class="text-muted-foreground text-center text-sm font-medium">
         {t('ui.quiz.options.keyboard_hint')}
     </p>
 </div>

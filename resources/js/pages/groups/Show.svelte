@@ -398,7 +398,7 @@
             <section
                 bind:this={cardElements[index]}
                 class={{
-                    'bg-card rounded-2xl border p-5 transition-all duration-200 sm:p-6': true,
+                    'bg-card scroll-my-24 rounded-2xl border p-5 transition-all duration-200 sm:p-6': true,
                     'border-border/70 hover:border-border shadow-2xs':
                         focusedIndex !== index,
                     'border-blue-500/80 shadow-xs ring-2 ring-blue-500/20 dark:border-blue-500/70 dark:ring-blue-500/30':

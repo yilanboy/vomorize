@@ -33,7 +33,7 @@
         audioPlayer.isPlaying(`quiz-audio-${vocabulary.id}`),
     );
 
-    function playAudio() {
+    function playAudio(): void {
         if (audioUrl) {
             void audioPlayer.play(audioUrl, `quiz-audio-${vocabulary.id}`);
         }
@@ -69,20 +69,23 @@
 </script>
 
 <div
-    class="border-border/80 bg-card mx-auto flex min-h-135 w-full max-w-xl flex-col justify-between rounded-2xl border p-6 shadow-sm sm:h-145 sm:min-h-145 sm:p-8"
+    class="border-border/80 bg-card mx-auto flex h-[560px] w-full max-w-xl flex-col justify-between rounded-2xl border p-6 shadow-2xs sm:h-[580px] sm:p-8"
 >
-    <!-- Card Header / Stem -->
-    <div class="flex h-40 flex-col justify-between sm:h-42.5">
+    <!-- Card Header / Stem: Fixed height across all quiz cards -->
+    <div class="flex h-[170px] shrink-0 flex-col justify-between sm:h-[180px]">
+        <!-- Top Badges -->
         <div class="flex items-center justify-between">
             <span
-                class="bg-primary/10 text-primary border-primary/20 inline-flex items-center rounded-full border px-3 py-1 font-mono text-sm font-semibold"
+                class="inline-flex items-center gap-1.5 rounded-full border border-blue-200/80 bg-blue-50/80 px-3 py-0.5 text-sm font-semibold tracking-wide text-blue-700 dark:border-blue-800/60 dark:bg-blue-950/50 dark:text-blue-300"
             >
-                {t('ui.quiz.question_types.audio_to_definition')}
+                <span class="size-2 animate-pulse rounded-full bg-blue-600"
+                ></span>
+                <span>{t('ui.quiz.question_types.audio_to_definition')}</span>
             </span>
 
             <span
                 class={{
-                    'bg-secondary text-secondary-foreground inline-flex items-center rounded-md px-2.5 py-0.5 text-sm font-medium transition-opacity duration-150': true,
+                    'bg-muted text-foreground/80 rounded-md px-2.5 py-0.5 text-sm font-semibold transition-opacity duration-150': true,
                     'visible opacity-100': selectedOptionId !== null,
                     'invisible opacity-0 select-none':
                         selectedOptionId === null,
@@ -93,44 +96,50 @@
             </span>
         </div>
 
-        <!-- Speaker Prompt -->
+        <!-- Speaker Prompt & Reveal Area -->
         <div
             class="flex flex-1 flex-col items-center justify-center gap-1.5 py-1"
         >
             <button
                 type="button"
                 class={{
-                    'relative flex h-16 w-16 items-center justify-center rounded-2xl border transition-all duration-300': true,
-                    'border-primary bg-primary text-primary-foreground shadow-primary/25 scale-105 shadow-lg':
+                    'relative flex size-14 items-center justify-center rounded-2xl border transition-all duration-200 active:scale-95 sm:size-15': true,
+                    'scale-105 border-blue-600 bg-blue-600 text-white shadow-md ring-4 shadow-blue-500/25 ring-blue-500/20':
                         audioPlaying,
-                    'border-primary/50 bg-primary/10 text-primary animate-pulse':
+                    'animate-pulse border-blue-600/50 bg-blue-50/80 text-blue-600 dark:border-blue-700/60 dark:bg-blue-950/40 dark:text-blue-300':
                         !audioPlaying && !autoPlay && selectedOptionId === null,
-                    'border-border/80 bg-muted/60 hover:bg-muted text-foreground hover:scale-105 active:scale-95':
+                    'border-border/70 bg-muted/40 hover:bg-muted text-foreground dark:bg-muted/30 hover:border-blue-300 hover:text-blue-600 dark:hover:border-blue-800/60 dark:hover:text-blue-300':
                         !audioPlaying &&
                         (autoPlay || selectedOptionId !== null),
                 }}
                 onclick={playAudio}
                 title={t('ui.quiz.audio_prompt.play_hint')}
             >
-                <Volume2 class="h-8 w-8" />
+                <Volume2 class="size-7 sm:size-8" />
             </button>
 
-            <span class="text-muted-foreground text-xs font-medium">
-                {audioPlaying
-                    ? t('ui.quiz.audio_prompt.playing')
-                    : t('ui.quiz.audio_prompt.play_hint')}
-            </span>
+            <!-- Play Status / Hint Text: Centered directly below the button in its own row -->
+            <div class="flex h-5 items-center justify-center">
+                <span
+                    class="text-muted-foreground text-center text-sm font-medium"
+                >
+                    {audioPlaying
+                        ? t('ui.quiz.audio_prompt.playing')
+                        : t('ui.quiz.audio_prompt.play_hint')}
+                </span>
+            </div>
 
+            <!-- Answer Reveal: Space is reserved with h-6 to prevent layout jumping -->
             <div
                 class={{
-                    'flex min-h-6.5 items-baseline gap-2 transition-opacity duration-150': true,
+                    'flex h-6 items-baseline gap-2.5 transition-opacity duration-150': true,
                     'visible opacity-100': selectedOptionId !== null,
                     'invisible opacity-0 select-none':
                         selectedOptionId === null,
                 }}
                 aria-hidden={selectedOptionId === null}
             >
-                <span class="text-foreground text-lg font-bold">
+                <span class="text-foreground text-base font-bold sm:text-lg">
                     {vocabulary.word}
                 </span>
                 <span class="text-muted-foreground font-mono text-sm">

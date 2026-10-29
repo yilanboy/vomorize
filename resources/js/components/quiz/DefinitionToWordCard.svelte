@@ -23,24 +23,28 @@
 </script>
 
 <div
-    class="border-border/80 bg-card mx-auto flex min-h-135 w-full max-w-xl flex-col justify-between rounded-2xl border p-6 shadow-sm sm:h-145 sm:min-h-145 sm:p-8"
+    class="border-border/80 bg-card mx-auto flex h-[560px] w-full max-w-xl flex-col justify-between rounded-2xl border p-6 shadow-2xs sm:h-[580px] sm:p-8"
 >
-    <!-- Card Header / Stem -->
-    <div class="flex h-40 flex-col justify-between sm:h-42.5">
+    <!-- Card Header / Stem: Fixed height across all quiz cards -->
+    <div class="flex h-[170px] shrink-0 flex-col justify-between sm:h-[180px]">
+        <!-- Top Badges -->
         <div class="flex items-center justify-between">
             <span
-                class="bg-primary/10 text-primary border-primary/20 inline-flex items-center rounded-full border px-3 py-1 font-mono text-sm font-semibold"
+                class="inline-flex items-center gap-1.5 rounded-full border border-blue-200/80 bg-blue-50/80 px-3 py-0.5 text-sm font-semibold tracking-wide text-blue-700 dark:border-blue-800/60 dark:bg-blue-950/50 dark:text-blue-300"
             >
-                {t('ui.quiz.question_types.definition_to_word')}
+                <span class="size-2 animate-pulse rounded-full bg-blue-600"
+                ></span>
+                <span>{t('ui.quiz.question_types.definition_to_word')}</span>
             </span>
 
             <span
-                class="bg-secondary text-secondary-foreground inline-flex items-center rounded-md px-2.5 py-0.5 text-sm font-medium"
+                class="bg-muted text-foreground/80 rounded-md px-2.5 py-0.5 text-sm font-semibold"
             >
                 {vocabulary.part_of_speech}
             </span>
         </div>
 
+        <!-- Definition Stem & Reveal Area -->
         <div class="flex flex-1 flex-col justify-center gap-2 py-1">
             <h2
                 class="text-foreground line-clamp-2 text-2xl font-bold tracking-tight sm:text-3xl"
@@ -48,18 +52,20 @@
                 {question.stem}
             </h2>
 
+            <!-- Answer Reveal: Space is reserved with h-11 to prevent any layout shifting -->
             <div
                 class={{
-                    'flex min-h-11.5 items-center rounded-xl border p-2.5 transition-opacity duration-150': true,
-                    'border-border/60 bg-muted/50 visible opacity-100':
-                        selectedOptionId !== null,
+                    'border-border/60 bg-muted/40 flex h-11 items-center rounded-xl border px-3.5 transition-opacity duration-150': true,
+                    'visible opacity-100': selectedOptionId !== null,
                     'invisible border-transparent bg-transparent opacity-0 select-none':
                         selectedOptionId === null,
                 }}
                 aria-hidden={selectedOptionId === null}
             >
-                <div class="flex items-baseline gap-2">
-                    <span class="text-foreground text-lg font-bold">
+                <div class="flex items-baseline gap-2.5">
+                    <span
+                        class="text-foreground text-base font-bold sm:text-lg"
+                    >
                         {vocabulary.word}
                     </span>
                     <span class="text-muted-foreground font-mono text-sm">
