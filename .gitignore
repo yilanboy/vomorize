@@ -46,3 +46,7 @@ spec.md
 /.impeccable/scratch/
 .env.before_lerd
 /skills/
+
+**/caddy
+frankenphp
+frankenphp-worker.php
