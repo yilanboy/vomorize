@@ -12,6 +12,7 @@
         show as showGroup,
     } from '@/actions/App/Http/Controllers/GroupController';
     import AppHead from '@/components/AppHead.svelte';
+    import Breadcrumbs from '@/components/Breadcrumbs.svelte';
     import { t } from '@/lib/i18n';
     import {
         computeLevelProgressData,
@@ -94,7 +95,7 @@
             href: '/levels',
         },
         {
-            title: t('ui.level_detail.breadcrumb_level', { id: level.id }),
+            title: t('ui.level_detail.title', { name: level.name }),
             href: `/levels/${level.id}`,
         },
     ];
@@ -118,13 +119,14 @@
     }
 </script>
 
-<AppHead
-    title={t('ui.level_detail.title', { id: level.id, name: level.name })}
-/>
+<AppHead title={t('ui.level_detail.title', { name: level.name })} />
 
 <main
-    class="mx-auto max-w-7xl space-y-6 px-4 py-8 selection:bg-blue-600 selection:text-white sm:space-y-8 sm:px-6 sm:py-10 lg:px-8"
+    class="mx-auto max-w-7xl space-y-6 px-4 py-6 selection:bg-blue-600 selection:text-white sm:space-y-8 sm:px-6 sm:py-8 lg:px-8"
 >
+    <!-- Breadcrumb -->
+    <Breadcrumbs {breadcrumbs} />
+
     <!-- Level Overview Header Card -->
     <section
         class="border-border/80 bg-card rounded-2xl border p-6 shadow-xs sm:p-8"
@@ -136,10 +138,7 @@
                 <h1
                     class="text-foreground text-2xl font-extrabold tracking-tight sm:text-3xl"
                 >
-                    {t('ui.level_detail.title', {
-                        id: level.id,
-                        name: level.name,
-                    })}
+                    {t('ui.level_detail.title', { name: level.name })}
                 </h1>
                 <p
                     class="text-muted-foreground mt-2 text-sm leading-relaxed sm:text-base"

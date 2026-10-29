@@ -15,7 +15,15 @@ class LevelFactory extends Factory
     public function definition(): array
     {
         return [
-            'name' => '等級 '.$this->faker->numberBetween(1, 7),
+            'name' => $this->faker->randomElement([
+                '基礎入門',
+                '初級進階',
+                '中級應用',
+                '中高級加強',
+                '高級深造',
+                '大師精通',
+                '額外補充',
+            ]),
             'description' => $this->faker->sentence(),
         ];
     }

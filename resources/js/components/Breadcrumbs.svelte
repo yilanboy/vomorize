@@ -12,12 +12,14 @@
 
     let {
         breadcrumbs = [],
+        class: className = '',
     }: {
         breadcrumbs: BreadcrumbItemType[];
+        class?: string;
     } = $props();
 </script>
 
-<Breadcrumb>
+<Breadcrumb class={className}>
     <BreadcrumbList>
         {#each breadcrumbs as item, index (item.href)}
             <BreadcrumbItem>

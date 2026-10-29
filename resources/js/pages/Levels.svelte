@@ -5,6 +5,7 @@
     import BookOpen from '@lucide/svelte/icons/book-open';
     import CheckCircle2 from '@lucide/svelte/icons/check-circle-2';
     import AppHead from '@/components/AppHead.svelte';
+    import Breadcrumbs from '@/components/Breadcrumbs.svelte';
     import { t } from '@/lib/i18n';
     import {
         computeLevelsProgressMap,
@@ -73,6 +74,10 @@
 
     const breadcrumbs: BreadcrumbItem[] = [
         {
+            title: t('ui.levels_page.breadcrumb_home'),
+            href: '/',
+        },
+        {
             title: t('ui.levels_page.breadcrumb'),
             href: '/levels',
         },
@@ -86,8 +91,11 @@
 <AppHead title={t('ui.levels_page.title')} />
 
 <main
-    class="mx-auto max-w-7xl space-y-8 px-4 py-8 selection:bg-blue-600 selection:text-white sm:px-6 sm:py-10 lg:px-8"
+    class="mx-auto max-w-7xl space-y-6 px-4 py-6 selection:bg-blue-600 selection:text-white sm:space-y-8 sm:px-6 sm:py-8 lg:px-8"
 >
+    <!-- Breadcrumb -->
+    <Breadcrumbs {breadcrumbs} />
+
     <!-- Level Header & Overall Progress Card -->
     <section
         class="border-border/80 bg-card rounded-2xl border p-6 shadow-xs sm:p-8"
@@ -146,16 +154,16 @@
                 class="group border-border/80 bg-card relative flex flex-col justify-between rounded-2xl border p-6 shadow-2xs transition-all duration-300 outline-none hover:-translate-y-1 hover:border-blue-400 hover:shadow-md focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 dark:hover:border-blue-600"
             >
                 <div>
-                    <!-- Header: Level Badge & Mastery Status -->
-                    <div class="flex items-center justify-between gap-3">
-                        <span
-                            class="inline-flex items-center rounded-md border border-blue-200 bg-blue-50 px-2.5 py-1 text-sm font-extrabold text-blue-700 dark:border-blue-900/60 dark:bg-blue-950/40 dark:text-blue-300"
+                    <!-- Header: Title & Mastery Status -->
+                    <div class="flex items-start justify-between gap-3">
+                        <h2
+                            class="text-foreground text-lg font-bold transition-colors group-hover:text-blue-600 dark:group-hover:text-blue-400"
                         >
-                            {t('ui.levels_page.level_badge', { id: level.id })}
-                        </span>
+                            {parsed.title}
+                        </h2>
 
                         <span
-                            class="inline-flex items-center gap-1.5 text-sm font-semibold text-emerald-600 dark:text-emerald-400"
+                            class="inline-flex shrink-0 items-center gap-1.5 text-sm font-semibold text-emerald-600 dark:text-emerald-400"
                         >
                             <CheckCircle2 class="size-4" />
                             <span>
@@ -165,13 +173,6 @@
                             </span>
                         </span>
                     </div>
-
-                    <!-- Level Name -->
-                    <h2
-                        class="text-foreground mt-4 text-lg font-bold transition-colors group-hover:text-blue-600 dark:group-hover:text-blue-400"
-                    >
-                        {parsed.title}
-                    </h2>
 
                     <!-- Level Description -->
                     <p

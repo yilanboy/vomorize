@@ -14,6 +14,7 @@
         show as showGroup,
     } from '@/actions/App/Http/Controllers/GroupController';
     import AppHead from '@/components/AppHead.svelte';
+    import Breadcrumbs from '@/components/Breadcrumbs.svelte';
     import { audioPlayer } from '@/lib/audioPlayer.svelte';
     import { t } from '@/lib/i18n';
     import {
@@ -78,9 +79,7 @@
             href: '/levels',
         },
         {
-            title: t('ui.group_detail.breadcrumb_level', {
-                id: group.level_id,
-            }),
+            title: group.level_name,
             href: `/levels/${group.level_id}`,
         },
         {
@@ -231,6 +230,11 @@
 />
 
 <div class="mx-auto max-w-4xl px-4 pt-6 pb-32 sm:px-6 sm:pt-8 sm:pb-36">
+    <!-- Breadcrumb -->
+    <div class="mb-4 sm:mb-6">
+        <Breadcrumbs {breadcrumbs} />
+    </div>
+
     <!-- Header: Title, Status Badge & Prev/Next Group Navigation -->
     <header
         class="border-border/60 mb-6 flex flex-wrap items-center justify-between gap-4 border-b pb-5"
