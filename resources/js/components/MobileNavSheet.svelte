@@ -1,6 +1,7 @@
 <script lang="ts">
     import { Link, page } from '@inertiajs/svelte';
     import BookOpen from '@lucide/svelte/icons/book-open';
+    import House from '@lucide/svelte/icons/house';
     import LayoutGrid from '@lucide/svelte/icons/layout-grid';
     import AppLogoIcon from '@/components/AppLogoIcon.svelte';
     import {
@@ -12,7 +13,7 @@
     import { currentUrlState } from '@/lib/currentUrl.svelte';
     import { t } from '@/lib/i18n';
     import { toUrl } from '@/lib/utils';
-    import { dashboard } from '@/routes';
+    import { dashboard, home } from '@/routes';
 
     let { open = $bindable(false) }: { open?: boolean } = $props();
 
@@ -33,7 +34,7 @@
             <SheetTitle class="sr-only">{t('ui.nav.menu_title')}</SheetTitle>
             <SheetHeader class="flex flex-row items-center gap-2 text-left">
                 <Link
-                    href="/levels"
+                    href={toUrl(home())}
                     class="text-foreground flex items-center gap-2 font-bold"
                     onclick={close}
                 >
@@ -50,6 +51,23 @@
 
             <div class="pt-6">
                 <nav class="space-y-1">
+                    <Link
+                        href={toUrl(home())}
+                        class={{
+                            'hover:bg-accent hover:text-accent-foreground flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors': true,
+                            'bg-accent text-foreground font-semibold':
+                                url.isCurrentUrl(home(), url.currentUrl),
+                            'text-muted-foreground': !url.isCurrentUrl(
+                                home(),
+                                url.currentUrl,
+                            ),
+                        }}
+                        onclick={close}
+                    >
+                        <House class="size-4.5" />
+                        <span>{t('ui.nav.home')}</span>
+                    </Link>
+
                     {#if auth.user}
                         <Link
                             href={toUrl(dashboard())}
