@@ -16,6 +16,7 @@ return [
         'seconds' => ':count 秒',
     ],
     'nav' => [
+        'home' => '首頁',
         'dashboard' => '學習總覽',
         'levels' => '單字等級',
         'quiz' => '題庫測驗',

@@ -22,3 +22,24 @@ test('level detail page loads without javascript errors', function () {
         ->assertSee('基礎入門')
         ->assertNoSmoke();
 });
+
+test('header contains home and levels navigation links for guest and logo links to home', function () {
+    visit('/levels')
+        ->assertSee('首頁')
+        ->assertSee('單字等級')
+        ->assertNoSmoke();
+});
+
+test('clicking header logo navigates to home page', function () {
+    visit('/levels')
+        ->click('header span:text-is("Vomorize")')
+        ->assertPathIs('/')
+        ->assertNoSmoke();
+});
+
+test('clicking header home navigation link navigates to home page', function () {
+    visit('/levels')
+        ->click('首頁')
+        ->assertPathIs('/')
+        ->assertNoSmoke();
+});

@@ -20,7 +20,7 @@
     import { t } from '@/lib/i18n';
     import { getInitials } from '@/lib/initials';
     import { cn, toUrl } from '@/lib/utils';
-    import { dashboard, login } from '@/routes';
+    import { dashboard, home, login } from '@/routes';
     import type { BreadcrumbItem } from '@/types';
 
     let {
@@ -60,7 +60,7 @@
 
             <!-- Brand Logo -->
             <Link
-                href="/levels"
+                href={toUrl(home())}
                 class="text-foreground flex items-center gap-2.5 font-bold transition-opacity hover:opacity-90"
             >
                 <div
@@ -74,6 +74,21 @@
 
         <!-- Center: Desktop Navigation Links (lg:) -->
         <nav class="hidden items-center gap-1.5 lg:flex">
+            <Link
+                href={toUrl(home())}
+                class={{
+                    'inline-flex items-center rounded-lg px-3.5 py-2 text-sm font-medium transition-colors': true,
+                    'bg-accent text-foreground font-semibold': url.isCurrentUrl(
+                        home(),
+                        url.currentUrl,
+                    ),
+                    'text-muted-foreground hover:bg-accent/60 hover:text-foreground':
+                        !url.isCurrentUrl(home(), url.currentUrl),
+                }}
+            >
+                {t('ui.nav.home')}
+            </Link>
+
             {#if auth.user}
                 <Link
                     href={toUrl(dashboard())}
