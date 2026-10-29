@@ -41,15 +41,13 @@
                 class="bg-card text-card-foreground border-border flex flex-col justify-between rounded-xl border p-5 shadow-2xs transition-all hover:border-blue-400 hover:shadow-xs dark:hover:border-blue-500"
             >
                 <div>
-                    <div class="mb-2 flex items-center justify-between">
-                        <span
-                            class="rounded bg-blue-50 px-2.5 py-1 text-sm font-bold text-blue-700 dark:bg-blue-950 dark:text-blue-300"
-                        >
+                    <div class="mb-2 flex items-start justify-between gap-2">
+                        <h3 class="text-foreground text-base font-bold">
                             {level.name}
-                        </span>
+                        </h3>
                         <span
                             class={{
-                                'text-sm font-bold': true,
+                                'shrink-0 text-sm font-bold': true,
                                 'text-emerald-600 dark:text-emerald-400':
                                     level.mastery_percentage > 0,
                                 'text-muted-foreground':
@@ -61,10 +59,6 @@
                             })}
                         </span>
                     </div>
-
-                    <h3 class="text-foreground mb-1 text-base font-bold">
-                        {level.subtitle}
-                    </h3>
 
                     <p class="text-muted-foreground mb-3 text-sm">
                         {t('ui.dashboard.levels.level_stats', {
@@ -101,14 +95,12 @@
             class="text-card-foreground flex flex-col justify-between rounded-xl border border-blue-200 bg-blue-50/70 p-5 shadow-2xs dark:border-blue-900/60 dark:bg-blue-950/30"
         >
             <div>
-                <div class="mb-2 flex items-center justify-between">
-                    <span
-                        class="rounded bg-blue-100 px-2.5 py-1 text-sm font-bold text-blue-800 dark:bg-blue-900 dark:text-blue-200"
-                    >
+                <div class="mb-2 flex items-start justify-between gap-2">
+                    <h3 class="text-foreground text-base font-bold">
                         {t('ui.dashboard.levels.overall_title')}
-                    </span>
+                    </h3>
                     <span
-                        class="text-sm font-bold text-blue-700 dark:text-blue-400"
+                        class="shrink-0 text-sm font-bold text-blue-700 dark:text-blue-400"
                     >
                         {t('ui.dashboard.levels.overall_rate', {
                             rate: levelProgress.overall.mastery_percentage,
@@ -116,11 +108,11 @@
                     </span>
                 </div>
 
-                <h3 class="text-foreground mb-1 text-base font-bold">
+                <p class="text-foreground mb-1 text-sm font-medium">
                     {t('ui.dashboard.levels.overall_mastered', {
                         count: levelProgress.overall.mastered_groups_count,
                     })}
-                </h3>
+                </p>
 
                 <p class="text-muted-foreground mb-3 text-sm">
                     {t('ui.dashboard.levels.overall_stats', {
