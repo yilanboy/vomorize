@@ -29,7 +29,7 @@
                 <div class="grid gap-1.5">
                     <Label
                         for="password"
-                        class="text-foreground text-xs font-semibold"
+                        class="text-foreground text-sm font-semibold"
                     >
                         {t('ui.auth.confirm_password.password')}
                     </Label>
@@ -41,14 +41,14 @@
                         placeholder={t(
                             'ui.auth.confirm_password.password_placeholder',
                         )}
-                        class="h-11 rounded-xl"
+                        class="h-12 rounded-xl text-sm"
                     />
                     <InputError message={errors.password} />
                 </div>
 
                 <Button
                     type="submit"
-                    class="mt-1 h-11 w-full rounded-xl font-semibold shadow-xs"
+                    class="mt-1 h-12 w-full rounded-xl font-semibold shadow-xs"
                     disabled={processing}
                     data-test="confirm-password-button"
                 >
@@ -68,6 +68,6 @@
         loadingLabel={t('ui.auth.confirm_password.passkey_loading')}
         separator={t('ui.auth.confirm_password.or_passkey')}
         separatorPosition="before"
-        class="border-border/70 hover:bg-accent/60 h-11 rounded-xl font-medium transition-colors"
+        class="border-border/70 hover:bg-accent/60 h-12 rounded-xl font-medium transition-colors"
     />
 </div>

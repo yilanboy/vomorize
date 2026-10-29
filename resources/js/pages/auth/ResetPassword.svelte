@@ -41,7 +41,7 @@
             <div class="grid gap-1.5">
                 <Label
                     for="email"
-                    class="text-foreground text-xs font-semibold"
+                    class="text-foreground text-sm font-semibold"
                 >
                     {t('ui.auth.reset_password.email')}
                 </Label>
@@ -52,7 +52,7 @@
                     autocomplete="email"
                     value={email}
                     readonly
-                    class="bg-muted/50 text-muted-foreground h-11 cursor-not-allowed rounded-xl"
+                    class="bg-muted/50 text-muted-foreground h-12 cursor-not-allowed rounded-xl text-sm"
                 />
                 <InputError message={errors.email} />
             </div>
@@ -60,7 +60,7 @@
             <div class="grid gap-1.5">
                 <Label
                     for="password"
-                    class="text-foreground text-xs font-semibold"
+                    class="text-foreground text-sm font-semibold"
                 >
                     {t('ui.auth.reset_password.password')}
                 </Label>
@@ -73,7 +73,7 @@
                         'ui.auth.reset_password.password_placeholder',
                     )}
                     passwordrules={passwordRules}
-                    class="h-11 rounded-xl"
+                    class="h-12 rounded-xl text-sm"
                 />
                 <InputError message={errors.password} />
             </div>
@@ -81,7 +81,7 @@
             <div class="grid gap-1.5">
                 <Label
                     for="password_confirmation"
-                    class="text-foreground text-xs font-semibold"
+                    class="text-foreground text-sm font-semibold"
                 >
                     {t('ui.auth.reset_password.password_confirmation')}
                 </Label>
@@ -94,14 +94,14 @@
                         'ui.auth.reset_password.password_confirmation_placeholder',
                     )}
                     passwordrules={passwordRules}
-                    class="h-11 rounded-xl"
+                    class="h-12 rounded-xl text-sm"
                 />
                 <InputError message={errors.password_confirmation} />
             </div>
 
             <Button
                 type="submit"
-                class="mt-1 h-11 w-full rounded-xl font-semibold shadow-xs"
+                class="mt-1 h-12 w-full rounded-xl font-semibold shadow-xs"
                 disabled={processing}
                 data-test="reset-password-button"
             >

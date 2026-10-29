@@ -2,6 +2,7 @@
     import { Link } from '@inertiajs/svelte';
     import ArrowLeft from '@lucide/svelte/icons/arrow-left';
     import type { Snippet } from 'svelte';
+    import SiteLanguageSwitcher from '@/components/SiteLanguageSwitcher.svelte';
     import ThemeToggle from '@/components/ThemeToggle.svelte';
     import {
         Card,
@@ -33,10 +34,10 @@
         class="pointer-events-none fixed inset-0 -z-10 overflow-hidden"
     >
         <div
-            class="bg-primary/10 dark:bg-primary/5 absolute -top-[20%] left-[20%] h-[520px] w-[520px] rounded-full blur-[130px]"
+            class="bg-primary/10 dark:bg-primary/5 absolute -top-[25%] left-1/2 h-[550px] w-[900px] -translate-x-1/2 rounded-full blur-[140px]"
         ></div>
         <div
-            class="absolute right-[15%] -bottom-[20%] h-[520px] w-[520px] rounded-full bg-emerald-500/10 blur-[140px] dark:bg-emerald-500/5"
+            class="absolute right-[15%] -bottom-[15%] h-[450px] w-[450px] rounded-full bg-emerald-500/10 blur-[130px] dark:bg-emerald-500/5"
         ></div>
     </div>
 
@@ -46,27 +47,32 @@
     >
         <Link
             href={home()}
-            class="text-muted-foreground hover:text-foreground hover:bg-accent/70 inline-flex items-center gap-2 rounded-full px-3.5 py-1.5 text-sm font-medium transition-colors"
+            class="group text-muted-foreground hover:text-foreground inline-flex items-center gap-2 rounded-lg px-3 py-1.5 text-sm font-medium transition-colors hover:bg-zinc-200/50 dark:hover:bg-zinc-800"
         >
-            <ArrowLeft class="size-4" />
+            <ArrowLeft
+                class="size-4 transition-transform duration-150 group-hover:-translate-x-0.5"
+            />
             <span>{t('ui.auth.back_to_home')}</span>
         </Link>
         <div class="flex items-center gap-2">
+            <SiteLanguageSwitcher />
             <ThemeToggle />
         </div>
     </header>
 
     <!-- Center Floating Card -->
-    <main class="flex flex-1 items-center justify-center px-4 py-8">
-        <div class="w-full max-w-[440px] transition-all">
+    <main
+        class="relative z-10 flex flex-1 items-center justify-center px-4 py-8"
+    >
+        <div class="w-full max-w-[460px] transition-all">
             <Card
-                class="border-border/70 bg-card/95 shadow-surface-dim/40 rounded-2xl p-7 shadow-xl backdrop-blur-xs sm:p-9 dark:shadow-none"
+                class="border-border/80 bg-card/95 shadow-surface-dim/40 dark:border-border/70 dark:bg-card/90 rounded-2xl p-7 shadow-xl backdrop-blur-xs sm:p-9 dark:shadow-none"
             >
                 {#if title || description}
-                    <CardHeader class="space-y-1.5 p-0 pb-6 text-center">
+                    <CardHeader class="space-y-2 p-0 pb-7 text-center">
                         {#if title}
                             <CardTitle
-                                class="text-foreground text-2xl font-bold tracking-tight"
+                                class="text-foreground text-2xl font-bold tracking-tight sm:text-3xl"
                             >
                                 {title}
                             </CardTitle>
@@ -88,13 +94,15 @@
     </main>
 
     <!-- Page Footer -->
-    <footer class="text-muted-foreground w-full py-5 text-center text-xs">
+    <footer
+        class="text-muted-foreground/80 relative z-10 w-full py-6 text-center text-sm"
+    >
         <span
             >{t('ui.footer.copyright', {
                 year: new Date().getFullYear(),
             })}</span
         >
-        <span class="mx-1.5">·</span>
+        <span class="mx-2">·</span>
         <span>{t('ui.auth.tagline')}</span>
     </footer>
 </div>

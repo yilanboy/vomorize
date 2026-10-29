@@ -1,5 +1,6 @@
 <script lang="ts">
     import { Form, setLayoutProps } from '@inertiajs/svelte';
+    import ArrowRight from '@lucide/svelte/icons/arrow-right';
     import AppHead from '@/components/AppHead.svelte';
     import InputError from '@/components/InputError.svelte';
     import PasskeyVerify from '@/components/PasskeyVerify.svelte';
@@ -31,118 +32,112 @@
 
 <AppHead title={t('ui.auth.login.title')} />
 
-<div class="space-y-5">
+<div class="space-y-6">
     {#if status}
         <div
-            class="rounded-xl border border-emerald-500/20 bg-emerald-50/50 p-3 text-center text-sm font-medium text-emerald-700 dark:bg-emerald-950/30 dark:text-emerald-400"
+            class="rounded-xl border border-emerald-500/20 bg-emerald-50/80 p-3.5 text-center text-sm font-medium text-emerald-800 dark:border-emerald-500/30 dark:bg-emerald-950/40 dark:text-emerald-300"
         >
             {status}
         </div>
     {/if}
 
+    <!-- Passkey Quick Login (prominently placed at top when supported) -->
+    <PasskeyVerify
+        label={t('ui.auth.login.passkey_button')}
+        loadingLabel={t('ui.auth.login.passkey_loading')}
+        showSeparator={true}
+        separatorPosition="after"
+        separator={t('ui.auth.or_email')}
+        class="border-border/80 hover:bg-accent/60 h-12 rounded-xl text-sm font-medium transition-all active:scale-[0.99]"
+    />
+
+    <!-- Credentials Form -->
     <Form
         {...store.form()}
         resetOnSuccess={['password']}
-        class="flex flex-col gap-5"
+        class="flex flex-col gap-4"
     >
         {#snippet children({ errors, processing })}
-            <div class="grid gap-4">
-                <div class="grid gap-1.5">
-                    <Label
-                        for="email"
-                        class="text-foreground text-xs font-semibold"
-                    >
-                        {t('ui.auth.login.email')}
-                    </Label>
-                    <Input
-                        id="email"
-                        type="email"
-                        name="email"
-                        required
-                        autocomplete="email"
-                        placeholder={t('ui.auth.login.email_placeholder')}
-                        class="h-11 rounded-xl"
-                    />
-                    <InputError message={errors.email} />
-                </div>
-
-                <div class="grid gap-1.5">
-                    <div class="flex items-center justify-between">
-                        <Label
-                            for="password"
-                            class="text-foreground text-xs font-semibold"
-                        >
-                            {t('ui.auth.login.password')}
-                        </Label>
-                        {#if canResetPassword}
-                            <TextLink
-                                href={request()}
-                                class="text-primary text-xs font-medium hover:underline"
-                            >
-                                {t('ui.auth.login.forgot_password')}
-                            </TextLink>
-                        {/if}
-                    </div>
-                    <PasswordInput
-                        id="password"
-                        name="password"
-                        required
-                        autocomplete="current-password"
-                        placeholder={t('ui.auth.login.password_placeholder')}
-                        class="h-11 rounded-xl"
-                    />
-                    <InputError message={errors.password} />
-                </div>
-
-                <div class="flex items-center space-x-2 pt-0.5">
-                    <Checkbox id="remember" name="remember" />
-                    <Label
-                        for="remember"
-                        class="text-muted-foreground cursor-pointer text-sm font-normal select-none"
-                    >
-                        {t('ui.auth.login.remember_me')}
-                    </Label>
-                </div>
-
-                <Button
-                    type="submit"
-                    class="mt-1 h-11 w-full rounded-xl font-semibold shadow-xs"
-                    disabled={processing}
-                    data-test="login-button"
+            <div class="grid gap-1.5">
+                <Label
+                    for="email"
+                    class="text-foreground text-sm font-semibold"
                 >
-                    {#if processing}<Spinner class="mr-2" />{/if}
-                    {t('ui.auth.login.submit')}
-                </Button>
+                    {t('ui.auth.login.email')}
+                </Label>
+                <Input
+                    id="email"
+                    type="email"
+                    name="email"
+                    required
+                    autocomplete="email"
+                    placeholder={t('ui.auth.login.email_placeholder')}
+                    class="h-12 rounded-xl text-sm"
+                />
+                <InputError message={errors.email} />
             </div>
+
+            <div class="grid gap-1.5">
+                <div class="flex items-center justify-between">
+                    <Label
+                        for="password"
+                        class="text-foreground text-sm font-semibold"
+                    >
+                        {t('ui.auth.login.password')}
+                    </Label>
+                    {#if canResetPassword}
+                        <TextLink
+                            href={request()}
+                            class="text-primary text-sm font-medium transition-colors hover:underline"
+                        >
+                            {t('ui.auth.login.forgot_password')}
+                        </TextLink>
+                    {/if}
+                </div>
+                <PasswordInput
+                    id="password"
+                    name="password"
+                    required
+                    autocomplete="current-password"
+                    placeholder={t('ui.auth.login.password_placeholder')}
+                    class="h-12 rounded-xl text-sm"
+                />
+                <InputError message={errors.password} />
+            </div>
+
+            <div class="flex items-center space-x-2 pt-0.5">
+                <Checkbox id="remember" name="remember" />
+                <Label
+                    for="remember"
+                    class="text-muted-foreground hover:text-foreground cursor-pointer text-sm font-normal select-none"
+                >
+                    {t('ui.auth.login.remember_me')}
+                </Label>
+            </div>
+
+            <Button
+                type="submit"
+                class="bg-primary text-primary-foreground hover:bg-primary/90 mt-1 flex h-12 w-full items-center justify-center gap-2 rounded-xl text-sm font-semibold shadow-xs transition-all active:scale-[0.99]"
+                disabled={processing}
+                data-test="login-button"
+            >
+                {#if processing}
+                    <Spinner class="size-4" />
+                {/if}
+                <span>{t('ui.auth.login.submit')}</span>
+                <ArrowRight class="size-4" />
+            </Button>
         {/snippet}
     </Form>
 
-    <!-- Divider: 或使用其他方式繼續 -->
-    <div class="relative my-6 flex items-center justify-center">
-        <div class="border-border/60 w-full border-t"></div>
-        <span
-            class="bg-card text-muted-foreground absolute px-3 text-xs font-medium"
+    <!-- Card Footer: 還沒有帳號？立即免費註冊 -->
+    <div class="border-border/60 mt-6 border-t pt-5 text-center text-sm">
+        <span class="text-muted-foreground"
+            >{t('ui.auth.login.no_account')}</span
         >
-            {t('ui.auth.login.or_alternative')}
-        </span>
-    </div>
-
-    <!-- Alternative login actions (Passkey) -->
-    <div class="grid gap-2.5">
-        <PasskeyVerify
-            label={t('ui.auth.login.passkey_button')}
-            loadingLabel={t('ui.auth.login.passkey_loading')}
-            showSeparator={false}
-            class="border-border/70 hover:bg-accent/60 h-11 rounded-xl font-medium transition-colors"
-        />
-    </div>
-
-    <!-- Footer: 還沒有帳號？立即免費註冊 -->
-    <div class="text-muted-foreground pt-3 text-center text-sm">
-        <span>{t('ui.auth.login.no_account')}</span>
         <TextLink
             href={register()}
-            class="text-primary ml-1 font-semibold hover:underline"
+            class="text-primary ml-1.5 font-semibold transition-colors hover:underline"
         >
             {t('ui.auth.login.sign_up')}
         </TextLink>

@@ -162,6 +162,8 @@ return [
         'back_to_home' => '返回首頁',
         'or' => '或',
         'or_email' => '或使用電子郵件密碼繼續',
+        'show_password' => '顯示密碼',
+        'hide_password' => '隱藏密碼',
         'tagline' => '科學間隔重複 · 7,000 常用核心單字',
         'login' => [
             'title' => '歡迎回來',

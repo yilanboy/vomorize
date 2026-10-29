@@ -8,6 +8,7 @@
     import { Button } from '@/components/ui/button';
     import { Separator } from '@/components/ui/separator';
     import { Spinner } from '@/components/ui/spinner';
+    import { t } from '@/lib/i18n';
     import { cn } from '@/lib/utils';
 
     type Props = {
@@ -50,9 +51,9 @@
             </div>
             <div class="relative flex justify-center text-sm font-medium">
                 <span
-                    class="bg-card text-muted-foreground px-3 text-xs font-medium"
+                    class="bg-card text-muted-foreground px-3 text-sm font-medium"
                 >
-                    {props.separator ?? 'Or continue with passkey'}
+                    {props.separator ?? t('ui.auth.login.or_alternative')}
                 </span>
             </div>
         </div>
@@ -73,8 +74,8 @@
             {/if}
             <span>
                 {passkeyVerify.isLoading
-                    ? (props.loadingLabel ?? 'Authenticating...')
-                    : (props.label ?? 'Sign in with a passkey')}
+                    ? (props.loadingLabel ?? t('ui.auth.login.passkey_loading'))
+                    : (props.label ?? t('ui.auth.login.passkey_button'))}
             </span>
         </Button>
 
@@ -90,13 +91,11 @@
             <div class="absolute inset-0 flex items-center">
                 <Separator class="w-full" />
             </div>
-            <div
-                class="relative flex justify-center text-sm font-medium uppercase"
-            >
+            <div class="relative flex justify-center text-sm font-medium">
                 <span
-                    class="bg-card text-muted-foreground px-3 text-xs font-medium lowercase first-letter:uppercase"
+                    class="bg-card text-muted-foreground px-3 text-sm font-medium"
                 >
-                    {props.separator ?? 'Or continue with email'}
+                    {props.separator ?? t('ui.auth.or_email')}
                 </span>
             </div>
         </div>

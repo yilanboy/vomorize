@@ -43,3 +43,29 @@ test('clicking header home navigation link navigates to home page', function () 
         ->assertPathIs('/')
         ->assertNoSmoke();
 });
+
+test('login page displays redesigned card elements and navigation', function () {
+    visit('/login')
+        ->assertNoSmoke()
+        ->assertSee('歡迎回來')
+        ->assertSee('電子郵件')
+        ->assertSee('密碼')
+        ->assertSee('記住我')
+        ->assertSee('登入')
+        ->assertSee('還沒有帳號？')
+        ->assertSee('立即免費註冊')
+        ->assertSee('返回首頁');
+});
+
+test('register page displays redesigned card elements and navigation', function () {
+    visit('/register')
+        ->assertNoSmoke()
+        ->assertSee('建立新帳號')
+        ->assertSee('電子郵件')
+        ->assertSee('密碼')
+        ->assertSee('確認密碼')
+        ->assertSee('免費註冊帳號')
+        ->assertSee('已經有帳號了？')
+        ->assertSee('直接登入')
+        ->assertSee('返回首頁');
+});
