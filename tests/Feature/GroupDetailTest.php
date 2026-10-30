@@ -54,7 +54,7 @@ test('group detail page includes correctly structured vocabulary data with CDN a
         'word' => 'abandon',
         'part_of_speech' => 'v.',
         'pronunciation' => '/əˈbændən/',
-        'definition' => '放棄；拋棄',
+        'definition' => '放棄',
         'example_sentence' => 'They had to abandon the plan.',
         'example_translation' => '他們不得不放棄這個計劃。',
     ]);
@@ -68,7 +68,7 @@ test('group detail page includes correctly structured vocabulary data with CDN a
         ->where('vocabularies.0.word', 'abandon')
         ->where('vocabularies.0.part_of_speech', 'v.')
         ->where('vocabularies.0.pronunciation', '/əˈbændən/')
-        ->where('vocabularies.0.definition', '放棄；拋棄')
+        ->where('vocabularies.0.definition', '放棄')
         ->where('vocabularies.0.example_sentence', 'They had to abandon the plan.')
         ->where('vocabularies.0.example_translation', '他們不得不放棄這個計劃。')
         ->where('vocabularies.0.word_audio_url', "https://assets.vomorize.com/vocabulary/{$vocab->id}/word.mp3")
