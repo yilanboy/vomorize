@@ -59,40 +59,59 @@
             </span>
         </div>
 
-        <!-- Word, Pronunciation, & Audio Trigger -->
-        <div class="flex flex-1 items-center justify-between gap-4 py-2">
-            <div class="flex flex-col gap-1.5">
-                <div class="flex flex-wrap items-baseline gap-3">
-                    <h2
-                        class="text-foreground text-3xl font-extrabold tracking-tight sm:text-4xl"
+        <!-- Word Stem & Reveal Area -->
+        <div class="flex flex-1 flex-col justify-center gap-2 py-1">
+            <h2
+                class="text-foreground line-clamp-2 text-2xl font-bold tracking-tight sm:text-3xl"
+            >
+                {vocabulary.word}
+            </h2>
+
+            <!-- Answer Reveal: Space is reserved with h-11 to prevent any layout shifting -->
+            <div
+                class={{
+                    'border-border/60 bg-muted/40 flex h-11 items-center justify-between rounded-xl border px-3.5 transition-opacity duration-150': true,
+                    'visible opacity-100': selectedOptionId !== null,
+                    'invisible border-transparent bg-transparent opacity-0 select-none':
+                        selectedOptionId === null,
+                }}
+                aria-hidden={selectedOptionId === null}
+            >
+                <div class="flex items-baseline gap-2.5 overflow-hidden">
+                    <span
+                        class="text-foreground truncate text-base font-bold sm:text-lg"
                     >
-                        {vocabulary.word}
-                    </h2>
-                    <span class="text-muted-foreground font-mono text-base">
+                        {vocabulary.definition}
+                    </span>
+                    <span
+                        class="text-muted-foreground shrink-0 font-mono text-sm"
+                    >
                         {vocabulary.pronunciation}
                     </span>
                 </div>
-            </div>
 
-            <button
-                type="button"
-                class={{
-                    'flex size-11 shrink-0 items-center justify-center rounded-xl border transition-all duration-150 active:scale-95': true,
-                    'border-blue-600 bg-blue-600 text-white shadow-xs ring-4 ring-blue-500/20':
-                        isPlaying,
-                    'border-border/70 bg-muted/40 text-muted-foreground dark:bg-muted/30 hover:border-blue-300 hover:bg-blue-50 hover:text-blue-600 dark:hover:border-blue-800/60 dark:hover:bg-blue-950/60 dark:hover:text-blue-300':
-                        !isPlaying,
-                }}
-                onclick={playAudio}
-                title={t('ui.intro.card.play_word')}
-            >
-                <Volume2
-                    class={{
-                        'size-5': true,
-                        'animate-pulse': isPlaying,
-                    }}
-                />
-            </button>
+                {#if vocabulary.word_audio_url}
+                    <button
+                        type="button"
+                        class={{
+                            'flex size-8 shrink-0 items-center justify-center rounded-lg border transition-all duration-150 active:scale-95': true,
+                            'border-blue-600 bg-blue-600 text-white shadow-xs ring-2 ring-blue-500/20':
+                                isPlaying,
+                            'border-border/70 bg-muted/40 text-muted-foreground dark:bg-muted/30 hover:border-blue-300 hover:bg-blue-50 hover:text-blue-600 dark:hover:border-blue-800/60 dark:hover:bg-blue-950/60 dark:hover:text-blue-300':
+                                !isPlaying,
+                        }}
+                        onclick={playAudio}
+                        title={t('ui.intro.card.play_word')}
+                    >
+                        <Volume2
+                            class={{
+                                'size-4': true,
+                                'animate-pulse': isPlaying,
+                            }}
+                        />
+                    </button>
+                {/if}
+            </div>
         </div>
     </div>
 

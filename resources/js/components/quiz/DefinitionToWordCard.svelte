@@ -1,5 +1,7 @@
 <script lang="ts">
+    import Volume2 from '@lucide/svelte/icons/volume-2';
     import QuizOptions from '@/components/quiz/QuizOptions.svelte';
+    import { audioPlayer } from '@/lib/audioPlayer.svelte';
     import { t } from '@/lib/i18n';
     import type {
         QuizOptionPayload,
@@ -20,6 +22,19 @@
         onSelect: (option: QuizOptionPayload) => void;
         disabled?: boolean;
     } = $props();
+
+    const isPlaying = $derived(
+        audioPlayer.isPlaying(`quiz-word-${vocabulary.id}`),
+    );
+
+    function playAudio(): void {
+        if (vocabulary.word_audio_url) {
+            void audioPlayer.play(
+                vocabulary.word_audio_url,
+                `quiz-word-${vocabulary.id}`,
+            );
+        }
+    }
 </script>
 
 <div
@@ -55,23 +70,47 @@
             <!-- Answer Reveal: Space is reserved with h-11 to prevent any layout shifting -->
             <div
                 class={{
-                    'border-border/60 bg-muted/40 flex h-11 items-center rounded-xl border px-3.5 transition-opacity duration-150': true,
+                    'border-border/60 bg-muted/40 flex h-11 items-center justify-between rounded-xl border px-3.5 transition-opacity duration-150': true,
                     'visible opacity-100': selectedOptionId !== null,
                     'invisible border-transparent bg-transparent opacity-0 select-none':
                         selectedOptionId === null,
                 }}
                 aria-hidden={selectedOptionId === null}
             >
-                <div class="flex items-baseline gap-2.5">
+                <div class="flex items-baseline gap-2.5 overflow-hidden">
                     <span
-                        class="text-foreground text-base font-bold sm:text-lg"
+                        class="text-foreground truncate text-base font-bold sm:text-lg"
                     >
                         {vocabulary.word}
                     </span>
-                    <span class="text-muted-foreground font-mono text-sm">
+                    <span
+                        class="text-muted-foreground shrink-0 font-mono text-sm"
+                    >
                         {vocabulary.pronunciation}
                     </span>
                 </div>
+
+                {#if vocabulary.word_audio_url}
+                    <button
+                        type="button"
+                        class={{
+                            'flex size-8 shrink-0 items-center justify-center rounded-lg border transition-all duration-150 active:scale-95': true,
+                            'border-blue-600 bg-blue-600 text-white shadow-xs ring-2 ring-blue-500/20':
+                                isPlaying,
+                            'border-border/70 bg-muted/40 text-muted-foreground dark:bg-muted/30 hover:border-blue-300 hover:bg-blue-50 hover:text-blue-600 dark:hover:border-blue-800/60 dark:hover:bg-blue-950/60 dark:hover:text-blue-300':
+                                !isPlaying,
+                        }}
+                        onclick={playAudio}
+                        title={t('ui.intro.card.play_word')}
+                    >
+                        <Volume2
+                            class={{
+                                'size-4': true,
+                                'animate-pulse': isPlaying,
+                            }}
+                        />
+                    </button>
+                {/if}
             </div>
         </div>
     </div>
