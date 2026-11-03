@@ -75,7 +75,7 @@
     const currentStep = $derived(session?.steps?.[currentIndex] ?? null);
     const progressPercent = $derived(
         totalSteps > 0
-            ? Math.min(100, Math.round((currentIndex / totalSteps) * 100))
+            ? Math.min(100, Math.round(((currentIndex + 1) / totalSteps) * 100))
             : 0,
     );
     const isPassed = $derived(finalScore >= 80);
@@ -366,7 +366,7 @@
                 >
                     <div
                         class="bg-primary h-full rounded-full transition-all duration-300 ease-out"
-                        style="width: {progressPercent}%"
+                        style:width="{progressPercent}%"
                     ></div>
                 </div>
             </div>
