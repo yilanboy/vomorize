@@ -530,9 +530,9 @@ return [
             'word' => 'alternative',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ɔɫˈtɝnətɪv/',
-            'definition' => '另類的',
-            'example_sentence' => 'The school offers alternative classes for students who prefer creative learning.',
-            'example_translation' => '這所學校為偏好創意學習的學生提供另類課程。',
+            'definition' => '可替代的',
+            'example_sentence' => 'We had to take an alternative route because the main road was closed.',
+            'example_translation' => '因為主要道路封閉，我們不得不改走可替代的路線。',
         ],
         [
             'word' => 'originality',
