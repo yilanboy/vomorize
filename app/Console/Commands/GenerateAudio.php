@@ -3,11 +3,13 @@
 namespace App\Console\Commands;
 
 use App\Actions\ParseIdRange;
+use App\Actions\PurgeCdnCache;
 use App\Models\Vocabulary;
 use Illuminate\Console\Attributes\Description;
 use Illuminate\Console\Attributes\Signature;
 use Illuminate\Console\Command;
 use Laravel\Ai\Audio;
+use Throwable;
 
 #[Signature('generate:audio
     {--id= : Specific vocabulary ID to generate audio for (e.g. --id=1, --id=1,3,5, or --id=1-1000)}
@@ -18,7 +20,7 @@ class GenerateAudio extends Command
     /**
      * Execute the console command.
      */
-    public function handle(ParseIdRange $parseIdRange): int
+    public function handle(ParseIdRange $parseIdRange, PurgeCdnCache $purgeCdnCache): int
     {
         $id = $this->option('id');
 
@@ -43,10 +45,12 @@ class GenerateAudio extends Command
             return Command::FAILURE;
         }
 
+        $processedIds = [];
+
         Vocabulary::query()
             ->whereIn('id', $ids)
             ->lazyById()
-            ->each(function ($vocabulary) {
+            ->each(function ($vocabulary) use (&$processedIds) {
                 $wordPath = "vocabulary/$vocabulary->id/word.mp3";
                 $sentencePath = "vocabulary/$vocabulary->id/sentence.mp3";
 
@@ -73,8 +77,23 @@ class GenerateAudio extends Command
                     10_000,
                 );
 
+                $processedIds[] = $vocabulary->id;
+
                 $this->info('Done!');
             });
+
+        if (! empty($processedIds)) {
+            $this->info('Purging Cloudflare CDN cache...');
+
+            try {
+                $purgeCdnCache->purgeVocabularyAudio($processedIds);
+                $this->info('Cloudflare CDN cache purged successfully.');
+            } catch (Throwable $e) {
+                $this->error('Failed to purge Cloudflare CDN cache: '.$e->getMessage());
+
+                return Command::FAILURE;
+            }
+        }
 
         return Command::SUCCESS;
     }
