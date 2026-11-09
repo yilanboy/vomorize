@@ -3,6 +3,7 @@
 return [
     'group_1' => [
         [
+            'id' => 1001,
             'word' => 'whose',
             'part_of_speech' => 'pron.',
             'pronunciation' => '/ˈhuz/',
@@ -11,6 +12,7 @@ return [
             'example_translation' => '桌上的這本書是誰的？',
         ],
         [
+            'id' => 1002,
             'word' => 'pants',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpænts/',
@@ -19,6 +21,7 @@ return [
             'example_translation' => '我在早餐前穿上褲子。',
         ],
         [
+            'id' => 1003,
             'word' => 'those',
             'part_of_speech' => 'pron.、adj.',
             'pronunciation' => '/ˈðoʊz/',
@@ -27,6 +30,7 @@ return [
             'example_translation' => '那些蘋果看起來又新鮮又甜。',
         ],
         [
+            'id' => 1004,
             'word' => 'eighty',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈeɪti/',
@@ -35,6 +39,7 @@ return [
             'example_translation' => '我祖母八十歲。',
         ],
         [
+            'id' => 1005,
             'word' => 'ground',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɡɹaʊnd/',
@@ -43,6 +48,7 @@ return [
             'example_translation' => '孩子們坐在公園的地面上。',
         ],
         [
+            'id' => 1006,
             'word' => 'kind',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈkaɪnd/',
@@ -51,6 +57,7 @@ return [
             'example_translation' => '我們的新老師對每個人都很親切。',
         ],
         [
+            'id' => 1007,
             'word' => 'center',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsɛnɝ/',
@@ -59,6 +66,7 @@ return [
             'example_translation' => '廣場的中心有一座噴水池。',
         ],
         [
+            'id' => 1008,
             'word' => 'dove',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈdəv/',
@@ -67,6 +75,7 @@ return [
             'example_translation' => '一隻白鴿飛過花園。',
         ],
         [
+            'id' => 1009,
             'word' => 'rock',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɹɑk/',
@@ -75,6 +84,7 @@ return [
             'example_translation' => '我們坐在河邊的一塊大岩石上。',
         ],
         [
+            'id' => 1010,
             'word' => 'market',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈmɑɹkət/',
@@ -85,6 +95,7 @@ return [
     ],
     'group_2' => [
         [
+            'id' => 1011,
             'word' => 'chick',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtʃɪk/',
@@ -93,6 +104,7 @@ return [
             'example_translation' => '那隻小雞跟著媽媽走過院子。',
         ],
         [
+            'id' => 1012,
             'word' => 'over',
             'part_of_speech' => 'prep.、adv.、adj.',
             'pronunciation' => '/ˈoʊvɝ/',
@@ -101,6 +113,7 @@ return [
             'example_translation' => '電影結束了，所以我們現在可以回家了。',
         ],
         [
+            'id' => 1013,
             'word' => 'number',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈnəmbɝ/',
@@ -109,6 +122,7 @@ return [
             'example_translation' => '請在這張表格上寫下你的電話號碼。',
         ],
         [
+            'id' => 1014,
             'word' => 'barber',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈbɑɹbɝ/',
@@ -117,6 +131,7 @@ return [
             'example_translation' => '理髮師很仔細地幫我剪頭髮。',
         ],
         [
+            'id' => 1015,
             'word' => 'past',
             'part_of_speech' => 'adj.、n.',
             'pronunciation' => '/ˈpæst/',
@@ -125,6 +140,7 @@ return [
             'example_translation' => '我們吃晚餐時談到了往昔。',
         ],
         [
+            'id' => 1016,
             'word' => 'prepare',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/pɹiˈpɛɹ/',
@@ -133,6 +149,7 @@ return [
             'example_translation' => '我需要準備晚餐給家人吃。',
         ],
         [
+            'id' => 1017,
             'word' => 'time',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtaɪm/',
@@ -141,6 +158,7 @@ return [
             'example_translation' => '我沒有足夠的時間完成作業。',
         ],
         [
+            'id' => 1018,
             'word' => 'radio',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɹeɪdiˌoʊ/',
@@ -149,6 +167,7 @@ return [
             'example_translation' => '我祖父每天早上都聽收音機。',
         ],
         [
+            'id' => 1019,
             'word' => 'egg',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɛɡ/',
@@ -157,6 +176,7 @@ return [
             'example_translation' => '她早餐吃了一顆水煮蛋。',
         ],
         [
+            'id' => 1020,
             'word' => 'poetry',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpoʊətɹi/',
@@ -167,6 +187,7 @@ return [
     ],
     'group_3' => [
         [
+            'id' => 1021,
             'word' => 'cub',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkəb/',
@@ -175,6 +196,7 @@ return [
             'example_translation' => '那隻獅子幼崽待在母獅身邊。',
         ],
         [
+            'id' => 1022,
             'word' => 'general',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈdʒɛnɝəɫ/',
@@ -183,6 +205,7 @@ return [
             'example_translation' => '這個一般的想法很容易理解。',
         ],
         [
+            'id' => 1023,
             'word' => 'grandchild',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɡɹænˌtʃaɪɫd/',
@@ -191,6 +214,7 @@ return [
             'example_translation' => '她喜歡讀故事給她的孫子女聽。',
         ],
         [
+            'id' => 1024,
             'word' => 'flower',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈfɫaʊɝ/',
@@ -199,6 +223,7 @@ return [
             'example_translation' => '這朵花是鮮黃色的。',
         ],
         [
+            'id' => 1025,
             'word' => 'roll',
             'part_of_speech' => 'vi.',
             'pronunciation' => '/ˈɹoʊɫ/',
@@ -207,6 +232,7 @@ return [
             'example_translation' => '球開始滾下山坡。',
         ],
         [
+            'id' => 1026,
             'word' => 'teacher',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtitʃɝ/',
@@ -215,6 +241,7 @@ return [
             'example_translation' => '我們的老師幫助我們學習新單字。',
         ],
         [
+            'id' => 1027,
             'word' => 'wine',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈwaɪn/',
@@ -223,6 +250,7 @@ return [
             'example_translation' => '他們晚餐時喝了紅酒。',
         ],
         [
+            'id' => 1028,
             'word' => 'wife',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈwaɪf/',
@@ -231,6 +259,7 @@ return [
             'example_translation' => '他的妻子在醫院工作。',
         ],
         [
+            'id' => 1029,
             'word' => 'count',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˈkaʊnt/',
@@ -239,6 +268,7 @@ return [
             'example_translation' => '請計算桌上的書本數量。',
         ],
         [
+            'id' => 1030,
             'word' => 'worse',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈwɝs/',
@@ -249,6 +279,7 @@ return [
     ],
     'group_4' => [
         [
+            'id' => 1031,
             'word' => 'cat',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkæt/',
@@ -257,6 +288,7 @@ return [
             'example_translation' => '那隻貓正在沙發上睡覺。',
         ],
         [
+            'id' => 1032,
             'word' => 'must',
             'part_of_speech' => 'aux.',
             'pronunciation' => '/ˈməst/',
@@ -265,6 +297,7 @@ return [
             'example_translation' => '騎腳踏車時你必須戴安全帽。',
         ],
         [
+            'id' => 1033,
             'word' => 'keep',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˈkip/',
@@ -273,6 +306,7 @@ return [
             'example_translation' => '請保留這本書直到下課。',
         ],
         [
+            'id' => 1034,
             'word' => 'bee',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈbi/',
@@ -281,6 +315,7 @@ return [
             'example_translation' => '一隻蜜蜂正在花朵周圍飛舞。',
         ],
         [
+            'id' => 1035,
             'word' => 'butter',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈbətɝ/',
@@ -289,6 +324,7 @@ return [
             'example_translation' => '我在吐司上塗了一些奶油。',
         ],
         [
+            'id' => 1036,
             'word' => 'guide',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɡaɪd/',
@@ -297,6 +333,7 @@ return [
             'example_translation' => '導遊帶我們參觀老城區。',
         ],
         [
+            'id' => 1037,
             'word' => 'ring',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɹɪŋ/',
@@ -305,6 +342,7 @@ return [
             'example_translation' => '她的手指上戴著一枚漂亮的戒指。',
         ],
         [
+            'id' => 1038,
             'word' => 'never',
             'part_of_speech' => 'adv.',
             'pronunciation' => '/ˈnɛvɝ/',
@@ -313,6 +351,7 @@ return [
             'example_translation' => '我從不忘記我最好朋友的生日。',
         ],
         [
+            'id' => 1039,
             'word' => 'case',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkeɪs/',
@@ -321,6 +360,7 @@ return [
             'example_translation' => '她把眼鏡放進一個小盒子裡。',
         ],
         [
+            'id' => 1040,
             'word' => 'school',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈskuɫ/',
@@ -331,6 +371,7 @@ return [
     ],
     'group_5' => [
         [
+            'id' => 1041,
             'word' => 'dream',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈdɹim/',
@@ -339,6 +380,7 @@ return [
             'example_translation' => '我昨晚做了一個奇怪的夢。',
         ],
         [
+            'id' => 1042,
             'word' => 'they',
             'part_of_speech' => 'pron.',
             'pronunciation' => '/ðeɪ/',
@@ -347,6 +389,7 @@ return [
             'example_translation' => '他們正在公園踢足球。',
         ],
         [
+            'id' => 1043,
             'word' => 'beautiful',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈbjutəfəɫ/',
@@ -355,6 +398,7 @@ return [
             'example_translation' => '花園裡的花很美麗。',
         ],
         [
+            'id' => 1044,
             'word' => 'make',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˈmeɪk/',
@@ -363,6 +407,7 @@ return [
             'example_translation' => '我會為家人做早餐。',
         ],
         [
+            'id' => 1045,
             'word' => 'prove',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˈpɹuv/',
@@ -371,6 +416,7 @@ return [
             'example_translation' => '這項測試將證明這台機器能運作。',
         ],
         [
+            'id' => 1046,
             'word' => 'rice',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɹaɪs/',
@@ -379,6 +425,7 @@ return [
             'example_translation' => '我們晚餐吃米飯配蔬菜。',
         ],
         [
+            'id' => 1047,
             'word' => 'common',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈkɑmən/',
@@ -387,6 +434,7 @@ return [
             'example_translation' => '下午喝茶是很普通的事。',
         ],
         [
+            'id' => 1048,
             'word' => 'season',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsizən/',
@@ -395,6 +443,7 @@ return [
             'example_translation' => '秋天是我最喜歡的季節。',
         ],
         [
+            'id' => 1049,
             'word' => 'cloud',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkɫaʊd/',
@@ -403,6 +452,7 @@ return [
             'example_translation' => '一朵烏雲遮住了太陽。',
         ],
         [
+            'id' => 1050,
             'word' => 'yes',
             'part_of_speech' => 'adv.',
             'pronunciation' => '/ˈjɛs/',
@@ -413,6 +463,7 @@ return [
     ],
     'group_6' => [
         [
+            'id' => 1051,
             'word' => 'police',
             'part_of_speech' => 'n.',
             'pronunciation' => '/pəˈɫis/',
@@ -421,6 +472,7 @@ return [
             'example_translation' => '警察幫助迷路的小女孩找到她的父母。',
         ],
         [
+            'id' => 1052,
             'word' => 'husband',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈhəzbənd/',
@@ -429,6 +481,7 @@ return [
             'example_translation' => '她的丈夫每天晚上做晚餐。',
         ],
         [
+            'id' => 1053,
             'word' => 'fifty',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈfɪfti/',
@@ -437,6 +490,7 @@ return [
             'example_translation' => '五十本書對一個書架來說是很多的數量。',
         ],
         [
+            'id' => 1054,
             'word' => 'wood',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈwʊd/',
@@ -445,6 +499,7 @@ return [
             'example_translation' => '這張桌子是用木頭做的。',
         ],
         [
+            'id' => 1055,
             'word' => 'possible',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈpɑsəbəɫ/',
@@ -453,6 +508,7 @@ return [
             'example_translation' => '今天完成這項工作有可能嗎？',
         ],
         [
+            'id' => 1056,
             'word' => 'sometimes',
             'part_of_speech' => 'pron.',
             'pronunciation' => '/ˈsəmˌtaɪmz/',
@@ -461,6 +517,7 @@ return [
             'example_translation' => '有時候，我和朋友一起走路上學。',
         ],
         [
+            'id' => 1057,
             'word' => 'finish',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˈfɪnɪʃ/',
@@ -469,6 +526,7 @@ return [
             'example_translation' => '請在晚餐前完成你的作業。',
         ],
         [
+            'id' => 1058,
             'word' => 'after',
             'part_of_speech' => 'prep.',
             'pronunciation' => '/ˈæftɝ/',
@@ -477,6 +535,7 @@ return [
             'example_translation' => '電影結束以後，我們回家了。',
         ],
         [
+            'id' => 1059,
             'word' => 'mom',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈmɑm/',
@@ -485,6 +544,7 @@ return [
             'example_translation' => '我媽媽會煮好喝的湯。',
         ],
         [
+            'id' => 1060,
             'word' => 'take',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˈteɪk/',
@@ -495,6 +555,7 @@ return [
     ],
     'group_7' => [
         [
+            'id' => 1061,
             'word' => 'iron',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈaɪɝn/',
@@ -503,6 +564,7 @@ return [
             'example_translation' => '這座橋是用堅固的鐵製成的。',
         ],
         [
+            'id' => 1062,
             'word' => 'sofa',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsoʊfə/',
@@ -511,6 +573,7 @@ return [
             'example_translation' => '我們坐在沙發上看電視。',
         ],
         [
+            'id' => 1063,
             'word' => 'head',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈhɛd/',
@@ -519,6 +582,7 @@ return [
             'example_translation' => '他的頭撞到了門。',
         ],
         [
+            'id' => 1064,
             'word' => 'art',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɑɹt/',
@@ -527,6 +591,7 @@ return [
             'example_translation' => '我妹妹喜歡學習藝術。',
         ],
         [
+            'id' => 1065,
             'word' => 'when',
             'part_of_speech' => 'adv.、conj.、pron.',
             'pronunciation' => '/ˈwɛn/',
@@ -535,6 +600,7 @@ return [
             'example_translation' => '你什麼時候會回家？',
         ],
         [
+            'id' => 1066,
             'word' => 'kiss',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˈkɪs/',
@@ -543,6 +609,7 @@ return [
             'example_translation' => '媽媽親吻她的寶寶道晚安。',
         ],
         [
+            'id' => 1067,
             'word' => 'inch',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɪntʃ/',
@@ -551,6 +618,7 @@ return [
             'example_translation' => '這張桌子有三十英吋長。',
         ],
         [
+            'id' => 1068,
             'word' => 'coat',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkoʊt/',
@@ -559,6 +627,7 @@ return [
             'example_translation' => '我出門前穿上了暖和的大衣。',
         ],
         [
+            'id' => 1069,
             'word' => 'away',
             'part_of_speech' => 'adv.',
             'pronunciation' => '/əˈweɪ/',
@@ -567,6 +636,7 @@ return [
             'example_translation' => '請把椅子移開，不要靠近門。',
         ],
         [
+            'id' => 1070,
             'word' => 'bag',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈbæɡ/',
@@ -577,6 +647,7 @@ return [
     ],
     'group_8' => [
         [
+            'id' => 1071,
             'word' => 'something',
             'part_of_speech' => 'pron.',
             'pronunciation' => '/ˈsəmθɪŋ/',
@@ -585,6 +656,7 @@ return [
             'example_translation' => '我的鞋子裡有某個東西。',
         ],
         [
+            'id' => 1072,
             'word' => 'child',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtʃaɪɫd/',
@@ -593,6 +665,7 @@ return [
             'example_translation' => '那個小孩正在玩紅色的球。',
         ],
         [
+            'id' => 1073,
             'word' => 'cover',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˈkəvɝ/',
@@ -601,6 +674,7 @@ return [
             'example_translation' => '請用乾淨的盤子蓋住食物。',
         ],
         [
+            'id' => 1074,
             'word' => 'enter',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˈɛnɝ/',
@@ -609,6 +683,7 @@ return [
             'example_translation' => '學生們安靜地進入教室。',
         ],
         [
+            'id' => 1075,
             'word' => 'job',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈdʒɑb/',
@@ -617,6 +692,7 @@ return [
             'example_translation' => '我爸爸有一份新工作。',
         ],
         [
+            'id' => 1076,
             'word' => 'leaf',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɫif/',
@@ -625,6 +701,7 @@ return [
             'example_translation' => '一片黃色的葉子從樹上掉下來。',
         ],
         [
+            'id' => 1077,
             'word' => 'milk',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈmɪɫk/',
@@ -633,6 +710,7 @@ return [
             'example_translation' => '我每天早上喝一杯牛奶。',
         ],
         [
+            'id' => 1078,
             'word' => 'arm',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɑɹm/',
@@ -641,6 +719,7 @@ return [
             'example_translation' => '醫生檢查了我受傷的手臂。',
         ],
         [
+            'id' => 1079,
             'word' => 'dear',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈdɪɹ/',
@@ -649,6 +728,7 @@ return [
             'example_translation' => '我親愛的祖母每個月寄一封信給我。',
         ],
         [
+            'id' => 1080,
             'word' => 'dinosaur',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈdaɪnəˌsɔɹ/',
@@ -659,6 +739,7 @@ return [
     ],
     'group_9' => [
         [
+            'id' => 1081,
             'word' => 'ancient',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈeɪnʃənt/',
@@ -667,6 +748,7 @@ return [
             'example_translation' => '我們參觀了山中的一座古代寺廟。',
         ],
         [
+            'id' => 1082,
             'word' => 'photographer',
             'part_of_speech' => 'n.',
             'pronunciation' => '/fəˈtɑɡɹəfɝ/',
@@ -675,6 +757,7 @@ return [
             'example_translation' => '那位攝影師拍了婚禮的美麗照片。',
         ],
         [
+            'id' => 1083,
             'word' => 'appetite',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈæpəˌtaɪt/',
@@ -683,6 +766,7 @@ return [
             'example_translation' => '打完籃球後，我食慾很好。',
         ],
         [
+            'id' => 1084,
             'word' => 'grassy',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈɡɹæsi/',
@@ -691,6 +775,7 @@ return [
             'example_translation' => '孩子們在長滿草的田野上玩耍。',
         ],
         [
+            'id' => 1085,
             'word' => 'interview',
             'part_of_speech' => 'n.、vt.',
             'pronunciation' => '/ˈɪntɝvˌju/',
@@ -699,6 +784,7 @@ return [
             'example_translation' => '那位記者在電視上訪談了這位知名歌手。',
         ],
         [
+            'id' => 1086,
             'word' => 'slip',
             'part_of_speech' => 'vi.、vt.、n.',
             'pronunciation' => '/ˈsɫɪp/',
@@ -707,6 +793,7 @@ return [
             'example_translation' => '小心不要在濕地板上滑倒。',
         ],
         [
+            'id' => 1087,
             'word' => 'pumpkin',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpəmkɪn/',
@@ -715,6 +802,7 @@ return [
             'example_translation' => '我媽媽煮了一道美味的南瓜湯。',
         ],
         [
+            'id' => 1088,
             'word' => 'abroad',
             'part_of_speech' => 'adv.',
             'pronunciation' => '/əˈbɹɔd/',
@@ -723,6 +811,7 @@ return [
             'example_translation' => '我姊姊今年正在國外留學。',
         ],
         [
+            'id' => 1089,
             'word' => 'envelope',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɛnvəˌɫoʊp/',
@@ -731,6 +820,7 @@ return [
             'example_translation' => '請把信放進信封裡。',
         ],
         [
+            'id' => 1090,
             'word' => 'cheat',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ˈtʃit/',
@@ -741,6 +831,7 @@ return [
     ],
     'group_10' => [
         [
+            'id' => 1091,
             'word' => 'tomato',
             'part_of_speech' => 'n.',
             'pronunciation' => '/təˈmɑˌtoʊ/',
@@ -749,6 +840,7 @@ return [
             'example_translation' => '她在沙拉裡加了一顆新鮮的番茄。',
         ],
         [
+            'id' => 1092,
             'word' => 'puppy',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpəpi/',
@@ -757,6 +849,7 @@ return [
             'example_translation' => '那隻小狗跟著我回家。',
         ],
         [
+            'id' => 1093,
             'word' => 'modern',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈmɑdɝn/',
@@ -765,6 +858,7 @@ return [
             'example_translation' => '這座現代化的圖書館有許多舒適的座位。',
         ],
         [
+            'id' => 1094,
             'word' => 'fellow',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈfɛɫoʊ/',
@@ -773,6 +867,7 @@ return [
             'example_translation' => '我的夥伴們幫助我完成了這個專案。',
         ],
         [
+            'id' => 1095,
             'word' => 'banker',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈbæŋkɝ/',
@@ -781,6 +876,7 @@ return [
             'example_translation' => '那位銀行家向這家人解釋了貸款的事。',
         ],
         [
+            'id' => 1096,
             'word' => 'courage',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkɝədʒ/',
@@ -789,6 +885,7 @@ return [
             'example_translation' => '在一大群人面前演講需要勇氣。',
         ],
         [
+            'id' => 1097,
             'word' => 'pose',
             'part_of_speech' => 'n.、vi.、vt.',
             'pronunciation' => '/ˈpoʊz/',
@@ -797,6 +894,7 @@ return [
             'example_translation' => '那名模特兒在窗邊擺姿勢拍照。',
         ],
         [
+            'id' => 1098,
             'word' => 'claim',
             'part_of_speech' => 'vt.、vi.、n.',
             'pronunciation' => '/ˈkɫeɪm/',
@@ -805,6 +903,7 @@ return [
             'example_translation' => '這名顧客要求為損壞的產品退款。',
         ],
         [
+            'id' => 1099,
             'word' => 'period',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpɪɹiəd/',
@@ -813,6 +912,7 @@ return [
             'example_translation' => '這間博物館將關閉一小段期間。',
         ],
         [
+            'id' => 1100,
             'word' => 'willing',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈwɪɫɪŋ/',
@@ -823,6 +923,7 @@ return [
     ],
     'group_11' => [
         [
+            'id' => 1101,
             'word' => 'trust',
             'part_of_speech' => 'n.、vt.、vi.',
             'pronunciation' => '/ˈtɹəst/',
@@ -831,6 +932,7 @@ return [
             'example_translation' => '我信任我最好的朋友，因為她總是告訴我真相。',
         ],
         [
+            'id' => 1102,
             'word' => 'phrase',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈfɹeɪz/',
@@ -839,6 +941,7 @@ return [
             'example_translation' => '「早安」是一個常見的英文片語。',
         ],
         [
+            'id' => 1103,
             'word' => 'northern',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈnɔɹðɝn/',
@@ -847,6 +950,7 @@ return [
             'example_translation' => '許多人在冬天參觀北部的山區。',
         ],
         [
+            'id' => 1104,
             'word' => 'desert',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/dɪˈzɝt/',
@@ -855,6 +959,7 @@ return [
             'example_translation' => '那名士兵絕不會在危險中拋棄他的團隊。',
         ],
         [
+            'id' => 1105,
             'word' => 'stove',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈstoʊv/',
@@ -863,6 +968,7 @@ return [
             'example_translation' => '我爸爸正在火爐上煮湯。',
         ],
         [
+            'id' => 1106,
             'word' => 'decision',
             'part_of_speech' => 'n.',
             'pronunciation' => '/dɪˈsɪʒən/',
@@ -871,6 +977,7 @@ return [
             'example_translation' => '那是一個困難的決定，但我選擇出國留學。',
         ],
         [
+            'id' => 1107,
             'word' => 'rush hour',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɹəʃ ˌaʊɝ/',
@@ -879,6 +986,7 @@ return [
             'example_translation' => '尖峰時刻的道路非常擁擠。',
         ],
         [
+            'id' => 1108,
             'word' => 'meeting',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈmitɪŋ/',
@@ -887,6 +995,7 @@ return [
             'example_translation' => '我們的團隊每週一早上都有一場會議。',
         ],
         [
+            'id' => 1109,
             'word' => 'bottle',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈbɑtəɫ/',
@@ -895,6 +1004,7 @@ return [
             'example_translation' => '她把瓶子裝滿了冷水。',
         ],
         [
+            'id' => 1110,
             'word' => 'present',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/pɹiˈzɛnt/',
@@ -905,6 +1015,7 @@ return [
     ],
     'group_12' => [
         [
+            'id' => 1111,
             'word' => 'picnic',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpɪkˌnɪk/',
@@ -913,6 +1024,7 @@ return [
             'example_translation' => '我們在一棵大樹下野餐。',
         ],
         [
+            'id' => 1112,
             'word' => 'excellent',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈɛksəɫənt/',
@@ -921,6 +1033,7 @@ return [
             'example_translation' => '你的答案非常傑出。',
         ],
         [
+            'id' => 1113,
             'word' => 'zebra',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈzibɹə/',
@@ -929,6 +1042,7 @@ return [
             'example_translation' => '我們看見一匹斑馬跑過草原。',
         ],
         [
+            'id' => 1114,
             'word' => 'classic',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈkɫæsɪk/',
@@ -937,6 +1051,7 @@ return [
             'example_translation' => '這首歌是美國流行音樂的典型例子。',
         ],
         [
+            'id' => 1115,
             'word' => 'stick',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ˈstɪk/',
@@ -945,6 +1060,7 @@ return [
             'example_translation' => '請堅持這項計畫，今天完成你的工作。',
         ],
         [
+            'id' => 1116,
             'word' => 'education',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˌɛdʒəˈkeɪʃən/',
@@ -953,6 +1069,7 @@ return [
             'example_translation' => '良好的教育能幫助人們找到更好的工作。',
         ],
         [
+            'id' => 1117,
             'word' => 'cart',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkɑɹt/',
@@ -961,6 +1078,7 @@ return [
             'example_translation' => '那位購物者推著手推車穿過超市。',
         ],
         [
+            'id' => 1118,
             'word' => 'drawing',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈdɹɔɪŋ/',
@@ -969,6 +1087,7 @@ return [
             'example_translation' => '那個小女孩拿她畫的房子給我看。',
         ],
         [
+            'id' => 1119,
             'word' => 'cable',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkeɪbəɫ/',
@@ -977,6 +1096,7 @@ return [
             'example_translation' => '工人使用一條堅固的鋼索來吊起那臺沉重的機器。',
         ],
         [
+            'id' => 1120,
             'word' => 'deaf',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈdɛf/',
@@ -987,6 +1107,7 @@ return [
     ],
     'group_13' => [
         [
+            'id' => 1121,
             'word' => 'underwear',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈəndɝˌwɛɹ/',
@@ -995,6 +1116,7 @@ return [
             'example_translation' => '請把你的乾淨內衣放進抽屜裡。',
         ],
         [
+            'id' => 1122,
             'word' => 'lettuce',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɫɛtəs/',
@@ -1003,6 +1125,7 @@ return [
             'example_translation' => '我在三明治裡加了一些新鮮的萵苣。',
         ],
         [
+            'id' => 1123,
             'word' => 'fit',
             'part_of_speech' => 'vt.、vi.、adj.',
             'pronunciation' => '/ˈfɪt/',
@@ -1011,6 +1134,7 @@ return [
             'example_translation' => '這雙鞋很合我的腳。',
         ],
         [
+            'id' => 1124,
             'word' => 'sign',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsaɪn/',
@@ -1019,6 +1143,7 @@ return [
             'example_translation' => '那家店的門上方有一個明亮的招牌。',
         ],
         [
+            'id' => 1125,
             'word' => 'ink',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɪŋk/',
@@ -1027,6 +1152,7 @@ return [
             'example_translation' => '我的手上有藍色墨水。',
         ],
         [
+            'id' => 1126,
             'word' => 'giant',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈdʒaɪənt/',
@@ -1035,6 +1161,7 @@ return [
             'example_translation' => '這個故事是關於一位善良的巨人。',
         ],
         [
+            'id' => 1127,
             'word' => 'flu',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈfɫu/',
@@ -1043,6 +1170,7 @@ return [
             'example_translation' => '凱文因為得了流行性感冒而待在家裡。',
         ],
         [
+            'id' => 1128,
             'word' => 'conversation',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˌkɑnvɝˈseɪʃən/',
@@ -1051,6 +1179,7 @@ return [
             'example_translation' => '下課後，我們進行了一段簡短的會話。',
         ],
         [
+            'id' => 1129,
             'word' => 'pillow',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpɪɫoʊ/',
@@ -1059,6 +1188,7 @@ return [
             'example_translation' => '我需要一個柔軟的枕頭才能睡得好。',
         ],
         [
+            'id' => 1130,
             'word' => 'ox',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɑks/',
@@ -1069,6 +1199,7 @@ return [
     ],
     'group_14' => [
         [
+            'id' => 1131,
             'word' => 'windy',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈwaɪndi/',
@@ -1077,6 +1208,7 @@ return [
             'example_translation' => '今天風太大，不適合放風箏。',
         ],
         [
+            'id' => 1132,
             'word' => 'court',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkɔɹt/',
@@ -1085,6 +1217,7 @@ return [
             'example_translation' => '法官在九點走進法院。',
         ],
         [
+            'id' => 1133,
             'word' => 'present',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpɹɛzənt/',
@@ -1093,6 +1226,7 @@ return [
             'example_translation' => '我姊姊送我一份生日禮物。',
         ],
         [
+            'id' => 1134,
             'word' => 'bookcase',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈbʊkˌkeɪs/',
@@ -1101,6 +1235,7 @@ return [
             'example_translation' => '書架上有許多有趣的書。',
         ],
         [
+            'id' => 1135,
             'word' => 'tip',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtɪp/',
@@ -1109,6 +1244,7 @@ return [
             'example_translation' => '我爸爸給了我一個關於省錢的實用建議。',
         ],
         [
+            'id' => 1136,
             'word' => 'bother',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ˈbɑðɝ/',
@@ -1117,6 +1253,7 @@ return [
             'example_translation' => '我讀書時，請不要打攪我。',
         ],
         [
+            'id' => 1137,
             'word' => 'judge',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈdʒədʒ/',
@@ -1125,6 +1262,7 @@ return [
             'example_translation' => '裁判仔細地聽了兩位選手的說法。',
         ],
         [
+            'id' => 1138,
             'word' => 'ankle',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈæŋkəɫ/',
@@ -1133,6 +1271,7 @@ return [
             'example_translation' => '湯姆打籃球時弄傷了他的足踝。',
         ],
         [
+            'id' => 1139,
             'word' => 'focus',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ˈfoʊkəs/',
@@ -1141,6 +1280,7 @@ return [
             'example_translation' => '請把注意力集中在你的作業上。',
         ],
         [
+            'id' => 1140,
             'word' => 'video',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈvɪdioʊ/',
@@ -1151,6 +1291,7 @@ return [
     ],
     'group_15' => [
         [
+            'id' => 1141,
             'word' => 'whale',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈhweɪɫ/',
@@ -1159,6 +1300,7 @@ return [
             'example_translation' => '我們看到一頭巨大的鯨魚在船附近游泳。',
         ],
         [
+            'id' => 1142,
             'word' => 'sudden',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈsədən/',
@@ -1167,6 +1309,7 @@ return [
             'example_translation' => '突然的大雨讓每個人都跑進室內。',
         ],
         [
+            'id' => 1143,
             'word' => 'cancer',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkænsɝ/',
@@ -1175,6 +1318,7 @@ return [
             'example_translation' => '她的祖母正在接受癌症治療。',
         ],
         [
+            'id' => 1144,
             'word' => 'poison',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpɔɪzən/',
@@ -1183,6 +1327,7 @@ return [
             'example_translation' => '標籤警告這個瓶子裡裝有毒藥。',
         ],
         [
+            'id' => 1145,
             'word' => 'handsome',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈhænsəm/',
@@ -1191,6 +1336,7 @@ return [
             'example_translation' => '那位英俊的演員對人群微笑。',
         ],
         [
+            'id' => 1146,
             'word' => 'decorate',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ˈdɛkɝˌeɪt/',
@@ -1199,6 +1345,7 @@ return [
             'example_translation' => '我們要用五顏六色的氣球裝飾房間。',
         ],
         [
+            'id' => 1147,
             'word' => 'tank',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtæŋk/',
@@ -1207,6 +1354,7 @@ return [
             'example_translation' => '士兵們駕駛戰車穿過田野。',
         ],
         [
+            'id' => 1148,
             'word' => 'entire',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ɪnˈtaɪɝ/',
@@ -1215,6 +1363,7 @@ return [
             'example_translation' => '她花了一整天打掃房子。',
         ],
         [
+            'id' => 1149,
             'word' => 'cabbage',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkæbədʒ/',
@@ -1223,6 +1372,7 @@ return [
             'example_translation' => '我媽媽在湯裡加入新鮮的甘藍菜。',
         ],
         [
+            'id' => 1150,
             'word' => 'value',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈvæɫju/',
@@ -1233,6 +1383,7 @@ return [
     ],
     'group_16' => [
         [
+            'id' => 1151,
             'word' => 'pupil',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpjupəɫ/',
@@ -1241,6 +1392,7 @@ return [
             'example_translation' => '每位小學生都必須帶一枝鉛筆到課堂上。',
         ],
         [
+            'id' => 1152,
             'word' => 'repeat',
             'part_of_speech' => 'vt.、vi.、n.',
             'pronunciation' => '/ɹiˈpit/',
@@ -1249,6 +1401,7 @@ return [
             'example_translation' => '請你重複一次這個問題，好嗎？',
         ],
         [
+            'id' => 1153,
             'word' => 'used',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈjuzd/',
@@ -1257,6 +1410,7 @@ return [
             'example_translation' => '他向鄰居買了一輛舊腳踏車。',
         ],
         [
+            'id' => 1154,
             'word' => 'however',
             'part_of_speech' => 'adv.',
             'pronunciation' => '/ˌhaʊˈɛvɝ/',
@@ -1265,6 +1419,7 @@ return [
             'example_translation' => '這趟旅程很辛苦；然而，我們過得非常愉快。',
         ],
         [
+            'id' => 1155,
             'word' => 'pin',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpɪn/',
@@ -1273,6 +1428,7 @@ return [
             'example_translation' => '她在外套上別了一個小別針。',
         ],
         [
+            'id' => 1156,
             'word' => 'wave',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈweɪv/',
@@ -1281,6 +1437,7 @@ return [
             'example_translation' => '一個大浪打在船身側面。',
         ],
         [
+            'id' => 1157,
             'word' => 'desert',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈdɛzɝt/',
@@ -1289,6 +1446,7 @@ return [
             'example_translation' => '很少植物能在炎熱的沙漠中生存。',
         ],
         [
+            'id' => 1158,
             'word' => 'forgive',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/fɝˈɡɪv/',
@@ -1297,6 +1455,7 @@ return [
             'example_translation' => '請原諒我遲到了。',
         ],
         [
+            'id' => 1159,
             'word' => 'port',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpɔɹt/',
@@ -1305,6 +1464,7 @@ return [
             'example_translation' => '那艘船一大早就抵達港口。',
         ],
         [
+            'id' => 1160,
             'word' => 'satisfy',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˈsætəsˌfaɪ/',
@@ -1315,6 +1475,7 @@ return [
     ],
     'group_17' => [
         [
+            'id' => 1161,
             'word' => 'avoid',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/əˈvɔɪd/',
@@ -1323,6 +1484,7 @@ return [
             'example_translation' => '我們應該避免在大雨中外出。',
         ],
         [
+            'id' => 1162,
             'word' => 'habit',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈhæbət/',
@@ -1331,6 +1493,7 @@ return [
             'example_translation' => '睡前刷牙是個好習慣。',
         ],
         [
+            'id' => 1163,
             'word' => 'slide',
             'part_of_speech' => 'vi.、vt.',
             'pronunciation' => '/ˈsɫaɪd/',
@@ -1339,6 +1502,7 @@ return [
             'example_translation' => '孩子們喜歡從遊樂場的溜滑梯上滑下來。',
         ],
         [
+            'id' => 1164,
             'word' => 'crisis',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkɹaɪsəs/',
@@ -1347,6 +1511,7 @@ return [
             'example_translation' => '這個國家正面臨嚴重的經濟危機。',
         ],
         [
+            'id' => 1165,
             'word' => 'apartment',
             'part_of_speech' => 'n.',
             'pronunciation' => '/əˈpɑɹtmənt/',
@@ -1355,6 +1520,7 @@ return [
             'example_translation' => '我姊姊住在火車站附近的一間小公寓裡。',
         ],
         [
+            'id' => 1166,
             'word' => 'strike',
             'part_of_speech' => 'vt.、vi.、n.',
             'pronunciation' => '/ˈstɹaɪk/',
@@ -1363,6 +1529,7 @@ return [
             'example_translation' => '工人用槌子敲打釘子。',
         ],
         [
+            'id' => 1167,
             'word' => 'runner',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɹənɝ/',
@@ -1371,6 +1538,7 @@ return [
             'example_translation' => '那名跑步者在不到一小時內完成了比賽。',
         ],
         [
+            'id' => 1168,
             'word' => 'double',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈdəbəɫ/',
@@ -1379,6 +1547,7 @@ return [
             'example_translation' => '六的兩倍是十二。',
         ],
         [
+            'id' => 1169,
             'word' => 'dew',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈdu/',
@@ -1387,6 +1556,7 @@ return [
             'example_translation' => '一大早，草地上覆滿了露水。',
         ],
         [
+            'id' => 1170,
             'word' => 'glue',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɡɫu/',
@@ -1397,6 +1567,7 @@ return [
     ],
     'group_18' => [
         [
+            'id' => 1171,
             'word' => 'lap',
             'part_of_speech' => 'n.、vt.、vi.',
             'pronunciation' => '/ˈɫæp/',
@@ -1405,6 +1576,7 @@ return [
             'example_translation' => '兩張地毯的邊緣彼此重疊。',
         ],
         [
+            'id' => 1172,
             'word' => 'aloud',
             'part_of_speech' => 'adv.',
             'pronunciation' => '/əˈɫaʊd/',
@@ -1413,6 +1585,7 @@ return [
             'example_translation' => '請大聲朗讀這個句子。',
         ],
         [
+            'id' => 1173,
             'word' => 'absent',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈæbsənt/',
@@ -1421,6 +1594,7 @@ return [
             'example_translation' => 'Tom 因為生病而缺席學校。',
         ],
         [
+            'id' => 1174,
             'word' => 'jacket',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈdʒækət/',
@@ -1429,6 +1603,7 @@ return [
             'example_translation' => '她出門前穿上了一件保暖的夾克。',
         ],
         [
+            'id' => 1175,
             'word' => 'thumb',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈθəm/',
@@ -1437,6 +1612,7 @@ return [
             'example_translation' => '我打開箱子時弄傷了拇指。',
         ],
         [
+            'id' => 1176,
             'word' => 'company',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkəmpəˌni/',
@@ -1445,6 +1621,7 @@ return [
             'example_translation' => '我叔叔在一家大型電腦公司工作。',
         ],
         [
+            'id' => 1177,
             'word' => 'famous',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈfeɪməs/',
@@ -1453,6 +1630,7 @@ return [
             'example_translation' => '這座城市以美麗的海灘聞名。',
         ],
         [
+            'id' => 1178,
             'word' => 'wool',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈwʊɫ/',
@@ -1461,6 +1639,7 @@ return [
             'example_translation' => '這件毛衣是用柔軟的羊毛製成的。',
         ],
         [
+            'id' => 1179,
             'word' => 'waiter',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈweɪtɝ/',
@@ -1469,6 +1648,7 @@ return [
             'example_translation' => '男服務生拿了菜單和一些水給我們。',
         ],
         [
+            'id' => 1180,
             'word' => 'pipe',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpaɪp/',
@@ -1479,6 +1659,7 @@ return [
     ],
     'group_19' => [
         [
+            'id' => 1181,
             'word' => 'cloudy',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈkɫaʊdi/',
@@ -1487,6 +1668,7 @@ return [
             'example_translation' => '今天是多雲的，所以我們看不到太陽。',
         ],
         [
+            'id' => 1182,
             'word' => 'trousers',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtɹaʊzɝz/',
@@ -1495,6 +1677,7 @@ return [
             'example_translation' => '我的新長褲是藍色的，而且很舒服。',
         ],
         [
+            'id' => 1183,
             'word' => 'watermelon',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈwɔtɝˌmɛɫən/',
@@ -1503,6 +1686,7 @@ return [
             'example_translation' => '晚餐後，我們一起吃了一顆大西瓜。',
         ],
         [
+            'id' => 1184,
             'word' => 'nearly',
             'part_of_speech' => 'adv.',
             'pronunciation' => '/ˈnɪɹɫi/',
@@ -1511,6 +1695,7 @@ return [
             'example_translation' => '差不多該回家了。',
         ],
         [
+            'id' => 1185,
             'word' => 'yard',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈjɑɹd/',
@@ -1519,6 +1704,7 @@ return [
             'example_translation' => '孩子們正在庭院裡玩耍。',
         ],
         [
+            'id' => 1186,
             'word' => 'argue',
             'part_of_speech' => 'vi.、vt.',
             'pronunciation' => '/ˈɑɹɡju/',
@@ -1527,6 +1713,7 @@ return [
             'example_translation' => '這兩兄弟常常為小事爭吵。',
         ],
         [
+            'id' => 1187,
             'word' => 'bakery',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈbeɪkɝi/',
@@ -1535,6 +1722,7 @@ return [
             'example_translation' => '我媽媽在麵包店買了新鮮的麵包。',
         ],
         [
+            'id' => 1188,
             'word' => 'snail',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsneɪɫ/',
@@ -1543,6 +1731,7 @@ return [
             'example_translation' => '一隻小蝸牛正慢慢爬過葉子。',
         ],
         [
+            'id' => 1189,
             'word' => 'assistant',
             'part_of_speech' => 'n.',
             'pronunciation' => '/əˈsɪstənt/',
@@ -1551,6 +1740,7 @@ return [
             'example_translation' => '店員幫我找到合適的尺寸。',
         ],
         [
+            'id' => 1190,
             'word' => 'tongue',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtəŋ/',
@@ -1561,6 +1751,7 @@ return [
     ],
     'group_20' => [
         [
+            'id' => 1191,
             'word' => 'conflict',
             'part_of_speech' => 'vi.、n.',
             'pronunciation' => '/ˈkɑnfɫɪkt/',
@@ -1569,6 +1760,7 @@ return [
             'example_translation' => '兩隊之間的衝突在比賽期間開始了。',
         ],
         [
+            'id' => 1192,
             'word' => 'diamond',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈdaɪmənd/',
@@ -1577,6 +1769,7 @@ return [
             'example_translation' => '她的手指上戴著一顆小鑽石。',
         ],
         [
+            'id' => 1193,
             'word' => 'suit',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ˈsut/',
@@ -1585,6 +1778,7 @@ return [
             'example_translation' => '這件藍色襯衫很適合你。',
         ],
         [
+            'id' => 1194,
             'word' => 'protect',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/pɹəˈtɛkt/',
@@ -1593,6 +1787,7 @@ return [
             'example_translation' => '我們戴安全帽來保護頭部。',
         ],
         [
+            'id' => 1195,
             'word' => 'cockroach',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkɑkˌɹoʊtʃ/',
@@ -1601,6 +1796,7 @@ return [
             'example_translation' => '一隻蟑螂跑過廚房地板。',
         ],
         [
+            'id' => 1196,
             'word' => 'nut',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈnət/',
@@ -1609,6 +1805,7 @@ return [
             'example_translation' => '那隻松鼠在樹下找到一顆堅果。',
         ],
         [
+            'id' => 1197,
             'word' => 'bake',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˈbeɪk/',
@@ -1617,6 +1814,7 @@ return [
             'example_translation' => '我妹妹喜歡在週末烘烤餅乾。',
         ],
         [
+            'id' => 1198,
             'word' => 'change',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ˈtʃeɪndʒ/',
@@ -1625,6 +1823,7 @@ return [
             'example_translation' => '晚餐前我需要換衣服。',
         ],
         [
+            'id' => 1199,
             'word' => 'sunscreen',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsənˌskɹin/',
@@ -1633,6 +1832,7 @@ return [
             'example_translation' => '出門前請塗上防曬乳。',
         ],
         [
+            'id' => 1200,
             'word' => 'bamboo',
             'part_of_speech' => 'n.',
             'pronunciation' => '/bæmˈbu/',
@@ -1643,6 +1843,7 @@ return [
     ],
     'group_21' => [
         [
+            'id' => 1201,
             'word' => 'rectangle',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɹɛktæŋɡəɫ/',
@@ -1651,6 +1852,7 @@ return [
             'example_translation' => '在紙上畫一個矩形。',
         ],
         [
+            'id' => 1202,
             'word' => 'pigeon',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpɪdʒən/',
@@ -1659,6 +1861,7 @@ return [
             'example_translation' => '一隻鴿子正停在屋頂上。',
         ],
         [
+            'id' => 1203,
             'word' => 'clown',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkɫaʊn/',
@@ -1667,6 +1870,7 @@ return [
             'example_translation' => '小丑逗得孩子們哈哈大笑。',
         ],
         [
+            'id' => 1204,
             'word' => 'dial',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ˈdaɪəɫ/',
@@ -1675,6 +1879,7 @@ return [
             'example_translation' => '如果你需要幫忙，請撥我的電話號碼。',
         ],
         [
+            'id' => 1205,
             'word' => 'eco-friendly',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˌikoʊˈfɹɛndɫi/',
@@ -1683,6 +1888,7 @@ return [
             'example_translation' => '我們在商店使用環保袋。',
         ],
         [
+            'id' => 1206,
             'word' => 'project',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/pɹəˈdʒɛkt/',
@@ -1691,6 +1897,7 @@ return [
             'example_translation' => '屋頂伸出在前門上方。',
         ],
         [
+            'id' => 1207,
             'word' => 'drop',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈdɹɑp/',
@@ -1699,6 +1906,7 @@ return [
             'example_translation' => '在茶裡加一滴檸檬汁。',
         ],
         [
+            'id' => 1208,
             'word' => 'honest',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈɑnəst/',
@@ -1707,6 +1915,7 @@ return [
             'example_translation' => '湯姆很誠實，總是說實話。',
         ],
         [
+            'id' => 1209,
             'word' => 'corner',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˈkɔɹnɝ/',
@@ -1715,6 +1924,7 @@ return [
             'example_translation' => '警方把小偷逼入一間小房間裡。',
         ],
         [
+            'id' => 1210,
             'word' => 'degree',
             'part_of_speech' => 'n.',
             'pronunciation' => '/dɪˈɡɹi/',
@@ -1725,6 +1935,7 @@ return [
     ],
     'group_22' => [
         [
+            'id' => 1211,
             'word' => 'mango',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈmæŋɡoʊ/',
@@ -1733,6 +1944,7 @@ return [
             'example_translation' => '這顆香甜的芒果是我最喜歡的水果。',
         ],
         [
+            'id' => 1212,
             'word' => 'dangerous',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈdeɪndʒɝəs/',
@@ -1741,6 +1953,7 @@ return [
             'example_translation' => '在這條河裡游泳很危險。',
         ],
         [
+            'id' => 1213,
             'word' => 'photo',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈfoʊtoʊ/',
@@ -1749,6 +1962,7 @@ return [
             'example_translation' => '我在公園拍了一張家人的照片。',
         ],
         [
+            'id' => 1214,
             'word' => 'treasure',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˈtɹɛʒɝ/',
@@ -1757,6 +1971,7 @@ return [
             'example_translation' => '我很珍惜祖父送給我的手錶。',
         ],
         [
+            'id' => 1215,
             'word' => 'paste',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˈpeɪst/',
@@ -1765,6 +1980,7 @@ return [
             'example_translation' => '把這張圖片貼在你的筆記本裡。',
         ],
         [
+            'id' => 1216,
             'word' => 'speed',
             'part_of_speech' => 'vi.、vt.',
             'pronunciation' => '/ˈspid/',
@@ -1773,6 +1989,7 @@ return [
             'example_translation' => '絕對不要在這條路上超速。',
         ],
         [
+            'id' => 1217,
             'word' => 'refrigerator',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ɹɪˈfɹɪdʒəˌɹeɪtɝ/',
@@ -1781,6 +1998,7 @@ return [
             'example_translation' => '冰箱裡有一些牛奶。',
         ],
         [
+            'id' => 1218,
             'word' => 'disappear',
             'part_of_speech' => 'vi.',
             'pronunciation' => '/ˌdɪsəˈpiɹ/',
@@ -1789,6 +2007,7 @@ return [
             'example_translation' => '太陽消失在雲朵後面。',
         ],
         [
+            'id' => 1219,
             'word' => 'patient',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpeɪʃənt/',
@@ -1797,6 +2016,7 @@ return [
             'example_translation' => '病人正在等候看醫生。',
         ],
         [
+            'id' => 1220,
             'word' => 'closet',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkɫɑzət/',
@@ -1807,6 +2027,7 @@ return [
     ],
     'group_23' => [
         [
+            'id' => 1221,
             'word' => 'exact',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ɪɡˈzækt/',
@@ -1815,6 +2036,7 @@ return [
             'example_translation' => '你知道會議的確切時間嗎？',
         ],
         [
+            'id' => 1222,
             'word' => 'postcard',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpoʊˌskɑɹd/',
@@ -1823,6 +2045,7 @@ return [
             'example_translation' => '我從日本寄了一張明信片給我的朋友。',
         ],
         [
+            'id' => 1223,
             'word' => 'semester',
             'part_of_speech' => 'n.',
             'pronunciation' => '/səˈmɛstɝ/',
@@ -1831,6 +2054,7 @@ return [
             'example_translation' => '我們的第一學期在一月結束。',
         ],
         [
+            'id' => 1224,
             'word' => 'pizza',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpitsə/',
@@ -1839,6 +2063,7 @@ return [
             'example_translation' => '我們點了一個大披薩當晚餐。',
         ],
         [
+            'id' => 1225,
             'word' => 'toilet',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtɔɪɫət/',
@@ -1847,6 +2072,7 @@ return [
             'example_translation' => '不好意思，請問廁所在哪裡？',
         ],
         [
+            'id' => 1226,
             'word' => 'single',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈsɪŋɡəɫ/',
@@ -1855,6 +2081,7 @@ return [
             'example_translation' => '她買了一張到臺北的單程票。',
         ],
         [
+            'id' => 1227,
             'word' => 'bear',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ˈbɛɹ/',
@@ -1863,6 +2090,7 @@ return [
             'example_translation' => '我無法忍受工地發出的噪音。',
         ],
         [
+            'id' => 1228,
             'word' => 'extra',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈɛkstɹə/',
@@ -1871,6 +2099,7 @@ return [
             'example_translation' => '你需要額外的一張椅子嗎？',
         ],
         [
+            'id' => 1229,
             'word' => 'debate',
             'part_of_speech' => 'n.、vt.、vi.',
             'pronunciation' => '/dəˈbeɪt/',
@@ -1879,6 +2108,7 @@ return [
             'example_translation' => '學生們針對學校制服進行了一場辯論。',
         ],
         [
+            'id' => 1230,
             'word' => 'collect',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/kəˈɫɛkt/',
@@ -1889,6 +2119,7 @@ return [
     ],
     'group_24' => [
         [
+            'id' => 1231,
             'word' => 'customer',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkəstəmɝ/',
@@ -1897,6 +2128,7 @@ return [
             'example_translation' => '那位顧客要了一杯水。',
         ],
         [
+            'id' => 1232,
             'word' => 'flute',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈfɫut/',
@@ -1905,6 +2137,7 @@ return [
             'example_translation' => '我姊姊在學校樂團吹長笛。',
         ],
         [
+            'id' => 1233,
             'word' => 'citizen',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsɪtəzən/',
@@ -1913,6 +2146,7 @@ return [
             'example_translation' => '每位公民都應該遵守法律。',
         ],
         [
+            'id' => 1234,
             'word' => 'figure',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈfɪɡjɝ/',
@@ -1921,6 +2155,7 @@ return [
             'example_translation' => '報告中的圖表顯示了銷售量如何改變。',
         ],
         [
+            'id' => 1235,
             'word' => 'hop',
             'part_of_speech' => 'vi.、vt.',
             'pronunciation' => '/ˈhɑp/',
@@ -1929,6 +2164,7 @@ return [
             'example_translation' => '那個男孩必須單腳跳過房間。',
         ],
         [
+            'id' => 1236,
             'word' => 'indicate',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˈɪndəˌkeɪt/',
@@ -1937,6 +2173,7 @@ return [
             'example_translation' => '箭頭指出前往車站的方向。',
         ],
         [
+            'id' => 1237,
             'word' => 'spread',
             'part_of_speech' => 'vt.、vi.、n.',
             'pronunciation' => '/ˈspɹɛd/',
@@ -1945,6 +2182,7 @@ return [
             'example_translation' => '那隻貓伸展四肢，在陽光下休息。',
         ],
         [
+            'id' => 1238,
             'word' => 'grade',
             'part_of_speech' => 'n.、vt.、vi.',
             'pronunciation' => '/ˈɡɹeɪd/',
@@ -1953,6 +2191,7 @@ return [
             'example_translation' => '學生們根據年齡被分到不同的年級。',
         ],
         [
+            'id' => 1239,
             'word' => 'naughty',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈnɔti/',
@@ -1961,6 +2200,7 @@ return [
             'example_translation' => '那隻頑皮的小狗把我的鞋子藏在床底下。',
         ],
         [
+            'id' => 1240,
             'word' => 'jazz',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈdʒæz/',
@@ -1971,6 +2211,7 @@ return [
     ],
     'group_25' => [
         [
+            'id' => 1241,
             'word' => 'aim',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ˈeɪm/',
@@ -1979,6 +2220,7 @@ return [
             'example_translation' => '男孩把相機瞄準那隻鳥。',
         ],
         [
+            'id' => 1242,
             'word' => 'gate',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɡeɪt/',
@@ -1987,6 +2229,7 @@ return [
             'example_translation' => '你離開時請把大門關上。',
         ],
         [
+            'id' => 1243,
             'word' => 'fireman',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈfaɪɝmən/',
@@ -1995,6 +2238,7 @@ return [
             'example_translation' => '那名消防隊員幫助那家人逃離著火的房子。',
         ],
         [
+            'id' => 1244,
             'word' => 'environment',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ɪnˈvaɪɹənmənt/',
@@ -2003,6 +2247,7 @@ return [
             'example_translation' => '我們應該保持環境清潔。',
         ],
         [
+            'id' => 1245,
             'word' => 'mark',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈmɑɹk/',
@@ -2011,6 +2256,7 @@ return [
             'example_translation' => '牆上有一個深色的痕跡。',
         ],
         [
+            'id' => 1246,
             'word' => 'mask',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈmæsk/',
@@ -2019,6 +2265,7 @@ return [
             'example_translation' => '醫生在醫院戴著口罩。',
         ],
         [
+            'id' => 1247,
             'word' => 'crosswalk',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkɹɔsˌwɔk/',
@@ -2027,6 +2274,7 @@ return [
             'example_translation' => '使用行人穿越道前，一定要先查看兩側。',
         ],
         [
+            'id' => 1248,
             'word' => 'selection',
             'part_of_speech' => 'n.',
             'pronunciation' => '/səˈɫɛkʃən/',
@@ -2035,6 +2283,7 @@ return [
             'example_translation' => '球隊的選拔將在下週舉行。',
         ],
         [
+            'id' => 1249,
             'word' => 'plus',
             'part_of_speech' => 'prep.、adj.、n.',
             'pronunciation' => '/ˈpɫəs/',
@@ -2043,6 +2292,7 @@ return [
             'example_translation' => '二加三等於五。',
         ],
         [
+            'id' => 1250,
             'word' => 'sock',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsɑk/',
@@ -2053,6 +2303,7 @@ return [
     ],
     'group_26' => [
         [
+            'id' => 1251,
             'word' => 'user',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈjuzɝ/',
@@ -2061,6 +2312,7 @@ return [
             'example_translation' => '每位使用者都需要密碼才能進入這個網站。',
         ],
         [
+            'id' => 1252,
             'word' => 'drum',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈdɹəm/',
@@ -2069,6 +2321,7 @@ return [
             'example_translation' => '那個男孩在學校樂團裡打鼓。',
         ],
         [
+            'id' => 1253,
             'word' => 'region',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɹidʒən/',
@@ -2077,6 +2330,7 @@ return [
             'example_translation' => '這個地區以美麗的山脈聞名。',
         ],
         [
+            'id' => 1254,
             'word' => 'pin',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˈpɪn/',
@@ -2085,6 +2339,7 @@ return [
             'example_translation' => '她把那張圖片釘在牆上。',
         ],
         [
+            'id' => 1255,
             'word' => 'limit',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɫɪmət/',
@@ -2093,6 +2348,7 @@ return [
             'example_translation' => '這裡的速限是每小時五十公里。',
         ],
         [
+            'id' => 1256,
             'word' => 'steel',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈstiɫ/',
@@ -2101,6 +2357,7 @@ return [
             'example_translation' => '這座橋是由堅固的鋼材製成的。',
         ],
         [
+            'id' => 1257,
             'word' => 'tumbler',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtəmbɫɝ/',
@@ -2109,6 +2366,7 @@ return [
             'example_translation' => '我每天帶著隨行杯去學校。',
         ],
         [
+            'id' => 1258,
             'word' => 'explain',
             'part_of_speech' => 'vi.、vt.',
             'pronunciation' => '/ɪksˈpɫeɪn/',
@@ -2117,6 +2375,7 @@ return [
             'example_translation' => '你可以向我解釋這個問題嗎？',
         ],
         [
+            'id' => 1259,
             'word' => 'puzzle',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpəzəɫ/',
@@ -2125,6 +2384,7 @@ return [
             'example_translation' => '這個謎題很難，但我會試著解開它。',
         ],
         [
+            'id' => 1260,
             'word' => 'tradition',
             'part_of_speech' => 'n.',
             'pronunciation' => '/tɹəˈdɪʃən/',
@@ -2135,6 +2395,7 @@ return [
     ],
     'group_27' => [
         [
+            'id' => 1261,
             'word' => 'beyond',
             'part_of_speech' => 'adv.、prep.',
             'pronunciation' => '/ˌbiˈɔnd/',
@@ -2143,6 +2404,7 @@ return [
             'example_translation' => '那座小村莊位於山丘更遠處。',
         ],
         [
+            'id' => 1262,
             'word' => 'stranger',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈstɹeɪndʒɝ/',
@@ -2151,6 +2413,7 @@ return [
             'example_translation' => '一位陌生人幫我找到了火車站。',
         ],
         [
+            'id' => 1263,
             'word' => 'textbook',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtɛkstˌbʊk/',
@@ -2159,6 +2422,7 @@ return [
             'example_translation' => '我把科學教科書忘在學校了。',
         ],
         [
+            'id' => 1264,
             'word' => 'chin',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtʃɪn/',
@@ -2167,6 +2431,7 @@ return [
             'example_translation' => '他把下巴靠在手上。',
         ],
         [
+            'id' => 1265,
             'word' => 'surface',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsɝfəs/',
@@ -2175,6 +2440,7 @@ return [
             'example_translation' => '這張桌子的表面非常光滑。',
         ],
         [
+            'id' => 1266,
             'word' => 'countryside',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkəntɹiˌsaɪd/',
@@ -2183,6 +2449,7 @@ return [
             'example_translation' => '我的祖父母住在鄉間。',
         ],
         [
+            'id' => 1267,
             'word' => 'package',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpækədʒ/',
@@ -2191,6 +2458,7 @@ return [
             'example_translation' => '今天早上有一個包裹送到我家。',
         ],
         [
+            'id' => 1268,
             'word' => 'convenient',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/kənˈvinjənt/',
@@ -2199,6 +2467,7 @@ return [
             'example_translation' => '這間便利商店很方便買零食。',
         ],
         [
+            'id' => 1269,
             'word' => 'blind',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈbɫaɪnd/',
@@ -2207,6 +2476,7 @@ return [
             'example_translation' => '那位失明的男子使用手杖安全地走路。',
         ],
         [
+            'id' => 1270,
             'word' => 'worth',
             'part_of_speech' => 'adj.、n.',
             'pronunciation' => '/ˈwɝθ/',
@@ -2217,6 +2487,7 @@ return [
     ],
     'group_28' => [
         [
+            'id' => 1271,
             'word' => 'following',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈfɑɫoʊɪŋ/',
@@ -2225,6 +2496,7 @@ return [
             'example_translation' => '請仔細閱讀接下來的說明。',
         ],
         [
+            'id' => 1272,
             'word' => 'result',
             'part_of_speech' => 'vi.',
             'pronunciation' => '/ɹiˈzəɫt/',
@@ -2233,6 +2505,7 @@ return [
             'example_translation' => '大雨導致道路淹水。',
         ],
         [
+            'id' => 1273,
             'word' => 'occur',
             'part_of_speech' => 'vi.',
             'pronunciation' => '/əˈkɝ/',
@@ -2241,6 +2514,7 @@ return [
             'example_translation' => '這起事故今天清晨發生了。',
         ],
         [
+            'id' => 1274,
             'word' => 'daily',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈdeɪɫi/',
@@ -2249,6 +2523,7 @@ return [
             'example_translation' => '我每天晚餐後散步。',
         ],
         [
+            'id' => 1275,
             'word' => 'choice',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtʃɔɪs/',
@@ -2257,6 +2532,7 @@ return [
             'example_translation' => '你可以選擇茶或咖啡。',
         ],
         [
+            'id' => 1276,
             'word' => 'aircraft',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɛɹˌkɹæft/',
@@ -2265,6 +2541,7 @@ return [
             'example_translation' => '那架飛機安全地降落在機場。',
         ],
         [
+            'id' => 1277,
             'word' => 'patient',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈpeɪʃənt/',
@@ -2273,6 +2550,7 @@ return [
             'example_translation' => '我們的老師對年幼的孩子很有耐心。',
         ],
         [
+            'id' => 1278,
             'word' => 'military',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈmɪɫəˌtɛɹi/',
@@ -2281,6 +2559,7 @@ return [
             'example_translation' => '軍方協助保衛國家。',
         ],
         [
+            'id' => 1279,
             'word' => 'waist',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈweɪst/',
@@ -2289,6 +2568,7 @@ return [
             'example_translation' => '這條皮帶繫在我的腰部太緊了。',
         ],
         [
+            'id' => 1280,
             'word' => 'castle',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkæsəɫ/',
@@ -2299,6 +2579,7 @@ return [
     ],
     'group_29' => [
         [
+            'id' => 1281,
             'word' => 'reject',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˈɹidʒɛkt/',
@@ -2307,6 +2588,7 @@ return [
             'example_translation' => '那家公司拒絕了我的求職申請。',
         ],
         [
+            'id' => 1282,
             'word' => 'towel',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtaʊəɫ/',
@@ -2315,6 +2597,7 @@ return [
             'example_translation' => '請用乾淨的毛巾擦乾你的手。',
         ],
         [
+            'id' => 1283,
             'word' => 'flood',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈfɫəd/',
@@ -2323,6 +2606,7 @@ return [
             'example_translation' => '大雨在城鎮造成了一場洪水。',
         ],
         [
+            'id' => 1284,
             'word' => 'divide',
             'part_of_speech' => 'n.',
             'pronunciation' => '/dɪˈvaɪd/',
@@ -2331,6 +2615,7 @@ return [
             'example_translation' => '這條河形成了兩個村莊之間的天然分水嶺。',
         ],
         [
+            'id' => 1285,
             'word' => 'cooker',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkʊkɝ/',
@@ -2339,6 +2624,7 @@ return [
             'example_translation' => '我媽媽用電鍋準備晚餐。',
         ],
         [
+            'id' => 1286,
             'word' => 'almond',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɑmənd/',
@@ -2347,6 +2633,7 @@ return [
             'example_translation' => '她在沙拉裡加了一些杏仁。',
         ],
         [
+            'id' => 1287,
             'word' => 'kingdom',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkɪŋdəm/',
@@ -2355,6 +2642,7 @@ return [
             'example_translation' => '這個古老的故事是關於一個魔法王國裡的勇敢王子。',
         ],
         [
+            'id' => 1288,
             'word' => 'positive',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈpɑzətɪv/',
@@ -2363,6 +2651,7 @@ return [
             'example_translation' => '即使事情很困難，她仍然抱持積極的態度。',
         ],
         [
+            'id' => 1289,
             'word' => 'jeep',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈdʒip/',
@@ -2371,6 +2660,7 @@ return [
             'example_translation' => '我們開著一輛吉普車上山路。',
         ],
         [
+            'id' => 1290,
             'word' => 'freezer',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈfɹizɝ/',
@@ -2381,6 +2671,7 @@ return [
     ],
     'group_30' => [
         [
+            'id' => 1291,
             'word' => 'humor',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈhjumɝ/',
@@ -2389,6 +2680,7 @@ return [
             'example_translation' => '他的幽默感總是讓我們發笑。',
         ],
         [
+            'id' => 1292,
             'word' => 'eyebrow',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈaɪˌbɹaʊ/',
@@ -2397,6 +2689,7 @@ return [
             'example_translation' => '她聽到那個奇怪的消息時，挑起了一邊眉毛。',
         ],
         [
+            'id' => 1293,
             'word' => 'necklace',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈnɛkɫəs/',
@@ -2405,6 +2698,7 @@ return [
             'example_translation' => '我阿姨送我一條漂亮的項鍊當生日禮物。',
         ],
         [
+            'id' => 1294,
             'word' => 'humid',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈhjuməd/',
@@ -2413,6 +2707,7 @@ return [
             'example_translation' => '臺灣夏天的天氣又熱又潮濕。',
         ],
         [
+            'id' => 1295,
             'word' => 'dishonest',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/dɪˈsɑnəst/',
@@ -2421,6 +2716,7 @@ return [
             'example_translation' => '他從盒子裡拿錢是不誠實的行為。',
         ],
         [
+            'id' => 1296,
             'word' => 'regular',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈɹeɪɡjəɫɝ/',
@@ -2429,6 +2725,7 @@ return [
             'example_translation' => '有規律的運動有助於保持身體健康。',
         ],
         [
+            'id' => 1297,
             'word' => 'chess',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtʃɛs/',
@@ -2437,6 +2734,7 @@ return [
             'example_translation' => '我和弟弟常在晚餐後下西洋棋。',
         ],
         [
+            'id' => 1298,
             'word' => 'ability',
             'part_of_speech' => 'n.',
             'pronunciation' => '/əˈbɪɫəˌti/',
@@ -2445,6 +2743,7 @@ return [
             'example_translation' => '她學習語言的能力令人印象深刻。',
         ],
         [
+            'id' => 1299,
             'word' => 'excuse',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ɪkˈskjus/',
@@ -2453,6 +2752,7 @@ return [
             'example_translation' => '他為上課遲到找了一個藉口。',
         ],
         [
+            'id' => 1300,
             'word' => 'reporter',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ɹɪˈpɔɹtɝ/',
@@ -2463,6 +2763,7 @@ return [
     ],
     'group_31' => [
         [
+            'id' => 1301,
             'word' => 'arm',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ˈɑɹm/',
@@ -2471,6 +2772,7 @@ return [
             'example_translation' => '士兵們在上戰場前武裝自己。',
         ],
         [
+            'id' => 1302,
             'word' => 'club',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkɫəb/',
@@ -2479,6 +2781,7 @@ return [
             'example_translation' => '我今年加入了學校的音樂社團。',
         ],
         [
+            'id' => 1303,
             'word' => 'ruler',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɹuɫɝ/',
@@ -2487,6 +2790,7 @@ return [
             'example_translation' => '那位統治者對他的國人民很仁慈。',
         ],
         [
+            'id' => 1304,
             'word' => 'cereal',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsɪɹiəɫ/',
@@ -2495,6 +2799,7 @@ return [
             'example_translation' => '我通常早餐吃加牛奶的麥片。',
         ],
         [
+            'id' => 1305,
             'word' => 'guy',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɡaɪ/',
@@ -2503,6 +2808,7 @@ return [
             'example_translation' => '那個傢伙幫我提沉重的袋子。',
         ],
         [
+            'id' => 1306,
             'word' => 'hobby',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈhɑbi/',
@@ -2511,6 +2817,7 @@ return [
             'example_translation' => '閱讀是我最喜歡的嗜好。',
         ],
         [
+            'id' => 1307,
             'word' => 'accept',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ækˈsɛpt/',
@@ -2519,6 +2826,7 @@ return [
             'example_translation' => '她微笑著接受了那份禮物。',
         ],
         [
+            'id' => 1308,
             'word' => 'cartoon',
             'part_of_speech' => 'n.',
             'pronunciation' => '/kɑɹˈtun/',
@@ -2527,6 +2835,7 @@ return [
             'example_translation' => '孩子們晚餐後看了一部有趣的卡通。',
         ],
         [
+            'id' => 1309,
             'word' => 'charge',
             'part_of_speech' => 'vt.、vi.、n.',
             'pronunciation' => '/ˈtʃɑɹdʒ/',
@@ -2535,6 +2844,7 @@ return [
             'example_translation' => '這家商店一杯咖啡索價五美元。',
         ],
         [
+            'id' => 1310,
             'word' => 'calendar',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkæɫəndɝ/',
@@ -2545,6 +2855,7 @@ return [
     ],
     'group_32' => [
         [
+            'id' => 1311,
             'word' => 'sailor',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈseɪɫɝ/',
@@ -2553,6 +2864,7 @@ return [
             'example_translation' => '那名水手在海上度過了好幾個月。',
         ],
         [
+            'id' => 1312,
             'word' => 'double',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ˈdəbəɫ/',
@@ -2561,6 +2873,7 @@ return [
             'example_translation' => '那家公司在假日期間將公車數量增加了一倍。',
         ],
         [
+            'id' => 1313,
             'word' => 'society',
             'part_of_speech' => 'n.',
             'pronunciation' => '/səˈsaɪəti/',
@@ -2569,6 +2882,7 @@ return [
             'example_translation' => '每個人都應該幫助讓社會更安全、更友善。',
         ],
         [
+            'id' => 1314,
             'word' => 'memory',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈmɛmɝi/',
@@ -2577,6 +2891,7 @@ return [
             'example_translation' => '這首歌喚起了我童年時的一段快樂回憶。',
         ],
         [
+            'id' => 1315,
             'word' => 'pat',
             'part_of_speech' => 'vt.、vi.、n.',
             'pronunciation' => '/ˈpæt/',
@@ -2585,6 +2900,7 @@ return [
             'example_translation' => '她輕輕地拍了拍那隻狗的頭。',
         ],
         [
+            'id' => 1316,
             'word' => 'survive',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/sɝˈvaɪv/',
@@ -2593,6 +2909,7 @@ return [
             'example_translation' => '那株小植物熬過了炎熱的夏天。',
         ],
         [
+            'id' => 1317,
             'word' => 'dragonfly',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈdɹæɡənˌfɫaɪ/',
@@ -2601,6 +2918,7 @@ return [
             'example_translation' => '一隻藍色的蜻蜓飛過池塘。',
         ],
         [
+            'id' => 1318,
             'word' => 'bowling',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈboʊɫɪŋ/',
@@ -2609,6 +2927,7 @@ return [
             'example_translation' => '星期六我們和朋友一起去打保齡球。',
         ],
         [
+            'id' => 1319,
             'word' => 'reusable',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ɹiˈjuzəbəɫ/',
@@ -2617,6 +2936,7 @@ return [
             'example_translation' => '我每天帶一個可重複使用的瓶子到學校。',
         ],
         [
+            'id' => 1320,
             'word' => 'airline',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɛɹˌɫaɪn/',
@@ -2627,6 +2947,7 @@ return [
     ],
     'group_33' => [
         [
+            'id' => 1321,
             'word' => 'gentleman',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈdʒɛnəɫmən/',
@@ -2635,6 +2956,7 @@ return [
             'example_translation' => '那位紳士替年長女士開了門。',
         ],
         [
+            'id' => 1322,
             'word' => 'personal',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈpɝsɪnəɫ/',
@@ -2643,6 +2965,7 @@ return [
             'example_translation' => '請不要閱讀我的私人信件。',
         ],
         [
+            'id' => 1323,
             'word' => 'bark',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈbɑɹk/',
@@ -2651,6 +2974,7 @@ return [
             'example_translation' => '這棵樹有粗糙的樹皮。',
         ],
         [
+            'id' => 1324,
             'word' => 'lend',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˈɫɛnd/',
@@ -2659,6 +2983,7 @@ return [
             'example_translation' => '你可以把你的雨傘借給我嗎？',
         ],
         [
+            'id' => 1325,
             'word' => 'formal',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈfɔɹməɫ/',
@@ -2667,6 +2992,7 @@ return [
             'example_translation' => '每個人都穿正式服裝參加婚禮。',
         ],
         [
+            'id' => 1326,
             'word' => 'temple',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtɛmpəɫ/',
@@ -2675,6 +3001,7 @@ return [
             'example_translation' => '節日期間，許多人會參觀那座古老的寺廟。',
         ],
         [
+            'id' => 1327,
             'word' => 'joint',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈdʒɔɪnt/',
@@ -2683,6 +3010,7 @@ return [
             'example_translation' => '長途健行後，我的膝關節很痛。',
         ],
         [
+            'id' => 1328,
             'word' => 'wake',
             'part_of_speech' => 'vi.、vt.',
             'pronunciation' => '/ˈweɪk/',
@@ -2691,6 +3019,7 @@ return [
             'example_translation' => '我通常七點醒來，但上學日媽媽會在六點叫醒我。',
         ],
         [
+            'id' => 1329,
             'word' => 'tasty',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈteɪsti/',
@@ -2699,6 +3028,7 @@ return [
             'example_translation' => '這道蔬菜湯很簡單，但很好吃。',
         ],
         [
+            'id' => 1330,
             'word' => 'eastern',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈistɝn/',
@@ -2709,6 +3039,7 @@ return [
     ],
     'group_34' => [
         [
+            'id' => 1331,
             'word' => 'napkin',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈnæpkɪn/',
@@ -2717,6 +3048,7 @@ return [
             'example_translation' => '請用餐巾擦擦嘴巴。',
         ],
         [
+            'id' => 1332,
             'word' => 'helpful',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈhɛɫpfəɫ/',
@@ -2725,6 +3057,7 @@ return [
             'example_translation' => '我們參觀這座城市時，這張地圖非常有幫助。',
         ],
         [
+            'id' => 1333,
             'word' => 'improve',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ɪmˈpɹuv/',
@@ -2733,6 +3066,7 @@ return [
             'example_translation' => '每天閱讀可以提升你的英文能力。',
         ],
         [
+            'id' => 1334,
             'word' => 'cotton',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkɑtən/',
@@ -2741,6 +3075,7 @@ return [
             'example_translation' => '這件襯衫是用柔軟的棉花製成的。',
         ],
         [
+            'id' => 1335,
             'word' => 'source',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsɔɹs/',
@@ -2749,6 +3084,7 @@ return [
             'example_translation' => '圖書館是很好的資訊來源。',
         ],
         [
+            'id' => 1336,
             'word' => 'candle',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkændəɫ/',
@@ -2757,6 +3093,7 @@ return [
             'example_translation' => '停電時，她點了一根蠟燭。',
         ],
         [
+            'id' => 1337,
             'word' => 'narrow',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈnæɹoʊ/',
@@ -2765,6 +3102,7 @@ return [
             'example_translation' => '我們沿著一條狹窄的街道走。',
         ],
         [
+            'id' => 1338,
             'word' => 'stomach',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈstəmək/',
@@ -2773,6 +3111,7 @@ return [
             'example_translation' => '我的胃很痛，因為我吃太多了。',
         ],
         [
+            'id' => 1339,
             'word' => 'snack',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsnæk/',
@@ -2781,6 +3120,7 @@ return [
             'example_translation' => '放學後，我吃了一根香蕉當點心。',
         ],
         [
+            'id' => 1340,
             'word' => 'holder',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈhoʊɫdɝ/',
@@ -2791,6 +3131,7 @@ return [
     ],
     'group_35' => [
         [
+            'id' => 1341,
             'word' => 'tooth',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtuθ/',
@@ -2799,6 +3140,7 @@ return [
             'example_translation' => '我每天早上都仔細刷每一顆牙齒。',
         ],
         [
+            'id' => 1342,
             'word' => 'meter',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈmitɝ/',
@@ -2807,6 +3149,7 @@ return [
             'example_translation' => '停車計時器顯示我們還剩一個小時。',
         ],
         [
+            'id' => 1343,
             'word' => 'insist',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ˌɪnˈsɪst/',
@@ -2815,6 +3158,7 @@ return [
             'example_translation' => '我哥哥堅持要自己提那個重袋子。',
         ],
         [
+            'id' => 1344,
             'word' => 'hamburger',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈhæmˌbɝɡɝ/',
@@ -2823,6 +3167,7 @@ return [
             'example_translation' => '我點了一個漢堡和一杯牛奶。',
         ],
         [
+            'id' => 1345,
             'word' => 'planet',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpɫænət/',
@@ -2831,6 +3176,7 @@ return [
             'example_translation' => '地球是我們居住的行星。',
         ],
         [
+            'id' => 1346,
             'word' => 'downtown',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈdaʊnˈtaʊn/',
@@ -2839,6 +3185,7 @@ return [
             'example_translation' => '城市商業區有許多商店和餐廳。',
         ],
         [
+            'id' => 1347,
             'word' => 'beer',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈbɪɹ/',
@@ -2847,6 +3194,7 @@ return [
             'example_translation' => '我爸爸晚餐時喝了一瓶啤酒。',
         ],
         [
+            'id' => 1348,
             'word' => 'foggy',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈfɑɡi/',
@@ -2855,6 +3203,7 @@ return [
             'example_translation' => '霧很大，所以我們看不見山。',
         ],
         [
+            'id' => 1349,
             'word' => 'term',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtɝm/',
@@ -2863,6 +3212,7 @@ return [
             'example_translation' => '這間公寓的租期是一年。',
         ],
         [
+            'id' => 1350,
             'word' => 'choose',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ˈtʃuz/',
@@ -2873,6 +3223,7 @@ return [
     ],
     'group_36' => [
         [
+            'id' => 1351,
             'word' => 'screenshot',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈskɹinˌʃɑt/',
@@ -2881,6 +3232,7 @@ return [
             'example_translation' => '請傳一張那則訊息的螢幕截圖給我。',
         ],
         [
+            'id' => 1352,
             'word' => 'toe',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtoʊ/',
@@ -2889,6 +3241,7 @@ return [
             'example_translation' => '我撞到桌子時弄傷了腳趾。',
         ],
         [
+            'id' => 1353,
             'word' => 'dictionary',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈdɪkʃəˌnɛɹi/',
@@ -2897,6 +3250,7 @@ return [
             'example_translation' => '我用字典查那個生字。',
         ],
         [
+            'id' => 1354,
             'word' => 'income',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɪnˌkəm/',
@@ -2905,6 +3259,7 @@ return [
             'example_translation' => '她每月的收入足以支付帳單。',
         ],
         [
+            'id' => 1355,
             'word' => 'jeans',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈdʒinz/',
@@ -2913,6 +3268,7 @@ return [
             'example_translation' => '他穿著藍色牛仔褲去野餐。',
         ],
         [
+            'id' => 1356,
             'word' => 'burst',
             'part_of_speech' => 'vi.、vt.、n.',
             'pronunciation' => '/ˈbɝst/',
@@ -2921,6 +3277,7 @@ return [
             'example_translation' => '氣球碰到尖銳的樹枝時爆裂了。',
         ],
         [
+            'id' => 1357,
             'word' => 'comb',
             'part_of_speech' => 'n.、vt.',
             'pronunciation' => '/ˈkoʊm/',
@@ -2929,6 +3286,7 @@ return [
             'example_translation' => '她用梳子整理頭髮。',
         ],
         [
+            'id' => 1358,
             'word' => 'therefore',
             'part_of_speech' => 'adv.',
             'pronunciation' => '/ˈðɛɹˌfɔɹ/',
@@ -2937,6 +3295,7 @@ return [
             'example_translation' => '當時正在下雨，因此我們待在家裡。',
         ],
         [
+            'id' => 1359,
             'word' => 'stress',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈstɹɛs/',
@@ -2945,6 +3304,7 @@ return [
             'example_translation' => '太大的壓力會讓你感到疲倦。',
         ],
         [
+            'id' => 1360,
             'word' => 'anytime',
             'part_of_speech' => 'adv.',
             'pronunciation' => '/ˈɛniˌtaɪm/',
@@ -2955,6 +3315,7 @@ return [
     ],
     'group_37' => [
         [
+            'id' => 1361,
             'word' => 'trick',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˈtɹɪk/',
@@ -2963,6 +3324,7 @@ return [
             'example_translation' => '那個男人試圖哄騙我把密碼給他。',
         ],
         [
+            'id' => 1362,
             'word' => 'alarm',
             'part_of_speech' => 'n.',
             'pronunciation' => '/əˈɫɑɹm/',
@@ -2971,6 +3333,7 @@ return [
             'example_translation' => '有人打開門時，警報器響了。',
         ],
         [
+            'id' => 1363,
             'word' => 'policy',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpɑɫəsi/',
@@ -2979,6 +3342,7 @@ return [
             'example_translation' => '這所學校有一項關於使用手機的新政策。',
         ],
         [
+            'id' => 1364,
             'word' => 'luck',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɫək/',
@@ -2987,6 +3351,7 @@ return [
             'example_translation' => '如果運氣好一點，我們就能搭上末班公車。',
         ],
         [
+            'id' => 1365,
             'word' => 'magazine',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈmæɡəˌzin/',
@@ -2995,6 +3360,7 @@ return [
             'example_translation' => '我在一本旅遊雜誌裡讀到一篇有趣的文章。',
         ],
         [
+            'id' => 1366,
             'word' => 'guitar',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ɡɪˈtɑɹ/',
@@ -3003,6 +3369,7 @@ return [
             'example_translation' => '我哥哥在學校樂團裡彈吉他。',
         ],
         [
+            'id' => 1367,
             'word' => 'crayon',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkɹeɪˌɑn/',
@@ -3011,6 +3378,7 @@ return [
             'example_translation' => '那個孩子用紅色蠟筆畫了一朵花。',
         ],
         [
+            'id' => 1368,
             'word' => 'penguin',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpɛŋɡwən/',
@@ -3019,6 +3387,7 @@ return [
             'example_translation' => '那隻企鵝慢慢地走過冰面。',
         ],
         [
+            'id' => 1369,
             'word' => 'skinny',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈskɪni/',
@@ -3027,6 +3396,7 @@ return [
             'example_translation' => '那隻極瘦的貓需要更多食物和照顧。',
         ],
         [
+            'id' => 1370,
             'word' => 'soldier',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsoʊɫdʒɝ/',
@@ -3037,6 +3407,7 @@ return [
     ],
     'group_38' => [
         [
+            'id' => 1371,
             'word' => 'cashback',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkæʃˌbæk/',
@@ -3045,6 +3416,7 @@ return [
             'example_translation' => '這張信用卡提供顧客百分之五的現金回饋。',
         ],
         [
+            'id' => 1372,
             'word' => 'flat',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈfɫæt/',
@@ -3053,6 +3425,7 @@ return [
             'example_translation' => '我們找到一塊平坦的地方搭帳篷。',
         ],
         [
+            'id' => 1373,
             'word' => 'article',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɑɹtəkəɫ/',
@@ -3061,6 +3434,7 @@ return [
             'example_translation' => '她寫了一篇關於保護海洋的文章。',
         ],
         [
+            'id' => 1374,
             'word' => 'dumpling',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈdəmpɫɪŋ/',
@@ -3069,6 +3443,7 @@ return [
             'example_translation' => '我祖母晚餐會做美味的餃子。',
         ],
         [
+            'id' => 1375,
             'word' => 'basics',
             'part_of_speech' => 'a.',
             'pronunciation' => '/ˈbeɪsɪks/',
@@ -3077,6 +3452,7 @@ return [
             'example_translation' => '這門課教授使用電腦的基礎知識。',
         ],
         [
+            'id' => 1376,
             'word' => 'describe',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/dɪsˈkɹaɪb/',
@@ -3085,6 +3461,7 @@ return [
             'example_translation' => '請描述你在車站看到的那個人。',
         ],
         [
+            'id' => 1377,
             'word' => 'nest',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈnɛst/',
@@ -3093,6 +3470,7 @@ return [
             'example_translation' => '一隻鳥在我們窗外的樹上築了一個巢。',
         ],
         [
+            'id' => 1378,
             'word' => 'grape',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɡɹeɪp/',
@@ -3101,6 +3479,7 @@ return [
             'example_translation' => '她在午餐盒裡放了幾顆葡萄。',
         ],
         [
+            'id' => 1379,
             'word' => 'golden',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈɡoʊɫdən/',
@@ -3109,6 +3488,7 @@ return [
             'example_translation' => '秋天時，金色的葉子覆蓋了地面。',
         ],
         [
+            'id' => 1380,
             'word' => 'test',
             'part_of_speech' => 'n.、vt.、vi.',
             'pronunciation' => '/ˈtɛst/',
@@ -3119,6 +3499,7 @@ return [
     ],
     'group_39' => [
         [
+            'id' => 1381,
             'word' => 'lemonade',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɫɛməˈneɪd/',
@@ -3127,6 +3508,7 @@ return [
             'example_translation' => '我們在炎熱的午後喝了冰涼的檸檬水。',
         ],
         [
+            'id' => 1382,
             'word' => 'principal',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈpɹɪnsəpəɫ/',
@@ -3135,6 +3517,7 @@ return [
             'example_translation' => '我來訪的主要原因是要見我以前的老師。',
         ],
         [
+            'id' => 1383,
             'word' => 'plain',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈpɫeɪn/',
@@ -3143,6 +3526,7 @@ return [
             'example_translation' => '她穿了一件樸素的白色襯衫去上學。',
         ],
         [
+            'id' => 1384,
             'word' => 'boss',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈbɑs/',
@@ -3151,6 +3535,7 @@ return [
             'example_translation' => '我的老闆要我今天完成這份報告。',
         ],
         [
+            'id' => 1385,
             'word' => 'pear',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpɛɹ/',
@@ -3159,6 +3544,7 @@ return [
             'example_translation' => '我午餐後吃了一顆甜美的洋梨。',
         ],
         [
+            'id' => 1386,
             'word' => 'cough',
             'part_of_speech' => 'n.、vi.、vt.',
             'pronunciation' => '/ˈkɑf/',
@@ -3167,6 +3553,7 @@ return [
             'example_translation' => '他的咳嗽在夜裡變得更嚴重。',
         ],
         [
+            'id' => 1387,
             'word' => 'screen',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈskɹin/',
@@ -3175,6 +3562,7 @@ return [
             'example_translation' => '電影出現在一個大銀幕上。',
         ],
         [
+            'id' => 1388,
             'word' => 'delicious',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/dɪˈɫɪʃəs/',
@@ -3183,6 +3571,7 @@ return [
             'example_translation' => '這碗湯又熱又美味。',
         ],
         [
+            'id' => 1389,
             'word' => 'complain',
             'part_of_speech' => 'vi.、vt.',
             'pronunciation' => '/kəmˈpɫeɪn/',
@@ -3191,6 +3580,7 @@ return [
             'example_translation' => '顧客抱怨服務速度太慢。',
         ],
         [
+            'id' => 1390,
             'word' => 'former',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈfɔɹmɝ/',
@@ -3201,6 +3591,7 @@ return [
     ],
     'group_40' => [
         [
+            'id' => 1391,
             'word' => 'hotel',
             'part_of_speech' => 'n.',
             'pronunciation' => '/hoʊˈtɛɫ/',
@@ -3209,6 +3600,7 @@ return [
             'example_translation' => '我們住在海灘附近的一間小旅館。',
         ],
         [
+            'id' => 1392,
             'word' => 'hippopotamus',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˌhɪpəˈpɑtəməs/',
@@ -3217,6 +3609,7 @@ return [
             'example_translation' => '那隻河馬在水中張開了嘴巴。',
         ],
         [
+            'id' => 1393,
             'word' => 'goat',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɡoʊt/',
@@ -3225,6 +3618,7 @@ return [
             'example_translation' => '那隻山羊正在山丘上吃草。',
         ],
         [
+            'id' => 1394,
             'word' => 'handkerchief',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈhæŋkɝtʃif/',
@@ -3233,6 +3627,7 @@ return [
             'example_translation' => '她用手帕擦拭眼淚。',
         ],
         [
+            'id' => 1395,
             'word' => 'regard',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ɹɪˈɡɑɹd/',
@@ -3241,6 +3636,7 @@ return [
             'example_translation' => '許多人視她為一位偉大的領導者。',
         ],
         [
+            'id' => 1396,
             'word' => 'whisper',
             'part_of_speech' => 'n.、vi.、vt.',
             'pronunciation' => '/ˈhwɪspɝ/',
@@ -3249,6 +3645,7 @@ return [
             'example_translation' => '他用耳語說話，以免吵醒嬰兒。',
         ],
         [
+            'id' => 1397,
             'word' => 'exist',
             'part_of_speech' => 'vi.',
             'pronunciation' => '/ɪɡˈzɪst/',
@@ -3257,6 +3654,7 @@ return [
             'example_translation' => '有些小動物只存在於這座島上。',
         ],
         [
+            'id' => 1398,
             'word' => 'lip balm',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɫɪp ˌbɑm/',
@@ -3265,6 +3663,7 @@ return [
             'example_translation' => '因為嘴唇很乾，我擦了護唇膏。',
         ],
         [
+            'id' => 1399,
             'word' => 'movable',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈmuvəbəɫ/',
@@ -3273,6 +3672,7 @@ return [
             'example_translation' => '這張桌子有可移動的輪子，所以我們可以輕鬆改變它的位置。',
         ],
         [
+            'id' => 1400,
             'word' => 'reply',
             'part_of_speech' => 'vi.、vt.、n.',
             'pronunciation' => '/ɹiˈpɫaɪ/',
@@ -3283,6 +3683,7 @@ return [
     ],
     'group_41' => [
         [
+            'id' => 1401,
             'word' => 'supply',
             'part_of_speech' => 'vt.、n.',
             'pronunciation' => '/səˈpɫaɪ/',
@@ -3291,6 +3692,7 @@ return [
             'example_translation' => '那家商店每天早上供給我們學校新鮮的麵包。',
         ],
         [
+            'id' => 1402,
             'word' => 'used to',
             'part_of_speech' => 'aux.、v.',
             'pronunciation' => '/ˈjust ˌtu/',
@@ -3299,6 +3701,7 @@ return [
             'example_translation' => '我年輕時曾經常常走路上學。',
         ],
         [
+            'id' => 1403,
             'word' => 'support',
             'part_of_speech' => 'vt.、n.',
             'pronunciation' => '/səˈpɔɹt/',
@@ -3307,6 +3710,7 @@ return [
             'example_translation' => '我的父母支持我成為醫生的夢想。',
         ],
         [
+            'id' => 1404,
             'word' => 'crime',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkɹaɪm/',
@@ -3315,6 +3719,7 @@ return [
             'example_translation' => '警方正試圖偵破這起罪行。',
         ],
         [
+            'id' => 1405,
             'word' => 'business',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈbɪznəs/',
@@ -3323,6 +3728,7 @@ return [
             'example_translation' => '她的家人從事餐飲業已經很多年了。',
         ],
         [
+            'id' => 1406,
             'word' => 'general',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈdʒɛnɝəɫ/',
@@ -3331,6 +3737,7 @@ return [
             'example_translation' => '那位將軍帶領他的士兵上戰場。',
         ],
         [
+            'id' => 1407,
             'word' => 'prince',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpɹɪns/',
@@ -3339,6 +3746,7 @@ return [
             'example_translation' => '王子向宮殿外的人們問候。',
         ],
         [
+            'id' => 1408,
             'word' => 'upon',
             'part_of_speech' => 'prep.',
             'pronunciation' => '/əˈpɑn/',
@@ -3347,6 +3755,7 @@ return [
             'example_translation' => '那隻貓跳到桌子上。',
         ],
         [
+            'id' => 1409,
             'word' => 'usual',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈjuʒəwəɫ/',
@@ -3355,6 +3764,7 @@ return [
             'example_translation' => '她在平常的時間到達學校。',
         ],
         [
+            'id' => 1410,
             'word' => 'bet',
             'part_of_speech' => 'n.、v.',
             'pronunciation' => '/ˈbɛt/',
@@ -3365,6 +3775,7 @@ return [
     ],
     'group_42' => [
         [
+            'id' => 1411,
             'word' => 'imagine',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ˌɪˈmædʒən/',
@@ -3373,6 +3784,7 @@ return [
             'example_translation' => '你能想像住在月球上嗎？',
         ],
         [
+            'id' => 1412,
             'word' => 'exercise',
             'part_of_speech' => 'v.、n.',
             'pronunciation' => '/ˈɛksɝˌsaɪz/',
@@ -3381,6 +3793,7 @@ return [
             'example_translation' => '我每天早上運動三十分鐘。',
         ],
         [
+            'id' => 1413,
             'word' => 'mass',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈmæs/',
@@ -3389,6 +3802,7 @@ return [
             'example_translation' => '那家公司開始大量生產這款新手機。',
         ],
         [
+            'id' => 1414,
             'word' => 'share',
             'part_of_speech' => 'n.、vt.、vi.',
             'pronunciation' => '/ˈʃɛɹ/',
@@ -3397,6 +3811,7 @@ return [
             'example_translation' => '我們同意分攤這頓飯的費用。',
         ],
         [
+            'id' => 1415,
             'word' => 'favorite',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈfeɪvɝɪt/',
@@ -3405,6 +3820,7 @@ return [
             'example_translation' => '藍色是我特別喜愛的顏色。',
         ],
         [
+            'id' => 1416,
             'word' => 'drag',
             'part_of_speech' => 'vt.、vi.、n.',
             'pronunciation' => '/ˈdɹæɡ/',
@@ -3413,6 +3829,7 @@ return [
             'example_translation' => '請把那個重箱子拖過地板。',
         ],
         [
+            'id' => 1417,
             'word' => 'peace',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpis/',
@@ -3421,6 +3838,7 @@ return [
             'example_translation' => '每個人都希望這兩個國家能和平共處。',
         ],
         [
+            'id' => 1418,
             'word' => 'riches',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɹɪtʃəz/',
@@ -3429,6 +3847,7 @@ return [
             'example_translation' => '國王用他的財富幫助窮人。',
         ],
         [
+            'id' => 1419,
             'word' => 'within',
             'part_of_speech' => 'prep.、adv.',
             'pronunciation' => '/wɪˈðɪn/',
@@ -3437,6 +3856,7 @@ return [
             'example_translation' => '請在兩小時內完成你的作業。',
         ],
         [
+            'id' => 1420,
             'word' => 'ending',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɛndɪŋ/',
@@ -3447,6 +3867,7 @@ return [
     ],
     'group_43' => [
         [
+            'id' => 1421,
             'word' => 'progress',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpɹɑˌɡɹɛs/',
@@ -3455,6 +3876,7 @@ return [
             'example_translation' => '她今年的英文進步很多。',
         ],
         [
+            'id' => 1422,
             'word' => 'melody',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈmɛɫədi/',
@@ -3463,6 +3885,7 @@ return [
             'example_translation' => '那段優美的旋律一整天都留在我的腦海裡。',
         ],
         [
+            'id' => 1423,
             'word' => 'diary',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈdaɪɝi/',
@@ -3471,6 +3894,7 @@ return [
             'example_translation' => '我每天晚上都在日記裡寫下自己一天的生活。',
         ],
         [
+            'id' => 1424,
             'word' => 'marriage',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈmɛɹɪdʒ/',
@@ -3479,6 +3903,7 @@ return [
             'example_translation' => '他們的婚姻已經維持了二十多年。',
         ],
         [
+            'id' => 1425,
             'word' => 'uniform',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈjunəˌfɔɹm/',
@@ -3487,6 +3912,7 @@ return [
             'example_translation' => '學生平日必須穿學校制服。',
         ],
         [
+            'id' => 1426,
             'word' => 'straw',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈstɹɔ/',
@@ -3495,6 +3921,7 @@ return [
             'example_translation' => '她用吸管喝果汁。',
         ],
         [
+            'id' => 1427,
             'word' => 'wing',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈwɪŋ/',
@@ -3503,6 +3930,7 @@ return [
             'example_translation' => '那隻鳥的翅膀受傷了，無法飛行。',
         ],
         [
+            'id' => 1428,
             'word' => 'score',
             'part_of_speech' => 'n.、vt.、vi.',
             'pronunciation' => '/ˈskɔɹ/',
@@ -3511,6 +3939,7 @@ return [
             'example_translation' => '我們的隊伍在最後一分鐘得到三分。',
         ],
         [
+            'id' => 1429,
             'word' => 'pride',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpɹaɪd/',
@@ -3519,6 +3948,7 @@ return [
             'example_translation' => '他以自己漂亮的花園為傲。',
         ],
         [
+            'id' => 1430,
             'word' => 'brunch',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈbɹəntʃ/',
@@ -3529,6 +3959,7 @@ return [
     ],
     'group_44' => [
         [
+            'id' => 1431,
             'word' => 'object',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɑbdʒɛkt/',
@@ -3537,6 +3968,7 @@ return [
             'example_translation' => '桌上有一個奇怪的物體。',
         ],
         [
+            'id' => 1432,
             'word' => 'wonder',
             'part_of_speech' => 'vi.、vt.',
             'pronunciation' => '/ˈwəndɝ/',
@@ -3545,6 +3977,7 @@ return [
             'example_translation' => '我想知道湯姆為什麼還沒到。',
         ],
         [
+            'id' => 1433,
             'word' => 'clever',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈkɫɛvɝ/',
@@ -3553,6 +3986,7 @@ return [
             'example_translation' => '那個伶俐的女孩想出了解決問題的方法。',
         ],
         [
+            'id' => 1434,
             'word' => 'supermarket',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsupɝˌmɑɹkɪt/',
@@ -3561,6 +3995,7 @@ return [
             'example_translation' => '我媽媽去超級市場買了一些蔬菜。',
         ],
         [
+            'id' => 1435,
             'word' => 'secretary',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsɛkɹəˌtɛɹi/',
@@ -3569,6 +4004,7 @@ return [
             'example_translation' => '祕書接了電話，並記下留言。',
         ],
         [
+            'id' => 1436,
             'word' => 'section',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsɛkʃən/',
@@ -3577,6 +4013,7 @@ return [
             'example_translation' => '請閱讀這本書的第一部分。',
         ],
         [
+            'id' => 1437,
             'word' => 'stick',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈstɪk/',
@@ -3585,6 +4022,7 @@ return [
             'example_translation' => '那個男孩從地上撿起一根樹枝。',
         ],
         [
+            'id' => 1438,
             'word' => 'tear',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ˈtɛɹ/',
@@ -3593,6 +4031,7 @@ return [
             'example_translation' => '小心不要把紙撕破。',
         ],
         [
+            'id' => 1439,
             'word' => 'straw',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈstɹɔ/',
@@ -3601,6 +4040,7 @@ return [
             'example_translation' => '農夫用稻草覆蓋地面。',
         ],
         [
+            'id' => 1440,
             'word' => 'telephone',
             'part_of_speech' => 'n.、vt.',
             'pronunciation' => '/ˈtɛɫəˌfoʊn/',
@@ -3611,6 +4051,7 @@ return [
     ],
     'group_45' => [
         [
+            'id' => 1441,
             'word' => 'locate',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˈɫoʊˌkeɪt/',
@@ -3619,6 +4060,7 @@ return [
             'example_translation' => '警方努力確定失蹤孩子的所在地。',
         ],
         [
+            'id' => 1442,
             'word' => 'through',
             'part_of_speech' => 'prep.、adv.',
             'pronunciation' => '/ˈθɹu/',
@@ -3627,6 +4069,7 @@ return [
             'example_translation' => '我們穿過公園回家。',
         ],
         [
+            'id' => 1443,
             'word' => 'gain',
             'part_of_speech' => 'vt.、vi.、n.',
             'pronunciation' => '/ˈɡeɪn/',
@@ -3635,6 +4078,7 @@ return [
             'example_translation' => '她努力工作以獲得更多經驗。',
         ],
         [
+            'id' => 1444,
             'word' => 'attend',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/əˈtɛnd/',
@@ -3643,6 +4087,7 @@ return [
             'example_translation' => '我明天會出席學校會議。',
         ],
         [
+            'id' => 1445,
             'word' => 'dessert',
             'part_of_speech' => 'n.',
             'pronunciation' => '/dɪˈzɝt/',
@@ -3651,6 +4096,7 @@ return [
             'example_translation' => '晚餐後，我們吃冰淇淋當甜點。',
         ],
         [
+            'id' => 1446,
             'word' => 'event',
             'part_of_speech' => 'n.',
             'pronunciation' => '/iˈvɛnt/',
@@ -3659,6 +4105,7 @@ return [
             'example_translation' => '學校為家長舉辦了一場特別活動。',
         ],
         [
+            'id' => 1447,
             'word' => 'instant',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈɪnstənt/',
@@ -3667,6 +4114,7 @@ return [
             'example_translation' => '這些即食麵三分鐘就準備好了。',
         ],
         [
+            'id' => 1448,
             'word' => 'entrance',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɛntɹəns/',
@@ -3675,6 +4123,7 @@ return [
             'example_translation' => '請在主要入口處等我。',
         ],
         [
+            'id' => 1449,
             'word' => 'servant',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsɝvənt/',
@@ -3683,6 +4132,7 @@ return [
             'example_translation' => '僕人端茶給客人。',
         ],
         [
+            'id' => 1450,
             'word' => 'focus',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈfoʊkəs/',
@@ -3693,6 +4143,7 @@ return [
     ],
     'group_46' => [
         [
+            'id' => 1451,
             'word' => 'vacation',
             'part_of_speech' => 'n.',
             'pronunciation' => '/veɪˈkeɪʃən/',
@@ -3701,6 +4152,7 @@ return [
             'example_translation' => '我家人要去日本度假。',
         ],
         [
+            'id' => 1452,
             'word' => 'comfortable',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈkəmfɝtəbəɫ/',
@@ -3709,6 +4161,7 @@ return [
             'example_translation' => '這張椅子非常舒適。',
         ],
         [
+            'id' => 1453,
             'word' => 'quality',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkwɑɫəti/',
@@ -3717,6 +4170,7 @@ return [
             'example_translation' => '這家商店販售品質良好的衣服。',
         ],
         [
+            'id' => 1454,
             'word' => 'spider',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈspaɪdɝ/',
@@ -3725,6 +4179,7 @@ return [
             'example_translation' => '一隻小蜘蛛正在牆上爬。',
         ],
         [
+            'id' => 1455,
             'word' => 'range',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɹeɪndʒ/',
@@ -3733,6 +4188,7 @@ return [
             'example_translation' => '冬天時，白雪覆蓋了整條山脈。',
         ],
         [
+            'id' => 1456,
             'word' => 'frighten',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˈfɹaɪtən/',
@@ -3741,6 +4197,7 @@ return [
             'example_translation' => '巨大的雷聲使小男孩受到驚嚇。',
         ],
         [
+            'id' => 1457,
             'word' => 'success',
             'part_of_speech' => 'n.',
             'pronunciation' => '/səkˈsɛs/',
@@ -3749,6 +4206,7 @@ return [
             'example_translation' => '她的成就是多年努力工作的成果。',
         ],
         [
+            'id' => 1458,
             'word' => 'be used to',
             'part_of_speech' => 'adj.、phrase',
             'pronunciation' => '/bi ˈjust ˌtu/',
@@ -3757,6 +4215,7 @@ return [
             'example_translation' => '我已經習慣每天早起。',
         ],
         [
+            'id' => 1459,
             'word' => 'congratulation',
             'part_of_speech' => 'n.',
             'pronunciation' => '/kənˌɡɹætʃəˈɫeɪʃən/',
@@ -3765,6 +4224,7 @@ return [
             'example_translation' => '老師的祝賀讓她非常開心。',
         ],
         [
+            'id' => 1460,
             'word' => 'population',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˌpɑpjəˈɫeɪʃən/',
@@ -3775,6 +4235,7 @@ return [
     ],
     'group_47' => [
         [
+            'id' => 1461,
             'word' => 'neat',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈnit/',
@@ -3783,6 +4244,7 @@ return [
             'example_translation' => '請保持你的書桌整齊。',
         ],
         [
+            'id' => 1462,
             'word' => 'include',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˌɪnˈkɫud/',
@@ -3791,6 +4253,7 @@ return [
             'example_translation' => '這個價格包含早餐。',
         ],
         [
+            'id' => 1463,
             'word' => 'hanger',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈhæŋɝ/',
@@ -3799,6 +4262,7 @@ return [
             'example_translation' => '我把外套掛在衣架上。',
         ],
         [
+            'id' => 1464,
             'word' => 'lightning',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɫaɪtnɪŋ/',
@@ -3807,6 +4271,7 @@ return [
             'example_translation' => '閃電照亮了夜空。',
         ],
         [
+            'id' => 1465,
             'word' => 'beef',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈbif/',
@@ -3815,6 +4280,7 @@ return [
             'example_translation' => '我們晚餐吃了牛肉和飯。',
         ],
         [
+            'id' => 1466,
             'word' => 'enemy',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɛnəmi/',
@@ -3823,6 +4289,7 @@ return [
             'example_translation' => '那名士兵看到附近有一個敵人。',
         ],
         [
+            'id' => 1467,
             'word' => 'type',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtaɪp/',
@@ -3831,6 +4298,7 @@ return [
             'example_translation' => '你喜歡哪一種類型的音樂？',
         ],
         [
+            'id' => 1468,
             'word' => 'arrow',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈæɹoʊ/',
@@ -3839,6 +4307,7 @@ return [
             'example_translation' => '那支箭射中了靶心。',
         ],
         [
+            'id' => 1469,
             'word' => 'claw',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkɫɔ/',
@@ -3847,6 +4316,7 @@ return [
             'example_translation' => '那隻貓用腳爪抓住了玩具。',
         ],
         [
+            'id' => 1470,
             'word' => 'beg',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˈbɛɡ/',
@@ -3857,6 +4327,7 @@ return [
     ],
     'group_48' => [
         [
+            'id' => 1471,
             'word' => 'independent',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˌɪndɪˈpɛndənt/',
@@ -3865,6 +4336,7 @@ return [
             'example_translation' => '我姊姊很獨立，能照顧自己。',
         ],
         [
+            'id' => 1472,
             'word' => 'present',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈpɹɛzənt/',
@@ -3873,6 +4345,7 @@ return [
             'example_translation' => '今天所有學生都有出席上課。',
         ],
         [
+            'id' => 1473,
             'word' => 'juicy',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈdʒusi/',
@@ -3881,6 +4354,7 @@ return [
             'example_translation' => '這顆柳橙又甜又多汁。',
         ],
         [
+            'id' => 1474,
             'word' => 'pattern',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpætɝn/',
@@ -3889,6 +4363,7 @@ return [
             'example_translation' => '我的襯衫有繽紛的圖案。',
         ],
         [
+            'id' => 1475,
             'word' => 'metal',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈmɛtəɫ/',
@@ -3897,6 +4372,7 @@ return [
             'example_translation' => '這張桌子是用金屬製成的。',
         ],
         [
+            'id' => 1476,
             'word' => 'computer',
             'part_of_speech' => 'n.',
             'pronunciation' => '/kəmˈpjutɝ/',
@@ -3905,6 +4381,7 @@ return [
             'example_translation' => '我用電腦做家庭作業。',
         ],
         [
+            'id' => 1477,
             'word' => 'teen',
             'part_of_speech' => 'n.、adj.',
             'pronunciation' => '/ˈtin/',
@@ -3913,6 +4390,7 @@ return [
             'example_translation' => '那名青少年喜歡放學後打籃球。',
         ],
         [
+            'id' => 1478,
             'word' => 'nail',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈneɪɫ/',
@@ -3921,6 +4399,7 @@ return [
             'example_translation' => '她把指甲塗成粉紅色。',
         ],
         [
+            'id' => 1479,
             'word' => 'attention',
             'part_of_speech' => 'n.',
             'pronunciation' => '/əˈtɛnʃən/',
@@ -3929,6 +4408,7 @@ return [
             'example_translation' => '請注意老師。',
         ],
         [
+            'id' => 1480,
             'word' => 'sink',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsɪŋk/',
@@ -3939,6 +4419,7 @@ return [
     ],
     'group_49' => [
         [
+            'id' => 1481,
             'word' => 'task',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtæsk/',
@@ -3947,6 +4428,7 @@ return [
             'example_translation' => '我的第一項任務是打掃教室。',
         ],
         [
+            'id' => 1482,
             'word' => 'clay',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkɫeɪ/',
@@ -3955,6 +4437,7 @@ return [
             'example_translation' => '孩子們用黏土製作小動物。',
         ],
         [
+            'id' => 1483,
             'word' => 'popular',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈpɑpjəɫɝ/',
@@ -3963,6 +4446,7 @@ return [
             'example_translation' => '這首歌很受年輕人歡迎。',
         ],
         [
+            'id' => 1484,
             'word' => 'heroine',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈhɛɹoʊɪn/',
@@ -3971,6 +4455,7 @@ return [
             'example_translation' => '那位女英雄把孩子從火場中救了出來。',
         ],
         [
+            'id' => 1485,
             'word' => 'lose',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ˈɫuz/',
@@ -3979,6 +4464,7 @@ return [
             'example_translation' => '小心不要弄丟你的書包。',
         ],
         [
+            'id' => 1486,
             'word' => 'quarter',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkwɔɹtɝ/',
@@ -3987,6 +4473,7 @@ return [
             'example_translation' => '我吃了四分之一的蛋糕。',
         ],
         [
+            'id' => 1487,
             'word' => 'table tennis',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈteɪbəɫ ˌtɛnəs/',
@@ -3995,6 +4482,7 @@ return [
             'example_translation' => '我哥哥放學後打桌球。',
         ],
         [
+            'id' => 1488,
             'word' => 'item',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈaɪtəm/',
@@ -4003,6 +4491,7 @@ return [
             'example_translation' => '清單上的最後一個項目是一本新筆記本。',
         ],
         [
+            'id' => 1489,
             'word' => 'clerk',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkɫɝk/',
@@ -4011,6 +4500,7 @@ return [
             'example_translation' => '那位職員幫我找到合適的尺寸。',
         ],
         [
+            'id' => 1490,
             'word' => 'flour',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈfɫaʊɝ/',
@@ -4021,6 +4511,7 @@ return [
     ],
     'group_50' => [
         [
+            'id' => 1491,
             'word' => 'log',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɫɔɡ/',
@@ -4029,6 +4520,7 @@ return [
             'example_translation' => '露營者坐在火堆旁的一根圓木上。',
         ],
         [
+            'id' => 1492,
             'word' => 'international',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˌɪnɝˈnæʃənəɫ/',
@@ -4037,6 +4529,7 @@ return [
             'example_translation' => '我們的學校舉辦了一場國際美食節。',
         ],
         [
+            'id' => 1493,
             'word' => 'shock',
             'part_of_speech' => 'n.、vt.、vi.',
             'pronunciation' => '/ˈʃɑk/',
@@ -4045,6 +4538,7 @@ return [
             'example_translation' => '兩輛車的衝撞發出了很大的聲音。',
         ],
         [
+            'id' => 1494,
             'word' => 'winner',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈwɪnɝ/',
@@ -4053,6 +4547,7 @@ return [
             'example_translation' => '優勝者獲得了一面金牌。',
         ],
         [
+            'id' => 1495,
             'word' => 'cock',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkɑk/',
@@ -4061,6 +4556,7 @@ return [
             'example_translation' => '公雞在日出時開始啼叫。',
         ],
         [
+            'id' => 1496,
             'word' => 'bench',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈbɛntʃ/',
@@ -4069,6 +4565,7 @@ return [
             'example_translation' => '我們坐在公園裡的一張長椅上。',
         ],
         [
+            'id' => 1497,
             'word' => 'dress',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ˈdɹɛs/',
@@ -4077,6 +4574,7 @@ return [
             'example_translation' => '孩子們為了派對打扮自己。',
         ],
         [
+            'id' => 1498,
             'word' => 'design',
             'part_of_speech' => 'vt.、vi.、n.',
             'pronunciation' => '/dɪˈzaɪn/',
@@ -4085,6 +4583,7 @@ return [
             'example_translation' => '我姊姊設計了一張色彩繽紛的海報。',
         ],
         [
+            'id' => 1499,
             'word' => 'sample',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsæmpəɫ/',
@@ -4093,6 +4592,7 @@ return [
             'example_translation' => '老師給了我們一份這項專題的樣本。',
         ],
         [
+            'id' => 1500,
             'word' => 'fright',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈfɹaɪt/',
@@ -4103,6 +4603,7 @@ return [
     ],
     'group_51' => [
         [
+            'id' => 1501,
             'word' => 'stamp',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈstæmp/',
@@ -4111,6 +4612,7 @@ return [
             'example_translation' => '請在寄出這封信前，在上面貼一張郵票。',
         ],
         [
+            'id' => 1502,
             'word' => 'length',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɫɛŋkθ/',
@@ -4119,6 +4621,7 @@ return [
             'example_translation' => '這張桌子的長度是兩公尺。',
         ],
         [
+            'id' => 1503,
             'word' => 'scissors',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsɪzɝz/',
@@ -4127,6 +4630,7 @@ return [
             'example_translation' => '你使用這把剪刀時要小心。',
         ],
         [
+            'id' => 1504,
             'word' => 'although',
             'part_of_speech' => 'conj.',
             'pronunciation' => '/ˌɔɫˈðoʊ/',
@@ -4135,6 +4639,7 @@ return [
             'example_translation' => '儘管正在下雨，我們還是去散步了。',
         ],
         [
+            'id' => 1505,
             'word' => 'bitter',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈbɪtɝ/',
@@ -4143,6 +4648,7 @@ return [
             'example_translation' => '這杯咖啡對我來說太苦了。',
         ],
         [
+            'id' => 1506,
             'word' => 'platform',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpɫætˌfɔɹm/',
@@ -4151,6 +4657,7 @@ return [
             'example_translation' => '我們在月臺上等火車。',
         ],
         [
+            'id' => 1507,
             'word' => 'type',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ˈtaɪp/',
@@ -4159,6 +4666,7 @@ return [
             'example_translation' => '我每天晚上在電腦上打字寫作業。',
         ],
         [
+            'id' => 1508,
             'word' => 'pound',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpaʊnd/',
@@ -4167,6 +4675,7 @@ return [
             'example_translation' => '我在市場買了一磅蘋果。',
         ],
         [
+            'id' => 1509,
             'word' => 'fail',
             'part_of_speech' => 'vi.、vt.',
             'pronunciation' => '/ˈfeɪɫ/',
@@ -4175,6 +4684,7 @@ return [
             'example_translation' => '他努力讀書，因為他不想考試不及格。',
         ],
         [
+            'id' => 1510,
             'word' => 'lover',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɫəvɝ/',
@@ -4185,6 +4695,7 @@ return [
     ],
     'group_52' => [
         [
+            'id' => 1511,
             'word' => 'garbage',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɡɑɹbɪdʒ/',
@@ -4193,6 +4704,7 @@ return [
             'example_translation' => '請在晚餐前把垃圾拿到外面。',
         ],
         [
+            'id' => 1512,
             'word' => 'forward',
             'part_of_speech' => 'adv.、adj.、vt.',
             'pronunciation' => '/ˈfɔɹwɝd/',
@@ -4201,6 +4713,7 @@ return [
             'example_translation' => '請將這封電子郵件轉寄給你的老師。',
         ],
         [
+            'id' => 1513,
             'word' => 'private',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈpɹaɪvət/',
@@ -4209,6 +4722,7 @@ return [
             'example_translation' => '這是私人談話，所以請不要告訴任何人。',
         ],
         [
+            'id' => 1514,
             'word' => 'golf',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɡɑɫf/',
@@ -4217,6 +4731,7 @@ return [
             'example_translation' => '我爸爸每個星期日早上都打高爾夫球。',
         ],
         [
+            'id' => 1515,
             'word' => 'neighbor',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈneɪbɝ/',
@@ -4225,6 +4740,7 @@ return [
             'example_translation' => '我們的鄰居常常幫我們搬重箱子。',
         ],
         [
+            'id' => 1516,
             'word' => 'rude',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈɹud/',
@@ -4233,6 +4749,7 @@ return [
             'example_translation' => '在電影院大聲說話是很無禮的。',
         ],
         [
+            'id' => 1517,
             'word' => 'range',
             'part_of_speech' => 'vi.',
             'pronunciation' => '/ˈɹeɪndʒ/',
@@ -4241,6 +4758,7 @@ return [
             'example_translation' => '這些襯衫的價格從二十美元到五十美元不等。',
         ],
         [
+            'id' => 1518,
             'word' => 'pork',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpɔɹk/',
@@ -4249,6 +4767,7 @@ return [
             'example_translation' => '我媽媽晚餐煮了豬肉配蔬菜。',
         ],
         [
+            'id' => 1519,
             'word' => 'respect',
             'part_of_speech' => 'n.、vt.',
             'pronunciation' => '/ɹiˈspɛkt/',
@@ -4257,6 +4776,7 @@ return [
             'example_translation' => '我們敬重老師，因為她既親切又公平。',
         ],
         [
+            'id' => 1520,
             'word' => 'treat',
             'part_of_speech' => 'vt.、n.',
             'pronunciation' => '/ˈtɹit/',
@@ -4267,6 +4787,7 @@ return [
     ],
     'group_53' => [
         [
+            'id' => 1521,
             'word' => 'boba',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈboʊbə/',
@@ -4275,6 +4796,7 @@ return [
             'example_translation' => '我放學後買了一杯珍珠奶茶。',
         ],
         [
+            'id' => 1522,
             'word' => 'elect',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ɪˈɫɛkt/',
@@ -4283,6 +4805,7 @@ return [
             'example_translation' => '學生們明天將推選一位新的班級幹部。',
         ],
         [
+            'id' => 1523,
             'word' => 'divide',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/dɪˈvaɪd/',
@@ -4291,6 +4814,7 @@ return [
             'example_translation' => '請把蛋糕分成八等份。',
         ],
         [
+            'id' => 1524,
             'word' => 'trick',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtɹɪk/',
@@ -4299,6 +4823,7 @@ return [
             'example_translation' => '魔術師為孩子們表演了一個有趣的把戲。',
         ],
         [
+            'id' => 1525,
             'word' => 'crop',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkɹɑp/',
@@ -4307,6 +4832,7 @@ return [
             'example_translation' => '稻米是臺灣重要的農作物。',
         ],
         [
+            'id' => 1526,
             'word' => 'knock',
             'part_of_speech' => 'vi.、vt.、n.',
             'pronunciation' => '/ˈnɑk/',
@@ -4315,6 +4841,7 @@ return [
             'example_translation' => '那兩輛腳踏車在轉角處相撞。',
         ],
         [
+            'id' => 1527,
             'word' => 'measurable',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈmɛʒɝəbəɫ/',
@@ -4323,6 +4850,7 @@ return [
             'example_translation' => '新的運動計畫讓她的健康有了可測量的改善。',
         ],
         [
+            'id' => 1528,
             'word' => 'jam',
             'part_of_speech' => 'vt.、vi.、n.',
             'pronunciation' => '/ˈdʒæm/',
@@ -4331,6 +4859,7 @@ return [
             'example_translation' => '尖峰時段汽車擠滿了狹窄的街道。',
         ],
         [
+            'id' => 1529,
             'word' => 'silence',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsaɪɫəns/',
@@ -4339,6 +4868,7 @@ return [
             'example_translation' => '圖書館裡的寂靜幫助我集中精神。',
         ],
         [
+            'id' => 1530,
             'word' => 'dot',
             'part_of_speech' => 'n.、vt.、vi.',
             'pronunciation' => '/ˈdɑt/',
@@ -4349,6 +4879,7 @@ return [
     ],
     'group_54' => [
         [
+            'id' => 1531,
             'word' => 'swallow',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ˈswɑɫoʊ/',
@@ -4357,6 +4888,7 @@ return [
             'example_translation' => '你應該把食物充分咀嚼後再吞下去。',
         ],
         [
+            'id' => 1532,
             'word' => 'complete',
             'part_of_speech' => 'adj.、vt.',
             'pronunciation' => '/kəmˈpɫit/',
@@ -4365,6 +4897,7 @@ return [
             'example_translation' => '請確認你的申請表是完整的。',
         ],
         [
+            'id' => 1533,
             'word' => 'refuse',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ɹəfˈjuz/',
@@ -4373,6 +4906,7 @@ return [
             'example_translation' => '他拒絕為那位陌生人開門。',
         ],
         [
+            'id' => 1534,
             'word' => 'vocabulary',
             'part_of_speech' => 'n.',
             'pronunciation' => '/voʊˈkæbjəˌɫɛɹi/',
@@ -4381,6 +4915,7 @@ return [
             'example_translation' => '每天閱讀可以幫助你累積更多字彙。',
         ],
         [
+            'id' => 1535,
             'word' => 'drop',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ˈdɹɑp/',
@@ -4389,6 +4924,7 @@ return [
             'example_translation' => '小心不要把手機掉下去。',
         ],
         [
+            'id' => 1536,
             'word' => 'princess',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpɹɪnsəs/',
@@ -4397,6 +4933,7 @@ return [
             'example_translation' => '公主從陽臺上向孩子們揮手。',
         ],
         [
+            'id' => 1537,
             'word' => 'produce',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/pɹəˈdus/',
@@ -4405,6 +4942,7 @@ return [
             'example_translation' => '這家工廠每個月生產數千件玩具。',
         ],
         [
+            'id' => 1538,
             'word' => 'onion',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈənjən/',
@@ -4413,6 +4951,7 @@ return [
             'example_translation' => '請在湯裡加一顆洋蔥。',
         ],
         [
+            'id' => 1539,
             'word' => 'effective',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈifɛktɪv/',
@@ -4421,6 +4960,7 @@ return [
             'example_translation' => '這是記住新單字的有效方法。',
         ],
         [
+            'id' => 1540,
             'word' => 'arrest',
             'part_of_speech' => 'vt.、n.',
             'pronunciation' => '/ɝˈɛst/',
@@ -4431,6 +4971,7 @@ return [
     ],
     'group_55' => [
         [
+            'id' => 1541,
             'word' => 'wallet',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈwɔɫət/',
@@ -4439,6 +4980,7 @@ return [
             'example_translation' => '我把皮夾忘在桌上了。',
         ],
         [
+            'id' => 1542,
             'word' => 'overpass',
             'part_of_speech' => 'vt.、n.',
             'pronunciation' => '/ˈoʊvɝˌpæs/',
@@ -4447,6 +4989,7 @@ return [
             'example_translation' => '這條高速公路越過鐵軌。',
         ],
         [
+            'id' => 1543,
             'word' => 'coin',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkɔɪn/',
@@ -4455,6 +4998,7 @@ return [
             'example_translation' => '我在沙發底下找到一枚硬幣。',
         ],
         [
+            'id' => 1544,
             'word' => 'monster',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈmɑnstɝ/',
@@ -4463,6 +5007,7 @@ return [
             'example_translation' => '那個小男孩害怕電影裡的怪物。',
         ],
         [
+            'id' => 1545,
             'word' => 'leadership',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɫidɝˌʃɪp/',
@@ -4471,6 +5016,7 @@ return [
             'example_translation' => '她出色的領導能力幫助團隊獲勝。',
         ],
         [
+            'id' => 1546,
             'word' => 'square',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈskwɛɹ/',
@@ -4479,6 +5025,7 @@ return [
             'example_translation' => '請在紙上畫一個正方形。',
         ],
         [
+            'id' => 1547,
             'word' => 'crowd',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkɹaʊd/',
@@ -4487,6 +5034,7 @@ return [
             'example_translation' => '一大群人等在體育場外。',
         ],
         [
+            'id' => 1548,
             'word' => 'nearby',
             'part_of_speech' => 'adj.、adv.',
             'pronunciation' => '/ˈnɪɹˈbaɪ/',
@@ -4495,6 +5043,7 @@ return [
             'example_translation' => '附近有一家賣新鮮麵包的商店。',
         ],
         [
+            'id' => 1549,
             'word' => 'armchair',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɑɹmˌtʃɛɹ/',
@@ -4503,6 +5052,7 @@ return [
             'example_translation' => '爺爺正坐在他最喜歡的扶手椅上。',
         ],
         [
+            'id' => 1550,
             'word' => 'dentist',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈdɛnɪst/',
@@ -4513,6 +5063,7 @@ return [
     ],
     'group_56' => [
         [
+            'id' => 1551,
             'word' => 'clothing',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkɫoʊðɪŋ/',
@@ -4521,6 +5072,7 @@ return [
             'example_translation' => '這家商店販售冬天穿的保暖衣物。',
         ],
         [
+            'id' => 1552,
             'word' => 'wise',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈwaɪz/',
@@ -4529,6 +5081,7 @@ return [
             'example_translation' => '今天帶雨傘是明智的做法。',
         ],
         [
+            'id' => 1553,
             'word' => 'silent',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈsaɪɫənt/',
@@ -4537,6 +5090,7 @@ return [
             'example_translation' => '考試時學生們都保持沉默。',
         ],
         [
+            'id' => 1554,
             'word' => 'motorcycle',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈmoʊtɝˌsaɪkəɫ/',
@@ -4545,6 +5099,7 @@ return [
             'example_translation' => '我哥哥騎摩托車上班。',
         ],
         [
+            'id' => 1555,
             'word' => 'promise',
             'part_of_speech' => 'n.、vt.、vi.',
             'pronunciation' => '/ˈpɹɑməs/',
@@ -4553,6 +5108,7 @@ return [
             'example_translation' => '我承諾要幫助妹妹。',
         ],
         [
+            'id' => 1556,
             'word' => 'checkout',
             'part_of_speech' => 'n.、vi.',
             'pronunciation' => '/ˈtʃɛkˌaʊt/',
@@ -4561,6 +5117,7 @@ return [
             'example_translation' => '我們在中午以前辦好了飯店退房手續。',
         ],
         [
+            'id' => 1557,
             'word' => 'duty',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈduti/',
@@ -4569,6 +5126,7 @@ return [
             'example_translation' => '照顧環境是我們的義務。',
         ],
         [
+            'id' => 1558,
             'word' => 'island',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈaɪɫənd/',
@@ -4577,6 +5135,7 @@ return [
             'example_translation' => '他們在一座美麗的島上度假。',
         ],
         [
+            'id' => 1559,
             'word' => 'regard',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ɹɪˈɡɑɹd/',
@@ -4585,6 +5144,7 @@ return [
             'example_translation' => '請代我向你的父母問候。',
         ],
         [
+            'id' => 1560,
             'word' => 'tear',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtɪɹ/',
@@ -4595,6 +5155,7 @@ return [
     ],
     'group_57' => [
         [
+            'id' => 1561,
             'word' => 'loser',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɫuzɝ/',
@@ -4603,6 +5164,7 @@ return [
             'example_translation' => '沒有人喜歡被叫作失敗者。',
         ],
         [
+            'id' => 1562,
             'word' => 'shoot',
             'part_of_speech' => 'vt.、vi.、n.',
             'pronunciation' => '/ˈʃut/',
@@ -4611,6 +5173,7 @@ return [
             'example_translation' => '火箭明天將發射升空。',
         ],
         [
+            'id' => 1563,
             'word' => 'salty',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈsɔɫti/',
@@ -4619,6 +5182,7 @@ return [
             'example_translation' => '這碗湯對我來說太鹹了。',
         ],
         [
+            'id' => 1564,
             'word' => 'quit',
             'part_of_speech' => 'vi.、vt.',
             'pronunciation' => '/ˈkwɪt/',
@@ -4627,6 +5191,7 @@ return [
             'example_translation' => '他決定退出這支隊伍。',
         ],
         [
+            'id' => 1565,
             'word' => 'object',
             'part_of_speech' => 'vi.',
             'pronunciation' => '/əbˈdʒɛkt/',
@@ -4635,6 +5200,7 @@ return [
             'example_translation' => '我反對這個計畫，因為它太昂貴了。',
         ],
         [
+            'id' => 1566,
             'word' => 'circle',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsɝkəɫ/',
@@ -4643,6 +5209,7 @@ return [
             'example_translation' => '請在紙上畫一個圓圈。',
         ],
         [
+            'id' => 1567,
             'word' => 'means',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈminz/',
@@ -4651,6 +5218,7 @@ return [
             'example_translation' => '努力工作是達成目標的一種手段。',
         ],
         [
+            'id' => 1568,
             'word' => 'earthquake',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɝθˌkweɪk/',
@@ -4659,6 +5227,7 @@ return [
             'example_translation' => '地震使窗戶搖晃。',
         ],
         [
+            'id' => 1569,
             'word' => 'steak',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsteɪk/',
@@ -4667,6 +5236,7 @@ return [
             'example_translation' => '我爸爸煮了一塊牛排當晚餐。',
         ],
         [
+            'id' => 1570,
             'word' => 'distance',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈdɪstəns/',
@@ -4677,6 +5247,7 @@ return [
     ],
     'group_58' => [
         [
+            'id' => 1571,
             'word' => 'solve',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˈsɑɫv/',
@@ -4685,6 +5256,7 @@ return [
             'example_translation' => '我們一起努力解決這個問題。',
         ],
         [
+            'id' => 1572,
             'word' => 'height',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈhaɪt/',
@@ -4693,6 +5265,7 @@ return [
             'example_translation' => '這棟建築物的高度是 100 公尺。',
         ],
         [
+            'id' => 1573,
             'word' => 'throat',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈθɹoʊt/',
@@ -4701,6 +5274,7 @@ return [
             'example_translation' => '我說話時喉嚨會痛。',
         ],
         [
+            'id' => 1574,
             'word' => 'speaker',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈspikɝ/',
@@ -4709,6 +5283,7 @@ return [
             'example_translation' => '演講者談論閱讀的重要性。',
         ],
         [
+            'id' => 1575,
             'word' => 'ladybug',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɫeɪdiˌbəɡ/',
@@ -4717,6 +5292,7 @@ return [
             'example_translation' => '一隻紅色的瓢蟲停在我的手上。',
         ],
         [
+            'id' => 1576,
             'word' => 'straight',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈstɹeɪt/',
@@ -4725,6 +5301,7 @@ return [
             'example_translation' => '請在椅子上坐直。',
         ],
         [
+            'id' => 1577,
             'word' => 'display',
             'part_of_speech' => 'vt.、n.',
             'pronunciation' => '/dɪsˈpɫeɪ/',
@@ -4733,6 +5310,7 @@ return [
             'example_translation' => '這家商店在櫥窗裡陳列漂亮的包包。',
         ],
         [
+            'id' => 1578,
             'word' => 'valley',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈvæɫi/',
@@ -4741,6 +5319,7 @@ return [
             'example_translation' => '一條小河流經山谷。',
         ],
         [
+            'id' => 1579,
             'word' => 'tennis',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtɛnəs/',
@@ -4749,6 +5328,7 @@ return [
             'example_translation' => '我姊姊每個星期六打網球。',
         ],
         [
+            'id' => 1580,
             'word' => 'debt',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈdɛt/',
@@ -4759,6 +5339,7 @@ return [
     ],
     'group_59' => [
         [
+            'id' => 1581,
             'word' => 'dumb',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈdəm/',
@@ -4767,6 +5348,7 @@ return [
             'example_translation' => '那個男孩不能說話，所以他用寫字來溝通。',
         ],
         [
+            'id' => 1582,
             'word' => 'flood',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ˈfɫəd/',
@@ -4775,6 +5357,7 @@ return [
             'example_translation' => '昨晚的大雨淹沒了街道。',
         ],
         [
+            'id' => 1583,
             'word' => 'playful',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈpɫeɪfəɫ/',
@@ -4783,6 +5366,7 @@ return [
             'example_translation' => '那隻愛玩耍的小狗在花園裡跑來跑去。',
         ],
         [
+            'id' => 1584,
             'word' => 'judge',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ˈdʒədʒ/',
@@ -4791,6 +5375,7 @@ return [
             'example_translation' => '你不應該以貌取人。',
         ],
         [
+            'id' => 1585,
             'word' => 'relation',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ɹiˈɫeɪʃən/',
@@ -4799,6 +5384,7 @@ return [
             'example_translation' => '運動和良好的健康之間有密切的關係。',
         ],
         [
+            'id' => 1586,
             'word' => 'spot',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈspɑt/',
@@ -4807,6 +5393,7 @@ return [
             'example_translation' => '我的襯衫上有一個紅色斑點。',
         ],
         [
+            'id' => 1587,
             'word' => 'fix',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ˈfɪks/',
@@ -4815,6 +5402,7 @@ return [
             'example_translation' => '我爸爸修好了那張壞掉的椅子。',
         ],
         [
+            'id' => 1588,
             'word' => 'lick',
             'part_of_speech' => 'vt.、vi.、n.',
             'pronunciation' => '/ˈɫɪk/',
@@ -4823,6 +5411,7 @@ return [
             'example_translation' => '那隻狗舔了我的手。',
         ],
         [
+            'id' => 1589,
             'word' => 'invent',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˌɪnˈvɛnt/',
@@ -4831,6 +5420,7 @@ return [
             'example_translation' => '亞歷山大・格拉漢姆・貝爾協助發明了電話。',
         ],
         [
+            'id' => 1590,
             'word' => 'lock',
             'part_of_speech' => 'n.、vt.、vi.',
             'pronunciation' => '/ˈɫɑk/',
@@ -4841,6 +5431,7 @@ return [
     ],
     'group_60' => [
         [
+            'id' => 1591,
             'word' => 'cloth',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkɫɔθ/',
@@ -4849,6 +5440,7 @@ return [
             'example_translation' => '她用一塊柔軟的布擦桌子。',
         ],
         [
+            'id' => 1592,
             'word' => 'contact',
             'part_of_speech' => 'vt.、n.',
             'pronunciation' => '/ˈkɑnˌtækt/',
@@ -4857,6 +5449,7 @@ return [
             'example_translation' => '如果你有任何問題，請與我聯絡。',
         ],
         [
+            'id' => 1593,
             'word' => 'depend',
             'part_of_speech' => 'vi.',
             'pronunciation' => '/dɪˈpɛnd/',
@@ -4865,6 +5458,7 @@ return [
             'example_translation' => '年幼的孩子依賴父母提供協助。',
         ],
         [
+            'id' => 1594,
             'word' => 'change',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtʃeɪndʒ/',
@@ -4873,6 +5467,7 @@ return [
             'example_translation' => '我把午餐找回的零錢放進口袋裡。',
         ],
         [
+            'id' => 1595,
             'word' => 'youth',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈjuθ/',
@@ -4881,6 +5476,7 @@ return [
             'example_translation' => '她常常想起青春時代的快樂日子。',
         ],
         [
+            'id' => 1596,
             'word' => 'punish',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˈpənɪʃ/',
@@ -4889,6 +5485,7 @@ return [
             'example_translation' => '老師會處罰考試作弊的學生。',
         ],
         [
+            'id' => 1597,
             'word' => 'peaceful',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈpisfəɫ/',
@@ -4897,6 +5494,7 @@ return [
             'example_translation' => '我們在湖邊度過了一個和平寧靜的午後。',
         ],
         [
+            'id' => 1598,
             'word' => 'peach',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpitʃ/',
@@ -4905,6 +5503,7 @@ return [
             'example_translation' => '午餐後我吃了一顆多汁的桃子。',
         ],
         [
+            'id' => 1599,
             'word' => 'expect',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ɪkˈspɛkt/',
@@ -4913,6 +5512,7 @@ return [
             'example_translation' => '我們預期公車很快就會到。',
         ],
         [
+            'id' => 1600,
             'word' => 'confirm',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/kənˈfɝm/',
@@ -4923,6 +5523,7 @@ return [
     ],
     'group_61' => [
         [
+            'id' => 1601,
             'word' => 'main',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈmeɪn/',
@@ -4931,6 +5532,7 @@ return [
             'example_translation' => '我學英文的主要原因是想和更多人交談。',
         ],
         [
+            'id' => 1602,
             'word' => 'introduce',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˌɪntɹəˈdus/',
@@ -4939,6 +5541,7 @@ return [
             'example_translation' => '讓我向你介紹我最好的朋友。',
         ],
         [
+            'id' => 1603,
             'word' => 'belief',
             'part_of_speech' => 'n.',
             'pronunciation' => '/bɪˈɫif/',
@@ -4947,6 +5550,7 @@ return [
             'example_translation' => '她對自己的信念幫助她贏得了比賽。',
         ],
         [
+            'id' => 1604,
             'word' => 'cleaner',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkɫinɝ/',
@@ -4955,6 +5559,7 @@ return [
             'example_translation' => '清潔工每天早上來我們的辦公室。',
         ],
         [
+            'id' => 1605,
             'word' => 'principle',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpɹɪnsəpəɫ/',
@@ -4963,6 +5568,7 @@ return [
             'example_translation' => '這台機器的基本原理很容易理解。',
         ],
         [
+            'id' => 1606,
             'word' => 'pink',
             'part_of_speech' => 'n.、adj.',
             'pronunciation' => '/ˈpɪŋk/',
@@ -4971,6 +5577,7 @@ return [
             'example_translation' => '她穿了一件粉紅色的洋裝去參加派對。',
         ],
         [
+            'id' => 1607,
             'word' => 'pineapple',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpaɪˌnæpəɫ/',
@@ -4979,6 +5586,7 @@ return [
             'example_translation' => '我們在市場買了一顆甜鳳梨。',
         ],
         [
+            'id' => 1608,
             'word' => 'drugstore',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈdɹəɡˌstɔɹ/',
@@ -4987,6 +5595,7 @@ return [
             'example_translation' => '我去藥房買了一些藥。',
         ],
         [
+            'id' => 1609,
             'word' => 'struggle',
             'part_of_speech' => 'vi.、vt.、n.',
             'pronunciation' => '/ˈstɹəɡəɫ/',
@@ -4995,6 +5604,7 @@ return [
             'example_translation' => '許多學生努力學習一種新語言。',
         ],
         [
+            'id' => 1610,
             'word' => 'thin',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈθɪn/',
@@ -5005,6 +5615,7 @@ return [
     ],
     'group_62' => [
         [
+            'id' => 1611,
             'word' => 'method',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈmɛθəd/',
@@ -5013,6 +5624,7 @@ return [
             'example_translation' => '這個方法讓學習新單字變得更容易。',
         ],
         [
+            'id' => 1612,
             'word' => 'slide',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsɫaɪd/',
@@ -5021,6 +5633,7 @@ return [
             'example_translation' => '孩子們午餐後在溜滑梯上玩耍。',
         ],
         [
+            'id' => 1613,
             'word' => 'treasure',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtɹɛʒɝ/',
@@ -5029,6 +5642,7 @@ return [
             'example_translation' => '那張老地圖帶我們找到了隱藏的寶藏。',
         ],
         [
+            'id' => 1614,
             'word' => 'brain',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈbɹeɪn/',
@@ -5037,6 +5651,7 @@ return [
             'example_translation' => '讀書一整天後，你的腦袋需要休息。',
         ],
         [
+            'id' => 1615,
             'word' => 'government',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɡəvɝmənt/',
@@ -5045,6 +5660,7 @@ return [
             'example_translation' => '政府在我們的城鎮蓋了一所新學校。',
         ],
         [
+            'id' => 1616,
             'word' => 'blank',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈbɫæŋk/',
@@ -5053,6 +5669,7 @@ return [
             'example_translation' => '請在空白的頁面上寫下你的名字。',
         ],
         [
+            'id' => 1617,
             'word' => 'tube',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtub/',
@@ -5061,6 +5678,7 @@ return [
             'example_translation' => '水流過管子進入水箱。',
         ],
         [
+            'id' => 1618,
             'word' => 'healthy',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈhɛɫθi/',
@@ -5069,6 +5687,7 @@ return [
             'example_translation' => '每天吃蔬菜很健康。',
         ],
         [
+            'id' => 1619,
             'word' => 'climate',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkɫaɪmət/',
@@ -5077,6 +5696,7 @@ return [
             'example_translation' => '臺灣的氣候溫暖又潮濕。',
         ],
         [
+            'id' => 1620,
             'word' => 'meaning',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈminɪŋ/',
@@ -5087,6 +5707,7 @@ return [
     ],
     'group_63' => [
         [
+            'id' => 1621,
             'word' => 'prison',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpɹɪzən/',
@@ -5095,6 +5716,7 @@ return [
             'example_translation' => '那名男子因偷車而被送進監獄。',
         ],
         [
+            'id' => 1622,
             'word' => 'wound',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈwaʊnd/',
@@ -5103,6 +5725,7 @@ return [
             'example_translation' => '護士清理了我手臂上的傷口。',
         ],
         [
+            'id' => 1623,
             'word' => 'nail',
             'part_of_speech' => 'n.、vt.',
             'pronunciation' => '/ˈneɪɫ/',
@@ -5111,6 +5734,7 @@ return [
             'example_translation' => '他用一根釘子把那幅畫釘在牆上。',
         ],
         [
+            'id' => 1624,
             'word' => 'listener',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɫɪsənɝ/',
@@ -5119,6 +5743,7 @@ return [
             'example_translation' => '好的傾聽者會讓別人把話說完。',
         ],
         [
+            'id' => 1625,
             'word' => 'garage',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ɡɝˈɑʒ/',
@@ -5127,6 +5752,7 @@ return [
             'example_translation' => '我爸爸把車停在車庫裡。',
         ],
         [
+            'id' => 1626,
             'word' => 'forward',
             'part_of_speech' => 'adv.、adj.',
             'pronunciation' => '/ˈfɔɹwɝd/',
@@ -5135,6 +5761,7 @@ return [
             'example_translation' => '那匹馬慢慢地向前走。',
         ],
         [
+            'id' => 1627,
             'word' => 'role',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɹoʊɫ/',
@@ -5143,6 +5770,7 @@ return [
             'example_translation' => '她在學校戲劇中扮演醫生的角色。',
         ],
         [
+            'id' => 1628,
             'word' => 'organ',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɔɹɡən/',
@@ -5151,6 +5779,7 @@ return [
             'example_translation' => '心臟是人體內重要的器官。',
         ],
         [
+            'id' => 1629,
             'word' => 'believable',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/bɪˈɫivəbəɫ/',
@@ -5159,6 +5788,7 @@ return [
             'example_translation' => '那名演員的演出很可信。',
         ],
         [
+            'id' => 1630,
             'word' => 'teenager',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtiˌneɪdʒɝ/',
@@ -5169,6 +5799,7 @@ return [
     ],
     'group_64' => [
         [
+            'id' => 1631,
             'word' => 'alphabet',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈæɫfəˌbɛt/',
@@ -5177,6 +5808,7 @@ return [
             'example_translation' => '孩子們在第一堂英文課學習字母系統。',
         ],
         [
+            'id' => 1632,
             'word' => 'govern',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ˈɡəvɝn/',
@@ -5185,6 +5817,7 @@ return [
             'example_translation' => '領導人必須公平地管理國家。',
         ],
         [
+            'id' => 1633,
             'word' => 'artist',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɑɹtəst/',
@@ -5193,6 +5826,7 @@ return [
             'example_translation' => '那位藝術家畫了一幅美麗的海景畫。',
         ],
         [
+            'id' => 1634,
             'word' => 'separate',
             'part_of_speech' => 'vt.、vi.、adj.',
             'pronunciation' => '/ˈsɛpɝˌeɪt/',
@@ -5201,6 +5835,7 @@ return [
             'example_translation' => '請把白色衣服和深色衣服分開。',
         ],
         [
+            'id' => 1635,
             'word' => 'traffic',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtɹæfɪk/',
@@ -5209,6 +5844,7 @@ return [
             'example_translation' => '今天早上路上的交通很壅塞。',
         ],
         [
+            'id' => 1636,
             'word' => 'net',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈnɛt/',
@@ -5217,6 +5853,7 @@ return [
             'example_translation' => '漁夫把一張網撒進海裡。',
         ],
         [
+            'id' => 1637,
             'word' => 'industry',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɪndəstɹi/',
@@ -5225,6 +5862,7 @@ return [
             'example_translation' => '電腦工業創造了許多新的工作機會。',
         ],
         [
+            'id' => 1638,
             'word' => 'steam',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈstim/',
@@ -5233,6 +5871,7 @@ return [
             'example_translation' => '熱湯上冒出蒸汽。',
         ],
         [
+            'id' => 1639,
             'word' => 'lane',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɫeɪn/',
@@ -5241,6 +5880,7 @@ return [
             'example_translation' => '我們沿著鄉間一條安靜的小路走。',
         ],
         [
+            'id' => 1640,
             'word' => 'flag',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈfɫæɡ/',
@@ -5251,6 +5891,7 @@ return [
     ],
     'group_65' => [
         [
+            'id' => 1641,
             'word' => 'cappuccino',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˌkæpəˈtʃinoʊ/',
@@ -5259,6 +5900,7 @@ return [
             'example_translation' => '午餐後，我點了一杯熱卡布奇諾咖啡。',
         ],
         [
+            'id' => 1642,
             'word' => 'slipper',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsɫɪpɝ/',
@@ -5267,6 +5909,7 @@ return [
             'example_translation' => '我穿上拖鞋後才在屋子裡走動。',
         ],
         [
+            'id' => 1643,
             'word' => 'magic',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈmædʒɪk/',
@@ -5275,6 +5918,7 @@ return [
             'example_translation' => '孩子們相信魔術師使用了真正的魔法。',
         ],
         [
+            'id' => 1644,
             'word' => 'terrific',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/tɝˈɪfɪk/',
@@ -5283,6 +5927,7 @@ return [
             'example_translation' => '我們在海邊度過了一段極佳的時光。',
         ],
         [
+            'id' => 1645,
             'word' => 'mule',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈmjuɫ/',
@@ -5291,6 +5936,7 @@ return [
             'example_translation' => '農夫用騾子搬運沉重的袋子。',
         ],
         [
+            'id' => 1646,
             'word' => 'button',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈbətən/',
@@ -5299,6 +5945,7 @@ return [
             'example_translation' => '我的襯衫少了一顆鈕扣。',
         ],
         [
+            'id' => 1647,
             'word' => 'talent',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtæɫənt/',
@@ -5307,6 +5954,7 @@ return [
             'example_translation' => '麗莎很有唱歌的才能。',
         ],
         [
+            'id' => 1648,
             'word' => 'western',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈhwɛstɝn/',
@@ -5315,6 +5963,7 @@ return [
             'example_translation' => '我哥哥喜歡看西部電影。',
         ],
         [
+            'id' => 1649,
             'word' => 'post',
             'part_of_speech' => 'n.、vt.',
             'pronunciation' => '/ˈpoʊst/',
@@ -5323,6 +5972,7 @@ return [
             'example_translation' => '我去郵局寄一個包裹。',
         ],
         [
+            'id' => 1650,
             'word' => 'speed',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈspid/',
@@ -5333,6 +5983,7 @@ return [
     ],
     'group_66' => [
         [
+            'id' => 1651,
             'word' => 'county',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkaʊni/',
@@ -5341,6 +5992,7 @@ return [
             'example_translation' => '她住在山附近的一個小郡。',
         ],
         [
+            'id' => 1652,
             'word' => 'pile',
             'part_of_speech' => 'n.、vt.、vi.',
             'pronunciation' => '/ˈpaɪɫ/',
@@ -5349,6 +6001,7 @@ return [
             'example_translation' => '我的書桌上有一堆書。',
         ],
         [
+            'id' => 1653,
             'word' => 'copy',
             'part_of_speech' => 'vt.、vi.、n.',
             'pronunciation' => '/ˈkɑpi/',
@@ -5357,6 +6010,7 @@ return [
             'example_translation' => '請幫我影印這份文件。',
         ],
         [
+            'id' => 1654,
             'word' => 'advance',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ədˈvæns/',
@@ -5365,6 +6019,7 @@ return [
             'example_translation' => '新科技可以促進醫學研究。',
         ],
         [
+            'id' => 1655,
             'word' => 'balcony',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈbæɫkəni/',
@@ -5373,6 +6028,7 @@ return [
             'example_translation' => '我們坐在陽臺上欣賞夕陽。',
         ],
         [
+            'id' => 1656,
             'word' => 'search',
             'part_of_speech' => 'vt.、vi.、n.',
             'pronunciation' => '/ˈsɝtʃ/',
@@ -5381,6 +6037,7 @@ return [
             'example_translation' => '警方搜查了房間以尋找線索。',
         ],
         [
+            'id' => 1657,
             'word' => 'cream',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkɹim/',
@@ -5389,6 +6046,7 @@ return [
             'example_translation' => '我在吐司上塗了一些奶油。',
         ],
         [
+            'id' => 1658,
             'word' => 'wire',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈwaɪɝ/',
@@ -5397,6 +6055,7 @@ return [
             'example_translation' => '電工換掉了損壞的電線。',
         ],
         [
+            'id' => 1659,
             'word' => 'width',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈwɪdθ/',
@@ -5405,6 +6064,7 @@ return [
             'example_translation' => '我們量了桌子的寬度。',
         ],
         [
+            'id' => 1660,
             'word' => 'kindergarten',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkɪndɝˌɡɑɹtən/',
@@ -5415,6 +6075,7 @@ return [
     ],
     'group_67' => [
         [
+            'id' => 1661,
             'word' => 'hunt',
             'part_of_speech' => 'vt.、vi.、n.',
             'pronunciation' => '/ˈhənt/',
@@ -5423,6 +6084,7 @@ return [
             'example_translation' => '那些狗在森林裡追獵兔子。',
         ],
         [
+            'id' => 1662,
             'word' => 'distant',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈdɪstənt/',
@@ -5431,6 +6093,7 @@ return [
             'example_translation' => '我們可以從窗戶看到一座遠方的山。',
         ],
         [
+            'id' => 1663,
             'word' => 'broad',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈbɹɔd/',
@@ -5439,6 +6102,7 @@ return [
             'example_translation' => '這條河很寬，船可以在上面航行。',
         ],
         [
+            'id' => 1664,
             'word' => 'sandwich',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsæmwɪtʃ/',
@@ -5447,6 +6111,7 @@ return [
             'example_translation' => '我午餐吃了一份起司三明治。',
         ],
         [
+            'id' => 1665,
             'word' => 'wonderful',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈwəndɝfəɫ/',
@@ -5455,6 +6120,7 @@ return [
             'example_translation' => '我們在海邊度過了一段極好的時光。',
         ],
         [
+            'id' => 1666,
             'word' => 'pleasure',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpɫɛʒɝ/',
@@ -5463,6 +6129,7 @@ return [
             'example_translation' => '很高興能見到你的家人。',
         ],
         [
+            'id' => 1667,
             'word' => 'invitation',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˌɪnvɪˈteɪʃən/',
@@ -5471,6 +6138,7 @@ return [
             'example_translation' => '謝謝你邀請我參加你的生日派對。',
         ],
         [
+            'id' => 1668,
             'word' => 'partner',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpɑɹtnɝ/',
@@ -5479,6 +6147,7 @@ return [
             'example_translation' => '我的夥伴幫助我完成了學校的專題。',
         ],
         [
+            'id' => 1669,
             'word' => 'model',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈmɑdəɫ/',
@@ -5487,6 +6156,7 @@ return [
             'example_translation' => '我哥哥做了一個小飛機模型。',
         ],
         [
+            'id' => 1670,
             'word' => 'trial',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtɹaɪəɫ/',
@@ -5497,6 +6167,7 @@ return [
     ],
     'group_68' => [
         [
+            'id' => 1671,
             'word' => 'talkative',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈtɔkətɪv/',
@@ -5505,6 +6176,7 @@ return [
             'example_translation' => '我的新同學非常健談，也很友善。',
         ],
         [
+            'id' => 1672,
             'word' => 'hunger',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈhəŋɡɝ/',
@@ -5513,6 +6185,7 @@ return [
             'example_translation' => '走了很久之後，飢餓讓我吃了兩碗飯。',
         ],
         [
+            'id' => 1673,
             'word' => 'sweep',
             'part_of_speech' => 'vt.、vi.、n.',
             'pronunciation' => '/ˈswip/',
@@ -5521,6 +6194,7 @@ return [
             'example_translation' => '我每天早上清掃地板。',
         ],
         [
+            'id' => 1674,
             'word' => 'growth',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɡɹoʊθ/',
@@ -5529,6 +6203,7 @@ return [
             'example_translation' => '這株植物在得到更多陽光後，成長得很快。',
         ],
         [
+            'id' => 1675,
             'word' => 'difference',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈdɪfɝəns/',
@@ -5537,6 +6212,7 @@ return [
             'example_translation' => '這兩張圖片之間有很大的差異。',
         ],
         [
+            'id' => 1676,
             'word' => 'besides',
             'part_of_speech' => 'adv.',
             'pronunciation' => '/ˌbiˈsaɪdz/',
@@ -5545,6 +6221,7 @@ return [
             'example_translation' => '此外，除了英語之外，她也會說日語。',
         ],
         [
+            'id' => 1677,
             'word' => 'strawberry',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈstɹɔˌbɛɹi/',
@@ -5553,6 +6230,7 @@ return [
             'example_translation' => '她在蛋糕上放了一顆新鮮的草莓。',
         ],
         [
+            'id' => 1678,
             'word' => 'measure',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ˈmɛʒɝ/',
@@ -5561,6 +6239,7 @@ return [
             'example_translation' => '我們需要先測量這張桌子，再購買新的桌布。',
         ],
         [
+            'id' => 1679,
             'word' => 'childlike',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈtʃaɪɫdˌɫaɪk/',
@@ -5569,6 +6248,7 @@ return [
             'example_translation' => '他天真的笑容讓每個人都感到開心。',
         ],
         [
+            'id' => 1680,
             'word' => 'poet',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpoʊət/',
@@ -5579,6 +6259,7 @@ return [
     ],
     'group_69' => [
         [
+            'id' => 1681,
             'word' => 'bill',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈbɪɫ/',
@@ -5587,6 +6268,7 @@ return [
             'example_translation' => '這家餐廳的帳單是二十美元。',
         ],
         [
+            'id' => 1682,
             'word' => 'lower',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈɫoʊɝ/',
@@ -5595,6 +6277,7 @@ return [
             'example_translation' => '較低的架子很容易讓孩子拿到。',
         ],
         [
+            'id' => 1683,
             'word' => 'paste',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpeɪst/',
@@ -5603,6 +6286,7 @@ return [
             'example_translation' => '把麵粉和水混合，製成濃稠的糊狀物。',
         ],
         [
+            'id' => 1684,
             'word' => 'stage',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsteɪdʒ/',
@@ -5611,6 +6295,7 @@ return [
             'example_translation' => '舞者走上舞臺。',
         ],
         [
+            'id' => 1685,
             'word' => 'festival',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈfɛstəvəɫ/',
@@ -5619,6 +6304,7 @@ return [
             'example_translation' => '我們的城鎮每年夏天都會舉辦音樂節。',
         ],
         [
+            'id' => 1686,
             'word' => 'tank',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtæŋk/',
@@ -5627,6 +6313,7 @@ return [
             'example_translation' => '魚正在大水箱裡游泳。',
         ],
         [
+            'id' => 1687,
             'word' => 'espresso',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ɛˈspɹɛsoʊ/',
@@ -5635,6 +6322,7 @@ return [
             'example_translation' => '我爸爸午餐後會喝一小杯義式濃縮咖啡。',
         ],
         [
+            'id' => 1688,
             'word' => 'owl',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈaʊɫ/',
@@ -5643,6 +6331,7 @@ return [
             'example_translation' => '我們晚上聽到樹林裡有一隻貓頭鷹的叫聲。',
         ],
         [
+            'id' => 1689,
             'word' => 'rare',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈɹɛɹ/',
@@ -5651,6 +6340,7 @@ return [
             'example_translation' => '在這座城市看到雪是很罕見的。',
         ],
         [
+            'id' => 1690,
             'word' => 'firm',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈfɝm/',
@@ -5661,6 +6351,7 @@ return [
     ],
     'group_70' => [
         [
+            'id' => 1691,
             'word' => 'painful',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈpeɪnfəɫ/',
@@ -5669,6 +6360,7 @@ return [
             'example_translation' => '我跌倒後手臂很疼痛。',
         ],
         [
+            'id' => 1692,
             'word' => 'particular',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˌpɑˈtɪkjəɫɝ/',
@@ -5677,6 +6369,7 @@ return [
             'example_translation' => '我正在找一本特定的鳥類書籍。',
         ],
         [
+            'id' => 1693,
             'word' => 'official',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/əˈfɪʃəɫ/',
@@ -5685,6 +6378,7 @@ return [
             'example_translation' => '學校網站上有官方公告。',
         ],
         [
+            'id' => 1694,
             'word' => 'pick',
             'part_of_speech' => 'vt.、vi.、n.',
             'pronunciation' => '/ˈpɪk/',
@@ -5693,6 +6387,7 @@ return [
             'example_translation' => '請從盒子裡挑選一份點心。',
         ],
         [
+            'id' => 1695,
             'word' => 'central',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈsɛntɹəɫ/',
@@ -5701,6 +6396,7 @@ return [
             'example_translation' => '這間飯店位於火車站附近的中心位置。',
         ],
         [
+            'id' => 1696,
             'word' => 'bedroom',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈbɛˌdɹum/',
@@ -5709,6 +6405,7 @@ return [
             'example_translation' => '我的臥室有一扇面向花園的窗戶。',
         ],
         [
+            'id' => 1697,
             'word' => 'form',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈfɔɹm/',
@@ -5717,6 +6414,7 @@ return [
             'example_translation' => '請在課程開始前填寫這份表格。',
         ],
         [
+            'id' => 1698,
             'word' => 'strict',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈstɹɪkt/',
@@ -5725,6 +6423,7 @@ return [
             'example_translation' => '我們的老師對準時這件事要求很嚴格。',
         ],
         [
+            'id' => 1699,
             'word' => 'tent',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtɛnt/',
@@ -5733,6 +6432,7 @@ return [
             'example_translation' => '我們在河邊搭起一頂帳篷。',
         ],
         [
+            'id' => 1700,
             'word' => 'track',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtɹæk/',
@@ -5743,6 +6443,7 @@ return [
     ],
     'group_71' => [
         [
+            'id' => 1701,
             'word' => 'addition',
             'part_of_speech' => 'n.',
             'pronunciation' => '/əˈdɪʃən/',
@@ -5751,6 +6452,7 @@ return [
             'example_translation' => '除了沙拉之外，我們還點了一些湯。',
         ],
         [
+            'id' => 1702,
             'word' => 'experience',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ɪkˈspɪɹiəns/',
@@ -5759,6 +6461,7 @@ return [
             'example_translation' => '在圖書館工作讓我獲得了寶貴的經驗。',
         ],
         [
+            'id' => 1703,
             'word' => 'owner',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈoʊnɝ/',
@@ -5767,6 +6470,7 @@ return [
             'example_translation' => '那家餐廳的所有人在門口迎接我們。',
         ],
         [
+            'id' => 1704,
             'word' => 'somewhere',
             'part_of_speech' => 'adv.、n.',
             'pronunciation' => '/ˈsəmˌwɛɹ/',
@@ -5775,6 +6479,7 @@ return [
             'example_translation' => '我把鑰匙放在家裡某處了。',
         ],
         [
+            'id' => 1705,
             'word' => 'tunnel',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtənəɫ/',
@@ -5783,6 +6488,7 @@ return [
             'example_translation' => '火車穿過了一條很長的隧道。',
         ],
         [
+            'id' => 1706,
             'word' => 'coach',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkoʊtʃ/',
@@ -5791,6 +6497,7 @@ return [
             'example_translation' => '我們的教練教我們如何團隊合作。',
         ],
         [
+            'id' => 1707,
             'word' => 'anywhere',
             'part_of_speech' => 'adv.',
             'pronunciation' => '/ˈɛniˌwɛɹ/',
@@ -5799,6 +6506,7 @@ return [
             'example_translation' => '你可以坐在候診室的任何地方。',
         ],
         [
+            'id' => 1708,
             'word' => 'dial',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈdaɪəɫ/',
@@ -5807,6 +6515,7 @@ return [
             'example_translation' => '機器上的刻度盤顯示溫度。',
         ],
         [
+            'id' => 1709,
             'word' => 'mirror',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈmɪɹɝ/',
@@ -5815,6 +6524,7 @@ return [
             'example_translation' => '她出門前照了照鏡子。',
         ],
         [
+            'id' => 1710,
             'word' => 'possibility',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˌpɑsəˈbɪɫəˌti/',
@@ -5825,6 +6535,7 @@ return [
     ],
     'group_72' => [
         [
+            'id' => 1711,
             'word' => 'select',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/səˈɫɛkt/',
@@ -5833,6 +6544,7 @@ return [
             'example_translation' => '請從清單中挑選一個答案。',
         ],
         [
+            'id' => 1712,
             'word' => 'mosquito',
             'part_of_speech' => 'n.',
             'pronunciation' => '/məˈskitoʊ/',
@@ -5841,6 +6553,7 @@ return [
             'example_translation' => '我坐在外面時被一隻蚊子叮了。',
         ],
         [
+            'id' => 1713,
             'word' => 'sink',
             'part_of_speech' => 'vi.、vt.',
             'pronunciation' => '/ˈsɪŋk/',
@@ -5849,6 +6562,7 @@ return [
             'example_translation' => '那艘小船撞到岩石後開始下沉。',
         ],
         [
+            'id' => 1714,
             'word' => 'giraffe',
             'part_of_speech' => 'n.',
             'pronunciation' => '/dʒɝˈæf/',
@@ -5857,6 +6571,7 @@ return [
             'example_translation' => '長頸鹿用牠的長脖子伸到樹葉。',
         ],
         [
+            'id' => 1715,
             'word' => 'shelf',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈʃɛɫf/',
@@ -5865,6 +6580,7 @@ return [
             'example_translation' => '我把書放在最上層的架子上。',
         ],
         [
+            'id' => 1716,
             'word' => 'maintain',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/meɪnˈteɪn/',
@@ -5873,6 +6589,7 @@ return [
             'example_translation' => '規律運動有助於保持健康。',
         ],
         [
+            'id' => 1717,
             'word' => 'discuss',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/dɪˈskəs/',
@@ -5881,6 +6598,7 @@ return [
             'example_translation' => '學生們會在課堂上討論這本書。',
         ],
         [
+            'id' => 1718,
             'word' => 'tape',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈteɪp/',
@@ -5889,6 +6607,7 @@ return [
             'example_translation' => '用一些膠布把撕破的紙修好。',
         ],
         [
+            'id' => 1719,
             'word' => 'provide',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/pɹəˈvaɪd/',
@@ -5897,6 +6616,7 @@ return [
             'example_translation' => '這家飯店為房客提供免費早餐。',
         ],
         [
+            'id' => 1720,
             'word' => 'trumpet',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtɹəmpət/',
@@ -5907,6 +6627,7 @@ return [
     ],
     'group_73' => [
         [
+            'id' => 1721,
             'word' => 'thirsty',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈθɝsti/',
@@ -5915,6 +6636,7 @@ return [
             'example_translation' => '在陽光下踢足球後，我覺得口很渴。',
         ],
         [
+            'id' => 1722,
             'word' => 'perfect',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈpɝˌfɪkt/',
@@ -5923,6 +6645,7 @@ return [
             'example_translation' => '今天天氣非常適合野餐。',
         ],
         [
+            'id' => 1723,
             'word' => 'croissant',
             'part_of_speech' => 'n.',
             'pronunciation' => '/kɹəˈsɑnt/',
@@ -5931,6 +6654,7 @@ return [
             'example_translation' => '我早餐吃了一個熱騰騰的可頌麵包。',
         ],
         [
+            'id' => 1724,
             'word' => 'similar',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈsɪməɫɝ/',
@@ -5939,6 +6663,7 @@ return [
             'example_translation' => '那兩個女孩的髮型很相像。',
         ],
         [
+            'id' => 1725,
             'word' => 'ramen',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɹɑmən/',
@@ -5947,6 +6672,7 @@ return [
             'example_translation' => '我們在車站附近的一家小餐館吃了拉麵。',
         ],
         [
+            'id' => 1726,
             'word' => 'ugly',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈəɡɫi/',
@@ -5955,6 +6681,7 @@ return [
             'example_translation' => '那張舊椅子很難看，但坐起來很舒服。',
         ],
         [
+            'id' => 1727,
             'word' => 'instrument',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɪnstɹəmənt/',
@@ -5963,6 +6690,7 @@ return [
             'example_translation' => '我姊姊演奏一種叫作鋼琴的樂器。',
         ],
         [
+            'id' => 1728,
             'word' => 'manner',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈmænɝ/',
@@ -5971,6 +6699,7 @@ return [
             'example_translation' => '他以有禮貌的態度和服務生說話。',
         ],
         [
+            'id' => 1729,
             'word' => 'bow',
             'part_of_speech' => 'vi.、vt.、n.',
             'pronunciation' => '/ˈbaʊ/',
@@ -5979,6 +6708,7 @@ return [
             'example_translation' => '演出結束時，演員們向觀眾鞠躬。',
         ],
         [
+            'id' => 1730,
             'word' => 'standard',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈstændɝd/',
@@ -5989,6 +6719,7 @@ return [
     ],
     'group_74' => [
         [
+            'id' => 1731,
             'word' => 'dryer',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈdɹaɪɝ/',
@@ -5997,6 +6728,7 @@ return [
             'example_translation' => '我把濕衣服放進烘乾機裡。',
         ],
         [
+            'id' => 1732,
             'word' => 'message',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈmɛsədʒ/',
@@ -6005,6 +6737,7 @@ return [
             'example_translation' => '我在媽媽的手機上留了一則消息。',
         ],
         [
+            'id' => 1733,
             'word' => 'trap',
             'part_of_speech' => 'n.、vt.、vi.',
             'pronunciation' => '/ˈtɹæp/',
@@ -6013,6 +6746,7 @@ return [
             'example_translation' => '農夫在洞口附近放了一個陷阱來抓老鼠。',
         ],
         [
+            'id' => 1734,
             'word' => 'backward',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈbækwɝd/',
@@ -6021,6 +6755,7 @@ return [
             'example_translation' => '音樂開始時，向後退一步。',
         ],
         [
+            'id' => 1735,
             'word' => 'generous',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈdʒɛnɝəs/',
@@ -6029,6 +6764,7 @@ return [
             'example_translation' => '我們慷慨的鄰居送給我們一些新鮮蔬菜。',
         ],
         [
+            'id' => 1736,
             'word' => 'express',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ɪksˈpɹɛs/',
@@ -6037,6 +6773,7 @@ return [
             'example_translation' => '我想向所有幫助過我的人表達謝意。',
         ],
         [
+            'id' => 1737,
             'word' => 'friendly',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈfɹɛndɫi/',
@@ -6045,6 +6782,7 @@ return [
             'example_translation' => '那位新同學很親切，會和每個人交談。',
         ],
         [
+            'id' => 1738,
             'word' => 'progress',
             'part_of_speech' => 'vi.',
             'pronunciation' => '/pɹəˈɡɹɛs/',
@@ -6053,6 +6791,7 @@ return [
             'example_translation' => '那位年輕的游泳選手持續每週進步。',
         ],
         [
+            'id' => 1739,
             'word' => 'encourage',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ɪnˈkɝɪdʒ/',
@@ -6061,6 +6800,7 @@ return [
             'example_translation' => '我的父母鼓勵我嘗試新事物。',
         ],
         [
+            'id' => 1740,
             'word' => 'southern',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈsəðɝn/',
@@ -6071,6 +6811,7 @@ return [
     ],
     'group_75' => [
         [
+            'id' => 1741,
             'word' => 'lonely',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈɫoʊnɫi/',
@@ -6079,6 +6820,7 @@ return [
             'example_translation' => '父母離開房間時，那個小男孩感到很孤獨。',
         ],
         [
+            'id' => 1742,
             'word' => 'president',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpɹɛzəˌdɛnt/',
@@ -6087,6 +6829,7 @@ return [
             'example_translation' => '總統在電視上對人民發表談話。',
         ],
         [
+            'id' => 1743,
             'word' => 'bark',
             'part_of_speech' => 'vi.、vt.、n.',
             'pronunciation' => '/ˈbɑɹk/',
@@ -6095,6 +6838,7 @@ return [
             'example_translation' => '有人走到門口時，那隻狗開始吠叫。',
         ],
         [
+            'id' => 1744,
             'word' => 'loaf',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɫoʊf/',
@@ -6103,6 +6847,7 @@ return [
             'example_translation' => '我媽媽買了一條麵包當早餐。',
         ],
         [
+            'id' => 1745,
             'word' => 'stream',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈstɹim/',
@@ -6111,6 +6856,7 @@ return [
             'example_translation' => '我們沿著森林裡清澈的溪流走。',
         ],
         [
+            'id' => 1746,
             'word' => 'fighter',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈfaɪtɝ/',
@@ -6119,6 +6865,7 @@ return [
             'example_translation' => '這位勇敢的鬥士在艱難的比賽中從未放棄。',
         ],
         [
+            'id' => 1747,
             'word' => 'bomb',
             'part_of_speech' => 'n.、vt.、vi.',
             'pronunciation' => '/ˈbɑm/',
@@ -6127,6 +6874,7 @@ return [
             'example_translation' => '士兵在那棟老建築物附近發現了一枚炸彈。',
         ],
         [
+            'id' => 1748,
             'word' => 'goal',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɡoʊɫ/',
@@ -6135,6 +6883,7 @@ return [
             'example_translation' => '到達山頂是我們最後的目標。',
         ],
         [
+            'id' => 1749,
             'word' => 'board',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ˈbɔɹd/',
@@ -6143,6 +6892,7 @@ return [
             'example_translation' => '我們將在九點登上飛機。',
         ],
         [
+            'id' => 1750,
             'word' => 'bind',
             'part_of_speech' => 'vt.、vi.、n.',
             'pronunciation' => '/ˈbaɪnd/',
@@ -6153,6 +6903,7 @@ return [
     ],
     'group_76' => [
         [
+            'id' => 1751,
             'word' => 'producer',
             'part_of_speech' => 'n.',
             'pronunciation' => '/pɹəˈdusɝ/',
@@ -6161,6 +6912,7 @@ return [
             'example_translation' => '生產者幫助農夫販售新鮮的蔬菜。',
         ],
         [
+            'id' => 1752,
             'word' => 'bean',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈbin/',
@@ -6169,6 +6921,7 @@ return [
             'example_translation' => '她在湯裡放了幾顆豆子。',
         ],
         [
+            'id' => 1753,
             'word' => 'homesick',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈhoʊmˌsɪk/',
@@ -6177,6 +6930,7 @@ return [
             'example_translation' => '湯姆在國外學校的第一週感到很想家。',
         ],
         [
+            'id' => 1754,
             'word' => 'chemical',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈkɛməkəɫ/',
@@ -6185,6 +6939,7 @@ return [
             'example_translation' => '自然科老師向我們示範如何安全地使用化學物質。',
         ],
         [
+            'id' => 1755,
             'word' => 'film',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈfɪɫm/',
@@ -6193,6 +6948,7 @@ return [
             'example_translation' => '我們昨晚在家看了一部有趣的電影。',
         ],
         [
+            'id' => 1756,
             'word' => 'teenage',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtiˌneɪdʒ/',
@@ -6201,6 +6957,7 @@ return [
             'example_translation' => '在青少年時期，他學會了自己做決定。',
         ],
         [
+            'id' => 1757,
             'word' => 'turtle',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtɝtəɫ/',
@@ -6209,6 +6966,7 @@ return [
             'example_translation' => '我們看見一隻海龜在海灘附近游泳。',
         ],
         [
+            'id' => 1758,
             'word' => 'giant',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈdʒaɪənt/',
@@ -6217,6 +6975,7 @@ return [
             'example_translation' => '一道巨大的浪突然淹沒了那艘小船。',
         ],
         [
+            'id' => 1759,
             'word' => 'dull',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈdəɫ/',
@@ -6225,6 +6984,7 @@ return [
             'example_translation' => '那場冗長的演講乏味到讓許多人睡著了。',
         ],
         [
+            'id' => 1760,
             'word' => 'boil',
             'part_of_speech' => 'vi.、vt.、n.',
             'pronunciation' => '/ˈbɔɪɫ/',
@@ -6235,6 +6995,7 @@ return [
     ],
     'group_77' => [
         [
+            'id' => 1761,
             'word' => 'smoothie',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsmuði/',
@@ -6243,6 +7004,7 @@ return [
             'example_translation' => '我早餐喝了一杯香蕉果昔。',
         ],
         [
+            'id' => 1762,
             'word' => 'foreigner',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈfɑɹənɝ/',
@@ -6251,6 +7013,7 @@ return [
             'example_translation' => '那位外國人向我詢問前往火車站的路。',
         ],
         [
+            'id' => 1763,
             'word' => 'pardon',
             'part_of_speech' => 'n.、vt.',
             'pronunciation' => '/ˈpɑɹdən/',
@@ -6259,6 +7022,7 @@ return [
             'example_translation' => '請原諒我的錯誤。',
         ],
         [
+            'id' => 1764,
             'word' => 'error',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɛɹɝ/',
@@ -6267,6 +7031,7 @@ return [
             'example_translation' => '這個電腦程式裡有一個錯誤。',
         ],
         [
+            'id' => 1765,
             'word' => 'function',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈfəŋkʃən/',
@@ -6275,6 +7040,7 @@ return [
             'example_translation' => '這個按鈕有一項重要的功能。',
         ],
         [
+            'id' => 1766,
             'word' => 'cross',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ˈkɹɔs/',
@@ -6283,6 +7049,7 @@ return [
             'example_translation' => '我們必須在紅綠燈處穿越馬路。',
         ],
         [
+            'id' => 1767,
             'word' => 'title',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtaɪtəɫ/',
@@ -6291,6 +7058,7 @@ return [
             'example_translation' => '這本書的標題很有趣。',
         ],
         [
+            'id' => 1768,
             'word' => 'pancake',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpænˌkeɪk/',
@@ -6299,6 +7067,7 @@ return [
             'example_translation' => '我爸爸做了美式鬆餅當早餐。',
         ],
         [
+            'id' => 1769,
             'word' => 'cousin',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkəzən/',
@@ -6307,6 +7076,7 @@ return [
             'example_translation' => '我的表姊和她的家人住在臺北。',
         ],
         [
+            'id' => 1770,
             'word' => 'limit',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˈɫɪmət/',
@@ -6317,6 +7087,7 @@ return [
     ],
     'group_78' => [
         [
+            'id' => 1771,
             'word' => 'obey',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/oʊˈbeɪ/',
@@ -6325,6 +7096,7 @@ return [
             'example_translation' => '孩子們應該服從學校的規定。',
         ],
         [
+            'id' => 1772,
             'word' => 'rabbit',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɹæbət/',
@@ -6333,6 +7105,7 @@ return [
             'example_translation' => '那隻白兔正在吃胡蘿蔔。',
         ],
         [
+            'id' => 1773,
             'word' => 'shower',
             'part_of_speech' => 'n.、vi.、vt.',
             'pronunciation' => '/ˈʃaʊɝ/',
@@ -6341,6 +7114,7 @@ return [
             'example_translation' => '我每天早上淋浴。',
         ],
         [
+            'id' => 1774,
             'word' => 'pump',
             'part_of_speech' => 'n.、vt.、vi.',
             'pronunciation' => '/ˈpəmp/',
@@ -6349,6 +7123,7 @@ return [
             'example_translation' => '請幫我的腳踏車輪胎打些氣。',
         ],
         [
+            'id' => 1775,
             'word' => 'glove',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɡɫəv/',
@@ -6357,6 +7132,7 @@ return [
             'example_translation' => '我戴手套來保護手不受寒冷的侵襲。',
         ],
         [
+            'id' => 1776,
             'word' => 'million',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈmɪɫjən/',
@@ -6365,6 +7141,7 @@ return [
             'example_translation' => '這部影片已經獲得一百萬次觀看。',
         ],
         [
+            'id' => 1777,
             'word' => 'instance',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɪnstəns/',
@@ -6373,6 +7150,7 @@ return [
             'example_translation' => '例如，你可以使用字典來學習新單字。',
         ],
         [
+            'id' => 1778,
             'word' => 'silk',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsɪɫk/',
@@ -6381,6 +7159,7 @@ return [
             'example_translation' => '我祖母送給我一條漂亮的絲巾。',
         ],
         [
+            'id' => 1779,
             'word' => 'doubt',
             'part_of_speech' => 'vt.、vi.、n.',
             'pronunciation' => '/ˈdaʊt/',
@@ -6389,6 +7168,7 @@ return [
             'example_translation' => '我懷疑他是否能準時抵達。',
         ],
         [
+            'id' => 1780,
             'word' => 'skirt',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈskɝt/',
@@ -6399,6 +7179,7 @@ return [
     ],
     'group_79' => [
         [
+            'id' => 1781,
             'word' => 'prisoner',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpɹɪzənɝ/',
@@ -6407,6 +7188,7 @@ return [
             'example_translation' => '那名囚犯被帶到一個安全的房間。',
         ],
         [
+            'id' => 1782,
             'word' => 'salad',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsæɫəd/',
@@ -6415,6 +7197,7 @@ return [
             'example_translation' => '我午餐點了一份新鮮的沙拉。',
         ],
         [
+            'id' => 1783,
             'word' => 'elder',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈɛɫdɝ/',
@@ -6423,6 +7206,7 @@ return [
             'example_translation' => '我姊姊會幫我寫作業。',
         ],
         [
+            'id' => 1784,
             'word' => 'lid',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɫɪd/',
@@ -6431,6 +7215,7 @@ return [
             'example_translation' => '請把蓋子蓋在鍋子上。',
         ],
         [
+            'id' => 1785,
             'word' => 'match',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ˈmætʃ/',
@@ -6439,6 +7224,7 @@ return [
             'example_translation' => '這些窗簾和沙發很相配。',
         ],
         [
+            'id' => 1786,
             'word' => 'travel',
             'part_of_speech' => 'n.、vt.、vi.',
             'pronunciation' => '/ˈtɹævəɫ/',
@@ -6447,6 +7233,7 @@ return [
             'example_translation' => '我的家人喜歡搭火車旅行。',
         ],
         [
+            'id' => 1787,
             'word' => 'naked',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈneɪkəd/',
@@ -6455,6 +7242,7 @@ return [
             'example_translation' => '那個嬰兒洗完澡後是裸體的。',
         ],
         [
+            'id' => 1788,
             'word' => 'string',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈstɹɪŋ/',
@@ -6463,6 +7251,7 @@ return [
             'example_translation' => '她用一條細繩把盒子綁起來。',
         ],
         [
+            'id' => 1789,
             'word' => 'poem',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpoʊəm/',
@@ -6471,6 +7260,7 @@ return [
             'example_translation' => '他寫了一首關於月亮的短詩。',
         ],
         [
+            'id' => 1790,
             'word' => 'bead',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈbid/',
@@ -6481,6 +7271,7 @@ return [
     ],
     'group_80' => [
         [
+            'id' => 1791,
             'word' => 'tip',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ˈtɪp/',
@@ -6489,6 +7280,7 @@ return [
             'example_translation' => '晚餐後我們給了服務生小費。',
         ],
         [
+            'id' => 1792,
             'word' => 'minus',
             'part_of_speech' => 'prep.、adj.、n.',
             'pronunciation' => '/ˈmaɪnəs/',
@@ -6497,6 +7289,7 @@ return [
             'example_translation' => '十減三等於七。',
         ],
         [
+            'id' => 1793,
             'word' => 'effect',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈifɛkt/',
@@ -6505,6 +7298,7 @@ return [
             'example_translation' => '這項新法律對駕駛人產生了很大的影響。',
         ],
         [
+            'id' => 1794,
             'word' => 'bend',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˈbɛnd/',
@@ -6513,6 +7307,7 @@ return [
             'example_translation' => '請把這張紙對折。',
         ],
         [
+            'id' => 1795,
             'word' => 'tangerine',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˌtændʒɝˈin/',
@@ -6521,6 +7316,7 @@ return [
             'example_translation' => '她剝了一顆甜橘子給弟弟吃。',
         ],
         [
+            'id' => 1796,
             'word' => 'puppet',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpəpət/',
@@ -6529,6 +7325,7 @@ return [
             'example_translation' => '孩子們在學校觀賞木偶戲。',
         ],
         [
+            'id' => 1797,
             'word' => 'ill',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈɪɫ/',
@@ -6537,6 +7334,7 @@ return [
             'example_translation' => '湯姆因為生病而待在家裡。',
         ],
         [
+            'id' => 1798,
             'word' => 'rush',
             'part_of_speech' => 'vi.、vt.、n.',
             'pronunciation' => '/ˈɹəʃ/',
@@ -6545,6 +7343,7 @@ return [
             'example_translation' => '下課後，孩子們奔向操場。',
         ],
         [
+            'id' => 1799,
             'word' => 'pudding',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpʊdɪŋ/',
@@ -6553,6 +7352,7 @@ return [
             'example_translation' => '媽媽做了巧克力布丁當甜點。',
         ],
         [
+            'id' => 1800,
             'word' => 'geography',
             'part_of_speech' => 'n.',
             'pronunciation' => '/dʒiˈɑɡɹəfi/',
@@ -6563,6 +7363,7 @@ return [
     ],
     'group_81' => [
         [
+            'id' => 1801,
             'word' => 'form',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ˈfɔɹm/',
@@ -6571,6 +7372,7 @@ return [
             'example_translation' => '雲開始在山上形成。',
         ],
         [
+            'id' => 1802,
             'word' => 'wolf',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈwʊɫf/',
@@ -6579,6 +7381,7 @@ return [
             'example_translation' => '我們在動物園看到一隻灰狼。',
         ],
         [
+            'id' => 1803,
             'word' => 'pronounce',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/pɹəˈnaʊns/',
@@ -6587,6 +7390,7 @@ return [
             'example_translation' => '你會發音這個英文單字嗎？',
         ],
         [
+            'id' => 1804,
             'word' => 'truth',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtɹuθ/',
@@ -6595,6 +7399,7 @@ return [
             'example_translation' => '請告訴我事情經過的實話。',
         ],
         [
+            'id' => 1805,
             'word' => 'nobody',
             'part_of_speech' => 'n.、pron.',
             'pronunciation' => '/ˈnoʊˌbɑˌdi/',
@@ -6603,6 +7408,7 @@ return [
             'example_translation' => '沒有人知道這個問題的答案。',
         ],
         [
+            'id' => 1806,
             'word' => 'hardly',
             'part_of_speech' => 'adv.',
             'pronunciation' => '/ˈhɑɹdɫi/',
@@ -6611,6 +7417,7 @@ return [
             'example_translation' => '在吵鬧的房間裡，我幾乎聽不到她的聲音。',
         ],
         [
+            'id' => 1807,
             'word' => 'drama',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈdɹɑmə/',
@@ -6619,6 +7426,7 @@ return [
             'example_translation' => '我們班正在觀看一部關於著名國王的戲劇。',
         ],
         [
+            'id' => 1808,
             'word' => 'jog',
             'part_of_speech' => 'vi.',
             'pronunciation' => '/ˈdʒɑɡ/',
@@ -6627,6 +7435,7 @@ return [
             'example_translation' => '我爸爸喜歡每天早上在公園慢跑。',
         ],
         [
+            'id' => 1809,
             'word' => 'subject',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsəbdʒɪkt/',
@@ -6635,6 +7444,7 @@ return [
             'example_translation' => '英文是我在學校最喜歡的科目。',
         ],
         [
+            'id' => 1810,
             'word' => 'asleep',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/əˈsɫip/',
@@ -6645,6 +7455,7 @@ return [
     ],
     'group_82' => [
         [
+            'id' => 1811,
             'word' => 'moth',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈmɔθ/',
@@ -6653,6 +7464,7 @@ return [
             'example_translation' => '昨晚有一隻蛾飛進燈光裡。',
         ],
         [
+            'id' => 1812,
             'word' => 'review',
             'part_of_speech' => 'vt.、vi.、n.',
             'pronunciation' => '/ˌɹivˈju/',
@@ -6661,6 +7473,7 @@ return [
             'example_translation' => '考試前我需要複習筆記。',
         ],
         [
+            'id' => 1813,
             'word' => 'insect',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɪnˌsɛkt/',
@@ -6669,6 +7482,7 @@ return [
             'example_translation' => '孩子們在葉子下面發現一隻小昆蟲。',
         ],
         [
+            'id' => 1814,
             'word' => 'hammer',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈhæmɝ/',
@@ -6677,6 +7491,7 @@ return [
             'example_translation' => '他用鐵鎚修理木椅。',
         ],
         [
+            'id' => 1815,
             'word' => 'brick',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈbɹɪk/',
@@ -6685,6 +7500,7 @@ return [
             'example_translation' => '那面老牆是用紅磚砌成的。',
         ],
         [
+            'id' => 1816,
             'word' => 'medicine',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈmɛdəsən/',
@@ -6693,6 +7509,7 @@ return [
             'example_translation' => '晚餐後吃這個藥。',
         ],
         [
+            'id' => 1817,
             'word' => 'invite',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˌɪnˈvaɪt/',
@@ -6701,6 +7518,7 @@ return [
             'example_translation' => '我會邀請我的朋友參加我的生日派對。',
         ],
         [
+            'id' => 1818,
             'word' => 'fault',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈfɔɫt/',
@@ -6709,6 +7527,7 @@ return [
             'example_translation' => '這支手機的一個缺點是電池續航力很短。',
         ],
         [
+            'id' => 1819,
             'word' => 'hairdryer',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈhɛɹˌdɹaɪɝ/',
@@ -6717,6 +7536,7 @@ return [
             'example_translation' => '她用吹風機吹乾濕頭髮。',
         ],
         [
+            'id' => 1820,
             'word' => 'honey',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈhəni/',
@@ -6727,6 +7547,7 @@ return [
     ],
     'group_83' => [
         [
+            'id' => 1821,
             'word' => 'battle',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈbætəɫ/',
@@ -6735,6 +7556,7 @@ return [
             'example_translation' => '這場戰鬥持續了三天。',
         ],
         [
+            'id' => 1822,
             'word' => 'brush',
             'part_of_speech' => 'n.、vt.、vi.',
             'pronunciation' => '/ˈbɹəʃ/',
@@ -6743,6 +7565,7 @@ return [
             'example_translation' => '我用一把柔軟的刷子清潔鞋子。',
         ],
         [
+            'id' => 1823,
             'word' => 'ketchup',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkɛtʃəp/',
@@ -6751,6 +7574,7 @@ return [
             'example_translation' => '湯姆在漢堡上加了一些番茄醬。',
         ],
         [
+            'id' => 1824,
             'word' => 'gather',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˈɡæðɝ/',
@@ -6759,6 +7583,7 @@ return [
             'example_translation' => '請把地板上的書收集起來。',
         ],
         [
+            'id' => 1825,
             'word' => 'cancel',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˈkænsəɫ/',
@@ -6767,6 +7592,7 @@ return [
             'example_translation' => '因為下雨，我們只好取消野餐。',
         ],
         [
+            'id' => 1826,
             'word' => 'backward',
             'part_of_speech' => 'adj.、adv.',
             'pronunciation' => '/ˈbækwɝd/',
@@ -6775,6 +7601,7 @@ return [
             'example_translation' => '那個孩子看到狗時向後退了一步。',
         ],
         [
+            'id' => 1827,
             'word' => 'develop',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/dɪˈvɛɫəp/',
@@ -6783,6 +7610,7 @@ return [
             'example_translation' => '這座城市計畫開發一座新的公園。',
         ],
         [
+            'id' => 1828,
             'word' => 'pot',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpɑt/',
@@ -6791,6 +7619,7 @@ return [
             'example_translation' => '她把壺裡的茶倒進我們的杯子。',
         ],
         [
+            'id' => 1829,
             'word' => 'alive',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/əˈɫaɪv/',
@@ -6799,6 +7628,7 @@ return [
             'example_translation' => '那條小魚還活著。',
         ],
         [
+            'id' => 1830,
             'word' => 'effort',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɛfɝt/',
@@ -6809,6 +7639,7 @@ return [
     ],
     'group_84' => [
         [
+            'id' => 1831,
             'word' => 'meal',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈmiɫ/',
@@ -6817,6 +7648,7 @@ return [
             'example_translation' => '我們一起享用了一頓美味的餐點。',
         ],
         [
+            'id' => 1832,
             'word' => 'custom',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkəstəm/',
@@ -6825,6 +7657,7 @@ return [
             'example_translation' => '在節日期間送禮物是一種慣例。',
         ],
         [
+            'id' => 1833,
             'word' => 'failure',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈfeɪɫjɝ/',
@@ -6833,6 +7666,7 @@ return [
             'example_translation' => '失敗可以教導我們下次如何做得更好。',
         ],
         [
+            'id' => 1834,
             'word' => 'alike',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/əˈɫaɪk/',
@@ -6841,6 +7675,7 @@ return [
             'example_translation' => '這兩姊妹長得非常相像。',
         ],
         [
+            'id' => 1835,
             'word' => 'social',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈsoʊʃəɫ/',
@@ -6849,6 +7684,7 @@ return [
             'example_translation' => '這個社團為年長者提供社交活動。',
         ],
         [
+            'id' => 1836,
             'word' => 'anyhow',
             'part_of_speech' => 'adv.',
             'pronunciation' => '/ˈɛniˌhaʊ/',
@@ -6857,6 +7693,7 @@ return [
             'example_translation' => '當時正在下雨，但我們無論如何還是去散步了。',
         ],
         [
+            'id' => 1837,
             'word' => 'ordinary',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈɔɹdəˌnɛɹi/',
@@ -6865,6 +7702,7 @@ return [
             'example_translation' => '一開始，那看起來像是普通的一天。',
         ],
         [
+            'id' => 1838,
             'word' => 'brief',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈbɹif/',
@@ -6873,6 +7711,7 @@ return [
             'example_translation' => '老師給了我們簡短的說明。',
         ],
         [
+            'id' => 1839,
             'word' => 'clothe',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˈkɫoʊð/',
@@ -6881,6 +7720,7 @@ return [
             'example_translation' => '這個慈善機構幫助有需要的兒童穿衣。',
         ],
         [
+            'id' => 1840,
             'word' => 'spring',
             'part_of_speech' => 'n.、vi.',
             'pronunciation' => '/ˈspɹɪŋ/',
@@ -6891,6 +7731,7 @@ return [
     ],
     'group_85' => [
         [
+            'id' => 1841,
             'word' => 'rather',
             'part_of_speech' => 'adv.',
             'pronunciation' => '/ˈɹæðɝ/',
@@ -6899,6 +7740,7 @@ return [
             'example_translation' => '今天外面相當冷。',
         ],
         [
+            'id' => 1842,
             'word' => 'captain',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkæptən/',
@@ -6907,6 +7749,7 @@ return [
             'example_translation' => '船長帶領船隻安全地穿過暴風雨。',
         ],
         [
+            'id' => 1843,
             'word' => 'chalk',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtʃɑk/',
@@ -6915,6 +7758,7 @@ return [
             'example_translation' => '老師用粉筆在黑板上寫下答案。',
         ],
         [
+            'id' => 1844,
             'word' => 'disagree',
             'part_of_speech' => 'vi.',
             'pronunciation' => '/ˌdɪsəˈɡɹi/',
@@ -6923,6 +7767,7 @@ return [
             'example_translation' => '我不同意我哥哥對於要看哪部電影的看法。',
         ],
         [
+            'id' => 1845,
             'word' => 'absence',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈæbsəns/',
@@ -6931,6 +7776,7 @@ return [
             'example_translation' => '老師詢問艾美缺席上課的原因。',
         ],
         [
+            'id' => 1846,
             'word' => 'melon',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈmɛɫən/',
@@ -6939,6 +7785,7 @@ return [
             'example_translation' => '晚餐後，我們一起吃了一顆香甜的瓜。',
         ],
         [
+            'id' => 1847,
             'word' => 'character',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkɛɹɪktɝ/',
@@ -6947,6 +7794,7 @@ return [
             'example_translation' => '她善良的性格讓每個人都感到受歡迎。',
         ],
         [
+            'id' => 1848,
             'word' => 'emotion',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈiˌmoʊʃən/',
@@ -6955,6 +7803,7 @@ return [
             'example_translation' => '他很難掩飾自己的情感。',
         ],
         [
+            'id' => 1849,
             'word' => 'culture',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkəɫtʃɝ/',
@@ -6963,6 +7812,7 @@ return [
             'example_translation' => '了解另一種文化可能會非常有趣。',
         ],
         [
+            'id' => 1850,
             'word' => 'crab',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkɹæb/',
@@ -6973,6 +7823,7 @@ return [
     ],
     'group_86' => [
         [
+            'id' => 1851,
             'word' => 'toast',
             'part_of_speech' => 'n.、vt.、vi.',
             'pronunciation' => '/ˈtoʊst/',
@@ -6981,6 +7832,7 @@ return [
             'example_translation' => '我們舉起酒杯向這對新婚夫妻敬酒。',
         ],
         [
+            'id' => 1852,
             'word' => 'costly',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈkɑstɫi/',
@@ -6989,6 +7841,7 @@ return [
             'example_translation' => '博物館保護一幅貴重的畫作，避免它受到陽光照射。',
         ],
         [
+            'id' => 1853,
             'word' => 'liquid',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɫɪkwəd/',
@@ -6997,6 +7850,7 @@ return [
             'example_translation' => '水是我們每天都需要的液體。',
         ],
         [
+            'id' => 1854,
             'word' => 'beard',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈbɪɹd/',
@@ -7005,6 +7859,7 @@ return [
             'example_translation' => '那位老人留著長長的白鬍鬚。',
         ],
         [
+            'id' => 1855,
             'word' => 'corner',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkɔɹnɝ/',
@@ -7013,6 +7868,7 @@ return [
             'example_translation' => '街角有一家小麵包店。',
         ],
         [
+            'id' => 1856,
             'word' => 'loss',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɫɔs/',
@@ -7021,6 +7877,7 @@ return [
             'example_translation' => '遺失鑰匙讓我上班遲到了。',
         ],
         [
+            'id' => 1857,
             'word' => 'calm',
             'part_of_speech' => 'adj.、n.、vi.、vt.',
             'pronunciation' => '/ˈkɑɫm/',
@@ -7029,6 +7886,7 @@ return [
             'example_translation' => '嬰兒開始哭泣時，她仍保持沉著。',
         ],
         [
+            'id' => 1858,
             'word' => 'dawn',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈdɔn/',
@@ -7037,6 +7895,7 @@ return [
             'example_translation' => '漁夫們在黎明時分離開村莊。',
         ],
         [
+            'id' => 1859,
             'word' => 'enjoy',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ɪnˈdʒɔɪ/',
@@ -7045,6 +7904,7 @@ return [
             'example_translation' => '我喜歡放學後聽音樂。',
         ],
         [
+            'id' => 1860,
             'word' => 'baby-sitter',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈbeɪbiˌsɪtɝ/',
@@ -7055,6 +7915,7 @@ return [
     ],
     'group_87' => [
         [
+            'id' => 1861,
             'word' => 'altogether',
             'part_of_speech' => 'adv.',
             'pronunciation' => '/ˌɔɫtəˈɡɛðɝ/',
@@ -7063,6 +7924,7 @@ return [
             'example_translation' => '學生離開後，房間完全是空的。',
         ],
         [
+            'id' => 1862,
             'word' => 'vote',
             'part_of_speech' => 'n.、vi.、vt.',
             'pronunciation' => '/ˈvoʊt/',
@@ -7071,6 +7933,7 @@ return [
             'example_translation' => '每位公民都應該在選舉中投票。',
         ],
         [
+            'id' => 1863,
             'word' => 'symbol',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsɪmbəɫ/',
@@ -7079,6 +7942,7 @@ return [
             'example_translation' => '鴿子是和平的象徵。',
         ],
         [
+            'id' => 1864,
             'word' => 'niece',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈnis/',
@@ -7087,6 +7951,7 @@ return [
             'example_translation' => '我的姪女正在學彈鋼琴。',
         ],
         [
+            'id' => 1865,
             'word' => 'couple',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkəpəɫ/',
@@ -7095,6 +7960,7 @@ return [
             'example_translation' => '一對年輕夫婦搬進了隔壁的公寓。',
         ],
         [
+            'id' => 1866,
             'word' => 'organization',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˌɔɹɡənəˈzeɪʃən/',
@@ -7103,6 +7969,7 @@ return [
             'example_translation' => '這個機構幫助有需要的兒童。',
         ],
         [
+            'id' => 1867,
             'word' => 'bluetooth',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈbɫuˌtuθ/',
@@ -7111,6 +7978,7 @@ return [
             'example_translation' => '我使用藍牙傳輸將手機連接到喇叭。',
         ],
         [
+            'id' => 1868,
             'word' => 'scientist',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsaɪəntɪst/',
@@ -7119,6 +7987,7 @@ return [
             'example_translation' => '這位科學家正在研究植物如何生長。',
         ],
         [
+            'id' => 1869,
             'word' => 'cafe',
             'part_of_speech' => 'n.',
             'pronunciation' => '/kæˈfeɪ/',
@@ -7127,6 +7996,7 @@ return [
             'example_translation' => '我們在一家小咖啡廳喝咖啡、吃蛋糕。',
         ],
         [
+            'id' => 1870,
             'word' => 'squirrel',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈskwɝəɫ/',
@@ -7137,6 +8007,7 @@ return [
     ],
     'group_88' => [
         [
+            'id' => 1871,
             'word' => 'director',
             'part_of_speech' => 'n.',
             'pronunciation' => '/daɪˈɹɛktɝ/',
@@ -7145,6 +8016,7 @@ return [
             'example_translation' => '主管向員工說明了新計畫。',
         ],
         [
+            'id' => 1872,
             'word' => 'football',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈfʊtˌbɔɫ/',
@@ -7153,6 +8025,7 @@ return [
             'example_translation' => '我哥哥每個星期日都和朋友一起踢足球。',
         ],
         [
+            'id' => 1873,
             'word' => 'basement',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈbeɪsmənt/',
@@ -7161,6 +8034,7 @@ return [
             'example_translation' => '我們把腳踏車放在地下室。',
         ],
         [
+            'id' => 1874,
             'word' => 'suit',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsut/',
@@ -7169,6 +8043,7 @@ return [
             'example_translation' => '他穿了一套深色西裝去參加工作面試。',
         ],
         [
+            'id' => 1875,
             'word' => 'none',
             'part_of_speech' => 'pron.、adj.、adv.',
             'pronunciation' => '/ˈnən/',
@@ -7177,6 +8052,7 @@ return [
             'example_translation' => '學生中沒有一個人知道答案。',
         ],
         [
+            'id' => 1876,
             'word' => 'leopard',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɫɛpɝd/',
@@ -7185,6 +8061,7 @@ return [
             'example_translation' => '那隻豹安靜地穿過草地。',
         ],
         [
+            'id' => 1877,
             'word' => 'female',
             'part_of_speech' => 'adj.、n.',
             'pronunciation' => '/ˈfiˌmeɪɫ/',
@@ -7193,6 +8070,7 @@ return [
             'example_translation' => '那隻雌鳥在樹上築了一個巢。',
         ],
         [
+            'id' => 1878,
             'word' => 'stress',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˈstɹɛs/',
@@ -7201,6 +8079,7 @@ return [
             'example_translation' => '老師強調充足睡眠的重要性。',
         ],
         [
+            'id' => 1879,
             'word' => 'quiz',
             'part_of_speech' => 'n.、vt.',
             'pronunciation' => '/ˈkwɪz/',
@@ -7209,6 +8088,7 @@ return [
             'example_translation' => '下課前，老師給我們做了一個簡短的測驗。',
         ],
         [
+            'id' => 1880,
             'word' => 'favor',
             'part_of_speech' => 'n.、vt.',
             'pronunciation' => '/ˈfeɪvɝ/',
@@ -7219,6 +8099,7 @@ return [
     ],
     'group_89' => [
         [
+            'id' => 1881,
             'word' => 'curious',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈkjʊɹiəs/',
@@ -7227,6 +8108,7 @@ return [
             'example_translation' => '那個好奇的女孩問了許多關於星星的問題。',
         ],
         [
+            'id' => 1882,
             'word' => 'guava',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɡwɑvə/',
@@ -7235,6 +8117,7 @@ return [
             'example_translation' => '午餐後我吃了一顆香甜的芭樂。',
         ],
         [
+            'id' => 1883,
             'word' => 'guard',
             'part_of_speech' => 'n.、vt.、vi.',
             'pronunciation' => '/ˈɡɑɹd/',
@@ -7243,6 +8126,7 @@ return [
             'example_translation' => '守衛整晚站在入口處。',
         ],
         [
+            'id' => 1884,
             'word' => 'crane',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkɹeɪn/',
@@ -7251,6 +8135,7 @@ return [
             'example_translation' => '我們看見一隻高大的鶴站在湖邊。',
         ],
         [
+            'id' => 1885,
             'word' => 'record',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɹɛkɝd/',
@@ -7259,6 +8144,7 @@ return [
             'example_translation' => '那名跑者打破了學校一百公尺賽跑的紀錄。',
         ],
         [
+            'id' => 1886,
             'word' => 'sweater',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈswɛtɝ/',
@@ -7267,6 +8153,7 @@ return [
             'example_translation' => '她在寒冷的早晨穿了一件保暖的毛線衣。',
         ],
         [
+            'id' => 1887,
             'word' => 'apply',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/əˈpɫaɪ/',
@@ -7275,6 +8162,7 @@ return [
             'example_translation' => '請每天在手上塗兩次這種乳霜。',
         ],
         [
+            'id' => 1888,
             'word' => 'discussion',
             'part_of_speech' => 'n.',
             'pronunciation' => '/dɪˈskəʃən/',
@@ -7283,6 +8171,7 @@ return [
             'example_translation' => '學生們討論了如何保護環境。',
         ],
         [
+            'id' => 1889,
             'word' => 'frank',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈfɹæŋk/',
@@ -7291,6 +8180,7 @@ return [
             'example_translation' => '坦白說，我不太喜歡這部電影。',
         ],
         [
+            'id' => 1890,
             'word' => 'motion',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈmoʊʃən/',
@@ -7301,6 +8191,7 @@ return [
     ],
     'group_90' => [
         [
+            'id' => 1891,
             'word' => 'ignore',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˌɪɡˈnɔɹ/',
@@ -7309,6 +8200,7 @@ return [
             'example_translation' => '你不應該忽視警告標誌。',
         ],
         [
+            'id' => 1892,
             'word' => 'borrow',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˈbɑˌɹoʊ/',
@@ -7317,6 +8209,7 @@ return [
             'example_translation' => '我可以借你的雨傘幾分鐘嗎？',
         ],
         [
+            'id' => 1893,
             'word' => 'offer',
             'part_of_speech' => 'vt.、vi.、n.',
             'pronunciation' => '/ˈɔfɝ/',
@@ -7325,6 +8218,7 @@ return [
             'example_translation' => '這家餐廳為所有顧客提供免費的水。',
         ],
         [
+            'id' => 1894,
             'word' => 'further',
             'part_of_speech' => 'adj.、adv.',
             'pronunciation' => '/ˈfɝðɝ/',
@@ -7333,6 +8227,7 @@ return [
             'example_translation' => '圖書館離我家比超市更遠。',
         ],
         [
+            'id' => 1895,
             'word' => 'childish',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈtʃaɪɫdɪʃ/',
@@ -7341,6 +8236,7 @@ return [
             'example_translation' => '那個小男孩畫了一幅孩子般的家庭圖畫。',
         ],
         [
+            'id' => 1896,
             'word' => 'podcast',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpɑdˌkæst/',
@@ -7349,6 +8245,7 @@ return [
             'example_translation' => '我姊姊上學途中會收聽一個科學網路廣播。',
         ],
         [
+            'id' => 1897,
             'word' => 'realize',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/ˈɹiəˌɫaɪz/',
@@ -7357,6 +8254,7 @@ return [
             'example_translation' => '我不了解自己的手機還在家裡。',
         ],
         [
+            'id' => 1898,
             'word' => 'violin',
             'part_of_speech' => 'n.',
             'pronunciation' => '/vaɪəˈɫɪn/',
@@ -7365,6 +8263,7 @@ return [
             'example_translation' => '我的朋友每天晚上練習小提琴。',
         ],
         [
+            'id' => 1899,
             'word' => 'gardener',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɡɑɹdənɝ/',
@@ -7373,6 +8272,7 @@ return [
             'example_translation' => '園丁在小路旁種了色彩繽紛的花。',
         ],
         [
+            'id' => 1900,
             'word' => 'lemon',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɫɛmən/',
@@ -7383,6 +8283,7 @@ return [
     ],
     'group_91' => [
         [
+            'id' => 1901,
             'word' => 'peanut',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpiˌnət/',
@@ -7391,6 +8292,7 @@ return [
             'example_translation' => '我吃了一顆花生當點心。',
         ],
         [
+            'id' => 1902,
             'word' => 'potato',
             'part_of_speech' => 'n.',
             'pronunciation' => '/pəˈteɪˌtoʊ/',
@@ -7399,6 +8301,7 @@ return [
             'example_translation' => '她烤了一顆馬鈴薯當晚餐。',
         ],
         [
+            'id' => 1903,
             'word' => 'pack',
             'part_of_speech' => 'n.、vt.、vi.',
             'pronunciation' => '/ˈpæk/',
@@ -7407,6 +8310,7 @@ return [
             'example_translation' => '我在商店買了一包餅乾。',
         ],
         [
+            'id' => 1904,
             'word' => 'fever',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈfivɝ/',
@@ -7415,6 +8319,7 @@ return [
             'example_translation' => '湯姆因為發燒而待在家裡。',
         ],
         [
+            'id' => 1905,
             'word' => 'handle',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈhændəɫ/',
@@ -7423,6 +8328,7 @@ return [
             'example_translation' => '這個杯子有一個小把手。',
         ],
         [
+            'id' => 1906,
             'word' => 'flow',
             'part_of_speech' => 'vi.、vt.、n.',
             'pronunciation' => '/ˈfɫoʊ/',
@@ -7431,6 +8337,7 @@ return [
             'example_translation' => '這條河流經這座村莊。',
         ],
         [
+            'id' => 1907,
             'word' => 'cash',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkæʃ/',
@@ -7439,6 +8346,7 @@ return [
             'example_translation' => '我用現金支付了餐費。',
         ],
         [
+            'id' => 1908,
             'word' => 'lawyer',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɫɔɪɝ/',
@@ -7447,6 +8355,7 @@ return [
             'example_translation' => '這位律師幫助這家人處理問題。',
         ],
         [
+            'id' => 1909,
             'word' => 'wild',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈwaɪɫd/',
@@ -7455,6 +8364,7 @@ return [
             'example_translation' => '我們在森林裡看到一隻野生的鹿。',
         ],
         [
+            'id' => 1910,
             'word' => 'soybean',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsɔɪˌbin/',
@@ -7465,6 +8375,7 @@ return [
     ],
     'group_92' => [
         [
+            'id' => 1911,
             'word' => 'bundle',
             'part_of_speech' => 'n.、vt.、vi.',
             'pronunciation' => '/ˈbəndəɫ/',
@@ -7473,6 +8384,7 @@ return [
             'example_translation' => '她抱著一捆衣服上樓。',
         ],
         [
+            'id' => 1912,
             'word' => 'importance',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˌɪmˈpɔɹtəns/',
@@ -7481,6 +8393,7 @@ return [
             'example_translation' => '我們的老師解釋了運動的重要性。',
         ],
         [
+            'id' => 1913,
             'word' => 'umbrella',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈəmˌbɹɛɫə/',
@@ -7489,6 +8402,7 @@ return [
             'example_translation' => '帶把雨傘，因為晚一點可能會下雨。',
         ],
         [
+            'id' => 1914,
             'word' => 'arrange',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/əˈɹeɪndʒ/',
@@ -7497,6 +8411,7 @@ return [
             'example_translation' => '我們把椅子排列成圓形。',
         ],
         [
+            'id' => 1915,
             'word' => 'attack',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/əˈtæk/',
@@ -7505,6 +8420,7 @@ return [
             'example_translation' => '那隻狗在公園襲擊了那名男子。',
         ],
         [
+            'id' => 1916,
             'word' => 'ceiling',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsiɫɪŋ/',
@@ -7513,6 +8429,7 @@ return [
             'example_translation' => '天花板上有一盞明亮的燈。',
         ],
         [
+            'id' => 1917,
             'word' => 'burn',
             'part_of_speech' => 'vt.、vi.、n.',
             'pronunciation' => '/ˈbɝn/',
@@ -7521,6 +8438,7 @@ return [
             'example_translation' => '小心，否則熱鍋可能會燙傷你的手。',
         ],
         [
+            'id' => 1918,
             'word' => 'freedom',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈfɹidəm/',
@@ -7529,6 +8447,7 @@ return [
             'example_translation' => '每個人都應該擁有選擇的自由。',
         ],
         [
+            'id' => 1919,
             'word' => 'tofu',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtoʊfu/',
@@ -7537,6 +8456,7 @@ return [
             'example_translation' => '我媽媽在湯裡加入了豆腐。',
         ],
         [
+            'id' => 1920,
             'word' => 'sushi',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsuʃi/',
@@ -7547,6 +8467,7 @@ return [
     ],
     'group_93' => [
         [
+            'id' => 1921,
             'word' => 'per',
             'part_of_speech' => 'prep.',
             'pronunciation' => '/ˈpɝ/',
@@ -7555,6 +8476,7 @@ return [
             'example_translation' => '票價是每人十美元。',
         ],
         [
+            'id' => 1922,
             'word' => 'hen',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈhɛn/',
@@ -7563,6 +8485,7 @@ return [
             'example_translation' => '那隻母雞今天早上下了三顆蛋。',
         ],
         [
+            'id' => 1923,
             'word' => 'throughout',
             'part_of_speech' => 'prep.、adv.',
             'pronunciation' => '/θɹuˈaʊt/',
@@ -7571,6 +8494,7 @@ return [
             'example_translation' => '花朵遍布整座花園。',
         ],
         [
+            'id' => 1924,
             'word' => 'needle',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈnidəɫ/',
@@ -7579,6 +8503,7 @@ return [
             'example_translation' => '我奶奶用針修補我的襯衫。',
         ],
         [
+            'id' => 1925,
             'word' => 'basis',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈbeɪsəs/',
@@ -7587,6 +8512,7 @@ return [
             'example_translation' => '信任是良好友誼的基礎。',
         ],
         [
+            'id' => 1926,
             'word' => 'notebook',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈnoʊtˌbʊk/',
@@ -7595,6 +8521,7 @@ return [
             'example_translation' => '我把生字寫在筆記本裡。',
         ],
         [
+            'id' => 1927,
             'word' => 'create',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/kɹiˈeɪt/',
@@ -7603,6 +8530,7 @@ return [
             'example_translation' => '孩子們用紙創造出色彩繽紛的鳥兒。',
         ],
         [
+            'id' => 1928,
             'word' => 'thief',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈθif/',
@@ -7611,6 +8539,7 @@ return [
             'example_translation' => '小偷從商店外面偷走了一輛腳踏車。',
         ],
         [
+            'id' => 1929,
             'word' => 'elevator',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɛɫəˌveɪtɝ/',
@@ -7619,6 +8548,7 @@ return [
             'example_translation' => '我們搭電梯到十樓。',
         ],
         [
+            'id' => 1930,
             'word' => 'lone',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈɫoʊn/',
@@ -7629,6 +8559,7 @@ return [
     ],
     'group_94' => [
         [
+            'id' => 1931,
             'word' => 'theater',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈθiətɝ/',
@@ -7637,6 +8568,7 @@ return [
             'example_translation' => '我們在電影院看了一部有趣的電影。',
         ],
         [
+            'id' => 1932,
             'word' => 'anybody',
             'part_of_speech' => 'pron.',
             'pronunciation' => '/ˈɛniˌbɑdi/',
@@ -7645,6 +8577,7 @@ return [
             'example_translation' => '有人知道答案嗎？',
         ],
         [
+            'id' => 1933,
             'word' => 'hire',
             'part_of_speech' => 'vt.、n.',
             'pronunciation' => '/ˈhaɪɝ/',
@@ -7653,6 +8586,7 @@ return [
             'example_translation' => '那家商店計畫僱用一名新員工。',
         ],
         [
+            'id' => 1934,
             'word' => 'cure',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkjʊɹ/',
@@ -7661,6 +8595,7 @@ return [
             'example_translation' => '醫生正在尋找這種疾病的療法。',
         ],
         [
+            'id' => 1935,
             'word' => 'painting',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpeɪntɪŋ/',
@@ -7669,6 +8604,7 @@ return [
             'example_translation' => '牆上的那幅畫描繪了一座美麗的湖泊。',
         ],
         [
+            'id' => 1936,
             'word' => 'brand',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈbɹænd/',
@@ -7677,6 +8613,7 @@ return [
             'example_translation' => '這個品牌製造舒適的跑鞋。',
         ],
         [
+            'id' => 1937,
             'word' => 'field',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈfiɫd/',
@@ -7685,6 +8622,7 @@ return [
             'example_translation' => '孩子們跑過綠油油的原野。',
         ],
         [
+            'id' => 1938,
             'word' => 'television',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈtɛɫəˌvɪʒən/',
@@ -7693,6 +8631,7 @@ return [
             'example_translation' => '我家人晚餐後會看電視。',
         ],
         [
+            'id' => 1939,
             'word' => 'restaurant',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɹɛsˌtɹɑnt/',
@@ -7701,6 +8640,7 @@ return [
             'example_translation' => '我們在車站附近的一家小餐館吃晚餐。',
         ],
         [
+            'id' => 1940,
             'word' => 'sunny',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈsəni/',
@@ -7711,6 +8651,7 @@ return [
     ],
     'group_95' => [
         [
+            'id' => 1941,
             'word' => 'mat',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈmæt/',
@@ -7719,6 +8660,7 @@ return [
             'example_translation' => '進屋前請把鞋子放在墊子上。',
         ],
         [
+            'id' => 1942,
             'word' => 'workout',
             'part_of_speech' => 'n.、vi.',
             'pronunciation' => '/ˈwɝˌkaʊt/',
@@ -7727,6 +8669,7 @@ return [
             'example_translation' => '我每天早上做短時間的健身運動。',
         ],
         [
+            'id' => 1943,
             'word' => 'swallow',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈswɑɫoʊ/',
@@ -7735,6 +8678,7 @@ return [
             'example_translation' => '一隻燕子在屋頂下築了一個巢。',
         ],
         [
+            'id' => 1944,
             'word' => 'prefer',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/pɹəˈfɝ/',
@@ -7743,6 +8687,7 @@ return [
             'example_translation' => '比起咖啡，我寧可喝茶。',
         ],
         [
+            'id' => 1945,
             'word' => 'pain',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpeɪn/',
@@ -7751,6 +8696,7 @@ return [
             'example_translation' => '她感到膝蓋一陣劇痛。',
         ],
         [
+            'id' => 1946,
             'word' => 'fence',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈfɛns/',
@@ -7759,6 +8705,7 @@ return [
             'example_translation' => '那隻狗跳過了柵欄。',
         ],
         [
+            'id' => 1947,
             'word' => 'track',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ˈtɹæk/',
@@ -7767,6 +8714,7 @@ return [
             'example_translation' => '警方追蹤嫌疑犯到附近的一間旅館。',
         ],
         [
+            'id' => 1948,
             'word' => 'cafeteria',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˌkæfəˈtɪɹiə/',
@@ -7775,6 +8723,7 @@ return [
             'example_translation' => '我們在學校的自助餐館吃午餐。',
         ],
         [
+            'id' => 1949,
             'word' => 'latest',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈɫeɪtəst/',
@@ -7783,6 +8732,7 @@ return [
             'example_translation' => '你讀過她最新的書嗎？',
         ],
         [
+            'id' => 1950,
             'word' => 'detect',
             'part_of_speech' => 'vt.',
             'pronunciation' => '/dɪˈtɛkt/',
@@ -7793,6 +8743,7 @@ return [
     ],
     'group_96' => [
         [
+            'id' => 1951,
             'word' => 'album',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈæɫbəm/',
@@ -7801,6 +8752,7 @@ return [
             'example_translation' => '我祖母把老家的照片放在一本相簿裡。',
         ],
         [
+            'id' => 1952,
             'word' => 'fool',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈfuɫ/',
@@ -7809,6 +8761,7 @@ return [
             'example_translation' => '只有傻瓜才會相信那個奇怪的故事。',
         ],
         [
+            'id' => 1953,
             'word' => 'quantity',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkwɑntəti/',
@@ -7817,6 +8770,7 @@ return [
             'example_translation' => '請在湯裡放少量的鹽。',
         ],
         [
+            'id' => 1954,
             'word' => 'soccer',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsɑkɝ/',
@@ -7825,6 +8779,7 @@ return [
             'example_translation' => '孩子們放學後踢足球。',
         ],
         [
+            'id' => 1955,
             'word' => 'sleepy',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈsɫipi/',
@@ -7833,6 +8788,7 @@ return [
             'example_translation' => '我覺得很想睡，因為我昨晚沒有睡好。',
         ],
         [
+            'id' => 1956,
             'word' => 'local',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈɫoʊkəɫ/',
@@ -7841,6 +8797,7 @@ return [
             'example_translation' => '我們向當地的農夫買了新鮮水果。',
         ],
         [
+            'id' => 1957,
             'word' => 'shrimp',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈʃɹɪmp/',
@@ -7849,6 +8806,7 @@ return [
             'example_translation' => '我爸爸晚餐煮了蒜香蝦。',
         ],
         [
+            'id' => 1958,
             'word' => 'science',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsaɪəns/',
@@ -7857,6 +8815,7 @@ return [
             'example_translation' => '科學幫助我們了解世界如何運作。',
         ],
         [
+            'id' => 1959,
             'word' => 'pleasant',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈpɫɛzənt/',
@@ -7865,6 +8824,7 @@ return [
             'example_translation' => '我們在公園裡散了一次舒適的步。',
         ],
         [
+            'id' => 1960,
             'word' => 'painter',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpeɪntɝ/',
@@ -7875,6 +8835,7 @@ return [
     ],
     'group_97' => [
         [
+            'id' => 1961,
             'word' => 'foolish',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈfuɫɪʃ/',
@@ -7883,6 +8844,7 @@ return [
             'example_translation' => '不帶雨傘就出門是很愚蠢的。',
         ],
         [
+            'id' => 1962,
             'word' => 'pajamas',
             'part_of_speech' => 'n.',
             'pronunciation' => '/pəˈdʒæməz/',
@@ -7891,6 +8853,7 @@ return [
             'example_translation' => '我上床睡覺前穿上睡衣褲。',
         ],
         [
+            'id' => 1963,
             'word' => 'serious',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈsɪɹiəs/',
@@ -7899,6 +8862,7 @@ return [
             'example_translation' => '醫生說他的病情很嚴重。',
         ],
         [
+            'id' => 1964,
             'word' => 'cross',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈkɹɔs/',
@@ -7907,6 +8871,7 @@ return [
             'example_translation' => '爸爸因為我晚回家而生氣。',
         ],
         [
+            'id' => 1965,
             'word' => 'victory',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈvɪktɝi/',
@@ -7915,6 +8880,7 @@ return [
             'example_translation' => '比賽結束後，這支隊伍慶祝勝利。',
         ],
         [
+            'id' => 1966,
             'word' => 'cell',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsɛɫ/',
@@ -7923,6 +8889,7 @@ return [
             'example_translation' => '植物細胞非常小。',
         ],
         [
+            'id' => 1967,
             'word' => 'beginner',
             'part_of_speech' => 'n.',
             'pronunciation' => '/bɪˈɡɪnɝ/',
@@ -7931,6 +8898,7 @@ return [
             'example_translation' => '身為初學者，我每天練習英文。',
         ],
         [
+            'id' => 1968,
             'word' => 'highway',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈhaɪˌweɪ/',
@@ -7939,6 +8907,7 @@ return [
             'example_translation' => '我們開車上公路前往那座城市。',
         ],
         [
+            'id' => 1969,
             'word' => 'bun',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈbən/',
@@ -7947,6 +8916,7 @@ return [
             'example_translation' => '她早餐吃了一個熱騰騰的小圓麵包。',
         ],
         [
+            'id' => 1970,
             'word' => 'volleyball',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈvɑɫiˌbɔɫ/',
@@ -7957,6 +8927,7 @@ return [
     ],
     'group_98' => [
         [
+            'id' => 1971,
             'word' => 'eraser',
             'part_of_speech' => 'n.',
             'pronunciation' => '/iˈɹeɪsɝ/',
@@ -7965,6 +8936,7 @@ return [
             'example_translation' => '我可以借你的橡皮擦嗎？',
         ],
         [
+            'id' => 1972,
             'word' => 'widen',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ˈwaɪdən/',
@@ -7973,6 +8945,7 @@ return [
             'example_translation' => '這座城市計畫明年擴大這條道路。',
         ],
         [
+            'id' => 1973,
             'word' => 'praise',
             'part_of_speech' => 'n.、vt.',
             'pronunciation' => '/ˈpɹeɪz/',
@@ -7981,6 +8954,7 @@ return [
             'example_translation' => '老師讚揚米亞的努力。',
         ],
         [
+            'id' => 1974,
             'word' => 'visitor',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈvɪzɪtɝ/',
@@ -7989,6 +8963,7 @@ return [
             'example_translation' => '每位參觀者都必須在櫃檯登記。',
         ],
         [
+            'id' => 1975,
             'word' => 'record',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ɹɪˈkɔɹd/',
@@ -7997,6 +8972,7 @@ return [
             'example_translation' => '請錄下這場會議，這樣我們之後就能聽。',
         ],
         [
+            'id' => 1976,
             'word' => 'hum',
             'part_of_speech' => 'vi.、vt.、n.',
             'pronunciation' => '/ˈhəm/',
@@ -8005,6 +8981,7 @@ return [
             'example_translation' => '那台老冰箱開始發出很大的嗡嗡聲。',
         ],
         [
+            'id' => 1977,
             'word' => 'result',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ɹiˈzəɫt/',
@@ -8013,6 +8990,7 @@ return [
             'example_translation' => '這次測驗的結果比我預期的好。',
         ],
         [
+            'id' => 1978,
             'word' => 'depth',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈdɛpθ/',
@@ -8021,6 +8999,7 @@ return [
             'example_translation' => '這個標誌顯示游泳池的深度。',
         ],
         [
+            'id' => 1979,
             'word' => 'clap',
             'part_of_speech' => 'vt.、vi.、n.',
             'pronunciation' => '/ˈkɫæp/',
@@ -8029,6 +9008,7 @@ return [
             'example_translation' => '歌手唱完歌曲時，大家都拍手。',
         ],
         [
+            'id' => 1980,
             'word' => 'whenever',
             'part_of_speech' => 'conj.、adv.',
             'pronunciation' => '/hwɛˈnɛvɝ/',
@@ -8039,6 +9019,7 @@ return [
     ],
     'group_99' => [
         [
+            'id' => 1981,
             'word' => 'wave',
             'part_of_speech' => 'vi.、vt.',
             'pronunciation' => '/ˈweɪv/',
@@ -8047,6 +9028,7 @@ return [
             'example_translation' => '公車離開時，Mia 向她媽媽揮手。',
         ],
         [
+            'id' => 1982,
             'word' => 'influence',
             'part_of_speech' => 'n.、vt.',
             'pronunciation' => '/ˈɪnfɫuəns/',
@@ -8055,6 +9037,7 @@ return [
             'example_translation' => '父母對孩子有很大的影響。',
         ],
         [
+            'id' => 1983,
             'word' => 'koala',
             'part_of_speech' => 'n.',
             'pronunciation' => '/koʊˈɑɫə/',
@@ -8063,6 +9046,7 @@ return [
             'example_translation' => '我們看見一隻無尾熊在樹上睡覺。',
         ],
         [
+            'id' => 1984,
             'word' => 'fee',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈfi/',
@@ -8071,6 +9055,7 @@ return [
             'example_translation' => '參觀這間博物館需要支付一小筆費用。',
         ],
         [
+            'id' => 1985,
             'word' => 'wooden',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈwʊdən/',
@@ -8079,6 +9064,7 @@ return [
             'example_translation' => '孩子們坐在一張木製的桌子旁。',
         ],
         [
+            'id' => 1986,
             'word' => 'legal',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈɫiɡəɫ/',
@@ -8087,6 +9073,7 @@ return [
             'example_translation' => '在這條路上騎腳踏車是合法的。',
         ],
         [
+            'id' => 1987,
             'word' => 'purse',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈpɝs/',
@@ -8095,6 +9082,7 @@ return [
             'example_translation' => '她把鑰匙放進錢包裡。',
         ],
         [
+            'id' => 1988,
             'word' => 'carrot',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkæɹət/',
@@ -8103,6 +9091,7 @@ return [
             'example_translation' => '那隻兔子正在吃胡蘿蔔。',
         ],
         [
+            'id' => 1989,
             'word' => 'weapon',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈwɛpən/',
@@ -8111,6 +9100,7 @@ return [
             'example_translation' => '警方在車子裡發現了一件武器。',
         ],
         [
+            'id' => 1990,
             'word' => 'clothes',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkɫoʊðz/',
@@ -8121,6 +9111,7 @@ return [
     ],
     'group_100' => [
         [
+            'id' => 1991,
             'word' => 'future',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈfjutʃɝ/',
@@ -8129,6 +9120,7 @@ return [
             'example_translation' => '她希望未來能成為一名醫生。',
         ],
         [
+            'id' => 1992,
             'word' => 'pray',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ˈpɹeɪ/',
@@ -8137,6 +9129,7 @@ return [
             'example_translation' => '這家人為生病的孩子祈禱。',
         ],
         [
+            'id' => 1993,
             'word' => 'element',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈɛɫəmənt/',
@@ -8145,6 +9138,7 @@ return [
             'example_translation' => '信任是良好友誼的重要要素。',
         ],
         [
+            'id' => 1994,
             'word' => 'succeed',
             'part_of_speech' => 'vi.、vt.',
             'pronunciation' => '/səkˈsid/',
@@ -8153,6 +9147,7 @@ return [
             'example_translation' => '如果你持續努力，就會成功。',
         ],
         [
+            'id' => 1995,
             'word' => 'bloody',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈbɫədi/',
@@ -8161,6 +9156,7 @@ return [
             'example_translation' => '他在事故後鼻子流血了。',
         ],
         [
+            'id' => 1996,
             'word' => 'carpet',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈkɑɹpət/',
@@ -8169,6 +9165,7 @@ return [
             'example_translation' => '臥室地板上鋪著一張柔軟的地毯。',
         ],
         [
+            'id' => 1997,
             'word' => 'polite',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/pəˈɫaɪt/',
@@ -8177,6 +9174,7 @@ return [
             'example_translation' => '說謝謝是有禮貌的。',
         ],
         [
+            'id' => 1998,
             'word' => 'fearful',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/ˈfɪɹfəɫ/',
@@ -8185,6 +9183,7 @@ return [
             'example_translation' => '暴風雨期間，孩子們感到害怕。',
         ],
         [
+            'id' => 1999,
             'word' => 'mark',
             'part_of_speech' => 'vt.、vi.',
             'pronunciation' => '/ˈmɑɹk/',
@@ -8193,6 +9192,7 @@ return [
             'example_translation' => '老師在我的答案上做了正確的記號。',
         ],
         [
+            'id' => 2000,
             'word' => 'apron',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈeɪpɹən/',

@@ -31,6 +31,7 @@ class VocabularySeeder extends Seeder
 
             /**
              * @var array<string, array<int, array{
+             *     id: int,
              *     word: string,
              *     part_of_speech: string,
              *     pronunciation: string,
@@ -53,6 +54,7 @@ class VocabularySeeder extends Seeder
 
                 foreach ($items as $item) {
                     $vocabularyRows[] = [
+                        'id' => $item['id'],
                         'level_id' => $level->id,
                         'group_id' => $group->id,
                         'word' => $item['word'],
@@ -68,8 +70,8 @@ class VocabularySeeder extends Seeder
 
                 Vocabulary::upsert(
                     $vocabularyRows,
-                    uniqueBy: ['group_id', 'word'],
-                    update: ['level_id', 'part_of_speech', 'pronunciation', 'definition', 'example_sentence', 'example_translation', 'updated_at'],
+                    uniqueBy: ['id'],
+                    update: ['level_id', 'group_id', 'word', 'part_of_speech', 'pronunciation', 'definition', 'example_sentence', 'example_translation', 'updated_at'],
                 );
             }
         }
