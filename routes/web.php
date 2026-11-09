@@ -5,6 +5,7 @@ use App\Http\Controllers\GroupController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LevelController;
 use App\Http\Controllers\ProgressSyncController;
+use App\Http\Controllers\QuizController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
@@ -19,6 +20,11 @@ Route::post('/groups/{group}/progress', [GroupController::class, 'saveProgress']
 Route::post('/progress/sync', [ProgressSyncController::class, 'store'])
     ->middleware('auth')
     ->name('progress.sync');
+
+Route::get('/quiz', [QuizController::class, 'index'])->name('quiz.index');
+Route::post('/quiz/start', [QuizController::class, 'start'])->name('quiz.start');
+Route::get('/quiz/play', [QuizController::class, 'play'])->name('quiz.play');
+Route::post('/quiz/complete', [QuizController::class, 'complete'])->name('quiz.complete');
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');

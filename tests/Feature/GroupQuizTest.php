@@ -181,3 +181,24 @@ test('member can progress through stages 2 to 6 and mark group as completed', fu
         ->and($afterSelfTest->last_score)->toBe(95)
         ->and($afterSelfTest->next_review_at)->toBeNull();
 });
+
+test('saving group progress records study check-in and updates user streak', function () {
+    Carbon::setTestNow('2026-10-25 10:00:00');
+
+    $user = User::factory()->create([
+        'current_streak' => 0,
+        'longest_streak' => 0,
+        'last_studied_date' => null,
+    ]);
+    $level = Level::factory()->create();
+    $group = Group::factory()->create(['level_id' => $level->id]);
+
+    $this->actingAs($user)
+        ->post(route('groups.progress.save', $group), ['score' => 85])
+        ->assertRedirect();
+
+    $user->refresh();
+    expect($user->current_streak)->toBe(1)
+        ->and($user->longest_streak)->toBe(1)
+        ->and($user->last_studied_date?->toDateString())->toBe('2026-10-25');
+});

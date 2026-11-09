@@ -41,8 +41,6 @@ readonly class SaveGroupQuizProgress
                     'next_review_at' => null,
                 ]);
 
-                $this->recordTodayCheckIn($user, $now);
-
                 return $existing;
             }
 
@@ -59,7 +57,7 @@ readonly class SaveGroupQuizProgress
                 ? $now->copy()->addHours($cooldownHours)
                 : null;
 
-            $progress = LearningProgress::query()->updateOrCreate(
+            return LearningProgress::query()->updateOrCreate(
                 [
                     'user_id' => $user->id,
                     'group_id' => $group->id,
@@ -72,27 +70,6 @@ readonly class SaveGroupQuizProgress
                     'next_review_at' => $nextReviewAt,
                 ]
             );
-
-            $this->recordTodayCheckIn($user, $now);
-
-            return $progress;
         });
-    }
-
-    private function recordTodayCheckIn(User $user, CarbonInterface $now): void
-    {
-        if ($user->last_studied_date !== null && $user->last_studied_date->isToday()) {
-            return;
-        }
-
-        $newCurrentStreak = ($user->last_studied_date !== null && $user->last_studied_date->isYesterday())
-            ? $user->current_streak + 1
-            : 1;
-
-        $user->update([
-            'current_streak' => $newCurrentStreak,
-            'longest_streak' => max($user->longest_streak, $newCurrentStreak),
-            'last_studied_date' => $now,
-        ]);
     }
 }

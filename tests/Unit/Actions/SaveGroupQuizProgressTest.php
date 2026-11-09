@@ -11,14 +11,10 @@ use Tests\TestCase;
 
 uses(TestCase::class, RefreshDatabase::class);
 
-test('passing stage 1 with score 80 or above advances stage to 1 with 12 hour cooldown and updates streak', function () {
+test('passing stage 1 with score 80 or above advances stage to 1 with 12 hour cooldown', function () {
     Carbon::setTestNow('2026-10-25 10:00:00');
 
-    $user = User::factory()->create([
-        'current_streak' => 0,
-        'longest_streak' => 0,
-        'last_studied_date' => null,
-    ]);
+    $user = User::factory()->create();
     $level = Level::factory()->create();
     $group = Group::factory()->create(['level_id' => $level->id]);
 
@@ -31,11 +27,6 @@ test('passing stage 1 with score 80 or above advances stage to 1 with 12 hour co
         ->and($progress->stage)->toBe(1)
         ->and($progress->last_score)->toBe(85)
         ->and($progress->next_review_at?->toDateTimeString())->toBe('2026-10-25 22:00:00');
-
-    $user->refresh();
-    expect($user->current_streak)->toBe(1)
-        ->and($user->longest_streak)->toBe(1)
-        ->and($user->last_studied_date?->toDateString())->toBe('2026-10-25');
 });
 
 test('failing stage 1 with score below 80 keeps stage at 0 with null cooldown', function () {

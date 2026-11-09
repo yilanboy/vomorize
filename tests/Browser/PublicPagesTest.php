@@ -27,6 +27,7 @@ test('header contains home and levels navigation links for guest and logo links 
     visit('/levels')
         ->assertSee('首頁')
         ->assertSee('單字等級')
+        ->assertSee('自訂測驗')
         ->assertNoSmoke();
 });
 

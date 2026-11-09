@@ -71,7 +71,7 @@
         <button
             type="button"
             class={{
-                'group relative flex min-h-[52px] w-full items-center justify-between gap-3 rounded-xl border p-3.5 text-left transition-all duration-150 sm:min-h-[56px] sm:p-4': true,
+                'group relative flex min-h-13 w-full items-center justify-between gap-3 rounded-xl border p-3.5 text-left transition-all duration-150 sm:min-h-14 sm:p-4': true,
                 'border-emerald-600 bg-emerald-500/10 text-emerald-950 shadow-xs dark:border-emerald-500 dark:bg-emerald-950/40 dark:text-emerald-200':
                     isAnswered && isCorrect,
                 'border-red-600 bg-red-500/10 text-red-950 shadow-xs dark:border-red-500 dark:bg-red-950/40 dark:text-red-200':
