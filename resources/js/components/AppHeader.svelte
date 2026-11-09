@@ -116,6 +116,19 @@
             >
                 {t('ui.nav.levels')}
             </Link>
+
+            <Link
+                href="/quiz"
+                class={{
+                    'inline-flex items-center rounded-lg px-3.5 py-2 text-sm font-medium transition-colors': true,
+                    'bg-accent text-foreground font-semibold':
+                        url.isCurrentOrParentUrl('/quiz', url.currentUrl),
+                    'text-muted-foreground hover:bg-accent/60 hover:text-foreground':
+                        !url.isCurrentOrParentUrl('/quiz', url.currentUrl),
+                }}
+            >
+                {t('ui.nav.custom_quiz')}
+            </Link>
         </nav>
 
         <!-- Right: ThemeToggle + Member Avatar / Login -->

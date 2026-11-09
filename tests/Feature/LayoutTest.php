@@ -16,7 +16,7 @@ test('translations are shared via inertia shareOnce on initial visit', function 
         ->has('translations.ui')
         ->where('translations.ui.nav.home', '首頁')
         ->where('translations.ui.nav.levels', '單字等級')
-        ->where('translations.ui.nav.quiz', '題庫測驗')
+        ->where('translations.ui.nav.quiz', '自訂測驗')
         ->where('translations.ui.theme.system', '跟隨系統')
     );
 });

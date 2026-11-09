@@ -7,6 +7,7 @@ use App\Actions\GenerateStage1Session;
 use App\Actions\GetGroupDetail;
 use App\Actions\GetGroupProgress;
 use App\Actions\GetGroupVocabularies;
+use App\Actions\RecordTodayCheckIn;
 use App\Actions\SaveGroupQuizProgress;
 use App\Http\Requests\SaveGroupProgressRequest;
 use App\Models\Group;
@@ -110,13 +111,17 @@ class GroupController extends Controller
         SaveGroupProgressRequest $request,
         Group $group,
         SaveGroupQuizProgress $saveGroupQuizProgress,
+        RecordTodayCheckIn $recordTodayCheckIn,
     ): RedirectResponse {
         /** @var User $user */
         $user = $request->user();
         $validated = $request->validated();
         $score = (int) $validated['score'];
+        $now = now();
 
-        $saveGroupQuizProgress->handle($user, $group, $score);
+        $saveGroupQuizProgress->handle($user, $group, $score, $now);
+        $recordTodayCheckIn->handle($user, $now);
+
         $request->session()->flash('quiz_completed', true);
 
         return back();
