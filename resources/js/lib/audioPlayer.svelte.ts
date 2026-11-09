@@ -12,8 +12,8 @@ const inFlightFetches = new Map<string, Promise<AudioBuffer | null>>();
 
 let currentPlayingId = $state<string | null>(null);
 
-// Default volume: 0.5 = 50% volume, 1 = original volume
-const DEFAULT_VOLUME = 0.5;
+// Default volume: 0.8 = 80% volume, 1 = original volume
+const DEFAULT_VOLUME = 0.8;
 let volume = $state(DEFAULT_VOLUME);
 
 function getAudioContext(): AudioContext | null {
