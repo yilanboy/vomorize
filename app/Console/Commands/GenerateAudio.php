@@ -62,13 +62,13 @@ class GenerateAudio extends Command
                                 "Read this word as a native speaker. the example sentence is: $vocabulary->example_sentence",
                             )
                             ->generate()
-                            ->storePubliclyAs($wordPath);
+                            ->storePubliclyAs($wordPath, disk: 'r2');
 
                         Audio::of($vocabulary->example_sentence)
                             ->female()
                             ->instructions('Read as a native speaker.')
                             ->generate()
-                            ->storePubliclyAs($sentencePath);
+                            ->storePubliclyAs($sentencePath, disk: 'r2');
                     },
                     10_000,
                 );
