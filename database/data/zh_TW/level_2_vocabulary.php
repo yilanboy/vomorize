@@ -7857,12 +7857,12 @@ return [
             'example_translation' => '科學幫助我們了解世界如何運作。',
         ],
         [
-            'word' => 'foolish',
+            'word' => 'pleasant',
             'part_of_speech' => 'adj.',
-            'pronunciation' => '/ˈfuɫɪʃ/',
-            'definition' => '愚蠢的',
-            'example_sentence' => 'It was foolish to go outside without an umbrella.',
-            'example_translation' => '不帶雨傘就出門是很愚蠢的。',
+            'pronunciation' => '/ˈpɫɛzənt/',
+            'definition' => '舒適的',
+            'example_sentence' => 'We had a pleasant walk in the park.',
+            'example_translation' => '我們在公園裡散了一次舒適的步。',
         ],
         [
             'word' => 'painter',
@@ -7875,12 +7875,12 @@ return [
     ],
     'group_97' => [
         [
-            'word' => 'pleasant',
+            'word' => 'foolish',
             'part_of_speech' => 'adj.',
-            'pronunciation' => '/ˈpɫɛzənt/',
-            'definition' => '舒適的',
-            'example_sentence' => 'We had a pleasant walk in the park.',
-            'example_translation' => '我們在公園裡散了一次舒適的步。',
+            'pronunciation' => '/ˈfuɫɪʃ/',
+            'definition' => '愚蠢的',
+            'example_sentence' => 'It was foolish to go outside without an umbrella.',
+            'example_translation' => '不帶雨傘就出門是很愚蠢的。',
         ],
         [
             'word' => 'pajamas',
