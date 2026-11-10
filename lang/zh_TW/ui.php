@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 return [
     'common' => [
         'start' => '開始',

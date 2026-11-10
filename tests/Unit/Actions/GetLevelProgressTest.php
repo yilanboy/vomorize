@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use App\Actions\DetermineGroupStatus;
 use App\Actions\GetLevelProgress;
 use App\Models\Group;

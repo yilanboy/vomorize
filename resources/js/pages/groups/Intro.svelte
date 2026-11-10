@@ -5,7 +5,7 @@
     import Volume2 from '@lucide/svelte/icons/volume-2';
     import VolumeX from '@lucide/svelte/icons/volume-x';
     import X from '@lucide/svelte/icons/x';
-    import { saveProgress } from '@/actions/App/Http/Controllers/GroupController';
+    import { store as saveProgress } from '@/actions/App/Http/Controllers/GroupProgressController';
     import AppHead from '@/components/AppHead.svelte';
     import AudioToDefinitionCard from '@/components/quiz/AudioToDefinitionCard.svelte';
     import DefinitionToWordCard from '@/components/quiz/DefinitionToWordCard.svelte';

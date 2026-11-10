@@ -6,11 +6,9 @@
     import VolumeX from '@lucide/svelte/icons/volume-x';
     import X from '@lucide/svelte/icons/x';
     import { index as levelsIndex } from '@/actions/App/Http/Controllers/LevelController';
-    import {
-        complete,
-        index as quizIndex,
-        play,
-    } from '@/actions/App/Http/Controllers/QuizController';
+    import { destroy as complete } from '@/actions/App/Http/Controllers/CustomQuizSessionController';
+    import { index as quizIndex } from '@/actions/App/Http/Controllers/QuizController';
+    import { show as play } from '@/actions/App/Http/Controllers/QuizPlayController';
     import AppHead from '@/components/AppHead.svelte';
     import AudioToDefinitionCard from '@/components/quiz/AudioToDefinitionCard.svelte';
     import CustomQuizResultSummary from '@/components/quiz/CustomQuizResultSummary.svelte';

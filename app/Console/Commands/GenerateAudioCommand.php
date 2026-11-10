@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Console\Commands;
 
 use App\Actions\ParseIdRange;
@@ -15,7 +17,7 @@ use Throwable;
     {--id= : Specific vocabulary ID to generate audio for (e.g. --id=1, --id=1,3,5, or --id=1-1000)}
 ')]
 #[Description('Generate audio for a specific vocabulary ID or range')]
-class GenerateAudio extends Command
+class GenerateAudioCommand extends Command
 {
     /**
      * Execute the console command.

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use App\Models\Vocabulary;
 use Illuminate\Http\Client\Factory;
 use Illuminate\Http\Client\Request;

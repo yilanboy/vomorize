@@ -7,7 +7,7 @@
     import Lock from '@lucide/svelte/icons/lock';
     import Shuffle from '@lucide/svelte/icons/shuffle';
     import { index as levelsIndex } from '@/actions/App/Http/Controllers/LevelController';
-    import { start } from '@/actions/App/Http/Controllers/QuizController';
+    import { store as start } from '@/actions/App/Http/Controllers/CustomQuizSessionController';
     import AppHead from '@/components/AppHead.svelte';
     import Breadcrumbs from '@/components/Breadcrumbs.svelte';
     import { Badge } from '@/components/ui/badge';

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use App\Actions\RecordTodayCheckIn;
 use App\Models\User;
 use Carbon\Carbon;

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use App\Models\Level;
 
 test('public pages load without javascript errors', function (string $url) {

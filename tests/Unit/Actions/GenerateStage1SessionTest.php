@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use App\Actions\GenerateStage1Session;
 use App\Models\Group;
 use App\Models\Level;

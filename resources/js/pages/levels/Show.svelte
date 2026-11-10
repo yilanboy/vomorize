@@ -7,10 +7,8 @@
     import Info from '@lucide/svelte/icons/info';
     import RotateCcw from '@lucide/svelte/icons/rotate-ccw';
     import Zap from '@lucide/svelte/icons/zap';
-    import {
-        intro as introGroup,
-        show as showGroup,
-    } from '@/actions/App/Http/Controllers/GroupController';
+    import { show as showGroup } from '@/actions/App/Http/Controllers/GroupController';
+    import { show as introGroup } from '@/actions/App/Http/Controllers/GroupIntroController';
     import AppHead from '@/components/AppHead.svelte';
     import Breadcrumbs from '@/components/Breadcrumbs.svelte';
     import { t } from '@/lib/i18n';

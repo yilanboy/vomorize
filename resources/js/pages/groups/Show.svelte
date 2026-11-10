@@ -9,11 +9,9 @@
     import Clock from '@lucide/svelte/icons/clock';
     import Volume2 from '@lucide/svelte/icons/volume-2';
     import Zap from '@lucide/svelte/icons/zap';
-    import {
-        intro as introGroup,
-        quiz as quizGroup,
-        show as showGroup,
-    } from '@/actions/App/Http/Controllers/GroupController';
+    import { show as showGroup } from '@/actions/App/Http/Controllers/GroupController';
+    import { show as introGroup } from '@/actions/App/Http/Controllers/GroupIntroController';
+    import { show as quizGroup } from '@/actions/App/Http/Controllers/GroupQuizController';
     import AppHead from '@/components/AppHead.svelte';
     import Breadcrumbs from '@/components/Breadcrumbs.svelte';
     import { audioPlayer } from '@/lib/audioPlayer.svelte';

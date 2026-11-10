@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use App\Actions\PurgeCdnCache;
 use Illuminate\Http\Client\Request;
 use Illuminate\Support\Facades\Config;

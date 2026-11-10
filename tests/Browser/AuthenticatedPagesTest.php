@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use App\Models\User;
 
 test('authenticated pages load without javascript errors', function (string $url) {
@@ -37,7 +39,7 @@ test('confirm password page loads without javascript errors', function () {
         ->assertSee('確認密碼');
 });
 
-test('settings layout and pages display redesigned elements and navigation', function () {
+test('profile settings page displays redesigned elements and navigation', function () {
     $user = User::factory()->create();
 
     $this->actingAs($user);
@@ -50,6 +52,12 @@ test('settings layout and pages display redesigned elements and navigation', fun
         ->assertSee('外觀主題')
         ->assertSee('電子郵件地址')
         ->assertSee('刪除帳號');
+});
+
+test('appearance settings page displays redesigned elements and navigation', function () {
+    $user = User::factory()->create();
+
+    $this->actingAs($user);
 
     visit('/settings/appearance')
         ->assertNoSmoke()

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 return [
     1 => ['name' => '基礎入門', 'description' => '核心常用 1,000 單字'],
     2 => ['name' => '初級進階', 'description' => '日常溝通必備詞彙'],

@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 use Database\Factories\GroupFactory;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;

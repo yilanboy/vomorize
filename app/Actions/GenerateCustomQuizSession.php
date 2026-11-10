@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 namespace App\Actions;
 
 use App\Enums\QuizType;
@@ -138,7 +140,7 @@ readonly class GenerateCustomQuizSession
             $stepIndex = $index + 1;
             $groupVocabularies = $vocabulariesByGroup[$target['group_id']] ?? [];
 
-            $selectedType = $quizTypes[array_rand($quizTypes)];
+            $selectedType = $quizTypes[random_int(0, count($quizTypes) - 1)];
 
             $quiz = $this->buildQuizQuestion($target, $groupVocabularies, $selectedType);
 
