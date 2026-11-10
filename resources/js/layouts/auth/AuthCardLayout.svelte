@@ -2,7 +2,6 @@
     import { Link } from '@inertiajs/svelte';
     import ArrowLeft from '@lucide/svelte/icons/arrow-left';
     import type { Snippet } from 'svelte';
-    import SiteLanguageSwitcher from '@/components/SiteLanguageSwitcher.svelte';
     import ThemeToggle from '@/components/ThemeToggle.svelte';
     import {
         Card,
@@ -55,7 +54,6 @@
             <span>{t('ui.auth.back_to_home')}</span>
         </Link>
         <div class="flex items-center gap-2">
-            <SiteLanguageSwitcher />
             <ThemeToggle />
         </div>
     </header>
