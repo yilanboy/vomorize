@@ -1,7 +1,6 @@
 <script lang="ts">
     import { onMount } from 'svelte';
     import { router, setLayoutProps } from '@inertiajs/svelte';
-    import AlertTriangle from '@lucide/svelte/icons/alert-triangle';
     import Volume2 from '@lucide/svelte/icons/volume-2';
     import VolumeX from '@lucide/svelte/icons/volume-x';
     import X from '@lucide/svelte/icons/x';
@@ -9,17 +8,11 @@
     import { show as introGroup } from '@/actions/App/Http/Controllers/GroupIntroController';
     import { store as saveProgress } from '@/actions/App/Http/Controllers/GroupProgressController';
     import AppHead from '@/components/AppHead.svelte';
+    import LeaveConfirmationDialog from '@/components/LeaveConfirmationDialog.svelte';
     import AudioToDefinitionCard from '@/components/quiz/AudioToDefinitionCard.svelte';
     import DefinitionToWordCard from '@/components/quiz/DefinitionToWordCard.svelte';
     import QuizResultSummary from '@/components/quiz/QuizResultSummary.svelte';
     import WordToDefinitionCard from '@/components/quiz/WordToDefinitionCard.svelte';
-    import {
-        Dialog,
-        DialogContent,
-        DialogDescription,
-        DialogFooter,
-        DialogTitle,
-    } from '@/components/ui/dialog';
     import { audioPlayer } from '@/lib/audioPlayer.svelte';
     import { t } from '@/lib/i18n';
     import {
@@ -27,6 +20,7 @@
         learningProgressDb,
         type GroupProgressSummary,
     } from '@/lib/learningProgressDb';
+    import { createNavigationGuard } from '@/lib/navigationGuard';
     import type {
         MistakeReviewItem,
         QuizOptionPayload,
@@ -67,13 +61,34 @@
     let finalScore = $state(0);
     let completedTargetStage = $state(2);
     let completedIsMasteredRetake = $state(false);
-
     let isLeaveDialogOpen = $state(false);
-    let pendingLeaveAction = $state<(() => void) | null>(null);
-    let bypassNavigationGuard = false;
+    let pendingTargetUrl = $state<string | null>(null);
 
-    function isGuardActive(): boolean {
-        return !quizCompleted && !bypassNavigationGuard;
+    const navigationGuard = createNavigationGuard({
+        enabled: () => !quizCompleted,
+        onBlocked: (targetUrl) => {
+            pendingTargetUrl = targetUrl ?? null;
+            isLeaveDialogOpen = true;
+        },
+    });
+
+    function handleLeaveClick() {
+        if (!navigationGuard.isActive()) {
+            router.visit(showGroup.url(group.id));
+            return;
+        }
+
+        pendingTargetUrl = null;
+        isLeaveDialogOpen = true;
+    }
+
+    function handleConfirmLeave() {
+        const targetUrl = pendingTargetUrl;
+        pendingTargetUrl = null;
+        navigationGuard.bypass();
+        router.visit(targetUrl ?? showGroup.url(group.id), {
+            replace: !targetUrl,
+        });
     }
 
     const activeStage = $derived((progress ?? localProgress)?.stage ?? 1);
@@ -193,35 +208,6 @@
         }
     }
 
-    function requestLeave(action?: () => void) {
-        if (!isGuardActive()) {
-            if (action) {
-                action();
-            } else {
-                router.visit(showGroup.url(group.id));
-            }
-            return;
-        }
-
-        pendingLeaveAction = action ?? null;
-        isLeaveDialogOpen = true;
-    }
-
-    function confirmLeave() {
-        isLeaveDialogOpen = false;
-        bypassNavigationGuard = true;
-        if (pendingLeaveAction) {
-            pendingLeaveAction();
-        } else {
-            router.visit(showGroup.url(group.id), { replace: true });
-        }
-    }
-
-    function cancelLeave() {
-        isLeaveDialogOpen = false;
-        pendingLeaveAction = null;
-    }
-
     function handleRetry() {
         audioPlayer.stop();
         currentIndex = 0;
@@ -248,14 +234,14 @@
         if (!progress) {
             void learningProgressDb.getGroupProgress(group.id).then((local) => {
                 if (!local || local.stage < 1) {
-                    bypassNavigationGuard = true;
+                    navigationGuard.bypass();
                     router.visit(introGroup.url(group.id), { replace: true });
                     return;
                 }
 
                 const resolved = determineLocalGroupStatus(local);
                 if (resolved.status === 'cooldown') {
-                    bypassNavigationGuard = true;
+                    navigationGuard.bypass();
                     router.visit(showGroup.url(group.id), { replace: true });
                     return;
                 }
@@ -287,52 +273,7 @@
             void audioPlayer.preload(urlsToPreload);
         }
 
-        const handleBeforeUnload = (e: BeforeUnloadEvent) => {
-            if (isGuardActive()) {
-                e.preventDefault();
-            }
-        };
-
-        window.addEventListener('beforeunload', handleBeforeUnload);
-
-        window.history.pushState(
-            window.history.state,
-            '',
-            window.location.href,
-        );
-        const handlePopState = (e: PopStateEvent) => {
-            if (isGuardActive()) {
-                e.stopImmediatePropagation();
-                window.history.pushState(
-                    window.history.state,
-                    '',
-                    window.location.href,
-                );
-                requestLeave(() => {
-                    router.visit(showGroup.url(group.id), {
-                        replace: true,
-                    });
-                });
-            }
-        };
-
-        window.addEventListener('popstate', handlePopState, { capture: true });
-
-        const removeInertiaListener = router.on('before', (event) => {
-            if (isGuardActive()) {
-                event.preventDefault();
-                requestLeave(() => {
-                    router.visit(event.detail.visit.url.href);
-                });
-            }
-        });
-
         return () => {
-            window.removeEventListener('beforeunload', handleBeforeUnload);
-            window.removeEventListener('popstate', handlePopState, {
-                capture: true,
-            });
-            removeInertiaListener();
             audioPlayer.stop();
         };
     });
@@ -359,7 +300,7 @@
             <button
                 type="button"
                 class="hover:bg-muted text-muted-foreground hover:text-foreground flex size-10 items-center justify-center rounded-xl transition-colors"
-                onclick={() => requestLeave()}
+                onclick={handleLeaveClick}
                 title={t('ui.intro.top_bar.leave')}
             >
                 <X class="size-5" />
@@ -462,40 +403,8 @@
     </main>
 
     <!-- Leave Confirmation Dialog -->
-    <Dialog bind:open={isLeaveDialogOpen}>
-        <DialogContent class="sm:max-w-md">
-            <div class="flex flex-col items-center justify-center text-center">
-                <div
-                    class="mb-3 flex h-12 w-12 items-center justify-center rounded-2xl bg-amber-500/10 text-amber-600 dark:bg-amber-500/20 dark:text-amber-400"
-                >
-                    <AlertTriangle class="size-6" />
-                </div>
-                <DialogTitle class="text-lg font-bold">
-                    {t('ui.intro.top_bar.leave_dialog_title')}
-                </DialogTitle>
-                <DialogDescription
-                    class="text-muted-foreground mt-2 text-sm leading-relaxed"
-                >
-                    {t('ui.intro.top_bar.leave_dialog_desc')}
-                </DialogDescription>
-            </div>
-
-            <DialogFooter class="flex flex-col gap-2 pt-4 sm:flex-row">
-                <button
-                    type="button"
-                    class="hover:bg-muted text-foreground border-border/80 flex min-h-11 flex-1 items-center justify-center rounded-xl border text-sm font-semibold transition-colors"
-                    onclick={cancelLeave}
-                >
-                    {t('ui.intro.top_bar.leave_dialog_cancel')}
-                </button>
-                <button
-                    type="button"
-                    class="flex min-h-11 flex-1 items-center justify-center rounded-xl bg-red-600 text-sm font-semibold text-white transition-colors hover:bg-red-700"
-                    onclick={confirmLeave}
-                >
-                    {t('ui.intro.top_bar.leave_dialog_confirm')}
-                </button>
-            </DialogFooter>
-        </DialogContent>
-    </Dialog>
+    <LeaveConfirmationDialog
+        bind:open={isLeaveDialogOpen}
+        onConfirm={handleConfirmLeave}
+    />
 </div>
