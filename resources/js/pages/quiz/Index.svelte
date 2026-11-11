@@ -44,7 +44,7 @@
     let isClientLoaded = $state(false);
 
     const form = useForm({
-        question_count: 20,
+        question_count: 10,
         quiz_mode: 'standard' as 'standard' | 'sentence_cloze' | 'spelling',
         passed_group_ids: [] as number[],
     });
@@ -60,11 +60,6 @@
             localUnlockedWordCount = passed.length * 10;
         }
         isClientLoaded = true;
-
-        const available = unlockedWordCount ?? localUnlockedWordCount ?? 0;
-        if (available < 20 && available >= 10) {
-            form.question_count = 10;
-        }
     });
 
     const effectiveWordCount = $derived(

@@ -23,13 +23,32 @@ class DatabaseSeeder extends Seeder
         ]);
 
         if (app()->environment('local', 'testing')) {
-            User::query()->firstOrCreate(
+            $user = User::query()->firstOrCreate(
                 ['email' => 'test@example.com'],
                 [
                     'name' => 'Test User',
                     'password' => bcrypt('password'),
                 ]
             );
+
+            $user->learningProgress()->upsert([
+                [
+                    'level_id' => 1,
+                    'group_id' => 1,
+                    'stage' => 1,
+                    'last_score' => 90,
+                    'last_reviewed_at' => now()->subDay(),
+                    'next_review_at' => now(),
+                ],
+                [
+                    'level_id' => 1,
+                    'group_id' => 2,
+                    'stage' => 2,
+                    'last_score' => 80,
+                    'last_reviewed_at' => now()->subDays(2),
+                    'next_review_at' => now()->addDay(),
+                ],
+            ], ['user_id', 'group_id']);
         }
     }
 }

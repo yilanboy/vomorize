@@ -70,7 +70,7 @@ test('authenticated member with unlocked words sees word pool count and question
         ->assertSee('看例句選出正確的單字')
         ->assertSee('拼音')
         ->assertSee('即將推出')
-        ->assertSee('開始自訂測驗 (20 題)');
+        ->assertSee('開始自訂測驗 (10 題)');
 });
 
 test('authenticated member completing custom quiz displays result summary without error modals', function () {
@@ -94,9 +94,11 @@ test('authenticated member completing custom quiz displays result summary withou
 
     $page = visit('/quiz');
     $page->assertNoSmoke()
+        ->assertSee('開始自訂測驗 (10 題)')
         ->click('button:has-text("開始自訂測驗")')
-        ->assertPathIs('/quiz/play')
-        ->assertNoSmoke();
+        ->wait(2)
+        ->assertNoSmoke()
+        ->assertPathIs('/quiz/play');
 
     for ($i = 1; $i <= 10; $i++) {
         $page->click('button:has-text("1")')->wait(1.2);
