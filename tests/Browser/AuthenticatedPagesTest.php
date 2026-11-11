@@ -66,3 +66,18 @@ test('appearance settings page displays redesigned elements and navigation', fun
         ->assertSee('深色模式')
         ->assertSee('跟隨系統');
 });
+
+it('can click back button', function () {
+    app()->setLocale('zh_TW');
+
+    visit(route('home'))
+        ->click(__('ui.nav.login'))
+        ->assertPathIs('/login')
+        ->click(__('ui.auth.back'))
+        ->assertPathIs('/')
+        ->click(__('ui.nav.login'))
+        ->click(__('ui.auth.login.sign_up'))
+        ->assertPathIs('/register')
+        ->click(__('ui.auth.back'))
+        ->assertPathIs('/login');
+});
