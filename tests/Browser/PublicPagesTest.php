@@ -57,7 +57,7 @@ test('login page displays redesigned card elements and navigation', function () 
         ->assertSee('登入')
         ->assertSee('還沒有帳號？')
         ->assertSee('立即免費註冊')
-        ->assertSee('返回首頁');
+        ->assertSee('返回');
 });
 
 test('register page displays redesigned card elements and navigation', function () {
@@ -70,5 +70,5 @@ test('register page displays redesigned card elements and navigation', function 
         ->assertSee('免費註冊帳號')
         ->assertSee('已經有帳號了？')
         ->assertSee('直接登入')
-        ->assertSee('返回首頁');
+        ->assertSee('返回');
 });

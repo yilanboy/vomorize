@@ -1,5 +1,4 @@
 <script lang="ts">
-    import { Link } from '@inertiajs/svelte';
     import ArrowLeft from '@lucide/svelte/icons/arrow-left';
     import type { Snippet } from 'svelte';
     import ThemeToggle from '@/components/ThemeToggle.svelte';
@@ -11,7 +10,7 @@
         CardTitle,
     } from '@/components/ui/card';
     import { t } from '@/lib/i18n';
-    import { home } from '@/routes';
+    import { back } from '@/lib/utils';
 
     let {
         title = '',
@@ -33,10 +32,10 @@
         class="pointer-events-none fixed inset-0 -z-10 overflow-hidden"
     >
         <div
-            class="bg-primary/10 dark:bg-primary/5 absolute -top-[25%] left-1/2 h-[550px] w-[900px] -translate-x-1/2 rounded-full blur-[140px]"
+            class="bg-primary/10 dark:bg-primary/5 absolute top-[-25%] left-1/2 h-137.5 w-225 -translate-x-1/2 rounded-full blur-[140px]"
         ></div>
         <div
-            class="absolute right-[15%] -bottom-[15%] h-[450px] w-[450px] rounded-full bg-emerald-500/10 blur-[130px] dark:bg-emerald-500/5"
+            class="absolute right-[15%] bottom-[-15%] h-112.5 w-112.5 rounded-full bg-emerald-500/10 blur-[130px] dark:bg-emerald-500/5"
         ></div>
     </div>
 
@@ -44,15 +43,16 @@
     <header
         class="relative z-20 flex w-full items-center justify-between px-5 py-4 sm:px-8 sm:py-5"
     >
-        <Link
-            href={home()}
+        <button
+            type="button"
+            onclick={back}
             class="group text-muted-foreground hover:text-foreground inline-flex items-center gap-2 rounded-lg px-3 py-1.5 text-sm font-medium transition-colors hover:bg-zinc-200/50 dark:hover:bg-zinc-800"
         >
             <ArrowLeft
                 class="size-4 transition-transform duration-150 group-hover:-translate-x-0.5"
             />
-            <span>{t('ui.auth.back_to_home')}</span>
-        </Link>
+            <span>{t('ui.auth.back')}</span>
+        </button>
         <div class="flex items-center gap-2">
             <ThemeToggle />
         </div>
@@ -62,7 +62,7 @@
     <main
         class="relative z-10 flex flex-1 items-center justify-center px-4 py-8"
     >
-        <div class="w-full max-w-[460px] transition-all">
+        <div class="w-full max-w-115 transition-all">
             <Card
                 class="border-border/80 bg-card/95 shadow-surface-dim/40 dark:border-border/70 dark:bg-card/90 rounded-2xl p-7 shadow-xl backdrop-blur-xs sm:p-9 dark:shadow-none"
             >

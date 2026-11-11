@@ -162,7 +162,7 @@ return [
         'ready_to_review' => '開始複習測驗',
     ],
     'auth' => [
-        'back_to_home' => '返回首頁',
+        'back' => '返回',
         'or' => '或',
         'or_email' => '或使用電子郵件密碼繼續',
         'show_password' => '顯示密碼',
