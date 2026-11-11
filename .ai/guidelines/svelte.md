@@ -49,8 +49,8 @@ Place static base utility classes as a key mapped to `true`, and map dynamic cla
 <!-- ❌ Anti-pattern: String interpolation with ternary operators -->
 <div
     class="flex items-center gap-2 {isError
-        ? 'text-red-500 bg-red-50'
-        : 'text-green-500 bg-green-50'}"
+        ? 'bg-red-50 text-red-500'
+        : 'bg-green-50 text-green-500'}"
 >
     ...
 </div>
@@ -59,8 +59,8 @@ Place static base utility classes as a key mapped to `true`, and map dynamic cla
 <div
     class={{
         'flex items-center gap-2': true,
-        'text-red-500 bg-red-50': isError,
-        'text-green-500 bg-green-50': !isError,
+        'bg-red-50 text-red-500': isError,
+        'bg-green-50 text-green-500': !isError,
     }}
 >
     ...
