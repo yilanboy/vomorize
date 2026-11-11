@@ -9,7 +9,7 @@ use App\Models\User;
 use App\Models\Vocabulary;
 
 test('stage 1 intro page loads without javascript errors', function () {
-    $level = Level::factory()->create(['name' => '基礎入門']);
+    $level = Level::factory()->create(['name' => __('ui.dashboard.levels.subtitles.1')]);
     $group = Group::factory()->create(['level_id' => $level->id, 'sequence' => 1]);
 
     Vocabulary::factory()
@@ -25,7 +25,7 @@ test('stage 1 intro page loads without javascript errors', function () {
 });
 
 test('stage 1 intro page guards against leaving and browser back from the very first step', function () {
-    $level = Level::factory()->create(['name' => '基礎入門']);
+    $level = Level::factory()->create(['name' => __('ui.dashboard.levels.subtitles.1')]);
     $group = Group::factory()->create(['level_id' => $level->id, 'sequence' => 1]);
 
     Vocabulary::factory()
@@ -40,14 +40,14 @@ test('stage 1 intro page guards against leaving and browser back from the very f
     $page
         ->assertSee('30')
         ->wait(2)
-        ->click('button[title="離開"]')
-        ->assertSee('確定要放棄本次學習？')
-        ->click('繼續學習')
-        ->assertDontSee('確定要放棄本次學習？');
+        ->click('button[title="'.__('ui.intro.top_bar.leave').'"]')
+        ->assertSee(__('ui.intro.top_bar.leave_dialog_title'))
+        ->click(__('ui.intro.top_bar.leave_dialog_cancel'))
+        ->assertDontSee(__('ui.intro.top_bar.leave_dialog_title'));
 
     $page->script('window.history.back()');
 
-    $page->assertSee('確定要放棄本次學習？')
+    $page->assertSee(__('ui.intro.top_bar.leave_dialog_title'))
         ->assertNoSmoke();
 });
 
@@ -78,7 +78,7 @@ test('group show page for passed group loads without javascript errors', functio
 
 test('stage 2 review quiz page loads without javascript errors and guards against leaving', function () {
     $user = User::factory()->create();
-    $level = Level::factory()->create(['name' => '基礎入門']);
+    $level = Level::factory()->create(['name' => __('ui.dashboard.levels.subtitles.1')]);
     $group = Group::factory()->create(['level_id' => $level->id, 'sequence' => 1]);
 
     Vocabulary::factory()
@@ -104,9 +104,9 @@ test('stage 2 review quiz page loads without javascript errors and guards agains
     $page
         ->assertSee('20')
         ->wait(2)
-        ->click('button[title="離開"]')
-        ->assertSee('確定要放棄本次學習？')
-        ->click('繼續學習')
-        ->assertDontSee('確定要放棄本次學習？')
+        ->click('button[title="'.__('ui.intro.top_bar.leave').'"]')
+        ->assertSee(__('ui.intro.top_bar.leave_dialog_title'))
+        ->click(__('ui.intro.top_bar.leave_dialog_cancel'))
+        ->assertDontSee(__('ui.intro.top_bar.leave_dialog_title'))
         ->assertNoSmoke();
 });
