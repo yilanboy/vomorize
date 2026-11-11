@@ -12,6 +12,10 @@ use Illuminate\Database\Eloquent\Collection;
 
 readonly class GetDashboardKpis
 {
+    public function __construct(
+        private readonly GetUserStreak $getUserStreak,
+    ) {}
+
     /**
      * @param  Collection<int, LearningProgress>  $userProgress
      * @return array{
@@ -35,8 +39,11 @@ readonly class GetDashboardKpis
      *     },
      * }
      */
-    public function handle(User $user, Collection $userProgress, CarbonInterface $now): array
-    {
+    public function handle(
+        User $user,
+        Collection $userProgress,
+        CarbonInterface $now,
+    ): array {
         $learningGroupsCount = 0;
         $masteredGroupsCount = 0;
         $dueGroupsCount = 0;
@@ -54,6 +61,7 @@ readonly class GetDashboardKpis
                 $isFailed =
                     $progress->last_score < 80
                     || $stage === 5 && $progress->next_review_at === null && $progress->last_score < 90;
+
                 $isCooldownElapsed = $progress->next_review_at === null || $progress->next_review_at->lte($now);
 
                 if ($isFailed || $isCooldownElapsed) {
@@ -67,14 +75,8 @@ readonly class GetDashboardKpis
 
         $masteredPercentage = round(($masteredGroupsCount / $totalGroupsCount) * 100, 1);
 
-        $isCheckedInToday = $user->last_studied_date !== null && $user->last_studied_date->isToday();
-
         return [
-            'streak' => [
-                'current' => $user->current_streak ?? 0,
-                'longest' => $user->longest_streak ?? 0,
-                'is_checked_in_today' => $isCheckedInToday,
-            ],
+            'streak' => $this->getUserStreak->handle($user),
             'learning_words' => [
                 'words_count' => $learningGroupsCount * 10,
                 'groups_count' => $learningGroupsCount,
