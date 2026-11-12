@@ -17,11 +17,9 @@
     import { audioPlayer } from '@/lib/audioPlayer.svelte';
     import { t } from '@/lib/i18n';
     import { createNavigationGuard } from '@/lib/navigationGuard';
-    import { disableListeningInSteps } from '@/lib/quizTransformer';
     import type {
         MistakeReviewItem,
         QuizOptionPayload,
-        SessionStep,
         Stage1SessionData,
     } from '@/types/quiz';
 
@@ -43,7 +41,6 @@
     let isAdvancing = $state(false);
     let listeningDisabled = $state(false);
     let isDisableListeningDialogOpen = $state(false);
-    let overrideSteps = $state<SessionStep[] | null>(null);
     let correctAnswersCount = $state(0);
     let mistakes = $state<MistakeReviewItem[]>([]);
     let quizCompleted = $state(false);
@@ -82,12 +79,15 @@
     function handleConfirmDisableListening() {
         audioPlayer.stop();
         listeningDisabled = true;
-        overrideSteps = disableListeningInSteps(session.steps, currentIndex);
     }
 
-    const activeSteps = $derived(overrideSteps ?? session?.steps ?? []);
-    const totalSteps = $derived(activeSteps.length);
-    const currentStep = $derived(activeSteps[currentIndex] ?? null);
+    const totalSteps = $derived(session?.steps?.length ?? questionCount);
+    const currentStep = $derived(session?.steps?.[currentIndex] ?? null);
+    const activeQuiz = $derived(
+        listeningDisabled && currentStep?.fallback_quiz
+            ? currentStep.fallback_quiz
+            : (currentStep?.quiz ?? null),
+    );
     const progressPercent = $derived(
         totalSteps > 0
             ? Math.min(100, Math.round(((currentIndex + 1) / totalSteps) * 100))
@@ -112,14 +112,14 @@
     }
 
     function handleQuizOptionSelect(option: QuizOptionPayload) {
-        if (selectedOptionId !== null || !currentStep?.quiz || isAdvancing) {
+        if (selectedOptionId !== null || !activeQuiz || isAdvancing) {
             return;
         }
 
         selectedOptionId = option.id;
         isAdvancing = true;
 
-        const isCorrect = option.id === currentStep.quiz.correct_option_id;
+        const isCorrect = option.id === activeQuiz.correct_option_id;
         if (isCorrect) {
             correctAnswersCount += 1;
             if (!listeningDisabled && session.correct_audio_url) {
@@ -178,7 +178,6 @@
     function handleRetry() {
         audioPlayer.stop();
         listeningDisabled = false;
-        overrideSteps = null;
         navigationGuard.bypass();
         router.visit(play.url());
     }
@@ -328,27 +327,27 @@
                 onLevels={handleLevels}
             />
         {:else if currentStep}
-            {#key currentStep.id}
-                {#if currentStep.kind === 'quiz' && currentStep.quiz}
-                    {#if currentStep.quiz.quiz_type === 'word_to_definition'}
+            {#key `${currentStep.id}-${activeQuiz?.quiz_type}`}
+                {#if currentStep.kind === 'quiz' && activeQuiz}
+                    {#if activeQuiz.quiz_type === 'word_to_definition'}
                         <WordToDefinitionCard
-                            question={currentStep.quiz}
+                            question={activeQuiz}
                             vocabulary={currentStep.vocabulary}
                             {selectedOptionId}
                             onSelect={handleQuizOptionSelect}
                             disabled={isAdvancing}
                         />
-                    {:else if currentStep.quiz.quiz_type === 'definition_to_word'}
+                    {:else if activeQuiz.quiz_type === 'definition_to_word'}
                         <DefinitionToWordCard
-                            question={currentStep.quiz}
+                            question={activeQuiz}
                             vocabulary={currentStep.vocabulary}
                             {selectedOptionId}
                             onSelect={handleQuizOptionSelect}
                             disabled={isAdvancing}
                         />
-                    {:else if currentStep.quiz.quiz_type === 'audio_to_definition'}
+                    {:else if activeQuiz.quiz_type === 'audio_to_definition'}
                         <AudioToDefinitionCard
-                            question={currentStep.quiz}
+                            question={activeQuiz}
                             vocabulary={currentStep.vocabulary}
                             {selectedOptionId}
                             autoPlay={!listeningDisabled}

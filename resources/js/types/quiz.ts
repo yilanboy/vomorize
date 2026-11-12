@@ -37,6 +37,7 @@ export interface SessionStep {
     kind: 'intro' | 'quiz';
     vocabulary: VocabularyPayload;
     quiz: QuizQuestionPayload | null;
+    fallback_quiz?: QuizQuestionPayload | null;
 }
 
 export interface Stage1SessionData {
