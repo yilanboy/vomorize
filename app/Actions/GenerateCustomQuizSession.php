@@ -38,12 +38,28 @@ use InvalidArgumentException;
  *     options: array<int, QuizOptionPayload>,
  *     correct_option_id: int,
  * }
+ * @phpstan-type SpellingSlotPayload array{
+ *     is_blank: bool,
+ *     char: string,
+ * }
+ * @phpstan-type SpellingTilePayload array{
+ *     slot_index: int,
+ *     char: string,
+ * }
+ * @phpstan-type SpellingQuestionPayload array{
+ *     quiz_type: string,
+ *     stem: string,
+ *     audio_url: string,
+ *     target_word: string,
+ *     slots: array<int, SpellingSlotPayload>,
+ *     tiles: array<int, SpellingTilePayload>,
+ * }
  * @phpstan-type SessionStep array{
  *     id: string,
  *     step_index: int,
  *     kind: 'quiz',
  *     vocabulary: VocabularyPayload,
- *     quiz: QuizQuestionPayload,
+ *     quiz: QuizQuestionPayload|SpellingQuestionPayload,
  *     fallback_quiz: QuizQuestionPayload|null,
  * }
  */
@@ -88,7 +104,7 @@ readonly class GenerateCustomQuizSession
      *     question_count: int,
      * }
      */
-    public function handle(int $questionCount, ?User $user = null, array $passedGroupIds = []): array
+    public function handle(int $questionCount, ?User $user = null, array $passedGroupIds = [], string $quizMode = 'standard'): array
     {
         $cdnUrl = rtrim((string) (config('filesystems.disks.r2.url') ?: 'https://assets.vomorize.com'), '/');
 
@@ -135,21 +151,29 @@ readonly class GenerateCustomQuizSession
             ->all();
 
         $steps = [];
-        $quizTypes = QuizType::cases();
+        $standardQuizTypes = [
+            QuizType::WordToDefinition,
+            QuizType::DefinitionToWord,
+            QuizType::AudioToDefinition,
+        ];
 
         foreach ($selectedTargets as $index => $target) {
             $stepIndex = $index + 1;
             $groupVocabularies = $vocabulariesByGroup[$target['group_id']] ?? [];
 
-            $selectedType = $quizTypes[random_int(0, count($quizTypes) - 1)];
+            if ($quizMode === 'spelling') {
+                $quiz = $this->buildSpellingQuestion($target);
+                $fallbackQuiz = null;
+            } else {
+                $selectedType = $standardQuizTypes[random_int(0, count($standardQuizTypes) - 1)];
+                $quiz = $this->buildQuizQuestion($target, $groupVocabularies, $selectedType);
 
-            $quiz = $this->buildQuizQuestion($target, $groupVocabularies, $selectedType);
-
-            $fallbackQuiz = null;
-            if ($selectedType === QuizType::AudioToDefinition) {
-                $nonAudioTypes = [QuizType::WordToDefinition, QuizType::DefinitionToWord];
-                $fallbackType = $nonAudioTypes[random_int(0, 1)];
-                $fallbackQuiz = $this->buildQuizQuestion($target, $groupVocabularies, $fallbackType);
+                $fallbackQuiz = null;
+                if ($selectedType === QuizType::AudioToDefinition) {
+                    $nonAudioTypes = [QuizType::WordToDefinition, QuizType::DefinitionToWord];
+                    $fallbackType = $nonAudioTypes[random_int(0, 1)];
+                    $fallbackQuiz = $this->buildQuizQuestion($target, $groupVocabularies, $fallbackType);
+                }
             }
 
             $steps[] = [
@@ -203,7 +227,7 @@ readonly class GenerateCustomQuizSession
 
         $stem = match ($type) {
             QuizType::WordToDefinition => $target['word'],
-            QuizType::DefinitionToWord => $target['definition'],
+            QuizType::DefinitionToWord, QuizType::Spelling => $target['definition'],
             QuizType::AudioToDefinition => '',
         };
 
@@ -213,6 +237,101 @@ readonly class GenerateCustomQuizSession
             'audio_url' => $target['word_audio_url'],
             'options' => $options,
             'correct_option_id' => $target['id'],
+        ];
+    }
+
+    /**
+     * Build spelling question with ladder blanking and A-Z sorted tiles.
+     *
+     * @param  VocabularyPayload  $target
+     * @return SpellingQuestionPayload
+     */
+    private function buildSpellingQuestion(array $target): array
+    {
+        $rawChars = str_split(strtolower($target['word']));
+        $len = count($rawChars);
+
+        // Identify non-blankable separator characters (hyphen, apostrophe, space)
+        $alphaIndices = [];
+        foreach ($rawChars as $idx => $char) {
+            if (ctype_alpha($char)) {
+                $alphaIndices[] = $idx;
+            }
+        }
+
+        $alphaCount = count($alphaIndices);
+
+        // Determine target blank count K based on word length
+        $targetK = match (true) {
+            $len <= 2 => $alphaCount,
+            $len === 3 => max(1, min(2, $alphaCount - 1)),
+            $len <= 5 => min(3, max(1, $alphaCount - 1)),
+            $len <= 8 => min(4, max(1, $alphaCount - 2)),
+            default => min(5, max(1, $alphaCount - 2)),
+        };
+
+        // Anchor indices:
+        // For len <= 2: no anchor (both can be blanked if alphaCount == 2)
+        // For len == 3: keep first letter (anchor index 0)
+        // For len >= 6: keep first letter and last letter
+        $anchorIndices = [];
+        if ($len > 2 && $alphaCount > 1) {
+            $anchorIndices[] = $alphaIndices[0];
+        }
+        if ($len >= 6 && $alphaCount > 3) {
+            $anchorIndices[] = $alphaIndices[$alphaCount - 1];
+        }
+
+        $candidateIndices = array_values(array_diff($alphaIndices, $anchorIndices));
+
+        // Fallback if candidate pool is smaller than targetK
+        if (count($candidateIndices) < $targetK && $alphaCount > 1) {
+            $candidateIndices = array_slice($alphaIndices, 1);
+        }
+
+        $k = min($targetK, count($candidateIndices));
+        if ($k <= 0 && $alphaCount > 0) {
+            $k = 1;
+            $candidateIndices = $alphaIndices;
+        }
+
+        /** @var array<int, int> $chosenIndices */
+        $chosenIndices = collect($candidateIndices)
+            ->shuffle()
+            ->take($k)
+            ->values()
+            ->all();
+
+        /** @var array<int, SpellingSlotPayload> $slots */
+        $slots = [];
+        /** @var array<int, SpellingTilePayload> $tiles */
+        $tiles = [];
+
+        foreach ($rawChars as $idx => $char) {
+            $isBlank = in_array($idx, $chosenIndices, true);
+            $slots[] = [
+                'is_blank' => $isBlank,
+                'char' => $char,
+            ];
+
+            if ($isBlank) {
+                $tiles[] = [
+                    'slot_index' => $idx,
+                    'char' => $char,
+                ];
+            }
+        }
+
+        // Sort tiles alphabetically (A-Z)
+        usort($tiles, fn (array $a, array $b): int => strcmp($a['char'], $b['char']));
+
+        return [
+            'quiz_type' => QuizType::Spelling->value,
+            'stem' => $target['definition'],
+            'audio_url' => $target['word_audio_url'],
+            'target_word' => strtolower($target['word']),
+            'slots' => $slots,
+            'tiles' => $tiles,
         ];
     }
 }

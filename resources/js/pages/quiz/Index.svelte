@@ -472,11 +472,19 @@
                             >
                                 <div class="flex items-center gap-2.5">
                                     <div
-                                        class="flex size-4.5 shrink-0 items-center justify-center rounded-full border-2 border-blue-600 dark:border-blue-400"
+                                        class={{
+                                            'flex size-4.5 shrink-0 items-center justify-center rounded-full border-2': true,
+                                            'border-blue-600 dark:border-blue-400':
+                                                form.quiz_mode === 'standard',
+                                            'border-muted-foreground/40':
+                                                form.quiz_mode !== 'standard',
+                                        }}
                                     >
-                                        <div
-                                            class="size-2.5 rounded-full bg-blue-600 dark:bg-blue-400"
-                                        ></div>
+                                        {#if form.quiz_mode === 'standard'}
+                                            <div
+                                                class="size-2.5 rounded-full bg-blue-600 dark:bg-blue-400"
+                                            ></div>
+                                        {/if}
                                     </div>
                                     <span
                                         class="text-foreground text-base font-bold"
@@ -555,9 +563,17 @@
                         </div>
                     </div>
 
-                    <!-- Mode 3: Spelling (Coming Soon) -->
-                    <div
-                        class="bg-muted/20 flex flex-col justify-between p-5 text-left opacity-65 max-lg:rounded-b-[11px] lg:rounded-r-[11px]"
+                    <!-- Mode 3: Spelling (Active) -->
+                    <button
+                        type="button"
+                        class={{
+                            'flex w-full cursor-pointer flex-col justify-between p-5 text-left transition-colors outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset max-lg:rounded-b-[11px] lg:rounded-r-[11px]': true,
+                            'bg-blue-50/80 ring-2 ring-blue-600 ring-inset dark:bg-blue-950/35 dark:ring-blue-500':
+                                form.quiz_mode === 'spelling',
+                            'bg-card hover:bg-muted/40':
+                                form.quiz_mode !== 'spelling',
+                        }}
+                        onclick={() => (form.quiz_mode = 'spelling')}
                     >
                         <div class="space-y-2.5">
                             <div
@@ -565,20 +581,29 @@
                             >
                                 <div class="flex items-center gap-2.5">
                                     <div
-                                        class="border-muted-foreground/40 size-4.5 shrink-0 rounded-full border-2"
-                                    ></div>
+                                        class={{
+                                            'flex size-4.5 shrink-0 items-center justify-center rounded-full border-2': true,
+                                            'border-blue-600 dark:border-blue-400':
+                                                form.quiz_mode === 'spelling',
+                                            'border-muted-foreground/40':
+                                                form.quiz_mode !== 'spelling',
+                                        }}
+                                    >
+                                        {#if form.quiz_mode === 'spelling'}
+                                            <div
+                                                class="size-2.5 rounded-full bg-blue-600 dark:bg-blue-400"
+                                            ></div>
+                                        {/if}
+                                    </div>
                                     <span
-                                        class="text-muted-foreground text-base font-semibold"
+                                        class="text-foreground text-base font-bold"
                                     >
                                         {t('ui.quiz.custom.modes.spelling')}
                                     </span>
                                 </div>
 
-                                <Badge
-                                    variant="outline"
-                                    class="text-muted-foreground shrink-0 text-sm"
-                                >
-                                    {t('ui.quiz.custom.modes.coming_soon')}
+                                <Badge variant="secondary" class="text-sm">
+                                    {t('ui.quiz.custom.modes.spelling_tag')}
                                 </Badge>
                             </div>
 
@@ -588,7 +613,20 @@
                                 {t('ui.quiz.custom.modes.spelling_desc')}
                             </p>
                         </div>
-                    </div>
+
+                        <div class="mt-4 flex flex-wrap gap-1.5 pt-2">
+                            <span
+                                class="border-border/80 bg-background text-foreground rounded-md border px-2 py-0.5 text-sm font-medium"
+                            >
+                                {t('ui.quiz.spelling.badge')}
+                            </span>
+                            <span
+                                class="border-border/80 bg-background text-foreground rounded-md border px-2 py-0.5 text-sm font-medium"
+                            >
+                                {t('ui.quiz.spelling.touch_hint')}
+                            </span>
+                        </div>
+                    </button>
                 </div>
             </div>
 
@@ -601,7 +639,7 @@
                         class="text-foreground text-sm font-semibold tabular-nums"
                     >
                         {t('ui.quiz.custom.summary_line', {
-                            mode: t('ui.quiz.custom.modes.standard'),
+                            mode: t(`ui.quiz.custom.modes.${form.quiz_mode}`),
                             count: form.question_count,
                         })}
                     </div>

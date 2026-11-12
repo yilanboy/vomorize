@@ -13,22 +13,26 @@
     import AudioToDefinitionCard from '@/components/quiz/AudioToDefinitionCard.svelte';
     import CustomQuizResultSummary from '@/components/quiz/CustomQuizResultSummary.svelte';
     import DefinitionToWordCard from '@/components/quiz/DefinitionToWordCard.svelte';
+    import SpellingCard from '@/components/quiz/SpellingCard.svelte';
     import WordToDefinitionCard from '@/components/quiz/WordToDefinitionCard.svelte';
     import { audioPlayer } from '@/lib/audioPlayer.svelte';
     import { t } from '@/lib/i18n';
     import { createNavigationGuard } from '@/lib/navigationGuard';
     import type {
+        CustomQuizSessionData,
         MistakeReviewItem,
         QuizOptionPayload,
-        Stage1SessionData,
+        SpellingQuestionPayload,
     } from '@/types/quiz';
 
     let {
         session,
         questionCount,
+        quizMode = 'standard',
     }: {
-        session: Stage1SessionData;
+        session: CustomQuizSessionData;
         questionCount: number;
+        quizMode?: 'standard' | 'spelling';
     } = $props();
 
     setLayoutProps({
@@ -112,7 +116,12 @@
     }
 
     function handleQuizOptionSelect(option: QuizOptionPayload) {
-        if (selectedOptionId !== null || !activeQuiz || isAdvancing) {
+        if (
+            selectedOptionId !== null ||
+            !activeQuiz ||
+            !('correct_option_id' in activeQuiz) ||
+            isAdvancing
+        ) {
             return;
         }
 
@@ -152,6 +161,50 @@
         setTimeout(() => {
             advanceToNextStep();
         }, 1000);
+    }
+
+    function handleSpellingResult(isCorrect: boolean) {
+        if (isAdvancing) {
+            return;
+        }
+
+        if (isCorrect) {
+            isAdvancing = true;
+            correctAnswersCount += 1;
+            if (!listeningDisabled && session.correct_audio_url) {
+                void audioPlayer.play(session.correct_audio_url, 'sfx-correct');
+            }
+
+            setTimeout(() => {
+                advanceToNextStep();
+            }, 1000);
+        } else {
+            if (!listeningDisabled && session.wrong_audio_url) {
+                void audioPlayer.play(session.wrong_audio_url, 'sfx-wrong');
+            }
+
+            const target = currentStep.vocabulary;
+            if (!mistakes.some((m) => m.id === target.id)) {
+                mistakes = [
+                    ...mistakes,
+                    {
+                        id: target.id,
+                        word: target.word,
+                        part_of_speech: target.part_of_speech,
+                        pronunciation: target.pronunciation,
+                        definition: target.definition,
+                        word_audio_url: target.word_audio_url,
+                        sentence_audio_url: target.sentence_audio_url,
+                        example_sentence: target.example_sentence,
+                        example_translation: target.example_translation,
+                    },
+                ];
+            }
+        }
+    }
+
+    function handleSpellingNext() {
+        advanceToNextStep();
     }
 
     function handleQuizCompletion() {
@@ -223,7 +276,9 @@
 </script>
 
 <AppHead
-    title="{t('ui.quiz.custom.title')} ({t(
+    title="{quizMode === 'spelling'
+        ? t('ui.quiz.custom.top_bar.session_badge_spelling')
+        : t('ui.quiz.custom.top_bar.session_badge')} ({t(
         `ui.quiz.custom.count_options.${questionCount}`,
     )})"
 />
@@ -335,6 +390,15 @@
                             {selectedOptionId}
                             autoPlay={!listeningDisabled}
                             onSelect={handleQuizOptionSelect}
+                            disabled={isAdvancing}
+                        />
+                    {:else if activeQuiz.quiz_type === 'spelling'}
+                        <SpellingCard
+                            question={activeQuiz as SpellingQuestionPayload}
+                            vocabulary={currentStep.vocabulary}
+                            autoPlay={!listeningDisabled}
+                            onResult={handleSpellingResult}
+                            onNext={handleSpellingNext}
                             disabled={isAdvancing}
                         />
                     {/if}

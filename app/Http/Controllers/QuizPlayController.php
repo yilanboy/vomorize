@@ -20,7 +20,7 @@ class QuizPlayController extends Controller
         Request $request,
         GenerateCustomQuizSession $generateCustomQuizSession,
     ): Response|RedirectResponse {
-        /** @var array{question_count?: int, passed_group_ids?: array<int, int>}|null $config */
+        /** @var array{question_count?: int, quiz_mode?: string, passed_group_ids?: array<int, int>}|null $config */
         $config = $request->session()->get('custom_quiz_config');
 
         if (! is_array($config) || ! isset($config['question_count'])) {
@@ -30,6 +30,7 @@ class QuizPlayController extends Controller
         /** @var User|null $user */
         $user = $request->user();
         $questionCount = (int) $config['question_count'];
+        $quizMode = (string) ($config['quiz_mode'] ?? 'standard');
         /** @var array<int, int> $passedGroupIds */
         $passedGroupIds = array_map('intval', (array) ($config['passed_group_ids'] ?? []));
 
@@ -40,8 +41,9 @@ class QuizPlayController extends Controller
         }
 
         return Inertia::render('quiz/Show', [
-            'session' => fn () => $generateCustomQuizSession->handle($questionCount, $user, $availableGroupIds),
+            'session' => fn () => $generateCustomQuizSession->handle($questionCount, $user, $availableGroupIds, $quizMode),
             'questionCount' => $questionCount,
+            'quizMode' => $quizMode,
         ]);
     }
 }

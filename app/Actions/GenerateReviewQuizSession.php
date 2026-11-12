@@ -85,7 +85,7 @@ readonly class GenerateReviewQuizSession
         $round2Raw = [];
 
         foreach ($vocabularies as $vocab) {
-            $cases = QuizType::cases();
+            $cases = QuizType::coreTypes();
             /** @var array<int, QuizType> $selectedTypes */
             $selectedTypes = collect($cases)->shuffle()->take(2)->values()->all();
             $remainingType = collect($cases)->first(fn (QuizType $t): bool => ! in_array($t, $selectedTypes, true));
@@ -197,7 +197,7 @@ readonly class GenerateReviewQuizSession
 
         $stem = match ($type) {
             QuizType::WordToDefinition => $target['word'],
-            QuizType::DefinitionToWord => $target['definition'],
+            QuizType::DefinitionToWord, QuizType::Spelling => $target['definition'],
             QuizType::AudioToDefinition => '',
         };
 

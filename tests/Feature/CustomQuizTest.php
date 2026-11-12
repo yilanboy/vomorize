@@ -223,3 +223,69 @@ test('completing custom quiz updates daily streak for logged in user and redirec
     $guestResponse = $this->from(route('quiz.play'))->post(route('quiz.complete'));
     $guestResponse->assertRedirect(route('quiz.play'));
 });
+
+test('member can start custom quiz in spelling mode with valid slots and sorted tiles', function () {
+    $user = User::factory()->create();
+    $level = Level::factory()->create();
+    $group = Group::factory()->create(['level_id' => $level->id]);
+
+    Vocabulary::factory()->count(10)->create([
+        'level_id' => $level->id,
+        'group_id' => $group->id,
+    ]);
+
+    LearningProgress::factory()->create([
+        'user_id' => $user->id,
+        'level_id' => $level->id,
+        'group_id' => $group->id,
+        'stage' => 1,
+    ]);
+
+    $startResponse = $this->actingAs($user)->post(route('quiz.start'), [
+        'question_count' => 10,
+        'quiz_mode' => 'spelling',
+    ]);
+
+    $startResponse->assertRedirect(route('quiz.play'));
+
+    $response = $this->actingAs($user)->get(route('quiz.play'));
+
+    $response->assertOk();
+    $response->assertInertia(fn (Assert $page) => $page
+        ->component('quiz/Show')
+        ->where('questionCount', 10)
+        ->where('quizMode', 'spelling')
+        ->has('session.steps', 10)
+    );
+
+    $steps = $response->viewData('page')['props']['session']['steps'];
+    expect($steps)->toHaveCount(10);
+
+    foreach ($steps as $step) {
+        $quiz = $step['quiz'];
+        expect($quiz['quiz_type'])->toBe('spelling')
+            ->and($quiz)->toHaveKeys(['stem', 'audio_url', 'target_word', 'slots', 'tiles'])
+            ->and($step['fallback_quiz'])->toBeNull();
+
+        $slots = $quiz['slots'];
+        $tiles = $quiz['tiles'];
+
+        $blankSlots = array_filter($slots, fn (array $s): bool => $s['is_blank'] === true);
+
+        // Tiles count must match blank slots count exactly
+        expect(count($tiles))->toBe(count($blankSlots));
+
+        // Tiles must be sorted alphabetically A-Z
+        $tileChars = array_column($tiles, 'char');
+        $sortedChars = $tileChars;
+        sort($sortedChars);
+        expect($tileChars)->toBe($sortedChars);
+
+        // Tiles must correspond to blank slots
+        foreach ($tiles as $tile) {
+            $slotIndex = $tile['slot_index'];
+            expect($slots[$slotIndex]['is_blank'])->toBeTrue()
+                ->and($slots[$slotIndex]['char'])->toBe($tile['char']);
+        }
+    }
+});

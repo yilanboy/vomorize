@@ -32,8 +32,11 @@ class CustomQuizSessionController extends Controller
             return to_route('quiz.index');
         }
 
+        $quizMode = (string) $request->validated('quiz_mode', 'standard');
+
         $request->session()->put('custom_quiz_config', [
             'question_count' => $questionCount,
+            'quiz_mode' => $quizMode,
             'passed_group_ids' => $availableGroupIds,
         ]);
 

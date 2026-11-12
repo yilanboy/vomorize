@@ -69,8 +69,42 @@ test('authenticated member with unlocked words sees word pool count and question
         ->assertSee('一般')
         ->assertSee('看例句選出正確的單字')
         ->assertSee('拼音')
+        ->assertSee('單字拼寫')
         ->assertSee('即將推出')
         ->assertSee('開始自訂測驗 (10 題)');
+});
+
+test('authenticated member can select spelling mode and enter custom quiz room', function () {
+    $user = User::factory()->create();
+    $level = Level::factory()->create();
+    $group = Group::factory()->create(['level_id' => $level->id]);
+
+    Vocabulary::factory()->count(10)->create([
+        'level_id' => $level->id,
+        'group_id' => $group->id,
+    ]);
+
+    LearningProgress::factory()->create([
+        'user_id' => $user->id,
+        'level_id' => $level->id,
+        'group_id' => $group->id,
+        'stage' => 1,
+    ]);
+
+    $this->actingAs($user);
+
+    $page = visit('/quiz');
+    $page->assertNoSmoke()
+        ->assertSee('單字拼寫')
+        ->click('button:has-text("拼音")')
+        ->assertSee('已配置：拼音模式')
+        ->click('button:has-text("開始自訂測驗")')
+        ->wait(2)
+        ->assertNoSmoke()
+        ->assertPathIs('/quiz/play')
+        ->assertSee('拼音測驗')
+        ->assertSee('退格')
+        ->assertSee('清除');
 });
 
 test('authenticated member completing custom quiz displays result summary without error modals', function () {

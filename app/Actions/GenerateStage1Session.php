@@ -80,7 +80,7 @@ readonly class GenerateStage1Session
         $quizzesByWordIndex = [];
 
         foreach ($vocabularies as $i => $vocab) {
-            $cases = QuizType::cases();
+            $cases = QuizType::coreTypes();
             /** @var array<int, QuizType> $selectedTypes */
             $selectedTypes = collect($cases)->shuffle()->take(2)->values()->all();
             $remainingType = collect($cases)->first(fn (QuizType $t): bool => ! in_array($t, $selectedTypes, true));
@@ -221,7 +221,7 @@ readonly class GenerateStage1Session
 
         $stem = match ($type) {
             QuizType::WordToDefinition => $target['word'],
-            QuizType::DefinitionToWord => $target['definition'],
+            QuizType::DefinitionToWord, QuizType::Spelling => $target['definition'],
             QuizType::AudioToDefinition => '',
         };
 

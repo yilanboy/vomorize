@@ -29,7 +29,7 @@ class CustomQuizRequest extends FormRequest
 
         return [
             'question_count' => ['required', 'integer', 'in:10,20,30,50,100'],
-            'quiz_mode' => ['sometimes', 'string', 'in:standard'],
+            'quiz_mode' => ['sometimes', 'string', 'in:standard,spelling'],
             'passed_group_ids' => [$isGuest ? 'required' : 'sometimes', 'array'],
             'passed_group_ids.*' => ['integer', 'exists:groups,id'],
         ];

@@ -21,7 +21,8 @@ export interface QuizOptionPayload {
 export type QuizType =
     | 'word_to_definition'
     | 'definition_to_word'
-    | 'audio_to_definition';
+    | 'audio_to_definition'
+    | 'spelling';
 
 export interface QuizQuestionPayload {
     quiz_type: QuizType;
@@ -31,19 +32,47 @@ export interface QuizQuestionPayload {
     correct_option_id: number;
 }
 
-export interface SessionStep {
+export interface SpellingSlot {
+    is_blank: boolean;
+    char: string;
+}
+
+export interface SpellingTile {
+    slot_index: number;
+    char: string;
+}
+
+export interface SpellingQuestionPayload {
+    quiz_type: 'spelling';
+    stem: string;
+    audio_url: string;
+    target_word: string;
+    slots: SpellingSlot[];
+    tiles: SpellingTile[];
+}
+
+export interface SessionStep<
+    TQuiz = QuizQuestionPayload | SpellingQuestionPayload,
+> {
     id: string;
     step_index: number;
     kind: 'intro' | 'quiz';
     vocabulary: VocabularyPayload;
-    quiz: QuizQuestionPayload | null;
+    quiz: TQuiz | null;
     fallback_quiz?: QuizQuestionPayload | null;
 }
 
 export interface Stage1SessionData {
-    steps: SessionStep[];
+    steps: SessionStep<QuizQuestionPayload>[];
     correct_audio_url: string;
     wrong_audio_url: string;
+}
+
+export interface CustomQuizSessionData {
+    steps: SessionStep<QuizQuestionPayload | SpellingQuestionPayload>[];
+    correct_audio_url: string;
+    wrong_audio_url: string;
+    question_count: number;
 }
 
 export interface MistakeReviewItem {
