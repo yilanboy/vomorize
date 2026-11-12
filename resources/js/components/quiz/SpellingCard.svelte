@@ -57,27 +57,39 @@
 
     const slotDensity = $derived.by(() => {
         const count = question.slots.length;
-        if (count <= 6) {
+        if (count <= 5) {
             return {
                 gap: 'gap-2 sm:gap-2.5',
-                size: 'size-12 sm:size-14 text-xl sm:text-2xl',
+                size: 'size-12 sm:size-14 text-xl sm:text-2xl rounded-xl',
             };
         }
-        if (count <= 8) {
+        if (count <= 7) {
             return {
                 gap: 'gap-1.5 sm:gap-2',
-                size: 'size-11 sm:size-12 text-lg sm:text-xl',
+                size: 'w-9 h-11 sm:size-12 text-base sm:text-xl rounded-xl',
+            };
+        }
+        if (count <= 9) {
+            return {
+                gap: 'gap-1 sm:gap-1.5',
+                size: 'w-7 h-10 sm:w-11 sm:h-12 text-sm sm:text-lg rounded-lg sm:rounded-xl',
             };
         }
         if (count <= 11) {
             return {
                 gap: 'gap-1 sm:gap-1.5',
-                size: 'h-11 w-8 sm:size-11 text-base sm:text-lg',
+                size: 'w-6 h-10 sm:w-10 sm:h-12 text-sm sm:text-lg rounded-md sm:rounded-xl',
+            };
+        }
+        if (count <= 14) {
+            return {
+                gap: 'gap-0.5 sm:gap-1',
+                size: 'w-5 h-9 sm:w-8 sm:h-11 text-sm sm:text-base rounded-md sm:rounded-lg',
             };
         }
         return {
-            gap: 'gap-0.5 sm:gap-1',
-            size: 'h-10 w-7 sm:h-11 sm:w-8 text-sm sm:text-base',
+            gap: 'gap-0.5 sm:gap-0.5',
+            size: 'w-4 h-9 sm:w-6 sm:h-10 text-sm sm:text-sm rounded-sm sm:rounded-md',
         };
     });
 
@@ -222,7 +234,7 @@
 </script>
 
 <div
-    class="border-border/80 bg-card mx-auto flex h-[580px] w-full max-w-xl flex-col justify-between rounded-2xl border px-4 py-6 shadow-sm transition-all sm:h-[600px] sm:p-8"
+    class="border-border/80 bg-card mx-auto flex h-[580px] w-full max-w-xl flex-col justify-between rounded-2xl border px-3 py-6 shadow-sm transition-all sm:h-[600px] sm:p-8"
 >
     <!-- Header / Stem -->
     <div class="flex h-[170px] shrink-0 flex-col justify-between sm:h-[180px]">
@@ -287,7 +299,7 @@
         <!-- Letter Slots -->
         <div
             class={{
-                'flex max-w-full flex-nowrap items-center justify-center overflow-x-auto py-1.5': true,
+                'flex max-w-full [scrollbar-width:none] flex-nowrap items-center justify-center overflow-x-auto py-1.5 [&::-webkit-scrollbar]:hidden': true,
                 [slotDensity.gap]: true,
             }}
         >
@@ -310,7 +322,7 @@
                     <!-- Static hint or separator slot (Anchor) -->
                     <div
                         class={{
-                            'border-border/80 bg-muted/60 text-foreground flex shrink-0 items-center justify-center rounded-xl border-2 font-mono font-extrabold shadow-inner select-none': true,
+                            'border-border/80 bg-muted/60 text-foreground flex shrink-0 items-center justify-center border-2 font-mono font-extrabold shadow-inner select-none': true,
                             [slotDensity.size]: true,
                         }}
                     >
@@ -321,7 +333,7 @@
                     <button
                         type="button"
                         class={{
-                            'flex shrink-0 items-center justify-center rounded-xl border-2 font-mono font-extrabold transition-all select-none': true,
+                            'flex shrink-0 items-center justify-center border-2 font-mono font-extrabold transition-all select-none': true,
                             [slotDensity.size]: true,
                             'border-border/80 bg-background/50 text-muted-foreground/30 border-dashed':
                                 !assignedTile && !isAnswered && !isTargetCursor,
@@ -350,15 +362,7 @@
         <div
             class="flex h-14 w-full max-w-md items-center justify-center px-1 sm:h-16"
         >
-            {#if !isAnswered}
-                <!-- Idle typing guidance -->
-                <div
-                    class="text-muted-foreground/70 flex items-center gap-2 text-sm font-medium select-none"
-                >
-                    <span class="bg-primary/50 size-1.5 rounded-full"></span>
-                    <span>{t('ui.quiz.spelling.keyboard_hint')}</span>
-                </div>
-            {:else if isCorrect}
+            {#if isAnswered && isCorrect}
                 <!-- Correct submission banner -->
                 <div
                     class="flex items-center gap-2 text-sm font-bold text-emerald-600 select-none dark:text-emerald-400"
@@ -366,7 +370,7 @@
                     <CheckCircle2 class="size-5" />
                     <span>{t('ui.quiz.spelling.correct_banner')}</span>
                 </div>
-            {:else}
+            {:else if isAnswered && !isCorrect}
                 <!-- Wrong submission reveal (Pure visual answer contrast, no mid-card button) -->
                 <div
                     class="flex h-full w-full items-center justify-center gap-2 rounded-xl border border-red-200/80 bg-red-50/90 px-4 py-2 text-center dark:border-red-900/60 dark:bg-red-950/40"
@@ -395,7 +399,7 @@
                 <button
                     type="button"
                     class={{
-                        'flex min-h-[50px] min-w-[50px] items-center justify-center rounded-xl border-2 font-mono text-xl font-extrabold transition-all select-none sm:min-h-[54px] sm:min-w-[54px] sm:text-2xl': true,
+                        'flex size-[50px] shrink-0 items-center justify-center rounded-xl border-2 font-mono text-xl font-extrabold transition-all select-none sm:size-[54px] sm:text-2xl': true,
                         'border-border/80 bg-card text-foreground hover:border-primary/60 cursor-pointer shadow-[0_3px_0_0_rgba(0,0,0,0.08)] hover:-translate-y-0.5 active:translate-y-1 active:shadow-none dark:shadow-[0_3px_0_0_rgba(255,255,255,0.06)]':
                             !isUsed && !isAnswered,
                         'border-border/40 bg-muted/20 text-muted-foreground/20 pointer-events-none translate-y-0.5 border-dashed opacity-40 shadow-none':
@@ -411,13 +415,13 @@
 
         <!-- Bottom Action Bar -->
         <div
-            class="border-border/80 flex min-h-[44px] items-center justify-between border-t pt-3"
+            class="border-border/80 flex h-14 items-center justify-between border-t pt-2"
         >
             {#if isAnswered && !isCorrect}
                 <!-- Bottom Primary Action on wrong answer -->
                 <Button
                     size="default"
-                    class="h-11 w-full cursor-pointer gap-2 bg-red-600 text-sm font-semibold text-white shadow-xs transition-all hover:bg-red-700 active:scale-[0.99] dark:bg-red-600 dark:hover:bg-red-700"
+                    class="h-10 w-full cursor-pointer gap-2 bg-red-600 text-sm font-semibold text-white shadow-xs transition-all hover:bg-red-700 active:scale-[0.99] dark:bg-red-600 dark:hover:bg-red-700"
                     onclick={onNext}
                 >
                     <span>{t('ui.quiz.spelling.next')}</span>
@@ -434,7 +438,7 @@
                     <button
                         type="button"
                         class={{
-                            'border-border/80 inline-flex h-9 cursor-pointer items-center gap-1.5 rounded-lg border px-3 text-sm font-medium transition-all select-none': true,
+                            'border-border/80 inline-flex h-10 cursor-pointer items-center gap-1.5 rounded-xl border px-3 text-sm font-semibold transition-all select-none': true,
                             'bg-card text-foreground hover:bg-muted shadow-[0_2px_0_0_rgba(0,0,0,0.06)] active:translate-y-0.5 active:shadow-none dark:shadow-[0_2px_0_0_rgba(255,255,255,0.05)]':
                                 Object.keys(filledSlots).length > 0 &&
                                 !isAnswered &&
@@ -456,7 +460,7 @@
                     <button
                         type="button"
                         class={{
-                            'border-border/80 inline-flex h-9 cursor-pointer items-center gap-1.5 rounded-lg border px-3 text-sm font-medium transition-all select-none': true,
+                            'border-border/80 inline-flex h-10 cursor-pointer items-center gap-1.5 rounded-xl border px-3 text-sm font-semibold transition-all select-none': true,
                             'bg-card text-foreground hover:bg-muted shadow-[0_2px_0_0_rgba(0,0,0,0.06)] active:translate-y-0.5 active:shadow-none dark:shadow-[0_2px_0_0_rgba(255,255,255,0.05)]':
                                 Object.keys(filledSlots).length > 0 &&
                                 !isAnswered &&
