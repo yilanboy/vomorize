@@ -367,31 +367,20 @@
                     <span>{t('ui.quiz.spelling.correct_banner')}</span>
                 </div>
             {:else}
-                <!-- Wrong submission reveal & Next Button (In-place alignment) -->
+                <!-- Wrong submission reveal (Pure visual answer contrast, no mid-card button) -->
                 <div
-                    class="flex h-full w-full items-center justify-between rounded-xl border border-red-200/80 bg-red-50/90 px-3.5 py-1.5 dark:border-red-900/60 dark:bg-red-950/40"
+                    class="flex h-full w-full items-center justify-center gap-2 rounded-xl border border-red-200/80 bg-red-50/90 px-4 py-2 text-center dark:border-red-900/60 dark:bg-red-950/40"
                 >
-                    <div class="flex flex-col text-left leading-tight">
-                        <span
-                            class="text-sm font-medium text-red-600/90 dark:text-red-400/90"
-                        >
-                            {t('ui.quiz.spelling.correct_answer')}
-                        </span>
-                        <span
-                            class="font-mono text-base font-extrabold tracking-wider text-red-700 dark:text-red-300"
-                        >
-                            {question.target_word}
-                        </span>
-                    </div>
-
-                    <Button
-                        size="sm"
-                        class="h-9 cursor-pointer gap-1.5 bg-red-600 px-4 text-sm font-semibold text-white shadow-xs hover:bg-red-700 dark:bg-red-600 dark:hover:bg-red-700"
-                        onclick={onNext}
+                    <span
+                        class="text-sm font-medium text-red-600/90 select-none dark:text-red-400/90"
                     >
-                        <span>{t('ui.quiz.spelling.next')}</span>
-                        <ArrowRight class="size-4" />
-                    </Button>
+                        {t('ui.quiz.spelling.correct_answer')}:
+                    </span>
+                    <span
+                        class="font-mono text-base font-extrabold tracking-wider text-red-700 sm:text-lg dark:text-red-300"
+                    >
+                        {question.target_word}
+                    </span>
                 </div>
             {/if}
         </div>
@@ -422,59 +411,71 @@
 
         <!-- Bottom Action Bar -->
         <div
-            class="border-border/80 flex items-center justify-between border-t pt-3"
+            class="border-border/80 flex min-h-[44px] items-center justify-between border-t pt-3"
         >
-            <span
-                class="text-muted-foreground/80 hidden text-sm font-medium sm:inline"
-            >
-                {t('ui.quiz.spelling.keyboard_hint')}
-            </span>
-
-            <div class="ml-auto flex items-center gap-2">
-                <button
-                    type="button"
-                    class={{
-                        'border-border/80 inline-flex h-9 cursor-pointer items-center gap-1.5 rounded-lg border px-3 text-sm font-medium transition-all select-none': true,
-                        'bg-card text-foreground hover:bg-muted shadow-[0_2px_0_0_rgba(0,0,0,0.06)] active:translate-y-0.5 active:shadow-none dark:shadow-[0_2px_0_0_rgba(255,255,255,0.05)]':
-                            Object.keys(filledSlots).length > 0 &&
-                            !isAnswered &&
-                            !disabled,
-                        'text-muted-foreground/30 cursor-not-allowed border-dashed opacity-40 shadow-none':
-                            Object.keys(filledSlots).length === 0 ||
-                            isAnswered ||
-                            disabled,
-                    }}
-                    onclick={handleBackspace}
-                    disabled={Object.keys(filledSlots).length === 0 ||
-                        isAnswered ||
-                        disabled}
+            {#if isAnswered && !isCorrect}
+                <!-- Bottom Primary Action on wrong answer -->
+                <Button
+                    size="default"
+                    class="h-11 w-full cursor-pointer gap-2 bg-red-600 text-sm font-semibold text-white shadow-xs transition-all hover:bg-red-700 active:scale-[0.99] dark:bg-red-600 dark:hover:bg-red-700"
+                    onclick={onNext}
                 >
-                    <Delete class="size-4" />
-                    <span>{t('ui.quiz.spelling.backspace')}</span>
-                </button>
-
-                <button
-                    type="button"
-                    class={{
-                        'border-border/80 inline-flex h-9 cursor-pointer items-center gap-1.5 rounded-lg border px-3 text-sm font-medium transition-all select-none': true,
-                        'bg-card text-foreground hover:bg-muted shadow-[0_2px_0_0_rgba(0,0,0,0.06)] active:translate-y-0.5 active:shadow-none dark:shadow-[0_2px_0_0_rgba(255,255,255,0.05)]':
-                            Object.keys(filledSlots).length > 0 &&
-                            !isAnswered &&
-                            !disabled,
-                        'text-muted-foreground/30 cursor-not-allowed border-dashed opacity-40 shadow-none':
-                            Object.keys(filledSlots).length === 0 ||
-                            isAnswered ||
-                            disabled,
-                    }}
-                    onclick={handleClear}
-                    disabled={Object.keys(filledSlots).length === 0 ||
-                        isAnswered ||
-                        disabled}
+                    <span>{t('ui.quiz.spelling.next')}</span>
+                    <ArrowRight class="size-4" />
+                </Button>
+            {:else}
+                <span
+                    class="text-muted-foreground/80 hidden text-sm font-medium sm:inline"
                 >
-                    <RotateCcw class="size-4" />
-                    <span>{t('ui.quiz.spelling.clear')}</span>
-                </button>
-            </div>
+                    {t('ui.quiz.spelling.keyboard_hint')}
+                </span>
+
+                <div class="ml-auto flex items-center gap-2">
+                    <button
+                        type="button"
+                        class={{
+                            'border-border/80 inline-flex h-9 cursor-pointer items-center gap-1.5 rounded-lg border px-3 text-sm font-medium transition-all select-none': true,
+                            'bg-card text-foreground hover:bg-muted shadow-[0_2px_0_0_rgba(0,0,0,0.06)] active:translate-y-0.5 active:shadow-none dark:shadow-[0_2px_0_0_rgba(255,255,255,0.05)]':
+                                Object.keys(filledSlots).length > 0 &&
+                                !isAnswered &&
+                                !disabled,
+                            'text-muted-foreground/30 cursor-not-allowed border-dashed opacity-40 shadow-none':
+                                Object.keys(filledSlots).length === 0 ||
+                                isAnswered ||
+                                disabled,
+                        }}
+                        onclick={handleBackspace}
+                        disabled={Object.keys(filledSlots).length === 0 ||
+                            isAnswered ||
+                            disabled}
+                    >
+                        <Delete class="size-4" />
+                        <span>{t('ui.quiz.spelling.backspace')}</span>
+                    </button>
+
+                    <button
+                        type="button"
+                        class={{
+                            'border-border/80 inline-flex h-9 cursor-pointer items-center gap-1.5 rounded-lg border px-3 text-sm font-medium transition-all select-none': true,
+                            'bg-card text-foreground hover:bg-muted shadow-[0_2px_0_0_rgba(0,0,0,0.06)] active:translate-y-0.5 active:shadow-none dark:shadow-[0_2px_0_0_rgba(255,255,255,0.05)]':
+                                Object.keys(filledSlots).length > 0 &&
+                                !isAnswered &&
+                                !disabled,
+                            'text-muted-foreground/30 cursor-not-allowed border-dashed opacity-40 shadow-none':
+                                Object.keys(filledSlots).length === 0 ||
+                                isAnswered ||
+                                disabled,
+                        }}
+                        onclick={handleClear}
+                        disabled={Object.keys(filledSlots).length === 0 ||
+                            isAnswered ||
+                            disabled}
+                    >
+                        <RotateCcw class="size-4" />
+                        <span>{t('ui.quiz.spelling.clear')}</span>
+                    </button>
+                </div>
+            {/if}
         </div>
     </div>
 </div>
