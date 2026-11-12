@@ -1,11 +1,11 @@
 <script lang="ts">
     import { onMount } from 'svelte';
     import { router, setLayoutProps } from '@inertiajs/svelte';
-    import Volume2 from '@lucide/svelte/icons/volume-2';
-    import VolumeX from '@lucide/svelte/icons/volume-x';
+    import EarOff from '@lucide/svelte/icons/ear-off';
     import X from '@lucide/svelte/icons/x';
     import { store as saveProgress } from '@/actions/App/Http/Controllers/GroupProgressController';
     import AppHead from '@/components/AppHead.svelte';
+    import DisableListeningDialog from '@/components/DisableListeningDialog.svelte';
     import LeaveConfirmationDialog from '@/components/LeaveConfirmationDialog.svelte';
     import AudioToDefinitionCard from '@/components/quiz/AudioToDefinitionCard.svelte';
     import DefinitionToWordCard from '@/components/quiz/DefinitionToWordCard.svelte';
@@ -51,7 +51,8 @@
     let currentIndex = $state(0);
     let selectedOptionId = $state<number | null>(null);
     let isAdvancing = $state(false);
-    let autoPlay = $state(true);
+    let listeningDisabled = $state(false);
+    let isDisableListeningDialogOpen = $state(false);
     let correctAnswersCount = $state(0);
     let mistakes = $state<MistakeReviewItem[]>([]);
     let quizCompleted = $state(false);
@@ -86,21 +87,24 @@
         });
     }
 
+    function handleConfirmDisableListening() {
+        audioPlayer.stop();
+        listeningDisabled = true;
+    }
+
     const totalSteps = $derived(session?.steps?.length ?? 30);
     const currentStep = $derived(session?.steps?.[currentIndex] ?? null);
+    const activeQuiz = $derived(
+        listeningDisabled && currentStep?.fallback_quiz
+            ? currentStep.fallback_quiz
+            : (currentStep?.quiz ?? null),
+    );
     const progressPercent = $derived(
         totalSteps > 0
             ? Math.min(100, Math.round(((currentIndex + 1) / totalSteps) * 100))
             : 0,
     );
     const isPassed = $derived(finalScore >= 80);
-
-    function toggleAutoPlay() {
-        autoPlay = !autoPlay;
-        if (typeof window !== 'undefined') {
-            localStorage.setItem('vomorize_auto_play', String(autoPlay));
-        }
-    }
 
     function advanceToNextStep() {
         selectedOptionId = null;
@@ -125,18 +129,18 @@
         selectedOptionId = option.id;
         isAdvancing = true;
 
-        if (currentStep.kind === 'quiz' && currentStep.quiz) {
-            const isCorrect = option.id === currentStep.quiz.correct_option_id;
+        if (currentStep.kind === 'quiz' && activeQuiz) {
+            const isCorrect = option.id === activeQuiz.correct_option_id;
             if (isCorrect) {
                 correctAnswersCount += 1;
-                if (session.correct_audio_url) {
+                if (!listeningDisabled && session.correct_audio_url) {
                     void audioPlayer.play(
                         session.correct_audio_url,
                         'sfx-correct',
                     );
                 }
             } else {
-                if (session.wrong_audio_url) {
+                if (!listeningDisabled && session.wrong_audio_url) {
                     void audioPlayer.play(session.wrong_audio_url, 'sfx-wrong');
                 }
 
@@ -198,6 +202,7 @@
 
     function handleRetry() {
         audioPlayer.stop();
+        listeningDisabled = false;
         currentIndex = 0;
         selectedOptionId = null;
         isAdvancing = false;
@@ -214,12 +219,6 @@
     }
 
     onMount(() => {
-        // Load autoplay setting from localStorage
-        const stored = localStorage.getItem('vomorize_auto_play');
-        if (stored !== null) {
-            autoPlay = stored !== 'false';
-        }
-
         // Guest check: if stage >= 1 in local IndexedDB, redirect to groups.show
         if (!progress) {
             void learningProgressDb.getGroupProgress(group.id).then((local) => {
@@ -309,24 +308,25 @@
                 </div>
             </div>
 
-            <!-- Right: Auto-play toggle button -->
+            <!-- Right: Disable listening toggle button -->
             <button
                 type="button"
                 class={{
-                    'hover:bg-muted flex h-10 w-10 items-center justify-center rounded-xl transition-colors': true,
-                    'text-primary': autoPlay,
-                    'text-muted-foreground': !autoPlay,
+                    'flex size-10 items-center justify-center rounded-xl transition-colors': true,
+                    'hover:bg-muted text-muted-foreground hover:text-foreground cursor-pointer':
+                        !listeningDisabled,
+                    'text-muted-foreground/40 cursor-not-allowed':
+                        listeningDisabled,
                 }}
-                onclick={toggleAutoPlay}
-                title={autoPlay
-                    ? t('ui.intro.top_bar.auto_play_on')
-                    : t('ui.intro.top_bar.auto_play_off')}
+                disabled={listeningDisabled}
+                onclick={() => {
+                    isDisableListeningDialogOpen = true;
+                }}
+                title={listeningDisabled
+                    ? t('ui.quiz.top_bar.listening_disabled')
+                    : t('ui.quiz.top_bar.cant_listen')}
             >
-                {#if autoPlay}
-                    <Volume2 class="h-5 w-5" />
-                {:else}
-                    <VolumeX class="h-5 w-5" />
-                {/if}
+                <EarOff class="size-5" />
             </button>
         </div>
     </header>
@@ -346,36 +346,39 @@
                 onDone={handleDone}
             />
         {:else if currentStep}
-            {#key currentStep.id}
+            {#key currentStep.kind === 'intro' ? currentStep.id : `${currentStep.id}-${activeQuiz?.quiz_type}`}
                 {#if currentStep.kind === 'intro'}
                     <VocabularyIntroCard
                         vocabulary={currentStep.vocabulary}
-                        {autoPlay}
+                        autoPlay={!listeningDisabled}
                         onContinue={handleIntroContinue}
                     />
-                {:else if currentStep.kind === 'quiz' && currentStep.quiz}
-                    {#if currentStep.quiz.quiz_type === 'word_to_definition'}
+                {:else if currentStep.kind === 'quiz' && activeQuiz}
+                    {#if activeQuiz.quiz_type === 'word_to_definition'}
                         <WordToDefinitionCard
-                            question={currentStep.quiz}
+                            question={activeQuiz}
                             vocabulary={currentStep.vocabulary}
                             {selectedOptionId}
                             onSelect={handleQuizOptionSelect}
                             disabled={isAdvancing}
                         />
-                    {:else if currentStep.quiz.quiz_type === 'definition_to_word'}
+                    {:else if activeQuiz.quiz_type === 'definition_to_word'}
                         <DefinitionToWordCard
-                            question={currentStep.quiz}
+                            question={activeQuiz}
                             vocabulary={currentStep.vocabulary}
                             {selectedOptionId}
                             onSelect={handleQuizOptionSelect}
                             disabled={isAdvancing}
                         />
-                    {:else if currentStep.quiz.quiz_type === 'audio_to_definition'}
+                    {:else if activeQuiz.quiz_type === 'audio_to_definition'}
                         <AudioToDefinitionCard
-                            question={currentStep.quiz}
+                            question={activeQuiz}
                             vocabulary={currentStep.vocabulary}
                             {selectedOptionId}
-                            {autoPlay}
+                            autoPlay={!listeningDisabled}
+                            onCantListen={() => {
+                                isDisableListeningDialogOpen = true;
+                            }}
                             onSelect={handleQuizOptionSelect}
                             disabled={isAdvancing}
                         />
@@ -389,5 +392,11 @@
     <LeaveConfirmationDialog
         bind:open={isLeaveDialogOpen}
         onConfirm={handleConfirmLeave}
+    />
+
+    <!-- Disable Listening Confirmation Dialog -->
+    <DisableListeningDialog
+        bind:open={isDisableListeningDialogOpen}
+        onConfirm={handleConfirmDisableListening}
     />
 </div>

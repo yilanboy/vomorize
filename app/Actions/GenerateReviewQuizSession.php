@@ -37,6 +37,7 @@ use App\Models\Group;
  *     kind: 'quiz',
  *     vocabulary: VocabularyPayload,
  *     quiz: QuizQuestionPayload,
+ *     fallback_quiz: QuizQuestionPayload|null,
  * }
  * @phpstan-type SessionStep array{
  *     id: string,
@@ -44,6 +45,7 @@ use App\Models\Group;
  *     kind: 'quiz',
  *     vocabulary: VocabularyPayload,
  *     quiz: QuizQuestionPayload,
+ *     fallback_quiz: QuizQuestionPayload|null,
  * }
  */
 readonly class GenerateReviewQuizSession
@@ -83,19 +85,33 @@ readonly class GenerateReviewQuizSession
         $round2Raw = [];
 
         foreach ($vocabularies as $vocab) {
+            $cases = QuizType::cases();
             /** @var array<int, QuizType> $selectedTypes */
-            $selectedTypes = collect(QuizType::cases())->shuffle()->take(2)->values()->all();
+            $selectedTypes = collect($cases)->shuffle()->take(2)->values()->all();
+            $remainingType = collect($cases)->first(fn (QuizType $t): bool => ! in_array($t, $selectedTypes, true));
+
+            $round1Quiz = $this->buildQuizQuestion($vocab, $vocabularies, $selectedTypes[0]);
+            $round1Fallback = ($selectedTypes[0] === QuizType::AudioToDefinition && $remainingType instanceof QuizType)
+                ? $this->buildQuizQuestion($vocab, $vocabularies, $remainingType)
+                : null;
+
+            $round2Quiz = $this->buildQuizQuestion($vocab, $vocabularies, $selectedTypes[1]);
+            $round2Fallback = ($selectedTypes[1] === QuizType::AudioToDefinition && $remainingType instanceof QuizType)
+                ? $this->buildQuizQuestion($vocab, $vocabularies, $remainingType)
+                : null;
 
             $round1Raw[] = [
                 'kind' => 'quiz',
                 'vocabulary' => $vocab,
-                'quiz' => $this->buildQuizQuestion($vocab, $vocabularies, $selectedTypes[0]),
+                'quiz' => $round1Quiz,
+                'fallback_quiz' => $round1Fallback,
             ];
 
             $round2Raw[] = [
                 'kind' => 'quiz',
                 'vocabulary' => $vocab,
-                'quiz' => $this->buildQuizQuestion($vocab, $vocabularies, $selectedTypes[1]),
+                'quiz' => $round2Quiz,
+                'fallback_quiz' => $round2Fallback,
             ];
         }
 
@@ -140,6 +156,7 @@ readonly class GenerateReviewQuizSession
                 'kind' => 'quiz',
                 'vocabulary' => $step['vocabulary'],
                 'quiz' => $step['quiz'],
+                'fallback_quiz' => $step['fallback_quiz'],
             ];
         }
 

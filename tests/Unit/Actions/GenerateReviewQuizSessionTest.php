@@ -55,6 +55,19 @@ test('every vocabulary is tested twice with different question types and spaced 
 
         expect($first['quiz']['quiz_type'])->not->toBe($second['quiz']['quiz_type'])
             ->and(abs($second['step_index'] - $first['step_index']))->toBeGreaterThanOrEqual(4);
+
+        foreach ($wordQuizzes as $wq) {
+            if ($wq['quiz']['quiz_type'] === 'audio_to_definition') {
+                $otherType = $wq['quiz']['quiz_type'] === $first['quiz']['quiz_type']
+                    ? $second['quiz']['quiz_type']
+                    : $first['quiz']['quiz_type'];
+                expect($wq['fallback_quiz'])->not->toBeNull()
+                    ->and($wq['fallback_quiz']['quiz_type'])->not->toBe('audio_to_definition')
+                    ->and($wq['fallback_quiz']['quiz_type'])->not->toBe($otherType);
+            } else {
+                expect($wq['fallback_quiz'])->toBeNull();
+            }
+        }
     }
 });
 

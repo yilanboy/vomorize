@@ -44,6 +44,7 @@ use InvalidArgumentException;
  *     kind: 'quiz',
  *     vocabulary: VocabularyPayload,
  *     quiz: QuizQuestionPayload,
+ *     fallback_quiz: QuizQuestionPayload|null,
  * }
  */
 readonly class GenerateCustomQuizSession
@@ -144,12 +145,20 @@ readonly class GenerateCustomQuizSession
 
             $quiz = $this->buildQuizQuestion($target, $groupVocabularies, $selectedType);
 
+            $fallbackQuiz = null;
+            if ($selectedType === QuizType::AudioToDefinition) {
+                $nonAudioTypes = [QuizType::WordToDefinition, QuizType::DefinitionToWord];
+                $fallbackType = $nonAudioTypes[random_int(0, 1)];
+                $fallbackQuiz = $this->buildQuizQuestion($target, $groupVocabularies, $fallbackType);
+            }
+
             $steps[] = [
                 'id' => "step-{$stepIndex}-custom-quiz-{$target['id']}",
                 'step_index' => $stepIndex,
                 'kind' => 'quiz',
                 'vocabulary' => $target,
                 'quiz' => $quiz,
+                'fallback_quiz' => $fallbackQuiz,
             ];
         }
 

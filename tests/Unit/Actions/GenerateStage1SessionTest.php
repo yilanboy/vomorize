@@ -62,6 +62,17 @@ test('every vocabulary is introduced once in ascending id order and tested twice
         $type1 = $wordQuizzes[0]['quiz']['quiz_type'];
         $type2 = $wordQuizzes[1]['quiz']['quiz_type'];
         expect($type1)->not->toBe($type2);
+
+        foreach ($wordQuizzes as $wq) {
+            if ($wq['quiz']['quiz_type'] === 'audio_to_definition') {
+                $otherType = $wq['quiz']['quiz_type'] === $type1 ? $type2 : $type1;
+                expect($wq['fallback_quiz'])->not->toBeNull()
+                    ->and($wq['fallback_quiz']['quiz_type'])->not->toBe('audio_to_definition')
+                    ->and($wq['fallback_quiz']['quiz_type'])->not->toBe($otherType);
+            } else {
+                expect($wq['fallback_quiz'])->toBeNull();
+            }
+        }
     }
 });
 

@@ -588,9 +588,8 @@ return [
             'leave_dialog_cancel' => '繼續學習',
             'leave_dialog_confirm' => '確認離開',
             'progress' => ':current / :total',
-            'auto_play' => '自動發音',
-            'auto_play_on' => '自動發音已開啟',
-            'auto_play_off' => '自動發音已關閉',
+            'cant_listen' => '現在不方便聽',
+            'listening_disabled' => '聽力已關閉（本次測驗生效）',
         ],
         'card' => [
             'badge' => '單字預習',
@@ -610,10 +609,22 @@ return [
         'score' => '總得分',
         'stage_badge' => 'Stage :stage 複習測驗',
         'self_test_badge' => '自我複習測驗',
+        'top_bar' => [
+            'cant_listen' => '現在不方便聽',
+            'listening_disabled' => '聽力已關閉（本次測驗生效）',
+            'listening_disabled_label' => '聽力已關閉',
+        ],
+        'disable_listening_dialog' => [
+            'title' => '現在不方便測驗聽力？',
+            'desc' => '關閉後，往後的聽力題目將自動轉換為文字測驗題型，且在本次測驗期間不再自動播放語音。',
+            'cancel' => '繼續聽力',
+            'confirm' => '確認關閉',
+        ],
         'question_types' => [
             'word_to_definition' => '看單字選釋義',
             'definition_to_word' => '看釋義選單字',
             'audio_to_definition' => '聽發音選釋義',
+            'cant_listen_prompt' => '目前不方便聽語音？',
         ],
         'audio_prompt' => [
             'play_hint' => '點擊或按 Space 播放發音',
@@ -720,9 +731,9 @@ return [
                 'leave' => '離開測驗',
                 'session_badge' => '自訂測驗 · 一般模式',
                 'completed_badge' => '自訂測驗 · 診斷結算',
-                'auto_play_label' => '自動發音',
-                'auto_play_on' => '關閉自動發音',
-                'auto_play_off' => '開啟自動發音',
+                'cant_listen' => '現在不方便聽',
+                'listening_disabled' => '聽力已關閉（本次測驗生效）',
+                'listening_disabled_label' => '聽力已關閉',
                 'keyboard_hint' => '數字鍵 1–4 作答',
                 'leave_dialog' => [
                     'title' => '確定要中途離開測驗嗎？',

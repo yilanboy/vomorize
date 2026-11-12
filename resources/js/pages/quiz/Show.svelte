@@ -1,14 +1,14 @@
 <script lang="ts">
     import { onMount } from 'svelte';
     import { page, router, setLayoutProps } from '@inertiajs/svelte';
-    import Volume2 from '@lucide/svelte/icons/volume-2';
-    import VolumeX from '@lucide/svelte/icons/volume-x';
+    import EarOff from '@lucide/svelte/icons/ear-off';
     import X from '@lucide/svelte/icons/x';
     import { index as levelsIndex } from '@/actions/App/Http/Controllers/LevelController';
     import { destroy as complete } from '@/actions/App/Http/Controllers/CustomQuizSessionController';
     import { index as quizIndex } from '@/actions/App/Http/Controllers/QuizController';
     import { show as play } from '@/actions/App/Http/Controllers/QuizPlayController';
     import AppHead from '@/components/AppHead.svelte';
+    import DisableListeningDialog from '@/components/DisableListeningDialog.svelte';
     import LeaveConfirmationDialog from '@/components/LeaveConfirmationDialog.svelte';
     import AudioToDefinitionCard from '@/components/quiz/AudioToDefinitionCard.svelte';
     import CustomQuizResultSummary from '@/components/quiz/CustomQuizResultSummary.svelte';
@@ -39,7 +39,8 @@
     let currentIndex = $state(0);
     let selectedOptionId = $state<number | null>(null);
     let isAdvancing = $state(false);
-    let autoPlay = $state(true);
+    let listeningDisabled = $state(false);
+    let isDisableListeningDialogOpen = $state(false);
     let correctAnswersCount = $state(0);
     let mistakes = $state<MistakeReviewItem[]>([]);
     let quizCompleted = $state(false);
@@ -75,20 +76,23 @@
         });
     }
 
+    function handleConfirmDisableListening() {
+        audioPlayer.stop();
+        listeningDisabled = true;
+    }
+
     const totalSteps = $derived(session?.steps?.length ?? questionCount);
     const currentStep = $derived(session?.steps?.[currentIndex] ?? null);
+    const activeQuiz = $derived(
+        listeningDisabled && currentStep?.fallback_quiz
+            ? currentStep.fallback_quiz
+            : (currentStep?.quiz ?? null),
+    );
     const progressPercent = $derived(
         totalSteps > 0
             ? Math.min(100, Math.round(((currentIndex + 1) / totalSteps) * 100))
             : 0,
     );
-
-    function toggleAutoPlay() {
-        autoPlay = !autoPlay;
-        if (typeof window !== 'undefined') {
-            localStorage.setItem('vomorize_auto_play', String(autoPlay));
-        }
-    }
 
     function advanceToNextStep() {
         if (currentIndex + 1 < totalSteps) {
@@ -108,21 +112,21 @@
     }
 
     function handleQuizOptionSelect(option: QuizOptionPayload) {
-        if (selectedOptionId !== null || !currentStep?.quiz || isAdvancing) {
+        if (selectedOptionId !== null || !activeQuiz || isAdvancing) {
             return;
         }
 
         selectedOptionId = option.id;
         isAdvancing = true;
 
-        const isCorrect = option.id === currentStep.quiz.correct_option_id;
+        const isCorrect = option.id === activeQuiz.correct_option_id;
         if (isCorrect) {
             correctAnswersCount += 1;
-            if (session.correct_audio_url) {
+            if (!listeningDisabled && session.correct_audio_url) {
                 void audioPlayer.play(session.correct_audio_url, 'sfx-correct');
             }
         } else {
-            if (session.wrong_audio_url) {
+            if (!listeningDisabled && session.wrong_audio_url) {
                 void audioPlayer.play(session.wrong_audio_url, 'sfx-wrong');
             }
 
@@ -173,6 +177,7 @@
 
     function handleRetry() {
         audioPlayer.stop();
+        listeningDisabled = false;
         navigationGuard.bypass();
         router.visit(play.url());
     }
@@ -191,11 +196,6 @@
 
     onMount(() => {
         startTime = Date.now();
-
-        const stored = localStorage.getItem('vomorize_auto_play');
-        if (stored !== null) {
-            autoPlay = stored !== 'false';
-        }
 
         if (session) {
             const urlsToPreload: string[] = [];
@@ -282,28 +282,30 @@
                 </div>
             </div>
 
-            <!-- Right: Auto-play Toggle -->
+            <!-- Right: Disable Listening Toggle -->
             <div class="flex items-center gap-2">
                 <button
                     type="button"
                     class={{
-                        'border-border/80 hover:bg-muted flex h-10 cursor-pointer items-center justify-center gap-2 rounded-xl border px-3 transition-colors outline-none focus-visible:ring-2 focus-visible:ring-blue-500': true,
-                        'border-blue-200 bg-blue-50/70 text-blue-600 dark:border-blue-800/60 dark:bg-blue-950/40 dark:text-blue-400':
-                            autoPlay,
-                        'text-muted-foreground': !autoPlay,
+                        'border-border/80 flex h-10 items-center justify-center gap-2 rounded-xl border px-3 text-sm font-semibold transition-colors outline-none': true,
+                        'hover:bg-muted text-muted-foreground hover:text-foreground cursor-pointer':
+                            !listeningDisabled,
+                        'text-muted-foreground/50 cursor-not-allowed border-dashed':
+                            listeningDisabled,
                     }}
-                    onclick={toggleAutoPlay}
-                    title={autoPlay
-                        ? t('ui.quiz.custom.top_bar.auto_play_on')
-                        : t('ui.quiz.custom.top_bar.auto_play_off')}
+                    disabled={listeningDisabled}
+                    onclick={() => {
+                        isDisableListeningDialogOpen = true;
+                    }}
+                    title={listeningDisabled
+                        ? t('ui.quiz.top_bar.listening_disabled')
+                        : t('ui.quiz.top_bar.cant_listen')}
                 >
-                    {#if autoPlay}
-                        <Volume2 class="size-4.5 shrink-0" />
-                    {:else}
-                        <VolumeX class="size-4.5 shrink-0" />
-                    {/if}
-                    <span class="hidden text-sm font-semibold sm:inline">
-                        {t('ui.quiz.custom.top_bar.auto_play_label')}
+                    <EarOff class="size-4.5 shrink-0" />
+                    <span class="hidden sm:inline">
+                        {listeningDisabled
+                            ? t('ui.quiz.top_bar.listening_disabled_label')
+                            : t('ui.quiz.top_bar.cant_listen')}
                     </span>
                 </button>
             </div>
@@ -325,30 +327,33 @@
                 onLevels={handleLevels}
             />
         {:else if currentStep}
-            {#key currentStep.id}
-                {#if currentStep.kind === 'quiz' && currentStep.quiz}
-                    {#if currentStep.quiz.quiz_type === 'word_to_definition'}
+            {#key `${currentStep.id}-${activeQuiz?.quiz_type}`}
+                {#if currentStep.kind === 'quiz' && activeQuiz}
+                    {#if activeQuiz.quiz_type === 'word_to_definition'}
                         <WordToDefinitionCard
-                            question={currentStep.quiz}
+                            question={activeQuiz}
                             vocabulary={currentStep.vocabulary}
                             {selectedOptionId}
                             onSelect={handleQuizOptionSelect}
                             disabled={isAdvancing}
                         />
-                    {:else if currentStep.quiz.quiz_type === 'definition_to_word'}
+                    {:else if activeQuiz.quiz_type === 'definition_to_word'}
                         <DefinitionToWordCard
-                            question={currentStep.quiz}
+                            question={activeQuiz}
                             vocabulary={currentStep.vocabulary}
                             {selectedOptionId}
                             onSelect={handleQuizOptionSelect}
                             disabled={isAdvancing}
                         />
-                    {:else if currentStep.quiz.quiz_type === 'audio_to_definition'}
+                    {:else if activeQuiz.quiz_type === 'audio_to_definition'}
                         <AudioToDefinitionCard
-                            question={currentStep.quiz}
+                            question={activeQuiz}
                             vocabulary={currentStep.vocabulary}
                             {selectedOptionId}
-                            {autoPlay}
+                            autoPlay={!listeningDisabled}
+                            onCantListen={() => {
+                                isDisableListeningDialogOpen = true;
+                            }}
                             onSelect={handleQuizOptionSelect}
                             disabled={isAdvancing}
                         />
@@ -366,5 +371,11 @@
         cancelText={t('ui.quiz.custom.top_bar.leave_dialog.cancel')}
         confirmText={t('ui.quiz.custom.top_bar.leave_dialog.confirm')}
         onConfirm={handleConfirmLeave}
+    />
+
+    <!-- Disable Listening Confirmation Dialog -->
+    <DisableListeningDialog
+        bind:open={isDisableListeningDialogOpen}
+        onConfirm={handleConfirmDisableListening}
     />
 </div>
