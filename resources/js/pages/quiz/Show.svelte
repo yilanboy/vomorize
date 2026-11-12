@@ -11,8 +11,8 @@
     import DisableListeningDialog from '@/components/DisableListeningDialog.svelte';
     import LeaveConfirmationDialog from '@/components/LeaveConfirmationDialog.svelte';
     import AudioToDefinitionCard from '@/components/quiz/AudioToDefinitionCard.svelte';
-    import CustomQuizResultSummary from '@/components/quiz/CustomQuizResultSummary.svelte';
     import DefinitionToWordCard from '@/components/quiz/DefinitionToWordCard.svelte';
+    import QuizResultSummary from '@/components/quiz/QuizResultSummary.svelte';
     import SpellingCard from '@/components/quiz/SpellingCard.svelte';
     import WordToDefinitionCard from '@/components/quiz/WordToDefinitionCard.svelte';
     import { audioPlayer } from '@/lib/audioPlayer.svelte';
@@ -355,7 +355,8 @@
         class="flex flex-1 flex-col items-center justify-center px-4 py-8 sm:px-6"
     >
         {#if quizCompleted}
-            <CustomQuizResultSummary
+            <QuizResultSummary
+                mode="custom"
                 correctCount={correctAnswersCount}
                 totalCount={totalSteps}
                 {timeSpentSeconds}
