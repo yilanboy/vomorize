@@ -43,6 +43,9 @@ export default defineConfig({
             ],
         },
     },
+    test: {
+        include: ['resources/js/**/*.test.ts'],
+    },
     lint: {
         jsPlugins: ['@shadcn/lint'],
         ignorePatterns: [

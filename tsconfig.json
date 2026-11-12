@@ -122,5 +122,10 @@
         "resources/js/**/*.ts",
         "resources/js/**/*.d.ts",
         "resources/js/**/*.svelte"
+    ],
+    "exclude": [
+        "node_modules",
+        "resources/js/**/*.test.ts",
+        "resources/js/**/*.spec.ts"
     ]
 }

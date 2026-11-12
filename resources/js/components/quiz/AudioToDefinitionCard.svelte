@@ -1,5 +1,6 @@
 <script lang="ts">
     import { onMount } from 'svelte';
+    import EarOff from '@lucide/svelte/icons/ear-off';
     import Volume2 from '@lucide/svelte/icons/volume-2';
     import QuizOptions from '@/components/quiz/QuizOptions.svelte';
     import { audioPlayer } from '@/lib/audioPlayer.svelte';
@@ -16,6 +17,7 @@
         selectedOptionId = null,
         autoPlay = true,
         onSelect,
+        onCantListen,
         disabled = false,
     }: {
         question: QuizQuestionPayload;
@@ -23,6 +25,7 @@
         selectedOptionId?: number | null;
         autoPlay?: boolean;
         onSelect: (option: QuizOptionPayload) => void;
+        onCantListen?: () => void;
         disabled?: boolean;
     } = $props();
 
@@ -83,17 +86,29 @@
                 <span>{t('ui.quiz.question_types.audio_to_definition')}</span>
             </span>
 
-            <span
-                class={{
-                    'bg-muted text-foreground/80 rounded-md px-2.5 py-0.5 text-sm font-semibold transition-opacity duration-150': true,
-                    'visible opacity-100': selectedOptionId !== null,
-                    'invisible opacity-0 select-none':
-                        selectedOptionId === null,
-                }}
-                aria-hidden={selectedOptionId === null}
-            >
-                {vocabulary.part_of_speech}
-            </span>
+            {#if onCantListen && selectedOptionId === null}
+                <button
+                    type="button"
+                    class="text-muted-foreground hover:text-foreground inline-flex cursor-pointer items-center gap-1.5 text-sm font-medium underline-offset-4 transition-colors hover:underline"
+                    onclick={onCantListen}
+                >
+                    <EarOff class="size-4" />
+                    <span>{t('ui.quiz.question_types.cant_listen_prompt')}</span
+                    >
+                </button>
+            {:else}
+                <span
+                    class={{
+                        'bg-muted text-foreground/80 rounded-md px-2.5 py-0.5 text-sm font-semibold transition-opacity duration-150': true,
+                        'visible opacity-100': selectedOptionId !== null,
+                        'invisible opacity-0 select-none':
+                            selectedOptionId === null,
+                    }}
+                    aria-hidden={selectedOptionId === null}
+                >
+                    {vocabulary.part_of_speech}
+                </span>
+            {/if}
         </div>
 
         <!-- Speaker Prompt & Reveal Area -->
