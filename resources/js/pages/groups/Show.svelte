@@ -585,11 +585,7 @@
                 href={quizGroup.url(group.id)}
                 class="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-6 py-2.5 text-sm font-semibold text-white shadow-xs transition-all hover:bg-blue-700 active:scale-[0.98] sm:px-8 sm:py-3 sm:text-base dark:bg-blue-600 dark:hover:bg-blue-500"
             >
-                <span
-                    >{t('ui.group_detail.sticky_bar.start_review', {
-                        stage: Math.min(6, currentProgress.stage + 1),
-                    })}</span
-                >
+                <span>{t('ui.group_detail.sticky_bar.start_review')}</span>
                 <ArrowRight class="size-4" />
             </Link>
         {/if}

@@ -376,9 +376,6 @@
                             vocabulary={currentStep.vocabulary}
                             {selectedOptionId}
                             autoPlay={!listeningDisabled}
-                            onCantListen={() => {
-                                isDisableListeningDialogOpen = true;
-                            }}
                             onSelect={handleQuizOptionSelect}
                             disabled={isAdvancing}
                         />

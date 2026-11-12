@@ -99,7 +99,7 @@ readonly class GetActionCenterQueue
                     'badge_variant' => $badgeVariant,
                     'last_score' => $progress->last_score,
                     'status_hint' => $statusHint,
-                    'review_url' => "/groups/{$progress->group_id}",
+                    'review_url' => "/groups/{$progress->group_id}/quiz",
                     'is_failed' => $isFailed,
                     'next_review_at' => $progress->next_review_at,
                 ];

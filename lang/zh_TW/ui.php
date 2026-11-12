@@ -437,7 +437,7 @@ return [
         'sticky_bar' => [
             'summary' => '第 :sequence 組 · :count 個核心單字',
             'start_stage_1' => '開始第一階段測驗 (Stage 1)',
-            'start_review' => '開始複習測驗 (Stage :stage)',
+            'start_review' => '開始複習測驗',
             'cooldown' => '冷卻中 (:time)',
             'mastered' => '隨時自我測驗',
         ],
@@ -709,7 +709,7 @@ return [
                 '50' => '綜合挑戰',
                 '100' => '馬拉松模考',
             ],
-            'requires_unlock' => '需解鎖 :count 字 (還差 :diff 字)',
+            'requires_unlock' => '還差 :diff 題解鎖',
             'select_mode_label' => '測驗題型模式',
             'select_mode_hint' => '同群組干擾項機制，確保詞性與難度一致',
             'modes' => [
@@ -724,7 +724,7 @@ return [
                 'spelling_desc' => '顯示中文意思與詞性，輸入缺字部分，突破提筆忘字瓶頸。',
                 'coming_soon' => '即將推出',
             ],
-            'summary_line' => '已配置：:mode模式 · :count 題（:time）',
+            'summary_line' => '已配置：:mode模式 · :count 題',
             'start_button' => '開始自訂測驗 (:count 題)',
             'footer_hint' => '測驗過程全面支援鍵盤 1-4 快捷作答，交卷後將提供去重錯題回顧。',
             'top_bar' => [

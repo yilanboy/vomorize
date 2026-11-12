@@ -65,7 +65,7 @@ test('authenticated member with unlocked words sees word pool count and question
         ->assertSee('10 題')
         ->assertSee('20 題')
         ->assertSee('30 題')
-        ->assertSee('需解鎖 30 字')
+        ->assertSee('還差 10 題解鎖')
         ->assertSee('一般')
         ->assertSee('看例句選出正確的單字')
         ->assertSee('拼音')

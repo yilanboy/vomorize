@@ -99,16 +99,6 @@
             return;
         }
 
-        if (event.key >= '1' && event.key <= '5' && isUnlocked) {
-            const optionIndex = Number(event.key) - 1;
-            const targetCount = COUNT_OPTIONS[optionIndex];
-            if (targetCount && effectiveWordCount >= targetCount) {
-                event.preventDefault();
-                form.question_count = targetCount;
-            }
-            return;
-        }
-
         if (event.key === 'Enter' && isUnlocked && !form.processing) {
             event.preventDefault();
             startQuiz();
@@ -342,17 +332,12 @@
 
             <!-- Panel 1: Question Count Matrix (5-Stop Segmented Instrument) -->
             <div class="p-6 sm:p-8">
-                <div
-                    class="flex flex-col justify-between gap-1 sm:flex-row sm:items-baseline"
-                >
+                <div class="flex items-center justify-between">
                     <h2
                         class="text-foreground text-base font-bold tracking-tight sm:text-lg"
                     >
                         {t('ui.quiz.custom.select_count_label')}
                     </h2>
-                    <span class="text-muted-foreground font-mono text-sm">
-                        {t('ui.quiz.custom.select_count_hint')}
-                    </span>
                 </div>
 
                 <div
@@ -387,24 +372,10 @@
                                 }
                             }}
                         >
-                            <!-- Top Row: Keycap & Status Icon -->
+                            <!-- Top Row: Status Icon -->
                             <div
-                                class="flex w-full items-center justify-between gap-2"
+                                class="flex min-h-6 w-full items-center justify-end"
                             >
-                                <span
-                                    class={{
-                                        'inline-flex h-6 min-w-6 items-center justify-center rounded border px-1.5 font-mono text-sm font-semibold tabular-nums': true,
-                                        'border-blue-600 bg-blue-600 text-white dark:border-blue-500 dark:bg-blue-500':
-                                            isSelected,
-                                        'border-border bg-muted/60 text-muted-foreground group-hover:border-blue-300':
-                                            isAvailable && !isSelected,
-                                        'border-border/60 bg-muted/30 text-muted-foreground/60':
-                                            !isAvailable,
-                                    }}
-                                >
-                                    {idx + 1}
-                                </span>
-
                                 {#if isSelected}
                                     <span
                                         class="flex size-5 items-center justify-center rounded-full bg-blue-600 text-white dark:bg-blue-500"
@@ -418,7 +389,7 @@
                                 {/if}
                             </div>
 
-                            <!-- Middle Row: Question Count & Duration -->
+                            <!-- Middle Row: Question Count -->
                             <div class="mt-4">
                                 <div
                                     class={{
@@ -432,13 +403,10 @@
                                 >
                                     {t(`ui.quiz.custom.count_options.${count}`)}
                                 </div>
-                                <div class="text-muted-foreground mt-1 text-sm">
-                                    {t(`ui.quiz.custom.count_times.${count}`)}
-                                </div>
                             </div>
 
                             <!-- Bottom Row: Tier Tag or Unlock Threshold -->
-                            <div class="mt-4 pt-2">
+                            <div class="mt-4 pt-1">
                                 {#if isAvailable}
                                     <span
                                         class={{
@@ -458,7 +426,6 @@
                                         class="text-muted-foreground block text-sm leading-snug"
                                     >
                                         {t('ui.quiz.custom.requires_unlock', {
-                                            count,
                                             diff,
                                         })}
                                     </span>
@@ -636,9 +603,6 @@
                         {t('ui.quiz.custom.summary_line', {
                             mode: t('ui.quiz.custom.modes.standard'),
                             count: form.question_count,
-                            time: t(
-                                `ui.quiz.custom.count_times.${form.question_count}`,
-                            ),
                         })}
                     </div>
                     <p class="text-muted-foreground text-sm">

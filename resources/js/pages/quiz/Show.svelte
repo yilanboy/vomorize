@@ -231,43 +231,33 @@
 <div
     class="bg-background flex min-h-screen flex-col selection:bg-blue-600 selection:text-white"
 >
-    <!-- Focused Immersive Top Telemetry Bar -->
-    <header class="border-border/80 bg-card/95 sticky top-0 z-40 border-b">
+    <!-- Focused Immersive Top Bar -->
+    <header
+        class="border-border/80 bg-background/80 sticky top-0 z-40 border-b backdrop-blur-md"
+    >
         <div
-            class="mx-auto flex h-16 max-w-4xl items-center justify-between gap-3 px-4 sm:px-6"
+            class="mx-auto flex h-16 max-w-4xl items-center justify-between px-4 sm:px-6"
         >
-            <!-- Left: Leave button & Session Context Badge -->
-            <div class="flex items-center gap-2.5">
-                <button
-                    type="button"
-                    class="border-border/80 hover:bg-muted text-muted-foreground hover:text-foreground flex size-10 cursor-pointer items-center justify-center rounded-xl border transition-colors outline-none focus-visible:ring-2 focus-visible:ring-blue-500"
-                    onclick={handleLeaveClick}
-                    title={t('ui.quiz.custom.top_bar.leave')}
-                >
-                    <X class="size-5" />
-                </button>
+            <!-- Left: Leave button -->
+            <button
+                type="button"
+                class="hover:bg-muted text-muted-foreground hover:text-foreground flex size-10 items-center justify-center rounded-xl transition-colors"
+                onclick={handleLeaveClick}
+                title={t('ui.quiz.custom.top_bar.leave')}
+            >
+                <X class="size-5" />
+            </button>
 
-                <span
-                    class="border-border/80 bg-muted/40 text-muted-foreground hidden items-center rounded-lg border px-2.5 py-1 text-sm font-medium sm:inline-flex"
-                >
-                    {quizCompleted
-                        ? t('ui.quiz.custom.top_bar.completed_badge')
-                        : t('ui.quiz.custom.top_bar.session_badge')}
-                </span>
-            </div>
-
-            <!-- Center: Precision Progress Indicator -->
-            <div class="flex flex-1 flex-col items-center gap-1.5 px-2 sm:px-6">
+            <!-- Center: Progress indicator -->
+            <div class="flex flex-1 flex-col items-center gap-1.5 px-4 sm:px-8">
                 <div class="flex items-center gap-2">
                     <span
-                        class="text-foreground font-mono text-sm font-bold tabular-nums"
+                        class="text-foreground font-mono text-sm font-semibold"
                     >
                         {Math.min(currentIndex + 1, totalSteps)}
                     </span>
                     <span class="text-muted-foreground text-sm">/</span>
-                    <span
-                        class="text-muted-foreground font-mono text-sm tabular-nums"
-                    >
+                    <span class="text-muted-foreground font-mono text-sm">
                         {totalSteps}
                     </span>
                 </div>
@@ -276,39 +266,32 @@
                     class="bg-muted h-2 w-full max-w-xs overflow-hidden rounded-full sm:max-w-sm"
                 >
                     <div
-                        class="bg-primary h-full rounded-full transition-all duration-200 ease-out"
+                        class="bg-primary h-full rounded-full transition-all duration-300 ease-out"
                         style:width="{progressPercent}%"
                     ></div>
                 </div>
             </div>
 
             <!-- Right: Disable Listening Toggle -->
-            <div class="flex items-center gap-2">
-                <button
-                    type="button"
-                    class={{
-                        'border-border/80 flex h-10 items-center justify-center gap-2 rounded-xl border px-3 text-sm font-semibold transition-colors outline-none': true,
-                        'hover:bg-muted text-muted-foreground hover:text-foreground cursor-pointer':
-                            !listeningDisabled,
-                        'text-muted-foreground/50 cursor-not-allowed border-dashed':
-                            listeningDisabled,
-                    }}
-                    disabled={listeningDisabled}
-                    onclick={() => {
-                        isDisableListeningDialogOpen = true;
-                    }}
-                    title={listeningDisabled
-                        ? t('ui.quiz.top_bar.listening_disabled')
-                        : t('ui.quiz.top_bar.cant_listen')}
-                >
-                    <EarOff class="size-4.5 shrink-0" />
-                    <span class="hidden sm:inline">
-                        {listeningDisabled
-                            ? t('ui.quiz.top_bar.listening_disabled_label')
-                            : t('ui.quiz.top_bar.cant_listen')}
-                    </span>
-                </button>
-            </div>
+            <button
+                type="button"
+                class={{
+                    'flex size-10 items-center justify-center rounded-xl transition-colors': true,
+                    'hover:bg-muted text-muted-foreground hover:text-foreground cursor-pointer':
+                        !listeningDisabled,
+                    'text-muted-foreground/40 cursor-not-allowed':
+                        listeningDisabled,
+                }}
+                disabled={listeningDisabled}
+                onclick={() => {
+                    isDisableListeningDialogOpen = true;
+                }}
+                title={listeningDisabled
+                    ? t('ui.quiz.top_bar.listening_disabled')
+                    : t('ui.quiz.top_bar.cant_listen')}
+            >
+                <EarOff class="size-5" />
+            </button>
         </div>
     </header>
 
@@ -351,9 +334,6 @@
                             vocabulary={currentStep.vocabulary}
                             {selectedOptionId}
                             autoPlay={!listeningDisabled}
-                            onCantListen={() => {
-                                isDisableListeningDialogOpen = true;
-                            }}
                             onSelect={handleQuizOptionSelect}
                             disabled={isAdvancing}
                         />
