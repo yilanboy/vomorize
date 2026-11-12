@@ -620,11 +620,6 @@
                             >
                                 {t('ui.quiz.spelling.badge')}
                             </span>
-                            <span
-                                class="border-border/80 bg-background text-foreground rounded-md border px-2 py-0.5 text-sm font-medium"
-                            >
-                                {t('ui.quiz.spelling.touch_hint')}
-                            </span>
                         </div>
                     </button>
                 </div>

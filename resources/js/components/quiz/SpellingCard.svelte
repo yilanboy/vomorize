@@ -55,6 +55,32 @@
         audioPlayer.isPlaying(`quiz-word-${vocabulary.id}`),
     );
 
+    const slotDensity = $derived.by(() => {
+        const count = question.slots.length;
+        if (count <= 6) {
+            return {
+                gap: 'gap-2 sm:gap-2.5',
+                size: 'size-11 sm:size-12 text-xl',
+            };
+        }
+        if (count <= 8) {
+            return {
+                gap: 'gap-1.5 sm:gap-2',
+                size: 'size-10 sm:size-11 text-lg sm:text-xl',
+            };
+        }
+        if (count <= 11) {
+            return {
+                gap: 'gap-1 sm:gap-1.5',
+                size: 'h-10 w-7 sm:size-10 text-base sm:text-lg',
+            };
+        }
+        return {
+            gap: 'gap-0.5 sm:gap-1',
+            size: 'h-9 w-6 sm:h-10 sm:w-8 text-sm sm:text-base',
+        };
+    });
+
     function playAudio(): void {
         if (audioUrl) {
             void audioPlayer.play(audioUrl, `quiz-word-${vocabulary.id}`);
@@ -204,7 +230,7 @@
 </script>
 
 <div
-    class="border-border/80 bg-card mx-auto flex h-[560px] w-full max-w-xl flex-col justify-between rounded-2xl border p-6 shadow-2xs sm:h-[580px] sm:p-8"
+    class="border-border/80 bg-card mx-auto flex h-[560px] w-full max-w-xl flex-col justify-between rounded-2xl border px-3.5 py-6 shadow-2xs sm:h-[580px] sm:p-8"
 >
     <!-- Header / Stem -->
     <div class="flex h-[170px] shrink-0 flex-col justify-between sm:h-[180px]">
@@ -265,8 +291,8 @@
         <!-- Letter Slots -->
         <div
             class={{
-                'flex flex-wrap items-center justify-center gap-2 sm:gap-2.5': true,
-                'animate-shake': isShaking,
+                'flex max-w-full flex-nowrap items-center justify-center overflow-x-auto py-1': true,
+                [slotDensity.gap]: true,
             }}
         >
             {#each question.slots as slot, index (index)}
@@ -277,11 +303,16 @@
                               (t) => t.slot_index === assignedTileIndex,
                           )
                         : null}
+                {@const isSlotCorrect =
+                    assignedTile != null && assignedTile.char === slot.char}
 
                 {#if !slot.is_blank}
                     <!-- Static hint or separator slot -->
                     <div
-                        class="border-border/60 bg-muted/40 text-foreground flex size-11 items-center justify-center rounded-xl border font-mono text-xl font-bold select-none sm:size-12"
+                        class={{
+                            'border-border/60 bg-muted/40 text-foreground flex shrink-0 items-center justify-center rounded-xl border font-mono font-bold select-none': true,
+                            [slotDensity.size]: true,
+                        }}
                     >
                         {slot.char}
                     </div>
@@ -290,15 +321,18 @@
                     <button
                         type="button"
                         class={{
-                            'flex size-11 items-center justify-center rounded-xl border font-mono text-xl font-bold transition-all select-none sm:size-12': true,
+                            'flex shrink-0 items-center justify-center rounded-xl border font-mono font-bold transition-all select-none': true,
+                            [slotDensity.size]: true,
                             'border-border/80 bg-background text-muted-foreground/40 border-dashed':
                                 !assignedTile && !isAnswered,
                             'border-primary/80 bg-primary/5 text-foreground hover:border-destructive hover:bg-destructive/10 cursor-pointer shadow-xs':
                                 assignedTile && !isAnswered,
                             'border-emerald-600 bg-emerald-50 text-emerald-700 dark:border-emerald-500 dark:bg-emerald-950/40 dark:text-emerald-300':
-                                isAnswered && isCorrect,
+                                isAnswered && isSlotCorrect,
                             'border-red-600 bg-red-50 text-red-700 dark:border-red-500 dark:bg-red-950/40 dark:text-red-300':
-                                isAnswered && !isCorrect,
+                                isAnswered && !isSlotCorrect,
+                            'animate-shake':
+                                isShaking && isAnswered && !isSlotCorrect,
                         }}
                         onclick={() => handleSlotClick(index)}
                         disabled={isAnswered || disabled || !assignedTile}
