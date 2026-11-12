@@ -635,6 +635,7 @@ return [
             'backspace' => '退格',
             'clear' => '清除',
             'correct_answer' => '正確拼寫',
+            'correct_banner' => '拼寫正確！',
             'next' => '下一題 (Enter)',
         ],
         'audio_prompt' => [
