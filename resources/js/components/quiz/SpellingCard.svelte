@@ -33,7 +33,6 @@
     let filledSlots = $state<Record<number, number>>({});
     let isAnswered = $state(false);
     let isCorrect = $state<boolean | null>(null);
-    let isShaking = $state(false);
 
     const usedSlotIndices = $derived(new Set(Object.values(filledSlots)));
 
@@ -159,14 +158,6 @@
 
         isAnswered = true;
         isCorrect = correct;
-
-        if (!correct) {
-            isShaking = true;
-            setTimeout(() => {
-                isShaking = false;
-            }, 400);
-        }
-
         onResult(correct);
     }
 
@@ -331,8 +322,6 @@
                                 isAnswered && isSlotCorrect,
                             'border-red-600 bg-red-50 text-red-700 dark:border-red-500 dark:bg-red-950/40 dark:text-red-300':
                                 isAnswered && !isSlotCorrect,
-                            'animate-shake':
-                                isShaking && isAnswered && !isSlotCorrect,
                         }}
                         onclick={() => handleSlotClick(index)}
                         disabled={isAnswered || disabled || !assignedTile}
@@ -428,24 +417,3 @@
         </div>
     </div>
 </div>
-
-<style>
-    @keyframes shake {
-        0%,
-        100% {
-            transform: translateX(0);
-        }
-        20%,
-        60% {
-            transform: translateX(-6px);
-        }
-        40%,
-        80% {
-            transform: translateX(6px);
-        }
-    }
-
-    .animate-shake {
-        animation: shake 0.4s ease-in-out;
-    }
-</style>
