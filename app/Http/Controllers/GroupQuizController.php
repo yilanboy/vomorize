@@ -40,7 +40,7 @@ class GroupQuizController extends Controller
             }
         }
 
-        return Inertia::render('groups/Quiz', [
+        return Inertia::render('groups/quiz/Page', [
             'group' => $getGroupDetail->handle($group),
             'session' => fn () => $generateReviewQuizSession->handle($group),
             'progress' => $user instanceof User ? $getGroupProgress->handle($group, $user) : null,

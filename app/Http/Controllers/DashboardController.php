@@ -36,7 +36,7 @@ class DashboardController extends Controller
             ->with(['group.level'])
             ->get();
 
-        return Inertia::render('Dashboard', [
+        return Inertia::render('dashboard/Page', [
             'stats' => [
                 'is_empty_state' => $userProgress->isEmpty(),
                 'kpis' => $getDashboardKpis->handle($user, $userProgress, $now),

@@ -13,7 +13,7 @@ test('guest can access levels page and sees inertia Levels component', function 
 
     $response->assertOk();
     $response->assertInertia(fn (Assert $page) => $page
-        ->component('Levels')
+        ->component('levels/index/Page')
     );
 });
 
@@ -24,7 +24,7 @@ test('authenticated user can access levels page', function () {
 
     $response->assertOk();
     $response->assertInertia(fn (Assert $page) => $page
-        ->component('Levels')
+        ->component('levels/index/Page')
     );
 });
 
@@ -52,7 +52,7 @@ test('levels page passes levels data loaded from database with null progress for
 
     $response->assertOk();
     $response->assertInertia(fn (Assert $page) => $page
-        ->component('Levels')
+        ->component('levels/index/Page')
         ->has('levels', 1)
         ->where('levels.0.id', $level->id)
         ->where('levels.0.name', '等級 1')
@@ -96,7 +96,7 @@ test('levels page calculates mastery percentage correctly based on 6 stages per 
 
     $response->assertOk();
     $response->assertInertia(fn (Assert $page) => $page
-        ->component('Levels')
+        ->component('levels/index/Page')
         ->has('levels', 1)
         ->where('levels.0.id', $level->id)
         ->where('levels.0.groups_count', 4)
@@ -142,7 +142,7 @@ test('levels page calculates mastery percentage accurately for 100 groups standa
 
     $response->assertOk();
     $response->assertInertia(fn (Assert $page) => $page
-        ->component('Levels')
+        ->component('levels/index/Page')
         ->has('levels', 1)
         ->where('levels.0.id', $level->id)
         ->where('levels.0.groups_count', 100)
@@ -175,7 +175,7 @@ test('levels page calculates decimal mastery percentage for early progress', fun
 
     $response->assertOk();
     $response->assertInertia(fn (Assert $page) => $page
-        ->component('Levels')
+        ->component('levels/index/Page')
         ->where("progress.{$level->id}.total_stages", 1)
         ->where("progress.{$level->id}.max_stages", 600)
         ->where("progress.{$level->id}.mastery_percentage", 0.17)

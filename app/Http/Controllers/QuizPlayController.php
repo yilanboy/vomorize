@@ -41,7 +41,7 @@ class QuizPlayController extends Controller
             return to_route('quiz.index');
         }
 
-        return Inertia::render('quiz/Show', [
+        return Inertia::render('quiz/play/Page', [
             'session' => fn () => $generateCustomQuizSession->handle($questionCount, $user, $availableGroupIds, $quizMode),
             'questionCount' => $questionCount,
             'quizMode' => $quizMode,

@@ -36,7 +36,7 @@ class GroupIntroController extends Controller
             }
         }
 
-        return Inertia::render('groups/Intro', [
+        return Inertia::render('groups/intro/Page', [
             'group' => $getGroupDetail->handle($group),
             'session' => fn () => $generateStage1Session->handle($group),
             'progress' => $user instanceof User ? $getGroupProgress->handle($group, $user) : null,

@@ -11,7 +11,7 @@ test('guest can access welcome page and sees inertia welcome component', functio
 
     $response->assertOk();
     $response->assertInertia(fn (Assert $page) => $page
-        ->component('Welcome')
+        ->component('Page')
     );
 });
 
@@ -22,7 +22,7 @@ test('authenticated user can access welcome page', function () {
 
     $response->assertOk();
     $response->assertInertia(fn (Assert $page) => $page
-        ->component('Welcome')
+        ->component('Page')
     );
 });
 
@@ -50,7 +50,7 @@ test('welcome page passes levels data loaded from database', function () {
 
     $response->assertOk();
     $response->assertInertia(fn (Assert $page) => $page
-        ->component('Welcome')
+        ->component('Page')
         ->has('levels', 1)
         ->where('levels.0.id', $level->id)
         ->where('levels.0.name', '等級 1')
@@ -67,7 +67,7 @@ it('will only show 7 levels on welcome page', function () {
 
     $response->assertOk();
     $response->assertInertia(fn (Assert $page) => $page
-        ->component('Welcome')
+        ->component('Page')
         ->has('levels', 7)
     );
 });

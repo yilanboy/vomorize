@@ -24,7 +24,7 @@ test('security page is displayed', function () {
         ->withSession(['auth.password_confirmed_at' => time()])
         ->get(route('security.edit'))
         ->assertInertia(fn (Assert $page) => $page
-            ->component('settings/Security')
+            ->component('settings/security/Page')
             ->where('canManagePasskeys', true)
             ->where('passkeys', [])
             ->where('canManageTwoFactor', true)
@@ -60,7 +60,7 @@ test('security page renders without two factor when feature is disabled', functi
         ->get(route('security.edit'))
         ->assertOk()
         ->assertInertia(fn (Assert $page) => $page
-            ->component('settings/Security')
+            ->component('settings/security/Page')
             ->where('canManagePasskeys', false)
             ->where('passkeys', [])
             ->where('canManageTwoFactor', false)

@@ -41,7 +41,7 @@ test('new authenticated user sees dashboard in empty state with default stats', 
 
     $response->assertOk();
     $response->assertInertia(fn (Assert $page) => $page
-        ->component('Dashboard')
+        ->component('dashboard/Page')
         ->where('stats.is_empty_state', true)
         ->where('stats.kpis.streak.current', 0)
         ->where('stats.kpis.streak.longest', 0)
@@ -108,7 +108,7 @@ test('active authenticated user receives correctly calculated streak and kpis', 
 
     $response->assertOk();
     $response->assertInertia(fn (Assert $page) => $page
-        ->component('Dashboard')
+        ->component('dashboard/Page')
         ->where('stats.is_empty_state', false)
         ->where('stats.kpis.streak.current', 5)
         ->where('stats.kpis.streak.longest', 10)
@@ -180,7 +180,7 @@ test('action center provides ordered due reviews, upcoming cooldowns, and next r
 
     $response->assertOk();
     $response->assertInertia(fn (Assert $page) => $page
-        ->component('Dashboard')
+        ->component('dashboard/Page')
         // due_reviews count is 3
         ->has('stats.action_center.due_reviews', 3)
         // Item 0: Failed Group 1 (priority)
@@ -262,7 +262,7 @@ test('srs stage breakdown and level progress are accurately categorized and calc
 
     $response->assertOk();
     $response->assertInertia(fn (Assert $page) => $page
-        ->component('Dashboard')
+        ->component('dashboard/Page')
         ->where('stats.srs_distribution.total_contacted_groups', 4)
         ->where('stats.srs_distribution.total_contacted_words', 40)
         ->where('stats.srs_distribution.has_data', true)

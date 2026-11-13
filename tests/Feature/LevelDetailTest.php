@@ -22,7 +22,7 @@ test('guest can access level detail page and sees inertia levels/Show component 
 
     $response->assertOk();
     $response->assertInertia(fn (Assert $page) => $page
-        ->component('levels/Show')
+        ->component('levels/show/Page')
         ->has('level')
         ->where('level.id', $level->id)
         ->where('level.name', '基礎入門')
@@ -49,7 +49,7 @@ test('authenticated user can access level detail page', function () {
 
     $response->assertOk();
     $response->assertInertia(fn (Assert $page) => $page
-        ->component('levels/Show')
+        ->component('levels/show/Page')
     );
 });
 
@@ -118,7 +118,7 @@ test('calculates group learning statuses and counts correctly for authenticated 
 
     $response->assertOk();
     $response->assertInertia(fn (Assert $page) => $page
-        ->component('levels/Show')
+        ->component('levels/show/Page')
         ->where('progress.counts.all', 4)
         ->where('progress.counts.completed', 1)
         ->where('progress.counts.ready', 1)
@@ -154,7 +154,7 @@ test('unstarted groups remain not_started and only cooled down groups are ready'
 
     $response->assertOk();
     $response->assertInertia(fn (Assert $page) => $page
-        ->component('levels/Show')
+        ->component('levels/show/Page')
         ->where('progress.counts.all', 3)
         ->where('progress.counts.cooldown', 1)
         ->where('progress.counts.ready', 0)

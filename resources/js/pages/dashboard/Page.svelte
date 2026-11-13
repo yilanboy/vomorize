@@ -3,11 +3,11 @@
     import AppHead from '@/components/AppHead.svelte';
     import { t } from '@/lib/i18n';
     import type { BreadcrumbItem, DashboardStats } from '@/types';
-    import ActionCenter from './dashboard/components/ActionCenter.svelte';
-    import DashboardHeroHeader from './dashboard/components/DashboardHeroHeader.svelte';
-    import KpiSummaryCards from './dashboard/components/KpiSummaryCards.svelte';
-    import LevelMasteryGrid from './dashboard/components/LevelMasteryGrid.svelte';
-    import SrsStageBreakdown from './dashboard/components/SrsStageBreakdown.svelte';
+    import ActionCenter from './partials/ActionCenter.svelte';
+    import DashboardHeroHeader from './partials/DashboardHeroHeader.svelte';
+    import KpiSummaryCards from './partials/KpiSummaryCards.svelte';
+    import LevelMasteryGrid from './partials/LevelMasteryGrid.svelte';
+    import SrsStageBreakdown from './partials/SrsStageBreakdown.svelte';
 
     let {
         stats,

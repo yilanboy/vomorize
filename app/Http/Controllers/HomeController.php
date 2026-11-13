@@ -21,7 +21,7 @@ class HomeController extends Controller
             ->limit(7)
             ->get(['id', 'name', 'description']);
 
-        return Inertia::render('Welcome', [
+        return Inertia::render('Page', [
             'levels' => $levels,
         ]);
     }

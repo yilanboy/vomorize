@@ -26,7 +26,7 @@ test('guest can access group review quiz page and receives 20-step session paylo
 
     $response->assertOk();
     $response->assertInertia(fn (Assert $page) => $page
-        ->component('groups/Quiz')
+        ->component('groups/quiz/Page')
         ->has('group')
         ->where('group.id', $group->id)
         ->where('progress', null)
@@ -116,7 +116,7 @@ test('member can progress through stages 2 to 6 and mark group as completed', fu
         ->get(route('groups.quiz', $group))
         ->assertOk()
         ->assertInertia(fn (Assert $page) => $page
-            ->component('groups/Quiz')
+            ->component('groups/quiz/Page')
             ->where('progress.stage', 1)
             ->where('progress.status', 'ready')
             ->has('session.steps', 20)
@@ -163,7 +163,7 @@ test('member can progress through stages 2 to 6 and mark group as completed', fu
         ->get(route('groups.show', $group))
         ->assertOk()
         ->assertInertia(fn (Assert $page) => $page
-            ->component('groups/Show')
+            ->component('groups/show/Page')
             ->where('progress.stage', 6)
             ->where('progress.status', 'completed')
         );

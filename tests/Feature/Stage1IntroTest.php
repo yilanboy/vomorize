@@ -25,7 +25,7 @@ test('guest can access group intro page and receives 30-step session payload', f
 
     $response->assertOk();
     $response->assertInertia(fn (Assert $page) => $page
-        ->component('groups/Intro')
+        ->component('groups/intro/Page')
         ->has('group')
         ->where('group.id', $group->id)
         ->where('group.sequence', 1)
@@ -114,7 +114,7 @@ test('member can save quiz progress via inertia post and stays on intro for resu
     $followUp = $this->actingAs($user)->get(route('groups.intro', $group));
     $followUp->assertOk()
         ->assertInertia(fn (Assert $page) => $page
-            ->component('groups/Intro')
+            ->component('groups/intro/Page')
             ->where('progress.stage', 1)
             ->where('progress.status', 'cooldown')
         );

@@ -32,7 +32,7 @@ class QuizController extends Controller
             $unlockedWordCount = $passedGroupCount * Group::VOCABULARY_PER_GROUP;
         }
 
-        return Inertia::render('quiz/Index', [
+        return Inertia::render('quiz/index/Page', [
             'passedGroupCount' => $passedGroupCount,
             'unlockedWordCount' => $unlockedWordCount,
         ]);

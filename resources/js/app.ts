@@ -8,11 +8,21 @@ import { initializeTheme } from '@/lib/theme.svelte';
 
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
 
+const authPages = new Set([
+    'login/Page',
+    'register/Page',
+    'forgot-password/Page',
+    'reset-password/Page',
+    'verify-email/Page',
+    'confirm-password/Page',
+    'two-factor-challenge/Page',
+]);
+
 void createInertiaApp({
     title: (title) => (title ? `${title} - ${appName}` : appName),
     layout: (name) => {
         switch (true) {
-            case name.startsWith('auth/'):
+            case authPages.has(name):
                 return AuthLayout;
             case name.startsWith('settings/'):
                 return [AppLayout, SettingsLayout];

@@ -25,7 +25,7 @@ class LevelController extends Controller
         /** @var User|null $user */
         $user = $request->user();
 
-        return Inertia::render('Levels', [
+        return Inertia::render('levels/index/Page', [
             'levels' => $getLevels->handle(),
             'progress' => $user instanceof User ? $getLevelsProgress->handle($user) : null,
         ]);
@@ -44,7 +44,7 @@ class LevelController extends Controller
         /** @var User|null $user */
         $user = $request->user();
 
-        return Inertia::render('levels/Show', [
+        return Inertia::render('levels/show/Page', [
             'level' => $getLevelDetail->handle($level),
             'groups' => $getLevelGroups->handle($level),
             'progress' => $user instanceof User ? $getLevelProgress->handle($level, $user) : null,

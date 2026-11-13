@@ -28,7 +28,7 @@ test('guest can access group detail page and sees inertia groups/Show component 
 
     $response->assertOk();
     $response->assertInertia(fn (Assert $page) => $page
-        ->component('groups/Show')
+        ->component('groups/show/Page')
         ->has('group')
         ->where('group.id', $group->id)
         ->where('group.sequence', 1)
@@ -65,7 +65,7 @@ test('group detail page includes correctly structured vocabulary data with CDN a
 
     $response->assertOk();
     $response->assertInertia(fn (Assert $page) => $page
-        ->component('groups/Show')
+        ->component('groups/show/Page')
         ->where('vocabularies.0.id', $vocab->id)
         ->where('vocabularies.0.word', 'abandon')
         ->where('vocabularies.0.part_of_speech', 'v.')
@@ -101,7 +101,7 @@ test('group detail page calculates learning status for authenticated user correc
 
     $response->assertOk();
     $response->assertInertia(fn (Assert $page) => $page
-        ->component('groups/Show')
+        ->component('groups/show/Page')
         ->where('progress.status', 'cooldown')
         ->where('progress.stage', 2)
         ->has('progress.cooldown_remaining_seconds')
@@ -116,7 +116,7 @@ test('group detail page calculates learning status for authenticated user correc
 
     $response->assertOk();
     $response->assertInertia(fn (Assert $page) => $page
-        ->component('groups/Show')
+        ->component('groups/show/Page')
         ->where('progress.status', 'ready')
         ->where('progress.stage', 2)
         ->where('progress.cooldown_remaining_seconds', null)
@@ -132,7 +132,7 @@ test('group detail page calculates learning status for authenticated user correc
 
     $response->assertOk();
     $response->assertInertia(fn (Assert $page) => $page
-        ->component('groups/Show')
+        ->component('groups/show/Page')
         ->where('progress.status', 'completed')
         ->where('progress.stage', 6)
         ->where('progress.cooldown_remaining_seconds', null)

@@ -36,7 +36,7 @@ class GroupController extends Controller
             }
         }
 
-        return Inertia::render('groups/Show', [
+        return Inertia::render('groups/show/Page', [
             'group' => $getGroupDetail->handle($group),
             'vocabularies' => $getGroupVocabularies->handle($group),
             'progress' => $user instanceof User ? $getGroupProgress->handle($group, $user) : null,
