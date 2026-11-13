@@ -129,3 +129,16 @@ Custom Svelte components (such as shadcn-svelte UI components like `<Button>`) a
 3. **Layout Props (`setLayoutProps`) Placement**:
     - Call `setLayoutProps` directly at the **top level of `<script>`**, NOT inside `onMount` or `$effect`.
     - Calling `setLayoutProps` synchronously in `<script>` allows the layout store (`storeState.shared`) to be populated before initial DOM rendering, avoiding layout shift (CLS) or breadcrumbs flashing.
+
+---
+
+## Global Event Listeners & `onMount` Structure
+
+1. **Prefer `<svelte:window>` and `<svelte:document>` in Components**:
+    - For standard `window` or `document` listeners (e.g., `onkeydown`, `onpointerdown`), declare `<svelte:window onkeydown={handleKeyDown} />` or `<svelte:document onpointerdown={handlePointerDown} />` in the template so Svelte handles registration and cleanup automatically.
+
+2. **Use `on()` from `svelte/events` Over Manual `addEventListener` / `removeEventListener`**:
+    - When you need listener options (`{ capture: true }`, `{ passive: true }`), conditional setup in `onMount`, non-window targets (e.g., `MediaQueryList`), or listeners inside `.ts` modules, use `on(target, event, handler, options)` and return its teardown function.
+
+3. **Keep `onMount` Focused on Orchestration**:
+    - Declare named event handlers and helper functions at the top level of `<script>`, leaving `onMount` concise for mount-time side effects, async fetches, and returning cleanup callbacks.
