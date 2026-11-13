@@ -745,7 +745,7 @@ return [
             'word' => 'supplement',
             'part_of_speech' => 'n.',
             'pronunciation' => '/ˈsəpɫəmənt/',
-            'definition' => '增補',
+            'definition' => '補充物',
             'example_sentence' => 'The doctor recommended a vitamin supplement to improve her diet.',
             'example_translation' => '醫生建議她服用維生素補充品，以改善飲食。',
         ],
