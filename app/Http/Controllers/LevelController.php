@@ -20,8 +20,11 @@ class LevelController extends Controller
     /**
      * Display the vocabulary levels overview page.
      */
-    public function index(Request $request, GetLevels $getLevels, GetLevelsProgress $getLevelsProgress): Response
-    {
+    public function index(
+        Request $request,
+        GetLevels $getLevels,
+        GetLevelsProgress $getLevelsProgress,
+    ): Response {
         /** @var User|null $user */
         $user = $request->user();
 

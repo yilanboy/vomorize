@@ -12,19 +12,21 @@ test('guest can access levels page and sees inertia Levels component', function 
     $response = $this->get(route('levels.index'));
 
     $response->assertOk();
-    $response->assertInertia(fn (Assert $page) => $page
-        ->component('levels/index/Page')
+    $response->assertInertia(
+        fn (Assert $page) => $page
+            ->component('levels/index/Page'),
     );
 });
 
 test('authenticated user can access levels page', function () {
-    $user = User::factory()->create();
+    $user = LoginAsUser();
 
-    $response = $this->actingAs($user)->get(route('levels.index'));
+    $response = $this->get(route('levels.index'));
 
     $response->assertOk();
-    $response->assertInertia(fn (Assert $page) => $page
-        ->component('levels/index/Page')
+    $response->assertInertia(
+        fn (Assert $page) => $page
+            ->component('levels/index/Page'),
     );
 });
 
@@ -32,13 +34,14 @@ test('levels page shares ui translation keys for levels_page', function () {
     $response = $this->get(route('levels.index'));
 
     $response->assertOk();
-    $response->assertInertia(fn (Assert $page) => $page
-        ->has('translations.ui.levels_page.title')
-        ->has('translations.ui.levels_page.subtitle')
-        ->has('translations.ui.levels_page.level_badge')
-        ->has('translations.ui.levels_page.stats')
-        ->has('translations.ui.levels_page.mastery')
-        ->has('translations.ui.levels_page.enter_level')
+    $response->assertInertia(
+        fn (Assert $page) => $page
+            ->has('translations.ui.levels_page.title')
+            ->has('translations.ui.levels_page.subtitle')
+            ->has('translations.ui.levels_page.level_badge')
+            ->has('translations.ui.levels_page.stats')
+            ->has('translations.ui.levels_page.mastery')
+            ->has('translations.ui.levels_page.enter_level'),
     );
 });
 
@@ -51,15 +54,16 @@ test('levels page passes levels data loaded from database with null progress for
     $response = $this->get(route('levels.index'));
 
     $response->assertOk();
-    $response->assertInertia(fn (Assert $page) => $page
-        ->component('levels/index/Page')
-        ->has('levels', 1)
-        ->where('levels.0.id', $level->id)
-        ->where('levels.0.name', '等級 1')
-        ->where('levels.0.description', '基礎入門：核心常用 1,000 單字')
-        ->where('levels.0.vocabularies_count', 0)
-        ->where('levels.0.groups_count', 0)
-        ->where('progress', null)
+    $response->assertInertia(
+        fn (Assert $page) => $page
+            ->component('levels/index/Page')
+            ->has('levels', 1)
+            ->where('levels.0.id', $level->id)
+            ->where('levels.0.name', '等級 1')
+            ->where('levels.0.description', '基礎入門：核心常用 1,000 單字')
+            ->where('levels.0.vocabularies_count', 0)
+            ->where('levels.0.groups_count', 0)
+            ->where('progress', null),
     );
 });
 
@@ -72,9 +76,11 @@ test('levels page calculates mastery percentage correctly based on 6 stages per 
     ]);
 
     // Create 4 groups for this level (4 groups * 6 stages = 24 max stages)
-    $groups = Group::factory()->count(4)->create([
-        'level_id' => $level->id,
-    ]);
+    $groups = Group::factory()
+        ->count(4)
+        ->create([
+            'level_id' => $level->id,
+        ]);
 
     // Group 1: Stage 6 (fully mastered)
     LearningProgress::factory()->create([
@@ -102,8 +108,7 @@ test('levels page calculates mastery percentage correctly based on 6 stages per 
         ->where('levels.0.groups_count', 4)
         ->where("progress.{$level->id}.total_stages", 12)
         ->where("progress.{$level->id}.max_stages", 24)
-        ->where("progress.{$level->id}.mastery_percentage", 50)
-    );
+        ->where("progress.{$level->id}.mastery_percentage", 50));
 });
 
 test('levels page calculates mastery percentage accurately for 100 groups standard level', function () {
@@ -115,9 +120,11 @@ test('levels page calculates mastery percentage accurately for 100 groups standa
     ]);
 
     // Create 100 groups (100 * 6 = 600 max stages)
-    $groups = Group::factory()->count(100)->create([
-        'level_id' => $level->id,
-    ]);
+    $groups = Group::factory()
+        ->count(100)
+        ->create([
+            'level_id' => $level->id,
+        ]);
 
     // User completed 10 groups to stage 6 (60 points) and 10 groups to stage 3 (30 points) = 90 / 600 = 15%
     for ($i = 0; $i < 10; $i++) {
@@ -148,8 +155,7 @@ test('levels page calculates mastery percentage accurately for 100 groups standa
         ->where('levels.0.groups_count', 100)
         ->where("progress.{$level->id}.total_stages", 90)
         ->where("progress.{$level->id}.max_stages", 600)
-        ->where("progress.{$level->id}.mastery_percentage", 15)
-    );
+        ->where("progress.{$level->id}.mastery_percentage", 15));
 });
 
 test('levels page calculates decimal mastery percentage for early progress', function () {
@@ -159,9 +165,11 @@ test('levels page calculates decimal mastery percentage for early progress', fun
         'name' => '等級 1',
     ]);
 
-    $groups = Group::factory()->count(100)->create([
-        'level_id' => $level->id,
-    ]);
+    $groups = Group::factory()
+        ->count(100)
+        ->create([
+            'level_id' => $level->id,
+        ]);
 
     // User completed 1 stage of 1 group: 1 / 600 = 0.16666...% -> 0.17%
     LearningProgress::factory()->create([
@@ -178,6 +186,5 @@ test('levels page calculates decimal mastery percentage for early progress', fun
         ->component('levels/index/Page')
         ->where("progress.{$level->id}.total_stages", 1)
         ->where("progress.{$level->id}.max_stages", 600)
-        ->where("progress.{$level->id}.mastery_percentage", 0.17)
-    );
+        ->where("progress.{$level->id}.mastery_percentage", 0.17));
 });

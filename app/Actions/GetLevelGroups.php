@@ -21,7 +21,6 @@ readonly class GetLevelGroups
     {
         $groups = $level->groups()->orderBy('sequence', 'asc')->get(['id', 'sequence']);
 
-        /** @var Collection<int, array{id: int, sequence: int, vocabularies_count: int}> */
         return $groups->map(fn (Group $group): array => [
             'id' => $group->id,
             'sequence' => $group->sequence,

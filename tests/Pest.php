@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use App\Models\User;
 use Database\Factories\GroupFactory;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
@@ -51,7 +52,17 @@ expect()->extend('toBeOne', function () {
  |
  */
 
-function something()
+function loginAsUser(User|int|null $user = null)
 {
-    // ..
+    if (is_null($user)) {
+        $user = User::factory()->create();
+    }
+
+    if (is_int($user)) {
+        $user = User::findOrFail($user);
+    }
+
+    test()->actingAs($user);
+
+    return $user;
 }

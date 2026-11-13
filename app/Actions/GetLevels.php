@@ -25,7 +25,6 @@ readonly class GetLevels
             ->orderBy('id', 'asc')
             ->get(['id', 'name', 'description']);
 
-        /** @var Collection<int, array{id: int, name: string, description: string, vocabularies_count: int, groups_count: int}> */
         return $levels->map(fn (Level $level): array => [
             'id' => $level->id,
             'name' => $level->name,

@@ -53,7 +53,9 @@ it('can generate audio for a specific vocabulary ID', function () {
         ->assertExists("vocabulary/$vocabulary->id/sentence.mp3");
 
     Audio::assertGenerated(fn (AudioPrompt $prompt) => $prompt->contains($vocabulary->word) && $prompt->isFemale());
-    Audio::assertGenerated(fn (AudioPrompt $prompt) => $prompt->contains($vocabulary->example_sentence) && $prompt->isFemale());
+    Audio::assertGenerated(
+        fn (AudioPrompt $prompt) => $prompt->contains($vocabulary->example_sentence) && $prompt->isFemale(),
+    );
 });
 
 it('can generate audio for multiple comma-separated IDs while excluding others', function () {
@@ -75,11 +77,14 @@ it('can generate audio for multiple comma-separated IDs while excluding others',
 });
 
 it('can generate audio for a range of IDs', function () {
-    $targets = Vocabulary::factory()->count(3)->sequence(
-        ['id' => 1],
-        ['id' => 2],
-        ['id' => 3],
-    )->create();
+    $targets = Vocabulary::factory()
+        ->count(3)
+        ->sequence(
+            ['id' => 1],
+            ['id' => 2],
+            ['id' => 3],
+        )
+        ->create();
     $outside = Vocabulary::factory()->create(['id' => 4]);
 
     $this
@@ -134,7 +139,8 @@ it('purges cloudflare cdn cache with vocabulary prefixes after generating audio'
         ->assertSuccessful();
 
     Http::assertSent(function (Request $request) {
-        return $request->url() === 'https://api.cloudflare.com/client/v4/zones/test_zone_id/purge_cache'
+        return
+            $request->url() === 'https://api.cloudflare.com/client/v4/zones/test_zone_id/purge_cache'
             && $request['prefixes'] === ['assets.vomorize.com/vocabulary/1/'];
     });
 });
@@ -154,7 +160,9 @@ it('fails and outputs error when cloudflare cdn purge fails', function () {
 
     $this
         ->artisan('generate:audio --id=1')
-        ->expectsOutputToContain('Failed to purge Cloudflare CDN cache: Cloudflare CDN purge failed (Status 403): Zone not found or unauthorized')
+        ->expectsOutputToContain(
+            'Failed to purge Cloudflare CDN cache: Cloudflare CDN purge failed (Status 403): Zone not found or unauthorized',
+        )
         ->assertFailed();
 });
 
@@ -165,6 +173,8 @@ it('fails and outputs error when cloudflare credentials are missing', function (
 
     $this
         ->artisan('generate:audio --id=1')
-        ->expectsOutputToContain('Failed to purge Cloudflare CDN cache: Cloudflare Zone ID is not configured (CLOUDFLARE_ZONE_ID).')
+        ->expectsOutputToContain(
+            'Failed to purge Cloudflare CDN cache: Cloudflare Zone ID is not configured (CLOUDFLARE_ZONE_ID).',
+        )
         ->assertFailed();
 });

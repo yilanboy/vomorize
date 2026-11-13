@@ -6,6 +6,7 @@ namespace App\Actions;
 
 use App\Models\Level;
 use App\Models\User;
+use Illuminate\Support\Facades\DB;
 
 readonly class GetLevelsProgress
 {
@@ -22,7 +23,7 @@ readonly class GetLevelsProgress
 
         $progressByLevel = $user
             ->learningProgress()
-            ->selectRaw('level_id, sum(stage) as total_stages')
+            ->select('level_id', DB::raw('SUM(stage) as total_stages'))
             ->groupBy('level_id')
             ->pluck('total_stages', 'level_id');
 
