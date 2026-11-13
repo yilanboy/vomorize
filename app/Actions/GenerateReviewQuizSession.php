@@ -70,7 +70,7 @@ readonly class GenerateReviewQuizSession
         $vocabularies = $this->getGroupVocabularies->handle($group);
         $cdnUrl = rtrim((string) (config('filesystems.disks.r2.url') ?: 'https://assets.vomorize.com'), '/');
 
-        if (count($vocabularies) < 10) {
+        if (count($vocabularies) < Group::VOCABULARY_PER_GROUP) {
             return [
                 'steps' => [],
                 'correct_audio_url' => "{$cdnUrl}/quiz/correct.mp3",

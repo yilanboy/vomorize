@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Actions;
 
+use App\Models\Group;
 use App\Models\LearningProgress;
 use App\Models\Level;
 use App\Models\User;
@@ -53,7 +54,7 @@ readonly class GetDashboardLevelProgress
             $levelId = (int) $level->id;
             $groupsInLevel = (int) ($level->groups_count ?? 100);
             $vocabCount = (int) ($level->vocabularies_count ?? 0);
-            $wordsInLevel = $vocabCount > 0 ? $vocabCount : ($groupsInLevel * 10);
+            $wordsInLevel = $vocabCount > 0 ? $vocabCount : ($groupsInLevel * Group::VOCABULARY_PER_GROUP);
 
             $progressForLevel = $userProgress->where('level_id', $levelId);
 
@@ -105,8 +106,8 @@ readonly class GetDashboardLevelProgress
             'overall' => [
                 'mastered_groups_count' => $totalMasteredGroups,
                 'total_groups_count' => $totalGroupsAll,
-                'mastered_words_count' => $totalMasteredGroups * 10,
-                'total_words_count' => $totalGroupsAll * 10,
+                'mastered_words_count' => $totalMasteredGroups * Group::VOCABULARY_PER_GROUP,
+                'total_words_count' => $totalGroupsAll * Group::VOCABULARY_PER_GROUP,
                 'mastery_percentage' => $overallMasteryPct,
             ],
         ];

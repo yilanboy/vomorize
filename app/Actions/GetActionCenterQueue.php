@@ -92,7 +92,7 @@ readonly class GetActionCenterQueue
                     'group_id' => $progress->group_id,
                     'level_id' => $levelId,
                     'group_title' => $groupTitle,
-                    'words_count' => 10,
+                    'words_count' => Group::VOCABULARY_PER_GROUP,
                     'stage' => $stage,
                     'target_stage' => $targetStage,
                     'badge_text' => $badgeText,
@@ -173,7 +173,7 @@ readonly class GetActionCenterQueue
                     'level_id' => $nextGroup->level_id,
                     'sequence' => $nextGroup->sequence,
                 ]),
-                'words_count' => 10,
+                'words_count' => Group::VOCABULARY_PER_GROUP,
                 'start_url' => "/groups/{$nextGroup->id}/intro",
             ];
         }

@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers;
 
+use App\Models\Group;
 use App\Models\LearningProgress;
 use App\Models\User;
 use Illuminate\Http\Request;
@@ -28,7 +29,7 @@ class QuizController extends Controller
                 ->where('user_id', $user->id)
                 ->where('stage', '>=', 1)
                 ->count();
-            $unlockedWordCount = $passedGroupCount * 10;
+            $unlockedWordCount = $passedGroupCount * Group::VOCABULARY_PER_GROUP;
         }
 
         return Inertia::render('quiz/Index', [

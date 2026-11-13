@@ -1,6 +1,6 @@
 <script lang="ts">
     import { onMount } from 'svelte';
-    import { Link, setLayoutProps } from '@inertiajs/svelte';
+    import { Link, page, setLayoutProps } from '@inertiajs/svelte';
     import CheckCircle2 from '@lucide/svelte/icons/check-circle-2';
     import Circle from '@lucide/svelte/icons/circle';
     import Clock from '@lucide/svelte/icons/clock';
@@ -143,7 +143,8 @@
                 >
                     {t('ui.level_detail.subtitle', {
                         words: (
-                            level.vocabularies_count ?? level.groups_count * 10
+                            level.vocabularies_count ??
+                            level.groups_count * page.props.vocabularyPerGroup
                         ).toLocaleString(),
                         groups: level.groups_count,
                     })}
@@ -405,7 +406,8 @@
             <div class="text-foreground shrink-0 font-medium">
                 {t('ui.level_detail.footer_stats', {
                     words: (
-                        level.vocabularies_count ?? level.groups_count * 10
+                        level.vocabularies_count ??
+                        level.groups_count * page.props.vocabularyPerGroup
                     ).toLocaleString(),
                     groups: level.groups_count,
                 })}

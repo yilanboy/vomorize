@@ -25,7 +25,7 @@ readonly class GetLevelGroups
         return $groups->map(fn (Group $group): array => [
             'id' => $group->id,
             'sequence' => $group->sequence,
-            'vocabularies_count' => 10,
+            'vocabularies_count' => Group::VOCABULARY_PER_GROUP,
         ]);
     }
 }

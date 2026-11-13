@@ -12,10 +12,7 @@ test('guest visits custom quiz page with zero unlocked words and sees empty stat
     visit('/quiz')
         ->assertNoSmoke()
         ->assertSee('自訂測驗')
-        ->assertSee('尚未解鎖測驗題庫')
-        ->assertSee('步驟 1')
-        ->assertSee('步驟 2')
-        ->assertSee('步驟 3')
+        ->assertSee('尚未解鎖自訂測驗')
         ->assertSee('前往單字等級開始學習');
 });
 

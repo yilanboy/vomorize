@@ -110,7 +110,7 @@ readonly class GenerateCustomQuizSession
 
         $availableGroupIds = $this->resolveAvailableGroupIds($user, $passedGroupIds);
 
-        $totalWordsAvailable = count($availableGroupIds) * 10;
+        $totalWordsAvailable = count($availableGroupIds) * Group::VOCABULARY_PER_GROUP;
         if ($totalWordsAvailable < $questionCount || $questionCount <= 0) {
             throw new InvalidArgumentException("Insufficient vocabulary pool for the requested {$questionCount} questions.");
         }

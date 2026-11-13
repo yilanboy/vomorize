@@ -78,11 +78,11 @@ readonly class GetDashboardKpis
         return [
             'streak' => $this->getUserStreak->handle($user),
             'learning_words' => [
-                'words_count' => $learningGroupsCount * 10,
+                'words_count' => $learningGroupsCount * Group::VOCABULARY_PER_GROUP,
                 'groups_count' => $learningGroupsCount,
             ],
             'mastered_words' => [
-                'words_count' => $masteredGroupsCount * 10,
+                'words_count' => $masteredGroupsCount * Group::VOCABULARY_PER_GROUP,
                 'groups_count' => $masteredGroupsCount,
                 'percentage' => $masteredPercentage,
             ],

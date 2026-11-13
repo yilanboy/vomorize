@@ -1,6 +1,6 @@
 <script lang="ts">
     import { onMount } from 'svelte';
-    import { Link, setLayoutProps, useForm } from '@inertiajs/svelte';
+    import { Link, page, setLayoutProps, useForm } from '@inertiajs/svelte';
     import ArrowRight from '@lucide/svelte/icons/arrow-right';
     import Check from '@lucide/svelte/icons/check';
     import CheckCircle2 from '@lucide/svelte/icons/check-circle-2';
@@ -41,7 +41,9 @@
 
     let localPassedGroupCount = $state<number | null>(null);
     let localUnlockedWordCount = $state<number | null>(null);
-    let isClientLoaded = $state(false);
+    const isClientLoaded = $derived(
+        unlockedWordCount !== null || localUnlockedWordCount !== null,
+    );
 
     const form = useForm({
         question_count: 10,
@@ -51,16 +53,7 @@
 
     const COUNT_OPTIONS = [10, 20, 30, 50, 100] as const;
 
-    onMount(async () => {
-        if (unlockedWordCount === null) {
-            const records = await learningProgressDb.getAllProgress();
-            const passed = records.filter((r) => r.stage >= 1);
-            form.passed_group_ids = passed.map((r) => r.group_id);
-            localPassedGroupCount = passed.length;
-            localUnlockedWordCount = passed.length * 10;
-        }
-        isClientLoaded = true;
-    });
+    const vocabularyPerGroup = $derived(page.props.vocabularyPerGroup);
 
     const effectiveWordCount = $derived(
         unlockedWordCount ?? localUnlockedWordCount ?? 0,
@@ -68,7 +61,7 @@
     const effectiveGroupCount = $derived(
         passedGroupCount ?? localPassedGroupCount ?? 0,
     );
-    const isUnlocked = $derived(effectiveWordCount >= 10);
+    const isUnlocked = $derived(effectiveWordCount >= vocabularyPerGroup);
     const poolCoveragePercent = $derived(
         effectiveWordCount > 0
             ? Math.min(
@@ -104,6 +97,16 @@
             startQuiz();
         }
     }
+
+    onMount(async () => {
+        if (unlockedWordCount === null) {
+            const records = await learningProgressDb.getAllProgress();
+            const passed = records.filter((r) => r.stage >= 1);
+            form.passed_group_ids = passed.map((r) => r.group_id);
+            localPassedGroupCount = passed.length;
+            localUnlockedWordCount = passed.length * vocabularyPerGroup;
+        }
+    });
 </script>
 
 <svelte:window onkeydown={handleKeydown} />
@@ -115,158 +118,76 @@
 >
     <Breadcrumbs {breadcrumbs} />
 
-    {#if isClientLoaded && !isUnlocked}
-        <!-- Architectural Empty State: Unlock Blueprint Workbench -->
-        <section
-            class="border-border/80 bg-card divide-border/80 divide-y overflow-hidden rounded-2xl border shadow-xs"
+    {#if !isClientLoaded}
+        <div
+            class="flex min-h-[50vh] items-center justify-center py-6 sm:py-12"
+            aria-hidden="true"
         >
-            <!-- Top Header & Pool Readiness Telemetry -->
-            <div class="p-6 sm:p-8">
+            <div
+                class="border-border/80 bg-card/60 w-full max-w-lg rounded-2xl border p-8 text-center sm:p-10"
+            >
                 <div
-                    class="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between"
+                    class="bg-muted/60 mx-auto size-14 animate-pulse rounded-2xl"
+                ></div>
+                <div
+                    class="bg-muted/60 mx-auto mt-6 h-7 w-48 animate-pulse rounded-md"
+                ></div>
+                <div
+                    class="bg-muted/40 mx-auto mt-3 h-10 w-full max-w-sm animate-pulse rounded-md"
+                ></div>
+                <div
+                    class="bg-muted/60 mx-auto mt-8 h-11 w-44 animate-pulse rounded-lg"
+                ></div>
+            </div>
+        </div>
+    {:else if !isUnlocked}
+        <!-- Centered Empty State Card -->
+        <section
+            class="flex min-h-[50vh] items-center justify-center py-6 sm:py-12"
+            aria-labelledby="custom-quiz-empty-title"
+        >
+            <div
+                class="border-border/80 bg-card w-full max-w-lg rounded-2xl border p-8 text-center shadow-xs sm:p-10"
+            >
+                <div
+                    class="bg-muted/70 text-foreground mx-auto flex size-14 items-center justify-center rounded-2xl"
                 >
-                    <div class="max-w-2xl">
-                        <h1
-                            class="text-foreground text-2xl font-extrabold tracking-tight sm:text-3xl"
-                        >
-                            {t('ui.quiz.custom.title')}
-                        </h1>
-                        <p
-                            class="text-muted-foreground mt-2 text-sm leading-relaxed sm:text-base"
-                        >
-                            {t('ui.quiz.custom.subtitle')}
-                        </p>
-                    </div>
-
-                    <div
-                        class="border-border/80 bg-muted/30 flex shrink-0 flex-col gap-2 rounded-xl border px-4 py-3 sm:min-w-64"
-                    >
-                        <div class="flex items-center justify-between gap-4">
-                            <span
-                                class="text-muted-foreground text-sm font-medium"
-                            >
-                                {t('ui.quiz.custom.empty_state.status_badge')}
-                            </span>
-                            <span
-                                class="text-foreground font-mono text-sm font-bold tabular-nums"
-                            >
-                                0%
-                            </span>
-                        </div>
-                        <div class="grid grid-cols-10 gap-1">
-                            {#each Array.from({ length: 10 }, (_, idx) => idx) as segment (segment)}
-                                <div
-                                    class="bg-border/80 h-1.5 rounded-xs"
-                                ></div>
-                            {/each}
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Unlock Requirement Callout -->
-            <div class="bg-muted/20 p-6 sm:p-8">
-                <div class="max-w-2xl space-y-3">
-                    <h2
-                        class="text-foreground text-xl font-bold tracking-tight sm:text-2xl"
-                    >
-                        {t('ui.quiz.custom.empty_state.title')}
-                    </h2>
-                    <p
-                        class="text-muted-foreground text-sm leading-relaxed sm:text-base"
-                    >
-                        {t('ui.quiz.custom.empty_state.description')}
-                    </p>
-                    <div
-                        class="inline-flex items-center gap-2 rounded-lg border border-emerald-200 bg-emerald-50 px-3.5 py-2 text-sm font-semibold text-emerald-800 dark:border-emerald-800/60 dark:bg-emerald-950/40 dark:text-emerald-300"
-                    >
-                        <CheckCircle2 class="size-4 shrink-0" />
-                        <span>{t('ui.quiz.custom.empty_state.milestone')}</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 3-Step Unlock Progression Grid -->
-            <div
-                class="divide-border/80 grid grid-cols-1 divide-y md:grid-cols-3 md:divide-x md:divide-y-0"
-            >
-                <div class="space-y-2 p-6">
-                    <div class="flex items-center justify-between">
-                        <span
-                            class="text-foreground text-base font-bold tracking-tight"
-                        >
-                            {t('ui.quiz.custom.empty_state.step_1_title')}
-                        </span>
-                        <span
-                            class="border-border bg-muted/60 text-muted-foreground rounded-md border px-2 py-0.5 font-mono text-sm font-semibold tabular-nums"
-                        >
-                            {t('ui.quiz.custom.empty_state.step_1_badge')}
-                        </span>
-                    </div>
-                    <p class="text-muted-foreground text-sm leading-relaxed">
-                        {t('ui.quiz.custom.empty_state.step_1_desc')}
-                    </p>
+                    <Lock class="size-6" />
                 </div>
 
-                <div class="space-y-2 p-6">
-                    <div class="flex items-center justify-between">
-                        <span
-                            class="text-foreground text-base font-bold tracking-tight"
-                        >
-                            {t('ui.quiz.custom.empty_state.step_2_title')}
-                        </span>
-                        <span
-                            class="border-border bg-muted/60 text-muted-foreground rounded-md border px-2 py-0.5 font-mono text-sm font-semibold tabular-nums"
-                        >
-                            {t('ui.quiz.custom.empty_state.step_2_badge')}
-                        </span>
-                    </div>
-                    <p class="text-muted-foreground text-sm leading-relaxed">
-                        {t('ui.quiz.custom.empty_state.step_2_desc')}
-                    </p>
-                </div>
+                <h1
+                    id="custom-quiz-empty-title"
+                    class="text-foreground mt-6 text-xl font-bold tracking-tight sm:text-2xl"
+                >
+                    {t('ui.quiz.custom.empty_state.title')}
+                </h1>
 
-                <div class="space-y-2 p-6">
-                    <div class="flex items-center justify-between">
-                        <span
-                            class="text-foreground text-base font-bold tracking-tight"
-                        >
-                            {t('ui.quiz.custom.empty_state.step_3_title')}
-                        </span>
-                        <span
-                            class="rounded-md border border-blue-200 bg-blue-50 px-2 py-0.5 font-mono text-sm font-semibold text-blue-700 tabular-nums dark:border-blue-800/60 dark:bg-blue-950/50 dark:text-blue-300"
-                        >
-                            {t('ui.quiz.custom.empty_state.step_3_badge')}
-                        </span>
-                    </div>
-                    <p class="text-muted-foreground text-sm leading-relaxed">
-                        {t('ui.quiz.custom.empty_state.step_3_desc')}
-                    </p>
-                </div>
-            </div>
-
-            <!-- Action Footer -->
-            <div
-                class="bg-muted/30 flex flex-col items-start justify-between gap-4 p-6 sm:flex-row sm:items-center sm:px-8"
-            >
-                <p class="text-muted-foreground text-sm">
-                    {t('ui.quiz.custom.empty_state.guest_hint')}
+                <p
+                    class="text-muted-foreground mt-3 text-sm leading-relaxed sm:text-base"
+                >
+                    {t('ui.quiz.custom.empty_state.description')}
                 </p>
 
-                <Button
-                    asChild
-                    size="lg"
-                    class="h-12 w-full shrink-0 gap-2 px-6 text-base font-semibold sm:w-auto"
-                >
-                    {#snippet children(props)}
-                        <Link href={levelsIndex.url()} class={props.class}>
-                            <span>
-                                {t('ui.quiz.custom.empty_state.action')}
-                            </span>
-                            <ArrowRight class="size-4.5" />
-                        </Link>
-                    {/snippet}
-                </Button>
+                <div class="mt-8 flex flex-col items-center gap-3.5">
+                    <Button
+                        asChild
+                        size="lg"
+                        class="h-11 w-full gap-2 px-6 text-sm font-semibold sm:w-auto"
+                    >
+                        {#snippet children(props)}
+                            <Link href={levelsIndex.url()} class={props.class}>
+                                <span>
+                                    {t('ui.quiz.custom.empty_state.action')}
+                                </span>
+                                <ArrowRight class="size-4" />
+                            </Link>
+                        {/snippet}
+                    </Button>
+
+                    <p class="text-muted-foreground text-sm">
+                        {t('ui.quiz.custom.empty_state.guest_hint')}
+                    </p>
+                </div>
             </div>
         </section>
     {:else}

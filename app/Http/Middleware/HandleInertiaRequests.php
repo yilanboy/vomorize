@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Http\Middleware;
 
+use App\Models\Group;
 use Illuminate\Http\Request;
 use Inertia\Middleware;
 
@@ -62,6 +63,7 @@ class HandleInertiaRequests extends Middleware
             'translations' => fn () => [
                 'ui' => trans('ui'),
             ],
+            'vocabularyPerGroup' => fn (): int => Group::VOCABULARY_PER_GROUP,
         ];
     }
 }

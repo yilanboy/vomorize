@@ -22,6 +22,16 @@ test('vocabulary seeder creates groups and vocabularies for all levels', functio
             ->and($level->vocabularies()->count())->toBe(1000);
     }
 
+    expect(
+        Group::query()
+            ->withCount('vocabularies')
+            ->get()
+            ->pluck('vocabularies_count')
+            ->unique()
+            ->values()
+            ->all()
+    )->toBe([10]);
+
     $vocabulary = Vocabulary::first();
     expect($vocabulary->level_id)->toBe(1)
         ->and($vocabulary->group_id)->toBe(1)

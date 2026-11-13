@@ -7,6 +7,7 @@ namespace App\Http\Controllers;
 use App\Actions\GenerateCustomQuizSession;
 use App\Actions\RecordTodayCheckIn;
 use App\Http\Requests\CustomQuizRequest;
+use App\Models\Group;
 use App\Models\User;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
@@ -28,7 +29,7 @@ class CustomQuizSessionController extends Controller
 
         $availableGroupIds = $generateCustomQuizSession->resolveAvailableGroupIds($user, $passedGroupIds);
 
-        if (count($availableGroupIds) * 10 < $questionCount || $questionCount <= 0) {
+        if (count($availableGroupIds) * Group::VOCABULARY_PER_GROUP < $questionCount || $questionCount <= 0) {
             return to_route('quiz.index');
         }
 

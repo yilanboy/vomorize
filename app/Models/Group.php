@@ -12,6 +12,8 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class Group extends Model
 {
+    public const int VOCABULARY_PER_GROUP = 10;
+
     /** @use HasFactory<GroupFactory> */
     use HasFactory;
 

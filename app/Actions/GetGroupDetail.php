@@ -43,7 +43,7 @@ readonly class GetGroupDetail
             'sequence' => $group->sequence,
             'level_id' => $group->level_id,
             'level_name' => $group->level->name,
-            'vocabularies_count' => (int) ($group->vocabularies_count ?? 10),
+            'vocabularies_count' => (int) ($group->vocabularies_count ?? Group::VOCABULARY_PER_GROUP),
             'prev_group_id' => $prevGroupId,
             'next_group_id' => $nextGroupId,
         ];
