@@ -1,6 +1,5 @@
 <script lang="ts">
     import { onMount } from 'svelte';
-    import { on } from 'svelte/events';
     import ArrowRight from '@lucide/svelte/icons/arrow-right';
     import CheckCircle2 from '@lucide/svelte/icons/check-circle-2';
     import Delete from '@lucide/svelte/icons/delete';
@@ -174,64 +173,64 @@
         onResult(correct);
     }
 
+    function handleKeyDown(event: KeyboardEvent): void {
+        const target = event.target as HTMLElement | null;
+        if (
+            target &&
+            (target.tagName === 'INPUT' ||
+                target.tagName === 'TEXTAREA' ||
+                target.isContentEditable)
+        ) {
+            return;
+        }
+
+        if (event.key === ' ' || event.code === 'Space') {
+            event.preventDefault();
+            playAudio();
+            return;
+        }
+
+        if (event.key === 'Enter') {
+            event.preventDefault();
+            if (isAnswered && !isCorrect) {
+                onNext();
+            }
+            return;
+        }
+
+        if (event.key === 'Backspace') {
+            event.preventDefault();
+            handleBackspace();
+            return;
+        }
+
+        const keyChar = event.key.toLowerCase();
+        if (/^[a-z]$/.test(keyChar)) {
+            event.preventDefault();
+            if (isAnswered || disabled) {
+                return;
+            }
+
+            const availableTile = question.tiles.find(
+                (tile) =>
+                    tile.char === keyChar &&
+                    !usedSlotIndices.has(tile.slot_index),
+            );
+
+            if (availableTile) {
+                handleTileClick(availableTile);
+            }
+        }
+    }
+
     onMount(() => {
         if (autoPlay && audioUrl) {
             playAudio();
         }
-
-        function handleKeyDown(event: KeyboardEvent): void {
-            const target = event.target as HTMLElement | null;
-            if (
-                target &&
-                (target.tagName === 'INPUT' ||
-                    target.tagName === 'TEXTAREA' ||
-                    target.isContentEditable)
-            ) {
-                return;
-            }
-
-            if (event.key === ' ' || event.code === 'Space') {
-                event.preventDefault();
-                playAudio();
-                return;
-            }
-
-            if (event.key === 'Enter') {
-                event.preventDefault();
-                if (isAnswered && !isCorrect) {
-                    onNext();
-                }
-                return;
-            }
-
-            if (event.key === 'Backspace') {
-                event.preventDefault();
-                handleBackspace();
-                return;
-            }
-
-            const keyChar = event.key.toLowerCase();
-            if (/^[a-z]$/.test(keyChar)) {
-                event.preventDefault();
-                if (isAnswered || disabled) {
-                    return;
-                }
-
-                const availableTile = question.tiles.find(
-                    (tile) =>
-                        tile.char === keyChar &&
-                        !usedSlotIndices.has(tile.slot_index),
-                );
-
-                if (availableTile) {
-                    handleTileClick(availableTile);
-                }
-            }
-        }
-
-        return on(window, 'keydown', handleKeyDown);
     });
 </script>
+
+<svelte:window onkeydown={handleKeyDown} />
 
 <div
     class="border-border/80 bg-card mx-auto flex h-[580px] w-full max-w-xl flex-col justify-between rounded-2xl border px-3 py-6 shadow-sm transition-all sm:h-[600px] sm:p-8"

@@ -1,6 +1,6 @@
 <script lang="ts">
     import type { Snippet } from 'svelte';
-    import { onMount, setContext } from 'svelte';
+    import { setContext } from 'svelte';
     import { cn } from '@/lib/utils';
     import { DROPDOWN_MENU_CONTEXT, type DropdownMenuContext } from './context';
 
@@ -24,23 +24,17 @@
 
     setContext(DROPDOWN_MENU_CONTEXT, context);
 
-    onMount(() => {
-        const handlePointerDown = (event: PointerEvent) => {
-            if (!open || !menuElement) return;
+    const handlePointerDown = (event: PointerEvent) => {
+        if (!open || !menuElement) return;
 
-            const target = event.target as Node | null;
-            if (target && !menuElement.contains(target)) {
-                open = false;
-            }
-        };
-
-        document.addEventListener('pointerdown', handlePointerDown);
-
-        return () => {
-            document.removeEventListener('pointerdown', handlePointerDown);
-        };
-    });
+        const target = event.target as Node | null;
+        if (target && !menuElement.contains(target)) {
+            open = false;
+        }
+    };
 </script>
+
+<svelte:document onpointerdown={handlePointerDown} />
 
 <div class={cn('relative', className)} bind:this={menuElement}>
     {@render children?.()}

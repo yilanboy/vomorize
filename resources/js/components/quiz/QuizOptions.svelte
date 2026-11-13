@@ -1,5 +1,4 @@
 <script lang="ts">
-    import { onMount } from 'svelte';
     import CheckCircle2 from '@lucide/svelte/icons/check-circle-2';
     import XCircle from '@lucide/svelte/icons/x-circle';
     import { t } from '@/lib/i18n';
@@ -28,38 +27,33 @@
         onSelect(option);
     }
 
-    onMount(() => {
-        function handleKeyDown(event: KeyboardEvent) {
-            if (disabled || selectedOptionId !== null) {
-                return;
-            }
-
-            const target = event.target as HTMLElement | null;
-            if (
-                target &&
-                (target.tagName === 'INPUT' ||
-                    target.tagName === 'TEXTAREA' ||
-                    target.isContentEditable)
-            ) {
-                return;
-            }
-
-            const key = event.key;
-            if (['1', '2', '3', '4'].includes(key)) {
-                const index = parseInt(key, 10) - 1;
-                if (options[index]) {
-                    event.preventDefault();
-                    handleSelect(options[index]);
-                }
-            }
+    function handleKeyDown(event: KeyboardEvent): void {
+        if (disabled || selectedOptionId !== null) {
+            return;
         }
 
-        window.addEventListener('keydown', handleKeyDown);
-        return () => {
-            window.removeEventListener('keydown', handleKeyDown);
-        };
-    });
+        const target = event.target as HTMLElement | null;
+        if (
+            target &&
+            (target.tagName === 'INPUT' ||
+                target.tagName === 'TEXTAREA' ||
+                target.isContentEditable)
+        ) {
+            return;
+        }
+
+        const key = event.key;
+        if (['1', '2', '3', '4'].includes(key)) {
+            const index = parseInt(key, 10) - 1;
+            if (options[index]) {
+                event.preventDefault();
+                handleSelect(options[index]);
+            }
+        }
+    }
 </script>
+
+<svelte:window onkeydown={handleKeyDown} />
 
 <div class="flex flex-col gap-2.5 sm:gap-3">
     {#each options as option, index (option.id)}

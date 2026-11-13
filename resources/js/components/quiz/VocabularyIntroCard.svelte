@@ -41,34 +41,31 @@
         }
     }
 
+    function handleKeyDown(event: KeyboardEvent): void {
+        const target = event.target as HTMLElement | null;
+        if (
+            target &&
+            (target.tagName === 'INPUT' ||
+                target.tagName === 'TEXTAREA' ||
+                target.isContentEditable)
+        ) {
+            return;
+        }
+
+        if (event.code === 'Space') {
+            event.preventDefault();
+            onContinue();
+        }
+    }
+
     onMount(() => {
         if (autoPlay && vocabulary?.word_audio_url) {
             playWordAudio();
         }
-
-        function handleKeyDown(event: KeyboardEvent) {
-            const target = event.target as HTMLElement | null;
-            if (
-                target &&
-                (target.tagName === 'INPUT' ||
-                    target.tagName === 'TEXTAREA' ||
-                    target.isContentEditable)
-            ) {
-                return;
-            }
-
-            if (event.code === 'Space') {
-                event.preventDefault();
-                onContinue();
-            }
-        }
-
-        window.addEventListener('keydown', handleKeyDown);
-        return () => {
-            window.removeEventListener('keydown', handleKeyDown);
-        };
     });
 </script>
+
+<svelte:window onkeydown={handleKeyDown} />
 
 {#if vocabulary}
     <div

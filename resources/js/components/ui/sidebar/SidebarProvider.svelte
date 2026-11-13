@@ -1,7 +1,7 @@
 <script lang="ts">
     import type { Snippet } from 'svelte';
     import { derived, readable, writable } from 'svelte/store';
-    import { onMount, setContext } from 'svelte';
+    import { setContext } from 'svelte';
     import { cn } from '@/lib/utils';
     import { TooltipProvider } from '@/components/ui/tooltip';
     import {
@@ -66,17 +66,15 @@
         }
     };
 
-    onMount(() => {
-        const handler = (event: KeyboardEvent) => {
-            if (event.key === SIDEBAR_KEYBOARD_SHORTCUT && (event.metaKey || event.ctrlKey)) {
-                event.preventDefault();
-                toggleSidebar();
-            }
-        };
-
-        window.addEventListener('keydown', handler);
-        return () => window.removeEventListener('keydown', handler);
-    });
+    const handleKeyDown = (event: KeyboardEvent) => {
+        if (
+            event.key === SIDEBAR_KEYBOARD_SHORTCUT &&
+            (event.metaKey || event.ctrlKey)
+        ) {
+            event.preventDefault();
+            toggleSidebar();
+        }
+    };
 
     const context: SidebarContext = {
         state,
@@ -90,6 +88,8 @@
 
     setContext(SIDEBAR_CONTEXT, context);
 </script>
+
+<svelte:window onkeydown={handleKeyDown} />
 
 <TooltipProvider>
     <div
