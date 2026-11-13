@@ -2,11 +2,16 @@
 
 declare(strict_types=1);
 
+use App\Actions\GetLevels;
+use App\Actions\GetLevelsProgress;
+use App\Http\Controllers\LevelController;
 use App\Models\Group;
 use App\Models\LearningProgress;
 use App\Models\Level;
 use App\Models\User;
 use Inertia\Testing\AssertableInertia as Assert;
+
+mutates([LevelController::class, GetLevels::class, GetLevelsProgress::class]);
 
 test('guest can access levels page and sees inertia Levels component', function () {
     $response = $this->get(route('levels.index'));
