@@ -20,6 +20,7 @@ class DatabaseSeeder extends Seeder
         $this->call([
             LevelSeeder::class,
             VocabularySeeder::class,
+            SentenceClozeSeeder::class,
         ]);
 
         if (app()->environment('local', 'testing')) {

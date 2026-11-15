@@ -8,6 +8,7 @@ use Database\Factories\VocabularyFactory;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 class Vocabulary extends Model
 {
@@ -39,5 +40,13 @@ class Vocabulary extends Model
     public function group(): BelongsTo
     {
         return $this->belongsTo(Group::class);
+    }
+
+    /**
+     * @return HasOne<SentenceClozeQuestion, $this>
+     */
+    public function sentenceClozeQuestion(): HasOne
+    {
+        return $this->hasOne(SentenceClozeQuestion::class);
     }
 }

@@ -91,14 +91,16 @@ readonly class GenerateReviewQuizSession
             $remainingType = collect($cases)->first(fn (QuizType $t): bool => ! in_array($t, $selectedTypes, true));
 
             $round1Quiz = $this->buildQuizQuestion($vocab, $vocabularies, $selectedTypes[0]);
-            $round1Fallback = ($selectedTypes[0] === QuizType::AudioToDefinition && $remainingType instanceof QuizType)
-                ? $this->buildQuizQuestion($vocab, $vocabularies, $remainingType)
-                : null;
+            $round1Fallback =
+                $selectedTypes[0] === QuizType::AudioToDefinition && $remainingType instanceof QuizType
+                    ? $this->buildQuizQuestion($vocab, $vocabularies, $remainingType)
+                    : null;
 
             $round2Quiz = $this->buildQuizQuestion($vocab, $vocabularies, $selectedTypes[1]);
-            $round2Fallback = ($selectedTypes[1] === QuizType::AudioToDefinition && $remainingType instanceof QuizType)
-                ? $this->buildQuizQuestion($vocab, $vocabularies, $remainingType)
-                : null;
+            $round2Fallback =
+                $selectedTypes[1] === QuizType::AudioToDefinition && $remainingType instanceof QuizType
+                    ? $this->buildQuizQuestion($vocab, $vocabularies, $remainingType)
+                    : null;
 
             $round1Raw[] = [
                 'kind' => 'quiz',
@@ -198,7 +200,7 @@ readonly class GenerateReviewQuizSession
         $stem = match ($type) {
             QuizType::WordToDefinition => $target['word'],
             QuizType::DefinitionToWord, QuizType::Spelling => $target['definition'],
-            QuizType::AudioToDefinition => '',
+            QuizType::AudioToDefinition, QuizType::SentenceCloze => '',
         };
 
         return [

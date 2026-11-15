@@ -8,6 +8,7 @@ use App\Enums\QuizMode;
 use App\Enums\QuizType;
 use App\Models\Group;
 use App\Models\LearningProgress;
+use App\Models\SentenceClozeQuestion;
 use App\Models\User;
 use App\Models\Vocabulary;
 use InvalidArgumentException;
@@ -25,6 +26,10 @@ use InvalidArgumentException;
  *     word_audio_url: string,
  *     sentence_audio_url: string,
  * }
+ * @phpstan-type SentenceSegmentPayload array{
+ *     type: 'text'|'blank',
+ *     text: string,
+ * }
  * @phpstan-type QuizOptionPayload array{
  *     id: int,
  *     text: string,
@@ -38,6 +43,8 @@ use InvalidArgumentException;
  *     audio_url: string,
  *     options: array<int, QuizOptionPayload>,
  *     correct_option_id: int,
+ *     sentence_segments?: array<int, SentenceSegmentPayload>,
+ *     sentence_translation?: string,
  * }
  * @phpstan-type SpellingSlotPayload array{
  *     is_blank: bool,
@@ -110,25 +117,36 @@ readonly class GenerateCustomQuizSession
      *     question_count: int,
      * }
      */
-    public function handle(int $questionCount, ?User $user = null, array $passedGroupIds = [], string $quizMode = QuizMode::Standard->value): array
-    {
+    public function handle(
+        int $questionCount,
+        ?User $user = null,
+        array $passedGroupIds = [],
+        string $quizMode = QuizMode::Standard->value,
+    ): array {
         $cdnUrl = rtrim((string) (config('filesystems.disks.r2.url') ?: 'https://assets.vomorize.com'), '/');
 
         $availableGroupIds = $this->resolveAvailableGroupIds($user, $passedGroupIds);
 
         $totalWordsAvailable = count($availableGroupIds) * Group::VOCABULARY_PER_GROUP;
         if ($totalWordsAvailable < $questionCount || $questionCount <= 0) {
-            throw new InvalidArgumentException("Insufficient vocabulary pool for the requested {$questionCount} questions.");
+            throw new InvalidArgumentException(
+                "Insufficient vocabulary pool for the requested {$questionCount} questions.",
+            );
         }
+
+        $isSentenceCloze = $quizMode === QuizMode::SentenceCloze->value;
 
         $rawVocabularies = Vocabulary::query()
             ->whereIn('group_id', $availableGroupIds)
+            ->when($isSentenceCloze, fn ($query) => $query->with('sentenceClozeQuestion'))
             ->get();
 
         /** @var array<int, VocabularyPayload> $allVocabularies */
         $allVocabularies = [];
         /** @var array<int, array<int, VocabularyPayload>> $vocabulariesByGroup */
         $vocabulariesByGroup = [];
+        /** @var array<int, SentenceClozeQuestion> $clozeByVocabId */
+        $clozeByVocabId = [];
 
         foreach ($rawVocabularies as $vocab) {
             /** @var VocabularyPayload $payload */
@@ -147,10 +165,28 @@ readonly class GenerateCustomQuizSession
 
             $allVocabularies[] = $payload;
             $vocabulariesByGroup[$payload['group_id']][] = $payload;
+
+            if ($isSentenceCloze && $vocab->sentenceClozeQuestion instanceof SentenceClozeQuestion) {
+                $clozeByVocabId[$payload['id']] = $vocab->sentenceClozeQuestion;
+            }
+        }
+
+        $targetPool = $allVocabularies;
+        if ($isSentenceCloze) {
+            $targetPool = array_values(array_filter(
+                $allVocabularies,
+                static fn (array $v): bool => isset($clozeByVocabId[$v['id']]),
+            ));
+
+            if (count($targetPool) < $questionCount) {
+                throw new InvalidArgumentException(
+                    "Insufficient sentence cloze questions for the requested {$questionCount} questions.",
+                );
+            }
         }
 
         /** @var array<int, VocabularyPayload> $selectedTargets */
-        $selectedTargets = collect($allVocabularies)
+        $selectedTargets = collect($targetPool)
             ->shuffle()
             ->take($questionCount)
             ->values()
@@ -169,6 +205,12 @@ readonly class GenerateCustomQuizSession
 
             if ($quizMode === QuizMode::Spelling->value) {
                 $quiz = $this->buildSpellingQuestion($target);
+                $fallbackQuiz = null;
+            } elseif ($isSentenceCloze) {
+                $cloze = $clozeByVocabId[$target['id']] ?? throw new InvalidArgumentException(
+                    "Missing sentence cloze question for vocabulary {$target['id']}.",
+                );
+                $quiz = $this->buildSentenceClozeQuestion($target, $cloze, $groupVocabularies);
                 $fallbackQuiz = null;
             } else {
                 $selectedType = $standardQuizTypes[random_int(0, count($standardQuizTypes) - 1)];
@@ -234,7 +276,7 @@ readonly class GenerateCustomQuizSession
         $stem = match ($type) {
             QuizType::WordToDefinition => $target['word'],
             QuizType::DefinitionToWord, QuizType::Spelling => $target['definition'],
-            QuizType::AudioToDefinition => '',
+            QuizType::AudioToDefinition, QuizType::SentenceCloze => '',
         };
 
         return [
@@ -243,6 +285,95 @@ readonly class GenerateCustomQuizSession
             'audio_url' => $target['word_audio_url'],
             'options' => $options,
             'correct_option_id' => $target['id'],
+        ];
+    }
+
+    /**
+     * Build sentence cloze question using curated same-group distractors and inflected option forms.
+     *
+     * @param  VocabularyPayload  $target
+     * @param  array<int, VocabularyPayload>  $groupVocabularies
+     * @return QuizQuestionPayload
+     */
+    private function buildSentenceClozeQuestion(
+        array $target,
+        SentenceClozeQuestion $cloze,
+        array $groupVocabularies,
+    ): array {
+        /** @var array<int, VocabularyPayload> $vocabById */
+        $vocabById = [];
+        foreach ($groupVocabularies as $vocab) {
+            $vocabById[$vocab['id']] = $vocab;
+        }
+
+        $selectedDistractors = collect($cloze->distractors)
+            ->filter(
+                fn (array $d): bool => $d['vocabulary_id'] !== $target['id'] && isset($vocabById[$d['vocabulary_id']]),
+            )
+            ->shuffle()
+            ->take(3)
+            ->values()
+            ->all();
+
+        // Fallback if curated distractors had fewer than 3 valid group members
+        if (count($selectedDistractors) < 3) {
+            $usedIds = array_merge([$target['id']], array_column($selectedDistractors, 'vocabulary_id'));
+            $extra = collect($groupVocabularies)
+                ->filter(fn (array $v): bool => ! in_array($v['id'], $usedIds, true))
+                ->shuffle()
+                ->take(3 - count($selectedDistractors))
+                ->map(fn (array $v): array => ['vocabulary_id' => $v['id'], 'word' => $v['word']])
+                ->all();
+            $selectedDistractors = array_merge($selectedDistractors, $extra);
+        }
+
+        $rawOptions = [
+            [
+                'vocabulary' => $target,
+                'display_word' => $cloze->blank_word,
+            ],
+        ];
+
+        foreach ($selectedDistractors as $distractor) {
+            $rawOptions[] = [
+                'vocabulary' => $vocabById[$distractor['vocabulary_id']],
+                'display_word' => $distractor['word'],
+            ];
+        }
+
+        /** @var array<int, QuizOptionPayload> $options */
+        $options = collect($rawOptions)
+            ->shuffle()
+            ->values()
+            ->map(fn (array $entry): array => [
+                'id' => $entry['vocabulary']['id'],
+                'text' => $entry['display_word'],
+                'part_of_speech' => $entry['vocabulary']['part_of_speech'],
+                'word' => $entry['vocabulary']['word'],
+                'definition' => $entry['vocabulary']['definition'],
+            ])
+            ->all();
+
+        $parts = preg_split('/(\{\{blank\}\})/', $cloze->sentence, -1, PREG_SPLIT_DELIM_CAPTURE | PREG_SPLIT_NO_EMPTY);
+        /** @var array<int, SentenceSegmentPayload> $segments */
+        $segments = [];
+
+        if (is_array($parts)) {
+            foreach ($parts as $part) {
+                $segments[] = $part === '{{blank}}'
+                    ? ['type' => 'blank', 'text' => $cloze->blank_word]
+                    : ['type' => 'text', 'text' => $part];
+            }
+        }
+
+        return [
+            'quiz_type' => QuizType::SentenceCloze->value,
+            'stem' => $cloze->sentence,
+            'audio_url' => '',
+            'options' => $options,
+            'correct_option_id' => $target['id'],
+            'sentence_segments' => $segments,
+            'sentence_translation' => $cloze->translation,
         ];
     }
 

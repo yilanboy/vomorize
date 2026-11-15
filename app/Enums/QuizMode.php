@@ -19,6 +19,7 @@ enum QuizMode: string
     {
         return [
             self::Standard,
+            self::SentenceCloze,
             self::Spelling,
         ];
     }

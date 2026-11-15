@@ -22,9 +22,15 @@ export type QuizType =
     | 'word_to_definition'
     | 'definition_to_word'
     | 'audio_to_definition'
+    | 'sentence_cloze'
     | 'spelling';
 
 export type QuizMode = 'standard' | 'sentence_cloze' | 'spelling';
+
+export interface SentenceSegment {
+    type: 'text' | 'blank';
+    text: string;
+}
 
 export interface QuizQuestionPayload {
     quiz_type: QuizType;
@@ -32,6 +38,8 @@ export interface QuizQuestionPayload {
     audio_url: string;
     options: QuizOptionPayload[];
     correct_option_id: number;
+    sentence_segments?: SentenceSegment[];
+    sentence_translation?: string;
 }
 
 export interface SpellingSlot {

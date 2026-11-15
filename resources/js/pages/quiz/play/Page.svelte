@@ -13,14 +13,17 @@
     import AudioToDefinitionCard from '@/components/quiz/AudioToDefinitionCard.svelte';
     import DefinitionToWordCard from '@/components/quiz/DefinitionToWordCard.svelte';
     import QuizResultSummary from '@/components/quiz/QuizResultSummary.svelte';
+    import SentenceClozeCard from '@/components/quiz/SentenceClozeCard.svelte';
     import SpellingCard from '@/components/quiz/SpellingCard.svelte';
     import WordToDefinitionCard from '@/components/quiz/WordToDefinitionCard.svelte';
     import { audioPlayer } from '@/lib/audioPlayer.svelte';
     import { t } from '@/lib/i18n';
     import { createNavigationGuard } from '@/lib/navigationGuard';
+    import { QUIZ_ANSWER_FEEDBACK_DELAY_MS } from '@/lib/quiz';
     import type {
         CustomQuizSessionData,
         MistakeReviewItem,
+        QuizMode,
         QuizOptionPayload,
         SpellingQuestionPayload,
     } from '@/types/quiz';
@@ -32,7 +35,7 @@
     }: {
         session: CustomQuizSessionData;
         questionCount: number;
-        quizMode?: 'standard' | 'spelling';
+        quizMode?: QuizMode;
     } = $props();
 
     setLayoutProps({
@@ -160,7 +163,7 @@
 
         setTimeout(() => {
             advanceToNextStep();
-        }, 1000);
+        }, QUIZ_ANSWER_FEEDBACK_DELAY_MS);
     }
 
     function handleSpellingResult(isCorrect: boolean) {
@@ -177,7 +180,7 @@
 
             setTimeout(() => {
                 advanceToNextStep();
-            }, 1000);
+            }, QUIZ_ANSWER_FEEDBACK_DELAY_MS);
         } else {
             if (!listeningDisabled && session.wrong_audio_url) {
                 void audioPlayer.play(session.wrong_audio_url, 'sfx-wrong');
@@ -278,7 +281,9 @@
 <AppHead
     title="{quizMode === 'spelling'
         ? t('ui.quiz.custom.top_bar.session_badge_spelling')
-        : t('ui.quiz.custom.top_bar.session_badge')} ({t(
+        : quizMode === 'sentence_cloze'
+          ? t('ui.quiz.custom.top_bar.session_badge_sentence_cloze')
+          : t('ui.quiz.custom.top_bar.session_badge')} ({t(
         `ui.quiz.custom.count_options.${questionCount}`,
     )})"
 />
@@ -327,26 +332,31 @@
                 </div>
             </div>
 
-            <!-- Right: Disable Listening Toggle -->
-            <button
-                type="button"
-                class={{
-                    'flex size-10 items-center justify-center rounded-xl transition-colors': true,
-                    'hover:bg-muted text-muted-foreground hover:text-foreground cursor-pointer':
-                        !listeningDisabled,
-                    'text-muted-foreground/40 cursor-not-allowed':
-                        listeningDisabled,
-                }}
-                disabled={listeningDisabled}
-                onclick={() => {
-                    isDisableListeningDialogOpen = true;
-                }}
-                title={listeningDisabled
-                    ? t('ui.quiz.top_bar.listening_disabled')
-                    : t('ui.quiz.top_bar.cant_listen')}
-            >
-                <EarOff class="size-5" />
-            </button>
+            <!-- Right: Disable Listening Toggle (omitted in sentence cloze mode) -->
+            {#if quizMode !== 'sentence_cloze'}
+                <button
+                    type="button"
+                    data-test="disable-listening-button"
+                    class={{
+                        'flex size-10 items-center justify-center rounded-xl transition-colors': true,
+                        'hover:bg-muted text-muted-foreground hover:text-foreground cursor-pointer':
+                            !listeningDisabled,
+                        'text-muted-foreground/40 cursor-not-allowed':
+                            listeningDisabled,
+                    }}
+                    disabled={listeningDisabled}
+                    onclick={() => {
+                        isDisableListeningDialogOpen = true;
+                    }}
+                    title={listeningDisabled
+                        ? t('ui.quiz.top_bar.listening_disabled')
+                        : t('ui.quiz.top_bar.cant_listen')}
+                >
+                    <EarOff class="size-5" />
+                </button>
+            {:else}
+                <div class="size-10" aria-hidden="true"></div>
+            {/if}
         </div>
     </header>
 
@@ -393,6 +403,14 @@
                             onSelect={handleQuizOptionSelect}
                             disabled={isAdvancing}
                         />
+                    {:else if activeQuiz.quiz_type === 'sentence_cloze'}
+                        <SentenceClozeCard
+                            question={activeQuiz}
+                            vocabulary={currentStep.vocabulary}
+                            {selectedOptionId}
+                            onSelect={handleQuizOptionSelect}
+                            disabled={isAdvancing}
+                        />
                     {:else if activeQuiz.quiz_type === 'spelling'}
                         <SpellingCard
                             question={activeQuiz as SpellingQuestionPayload}
@@ -419,8 +437,10 @@
     />
 
     <!-- Disable Listening Confirmation Dialog -->
-    <DisableListeningDialog
-        bind:open={isDisableListeningDialogOpen}
-        onConfirm={handleConfirmDisableListening}
-    />
+    {#if quizMode !== 'sentence_cloze'}
+        <DisableListeningDialog
+            bind:open={isDisableListeningDialogOpen}
+            onConfirm={handleConfirmDisableListening}
+        />
+    {/if}
 </div>

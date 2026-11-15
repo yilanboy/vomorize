@@ -7,6 +7,7 @@ use App\Enums\QuizMode;
 use App\Models\Group;
 use App\Models\LearningProgress;
 use App\Models\Level;
+use App\Models\SentenceClozeQuestion;
 use App\Models\User;
 use App\Models\Vocabulary;
 use Carbon\Carbon;
@@ -295,3 +296,107 @@ test('member can start custom quiz in spelling mode with valid slots and sorted 
         }
     }
 });
+
+test('member can start custom quiz in sentence_cloze mode with inflected options and same-group distractors', function () {
+    $user = User::factory()->create();
+    $level = Level::factory()->create();
+    $group = Group::factory()->create(['level_id' => $level->id]);
+
+    $vocabularies = Vocabulary::factory()->count(10)->create([
+        'level_id' => $level->id,
+        'group_id' => $group->id,
+    ]);
+
+    foreach ($vocabularies as $index => $vocab) {
+        $peerIds = $vocabularies
+            ->filter(fn (Vocabulary $v): bool => $v->id !== $vocab->id)
+            ->take(4)
+            ->values();
+
+        SentenceClozeQuestion::factory()->create([
+            'vocabulary_id' => $vocab->id,
+            'sentence' => "She {{blank}} the answer for item {$index}.",
+            'blank_word' => $vocab->word.'ed',
+            'translation' => "她回答了第 {$index} 題。",
+            'distractors' => $peerIds->map(fn (Vocabulary $peer): array => [
+                'vocabulary_id' => $peer->id,
+                'word' => $peer->word.'ed',
+            ])->all(),
+        ]);
+    }
+
+    LearningProgress::factory()->create([
+        'user_id' => $user->id,
+        'level_id' => $level->id,
+        'group_id' => $group->id,
+        'stage' => 1,
+    ]);
+
+    $startResponse = $this->actingAs($user)->post(route('quiz.start'), [
+        'question_count' => 10,
+        'quiz_mode' => 'sentence_cloze',
+    ]);
+
+    $startResponse->assertRedirect(route('quiz.play'));
+
+    $response = $this->actingAs($user)->get(route('quiz.play'));
+
+    $response->assertOk();
+    $response->assertInertia(fn (Assert $page) => $page
+        ->component('quiz/play/Page')
+        ->where('questionCount', 10)
+        ->where('quizMode', 'sentence_cloze')
+        ->has('session.steps', 10)
+    );
+
+    $steps = $response->viewData('page')['props']['session']['steps'];
+    expect($steps)->toHaveCount(10);
+
+    foreach ($steps as $step) {
+        $quiz = $step['quiz'];
+        $targetVocab = $step['vocabulary'];
+
+        expect($quiz['quiz_type'])->toBe('sentence_cloze')
+            ->and($quiz['correct_option_id'])->toBe($targetVocab['id'])
+            ->and($quiz['audio_url'])->toBe('')
+            ->and($quiz['sentence_translation'])->toStartWith('她回答了第')
+            ->and($quiz['options'])->toHaveCount(4)
+            ->and($step['fallback_quiz'])->toBeNull();
+
+        $blankSegments = array_values(array_filter(
+            $quiz['sentence_segments'],
+            fn (array $segment): bool => $segment['type'] === 'blank',
+        ));
+
+        expect($blankSegments)->toHaveCount(1)
+            ->and($blankSegments[0]['text'])->toBe($targetVocab['word'].'ed');
+
+        foreach ($quiz['options'] as $option) {
+            expect($option['text'])->toBe($option['word'].'ed');
+        }
+    }
+});
+
+test('sentence_cloze mode throws when cloze questions are missing for the requested count', function () {
+    $user = User::factory()->create();
+    $level = Level::factory()->create();
+    $group = Group::factory()->create(['level_id' => $level->id]);
+
+    Vocabulary::factory()->count(10)->create([
+        'level_id' => $level->id,
+        'group_id' => $group->id,
+    ]);
+
+    LearningProgress::factory()->create([
+        'user_id' => $user->id,
+        'level_id' => $level->id,
+        'group_id' => $group->id,
+        'stage' => 1,
+    ]);
+
+    app(GenerateCustomQuizSession::class)->handle(10, $user, [], QuizMode::SentenceCloze->value);
+})->throws(InvalidArgumentException::class);
+
+test('custom quiz generates exact step count for each supported question count option', function () {
+    //
+})->skip('Practice: verify GenerateCustomQuizSession::QUESTION_COUNT_OPTIONS [10, 20, 30, 50, 100] produce matching session.steps counts');

@@ -110,3 +110,27 @@ test('stage 2 review quiz page loads without javascript errors and guards agains
         ->assertDontSee(__('ui.intro.top_bar.leave_dialog_title'))
         ->assertNoSmoke();
 });
+
+test('user completes stage 1 intro and quiz with perfect score using correct-option', function () {
+    //
+})->skip('Practice: finish intro cards, answer all 20 quiz questions via @correct-option, and assert 100 / 100 passed result');
+
+test('stage 1 quiz result score matches partial correct answers and shows failed state below 80', function () {
+    //
+})->skip('Practice: answer wrong options to score below 80 and assert score, failed notice, and mistakes list');
+
+test('stage 1 quiz shows expected visual feedback for correct and wrong option selections', function () {
+    //
+})->skip('Practice: assert correct/wrong option feedback states (or fixed-seed assertScreenshotMatches())');
+
+test('member completes stage 2 review quiz with perfect score using correct-option', function () {
+    //
+})->skip('Practice: answer all 20 stage 2 review questions via @correct-option and verify 100 / 100 & stage progression');
+
+test('stage 2 review quiz result score matches partial correct count and lists mistakes', function () {
+    //
+})->skip('Practice: mix @wrong-option and @correct-option answers and assert score, threshold notice, and mistakes list');
+
+test('stage 2 review quiz shows expected visual feedback for correct and wrong option selections', function () {
+    //
+})->skip('Practice: assert correct/wrong option feedback states (or fixed-seed assertScreenshotMatches())');

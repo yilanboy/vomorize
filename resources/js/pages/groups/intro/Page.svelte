@@ -19,6 +19,7 @@
         type GroupProgressSummary,
     } from '@/lib/learningProgressDb';
     import { createNavigationGuard } from '@/lib/navigationGuard';
+    import { QUIZ_ANSWER_FEEDBACK_DELAY_MS } from '@/lib/quiz';
     import type {
         MistakeReviewItem,
         QuizOptionPayload,
@@ -165,10 +166,9 @@
             }
         }
 
-        // Auto advance after 1000ms
         setTimeout(() => {
             advanceToNextStep();
-        }, 1000);
+        }, QUIZ_ANSWER_FEEDBACK_DELAY_MS);
     }
 
     async function handleQuizCompletion() {

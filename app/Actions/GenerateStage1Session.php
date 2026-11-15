@@ -222,7 +222,7 @@ readonly class GenerateStage1Session
         $stem = match ($type) {
             QuizType::WordToDefinition => $target['word'],
             QuizType::DefinitionToWord, QuizType::Spelling => $target['definition'],
-            QuizType::AudioToDefinition => '',
+            QuizType::AudioToDefinition, QuizType::SentenceCloze => '',
         };
 
         return [
