@@ -43,7 +43,6 @@ test('all 7000 vocabularies have valid single-blank sentence cloze data with sam
 
         expect(substr_count($cloze['sentence'], '{{blank}}'))->toBe(1)
             ->and(trim($cloze['blank_word']))->not->toBeEmpty()
-            ->and(trim($cloze['translation']))->not->toBeEmpty()
             ->and(count($cloze['distractors']))->toBeGreaterThanOrEqual(3);
 
         $seenIds = [$vocabId];

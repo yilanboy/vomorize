@@ -8,7 +8,6 @@ return [
             'vocabulary_id' => 1,
             'sentence' => 'The {{blank}} are eating grass in the field.',
             'blank_word' => 'sheep',
-            'translation' => '綿羊正在田野裡吃草。',
             'distractors' => [
                 ['vocabulary_id' => 4, 'word' => 'music'],
                 ['vocabulary_id' => 5, 'word' => 'nation'],
@@ -21,7 +20,6 @@ return [
             'vocabulary_id' => 2,
             'sentence' => 'I want to {{blank}} a teacher.',
             'blank_word' => 'become',
-            'translation' => '我想成為一名老師。',
             'distractors' => [
                 ['vocabulary_id' => 8, 'word' => 'leave'],
                 ['vocabulary_id' => 10, 'word' => 'please'],
@@ -34,7 +32,6 @@ return [
             'vocabulary_id' => 3,
             'sentence' => 'Tom does not like milk, {{blank}} does he like juice.',
             'blank_word' => 'nor',
-            'translation' => '湯姆不喜歡牛奶，也不喜歡果汁。',
             'distractors' => [
                 ['vocabulary_id' => 1, 'word' => 'sheep'],
                 ['vocabulary_id' => 2, 'word' => 'become'],
@@ -47,7 +44,6 @@ return [
             'vocabulary_id' => 4,
             'sentence' => 'I listen to {{blank}} every night.',
             'blank_word' => 'music',
-            'translation' => '我每天晚上聽音樂。',
             'distractors' => [
                 ['vocabulary_id' => 1, 'word' => 'sheep'],
                 ['vocabulary_id' => 5, 'word' => 'nation'],
@@ -60,7 +56,6 @@ return [
             'vocabulary_id' => 5,
             'sentence' => 'Japan is an island {{blank}}.',
             'blank_word' => 'nation',
-            'translation' => '日本是一個島國。',
             'distractors' => [
                 ['vocabulary_id' => 1, 'word' => 'sheep'],
                 ['vocabulary_id' => 4, 'word' => 'music'],
@@ -73,7 +68,6 @@ return [
             'vocabulary_id' => 6,
             'sentence' => 'A small {{blank}} is sitting in the tree.',
             'blank_word' => 'bird',
-            'translation' => '一隻小鳥正停在樹上。',
             'distractors' => [
                 ['vocabulary_id' => 1, 'word' => 'sheep'],
                 ['vocabulary_id' => 4, 'word' => 'music'],
@@ -86,7 +80,6 @@ return [
             'vocabulary_id' => 7,
             'sentence' => '{{blank}} is ten more than sixty.',
             'blank_word' => 'Seventy',
-            'translation' => '七十比六十多十。',
             'distractors' => [
                 ['vocabulary_id' => 1, 'word' => 'Sheep'],
                 ['vocabulary_id' => 4, 'word' => 'Music'],
@@ -99,7 +92,6 @@ return [
             'vocabulary_id' => 8,
             'sentence' => 'We need to {{blank}} the house at eight o\'clock.',
             'blank_word' => 'leave',
-            'translation' => '我們需要在八點離開家。',
             'distractors' => [
                 ['vocabulary_id' => 2, 'word' => 'become'],
                 ['vocabulary_id' => 10, 'word' => 'please'],
@@ -112,7 +104,6 @@ return [
             'vocabulary_id' => 9,
             'sentence' => 'Our {{blank}} is to visit the museum on Saturday.',
             'blank_word' => 'plan',
-            'translation' => '我們的計畫是在星期六參觀博物館。',
             'distractors' => [
                 ['vocabulary_id' => 1, 'word' => 'sheep'],
                 ['vocabulary_id' => 4, 'word' => 'music'],
@@ -125,7 +116,6 @@ return [
             'vocabulary_id' => 10,
             'sentence' => 'This gift will {{blank}} my mother.',
             'blank_word' => 'please',
-            'translation' => '這份禮物會讓我媽媽高興。',
             'distractors' => [
                 ['vocabulary_id' => 2, 'word' => 'become'],
                 ['vocabulary_id' => 8, 'word' => 'leave'],
@@ -140,7 +130,6 @@ return [
             'vocabulary_id' => 11,
             'sentence' => 'We took a {{blank}} to the airport.',
             'blank_word' => 'taxi',
-            'translation' => '我們搭計程車去機場。',
             'distractors' => [
                 ['vocabulary_id' => 12, 'word' => 'clock'],
                 ['vocabulary_id' => 13, 'word' => 'scooter'],
@@ -153,7 +142,6 @@ return [
             'vocabulary_id' => 12,
             'sentence' => 'The {{blank}} on the wall says three o\'clock.',
             'blank_word' => 'clock',
-            'translation' => '牆上的時鐘顯示三點。',
             'distractors' => [
                 ['vocabulary_id' => 11, 'word' => 'taxi'],
                 ['vocabulary_id' => 13, 'word' => 'scooter'],
@@ -166,7 +154,6 @@ return [
             'vocabulary_id' => 13,
             'sentence' => 'My brother rides his {{blank}} to school.',
             'blank_word' => 'scooter',
-            'translation' => '我哥哥騎機車上學。',
             'distractors' => [
                 ['vocabulary_id' => 11, 'word' => 'taxi'],
                 ['vocabulary_id' => 12, 'word' => 'clock'],
@@ -179,7 +166,6 @@ return [
             'vocabulary_id' => 14,
             'sentence' => 'The school {{blank}} rings at eight o\'clock.',
             'blank_word' => 'bell',
-            'translation' => '學校的鐘在八點響。',
             'distractors' => [
                 ['vocabulary_id' => 11, 'word' => 'taxi'],
                 ['vocabulary_id' => 12, 'word' => 'clock'],
@@ -192,7 +178,6 @@ return [
             'vocabulary_id' => 15,
             'sentence' => 'It is {{blank}} to laugh at someone who falls.',
             'blank_word' => 'mean',
-            'translation' => '嘲笑跌倒的人是很刻薄的行為。',
             'distractors' => [
                 ['vocabulary_id' => 11, 'word' => 'taxi'],
                 ['vocabulary_id' => 12, 'word' => 'clock'],
@@ -205,7 +190,6 @@ return [
             'vocabulary_id' => 16,
             'sentence' => 'We have a math test on {{blank}}.',
             'blank_word' => 'Thursday',
-            'translation' => '我們星期四有一場數學考試。',
             'distractors' => [
                 ['vocabulary_id' => 11, 'word' => 'taxi'],
                 ['vocabulary_id' => 12, 'word' => 'clock'],
@@ -218,7 +202,6 @@ return [
             'vocabulary_id' => 17,
             'sentence' => 'We walked {{blank}} the library on our way home.',
             'blank_word' => 'past',
-            'translation' => '我們回家的路上走過圖書館。',
             'distractors' => [
                 ['vocabulary_id' => 11, 'word' => 'taxi'],
                 ['vocabulary_id' => 12, 'word' => 'clock'],
@@ -231,7 +214,6 @@ return [
             'vocabulary_id' => 18,
             'sentence' => 'Please {{blank}} the box carefully.',
             'blank_word' => 'lift',
-            'translation' => '請小心地舉起這個箱子。',
             'distractors' => [
                 ['vocabulary_id' => 20, 'word' => 'taste'],
                 ['vocabulary_id' => 11, 'word' => 'taxi'],
@@ -244,7 +226,6 @@ return [
             'vocabulary_id' => 19,
             'sentence' => 'The {{blank}} of this square is twenty-five square meters.',
             'blank_word' => 'area',
-            'translation' => '這個正方形的面積是二十五平方公尺。',
             'distractors' => [
                 ['vocabulary_id' => 11, 'word' => 'taxi'],
                 ['vocabulary_id' => 12, 'word' => 'clock'],
@@ -257,7 +238,6 @@ return [
             'vocabulary_id' => 20,
             'sentence' => 'Please {{blank}} the soup and tell me if it needs more salt.',
             'blank_word' => 'taste',
-            'translation' => '請品嚐這碗湯，告訴我是否需要再加鹽。',
             'distractors' => [
                 ['vocabulary_id' => 18, 'word' => 'lift'],
                 ['vocabulary_id' => 11, 'word' => 'taxi'],
@@ -272,7 +252,6 @@ return [
             'vocabulary_id' => 21,
             'sentence' => 'The ball rolled {{blank}} the hill.',
             'blank_word' => 'down',
-            'translation' => '球滾下山丘。',
             'distractors' => [
                 ['vocabulary_id' => 22, 'word' => 'strange'],
                 ['vocabulary_id' => 23, 'word' => 'let'],
@@ -285,7 +264,6 @@ return [
             'vocabulary_id' => 22,
             'sentence' => 'That is a {{blank}} sound.',
             'blank_word' => 'strange',
-            'translation' => '那是一種奇怪的聲音。',
             'distractors' => [
                 ['vocabulary_id' => 24, 'word' => 'mad'],
                 ['vocabulary_id' => 21, 'word' => 'down'],
@@ -298,7 +276,6 @@ return [
             'vocabulary_id' => 23,
             'sentence' => 'Please {{blank}} me help you.',
             'blank_word' => 'let',
-            'translation' => '請讓我幫助你。',
             'distractors' => [
                 ['vocabulary_id' => 21, 'word' => 'down'],
                 ['vocabulary_id' => 22, 'word' => 'strange'],
@@ -311,7 +288,6 @@ return [
             'vocabulary_id' => 24,
             'sentence' => 'Dad was {{blank}} when I broke the cup.',
             'blank_word' => 'mad',
-            'translation' => '我打破杯子時，爸爸發飆了。',
             'distractors' => [
                 ['vocabulary_id' => 22, 'word' => 'strange'],
                 ['vocabulary_id' => 21, 'word' => 'down'],
@@ -324,7 +300,6 @@ return [
             'vocabulary_id' => 25,
             'sentence' => 'The {{blank}} can walk across the desert.',
             'blank_word' => 'camel',
-            'translation' => '駱駝可以走過沙漠。',
             'distractors' => [
                 ['vocabulary_id' => 26, 'word' => 'bat'],
                 ['vocabulary_id' => 27, 'word' => 'eye'],
@@ -337,7 +312,6 @@ return [
             'vocabulary_id' => 26,
             'sentence' => 'Tom hit the ball with a {{blank}}.',
             'blank_word' => 'bat',
-            'translation' => 'Tom 用球棒擊球。',
             'distractors' => [
                 ['vocabulary_id' => 25, 'word' => 'camel'],
                 ['vocabulary_id' => 27, 'word' => 'eye'],
@@ -350,7 +324,6 @@ return [
             'vocabulary_id' => 27,
             'sentence' => 'I have something in my {{blank}}.',
             'blank_word' => 'eye',
-            'translation' => '我的眼睛裡有東西。',
             'distractors' => [
                 ['vocabulary_id' => 25, 'word' => 'camel'],
                 ['vocabulary_id' => 26, 'word' => 'bat'],
@@ -363,7 +336,6 @@ return [
             'vocabulary_id' => 28,
             'sentence' => 'A kind {{blank}} helped me.',
             'blank_word' => 'person',
-            'translation' => '一位善良的人幫助了我。',
             'distractors' => [
                 ['vocabulary_id' => 25, 'word' => 'camel'],
                 ['vocabulary_id' => 26, 'word' => 'bat'],
@@ -376,7 +348,6 @@ return [
             'vocabulary_id' => 29,
             'sentence' => 'We live on a quiet {{blank}}.',
             'blank_word' => 'street',
-            'translation' => '我們住在一條安靜的街道上。',
             'distractors' => [
                 ['vocabulary_id' => 25, 'word' => 'camel'],
                 ['vocabulary_id' => 26, 'word' => 'bat'],
@@ -389,7 +360,6 @@ return [
             'vocabulary_id' => 30,
             'sentence' => 'The birds fly {{blank}} in spring.',
             'blank_word' => 'north',
-            'translation' => '鳥兒在春天飛往北方。',
             'distractors' => [
                 ['vocabulary_id' => 25, 'word' => 'camel'],
                 ['vocabulary_id' => 26, 'word' => 'bat'],
@@ -404,7 +374,6 @@ return [
             'vocabulary_id' => 31,
             'sentence' => 'Are you {{blank}} for school?',
             'blank_word' => 'ready',
-            'translation' => '你準備好上學了嗎？',
             'distractors' => [
                 ['vocabulary_id' => 34, 'word' => 'special'],
                 ['vocabulary_id' => 35, 'word' => 'third'],
@@ -415,7 +384,6 @@ return [
             'vocabulary_id' => 32,
             'sentence' => 'We swam in the {{blank}}.',
             'blank_word' => 'sea',
-            'translation' => '我們在海裡游泳。',
             'distractors' => [
                 ['vocabulary_id' => 36, 'word' => 'January'],
                 ['vocabulary_id' => 39, 'word' => 'hat'],
@@ -428,7 +396,6 @@ return [
             'vocabulary_id' => 33,
             'sentence' => 'Please {{blank}} the book on the desk.',
             'blank_word' => 'put',
-            'translation' => '請把書放在書桌上。',
             'distractors' => [
                 ['vocabulary_id' => 37, 'word' => 'appear'],
                 ['vocabulary_id' => 31, 'word' => 'ready'],
@@ -441,7 +408,6 @@ return [
             'vocabulary_id' => 34,
             'sentence' => 'Today is a {{blank}} day.',
             'blank_word' => 'special',
-            'translation' => '今天是特別的一天。',
             'distractors' => [
                 ['vocabulary_id' => 31, 'word' => 'ready'],
                 ['vocabulary_id' => 35, 'word' => 'third'],
@@ -452,7 +418,6 @@ return [
             'vocabulary_id' => 35,
             'sentence' => 'This is my {{blank}} cookie.',
             'blank_word' => 'third',
-            'translation' => '這是我的第三塊餅乾。',
             'distractors' => [
                 ['vocabulary_id' => 31, 'word' => 'ready'],
                 ['vocabulary_id' => 34, 'word' => 'special'],
@@ -463,7 +428,6 @@ return [
             'vocabulary_id' => 36,
             'sentence' => 'My birthday is in {{blank}}.',
             'blank_word' => 'January',
-            'translation' => '我的生日在一月。',
             'distractors' => [
                 ['vocabulary_id' => 32, 'word' => 'sea'],
                 ['vocabulary_id' => 39, 'word' => 'hat'],
@@ -476,7 +440,6 @@ return [
             'vocabulary_id' => 37,
             'sentence' => 'A rainbow {{blank}} after the rain.',
             'blank_word' => 'appeared',
-            'translation' => '雨後出現了一道彩虹。',
             'distractors' => [
                 ['vocabulary_id' => 33, 'word' => 'put'],
                 ['vocabulary_id' => 31, 'word' => 'ready'],
@@ -487,9 +450,8 @@ return [
         ],
         [
             'vocabulary_id' => 38,
-            'sentence' => 'The soup is {{blank}} enough to drink now.',
+            'sentence' => 'The soup is {{blank}}.',
             'blank_word' => 'warm',
-            'translation' => '這碗湯現在溫度剛好，可以喝了。',
             'distractors' => [
                 ['vocabulary_id' => 35, 'word' => 'third'],
                 ['vocabulary_id' => 32, 'word' => 'sea'],
@@ -502,7 +464,6 @@ return [
             'vocabulary_id' => 39,
             'sentence' => 'She wears a red {{blank}}.',
             'blank_word' => 'hat',
-            'translation' => '她戴著一頂紅色的帽子。',
             'distractors' => [
                 ['vocabulary_id' => 32, 'word' => 'sea'],
                 ['vocabulary_id' => 36, 'word' => 'January'],
@@ -515,7 +476,6 @@ return [
             'vocabulary_id' => 40,
             'sentence' => 'It is {{blank}} time for bed.',
             'blank_word' => 'almost',
-            'translation' => '差不多該睡覺了。',
             'distractors' => [
                 ['vocabulary_id' => 31, 'word' => 'ready'],
                 ['vocabulary_id' => 32, 'word' => 'sea'],
@@ -530,7 +490,6 @@ return [
             'vocabulary_id' => 41,
             'sentence' => 'I {{blank}} getting up early on cold mornings.',
             'blank_word' => 'hate',
-            'translation' => '我討厭在寒冷的早晨早起。',
             'distractors' => [
                 ['vocabulary_id' => 42, 'word' => 'cap'],
                 ['vocabulary_id' => 43, 'word' => 'card'],
@@ -543,7 +502,6 @@ return [
             'vocabulary_id' => 42,
             'sentence' => 'My brother wears a red {{blank}} when he plays baseball.',
             'blank_word' => 'cap',
-            'translation' => '我哥哥打棒球時戴著一頂紅色棒球帽。',
             'distractors' => [
                 ['vocabulary_id' => 43, 'word' => 'card'],
                 ['vocabulary_id' => 44, 'word' => 'dancer'],
@@ -557,7 +515,6 @@ return [
             'vocabulary_id' => 43,
             'sentence' => 'We played a {{blank}} game after dinner.',
             'blank_word' => 'card',
-            'translation' => '晚餐後，我們玩了一個紙牌遊戲。',
             'distractors' => [
                 ['vocabulary_id' => 42, 'word' => 'cap'],
                 ['vocabulary_id' => 44, 'word' => 'dancer'],
@@ -571,7 +528,6 @@ return [
             'vocabulary_id' => 44,
             'sentence' => 'The {{blank}} moved beautifully across the stage.',
             'blank_word' => 'dancer',
-            'translation' => '那位舞蹈家在舞台上優美地舞動。',
             'distractors' => [
                 ['vocabulary_id' => 42, 'word' => 'cap'],
                 ['vocabulary_id' => 43, 'word' => 'card'],
@@ -585,7 +541,6 @@ return [
             'vocabulary_id' => 45,
             'sentence' => 'Our English class is on {{blank}}.',
             'blank_word' => 'Tuesday',
-            'translation' => '我們的英文課在星期二。',
             'distractors' => [
                 ['vocabulary_id' => 42, 'word' => 'cap'],
                 ['vocabulary_id' => 43, 'word' => 'card'],
@@ -599,7 +554,6 @@ return [
             'vocabulary_id' => 46,
             'sentence' => 'The children built a castle with wet {{blank}}.',
             'blank_word' => 'sand',
-            'translation' => '孩子們用濕沙子蓋了一座城堡。',
             'distractors' => [
                 ['vocabulary_id' => 42, 'word' => 'cap'],
                 ['vocabulary_id' => 43, 'word' => 'card'],
@@ -613,7 +567,6 @@ return [
             'vocabulary_id' => 47,
             'sentence' => 'I have a {{blank}} backpack for school.',
             'blank_word' => 'new',
-            'translation' => '我有一個新的上學用背包。',
             'distractors' => [
                 ['vocabulary_id' => 49, 'word' => 'true'],
                 ['vocabulary_id' => 41, 'word' => 'hate'],
@@ -626,7 +579,6 @@ return [
             'vocabulary_id' => 48,
             'sentence' => 'Please use a {{blank}} to eat the noodles.',
             'blank_word' => 'fork',
-            'translation' => '請用叉子吃麵。',
             'distractors' => [
                 ['vocabulary_id' => 42, 'word' => 'cap'],
                 ['vocabulary_id' => 43, 'word' => 'card'],
@@ -640,7 +592,6 @@ return [
             'vocabulary_id' => 49,
             'sentence' => 'The story about the lost dog is {{blank}}.',
             'blank_word' => 'true',
-            'translation' => '那個關於走失小狗的故事是真的。',
             'distractors' => [
                 ['vocabulary_id' => 47, 'word' => 'new'],
                 ['vocabulary_id' => 41, 'word' => 'hate'],
@@ -653,7 +604,6 @@ return [
             'vocabulary_id' => 50,
             'sentence' => 'A kind {{blank}} helped me carry the box.',
             'blank_word' => 'man',
-            'translation' => '一位善良的男人幫我搬這個箱子。',
             'distractors' => [
                 ['vocabulary_id' => 42, 'word' => 'cap'],
                 ['vocabulary_id' => 43, 'word' => 'card'],
@@ -669,7 +619,6 @@ return [
             'vocabulary_id' => 51,
             'sentence' => 'My left {{blank}} hurts after the long walk.',
             'blank_word' => 'leg',
-            'translation' => '走了很久之後，我的左腿很痛。',
             'distractors' => [
                 ['vocabulary_id' => 52, 'word' => 'eagle'],
                 ['vocabulary_id' => 53, 'word' => 'age'],
@@ -682,7 +631,6 @@ return [
             'vocabulary_id' => 52,
             'sentence' => 'We saw an {{blank}} flying above the mountain.',
             'blank_word' => 'eagle',
-            'translation' => '我們看見一隻老鷹在山上方飛翔。',
             'distractors' => [
                 ['vocabulary_id' => 51, 'word' => 'leg'],
                 ['vocabulary_id' => 53, 'word' => 'age'],
@@ -695,7 +643,6 @@ return [
             'vocabulary_id' => 53,
             'sentence' => 'What is your {{blank}}?',
             'blank_word' => 'age',
-            'translation' => '你的年齡是多少？',
             'distractors' => [
                 ['vocabulary_id' => 51, 'word' => 'leg'],
                 ['vocabulary_id' => 52, 'word' => 'eagle'],
@@ -708,7 +655,6 @@ return [
             'vocabulary_id' => 54,
             'sentence' => 'I {{blank}} a letter from my friend yesterday.',
             'blank_word' => 'received',
-            'translation' => '我昨天收到朋友的一封信。',
             'distractors' => [
                 ['vocabulary_id' => 59, 'word' => 'returned'],
                 ['vocabulary_id' => 60, 'word' => 'surprised'],
@@ -721,7 +667,6 @@ return [
             'vocabulary_id' => 55,
             'sentence' => 'There is a small park in our {{blank}}.',
             'blank_word' => 'town',
-            'translation' => '我們的城鎮裡有一座小公園。',
             'distractors' => [
                 ['vocabulary_id' => 51, 'word' => 'leg'],
                 ['vocabulary_id' => 52, 'word' => 'eagle'],
@@ -734,7 +679,6 @@ return [
             'vocabulary_id' => 56,
             'sentence' => 'Your shoes are {{blank}} from playing outside.',
             'blank_word' => 'dirty',
-            'translation' => '你的鞋子因為在外面玩而變髒了。',
             'distractors' => [
                 ['vocabulary_id' => 51, 'word' => 'leg'],
                 ['vocabulary_id' => 52, 'word' => 'eagle'],
@@ -747,7 +691,6 @@ return [
             'vocabulary_id' => 57,
             'sentence' => 'School will close for a few days in {{blank}}.',
             'blank_word' => 'May',
-            'translation' => '學校在五月會放幾天假。',
             'distractors' => [
                 ['vocabulary_id' => 51, 'word' => 'leg'],
                 ['vocabulary_id' => 52, 'word' => 'eagle'],
@@ -760,7 +703,6 @@ return [
             'vocabulary_id' => 58,
             'sentence' => 'I cut my {{blank}} while cooking.',
             'blank_word' => 'finger',
-            'translation' => '我煮飯時割傷了手指。',
             'distractors' => [
                 ['vocabulary_id' => 51, 'word' => 'leg'],
                 ['vocabulary_id' => 52, 'word' => 'eagle'],
@@ -773,7 +715,6 @@ return [
             'vocabulary_id' => 59,
             'sentence' => 'We will {{blank}} home before dark.',
             'blank_word' => 'return',
-            'translation' => '我們會在天黑前回家。',
             'distractors' => [
                 ['vocabulary_id' => 54, 'word' => 'receive'],
                 ['vocabulary_id' => 60, 'word' => 'surprise'],
@@ -786,7 +727,6 @@ return [
             'vocabulary_id' => 60,
             'sentence' => 'The birthday cake {{blank}} my little sister.',
             'blank_word' => 'surprised',
-            'translation' => '生日蛋糕讓我的妹妹感到驚訝。',
             'distractors' => [
                 ['vocabulary_id' => 54, 'word' => 'received'],
                 ['vocabulary_id' => 59, 'word' => 'returned'],
@@ -801,7 +741,6 @@ return [
             'vocabulary_id' => 61,
             'sentence' => 'I will wait here {{blank}} you come back.',
             'blank_word' => 'until',
-            'translation' => '我會在這裡等到你回來為止。',
             'distractors' => [
                 ['vocabulary_id' => 70, 'word' => 'across'],
                 ['vocabulary_id' => 62, 'word' => 'anything'],
@@ -814,7 +753,6 @@ return [
             'vocabulary_id' => 62,
             'sentence' => 'You can choose {{blank}} from the box.',
             'blank_word' => 'anything',
-            'translation' => '你可以從盒子裡選任何東西。',
             'distractors' => [
                 ['vocabulary_id' => 63, 'word' => 'roof'],
                 ['vocabulary_id' => 64, 'word' => 'family'],
@@ -826,7 +764,6 @@ return [
             'vocabulary_id' => 63,
             'sentence' => 'The cat is sitting on the {{blank}}.',
             'blank_word' => 'roof',
-            'translation' => '那隻貓正坐在屋頂上。',
             'distractors' => [
                 ['vocabulary_id' => 62, 'word' => 'anything'],
                 ['vocabulary_id' => 64, 'word' => 'family'],
@@ -838,7 +775,6 @@ return [
             'vocabulary_id' => 64,
             'sentence' => 'My {{blank}} eats dinner together every night.',
             'blank_word' => 'family',
-            'translation' => '我的家人每天晚上一起吃晚餐。',
             'distractors' => [
                 ['vocabulary_id' => 62, 'word' => 'anything'],
                 ['vocabulary_id' => 63, 'word' => 'roof'],
@@ -850,7 +786,6 @@ return [
             'vocabulary_id' => 65,
             'sentence' => 'The children {{blank}} in the park every morning.',
             'blank_word' => 'run',
-            'translation' => '孩子們每天早上在公園裡跑步。',
             'distractors' => [
                 ['vocabulary_id' => 61, 'word' => 'until'],
                 ['vocabulary_id' => 62, 'word' => 'anything'],
@@ -863,7 +798,6 @@ return [
             'vocabulary_id' => 66,
             'sentence' => 'A {{blank}} ran across the kitchen floor.',
             'blank_word' => 'rat',
-            'translation' => '一隻老鼠跑過廚房地板。',
             'distractors' => [
                 ['vocabulary_id' => 62, 'word' => 'anything'],
                 ['vocabulary_id' => 63, 'word' => 'roof'],
@@ -875,7 +809,6 @@ return [
             'vocabulary_id' => 67,
             'sentence' => 'The old bus is very {{blank}}.',
             'blank_word' => 'slow',
-            'translation' => '那輛老公車非常緩慢。',
             'distractors' => [
                 ['vocabulary_id' => 69, 'word' => 'our'],
                 ['vocabulary_id' => 61, 'word' => 'until'],
@@ -888,7 +821,6 @@ return [
             'vocabulary_id' => 68,
             'sentence' => 'I drink milk every {{blank}}.',
             'blank_word' => 'morning',
-            'translation' => '我每天早上喝牛奶。',
             'distractors' => [
                 ['vocabulary_id' => 62, 'word' => 'anything'],
                 ['vocabulary_id' => 63, 'word' => 'roof'],
@@ -900,7 +832,6 @@ return [
             'vocabulary_id' => 69,
             'sentence' => '{{blank}} house is near the school.',
             'blank_word' => 'Our',
-            'translation' => '我們的房子在學校附近。',
             'distractors' => [
                 ['vocabulary_id' => 67, 'word' => 'Slow'],
                 ['vocabulary_id' => 61, 'word' => 'Until'],
@@ -913,7 +844,6 @@ return [
             'vocabulary_id' => 70,
             'sentence' => 'We walked {{blank}} the street together.',
             'blank_word' => 'across',
-            'translation' => '我們一起走過街道。',
             'distractors' => [
                 ['vocabulary_id' => 61, 'word' => 'until'],
                 ['vocabulary_id' => 62, 'word' => 'anything'],
@@ -928,7 +858,6 @@ return [
             'vocabulary_id' => 71,
             'sentence' => 'The farmer tried to {{blank}} the rat.',
             'blank_word' => 'kill',
-            'translation' => '那位農夫試著殺死那隻老鼠。',
             'distractors' => [
                 ['vocabulary_id' => 72, 'word' => 'laugh'],
                 ['vocabulary_id' => 74, 'word' => 'work'],
@@ -940,7 +869,6 @@ return [
             'vocabulary_id' => 72,
             'sentence' => 'The funny story made us {{blank}}.',
             'blank_word' => 'laugh',
-            'translation' => '那個有趣的故事讓我們笑了。',
             'distractors' => [
                 ['vocabulary_id' => 71, 'word' => 'kill'],
                 ['vocabulary_id' => 74, 'word' => 'work'],
@@ -952,7 +880,6 @@ return [
             'vocabulary_id' => 73,
             'sentence' => 'She put a red {{blank}} in a vase.',
             'blank_word' => 'rose',
-            'translation' => '她把一朵紅玫瑰放進花瓶裡。',
             'distractors' => [
                 ['vocabulary_id' => 74, 'word' => 'work'],
                 ['vocabulary_id' => 75, 'word' => 'can'],
@@ -963,7 +890,6 @@ return [
             'vocabulary_id' => 74,
             'sentence' => 'My parents {{blank}} at a hospital.',
             'blank_word' => 'work',
-            'translation' => '我的父母在醫院工作。',
             'distractors' => [
                 ['vocabulary_id' => 71, 'word' => 'kill'],
                 ['vocabulary_id' => 72, 'word' => 'laugh'],
@@ -977,7 +903,6 @@ return [
             'vocabulary_id' => 75,
             'sentence' => 'There is a {{blank}} of soup in the cupboard.',
             'blank_word' => 'can',
-            'translation' => '櫥櫃裡有一罐湯。',
             'distractors' => [
                 ['vocabulary_id' => 73, 'word' => 'rose'],
                 ['vocabulary_id' => 74, 'word' => 'work'],
@@ -988,7 +913,6 @@ return [
             'vocabulary_id' => 76,
             'sentence' => 'This table is {{blank}} and strong.',
             'blank_word' => 'hard',
-            'translation' => '這張桌子很堅硬而且牢固。',
             'distractors' => [
                 ['vocabulary_id' => 77, 'word' => 'small'],
                 ['vocabulary_id' => 71, 'word' => 'kill'],
@@ -1001,7 +925,6 @@ return [
             'vocabulary_id' => 77,
             'sentence' => 'The baby has a {{blank}} toy.',
             'blank_word' => 'small',
-            'translation' => '那個嬰兒有一個小玩具。',
             'distractors' => [
                 ['vocabulary_id' => 76, 'word' => 'hard'],
                 ['vocabulary_id' => 71, 'word' => 'kill'],
@@ -1014,7 +937,6 @@ return [
             'vocabulary_id' => 78,
             'sentence' => 'I want to {{blank}} a new pencil.',
             'blank_word' => 'buy',
-            'translation' => '我想買一支新鉛筆。',
             'distractors' => [
                 ['vocabulary_id' => 71, 'word' => 'kill'],
                 ['vocabulary_id' => 72, 'word' => 'laugh'],
@@ -1026,7 +948,6 @@ return [
             'vocabulary_id' => 79,
             'sentence' => 'My father will {{blank}} dinner tonight.',
             'blank_word' => 'cook',
-            'translation' => '我爸爸今晚會煮晚餐。',
             'distractors' => [
                 ['vocabulary_id' => 71, 'word' => 'kill'],
                 ['vocabulary_id' => 72, 'word' => 'laugh'],
@@ -1038,7 +959,6 @@ return [
             'vocabulary_id' => 80,
             'sentence' => 'We eat {{blank}} at twelve o\'clock.',
             'blank_word' => 'lunch',
-            'translation' => '我們十二點吃午餐。',
             'distractors' => [
                 ['vocabulary_id' => 73, 'word' => 'rose'],
                 ['vocabulary_id' => 74, 'word' => 'work'],
@@ -1051,7 +971,6 @@ return [
             'vocabulary_id' => 81,
             'sentence' => 'There is a tall {{blank}} in our yard.',
             'blank_word' => 'tree',
-            'translation' => '我們家院子裡有一棵高大的樹。',
             'distractors' => [
                 ['vocabulary_id' => 82, 'word' => 'goose'],
                 ['vocabulary_id' => 85, 'word' => 'homework'],
@@ -1064,7 +983,6 @@ return [
             'vocabulary_id' => 82,
             'sentence' => 'The {{blank}} is swimming in the lake.',
             'blank_word' => 'goose',
-            'translation' => '那隻鵝正在湖裡游泳。',
             'distractors' => [
                 ['vocabulary_id' => 81, 'word' => 'tree'],
                 ['vocabulary_id' => 85, 'word' => 'homework'],
@@ -1077,7 +995,6 @@ return [
             'vocabulary_id' => 83,
             'sentence' => 'I can {{blank}} this heavy box for you.',
             'blank_word' => 'carry',
-            'translation' => '我可以幫你搬這個重箱子。',
             'distractors' => [
                 ['vocabulary_id' => 86, 'word' => 'sell'],
                 ['vocabulary_id' => 81, 'word' => 'tree'],
@@ -1090,7 +1007,6 @@ return [
             'vocabulary_id' => 84,
             'sentence' => 'The river is very {{blank}} here.',
             'blank_word' => 'wide',
-            'translation' => '這條河在這裡非常寬闊。',
             'distractors' => [
                 ['vocabulary_id' => 81, 'word' => 'tree'],
                 ['vocabulary_id' => 82, 'word' => 'goose'],
@@ -1103,7 +1019,6 @@ return [
             'vocabulary_id' => 85,
             'sentence' => 'I finished my {{blank}} before dinner.',
             'blank_word' => 'homework',
-            'translation' => '我在晚餐前完成了家庭作業。',
             'distractors' => [
                 ['vocabulary_id' => 81, 'word' => 'tree'],
                 ['vocabulary_id' => 82, 'word' => 'goose'],
@@ -1116,7 +1031,6 @@ return [
             'vocabulary_id' => 86,
             'sentence' => 'They {{blank}} fresh fruit at the market.',
             'blank_word' => 'sell',
-            'translation' => '他們在市場賣新鮮水果。',
             'distractors' => [
                 ['vocabulary_id' => 83, 'word' => 'carry'],
                 ['vocabulary_id' => 81, 'word' => 'tree'],
@@ -1129,7 +1043,6 @@ return [
             'vocabulary_id' => 87,
             'sentence' => 'The tall buildings were in my {{blank}}.',
             'blank_word' => 'sight',
-            'translation' => '那些高樓在我的視界中。',
             'distractors' => [
                 ['vocabulary_id' => 81, 'word' => 'tree'],
                 ['vocabulary_id' => 82, 'word' => 'goose'],
@@ -1142,7 +1055,6 @@ return [
             'vocabulary_id' => 88,
             'sentence' => 'We talked until the {{blank}} of the movie.',
             'blank_word' => 'end',
-            'translation' => '我們聊到電影最後。',
             'distractors' => [
                 ['vocabulary_id' => 81, 'word' => 'tree'],
                 ['vocabulary_id' => 82, 'word' => 'goose'],
@@ -1155,7 +1067,6 @@ return [
             'vocabulary_id' => 89,
             'sentence' => 'Mom made a chocolate {{blank}} for my birthday.',
             'blank_word' => 'cake',
-            'translation' => '媽媽為我的生日做了一個巧克力蛋糕。',
             'distractors' => [
                 ['vocabulary_id' => 81, 'word' => 'tree'],
                 ['vocabulary_id' => 82, 'word' => 'goose'],
@@ -1168,7 +1079,6 @@ return [
             'vocabulary_id' => 90,
             'sentence' => 'The little girl sat {{blank}} her friends.',
             'blank_word' => 'among',
-            'translation' => '那個小女孩坐在她的朋友之中。',
             'distractors' => [
                 ['vocabulary_id' => 81, 'word' => 'tree'],
                 ['vocabulary_id' => 82, 'word' => 'goose'],
@@ -1183,7 +1093,6 @@ return [
             'vocabulary_id' => 91,
             'sentence' => 'Basketball is my favorite {{blank}}.',
             'blank_word' => 'sport',
-            'translation' => '籃球是我最喜歡的運動。',
             'distractors' => [
                 ['vocabulary_id' => 93, 'word' => 'money'],
                 ['vocabulary_id' => 94, 'word' => 'machine'],
@@ -1195,7 +1104,6 @@ return [
             'vocabulary_id' => 92,
             'sentence' => 'Please {{blank}} your hand if you know the answer.',
             'blank_word' => 'raise',
-            'translation' => '如果你知道答案，請舉起手。',
             'distractors' => [
                 ['vocabulary_id' => 96, 'word' => 'send'],
                 ['vocabulary_id' => 100, 'word' => 'look'],
@@ -1208,7 +1116,6 @@ return [
             'vocabulary_id' => 93,
             'sentence' => 'I saved my {{blank}} to buy a new book.',
             'blank_word' => 'money',
-            'translation' => '我存錢來買一本新書。',
             'distractors' => [
                 ['vocabulary_id' => 91, 'word' => 'sport'],
                 ['vocabulary_id' => 94, 'word' => 'machine'],
@@ -1220,7 +1127,6 @@ return [
             'vocabulary_id' => 94,
             'sentence' => 'This {{blank}} makes fresh juice.',
             'blank_word' => 'machine',
-            'translation' => '這台機器可以製作新鮮果汁。',
             'distractors' => [
                 ['vocabulary_id' => 91, 'word' => 'sport'],
                 ['vocabulary_id' => 93, 'word' => 'money'],
@@ -1232,7 +1138,6 @@ return [
             'vocabulary_id' => 95,
             'sentence' => 'The yellow {{blank}} followed its mother.',
             'blank_word' => 'duckling',
-            'translation' => '那隻黃色的小鴨跟著牠的媽媽。',
             'distractors' => [
                 ['vocabulary_id' => 91, 'word' => 'sport'],
                 ['vocabulary_id' => 93, 'word' => 'money'],
@@ -1244,7 +1149,6 @@ return [
             'vocabulary_id' => 96,
             'sentence' => 'I will {{blank}} a card to my grandmother.',
             'blank_word' => 'send',
-            'translation' => '我會寄一張卡片給我的祖母。',
             'distractors' => [
                 ['vocabulary_id' => 92, 'word' => 'raise'],
                 ['vocabulary_id' => 100, 'word' => 'look'],
@@ -1257,7 +1161,6 @@ return [
             'vocabulary_id' => 97,
             'sentence' => '{{blank}} is your favorite color?',
             'blank_word' => 'Which',
-            'translation' => '哪一個是你最喜歡的顏色？',
             'distractors' => [
                 ['vocabulary_id' => 91, 'word' => 'Sport'],
                 ['vocabulary_id' => 92, 'word' => 'Raise'],
@@ -1270,7 +1173,6 @@ return [
             'vocabulary_id' => 98,
             'sentence' => 'I wear my {{blank}} when I play basketball.',
             'blank_word' => 'sneakers',
-            'translation' => '我打籃球時穿運動鞋。',
             'distractors' => [
                 ['vocabulary_id' => 91, 'word' => 'sport'],
                 ['vocabulary_id' => 93, 'word' => 'money'],
@@ -1282,7 +1184,6 @@ return [
             'vocabulary_id' => 99,
             'sentence' => 'Amy is {{blank}} and learns new things quickly.',
             'blank_word' => 'smart',
-            'translation' => '艾咪很聰明，而且學習新事物很快。',
             'distractors' => [
                 ['vocabulary_id' => 91, 'word' => 'sport'],
                 ['vocabulary_id' => 92, 'word' => 'raise'],
@@ -1295,7 +1196,6 @@ return [
             'vocabulary_id' => 100,
             'sentence' => 'Please {{blank}} at the picture.',
             'blank_word' => 'look',
-            'translation' => '請看這張圖片。',
             'distractors' => [
                 ['vocabulary_id' => 92, 'word' => 'raise'],
                 ['vocabulary_id' => 96, 'word' => 'send'],
@@ -1310,7 +1210,6 @@ return [
             'vocabulary_id' => 101,
             'sentence' => 'The manager {{blank}} Tom for being late too often.',
             'blank_word' => 'fired',
-            'translation' => '經理因為湯姆太常遲到而解雇了他。',
             'distractors' => [
                 ['vocabulary_id' => 108, 'word' => 'weighed'],
                 ['vocabulary_id' => 102, 'word' => 'idea'],
@@ -1323,7 +1222,6 @@ return [
             'vocabulary_id' => 102,
             'sentence' => 'I have an {{blank}} for our class project.',
             'blank_word' => 'idea',
-            'translation' => '我有一個關於我們課堂專題的主意。',
             'distractors' => [
                 ['vocabulary_id' => 104, 'word' => 'book'],
                 ['vocabulary_id' => 106, 'word' => 'beauty'],
@@ -1335,7 +1233,6 @@ return [
             'vocabulary_id' => 103,
             'sentence' => 'It is raining, but we are {{blank}} going outside.',
             'blank_word' => 'still',
-            'translation' => '現在正在下雨，但我們仍然要出去。',
             'distractors' => [
                 ['vocabulary_id' => 110, 'word' => 'so'],
                 ['vocabulary_id' => 101, 'word' => 'fire'],
@@ -1348,7 +1245,6 @@ return [
             'vocabulary_id' => 104,
             'sentence' => 'I borrowed an interesting {{blank}} from the library.',
             'blank_word' => 'book',
-            'translation' => '我從圖書館借了一本有趣的書。',
             'distractors' => [
                 ['vocabulary_id' => 102, 'word' => 'idea'],
                 ['vocabulary_id' => 106, 'word' => 'beauty'],
@@ -1360,7 +1256,6 @@ return [
             'vocabulary_id' => 105,
             'sentence' => 'The music is too {{blank}}.',
             'blank_word' => 'loud',
-            'translation' => '音樂太大聲了。',
             'distractors' => [
                 ['vocabulary_id' => 101, 'word' => 'fire'],
                 ['vocabulary_id' => 102, 'word' => 'idea'],
@@ -1373,7 +1268,6 @@ return [
             'vocabulary_id' => 106,
             'sentence' => 'We enjoyed the {{blank}} of the sunset.',
             'blank_word' => 'beauty',
-            'translation' => '我們欣賞了夕陽的美麗。',
             'distractors' => [
                 ['vocabulary_id' => 102, 'word' => 'idea'],
                 ['vocabulary_id' => 104, 'word' => 'book'],
@@ -1385,7 +1279,6 @@ return [
             'vocabulary_id' => 107,
             'sentence' => 'The {{blank}} is eating grass in the field.',
             'blank_word' => 'cow',
-            'translation' => '那頭母牛正在田裡吃草。',
             'distractors' => [
                 ['vocabulary_id' => 102, 'word' => 'idea'],
                 ['vocabulary_id' => 104, 'word' => 'book'],
@@ -1397,7 +1290,6 @@ return [
             'vocabulary_id' => 108,
             'sentence' => 'Please {{blank}} the apples before you buy them.',
             'blank_word' => 'weigh',
-            'translation' => '請在購買蘋果前秤一下它們的重量。',
             'distractors' => [
                 ['vocabulary_id' => 101, 'word' => 'fire'],
                 ['vocabulary_id' => 102, 'word' => 'idea'],
@@ -1410,7 +1302,6 @@ return [
             'vocabulary_id' => 109,
             'sentence' => 'The clock says three {{blank}}.',
             'blank_word' => 'o\'clock',
-            'translation' => '時鐘顯示現在是三點鐘。',
             'distractors' => [
                 ['vocabulary_id' => 102, 'word' => 'idea'],
                 ['vocabulary_id' => 104, 'word' => 'book'],
@@ -1422,7 +1313,6 @@ return [
             'vocabulary_id' => 110,
             'sentence' => 'The baby is {{blank}} cute.',
             'blank_word' => 'so',
-            'translation' => '這個寶寶非常可愛。',
             'distractors' => [
                 ['vocabulary_id' => 103, 'word' => 'still'],
                 ['vocabulary_id' => 101, 'word' => 'fire'],
@@ -1437,7 +1327,6 @@ return [
             'vocabulary_id' => 111,
             'sentence' => 'My {{blank}} hurts because I ate too much.',
             'blank_word' => 'tummy',
-            'translation' => '我的肚子痛，因為我吃太多了。',
             'distractors' => [
                 ['vocabulary_id' => 114, 'word' => 'coffee'],
                 ['vocabulary_id' => 115, 'word' => 'cowboy'],
@@ -1449,7 +1338,6 @@ return [
             'vocabulary_id' => 112,
             'sentence' => '{{blank}} are my best friend.',
             'blank_word' => 'You',
-            'translation' => '你是我最好的朋友。',
             'distractors' => [
                 ['vocabulary_id' => 111, 'word' => 'Tummy'],
                 ['vocabulary_id' => 113, 'word' => 'Round'],
@@ -1462,7 +1350,6 @@ return [
             'vocabulary_id' => 113,
             'sentence' => 'The moon looks {{blank}} tonight.',
             'blank_word' => 'round',
-            'translation' => '今晚的月亮看起來是圓的。',
             'distractors' => [
                 ['vocabulary_id' => 118, 'word' => 'long'],
                 ['vocabulary_id' => 111, 'word' => 'tummy'],
@@ -1475,7 +1362,6 @@ return [
             'vocabulary_id' => 114,
             'sentence' => 'My father drinks {{blank}} every morning.',
             'blank_word' => 'coffee',
-            'translation' => '我爸爸每天早上喝咖啡。',
             'distractors' => [
                 ['vocabulary_id' => 111, 'word' => 'tummy'],
                 ['vocabulary_id' => 115, 'word' => 'cowboy'],
@@ -1487,7 +1373,6 @@ return [
             'vocabulary_id' => 115,
             'sentence' => 'The {{blank}} rode a horse across the field.',
             'blank_word' => 'cowboy',
-            'translation' => '那名牛仔騎馬穿過田野。',
             'distractors' => [
                 ['vocabulary_id' => 111, 'word' => 'tummy'],
                 ['vocabulary_id' => 114, 'word' => 'coffee'],
@@ -1499,7 +1384,6 @@ return [
             'vocabulary_id' => 116,
             'sentence' => 'I {{blank}} my family very much.',
             'blank_word' => 'love',
-            'translation' => '我非常愛我的家人。',
             'distractors' => [
                 ['vocabulary_id' => 111, 'word' => 'tummy'],
                 ['vocabulary_id' => 114, 'word' => 'coffee'],
@@ -1512,7 +1396,6 @@ return [
             'vocabulary_id' => 117,
             'sentence' => 'My uncle works in a car {{blank}}.',
             'blank_word' => 'factory',
-            'translation' => '我叔叔在一家汽車工廠工作。',
             'distractors' => [
                 ['vocabulary_id' => 111, 'word' => 'tummy'],
                 ['vocabulary_id' => 114, 'word' => 'coffee'],
@@ -1524,7 +1407,6 @@ return [
             'vocabulary_id' => 118,
             'sentence' => 'The road is {{blank}}, but the view is beautiful.',
             'blank_word' => 'long',
-            'translation' => '這條路很長，但景色很美。',
             'distractors' => [
                 ['vocabulary_id' => 113, 'word' => 'round'],
                 ['vocabulary_id' => 119, 'word' => 'not'],
@@ -1537,7 +1419,6 @@ return [
             'vocabulary_id' => 119,
             'sentence' => 'I am {{blank}} hungry now.',
             'blank_word' => 'not',
-            'translation' => '我現在不餓。',
             'distractors' => [
                 ['vocabulary_id' => 118, 'word' => 'long'],
                 ['vocabulary_id' => 111, 'word' => 'tummy'],
@@ -1550,7 +1431,6 @@ return [
             'vocabulary_id' => 120,
             'sentence' => 'Please {{blank}} me to the classroom.',
             'blank_word' => 'follow',
-            'translation' => '請跟著我到教室。',
             'distractors' => [
                 ['vocabulary_id' => 116, 'word' => 'love'],
                 ['vocabulary_id' => 111, 'word' => 'tummy'],
@@ -1565,7 +1445,6 @@ return [
             'vocabulary_id' => 121,
             'sentence' => 'My dad reads the {{blank}} every morning.',
             'blank_word' => 'newspaper',
-            'translation' => '我爸爸每天早上讀報紙。',
             'distractors' => [
                 ['vocabulary_id' => 122, 'word' => 'airmail'],
                 ['vocabulary_id' => 123, 'word' => 'mouth'],
@@ -1576,7 +1455,6 @@ return [
             'vocabulary_id' => 122,
             'sentence' => 'I sent the letter by {{blank}}.',
             'blank_word' => 'airmail',
-            'translation' => '我用航空郵政寄出這封信。',
             'distractors' => [
                 ['vocabulary_id' => 121, 'word' => 'newspaper'],
                 ['vocabulary_id' => 123, 'word' => 'mouth'],
@@ -1587,7 +1465,6 @@ return [
             'vocabulary_id' => 123,
             'sentence' => 'Please open your {{blank}}.',
             'blank_word' => 'mouth',
-            'translation' => '請張開你的嘴巴。',
             'distractors' => [
                 ['vocabulary_id' => 121, 'word' => 'newspaper'],
                 ['vocabulary_id' => 122, 'word' => 'airmail'],
@@ -1598,7 +1475,6 @@ return [
             'vocabulary_id' => 124,
             'sentence' => 'We had {{blank}} for dinner.',
             'blank_word' => 'fish',
-            'translation' => '我們晚餐吃魚。',
             'distractors' => [
                 ['vocabulary_id' => 121, 'word' => 'newspaper'],
                 ['vocabulary_id' => 122, 'word' => 'airmail'],
@@ -1609,7 +1485,6 @@ return [
             'vocabulary_id' => 125,
             'sentence' => 'The app can be used {{blank}}.',
             'blank_word' => 'offline',
-            'translation' => '這個應用程式可以離線使用。',
             'distractors' => [
                 ['vocabulary_id' => 126, 'word' => 'glad'],
                 ['vocabulary_id' => 128, 'word' => 'only'],
@@ -1621,7 +1496,6 @@ return [
             'vocabulary_id' => 126,
             'sentence' => 'I am {{blank}} to see you.',
             'blank_word' => 'glad',
-            'translation' => '我很高興見到你。',
             'distractors' => [
                 ['vocabulary_id' => 125, 'word' => 'offline'],
                 ['vocabulary_id' => 128, 'word' => 'only'],
@@ -1632,7 +1506,6 @@ return [
             'vocabulary_id' => 127,
             'sentence' => 'I {{blank}} a student.',
             'blank_word' => 'am',
-            'translation' => '我是一名學生。',
             'distractors' => [
                 ['vocabulary_id' => 121, 'word' => 'newspaper'],
                 ['vocabulary_id' => 122, 'word' => 'airmail'],
@@ -1645,7 +1518,6 @@ return [
             'vocabulary_id' => 128,
             'sentence' => 'She is the {{blank}} child in her family.',
             'blank_word' => 'only',
-            'translation' => '她是家中唯一的孩子。',
             'distractors' => [
                 ['vocabulary_id' => 125, 'word' => 'offline'],
                 ['vocabulary_id' => 126, 'word' => 'glad'],
@@ -1656,7 +1528,6 @@ return [
             'vocabulary_id' => 129,
             'sentence' => 'There are flowers all {{blank}} the house.',
             'blank_word' => 'around',
-            'translation' => '房子周圍到處都是花。',
             'distractors' => [
                 ['vocabulary_id' => 125, 'word' => 'offline'],
                 ['vocabulary_id' => 121, 'word' => 'newspaper'],
@@ -1669,7 +1540,6 @@ return [
             'vocabulary_id' => 130,
             'sentence' => 'The classroom is very {{blank}}.',
             'blank_word' => 'noisy',
-            'translation' => '教室裡非常喧鬧。',
             'distractors' => [
                 ['vocabulary_id' => 125, 'word' => 'offline'],
                 ['vocabulary_id' => 126, 'word' => 'glad'],
@@ -1682,7 +1552,6 @@ return [
             'vocabulary_id' => 131,
             'sentence' => 'I ate {{blank}} of the cake.',
             'blank_word' => 'half',
-            'translation' => '我吃了蛋糕的一半。',
             'distractors' => [
                 ['vocabulary_id' => 132, 'word' => 'jam'],
                 ['vocabulary_id' => 133, 'word' => 'kind'],
@@ -1693,7 +1562,6 @@ return [
             'vocabulary_id' => 132,
             'sentence' => 'I put strawberry {{blank}} on my toast.',
             'blank_word' => 'jam',
-            'translation' => '我在吐司上塗了草莓果醬。',
             'distractors' => [
                 ['vocabulary_id' => 131, 'word' => 'half'],
                 ['vocabulary_id' => 133, 'word' => 'kind'],
@@ -1704,7 +1572,6 @@ return [
             'vocabulary_id' => 133,
             'sentence' => 'What {{blank}} of music do you like?',
             'blank_word' => 'kind',
-            'translation' => '你喜歡哪一種類型的音樂？',
             'distractors' => [
                 ['vocabulary_id' => 131, 'word' => 'half'],
                 ['vocabulary_id' => 132, 'word' => 'jam'],
@@ -1715,7 +1582,6 @@ return [
             'vocabulary_id' => 134,
             'sentence' => 'We learned some {{blank}} English words.',
             'blank_word' => 'basic',
-            'translation' => '我們學了一些基礎的英文單字。',
             'distractors' => [
                 ['vocabulary_id' => 136, 'word' => 'blue'],
                 ['vocabulary_id' => 138, 'word' => 'fresh'],
@@ -1726,7 +1592,6 @@ return [
             'vocabulary_id' => 135,
             'sentence' => 'There is a little {{blank}} on his knee.',
             'blank_word' => 'blood',
-            'translation' => '他的膝蓋上有一點血。',
             'distractors' => [
                 ['vocabulary_id' => 131, 'word' => 'half'],
                 ['vocabulary_id' => 132, 'word' => 'jam'],
@@ -1737,7 +1602,6 @@ return [
             'vocabulary_id' => 136,
             'sentence' => 'She is wearing a {{blank}} hat.',
             'blank_word' => 'blue',
-            'translation' => '她戴著一頂藍色的帽子。',
             'distractors' => [
                 ['vocabulary_id' => 134, 'word' => 'basic'],
                 ['vocabulary_id' => 138, 'word' => 'fresh'],
@@ -1748,7 +1612,6 @@ return [
             'vocabulary_id' => 137,
             'sentence' => 'I {{blank}} my friend.',
             'blank_word' => 'believe',
-            'translation' => '我相信我的朋友。',
             'distractors' => [
                 ['vocabulary_id' => 131, 'word' => 'half'],
                 ['vocabulary_id' => 132, 'word' => 'jam'],
@@ -1761,7 +1624,6 @@ return [
             'vocabulary_id' => 138,
             'sentence' => 'These apples are {{blank}}.',
             'blank_word' => 'fresh',
-            'translation' => '這些蘋果很新鮮。',
             'distractors' => [
                 ['vocabulary_id' => 134, 'word' => 'basic'],
                 ['vocabulary_id' => 136, 'word' => 'blue'],
@@ -1772,7 +1634,6 @@ return [
             'vocabulary_id' => 139,
             'sentence' => 'The cat is sleeping {{blank}} the table.',
             'blank_word' => 'under',
-            'translation' => '那隻貓正在桌子下面睡覺。',
             'distractors' => [
                 ['vocabulary_id' => 131, 'word' => 'half'],
                 ['vocabulary_id' => 132, 'word' => 'jam'],
@@ -1785,7 +1646,6 @@ return [
             'vocabulary_id' => 140,
             'sentence' => 'It is {{blank}} to take all the food.',
             'blank_word' => 'selfish',
-            'translation' => '把所有食物都拿走是很自私的。',
             'distractors' => [
                 ['vocabulary_id' => 134, 'word' => 'basic'],
                 ['vocabulary_id' => 136, 'word' => 'blue'],
@@ -1798,7 +1658,6 @@ return [
             'vocabulary_id' => 141,
             'sentence' => 'The water is {{blank}}.',
             'blank_word' => 'cold',
-            'translation' => '這水是冷的。',
             'distractors' => [
                 ['vocabulary_id' => 142, 'word' => 'back'],
                 ['vocabulary_id' => 143, 'word' => 'marry'],
@@ -1811,7 +1670,6 @@ return [
             'vocabulary_id' => 142,
             'sentence' => 'My {{blank}} hurts today.',
             'blank_word' => 'back',
-            'translation' => '我的背部今天很痛。',
             'distractors' => [
                 ['vocabulary_id' => 144, 'word' => 'wall'],
                 ['vocabulary_id' => 147, 'word' => 'fact'],
@@ -1822,7 +1680,6 @@ return [
             'vocabulary_id' => 143,
             'sentence' => 'Tom wants to {{blank}} Anna.',
             'blank_word' => 'marry',
-            'translation' => '湯姆想娶安娜。',
             'distractors' => [
                 ['vocabulary_id' => 146, 'word' => 'swim'],
                 ['vocabulary_id' => 149, 'word' => 'catch'],
@@ -1833,7 +1690,6 @@ return [
             'vocabulary_id' => 144,
             'sentence' => 'There is a picture on the {{blank}}.',
             'blank_word' => 'wall',
-            'translation' => '牆上有一幅畫。',
             'distractors' => [
                 ['vocabulary_id' => 142, 'word' => 'back'],
                 ['vocabulary_id' => 147, 'word' => 'fact'],
@@ -1844,7 +1700,6 @@ return [
             'vocabulary_id' => 145,
             'sentence' => 'The chair is {{blank}} the window.',
             'blank_word' => 'by',
-            'translation' => '椅子在窗戶旁邊。',
             'distractors' => [
                 ['vocabulary_id' => 141, 'word' => 'cold'],
                 ['vocabulary_id' => 142, 'word' => 'back'],
@@ -1857,7 +1712,6 @@ return [
             'vocabulary_id' => 146,
             'sentence' => 'I like to {{blank}} in the pool.',
             'blank_word' => 'swim',
-            'translation' => '我喜歡在游泳池裡游泳。',
             'distractors' => [
                 ['vocabulary_id' => 143, 'word' => 'marry'],
                 ['vocabulary_id' => 149, 'word' => 'catch'],
@@ -1868,7 +1722,6 @@ return [
             'vocabulary_id' => 147,
             'sentence' => 'It is a {{blank}} that the sun is hot.',
             'blank_word' => 'fact',
-            'translation' => '太陽很熱是個事實。',
             'distractors' => [
                 ['vocabulary_id' => 142, 'word' => 'back'],
                 ['vocabulary_id' => 144, 'word' => 'wall'],
@@ -1879,7 +1732,6 @@ return [
             'vocabulary_id' => 148,
             'sentence' => 'I saw him two days {{blank}}.',
             'blank_word' => 'ago',
-            'translation' => '我兩天前看見他。',
             'distractors' => [
                 ['vocabulary_id' => 141, 'word' => 'cold'],
                 ['vocabulary_id' => 142, 'word' => 'back'],
@@ -1892,7 +1744,6 @@ return [
             'vocabulary_id' => 149,
             'sentence' => 'Please {{blank}} the ball.',
             'blank_word' => 'catch',
-            'translation' => '請接住球。',
             'distractors' => [
                 ['vocabulary_id' => 143, 'word' => 'marry'],
                 ['vocabulary_id' => 146, 'word' => 'swim'],
@@ -1903,7 +1754,6 @@ return [
             'vocabulary_id' => 150,
             'sentence' => 'The {{blank}} is hot and bright.',
             'blank_word' => 'fire',
-            'translation' => '火很熱又很明亮。',
             'distractors' => [
                 ['vocabulary_id' => 142, 'word' => 'back'],
                 ['vocabulary_id' => 143, 'word' => 'marry'],
@@ -1919,7 +1769,6 @@ return [
             'vocabulary_id' => 151,
             'sentence' => 'We are {{blank}} this plan.',
             'blank_word' => 'against',
-            'translation' => '我們反對這個計畫。',
             'distractors' => [
                 ['vocabulary_id' => 152, 'word' => 'along'],
                 ['vocabulary_id' => 153, 'word' => 'nine'],
@@ -1932,7 +1781,6 @@ return [
             'vocabulary_id' => 152,
             'sentence' => 'We walked {{blank}} the river.',
             'blank_word' => 'along',
-            'translation' => '我們沿著河邊走。',
             'distractors' => [
                 ['vocabulary_id' => 151, 'word' => 'against'],
                 ['vocabulary_id' => 153, 'word' => 'nine'],
@@ -1945,7 +1793,6 @@ return [
             'vocabulary_id' => 153,
             'sentence' => 'There are {{blank}} students in the room.',
             'blank_word' => 'nine',
-            'translation' => '房間裡有九位學生。',
             'distractors' => [
                 ['vocabulary_id' => 155, 'word' => 'kitchen'],
                 ['vocabulary_id' => 157, 'word' => 'question'],
@@ -1957,7 +1804,6 @@ return [
             'vocabulary_id' => 154,
             'sentence' => 'A dog is in {{blank}} yard.',
             'blank_word' => 'the',
-            'translation' => '一隻狗在院子裡。',
             'distractors' => [
                 ['vocabulary_id' => 151, 'word' => 'against'],
                 ['vocabulary_id' => 152, 'word' => 'along'],
@@ -1970,7 +1816,6 @@ return [
             'vocabulary_id' => 155,
             'sentence' => 'Mom is cooking in the {{blank}}.',
             'blank_word' => 'kitchen',
-            'translation' => '媽媽正在廚房裡煮飯。',
             'distractors' => [
                 ['vocabulary_id' => 153, 'word' => 'nine'],
                 ['vocabulary_id' => 157, 'word' => 'question'],
@@ -1982,7 +1827,6 @@ return [
             'vocabulary_id' => 156,
             'sentence' => 'Please {{blank}} your name here.',
             'blank_word' => 'write',
-            'translation' => '請在這裡寫下你的名字。',
             'distractors' => [
                 ['vocabulary_id' => 159, 'word' => 'point'],
                 ['vocabulary_id' => 151, 'word' => 'against'],
@@ -1995,7 +1839,6 @@ return [
             'vocabulary_id' => 157,
             'sentence' => 'I have a {{blank}} for you.',
             'blank_word' => 'question',
-            'translation' => '我有一個問題要問你。',
             'distractors' => [
                 ['vocabulary_id' => 153, 'word' => 'nine'],
                 ['vocabulary_id' => 155, 'word' => 'kitchen'],
@@ -2007,7 +1850,6 @@ return [
             'vocabulary_id' => 158,
             'sentence' => 'The {{blank}} helps the doctor.',
             'blank_word' => 'nurse',
-            'translation' => '護士幫助醫生。',
             'distractors' => [
                 ['vocabulary_id' => 153, 'word' => 'nine'],
                 ['vocabulary_id' => 155, 'word' => 'kitchen'],
@@ -2019,7 +1861,6 @@ return [
             'vocabulary_id' => 159,
             'sentence' => 'Please {{blank}} to the correct answer.',
             'blank_word' => 'point',
-            'translation' => '請指向正確的答案。',
             'distractors' => [
                 ['vocabulary_id' => 156, 'word' => 'write'],
                 ['vocabulary_id' => 151, 'word' => 'against'],
@@ -2032,7 +1873,6 @@ return [
             'vocabulary_id' => 160,
             'sentence' => 'There is a {{blank}} in my sock.',
             'blank_word' => 'hole',
-            'translation' => '我的襪子上有一個洞。',
             'distractors' => [
                 ['vocabulary_id' => 153, 'word' => 'nine'],
                 ['vocabulary_id' => 155, 'word' => 'kitchen'],
@@ -2046,7 +1886,6 @@ return [
             'vocabulary_id' => 161,
             'sentence' => 'The {{blank}} of the old dog made the family very sad.',
             'blank_word' => 'death',
-            'translation' => '那隻老狗的死亡讓全家人非常難過。',
             'distractors' => [
                 ['vocabulary_id' => 162, 'word' => 'interest'],
                 ['vocabulary_id' => 164, 'word' => 'lamp'],
@@ -2057,7 +1896,6 @@ return [
             'vocabulary_id' => 162,
             'sentence' => 'I have a strong {{blank}} in animals.',
             'blank_word' => 'interest',
-            'translation' => '我對動物有濃厚的興趣。',
             'distractors' => [
                 ['vocabulary_id' => 161, 'word' => 'death'],
                 ['vocabulary_id' => 164, 'word' => 'lamp'],
@@ -2068,7 +1906,6 @@ return [
             'vocabulary_id' => 163,
             'sentence' => 'The baby can {{blank}} walk now.',
             'blank_word' => 'even',
-            'translation' => '這個寶寶現在甚至會走路了。',
             'distractors' => [
                 ['vocabulary_id' => 161, 'word' => 'death'],
                 ['vocabulary_id' => 162, 'word' => 'interest'],
@@ -2081,7 +1918,6 @@ return [
             'vocabulary_id' => 164,
             'sentence' => 'Please turn on the {{blank}} because the room is dark.',
             'blank_word' => 'lamp',
-            'translation' => '請打開那盞燈，因為房間很暗。',
             'distractors' => [
                 ['vocabulary_id' => 161, 'word' => 'death'],
                 ['vocabulary_id' => 162, 'word' => 'interest'],
@@ -2092,7 +1928,6 @@ return [
             'vocabulary_id' => 165,
             'sentence' => 'This is the {{blank}} day of my week.',
             'blank_word' => 'worst',
-            'translation' => '這是我這週最糟糕的一天。',
             'distractors' => [
                 ['vocabulary_id' => 161, 'word' => 'death'],
                 ['vocabulary_id' => 162, 'word' => 'interest'],
@@ -2105,7 +1940,6 @@ return [
             'vocabulary_id' => 166,
             'sentence' => 'I {{blank}} a pencil for my homework.',
             'blank_word' => 'need',
-            'translation' => '我需要一枝鉛筆寫作業。',
             'distractors' => [
                 ['vocabulary_id' => 169, 'word' => 'cry'],
                 ['vocabulary_id' => 170, 'word' => 'pass'],
@@ -2118,7 +1952,6 @@ return [
             'vocabulary_id' => 167,
             'sentence' => 'Please be quiet {{blank}} the movie.',
             'blank_word' => 'during',
-            'translation' => '看電影期間請保持安靜。',
             'distractors' => [
                 ['vocabulary_id' => 161, 'word' => 'death'],
                 ['vocabulary_id' => 162, 'word' => 'interest'],
@@ -2131,7 +1964,6 @@ return [
             'vocabulary_id' => 168,
             'sentence' => 'The children are swimming in the {{blank}}.',
             'blank_word' => 'pool',
-            'translation' => '孩子們正在水池裡游泳。',
             'distractors' => [
                 ['vocabulary_id' => 161, 'word' => 'death'],
                 ['vocabulary_id' => 162, 'word' => 'interest'],
@@ -2142,7 +1974,6 @@ return [
             'vocabulary_id' => 169,
             'sentence' => 'The baby began to {{blank}} when she was hungry.',
             'blank_word' => 'cry',
-            'translation' => '那個寶寶肚子餓時開始哭了。',
             'distractors' => [
                 ['vocabulary_id' => 166, 'word' => 'need'],
                 ['vocabulary_id' => 170, 'word' => 'pass'],
@@ -2155,7 +1986,6 @@ return [
             'vocabulary_id' => 170,
             'sentence' => 'We {{blank}} the library on our way to school.',
             'blank_word' => 'pass',
-            'translation' => '我們上學途中會經過圖書館。',
             'distractors' => [
                 ['vocabulary_id' => 166, 'word' => 'need'],
                 ['vocabulary_id' => 169, 'word' => 'cry'],
@@ -2170,7 +2000,6 @@ return [
             'vocabulary_id' => 171,
             'sentence' => 'We have music class on {{blank}}.',
             'blank_word' => 'Wednesday',
-            'translation' => '我們星期三有音樂課。',
             'distractors' => [
                 ['vocabulary_id' => 172, 'word' => 'scene'],
                 ['vocabulary_id' => 174, 'word' => 'bug'],
@@ -2184,7 +2013,6 @@ return [
             'vocabulary_id' => 172,
             'sentence' => 'The beach {{blank}} in the movie was beautiful.',
             'blank_word' => 'scene',
-            'translation' => '電影中的海灘場景很美。',
             'distractors' => [
                 ['vocabulary_id' => 171, 'word' => 'Wednesday'],
                 ['vocabulary_id' => 174, 'word' => 'bug'],
@@ -2198,7 +2026,6 @@ return [
             'vocabulary_id' => 173,
             'sentence' => 'The children {{blank}} over the puddle.',
             'blank_word' => 'jump',
-            'translation' => '孩子們跳過水窪。',
             'distractors' => [
                 ['vocabulary_id' => 180, 'word' => 'smile'],
                 ['vocabulary_id' => 171, 'word' => 'Wednesday'],
@@ -2211,7 +2038,6 @@ return [
             'vocabulary_id' => 174,
             'sentence' => 'There is a small {{blank}} on the leaf.',
             'blank_word' => 'bug',
-            'translation' => '葉子上有一隻小蟲子。',
             'distractors' => [
                 ['vocabulary_id' => 171, 'word' => 'Wednesday'],
                 ['vocabulary_id' => 172, 'word' => 'scene'],
@@ -2225,7 +2051,6 @@ return [
             'vocabulary_id' => 175,
             'sentence' => 'My sister has long black {{blank}}.',
             'blank_word' => 'hair',
-            'translation' => '我姊姊有一頭黑色長髮。',
             'distractors' => [
                 ['vocabulary_id' => 171, 'word' => 'Wednesday'],
                 ['vocabulary_id' => 172, 'word' => 'scene'],
@@ -2239,7 +2064,6 @@ return [
             'vocabulary_id' => 176,
             'sentence' => 'I hurt my {{blank}} when I fell.',
             'blank_word' => 'knee',
-            'translation' => '我跌倒時弄傷了膝蓋。',
             'distractors' => [
                 ['vocabulary_id' => 171, 'word' => 'Wednesday'],
                 ['vocabulary_id' => 172, 'word' => 'scene'],
@@ -2253,7 +2077,6 @@ return [
             'vocabulary_id' => 177,
             'sentence' => 'Many {{blank}} like to walk in this park.',
             'blank_word' => 'people',
-            'translation' => '許多人喜歡在這座公園散步。',
             'distractors' => [
                 ['vocabulary_id' => 171, 'word' => 'Wednesday'],
                 ['vocabulary_id' => 172, 'word' => 'scene'],
@@ -2267,7 +2090,6 @@ return [
             'vocabulary_id' => 178,
             'sentence' => 'The child is sleeping in her {{blank}}.',
             'blank_word' => 'bed',
-            'translation' => '那個孩子正在她的床上睡覺。',
             'distractors' => [
                 ['vocabulary_id' => 171, 'word' => 'Wednesday'],
                 ['vocabulary_id' => 172, 'word' => 'scene'],
@@ -2281,7 +2103,6 @@ return [
             'vocabulary_id' => 179,
             'sentence' => 'What {{blank}} shoes do you wear?',
             'blank_word' => 'size',
-            'translation' => '你穿幾號的鞋子？',
             'distractors' => [
                 ['vocabulary_id' => 171, 'word' => 'Wednesday'],
                 ['vocabulary_id' => 172, 'word' => 'scene'],
@@ -2295,7 +2116,6 @@ return [
             'vocabulary_id' => 180,
             'sentence' => 'The little girl gave me a friendly {{blank}}.',
             'blank_word' => 'smile',
-            'translation' => '那個小女孩對我露出友善的微笑。',
             'distractors' => [
                 ['vocabulary_id' => 171, 'word' => 'Wednesday'],
                 ['vocabulary_id' => 172, 'word' => 'scene'],
@@ -2311,7 +2131,6 @@ return [
             'vocabulary_id' => 181,
             'sentence' => 'Please {{blank}} me your drawing.',
             'blank_word' => 'show',
-            'translation' => '請把你的畫展示給我看。',
             'distractors' => [
                 ['vocabulary_id' => 182, 'word' => 'want'],
                 ['vocabulary_id' => 183, 'word' => 'shot'],
@@ -2324,7 +2143,6 @@ return [
             'vocabulary_id' => 182,
             'sentence' => 'I {{blank}} a glass of water.',
             'blank_word' => 'want',
-            'translation' => '我想要一杯水。',
             'distractors' => [
                 ['vocabulary_id' => 181, 'word' => 'show'],
                 ['vocabulary_id' => 183, 'word' => 'shot'],
@@ -2335,9 +2153,8 @@ return [
         ],
         [
             'vocabulary_id' => 183,
-            'sentence' => 'The boy {{blank}} the target with a toy gun.',
+            'sentence' => 'He made a great {{blank}} from the corner of the court.',
             'blank_word' => 'shot',
-            'translation' => '那個男孩用玩具槍射擊目標。',
             'distractors' => [
                 ['vocabulary_id' => 181, 'word' => 'show'],
                 ['vocabulary_id' => 182, 'word' => 'want'],
@@ -2350,7 +2167,6 @@ return [
             'vocabulary_id' => 184,
             'sentence' => 'The waiter brought our {{blank}}.',
             'blank_word' => 'order',
-            'translation' => '服務生送來了我們點的餐點。',
             'distractors' => [
                 ['vocabulary_id' => 186, 'word' => 'camera'],
                 ['vocabulary_id' => 188, 'word' => 'south'],
@@ -2362,7 +2178,6 @@ return [
             'vocabulary_id' => 185,
             'sentence' => 'The {{blank}} family lives in a small house.',
             'blank_word' => 'poor',
-            'translation' => '那個貧窮的家庭住在一間小房子裡。',
             'distractors' => [
                 ['vocabulary_id' => 181, 'word' => 'show'],
                 ['vocabulary_id' => 182, 'word' => 'want'],
@@ -2375,7 +2190,6 @@ return [
             'vocabulary_id' => 186,
             'sentence' => 'My father has a new {{blank}}.',
             'blank_word' => 'camera',
-            'translation' => '我爸爸有一台新照相機。',
             'distractors' => [
                 ['vocabulary_id' => 184, 'word' => 'order'],
                 ['vocabulary_id' => 188, 'word' => 'south'],
@@ -2387,7 +2201,6 @@ return [
             'vocabulary_id' => 187,
             'sentence' => 'What {{blank}} do you want?',
             'blank_word' => 'else',
-            'translation' => '你還想要其他什麼？',
             'distractors' => [
                 ['vocabulary_id' => 181, 'word' => 'show'],
                 ['vocabulary_id' => 183, 'word' => 'shot'],
@@ -2400,7 +2213,6 @@ return [
             'vocabulary_id' => 188,
             'sentence' => 'Many birds fly to the {{blank}} in winter.',
             'blank_word' => 'south',
-            'translation' => '許多鳥在冬天飛往南方。',
             'distractors' => [
                 ['vocabulary_id' => 184, 'word' => 'order'],
                 ['vocabulary_id' => 186, 'word' => 'camera'],
@@ -2412,7 +2224,6 @@ return [
             'vocabulary_id' => 189,
             'sentence' => '{{blank}} is an even number.',
             'blank_word' => 'Sixteen',
-            'translation' => '十六是偶數。',
             'distractors' => [
                 ['vocabulary_id' => 184, 'word' => 'Order'],
                 ['vocabulary_id' => 186, 'word' => 'Camera'],
@@ -2424,7 +2235,6 @@ return [
             'vocabulary_id' => 190,
             'sentence' => 'My {{blank}} tells me stories.',
             'blank_word' => 'grandfather',
-            'translation' => '我的爺爺會講故事給我聽。',
             'distractors' => [
                 ['vocabulary_id' => 184, 'word' => 'order'],
                 ['vocabulary_id' => 186, 'word' => 'camera'],
@@ -2438,7 +2248,6 @@ return [
             'vocabulary_id' => 191,
             'sentence' => 'I visit my grandparents every {{blank}}.',
             'blank_word' => 'year',
-            'translation' => '我每年都會拜訪祖父母。',
             'distractors' => [
                 ['vocabulary_id' => 192, 'word' => 'apple'],
                 ['vocabulary_id' => 193, 'word' => 'sir'],
@@ -2451,7 +2260,6 @@ return [
             'vocabulary_id' => 192,
             'sentence' => 'She eats an {{blank}} every morning.',
             'blank_word' => 'apple',
-            'translation' => '她每天早上吃一顆蘋果。',
             'distractors' => [
                 ['vocabulary_id' => 191, 'word' => 'year'],
                 ['vocabulary_id' => 193, 'word' => 'sir'],
@@ -2464,7 +2272,6 @@ return [
             'vocabulary_id' => 193,
             'sentence' => 'Yes, {{blank}}, I understand.',
             'blank_word' => 'sir',
-            'translation' => '是的，先生，我了解了。',
             'distractors' => [
                 ['vocabulary_id' => 191, 'word' => 'year'],
                 ['vocabulary_id' => 192, 'word' => 'apple'],
@@ -2477,7 +2284,6 @@ return [
             'vocabulary_id' => 194,
             'sentence' => 'The children shouted with {{blank}}.',
             'blank_word' => 'joy',
-            'translation' => '孩子們開心地大叫。',
             'distractors' => [
                 ['vocabulary_id' => 191, 'word' => 'year'],
                 ['vocabulary_id' => 192, 'word' => 'apple'],
@@ -2490,7 +2296,6 @@ return [
             'vocabulary_id' => 195,
             'sentence' => 'Do not {{blank}} your food.',
             'blank_word' => 'waste',
-            'translation' => '不要浪費你的食物。',
             'distractors' => [
                 ['vocabulary_id' => 198, 'word' => 'are'],
                 ['vocabulary_id' => 199, 'word' => 'get'],
@@ -2503,7 +2308,6 @@ return [
             'vocabulary_id' => 196,
             'sentence' => 'The dog has a wet {{blank}}.',
             'blank_word' => 'nose',
-            'translation' => '那隻狗有一個濕濕的鼻子。',
             'distractors' => [
                 ['vocabulary_id' => 191, 'word' => 'year'],
                 ['vocabulary_id' => 192, 'word' => 'apple'],
@@ -2516,7 +2320,6 @@ return [
             'vocabulary_id' => 197,
             'sentence' => 'The hot {{blank}} tastes good.',
             'blank_word' => 'soup',
-            'translation' => '這碗熱湯很好喝。',
             'distractors' => [
                 ['vocabulary_id' => 191, 'word' => 'year'],
                 ['vocabulary_id' => 192, 'word' => 'apple'],
@@ -2529,7 +2332,6 @@ return [
             'vocabulary_id' => 198,
             'sentence' => 'You {{blank}} my best friend.',
             'blank_word' => 'are',
-            'translation' => '你是我最好的朋友。',
             'distractors' => [
                 ['vocabulary_id' => 195, 'word' => 'waste'],
                 ['vocabulary_id' => 199, 'word' => 'get'],
@@ -2542,7 +2344,6 @@ return [
             'vocabulary_id' => 199,
             'sentence' => 'I hope to {{blank}} a good grade.',
             'blank_word' => 'get',
-            'translation' => '我希望能取得好成績。',
             'distractors' => [
                 ['vocabulary_id' => 195, 'word' => 'waste'],
                 ['vocabulary_id' => 198, 'word' => 'are'],
@@ -2555,7 +2356,6 @@ return [
             'vocabulary_id' => 200,
             'sentence' => 'She has {{blank}} finished her homework.',
             'blank_word' => 'already',
-            'translation' => '她已經完成作業了。',
             'distractors' => [
                 ['vocabulary_id' => 191, 'word' => 'year'],
                 ['vocabulary_id' => 192, 'word' => 'apple'],
@@ -2570,7 +2370,6 @@ return [
             'vocabulary_id' => 201,
             'sentence' => 'We visit Grandma every {{blank}}.',
             'blank_word' => 'Sunday',
-            'translation' => '我們每個星期日都去看奶奶。',
             'distractors' => [
                 ['vocabulary_id' => 202, 'word' => 'rubber'],
                 ['vocabulary_id' => 205, 'word' => 'boat'],
@@ -2584,7 +2383,6 @@ return [
             'vocabulary_id' => 202,
             'sentence' => 'This ball is made of {{blank}}.',
             'blank_word' => 'rubber',
-            'translation' => '這顆球是用橡膠做的。',
             'distractors' => [
                 ['vocabulary_id' => 201, 'word' => 'Sunday'],
                 ['vocabulary_id' => 205, 'word' => 'boat'],
@@ -2598,7 +2396,6 @@ return [
             'vocabulary_id' => 203,
             'sentence' => 'The cat jumped {{blank}} the box.',
             'blank_word' => 'into',
-            'translation' => '那隻貓跳進箱子裡。',
             'distractors' => [
                 ['vocabulary_id' => 204, 'word' => 'from'],
                 ['vocabulary_id' => 201, 'word' => 'Sunday'],
@@ -2611,7 +2408,6 @@ return [
             'vocabulary_id' => 204,
             'sentence' => 'I got a letter {{blank}} my friend.',
             'blank_word' => 'from',
-            'translation' => '我收到朋友寄來的一封信。',
             'distractors' => [
                 ['vocabulary_id' => 203, 'word' => 'into'],
                 ['vocabulary_id' => 201, 'word' => 'Sunday'],
@@ -2624,7 +2420,6 @@ return [
             'vocabulary_id' => 205,
             'sentence' => 'We went across the lake in a small {{blank}}.',
             'blank_word' => 'boat',
-            'translation' => '我們搭著一艘小船渡過湖泊。',
             'distractors' => [
                 ['vocabulary_id' => 201, 'word' => 'Sunday'],
                 ['vocabulary_id' => 202, 'word' => 'rubber'],
@@ -2638,7 +2433,6 @@ return [
             'vocabulary_id' => 206,
             'sentence' => 'Mia is a {{blank}} student.',
             'blank_word' => 'good',
-            'translation' => '米雅是個好學生。',
             'distractors' => [
                 ['vocabulary_id' => 201, 'word' => 'Sunday'],
                 ['vocabulary_id' => 202, 'word' => 'rubber'],
@@ -2651,7 +2445,6 @@ return [
             'vocabulary_id' => 207,
             'sentence' => '{{blank}} is my older brother.',
             'blank_word' => 'He',
-            'translation' => '他是我的哥哥。',
             'distractors' => [
                 ['vocabulary_id' => 201, 'word' => 'Sunday'],
                 ['vocabulary_id' => 202, 'word' => 'Rubber'],
@@ -2665,7 +2458,6 @@ return [
             'vocabulary_id' => 208,
             'sentence' => 'Draw a straight {{blank}} here.',
             'blank_word' => 'line',
-            'translation' => '在這裡畫一條直線。',
             'distractors' => [
                 ['vocabulary_id' => 201, 'word' => 'Sunday'],
                 ['vocabulary_id' => 202, 'word' => 'rubber'],
@@ -2679,7 +2471,6 @@ return [
             'vocabulary_id' => 209,
             'sentence' => 'I can {{blank}} the fresh bread.',
             'blank_word' => 'smell',
-            'translation' => '我聞得到新鮮麵包的味道。',
             'distractors' => [
                 ['vocabulary_id' => 201, 'word' => 'Sunday'],
                 ['vocabulary_id' => 202, 'word' => 'rubber'],
@@ -2693,7 +2484,6 @@ return [
             'vocabulary_id' => 210,
             'sentence' => 'A bright {{blank}} appeared after the rain.',
             'blank_word' => 'rainbow',
-            'translation' => '下雨後出現了一道鮮豔的彩虹。',
             'distractors' => [
                 ['vocabulary_id' => 201, 'word' => 'Sunday'],
                 ['vocabulary_id' => 202, 'word' => 'rubber'],
@@ -2709,7 +2499,6 @@ return [
             'vocabulary_id' => 211,
             'sentence' => 'Please {{blank}} some water.',
             'blank_word' => 'drink',
-            'translation' => '請喝一些水。',
             'distractors' => [
                 ['vocabulary_id' => 215, 'word' => 'decide'],
                 ['vocabulary_id' => 217, 'word' => 'call'],
@@ -2720,7 +2509,6 @@ return [
             'vocabulary_id' => 212,
             'sentence' => 'He ate the {{blank}} apple.',
             'blank_word' => 'whole',
-            'translation' => '他吃完整顆蘋果。',
             'distractors' => [
                 ['vocabulary_id' => 211, 'word' => 'drink'],
                 ['vocabulary_id' => 213, 'word' => 'pig'],
@@ -2733,7 +2521,6 @@ return [
             'vocabulary_id' => 213,
             'sentence' => 'The {{blank}} is eating in the yard.',
             'blank_word' => 'pig',
-            'translation' => '那頭豬正在院子裡吃東西。',
             'distractors' => [
                 ['vocabulary_id' => 214, 'word' => 'human'],
                 ['vocabulary_id' => 218, 'word' => 'world'],
@@ -2744,7 +2531,6 @@ return [
             'vocabulary_id' => 214,
             'sentence' => 'Every {{blank}} needs food and water.',
             'blank_word' => 'human',
-            'translation' => '每個人類都需要食物和水。',
             'distractors' => [
                 ['vocabulary_id' => 213, 'word' => 'pig'],
                 ['vocabulary_id' => 218, 'word' => 'world'],
@@ -2755,7 +2541,6 @@ return [
             'vocabulary_id' => 215,
             'sentence' => 'We must {{blank}} what to do next.',
             'blank_word' => 'decide',
-            'translation' => '我們必須決定下一步要做什麼。',
             'distractors' => [
                 ['vocabulary_id' => 211, 'word' => 'drink'],
                 ['vocabulary_id' => 217, 'word' => 'call'],
@@ -2766,7 +2551,6 @@ return [
             'vocabulary_id' => 216,
             'sentence' => 'Would you like tea {{blank}} milk?',
             'blank_word' => 'or',
-            'translation' => '你想要茶還是牛奶？',
             'distractors' => [
                 ['vocabulary_id' => 211, 'word' => 'drink'],
                 ['vocabulary_id' => 212, 'word' => 'whole'],
@@ -2779,7 +2563,6 @@ return [
             'vocabulary_id' => 217,
             'sentence' => 'Please {{blank}} me after school.',
             'blank_word' => 'call',
-            'translation' => '放學後請打電話給我。',
             'distractors' => [
                 ['vocabulary_id' => 211, 'word' => 'drink'],
                 ['vocabulary_id' => 215, 'word' => 'decide'],
@@ -2790,7 +2573,6 @@ return [
             'vocabulary_id' => 218,
             'sentence' => 'People all over the {{blank}} enjoy music.',
             'blank_word' => 'world',
-            'translation' => '全世界的人都喜歡音樂。',
             'distractors' => [
                 ['vocabulary_id' => 213, 'word' => 'pig'],
                 ['vocabulary_id' => 214, 'word' => 'human'],
@@ -2801,7 +2583,6 @@ return [
             'vocabulary_id' => 219,
             'sentence' => 'I {{blank}} the answer.',
             'blank_word' => 'know',
-            'translation' => '我知道答案。',
             'distractors' => [
                 ['vocabulary_id' => 211, 'word' => 'drink'],
                 ['vocabulary_id' => 215, 'word' => 'decide'],
@@ -2812,7 +2593,6 @@ return [
             'vocabulary_id' => 220,
             'sentence' => 'The sun sets in the {{blank}}.',
             'blank_word' => 'west',
-            'translation' => '太陽從西方落下。',
             'distractors' => [
                 ['vocabulary_id' => 213, 'word' => 'pig'],
                 ['vocabulary_id' => 214, 'word' => 'human'],
@@ -2825,7 +2605,6 @@ return [
             'vocabulary_id' => 221,
             'sentence' => 'We watched a {{blank}} show on TV.',
             'blank_word' => 'live',
-            'translation' => '我們在電視上觀看了一場現場直播的節目。',
             'distractors' => [
                 ['vocabulary_id' => 222, 'word' => 'better'],
                 ['vocabulary_id' => 227, 'word' => 'cool'],
@@ -2836,7 +2615,6 @@ return [
             'vocabulary_id' => 222,
             'sentence' => 'This book is {{blank}} than that one.',
             'blank_word' => 'better',
-            'translation' => '這本書比那一本好。',
             'distractors' => [
                 ['vocabulary_id' => 221, 'word' => 'live'],
                 ['vocabulary_id' => 227, 'word' => 'cool'],
@@ -2849,7 +2627,6 @@ return [
             'vocabulary_id' => 223,
             'sentence' => 'I {{blank}} my teacher a question.',
             'blank_word' => 'asked',
-            'translation' => '我問了老師一個問題。',
             'distractors' => [
                 ['vocabulary_id' => 221, 'word' => 'live'],
                 ['vocabulary_id' => 222, 'word' => 'better'],
@@ -2862,7 +2639,6 @@ return [
             'vocabulary_id' => 224,
             'sentence' => 'What is the {{blank}} for your visit?',
             'blank_word' => 'reason',
-            'translation' => '你來訪的理由是什麼？',
             'distractors' => [
                 ['vocabulary_id' => 225, 'word' => 'lesson'],
                 ['vocabulary_id' => 228, 'word' => 'weather'],
@@ -2873,7 +2649,6 @@ return [
             'vocabulary_id' => 225,
             'sentence' => 'Today’s English {{blank}} is about animals.',
             'blank_word' => 'lesson',
-            'translation' => '今天的英文課是關於動物的。',
             'distractors' => [
                 ['vocabulary_id' => 224, 'word' => 'reason'],
                 ['vocabulary_id' => 228, 'word' => 'weather'],
@@ -2884,7 +2659,6 @@ return [
             'vocabulary_id' => 226,
             'sentence' => '{{blank}} the map, the park is near here.',
             'blank_word' => 'According to',
-            'translation' => '根據地圖，公園就在這附近。',
             'distractors' => [
                 ['vocabulary_id' => 221, 'word' => 'Live'],
                 ['vocabulary_id' => 222, 'word' => 'Better'],
@@ -2897,7 +2671,6 @@ return [
             'vocabulary_id' => 227,
             'sentence' => 'That is a really {{blank}} bike.',
             'blank_word' => 'cool',
-            'translation' => '那是一台真的很酷的腳踏車。',
             'distractors' => [
                 ['vocabulary_id' => 221, 'word' => 'live'],
                 ['vocabulary_id' => 222, 'word' => 'better'],
@@ -2910,7 +2683,6 @@ return [
             'vocabulary_id' => 228,
             'sentence' => 'The {{blank}} is sunny today.',
             'blank_word' => 'weather',
-            'translation' => '今天天氣晴朗。',
             'distractors' => [
                 ['vocabulary_id' => 224, 'word' => 'reason'],
                 ['vocabulary_id' => 225, 'word' => 'lesson'],
@@ -2921,7 +2693,6 @@ return [
             'vocabulary_id' => 229,
             'sentence' => 'I {{blank}} play soccer after school.',
             'blank_word' => 'often',
-            'translation' => '我常常放學後踢足球。',
             'distractors' => [
                 ['vocabulary_id' => 221, 'word' => 'live'],
                 ['vocabulary_id' => 222, 'word' => 'better'],
@@ -2934,7 +2705,6 @@ return [
             'vocabulary_id' => 230,
             'sentence' => 'Please be careful when you cross the {{blank}}.',
             'blank_word' => 'road',
-            'translation' => '過馬路時請小心。',
             'distractors' => [
                 ['vocabulary_id' => 224, 'word' => 'reason'],
                 ['vocabulary_id' => 225, 'word' => 'lesson'],
@@ -2947,7 +2717,6 @@ return [
             'vocabulary_id' => 231,
             'sentence' => 'The cat jumped {{blank}} of the box.',
             'blank_word' => 'out',
-            'translation' => '那隻貓從箱子裡跳了出來。',
             'distractors' => [
                 ['vocabulary_id' => 238, 'word' => 'between'],
                 ['vocabulary_id' => 232, 'word' => 'born'],
@@ -2960,7 +2729,6 @@ return [
             'vocabulary_id' => 232,
             'sentence' => 'I was {{blank}} in Taiwan.',
             'blank_word' => 'born',
-            'translation' => '我出生在臺灣。',
             'distractors' => [
                 ['vocabulary_id' => 231, 'word' => 'out'],
                 ['vocabulary_id' => 233, 'word' => 'chicken'],
@@ -2973,7 +2741,6 @@ return [
             'vocabulary_id' => 233,
             'sentence' => 'The {{blank}} is walking in the yard.',
             'blank_word' => 'chicken',
-            'translation' => '那隻雞正在院子裡走路。',
             'distractors' => [
                 ['vocabulary_id' => 234, 'word' => 'latte'],
                 ['vocabulary_id' => 237, 'word' => 'sun'],
@@ -2984,7 +2751,6 @@ return [
             'vocabulary_id' => 234,
             'sentence' => 'My mom ordered a hot {{blank}}.',
             'blank_word' => 'latte',
-            'translation' => '我媽媽點了一杯熱拿鐵咖啡。',
             'distractors' => [
                 ['vocabulary_id' => 233, 'word' => 'chicken'],
                 ['vocabulary_id' => 237, 'word' => 'sun'],
@@ -2995,7 +2761,6 @@ return [
             'vocabulary_id' => 235,
             'sentence' => '{{blank}} student has a book.',
             'blank_word' => 'Each',
-            'translation' => '每個學生都有一本書。',
             'distractors' => [
                 ['vocabulary_id' => 239, 'word' => 'Clear'],
                 ['vocabulary_id' => 231, 'word' => 'Out'],
@@ -3008,7 +2773,6 @@ return [
             'vocabulary_id' => 236,
             'sentence' => 'Please {{blank}} English with me.',
             'blank_word' => 'speak',
-            'translation' => '請用英文和我說話。',
             'distractors' => [
                 ['vocabulary_id' => 231, 'word' => 'out'],
                 ['vocabulary_id' => 232, 'word' => 'born'],
@@ -3021,7 +2785,6 @@ return [
             'vocabulary_id' => 237,
             'sentence' => 'The {{blank}} is bright this morning.',
             'blank_word' => 'sun',
-            'translation' => '今天早上的太陽很明亮。',
             'distractors' => [
                 ['vocabulary_id' => 233, 'word' => 'chicken'],
                 ['vocabulary_id' => 234, 'word' => 'latte'],
@@ -3032,7 +2795,6 @@ return [
             'vocabulary_id' => 238,
             'sentence' => 'The ball is {{blank}} the two chairs.',
             'blank_word' => 'between',
-            'translation' => '球在兩張椅子之間。',
             'distractors' => [
                 ['vocabulary_id' => 231, 'word' => 'out'],
                 ['vocabulary_id' => 232, 'word' => 'born'],
@@ -3045,7 +2807,6 @@ return [
             'vocabulary_id' => 239,
             'sentence' => 'The instructions are {{blank}} and easy to follow.',
             'blank_word' => 'clear',
-            'translation' => '這些說明很清楚，也很容易遵循。',
             'distractors' => [
                 ['vocabulary_id' => 235, 'word' => 'each'],
                 ['vocabulary_id' => 231, 'word' => 'out'],
@@ -3058,7 +2819,6 @@ return [
             'vocabulary_id' => 240,
             'sentence' => 'We used a {{blank}} to find the station.',
             'blank_word' => 'map',
-            'translation' => '我們用地圖尋找車站。',
             'distractors' => [
                 ['vocabulary_id' => 233, 'word' => 'chicken'],
                 ['vocabulary_id' => 234, 'word' => 'latte'],
@@ -3071,7 +2831,6 @@ return [
             'vocabulary_id' => 241,
             'sentence' => 'Please {{blank}} our game.',
             'blank_word' => 'join',
-            'translation' => '請加入我們的遊戲。',
             'distractors' => [
                 ['vocabulary_id' => 243, 'word' => 'walk'],
                 ['vocabulary_id' => 242, 'word' => 'vegetable'],
@@ -3084,7 +2843,6 @@ return [
             'vocabulary_id' => 242,
             'sentence' => 'I eat a {{blank}} with my lunch.',
             'blank_word' => 'vegetable',
-            'translation' => '我午餐吃一種蔬菜。',
             'distractors' => [
                 ['vocabulary_id' => 245, 'word' => 'lake'],
                 ['vocabulary_id' => 246, 'word' => 'mouse'],
@@ -3096,7 +2854,6 @@ return [
             'vocabulary_id' => 243,
             'sentence' => 'We {{blank}} to school every morning.',
             'blank_word' => 'walk',
-            'translation' => '我們每天早上走路上學。',
             'distractors' => [
                 ['vocabulary_id' => 241, 'word' => 'join'],
                 ['vocabulary_id' => 242, 'word' => 'vegetable'],
@@ -3109,7 +2866,6 @@ return [
             'vocabulary_id' => 244,
             'sentence' => 'I am doing my homework {{blank}}.',
             'blank_word' => 'now',
-            'translation' => '我現在正在寫作業。',
             'distractors' => [
                 ['vocabulary_id' => 248, 'word' => 'enough'],
                 ['vocabulary_id' => 241, 'word' => 'join'],
@@ -3122,7 +2878,6 @@ return [
             'vocabulary_id' => 245,
             'sentence' => 'There are ducks on the {{blank}}.',
             'blank_word' => 'lake',
-            'translation' => '湖泊上有幾隻鴨子。',
             'distractors' => [
                 ['vocabulary_id' => 242, 'word' => 'vegetable'],
                 ['vocabulary_id' => 246, 'word' => 'mouse'],
@@ -3134,7 +2889,6 @@ return [
             'vocabulary_id' => 246,
             'sentence' => 'A {{blank}} is hiding under the table.',
             'blank_word' => 'mouse',
-            'translation' => '一隻老鼠正躲在桌子底下。',
             'distractors' => [
                 ['vocabulary_id' => 242, 'word' => 'vegetable'],
                 ['vocabulary_id' => 245, 'word' => 'lake'],
@@ -3146,7 +2900,6 @@ return [
             'vocabulary_id' => 247,
             'sentence' => 'The {{blank}} is blue today.',
             'blank_word' => 'sky',
-            'translation' => '今天的天空是藍色的。',
             'distractors' => [
                 ['vocabulary_id' => 242, 'word' => 'vegetable'],
                 ['vocabulary_id' => 245, 'word' => 'lake'],
@@ -3158,7 +2911,6 @@ return [
             'vocabulary_id' => 248,
             'sentence' => 'We have {{blank}} food for everyone.',
             'blank_word' => 'enough',
-            'translation' => '我們有足夠的食物給每個人。',
             'distractors' => [
                 ['vocabulary_id' => 244, 'word' => 'now'],
                 ['vocabulary_id' => 241, 'word' => 'join'],
@@ -3171,7 +2923,6 @@ return [
             'vocabulary_id' => 249,
             'sentence' => 'It was cold, {{blank}} I put on my coat.',
             'blank_word' => 'so',
-            'translation' => '天氣很冷，所以我穿上外套。',
             'distractors' => [
                 ['vocabulary_id' => 241, 'word' => 'join'],
                 ['vocabulary_id' => 242, 'word' => 'vegetable'],
@@ -3184,7 +2935,6 @@ return [
             'vocabulary_id' => 250,
             'sentence' => 'Our {{blank}} has five students.',
             'blank_word' => 'group',
-            'translation' => '我們的群組有五位學生。',
             'distractors' => [
                 ['vocabulary_id' => 242, 'word' => 'vegetable'],
                 ['vocabulary_id' => 245, 'word' => 'lake'],
@@ -3198,7 +2948,6 @@ return [
             'vocabulary_id' => 251,
             'sentence' => 'I wear my warm {{blank}} on cold days.',
             'blank_word' => 'hoodie',
-            'translation' => '天冷時我會穿上保暖的帽T。',
             'distractors' => [
                 ['vocabulary_id' => 252, 'word' => 'master'],
                 ['vocabulary_id' => 253, 'word' => 'sound'],
@@ -3209,7 +2958,6 @@ return [
             'vocabulary_id' => 252,
             'sentence' => 'The dog ran to its {{blank}}.',
             'blank_word' => 'master',
-            'translation' => '那隻狗跑向牠的主人。',
             'distractors' => [
                 ['vocabulary_id' => 251, 'word' => 'hoodie'],
                 ['vocabulary_id' => 253, 'word' => 'sound'],
@@ -3220,7 +2968,6 @@ return [
             'vocabulary_id' => 253,
             'sentence' => 'The {{blank}} of the bell is loud.',
             'blank_word' => 'sound',
-            'translation' => '鈴鐺的聲音很大。',
             'distractors' => [
                 ['vocabulary_id' => 251, 'word' => 'hoodie'],
                 ['vocabulary_id' => 252, 'word' => 'master'],
@@ -3232,7 +2979,6 @@ return [
             'vocabulary_id' => 254,
             'sentence' => 'The boy kicked the {{blank}}.',
             'blank_word' => 'ball',
-            'translation' => '那個男孩踢了球。',
             'distractors' => [
                 ['vocabulary_id' => 251, 'word' => 'hoodie'],
                 ['vocabulary_id' => 252, 'word' => 'master'],
@@ -3243,7 +2989,6 @@ return [
             'vocabulary_id' => 255,
             'sentence' => 'They live in a {{blank}} house.',
             'blank_word' => 'large',
-            'translation' => '他們住在一間寬敞的房子裡。',
             'distractors' => [
                 ['vocabulary_id' => 256, 'word' => 'next'],
                 ['vocabulary_id' => 251, 'word' => 'hoodie'],
@@ -3256,7 +3001,6 @@ return [
             'vocabulary_id' => 256,
             'sentence' => 'The {{blank}} bus will arrive soon.',
             'blank_word' => 'next',
-            'translation' => '下一班公車很快就會到。',
             'distractors' => [
                 ['vocabulary_id' => 255, 'word' => 'large'],
                 ['vocabulary_id' => 257, 'word' => 'thus'],
@@ -3268,7 +3012,6 @@ return [
             'vocabulary_id' => 257,
             'sentence' => 'The road was closed; {{blank}}, we took another way.',
             'blank_word' => 'thus',
-            'translation' => '這條路封閉了；因此，我們走了另一條路。',
             'distractors' => [
                 ['vocabulary_id' => 256, 'word' => 'next'],
                 ['vocabulary_id' => 251, 'word' => 'hoodie'],
@@ -3281,7 +3024,6 @@ return [
             'vocabulary_id' => 258,
             'sentence' => 'I {{blank}} a hat on sunny days.',
             'blank_word' => 'wear',
-            'translation' => '晴天時我會戴帽子。',
             'distractors' => [
                 ['vocabulary_id' => 253, 'word' => 'sound'],
                 ['vocabulary_id' => 251, 'word' => 'hoodie'],
@@ -3294,7 +3036,6 @@ return [
             'vocabulary_id' => 259,
             'sentence' => 'This pillow is very {{blank}}.',
             'blank_word' => 'soft',
-            'translation' => '這個枕頭非常柔軟。',
             'distractors' => [
                 ['vocabulary_id' => 255, 'word' => 'large'],
                 ['vocabulary_id' => 256, 'word' => 'next'],
@@ -3305,7 +3046,6 @@ return [
             'vocabulary_id' => 260,
             'sentence' => 'She is a {{blank}} person.',
             'blank_word' => 'nice',
-            'translation' => '她是一個很好的人。',
             'distractors' => [
                 ['vocabulary_id' => 255, 'word' => 'large'],
                 ['vocabulary_id' => 256, 'word' => 'next'],
@@ -3318,7 +3058,6 @@ return [
             'vocabulary_id' => 261,
             'sentence' => 'This is the {{blank}} bus to the city.',
             'blank_word' => 'last',
-            'translation' => '這是開往市區的最後一班公車。',
             'distractors' => [
                 ['vocabulary_id' => 264, 'word' => 'light'],
                 ['vocabulary_id' => 270, 'word' => 'less'],
@@ -3331,7 +3070,6 @@ return [
             'vocabulary_id' => 262,
             'sentence' => 'The ring is made of {{blank}}.',
             'blank_word' => 'gold',
-            'translation' => '這枚戒指是用黃金製成的。',
             'distractors' => [
                 ['vocabulary_id' => 265, 'word' => 'sixty'],
                 ['vocabulary_id' => 266, 'word' => 'keeper'],
@@ -3343,7 +3081,6 @@ return [
             'vocabulary_id' => 263,
             'sentence' => 'Please do not {{blank}} your homework.',
             'blank_word' => 'forget',
-            'translation' => '請不要忘記你的作業。',
             'distractors' => [
                 ['vocabulary_id' => 268, 'word' => 'spend'],
                 ['vocabulary_id' => 261, 'word' => 'last'],
@@ -3356,7 +3093,6 @@ return [
             'vocabulary_id' => 264,
             'sentence' => 'This bag is {{blank}} and easy to carry.',
             'blank_word' => 'light',
-            'translation' => '這個包包很輕，很容易攜帶。',
             'distractors' => [
                 ['vocabulary_id' => 261, 'word' => 'last'],
                 ['vocabulary_id' => 270, 'word' => 'less'],
@@ -3369,7 +3105,6 @@ return [
             'vocabulary_id' => 265,
             'sentence' => 'My grandfather is {{blank}} years old.',
             'blank_word' => 'sixty',
-            'translation' => '我的祖父六十歲。',
             'distractors' => [
                 ['vocabulary_id' => 262, 'word' => 'gold'],
                 ['vocabulary_id' => 266, 'word' => 'keeper'],
@@ -3381,7 +3116,6 @@ return [
             'vocabulary_id' => 266,
             'sentence' => 'The zoo {{blank}} feeds the animals every morning.',
             'blank_word' => 'keeper',
-            'translation' => '動物園管理員每天早上餵動物。',
             'distractors' => [
                 ['vocabulary_id' => 262, 'word' => 'gold'],
                 ['vocabulary_id' => 265, 'word' => 'sixty'],
@@ -3393,7 +3127,6 @@ return [
             'vocabulary_id' => 267,
             'sentence' => 'Please put some {{blank}} in my drink.',
             'blank_word' => 'ice',
-            'translation' => '請在我的飲料裡放一些冰塊。',
             'distractors' => [
                 ['vocabulary_id' => 262, 'word' => 'gold'],
                 ['vocabulary_id' => 265, 'word' => 'sixty'],
@@ -3405,7 +3138,6 @@ return [
             'vocabulary_id' => 268,
             'sentence' => 'I {{blank}} ten dollars on lunch.',
             'blank_word' => 'spend',
-            'translation' => '我花十美元吃午餐。',
             'distractors' => [
                 ['vocabulary_id' => 263, 'word' => 'forget'],
                 ['vocabulary_id' => 261, 'word' => 'last'],
@@ -3418,7 +3150,6 @@ return [
             'vocabulary_id' => 269,
             'sentence' => 'We saw a large {{blank}} at the zoo.',
             'blank_word' => 'ape',
-            'translation' => '我們在動物園看到一隻大型猿類。',
             'distractors' => [
                 ['vocabulary_id' => 262, 'word' => 'gold'],
                 ['vocabulary_id' => 265, 'word' => 'sixty'],
@@ -3430,7 +3161,6 @@ return [
             'vocabulary_id' => 270,
             'sentence' => 'I want {{blank}} sugar in my tea.',
             'blank_word' => 'less',
-            'translation' => '我想在茶裡少放一點糖。',
             'distractors' => [
                 ['vocabulary_id' => 261, 'word' => 'last'],
                 ['vocabulary_id' => 264, 'word' => 'light'],
@@ -3445,7 +3175,6 @@ return [
             'vocabulary_id' => 271,
             'sentence' => '“Are you {{blank}}?” “Yes, I am fine.”',
             'blank_word' => 'OK',
-            'translation' => '「你還好嗎？」「是的，我很好。」',
             'distractors' => [
                 ['vocabulary_id' => 272, 'word' => 'race'],
                 ['vocabulary_id' => 273, 'word' => 'grandson'],
@@ -3458,7 +3187,6 @@ return [
             'vocabulary_id' => 272,
             'sentence' => 'The two boys {{blank}} to the finish line.',
             'blank_word' => 'race',
-            'translation' => '那兩個男孩競速跑向終點線。',
             'distractors' => [
                 ['vocabulary_id' => 273, 'word' => 'grandson'],
                 ['vocabulary_id' => 274, 'word' => 'lie'],
@@ -3472,7 +3200,6 @@ return [
             'vocabulary_id' => 273,
             'sentence' => 'Her {{blank}} visits her every Sunday.',
             'blank_word' => 'grandson',
-            'translation' => '她的孫子每個星期日都來看她。',
             'distractors' => [
                 ['vocabulary_id' => 272, 'word' => 'race'],
                 ['vocabulary_id' => 275, 'word' => 'doll'],
@@ -3485,7 +3212,6 @@ return [
             'vocabulary_id' => 274,
             'sentence' => 'I like to {{blank}} on the grass and look at the sky.',
             'blank_word' => 'lie',
-            'translation' => '我喜歡躺在草地上看天空。',
             'distractors' => [
                 ['vocabulary_id' => 272, 'word' => 'race'],
                 ['vocabulary_id' => 277, 'word' => 'use'],
@@ -3497,7 +3223,6 @@ return [
             'vocabulary_id' => 275,
             'sentence' => 'The little girl is playing with her {{blank}}.',
             'blank_word' => 'doll',
-            'translation' => '那個小女孩正在和她的玩偶玩。',
             'distractors' => [
                 ['vocabulary_id' => 272, 'word' => 'race'],
                 ['vocabulary_id' => 273, 'word' => 'grandson'],
@@ -3510,7 +3235,6 @@ return [
             'vocabulary_id' => 276,
             'sentence' => 'That tall {{blank}} is our school.',
             'blank_word' => 'building',
-            'translation' => '那棟高樓是我們的學校。',
             'distractors' => [
                 ['vocabulary_id' => 272, 'word' => 'race'],
                 ['vocabulary_id' => 273, 'word' => 'grandson'],
@@ -3523,7 +3247,6 @@ return [
             'vocabulary_id' => 277,
             'sentence' => 'We {{blank}} a pencil to write our answers.',
             'blank_word' => 'use',
-            'translation' => '我們用鉛筆寫答案。',
             'distractors' => [
                 ['vocabulary_id' => 272, 'word' => 'race'],
                 ['vocabulary_id' => 274, 'word' => 'lie'],
@@ -3535,7 +3258,6 @@ return [
             'vocabulary_id' => 278,
             'sentence' => 'The {{blank}} lives in a big castle.',
             'blank_word' => 'king',
-            'translation' => '國王住在一座大城堡裡。',
             'distractors' => [
                 ['vocabulary_id' => 272, 'word' => 'race'],
                 ['vocabulary_id' => 273, 'word' => 'grandson'],
@@ -3548,7 +3270,6 @@ return [
             'vocabulary_id' => 279,
             'sentence' => 'I {{blank}} my bike to school every day.',
             'blank_word' => 'ride',
-            'translation' => '我每天騎腳踏車上學。',
             'distractors' => [
                 ['vocabulary_id' => 272, 'word' => 'race'],
                 ['vocabulary_id' => 274, 'word' => 'lie'],
@@ -3560,7 +3281,6 @@ return [
             'vocabulary_id' => 280,
             'sentence' => 'The driver had to pay a {{blank}} for parking there.',
             'blank_word' => 'fine',
-            'translation' => '那名駕駛因為把車停在那裡而必須支付罰金。',
             'distractors' => [
                 ['vocabulary_id' => 272, 'word' => 'race'],
                 ['vocabulary_id' => 273, 'word' => 'grandson'],
@@ -3576,7 +3296,6 @@ return [
             'vocabulary_id' => 281,
             'sentence' => 'This is a {{blank}} question.',
             'blank_word' => 'simple',
-            'translation' => '這是一個簡單的問題。',
             'distractors' => [
                 ['vocabulary_id' => 284, 'word' => 'that'],
                 ['vocabulary_id' => 285, 'word' => 'public'],
@@ -3587,7 +3306,6 @@ return [
             'vocabulary_id' => 282,
             'sentence' => 'The children {{blank}} the small hill.',
             'blank_word' => 'climb',
-            'translation' => '孩子們爬上那座小山丘。',
             'distractors' => [
                 ['vocabulary_id' => 287, 'word' => 'act'],
                 ['vocabulary_id' => 288, 'word' => 'check'],
@@ -3600,7 +3318,6 @@ return [
             'vocabulary_id' => 283,
             'sentence' => 'The sign warns us about {{blank}}.',
             'blank_word' => 'danger',
-            'translation' => '那個標誌警告我們有危險。',
             'distractors' => [
                 ['vocabulary_id' => 286, 'word' => 'juice'],
                 ['vocabulary_id' => 287, 'word' => 'act'],
@@ -3611,7 +3328,6 @@ return [
             'vocabulary_id' => 284,
             'sentence' => 'Please give me {{blank}} book.',
             'blank_word' => 'that',
-            'translation' => '請把那本書給我。',
             'distractors' => [
                 ['vocabulary_id' => 281, 'word' => 'simple'],
                 ['vocabulary_id' => 285, 'word' => 'public'],
@@ -3622,7 +3338,6 @@ return [
             'vocabulary_id' => 285,
             'sentence' => 'There is a {{blank}} park near my home.',
             'blank_word' => 'public',
-            'translation' => '我家附近有一座公眾的公園。',
             'distractors' => [
                 ['vocabulary_id' => 281, 'word' => 'simple'],
                 ['vocabulary_id' => 284, 'word' => 'that'],
@@ -3633,7 +3348,6 @@ return [
             'vocabulary_id' => 286,
             'sentence' => 'I drink a glass of orange {{blank}} every morning.',
             'blank_word' => 'juice',
-            'translation' => '我每天早上喝一杯柳橙汁。',
             'distractors' => [
                 ['vocabulary_id' => 283, 'word' => 'danger'],
                 ['vocabulary_id' => 287, 'word' => 'act'],
@@ -3644,7 +3358,6 @@ return [
             'vocabulary_id' => 287,
             'sentence' => 'The children {{blank}} in the school play.',
             'blank_word' => 'act',
-            'translation' => '孩子們在學校的戲劇中扮演角色。',
             'distractors' => [
                 ['vocabulary_id' => 282, 'word' => 'climb'],
                 ['vocabulary_id' => 283, 'word' => 'danger'],
@@ -3657,7 +3370,6 @@ return [
             'vocabulary_id' => 288,
             'sentence' => 'Please {{blank}} your answer again.',
             'blank_word' => 'check',
-            'translation' => '請再檢查一次你的答案。',
             'distractors' => [
                 ['vocabulary_id' => 282, 'word' => 'climb'],
                 ['vocabulary_id' => 287, 'word' => 'act'],
@@ -3670,7 +3382,6 @@ return [
             'vocabulary_id' => 289,
             'sentence' => 'The towels are {{blank}} now.',
             'blank_word' => 'dry',
-            'translation' => '這些毛巾現在是乾的。',
             'distractors' => [
                 ['vocabulary_id' => 281, 'word' => 'simple'],
                 ['vocabulary_id' => 284, 'word' => 'that'],
@@ -3681,7 +3392,6 @@ return [
             'vocabulary_id' => 290,
             'sentence' => 'Be careful on the last {{blank}}.',
             'blank_word' => 'stair',
-            'translation' => '小心最後一階階梯。',
             'distractors' => [
                 ['vocabulary_id' => 283, 'word' => 'danger'],
                 ['vocabulary_id' => 286, 'word' => 'juice'],
@@ -3694,7 +3404,6 @@ return [
             'vocabulary_id' => 291,
             'sentence' => 'The hotel has free {{blank}}.',
             'blank_word' => 'WiFi',
-            'translation' => '這間飯店提供免費的無線網路。',
             'distractors' => [
                 ['vocabulary_id' => 293, 'word' => 'edge'],
                 ['vocabulary_id' => 294, 'word' => 'chief'],
@@ -3708,7 +3417,6 @@ return [
             'vocabulary_id' => 292,
             'sentence' => 'Can you {{blank}} me carry this box?',
             'blank_word' => 'help',
-            'translation' => '你可以幫助我搬這個箱子嗎？',
             'distractors' => [
                 ['vocabulary_id' => 300, 'word' => 'land'],
                 ['vocabulary_id' => 291, 'word' => 'wifi'],
@@ -3721,7 +3429,6 @@ return [
             'vocabulary_id' => 293,
             'sentence' => 'Do not sit on the {{blank}} of the table.',
             'blank_word' => 'edge',
-            'translation' => '不要坐在桌子的邊緣。',
             'distractors' => [
                 ['vocabulary_id' => 291, 'word' => 'wifi'],
                 ['vocabulary_id' => 294, 'word' => 'chief'],
@@ -3735,7 +3442,6 @@ return [
             'vocabulary_id' => 294,
             'sentence' => 'The {{blank}} led the people to a safe place.',
             'blank_word' => 'chief',
-            'translation' => '領袖帶領人們到一個安全的地方。',
             'distractors' => [
                 ['vocabulary_id' => 291, 'word' => 'wifi'],
                 ['vocabulary_id' => 293, 'word' => 'edge'],
@@ -3749,7 +3455,6 @@ return [
             'vocabulary_id' => 295,
             'sentence' => 'My sister wants to be a {{blank}}.',
             'blank_word' => 'singer',
-            'translation' => '我妹妹想成為一名歌手。',
             'distractors' => [
                 ['vocabulary_id' => 291, 'word' => 'wifi'],
                 ['vocabulary_id' => 293, 'word' => 'edge'],
@@ -3763,7 +3468,6 @@ return [
             'vocabulary_id' => 296,
             'sentence' => 'Have you {{blank}} seen snow?',
             'blank_word' => 'ever',
-            'translation' => '你從來看過雪嗎？',
             'distractors' => [
                 ['vocabulary_id' => 291, 'word' => 'wifi'],
                 ['vocabulary_id' => 292, 'word' => 'help'],
@@ -3776,7 +3480,6 @@ return [
             'vocabulary_id' => 297,
             'sentence' => 'That {{blank}} makes funny stories.',
             'blank_word' => 'writer',
-            'translation' => '那位作者創作有趣的故事。',
             'distractors' => [
                 ['vocabulary_id' => 291, 'word' => 'wifi'],
                 ['vocabulary_id' => 293, 'word' => 'edge'],
@@ -3790,7 +3493,6 @@ return [
             'vocabulary_id' => 298,
             'sentence' => 'The boy bought some {{blank}} at the store.',
             'blank_word' => 'candy',
-            'translation' => '那個男孩在商店買了一些糖果。',
             'distractors' => [
                 ['vocabulary_id' => 291, 'word' => 'wifi'],
                 ['vocabulary_id' => 293, 'word' => 'edge'],
@@ -3804,7 +3506,6 @@ return [
             'vocabulary_id' => 299,
             'sentence' => 'She eats an {{blank}} after lunch.',
             'blank_word' => 'orange',
-            'translation' => '她午餐後吃一顆柳橙。',
             'distractors' => [
                 ['vocabulary_id' => 291, 'word' => 'wifi'],
                 ['vocabulary_id' => 293, 'word' => 'edge'],
@@ -3818,7 +3519,6 @@ return [
             'vocabulary_id' => 300,
             'sentence' => 'The plane will {{blank}} soon.',
             'blank_word' => 'land',
-            'translation' => '飛機很快就會降落。',
             'distractors' => [
                 ['vocabulary_id' => 292, 'word' => 'help'],
                 ['vocabulary_id' => 291, 'word' => 'wifi'],
@@ -3833,7 +3533,6 @@ return [
             'vocabulary_id' => 301,
             'sentence' => 'The elephant is a large {{blank}}.',
             'blank_word' => 'animal',
-            'translation' => '大象是一種大型動物。',
             'distractors' => [
                 ['vocabulary_id' => 304, 'word' => 'cocoa'],
                 ['vocabulary_id' => 305, 'word' => 'rooster'],
@@ -3847,7 +3546,6 @@ return [
             'vocabulary_id' => 302,
             'sentence' => 'The dog is sitting {{blank}} me.',
             'blank_word' => 'beside',
-            'translation' => '那隻狗正坐在我旁邊。',
             'distractors' => [
                 ['vocabulary_id' => 303, 'word' => 'toward'],
                 ['vocabulary_id' => 301, 'word' => 'animal'],
@@ -3860,7 +3558,6 @@ return [
             'vocabulary_id' => 303,
             'sentence' => 'The boy is walking {{blank}} the door.',
             'blank_word' => 'toward',
-            'translation' => '那個男孩正朝門口走去。',
             'distractors' => [
                 ['vocabulary_id' => 302, 'word' => 'beside'],
                 ['vocabulary_id' => 301, 'word' => 'animal'],
@@ -3873,7 +3570,6 @@ return [
             'vocabulary_id' => 304,
             'sentence' => '{{blank}} is used to make chocolate.',
             'blank_word' => 'Cocoa',
-            'translation' => '可可豆被用來製作巧克力。',
             'distractors' => [
                 ['vocabulary_id' => 301, 'word' => 'Animal'],
                 ['vocabulary_id' => 305, 'word' => 'Rooster'],
@@ -3887,7 +3583,6 @@ return [
             'vocabulary_id' => 305,
             'sentence' => 'The {{blank}} wakes us up every morning.',
             'blank_word' => 'rooster',
-            'translation' => '那隻公雞每天早上把我們叫醒。',
             'distractors' => [
                 ['vocabulary_id' => 301, 'word' => 'animal'],
                 ['vocabulary_id' => 304, 'word' => 'cocoa'],
@@ -3901,7 +3596,6 @@ return [
             'vocabulary_id' => 306,
             'sentence' => 'Please add some {{blank}} to the soup.',
             'blank_word' => 'salt',
-            'translation' => '請在湯裡加一些鹽巴。',
             'distractors' => [
                 ['vocabulary_id' => 301, 'word' => 'animal'],
                 ['vocabulary_id' => 304, 'word' => 'cocoa'],
@@ -3915,7 +3609,6 @@ return [
             'vocabulary_id' => 307,
             'sentence' => 'I do not have {{blank}} time.',
             'blank_word' => 'much',
-            'translation' => '我沒有很多時間。',
             'distractors' => [
                 ['vocabulary_id' => 301, 'word' => 'animal'],
                 ['vocabulary_id' => 302, 'word' => 'beside'],
@@ -3928,7 +3621,6 @@ return [
             'vocabulary_id' => 308,
             'sentence' => 'She washed her {{blank}} before bed.',
             'blank_word' => 'face',
-            'translation' => '她睡前洗了臉。',
             'distractors' => [
                 ['vocabulary_id' => 301, 'word' => 'animal'],
                 ['vocabulary_id' => 304, 'word' => 'cocoa'],
@@ -3942,7 +3634,6 @@ return [
             'vocabulary_id' => 309,
             'sentence' => 'I lost my {{blank}} of smell when I had a cold.',
             'blank_word' => 'sense',
-            'translation' => '我感冒時失去了嗅覺。',
             'distractors' => [
                 ['vocabulary_id' => 301, 'word' => 'animal'],
                 ['vocabulary_id' => 304, 'word' => 'cocoa'],
@@ -3956,7 +3647,6 @@ return [
             'vocabulary_id' => 310,
             'sentence' => 'Please type your {{blank}} here.',
             'blank_word' => 'username',
-            'translation' => '請在這裡輸入你的使用者名稱。',
             'distractors' => [
                 ['vocabulary_id' => 301, 'word' => 'animal'],
                 ['vocabulary_id' => 304, 'word' => 'cocoa'],
@@ -3972,7 +3662,6 @@ return [
             'vocabulary_id' => 311,
             'sentence' => 'She is wearing a {{blank}} dress.',
             'blank_word' => 'purple',
-            'translation' => '她穿著一件紫色的洋裝。',
             'distractors' => [
                 ['vocabulary_id' => 312, 'word' => 'hot'],
                 ['vocabulary_id' => 317, 'word' => 'some'],
@@ -3985,7 +3674,6 @@ return [
             'vocabulary_id' => 312,
             'sentence' => 'The soup is too {{blank}} to eat.',
             'blank_word' => 'hot',
-            'translation' => '這碗湯太熱了，不能吃。',
             'distractors' => [
                 ['vocabulary_id' => 311, 'word' => 'purple'],
                 ['vocabulary_id' => 317, 'word' => 'some'],
@@ -3998,7 +3686,6 @@ return [
             'vocabulary_id' => 313,
             'sentence' => 'The cat is licking {{blank}} paw.',
             'blank_word' => 'its',
-            'translation' => '那隻貓正在舔牠的爪子。',
             'distractors' => [
                 ['vocabulary_id' => 311, 'word' => 'purple'],
                 ['vocabulary_id' => 312, 'word' => 'hot'],
@@ -4011,7 +3698,6 @@ return [
             'vocabulary_id' => 314,
             'sentence' => 'The little boy has a {{blank}} of dogs.',
             'blank_word' => 'fear',
-            'translation' => '那個小男孩害怕狗。',
             'distractors' => [
                 ['vocabulary_id' => 315, 'word' => 'beach'],
                 ['vocabulary_id' => 318, 'word' => 'popcorn'],
@@ -4023,7 +3709,6 @@ return [
             'vocabulary_id' => 315,
             'sentence' => 'We played on the {{blank}} all day.',
             'blank_word' => 'beach',
-            'translation' => '我們整天都在海灘上玩。',
             'distractors' => [
                 ['vocabulary_id' => 314, 'word' => 'fear'],
                 ['vocabulary_id' => 318, 'word' => 'popcorn'],
@@ -4035,7 +3720,6 @@ return [
             'vocabulary_id' => 316,
             'sentence' => 'Please {{blank}} the window.',
             'blank_word' => 'close',
-            'translation' => '請關上窗戶。',
             'distractors' => [
                 ['vocabulary_id' => 311, 'word' => 'purple'],
                 ['vocabulary_id' => 312, 'word' => 'hot'],
@@ -4048,7 +3732,6 @@ return [
             'vocabulary_id' => 317,
             'sentence' => '{{blank}} students are reading books.',
             'blank_word' => 'Some',
-            'translation' => '某些學生正在看書。',
             'distractors' => [
                 ['vocabulary_id' => 311, 'word' => 'Purple'],
                 ['vocabulary_id' => 312, 'word' => 'Hot'],
@@ -4061,7 +3744,6 @@ return [
             'vocabulary_id' => 318,
             'sentence' => 'We ate {{blank}} at the movies.',
             'blank_word' => 'popcorn',
-            'translation' => '我們在電影院吃爆米花。',
             'distractors' => [
                 ['vocabulary_id' => 314, 'word' => 'fear'],
                 ['vocabulary_id' => 315, 'word' => 'beach'],
@@ -4073,7 +3755,6 @@ return [
             'vocabulary_id' => 319,
             'sentence' => 'The dog has a long {{blank}}.',
             'blank_word' => 'tail',
-            'translation' => '這隻狗有一條長尾巴。',
             'distractors' => [
                 ['vocabulary_id' => 314, 'word' => 'fear'],
                 ['vocabulary_id' => 315, 'word' => 'beach'],
@@ -4085,7 +3766,6 @@ return [
             'vocabulary_id' => 320,
             'sentence' => 'Let us play a {{blank}} after dinner.',
             'blank_word' => 'game',
-            'translation' => '我們晚餐後玩個遊戲吧。',
             'distractors' => [
                 ['vocabulary_id' => 314, 'word' => 'fear'],
                 ['vocabulary_id' => 315, 'word' => 'beach'],
@@ -4099,7 +3779,6 @@ return [
             'vocabulary_id' => 321,
             'sentence' => 'Tom is {{blank}} today, so he stays home.',
             'blank_word' => 'sick',
-            'translation' => 'Tom 今天生病了，所以他待在家裡。',
             'distractors' => [
                 ['vocabulary_id' => 323, 'word' => 'bad'],
                 ['vocabulary_id' => 322, 'word' => 'night'],
@@ -4112,7 +3791,6 @@ return [
             'vocabulary_id' => 322,
             'sentence' => 'I read a book at {{blank}}.',
             'blank_word' => 'night',
-            'translation' => '我晚上讀書。',
             'distractors' => [
                 ['vocabulary_id' => 324, 'word' => 'tiger'],
                 ['vocabulary_id' => 326, 'word' => 'home'],
@@ -4125,7 +3803,6 @@ return [
             'vocabulary_id' => 323,
             'sentence' => 'The weather is {{blank}} today.',
             'blank_word' => 'bad',
-            'translation' => '今天的天氣很壞。',
             'distractors' => [
                 ['vocabulary_id' => 321, 'word' => 'sick'],
                 ['vocabulary_id' => 322, 'word' => 'night'],
@@ -4138,7 +3815,6 @@ return [
             'vocabulary_id' => 324,
             'sentence' => 'The {{blank}} is sleeping under a tree.',
             'blank_word' => 'tiger',
-            'translation' => '那隻老虎正在樹下睡覺。',
             'distractors' => [
                 ['vocabulary_id' => 322, 'word' => 'night'],
                 ['vocabulary_id' => 326, 'word' => 'home'],
@@ -4151,7 +3827,6 @@ return [
             'vocabulary_id' => 325,
             'sentence' => 'The movie is {{blank}} funny.',
             'blank_word' => 'quite',
-            'translation' => '這部電影相當有趣。',
             'distractors' => [
                 ['vocabulary_id' => 321, 'word' => 'sick'],
                 ['vocabulary_id' => 322, 'word' => 'night'],
@@ -4164,7 +3839,6 @@ return [
             'vocabulary_id' => 326,
             'sentence' => 'My {{blank}} is near the school.',
             'blank_word' => 'home',
-            'translation' => '我家在學校附近。',
             'distractors' => [
                 ['vocabulary_id' => 322, 'word' => 'night'],
                 ['vocabulary_id' => 324, 'word' => 'tiger'],
@@ -4177,7 +3851,6 @@ return [
             'vocabulary_id' => 327,
             'sentence' => 'I got a new {{blank}} yesterday.',
             'blank_word' => 'haircut',
-            'translation' => '我昨天理了新髮型。',
             'distractors' => [
                 ['vocabulary_id' => 322, 'word' => 'night'],
                 ['vocabulary_id' => 324, 'word' => 'tiger'],
@@ -4190,7 +3863,6 @@ return [
             'vocabulary_id' => 328,
             'sentence' => 'The {{blank}} is good at the game.',
             'blank_word' => 'player',
-            'translation' => '這位遊戲玩家很會玩這個遊戲。',
             'distractors' => [
                 ['vocabulary_id' => 322, 'word' => 'night'],
                 ['vocabulary_id' => 324, 'word' => 'tiger'],
@@ -4203,7 +3875,6 @@ return [
             'vocabulary_id' => 329,
             'sentence' => 'I {{blank}} my knee when I fell.',
             'blank_word' => 'hurt',
-            'translation' => '我跌倒時弄傷了膝蓋。',
             'distractors' => [
                 ['vocabulary_id' => 322, 'word' => 'night'],
                 ['vocabulary_id' => 324, 'word' => 'tiger'],
@@ -4217,7 +3888,6 @@ return [
             'vocabulary_id' => 330,
             'sentence' => 'We {{blank}} across the lake on Sundays.',
             'blank_word' => 'sail',
-            'translation' => '我們星期日乘船航行湖面。',
             'distractors' => [
                 ['vocabulary_id' => 329, 'word' => 'hurt'],
                 ['vocabulary_id' => 321, 'word' => 'sick'],
@@ -4232,7 +3902,6 @@ return [
             'vocabulary_id' => 331,
             'sentence' => 'There is a bus {{blank}} of us.',
             'blank_word' => 'ahead',
-            'translation' => '我們前面有一輛公車。',
             'distractors' => [
                 ['vocabulary_id' => 333, 'word' => 'up'],
                 ['vocabulary_id' => 334, 'word' => 'off'],
@@ -4245,7 +3914,6 @@ return [
             'vocabulary_id' => 332,
             'sentence' => 'I like apples {{blank}} bananas.',
             'blank_word' => 'and',
-            'translation' => '我喜歡蘋果和香蕉。',
             'distractors' => [
                 ['vocabulary_id' => 331, 'word' => 'ahead'],
                 ['vocabulary_id' => 333, 'word' => 'up'],
@@ -4258,7 +3926,6 @@ return [
             'vocabulary_id' => 333,
             'sentence' => 'The balloon goes {{blank}} into the sky.',
             'blank_word' => 'up',
-            'translation' => '氣球向上升到天空中。',
             'distractors' => [
                 ['vocabulary_id' => 331, 'word' => 'ahead'],
                 ['vocabulary_id' => 334, 'word' => 'off'],
@@ -4271,7 +3938,6 @@ return [
             'vocabulary_id' => 334,
             'sentence' => 'The bird flew {{blank}} when I opened the door.',
             'blank_word' => 'off',
-            'translation' => '我打開門時，那隻鳥飛走了。',
             'distractors' => [
                 ['vocabulary_id' => 331, 'word' => 'ahead'],
                 ['vocabulary_id' => 333, 'word' => 'up'],
@@ -4282,7 +3948,6 @@ return [
             'vocabulary_id' => 335,
             'sentence' => 'We decorate the tree at {{blank}}.',
             'blank_word' => 'Christmas',
-            'translation' => '我們在聖誕節裝飾聖誕樹。',
             'distractors' => [
                 ['vocabulary_id' => 338, 'word' => 'office'],
                 ['vocabulary_id' => 331, 'word' => 'ahead'],
@@ -4295,7 +3960,6 @@ return [
             'vocabulary_id' => 336,
             'sentence' => 'My parents {{blank}} me to play outside.',
             'blank_word' => 'allow',
-            'translation' => '我的父母允許我到外面玩。',
             'distractors' => [
                 ['vocabulary_id' => 337, 'word' => 'understand'],
                 ['vocabulary_id' => 331, 'word' => 'ahead'],
@@ -4308,7 +3972,6 @@ return [
             'vocabulary_id' => 337,
             'sentence' => 'I {{blank}} the teacher\'s question.',
             'blank_word' => 'understand',
-            'translation' => '我理解老師的問題。',
             'distractors' => [
                 ['vocabulary_id' => 336, 'word' => 'allow'],
                 ['vocabulary_id' => 331, 'word' => 'ahead'],
@@ -4321,7 +3984,6 @@ return [
             'vocabulary_id' => 338,
             'sentence' => 'My mother works in an {{blank}}.',
             'blank_word' => 'office',
-            'translation' => '我媽媽在辦公室工作。',
             'distractors' => [
                 ['vocabulary_id' => 335, 'word' => 'Christmas'],
                 ['vocabulary_id' => 331, 'word' => 'ahead'],
@@ -4334,7 +3996,6 @@ return [
             'vocabulary_id' => 339,
             'sentence' => 'She is a {{blank}} friend who always helps me.',
             'blank_word' => 'real',
-            'translation' => '她是一位真心的朋友，總是幫助我。',
             'distractors' => [
                 ['vocabulary_id' => 334, 'word' => 'off'],
                 ['vocabulary_id' => 331, 'word' => 'ahead'],
@@ -4347,7 +4008,6 @@ return [
             'vocabulary_id' => 340,
             'sentence' => 'I gave {{blank}} my old book.',
             'blank_word' => 'him',
-            'translation' => '我把我的舊書給了他。',
             'distractors' => [
                 ['vocabulary_id' => 331, 'word' => 'ahead'],
                 ['vocabulary_id' => 332, 'word' => 'and'],
@@ -4362,7 +4022,6 @@ return [
             'vocabulary_id' => 341,
             'sentence' => 'Please do not {{blank}} the glass.',
             'blank_word' => 'break',
-            'translation' => '請不要打破玻璃。',
             'distractors' => [
                 ['vocabulary_id' => 345, 'word' => 'plant'],
                 ['vocabulary_id' => 348, 'word' => 'study'],
@@ -4373,7 +4032,6 @@ return [
             'vocabulary_id' => 342,
             'sentence' => 'I am {{blank}} to see my friends.',
             'blank_word' => 'happy',
-            'translation' => '我很高興見到我的朋友。',
             'distractors' => [
                 ['vocabulary_id' => 344, 'word' => 'free'],
                 ['vocabulary_id' => 347, 'word' => 'deep'],
@@ -4386,7 +4044,6 @@ return [
             'vocabulary_id' => 343,
             'sentence' => '{{blank}} is my birthday.',
             'blank_word' => 'Tomorrow',
-            'translation' => '明天是我的生日。',
             'distractors' => [
                 ['vocabulary_id' => 345, 'word' => 'Plant'],
                 ['vocabulary_id' => 346, 'word' => 'Table'],
@@ -4399,7 +4056,6 @@ return [
             'vocabulary_id' => 344,
             'sentence' => 'The bird is {{blank}} to fly in the sky.',
             'blank_word' => 'free',
-            'translation' => '這隻鳥可以自由地在天空中飛翔。',
             'distractors' => [
                 ['vocabulary_id' => 342, 'word' => 'happy'],
                 ['vocabulary_id' => 347, 'word' => 'deep'],
@@ -4412,7 +4068,6 @@ return [
             'vocabulary_id' => 345,
             'sentence' => 'We grow a small {{blank}} in the garden.',
             'blank_word' => 'plant',
-            'translation' => '我們在花園裡種了一株小植物。',
             'distractors' => [
                 ['vocabulary_id' => 341, 'word' => 'break'],
                 ['vocabulary_id' => 343, 'word' => 'tomorrow'],
@@ -4426,7 +4081,6 @@ return [
             'vocabulary_id' => 346,
             'sentence' => 'My books are on the {{blank}}.',
             'blank_word' => 'table',
-            'translation' => '我的書在桌子上。',
             'distractors' => [
                 ['vocabulary_id' => 343, 'word' => 'tomorrow'],
                 ['vocabulary_id' => 345, 'word' => 'plant'],
@@ -4439,7 +4093,6 @@ return [
             'vocabulary_id' => 347,
             'sentence' => 'The pool is too {{blank}} for the baby.',
             'blank_word' => 'deep',
-            'translation' => '這個游泳池對嬰兒來說太深了。',
             'distractors' => [
                 ['vocabulary_id' => 342, 'word' => 'happy'],
                 ['vocabulary_id' => 344, 'word' => 'free'],
@@ -4452,7 +4105,6 @@ return [
             'vocabulary_id' => 348,
             'sentence' => 'I {{blank}} English every evening.',
             'blank_word' => 'study',
-            'translation' => '我每天晚上學習英文。',
             'distractors' => [
                 ['vocabulary_id' => 341, 'word' => 'break'],
                 ['vocabulary_id' => 343, 'word' => 'tomorrow'],
@@ -4466,7 +4118,6 @@ return [
             'vocabulary_id' => 349,
             'sentence' => 'She has a beautiful {{blank}}.',
             'blank_word' => 'voice',
-            'translation' => '她有一副好聽的嗓音。',
             'distractors' => [
                 ['vocabulary_id' => 343, 'word' => 'tomorrow'],
                 ['vocabulary_id' => 345, 'word' => 'plant'],
@@ -4479,7 +4130,6 @@ return [
             'vocabulary_id' => 350,
             'sentence' => 'We {{blank}} a movie together on Friday night.',
             'blank_word' => 'watch',
-            'translation' => '我們週五晚上一起看電影。',
             'distractors' => [
                 ['vocabulary_id' => 341, 'word' => 'break'],
                 ['vocabulary_id' => 343, 'word' => 'tomorrow'],
@@ -4495,7 +4145,6 @@ return [
             'vocabulary_id' => 351,
             'sentence' => 'The keys are {{blank}} the desk.',
             'blank_word' => 'on',
-            'translation' => '鑰匙在書桌上。',
             'distractors' => [
                 ['vocabulary_id' => 352, 'word' => 'kick'],
                 ['vocabulary_id' => 353, 'word' => 'thought'],
@@ -4508,7 +4157,6 @@ return [
             'vocabulary_id' => 352,
             'sentence' => 'The boy can {{blank}} the ball very far.',
             'blank_word' => 'kick',
-            'translation' => '那個男孩可以把球踢得很遠。',
             'distractors' => [
                 ['vocabulary_id' => 355, 'word' => 'learn'],
                 ['vocabulary_id' => 351, 'word' => 'on'],
@@ -4521,7 +4169,6 @@ return [
             'vocabulary_id' => 353,
             'sentence' => 'I had a good {{blank}} for our school project.',
             'blank_word' => 'thought',
-            'translation' => '我對我們的學校專題有一個好想法。',
             'distractors' => [
                 ['vocabulary_id' => 356, 'word' => 'shirt'],
                 ['vocabulary_id' => 357, 'word' => 'list'],
@@ -4533,7 +4180,6 @@ return [
             'vocabulary_id' => 354,
             'sentence' => 'The two bags are {{blank}} colors.',
             'blank_word' => 'different',
-            'translation' => '這兩個袋子是不同的顏色。',
             'distractors' => [
                 ['vocabulary_id' => 359, 'word' => 'weak'],
                 ['vocabulary_id' => 351, 'word' => 'on'],
@@ -4546,7 +4192,6 @@ return [
             'vocabulary_id' => 355,
             'sentence' => 'I want to {{blank}} how to cook.',
             'blank_word' => 'learn',
-            'translation' => '我想學習如何煮飯。',
             'distractors' => [
                 ['vocabulary_id' => 352, 'word' => 'kick'],
                 ['vocabulary_id' => 351, 'word' => 'on'],
@@ -4559,7 +4204,6 @@ return [
             'vocabulary_id' => 356,
             'sentence' => 'He wears a clean white {{blank}}.',
             'blank_word' => 'shirt',
-            'translation' => '他穿著一件乾淨的白襯衫。',
             'distractors' => [
                 ['vocabulary_id' => 353, 'word' => 'thought'],
                 ['vocabulary_id' => 357, 'word' => 'list'],
@@ -4571,7 +4215,6 @@ return [
             'vocabulary_id' => 357,
             'sentence' => 'I wrote a {{blank}} of things to buy.',
             'blank_word' => 'list',
-            'translation' => '我寫了一張要買的東西清單。',
             'distractors' => [
                 ['vocabulary_id' => 353, 'word' => 'thought'],
                 ['vocabulary_id' => 356, 'word' => 'shirt'],
@@ -4583,7 +4226,6 @@ return [
             'vocabulary_id' => 358,
             'sentence' => 'Please write a {{blank}} to your teacher.',
             'blank_word' => 'note',
-            'translation' => '請寫一張便條給你的老師。',
             'distractors' => [
                 ['vocabulary_id' => 353, 'word' => 'thought'],
                 ['vocabulary_id' => 356, 'word' => 'shirt'],
@@ -4595,7 +4237,6 @@ return [
             'vocabulary_id' => 359,
             'sentence' => 'I felt {{blank}} after being sick for three days.',
             'blank_word' => 'weak',
-            'translation' => '生病三天後，我感到很虛弱。',
             'distractors' => [
                 ['vocabulary_id' => 354, 'word' => 'different'],
                 ['vocabulary_id' => 351, 'word' => 'on'],
@@ -4608,7 +4249,6 @@ return [
             'vocabulary_id' => 360,
             'sentence' => 'The {{blank}} runs through the town.',
             'blank_word' => 'railroad',
-            'translation' => '這條鐵路穿過城鎮。',
             'distractors' => [
                 ['vocabulary_id' => 353, 'word' => 'thought'],
                 ['vocabulary_id' => 356, 'word' => 'shirt'],
@@ -4622,7 +4262,6 @@ return [
             'vocabulary_id' => 361,
             'sentence' => 'We {{blank}} the wall blue.',
             'blank_word' => 'paint',
-            'translation' => '我們把牆壁漆成藍色。',
             'distractors' => [
                 ['vocabulary_id' => 369, 'word' => 'be'],
                 ['vocabulary_id' => 362, 'word' => 'tea'],
@@ -4635,7 +4274,6 @@ return [
             'vocabulary_id' => 362,
             'sentence' => 'My mother drinks {{blank}} every morning.',
             'blank_word' => 'tea',
-            'translation' => '我媽媽每天早上喝茶。',
             'distractors' => [
                 ['vocabulary_id' => 363, 'word' => 'thing'],
                 ['vocabulary_id' => 364, 'word' => 'woman'],
@@ -4648,7 +4286,6 @@ return [
             'vocabulary_id' => 363,
             'sentence' => 'This {{blank}} is very useful.',
             'blank_word' => 'thing',
-            'translation' => '這件物品非常有用。',
             'distractors' => [
                 ['vocabulary_id' => 362, 'word' => 'tea'],
                 ['vocabulary_id' => 364, 'word' => 'woman'],
@@ -4661,7 +4298,6 @@ return [
             'vocabulary_id' => 364,
             'sentence' => 'The {{blank}} is reading a book.',
             'blank_word' => 'woman',
-            'translation' => '那位女人正在讀書。',
             'distractors' => [
                 ['vocabulary_id' => 362, 'word' => 'tea'],
                 ['vocabulary_id' => 363, 'word' => 'thing'],
@@ -4674,7 +4310,6 @@ return [
             'vocabulary_id' => 365,
             'sentence' => 'This bag is {{blank}} for school.',
             'blank_word' => 'useful',
-            'translation' => '這個袋子對上學很有用。',
             'distractors' => [
                 ['vocabulary_id' => 361, 'word' => 'paint'],
                 ['vocabulary_id' => 362, 'word' => 'tea'],
@@ -4687,7 +4322,6 @@ return [
             'vocabulary_id' => 366,
             'sentence' => 'Please open the {{blank}}.',
             'blank_word' => 'window',
-            'translation' => '請打開窗戶。',
             'distractors' => [
                 ['vocabulary_id' => 362, 'word' => 'tea'],
                 ['vocabulary_id' => 363, 'word' => 'thing'],
@@ -4700,7 +4334,6 @@ return [
             'vocabulary_id' => 367,
             'sentence' => 'The bus will arrive {{blank}}.',
             'blank_word' => 'soon',
-            'translation' => '公車很快就會到了。',
             'distractors' => [
                 ['vocabulary_id' => 361, 'word' => 'paint'],
                 ['vocabulary_id' => 362, 'word' => 'tea'],
@@ -4713,7 +4346,6 @@ return [
             'vocabulary_id' => 368,
             'sentence' => 'We eat {{blank}} at seven.',
             'blank_word' => 'dinner',
-            'translation' => '我們七點吃晚餐。',
             'distractors' => [
                 ['vocabulary_id' => 362, 'word' => 'tea'],
                 ['vocabulary_id' => 363, 'word' => 'thing'],
@@ -4726,7 +4358,6 @@ return [
             'vocabulary_id' => 369,
             'sentence' => 'I want to {{blank}} a teacher.',
             'blank_word' => 'be',
-            'translation' => '我想成為一名老師。',
             'distractors' => [
                 ['vocabulary_id' => 361, 'word' => 'paint'],
                 ['vocabulary_id' => 362, 'word' => 'tea'],
@@ -4739,7 +4370,6 @@ return [
             'vocabulary_id' => 370,
             'sentence' => 'Taiwan is a beautiful {{blank}}.',
             'blank_word' => 'country',
-            'translation' => '臺灣是一個美麗的國家。',
             'distractors' => [
                 ['vocabulary_id' => 362, 'word' => 'tea'],
                 ['vocabulary_id' => 363, 'word' => 'thing'],
@@ -4754,7 +4384,6 @@ return [
             'vocabulary_id' => 371,
             'sentence' => 'The child planted a {{blank}}.',
             'blank_word' => 'seed',
-            'translation' => '那個孩子種了一顆種子。',
             'distractors' => [
                 ['vocabulary_id' => 373, 'word' => 'chart'],
                 ['vocabulary_id' => 375, 'word' => 'afternoon'],
@@ -4768,7 +4397,6 @@ return [
             'vocabulary_id' => 372,
             'sentence' => 'She can speak a {{blank}} language.',
             'blank_word' => 'foreign',
-            'translation' => '她會說一種外國語言。',
             'distractors' => [
                 ['vocabulary_id' => 374, 'word' => 'green'],
                 ['vocabulary_id' => 371, 'word' => 'seed'],
@@ -4781,7 +4409,6 @@ return [
             'vocabulary_id' => 373,
             'sentence' => 'The {{blank}} shows our class scores.',
             'blank_word' => 'chart',
-            'translation' => '這張圖表顯示我們班的成績。',
             'distractors' => [
                 ['vocabulary_id' => 371, 'word' => 'seed'],
                 ['vocabulary_id' => 375, 'word' => 'afternoon'],
@@ -4795,7 +4422,6 @@ return [
             'vocabulary_id' => 374,
             'sentence' => 'He has a {{blank}} bike.',
             'blank_word' => 'green',
-            'translation' => '他有一輛綠色的腳踏車。',
             'distractors' => [
                 ['vocabulary_id' => 372, 'word' => 'foreign'],
                 ['vocabulary_id' => 371, 'word' => 'seed'],
@@ -4808,7 +4434,6 @@ return [
             'vocabulary_id' => 375,
             'sentence' => 'I do my homework in the {{blank}}.',
             'blank_word' => 'afternoon',
-            'translation' => '我在午後做作業。',
             'distractors' => [
                 ['vocabulary_id' => 371, 'word' => 'seed'],
                 ['vocabulary_id' => 373, 'word' => 'chart'],
@@ -4822,7 +4447,6 @@ return [
             'vocabulary_id' => 376,
             'sentence' => 'Please wait a {{blank}}.',
             'blank_word' => 'while',
-            'translation' => '請等一會兒。',
             'distractors' => [
                 ['vocabulary_id' => 371, 'word' => 'seed'],
                 ['vocabulary_id' => 373, 'word' => 'chart'],
@@ -4836,7 +4460,6 @@ return [
             'vocabulary_id' => 377,
             'sentence' => 'What is the {{blank}} today?',
             'blank_word' => 'date',
-            'translation' => '今天是幾月幾日？',
             'distractors' => [
                 ['vocabulary_id' => 371, 'word' => 'seed'],
                 ['vocabulary_id' => 373, 'word' => 'chart'],
@@ -4850,7 +4473,6 @@ return [
             'vocabulary_id' => 378,
             'sentence' => 'Please {{blank}} my hand.',
             'blank_word' => 'hold',
-            'translation' => '請握著我的手。',
             'distractors' => [
                 ['vocabulary_id' => 371, 'word' => 'seed'],
                 ['vocabulary_id' => 372, 'word' => 'foreign'],
@@ -4863,7 +4485,6 @@ return [
             'vocabulary_id' => 379,
             'sentence' => 'I eat a {{blank}} for breakfast.',
             'blank_word' => 'sweet potato',
-            'translation' => '我早餐吃一條地瓜。',
             'distractors' => [
                 ['vocabulary_id' => 371, 'word' => 'seed'],
                 ['vocabulary_id' => 373, 'word' => 'chart'],
@@ -4877,7 +4498,6 @@ return [
             'vocabulary_id' => 380,
             'sentence' => 'Please close the {{blank}}.',
             'blank_word' => 'door',
-            'translation' => '請關上門。',
             'distractors' => [
                 ['vocabulary_id' => 371, 'word' => 'seed'],
                 ['vocabulary_id' => 373, 'word' => 'chart'],
@@ -4893,7 +4513,6 @@ return [
             'vocabulary_id' => 381,
             'sentence' => 'My lower {{blank}} hurts.',
             'blank_word' => 'lip',
-            'translation' => '我的下嘴唇很痛。',
             'distractors' => [
                 ['vocabulary_id' => 383, 'word' => 'elephant'],
                 ['vocabulary_id' => 384, 'word' => 'goodbye'],
@@ -4906,7 +4525,6 @@ return [
             'vocabulary_id' => 382,
             'sentence' => 'The baby has {{blank}} hands.',
             'blank_word' => 'tiny',
-            'translation' => '這個嬰兒有一雙極小的手。',
             'distractors' => [
                 ['vocabulary_id' => 389, 'word' => 'gray'],
                 ['vocabulary_id' => 381, 'word' => 'lip'],
@@ -4919,7 +4537,6 @@ return [
             'vocabulary_id' => 383,
             'sentence' => 'The {{blank}} is eating leaves.',
             'blank_word' => 'elephant',
-            'translation' => '這頭大象正在吃葉子。',
             'distractors' => [
                 ['vocabulary_id' => 381, 'word' => 'lip'],
                 ['vocabulary_id' => 384, 'word' => 'goodbye'],
@@ -4932,7 +4549,6 @@ return [
             'vocabulary_id' => 384,
             'sentence' => 'She waved and said, “{{blank}}!”',
             'blank_word' => 'Goodbye',
-            'translation' => '她揮手說：「再見！」',
             'distractors' => [
                 ['vocabulary_id' => 381, 'word' => 'lip'],
                 ['vocabulary_id' => 383, 'word' => 'elephant'],
@@ -4945,7 +4561,6 @@ return [
             'vocabulary_id' => 385,
             'sentence' => 'Use sunscreen to protect your {{blank}}.',
             'blank_word' => 'skin',
-            'translation' => '使用防曬乳來保護你的皮膚。',
             'distractors' => [
                 ['vocabulary_id' => 381, 'word' => 'lip'],
                 ['vocabulary_id' => 383, 'word' => 'elephant'],
@@ -4958,7 +4573,6 @@ return [
             'vocabulary_id' => 386,
             'sentence' => 'My sister is {{blank}}.',
             'blank_word' => 'eighteen',
-            'translation' => '我妹妹十八歲。',
             'distractors' => [
                 ['vocabulary_id' => 381, 'word' => 'lip'],
                 ['vocabulary_id' => 383, 'word' => 'elephant'],
@@ -4971,7 +4585,6 @@ return [
             'vocabulary_id' => 387,
             'sentence' => '{{blank}} walk to school together.',
             'blank_word' => 'We',
-            'translation' => '我們一起走路上學。',
             'distractors' => [
                 ['vocabulary_id' => 381, 'word' => 'Lip'],
                 ['vocabulary_id' => 382, 'word' => 'Tiny'],
@@ -4984,7 +4597,6 @@ return [
             'vocabulary_id' => 388,
             'sentence' => 'Accidents can {{blank}} at any time.',
             'blank_word' => 'happen',
-            'translation' => '意外可能隨時發生。',
             'distractors' => [
                 ['vocabulary_id' => 381, 'word' => 'lip'],
                 ['vocabulary_id' => 382, 'word' => 'tiny'],
@@ -4997,7 +4609,6 @@ return [
             'vocabulary_id' => 389,
             'sentence' => 'My grandfather has {{blank}} hair.',
             'blank_word' => 'gray',
-            'translation' => '我祖父有灰色的頭髮。',
             'distractors' => [
                 ['vocabulary_id' => 382, 'word' => 'tiny'],
                 ['vocabulary_id' => 381, 'word' => 'lip'],
@@ -5010,7 +4621,6 @@ return [
             'vocabulary_id' => 390,
             'sentence' => 'The weather gets cooler in {{blank}}.',
             'blank_word' => 'October',
-            'translation' => '十月的天氣會變涼。',
             'distractors' => [
                 ['vocabulary_id' => 381, 'word' => 'lip'],
                 ['vocabulary_id' => 383, 'word' => 'elephant'],
@@ -5025,7 +4635,6 @@ return [
             'vocabulary_id' => 391,
             'sentence' => 'There is an old {{blank}} in the village.',
             'blank_word' => 'church',
-            'translation' => '村子裡有一座古老的教堂。',
             'distractors' => [
                 ['vocabulary_id' => 392, 'word' => 'one'],
                 ['vocabulary_id' => 394, 'word' => 'pen'],
@@ -5039,7 +4648,6 @@ return [
             'vocabulary_id' => 392,
             'sentence' => 'I have {{blank}} pencil in my bag.',
             'blank_word' => 'one',
-            'translation' => '我的包包裡有一支鉛筆。',
             'distractors' => [
                 ['vocabulary_id' => 391, 'word' => 'church'],
                 ['vocabulary_id' => 394, 'word' => 'pen'],
@@ -5053,7 +4661,6 @@ return [
             'vocabulary_id' => 393,
             'sentence' => 'Mr. Lee {{blank}} English at our school.',
             'blank_word' => 'teaches',
-            'translation' => '李老師在我們學校教英文。',
             'distractors' => [
                 ['vocabulary_id' => 398, 'word' => 'says'],
                 ['vocabulary_id' => 399, 'word' => 'falls'],
@@ -5066,7 +4673,6 @@ return [
             'vocabulary_id' => 394,
             'sentence' => 'I write my name with a blue {{blank}}.',
             'blank_word' => 'pen',
-            'translation' => '我用藍色的筆寫我的名字。',
             'distractors' => [
                 ['vocabulary_id' => 391, 'word' => 'church'],
                 ['vocabulary_id' => 392, 'word' => 'one'],
@@ -5079,7 +4685,6 @@ return [
             'vocabulary_id' => 395,
             'sentence' => 'Everyone must follow the {{blank}}.',
             'blank_word' => 'law',
-            'translation' => '每個人都必須遵守法律。',
             'distractors' => [
                 ['vocabulary_id' => 391, 'word' => 'church'],
                 ['vocabulary_id' => 392, 'word' => 'one'],
@@ -5093,7 +4698,6 @@ return [
             'vocabulary_id' => 396,
             'sentence' => 'Please write your {{blank}} here.',
             'blank_word' => 'name',
-            'translation' => '請在這裡寫下你的名字。',
             'distractors' => [
                 ['vocabulary_id' => 391, 'word' => 'church'],
                 ['vocabulary_id' => 392, 'word' => 'one'],
@@ -5107,7 +4711,6 @@ return [
             'vocabulary_id' => 397,
             'sentence' => 'Please write your {{blank}} on this form.',
             'blank_word' => 'address',
-            'translation' => '請在這張表格上寫下你的地址。',
             'distractors' => [
                 ['vocabulary_id' => 391, 'word' => 'church'],
                 ['vocabulary_id' => 392, 'word' => 'one'],
@@ -5121,7 +4724,6 @@ return [
             'vocabulary_id' => 398,
             'sentence' => 'Please {{blank}} your name clearly.',
             'blank_word' => 'say',
-            'translation' => '請清楚地說出你的名字。',
             'distractors' => [
                 ['vocabulary_id' => 393, 'word' => 'teach'],
                 ['vocabulary_id' => 399, 'word' => 'fall'],
@@ -5134,7 +4736,6 @@ return [
             'vocabulary_id' => 399,
             'sentence' => 'Leaves {{blank}} from the trees in autumn.',
             'blank_word' => 'fall',
-            'translation' => '秋天時，葉子會從樹上落下。',
             'distractors' => [
                 ['vocabulary_id' => 393, 'word' => 'teach'],
                 ['vocabulary_id' => 398, 'word' => 'say'],
@@ -5147,7 +4748,6 @@ return [
             'vocabulary_id' => 400,
             'sentence' => 'The {{blank}} waved to the crowd.',
             'blank_word' => 'queen',
-            'translation' => '女王向人群揮手。',
             'distractors' => [
                 ['vocabulary_id' => 391, 'word' => 'church'],
                 ['vocabulary_id' => 392, 'word' => 'one'],
@@ -5163,7 +4763,6 @@ return [
             'vocabulary_id' => 401,
             'sentence' => 'Please {{blank}} reading the story.',
             'blank_word' => 'continue',
-            'translation' => '請繼續讀這個故事。',
             'distractors' => [
                 ['vocabulary_id' => 406, 'word' => 'dig'],
                 ['vocabulary_id' => 410, 'word' => 'lead'],
@@ -5176,7 +4775,6 @@ return [
             'vocabulary_id' => 402,
             'sentence' => 'The {{blank}} dog is very cute.',
             'blank_word' => 'little',
-            'translation' => '那隻小狗非常可愛。',
             'distractors' => [
                 ['vocabulary_id' => 404, 'word' => 'also'],
                 ['vocabulary_id' => 407, 'word' => 'either'],
@@ -5189,7 +4787,6 @@ return [
             'vocabulary_id' => 403,
             'sentence' => 'The {{blank}} outside woke me up.',
             'blank_word' => 'noise',
-            'translation' => '外面的噪音把我吵醒了。',
             'distractors' => [
                 ['vocabulary_id' => 405, 'word' => 'moon'],
                 ['vocabulary_id' => 408, 'word' => 'soda'],
@@ -5200,7 +4797,6 @@ return [
             'vocabulary_id' => 404,
             'sentence' => 'I {{blank}} like apples.',
             'blank_word' => 'also',
-            'translation' => '我也喜歡蘋果。',
             'distractors' => [
                 ['vocabulary_id' => 402, 'word' => 'little'],
                 ['vocabulary_id' => 401, 'word' => 'continue'],
@@ -5213,7 +4809,6 @@ return [
             'vocabulary_id' => 405,
             'sentence' => 'The {{blank}} is bright tonight.',
             'blank_word' => 'moon',
-            'translation' => '今晚的月亮很明亮。',
             'distractors' => [
                 ['vocabulary_id' => 403, 'word' => 'noise'],
                 ['vocabulary_id' => 408, 'word' => 'soda'],
@@ -5225,7 +4820,6 @@ return [
             'vocabulary_id' => 406,
             'sentence' => 'The dog likes to {{blank}} holes in the yard.',
             'blank_word' => 'dig',
-            'translation' => '那隻狗喜歡在院子裡挖洞。',
             'distractors' => [
                 ['vocabulary_id' => 401, 'word' => 'continue'],
                 ['vocabulary_id' => 410, 'word' => 'lead'],
@@ -5238,7 +4832,6 @@ return [
             'vocabulary_id' => 407,
             'sentence' => 'You can choose {{blank}} color.',
             'blank_word' => 'either',
-            'translation' => '你可以選兩種顏色中的任一種。',
             'distractors' => [
                 ['vocabulary_id' => 402, 'word' => 'little'],
                 ['vocabulary_id' => 401, 'word' => 'continue'],
@@ -5251,7 +4844,6 @@ return [
             'vocabulary_id' => 408,
             'sentence' => 'My brother drinks a {{blank}} with his lunch.',
             'blank_word' => 'soda',
-            'translation' => '我弟弟午餐時喝一杯汽水。',
             'distractors' => [
                 ['vocabulary_id' => 403, 'word' => 'noise'],
                 ['vocabulary_id' => 405, 'word' => 'moon'],
@@ -5263,7 +4855,6 @@ return [
             'vocabulary_id' => 409,
             'sentence' => 'The {{blank}} of the box is red.',
             'blank_word' => 'outside',
-            'translation' => '盒子的外面是紅色的。',
             'distractors' => [
                 ['vocabulary_id' => 403, 'word' => 'noise'],
                 ['vocabulary_id' => 405, 'word' => 'moon'],
@@ -5275,7 +4866,6 @@ return [
             'vocabulary_id' => 410,
             'sentence' => 'This road will {{blank}} us to the park.',
             'blank_word' => 'lead',
-            'translation' => '這條路會引導我們到公園。',
             'distractors' => [
                 ['vocabulary_id' => 401, 'word' => 'continue'],
                 ['vocabulary_id' => 403, 'word' => 'noise'],
@@ -5291,7 +4881,6 @@ return [
             'vocabulary_id' => 411,
             'sentence' => 'Please do not {{blank}} in the library.',
             'blank_word' => 'shout',
-            'translation' => '請不要在圖書館裡大喊。',
             'distractors' => [
                 ['vocabulary_id' => 416, 'word' => 'rub'],
                 ['vocabulary_id' => 417, 'word' => 'meet'],
@@ -5304,7 +4893,6 @@ return [
             'vocabulary_id' => 412,
             'sentence' => 'One {{blank}} came to the school meeting.',
             'blank_word' => 'parent',
-            'translation' => '一位家長來參加學校會議。',
             'distractors' => [
                 ['vocabulary_id' => 413, 'word' => 'garden'],
                 ['vocabulary_id' => 414, 'word' => 'basketball'],
@@ -5317,7 +4905,6 @@ return [
             'vocabulary_id' => 413,
             'sentence' => 'There are many flowers in the {{blank}}.',
             'blank_word' => 'garden',
-            'translation' => '花園裡有許多花。',
             'distractors' => [
                 ['vocabulary_id' => 412, 'word' => 'parent'],
                 ['vocabulary_id' => 414, 'word' => 'basketball'],
@@ -5330,7 +4917,6 @@ return [
             'vocabulary_id' => 414,
             'sentence' => 'The children play {{blank}} after school.',
             'blank_word' => 'basketball',
-            'translation' => '孩子們放學後打籃球。',
             'distractors' => [
                 ['vocabulary_id' => 412, 'word' => 'parent'],
                 ['vocabulary_id' => 413, 'word' => 'garden'],
@@ -5343,7 +4929,6 @@ return [
             'vocabulary_id' => 415,
             'sentence' => 'Please wait at the {{blank}} of the line.',
             'blank_word' => 'front',
-            'translation' => '請在隊伍前面等候。',
             'distractors' => [
                 ['vocabulary_id' => 412, 'word' => 'parent'],
                 ['vocabulary_id' => 413, 'word' => 'garden'],
@@ -5356,7 +4941,6 @@ return [
             'vocabulary_id' => 416,
             'sentence' => '{{blank}} your hands together to keep them warm.',
             'blank_word' => 'Rub',
-            'translation' => '互相摩擦你的雙手，讓它們保持溫暖。',
             'distractors' => [
                 ['vocabulary_id' => 411, 'word' => 'Shout'],
                 ['vocabulary_id' => 417, 'word' => 'Meet'],
@@ -5369,7 +4953,6 @@ return [
             'vocabulary_id' => 417,
             'sentence' => 'I will {{blank}} my friend at the station.',
             'blank_word' => 'meet',
-            'translation' => '我會在車站遇見我的朋友。',
             'distractors' => [
                 ['vocabulary_id' => 411, 'word' => 'shout'],
                 ['vocabulary_id' => 416, 'word' => 'rub'],
@@ -5382,7 +4965,6 @@ return [
             'vocabulary_id' => 418,
             'sentence' => 'This is a picture {{blank}} my family.',
             'blank_word' => 'of',
-            'translation' => '這是一張我的家人的照片。',
             'distractors' => [
                 ['vocabulary_id' => 411, 'word' => 'shout'],
                 ['vocabulary_id' => 412, 'word' => 'parent'],
@@ -5395,7 +4977,6 @@ return [
             'vocabulary_id' => 419,
             'sentence' => '{{blank}} is my lucky number.',
             'blank_word' => 'Seven',
-            'translation' => '七是我的幸運數字。',
             'distractors' => [
                 ['vocabulary_id' => 412, 'word' => 'Parent'],
                 ['vocabulary_id' => 413, 'word' => 'Garden'],
@@ -5408,7 +4989,6 @@ return [
             'vocabulary_id' => 420,
             'sentence' => 'An {{blank}} is walking across the table.',
             'blank_word' => 'ant',
-            'translation' => '一隻螞蟻正在桌上爬過去。',
             'distractors' => [
                 ['vocabulary_id' => 412, 'word' => 'parent'],
                 ['vocabulary_id' => 413, 'word' => 'garden'],
@@ -5423,7 +5003,6 @@ return [
             'vocabulary_id' => 421,
             'sentence' => 'I am {{blank}} happy today.',
             'blank_word' => 'very',
-            'translation' => '我今天非常開心。',
             'distractors' => [
                 ['vocabulary_id' => 422, 'word' => 'stop'],
                 ['vocabulary_id' => 423, 'word' => 'charger'],
@@ -5436,7 +5015,6 @@ return [
             'vocabulary_id' => 422,
             'sentence' => 'Please {{blank}} the car here.',
             'blank_word' => 'stop',
-            'translation' => '請在這裡把車停下來。',
             'distractors' => [
                 ['vocabulary_id' => 425, 'word' => 'book'],
                 ['vocabulary_id' => 428, 'word' => 'wash'],
@@ -5449,7 +5027,6 @@ return [
             'vocabulary_id' => 423,
             'sentence' => 'I need my phone {{blank}}.',
             'blank_word' => 'charger',
-            'translation' => '我需要我的手機充電器。',
             'distractors' => [
                 ['vocabulary_id' => 424, 'word' => 'bus'],
                 ['vocabulary_id' => 426, 'word' => 'tonight'],
@@ -5460,7 +5037,6 @@ return [
             'vocabulary_id' => 424,
             'sentence' => 'We take the {{blank}} to school.',
             'blank_word' => 'bus',
-            'translation' => '我們搭巴士去學校。',
             'distractors' => [
                 ['vocabulary_id' => 423, 'word' => 'charger'],
                 ['vocabulary_id' => 426, 'word' => 'tonight'],
@@ -5471,7 +5047,6 @@ return [
             'vocabulary_id' => 425,
             'sentence' => 'I want to {{blank}} a table for two.',
             'blank_word' => 'book',
-            'translation' => '我想預訂一張兩人桌。',
             'distractors' => [
                 ['vocabulary_id' => 422, 'word' => 'stop'],
                 ['vocabulary_id' => 428, 'word' => 'wash'],
@@ -5484,7 +5059,6 @@ return [
             'vocabulary_id' => 426,
             'sentence' => 'I have plans for {{blank}}.',
             'blank_word' => 'tonight',
-            'translation' => '我今晚有安排。',
             'distractors' => [
                 ['vocabulary_id' => 423, 'word' => 'charger'],
                 ['vocabulary_id' => 424, 'word' => 'bus'],
@@ -5495,7 +5069,6 @@ return [
             'vocabulary_id' => 427,
             'sentence' => 'The children saw a {{blank}} in the old house.',
             'blank_word' => 'ghost',
-            'translation' => '孩子們在那棟老房子裡看到一個幽靈。',
             'distractors' => [
                 ['vocabulary_id' => 423, 'word' => 'charger'],
                 ['vocabulary_id' => 424, 'word' => 'bus'],
@@ -5506,7 +5079,6 @@ return [
             'vocabulary_id' => 428,
             'sentence' => 'Please {{blank}} your hands before dinner.',
             'blank_word' => 'wash',
-            'translation' => '晚餐前請洗手。',
             'distractors' => [
                 ['vocabulary_id' => 422, 'word' => 'stop'],
                 ['vocabulary_id' => 425, 'word' => 'book'],
@@ -5519,7 +5091,6 @@ return [
             'vocabulary_id' => 429,
             'sentence' => 'That was a {{blank}} mistake.',
             'blank_word' => 'silly',
-            'translation' => '那是一個愚蠢的錯誤。',
             'distractors' => [
                 ['vocabulary_id' => 430, 'word' => 'busy'],
                 ['vocabulary_id' => 421, 'word' => 'very'],
@@ -5532,7 +5103,6 @@ return [
             'vocabulary_id' => 430,
             'sentence' => 'My mother is {{blank}} this morning.',
             'blank_word' => 'busy',
-            'translation' => '我媽媽今天早上很忙。',
             'distractors' => [
                 ['vocabulary_id' => 429, 'word' => 'silly'],
                 ['vocabulary_id' => 421, 'word' => 'very'],
@@ -5547,7 +5117,6 @@ return [
             'vocabulary_id' => 431,
             'sentence' => 'The library is {{blank}}.',
             'blank_word' => 'quiet',
-            'translation' => '圖書館很安靜。',
             'distractors' => [
                 ['vocabulary_id' => 434, 'word' => 'early'],
                 ['vocabulary_id' => 432, 'word' => 'fill'],
@@ -5560,7 +5129,6 @@ return [
             'vocabulary_id' => 432,
             'sentence' => 'Please {{blank}} the glass with water.',
             'blank_word' => 'fill',
-            'translation' => '請把杯子裝滿水。',
             'distractors' => [
                 ['vocabulary_id' => 437, 'word' => 'throw'],
                 ['vocabulary_id' => 439, 'word' => 'print'],
@@ -5573,7 +5141,6 @@ return [
             'vocabulary_id' => 433,
             'sentence' => 'We saw a {{blank}} in the sea.',
             'blank_word' => 'shark',
-            'translation' => '我們在海裡看到一條鯊魚。',
             'distractors' => [
                 ['vocabulary_id' => 435, 'word' => 'September'],
                 ['vocabulary_id' => 436, 'word' => 'guest'],
@@ -5584,7 +5151,6 @@ return [
             'vocabulary_id' => 434,
             'sentence' => 'We caught the {{blank}} bus.',
             'blank_word' => 'early',
-            'translation' => '我們搭上了早班巴士。',
             'distractors' => [
                 ['vocabulary_id' => 431, 'word' => 'quiet'],
                 ['vocabulary_id' => 432, 'word' => 'fill'],
@@ -5597,7 +5163,6 @@ return [
             'vocabulary_id' => 435,
             'sentence' => 'School starts in {{blank}}.',
             'blank_word' => 'September',
-            'translation' => '學校在九月開學。',
             'distractors' => [
                 ['vocabulary_id' => 433, 'word' => 'shark'],
                 ['vocabulary_id' => 436, 'word' => 'guest'],
@@ -5608,7 +5173,6 @@ return [
             'vocabulary_id' => 436,
             'sentence' => 'Our {{blank}} arrived at seven.',
             'blank_word' => 'guest',
-            'translation' => '我們的客人在七點抵達。',
             'distractors' => [
                 ['vocabulary_id' => 433, 'word' => 'shark'],
                 ['vocabulary_id' => 435, 'word' => 'September'],
@@ -5619,7 +5183,6 @@ return [
             'vocabulary_id' => 437,
             'sentence' => 'Please {{blank}} the ball to me.',
             'blank_word' => 'throw',
-            'translation' => '請把球丟給我。',
             'distractors' => [
                 ['vocabulary_id' => 432, 'word' => 'fill'],
                 ['vocabulary_id' => 439, 'word' => 'print'],
@@ -5632,7 +5195,6 @@ return [
             'vocabulary_id' => 438,
             'sentence' => 'I went to the park {{blank}} my friend.',
             'blank_word' => 'with',
-            'translation' => '我和我的朋友一起去公園。',
             'distractors' => [
                 ['vocabulary_id' => 431, 'word' => 'quiet'],
                 ['vocabulary_id' => 432, 'word' => 'fill'],
@@ -5645,7 +5207,6 @@ return [
             'vocabulary_id' => 439,
             'sentence' => 'Please {{blank}} this picture for me.',
             'blank_word' => 'print',
-            'translation' => '請幫我把這張圖片印出來。',
             'distractors' => [
                 ['vocabulary_id' => 432, 'word' => 'fill'],
                 ['vocabulary_id' => 437, 'word' => 'throw'],
@@ -5658,7 +5219,6 @@ return [
             'vocabulary_id' => 440,
             'sentence' => 'The {{blank}} is playing with a ball.',
             'blank_word' => 'boy',
-            'translation' => '那個男孩正在玩球。',
             'distractors' => [
                 ['vocabulary_id' => 433, 'word' => 'shark'],
                 ['vocabulary_id' => 435, 'word' => 'September'],
@@ -5671,7 +5231,6 @@ return [
             'vocabulary_id' => 441,
             'sentence' => 'Some plants {{blank}} water in the hot summer.',
             'blank_word' => 'lack',
-            'translation' => '有些植物在炎熱的夏天缺少水分。',
             'distractors' => [
                 ['vocabulary_id' => 442, 'word' => 'bright'],
                 ['vocabulary_id' => 443, 'word' => 'tall'],
@@ -5684,7 +5243,6 @@ return [
             'vocabulary_id' => 442,
             'sentence' => 'The {{blank}} sun woke me up early.',
             'blank_word' => 'bright',
-            'translation' => '明亮的陽光很早就把我叫醒了。',
             'distractors' => [
                 ['vocabulary_id' => 443, 'word' => 'tall'],
                 ['vocabulary_id' => 441, 'word' => 'lack'],
@@ -5697,7 +5255,6 @@ return [
             'vocabulary_id' => 443,
             'sentence' => 'That {{blank}} man is my uncle.',
             'blank_word' => 'tall',
-            'translation' => '那位高大的男人是我的叔叔。',
             'distractors' => [
                 ['vocabulary_id' => 442, 'word' => 'bright'],
                 ['vocabulary_id' => 441, 'word' => 'lack'],
@@ -5710,7 +5267,6 @@ return [
             'vocabulary_id' => 444,
             'sentence' => 'A {{blank}} people came to the festival.',
             'blank_word' => 'thousand',
-            'translation' => '有一千人來參加這個節慶。',
             'distractors' => [
                 ['vocabulary_id' => 445, 'word' => 'officer'],
                 ['vocabulary_id' => 446, 'word' => 'granddaughter'],
@@ -5724,7 +5280,6 @@ return [
             'vocabulary_id' => 445,
             'sentence' => 'The government {{blank}} helped us fill out the form.',
             'blank_word' => 'officer',
-            'translation' => '那位公務員幫助我們填寫表格。',
             'distractors' => [
                 ['vocabulary_id' => 444, 'word' => 'thousand'],
                 ['vocabulary_id' => 446, 'word' => 'granddaughter'],
@@ -5738,7 +5293,6 @@ return [
             'vocabulary_id' => 446,
             'sentence' => 'My {{blank}} likes to read picture books.',
             'blank_word' => 'granddaughter',
-            'translation' => '我的孫女喜歡讀圖畫書。',
             'distractors' => [
                 ['vocabulary_id' => 444, 'word' => 'thousand'],
                 ['vocabulary_id' => 445, 'word' => 'officer'],
@@ -5752,7 +5306,6 @@ return [
             'vocabulary_id' => 447,
             'sentence' => 'The baby is having a warm {{blank}}.',
             'blank_word' => 'bath',
-            'translation' => '寶寶正在洗溫水澡。',
             'distractors' => [
                 ['vocabulary_id' => 444, 'word' => 'thousand'],
                 ['vocabulary_id' => 445, 'word' => 'officer'],
@@ -5766,7 +5319,6 @@ return [
             'vocabulary_id' => 448,
             'sentence' => '{{blank}} Lee is our new teacher.',
             'blank_word' => 'Mr.',
-            'translation' => '李先生是我們的新老師。',
             'distractors' => [
                 ['vocabulary_id' => 444, 'word' => 'thousand'],
                 ['vocabulary_id' => 445, 'word' => 'officer'],
@@ -5780,7 +5332,6 @@ return [
             'vocabulary_id' => 449,
             'sentence' => 'The number {{blank}} is on my shirt.',
             'blank_word' => 'eleven',
-            'translation' => '我的襯衫上有數字十一。',
             'distractors' => [
                 ['vocabulary_id' => 444, 'word' => 'thousand'],
                 ['vocabulary_id' => 445, 'word' => 'officer'],
@@ -5794,7 +5345,6 @@ return [
             'vocabulary_id' => 450,
             'sentence' => 'We visit our grandparents during the {{blank}}.',
             'blank_word' => 'holiday',
-            'translation' => '假日期間，我們會去拜訪祖父母。',
             'distractors' => [
                 ['vocabulary_id' => 444, 'word' => 'thousand'],
                 ['vocabulary_id' => 445, 'word' => 'officer'],
@@ -5810,7 +5360,6 @@ return [
             'vocabulary_id' => 451,
             'sentence' => 'The children are running in the school {{blank}}.',
             'blank_word' => 'playground',
-            'translation' => '孩子們正在學校操場上跑步。',
             'distractors' => [
                 ['vocabulary_id' => 452, 'word' => 'driver'],
                 ['vocabulary_id' => 455, 'word' => 'feel'],
@@ -5821,7 +5370,6 @@ return [
             'vocabulary_id' => 452,
             'sentence' => 'The bus {{blank}} stopped at the red light.',
             'blank_word' => 'driver',
-            'translation' => '公車司機在紅燈前停了下來。',
             'distractors' => [
                 ['vocabulary_id' => 451, 'word' => 'playground'],
                 ['vocabulary_id' => 455, 'word' => 'feel'],
@@ -5832,7 +5380,6 @@ return [
             'vocabulary_id' => 453,
             'sentence' => 'Please {{blank}} me your notebook.',
             'blank_word' => 'give',
-            'translation' => '請把你的筆記本給我。',
             'distractors' => [
                 ['vocabulary_id' => 455, 'word' => 'feel'],
                 ['vocabulary_id' => 451, 'word' => 'playground'],
@@ -5845,7 +5392,6 @@ return [
             'vocabulary_id' => 454,
             'sentence' => 'The kite is flying {{blank}} in the sky.',
             'blank_word' => 'high',
-            'translation' => '風箏在天空中飛得很高。',
             'distractors' => [
                 ['vocabulary_id' => 456, 'word' => 'dead'],
                 ['vocabulary_id' => 457, 'word' => 'great'],
@@ -5857,7 +5403,6 @@ return [
             'vocabulary_id' => 455,
             'sentence' => '{{blank}} the soft blanket with your hand.',
             'blank_word' => 'Feel',
-            'translation' => '用手摸摸這條柔軟的毯子。',
             'distractors' => [
                 ['vocabulary_id' => 451, 'word' => 'Playground'],
                 ['vocabulary_id' => 452, 'word' => 'Driver'],
@@ -5869,7 +5414,6 @@ return [
             'vocabulary_id' => 456,
             'sentence' => 'The {{blank}} tree has no green leaves.',
             'blank_word' => 'dead',
-            'translation' => '那棵死去的樹沒有綠葉。',
             'distractors' => [
                 ['vocabulary_id' => 454, 'word' => 'high'],
                 ['vocabulary_id' => 457, 'word' => 'great'],
@@ -5881,7 +5425,6 @@ return [
             'vocabulary_id' => 457,
             'sentence' => 'We had a {{blank}} time at the beach.',
             'blank_word' => 'great',
-            'translation' => '我們在海灘玩得非常開心。',
             'distractors' => [
                 ['vocabulary_id' => 454, 'word' => 'high'],
                 ['vocabulary_id' => 456, 'word' => 'dead'],
@@ -5893,7 +5436,6 @@ return [
             'vocabulary_id' => 458,
             'sentence' => 'In this {{blank}}, we should call the doctor.',
             'blank_word' => 'case',
-            'translation' => '在這種情況下，我們應該打電話給醫生。',
             'distractors' => [
                 ['vocabulary_id' => 451, 'word' => 'playground'],
                 ['vocabulary_id' => 452, 'word' => 'driver'],
@@ -5904,7 +5446,6 @@ return [
             'vocabulary_id' => 459,
             'sentence' => 'The nearest store is {{blank}} from here.',
             'blank_word' => 'far',
-            'translation' => '最近的商店離這裡很遠。',
             'distractors' => [
                 ['vocabulary_id' => 454, 'word' => 'high'],
                 ['vocabulary_id' => 456, 'word' => 'dead'],
@@ -5916,7 +5457,6 @@ return [
             'vocabulary_id' => 460,
             'sentence' => 'The two teams have an {{blank}} number of players.',
             'blank_word' => 'equal',
-            'translation' => '兩隊擁有相等數量的球員。',
             'distractors' => [
                 ['vocabulary_id' => 454, 'word' => 'high'],
                 ['vocabulary_id' => 456, 'word' => 'dead'],
@@ -5930,7 +5470,6 @@ return [
             'vocabulary_id' => 461,
             'sentence' => 'I made a {{blank}} on my homework.',
             'blank_word' => 'mistake',
-            'translation' => '我在作業上犯了一個錯誤。',
             'distractors' => [
                 ['vocabulary_id' => 463, 'word' => 'mud'],
                 ['vocabulary_id' => 464, 'word' => 'row'],
@@ -5943,7 +5482,6 @@ return [
             'vocabulary_id' => 462,
             'sentence' => 'I have seen that movie {{blank}}.',
             'blank_word' => 'once',
-            'translation' => '我看過那部電影一次。',
             'distractors' => [
                 ['vocabulary_id' => 468, 'word' => 'how'],
                 ['vocabulary_id' => 461, 'word' => 'mistake'],
@@ -5956,7 +5494,6 @@ return [
             'vocabulary_id' => 463,
             'sentence' => 'The children played in the {{blank}}.',
             'blank_word' => 'mud',
-            'translation' => '孩子們在泥巴裡玩耍。',
             'distractors' => [
                 ['vocabulary_id' => 461, 'word' => 'mistake'],
                 ['vocabulary_id' => 464, 'word' => 'row'],
@@ -5969,7 +5506,6 @@ return [
             'vocabulary_id' => 464,
             'sentence' => 'We sat in the front {{blank}}.',
             'blank_word' => 'row',
-            'translation' => '我們坐在第一排。',
             'distractors' => [
                 ['vocabulary_id' => 461, 'word' => 'mistake'],
                 ['vocabulary_id' => 463, 'word' => 'mud'],
@@ -5982,7 +5518,6 @@ return [
             'vocabulary_id' => 465,
             'sentence' => 'I eat a {{blank}} every morning.',
             'blank_word' => 'banana',
-            'translation' => '我每天早上吃一根香蕉。',
             'distractors' => [
                 ['vocabulary_id' => 461, 'word' => 'mistake'],
                 ['vocabulary_id' => 463, 'word' => 'mud'],
@@ -5995,7 +5530,6 @@ return [
             'vocabulary_id' => 466,
             'sentence' => '{{blank}} is a large number for a small class.',
             'blank_word' => 'Twenty',
-            'translation' => '對一個小班級來說，二十是一個很大的數字。',
             'distractors' => [
                 ['vocabulary_id' => 461, 'word' => 'Mistake'],
                 ['vocabulary_id' => 463, 'word' => 'Mud'],
@@ -6008,7 +5542,6 @@ return [
             'vocabulary_id' => 467,
             'sentence' => 'You should {{blank}} after the long walk.',
             'blank_word' => 'rest',
-            'translation' => '走了很久之後，你應該休息一下。',
             'distractors' => [
                 ['vocabulary_id' => 469, 'word' => 'wish'],
                 ['vocabulary_id' => 461, 'word' => 'mistake'],
@@ -6021,7 +5554,6 @@ return [
             'vocabulary_id' => 468,
             'sentence' => '{{blank}} do you open this box?',
             'blank_word' => 'How',
-            'translation' => '你要如何打開這個盒子？',
             'distractors' => [
                 ['vocabulary_id' => 462, 'word' => 'Once'],
                 ['vocabulary_id' => 461, 'word' => 'Mistake'],
@@ -6034,7 +5566,6 @@ return [
             'vocabulary_id' => 469,
             'sentence' => 'I {{blank}} you a happy birthday.',
             'blank_word' => 'wish',
-            'translation' => '我祝你生日快樂。',
             'distractors' => [
                 ['vocabulary_id' => 467, 'word' => 'rest'],
                 ['vocabulary_id' => 461, 'word' => 'mistake'],
@@ -6047,7 +5578,6 @@ return [
             'vocabulary_id' => 470,
             'sentence' => 'We have a {{blank}} with the computer.',
             'blank_word' => 'problem',
-            'translation' => '我們的電腦出了問題。',
             'distractors' => [
                 ['vocabulary_id' => 461, 'word' => 'mistake'],
                 ['vocabulary_id' => 463, 'word' => 'mud'],
@@ -6062,7 +5592,6 @@ return [
             'vocabulary_id' => 471,
             'sentence' => 'The ring is made of {{blank}}.',
             'blank_word' => 'silver',
-            'translation' => '這枚戒指是用銀製成的。',
             'distractors' => [
                 ['vocabulary_id' => 473, 'word' => 'ear'],
                 ['vocabulary_id' => 477, 'word' => 'thirty'],
@@ -6075,7 +5604,6 @@ return [
             'vocabulary_id' => 472,
             'sentence' => 'This question is {{blank}}.',
             'blank_word' => 'difficult',
-            'translation' => '這個問題很困難。',
             'distractors' => [
                 ['vocabulary_id' => 474, 'word' => 'late'],
                 ['vocabulary_id' => 471, 'word' => 'silver'],
@@ -6088,7 +5616,6 @@ return [
             'vocabulary_id' => 473,
             'sentence' => 'My left {{blank}} hurts.',
             'blank_word' => 'ear',
-            'translation' => '我的左耳很痛。',
             'distractors' => [
                 ['vocabulary_id' => 471, 'word' => 'silver'],
                 ['vocabulary_id' => 477, 'word' => 'thirty'],
@@ -6101,7 +5628,6 @@ return [
             'vocabulary_id' => 474,
             'sentence' => 'The bus is {{blank}} today.',
             'blank_word' => 'late',
-            'translation' => '公車今天晚到了。',
             'distractors' => [
                 ['vocabulary_id' => 472, 'word' => 'difficult'],
                 ['vocabulary_id' => 471, 'word' => 'silver'],
@@ -6114,7 +5640,6 @@ return [
             'vocabulary_id' => 475,
             'sentence' => 'Please {{blank}} the soup before dinner.',
             'blank_word' => 'heat',
-            'translation' => '請在晚餐前把湯加熱。',
             'distractors' => [
                 ['vocabulary_id' => 471, 'word' => 'silver'],
                 ['vocabulary_id' => 472, 'word' => 'difficult'],
@@ -6127,7 +5652,6 @@ return [
             'vocabulary_id' => 476,
             'sentence' => 'I stayed home {{blank}} I was sick.',
             'blank_word' => 'because',
-            'translation' => '我待在家裡，因為我生病了。',
             'distractors' => [
                 ['vocabulary_id' => 471, 'word' => 'silver'],
                 ['vocabulary_id' => 472, 'word' => 'difficult'],
@@ -6140,7 +5664,6 @@ return [
             'vocabulary_id' => 477,
             'sentence' => '{{blank}} is the number after twenty-nine.',
             'blank_word' => 'Thirty',
-            'translation' => '三十是二十九之後的數字。',
             'distractors' => [
                 ['vocabulary_id' => 471, 'word' => 'Silver'],
                 ['vocabulary_id' => 473, 'word' => 'Ear'],
@@ -6153,7 +5676,6 @@ return [
             'vocabulary_id' => 478,
             'sentence' => 'The little boy has a new {{blank}}.',
             'blank_word' => 'toy',
-            'translation' => '那個小男孩有一個新玩具。',
             'distractors' => [
                 ['vocabulary_id' => 471, 'word' => 'silver'],
                 ['vocabulary_id' => 473, 'word' => 'ear'],
@@ -6166,7 +5688,6 @@ return [
             'vocabulary_id' => 479,
             'sentence' => 'She made a {{blank}} sandwich for lunch.',
             'blank_word' => 'ham',
-            'translation' => '她做了一份火腿三明治當午餐。',
             'distractors' => [
                 ['vocabulary_id' => 471, 'word' => 'silver'],
                 ['vocabulary_id' => 473, 'word' => 'ear'],
@@ -6179,7 +5700,6 @@ return [
             'vocabulary_id' => 480,
             'sentence' => 'The bird found a {{blank}} in the ground.',
             'blank_word' => 'worm',
-            'translation' => '那隻鳥在地面找到了一隻蠕蟲。',
             'distractors' => [
                 ['vocabulary_id' => 471, 'word' => 'silver'],
                 ['vocabulary_id' => 473, 'word' => 'ear'],
@@ -6194,7 +5714,6 @@ return [
             'vocabulary_id' => 481,
             'sentence' => 'The phone will {{blank}} soon.',
             'blank_word' => 'ring',
-            'translation' => '電話很快就會響。',
             'distractors' => [
                 ['vocabulary_id' => 482, 'word' => 'meat'],
                 ['vocabulary_id' => 484, 'word' => 'grass'],
@@ -6208,7 +5727,6 @@ return [
             'vocabulary_id' => 482,
             'sentence' => 'We are cooking {{blank}} for dinner.',
             'blank_word' => 'meat',
-            'translation' => '我們正在煮晚餐要吃的肉。',
             'distractors' => [
                 ['vocabulary_id' => 481, 'word' => 'ring'],
                 ['vocabulary_id' => 484, 'word' => 'grass'],
@@ -6222,7 +5740,6 @@ return [
             'vocabulary_id' => 483,
             'sentence' => 'The boy is {{blank}} for his age.',
             'blank_word' => 'short',
-            'translation' => '那個男孩以他的年齡來說很矮。',
             'distractors' => [
                 ['vocabulary_id' => 481, 'word' => 'ring'],
                 ['vocabulary_id' => 482, 'word' => 'meat'],
@@ -6235,7 +5752,6 @@ return [
             'vocabulary_id' => 484,
             'sentence' => 'The {{blank}} is wet after the rain.',
             'blank_word' => 'grass',
-            'translation' => '下雨後，草是濕的。',
             'distractors' => [
                 ['vocabulary_id' => 481, 'word' => 'ring'],
                 ['vocabulary_id' => 482, 'word' => 'meat'],
@@ -6249,7 +5765,6 @@ return [
             'vocabulary_id' => 485,
             'sentence' => 'I have not finished my homework {{blank}}.',
             'blank_word' => 'yet',
-            'translation' => '我還沒寫完作業。',
             'distractors' => [
                 ['vocabulary_id' => 481, 'word' => 'ring'],
                 ['vocabulary_id' => 482, 'word' => 'meat'],
@@ -6262,7 +5777,6 @@ return [
             'vocabulary_id' => 486,
             'sentence' => 'The tree has a long {{blank}}.',
             'blank_word' => 'root',
-            'translation' => '這棵樹有一條很長的根。',
             'distractors' => [
                 ['vocabulary_id' => 481, 'word' => 'ring'],
                 ['vocabulary_id' => 482, 'word' => 'meat'],
@@ -6276,7 +5790,6 @@ return [
             'vocabulary_id' => 487,
             'sentence' => 'Tom is my best {{blank}}.',
             'blank_word' => 'friend',
-            'translation' => '湯姆是我最好的朋友。',
             'distractors' => [
                 ['vocabulary_id' => 481, 'word' => 'ring'],
                 ['vocabulary_id' => 482, 'word' => 'meat'],
@@ -6290,7 +5803,6 @@ return [
             'vocabulary_id' => 488,
             'sentence' => 'Birds {{blank}} in the sky.',
             'blank_word' => 'fly',
-            'translation' => '鳥兒在天空中飛翔。',
             'distractors' => [
                 ['vocabulary_id' => 481, 'word' => 'ring'],
                 ['vocabulary_id' => 482, 'word' => 'meat'],
@@ -6303,7 +5815,6 @@ return [
             'vocabulary_id' => 489,
             'sentence' => 'I got a {{blank}} from my grandmother.',
             'blank_word' => 'letter',
-            'translation' => '我收到祖母寄來的一封信。',
             'distractors' => [
                 ['vocabulary_id' => 481, 'word' => 'ring'],
                 ['vocabulary_id' => 482, 'word' => 'meat'],
@@ -6317,7 +5828,6 @@ return [
             'vocabulary_id' => 490,
             'sentence' => 'She put rice in the {{blank}}.',
             'blank_word' => 'bowl',
-            'translation' => '她把飯放進碗裡。',
             'distractors' => [
                 ['vocabulary_id' => 481, 'word' => 'ring'],
                 ['vocabulary_id' => 482, 'word' => 'meat'],
@@ -6333,7 +5843,6 @@ return [
             'vocabulary_id' => 491,
             'sentence' => '{{blank}} is my sister.',
             'blank_word' => 'She',
-            'translation' => '她是我的姊姊。',
             'distractors' => [
                 ['vocabulary_id' => 492, 'word' => 'Six'],
                 ['vocabulary_id' => 493, 'word' => 'Lucky'],
@@ -6346,7 +5855,6 @@ return [
             'vocabulary_id' => 492,
             'sentence' => 'There are {{blank}} apples on the table.',
             'blank_word' => 'six',
-            'translation' => '桌上有六顆蘋果。',
             'distractors' => [
                 ['vocabulary_id' => 494, 'word' => 'fruit'],
                 ['vocabulary_id' => 495, 'word' => 'girl'],
@@ -6360,7 +5868,6 @@ return [
             'vocabulary_id' => 493,
             'sentence' => 'I am {{blank}} to have a kind teacher.',
             'blank_word' => 'lucky',
-            'translation' => '我很幸運有一位親切的老師。',
             'distractors' => [
                 ['vocabulary_id' => 491, 'word' => 'she'],
                 ['vocabulary_id' => 492, 'word' => 'six'],
@@ -6373,7 +5880,6 @@ return [
             'vocabulary_id' => 494,
             'sentence' => 'I eat {{blank}} every morning.',
             'blank_word' => 'fruit',
-            'translation' => '我每天早上吃水果。',
             'distractors' => [
                 ['vocabulary_id' => 492, 'word' => 'six'],
                 ['vocabulary_id' => 495, 'word' => 'girl'],
@@ -6387,7 +5893,6 @@ return [
             'vocabulary_id' => 495,
             'sentence' => 'The {{blank}} is reading a book.',
             'blank_word' => 'girl',
-            'translation' => '那個女孩正在看書。',
             'distractors' => [
                 ['vocabulary_id' => 492, 'word' => 'six'],
                 ['vocabulary_id' => 494, 'word' => 'fruit'],
@@ -6401,7 +5906,6 @@ return [
             'vocabulary_id' => 496,
             'sentence' => '{{blank}} is one more than sixteen.',
             'blank_word' => 'Seventeen',
-            'translation' => '十七比十六多一。',
             'distractors' => [
                 ['vocabulary_id' => 492, 'word' => 'Six'],
                 ['vocabulary_id' => 494, 'word' => 'Fruit'],
@@ -6415,7 +5919,6 @@ return [
             'vocabulary_id' => 497,
             'sentence' => 'Everyone came {{blank}} John.',
             'blank_word' => 'except',
-            'translation' => '除了約翰以外，大家都來了。',
             'distractors' => [
                 ['vocabulary_id' => 491, 'word' => 'she'],
                 ['vocabulary_id' => 492, 'word' => 'six'],
@@ -6428,7 +5931,6 @@ return [
             'vocabulary_id' => 498,
             'sentence' => 'We went to Taipei by {{blank}}.',
             'blank_word' => 'train',
-            'translation' => '我們搭火車去了臺北。',
             'distractors' => [
                 ['vocabulary_id' => 492, 'word' => 'six'],
                 ['vocabulary_id' => 494, 'word' => 'fruit'],
@@ -6442,7 +5944,6 @@ return [
             'vocabulary_id' => 499,
             'sentence' => 'I play basketball on {{blank}}.',
             'blank_word' => 'Saturday',
-            'translation' => '我星期六打籃球。',
             'distractors' => [
                 ['vocabulary_id' => 492, 'word' => 'six'],
                 ['vocabulary_id' => 494, 'word' => 'fruit'],
@@ -6456,7 +5957,6 @@ return [
             'vocabulary_id' => 500,
             'sentence' => 'A {{blank}} is sitting in the tree.',
             'blank_word' => 'crow',
-            'translation' => '一隻烏鴉正停在樹上。',
             'distractors' => [
                 ['vocabulary_id' => 492, 'word' => 'six'],
                 ['vocabulary_id' => 494, 'word' => 'fruit'],
@@ -6472,7 +5972,6 @@ return [
             'vocabulary_id' => 501,
             'sentence' => '{{blank}} Lee is my teacher.',
             'blank_word' => 'Mrs.',
-            'translation' => '李太太是我的老師。',
             'distractors' => [
                 ['vocabulary_id' => 505, 'word' => 'Ms.'],
                 ['vocabulary_id' => 506, 'word' => 'shore'],
@@ -6484,7 +5983,6 @@ return [
             'vocabulary_id' => 502,
             'sentence' => 'Tom is {{blank}} because his toy is broken.',
             'blank_word' => 'angry',
-            'translation' => '湯姆很生氣，因為他的玩具壞了。',
             'distractors' => [
                 ['vocabulary_id' => 504, 'word' => 'huge'],
                 ['vocabulary_id' => 507, 'word' => 'least'],
@@ -6495,7 +5993,6 @@ return [
             'vocabulary_id' => 503,
             'sentence' => '{{blank}} is my book?',
             'blank_word' => 'Where',
-            'translation' => '我的書在哪裡？',
             'distractors' => [
                 ['vocabulary_id' => 501, 'word' => 'Mrs.'],
                 ['vocabulary_id' => 502, 'word' => 'Angry'],
@@ -6508,7 +6005,6 @@ return [
             'vocabulary_id' => 504,
             'sentence' => 'That elephant is {{blank}}.',
             'blank_word' => 'huge',
-            'translation' => '那頭大象很巨大。',
             'distractors' => [
                 ['vocabulary_id' => 502, 'word' => 'angry'],
                 ['vocabulary_id' => 507, 'word' => 'least'],
@@ -6519,7 +6015,6 @@ return [
             'vocabulary_id' => 505,
             'sentence' => '{{blank}} Chen is the new teacher.',
             'blank_word' => 'Ms.',
-            'translation' => '陳女士是新老師。',
             'distractors' => [
                 ['vocabulary_id' => 501, 'word' => 'Mrs.'],
                 ['vocabulary_id' => 506, 'word' => 'shore'],
@@ -6531,7 +6026,6 @@ return [
             'vocabulary_id' => 506,
             'sentence' => 'We walked along the {{blank}}.',
             'blank_word' => 'shore',
-            'translation' => '我們沿著海濱散步。',
             'distractors' => [
                 ['vocabulary_id' => 501, 'word' => 'Mrs.'],
                 ['vocabulary_id' => 505, 'word' => 'Ms.'],
@@ -6543,7 +6037,6 @@ return [
             'vocabulary_id' => 507,
             'sentence' => 'This is the {{blank}} expensive bag in the shop.',
             'blank_word' => 'least',
-            'translation' => '這是店裡最便宜的袋子。',
             'distractors' => [
                 ['vocabulary_id' => 502, 'word' => 'angry'],
                 ['vocabulary_id' => 504, 'word' => 'huge'],
@@ -6554,7 +6047,6 @@ return [
             'vocabulary_id' => 508,
             'sentence' => 'There is a toy in the {{blank}}.',
             'blank_word' => 'box',
-            'translation' => '箱子裡有一個玩具。',
             'distractors' => [
                 ['vocabulary_id' => 501, 'word' => 'Mrs.'],
                 ['vocabulary_id' => 505, 'word' => 'Ms.'],
@@ -6566,7 +6058,6 @@ return [
             'vocabulary_id' => 509,
             'sentence' => 'The {{blank}} is flying in the sky.',
             'blank_word' => 'airplane',
-            'translation' => '那架飛機正在天空中飛行。',
             'distractors' => [
                 ['vocabulary_id' => 501, 'word' => 'Mrs.'],
                 ['vocabulary_id' => 505, 'word' => 'Ms.'],
@@ -6578,7 +6069,6 @@ return [
             'vocabulary_id' => 510,
             'sentence' => 'The little boy is {{blank}} of the dark.',
             'blank_word' => 'afraid',
-            'translation' => '那個小男孩害怕黑暗。',
             'distractors' => [
                 ['vocabulary_id' => 502, 'word' => 'angry'],
                 ['vocabulary_id' => 504, 'word' => 'huge'],
@@ -6591,7 +6081,6 @@ return [
             'vocabulary_id' => 511,
             'sentence' => 'The children {{blank}} in the park every afternoon.',
             'blank_word' => 'play',
-            'translation' => '孩子們每天下午在公園裡玩耍。',
             'distractors' => [
                 ['vocabulary_id' => 513, 'word' => 'sit'],
                 ['vocabulary_id' => 520, 'word' => 'chase'],
@@ -6604,7 +6093,6 @@ return [
             'vocabulary_id' => 512,
             'sentence' => 'I found a smooth {{blank}} by the river.',
             'blank_word' => 'stone',
-            'translation' => '我在河邊找到一顆光滑的石頭。',
             'distractors' => [
                 ['vocabulary_id' => 514, 'word' => 'fifteen'],
                 ['vocabulary_id' => 515, 'word' => 'race'],
@@ -6617,7 +6105,6 @@ return [
             'vocabulary_id' => 513,
             'sentence' => 'Please {{blank}} here.',
             'blank_word' => 'sit',
-            'translation' => '請坐在這裡。',
             'distractors' => [
                 ['vocabulary_id' => 511, 'word' => 'play'],
                 ['vocabulary_id' => 520, 'word' => 'chase'],
@@ -6630,7 +6117,6 @@ return [
             'vocabulary_id' => 514,
             'sentence' => '{{blank}} is my lucky number.',
             'blank_word' => 'Fifteen',
-            'translation' => '十五是我的幸運數字。',
             'distractors' => [
                 ['vocabulary_id' => 512, 'word' => 'Stone'],
                 ['vocabulary_id' => 515, 'word' => 'Race'],
@@ -6643,7 +6129,6 @@ return [
             'vocabulary_id' => 515,
             'sentence' => 'People of every {{blank}} can enjoy this festival.',
             'blank_word' => 'race',
-            'translation' => '每個種族的人都可以享受這個節慶。',
             'distractors' => [
                 ['vocabulary_id' => 512, 'word' => 'stone'],
                 ['vocabulary_id' => 514, 'word' => 'fifteen'],
@@ -6656,7 +6141,6 @@ return [
             'vocabulary_id' => 516,
             'sentence' => '{{blank}} is my birthday.',
             'blank_word' => 'Today',
-            'translation' => '今天是我的生日。',
             'distractors' => [
                 ['vocabulary_id' => 512, 'word' => 'Stone'],
                 ['vocabulary_id' => 514, 'word' => 'Fifteen'],
@@ -6669,7 +6153,6 @@ return [
             'vocabulary_id' => 517,
             'sentence' => 'Many birds live in the {{blank}}.',
             'blank_word' => 'forest',
-            'translation' => '許多鳥住在森林裡。',
             'distractors' => [
                 ['vocabulary_id' => 512, 'word' => 'stone'],
                 ['vocabulary_id' => 514, 'word' => 'fifteen'],
@@ -6682,7 +6165,6 @@ return [
             'vocabulary_id' => 518,
             'sentence' => 'I brush my teeth {{blank}} morning.',
             'blank_word' => 'every',
-            'translation' => '我每天早上刷牙。',
             'distractors' => [
                 ['vocabulary_id' => 511, 'word' => 'play'],
                 ['vocabulary_id' => 512, 'word' => 'stone'],
@@ -6695,7 +6177,6 @@ return [
             'vocabulary_id' => 519,
             'sentence' => 'We saw a {{blank}} at the zoo.',
             'blank_word' => 'bear',
-            'translation' => '我們在動物園看到一隻熊。',
             'distractors' => [
                 ['vocabulary_id' => 512, 'word' => 'stone'],
                 ['vocabulary_id' => 514, 'word' => 'fifteen'],
@@ -6708,7 +6189,6 @@ return [
             'vocabulary_id' => 520,
             'sentence' => 'The dog likes to {{blank}} the cat.',
             'blank_word' => 'chase',
-            'translation' => '那隻狗喜歡追捕那隻貓。',
             'distractors' => [
                 ['vocabulary_id' => 511, 'word' => 'play'],
                 ['vocabulary_id' => 513, 'word' => 'sit'],
@@ -6723,7 +6203,6 @@ return [
             'vocabulary_id' => 521,
             'sentence' => 'The table has a round {{blank}}.',
             'blank_word' => 'shape',
-            'translation' => '這張桌子是圓形的。',
             'distractors' => [
                 ['vocabulary_id' => 522, 'word' => 'plant'],
                 ['vocabulary_id' => 524, 'word' => 'purpose'],
@@ -6736,7 +6215,6 @@ return [
             'vocabulary_id' => 522,
             'sentence' => 'My father works in a car {{blank}}.',
             'blank_word' => 'plant',
-            'translation' => '我爸爸在一家汽車工廠工作。',
             'distractors' => [
                 ['vocabulary_id' => 521, 'word' => 'shape'],
                 ['vocabulary_id' => 524, 'word' => 'purpose'],
@@ -6749,7 +6227,6 @@ return [
             'vocabulary_id' => 523,
             'sentence' => 'I sit in the {{blank}} seat.',
             'blank_word' => 'middle',
-            'translation' => '我坐在中間的座位上。',
             'distractors' => [
                 ['vocabulary_id' => 526, 'word' => 'first'],
                 ['vocabulary_id' => 521, 'word' => 'shape'],
@@ -6762,7 +6239,6 @@ return [
             'vocabulary_id' => 524,
             'sentence' => 'The {{blank}} of this game is to have fun.',
             'blank_word' => 'purpose',
-            'translation' => '這個遊戲的目的是為了好玩。',
             'distractors' => [
                 ['vocabulary_id' => 521, 'word' => 'shape'],
                 ['vocabulary_id' => 522, 'word' => 'plant'],
@@ -6775,7 +6251,6 @@ return [
             'vocabulary_id' => 525,
             'sentence' => 'What is the {{blank}} of this box?',
             'blank_word' => 'weight',
-            'translation' => '這個箱子的重量是多少？',
             'distractors' => [
                 ['vocabulary_id' => 521, 'word' => 'shape'],
                 ['vocabulary_id' => 522, 'word' => 'plant'],
@@ -6788,7 +6263,6 @@ return [
             'vocabulary_id' => 526,
             'sentence' => 'She was the {{blank}} student to arrive.',
             'blank_word' => 'first',
-            'translation' => '她是第一個到達的學生。',
             'distractors' => [
                 ['vocabulary_id' => 523, 'word' => 'middle'],
                 ['vocabulary_id' => 521, 'word' => 'shape'],
@@ -6801,7 +6275,6 @@ return [
             'vocabulary_id' => 527,
             'sentence' => 'Did you {{blank}} the bird in the tree?',
             'blank_word' => 'notice',
-            'translation' => '你有注意到樹上的那隻鳥嗎？',
             'distractors' => [
                 ['vocabulary_id' => 528, 'word' => 'stand'],
                 ['vocabulary_id' => 521, 'word' => 'shape'],
@@ -6814,7 +6287,6 @@ return [
             'vocabulary_id' => 528,
             'sentence' => 'Please {{blank}} near the door.',
             'blank_word' => 'stand',
-            'translation' => '請站在門附近。',
             'distractors' => [
                 ['vocabulary_id' => 527, 'word' => 'notice'],
                 ['vocabulary_id' => 521, 'word' => 'shape'],
@@ -6827,7 +6299,6 @@ return [
             'vocabulary_id' => 529,
             'sentence' => 'This picture is an {{blank}} of a circle.',
             'blank_word' => 'example',
-            'translation' => '這張圖片是一個圓形的例子。',
             'distractors' => [
                 ['vocabulary_id' => 521, 'word' => 'shape'],
                 ['vocabulary_id' => 522, 'word' => 'plant'],
@@ -6840,7 +6311,6 @@ return [
             'vocabulary_id' => 530,
             'sentence' => 'My birthday is in {{blank}}.',
             'blank_word' => 'February',
-            'translation' => '我的生日在二月。',
             'distractors' => [
                 ['vocabulary_id' => 521, 'word' => 'shape'],
                 ['vocabulary_id' => 522, 'word' => 'plant'],
@@ -6855,7 +6325,6 @@ return [
             'vocabulary_id' => 531,
             'sentence' => 'I can see a bright {{blank}} in the sky.',
             'blank_word' => 'star',
-            'translation' => '我可以看到天空中一顆明亮的星星。',
             'distractors' => [
                 ['vocabulary_id' => 535, 'word' => 'rope'],
                 ['vocabulary_id' => 536, 'word' => 'horse'],
@@ -6869,7 +6338,6 @@ return [
             'vocabulary_id' => 532,
             'sentence' => 'I gave {{blank}} my pencil.',
             'blank_word' => 'her',
-            'translation' => '我把我的鉛筆給了她。',
             'distractors' => [
                 ['vocabulary_id' => 531, 'word' => 'star'],
                 ['vocabulary_id' => 533, 'word' => 'fat'],
@@ -6882,7 +6350,6 @@ return [
             'vocabulary_id' => 533,
             'sentence' => 'The {{blank}} cat is sleeping on the sofa.',
             'blank_word' => 'fat',
-            'translation' => '那隻肥胖的貓正在沙發上睡覺。',
             'distractors' => [
                 ['vocabulary_id' => 534, 'word' => 'yellow'],
                 ['vocabulary_id' => 531, 'word' => 'star'],
@@ -6895,7 +6362,6 @@ return [
             'vocabulary_id' => 534,
             'sentence' => 'He is wearing a {{blank}} shirt.',
             'blank_word' => 'yellow',
-            'translation' => '他穿著一件黃色的襯衫。',
             'distractors' => [
                 ['vocabulary_id' => 533, 'word' => 'fat'],
                 ['vocabulary_id' => 531, 'word' => 'star'],
@@ -6908,7 +6374,6 @@ return [
             'vocabulary_id' => 535,
             'sentence' => 'The boy pulled the {{blank}}.',
             'blank_word' => 'rope',
-            'translation' => '那個男孩拉了繩子。',
             'distractors' => [
                 ['vocabulary_id' => 531, 'word' => 'star'],
                 ['vocabulary_id' => 536, 'word' => 'horse'],
@@ -6922,7 +6387,6 @@ return [
             'vocabulary_id' => 536,
             'sentence' => 'The {{blank}} is running in the field.',
             'blank_word' => 'horse',
-            'translation' => '那匹馬正在田野裡跑。',
             'distractors' => [
                 ['vocabulary_id' => 531, 'word' => 'star'],
                 ['vocabulary_id' => 535, 'word' => 'rope'],
@@ -6936,7 +6400,6 @@ return [
             'vocabulary_id' => 537,
             'sentence' => 'Every {{blank}} has a book.',
             'blank_word' => 'student',
-            'translation' => '每位學生都有一本書。',
             'distractors' => [
                 ['vocabulary_id' => 531, 'word' => 'star'],
                 ['vocabulary_id' => 535, 'word' => 'rope'],
@@ -6950,7 +6413,6 @@ return [
             'vocabulary_id' => 538,
             'sentence' => 'Please read the next {{blank}}.',
             'blank_word' => 'page',
-            'translation' => '請閱讀下一頁。',
             'distractors' => [
                 ['vocabulary_id' => 531, 'word' => 'star'],
                 ['vocabulary_id' => 535, 'word' => 'rope'],
@@ -6964,7 +6426,6 @@ return [
             'vocabulary_id' => 539,
             'sentence' => 'The {{blank}} is moving the air.',
             'blank_word' => 'fan',
-            'translation' => '電風扇正在讓空氣流動。',
             'distractors' => [
                 ['vocabulary_id' => 531, 'word' => 'star'],
                 ['vocabulary_id' => 535, 'word' => 'rope'],
@@ -6978,7 +6439,6 @@ return [
             'vocabulary_id' => 540,
             'sentence' => 'The children are playing on the {{blank}}.',
             'blank_word' => 'seesaw',
-            'translation' => '孩子們正在玩蹺蹺板。',
             'distractors' => [
                 ['vocabulary_id' => 531, 'word' => 'star'],
                 ['vocabulary_id' => 535, 'word' => 'rope'],
@@ -6994,7 +6454,6 @@ return [
             'vocabulary_id' => 541,
             'sentence' => 'A {{blank}} is on the window.',
             'blank_word' => 'fly',
-            'translation' => '窗戶上有一隻蒼蠅。',
             'distractors' => [
                 ['vocabulary_id' => 542, 'word' => 'hill'],
                 ['vocabulary_id' => 545, 'word' => 'policeman'],
@@ -7008,7 +6467,6 @@ return [
             'vocabulary_id' => 542,
             'sentence' => 'We walked up the small {{blank}}.',
             'blank_word' => 'hill',
-            'translation' => '我們走上那座小山。',
             'distractors' => [
                 ['vocabulary_id' => 541, 'word' => 'fly'],
                 ['vocabulary_id' => 545, 'word' => 'policeman'],
@@ -7022,7 +6480,6 @@ return [
             'vocabulary_id' => 543,
             'sentence' => 'There are a {{blank}} apples in the basket.',
             'blank_word' => 'few',
-            'translation' => '籃子裡有幾顆蘋果。',
             'distractors' => [
                 ['vocabulary_id' => 544, 'word' => 'super'],
                 ['vocabulary_id' => 546, 'word' => 'brave'],
@@ -7035,7 +6492,6 @@ return [
             'vocabulary_id' => 544,
             'sentence' => 'This is a {{blank}} big cake.',
             'blank_word' => 'super',
-            'translation' => '這是一個超級大的蛋糕。',
             'distractors' => [
                 ['vocabulary_id' => 543, 'word' => 'few'],
                 ['vocabulary_id' => 546, 'word' => 'brave'],
@@ -7048,7 +6504,6 @@ return [
             'vocabulary_id' => 545,
             'sentence' => 'The {{blank}} helped the lost child.',
             'blank_word' => 'policeman',
-            'translation' => '那位警察幫助了迷路的小孩。',
             'distractors' => [
                 ['vocabulary_id' => 541, 'word' => 'fly'],
                 ['vocabulary_id' => 542, 'word' => 'hill'],
@@ -7062,7 +6517,6 @@ return [
             'vocabulary_id' => 546,
             'sentence' => 'The {{blank}} girl saved the little dog.',
             'blank_word' => 'brave',
-            'translation' => '那位勇敢的女孩救了那隻小狗。',
             'distractors' => [
                 ['vocabulary_id' => 543, 'word' => 'few'],
                 ['vocabulary_id' => 544, 'word' => 'super'],
@@ -7075,7 +6529,6 @@ return [
             'vocabulary_id' => 547,
             'sentence' => 'Grandpa told us a funny {{blank}}.',
             'blank_word' => 'tale',
-            'translation' => '爺爺 расска了一個有趣的故事。',
             'distractors' => [
                 ['vocabulary_id' => 541, 'word' => 'fly'],
                 ['vocabulary_id' => 542, 'word' => 'hill'],
@@ -7089,7 +6542,6 @@ return [
             'vocabulary_id' => 548,
             'sentence' => 'My {{blank}} hurts today.',
             'blank_word' => 'shoulder',
-            'translation' => '我的肩膀今天很痛。',
             'distractors' => [
                 ['vocabulary_id' => 541, 'word' => 'fly'],
                 ['vocabulary_id' => 542, 'word' => 'hill'],
@@ -7103,7 +6555,6 @@ return [
             'vocabulary_id' => 549,
             'sentence' => 'My {{blank}} makes breakfast every morning.',
             'blank_word' => 'mother',
-            'translation' => '我媽媽每天早上做早餐。',
             'distractors' => [
                 ['vocabulary_id' => 541, 'word' => 'fly'],
                 ['vocabulary_id' => 542, 'word' => 'hill'],
@@ -7117,7 +6568,6 @@ return [
             'vocabulary_id' => 550,
             'sentence' => 'The baby is in a happy {{blank}}.',
             'blank_word' => 'state',
-            'translation' => '這個嬰兒處於快樂的狀態。',
             'distractors' => [
                 ['vocabulary_id' => 541, 'word' => 'fly'],
                 ['vocabulary_id' => 542, 'word' => 'hill'],
@@ -7133,7 +6583,6 @@ return [
             'vocabulary_id' => 551,
             'sentence' => 'I {{blank}} to school by bus.',
             'blank_word' => 'go',
-            'translation' => '我搭公車去上學。',
             'distractors' => [
                 ['vocabulary_id' => 553, 'word' => 'tire'],
                 ['vocabulary_id' => 552, 'word' => 'cookie'],
@@ -7146,7 +6595,6 @@ return [
             'vocabulary_id' => 552,
             'sentence' => 'I ate a chocolate {{blank}}.',
             'blank_word' => 'cookie',
-            'translation' => '我吃了一塊巧克力餅乾。',
             'distractors' => [
                 ['vocabulary_id' => 554, 'word' => 'lot'],
                 ['vocabulary_id' => 556, 'word' => 'worker'],
@@ -7159,7 +6607,6 @@ return [
             'vocabulary_id' => 553,
             'sentence' => 'The long walk can {{blank}} us.',
             'blank_word' => 'tire',
-            'translation' => '長途步行可能會讓我們感到疲累。',
             'distractors' => [
                 ['vocabulary_id' => 551, 'word' => 'go'],
                 ['vocabulary_id' => 552, 'word' => 'cookie'],
@@ -7172,7 +6619,6 @@ return [
             'vocabulary_id' => 554,
             'sentence' => 'There are a {{blank}} of books on the desk.',
             'blank_word' => 'lot',
-            'translation' => '書桌上有很多書。',
             'distractors' => [
                 ['vocabulary_id' => 552, 'word' => 'cookie'],
                 ['vocabulary_id' => 556, 'word' => 'worker'],
@@ -7185,7 +6631,6 @@ return [
             'vocabulary_id' => 555,
             'sentence' => 'She is {{blank}} to swim well.',
             'blank_word' => 'able',
-            'translation' => '她能游得很好。',
             'distractors' => [
                 ['vocabulary_id' => 557, 'word' => 'strong'],
                 ['vocabulary_id' => 551, 'word' => 'go'],
@@ -7198,7 +6643,6 @@ return [
             'vocabulary_id' => 556,
             'sentence' => 'The {{blank}} is fixing the road.',
             'blank_word' => 'worker',
-            'translation' => '那位工人正在修理道路。',
             'distractors' => [
                 ['vocabulary_id' => 552, 'word' => 'cookie'],
                 ['vocabulary_id' => 554, 'word' => 'lot'],
@@ -7211,7 +6655,6 @@ return [
             'vocabulary_id' => 557,
             'sentence' => 'My brother is {{blank}} enough to lift the box.',
             'blank_word' => 'strong',
-            'translation' => '我哥哥很強壯，能夠抬起那個箱子。',
             'distractors' => [
                 ['vocabulary_id' => 555, 'word' => 'able'],
                 ['vocabulary_id' => 551, 'word' => 'go'],
@@ -7224,7 +6667,6 @@ return [
             'vocabulary_id' => 558,
             'sentence' => 'The {{blank}} is swimming in the pond.',
             'blank_word' => 'duck',
-            'translation' => '那隻鴨子正在池塘裡游泳。',
             'distractors' => [
                 ['vocabulary_id' => 552, 'word' => 'cookie'],
                 ['vocabulary_id' => 554, 'word' => 'lot'],
@@ -7237,7 +6679,6 @@ return [
             'vocabulary_id' => 559,
             'sentence' => 'We eat {{blank}} at six o\'clock.',
             'blank_word' => 'supper',
-            'translation' => '我們六點吃晚餐。',
             'distractors' => [
                 ['vocabulary_id' => 552, 'word' => 'cookie'],
                 ['vocabulary_id' => 554, 'word' => 'lot'],
@@ -7250,7 +6691,6 @@ return [
             'vocabulary_id' => 560,
             'sentence' => 'There is snow on the {{blank}} of the mountain.',
             'blank_word' => 'top',
-            'translation' => '山頂上有雪。',
             'distractors' => [
                 ['vocabulary_id' => 552, 'word' => 'cookie'],
                 ['vocabulary_id' => 554, 'word' => 'lot'],
@@ -7265,7 +6705,6 @@ return [
             'vocabulary_id' => 561,
             'sentence' => 'We have English class on {{blank}}.',
             'blank_word' => 'Monday',
-            'translation' => '我們星期一有英文課。',
             'distractors' => [
                 ['vocabulary_id' => 562, 'word' => 'lion'],
                 ['vocabulary_id' => 564, 'word' => 'power'],
@@ -7277,7 +6716,6 @@ return [
             'vocabulary_id' => 562,
             'sentence' => 'The {{blank}} is sleeping under a tree.',
             'blank_word' => 'lion',
-            'translation' => '那隻獅子正在樹下睡覺。',
             'distractors' => [
                 ['vocabulary_id' => 561, 'word' => 'Monday'],
                 ['vocabulary_id' => 564, 'word' => 'power'],
@@ -7289,7 +6727,6 @@ return [
             'vocabulary_id' => 563,
             'sentence' => 'The ball is {{blank}} the box.',
             'blank_word' => 'in',
-            'translation' => '球在箱子裡面。',
             'distractors' => [
                 ['vocabulary_id' => 561, 'word' => 'Monday'],
                 ['vocabulary_id' => 562, 'word' => 'lion'],
@@ -7302,7 +6739,6 @@ return [
             'vocabulary_id' => 564,
             'sentence' => 'The strong horse has a lot of {{blank}}.',
             'blank_word' => 'power',
-            'translation' => '那匹強壯的馬有很大的力量。',
             'distractors' => [
                 ['vocabulary_id' => 561, 'word' => 'Monday'],
                 ['vocabulary_id' => 562, 'word' => 'lion'],
@@ -7314,7 +6750,6 @@ return [
             'vocabulary_id' => 565,
             'sentence' => 'A green {{blank}} is sitting on the leaf.',
             'blank_word' => 'frog',
-            'translation' => '一隻綠色的青蛙正坐在葉子上。',
             'distractors' => [
                 ['vocabulary_id' => 561, 'word' => 'Monday'],
                 ['vocabulary_id' => 562, 'word' => 'lion'],
@@ -7326,7 +6761,6 @@ return [
             'vocabulary_id' => 566,
             'sentence' => '{{blank}} it rains, we will stay home.',
             'blank_word' => 'If',
-            'translation' => '如果下雨，我們就會待在家裡。',
             'distractors' => [
                 ['vocabulary_id' => 561, 'word' => 'Monday'],
                 ['vocabulary_id' => 562, 'word' => 'Lion'],
@@ -7339,7 +6773,6 @@ return [
             'vocabulary_id' => 567,
             'sentence' => 'I can {{blank}} a bird in the tree.',
             'blank_word' => 'see',
-            'translation' => '我可以看見樹上的一隻鳥。',
             'distractors' => [
                 ['vocabulary_id' => 568, 'word' => 'rise'],
                 ['vocabulary_id' => 561, 'word' => 'Monday'],
@@ -7352,7 +6785,6 @@ return [
             'vocabulary_id' => 568,
             'sentence' => 'The sun will {{blank}} soon.',
             'blank_word' => 'rise',
-            'translation' => '太陽很快就會升起。',
             'distractors' => [
                 ['vocabulary_id' => 567, 'word' => 'see'],
                 ['vocabulary_id' => 561, 'word' => 'Monday'],
@@ -7365,7 +6797,6 @@ return [
             'vocabulary_id' => 569,
             'sentence' => 'The children are playing near the {{blank}}.',
             'blank_word' => 'river',
-            'translation' => '孩子們正在河邊玩耍。',
             'distractors' => [
                 ['vocabulary_id' => 561, 'word' => 'Monday'],
                 ['vocabulary_id' => 562, 'word' => 'lion'],
@@ -7377,7 +6808,6 @@ return [
             'vocabulary_id' => 570,
             'sentence' => 'It is {{blank}} a beautiful day.',
             'blank_word' => 'such',
-            'translation' => '這真是如此美好的一天。',
             'distractors' => [
                 ['vocabulary_id' => 561, 'word' => 'Monday'],
                 ['vocabulary_id' => 562, 'word' => 'lion'],
@@ -7392,7 +6822,6 @@ return [
             'vocabulary_id' => 571,
             'sentence' => 'The girl is wearing a {{blank}} dress.',
             'blank_word' => 'pretty',
-            'translation' => '那個女孩穿著一件漂亮的洋裝。',
             'distractors' => [
                 ['vocabulary_id' => 573, 'word' => 'alone'],
                 ['vocabulary_id' => 578, 'word' => 'funny'],
@@ -7403,7 +6832,6 @@ return [
             'vocabulary_id' => 572,
             'sentence' => 'Dad uses a {{blank}} to fix the chair.',
             'blank_word' => 'tool',
-            'translation' => '爸爸用工具修理椅子。',
             'distractors' => [
                 ['vocabulary_id' => 574, 'word' => 'foot'],
                 ['vocabulary_id' => 575, 'word' => 'son'],
@@ -7415,7 +6843,6 @@ return [
             'vocabulary_id' => 573,
             'sentence' => 'The little boy is {{blank}} at home.',
             'blank_word' => 'alone',
-            'translation' => '那個小男孩獨自在家。',
             'distractors' => [
                 ['vocabulary_id' => 571, 'word' => 'pretty'],
                 ['vocabulary_id' => 578, 'word' => 'funny'],
@@ -7426,7 +6853,6 @@ return [
             'vocabulary_id' => 574,
             'sentence' => 'My {{blank}} hurts after the long walk.',
             'blank_word' => 'foot',
-            'translation' => '走了很久的路後，我的腳很痛。',
             'distractors' => [
                 ['vocabulary_id' => 572, 'word' => 'tool'],
                 ['vocabulary_id' => 575, 'word' => 'son'],
@@ -7438,7 +6864,6 @@ return [
             'vocabulary_id' => 575,
             'sentence' => 'Their {{blank}} likes to play soccer.',
             'blank_word' => 'son',
-            'translation' => '他們的兒子喜歡踢足球。',
             'distractors' => [
                 ['vocabulary_id' => 572, 'word' => 'tool'],
                 ['vocabulary_id' => 574, 'word' => 'foot'],
@@ -7450,7 +6875,6 @@ return [
             'vocabulary_id' => 576,
             'sentence' => 'I can {{blank}} music from the next room.',
             'blank_word' => 'hear',
-            'translation' => '我可以聽見隔壁房間傳來的音樂。',
             'distractors' => [
                 ['vocabulary_id' => 571, 'word' => 'pretty'],
                 ['vocabulary_id' => 572, 'word' => 'tool'],
@@ -7463,7 +6887,6 @@ return [
             'vocabulary_id' => 577,
             'sentence' => 'I have {{blank}} in my hand.',
             'blank_word' => 'three',
-            'translation' => '我手上有三個。',
             'distractors' => [
                 ['vocabulary_id' => 572, 'word' => 'tool'],
                 ['vocabulary_id' => 574, 'word' => 'foot'],
@@ -7475,7 +6898,6 @@ return [
             'vocabulary_id' => 578,
             'sentence' => 'The {{blank}} story made us laugh.',
             'blank_word' => 'funny',
-            'translation' => '那個有趣的故事讓我們笑了。',
             'distractors' => [
                 ['vocabulary_id' => 571, 'word' => 'pretty'],
                 ['vocabulary_id' => 573, 'word' => 'alone'],
@@ -7486,7 +6908,6 @@ return [
             'vocabulary_id' => 579,
             'sentence' => 'This lemon tastes {{blank}}.',
             'blank_word' => 'sour',
-            'translation' => '這顆檸檬吃起來很酸。',
             'distractors' => [
                 ['vocabulary_id' => 571, 'word' => 'pretty'],
                 ['vocabulary_id' => 573, 'word' => 'alone'],
@@ -7497,7 +6918,6 @@ return [
             'vocabulary_id' => 580,
             'sentence' => 'We sat on the {{blank}} of the river.',
             'blank_word' => 'bank',
-            'translation' => '我們坐在河岸上。',
             'distractors' => [
                 ['vocabulary_id' => 572, 'word' => 'tool'],
                 ['vocabulary_id' => 574, 'word' => 'foot'],
@@ -7511,7 +6931,6 @@ return [
             'vocabulary_id' => 581,
             'sentence' => 'Can you {{blank}} your name for me?',
             'blank_word' => 'spell',
-            'translation' => '你可以幫我拼寫你的名字嗎？',
             'distractors' => [
                 ['vocabulary_id' => 584, 'word' => 'come'],
                 ['vocabulary_id' => 588, 'word' => 'feed'],
@@ -7524,7 +6943,6 @@ return [
             'vocabulary_id' => 582,
             'sentence' => 'The thick {{blank}} made it hard to see the road.',
             'blank_word' => 'fog',
-            'translation' => '濃霧讓人很難看清楚道路。',
             'distractors' => [
                 ['vocabulary_id' => 583, 'word' => 'slippers'],
                 ['vocabulary_id' => 585, 'word' => 'airport'],
@@ -7537,7 +6955,6 @@ return [
             'vocabulary_id' => 583,
             'sentence' => 'I wear my {{blank}} at home.',
             'blank_word' => 'slippers',
-            'translation' => '我在家穿室內拖鞋。',
             'distractors' => [
                 ['vocabulary_id' => 582, 'word' => 'fog'],
                 ['vocabulary_id' => 585, 'word' => 'airport'],
@@ -7550,7 +6967,6 @@ return [
             'vocabulary_id' => 584,
             'sentence' => 'Please {{blank}} to my house after school.',
             'blank_word' => 'come',
-            'translation' => '放學後請到我家來。',
             'distractors' => [
                 ['vocabulary_id' => 581, 'word' => 'spell'],
                 ['vocabulary_id' => 588, 'word' => 'feed'],
@@ -7563,7 +6979,6 @@ return [
             'vocabulary_id' => 585,
             'sentence' => 'My father drove us to the {{blank}}.',
             'blank_word' => 'airport',
-            'translation' => '我爸爸開車載我們到機場。',
             'distractors' => [
                 ['vocabulary_id' => 582, 'word' => 'fog'],
                 ['vocabulary_id' => 583, 'word' => 'slippers'],
@@ -7576,7 +6991,6 @@ return [
             'vocabulary_id' => 586,
             'sentence' => 'This soup tastes {{blank}}.',
             'blank_word' => 'yucky',
-            'translation' => '這碗湯喝起來很噁心。',
             'distractors' => [
                 ['vocabulary_id' => 581, 'word' => 'spell'],
                 ['vocabulary_id' => 582, 'word' => 'fog'],
@@ -7589,7 +7003,6 @@ return [
             'vocabulary_id' => 587,
             'sentence' => 'We saw a {{blank}} in the forest.',
             'blank_word' => 'deer',
-            'translation' => '我們在森林裡看到一隻鹿。',
             'distractors' => [
                 ['vocabulary_id' => 582, 'word' => 'fog'],
                 ['vocabulary_id' => 583, 'word' => 'slippers'],
@@ -7602,7 +7015,6 @@ return [
             'vocabulary_id' => 588,
             'sentence' => 'We {{blank}} the dog every morning.',
             'blank_word' => 'feed',
-            'translation' => '我們每天早上餵狗。',
             'distractors' => [
                 ['vocabulary_id' => 581, 'word' => 'spell'],
                 ['vocabulary_id' => 584, 'word' => 'come'],
@@ -7615,7 +7027,6 @@ return [
             'vocabulary_id' => 589,
             'sentence' => 'Playing games with my friends is {{blank}}.',
             'blank_word' => 'fun',
-            'translation' => '和朋友一起玩遊戲很有樂趣。',
             'distractors' => [
                 ['vocabulary_id' => 582, 'word' => 'fog'],
                 ['vocabulary_id' => 583, 'word' => 'slippers'],
@@ -7628,7 +7039,6 @@ return [
             'vocabulary_id' => 590,
             'sentence' => 'That {{blank}} is playing with a ball.',
             'blank_word' => 'kid',
-            'translation' => '那個小孩正在玩球。',
             'distractors' => [
                 ['vocabulary_id' => 582, 'word' => 'fog'],
                 ['vocabulary_id' => 583, 'word' => 'slippers'],
@@ -7643,7 +7053,6 @@ return [
             'vocabulary_id' => 591,
             'sentence' => 'Your answer is {{blank}}.',
             'blank_word' => 'correct',
-            'translation' => '你的答案是正確的。',
             'distractors' => [
                 ['vocabulary_id' => 594, 'word' => 'another'],
                 ['vocabulary_id' => 598, 'word' => 'takeout'],
@@ -7656,7 +7065,6 @@ return [
             'vocabulary_id' => 592,
             'sentence' => 'I can {{blank}} with this problem.',
             'blank_word' => 'deal',
-            'translation' => '我可以處理這個問題。',
             'distractors' => [
                 ['vocabulary_id' => 595, 'word' => 'guess'],
                 ['vocabulary_id' => 596, 'word' => 'bite'],
@@ -7667,7 +7075,6 @@ return [
             'vocabulary_id' => 593,
             'sentence' => 'Please use a {{blank}} to cut the apple.',
             'blank_word' => 'knife',
-            'translation' => '請用刀切蘋果。',
             'distractors' => [
                 ['vocabulary_id' => 598, 'word' => 'takeout'],
                 ['vocabulary_id' => 599, 'word' => 'second'],
@@ -7678,7 +7085,6 @@ return [
             'vocabulary_id' => 594,
             'sentence' => 'Would you like {{blank}} glass of water?',
             'blank_word' => 'another',
-            'translation' => '你想再要一杯水嗎？',
             'distractors' => [
                 ['vocabulary_id' => 591, 'word' => 'correct'],
                 ['vocabulary_id' => 598, 'word' => 'takeout'],
@@ -7691,7 +7097,6 @@ return [
             'vocabulary_id' => 595,
             'sentence' => 'Can you {{blank}} my favorite color?',
             'blank_word' => 'guess',
-            'translation' => '你能猜出我最喜歡的顏色嗎？',
             'distractors' => [
                 ['vocabulary_id' => 592, 'word' => 'deal'],
                 ['vocabulary_id' => 596, 'word' => 'bite'],
@@ -7702,7 +7107,6 @@ return [
             'vocabulary_id' => 596,
             'sentence' => 'Be careful not to {{blank}} your tongue.',
             'blank_word' => 'bite',
-            'translation' => '小心不要咬到你的舌頭。',
             'distractors' => [
                 ['vocabulary_id' => 592, 'word' => 'deal'],
                 ['vocabulary_id' => 595, 'word' => 'guess'],
@@ -7713,7 +7117,6 @@ return [
             'vocabulary_id' => 597,
             'sentence' => 'I {{blank}} this book is interesting.',
             'blank_word' => 'think',
-            'translation' => '我覺得這本書很有趣。',
             'distractors' => [
                 ['vocabulary_id' => 592, 'word' => 'deal'],
                 ['vocabulary_id' => 595, 'word' => 'guess'],
@@ -7724,7 +7127,6 @@ return [
             'vocabulary_id' => 598,
             'sentence' => 'We ordered {{blank}} for dinner.',
             'blank_word' => 'takeout',
-            'translation' => '我們叫了外帶食物當晚餐。',
             'distractors' => [
                 ['vocabulary_id' => 591, 'word' => 'correct'],
                 ['vocabulary_id' => 593, 'word' => 'knife'],
@@ -7737,7 +7139,6 @@ return [
             'vocabulary_id' => 599,
             'sentence' => 'Please wait one {{blank}}.',
             'blank_word' => 'second',
-            'translation' => '請等一秒鐘。',
             'distractors' => [
                 ['vocabulary_id' => 593, 'word' => 'knife'],
                 ['vocabulary_id' => 598, 'word' => 'takeout'],
@@ -7748,7 +7149,6 @@ return [
             'vocabulary_id' => 600,
             'sentence' => 'I like learning about {{blank}}.',
             'blank_word' => 'history',
-            'translation' => '我喜歡學習歷史。',
             'distractors' => [
                 ['vocabulary_id' => 593, 'word' => 'knife'],
                 ['vocabulary_id' => 598, 'word' => 'takeout'],
@@ -7761,7 +7161,6 @@ return [
             'vocabulary_id' => 601,
             'sentence' => 'I study English {{blank}} my future.',
             'blank_word' => 'for',
-            'translation' => '我為了自己的未來學習英文。',
             'distractors' => [
                 ['vocabulary_id' => 602, 'word' => 'clean'],
                 ['vocabulary_id' => 603, 'word' => 'all'],
@@ -7774,7 +7173,6 @@ return [
             'vocabulary_id' => 602,
             'sentence' => 'My room is {{blank}}.',
             'blank_word' => 'clean',
-            'translation' => '我的房間很乾淨。',
             'distractors' => [
                 ['vocabulary_id' => 601, 'word' => 'for'],
                 ['vocabulary_id' => 603, 'word' => 'all'],
@@ -7787,7 +7185,6 @@ return [
             'vocabulary_id' => 603,
             'sentence' => '{{blank}} the windows are open.',
             'blank_word' => 'All',
-            'translation' => '所有的窗戶都是開著的。',
             'distractors' => [
                 ['vocabulary_id' => 607, 'word' => 'Sad'],
                 ['vocabulary_id' => 601, 'word' => 'For'],
@@ -7800,7 +7197,6 @@ return [
             'vocabulary_id' => 604,
             'sentence' => 'The boy {{blank}} the ball.',
             'blank_word' => 'hit',
-            'translation' => '那個男孩擊中了球。',
             'distractors' => [
                 ['vocabulary_id' => 601, 'word' => 'for'],
                 ['vocabulary_id' => 602, 'word' => 'clean'],
@@ -7813,7 +7209,6 @@ return [
             'vocabulary_id' => 605,
             'sentence' => 'Taipei is a busy {{blank}}.',
             'blank_word' => 'city',
-            'translation' => '臺北是一座繁忙的城市。',
             'distractors' => [
                 ['vocabulary_id' => 606, 'word' => 'cent'],
                 ['vocabulary_id' => 608, 'word' => 'sheet'],
@@ -7825,7 +7220,6 @@ return [
             'vocabulary_id' => 606,
             'sentence' => 'This toy costs fifty {{blank}}.',
             'blank_word' => 'cents',
-            'translation' => '這個玩具要五十分錢。',
             'distractors' => [
                 ['vocabulary_id' => 605, 'word' => 'cities'],
                 ['vocabulary_id' => 608, 'word' => 'sheets'],
@@ -7837,7 +7231,6 @@ return [
             'vocabulary_id' => 607,
             'sentence' => 'The girl feels {{blank}} today.',
             'blank_word' => 'sad',
-            'translation' => '那個女孩今天感到悲傷。',
             'distractors' => [
                 ['vocabulary_id' => 603, 'word' => 'all'],
                 ['vocabulary_id' => 601, 'word' => 'for'],
@@ -7850,7 +7243,6 @@ return [
             'vocabulary_id' => 608,
             'sentence' => 'Please give me a {{blank}} of paper.',
             'blank_word' => 'sheet',
-            'translation' => '請給我一張紙。',
             'distractors' => [
                 ['vocabulary_id' => 605, 'word' => 'city'],
                 ['vocabulary_id' => 606, 'word' => 'cent'],
@@ -7862,7 +7254,6 @@ return [
             'vocabulary_id' => 609,
             'sentence' => 'The first {{blank}} is to be kind.',
             'blank_word' => 'rule',
-            'translation' => '第一條規則是要友善。',
             'distractors' => [
                 ['vocabulary_id' => 605, 'word' => 'city'],
                 ['vocabulary_id' => 606, 'word' => 'cent'],
@@ -7874,7 +7265,6 @@ return [
             'vocabulary_id' => 610,
             'sentence' => 'The {{blank}} is eating a banana.',
             'blank_word' => 'monkey',
-            'translation' => '那隻猴子正在吃香蕉。',
             'distractors' => [
                 ['vocabulary_id' => 605, 'word' => 'city'],
                 ['vocabulary_id' => 606, 'word' => 'cent'],
@@ -7888,7 +7278,6 @@ return [
             'vocabulary_id' => 611,
             'sentence' => 'I bought a {{blank}} of colored pencils.',
             'blank_word' => 'set',
-            'translation' => '我買了一套彩色鉛筆。',
             'distractors' => [
                 ['vocabulary_id' => 612, 'word' => 'bicycle'],
                 ['vocabulary_id' => 613, 'word' => 'saw'],
@@ -7902,7 +7291,6 @@ return [
             'vocabulary_id' => 612,
             'sentence' => 'I ride my {{blank}} to school.',
             'blank_word' => 'bicycle',
-            'translation' => '我騎腳踏車上學。',
             'distractors' => [
                 ['vocabulary_id' => 611, 'word' => 'set'],
                 ['vocabulary_id' => 613, 'word' => 'saw'],
@@ -7916,7 +7304,6 @@ return [
             'vocabulary_id' => 613,
             'sentence' => 'My father used a {{blank}} to cut the wood.',
             'blank_word' => 'saw',
-            'translation' => '我爸爸用鋸子鋸木頭。',
             'distractors' => [
                 ['vocabulary_id' => 611, 'word' => 'set'],
                 ['vocabulary_id' => 612, 'word' => 'bicycle'],
@@ -7930,7 +7317,6 @@ return [
             'vocabulary_id' => 614,
             'sentence' => 'This is my {{blank}} room.',
             'blank_word' => 'own',
-            'translation' => '這是我自己的房間。',
             'distractors' => [
                 ['vocabulary_id' => 616, 'word' => 'push'],
                 ['vocabulary_id' => 619, 'word' => 'any'],
@@ -7943,7 +7329,6 @@ return [
             'vocabulary_id' => 615,
             'sentence' => 'I gave my sister a birthday {{blank}}.',
             'blank_word' => 'gift',
-            'translation' => '我送給妹妹一份生日禮物。',
             'distractors' => [
                 ['vocabulary_id' => 611, 'word' => 'set'],
                 ['vocabulary_id' => 612, 'word' => 'bicycle'],
@@ -7957,7 +7342,6 @@ return [
             'vocabulary_id' => 616,
             'sentence' => 'Please {{blank}} the door gently.',
             'blank_word' => 'push',
-            'translation' => '請輕輕地推門。',
             'distractors' => [
                 ['vocabulary_id' => 614, 'word' => 'own'],
                 ['vocabulary_id' => 611, 'word' => 'set'],
@@ -7970,7 +7354,6 @@ return [
             'vocabulary_id' => 617,
             'sentence' => 'Many people pray to {{blank}}.',
             'blank_word' => 'God',
-            'translation' => '許多人向上帝祈禱。',
             'distractors' => [
                 ['vocabulary_id' => 611, 'word' => 'set'],
                 ['vocabulary_id' => 612, 'word' => 'bicycle'],
@@ -7984,7 +7367,6 @@ return [
             'vocabulary_id' => 618,
             'sentence' => 'It is important to share your {{blank}}.',
             'blank_word' => 'feelings',
-            'translation' => '分享你的感情很重要。',
             'distractors' => [
                 ['vocabulary_id' => 611, 'word' => 'set'],
                 ['vocabulary_id' => 612, 'word' => 'bicycle'],
@@ -7998,7 +7380,6 @@ return [
             'vocabulary_id' => 619,
             'sentence' => 'Do you have {{blank}} questions?',
             'blank_word' => 'any',
-            'translation' => '你有任何問題嗎？',
             'distractors' => [
                 ['vocabulary_id' => 614, 'word' => 'own'],
                 ['vocabulary_id' => 611, 'word' => 'set'],
@@ -8011,7 +7392,6 @@ return [
             'vocabulary_id' => 620,
             'sentence' => 'I eat eggs for {{blank}}.',
             'blank_word' => 'breakfast',
-            'translation' => '我早餐吃蛋。',
             'distractors' => [
                 ['vocabulary_id' => 611, 'word' => 'set'],
                 ['vocabulary_id' => 612, 'word' => 'bicycle'],
@@ -8027,7 +7407,6 @@ return [
             'vocabulary_id' => 621,
             'sentence' => 'The {{blank}} is strong today.',
             'blank_word' => 'wind',
-            'translation' => '今天風很大。',
             'distractors' => [
                 ['vocabulary_id' => 622, 'word' => 'camp'],
                 ['vocabulary_id' => 623, 'word' => 'minute'],
@@ -8040,7 +7419,6 @@ return [
             'vocabulary_id' => 622,
             'sentence' => 'We slept at the {{blank}} last night.',
             'blank_word' => 'camp',
-            'translation' => '我們昨晚睡在營地裡。',
             'distractors' => [
                 ['vocabulary_id' => 621, 'word' => 'wind'],
                 ['vocabulary_id' => 623, 'word' => 'minute'],
@@ -8053,7 +7431,6 @@ return [
             'vocabulary_id' => 623,
             'sentence' => 'Please wait one {{blank}}.',
             'blank_word' => 'minute',
-            'translation' => '請等一分鐘。',
             'distractors' => [
                 ['vocabulary_id' => 621, 'word' => 'wind'],
                 ['vocabulary_id' => 622, 'word' => 'camp'],
@@ -8066,7 +7443,6 @@ return [
             'vocabulary_id' => 624,
             'sentence' => 'I love walking in {{blank}}.',
             'blank_word' => 'nature',
-            'translation' => '我喜歡在大自然中散步。',
             'distractors' => [
                 ['vocabulary_id' => 621, 'word' => 'wind'],
                 ['vocabulary_id' => 622, 'word' => 'camp'],
@@ -8079,7 +7455,6 @@ return [
             'vocabulary_id' => 625,
             'sentence' => 'My sister plays the {{blank}} every day.',
             'blank_word' => 'piano',
-            'translation' => '我妹妹每天彈鋼琴。',
             'distractors' => [
                 ['vocabulary_id' => 621, 'word' => 'wind'],
                 ['vocabulary_id' => 622, 'word' => 'camp'],
@@ -8092,7 +7467,6 @@ return [
             'vocabulary_id' => 626,
             'sentence' => 'His {{blank}} made him shout.',
             'blank_word' => 'anger',
-            'translation' => '他的憤怒讓他大喊。',
             'distractors' => [
                 ['vocabulary_id' => 621, 'word' => 'wind'],
                 ['vocabulary_id' => 622, 'word' => 'camp'],
@@ -8105,7 +7479,6 @@ return [
             'vocabulary_id' => 627,
             'sentence' => 'What does this word {{blank}}?',
             'blank_word' => 'mean',
-            'translation' => '這個字是什麼意思？',
             'distractors' => [
                 ['vocabulary_id' => 628, 'word' => 'can'],
                 ['vocabulary_id' => 629, 'word' => 'save'],
@@ -8116,7 +7489,6 @@ return [
             'vocabulary_id' => 628,
             'sentence' => 'I {{blank}} help you with your homework.',
             'blank_word' => 'can',
-            'translation' => '我可以幫你寫作業。',
             'distractors' => [
                 ['vocabulary_id' => 627, 'word' => 'mean'],
                 ['vocabulary_id' => 629, 'word' => 'save'],
@@ -8127,7 +7499,6 @@ return [
             'vocabulary_id' => 629,
             'sentence' => 'Please {{blank}} this file on the computer.',
             'blank_word' => 'save',
-            'translation' => '請把這個檔案儲存在電腦裡。',
             'distractors' => [
                 ['vocabulary_id' => 627, 'word' => 'mean'],
                 ['vocabulary_id' => 628, 'word' => 'can'],
@@ -8138,7 +7509,6 @@ return [
             'vocabulary_id' => 630,
             'sentence' => 'Please {{blank}} me your name.',
             'blank_word' => 'tell',
-            'translation' => '請告訴我你的名字。',
             'distractors' => [
                 ['vocabulary_id' => 627, 'word' => 'mean'],
                 ['vocabulary_id' => 628, 'word' => 'can'],
@@ -8151,7 +7521,6 @@ return [
             'vocabulary_id' => 631,
             'sentence' => 'This is the {{blank}} to the library.',
             'blank_word' => 'way',
-            'translation' => '這是通往圖書館的路。',
             'distractors' => [
                 ['vocabulary_id' => 633, 'word' => 'hundred'],
                 ['vocabulary_id' => 634, 'word' => 'mind'],
@@ -8163,7 +7532,6 @@ return [
             'vocabulary_id' => 632,
             'sentence' => 'We are walking {{blank}} the park.',
             'blank_word' => 'to',
-            'translation' => '我們正走路到公園。',
             'distractors' => [
                 ['vocabulary_id' => 631, 'word' => 'way'],
                 ['vocabulary_id' => 633, 'word' => 'hundred'],
@@ -8176,7 +7544,6 @@ return [
             'vocabulary_id' => 633,
             'sentence' => 'There are one {{blank}} students in the school.',
             'blank_word' => 'hundred',
-            'translation' => '這所學校有一百名學生。',
             'distractors' => [
                 ['vocabulary_id' => 631, 'word' => 'way'],
                 ['vocabulary_id' => 634, 'word' => 'mind'],
@@ -8188,7 +7555,6 @@ return [
             'vocabulary_id' => 634,
             'sentence' => 'Reading helps keep your {{blank}} active.',
             'blank_word' => 'mind',
-            'translation' => '閱讀有助於讓你的心智保持活躍。',
             'distractors' => [
                 ['vocabulary_id' => 631, 'word' => 'way'],
                 ['vocabulary_id' => 633, 'word' => 'hundred'],
@@ -8200,7 +7566,6 @@ return [
             'vocabulary_id' => 635,
             'sentence' => 'She {{blank}} my best friend.',
             'blank_word' => 'is',
-            'translation' => '她是我最好的朋友。',
             'distractors' => [
                 ['vocabulary_id' => 636, 'word' => 'stay'],
                 ['vocabulary_id' => 638, 'word' => 'bring'],
@@ -8213,7 +7578,6 @@ return [
             'vocabulary_id' => 636,
             'sentence' => 'I want to {{blank}} at home today.',
             'blank_word' => 'stay',
-            'translation' => '我今天想待在家裡。',
             'distractors' => [
                 ['vocabulary_id' => 635, 'word' => 'is'],
                 ['vocabulary_id' => 638, 'word' => 'bring'],
@@ -8226,7 +7590,6 @@ return [
             'vocabulary_id' => 637,
             'sentence' => 'The medicine brought {{blank}} to his pain.',
             'blank_word' => 'ease',
-            'translation' => '這種藥減輕了他的疼痛。',
             'distractors' => [
                 ['vocabulary_id' => 631, 'word' => 'way'],
                 ['vocabulary_id' => 633, 'word' => 'hundred'],
@@ -8238,7 +7601,6 @@ return [
             'vocabulary_id' => 638,
             'sentence' => 'Please {{blank}} your book to class.',
             'blank_word' => 'bring',
-            'translation' => '請帶你的書來上課。',
             'distractors' => [
                 ['vocabulary_id' => 635, 'word' => 'is'],
                 ['vocabulary_id' => 636, 'word' => 'stay'],
@@ -8251,7 +7613,6 @@ return [
             'vocabulary_id' => 639,
             'sentence' => 'The wind has enough {{blank}} to move the door.',
             'blank_word' => 'force',
-            'translation' => '風的力量足以吹動這扇門。',
             'distractors' => [
                 ['vocabulary_id' => 631, 'word' => 'way'],
                 ['vocabulary_id' => 633, 'word' => 'hundred'],
@@ -8263,7 +7624,6 @@ return [
             'vocabulary_id' => 640,
             'sentence' => 'I am {{blank}} that he is telling the truth.',
             'blank_word' => 'sure',
-            'translation' => '我確信他說的是實話。',
             'distractors' => [
                 ['vocabulary_id' => 631, 'word' => 'way'],
                 ['vocabulary_id' => 632, 'word' => 'to'],
@@ -8278,7 +7638,6 @@ return [
             'vocabulary_id' => 641,
             'sentence' => 'I use a map {{blank}} to find the bus stop.',
             'blank_word' => 'app',
-            'translation' => '我使用地圖應用程式尋找公車站。',
             'distractors' => [
                 ['vocabulary_id' => 642, 'word' => 'English'],
                 ['vocabulary_id' => 643, 'word' => 'sentence'],
@@ -8292,7 +7651,6 @@ return [
             'vocabulary_id' => 642,
             'sentence' => 'I study {{blank}} at school.',
             'blank_word' => 'English',
-            'translation' => '我在學校學英文。',
             'distractors' => [
                 ['vocabulary_id' => 641, 'word' => 'app'],
                 ['vocabulary_id' => 643, 'word' => 'sentence'],
@@ -8306,7 +7664,6 @@ return [
             'vocabulary_id' => 643,
             'sentence' => 'Please write one {{blank}} about your family.',
             'blank_word' => 'sentence',
-            'translation' => '請寫一個關於你家人的句子。',
             'distractors' => [
                 ['vocabulary_id' => 641, 'word' => 'app'],
                 ['vocabulary_id' => 642, 'word' => 'English'],
@@ -8320,7 +7677,6 @@ return [
             'vocabulary_id' => 644,
             'sentence' => 'Wash your hands {{blank}} dinner.',
             'blank_word' => 'before',
-            'translation' => '晚餐前要洗手。',
             'distractors' => [
                 ['vocabulary_id' => 646, 'word' => 'than'],
                 ['vocabulary_id' => 641, 'word' => 'app'],
@@ -8333,7 +7689,6 @@ return [
             'vocabulary_id' => 645,
             'sentence' => 'The {{blank}} helped the people after the storm.',
             'blank_word' => 'army',
-            'translation' => '暴風雨過後，軍隊幫助了民眾。',
             'distractors' => [
                 ['vocabulary_id' => 641, 'word' => 'app'],
                 ['vocabulary_id' => 642, 'word' => 'English'],
@@ -8347,7 +7702,6 @@ return [
             'vocabulary_id' => 646,
             'sentence' => 'My bag is heavier {{blank}} yours.',
             'blank_word' => 'than',
-            'translation' => '我的包包比你的重。',
             'distractors' => [
                 ['vocabulary_id' => 644, 'word' => 'before'],
                 ['vocabulary_id' => 641, 'word' => 'app'],
@@ -8360,7 +7714,6 @@ return [
             'vocabulary_id' => 647,
             'sentence' => 'Many flowers bloom in {{blank}}.',
             'blank_word' => 'spring',
-            'translation' => '許多花在春天開花。',
             'distractors' => [
                 ['vocabulary_id' => 641, 'word' => 'app'],
                 ['vocabulary_id' => 642, 'word' => 'English'],
@@ -8374,7 +7727,6 @@ return [
             'vocabulary_id' => 648,
             'sentence' => 'Please turn on the {{blank}}.',
             'blank_word' => 'light',
-            'translation' => '請開燈。',
             'distractors' => [
                 ['vocabulary_id' => 641, 'word' => 'app'],
                 ['vocabulary_id' => 642, 'word' => 'English'],
@@ -8388,7 +7740,6 @@ return [
             'vocabulary_id' => 649,
             'sentence' => 'We {{blank}} the car near the school.',
             'blank_word' => 'parked',
-            'translation' => '我們把車停在學校附近。',
             'distractors' => [
                 ['vocabulary_id' => 648, 'word' => 'lit'],
                 ['vocabulary_id' => 641, 'word' => 'app'],
@@ -8401,7 +7752,6 @@ return [
             'vocabulary_id' => 650,
             'sentence' => 'This {{blank}} follows the river to the town.',
             'blank_word' => 'course',
-            'translation' => '這條路線沿著河流通往城鎮。',
             'distractors' => [
                 ['vocabulary_id' => 641, 'word' => 'app'],
                 ['vocabulary_id' => 642, 'word' => 'English'],
@@ -8417,7 +7767,6 @@ return [
             'vocabulary_id' => 651,
             'sentence' => 'We have a test on {{blank}}.',
             'blank_word' => 'Friday',
-            'translation' => '我們星期五有考試。',
             'distractors' => [
                 ['vocabulary_id' => 652, 'word' => 'cup'],
                 ['vocabulary_id' => 653, 'word' => 'nothing'],
@@ -8431,7 +7780,6 @@ return [
             'vocabulary_id' => 652,
             'sentence' => 'She drank a {{blank}} of tea.',
             'blank_word' => 'cup',
-            'translation' => '她喝了一杯茶。',
             'distractors' => [
                 ['vocabulary_id' => 651, 'word' => 'Friday'],
                 ['vocabulary_id' => 653, 'word' => 'nothing'],
@@ -8445,7 +7793,6 @@ return [
             'vocabulary_id' => 653,
             'sentence' => 'There is {{blank}} in the box.',
             'blank_word' => 'nothing',
-            'translation' => '盒子裡沒什麼東西。',
             'distractors' => [
                 ['vocabulary_id' => 651, 'word' => 'Friday'],
                 ['vocabulary_id' => 652, 'word' => 'cup'],
@@ -8459,7 +7806,6 @@ return [
             'vocabulary_id' => 654,
             'sentence' => 'I walk my dog every {{blank}}.',
             'blank_word' => 'evening',
-            'translation' => '我每天傍晚帶狗散步。',
             'distractors' => [
                 ['vocabulary_id' => 651, 'word' => 'Friday'],
                 ['vocabulary_id' => 652, 'word' => 'cup'],
@@ -8473,7 +7819,6 @@ return [
             'vocabulary_id' => 655,
             'sentence' => 'I don\'t like coffee, {{blank}}.',
             'blank_word' => 'either',
-            'translation' => '我也不喜歡咖啡。',
             'distractors' => [
                 ['vocabulary_id' => 651, 'word' => 'Friday'],
                 ['vocabulary_id' => 652, 'word' => 'cup'],
@@ -8486,7 +7831,6 @@ return [
             'vocabulary_id' => 656,
             'sentence' => 'Be {{blank}} when you cross the street.',
             'blank_word' => 'careful',
-            'translation' => '過馬路時要小心。',
             'distractors' => [
                 ['vocabulary_id' => 660, 'word' => 'easy'],
                 ['vocabulary_id' => 651, 'word' => 'Friday'],
@@ -8499,7 +7843,6 @@ return [
             'vocabulary_id' => 657,
             'sentence' => '{{blank}} is my lucky number.',
             'blank_word' => 'Ten',
-            'translation' => '十是我的幸運數字。',
             'distractors' => [
                 ['vocabulary_id' => 651, 'word' => 'Friday'],
                 ['vocabulary_id' => 652, 'word' => 'Cup'],
@@ -8513,7 +7856,6 @@ return [
             'vocabulary_id' => 658,
             'sentence' => 'Please wait a {{blank}}.',
             'blank_word' => 'bit',
-            'translation' => '請稍等一下。',
             'distractors' => [
                 ['vocabulary_id' => 651, 'word' => 'Friday'],
                 ['vocabulary_id' => 652, 'word' => 'cup'],
@@ -8527,7 +7869,6 @@ return [
             'vocabulary_id' => 659,
             'sentence' => 'The dog is chewing a {{blank}}.',
             'blank_word' => 'bone',
-            'translation' => '那隻狗正在啃骨頭。',
             'distractors' => [
                 ['vocabulary_id' => 651, 'word' => 'Friday'],
                 ['vocabulary_id' => 652, 'word' => 'cup'],
@@ -8541,7 +7882,6 @@ return [
             'vocabulary_id' => 660,
             'sentence' => 'This question is {{blank}}.',
             'blank_word' => 'easy',
-            'translation' => '這個問題很容易。',
             'distractors' => [
                 ['vocabulary_id' => 656, 'word' => 'careful'],
                 ['vocabulary_id' => 651, 'word' => 'Friday'],
@@ -8556,7 +7896,6 @@ return [
             'vocabulary_id' => 661,
             'sentence' => 'They will {{blank}} a new house.',
             'blank_word' => 'build',
-            'translation' => '他們要建造一棟新房子。',
             'distractors' => [
                 ['vocabulary_id' => 666, 'word' => 'thank'],
                 ['vocabulary_id' => 662, 'word' => 'big'],
@@ -8569,7 +7908,6 @@ return [
             'vocabulary_id' => 662,
             'sentence' => 'The elephant is very {{blank}}.',
             'blank_word' => 'big',
-            'translation' => '那頭大象非常大。',
             'distractors' => [
                 ['vocabulary_id' => 661, 'word' => 'build'],
                 ['vocabulary_id' => 663, 'word' => 'farmer'],
@@ -8582,7 +7920,6 @@ return [
             'vocabulary_id' => 663,
             'sentence' => 'The {{blank}} grows rice in the field.',
             'blank_word' => 'farmer',
-            'translation' => '那位農夫在田裡種稻米。',
             'distractors' => [
                 ['vocabulary_id' => 665, 'word' => 'actor'],
                 ['vocabulary_id' => 667, 'word' => 'ocean'],
@@ -8594,7 +7931,6 @@ return [
             'vocabulary_id' => 664,
             'sentence' => '{{blank}} it is raining, we will stay home.',
             'blank_word' => 'Since',
-            'translation' => '因為正在下雨，所以我們要待在家裡。',
             'distractors' => [
                 ['vocabulary_id' => 661, 'word' => 'Build'],
                 ['vocabulary_id' => 662, 'word' => 'Big'],
@@ -8607,7 +7943,6 @@ return [
             'vocabulary_id' => 665,
             'sentence' => 'The {{blank}} is in a popular movie.',
             'blank_word' => 'actor',
-            'translation' => '那位演員參演一部受歡迎的電影。',
             'distractors' => [
                 ['vocabulary_id' => 663, 'word' => 'farmer'],
                 ['vocabulary_id' => 667, 'word' => 'ocean'],
@@ -8619,7 +7954,6 @@ return [
             'vocabulary_id' => 666,
             'sentence' => 'I {{blank}} my teacher for helping me.',
             'blank_word' => 'thank',
-            'translation' => '我感謝老師幫助我。',
             'distractors' => [
                 ['vocabulary_id' => 661, 'word' => 'build'],
                 ['vocabulary_id' => 662, 'word' => 'big'],
@@ -8632,7 +7966,6 @@ return [
             'vocabulary_id' => 667,
             'sentence' => 'The {{blank}} is blue and beautiful.',
             'blank_word' => 'ocean',
-            'translation' => '海洋既湛藍又美麗。',
             'distractors' => [
                 ['vocabulary_id' => 663, 'word' => 'farmer'],
                 ['vocabulary_id' => 665, 'word' => 'actor'],
@@ -8644,7 +7977,6 @@ return [
             'vocabulary_id' => 668,
             'sentence' => 'My {{blank}} cooks dinner for us.',
             'blank_word' => 'father',
-            'translation' => '我爸爸為我們煮晚餐。',
             'distractors' => [
                 ['vocabulary_id' => 663, 'word' => 'farmer'],
                 ['vocabulary_id' => 665, 'word' => 'actor'],
@@ -8656,7 +7988,6 @@ return [
             'vocabulary_id' => 669,
             'sentence' => 'Please give {{blank}} the book.',
             'blank_word' => 'me',
-            'translation' => '請把那本書給我。',
             'distractors' => [
                 ['vocabulary_id' => 661, 'word' => 'build'],
                 ['vocabulary_id' => 662, 'word' => 'big'],
@@ -8669,7 +8000,6 @@ return [
             'vocabulary_id' => 670,
             'sentence' => 'The {{blank}} are good friends.',
             'blank_word' => 'two',
-            'translation' => '這兩個人是好朋友。',
             'distractors' => [
                 ['vocabulary_id' => 663, 'word' => 'farmer'],
                 ['vocabulary_id' => 665, 'word' => 'actor'],
@@ -8683,7 +8013,6 @@ return [
             'vocabulary_id' => 671,
             'sentence' => 'I {{blank}} a book before bed.',
             'blank_word' => 'read',
-            'translation' => '我睡前讀一本書。',
             'distractors' => [
                 ['vocabulary_id' => 677, 'word' => 'shine'],
                 ['vocabulary_id' => 680, 'word' => 'row'],
@@ -8696,7 +8025,6 @@ return [
             'vocabulary_id' => 672,
             'sentence' => 'We have an English {{blank}} tomorrow.',
             'blank_word' => 'exam',
-            'translation' => '我們明天有英文考試。',
             'distractors' => [
                 ['vocabulary_id' => 674, 'word' => 'waffle'],
                 ['vocabulary_id' => 675, 'word' => 'rain'],
@@ -8708,7 +8036,6 @@ return [
             'vocabulary_id' => 673,
             'sentence' => 'We saw a {{blank}} palace in the city.',
             'blank_word' => 'grand',
-            'translation' => '我們在城市裡看見一座雄偉的宮殿。',
             'distractors' => [
                 ['vocabulary_id' => 676, 'word' => 'full'],
                 ['vocabulary_id' => 671, 'word' => 'read'],
@@ -8721,7 +8048,6 @@ return [
             'vocabulary_id' => 674,
             'sentence' => 'I ate a {{blank}} for breakfast.',
             'blank_word' => 'waffle',
-            'translation' => '我早餐吃了一份格子鬆餅。',
             'distractors' => [
                 ['vocabulary_id' => 672, 'word' => 'exam'],
                 ['vocabulary_id' => 675, 'word' => 'rain'],
@@ -8733,7 +8059,6 @@ return [
             'vocabulary_id' => 675,
             'sentence' => 'The {{blank}} stopped in the afternoon.',
             'blank_word' => 'rain',
-            'translation' => '雨在下午停了。',
             'distractors' => [
                 ['vocabulary_id' => 672, 'word' => 'exam'],
                 ['vocabulary_id' => 674, 'word' => 'waffle'],
@@ -8745,7 +8070,6 @@ return [
             'vocabulary_id' => 676,
             'sentence' => 'The glass is {{blank}} of water.',
             'blank_word' => 'full',
-            'translation' => '這個玻璃杯裝滿了水。',
             'distractors' => [
                 ['vocabulary_id' => 673, 'word' => 'grand'],
                 ['vocabulary_id' => 671, 'word' => 'read'],
@@ -8758,7 +8082,6 @@ return [
             'vocabulary_id' => 677,
             'sentence' => 'The stars {{blank}} brightly at night.',
             'blank_word' => 'shine',
-            'translation' => '星星在夜晚發出明亮的光芒。',
             'distractors' => [
                 ['vocabulary_id' => 671, 'word' => 'read'],
                 ['vocabulary_id' => 672, 'word' => 'exam'],
@@ -8772,7 +8095,6 @@ return [
             'vocabulary_id' => 678,
             'sentence' => 'Put the chair in this {{blank}}.',
             'blank_word' => 'position',
-            'translation' => '把椅子放在這個位置。',
             'distractors' => [
                 ['vocabulary_id' => 672, 'word' => 'exam'],
                 ['vocabulary_id' => 674, 'word' => 'waffle'],
@@ -8784,7 +8106,6 @@ return [
             'vocabulary_id' => 679,
             'sentence' => 'He runs {{blank}} the wind.',
             'blank_word' => 'like',
-            'translation' => '他跑得像風一樣快。',
             'distractors' => [
                 ['vocabulary_id' => 671, 'word' => 'read'],
                 ['vocabulary_id' => 672, 'word' => 'exam'],
@@ -8797,7 +8118,6 @@ return [
             'vocabulary_id' => 680,
             'sentence' => 'They {{blank}} the boat across the lake.',
             'blank_word' => 'row',
-            'translation' => '他們划船穿過湖面。',
             'distractors' => [
                 ['vocabulary_id' => 671, 'word' => 'read'],
                 ['vocabulary_id' => 677, 'word' => 'shine'],
@@ -8812,7 +8132,6 @@ return [
             'vocabulary_id' => 681,
             'sentence' => 'The soccer {{blank}} starts at three o’clock.',
             'blank_word' => 'match',
-            'translation' => '足球比賽在三點開始。',
             'distractors' => [
                 ['vocabulary_id' => 682, 'word' => 'baseball'],
                 ['vocabulary_id' => 688, 'word' => 'base'],
@@ -8825,7 +8144,6 @@ return [
             'vocabulary_id' => 682,
             'sentence' => 'We play {{blank}} after school.',
             'blank_word' => 'baseball',
-            'translation' => '我們放學後打棒球。',
             'distractors' => [
                 ['vocabulary_id' => 681, 'word' => 'match'],
                 ['vocabulary_id' => 688, 'word' => 'base'],
@@ -8838,7 +8156,6 @@ return [
             'vocabulary_id' => 683,
             'sentence' => 'This is my {{blank}} drawing.',
             'blank_word' => 'best',
-            'translation' => '這是我最好的畫。',
             'distractors' => [
                 ['vocabulary_id' => 684, 'word' => 'more'],
                 ['vocabulary_id' => 685, 'word' => 'old'],
@@ -8849,7 +8166,6 @@ return [
             'vocabulary_id' => 684,
             'sentence' => 'I would like {{blank}} water, please.',
             'blank_word' => 'more',
-            'translation' => '請再給我多一點水。',
             'distractors' => [
                 ['vocabulary_id' => 683, 'word' => 'best'],
                 ['vocabulary_id' => 685, 'word' => 'old'],
@@ -8862,7 +8178,6 @@ return [
             'vocabulary_id' => 685,
             'sentence' => 'My grandfather has an {{blank}} car.',
             'blank_word' => 'old',
-            'translation' => '我祖父有一輛老車。',
             'distractors' => [
                 ['vocabulary_id' => 683, 'word' => 'best'],
                 ['vocabulary_id' => 684, 'word' => 'more'],
@@ -8873,7 +8188,6 @@ return [
             'vocabulary_id' => 686,
             'sentence' => 'I like this song, {{blank}}.',
             'blank_word' => 'too',
-            'translation' => '我也喜歡這首歌。',
             'distractors' => [
                 ['vocabulary_id' => 684, 'word' => 'more'],
                 ['vocabulary_id' => 689, 'word' => 'upstairs'],
@@ -8886,7 +8200,6 @@ return [
             'vocabulary_id' => 687,
             'sentence' => 'Please {{blank}} some salt to the soup.',
             'blank_word' => 'add',
-            'translation' => '請在湯裡加一些鹽。',
             'distractors' => [
                 ['vocabulary_id' => 681, 'word' => 'match'],
                 ['vocabulary_id' => 682, 'word' => 'baseball'],
@@ -8899,7 +8212,6 @@ return [
             'vocabulary_id' => 688,
             'sentence' => 'The lamp has a heavy {{blank}}.',
             'blank_word' => 'base',
-            'translation' => '這盞燈有一個很重的底座。',
             'distractors' => [
                 ['vocabulary_id' => 681, 'word' => 'match'],
                 ['vocabulary_id' => 682, 'word' => 'baseball'],
@@ -8912,7 +8224,6 @@ return [
             'vocabulary_id' => 689,
             'sentence' => 'My bedroom is {{blank}}.',
             'blank_word' => 'upstairs',
-            'translation' => '我的臥室在樓上。',
             'distractors' => [
                 ['vocabulary_id' => 684, 'word' => 'more'],
                 ['vocabulary_id' => 686, 'word' => 'too'],
@@ -8925,7 +8236,6 @@ return [
             'vocabulary_id' => 690,
             'sentence' => 'Good communication is a {{blank}} part of teamwork.',
             'blank_word' => 'key',
-            'translation' => '良好的溝通是團隊合作的關鍵部分。',
             'distractors' => [
                 ['vocabulary_id' => 683, 'word' => 'best'],
                 ['vocabulary_id' => 684, 'word' => 'more'],
@@ -8938,7 +8248,6 @@ return [
             'vocabulary_id' => 691,
             'sentence' => 'That car is very {{blank}}.',
             'blank_word' => 'fast',
-            'translation' => '那輛車非常快。',
             'distractors' => [
                 ['vocabulary_id' => 692, 'word' => 'part'],
                 ['vocabulary_id' => 693, 'word' => 'sleep'],
@@ -8951,7 +8260,6 @@ return [
             'vocabulary_id' => 692,
             'sentence' => 'This wheel is an important {{blank}} of the bike.',
             'blank_word' => 'part',
-            'translation' => '這個輪子是腳踏車的重要零件。',
             'distractors' => [
                 ['vocabulary_id' => 694, 'word' => 'brother'],
                 ['vocabulary_id' => 696, 'word' => 'soul'],
@@ -8963,7 +8271,6 @@ return [
             'vocabulary_id' => 693,
             'sentence' => 'I usually {{blank}} for eight hours.',
             'blank_word' => 'sleep',
-            'translation' => '我通常睡八個小時。',
             'distractors' => [
                 ['vocabulary_id' => 695, 'word' => 'touch'],
                 ['vocabulary_id' => 697, 'word' => 'do'],
@@ -8974,7 +8281,6 @@ return [
             'vocabulary_id' => 694,
             'sentence' => 'My {{blank}} likes to read books.',
             'blank_word' => 'brother',
-            'translation' => '我哥哥喜歡看書。',
             'distractors' => [
                 ['vocabulary_id' => 692, 'word' => 'part'],
                 ['vocabulary_id' => 696, 'word' => 'soul'],
@@ -8986,7 +8292,6 @@ return [
             'vocabulary_id' => 695,
             'sentence' => 'Please do not {{blank}} the hot pan.',
             'blank_word' => 'touch',
-            'translation' => '請不要觸摸那個燙的平底鍋。',
             'distractors' => [
                 ['vocabulary_id' => 693, 'word' => 'sleep'],
                 ['vocabulary_id' => 700, 'word' => 'will'],
@@ -8999,7 +8304,6 @@ return [
             'vocabulary_id' => 696,
             'sentence' => 'Music can bring peace to the {{blank}}.',
             'blank_word' => 'soul',
-            'translation' => '音樂能為靈魂帶來平靜。',
             'distractors' => [
                 ['vocabulary_id' => 692, 'word' => 'part'],
                 ['vocabulary_id' => 694, 'word' => 'brother'],
@@ -9011,7 +8315,6 @@ return [
             'vocabulary_id' => 697,
             'sentence' => 'I {{blank}} my homework after dinner.',
             'blank_word' => 'do',
-            'translation' => '我晚餐後做功課。',
             'distractors' => [
                 ['vocabulary_id' => 693, 'word' => 'sleep'],
                 ['vocabulary_id' => 695, 'word' => 'touch'],
@@ -9022,7 +8325,6 @@ return [
             'vocabulary_id' => 698,
             'sentence' => 'I finished my science {{blank}}.',
             'blank_word' => 'report',
-            'translation' => '我完成了我的科學報告。',
             'distractors' => [
                 ['vocabulary_id' => 692, 'word' => 'part'],
                 ['vocabulary_id' => 694, 'word' => 'brother'],
@@ -9034,7 +8336,6 @@ return [
             'vocabulary_id' => 699,
             'sentence' => 'There is a small {{blank}} near my house.',
             'blank_word' => 'shop',
-            'translation' => '我家附近有一家小商店。',
             'distractors' => [
                 ['vocabulary_id' => 692, 'word' => 'part'],
                 ['vocabulary_id' => 694, 'word' => 'brother'],
@@ -9046,7 +8347,6 @@ return [
             'vocabulary_id' => 700,
             'sentence' => 'We {{blank}} visit Grandma tomorrow.',
             'blank_word' => 'will',
-            'translation' => '我們明天將去拜訪奶奶。',
             'distractors' => [
                 ['vocabulary_id' => 693, 'word' => 'sleep'],
                 ['vocabulary_id' => 695, 'word' => 'touch'],
@@ -9059,7 +8359,6 @@ return [
             'vocabulary_id' => 701,
             'sentence' => 'The {{blank}} moves around the sun.',
             'blank_word' => 'Earth',
-            'translation' => '地球繞著太陽運行。',
             'distractors' => [
                 ['vocabulary_id' => 702, 'word' => 'twelve'],
                 ['vocabulary_id' => 705, 'word' => 'tie'],
@@ -9073,7 +8372,6 @@ return [
             'vocabulary_id' => 702,
             'sentence' => '{{blank}} is my lucky number.',
             'blank_word' => 'Twelve',
-            'translation' => '十二是我的幸運數字。',
             'distractors' => [
                 ['vocabulary_id' => 701, 'word' => 'Earth'],
                 ['vocabulary_id' => 705, 'word' => 'Tie'],
@@ -9087,7 +8385,6 @@ return [
             'vocabulary_id' => 703,
             'sentence' => 'The table is too {{blank}} for me.',
             'blank_word' => 'low',
-            'translation' => '這張桌子對我來說太低了。',
             'distractors' => [
                 ['vocabulary_id' => 704, 'word' => 'most'],
                 ['vocabulary_id' => 701, 'word' => 'earth'],
@@ -9100,7 +8397,6 @@ return [
             'vocabulary_id' => 704,
             'sentence' => '{{blank}} students like music.',
             'blank_word' => 'Most',
-            'translation' => '大多數學生喜歡音樂。',
             'distractors' => [
                 ['vocabulary_id' => 703, 'word' => 'Low'],
                 ['vocabulary_id' => 701, 'word' => 'Earth'],
@@ -9113,7 +8409,6 @@ return [
             'vocabulary_id' => 705,
             'sentence' => 'My father wears a {{blank}} to work.',
             'blank_word' => 'tie',
-            'translation' => '我爸爸上班時會打領帶。',
             'distractors' => [
                 ['vocabulary_id' => 701, 'word' => 'earth'],
                 ['vocabulary_id' => 702, 'word' => 'twelve'],
@@ -9127,7 +8422,6 @@ return [
             'vocabulary_id' => 706,
             'sentence' => 'There is a {{blank}} on the wall.',
             'blank_word' => 'picture',
-            'translation' => '牆上有一幅圖畫。',
             'distractors' => [
                 ['vocabulary_id' => 701, 'word' => 'earth'],
                 ['vocabulary_id' => 702, 'word' => 'twelve'],
@@ -9141,7 +8435,6 @@ return [
             'vocabulary_id' => 707,
             'sentence' => 'I {{blank}} you have a good day.',
             'blank_word' => 'hope',
-            'translation' => '我希望你今天過得愉快。',
             'distractors' => [
                 ['vocabulary_id' => 710, 'word' => 'answer'],
                 ['vocabulary_id' => 701, 'word' => 'earth'],
@@ -9154,7 +8447,6 @@ return [
             'vocabulary_id' => 708,
             'sentence' => 'The {{blank}} is next to the bedroom.',
             'blank_word' => 'bathroom',
-            'translation' => '浴室在臥室旁邊。',
             'distractors' => [
                 ['vocabulary_id' => 701, 'word' => 'earth'],
                 ['vocabulary_id' => 702, 'word' => 'twelve'],
@@ -9168,7 +8460,6 @@ return [
             'vocabulary_id' => 709,
             'sentence' => 'Mom uses {{blank}} to cook the vegetables.',
             'blank_word' => 'oil',
-            'translation' => '媽媽用油煮蔬菜。',
             'distractors' => [
                 ['vocabulary_id' => 701, 'word' => 'earth'],
                 ['vocabulary_id' => 702, 'word' => 'twelve'],
@@ -9182,7 +8473,6 @@ return [
             'vocabulary_id' => 710,
             'sentence' => 'I know the {{blank}} to the question.',
             'blank_word' => 'answer',
-            'translation' => '我知道這個問題的答案。',
             'distractors' => [
                 ['vocabulary_id' => 701, 'word' => 'earth'],
                 ['vocabulary_id' => 702, 'word' => 'twelve'],
@@ -9198,7 +8488,6 @@ return [
             'vocabulary_id' => 711,
             'sentence' => 'My sister is {{blank}} years old.',
             'blank_word' => 'nineteen',
-            'translation' => '我姊姊十九歲。',
             'distractors' => [
                 ['vocabulary_id' => 713, 'word' => 'trouble'],
                 ['vocabulary_id' => 716, 'word' => 'hello'],
@@ -9211,7 +8500,6 @@ return [
             'vocabulary_id' => 712,
             'sentence' => 'My grandfather is {{blank}} now.',
             'blank_word' => 'well',
-            'translation' => '我爺爺現在很健康。',
             'distractors' => [
                 ['vocabulary_id' => 715, 'word' => 'both'],
                 ['vocabulary_id' => 711, 'word' => 'nineteen'],
@@ -9224,7 +8512,6 @@ return [
             'vocabulary_id' => 713,
             'sentence' => 'Please tell me if you have any {{blank}}.',
             'blank_word' => 'trouble',
-            'translation' => '如果你遇到任何麻煩，請告訴我。',
             'distractors' => [
                 ['vocabulary_id' => 711, 'word' => 'nineteen'],
                 ['vocabulary_id' => 716, 'word' => 'hello'],
@@ -9237,7 +8524,6 @@ return [
             'vocabulary_id' => 714,
             'sentence' => 'We will {{blank}} to a new house next month.',
             'blank_word' => 'move',
-            'translation' => '我們下個月要搬到新家。',
             'distractors' => [
                 ['vocabulary_id' => 717, 'word' => 'direct'],
                 ['vocabulary_id' => 711, 'word' => 'nineteen'],
@@ -9250,7 +8536,6 @@ return [
             'vocabulary_id' => 715,
             'sentence' => '{{blank}} children are holding books.',
             'blank_word' => 'Both',
-            'translation' => '兩個孩子都拿著書。',
             'distractors' => [
                 ['vocabulary_id' => 712, 'word' => 'Well'],
                 ['vocabulary_id' => 711, 'word' => 'Nineteen'],
@@ -9263,7 +8548,6 @@ return [
             'vocabulary_id' => 716,
             'sentence' => 'She gave me a friendly {{blank}}.',
             'blank_word' => 'hello',
-            'translation' => '她親切地向我打招呼。',
             'distractors' => [
                 ['vocabulary_id' => 711, 'word' => 'nineteen'],
                 ['vocabulary_id' => 713, 'word' => 'trouble'],
@@ -9276,7 +8560,6 @@ return [
             'vocabulary_id' => 717,
             'sentence' => 'The teacher will {{blank}} the school play.',
             'blank_word' => 'direct',
-            'translation' => '老師將指揮這齣校園戲劇。',
             'distractors' => [
                 ['vocabulary_id' => 714, 'word' => 'move'],
                 ['vocabulary_id' => 711, 'word' => 'nineteen'],
@@ -9289,7 +8572,6 @@ return [
             'vocabulary_id' => 718,
             'sentence' => 'The ducks are swimming in the {{blank}}.',
             'blank_word' => 'pond',
-            'translation' => '鴨子正在池塘裡游泳。',
             'distractors' => [
                 ['vocabulary_id' => 711, 'word' => 'nineteen'],
                 ['vocabulary_id' => 713, 'word' => 'trouble'],
@@ -9302,7 +8584,6 @@ return [
             'vocabulary_id' => 719,
             'sentence' => 'Our school will have a talent {{blank}}.',
             'blank_word' => 'show',
-            'translation' => '我們學校將舉辦才藝表演。',
             'distractors' => [
                 ['vocabulary_id' => 711, 'word' => 'nineteen'],
                 ['vocabulary_id' => 713, 'word' => 'trouble'],
@@ -9315,7 +8596,6 @@ return [
             'vocabulary_id' => 720,
             'sentence' => 'My grandmother is {{blank}} years old.',
             'blank_word' => 'ninety',
-            'translation' => '我祖母九十歲。',
             'distractors' => [
                 ['vocabulary_id' => 711, 'word' => 'nineteen'],
                 ['vocabulary_id' => 713, 'word' => 'trouble'],
@@ -9330,7 +8610,6 @@ return [
             'vocabulary_id' => 721,
             'sentence' => 'We sang a happy {{blank}} together.',
             'blank_word' => 'song',
-            'translation' => '我們一起唱了一首快樂的歌。',
             'distractors' => [
                 ['vocabulary_id' => 722, 'word' => 'coast'],
                 ['vocabulary_id' => 728, 'word' => 'life'],
@@ -9342,7 +8621,6 @@ return [
             'vocabulary_id' => 722,
             'sentence' => 'We walked along the {{blank}} in the morning.',
             'blank_word' => 'coast',
-            'translation' => '我們早上沿著海岸散步。',
             'distractors' => [
                 ['vocabulary_id' => 721, 'word' => 'song'],
                 ['vocabulary_id' => 728, 'word' => 'life'],
@@ -9354,7 +8632,6 @@ return [
             'vocabulary_id' => 723,
             'sentence' => 'She {{blank}} the baby in warm water.',
             'blank_word' => 'bathed',
-            'translation' => '她用溫水幫寶寶洗澡。',
             'distractors' => [
                 ['vocabulary_id' => 725, 'word' => 'remembered'],
                 ['vocabulary_id' => 727, 'word' => 'started'],
@@ -9367,7 +8644,6 @@ return [
             'vocabulary_id' => 724,
             'sentence' => 'It is {{blank}} to rain this afternoon.',
             'blank_word' => 'likely',
-            'translation' => '今天下午很可能會下雨。',
             'distractors' => [
                 ['vocabulary_id' => 726, 'word' => 'sweet'],
                 ['vocabulary_id' => 721, 'word' => 'song'],
@@ -9380,7 +8656,6 @@ return [
             'vocabulary_id' => 725,
             'sentence' => 'Please {{blank}} to bring your book.',
             'blank_word' => 'remember',
-            'translation' => '請記得帶你的書。',
             'distractors' => [
                 ['vocabulary_id' => 723, 'word' => 'bathe'],
                 ['vocabulary_id' => 727, 'word' => 'start'],
@@ -9393,7 +8668,6 @@ return [
             'vocabulary_id' => 726,
             'sentence' => 'The cake has a {{blank}} taste.',
             'blank_word' => 'sweet',
-            'translation' => '這個蛋糕吃起來很甜。',
             'distractors' => [
                 ['vocabulary_id' => 724, 'word' => 'likely'],
                 ['vocabulary_id' => 721, 'word' => 'song'],
@@ -9406,7 +8680,6 @@ return [
             'vocabulary_id' => 727,
             'sentence' => 'The movie will {{blank}} at seven.',
             'blank_word' => 'start',
-            'translation' => '電影將在七點開始。',
             'distractors' => [
                 ['vocabulary_id' => 723, 'word' => 'bathe'],
                 ['vocabulary_id' => 725, 'word' => 'remember'],
@@ -9419,7 +8692,6 @@ return [
             'vocabulary_id' => 728,
             'sentence' => 'Water is necessary for {{blank}}.',
             'blank_word' => 'life',
-            'translation' => '水是生命所必需的。',
             'distractors' => [
                 ['vocabulary_id' => 721, 'word' => 'song'],
                 ['vocabulary_id' => 722, 'word' => 'coast'],
@@ -9431,7 +8703,6 @@ return [
             'vocabulary_id' => 729,
             'sentence' => 'The boat moved from the water to the {{blank}}.',
             'blank_word' => 'land',
-            'translation' => '船從水上移動到陸地。',
             'distractors' => [
                 ['vocabulary_id' => 721, 'word' => 'song'],
                 ['vocabulary_id' => 722, 'word' => 'coast'],
@@ -9443,7 +8714,6 @@ return [
             'vocabulary_id' => 730,
             'sentence' => 'My {{blank}} says it is ten o\'clock.',
             'blank_word' => 'watch',
-            'translation' => '我的手錶顯示現在是十點鐘。',
             'distractors' => [
                 ['vocabulary_id' => 721, 'word' => 'song'],
                 ['vocabulary_id' => 722, 'word' => 'coast'],
@@ -9457,7 +8727,6 @@ return [
             'vocabulary_id' => 731,
             'sentence' => 'We wore the {{blank}} color shirt.',
             'blank_word' => 'same',
-            'translation' => '我們穿了同樣顏色的襯衫。',
             'distractors' => [
                 ['vocabulary_id' => 733, 'word' => 'final'],
                 ['vocabulary_id' => 738, 'word' => 'dark'],
@@ -9470,7 +8739,6 @@ return [
             'vocabulary_id' => 732,
             'sentence' => 'My family will visit Japan in {{blank}}.',
             'blank_word' => 'August',
-            'translation' => '我家人八月要去日本旅遊。',
             'distractors' => [
                 ['vocabulary_id' => 734, 'word' => 'unit'],
                 ['vocabulary_id' => 737, 'word' => 'space'],
@@ -9482,7 +8750,6 @@ return [
             'vocabulary_id' => 733,
             'sentence' => 'This is our {{blank}} class before the holiday.',
             'blank_word' => 'final',
-            'translation' => '這是放假前我們最後一堂課。',
             'distractors' => [
                 ['vocabulary_id' => 731, 'word' => 'same'],
                 ['vocabulary_id' => 738, 'word' => 'dark'],
@@ -9495,7 +8762,6 @@ return [
             'vocabulary_id' => 734,
             'sentence' => 'This box is one {{blank}} in the set.',
             'blank_word' => 'unit',
-            'translation' => '這個盒子是這組物品中的一個單位。',
             'distractors' => [
                 ['vocabulary_id' => 732, 'word' => 'August'],
                 ['vocabulary_id' => 737, 'word' => 'space'],
@@ -9507,7 +8773,6 @@ return [
             'vocabulary_id' => 735,
             'sentence' => '{{blank}} we can go to the park later.',
             'blank_word' => 'Maybe',
-            'translation' => '或許我們晚一點可以去公園。',
             'distractors' => [
                 ['vocabulary_id' => 731, 'word' => 'Same'],
                 ['vocabulary_id' => 732, 'word' => 'August'],
@@ -9520,7 +8785,6 @@ return [
             'vocabulary_id' => 736,
             'sentence' => '{{blank}} bag is under the table.',
             'blank_word' => 'My',
-            'translation' => '我的包包在桌子下面。',
             'distractors' => [
                 ['vocabulary_id' => 731, 'word' => 'Same'],
                 ['vocabulary_id' => 732, 'word' => 'August'],
@@ -9533,7 +8797,6 @@ return [
             'vocabulary_id' => 737,
             'sentence' => 'There is not enough {{blank}} in the room.',
             'blank_word' => 'space',
-            'translation' => '房間裡沒有足夠的空間。',
             'distractors' => [
                 ['vocabulary_id' => 732, 'word' => 'August'],
                 ['vocabulary_id' => 734, 'word' => 'unit'],
@@ -9545,7 +8808,6 @@ return [
             'vocabulary_id' => 738,
             'sentence' => 'The room was {{blank}} at night.',
             'blank_word' => 'dark',
-            'translation' => '晚上房間裡很黑暗。',
             'distractors' => [
                 ['vocabulary_id' => 731, 'word' => 'same'],
                 ['vocabulary_id' => 733, 'word' => 'final'],
@@ -9558,7 +8820,6 @@ return [
             'vocabulary_id' => 739,
             'sentence' => 'He is a big {{blank}} of that singer.',
             'blank_word' => 'fan',
-            'translation' => '他是那位歌手的忠實粉絲。',
             'distractors' => [
                 ['vocabulary_id' => 732, 'word' => 'August'],
                 ['vocabulary_id' => 734, 'word' => 'unit'],
@@ -9570,7 +8831,6 @@ return [
             'vocabulary_id' => 740,
             'sentence' => 'Please take a {{blank}} near the window.',
             'blank_word' => 'seat',
-            'translation' => '請坐在窗戶附近的座位上。',
             'distractors' => [
                 ['vocabulary_id' => 732, 'word' => 'August'],
                 ['vocabulary_id' => 734, 'word' => 'unit'],
@@ -9584,7 +8844,6 @@ return [
             'vocabulary_id' => 741,
             'sentence' => 'I {{blank}} about my family.',
             'blank_word' => 'care',
-            'translation' => '我關心我的家人。',
             'distractors' => [
                 ['vocabulary_id' => 743, 'word' => 'train'],
                 ['vocabulary_id' => 748, 'word' => 'examine'],
@@ -9597,7 +8856,6 @@ return [
             'vocabulary_id' => 742,
             'sentence' => 'The {{blank}} cat sleeps all day.',
             'blank_word' => 'lazy',
-            'translation' => '那隻懶散的貓整天睡覺。',
             'distractors' => [
                 ['vocabulary_id' => 746, 'word' => 'quick'],
                 ['vocabulary_id' => 741, 'word' => 'care'],
@@ -9610,7 +8868,6 @@ return [
             'vocabulary_id' => 743,
             'sentence' => 'We {{blank}} the dog every morning.',
             'blank_word' => 'train',
-            'translation' => '我們每天早上訓練這隻狗。',
             'distractors' => [
                 ['vocabulary_id' => 741, 'word' => 'care'],
                 ['vocabulary_id' => 748, 'word' => 'examine'],
@@ -9623,7 +8880,6 @@ return [
             'vocabulary_id' => 744,
             'sentence' => 'This is a good {{blank}} to read.',
             'blank_word' => 'place',
-            'translation' => '這是一個適合閱讀的地方。',
             'distractors' => [
                 ['vocabulary_id' => 745, 'word' => 'week'],
                 ['vocabulary_id' => 747, 'word' => 'service'],
@@ -9634,7 +8890,6 @@ return [
             'vocabulary_id' => 745,
             'sentence' => 'I visit my grandmother once a {{blank}}.',
             'blank_word' => 'week',
-            'translation' => '我每週去看祖母一次。',
             'distractors' => [
                 ['vocabulary_id' => 744, 'word' => 'place'],
                 ['vocabulary_id' => 747, 'word' => 'service'],
@@ -9645,7 +8900,6 @@ return [
             'vocabulary_id' => 746,
             'sentence' => 'She gave me a {{blank}} answer.',
             'blank_word' => 'quick',
-            'translation' => '她很快地回答了我。',
             'distractors' => [
                 ['vocabulary_id' => 742, 'word' => 'lazy'],
                 ['vocabulary_id' => 749, 'word' => 'just'],
@@ -9658,7 +8912,6 @@ return [
             'vocabulary_id' => 747,
             'sentence' => 'The hotel provides good {{blank}}.',
             'blank_word' => 'service',
-            'translation' => '這家飯店提供良好的服務。',
             'distractors' => [
                 ['vocabulary_id' => 744, 'word' => 'place'],
                 ['vocabulary_id' => 745, 'word' => 'week'],
@@ -9669,7 +8922,6 @@ return [
             'vocabulary_id' => 748,
             'sentence' => 'The doctor will {{blank}} my ears.',
             'blank_word' => 'examine',
-            'translation' => '醫生會檢查我的耳朵。',
             'distractors' => [
                 ['vocabulary_id' => 741, 'word' => 'care'],
                 ['vocabulary_id' => 743, 'word' => 'train'],
@@ -9682,7 +8934,6 @@ return [
             'vocabulary_id' => 749,
             'sentence' => 'I {{blank}} got home.',
             'blank_word' => 'just',
-            'translation' => '我剛才到家。',
             'distractors' => [
                 ['vocabulary_id' => 746, 'word' => 'quick'],
                 ['vocabulary_id' => 741, 'word' => 'care'],
@@ -9695,7 +8946,6 @@ return [
             'vocabulary_id' => 750,
             'sentence' => 'Please use {{blank}} to wash your hands.',
             'blank_word' => 'soap',
-            'translation' => '請用肥皂洗手。',
             'distractors' => [
                 ['vocabulary_id' => 744, 'word' => 'place'],
                 ['vocabulary_id' => 745, 'word' => 'week'],
@@ -9708,7 +8958,6 @@ return [
             'vocabulary_id' => 751,
             'sentence' => 'Raise your {{blank}} if you know the answer.',
             'blank_word' => 'hand',
-            'translation' => '如果你知道答案，請舉手。',
             'distractors' => [
                 ['vocabulary_id' => 753, 'word' => 'view'],
                 ['vocabulary_id' => 757, 'word' => 'dad'],
@@ -9719,7 +8968,6 @@ return [
             'vocabulary_id' => 752,
             'sentence' => 'We talked {{blank}} our new teacher.',
             'blank_word' => 'about',
-            'translation' => '我們談到了我們的新老師。',
             'distractors' => [
                 ['vocabulary_id' => 751, 'word' => 'hand'],
                 ['vocabulary_id' => 753, 'word' => 'view'],
@@ -9732,7 +8980,6 @@ return [
             'vocabulary_id' => 753,
             'sentence' => 'The room has a beautiful {{blank}} of the sea.',
             'blank_word' => 'view',
-            'translation' => '這個房間可以看到美麗的海景。',
             'distractors' => [
                 ['vocabulary_id' => 751, 'word' => 'hand'],
                 ['vocabulary_id' => 757, 'word' => 'dad'],
@@ -9743,7 +8990,6 @@ return [
             'vocabulary_id' => 754,
             'sentence' => 'We need a {{blank}} date for the meeting.',
             'blank_word' => 'certain',
-            'translation' => '我們需要一個確切的會議日期。',
             'distractors' => [
                 ['vocabulary_id' => 751, 'word' => 'hand'],
                 ['vocabulary_id' => 752, 'word' => 'about'],
@@ -9756,7 +9002,6 @@ return [
             'vocabulary_id' => 755,
             'sentence' => 'Please {{blank}} the window.',
             'blank_word' => 'shut',
-            'translation' => '請關上窗戶。',
             'distractors' => [
                 ['vocabulary_id' => 756, 'word' => 'turn'],
                 ['vocabulary_id' => 758, 'word' => 'last'],
@@ -9767,7 +9012,6 @@ return [
             'vocabulary_id' => 756,
             'sentence' => '{{blank}} the handle to open the door.',
             'blank_word' => 'Turn',
-            'translation' => '轉動把手來開門。',
             'distractors' => [
                 ['vocabulary_id' => 755, 'word' => 'Shut'],
                 ['vocabulary_id' => 758, 'word' => 'Last'],
@@ -9778,7 +9022,6 @@ return [
             'vocabulary_id' => 757,
             'sentence' => 'My {{blank}} makes breakfast for us.',
             'blank_word' => 'dad',
-            'translation' => '我爸爸為我們做早餐。',
             'distractors' => [
                 ['vocabulary_id' => 751, 'word' => 'hand'],
                 ['vocabulary_id' => 753, 'word' => 'view'],
@@ -9789,7 +9032,6 @@ return [
             'vocabulary_id' => 758,
             'sentence' => 'These batteries {{blank}} for a long time.',
             'blank_word' => 'last',
-            'translation' => '這些電池可以維持很長一段時間。',
             'distractors' => [
                 ['vocabulary_id' => 755, 'word' => 'shut'],
                 ['vocabulary_id' => 756, 'word' => 'turn'],
@@ -9800,7 +9042,6 @@ return [
             'vocabulary_id' => 759,
             'sentence' => 'I need a new pair of {{blank}}.',
             'blank_word' => 'shoes',
-            'translation' => '我需要一雙新鞋子。',
             'distractors' => [
                 ['vocabulary_id' => 751, 'word' => 'hands'],
                 ['vocabulary_id' => 753, 'word' => 'views'],
@@ -9811,7 +9052,6 @@ return [
             'vocabulary_id' => 760,
             'sentence' => '{{blank}} the bottle before you drink it.',
             'blank_word' => 'Shake',
-            'translation' => '喝之前先搖一搖瓶子。',
             'distractors' => [
                 ['vocabulary_id' => 755, 'word' => 'Shut'],
                 ['vocabulary_id' => 756, 'word' => 'Turn'],
@@ -9824,7 +9064,6 @@ return [
             'vocabulary_id' => 761,
             'sentence' => 'I have a {{blank}} to play soccer after school.',
             'blank_word' => 'chance',
-            'translation' => '我有機會在放學後踢足球。',
             'distractors' => [
                 ['vocabulary_id' => 766, 'word' => 'pencil'],
                 ['vocabulary_id' => 762, 'word' => 'discover'],
@@ -9837,7 +9076,6 @@ return [
             'vocabulary_id' => 762,
             'sentence' => 'We {{blank}} new things when we read books.',
             'blank_word' => 'discover',
-            'translation' => '我們讀書時會發現新事物。',
             'distractors' => [
                 ['vocabulary_id' => 763, 'word' => 'begin'],
                 ['vocabulary_id' => 765, 'word' => 'may'],
@@ -9848,7 +9086,6 @@ return [
             'vocabulary_id' => 763,
             'sentence' => 'The teacher will {{blank}} the lesson at nine.',
             'blank_word' => 'begin',
-            'translation' => '老師九點會開始上課。',
             'distractors' => [
                 ['vocabulary_id' => 762, 'word' => 'discover'],
                 ['vocabulary_id' => 765, 'word' => 'may'],
@@ -9859,7 +9096,6 @@ return [
             'vocabulary_id' => 764,
             'sentence' => 'Please say your name {{blank}}.',
             'blank_word' => 'again',
-            'translation' => '請再說一次你的名字。',
             'distractors' => [
                 ['vocabulary_id' => 761, 'word' => 'chance'],
                 ['vocabulary_id' => 762, 'word' => 'discover'],
@@ -9872,7 +9108,6 @@ return [
             'vocabulary_id' => 765,
             'sentence' => 'It {{blank}} rain this afternoon.',
             'blank_word' => 'may',
-            'translation' => '今天下午可能會下雨。',
             'distractors' => [
                 ['vocabulary_id' => 762, 'word' => 'discover'],
                 ['vocabulary_id' => 763, 'word' => 'begin'],
@@ -9883,7 +9118,6 @@ return [
             'vocabulary_id' => 766,
             'sentence' => 'I need a {{blank}} to write my name.',
             'blank_word' => 'pencil',
-            'translation' => '我需要一枝鉛筆來寫我的名字。',
             'distractors' => [
                 ['vocabulary_id' => 761, 'word' => 'chance'],
                 ['vocabulary_id' => 762, 'word' => 'discover'],
@@ -9896,7 +9130,6 @@ return [
             'vocabulary_id' => 767,
             'sentence' => 'Please bring {{blank}} book to class.',
             'blank_word' => 'your',
-            'translation' => '請把你的書帶到課堂上。',
             'distractors' => [
                 ['vocabulary_id' => 769, 'word' => 'young'],
                 ['vocabulary_id' => 761, 'word' => 'chance'],
@@ -9909,7 +9142,6 @@ return [
             'vocabulary_id' => 768,
             'sentence' => 'I {{blank}} my shoes before I run.',
             'blank_word' => 'tie',
-            'translation' => '我跑步前會綁好鞋帶。',
             'distractors' => [
                 ['vocabulary_id' => 762, 'word' => 'discover'],
                 ['vocabulary_id' => 763, 'word' => 'begin'],
@@ -9920,7 +9152,6 @@ return [
             'vocabulary_id' => 769,
             'sentence' => 'The {{blank}} boy likes to play outside.',
             'blank_word' => 'young',
-            'translation' => '那個年輕的小男孩喜歡在外面玩。',
             'distractors' => [
                 ['vocabulary_id' => 767, 'word' => 'your'],
                 ['vocabulary_id' => 761, 'word' => 'chance'],
@@ -9933,7 +9164,6 @@ return [
             'vocabulary_id' => 770,
             'sentence' => 'I found a ball, and {{blank}} is red.',
             'blank_word' => 'it',
-            'translation' => '我找到一顆球，而它是紅色的。',
             'distractors' => [
                 ['vocabulary_id' => 761, 'word' => 'chance'],
                 ['vocabulary_id' => 762, 'word' => 'discover'],
@@ -9948,7 +9178,6 @@ return [
             'vocabulary_id' => 771,
             'sentence' => 'She put the apples in the {{blank}}.',
             'blank_word' => 'basket',
-            'translation' => '她把蘋果放進籃子裡。',
             'distractors' => [
                 ['vocabulary_id' => 777, 'word' => 'butterfly'],
                 ['vocabulary_id' => 778, 'word' => 'joke'],
@@ -9961,7 +9190,6 @@ return [
             'vocabulary_id' => 772,
             'sentence' => 'He is wearing a {{blank}} shirt.',
             'blank_word' => 'white',
-            'translation' => '他穿著一件白色的襯衫。',
             'distractors' => [
                 ['vocabulary_id' => 775, 'word' => 'close'],
                 ['vocabulary_id' => 776, 'word' => 'these'],
@@ -9972,7 +9200,6 @@ return [
             'vocabulary_id' => 773,
             'sentence' => 'We will {{blank}} the zoo on Sunday.',
             'blank_word' => 'visit',
-            'translation' => '我們星期日要參觀動物園。',
             'distractors' => [
                 ['vocabulary_id' => 774, 'word' => 'shop'],
                 ['vocabulary_id' => 779, 'word' => 'talk'],
@@ -9985,7 +9212,6 @@ return [
             'vocabulary_id' => 774,
             'sentence' => 'My mother and I {{blank}} at the market on Saturdays.',
             'blank_word' => 'shop',
-            'translation' => '我和媽媽星期六在市場購物。',
             'distractors' => [
                 ['vocabulary_id' => 773, 'word' => 'visit'],
                 ['vocabulary_id' => 779, 'word' => 'talk'],
@@ -9998,7 +9224,6 @@ return [
             'vocabulary_id' => 775,
             'sentence' => 'Amy and Lily are {{blank}} friends.',
             'blank_word' => 'close',
-            'translation' => '艾咪和莉莉是親密的朋友。',
             'distractors' => [
                 ['vocabulary_id' => 772, 'word' => 'white'],
                 ['vocabulary_id' => 776, 'word' => 'these'],
@@ -10009,7 +9234,6 @@ return [
             'vocabulary_id' => 776,
             'sentence' => '{{blank}} are my favorite books.',
             'blank_word' => 'These',
-            'translation' => '這些是我最喜歡的書。',
             'distractors' => [
                 ['vocabulary_id' => 772, 'word' => 'White'],
                 ['vocabulary_id' => 775, 'word' => 'Close'],
@@ -10020,7 +9244,6 @@ return [
             'vocabulary_id' => 777,
             'sentence' => 'A beautiful {{blank}} landed on the flower.',
             'blank_word' => 'butterfly',
-            'translation' => '一隻美麗的蝴蝶停在花朵上。',
             'distractors' => [
                 ['vocabulary_id' => 771, 'word' => 'basket'],
                 ['vocabulary_id' => 778, 'word' => 'joke'],
@@ -10033,7 +9256,6 @@ return [
             'vocabulary_id' => 778,
             'sentence' => 'Tom told a funny {{blank}} at lunch.',
             'blank_word' => 'joke',
-            'translation' => '湯姆午餐時講了一個有趣的玩笑。',
             'distractors' => [
                 ['vocabulary_id' => 771, 'word' => 'basket'],
                 ['vocabulary_id' => 777, 'word' => 'butterfly'],
@@ -10046,7 +9268,6 @@ return [
             'vocabulary_id' => 779,
             'sentence' => 'I like to {{blank}} with my friends after school.',
             'blank_word' => 'talk',
-            'translation' => '我喜歡放學後和朋友聊天。',
             'distractors' => [
                 ['vocabulary_id' => 773, 'word' => 'visit'],
                 ['vocabulary_id' => 774, 'word' => 'shop'],
@@ -10059,7 +9280,6 @@ return [
             'vocabulary_id' => 780,
             'sentence' => 'There are {{blank}} apples in the basket.',
             'blank_word' => 'several',
-            'translation' => '籃子裡有幾顆蘋果。',
             'distractors' => [
                 ['vocabulary_id' => 772, 'word' => 'white'],
                 ['vocabulary_id' => 775, 'word' => 'close'],
@@ -10072,7 +9292,6 @@ return [
             'vocabulary_id' => 781,
             'sentence' => 'The {{blank}} of the sky is blue.',
             'blank_word' => 'color',
-            'translation' => '天空的顏色是藍色的。',
             'distractors' => [
                 ['vocabulary_id' => 784, 'word' => 'four'],
                 ['vocabulary_id' => 785, 'word' => 'robot'],
@@ -10084,7 +9303,6 @@ return [
             'vocabulary_id' => 782,
             'sentence' => 'I like to {{blank}} a cat.',
             'blank_word' => 'draw',
-            'translation' => '我喜歡畫一隻貓。',
             'distractors' => [
                 ['vocabulary_id' => 781, 'word' => 'color'],
                 ['vocabulary_id' => 783, 'word' => 'black'],
@@ -10097,7 +9315,6 @@ return [
             'vocabulary_id' => 783,
             'sentence' => 'He has a {{blank}} hat.',
             'blank_word' => 'black',
-            'translation' => '他有一頂黑色的帽子。',
             'distractors' => [
                 ['vocabulary_id' => 786, 'word' => 'heavy'],
                 ['vocabulary_id' => 781, 'word' => 'color'],
@@ -10110,7 +9327,6 @@ return [
             'vocabulary_id' => 784,
             'sentence' => 'I counted to {{blank}}.',
             'blank_word' => 'four',
-            'translation' => '我數到四。',
             'distractors' => [
                 ['vocabulary_id' => 781, 'word' => 'color'],
                 ['vocabulary_id' => 785, 'word' => 'robot'],
@@ -10122,7 +9338,6 @@ return [
             'vocabulary_id' => 785,
             'sentence' => 'The {{blank}} can walk and talk.',
             'blank_word' => 'robot',
-            'translation' => '這個機器人會走路和說話。',
             'distractors' => [
                 ['vocabulary_id' => 781, 'word' => 'color'],
                 ['vocabulary_id' => 784, 'word' => 'four'],
@@ -10134,7 +9349,6 @@ return [
             'vocabulary_id' => 786,
             'sentence' => 'This box is too {{blank}} for me.',
             'blank_word' => 'heavy',
-            'translation' => '這個箱子對我來說太重了。',
             'distractors' => [
                 ['vocabulary_id' => 783, 'word' => 'black'],
                 ['vocabulary_id' => 781, 'word' => 'color'],
@@ -10147,7 +9361,6 @@ return [
             'vocabulary_id' => 787,
             'sentence' => 'The {{blank}} is sleeping.',
             'blank_word' => 'baby',
-            'translation' => '那個嬰兒正在睡覺。',
             'distractors' => [
                 ['vocabulary_id' => 781, 'word' => 'color'],
                 ['vocabulary_id' => 784, 'word' => 'four'],
@@ -10159,7 +9372,6 @@ return [
             'vocabulary_id' => 788,
             'sentence' => 'The shoes are {{blank}} the bed.',
             'blank_word' => 'below',
-            'translation' => '鞋子在床的下面。',
             'distractors' => [
                 ['vocabulary_id' => 781, 'word' => 'color'],
                 ['vocabulary_id' => 782, 'word' => 'draw'],
@@ -10172,7 +9384,6 @@ return [
             'vocabulary_id' => 789,
             'sentence' => 'We are having a birthday {{blank}} tonight.',
             'blank_word' => 'party',
-            'translation' => '我們今晚要舉辦生日派對。',
             'distractors' => [
                 ['vocabulary_id' => 781, 'word' => 'color'],
                 ['vocabulary_id' => 784, 'word' => 'four'],
@@ -10184,7 +9395,6 @@ return [
             'vocabulary_id' => 790,
             'sentence' => '{{blank}} it will rain tomorrow.',
             'blank_word' => 'Perhaps',
-            'translation' => '明天大概會下雨。',
             'distractors' => [
                 ['vocabulary_id' => 781, 'word' => 'Color'],
                 ['vocabulary_id' => 782, 'word' => 'Draw'],
@@ -10199,7 +9409,6 @@ return [
             'vocabulary_id' => 791,
             'sentence' => 'Our team can {{blank}} the game.',
             'blank_word' => 'win',
-            'translation' => '我們的隊伍可以贏得比賽。',
             'distractors' => [
                 ['vocabulary_id' => 793, 'word' => 'wait'],
                 ['vocabulary_id' => 800, 'word' => 'belong'],
@@ -10212,7 +9421,6 @@ return [
             'vocabulary_id' => 792,
             'sentence' => 'She works {{blank}} a teacher.',
             'blank_word' => 'as',
-            'translation' => '她當老師。',
             'distractors' => [
                 ['vocabulary_id' => 791, 'word' => 'win'],
                 ['vocabulary_id' => 793, 'word' => 'wait'],
@@ -10225,7 +9433,6 @@ return [
             'vocabulary_id' => 793,
             'sentence' => 'Please {{blank}} here.',
             'blank_word' => 'wait',
-            'translation' => '請在這裡等候。',
             'distractors' => [
                 ['vocabulary_id' => 791, 'word' => 'win'],
                 ['vocabulary_id' => 800, 'word' => 'belong'],
@@ -10238,7 +9445,6 @@ return [
             'vocabulary_id' => 794,
             'sentence' => 'The boy is flying a {{blank}}.',
             'blank_word' => 'kite',
-            'translation' => '那個男孩正在放風箏。',
             'distractors' => [
                 ['vocabulary_id' => 796, 'word' => 'snow'],
                 ['vocabulary_id' => 797, 'word' => 'gas'],
@@ -10250,7 +9456,6 @@ return [
             'vocabulary_id' => 795,
             'sentence' => 'The blue bag is {{blank}}.',
             'blank_word' => 'his',
-            'translation' => '那個藍色的包包是他的。',
             'distractors' => [
                 ['vocabulary_id' => 791, 'word' => 'win'],
                 ['vocabulary_id' => 792, 'word' => 'as'],
@@ -10263,7 +9468,6 @@ return [
             'vocabulary_id' => 796,
             'sentence' => 'The {{blank}} is white and cold.',
             'blank_word' => 'snow',
-            'translation' => '雪是白色的，而且很冷。',
             'distractors' => [
                 ['vocabulary_id' => 794, 'word' => 'kite'],
                 ['vocabulary_id' => 797, 'word' => 'gas'],
@@ -10275,7 +9479,6 @@ return [
             'vocabulary_id' => 797,
             'sentence' => 'We need to put {{blank}} in the car.',
             'blank_word' => 'gas',
-            'translation' => '我們需要替汽車加汽油。',
             'distractors' => [
                 ['vocabulary_id' => 794, 'word' => 'kite'],
                 ['vocabulary_id' => 796, 'word' => 'snow'],
@@ -10287,7 +9490,6 @@ return [
             'vocabulary_id' => 798,
             'sentence' => '{{blank}} am a student.',
             'blank_word' => 'I',
-            'translation' => '我是學生。',
             'distractors' => [
                 ['vocabulary_id' => 794, 'word' => 'kite'],
                 ['vocabulary_id' => 796, 'word' => 'snow'],
@@ -10299,7 +9501,6 @@ return [
             'vocabulary_id' => 799,
             'sentence' => 'My mom made an apple {{blank}}.',
             'blank_word' => 'pie',
-            'translation' => '我媽媽做了一個蘋果派。',
             'distractors' => [
                 ['vocabulary_id' => 794, 'word' => 'kite'],
                 ['vocabulary_id' => 796, 'word' => 'snow'],
@@ -10311,7 +9512,6 @@ return [
             'vocabulary_id' => 800,
             'sentence' => 'These books {{blank}} to me.',
             'blank_word' => 'belong',
-            'translation' => '這些書屬於我。',
             'distractors' => [
                 ['vocabulary_id' => 791, 'word' => 'win'],
                 ['vocabulary_id' => 793, 'word' => 'wait'],
@@ -10326,7 +9526,6 @@ return [
             'vocabulary_id' => 801,
             'sentence' => 'The cat is {{blank}} the door.',
             'blank_word' => 'behind',
-            'translation' => '那隻貓在門後面。',
             'distractors' => [
                 ['vocabulary_id' => 802, 'word' => 'cola'],
                 ['vocabulary_id' => 803, 'word' => 'here'],
@@ -10339,7 +9538,6 @@ return [
             'vocabulary_id' => 802,
             'sentence' => 'I would like a glass of {{blank}}.',
             'blank_word' => 'cola',
-            'translation' => '我想要一杯可樂。',
             'distractors' => [
                 ['vocabulary_id' => 806, 'word' => 'dollar'],
                 ['vocabulary_id' => 807, 'word' => 'lady'],
@@ -10351,7 +9549,6 @@ return [
             'vocabulary_id' => 803,
             'sentence' => 'Please sit {{blank}}.',
             'blank_word' => 'here',
-            'translation' => '請坐在這裡。',
             'distractors' => [
                 ['vocabulary_id' => 801, 'word' => 'behind'],
                 ['vocabulary_id' => 802, 'word' => 'cola'],
@@ -10364,7 +9561,6 @@ return [
             'vocabulary_id' => 804,
             'sentence' => 'Be careful with that {{blank}} knife.',
             'blank_word' => 'sharp',
-            'translation' => '小心那把尖銳的刀子。',
             'distractors' => [
                 ['vocabulary_id' => 801, 'word' => 'behind'],
                 ['vocabulary_id' => 802, 'word' => 'cola'],
@@ -10377,7 +9573,6 @@ return [
             'vocabulary_id' => 805,
             'sentence' => 'We {{blank}} meet at the park tomorrow.',
             'blank_word' => 'shall',
-            'translation' => '我們明天將在公園見面。',
             'distractors' => [
                 ['vocabulary_id' => 801, 'word' => 'behind'],
                 ['vocabulary_id' => 802, 'word' => 'cola'],
@@ -10390,7 +9585,6 @@ return [
             'vocabulary_id' => 806,
             'sentence' => 'This toy costs one {{blank}}.',
             'blank_word' => 'dollar',
-            'translation' => '這個玩具要一美元。',
             'distractors' => [
                 ['vocabulary_id' => 802, 'word' => 'cola'],
                 ['vocabulary_id' => 807, 'word' => 'lady'],
@@ -10402,7 +9596,6 @@ return [
             'vocabulary_id' => 807,
             'sentence' => 'That {{blank}} is my teacher.',
             'blank_word' => 'lady',
-            'translation' => '那位女士是我的老師。',
             'distractors' => [
                 ['vocabulary_id' => 802, 'word' => 'cola'],
                 ['vocabulary_id' => 806, 'word' => 'dollar'],
@@ -10414,7 +9607,6 @@ return [
             'vocabulary_id' => 808,
             'sentence' => 'He drinks tea from a large {{blank}}.',
             'blank_word' => 'mug',
-            'translation' => '他用一個大杯子喝茶。',
             'distractors' => [
                 ['vocabulary_id' => 802, 'word' => 'cola'],
                 ['vocabulary_id' => 806, 'word' => 'dollar'],
@@ -10426,7 +9618,6 @@ return [
             'vocabulary_id' => 809,
             'sentence' => 'We watched a funny {{blank}} last night.',
             'blank_word' => 'movie',
-            'translation' => '我們昨晚看了一部有趣的電影。',
             'distractors' => [
                 ['vocabulary_id' => 802, 'word' => 'cola'],
                 ['vocabulary_id' => 806, 'word' => 'dollar'],
@@ -10438,7 +9629,6 @@ return [
             'vocabulary_id' => 810,
             'sentence' => 'I do not know {{blank}} he is at home.',
             'blank_word' => 'whether',
-            'translation' => '我不知道他是否在家。',
             'distractors' => [
                 ['vocabulary_id' => 801, 'word' => 'behind'],
                 ['vocabulary_id' => 802, 'word' => 'cola'],
@@ -10453,7 +9643,6 @@ return [
             'vocabulary_id' => 811,
             'sentence' => 'She has a {{blank}} bag.',
             'blank_word' => 'brown',
-            'translation' => '她有一個褐色的包包。',
             'distractors' => [
                 ['vocabulary_id' => 814, 'word' => 'sorry'],
                 ['vocabulary_id' => 812, 'word' => 'snake'],
@@ -10466,7 +9655,6 @@ return [
             'vocabulary_id' => 812,
             'sentence' => 'The {{blank}} is hiding under the rock.',
             'blank_word' => 'snake',
-            'translation' => '那條蛇正躲在岩石下面。',
             'distractors' => [
                 ['vocabulary_id' => 815, 'word' => 'pocket'],
                 ['vocabulary_id' => 816, 'word' => 'yesterday'],
@@ -10479,7 +9667,6 @@ return [
             'vocabulary_id' => 813,
             'sentence' => 'The children {{blank}} to the music.',
             'blank_word' => 'dance',
-            'translation' => '孩子們隨著音樂跳舞。',
             'distractors' => [
                 ['vocabulary_id' => 818, 'word' => 'listen'],
                 ['vocabulary_id' => 811, 'word' => 'brown'],
@@ -10492,7 +9679,6 @@ return [
             'vocabulary_id' => 814,
             'sentence' => 'I am {{blank}} for being late.',
             'blank_word' => 'sorry',
-            'translation' => '我很抱歉遲到了。',
             'distractors' => [
                 ['vocabulary_id' => 811, 'word' => 'brown'],
                 ['vocabulary_id' => 812, 'word' => 'snake'],
@@ -10505,7 +9691,6 @@ return [
             'vocabulary_id' => 815,
             'sentence' => 'There is a coin in my {{blank}}.',
             'blank_word' => 'pocket',
-            'translation' => '我的口袋裡有一枚硬幣。',
             'distractors' => [
                 ['vocabulary_id' => 812, 'word' => 'snake'],
                 ['vocabulary_id' => 816, 'word' => 'yesterday'],
@@ -10518,7 +9703,6 @@ return [
             'vocabulary_id' => 816,
             'sentence' => '{{blank}} was my birthday.',
             'blank_word' => 'Yesterday',
-            'translation' => '昨天是我的生日。',
             'distractors' => [
                 ['vocabulary_id' => 812, 'word' => 'Snake'],
                 ['vocabulary_id' => 815, 'word' => 'Pocket'],
@@ -10531,7 +9715,6 @@ return [
             'vocabulary_id' => 817,
             'sentence' => 'Please put the clean {{blank}} on the table.',
             'blank_word' => 'dish',
-            'translation' => '請把乾淨的碟子放在桌上。',
             'distractors' => [
                 ['vocabulary_id' => 812, 'word' => 'snake'],
                 ['vocabulary_id' => 815, 'word' => 'pocket'],
@@ -10544,7 +9727,6 @@ return [
             'vocabulary_id' => 818,
             'sentence' => 'Please {{blank}} to the teacher.',
             'blank_word' => 'listen',
-            'translation' => '請聽老師說話。',
             'distractors' => [
                 ['vocabulary_id' => 813, 'word' => 'dance'],
                 ['vocabulary_id' => 811, 'word' => 'brown'],
@@ -10557,7 +9739,6 @@ return [
             'vocabulary_id' => 819,
             'sentence' => 'The president gave a short {{blank}}.',
             'blank_word' => 'speech',
-            'translation' => '校長發表了一篇簡短的演說。',
             'distractors' => [
                 ['vocabulary_id' => 812, 'word' => 'snake'],
                 ['vocabulary_id' => 815, 'word' => 'pocket'],
@@ -10570,7 +9751,6 @@ return [
             'vocabulary_id' => 820,
             'sentence' => 'There is plenty of {{blank}} for everyone.',
             'blank_word' => 'food',
-            'translation' => '有足夠的食物給每個人。',
             'distractors' => [
                 ['vocabulary_id' => 812, 'word' => 'snake'],
                 ['vocabulary_id' => 815, 'word' => 'pocket'],
@@ -10585,7 +9765,6 @@ return [
             'vocabulary_id' => 821,
             'sentence' => 'I brush my teeth {{blank}} a day.',
             'blank_word' => 'twice',
-            'translation' => '我一天刷兩次牙。',
             'distractors' => [
                 ['vocabulary_id' => 822, 'word' => 'band'],
                 ['vocabulary_id' => 823, 'word' => 'uncle'],
@@ -10598,7 +9777,6 @@ return [
             'vocabulary_id' => 822,
             'sentence' => 'The {{blank}} on my hat is blue.',
             'blank_word' => 'band',
-            'translation' => '我帽子上的綁帶是藍色的。',
             'distractors' => [
                 ['vocabulary_id' => 823, 'word' => 'uncle'],
                 ['vocabulary_id' => 824, 'word' => 'autumn'],
@@ -10611,7 +9789,6 @@ return [
             'vocabulary_id' => 823,
             'sentence' => 'My {{blank}} takes me to school.',
             'blank_word' => 'uncle',
-            'translation' => '我叔叔會載我上學。',
             'distractors' => [
                 ['vocabulary_id' => 822, 'word' => 'band'],
                 ['vocabulary_id' => 824, 'word' => 'autumn'],
@@ -10624,7 +9801,6 @@ return [
             'vocabulary_id' => 824,
             'sentence' => 'The leaves turn red in {{blank}}.',
             'blank_word' => 'autumn',
-            'translation' => '秋天時，葉子會變紅。',
             'distractors' => [
                 ['vocabulary_id' => 822, 'word' => 'band'],
                 ['vocabulary_id' => 823, 'word' => 'uncle'],
@@ -10637,7 +9813,6 @@ return [
             'vocabulary_id' => 825,
             'sentence' => 'The {{blank}} children are playing outside.',
             'blank_word' => 'other',
-            'translation' => '其餘的孩子正在外面玩。',
             'distractors' => [
                 ['vocabulary_id' => 821, 'word' => 'twice'],
                 ['vocabulary_id' => 822, 'word' => 'band'],
@@ -10650,7 +9825,6 @@ return [
             'vocabulary_id' => 826,
             'sentence' => 'The baby {{blank}} for the toy.',
             'blank_word' => 'reached',
-            'translation' => '那個嬰兒伸手去拿玩具。',
             'distractors' => [
                 ['vocabulary_id' => 830, 'word' => 'sang'],
                 ['vocabulary_id' => 821, 'word' => 'twice'],
@@ -10663,7 +9837,6 @@ return [
             'vocabulary_id' => 827,
             'sentence' => 'He ate a chocolate {{blank}} after lunch.',
             'blank_word' => 'bar',
-            'translation' => '他午餐後吃了一條巧克力棒。',
             'distractors' => [
                 ['vocabulary_id' => 822, 'word' => 'band'],
                 ['vocabulary_id' => 823, 'word' => 'uncle'],
@@ -10676,7 +9849,6 @@ return [
             'vocabulary_id' => 828,
             'sentence' => 'We need to take {{blank}} now.',
             'blank_word' => 'action',
-            'translation' => '我們現在需要採取行動。',
             'distractors' => [
                 ['vocabulary_id' => 822, 'word' => 'band'],
                 ['vocabulary_id' => 823, 'word' => 'uncle'],
@@ -10689,7 +9861,6 @@ return [
             'vocabulary_id' => 829,
             'sentence' => 'I read a book every {{blank}}.',
             'blank_word' => 'day',
-            'translation' => '我每天讀一本書。',
             'distractors' => [
                 ['vocabulary_id' => 822, 'word' => 'band'],
                 ['vocabulary_id' => 823, 'word' => 'uncle'],
@@ -10702,7 +9873,6 @@ return [
             'vocabulary_id' => 830,
             'sentence' => 'The children {{blank}} in class.',
             'blank_word' => 'sing',
-            'translation' => '孩子們在課堂上唱歌。',
             'distractors' => [
                 ['vocabulary_id' => 826, 'word' => 'reach'],
                 ['vocabulary_id' => 821, 'word' => 'twice'],
@@ -10717,7 +9887,6 @@ return [
             'vocabulary_id' => 831,
             'sentence' => 'Some flowers {{blank}} without water.',
             'blank_word' => 'die',
-            'translation' => '有些花沒有水就會枯死。',
             'distractors' => [
                 ['vocabulary_id' => 832, 'word' => 'miss'],
                 ['vocabulary_id' => 833, 'word' => 'news'],
@@ -10730,7 +9899,6 @@ return [
             'vocabulary_id' => 832,
             'sentence' => 'I {{blank}} my grandparents when I am away.',
             'blank_word' => 'miss',
-            'translation' => '我不在家時會想念我的祖父母。',
             'distractors' => [
                 ['vocabulary_id' => 831, 'word' => 'die'],
                 ['vocabulary_id' => 833, 'word' => 'news'],
@@ -10743,7 +9911,6 @@ return [
             'vocabulary_id' => 833,
             'sentence' => 'Dad watches the {{blank}} every evening.',
             'blank_word' => 'news',
-            'translation' => '爸爸每天晚上看新聞。',
             'distractors' => [
                 ['vocabulary_id' => 834, 'word' => 'air'],
                 ['vocabulary_id' => 835, 'word' => 'forty'],
@@ -10757,7 +9924,6 @@ return [
             'vocabulary_id' => 834,
             'sentence' => 'We need clean {{blank}} to stay healthy.',
             'blank_word' => 'air',
-            'translation' => '我們需要乾淨的空氣才能保持健康。',
             'distractors' => [
                 ['vocabulary_id' => 833, 'word' => 'news'],
                 ['vocabulary_id' => 835, 'word' => 'forty'],
@@ -10771,7 +9937,6 @@ return [
             'vocabulary_id' => 835,
             'sentence' => '{{blank}} is a large number for a small classroom.',
             'blank_word' => 'Forty',
-            'translation' => '四十對一間小教室來說是個很大的數字。',
             'distractors' => [
                 ['vocabulary_id' => 833, 'word' => 'News'],
                 ['vocabulary_id' => 834, 'word' => 'Air'],
@@ -10785,7 +9950,6 @@ return [
             'vocabulary_id' => 836,
             'sentence' => 'I lived in Taipei {{blank}}.',
             'blank_word' => 'then',
-            'translation' => '那時我住在臺北。',
             'distractors' => [
                 ['vocabulary_id' => 833, 'word' => 'news'],
                 ['vocabulary_id' => 834, 'word' => 'air'],
@@ -10799,7 +9963,6 @@ return [
             'vocabulary_id' => 837,
             'sentence' => 'My birthday is in {{blank}}.',
             'blank_word' => 'December',
-            'translation' => '我的生日在十二月。',
             'distractors' => [
                 ['vocabulary_id' => 833, 'word' => 'news'],
                 ['vocabulary_id' => 834, 'word' => 'air'],
@@ -10813,7 +9976,6 @@ return [
             'vocabulary_id' => 838,
             'sentence' => 'She bought a {{blank}} eggs.',
             'blank_word' => 'dozen',
-            'translation' => '她買了一打雞蛋。',
             'distractors' => [
                 ['vocabulary_id' => 833, 'word' => 'news'],
                 ['vocabulary_id' => 834, 'word' => 'air'],
@@ -10827,7 +9989,6 @@ return [
             'vocabulary_id' => 839,
             'sentence' => 'There is a coin at the {{blank}} of the bag.',
             'blank_word' => 'bottom',
-            'translation' => '袋子的底部有一枚硬幣。',
             'distractors' => [
                 ['vocabulary_id' => 833, 'word' => 'news'],
                 ['vocabulary_id' => 834, 'word' => 'air'],
@@ -10841,7 +10002,6 @@ return [
             'vocabulary_id' => 840,
             'sentence' => 'It is very hot in {{blank}}.',
             'blank_word' => 'July',
-            'translation' => '七月的天氣很炎熱。',
             'distractors' => [
                 ['vocabulary_id' => 833, 'word' => 'news'],
                 ['vocabulary_id' => 834, 'word' => 'air'],
@@ -10857,7 +10017,6 @@ return [
             'vocabulary_id' => 841,
             'sentence' => 'I {{blank}} in a small house with my family.',
             'blank_word' => 'live',
-            'translation' => '我和家人住在一間小房子裡。',
             'distractors' => [
                 ['vocabulary_id' => 844, 'word' => 'pay'],
                 ['vocabulary_id' => 847, 'word' => 'fight'],
@@ -10869,7 +10028,6 @@ return [
             'vocabulary_id' => 842,
             'sentence' => 'The {{blank}} of the box is empty.',
             'blank_word' => 'inside',
-            'translation' => '盒子的內部是空的。',
             'distractors' => [
                 ['vocabulary_id' => 845, 'word' => 'point'],
                 ['vocabulary_id' => 846, 'word' => 'ticket'],
@@ -10880,7 +10038,6 @@ return [
             'vocabulary_id' => 843,
             'sentence' => 'The lake is {{blank}} in the early morning.',
             'blank_word' => 'still',
-            'translation' => '這座湖在清晨時很平靜。',
             'distractors' => [
                 ['vocabulary_id' => 848, 'word' => 'red'],
                 ['vocabulary_id' => 841, 'word' => 'live'],
@@ -10893,7 +10050,6 @@ return [
             'vocabulary_id' => 844,
             'sentence' => 'I need to {{blank}} for my lunch.',
             'blank_word' => 'pay',
-            'translation' => '我需要為我的午餐付錢。',
             'distractors' => [
                 ['vocabulary_id' => 841, 'word' => 'live'],
                 ['vocabulary_id' => 847, 'word' => 'fight'],
@@ -10905,7 +10061,6 @@ return [
             'vocabulary_id' => 845,
             'sentence' => 'The {{blank}} of this pencil is very sharp.',
             'blank_word' => 'point',
-            'translation' => '這支鉛筆的尖端非常尖。',
             'distractors' => [
                 ['vocabulary_id' => 842, 'word' => 'inside'],
                 ['vocabulary_id' => 846, 'word' => 'ticket'],
@@ -10916,7 +10071,6 @@ return [
             'vocabulary_id' => 846,
             'sentence' => 'I bought a {{blank}} for the bus.',
             'blank_word' => 'ticket',
-            'translation' => '我買了一張公車票。',
             'distractors' => [
                 ['vocabulary_id' => 842, 'word' => 'inside'],
                 ['vocabulary_id' => 845, 'word' => 'point'],
@@ -10927,7 +10081,6 @@ return [
             'vocabulary_id' => 847,
             'sentence' => 'The two boys started to {{blank}} on the playground.',
             'blank_word' => 'fight',
-            'translation' => '那兩個男孩開始在操場上打架。',
             'distractors' => [
                 ['vocabulary_id' => 841, 'word' => 'live'],
                 ['vocabulary_id' => 844, 'word' => 'pay'],
@@ -10939,7 +10092,6 @@ return [
             'vocabulary_id' => 848,
             'sentence' => 'She is wearing a {{blank}} dress.',
             'blank_word' => 'red',
-            'translation' => '她穿著一件紅色的洋裝。',
             'distractors' => [
                 ['vocabulary_id' => 843, 'word' => 'still'],
                 ['vocabulary_id' => 841, 'word' => 'live'],
@@ -10952,7 +10104,6 @@ return [
             'vocabulary_id' => 849,
             'sentence' => 'The book {{blank}} ten dollars.',
             'blank_word' => 'costs',
-            'translation' => '這本書要花十美元。',
             'distractors' => [
                 ['vocabulary_id' => 841, 'word' => 'lives'],
                 ['vocabulary_id' => 844, 'word' => 'pays'],
@@ -10964,7 +10115,6 @@ return [
             'vocabulary_id' => 850,
             'sentence' => 'Please {{blank}} the door open.',
             'blank_word' => 'pull',
-            'translation' => '請把門拉開。',
             'distractors' => [
                 ['vocabulary_id' => 841, 'word' => 'live'],
                 ['vocabulary_id' => 844, 'word' => 'pay'],
@@ -10978,7 +10128,6 @@ return [
             'vocabulary_id' => 851,
             'sentence' => 'We went to my sister\'s {{blank}} last Sunday.',
             'blank_word' => 'wedding',
-            'translation' => '上星期日我們參加了我姊姊的婚禮。',
             'distractors' => [
                 ['vocabulary_id' => 853, 'word' => 'station'],
                 ['vocabulary_id' => 855, 'word' => 'house'],
@@ -10992,7 +10141,6 @@ return [
             'vocabulary_id' => 852,
             'sentence' => '{{blank}} it was raining, we went outside.',
             'blank_word' => 'Though',
-            'translation' => '雖然正在下雨，我們還是出去了。',
             'distractors' => [
                 ['vocabulary_id' => 851, 'word' => 'Wedding'],
                 ['vocabulary_id' => 853, 'word' => 'Station'],
@@ -11005,7 +10153,6 @@ return [
             'vocabulary_id' => 853,
             'sentence' => 'The train will arrive at the {{blank}} soon.',
             'blank_word' => 'station',
-            'translation' => '火車很快就會抵達車站。',
             'distractors' => [
                 ['vocabulary_id' => 851, 'word' => 'wedding'],
                 ['vocabulary_id' => 855, 'word' => 'house'],
@@ -11019,7 +10166,6 @@ return [
             'vocabulary_id' => 854,
             'sentence' => 'I will {{blank}} to make a cake.',
             'blank_word' => 'try',
-            'translation' => '我會試著做一個蛋糕。',
             'distractors' => [
                 ['vocabulary_id' => 851, 'word' => 'wedding'],
                 ['vocabulary_id' => 852, 'word' => 'though'],
@@ -11032,7 +10178,6 @@ return [
             'vocabulary_id' => 855,
             'sentence' => 'Their {{blank}} has a big garden.',
             'blank_word' => 'house',
-            'translation' => '他們的房子有一座大花園。',
             'distractors' => [
                 ['vocabulary_id' => 851, 'word' => 'wedding'],
                 ['vocabulary_id' => 853, 'word' => 'station'],
@@ -11046,7 +10191,6 @@ return [
             'vocabulary_id' => 856,
             'sentence' => 'My birthday is in {{blank}}.',
             'blank_word' => 'November',
-            'translation' => '我的生日在十一月。',
             'distractors' => [
                 ['vocabulary_id' => 851, 'word' => 'wedding'],
                 ['vocabulary_id' => 853, 'word' => 'station'],
@@ -11060,7 +10204,6 @@ return [
             'vocabulary_id' => 857,
             'sentence' => 'There is a letter in the {{blank}} for you.',
             'blank_word' => 'mail',
-            'translation' => '郵件裡有一封寄給你的信。',
             'distractors' => [
                 ['vocabulary_id' => 851, 'word' => 'wedding'],
                 ['vocabulary_id' => 853, 'word' => 'station'],
@@ -11074,7 +10217,6 @@ return [
             'vocabulary_id' => 858,
             'sentence' => 'The singer changed her {{blank}} at the end of the song.',
             'blank_word' => 'tone',
-            'translation' => '那位歌手在歌曲結尾改變了她的音調。',
             'distractors' => [
                 ['vocabulary_id' => 851, 'word' => 'wedding'],
                 ['vocabulary_id' => 853, 'word' => 'station'],
@@ -11088,7 +10230,6 @@ return [
             'vocabulary_id' => 859,
             'sentence' => 'Please sit on this {{blank}}.',
             'blank_word' => 'chair',
-            'translation' => '請坐在這張椅子上。',
             'distractors' => [
                 ['vocabulary_id' => 851, 'word' => 'wedding'],
                 ['vocabulary_id' => 853, 'word' => 'station'],
@@ -11102,7 +10243,6 @@ return [
             'vocabulary_id' => 860,
             'sentence' => 'The school is one {{blank}} from my house.',
             'blank_word' => 'mile',
-            'translation' => '學校距離我家一英里。',
             'distractors' => [
                 ['vocabulary_id' => 851, 'word' => 'wedding'],
                 ['vocabulary_id' => 853, 'word' => 'station'],
@@ -11118,7 +10258,6 @@ return [
             'vocabulary_id' => 861,
             'sentence' => 'The little {{blank}} is following its mother.',
             'blank_word' => 'lamb',
-            'translation' => '小羊正跟在媽媽後面。',
             'distractors' => [
                 ['vocabulary_id' => 862, 'word' => 'piece'],
                 ['vocabulary_id' => 863, 'word' => 'bridge'],
@@ -11132,7 +10271,6 @@ return [
             'vocabulary_id' => 862,
             'sentence' => 'Can I have a {{blank}} of cake?',
             'blank_word' => 'piece',
-            'translation' => '我可以吃一塊蛋糕嗎？',
             'distractors' => [
                 ['vocabulary_id' => 861, 'word' => 'lamb'],
                 ['vocabulary_id' => 863, 'word' => 'bridge'],
@@ -11146,7 +10284,6 @@ return [
             'vocabulary_id' => 863,
             'sentence' => 'We walked across the old {{blank}}.',
             'blank_word' => 'bridge',
-            'translation' => '我們走過那座老橋。',
             'distractors' => [
                 ['vocabulary_id' => 861, 'word' => 'lamb'],
                 ['vocabulary_id' => 862, 'word' => 'piece'],
@@ -11160,7 +10297,6 @@ return [
             'vocabulary_id' => 864,
             'sentence' => 'I like to eat {{blank}} with butter for breakfast.',
             'blank_word' => 'bread',
-            'translation' => '我早餐喜歡吃麵包配奶油。',
             'distractors' => [
                 ['vocabulary_id' => 861, 'word' => 'lamb'],
                 ['vocabulary_id' => 862, 'word' => 'piece'],
@@ -11174,7 +10310,6 @@ return [
             'vocabulary_id' => 865,
             'sentence' => 'They {{blank}} very happy today.',
             'blank_word' => 'seem',
-            'translation' => '他們今天看起來似乎很開心。',
             'distractors' => [
                 ['vocabulary_id' => 870, 'word' => 'lay'],
                 ['vocabulary_id' => 861, 'word' => 'lamb'],
@@ -11187,7 +10322,6 @@ return [
             'vocabulary_id' => 866,
             'sentence' => 'My birthday is in {{blank}}.',
             'blank_word' => 'March',
-            'translation' => '我的生日在三月。',
             'distractors' => [
                 ['vocabulary_id' => 861, 'word' => 'lamb'],
                 ['vocabulary_id' => 862, 'word' => 'piece'],
@@ -11201,7 +10335,6 @@ return [
             'vocabulary_id' => 867,
             'sentence' => 'We go to the park on the {{blank}}.',
             'blank_word' => 'weekend',
-            'translation' => '我們在週末去公園。',
             'distractors' => [
                 ['vocabulary_id' => 861, 'word' => 'lamb'],
                 ['vocabulary_id' => 862, 'word' => 'piece'],
@@ -11215,7 +10348,6 @@ return [
             'vocabulary_id' => 868,
             'sentence' => 'My mother works in a {{blank}}.',
             'blank_word' => 'bank',
-            'translation' => '我媽媽在一家銀行工作。',
             'distractors' => [
                 ['vocabulary_id' => 861, 'word' => 'lamb'],
                 ['vocabulary_id' => 862, 'word' => 'piece'],
@@ -11229,7 +10361,6 @@ return [
             'vocabulary_id' => 869,
             'sentence' => 'My {{blank}} is reading a book in her room.',
             'blank_word' => 'sister',
-            'translation' => '我姊姊正在房間裡看書。',
             'distractors' => [
                 ['vocabulary_id' => 861, 'word' => 'lamb'],
                 ['vocabulary_id' => 862, 'word' => 'piece'],
@@ -11243,7 +10374,6 @@ return [
             'vocabulary_id' => 870,
             'sentence' => 'Please {{blank}} the book on the table.',
             'blank_word' => 'lay',
-            'translation' => '請把書放在桌上。',
             'distractors' => [
                 ['vocabulary_id' => 865, 'word' => 'seem'],
                 ['vocabulary_id' => 861, 'word' => 'lamb'],
@@ -11258,7 +10388,6 @@ return [
             'vocabulary_id' => 871,
             'sentence' => 'This {{blank}} is clean and bright.',
             'blank_word' => 'room',
-            'translation' => '這個房間乾淨又明亮。',
             'distractors' => [
                 ['vocabulary_id' => 873, 'word' => 'bat'],
                 ['vocabulary_id' => 874, 'word' => 'trip'],
@@ -11272,7 +10401,6 @@ return [
             'vocabulary_id' => 872,
             'sentence' => 'He can {{blank}} the drum loudly.',
             'blank_word' => 'beat',
-            'translation' => '他能大聲地敲鼓。',
             'distractors' => [
                 ['vocabulary_id' => 880, 'word' => 'smoke'],
                 ['vocabulary_id' => 871, 'word' => 'room'],
@@ -11285,7 +10413,6 @@ return [
             'vocabulary_id' => 873,
             'sentence' => 'The {{blank}} flies at night.',
             'blank_word' => 'bat',
-            'translation' => '蝙蝠在夜晚飛行。',
             'distractors' => [
                 ['vocabulary_id' => 871, 'word' => 'room'],
                 ['vocabulary_id' => 874, 'word' => 'trip'],
@@ -11299,7 +10426,6 @@ return [
             'vocabulary_id' => 874,
             'sentence' => 'We had a fun {{blank}} to the zoo.',
             'blank_word' => 'trip',
-            'translation' => '我們去動物園玩得很開心。',
             'distractors' => [
                 ['vocabulary_id' => 871, 'word' => 'room'],
                 ['vocabulary_id' => 873, 'word' => 'bat'],
@@ -11313,7 +10439,6 @@ return [
             'vocabulary_id' => 875,
             'sentence' => 'The {{blank}} is running in the yard.',
             'blank_word' => 'dog',
-            'translation' => '那隻狗正在院子裡跑。',
             'distractors' => [
                 ['vocabulary_id' => 871, 'word' => 'room'],
                 ['vocabulary_id' => 873, 'word' => 'bat'],
@@ -11327,7 +10452,6 @@ return [
             'vocabulary_id' => 876,
             'sentence' => 'My {{blank}} visited us yesterday.',
             'blank_word' => 'aunt',
-            'translation' => '我阿姨昨天來拜訪我們。',
             'distractors' => [
                 ['vocabulary_id' => 871, 'word' => 'room'],
                 ['vocabulary_id' => 873, 'word' => 'bat'],
@@ -11341,7 +10465,6 @@ return [
             'vocabulary_id' => 877,
             'sentence' => 'The {{blank}} helps sick people feel better.',
             'blank_word' => 'doctor',
-            'translation' => '醫生幫助生病的人康復。',
             'distractors' => [
                 ['vocabulary_id' => 871, 'word' => 'room'],
                 ['vocabulary_id' => 873, 'word' => 'bat'],
@@ -11355,7 +10478,6 @@ return [
             'vocabulary_id' => 878,
             'sentence' => 'I have a good {{blank}} about this test.',
             'blank_word' => 'feeling',
-            'translation' => '我對這次考試有好的預感。',
             'distractors' => [
                 ['vocabulary_id' => 871, 'word' => 'room'],
                 ['vocabulary_id' => 873, 'word' => 'bat'],
@@ -11369,7 +10491,6 @@ return [
             'vocabulary_id' => 879,
             'sentence' => 'She sat on the right {{blank}} of the bus.',
             'blank_word' => 'side',
-            'translation' => '她坐在公車的右邊。',
             'distractors' => [
                 ['vocabulary_id' => 871, 'word' => 'room'],
                 ['vocabulary_id' => 873, 'word' => 'bat'],
@@ -11383,7 +10504,6 @@ return [
             'vocabulary_id' => 880,
             'sentence' => 'I see white {{blank}} coming from the chimney.',
             'blank_word' => 'smoke',
-            'translation' => '我看到白煙從煙囪冒出來。',
             'distractors' => [
                 ['vocabulary_id' => 871, 'word' => 'room'],
                 ['vocabulary_id' => 872, 'word' => 'beat'],
@@ -11399,7 +10519,6 @@ return [
             'vocabulary_id' => 881,
             'sentence' => 'I wear {{blank}} when I read.',
             'blank_word' => 'glasses',
-            'translation' => '我閱讀時會戴眼鏡。',
             'distractors' => [
                 ['vocabulary_id' => 882, 'word' => 'T-shirt'],
                 ['vocabulary_id' => 884, 'word' => 'leader'],
@@ -11411,7 +10530,6 @@ return [
             'vocabulary_id' => 882,
             'sentence' => 'He is wearing a blue {{blank}}.',
             'blank_word' => 'T-shirt',
-            'translation' => '他穿著一件藍色的短袖圓領汗衫。',
             'distractors' => [
                 ['vocabulary_id' => 881, 'word' => 'glasses'],
                 ['vocabulary_id' => 884, 'word' => 'leader'],
@@ -11423,7 +10541,6 @@ return [
             'vocabulary_id' => 883,
             'sentence' => 'I {{blank}} with your idea.',
             'blank_word' => 'agree',
-            'translation' => '我同意你的想法。',
             'distractors' => [
                 ['vocabulary_id' => 889, 'word' => 'set'],
                 ['vocabulary_id' => 890, 'word' => 'matter'],
@@ -11436,7 +10553,6 @@ return [
             'vocabulary_id' => 884,
             'sentence' => 'Our {{blank}} helps us work together.',
             'blank_word' => 'leader',
-            'translation' => '我們的領袖幫助我們一起合作。',
             'distractors' => [
                 ['vocabulary_id' => 881, 'word' => 'glasses'],
                 ['vocabulary_id' => 882, 'word' => 'T-shirt'],
@@ -11448,7 +10564,6 @@ return [
             'vocabulary_id' => 885,
             'sentence' => 'I rolled a {{blank}} on the dice.',
             'blank_word' => 'five',
-            'translation' => '我擲骰子擲到五點。',
             'distractors' => [
                 ['vocabulary_id' => 881, 'word' => 'glasses'],
                 ['vocabulary_id' => 882, 'word' => 'T-shirt'],
@@ -11460,7 +10575,6 @@ return [
             'vocabulary_id' => 886,
             'sentence' => 'We eat lunch at {{blank}}.',
             'blank_word' => 'noon',
-            'translation' => '我們中午吃午餐。',
             'distractors' => [
                 ['vocabulary_id' => 881, 'word' => 'glasses'],
                 ['vocabulary_id' => 882, 'word' => 'T-shirt'],
@@ -11472,7 +10586,6 @@ return [
             'vocabulary_id' => 887,
             'sentence' => 'She has {{blank}} new bag.',
             'blank_word' => 'a',
-            'translation' => '她有一個新包包。',
             'distractors' => [
                 ['vocabulary_id' => 881, 'word' => 'glasses'],
                 ['vocabulary_id' => 882, 'word' => 'T-shirt'],
@@ -11485,7 +10598,6 @@ return [
             'vocabulary_id' => 888,
             'sentence' => 'There are {{blank}} books on the table.',
             'blank_word' => 'many',
-            'translation' => '桌上有許多書。',
             'distractors' => [
                 ['vocabulary_id' => 881, 'word' => 'glasses'],
                 ['vocabulary_id' => 882, 'word' => 'T-shirt'],
@@ -11498,7 +10610,6 @@ return [
             'vocabulary_id' => 889,
             'sentence' => 'Please {{blank}} the cup on the table.',
             'blank_word' => 'set',
-            'translation' => '請把杯子放在桌上。',
             'distractors' => [
                 ['vocabulary_id' => 883, 'word' => 'agree'],
                 ['vocabulary_id' => 890, 'word' => 'matter'],
@@ -11511,7 +10622,6 @@ return [
             'vocabulary_id' => 890,
             'sentence' => 'It does not {{blank}} if you are late.',
             'blank_word' => 'matter',
-            'translation' => '你遲到也不要緊。',
             'distractors' => [
                 ['vocabulary_id' => 883, 'word' => 'agree'],
                 ['vocabulary_id' => 889, 'word' => 'set'],
@@ -11526,7 +10636,6 @@ return [
             'vocabulary_id' => 891,
             'sentence' => 'The {{blank}} of the fire was a broken wire.',
             'blank_word' => 'cause',
-            'translation' => '火災的原因是一條電線損壞。',
             'distractors' => [
                 ['vocabulary_id' => 893, 'word' => 'grandmother'],
                 ['vocabulary_id' => 894, 'word' => 'thirteen'],
@@ -11540,7 +10649,6 @@ return [
             'vocabulary_id' => 892,
             'sentence' => 'The {{blank}} cost is ten dollars.',
             'blank_word' => 'total',
-            'translation' => '總費用是十美元。',
             'distractors' => [
                 ['vocabulary_id' => 897, 'word' => 'stupid'],
                 ['vocabulary_id' => 891, 'word' => 'cause'],
@@ -11553,7 +10661,6 @@ return [
             'vocabulary_id' => 893,
             'sentence' => 'My {{blank}} makes delicious cookies.',
             'blank_word' => 'grandmother',
-            'translation' => '我的奶奶（外婆）會做美味的餅乾。',
             'distractors' => [
                 ['vocabulary_id' => 891, 'word' => 'cause'],
                 ['vocabulary_id' => 894, 'word' => 'thirteen'],
@@ -11567,7 +10674,6 @@ return [
             'vocabulary_id' => 894,
             'sentence' => 'There are {{blank}} students in my class.',
             'blank_word' => 'thirteen',
-            'translation' => '我的班上有十三位學生。',
             'distractors' => [
                 ['vocabulary_id' => 891, 'word' => 'cause'],
                 ['vocabulary_id' => 893, 'word' => 'grandmother'],
@@ -11581,7 +10687,6 @@ return [
             'vocabulary_id' => 895,
             'sentence' => 'We ate {{blank}} with dinner.',
             'blank_word' => 'corn',
-            'translation' => '我們晚餐吃了玉米。',
             'distractors' => [
                 ['vocabulary_id' => 891, 'word' => 'cause'],
                 ['vocabulary_id' => 893, 'word' => 'grandmother'],
@@ -11595,7 +10700,6 @@ return [
             'vocabulary_id' => 896,
             'sentence' => 'The {{blank}} lasted for many years.',
             'blank_word' => 'war',
-            'translation' => '那場戰爭持續了許多年。',
             'distractors' => [
                 ['vocabulary_id' => 891, 'word' => 'cause'],
                 ['vocabulary_id' => 893, 'word' => 'grandmother'],
@@ -11609,7 +10713,6 @@ return [
             'vocabulary_id' => 897,
             'sentence' => 'It was {{blank}} to leave the door open.',
             'blank_word' => 'stupid',
-            'translation' => '把門開著是很愚笨的做法。',
             'distractors' => [
                 ['vocabulary_id' => 892, 'word' => 'total'],
                 ['vocabulary_id' => 891, 'word' => 'cause'],
@@ -11622,7 +10725,6 @@ return [
             'vocabulary_id' => 898,
             'sentence' => 'I bought a {{blank}} of socks.',
             'blank_word' => 'pair',
-            'translation' => '我買了一雙襪子。',
             'distractors' => [
                 ['vocabulary_id' => 891, 'word' => 'cause'],
                 ['vocabulary_id' => 893, 'word' => 'grandmother'],
@@ -11636,7 +10738,6 @@ return [
             'vocabulary_id' => 899,
             'sentence' => 'The plants grow well in this {{blank}}.',
             'blank_word' => 'soil',
-            'translation' => '這些植物在這種土壤中生長得很好。',
             'distractors' => [
                 ['vocabulary_id' => 891, 'word' => 'cause'],
                 ['vocabulary_id' => 893, 'word' => 'grandmother'],
@@ -11650,7 +10751,6 @@ return [
             'vocabulary_id' => 900,
             'sentence' => 'My uncle works on a {{blank}}.',
             'blank_word' => 'farm',
-            'translation' => '我叔叔在農場工作。',
             'distractors' => [
                 ['vocabulary_id' => 891, 'word' => 'cause'],
                 ['vocabulary_id' => 893, 'word' => 'grandmother'],
@@ -11666,7 +10766,6 @@ return [
             'vocabulary_id' => 901,
             'sentence' => 'Our English class is {{blank}} today.',
             'blank_word' => 'online',
-            'translation' => '我們的英文課今天在線上進行。',
             'distractors' => [
                 ['vocabulary_id' => 906, 'word' => 'second'],
                 ['vocabulary_id' => 909, 'word' => 'rich'],
@@ -11679,7 +10778,6 @@ return [
             'vocabulary_id' => 902,
             'sentence' => 'I heard a {{blank}} behind me.',
             'blank_word' => 'step',
-            'translation' => '我聽到身後有一個腳步聲。',
             'distractors' => [
                 ['vocabulary_id' => 903, 'word' => 'birth'],
                 ['vocabulary_id' => 905, 'word' => 'class'],
@@ -11692,7 +10790,6 @@ return [
             'vocabulary_id' => 903,
             'sentence' => 'The baby’s {{blank}} brought great joy to the family.',
             'blank_word' => 'birth',
-            'translation' => '這個寶寶的出生為這個家庭帶來了很大的喜悅。',
             'distractors' => [
                 ['vocabulary_id' => 902, 'word' => 'step'],
                 ['vocabulary_id' => 905, 'word' => 'class'],
@@ -11705,7 +10802,6 @@ return [
             'vocabulary_id' => 904,
             'sentence' => 'I {{blank}} chocolate ice cream.',
             'blank_word' => 'like',
-            'translation' => '我喜歡巧克力冰淇淋。',
             'distractors' => [
                 ['vocabulary_id' => 910, 'word' => 'store'],
                 ['vocabulary_id' => 901, 'word' => 'online'],
@@ -11718,7 +10814,6 @@ return [
             'vocabulary_id' => 905,
             'sentence' => 'There are thirty students in my {{blank}}.',
             'blank_word' => 'class',
-            'translation' => '我的班上有三十位學生。',
             'distractors' => [
                 ['vocabulary_id' => 902, 'word' => 'step'],
                 ['vocabulary_id' => 903, 'word' => 'birth'],
@@ -11731,7 +10826,6 @@ return [
             'vocabulary_id' => 906,
             'sentence' => 'This is my {{blank}} visit to Taipei.',
             'blank_word' => 'second',
-            'translation' => '這是我第二次造訪臺北。',
             'distractors' => [
                 ['vocabulary_id' => 901, 'word' => 'online'],
                 ['vocabulary_id' => 902, 'word' => 'step'],
@@ -11745,7 +10839,6 @@ return [
             'vocabulary_id' => 907,
             'sentence' => 'The game has five {{blank}}.',
             'blank_word' => 'levels',
-            'translation' => '這個遊戲有五個等級。',
             'distractors' => [
                 ['vocabulary_id' => 902, 'word' => 'steps'],
                 ['vocabulary_id' => 903, 'word' => 'births'],
@@ -11758,7 +10851,6 @@ return [
             'vocabulary_id' => 908,
             'sentence' => 'The car has a flat {{blank}}.',
             'blank_word' => 'tire',
-            'translation' => '這輛車有一個輪胎沒氣了。',
             'distractors' => [
                 ['vocabulary_id' => 902, 'word' => 'step'],
                 ['vocabulary_id' => 903, 'word' => 'birth'],
@@ -11771,7 +10863,6 @@ return [
             'vocabulary_id' => 909,
             'sentence' => 'The {{blank}} man lives in a large house.',
             'blank_word' => 'rich',
-            'translation' => '那位有錢人住在一棟大房子裡。',
             'distractors' => [
                 ['vocabulary_id' => 901, 'word' => 'online'],
                 ['vocabulary_id' => 906, 'word' => 'second'],
@@ -11784,7 +10875,6 @@ return [
             'vocabulary_id' => 910,
             'sentence' => 'We {{blank}} the rice in a cool, dry place.',
             'blank_word' => 'store',
-            'translation' => '我們把米儲藏在陰涼乾燥的地方。',
             'distractors' => [
                 ['vocabulary_id' => 904, 'word' => 'like'],
                 ['vocabulary_id' => 901, 'word' => 'online'],
@@ -11799,7 +10889,6 @@ return [
             'vocabulary_id' => 911,
             'sentence' => 'Your answer is {{blank}}.',
             'blank_word' => 'right',
-            'translation' => '你的答案是正確的。',
             'distractors' => [
                 ['vocabulary_id' => 912, 'word' => 'above'],
                 ['vocabulary_id' => 913, 'word' => 'June'],
@@ -11813,7 +10902,6 @@ return [
             'vocabulary_id' => 912,
             'sentence' => 'The picture hangs {{blank}} the sofa.',
             'blank_word' => 'above',
-            'translation' => '那幅畫掛在沙發上方。',
             'distractors' => [
                 ['vocabulary_id' => 911, 'word' => 'right'],
                 ['vocabulary_id' => 913, 'word' => 'June'],
@@ -11826,7 +10914,6 @@ return [
             'vocabulary_id' => 913,
             'sentence' => 'School ends in {{blank}}.',
             'blank_word' => 'June',
-            'translation' => '學校在六月放暑假。',
             'distractors' => [
                 ['vocabulary_id' => 911, 'word' => 'right'],
                 ['vocabulary_id' => 918, 'word' => 'fourteen'],
@@ -11838,7 +10925,6 @@ return [
             'vocabulary_id' => 914,
             'sentence' => 'I listened to music {{blank}} I did my homework.',
             'blank_word' => 'while',
-            'translation' => '我做功課時聽音樂。',
             'distractors' => [
                 ['vocabulary_id' => 911, 'word' => 'right'],
                 ['vocabulary_id' => 912, 'word' => 'above'],
@@ -11851,7 +10937,6 @@ return [
             'vocabulary_id' => 915,
             'sentence' => 'It is {{blank}} to drink enough water.',
             'blank_word' => 'important',
-            'translation' => '喝足夠的水很重要。',
             'distractors' => [
                 ['vocabulary_id' => 911, 'word' => 'right'],
                 ['vocabulary_id' => 912, 'word' => 'above'],
@@ -11864,7 +10949,6 @@ return [
             'vocabulary_id' => 916,
             'sentence' => 'The statement that fish can fly is {{blank}}.',
             'blank_word' => 'false',
-            'translation' => '魚會飛這個說法是錯誤的。',
             'distractors' => [
                 ['vocabulary_id' => 911, 'word' => 'right'],
                 ['vocabulary_id' => 915, 'word' => 'important'],
@@ -11877,7 +10961,6 @@ return [
             'vocabulary_id' => 917,
             'sentence' => 'Please {{blank}} out the candles.',
             'blank_word' => 'blow',
-            'translation' => '請把蠟燭吹熄。',
             'distractors' => [
                 ['vocabulary_id' => 911, 'word' => 'right'],
                 ['vocabulary_id' => 912, 'word' => 'above'],
@@ -11890,7 +10973,6 @@ return [
             'vocabulary_id' => 918,
             'sentence' => '{{blank}} is my lucky number.',
             'blank_word' => 'Fourteen',
-            'translation' => '十四是我的幸運數字。',
             'distractors' => [
                 ['vocabulary_id' => 911, 'word' => 'Right'],
                 ['vocabulary_id' => 913, 'word' => 'June'],
@@ -11902,7 +10984,6 @@ return [
             'vocabulary_id' => 919,
             'sentence' => 'Please write your name on the {{blank}}.',
             'blank_word' => 'paper',
-            'translation' => '請把你的名字寫在紙上。',
             'distractors' => [
                 ['vocabulary_id' => 911, 'word' => 'right'],
                 ['vocabulary_id' => 913, 'word' => 'June'],
@@ -11914,7 +10995,6 @@ return [
             'vocabulary_id' => 920,
             'sentence' => 'She took a {{blank}} with her friends.',
             'blank_word' => 'selfie',
-            'translation' => '她和朋友一起拍了一張自拍照。',
             'distractors' => [
                 ['vocabulary_id' => 911, 'word' => 'right'],
                 ['vocabulary_id' => 913, 'word' => 'June'],
@@ -11928,7 +11008,6 @@ return [
             'vocabulary_id' => 921,
             'sentence' => 'Please give me some {{blank}}.',
             'blank_word' => 'water',
-            'translation' => '請給我一些水。',
             'distractors' => [
                 ['vocabulary_id' => 922, 'word' => 'sandals'],
                 ['vocabulary_id' => 924, 'word' => 'summer'],
@@ -11941,7 +11020,6 @@ return [
             'vocabulary_id' => 922,
             'sentence' => 'I wear {{blank}} in the summer.',
             'blank_word' => 'sandals',
-            'translation' => '我夏天穿涼鞋。',
             'distractors' => [
                 ['vocabulary_id' => 921, 'word' => 'water'],
                 ['vocabulary_id' => 926, 'word' => 'body'],
@@ -11953,7 +11031,6 @@ return [
             'vocabulary_id' => 923,
             'sentence' => 'She wants to {{blank}} English.',
             'blank_word' => 'master',
-            'translation' => '她想精通英文。',
             'distractors' => [
                 ['vocabulary_id' => 925, 'word' => 'practice'],
                 ['vocabulary_id' => 921, 'word' => 'water'],
@@ -11966,7 +11043,6 @@ return [
             'vocabulary_id' => 924,
             'sentence' => 'We go swimming every {{blank}}.',
             'blank_word' => 'summer',
-            'translation' => '我們每年夏天都去游泳。',
             'distractors' => [
                 ['vocabulary_id' => 921, 'word' => 'water'],
                 ['vocabulary_id' => 922, 'word' => 'sandals'],
@@ -11979,7 +11055,6 @@ return [
             'vocabulary_id' => 925,
             'sentence' => 'I {{blank}} the piano every day.',
             'blank_word' => 'practice',
-            'translation' => '我每天練習鋼琴。',
             'distractors' => [
                 ['vocabulary_id' => 923, 'word' => 'master'],
                 ['vocabulary_id' => 921, 'word' => 'water'],
@@ -11992,7 +11067,6 @@ return [
             'vocabulary_id' => 926,
             'sentence' => 'Exercise is good for your {{blank}}.',
             'blank_word' => 'body',
-            'translation' => '運動對你的身體有益。',
             'distractors' => [
                 ['vocabulary_id' => 921, 'word' => 'water'],
                 ['vocabulary_id' => 922, 'word' => 'sandals'],
@@ -12005,7 +11079,6 @@ return [
             'vocabulary_id' => 927,
             'sentence' => 'The school is on the {{blank}} side of the road.',
             'blank_word' => 'right',
-            'translation' => '學校在道路的右邊。',
             'distractors' => [
                 ['vocabulary_id' => 921, 'word' => 'water'],
                 ['vocabulary_id' => 922, 'word' => 'sandals'],
@@ -12019,7 +11092,6 @@ return [
             'vocabulary_id' => 928,
             'sentence' => '{{blank}} is that girl?',
             'blank_word' => 'Who',
-            'translation' => '那個女孩是誰？',
             'distractors' => [
                 ['vocabulary_id' => 930, 'word' => 'This'],
                 ['vocabulary_id' => 921, 'word' => 'Water'],
@@ -12032,7 +11104,6 @@ return [
             'vocabulary_id' => 929,
             'sentence' => 'An {{blank}} must help the child cross the street.',
             'blank_word' => 'adult',
-            'translation' => '成人必須幫助那個孩子過馬路。',
             'distractors' => [
                 ['vocabulary_id' => 921, 'word' => 'water'],
                 ['vocabulary_id' => 922, 'word' => 'sandals'],
@@ -12045,7 +11116,6 @@ return [
             'vocabulary_id' => 930,
             'sentence' => '{{blank}} is my new book.',
             'blank_word' => 'This',
-            'translation' => '這是我的新書。',
             'distractors' => [
                 ['vocabulary_id' => 927, 'word' => 'Right'],
                 ['vocabulary_id' => 928, 'word' => 'Who'],
@@ -12060,7 +11130,6 @@ return [
             'vocabulary_id' => 931,
             'sentence' => '{{blank}} Lee is our English teacher.',
             'blank_word' => 'Miss',
-            'translation' => '李小姐是我們的英文老師。',
             'distractors' => [
                 ['vocabulary_id' => 934, 'word' => 'kitten'],
                 ['vocabulary_id' => 935, 'word' => 'there'],
@@ -12072,7 +11141,6 @@ return [
             'vocabulary_id' => 932,
             'sentence' => 'My father {{blank}} the car to work.',
             'blank_word' => 'drives',
-            'translation' => '我爸爸開車上班。',
             'distractors' => [
                 ['vocabulary_id' => 936, 'word' => 'grows'],
                 ['vocabulary_id' => 931, 'word' => 'Miss'],
@@ -12085,7 +11153,6 @@ return [
             'vocabulary_id' => 933,
             'sentence' => '{{blank}} did you see at the park?',
             'blank_word' => 'Whom',
-            'translation' => '你在公園看到了誰？',
             'distractors' => [
                 ['vocabulary_id' => 931, 'word' => 'Miss'],
                 ['vocabulary_id' => 932, 'word' => 'Drive'],
@@ -12098,7 +11165,6 @@ return [
             'vocabulary_id' => 934,
             'sentence' => 'The {{blank}} is sleeping in the box.',
             'blank_word' => 'kitten',
-            'translation' => '那隻小貓正在箱子裡睡覺。',
             'distractors' => [
                 ['vocabulary_id' => 931, 'word' => 'Miss'],
                 ['vocabulary_id' => 935, 'word' => 'there'],
@@ -12110,7 +11176,6 @@ return [
             'vocabulary_id' => 935,
             'sentence' => 'Your bag is over {{blank}}.',
             'blank_word' => 'there',
-            'translation' => '你的包包在那裡。',
             'distractors' => [
                 ['vocabulary_id' => 931, 'word' => 'Miss'],
                 ['vocabulary_id' => 934, 'word' => 'kitten'],
@@ -12123,7 +11188,6 @@ return [
             'vocabulary_id' => 936,
             'sentence' => 'The flowers {{blank}} quickly in spring.',
             'blank_word' => 'grow',
-            'translation' => '這些花在春天生長得很快。',
             'distractors' => [
                 ['vocabulary_id' => 932, 'word' => 'drive'],
                 ['vocabulary_id' => 931, 'word' => 'Miss'],
@@ -12136,7 +11200,6 @@ return [
             'vocabulary_id' => 937,
             'sentence' => 'The police officer carried a {{blank}}.',
             'blank_word' => 'gun',
-            'translation' => '那名警察帶著一把槍。',
             'distractors' => [
                 ['vocabulary_id' => 931, 'word' => 'Miss'],
                 ['vocabulary_id' => 934, 'word' => 'kitten'],
@@ -12148,7 +11211,6 @@ return [
             'vocabulary_id' => 938,
             'sentence' => 'Your answer is {{blank}}.',
             'blank_word' => 'wrong',
-            'translation' => '你的答案是錯的。',
             'distractors' => [
                 ['vocabulary_id' => 939, 'word' => 'no'],
                 ['vocabulary_id' => 931, 'word' => 'Miss'],
@@ -12161,7 +11223,6 @@ return [
             'vocabulary_id' => 939,
             'sentence' => 'There is {{blank}} milk in the fridge.',
             'blank_word' => 'no',
-            'translation' => '冰箱裡沒有牛奶。',
             'distractors' => [
                 ['vocabulary_id' => 938, 'word' => 'wrong'],
                 ['vocabulary_id' => 931, 'word' => 'Miss'],
@@ -12174,7 +11235,6 @@ return [
             'vocabulary_id' => 940,
             'sentence' => 'The movie lasts for two {{blank}}.',
             'blank_word' => 'hours',
-            'translation' => '這部電影持續兩個小時。',
             'distractors' => [
                 ['vocabulary_id' => 934, 'word' => 'kittens'],
                 ['vocabulary_id' => 937, 'word' => 'guns'],
@@ -12189,7 +11249,6 @@ return [
             'vocabulary_id' => 941,
             'sentence' => '{{blank}} is cold and windy here.',
             'blank_word' => 'Winter',
-            'translation' => '這裡的冬天又冷又多風。',
             'distractors' => [
                 ['vocabulary_id' => 942, 'word' => 'Ship'],
                 ['vocabulary_id' => 945, 'word' => 'Car'],
@@ -12202,7 +11261,6 @@ return [
             'vocabulary_id' => 942,
             'sentence' => 'The {{blank}} is on the sea.',
             'blank_word' => 'ship',
-            'translation' => '那艘船在海上。',
             'distractors' => [
                 ['vocabulary_id' => 941, 'word' => 'winter'],
                 ['vocabulary_id' => 945, 'word' => 'car'],
@@ -12215,7 +11273,6 @@ return [
             'vocabulary_id' => 943,
             'sentence' => 'We {{blank}} our new teacher.',
             'blank_word' => 'welcome',
-            'translation' => '我們歡迎我們的新老師。',
             'distractors' => [
                 ['vocabulary_id' => 949, 'word' => 'scare'],
                 ['vocabulary_id' => 941, 'word' => 'winter'],
@@ -12228,7 +11285,6 @@ return [
             'vocabulary_id' => 944,
             'sentence' => 'The window is {{blank}}.',
             'blank_word' => 'open',
-            'translation' => '窗戶是打開的。',
             'distractors' => [
                 ['vocabulary_id' => 941, 'word' => 'winter'],
                 ['vocabulary_id' => 942, 'word' => 'ship'],
@@ -12241,7 +11297,6 @@ return [
             'vocabulary_id' => 945,
             'sentence' => 'My father drives a blue {{blank}}.',
             'blank_word' => 'car',
-            'translation' => '我爸爸開一輛藍色的汽車。',
             'distractors' => [
                 ['vocabulary_id' => 941, 'word' => 'winter'],
                 ['vocabulary_id' => 942, 'word' => 'ship'],
@@ -12254,7 +11309,6 @@ return [
             'vocabulary_id' => 946,
             'sentence' => 'The school is one {{blank}} from my house.',
             'blank_word' => 'block',
-            'translation' => '學校離我家一個街區遠。',
             'distractors' => [
                 ['vocabulary_id' => 941, 'word' => 'winter'],
                 ['vocabulary_id' => 942, 'word' => 'ship'],
@@ -12267,7 +11321,6 @@ return [
             'vocabulary_id' => 947,
             'sentence' => 'I eat soup with a {{blank}}.',
             'blank_word' => 'spoon',
-            'translation' => '我用湯匙喝湯。',
             'distractors' => [
                 ['vocabulary_id' => 941, 'word' => 'winter'],
                 ['vocabulary_id' => 942, 'word' => 'ship'],
@@ -12280,7 +11333,6 @@ return [
             'vocabulary_id' => 948,
             'sentence' => 'My birthday is in {{blank}}.',
             'blank_word' => 'April',
-            'translation' => '我的生日在四月。',
             'distractors' => [
                 ['vocabulary_id' => 941, 'word' => 'winter'],
                 ['vocabulary_id' => 942, 'word' => 'ship'],
@@ -12293,7 +11345,6 @@ return [
             'vocabulary_id' => 949,
             'sentence' => 'Loud noises {{blank}} the baby.',
             'blank_word' => 'scare',
-            'translation' => '巨大的聲音會使寶寶害怕。',
             'distractors' => [
                 ['vocabulary_id' => 943, 'word' => 'welcome'],
                 ['vocabulary_id' => 941, 'word' => 'winter'],
@@ -12306,7 +11357,6 @@ return [
             'vocabulary_id' => 950,
             'sentence' => '{{blank}} is your favorite color?',
             'blank_word' => 'What',
-            'translation' => '你最喜歡的顏色是什麼？',
             'distractors' => [
                 ['vocabulary_id' => 941, 'word' => 'Winter'],
                 ['vocabulary_id' => 942, 'word' => 'Ship'],
@@ -12321,7 +11371,6 @@ return [
             'vocabulary_id' => 951,
             'sentence' => 'The library is on the {{blank}} side of the street.',
             'blank_word' => 'left',
-            'translation' => '圖書館在街道的左方。',
             'distractors' => [
                 ['vocabulary_id' => 957, 'word' => 'near'],
                 ['vocabulary_id' => 959, 'word' => 'hungry'],
@@ -12334,7 +11383,6 @@ return [
             'vocabulary_id' => 952,
             'sentence' => 'The white {{blank}} is beautiful.',
             'blank_word' => 'lily',
-            'translation' => '那朵白色的百合很漂亮。',
             'distractors' => [
                 ['vocabulary_id' => 955, 'word' => 'glass'],
                 ['vocabulary_id' => 956, 'word' => 'health'],
@@ -12346,7 +11394,6 @@ return [
             'vocabulary_id' => 953,
             'sentence' => 'I am tired, {{blank}} I want to play.',
             'blank_word' => 'but',
-            'translation' => '我很累，但是我想玩。',
             'distractors' => [
                 ['vocabulary_id' => 951, 'word' => 'left'],
                 ['vocabulary_id' => 952, 'word' => 'lily'],
@@ -12359,7 +11406,6 @@ return [
             'vocabulary_id' => 954,
             'sentence' => 'Our teacher helps {{blank}} with our homework.',
             'blank_word' => 'us',
-            'translation' => '我們的老師幫助我們做家庭作業。',
             'distractors' => [
                 ['vocabulary_id' => 951, 'word' => 'left'],
                 ['vocabulary_id' => 952, 'word' => 'lily'],
@@ -12372,7 +11418,6 @@ return [
             'vocabulary_id' => 955,
             'sentence' => 'The window is made of {{blank}}.',
             'blank_word' => 'glass',
-            'translation' => '這扇窗戶是用玻璃製成的。',
             'distractors' => [
                 ['vocabulary_id' => 952, 'word' => 'lily'],
                 ['vocabulary_id' => 956, 'word' => 'health'],
@@ -12384,7 +11429,6 @@ return [
             'vocabulary_id' => 956,
             'sentence' => 'Good food is important for your {{blank}}.',
             'blank_word' => 'health',
-            'translation' => '健康的食物對你的健康很重要。',
             'distractors' => [
                 ['vocabulary_id' => 952, 'word' => 'lily'],
                 ['vocabulary_id' => 955, 'word' => 'glass'],
@@ -12396,7 +11440,6 @@ return [
             'vocabulary_id' => 957,
             'sentence' => 'The park is {{blank}} my school.',
             'blank_word' => 'near',
-            'translation' => '公園在我學校附近。',
             'distractors' => [
                 ['vocabulary_id' => 951, 'word' => 'left'],
                 ['vocabulary_id' => 959, 'word' => 'hungry'],
@@ -12409,7 +11452,6 @@ return [
             'vocabulary_id' => 958,
             'sentence' => 'Please write this {{blank}} in your notebook.',
             'blank_word' => 'word',
-            'translation' => '請把這個字寫在你的筆記本上。',
             'distractors' => [
                 ['vocabulary_id' => 952, 'word' => 'lily'],
                 ['vocabulary_id' => 955, 'word' => 'glass'],
@@ -12421,7 +11463,6 @@ return [
             'vocabulary_id' => 959,
             'sentence' => 'I am {{blank}} after school.',
             'blank_word' => 'hungry',
-            'translation' => '放學後我很餓。',
             'distractors' => [
                 ['vocabulary_id' => 951, 'word' => 'left'],
                 ['vocabulary_id' => 957, 'word' => 'near'],
@@ -12434,7 +11475,6 @@ return [
             'vocabulary_id' => 960,
             'sentence' => 'My {{blank}} hurts today.',
             'blank_word' => 'neck',
-            'translation' => '我的脖子今天會痛。',
             'distractors' => [
                 ['vocabulary_id' => 952, 'word' => 'lily'],
                 ['vocabulary_id' => 955, 'word' => 'glass'],
@@ -12448,7 +11488,6 @@ return [
             'vocabulary_id' => 961,
             'sentence' => 'The store has a {{blank}} today.',
             'blank_word' => 'sale',
-            'translation' => '這家商店今天特價出售。',
             'distractors' => [
                 ['vocabulary_id' => 962, 'word' => 'east'],
                 ['vocabulary_id' => 963, 'word' => 'matter'],
@@ -12461,7 +11500,6 @@ return [
             'vocabulary_id' => 962,
             'sentence' => 'The sun rises in the {{blank}}.',
             'blank_word' => 'east',
-            'translation' => '太陽從東方升起。',
             'distractors' => [
                 ['vocabulary_id' => 961, 'word' => 'sale'],
                 ['vocabulary_id' => 963, 'word' => 'matter'],
@@ -12474,7 +11512,6 @@ return [
             'vocabulary_id' => 963,
             'sentence' => 'What is the {{blank}}?',
             'blank_word' => 'matter',
-            'translation' => '怎麼了？',
             'distractors' => [
                 ['vocabulary_id' => 961, 'word' => 'sale'],
                 ['vocabulary_id' => 962, 'word' => 'east'],
@@ -12487,7 +11524,6 @@ return [
             'vocabulary_id' => 964,
             'sentence' => 'I will visit my grandmother next {{blank}}.',
             'blank_word' => 'month',
-            'translation' => '我下個月會去拜訪我的祖母。',
             'distractors' => [
                 ['vocabulary_id' => 961, 'word' => 'sale'],
                 ['vocabulary_id' => 962, 'word' => 'east'],
@@ -12500,7 +11536,6 @@ return [
             'vocabulary_id' => 965,
             'sentence' => 'This is a {{blank}} place for children.',
             'blank_word' => 'safe',
-            'translation' => '這是一個對孩子來說安全的地方。',
             'distractors' => [
                 ['vocabulary_id' => 966, 'word' => 'downstairs'],
                 ['vocabulary_id' => 961, 'word' => 'sale'],
@@ -12513,7 +11548,6 @@ return [
             'vocabulary_id' => 966,
             'sentence' => 'My bedroom is {{blank}}.',
             'blank_word' => 'downstairs',
-            'translation' => '我的臥室在樓下。',
             'distractors' => [
                 ['vocabulary_id' => 965, 'word' => 'safe'],
                 ['vocabulary_id' => 961, 'word' => 'sale'],
@@ -12526,7 +11560,6 @@ return [
             'vocabulary_id' => 967,
             'sentence' => 'The loud noise {{blank}} the baby.',
             'blank_word' => 'worries',
-            'translation' => '巨大的噪音使寶寶感到擔心。',
             'distractors' => [
                 ['vocabulary_id' => 968, 'word' => 'eats'],
                 ['vocabulary_id' => 961, 'word' => 'sale'],
@@ -12539,7 +11572,6 @@ return [
             'vocabulary_id' => 968,
             'sentence' => 'We {{blank}} breakfast at seven.',
             'blank_word' => 'eat',
-            'translation' => '我們七點吃早餐。',
             'distractors' => [
                 ['vocabulary_id' => 967, 'word' => 'worry'],
                 ['vocabulary_id' => 961, 'word' => 'sale'],
@@ -12552,7 +11584,6 @@ return [
             'vocabulary_id' => 969,
             'sentence' => 'The lion is in a large {{blank}}.',
             'blank_word' => 'cage',
-            'translation' => '獅子在一個大獸籠裡。',
             'distractors' => [
                 ['vocabulary_id' => 961, 'word' => 'sale'],
                 ['vocabulary_id' => 962, 'word' => 'east'],
@@ -12565,7 +11596,6 @@ return [
             'vocabulary_id' => 970,
             'sentence' => 'I have the {{blank}} to the door.',
             'blank_word' => 'key',
-            'translation' => '我有這扇門的鑰匙。',
             'distractors' => [
                 ['vocabulary_id' => 961, 'word' => 'sale'],
                 ['vocabulary_id' => 962, 'word' => 'east'],
@@ -12580,7 +11610,6 @@ return [
             'vocabulary_id' => 971,
             'sentence' => 'The children are playing in the {{blank}}.',
             'blank_word' => 'park',
-            'translation' => '孩子們正在公園裡玩耍。',
             'distractors' => [
                 ['vocabulary_id' => 973, 'word' => 'sugar'],
                 ['vocabulary_id' => 975, 'word' => 'letter'],
@@ -12592,7 +11621,6 @@ return [
             'vocabulary_id' => 972,
             'sentence' => 'I see {{blank}} at school every day.',
             'blank_word' => 'them',
-            'translation' => '我每天在學校看到他們。',
             'distractors' => [
                 ['vocabulary_id' => 971, 'word' => 'park'],
                 ['vocabulary_id' => 973, 'word' => 'sugar'],
@@ -12605,7 +11633,6 @@ return [
             'vocabulary_id' => 973,
             'sentence' => 'Please put some {{blank}} in my tea.',
             'blank_word' => 'sugar',
-            'translation' => '請在我的茶裡放一些糖。',
             'distractors' => [
                 ['vocabulary_id' => 971, 'word' => 'park'],
                 ['vocabulary_id' => 975, 'word' => 'letter'],
@@ -12617,7 +11644,6 @@ return [
             'vocabulary_id' => 974,
             'sentence' => 'I {{blank}} a new backpack.',
             'blank_word' => 'have',
-            'translation' => '我有一個新的背包。',
             'distractors' => [
                 ['vocabulary_id' => 978, 'word' => 'find'],
                 ['vocabulary_id' => 971, 'word' => 'park'],
@@ -12630,7 +11656,6 @@ return [
             'vocabulary_id' => 975,
             'sentence' => 'The word “cat” has three {{blank}}.',
             'blank_word' => 'letters',
-            'translation' => '「cat」這個單字有三個字母。',
             'distractors' => [
                 ['vocabulary_id' => 971, 'word' => 'parks'],
                 ['vocabulary_id' => 976, 'word' => 'pets'],
@@ -12641,7 +11666,6 @@ return [
             'vocabulary_id' => 976,
             'sentence' => 'My {{blank}} is a small dog.',
             'blank_word' => 'pet',
-            'translation' => '我的寵物是一隻小狗。',
             'distractors' => [
                 ['vocabulary_id' => 971, 'word' => 'park'],
                 ['vocabulary_id' => 973, 'word' => 'sugar'],
@@ -12653,7 +11677,6 @@ return [
             'vocabulary_id' => 977,
             'sentence' => 'That puppy is very {{blank}}.',
             'blank_word' => 'cute',
-            'translation' => '那隻小狗非常可愛。',
             'distractors' => [
                 ['vocabulary_id' => 971, 'word' => 'park'],
                 ['vocabulary_id' => 972, 'word' => 'them'],
@@ -12666,7 +11689,6 @@ return [
             'vocabulary_id' => 978,
             'sentence' => 'I need to {{blank}} my glasses.',
             'blank_word' => 'find',
-            'translation' => '我需要尋找我的眼鏡。',
             'distractors' => [
                 ['vocabulary_id' => 974, 'word' => 'have'],
                 ['vocabulary_id' => 971, 'word' => 'park'],
@@ -12679,7 +11701,6 @@ return [
             'vocabulary_id' => 979,
             'sentence' => '{{blank}} are you sad?',
             'blank_word' => 'Why',
-            'translation' => '你為什麼難過？',
             'distractors' => [
                 ['vocabulary_id' => 971, 'word' => 'Park'],
                 ['vocabulary_id' => 972, 'word' => 'Them'],
@@ -12692,7 +11713,6 @@ return [
             'vocabulary_id' => 980,
             'sentence' => 'Dad reads me a {{blank}} every night.',
             'blank_word' => 'story',
-            'translation' => '爸爸每天晚上讀一個故事給我聽。',
             'distractors' => [
                 ['vocabulary_id' => 971, 'word' => 'park'],
                 ['vocabulary_id' => 973, 'word' => 'sugar'],
@@ -12706,7 +11726,6 @@ return [
             'vocabulary_id' => 981,
             'sentence' => 'We can see a tall {{blank}} from our window.',
             'blank_word' => 'mountain',
-            'translation' => '我們從窗戶可以看見一座高山。',
             'distractors' => [
                 ['vocabulary_id' => 985, 'word' => 'balloon'],
                 ['vocabulary_id' => 986, 'word' => 'eight'],
@@ -12717,7 +11736,6 @@ return [
             'vocabulary_id' => 982,
             'sentence' => 'The children play {{blank}} after school.',
             'blank_word' => 'together',
-            'translation' => '孩子們放學後一起玩。',
             'distractors' => [
                 ['vocabulary_id' => 990, 'word' => 'always'],
                 ['vocabulary_id' => 981, 'word' => 'mountain'],
@@ -12730,7 +11748,6 @@ return [
             'vocabulary_id' => 983,
             'sentence' => 'The students put {{blank}} books on the table.',
             'blank_word' => 'their',
-            'translation' => '學生們把他們的書放在桌上。',
             'distractors' => [
                 ['vocabulary_id' => 988, 'word' => 'fine'],
                 ['vocabulary_id' => 989, 'word' => 'shy'],
@@ -12743,7 +11760,6 @@ return [
             'vocabulary_id' => 984,
             'sentence' => 'Please {{blank}} the apple into four pieces.',
             'blank_word' => 'cut',
-            'translation' => '請把蘋果切成四塊。',
             'distractors' => [
                 ['vocabulary_id' => 981, 'word' => 'mountain'],
                 ['vocabulary_id' => 982, 'word' => 'together'],
@@ -12756,7 +11772,6 @@ return [
             'vocabulary_id' => 985,
             'sentence' => 'The little girl has a red {{blank}}.',
             'blank_word' => 'balloon',
-            'translation' => '那個小女孩有一顆紅色的氣球。',
             'distractors' => [
                 ['vocabulary_id' => 981, 'word' => 'mountain'],
                 ['vocabulary_id' => 986, 'word' => 'eight'],
@@ -12767,7 +11782,6 @@ return [
             'vocabulary_id' => 986,
             'sentence' => 'There are {{blank}} apples in the basket.',
             'blank_word' => 'eight',
-            'translation' => '籃子裡有八顆蘋果。',
             'distractors' => [
                 ['vocabulary_id' => 981, 'word' => 'mountain'],
                 ['vocabulary_id' => 985, 'word' => 'balloon'],
@@ -12778,7 +11792,6 @@ return [
             'vocabulary_id' => 987,
             'sentence' => 'The doctor listened to my {{blank}}.',
             'blank_word' => 'heart',
-            'translation' => '醫生聽了我的心臟。',
             'distractors' => [
                 ['vocabulary_id' => 981, 'word' => 'mountain'],
                 ['vocabulary_id' => 985, 'word' => 'balloon'],
@@ -12789,7 +11802,6 @@ return [
             'vocabulary_id' => 988,
             'sentence' => 'I feel {{blank}} today.',
             'blank_word' => 'fine',
-            'translation' => '我今天覺得很好。',
             'distractors' => [
                 ['vocabulary_id' => 983, 'word' => 'their'],
                 ['vocabulary_id' => 989, 'word' => 'shy'],
@@ -12802,7 +11814,6 @@ return [
             'vocabulary_id' => 989,
             'sentence' => 'The {{blank}} boy does not talk much.',
             'blank_word' => 'shy',
-            'translation' => '那個害羞的男孩不太說話。',
             'distractors' => [
                 ['vocabulary_id' => 983, 'word' => 'their'],
                 ['vocabulary_id' => 988, 'word' => 'fine'],
@@ -12815,7 +11826,6 @@ return [
             'vocabulary_id' => 990,
             'sentence' => 'She {{blank}} brushes her teeth before bed.',
             'blank_word' => 'always',
-            'translation' => '她總是在睡前刷牙。',
             'distractors' => [
                 ['vocabulary_id' => 982, 'word' => 'together'],
                 ['vocabulary_id' => 981, 'word' => 'mountain'],
@@ -12830,7 +11840,6 @@ return [
             'vocabulary_id' => 991,
             'sentence' => 'Cooking is a useful {{blank}}.',
             'blank_word' => 'skill',
-            'translation' => '烹飪是一項有用的技術。',
             'distractors' => [
                 ['vocabulary_id' => 992, 'word' => 'desk'],
                 ['vocabulary_id' => 995, 'word' => 'self'],
@@ -12844,7 +11853,6 @@ return [
             'vocabulary_id' => 992,
             'sentence' => 'My pencil is on the {{blank}}.',
             'blank_word' => 'desk',
-            'translation' => '我的鉛筆在桌子上。',
             'distractors' => [
                 ['vocabulary_id' => 991, 'word' => 'skill'],
                 ['vocabulary_id' => 995, 'word' => 'self'],
@@ -12858,7 +11866,6 @@ return [
             'vocabulary_id' => 993,
             'sentence' => 'Dad is waiting {{blank}} the bus stop.',
             'blank_word' => 'at',
-            'translation' => '爸爸正在公車站等候。',
             'distractors' => [
                 ['vocabulary_id' => 991, 'word' => 'skill'],
                 ['vocabulary_id' => 992, 'word' => 'desk'],
@@ -12871,7 +11878,6 @@ return [
             'vocabulary_id' => 994,
             'sentence' => 'The waiter {{blank}} food to the guests.',
             'blank_word' => 'serves',
-            'translation' => '服務生為客人提供食物。',
             'distractors' => [
                 ['vocabulary_id' => 991, 'word' => 'skill'],
                 ['vocabulary_id' => 992, 'word' => 'desk'],
@@ -12882,9 +11888,8 @@ return [
         ],
         [
             'vocabulary_id' => 995,
-            'sentence' => 'You should believe in your {{blank}}.',
+            'sentence' => 'Be true to your inner {{blank}}.',
             'blank_word' => 'self',
-            'translation' => '你應該相信自己。',
             'distractors' => [
                 ['vocabulary_id' => 991, 'word' => 'skill'],
                 ['vocabulary_id' => 992, 'word' => 'desk'],
@@ -12898,7 +11903,6 @@ return [
             'vocabulary_id' => 996,
             'sentence' => '{{blank}} is knocking at the door.',
             'blank_word' => 'Someone',
-            'translation' => '有人正在敲門。',
             'distractors' => [
                 ['vocabulary_id' => 991, 'word' => 'Skill'],
                 ['vocabulary_id' => 992, 'word' => 'Desk'],
@@ -12911,7 +11915,6 @@ return [
             'vocabulary_id' => 997,
             'sentence' => 'The toy is on the {{blank}}.',
             'blank_word' => 'floor',
-            'translation' => '玩具在地板上。',
             'distractors' => [
                 ['vocabulary_id' => 991, 'word' => 'skill'],
                 ['vocabulary_id' => 992, 'word' => 'desk'],
@@ -12925,7 +11928,6 @@ return [
             'vocabulary_id' => 998,
             'sentence' => 'The {{blank}} of this book is five dollars.',
             'blank_word' => 'price',
-            'translation' => '這本書的價格是五元。',
             'distractors' => [
                 ['vocabulary_id' => 991, 'word' => 'skill'],
                 ['vocabulary_id' => 992, 'word' => 'desk'],
@@ -12939,7 +11941,6 @@ return [
             'vocabulary_id' => 999,
             'sentence' => 'Their {{blank}} likes to read books.',
             'blank_word' => 'daughter',
-            'translation' => '他們的女兒喜歡讀書。',
             'distractors' => [
                 ['vocabulary_id' => 991, 'word' => 'skill'],
                 ['vocabulary_id' => 992, 'word' => 'desk'],
@@ -12953,7 +11954,6 @@ return [
             'vocabulary_id' => 1000,
             'sentence' => 'Please wait a {{blank}}.',
             'blank_word' => 'moment',
-            'translation' => '請稍等一下。',
             'distractors' => [
                 ['vocabulary_id' => 991, 'word' => 'skill'],
                 ['vocabulary_id' => 992, 'word' => 'desk'],

@@ -24,7 +24,6 @@ class SentenceClozeQuestionFactory extends Factory
             'vocabulary_id' => Vocabulary::factory(),
             'sentence' => 'This is a {{blank}} sentence.',
             'blank_word' => 'test',
-            'translation' => '這是一句測試句子。',
             'distractors' => [
                 ['vocabulary_id' => 1, 'word' => 'alpha'],
                 ['vocabulary_id' => 2, 'word' => 'beta'],

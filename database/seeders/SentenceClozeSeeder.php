@@ -40,7 +40,6 @@ class SentenceClozeSeeder extends Seeder
          *     vocabulary_id: int,
          *     sentence: string,
          *     blank_word: string,
-         *     translation: string,
          *     distractors: array<int, array{vocabulary_id: int, word: string}>
          * }>> $levelQuestions
          */
@@ -54,7 +53,6 @@ class SentenceClozeSeeder extends Seeder
                     'vocabulary_id' => $item['vocabulary_id'],
                     'sentence' => $item['sentence'],
                     'blank_word' => $item['blank_word'],
-                    'translation' => $item['translation'],
                     'distractors' => json_encode($item['distractors'], JSON_THROW_ON_ERROR | JSON_UNESCAPED_UNICODE),
                     'created_at' => $timestamp,
                     'updated_at' => $timestamp,
@@ -64,7 +62,7 @@ class SentenceClozeSeeder extends Seeder
             SentenceClozeQuestion::upsert(
                 $rows,
                 uniqueBy: ['vocabulary_id'],
-                update: ['sentence', 'blank_word', 'translation', 'distractors', 'updated_at'],
+                update: ['sentence', 'blank_word', 'distractors', 'updated_at'],
             );
         }
     }

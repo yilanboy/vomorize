@@ -8,7 +8,6 @@ return [
             'vocabulary_id' => 4001,
             'sentence' => 'After much discussion, the committee reached a {{blank}} to reduce plastic waste.',
             'blank_word' => 'resolution',
-            'translation' => '經過多次討論後，委員會通過了一項減少塑膠垃圾的決議。',
             'distractors' => [
                 ['vocabulary_id' => 4002, 'word' => 'concrete'],
                 ['vocabulary_id' => 4006, 'word' => 'register'],
@@ -20,7 +19,6 @@ return [
             'vocabulary_id' => 4002,
             'sentence' => 'The workers poured {{blank}} to build the foundation of the house.',
             'blank_word' => 'concrete',
-            'translation' => '工人澆灌混凝土來建造房屋的地基。',
             'distractors' => [
                 ['vocabulary_id' => 4001, 'word' => 'resolution'],
                 ['vocabulary_id' => 4006, 'word' => 'register'],
@@ -32,7 +30,6 @@ return [
             'vocabulary_id' => 4003,
             'sentence' => 'The army planned to {{blank}} the neighboring country.',
             'blank_word' => 'invade',
-            'translation' => '這支軍隊計畫侵略鄰國。',
             'distractors' => [
                 ['vocabulary_id' => 4006, 'word' => 'register'],
                 ['vocabulary_id' => 4008, 'word' => 'endure'],
@@ -43,7 +40,6 @@ return [
             'vocabulary_id' => 4004,
             'sentence' => 'The students took an {{blank}} English course during the summer.',
             'blank_word' => 'intensive',
-            'translation' => '學生們暑假期間參加了密集的英語課程。',
             'distractors' => [
                 ['vocabulary_id' => 4005, 'word' => 'adequate'],
                 ['vocabulary_id' => 4001, 'word' => 'resolution'],
@@ -56,7 +52,6 @@ return [
             'vocabulary_id' => 4005,
             'sentence' => 'Make sure there is {{blank}} lighting in the study room.',
             'blank_word' => 'adequate',
-            'translation' => '請確保書房裡有足夠的照明。',
             'distractors' => [
                 ['vocabulary_id' => 4004, 'word' => 'intensive'],
                 ['vocabulary_id' => 4001, 'word' => 'resolution'],
@@ -69,7 +64,6 @@ return [
             'vocabulary_id' => 4006,
             'sentence' => 'All visitors must {{blank}} their names at the front desk.',
             'blank_word' => 'register',
-            'translation' => '所有訪客都必須在櫃檯登記姓名。',
             'distractors' => [
                 ['vocabulary_id' => 4001, 'word' => 'resolution'],
                 ['vocabulary_id' => 4002, 'word' => 'concrete'],
@@ -83,7 +77,6 @@ return [
             'vocabulary_id' => 4007,
             'sentence' => 'I will {{blank}} with you tomorrow to discuss the project’s progress.',
             'blank_word' => 'touch base',
-            'translation' => '我明天會和你聯絡，討論專案的進度。',
             'distractors' => [
                 ['vocabulary_id' => 4001, 'word' => 'resolution'],
                 ['vocabulary_id' => 4002, 'word' => 'concrete'],
@@ -96,7 +89,6 @@ return [
             'vocabulary_id' => 4008,
             'sentence' => 'The hikers had to {{blank}} heavy rain throughout the journey.',
             'blank_word' => 'endure',
-            'translation' => '健行者一路上都必須忍受大雨。',
             'distractors' => [
                 ['vocabulary_id' => 4003, 'word' => 'invade'],
                 ['vocabulary_id' => 4006, 'word' => 'register'],
@@ -107,7 +99,6 @@ return [
             'vocabulary_id' => 4009,
             'sentence' => 'The company will {{blank}} a new smartphone next month.',
             'blank_word' => 'launch',
-            'translation' => '這家公司下個月將推出一款新智慧型手機。',
             'distractors' => [
                 ['vocabulary_id' => 4001, 'word' => 'resolution'],
                 ['vocabulary_id' => 4002, 'word' => 'concrete'],
@@ -121,7 +112,6 @@ return [
             'vocabulary_id' => 4010,
             'sentence' => 'In the past, people used the {{blank}} to send urgent messages over long distances.',
             'blank_word' => 'telegraph',
-            'translation' => '過去，人們使用電報跨越長距離傳送緊急訊息。',
             'distractors' => [
                 ['vocabulary_id' => 4001, 'word' => 'resolution'],
                 ['vocabulary_id' => 4002, 'word' => 'concrete'],
@@ -135,7 +125,6 @@ return [
             'vocabulary_id' => 4011,
             'sentence' => 'The organization {{blank}} itself to protecting the local environment.',
             'blank_word' => 'committed',
-            'translation' => '這個組織承諾致力於保護當地環境。',
             'distractors' => [
                 ['vocabulary_id' => 4013, 'word' => 'immigrated'],
                 ['vocabulary_id' => 4016, 'word' => 'crammed'],
@@ -148,7 +137,6 @@ return [
             'vocabulary_id' => 4012,
             'sentence' => 'The farmer grows vegetables on one {{blank}} of land.',
             'blank_word' => 'acre',
-            'translation' => '這位農夫在一英畝的土地上種植蔬菜。',
             'distractors' => [
                 ['vocabulary_id' => 4014, 'word' => 'blessing'],
                 ['vocabulary_id' => 4015, 'word' => 'curiosity'],
@@ -159,7 +147,6 @@ return [
             'vocabulary_id' => 4013,
             'sentence' => 'Her grandparents {{blank}} to Canada in search of better opportunities.',
             'blank_word' => 'immigrated',
-            'translation' => '她的祖父母為了尋找更好的機會而移居加拿大。',
             'distractors' => [
                 ['vocabulary_id' => 4011, 'word' => 'committed'],
                 ['vocabulary_id' => 4016, 'word' => 'crammed'],
@@ -172,7 +159,6 @@ return [
             'vocabulary_id' => 4014,
             'sentence' => 'The priest gave the couple his {{blank}} before the wedding.',
             'blank_word' => 'blessing',
-            'translation' => '婚禮前，牧師向這對夫妻獻上祝福。',
             'distractors' => [
                 ['vocabulary_id' => 4012, 'word' => 'acre'],
                 ['vocabulary_id' => 4015, 'word' => 'curiosity'],
@@ -183,7 +169,6 @@ return [
             'vocabulary_id' => 4015,
             'sentence' => '{{blank}} led the child to open the old wooden box.',
             'blank_word' => 'Curiosity',
-            'translation' => '好奇心驅使那個孩子打開了古老的木箱。',
             'distractors' => [
                 ['vocabulary_id' => 4012, 'word' => 'Acre'],
                 ['vocabulary_id' => 4014, 'word' => 'Blessing'],
@@ -194,7 +179,6 @@ return [
             'vocabulary_id' => 4016,
             'sentence' => 'Some students {{blank}} facts into their minds the night before an exam.',
             'blank_word' => 'cram',
-            'translation' => '有些學生在考試前一晚把大量事實死記硬背進腦中。',
             'distractors' => [
                 ['vocabulary_id' => 4011, 'word' => 'commit'],
                 ['vocabulary_id' => 4013, 'word' => 'immigrate'],
@@ -207,7 +191,6 @@ return [
             'vocabulary_id' => 4017,
             'sentence' => 'His {{blank}} caused serious problems in their relationship.',
             'blank_word' => 'jealousy',
-            'translation' => '他的嫉妒為他們的關係造成了嚴重問題。',
             'distractors' => [
                 ['vocabulary_id' => 4012, 'word' => 'acre'],
                 ['vocabulary_id' => 4014, 'word' => 'blessing'],
@@ -218,7 +201,6 @@ return [
             'vocabulary_id' => 4018,
             'sentence' => 'Although the situation is difficult, we should not be {{blank}} about the future.',
             'blank_word' => 'pessimistic',
-            'translation' => '雖然情況很困難，但我們不應該對未來感到悲觀。',
             'distractors' => [
                 ['vocabulary_id' => 4019, 'word' => 'trending'],
                 ['vocabulary_id' => 4020, 'word' => 'partial'],
@@ -231,7 +213,6 @@ return [
             'vocabulary_id' => 4019,
             'sentence' => 'The singer’s new song is {{blank}} on social media this week.',
             'blank_word' => 'trending',
-            'translation' => '這位歌手的新歌本週在社群媒體上很熱門。',
             'distractors' => [
                 ['vocabulary_id' => 4018, 'word' => 'pessimistic'],
                 ['vocabulary_id' => 4020, 'word' => 'partial'],
@@ -244,7 +225,6 @@ return [
             'vocabulary_id' => 4020,
             'sentence' => 'The judge must remain fair and not be {{blank}} to either side.',
             'blank_word' => 'partial',
-            'translation' => '法官必須保持公正，不能偏袒任何一方。',
             'distractors' => [
                 ['vocabulary_id' => 4018, 'word' => 'pessimistic'],
                 ['vocabulary_id' => 4019, 'word' => 'trending'],
@@ -259,7 +239,6 @@ return [
             'vocabulary_id' => 4021,
             'sentence' => 'The whole family {{blank}} after their grandfather passed away.',
             'blank_word' => 'grieved',
-            'translation' => '祖父過世後，全家人都感到悲傷。',
             'distractors' => [
                 ['vocabulary_id' => 4023, 'word' => 'stemmed'],
                 ['vocabulary_id' => 4024, 'word' => 'ceased'],
@@ -272,7 +251,6 @@ return [
             'vocabulary_id' => 4022,
             'sentence' => 'We were touched by the {{blank}} of the woman who donated food to the shelter.',
             'blank_word' => 'generosity',
-            'translation' => '那位捐贈食物給收容所的女士非常慷慨，讓我們深受感動。',
             'distractors' => [
                 ['vocabulary_id' => 4023, 'word' => 'stem'],
                 ['vocabulary_id' => 4025, 'word' => 'salary'],
@@ -286,7 +264,6 @@ return [
             'vocabulary_id' => 4023,
             'sentence' => 'Many of the town’s problems {{blank}} from a lack of public transportation.',
             'blank_word' => 'stem',
-            'translation' => '這座城鎮的許多問題都起源於缺乏大眾運輸。',
             'distractors' => [
                 ['vocabulary_id' => 4021, 'word' => 'grieve'],
                 ['vocabulary_id' => 4022, 'word' => 'generosity'],
@@ -300,7 +277,6 @@ return [
             'vocabulary_id' => 4024,
             'sentence' => 'The factory {{blank}} production because of a serious safety problem.',
             'blank_word' => 'ceased',
-            'translation' => '這家工廠因為嚴重的安全問題而停止生產。',
             'distractors' => [
                 ['vocabulary_id' => 4021, 'word' => 'grieved'],
                 ['vocabulary_id' => 4023, 'word' => 'stemmed'],
@@ -313,7 +289,6 @@ return [
             'vocabulary_id' => 4025,
             'sentence' => 'She accepted the job because it offered a good {{blank}} and flexible hours.',
             'blank_word' => 'salary',
-            'translation' => '她接受了這份工作，因為它提供優渥的薪資和彈性的工時。',
             'distractors' => [
                 ['vocabulary_id' => 4022, 'word' => 'generosity'],
                 ['vocabulary_id' => 4023, 'word' => 'stem'],
@@ -327,7 +302,6 @@ return [
             'vocabulary_id' => 4026,
             'sentence' => 'The students {{blank}} the effects of air pollution on human health.',
             'blank_word' => 'researched',
-            'translation' => '學生研究了空氣污染對人類健康的影響。',
             'distractors' => [
                 ['vocabulary_id' => 4021, 'word' => 'grieved'],
                 ['vocabulary_id' => 4023, 'word' => 'stemmed'],
@@ -340,7 +314,6 @@ return [
             'vocabulary_id' => 4027,
             'sentence' => 'The artist made a quick {{blank}} of the old bridge.',
             'blank_word' => 'sketch',
-            'translation' => '那位藝術家快速畫了一幅老橋的素描。',
             'distractors' => [
                 ['vocabulary_id' => 4021, 'word' => 'grieve'],
                 ['vocabulary_id' => 4022, 'word' => 'generosity'],
@@ -354,7 +327,6 @@ return [
             'vocabulary_id' => 4028,
             'sentence' => 'The plan has several {{blank}}, including its low cost and simple design.',
             'blank_word' => 'merits',
-            'translation' => '這項計畫有幾項優點，包括成本低和設計簡單。',
             'distractors' => [
                 ['vocabulary_id' => 4022, 'word' => 'generosities'],
                 ['vocabulary_id' => 4023, 'word' => 'stems'],
@@ -367,7 +339,6 @@ return [
             'vocabulary_id' => 4029,
             'sentence' => 'She enjoys reading science {{blank}} about life on other planets.',
             'blank_word' => 'fiction',
-            'translation' => '她喜歡閱讀關於其他星球生命的科幻小說。',
             'distractors' => [
                 ['vocabulary_id' => 4022, 'word' => 'generosity'],
                 ['vocabulary_id' => 4023, 'word' => 'stem'],
@@ -381,7 +352,6 @@ return [
             'vocabulary_id' => 4030,
             'sentence' => 'He {{blank}} his weekends to helping children learn to read.',
             'blank_word' => 'devoted',
-            'translation' => '他把週末奉獻給幫助孩子學習閱讀。',
             'distractors' => [
                 ['vocabulary_id' => 4021, 'word' => 'grieved'],
                 ['vocabulary_id' => 4023, 'word' => 'stemmed'],
@@ -396,7 +366,6 @@ return [
             'vocabulary_id' => 4031,
             'sentence' => 'The counselor was {{blank}} and listened carefully to my concerns.',
             'blank_word' => 'sympathetic',
-            'translation' => '那位諮商師很有同情心，仔細聆聽我的擔憂。',
             'distractors' => [
                 ['vocabulary_id' => 4032, 'word' => 'promotion'],
                 ['vocabulary_id' => 4033, 'word' => 'chamber'],
@@ -409,7 +378,6 @@ return [
             'vocabulary_id' => 4032,
             'sentence' => 'Her hard work earned her a {{blank}} to team leader.',
             'blank_word' => 'promotion',
-            'translation' => '她的努力為她贏得了晉升為團隊領導的機會。',
             'distractors' => [
                 ['vocabulary_id' => 4033, 'word' => 'chamber'],
                 ['vocabulary_id' => 4035, 'word' => 'cigar'],
@@ -422,7 +390,6 @@ return [
             'vocabulary_id' => 4033,
             'sentence' => 'The old castle had a small {{blank}} where the king slept.',
             'blank_word' => 'chamber',
-            'translation' => '那座古堡有一間國王睡覺的小房間。',
             'distractors' => [
                 ['vocabulary_id' => 4032, 'word' => 'promotion'],
                 ['vocabulary_id' => 4035, 'word' => 'cigar'],
@@ -435,7 +402,6 @@ return [
             'vocabulary_id' => 4034,
             'sentence' => 'Please {{blank}} the card into the machine before entering your password.',
             'blank_word' => 'insert',
-            'translation' => '輸入密碼前，請將卡片插入機器。',
             'distractors' => [
                 ['vocabulary_id' => 4036, 'word' => 'digest'],
                 ['vocabulary_id' => 4038, 'word' => 'bargain'],
@@ -448,7 +414,6 @@ return [
             'vocabulary_id' => 4035,
             'sentence' => 'The man held an expensive {{blank}} but did not light it.',
             'blank_word' => 'cigar',
-            'translation' => '那名男子拿著一支昂貴的雪茄，但沒有點燃它。',
             'distractors' => [
                 ['vocabulary_id' => 4032, 'word' => 'promotion'],
                 ['vocabulary_id' => 4033, 'word' => 'chamber'],
@@ -461,7 +426,6 @@ return [
             'vocabulary_id' => 4036,
             'sentence' => 'It took me some time to {{blank}} the information in the report.',
             'blank_word' => 'digest',
-            'translation' => '我花了一些時間才理解報告中的資訊。',
             'distractors' => [
                 ['vocabulary_id' => 4034, 'word' => 'insert'],
                 ['vocabulary_id' => 4038, 'word' => 'bargain'],
@@ -474,7 +438,6 @@ return [
             'vocabulary_id' => 4037,
             'sentence' => 'The police arrested the {{blank}} outside the bank.',
             'blank_word' => 'gangster',
-            'translation' => '警方在銀行外逮捕了那名歹徒。',
             'distractors' => [
                 ['vocabulary_id' => 4032, 'word' => 'promotion'],
                 ['vocabulary_id' => 4033, 'word' => 'chamber'],
@@ -487,7 +450,6 @@ return [
             'vocabulary_id' => 4038,
             'sentence' => 'The customer {{blank}} with the seller for a lower price.',
             'blank_word' => 'bargained',
-            'translation' => '那名顧客和賣家討價還價，希望能以更低的價格購買。',
             'distractors' => [
                 ['vocabulary_id' => 4034, 'word' => 'inserted'],
                 ['vocabulary_id' => 4036, 'word' => 'digested'],
@@ -500,7 +462,6 @@ return [
             'vocabulary_id' => 4039,
             'sentence' => 'Our main {{blank}} is to reduce plastic waste at school.',
             'blank_word' => 'objective',
-            'translation' => '我們的主要目標是減少學校的塑膠垃圾。',
             'distractors' => [
                 ['vocabulary_id' => 4032, 'word' => 'promotion'],
                 ['vocabulary_id' => 4033, 'word' => 'chamber'],
@@ -513,7 +474,6 @@ return [
             'vocabulary_id' => 4040,
             'sentence' => 'Working from home has helped me achieve a better {{blank}}.',
             'blank_word' => 'work-life balance',
-            'translation' => '在家工作幫助我達到更好的工作與生活平衡。',
             'distractors' => [
                 ['vocabulary_id' => 4032, 'word' => 'promotion'],
                 ['vocabulary_id' => 4033, 'word' => 'chamber'],
@@ -528,7 +488,6 @@ return [
             'vocabulary_id' => 4041,
             'sentence' => 'We took a scenic {{blank}} through the mountains to reach the village.',
             'blank_word' => 'route',
-            'translation' => '我們走了一條穿越山區的風景優美路線，前往那座村莊。',
             'distractors' => [
                 ['vocabulary_id' => 4042, 'word' => 'professional'],
                 ['vocabulary_id' => 4043, 'word' => 'slogan'],
@@ -541,7 +500,6 @@ return [
             'vocabulary_id' => 4042,
             'sentence' => 'The young athlete hopes to become a {{blank}} after years of training.',
             'blank_word' => 'professional',
-            'translation' => '這名年輕運動員經過多年的訓練，希望成為職業選手。',
             'distractors' => [
                 ['vocabulary_id' => 4041, 'word' => 'route'],
                 ['vocabulary_id' => 4043, 'word' => 'slogan'],
@@ -555,7 +513,6 @@ return [
             'vocabulary_id' => 4043,
             'sentence' => 'The company created a simple {{blank}} for its new environmental campaign.',
             'blank_word' => 'slogan',
-            'translation' => '這家公司為新的環保活動創造了一句簡單的口號。',
             'distractors' => [
                 ['vocabulary_id' => 4041, 'word' => 'route'],
                 ['vocabulary_id' => 4042, 'word' => 'professional'],
@@ -568,7 +525,6 @@ return [
             'vocabulary_id' => 4044,
             'sentence' => 'The {{blank}} design of the building attracts many visitors.',
             'blank_word' => 'artistic',
-            'translation' => '這棟建築的藝術設計吸引了許多遊客。',
             'distractors' => [
                 ['vocabulary_id' => 4042, 'word' => 'professional'],
                 ['vocabulary_id' => 4046, 'word' => 'characteristic'],
@@ -581,7 +537,6 @@ return [
             'vocabulary_id' => 4045,
             'sentence' => 'The owners plan to {{blank}} the old kitchen next month.',
             'blank_word' => 'renovate',
-            'translation' => '屋主計畫下個月整修老舊的廚房。',
             'distractors' => [
                 ['vocabulary_id' => 4050, 'word' => 'dominate'],
                 ['vocabulary_id' => 4041, 'word' => 'route'],
@@ -594,7 +549,6 @@ return [
             'vocabulary_id' => 4046,
             'sentence' => 'The warm smile is {{blank}} of the friendly teacher.',
             'blank_word' => 'characteristic',
-            'translation' => '溫暖的笑容是這位親切老師的典型特徵。',
             'distractors' => [
                 ['vocabulary_id' => 4042, 'word' => 'professional'],
                 ['vocabulary_id' => 4044, 'word' => 'artistic'],
@@ -607,7 +561,6 @@ return [
             'vocabulary_id' => 4047,
             'sentence' => 'A {{blank}} landed on the balcony and began to sing.',
             'blank_word' => 'sparrow',
-            'translation' => '一隻麻雀停在陽臺上，開始唱歌。',
             'distractors' => [
                 ['vocabulary_id' => 4041, 'word' => 'route'],
                 ['vocabulary_id' => 4042, 'word' => 'professional'],
@@ -620,7 +573,6 @@ return [
             'vocabulary_id' => 4048,
             'sentence' => 'Our {{blank}} includes visits to three museums and a night market.',
             'blank_word' => 'itinerary',
-            'translation' => '我們的行程表包括參觀三座博物館和一個夜市。',
             'distractors' => [
                 ['vocabulary_id' => 4041, 'word' => 'route'],
                 ['vocabulary_id' => 4042, 'word' => 'professional'],
@@ -633,7 +585,6 @@ return [
             'vocabulary_id' => 4049,
             'sentence' => 'They spent their {{blank}} on a quiet island in the Pacific Ocean.',
             'blank_word' => 'honeymoon',
-            'translation' => '他們在太平洋的一座寧靜島嶼上度過蜜月。',
             'distractors' => [
                 ['vocabulary_id' => 4041, 'word' => 'route'],
                 ['vocabulary_id' => 4042, 'word' => 'professional'],
@@ -646,7 +597,6 @@ return [
             'vocabulary_id' => 4050,
             'sentence' => 'The home team {{blank}} the game from the very beginning.',
             'blank_word' => 'dominated',
-            'translation' => '主隊從一開始就控制了整場比賽。',
             'distractors' => [
                 ['vocabulary_id' => 4045, 'word' => 'renovated'],
                 ['vocabulary_id' => 4041, 'word' => 'route'],
@@ -661,7 +611,6 @@ return [
             'vocabulary_id' => 4051,
             'sentence' => 'Learning a musical instrument requires patience and {{blank}}.',
             'blank_word' => 'discipline',
-            'translation' => '學習樂器需要耐心和紀律。',
             'distractors' => [
                 ['vocabulary_id' => 4053, 'word' => 'lag'],
                 ['vocabulary_id' => 4060, 'word' => 'handwriting'],
@@ -674,7 +623,6 @@ return [
             'vocabulary_id' => 4052,
             'sentence' => 'The sky began to {{blank}} as the sun rose.',
             'blank_word' => 'lighten',
-            'translation' => '太陽升起時，天空開始變亮。',
             'distractors' => [
                 ['vocabulary_id' => 4053, 'word' => 'lag'],
                 ['vocabulary_id' => 4055, 'word' => 'refer'],
@@ -685,7 +633,6 @@ return [
             'vocabulary_id' => 4053,
             'sentence' => 'Our internet connection began to {{blank}} during the online meeting.',
             'blank_word' => 'lag',
-            'translation' => '線上會議期間，我們的網路連線開始延遲。',
             'distractors' => [
                 ['vocabulary_id' => 4051, 'word' => 'discipline'],
                 ['vocabulary_id' => 4052, 'word' => 'lighten'],
@@ -698,7 +645,6 @@ return [
             'vocabulary_id' => 4054,
             'sentence' => 'She became {{blank}} when she read the letter from her old friend.',
             'blank_word' => 'emotional',
-            'translation' => '她讀到老朋友的信時，情緒變得很激動。',
             'distractors' => [
                 ['vocabulary_id' => 4056, 'word' => 'voluntary'],
                 ['vocabulary_id' => 4057, 'word' => 'essential'],
@@ -709,7 +655,6 @@ return [
             'vocabulary_id' => 4055,
             'sentence' => 'The teacher asked us to {{blank}} to the map before answering the questions.',
             'blank_word' => 'refer',
-            'translation' => '老師要求我們在回答問題前參考地圖。',
             'distractors' => [
                 ['vocabulary_id' => 4052, 'word' => 'lighten'],
                 ['vocabulary_id' => 4053, 'word' => 'lag'],
@@ -720,7 +665,6 @@ return [
             'vocabulary_id' => 4056,
             'sentence' => 'The students did {{blank}} work at a local animal shelter.',
             'blank_word' => 'voluntary',
-            'translation' => '學生們在當地的動物收容所從事志願工作。',
             'distractors' => [
                 ['vocabulary_id' => 4054, 'word' => 'emotional'],
                 ['vocabulary_id' => 4057, 'word' => 'essential'],
@@ -731,7 +675,6 @@ return [
             'vocabulary_id' => 4057,
             'sentence' => 'Clean water is {{blank}} for the health of every community.',
             'blank_word' => 'essential',
-            'translation' => '乾淨的水對每個社區的健康都很重要。',
             'distractors' => [
                 ['vocabulary_id' => 4054, 'word' => 'emotional'],
                 ['vocabulary_id' => 4056, 'word' => 'voluntary'],
@@ -742,7 +685,6 @@ return [
             'vocabulary_id' => 4058,
             'sentence' => 'We found several {{blank}} boxes in the attic.',
             'blank_word' => 'dusty',
-            'translation' => '我們在閣樓裡找到幾個滿是灰塵的箱子。',
             'distractors' => [
                 ['vocabulary_id' => 4054, 'word' => 'emotional'],
                 ['vocabulary_id' => 4056, 'word' => 'voluntary'],
@@ -753,7 +695,6 @@ return [
             'vocabulary_id' => 4059,
             'sentence' => 'The magician used funny tricks to {{blank}} the children.',
             'blank_word' => 'amuse',
-            'translation' => '魔術師用有趣的把戲逗孩子們開心。',
             'distractors' => [
                 ['vocabulary_id' => 4052, 'word' => 'lighten'],
                 ['vocabulary_id' => 4053, 'word' => 'lag'],
@@ -764,7 +705,6 @@ return [
             'vocabulary_id' => 4060,
             'sentence' => 'I could hardly read his {{blank}} because the letters were so small.',
             'blank_word' => 'handwriting',
-            'translation' => '我幾乎看不懂他的筆跡，因為字母寫得太小了。',
             'distractors' => [
                 ['vocabulary_id' => 4051, 'word' => 'discipline'],
                 ['vocabulary_id' => 4053, 'word' => 'lag'],
@@ -779,7 +719,6 @@ return [
             'vocabulary_id' => 4061,
             'sentence' => 'My phone {{blank}} is almost dead, so I need to charge it.',
             'blank_word' => 'battery',
-            'translation' => '我的手機電池快沒電了，所以我需要充電。',
             'distractors' => [
                 ['vocabulary_id' => 4062, 'word' => 'contribution'],
                 ['vocabulary_id' => 4063, 'word' => 'disaster'],
@@ -793,7 +732,6 @@ return [
             'vocabulary_id' => 4062,
             'sentence' => 'Her {{blank}} to the school magazine was a thoughtful article about local history.',
             'blank_word' => 'contribution',
-            'translation' => '她對校刊的貢獻是一篇探討地方歷史的深思文章。',
             'distractors' => [
                 ['vocabulary_id' => 4061, 'word' => 'battery'],
                 ['vocabulary_id' => 4063, 'word' => 'disaster'],
@@ -807,7 +745,6 @@ return [
             'vocabulary_id' => 4063,
             'sentence' => 'The earthquake was a major {{blank}} that destroyed many homes.',
             'blank_word' => 'disaster',
-            'translation' => '這場地震是一場摧毀許多房屋的重大災難。',
             'distractors' => [
                 ['vocabulary_id' => 4061, 'word' => 'battery'],
                 ['vocabulary_id' => 4062, 'word' => 'contribution'],
@@ -821,7 +758,6 @@ return [
             'vocabulary_id' => 4064,
             'sentence' => 'Visitors walked through the stone {{blank}} at the entrance to the old city.',
             'blank_word' => 'arch',
-            'translation' => '遊客們走過老城入口處的石拱門。',
             'distractors' => [
                 ['vocabulary_id' => 4061, 'word' => 'battery'],
                 ['vocabulary_id' => 4062, 'word' => 'contribution'],
@@ -835,7 +771,6 @@ return [
             'vocabulary_id' => 4065,
             'sentence' => 'The {{blank}} of the computer changed the way people work and communicate.',
             'blank_word' => 'invention',
-            'translation' => '電腦的發明改變了人們工作和溝通的方式。',
             'distractors' => [
                 ['vocabulary_id' => 4061, 'word' => 'battery'],
                 ['vocabulary_id' => 4062, 'word' => 'contribution'],
@@ -849,7 +784,6 @@ return [
             'vocabulary_id' => 4066,
             'sentence' => 'Reading in a quiet room helps me improve my {{blank}}.',
             'blank_word' => 'concentration',
-            'translation' => '在安靜的房間裡閱讀有助於提升我的專注力。',
             'distractors' => [
                 ['vocabulary_id' => 4061, 'word' => 'battery'],
                 ['vocabulary_id' => 4062, 'word' => 'contribution'],
@@ -863,7 +797,6 @@ return [
             'vocabulary_id' => 4067,
             'sentence' => 'The {{blank}} carefully explained the operation to the patient.',
             'blank_word' => 'surgeon',
-            'translation' => '外科醫生仔細地向病人解釋了手術內容。',
             'distractors' => [
                 ['vocabulary_id' => 4061, 'word' => 'battery'],
                 ['vocabulary_id' => 4062, 'word' => 'contribution'],
@@ -877,7 +810,6 @@ return [
             'vocabulary_id' => 4068,
             'sentence' => 'After his {{blank}}, my grandfather began traveling around Taiwan.',
             'blank_word' => 'retirement',
-            'translation' => '退休後，我的祖父開始環遊臺灣。',
             'distractors' => [
                 ['vocabulary_id' => 4061, 'word' => 'battery'],
                 ['vocabulary_id' => 4062, 'word' => 'contribution'],
@@ -891,7 +823,6 @@ return [
             'vocabulary_id' => 4069,
             'sentence' => 'The team’s {{blank}} victory surprised everyone because they had lost their first two games.',
             'blank_word' => 'eventual',
-            'translation' => '這支隊伍最後的勝利讓所有人都感到意外，因為他們前兩場比賽都輸了。',
             'distractors' => [
                 ['vocabulary_id' => 4061, 'word' => 'battery'],
                 ['vocabulary_id' => 4062, 'word' => 'contribution'],
@@ -904,7 +835,6 @@ return [
             'vocabulary_id' => 4070,
             'sentence' => 'You need to update the {{blank}} before using the new features.',
             'blank_word' => 'software',
-            'translation' => '你需要先更新軟體，才能使用新功能。',
             'distractors' => [
                 ['vocabulary_id' => 4061, 'word' => 'battery'],
                 ['vocabulary_id' => 4062, 'word' => 'contribution'],
@@ -920,7 +850,6 @@ return [
             'vocabulary_id' => 4071,
             'sentence' => 'I stopped at the {{blank}} to take out some cash.',
             'blank_word' => 'ATM',
-            'translation' => '我在自動提款機前停下來領了一些現金。',
             'distractors' => [
                 ['vocabulary_id' => 4075, 'word' => 'shuttle'],
                 ['vocabulary_id' => 4076, 'word' => 'professor'],
@@ -933,7 +862,6 @@ return [
             'vocabulary_id' => 4072,
             'sentence' => 'It was {{blank}} of the company to refuse to pay its workers on time.',
             'blank_word' => 'shameful',
-            'translation' => '那家公司拒絕準時支付員工薪水，實在很可恥。',
             'distractors' => [
                 ['vocabulary_id' => 4073, 'word' => 'promising'],
                 ['vocabulary_id' => 4077, 'word' => 'identical'],
@@ -946,7 +874,6 @@ return [
             'vocabulary_id' => 4073,
             'sentence' => 'The young scientist has a {{blank}} future in medical research.',
             'blank_word' => 'promising',
-            'translation' => '這位年輕科學家在醫學研究方面有著充滿希望的未來。',
             'distractors' => [
                 ['vocabulary_id' => 4072, 'word' => 'shameful'],
                 ['vocabulary_id' => 4077, 'word' => 'identical'],
@@ -959,7 +886,6 @@ return [
             'vocabulary_id' => 4074,
             'sentence' => 'The city plans to {{blank}} the old theater and reopen it next year.',
             'blank_word' => 'restore',
-            'translation' => '市政府計畫修復那座老戲院，並於明年重新開放。',
             'distractors' => [
                 ['vocabulary_id' => 4071, 'word' => 'ATM'],
                 ['vocabulary_id' => 4072, 'word' => 'shameful'],
@@ -972,7 +898,6 @@ return [
             'vocabulary_id' => 4075,
             'sentence' => 'A free {{blank}} takes passengers from the train station to the airport.',
             'blank_word' => 'shuttle',
-            'translation' => '免費接駁車會載乘客從火車站前往機場。',
             'distractors' => [
                 ['vocabulary_id' => 4071, 'word' => 'ATM'],
                 ['vocabulary_id' => 4076, 'word' => 'professor'],
@@ -985,7 +910,6 @@ return [
             'vocabulary_id' => 4076,
             'sentence' => 'The {{blank}} encouraged students to ask questions during the lecture.',
             'blank_word' => 'professor',
-            'translation' => '教授鼓勵學生在演講期間提問。',
             'distractors' => [
                 ['vocabulary_id' => 4071, 'word' => 'ATM'],
                 ['vocabulary_id' => 4075, 'word' => 'shuttle'],
@@ -998,7 +922,6 @@ return [
             'vocabulary_id' => 4077,
             'sentence' => 'The twins wore {{blank}} jackets, so their teacher could hardly tell them apart.',
             'blank_word' => 'identical',
-            'translation' => '這對雙胞胎穿著完全相同的外套，因此老師幾乎分不出他們誰是誰。',
             'distractors' => [
                 ['vocabulary_id' => 4072, 'word' => 'shameful'],
                 ['vocabulary_id' => 4073, 'word' => 'promising'],
@@ -1011,7 +934,6 @@ return [
             'vocabulary_id' => 4078,
             'sentence' => 'I used a {{blank}} to check the total cost of the books.',
             'blank_word' => 'calculator',
-            'translation' => '我用計算機確認這些書的總費用。',
             'distractors' => [
                 ['vocabulary_id' => 4071, 'word' => 'ATM'],
                 ['vocabulary_id' => 4075, 'word' => 'shuttle'],
@@ -1024,7 +946,6 @@ return [
             'vocabulary_id' => 4079,
             'sentence' => 'According to local {{blank}}, a golden treasure is hidden beneath the mountain.',
             'blank_word' => 'legend',
-            'translation' => '根據當地傳說，山下藏著一批黃金寶藏。',
             'distractors' => [
                 ['vocabulary_id' => 4071, 'word' => 'ATM'],
                 ['vocabulary_id' => 4075, 'word' => 'shuttle'],
@@ -1037,7 +958,6 @@ return [
             'vocabulary_id' => 4080,
             'sentence' => 'Active {{blank}} in class discussions can improve your understanding of the subject.',
             'blank_word' => 'participation',
-            'translation' => '積極參與課堂討論可以增進你對這個科目的理解。',
             'distractors' => [
                 ['vocabulary_id' => 4071, 'word' => 'ATM'],
                 ['vocabulary_id' => 4075, 'word' => 'shuttle'],
@@ -1052,7 +972,6 @@ return [
             'vocabulary_id' => 4081,
             'sentence' => 'We gathered to {{blank}} Mia on winning the science competition.',
             'blank_word' => 'congratulate',
-            'translation' => '我們聚在一起祝賀米雅贏得科學比賽。',
             'distractors' => [
                 ['vocabulary_id' => 4088, 'word' => 'bounce'],
                 ['vocabulary_id' => 4082, 'word' => 'technological'],
@@ -1065,7 +984,6 @@ return [
             'vocabulary_id' => 4082,
             'sentence' => '{{blank}} advances have made online learning more convenient.',
             'blank_word' => 'Technological',
-            'translation' => '技術的進步讓線上學習更加便利。',
             'distractors' => [
                 ['vocabulary_id' => 4083, 'word' => 'Tribal'],
                 ['vocabulary_id' => 4081, 'word' => 'Congratulate'],
@@ -1078,7 +996,6 @@ return [
             'vocabulary_id' => 4083,
             'sentence' => 'The museum displays traditional {{blank}} clothing from several regions.',
             'blank_word' => 'tribal',
-            'translation' => '這間博物館展示來自幾個地區的傳統部落服飾。',
             'distractors' => [
                 ['vocabulary_id' => 4082, 'word' => 'technological'],
                 ['vocabulary_id' => 4081, 'word' => 'congratulate'],
@@ -1091,7 +1008,6 @@ return [
             'vocabulary_id' => 4084,
             'sentence' => 'There are several excellent restaurants in the {{blank}} of the hotel.',
             'blank_word' => 'vicinity',
-            'translation' => '飯店附近地區有幾家很棒的餐廳。',
             'distractors' => [
                 ['vocabulary_id' => 4085, 'word' => 'dynasty'],
                 ['vocabulary_id' => 4086, 'word' => 'pedal'],
@@ -1105,7 +1021,6 @@ return [
             'vocabulary_id' => 4085,
             'sentence' => 'The museum has many valuable paintings from the Qing {{blank}}.',
             'blank_word' => 'Dynasty',
-            'translation' => '這座博物館收藏了許多珍貴的清朝畫作。',
             'distractors' => [
                 ['vocabulary_id' => 4084, 'word' => 'vicinity'],
                 ['vocabulary_id' => 4086, 'word' => 'pedal'],
@@ -1119,7 +1034,6 @@ return [
             'vocabulary_id' => 4086,
             'sentence' => 'She pressed the bicycle {{blank}} and rode quickly down the hill.',
             'blank_word' => 'pedal',
-            'translation' => '她踩下腳踏車的踏板，快速騎下山坡。',
             'distractors' => [
                 ['vocabulary_id' => 4084, 'word' => 'vicinity'],
                 ['vocabulary_id' => 4085, 'word' => 'dynasty'],
@@ -1133,7 +1047,6 @@ return [
             'vocabulary_id' => 4087,
             'sentence' => 'The {{blank}} damaged hundreds of homes along the coast.',
             'blank_word' => 'hurricane',
-            'translation' => '颶風損壞了沿海數百間房屋。',
             'distractors' => [
                 ['vocabulary_id' => 4084, 'word' => 'vicinity'],
                 ['vocabulary_id' => 4085, 'word' => 'dynasty'],
@@ -1147,7 +1060,6 @@ return [
             'vocabulary_id' => 4088,
             'sentence' => 'The ball {{blank}} off the wall and rolled under the table.',
             'blank_word' => 'bounced',
-            'translation' => '球從牆上彈回來，滾到桌子底下。',
             'distractors' => [
                 ['vocabulary_id' => 4081, 'word' => 'congratulated'],
                 ['vocabulary_id' => 4082, 'word' => 'technological'],
@@ -1160,7 +1072,6 @@ return [
             'vocabulary_id' => 4089,
             'sentence' => 'The actor waited for his {{blank}} before walking onto the stage.',
             'blank_word' => 'cue',
-            'translation' => '那名演員等候提示後才走上舞台。',
             'distractors' => [
                 ['vocabulary_id' => 4084, 'word' => 'vicinity'],
                 ['vocabulary_id' => 4085, 'word' => 'dynasty'],
@@ -1174,7 +1085,6 @@ return [
             'vocabulary_id' => 4090,
             'sentence' => 'In the sentence “She has finished her work,” “finished” is a past {{blank}}.',
             'blank_word' => 'participle',
-            'translation' => '在「She has finished her work」這個句子中，finished 是過去分詞。',
             'distractors' => [
                 ['vocabulary_id' => 4084, 'word' => 'vicinity'],
                 ['vocabulary_id' => 4085, 'word' => 'dynasty'],
@@ -1190,7 +1100,6 @@ return [
             'vocabulary_id' => 4091,
             'sentence' => 'My grandfather began to {{blank}} in the comfortable chair.',
             'blank_word' => 'doze',
-            'translation' => '我祖父開始在舒適的椅子上打瞌睡。',
             'distractors' => [
                 ['vocabulary_id' => 4092, 'word' => 'labor'],
                 ['vocabulary_id' => 4094, 'word' => 'disguise'],
@@ -1204,7 +1113,6 @@ return [
             'vocabulary_id' => 4092,
             'sentence' => 'The workers’ {{blank}} helped complete the bridge on schedule.',
             'blank_word' => 'labor',
-            'translation' => '工人的勞動幫助這座橋如期完工。',
             'distractors' => [
                 ['vocabulary_id' => 4091, 'word' => 'doze'],
                 ['vocabulary_id' => 4094, 'word' => 'disguise'],
@@ -1218,7 +1126,6 @@ return [
             'vocabulary_id' => 4093,
             'sentence' => 'The town held a memorial for the victims of the {{blank}} accident.',
             'blank_word' => 'tragic',
-            'translation' => '鎮民為那場悲慘事故的受害者舉行了追思會。',
             'distractors' => [
                 ['vocabulary_id' => 4097, 'word' => 'definite'],
                 ['vocabulary_id' => 4091, 'word' => 'doze'],
@@ -1231,7 +1138,6 @@ return [
             'vocabulary_id' => 4094,
             'sentence' => 'The spy {{blank}} himself as a delivery driver to enter the building.',
             'blank_word' => 'disguised',
-            'translation' => '那名間諜把自己偽裝成送貨司機，以便進入大樓。',
             'distractors' => [
                 ['vocabulary_id' => 4091, 'word' => 'dozed'],
                 ['vocabulary_id' => 4092, 'word' => 'labored'],
@@ -1244,7 +1150,6 @@ return [
             'vocabulary_id' => 4095,
             'sentence' => 'The {{blank}} smiled proudly as he walked down the aisle.',
             'blank_word' => 'groom',
-            'translation' => '新郎走過婚禮走道時，臉上帶著自豪的笑容。',
             'distractors' => [
                 ['vocabulary_id' => 4091, 'word' => 'doze'],
                 ['vocabulary_id' => 4092, 'word' => 'labor'],
@@ -1258,7 +1163,6 @@ return [
             'vocabulary_id' => 4096,
             'sentence' => 'A royal {{blank}} delivered the king’s letter before sunset.',
             'blank_word' => 'messenger',
-            'translation' => '一名王室信差在日落前送達了國王的信。',
             'distractors' => [
                 ['vocabulary_id' => 4091, 'word' => 'doze'],
                 ['vocabulary_id' => 4092, 'word' => 'labor'],
@@ -1272,7 +1176,6 @@ return [
             'vocabulary_id' => 4097,
             'sentence' => 'We need a {{blank}} answer before we make a final decision.',
             'blank_word' => 'definite',
-            'translation' => '我們需要明確的答案，才能做出最後決定。',
             'distractors' => [
                 ['vocabulary_id' => 4093, 'word' => 'tragic'],
                 ['vocabulary_id' => 4091, 'word' => 'doze'],
@@ -1285,7 +1188,6 @@ return [
             'vocabulary_id' => 4098,
             'sentence' => 'The children watched a {{blank}} explode in the open field.',
             'blank_word' => 'firecracker',
-            'translation' => '孩子們看著一枚鞭炮在空曠的田野中爆炸。',
             'distractors' => [
                 ['vocabulary_id' => 4091, 'word' => 'doze'],
                 ['vocabulary_id' => 4092, 'word' => 'labor'],
@@ -1299,7 +1201,6 @@ return [
             'vocabulary_id' => 4099,
             'sentence' => 'For homework, I wrote an {{blank}} about the importance of protecting the environment.',
             'blank_word' => 'essay',
-            'translation' => '我寫了一篇探討保護環境重要性的論說文，作為家庭作業。',
             'distractors' => [
                 ['vocabulary_id' => 4091, 'word' => 'doze'],
                 ['vocabulary_id' => 4092, 'word' => 'labor'],
@@ -1313,7 +1214,6 @@ return [
             'vocabulary_id' => 4100,
             'sentence' => 'He has a {{blank}} to check his phone whenever he feels bored.',
             'blank_word' => 'tendency',
-            'translation' => '他一感到無聊，就有查看手機的傾向。',
             'distractors' => [
                 ['vocabulary_id' => 4091, 'word' => 'doze'],
                 ['vocabulary_id' => 4092, 'word' => 'labor'],
@@ -1329,7 +1229,6 @@ return [
             'vocabulary_id' => 4101,
             'sentence' => '“You finished all the work in five minutes?” “{{blank}}!”',
             'blank_word' => 'Nonsense',
-            'translation' => '「你五分鐘就完成所有工作了？」 「胡說！」',
             'distractors' => [
                 ['vocabulary_id' => 4102, 'word' => 'demonstration'],
                 ['vocabulary_id' => 4104, 'word' => 'device'],
@@ -1341,7 +1240,6 @@ return [
             'vocabulary_id' => 4102,
             'sentence' => 'The teacher gave a {{blank}} of how the machine works.',
             'blank_word' => 'demonstration',
-            'translation' => '老師示範了這台機器的運作方式。',
             'distractors' => [
                 ['vocabulary_id' => 4101, 'word' => 'nonsense'],
                 ['vocabulary_id' => 4104, 'word' => 'device'],
@@ -1353,7 +1251,6 @@ return [
             'vocabulary_id' => 4103,
             'sentence' => 'The road {{blank}} sharply around the mountain.',
             'blank_word' => 'curves',
-            'translation' => '這條路沿著山邊急轉彎。',
             'distractors' => [
                 ['vocabulary_id' => 4108, 'word' => 'divorces'],
                 ['vocabulary_id' => 4101, 'word' => 'nonsense'],
@@ -1366,7 +1263,6 @@ return [
             'vocabulary_id' => 4104,
             'sentence' => 'This {{blank}} can measure your heart rate.',
             'blank_word' => 'device',
-            'translation' => '這個裝置可以測量你的心跳速率。',
             'distractors' => [
                 ['vocabulary_id' => 4101, 'word' => 'nonsense'],
                 ['vocabulary_id' => 4102, 'word' => 'demonstration'],
@@ -1378,7 +1274,6 @@ return [
             'vocabulary_id' => 4105,
             'sentence' => 'My uncle is {{blank}}, but he still looks very handsome.',
             'blank_word' => 'bald',
-            'translation' => '我叔叔禿頭，但他看起來還是很英俊。',
             'distractors' => [
                 ['vocabulary_id' => 4109, 'word' => 'artificial'],
                 ['vocabulary_id' => 4110, 'word' => 'distinct'],
@@ -1391,7 +1286,6 @@ return [
             'vocabulary_id' => 4106,
             'sentence' => 'Everyone in the {{blank}} helps with the housework.',
             'blank_word' => 'household',
-            'translation' => '家裡的每個人都會幫忙做家事。',
             'distractors' => [
                 ['vocabulary_id' => 4101, 'word' => 'nonsense'],
                 ['vocabulary_id' => 4102, 'word' => 'demonstration'],
@@ -1403,7 +1297,6 @@ return [
             'vocabulary_id' => 4107,
             'sentence' => 'The {{blank}} announced a new plan to improve public transportation.',
             'blank_word' => 'minister',
-            'translation' => '部長宣布了一項改善大眾運輸的新計畫。',
             'distractors' => [
                 ['vocabulary_id' => 4101, 'word' => 'nonsense'],
                 ['vocabulary_id' => 4102, 'word' => 'demonstration'],
@@ -1415,7 +1308,6 @@ return [
             'vocabulary_id' => 4108,
             'sentence' => 'After many years of unhappiness, she decided to {{blank}} her husband.',
             'blank_word' => 'divorce',
-            'translation' => '多年不快樂的婚姻生活後，她決定與丈夫離婚。',
             'distractors' => [
                 ['vocabulary_id' => 4103, 'word' => 'curve'],
                 ['vocabulary_id' => 4101, 'word' => 'nonsense'],
@@ -1428,7 +1320,6 @@ return [
             'vocabulary_id' => 4109,
             'sentence' => 'The hotel has an {{blank}} lake surrounded by trees.',
             'blank_word' => 'artificial',
-            'translation' => '那家飯店有一座四周種滿樹木的人工湖。',
             'distractors' => [
                 ['vocabulary_id' => 4105, 'word' => 'bald'],
                 ['vocabulary_id' => 4110, 'word' => 'distinct'],
@@ -1441,7 +1332,6 @@ return [
             'vocabulary_id' => 4110,
             'sentence' => 'The two sisters have {{blank}} personalities.',
             'blank_word' => 'distinct',
-            'translation' => '這兩姊妹有截然不同的個性。',
             'distractors' => [
                 ['vocabulary_id' => 4105, 'word' => 'bald'],
                 ['vocabulary_id' => 4109, 'word' => 'artificial'],
@@ -1456,7 +1346,6 @@ return [
             'vocabulary_id' => 4111,
             'sentence' => 'Many people {{blank}} their savings in education or housing.',
             'blank_word' => 'invest',
-            'translation' => '許多人把積蓄投資在教育或房屋上。',
             'distractors' => [
                 ['vocabulary_id' => 4115, 'word' => 'mislead'],
                 ['vocabulary_id' => 4120, 'word' => 'differ'],
@@ -1469,7 +1358,6 @@ return [
             'vocabulary_id' => 4112,
             'sentence' => 'The teacher praised the student\'s polite {{blank}}.',
             'blank_word' => 'behavior',
-            'translation' => '老師稱讚那名學生有禮貌的行為。',
             'distractors' => [
                 ['vocabulary_id' => 4113, 'word' => 'verb'],
                 ['vocabulary_id' => 4117, 'word' => 'apology'],
@@ -1480,7 +1368,6 @@ return [
             'vocabulary_id' => 4113,
             'sentence' => 'In the sentence “Tom runs every morning,” “runs” is a {{blank}}.',
             'blank_word' => 'verb',
-            'translation' => '在「Tom runs every morning」這個句子中，runs 是動詞。',
             'distractors' => [
                 ['vocabulary_id' => 4112, 'word' => 'behavior'],
                 ['vocabulary_id' => 4117, 'word' => 'apology'],
@@ -1491,7 +1378,6 @@ return [
             'vocabulary_id' => 4114,
             'sentence' => 'The engineers developed a {{blank}} plan for repairing the bridge.',
             'blank_word' => 'sound',
-            'translation' => '工程師制定了一個可靠的橋梁修復計畫。',
             'distractors' => [
                 ['vocabulary_id' => 4116, 'word' => 'lousy'],
                 ['vocabulary_id' => 4118, 'word' => 'dense'],
@@ -1504,7 +1390,6 @@ return [
             'vocabulary_id' => 4115,
             'sentence' => 'The advertisement may {{blank}} customers about the product\'s quality.',
             'blank_word' => 'mislead',
-            'translation' => '這則廣告可能會誤導顧客，使他們誤以為產品品質很好。',
             'distractors' => [
                 ['vocabulary_id' => 4111, 'word' => 'invest'],
                 ['vocabulary_id' => 4120, 'word' => 'differ'],
@@ -1517,7 +1402,6 @@ return [
             'vocabulary_id' => 4116,
             'sentence' => 'We had a {{blank}} meal at that dirty restaurant.',
             'blank_word' => 'lousy',
-            'translation' => '我們在那間骯髒的餐廳吃了一頓很糟的飯。',
             'distractors' => [
                 ['vocabulary_id' => 4114, 'word' => 'sound'],
                 ['vocabulary_id' => 4118, 'word' => 'dense'],
@@ -1530,7 +1414,6 @@ return [
             'vocabulary_id' => 4117,
             'sentence' => 'Please accept my {{blank}} for arriving late.',
             'blank_word' => 'apology',
-            'translation' => '請接受我對遲到的道歉。',
             'distractors' => [
                 ['vocabulary_id' => 4112, 'word' => 'behavior'],
                 ['vocabulary_id' => 4113, 'word' => 'verb'],
@@ -1541,7 +1424,6 @@ return [
             'vocabulary_id' => 4118,
             'sentence' => 'The hikers walked through a {{blank}} forest.',
             'blank_word' => 'dense',
-            'translation' => '健行者穿越了一片茂密的森林。',
             'distractors' => [
                 ['vocabulary_id' => 4114, 'word' => 'sound'],
                 ['vocabulary_id' => 4116, 'word' => 'lousy'],
@@ -1554,7 +1436,6 @@ return [
             'vocabulary_id' => 4119,
             'sentence' => 'The soldiers helped the {{blank}} leave the dangerous area.',
             'blank_word' => 'civilians',
-            'translation' => '士兵幫助平民離開危險區域。',
             'distractors' => [
                 ['vocabulary_id' => 4112, 'word' => 'behaviors'],
                 ['vocabulary_id' => 4113, 'word' => 'verbs'],
@@ -1565,7 +1446,6 @@ return [
             'vocabulary_id' => 4120,
             'sentence' => 'My opinion may {{blank}} from yours, but I respect your ideas.',
             'blank_word' => 'differ',
-            'translation' => '我的看法可能和你的不同，但我尊重你的想法。',
             'distractors' => [
                 ['vocabulary_id' => 4111, 'word' => 'invest'],
                 ['vocabulary_id' => 4115, 'word' => 'mislead'],
@@ -1580,7 +1460,6 @@ return [
             'vocabulary_id' => 4121,
             'sentence' => 'Please plug the lamp into the wall {{blank}} beside the desk.',
             'blank_word' => 'socket',
-            'translation' => '請把檯燈插入書桌旁的牆壁插座。',
             'distractors' => [
                 ['vocabulary_id' => 4123, 'word' => 'regulation'],
                 ['vocabulary_id' => 4124, 'word' => 'a.m.'],
@@ -1594,7 +1473,6 @@ return [
             'vocabulary_id' => 4122,
             'sentence' => 'The company offers {{blank}} prices to attract more customers.',
             'blank_word' => 'competitive',
-            'translation' => '這家公司提供具有競爭力的價格，以吸引更多顧客。',
             'distractors' => [
                 ['vocabulary_id' => 4127, 'word' => 'acid'],
                 ['vocabulary_id' => 4121, 'word' => 'socket'],
@@ -1607,7 +1485,6 @@ return [
             'vocabulary_id' => 4123,
             'sentence' => 'The new safety {{blank}} requires all workers to wear helmets.',
             'blank_word' => 'regulation',
-            'translation' => '新的安全規章要求所有工人都戴安全帽。',
             'distractors' => [
                 ['vocabulary_id' => 4121, 'word' => 'socket'],
                 ['vocabulary_id' => 4124, 'word' => 'a.m.'],
@@ -1621,7 +1498,6 @@ return [
             'vocabulary_id' => 4124,
             'sentence' => 'The train leaves at 6:30 {{blank}}, so we need to arrive early.',
             'blank_word' => 'a.m.',
-            'translation' => '火車在上午六點半出發，所以我們需要提早抵達。',
             'distractors' => [
                 ['vocabulary_id' => 4121, 'word' => 'socket'],
                 ['vocabulary_id' => 4123, 'word' => 'regulation'],
@@ -1635,7 +1511,6 @@ return [
             'vocabulary_id' => 4125,
             'sentence' => 'The villagers prepared a {{blank}} to celebrate the successful harvest.',
             'blank_word' => 'feast',
-            'translation' => '村民準備了一場盛宴來慶祝豐收。',
             'distractors' => [
                 ['vocabulary_id' => 4121, 'word' => 'socket'],
                 ['vocabulary_id' => 4123, 'word' => 'regulation'],
@@ -1649,7 +1524,6 @@ return [
             'vocabulary_id' => 4126,
             'sentence' => 'We spent the afternoon visiting a {{blank}} that displayed local paintings.',
             'blank_word' => 'gallery',
-            'translation' => '我們花了一個下午參觀一間展出當地畫作的畫廊。',
             'distractors' => [
                 ['vocabulary_id' => 4121, 'word' => 'socket'],
                 ['vocabulary_id' => 4123, 'word' => 'regulation'],
@@ -1663,7 +1537,6 @@ return [
             'vocabulary_id' => 4127,
             'sentence' => 'The scientist carefully tested the {{blank}} liquid in the laboratory.',
             'blank_word' => 'acid',
-            'translation' => '科學家在實驗室裡小心地檢測那種酸性液體。',
             'distractors' => [
                 ['vocabulary_id' => 4122, 'word' => 'competitive'],
                 ['vocabulary_id' => 4121, 'word' => 'socket'],
@@ -1676,7 +1549,6 @@ return [
             'vocabulary_id' => 4128,
             'sentence' => 'My parents took me to the {{blank}} for the first time last weekend.',
             'blank_word' => 'opera',
-            'translation' => '上週末，我父母第一次帶我去看歌劇。',
             'distractors' => [
                 ['vocabulary_id' => 4121, 'word' => 'socket'],
                 ['vocabulary_id' => 4123, 'word' => 'regulation'],
@@ -1690,7 +1562,6 @@ return [
             'vocabulary_id' => 4129,
             'sentence' => '{{blank}} is a light gas that can be used as a clean source of energy.',
             'blank_word' => 'Hydrogen',
-            'translation' => '氫是一種輕質氣體，可以用作乾淨的能源。',
             'distractors' => [
                 ['vocabulary_id' => 4121, 'word' => 'Socket'],
                 ['vocabulary_id' => 4123, 'word' => 'Regulation'],
@@ -1704,7 +1575,6 @@ return [
             'vocabulary_id' => 4130,
             'sentence' => 'The factory replaced its old {{blank}} to improve production.',
             'blank_word' => 'machinery',
-            'translation' => '這家工廠更換了老舊機械，以提升產量。',
             'distractors' => [
                 ['vocabulary_id' => 4121, 'word' => 'socket'],
                 ['vocabulary_id' => 4123, 'word' => 'regulation'],
@@ -1720,7 +1590,6 @@ return [
             'vocabulary_id' => 4131,
             'sentence' => 'The manager welcomed {{blank}} from employees before making a final decision.',
             'blank_word' => 'input',
-            'translation' => '經理在做出最後決定前，歡迎員工提供意見。',
             'distractors' => [
                 ['vocabulary_id' => 4135, 'word' => 'revolution'],
                 ['vocabulary_id' => 4136, 'word' => 'romance'],
@@ -1734,7 +1603,6 @@ return [
             'vocabulary_id' => 4132,
             'sentence' => 'The {{blank}} child hid behind her mother when the large dog approached.',
             'blank_word' => 'timid',
-            'translation' => '那個膽小的孩子在大狗靠近時躲到媽媽身後。',
             'distractors' => [
                 ['vocabulary_id' => 4133, 'word' => 'agreeable'],
                 ['vocabulary_id' => 4134, 'word' => 'flexible'],
@@ -1747,7 +1615,6 @@ return [
             'vocabulary_id' => 4133,
             'sentence' => 'The weather was {{blank}}, so we ate lunch outside.',
             'blank_word' => 'agreeable',
-            'translation' => '天氣很宜人，所以我們在戶外吃午餐。',
             'distractors' => [
                 ['vocabulary_id' => 4132, 'word' => 'timid'],
                 ['vocabulary_id' => 4134, 'word' => 'flexible'],
@@ -1760,7 +1627,6 @@ return [
             'vocabulary_id' => 4134,
             'sentence' => 'Our teacher is {{blank}} and allows us to choose different project topics.',
             'blank_word' => 'flexible',
-            'translation' => '我們的老師很有彈性，允許我們選擇不同的專題主題。',
             'distractors' => [
                 ['vocabulary_id' => 4132, 'word' => 'timid'],
                 ['vocabulary_id' => 4133, 'word' => 'agreeable'],
@@ -1773,7 +1639,6 @@ return [
             'vocabulary_id' => 4135,
             'sentence' => 'The Earth completes one {{blank}} around the Sun in about 365 days.',
             'blank_word' => 'revolution',
-            'translation' => '地球大約花三百六十五天繞太陽公轉一周。',
             'distractors' => [
                 ['vocabulary_id' => 4131, 'word' => 'input'],
                 ['vocabulary_id' => 4136, 'word' => 'romance'],
@@ -1786,7 +1651,6 @@ return [
             'vocabulary_id' => 4136,
             'sentence' => 'She enjoys reading a {{blank}} before going to bed.',
             'blank_word' => 'romance',
-            'translation' => '她喜歡在睡前閱讀愛情小說。',
             'distractors' => [
                 ['vocabulary_id' => 4131, 'word' => 'input'],
                 ['vocabulary_id' => 4135, 'word' => 'revolution'],
@@ -1799,7 +1663,6 @@ return [
             'vocabulary_id' => 4137,
             'sentence' => 'The students used a {{blank}} to find the location of Brazil.',
             'blank_word' => 'globe',
-            'translation' => '學生們使用地球儀尋找巴西的位置。',
             'distractors' => [
                 ['vocabulary_id' => 4131, 'word' => 'input'],
                 ['vocabulary_id' => 4135, 'word' => 'revolution'],
@@ -1812,7 +1675,6 @@ return [
             'vocabulary_id' => 4138,
             'sentence' => 'He {{blank}} the driving test because he failed to stop at a red light.',
             'blank_word' => 'flunked',
-            'translation' => '他因為沒有在紅燈前停車而駕駛考試不及格。',
             'distractors' => [
                 ['vocabulary_id' => 4131, 'word' => 'input'],
                 ['vocabulary_id' => 4140, 'word' => 'guaranteed'],
@@ -1825,7 +1687,6 @@ return [
             'vocabulary_id' => 4139,
             'sentence' => 'The programmer found an error in the computer {{blank}}.',
             'blank_word' => 'code',
-            'translation' => '程式設計師在電腦代碼中發現了一個錯誤。',
             'distractors' => [
                 ['vocabulary_id' => 4131, 'word' => 'input'],
                 ['vocabulary_id' => 4135, 'word' => 'revolution'],
@@ -1838,7 +1699,6 @@ return [
             'vocabulary_id' => 4140,
             'sentence' => 'This washing machine comes with a two-year {{blank}}.',
             'blank_word' => 'guarantee',
-            'translation' => '這台洗衣機附有兩年的商品保證。',
             'distractors' => [
                 ['vocabulary_id' => 4131, 'word' => 'input'],
                 ['vocabulary_id' => 4135, 'word' => 'revolution'],
@@ -1854,7 +1714,6 @@ return [
             'vocabulary_id' => 4141,
             'sentence' => 'The store closes at 9 {{blank}}',
             'blank_word' => 'p.m.',
-            'translation' => '這家商店晚上九點關門。',
             'distractors' => [
                 ['vocabulary_id' => 4145, 'word' => 'sleigh'],
                 ['vocabulary_id' => 4146, 'word' => 'pianist'],
@@ -1867,7 +1726,6 @@ return [
             'vocabulary_id' => 4142,
             'sentence' => 'Some mushrooms are {{blank}}, so do not eat them unless an expert identifies them.',
             'blank_word' => 'poisonous',
-            'translation' => '有些蘑菇是有毒的，所以除非有專家確認，否則不要食用。',
             'distractors' => [
                 ['vocabulary_id' => 4143, 'word' => 'youthful'],
                 ['vocabulary_id' => 4149, 'word' => 'reluctant'],
@@ -1880,7 +1738,6 @@ return [
             'vocabulary_id' => 4143,
             'sentence' => 'Her {{blank}} energy makes her an excellent leader of the school club.',
             'blank_word' => 'youthful',
-            'translation' => '她充滿青春活力，因此成為學校社團的優秀領導者。',
             'distractors' => [
                 ['vocabulary_id' => 4142, 'word' => 'poisonous'],
                 ['vocabulary_id' => 4149, 'word' => 'reluctant'],
@@ -1893,7 +1750,6 @@ return [
             'vocabulary_id' => 4144,
             'sentence' => 'The coach {{blank}} the players for ignoring the team\'s safety rules.',
             'blank_word' => 'disciplined',
-            'translation' => '教練因球員無視球隊的安全規定而訓誡他們。',
             'distractors' => [
                 ['vocabulary_id' => 4145, 'word' => 'sleighed'],
                 ['vocabulary_id' => 4141, 'word' => 'p.m.'],
@@ -1906,7 +1762,6 @@ return [
             'vocabulary_id' => 4145,
             'sentence' => 'Santa\'s {{blank}} glided quietly across the snowy field.',
             'blank_word' => 'sleigh',
-            'translation' => '聖誕老人的雪橇安靜地滑過積雪的田野。',
             'distractors' => [
                 ['vocabulary_id' => 4141, 'word' => 'p.m.'],
                 ['vocabulary_id' => 4144, 'word' => 'discipline'],
@@ -1920,7 +1775,6 @@ return [
             'vocabulary_id' => 4146,
             'sentence' => 'The young {{blank}} performed a difficult concerto beautifully.',
             'blank_word' => 'pianist',
-            'translation' => '那位年輕的鋼琴演奏者精彩地演奏了一首困難的協奏曲。',
             'distractors' => [
                 ['vocabulary_id' => 4141, 'word' => 'p.m.'],
                 ['vocabulary_id' => 4145, 'word' => 'sleigh'],
@@ -1933,7 +1787,6 @@ return [
             'vocabulary_id' => 4147,
             'sentence' => 'The dancers moved in {{blank}} with the music.',
             'blank_word' => 'rhythm',
-            'translation' => '舞者隨著音樂的節奏起舞。',
             'distractors' => [
                 ['vocabulary_id' => 4141, 'word' => 'p.m.'],
                 ['vocabulary_id' => 4145, 'word' => 'sleigh'],
@@ -1946,7 +1799,6 @@ return [
             'vocabulary_id' => 4148,
             'sentence' => 'The baby is sleeping peacefully in the {{blank}}.',
             'blank_word' => 'nursery',
-            'translation' => '嬰兒正在育兒室裡安穩地睡覺。',
             'distractors' => [
                 ['vocabulary_id' => 4141, 'word' => 'p.m.'],
                 ['vocabulary_id' => 4145, 'word' => 'sleigh'],
@@ -1959,7 +1811,6 @@ return [
             'vocabulary_id' => 4149,
             'sentence' => 'Tom was {{blank}} to speak in front of the large audience.',
             'blank_word' => 'reluctant',
-            'translation' => '湯姆不情願在一大群觀眾面前發言。',
             'distractors' => [
                 ['vocabulary_id' => 4142, 'word' => 'poisonous'],
                 ['vocabulary_id' => 4143, 'word' => 'youthful'],
@@ -1972,7 +1823,6 @@ return [
             'vocabulary_id' => 4150,
             'sentence' => 'Lack of money was the biggest {{blank}} to starting her own business.',
             'blank_word' => 'obstacle',
-            'translation' => '缺乏資金是她創業時最大的障礙。',
             'distractors' => [
                 ['vocabulary_id' => 4141, 'word' => 'p.m.'],
                 ['vocabulary_id' => 4145, 'word' => 'sleigh'],
@@ -1987,7 +1837,6 @@ return [
             'vocabulary_id' => 4151,
             'sentence' => 'Under these {{blank}}, we should postpone the outdoor event.',
             'blank_word' => 'circumstances',
-            'translation' => '在這種情況下，我們應該延後戶外活動。',
             'distractors' => [
                 ['vocabulary_id' => 4153, 'word' => 'discouragements'],
                 ['vocabulary_id' => 4155, 'word' => 'hashtags'],
@@ -2001,7 +1850,6 @@ return [
             'vocabulary_id' => 4152,
             'sentence' => 'The police became {{blank}} when the man gave three different explanations.',
             'blank_word' => 'suspicious',
-            'translation' => '那名男子提出三種不同的解釋後，警方開始感到可疑。',
             'distractors' => [
                 ['vocabulary_id' => 4151, 'word' => 'circumstance'],
                 ['vocabulary_id' => 4153, 'word' => 'discouragement'],
@@ -2014,7 +1862,6 @@ return [
             'vocabulary_id' => 4153,
             'sentence' => 'Despite several failures, she refused to let {{blank}} stop her.',
             'blank_word' => 'discouragement',
-            'translation' => '儘管失敗了好幾次，她仍不讓沮喪阻止自己。',
             'distractors' => [
                 ['vocabulary_id' => 4151, 'word' => 'circumstance'],
                 ['vocabulary_id' => 4155, 'word' => 'hashtag'],
@@ -2028,7 +1875,6 @@ return [
             'vocabulary_id' => 4154,
             'sentence' => 'Students {{blank}} with one another during the group activity.',
             'blank_word' => 'interact',
-            'translation' => '學生在小組活動期間彼此互動。',
             'distractors' => [
                 ['vocabulary_id' => 4156, 'word' => 'intend'],
                 ['vocabulary_id' => 4151, 'word' => 'circumstance'],
@@ -2041,7 +1887,6 @@ return [
             'vocabulary_id' => 4155,
             'sentence' => 'Please add the {{blank}} #CleanTaiwan to your post.',
             'blank_word' => 'hashtag',
-            'translation' => '請在你的貼文中加上標籤 #CleanTaiwan。',
             'distractors' => [
                 ['vocabulary_id' => 4151, 'word' => 'circumstance'],
                 ['vocabulary_id' => 4153, 'word' => 'discouragement'],
@@ -2055,7 +1900,6 @@ return [
             'vocabulary_id' => 4156,
             'sentence' => 'I {{blank}} to finish the report before Friday.',
             'blank_word' => 'intend',
-            'translation' => '我打算在星期五以前完成報告。',
             'distractors' => [
                 ['vocabulary_id' => 4154, 'word' => 'interact'],
                 ['vocabulary_id' => 4151, 'word' => 'circumstance'],
@@ -2068,7 +1912,6 @@ return [
             'vocabulary_id' => 4157,
             'sentence' => 'Her {{blank}} about the exam made it difficult for her to sleep.',
             'blank_word' => 'anxiety',
-            'translation' => '她對考試的焦慮讓她難以入睡。',
             'distractors' => [
                 ['vocabulary_id' => 4151, 'word' => 'circumstance'],
                 ['vocabulary_id' => 4153, 'word' => 'discouragement'],
@@ -2082,7 +1925,6 @@ return [
             'vocabulary_id' => 4158,
             'sentence' => 'The child showed a {{blank}} for solving difficult puzzles.',
             'blank_word' => 'genius',
-            'translation' => '這個孩子展現出解決困難謎題的天賦。',
             'distractors' => [
                 ['vocabulary_id' => 4151, 'word' => 'circumstance'],
                 ['vocabulary_id' => 4153, 'word' => 'discouragement'],
@@ -2096,7 +1938,6 @@ return [
             'vocabulary_id' => 4159,
             'sentence' => 'We used a {{blank}} to observe the moon\'s craters.',
             'blank_word' => 'telescope',
-            'translation' => '我們用望遠鏡觀察月球表面的隕石坑。',
             'distractors' => [
                 ['vocabulary_id' => 4151, 'word' => 'circumstance'],
                 ['vocabulary_id' => 4153, 'word' => 'discouragement'],
@@ -2110,7 +1951,6 @@ return [
             'vocabulary_id' => 4160,
             'sentence' => 'The ancient {{blank}} was discovered beneath the temple.',
             'blank_word' => 'tomb',
-            'translation' => '那座古墓是在寺廟下方被發現的。',
             'distractors' => [
                 ['vocabulary_id' => 4151, 'word' => 'circumstance'],
                 ['vocabulary_id' => 4153, 'word' => 'discouragement'],
@@ -2126,7 +1966,6 @@ return [
             'vocabulary_id' => 4161,
             'sentence' => 'Several athletes will {{blank}} the championship this weekend.',
             'blank_word' => 'contest',
-            'translation' => '幾位運動員將在本週末角逐冠軍。',
             'distractors' => [
                 ['vocabulary_id' => 4163, 'word' => 'cement'],
                 ['vocabulary_id' => 4167, 'word' => 'part'],
@@ -2137,7 +1976,6 @@ return [
             'vocabulary_id' => 4162,
             'sentence' => 'I packed enough food and water in my {{blank}} for the hike.',
             'blank_word' => 'backpack',
-            'translation' => '我在登山背包裡放了足夠的食物和水。',
             'distractors' => [
                 ['vocabulary_id' => 4164, 'word' => 'persuasion'],
                 ['vocabulary_id' => 4165, 'word' => 'plural'],
@@ -2149,7 +1987,6 @@ return [
             'vocabulary_id' => 4163,
             'sentence' => 'The shared experience helped {{blank}} their friendship.',
             'blank_word' => 'cement',
-            'translation' => '這段共同的經歷鞏固了他們的友誼。',
             'distractors' => [
                 ['vocabulary_id' => 4161, 'word' => 'contest'],
                 ['vocabulary_id' => 4167, 'word' => 'part'],
@@ -2160,7 +1997,6 @@ return [
             'vocabulary_id' => 4164,
             'sentence' => 'After much {{blank}}, my brother agreed to join the volunteer project.',
             'blank_word' => 'persuasion',
-            'translation' => '經過多番勸說，我哥哥同意參加志工計畫。',
             'distractors' => [
                 ['vocabulary_id' => 4162, 'word' => 'backpack'],
                 ['vocabulary_id' => 4165, 'word' => 'plural'],
@@ -2172,7 +2008,6 @@ return [
             'vocabulary_id' => 4165,
             'sentence' => 'In English, “children” is the {{blank}} of “child.”',
             'blank_word' => 'plural',
-            'translation' => '在英語中，children 是 child 的複數形。',
             'distractors' => [
                 ['vocabulary_id' => 4162, 'word' => 'backpack'],
                 ['vocabulary_id' => 4164, 'word' => 'persuasion'],
@@ -2185,7 +2020,6 @@ return [
             'vocabulary_id' => 4166,
             'sentence' => 'The scientist used a {{blank}} method to examine the evidence.',
             'blank_word' => 'systematic',
-            'translation' => '這位科學家用有系統的方法檢視證據。',
             'distractors' => [
                 ['vocabulary_id' => 4165, 'word' => 'plural'],
                 ['vocabulary_id' => 4161, 'word' => 'contest'],
@@ -2198,7 +2032,6 @@ return [
             'vocabulary_id' => 4167,
             'sentence' => 'The curtain {{blank}} slowly, revealing the stage.',
             'blank_word' => 'parted',
-            'translation' => '窗簾慢慢分開，露出了舞臺。',
             'distractors' => [
                 ['vocabulary_id' => 4161, 'word' => 'contested'],
                 ['vocabulary_id' => 4163, 'word' => 'cemented'],
@@ -2209,7 +2042,6 @@ return [
             'vocabulary_id' => 4168,
             'sentence' => 'The doctor shone a light into the patient\'s {{blank}}.',
             'blank_word' => 'pupil',
-            'translation' => '醫生用燈照向病人的瞳孔。',
             'distractors' => [
                 ['vocabulary_id' => 4162, 'word' => 'backpack'],
                 ['vocabulary_id' => 4164, 'word' => 'persuasion'],
@@ -2221,7 +2053,6 @@ return [
             'vocabulary_id' => 4169,
             'sentence' => 'I need to {{blank}} for arriving late to the meeting.',
             'blank_word' => 'apologize',
-            'translation' => '我需要為開會遲到而道歉。',
             'distractors' => [
                 ['vocabulary_id' => 4161, 'word' => 'contest'],
                 ['vocabulary_id' => 4163, 'word' => 'cement'],
@@ -2232,7 +2063,6 @@ return [
             'vocabulary_id' => 4170,
             'sentence' => 'The small {{blank}} carried six people across the lake.',
             'blank_word' => 'craft',
-            'translation' => '那艘小船載著六個人渡過湖泊。',
             'distractors' => [
                 ['vocabulary_id' => 4162, 'word' => 'backpack'],
                 ['vocabulary_id' => 4164, 'word' => 'persuasion'],
@@ -2246,7 +2076,6 @@ return [
             'vocabulary_id' => 4171,
             'sentence' => 'We {{blank}} the Internet to find information about the museum.',
             'blank_word' => 'surfed',
-            'translation' => '我們上網快速瀏覽，以尋找博物館的相關資訊。',
             'distractors' => [
                 ['vocabulary_id' => 4172, 'word' => 'confined'],
                 ['vocabulary_id' => 4174, 'word' => 'delighted'],
@@ -2260,7 +2089,6 @@ return [
             'vocabulary_id' => 4172,
             'sentence' => 'The doctor {{blank}} the patient to bed for several days.',
             'blank_word' => 'confined',
-            'translation' => '醫生讓病人臥床休息數天。',
             'distractors' => [
                 ['vocabulary_id' => 4171, 'word' => 'surfed'],
                 ['vocabulary_id' => 4174, 'word' => 'delighted'],
@@ -2274,7 +2102,6 @@ return [
             'vocabulary_id' => 4173,
             'sentence' => 'The {{blank}} carefully planned her family\'s weekly meals.',
             'blank_word' => 'housewife',
-            'translation' => '這位家庭主婦仔細規劃了全家每週的餐點。',
             'distractors' => [
                 ['vocabulary_id' => 4174, 'word' => 'delight'],
                 ['vocabulary_id' => 4176, 'word' => 'clash'],
@@ -2286,7 +2113,6 @@ return [
             'vocabulary_id' => 4174,
             'sentence' => 'The surprise party {{blank}} our grandmother.',
             'blank_word' => 'delighted',
-            'translation' => '這場驚喜派對讓我們的祖母感到非常高興。',
             'distractors' => [
                 ['vocabulary_id' => 4171, 'word' => 'surfed'],
                 ['vocabulary_id' => 4172, 'word' => 'confined'],
@@ -2300,7 +2126,6 @@ return [
             'vocabulary_id' => 4175,
             'sentence' => 'The director {{blank}} the novel for a television series.',
             'blank_word' => 'adapted',
-            'translation' => '導演將這部小說改編成電視影集。',
             'distractors' => [
                 ['vocabulary_id' => 4171, 'word' => 'surfed'],
                 ['vocabulary_id' => 4172, 'word' => 'confined'],
@@ -2314,7 +2139,6 @@ return [
             'vocabulary_id' => 4176,
             'sentence' => 'The two metal boxes {{blank}} loudly when they fell.',
             'blank_word' => 'clashed',
-            'translation' => '兩個金屬箱掉落時發出很大的碰撞聲。',
             'distractors' => [
                 ['vocabulary_id' => 4171, 'word' => 'surfed'],
                 ['vocabulary_id' => 4172, 'word' => 'confined'],
@@ -2328,7 +2152,6 @@ return [
             'vocabulary_id' => 4177,
             'sentence' => 'The figures in the report {{blank}} closely to the original data.',
             'blank_word' => 'correspond',
-            'translation' => '報告中的數據與原始資料非常一致。',
             'distractors' => [
                 ['vocabulary_id' => 4171, 'word' => 'surf'],
                 ['vocabulary_id' => 4172, 'word' => 'confine'],
@@ -2342,7 +2165,6 @@ return [
             'vocabulary_id' => 4178,
             'sentence' => 'She used blue {{blank}} to color the white shirt.',
             'blank_word' => 'dye',
-            'translation' => '她用藍色染料把白襯衫染藍。',
             'distractors' => [
                 ['vocabulary_id' => 4171, 'word' => 'surf'],
                 ['vocabulary_id' => 4172, 'word' => 'confine'],
@@ -2356,7 +2178,6 @@ return [
             'vocabulary_id' => 4179,
             'sentence' => 'The teacher corrected my {{blank}} of the difficult word.',
             'blank_word' => 'pronunciation',
-            'translation' => '老師糾正了我對那個難字的發音。',
             'distractors' => [
                 ['vocabulary_id' => 4173, 'word' => 'housewife'],
                 ['vocabulary_id' => 4174, 'word' => 'delight'],
@@ -2368,7 +2189,6 @@ return [
             'vocabulary_id' => 4180,
             'sentence' => 'The students took turns {{blank}} the poem in front of the class.',
             'blank_word' => 'reciting',
-            'translation' => '學生們輪流在全班面前朗誦那首詩。',
             'distractors' => [
                 ['vocabulary_id' => 4171, 'word' => 'surfing'],
                 ['vocabulary_id' => 4172, 'word' => 'confining'],
@@ -2384,7 +2204,6 @@ return [
             'vocabulary_id' => 4181,
             'sentence' => 'The ship sailed across the {{blank}} before sunset.',
             'blank_word' => 'gulf',
-            'translation' => '那艘船在日落前航越海灣。',
             'distractors' => [
                 ['vocabulary_id' => 4182, 'word' => 'digital'],
                 ['vocabulary_id' => 4183, 'word' => 'finance'],
@@ -2398,7 +2217,6 @@ return [
             'vocabulary_id' => 4182,
             'sentence' => 'I bought a {{blank}} camera for my trip.',
             'blank_word' => 'digital',
-            'translation' => '我為這趟旅行買了一台數位相機。',
             'distractors' => [
                 ['vocabulary_id' => 4181, 'word' => 'gulf'],
                 ['vocabulary_id' => 4183, 'word' => 'finance'],
@@ -2412,7 +2230,6 @@ return [
             'vocabulary_id' => 4183,
             'sentence' => 'She studied {{blank}} at university and now works at a bank.',
             'blank_word' => 'finance',
-            'translation' => '她在大學研讀財政學，現在在銀行工作。',
             'distractors' => [
                 ['vocabulary_id' => 4181, 'word' => 'gulf'],
                 ['vocabulary_id' => 4182, 'word' => 'digital'],
@@ -2426,7 +2243,6 @@ return [
             'vocabulary_id' => 4184,
             'sentence' => 'This bread is made without {{blank}}.',
             'blank_word' => 'gluten',
-            'translation' => '這款麵包不含麩質。',
             'distractors' => [
                 ['vocabulary_id' => 4181, 'word' => 'gulf'],
                 ['vocabulary_id' => 4182, 'word' => 'digital'],
@@ -2440,7 +2256,6 @@ return [
             'vocabulary_id' => 4185,
             'sentence' => 'We took the {{blank}} to the island early in the morning.',
             'blank_word' => 'ferry',
-            'translation' => '我們一大早搭渡輪前往那座島。',
             'distractors' => [
                 ['vocabulary_id' => 4181, 'word' => 'gulf'],
                 ['vocabulary_id' => 4182, 'word' => 'digital'],
@@ -2454,7 +2269,6 @@ return [
             'vocabulary_id' => 4186,
             'sentence' => 'The smell of spoiled milk {{blank}} everyone in the room.',
             'blank_word' => 'disgusted',
-            'translation' => '變質牛奶的氣味使房間裡的每個人都感到作嘔。',
             'distractors' => [
                 ['vocabulary_id' => 4187, 'word' => 'retreated'],
                 ['vocabulary_id' => 4181, 'word' => 'gulf'],
@@ -2467,7 +2281,6 @@ return [
             'vocabulary_id' => 4187,
             'sentence' => 'The soldiers began their {{blank}} when the enemy advanced.',
             'blank_word' => 'retreat',
-            'translation' => '敵軍前進時，士兵們開始撤退。',
             'distractors' => [
                 ['vocabulary_id' => 4181, 'word' => 'gulf'],
                 ['vocabulary_id' => 4182, 'word' => 'digital'],
@@ -2481,7 +2294,6 @@ return [
             'vocabulary_id' => 4188,
             'sentence' => 'The students performed a famous {{blank}} by Shakespeare.',
             'blank_word' => 'tragedy',
-            'translation' => '學生們演出了一齣莎士比亞著名的悲劇。',
             'distractors' => [
                 ['vocabulary_id' => 4181, 'word' => 'gulf'],
                 ['vocabulary_id' => 4182, 'word' => 'digital'],
@@ -2495,7 +2307,6 @@ return [
             'vocabulary_id' => 4189,
             'sentence' => 'The team celebrated its {{blank}} victory with its fans.',
             'blank_word' => 'glorious',
-            'translation' => '這支隊伍和球迷一起慶祝光榮的勝利。',
             'distractors' => [
                 ['vocabulary_id' => 4182, 'word' => 'digital'],
                 ['vocabulary_id' => 4181, 'word' => 'gulf'],
@@ -2508,7 +2319,6 @@ return [
             'vocabulary_id' => 4190,
             'sentence' => 'The clerk politely asked, “May I help you, {{blank}}?”',
             'blank_word' => 'madam',
-            'translation' => '店員禮貌地問：「女士，我可以幫您嗎？」',
             'distractors' => [
                 ['vocabulary_id' => 4181, 'word' => 'gulf'],
                 ['vocabulary_id' => 4182, 'word' => 'digital'],
@@ -2524,7 +2334,6 @@ return [
             'vocabulary_id' => 4191,
             'sentence' => 'Fresh fruit is {{blank}} at the market in summer.',
             'blank_word' => 'plentiful',
-            'translation' => '夏天市場裡有充足的新鮮水果。',
             'distractors' => [
                 ['vocabulary_id' => 4199, 'word' => 'athletic'],
                 ['vocabulary_id' => 4192, 'word' => 'furthermore'],
@@ -2537,7 +2346,6 @@ return [
             'vocabulary_id' => 4192,
             'sentence' => 'The hotel is inexpensive; {{blank}}, it is close to the beach.',
             'blank_word' => 'furthermore',
-            'translation' => '這家飯店價格便宜；此外，它離海灘很近。',
             'distractors' => [
                 ['vocabulary_id' => 4191, 'word' => 'plentiful'],
                 ['vocabulary_id' => 4193, 'word' => 'inspire'],
@@ -2550,7 +2358,6 @@ return [
             'vocabulary_id' => 4193,
             'sentence' => 'Her courage {{blank}} many young people to help others.',
             'blank_word' => 'inspired',
-            'translation' => '她的勇氣鼓舞了許多年輕人去幫助他人。',
             'distractors' => [
                 ['vocabulary_id' => 4197, 'word' => 'withdrew'],
                 ['vocabulary_id' => 4191, 'word' => 'plentiful'],
@@ -2563,7 +2370,6 @@ return [
             'vocabulary_id' => 4194,
             'sentence' => 'My dog has been a loyal {{blank}} for many years.',
             'blank_word' => 'companion',
-            'translation' => '我的狗多年來一直是忠實的同伴。',
             'distractors' => [
                 ['vocabulary_id' => 4195, 'word' => 'parachute'],
                 ['vocabulary_id' => 4196, 'word' => 'reunion'],
@@ -2575,7 +2381,6 @@ return [
             'vocabulary_id' => 4195,
             'sentence' => 'The pilot opened his {{blank}} after jumping from the plane.',
             'blank_word' => 'parachute',
-            'translation' => '飛行員從飛機跳下後打開了降落傘。',
             'distractors' => [
                 ['vocabulary_id' => 4194, 'word' => 'companion'],
                 ['vocabulary_id' => 4196, 'word' => 'reunion'],
@@ -2587,7 +2392,6 @@ return [
             'vocabulary_id' => 4196,
             'sentence' => 'Our family is planning a {{blank}} during the summer holiday.',
             'blank_word' => 'reunion',
-            'translation' => '我們家計畫在暑假舉行家庭團聚。',
             'distractors' => [
                 ['vocabulary_id' => 4194, 'word' => 'companion'],
                 ['vocabulary_id' => 4195, 'word' => 'parachute'],
@@ -2599,7 +2403,6 @@ return [
             'vocabulary_id' => 4197,
             'sentence' => 'I need to {{blank}} some money from the bank before the trip.',
             'blank_word' => 'withdraw',
-            'translation' => '旅行前，我需要從銀行提領一些錢。',
             'distractors' => [
                 ['vocabulary_id' => 4193, 'word' => 'inspire'],
                 ['vocabulary_id' => 4191, 'word' => 'plentiful'],
@@ -2612,7 +2415,6 @@ return [
             'vocabulary_id' => 4198,
             'sentence' => 'Only ten {{blank}} of the students were absent today.',
             'blank_word' => 'percent',
-            'translation' => '今天只有百分之十的學生缺席。',
             'distractors' => [
                 ['vocabulary_id' => 4194, 'word' => 'companion'],
                 ['vocabulary_id' => 4195, 'word' => 'parachute'],
@@ -2624,7 +2426,6 @@ return [
             'vocabulary_id' => 4199,
             'sentence' => 'The school has excellent {{blank}} facilities for its students.',
             'blank_word' => 'athletic',
-            'translation' => '這所學校有優良的體育設施供學生使用。',
             'distractors' => [
                 ['vocabulary_id' => 4191, 'word' => 'plentiful'],
                 ['vocabulary_id' => 4192, 'word' => 'furthermore'],
@@ -2637,7 +2438,6 @@ return [
             'vocabulary_id' => 4200,
             'sentence' => 'Each {{blank}} must submit a completed form by Friday.',
             'blank_word' => 'applicant',
-            'translation' => '每位申請人都必須在星期五前提交填妥的表格。',
             'distractors' => [
                 ['vocabulary_id' => 4194, 'word' => 'companion'],
                 ['vocabulary_id' => 4195, 'word' => 'parachute'],
@@ -2651,7 +2451,6 @@ return [
             'vocabulary_id' => 4201,
             'sentence' => 'The {{blank}} noodles made my mouth feel hot.',
             'blank_word' => 'spicy',
-            'translation' => '這些辛辣的麵讓我的嘴巴感到火辣辣的。',
             'distractors' => [
                 ['vocabulary_id' => 4209, 'word' => 'severe'],
                 ['vocabulary_id' => 4210, 'word' => 'imaginary'],
@@ -2664,7 +2463,6 @@ return [
             'vocabulary_id' => 4202,
             'sentence' => 'Eggs and beans are good sources of {{blank}}.',
             'blank_word' => 'protein',
-            'translation' => '雞蛋和豆類都是很好的蛋白質來源。',
             'distractors' => [
                 ['vocabulary_id' => 4203, 'word' => 'embassy'],
                 ['vocabulary_id' => 4204, 'word' => 'formation'],
@@ -2677,7 +2475,6 @@ return [
             'vocabulary_id' => 4203,
             'sentence' => 'We went to the {{blank}} to apply for a visa.',
             'blank_word' => 'embassy',
-            'translation' => '我們去大使館申請簽證。',
             'distractors' => [
                 ['vocabulary_id' => 4202, 'word' => 'protein'],
                 ['vocabulary_id' => 4204, 'word' => 'formation'],
@@ -2690,7 +2487,6 @@ return [
             'vocabulary_id' => 4204,
             'sentence' => 'The {{blank}} of the new team took several weeks.',
             'blank_word' => 'formation',
-            'translation' => '新團隊的組成花了好幾個星期。',
             'distractors' => [
                 ['vocabulary_id' => 4202, 'word' => 'protein'],
                 ['vocabulary_id' => 4203, 'word' => 'embassy'],
@@ -2703,7 +2499,6 @@ return [
             'vocabulary_id' => 4205,
             'sentence' => 'The director {{blank}} the actors to begin the scene.',
             'blank_word' => 'cued',
-            'translation' => '導演給演員提示，讓他們開始演出這一幕。',
             'distractors' => [
                 ['vocabulary_id' => 4201, 'word' => 'spicy'],
                 ['vocabulary_id' => 4202, 'word' => 'protein'],
@@ -2716,7 +2511,6 @@ return [
             'vocabulary_id' => 4206,
             'sentence' => 'Our swimming {{blank}} taught us how to breathe properly.',
             'blank_word' => 'instructor',
-            'translation' => '我們的游泳教練教我們如何正確呼吸。',
             'distractors' => [
                 ['vocabulary_id' => 4202, 'word' => 'protein'],
                 ['vocabulary_id' => 4203, 'word' => 'embassy'],
@@ -2729,7 +2523,6 @@ return [
             'vocabulary_id' => 4207,
             'sentence' => 'The {{blank}} spent years thinking about the meaning of happiness.',
             'blank_word' => 'philosopher',
-            'translation' => '這位哲學家花了好幾年思考幸福的意義。',
             'distractors' => [
                 ['vocabulary_id' => 4202, 'word' => 'protein'],
                 ['vocabulary_id' => 4203, 'word' => 'embassy'],
@@ -2742,7 +2535,6 @@ return [
             'vocabulary_id' => 4208,
             'sentence' => 'The bag looked expensive, but it was only an {{blank}}.',
             'blank_word' => 'imitation',
-            'translation' => '這個包包看起來很昂貴，但它只是一個仿製品。',
             'distractors' => [
                 ['vocabulary_id' => 4202, 'word' => 'protein'],
                 ['vocabulary_id' => 4203, 'word' => 'embassy'],
@@ -2755,7 +2547,6 @@ return [
             'vocabulary_id' => 4209,
             'sentence' => 'The town suffered {{blank}} damage from the typhoon.',
             'blank_word' => 'severe',
-            'translation' => '這座城鎮遭到颱風的嚴重損害。',
             'distractors' => [
                 ['vocabulary_id' => 4201, 'word' => 'spicy'],
                 ['vocabulary_id' => 4210, 'word' => 'imaginary'],
@@ -2768,7 +2559,6 @@ return [
             'vocabulary_id' => 4210,
             'sentence' => 'As a child, I had an {{blank}} friend named Leo.',
             'blank_word' => 'imaginary',
-            'translation' => '我小時候有一個名叫里奧的想像朋友。',
             'distractors' => [
                 ['vocabulary_id' => 4201, 'word' => 'spicy'],
                 ['vocabulary_id' => 4209, 'word' => 'severe'],
@@ -2783,7 +2573,6 @@ return [
             'vocabulary_id' => 4211,
             'sentence' => 'We booked our tour through a travel {{blank}}.',
             'blank_word' => 'agency',
-            'translation' => '我們透過一家旅行社預訂了旅遊行程。',
             'distractors' => [
                 ['vocabulary_id' => 4212, 'word' => 'capitalist'],
                 ['vocabulary_id' => 4213, 'word' => 'eve'],
@@ -2797,7 +2586,6 @@ return [
             'vocabulary_id' => 4212,
             'sentence' => 'The {{blank}} invested money in several new businesses.',
             'blank_word' => 'capitalist',
-            'translation' => '這位資本家投資了好幾家新企業。',
             'distractors' => [
                 ['vocabulary_id' => 4211, 'word' => 'agency'],
                 ['vocabulary_id' => 4213, 'word' => 'eve'],
@@ -2811,7 +2599,6 @@ return [
             'vocabulary_id' => 4213,
             'sentence' => 'On Christmas {{blank}}, the children left cookies by the fireplace.',
             'blank_word' => 'Eve',
-            'translation' => '在聖誕夜，孩子們把餅乾放在壁爐旁。',
             'distractors' => [
                 ['vocabulary_id' => 4211, 'word' => 'agency'],
                 ['vocabulary_id' => 4212, 'word' => 'capitalist'],
@@ -2825,7 +2612,6 @@ return [
             'vocabulary_id' => 4214,
             'sentence' => 'The people united to {{blank}} the unfair government.',
             'blank_word' => 'overthrow',
-            'translation' => '人民團結起來推翻不公不義的政府。',
             'distractors' => [
                 ['vocabulary_id' => 4218, 'word' => 'discourage'],
                 ['vocabulary_id' => 4219, 'word' => 'spark'],
@@ -2838,7 +2624,6 @@ return [
             'vocabulary_id' => 4215,
             'sentence' => 'Please leave your keys on the {{blank}}.',
             'blank_word' => 'counter',
-            'translation' => '請把你的鑰匙放在櫃檯上。',
             'distractors' => [
                 ['vocabulary_id' => 4211, 'word' => 'agency'],
                 ['vocabulary_id' => 4212, 'word' => 'capitalist'],
@@ -2852,7 +2637,6 @@ return [
             'vocabulary_id' => 4216,
             'sentence' => 'They had dinner at an {{blank}} restaurant near the harbor.',
             'blank_word' => 'upscale',
-            'translation' => '他們在港口附近的一家高檔餐廳用餐。',
             'distractors' => [
                 ['vocabulary_id' => 4211, 'word' => 'agency'],
                 ['vocabulary_id' => 4212, 'word' => 'capitalist'],
@@ -2865,7 +2649,6 @@ return [
             'vocabulary_id' => 4217,
             'sentence' => 'The {{blank}} checked our tickets before the train left.',
             'blank_word' => 'conductor',
-            'translation' => '火車開走前，車掌檢查了我們的車票。',
             'distractors' => [
                 ['vocabulary_id' => 4211, 'word' => 'agency'],
                 ['vocabulary_id' => 4212, 'word' => 'capitalist'],
@@ -2879,7 +2662,6 @@ return [
             'vocabulary_id' => 4218,
             'sentence' => 'The high cost should not {{blank}} you from taking the course.',
             'blank_word' => 'discourage',
-            'translation' => '高昂的費用不應該讓你打消修這門課的念頭。',
             'distractors' => [
                 ['vocabulary_id' => 4214, 'word' => 'overthrow'],
                 ['vocabulary_id' => 4219, 'word' => 'spark'],
@@ -2892,7 +2674,6 @@ return [
             'vocabulary_id' => 4219,
             'sentence' => 'A small {{blank}} from the wires started the fire.',
             'blank_word' => 'spark',
-            'translation' => '電線冒出的一點火花引發了火災。',
             'distractors' => [
                 ['vocabulary_id' => 4211, 'word' => 'agency'],
                 ['vocabulary_id' => 4212, 'word' => 'capitalist'],
@@ -2906,7 +2687,6 @@ return [
             'vocabulary_id' => 4220,
             'sentence' => 'The orchestra performed a beautiful {{blank}} last night.',
             'blank_word' => 'symphony',
-            'translation' => '管弦樂團昨晚演奏了一首優美的交響曲。',
             'distractors' => [
                 ['vocabulary_id' => 4211, 'word' => 'agency'],
                 ['vocabulary_id' => 4212, 'word' => 'capitalist'],
@@ -2922,7 +2702,6 @@ return [
             'vocabulary_id' => 4221,
             'sentence' => 'The {{blank}} employees received extra training from the senior staff.',
             'blank_word' => 'junior',
-            'translation' => '資淺員工接受了資深員工提供的額外訓練。',
             'distractors' => [
                 ['vocabulary_id' => 4223, 'word' => 'remarkable'],
                 ['vocabulary_id' => 4225, 'word' => 'economic'],
@@ -2935,7 +2714,6 @@ return [
             'vocabulary_id' => 4222,
             'sentence' => 'Many students {{blank}} speaking in front of a large audience.',
             'blank_word' => 'dread',
-            'translation' => '許多學生害怕在一大群觀眾面前演講。',
             'distractors' => [
                 ['vocabulary_id' => 4228, 'word' => 'strive'],
                 ['vocabulary_id' => 4230, 'word' => 'explore'],
@@ -2948,7 +2726,6 @@ return [
             'vocabulary_id' => 4223,
             'sentence' => 'The young scientist made a {{blank}} discovery during her research.',
             'blank_word' => 'remarkable',
-            'translation' => '那位年輕科學家在研究期間有了非凡的發現。',
             'distractors' => [
                 ['vocabulary_id' => 4221, 'word' => 'junior'],
                 ['vocabulary_id' => 4225, 'word' => 'economic'],
@@ -2961,7 +2738,6 @@ return [
             'vocabulary_id' => 4224,
             'sentence' => 'I am writing to you {{blank}} the changes to our meeting schedule.',
             'blank_word' => 'regarding',
-            'translation' => '我寫信給您是為了說明會議時間表的變動。',
             'distractors' => [
                 ['vocabulary_id' => 4221, 'word' => 'junior'],
                 ['vocabulary_id' => 4222, 'word' => 'dread'],
@@ -2972,9 +2748,8 @@ return [
         ],
         [
             'vocabulary_id' => 4225,
-            'sentence' => 'Taking the bus is a more {{blank}} choice than driving every day.',
+            'sentence' => 'The city experienced rapid {{blank}} growth last year.',
             'blank_word' => 'economic',
-            'translation' => '每天搭公車比開車更划算。',
             'distractors' => [
                 ['vocabulary_id' => 4221, 'word' => 'junior'],
                 ['vocabulary_id' => 4223, 'word' => 'remarkable'],
@@ -2987,7 +2762,6 @@ return [
             'vocabulary_id' => 4226,
             'sentence' => 'The laboratory needs new {{blank}} to conduct the experiment safely.',
             'blank_word' => 'equipment',
-            'translation' => '這間實驗室需要新的設備，才能安全地進行實驗。',
             'distractors' => [
                 ['vocabulary_id' => 4221, 'word' => 'junior'],
                 ['vocabulary_id' => 4227, 'word' => 'recipe'],
@@ -2998,7 +2772,6 @@ return [
             'vocabulary_id' => 4227,
             'sentence' => 'My grandmother gave me her {{blank}} for traditional pineapple cakes.',
             'blank_word' => 'recipe',
-            'translation' => '我祖母把她製作傳統鳳梨酥的食譜給了我。',
             'distractors' => [
                 ['vocabulary_id' => 4221, 'word' => 'junior'],
                 ['vocabulary_id' => 4226, 'word' => 'equipment'],
@@ -3009,7 +2782,6 @@ return [
             'vocabulary_id' => 4228,
             'sentence' => 'We must {{blank}} to provide better service to our customers.',
             'blank_word' => 'strive',
-            'translation' => '我們必須努力為顧客提供更好的服務。',
             'distractors' => [
                 ['vocabulary_id' => 4222, 'word' => 'dread'],
                 ['vocabulary_id' => 4230, 'word' => 'explore'],
@@ -3022,7 +2794,6 @@ return [
             'vocabulary_id' => 4229,
             'sentence' => 'The report includes a detailed {{blank}} of the company’s sales data.',
             'blank_word' => 'analysis',
-            'translation' => '這份報告包含對該公司銷售資料的詳細分析。',
             'distractors' => [
                 ['vocabulary_id' => 4221, 'word' => 'junior'],
                 ['vocabulary_id' => 4226, 'word' => 'equipment'],
@@ -3033,7 +2804,6 @@ return [
             'vocabulary_id' => 4230,
             'sentence' => 'The researchers plan to {{blank}} the effects of the new treatment.',
             'blank_word' => 'explore',
-            'translation' => '研究人員計畫探索這項新療法的效果。',
             'distractors' => [
                 ['vocabulary_id' => 4222, 'word' => 'dread'],
                 ['vocabulary_id' => 4228, 'word' => 'strive'],
@@ -3048,7 +2818,6 @@ return [
             'vocabulary_id' => 4231,
             'sentence' => 'The loud alarm {{blank}} everyone to the danger.',
             'blank_word' => 'alerted',
-            'translation' => '響亮的警報提醒所有人注意危險。',
             'distractors' => [
                 ['vocabulary_id' => 4232, 'word' => 'blushed'],
                 ['vocabulary_id' => 4236, 'word' => 'evaluated'],
@@ -3059,7 +2828,6 @@ return [
             'vocabulary_id' => 4232,
             'sentence' => 'She began to {{blank}} when her friends praised her performance.',
             'blank_word' => 'blush',
-            'translation' => '朋友稱讚她的表現時，她開始臉紅。',
             'distractors' => [
                 ['vocabulary_id' => 4231, 'word' => 'alert'],
                 ['vocabulary_id' => 4234, 'word' => 'violation'],
@@ -3073,7 +2841,6 @@ return [
             'vocabulary_id' => 4233,
             'sentence' => 'The {{blank}} hikers called for help after getting lost in the mountains.',
             'blank_word' => 'desperate',
-            'translation' => '那些情急的健行者在山中迷路後打電話求救。',
             'distractors' => [
                 ['vocabulary_id' => 4238, 'word' => 'manual'],
                 ['vocabulary_id' => 4231, 'word' => 'alert'],
@@ -3086,7 +2853,6 @@ return [
             'vocabulary_id' => 4234,
             'sentence' => 'Parking in front of the emergency exit is a serious {{blank}} of the building’s safety rules.',
             'blank_word' => 'violation',
-            'translation' => '停在緊急出口前是嚴重違反大樓安全規定的行為。',
             'distractors' => [
                 ['vocabulary_id' => 4232, 'word' => 'blush'],
                 ['vocabulary_id' => 4235, 'word' => 'bra'],
@@ -3099,7 +2865,6 @@ return [
             'vocabulary_id' => 4235,
             'sentence' => 'She bought a comfortable sports {{blank}} for her morning workouts.',
             'blank_word' => 'bra',
-            'translation' => '她買了一件舒適的運動胸罩，準備早晨運動時穿。',
             'distractors' => [
                 ['vocabulary_id' => 4232, 'word' => 'blush'],
                 ['vocabulary_id' => 4234, 'word' => 'violation'],
@@ -3112,7 +2877,6 @@ return [
             'vocabulary_id' => 4236,
             'sentence' => 'The manager will {{blank}} each proposal before making a decision.',
             'blank_word' => 'evaluate',
-            'translation' => '經理會在做決定前評估每一份提案。',
             'distractors' => [
                 ['vocabulary_id' => 4231, 'word' => 'alert'],
                 ['vocabulary_id' => 4232, 'word' => 'blush'],
@@ -3123,7 +2887,6 @@ return [
             'vocabulary_id' => 4237,
             'sentence' => 'The restaurant gave us a {{blank}} for a free dessert.',
             'blank_word' => 'voucher',
-            'translation' => '那家餐廳給了我們一張免費甜點抵用券。',
             'distractors' => [
                 ['vocabulary_id' => 4232, 'word' => 'blush'],
                 ['vocabulary_id' => 4234, 'word' => 'violation'],
@@ -3136,7 +2899,6 @@ return [
             'vocabulary_id' => 4238,
             'sentence' => 'Please read the {{blank}} carefully before operating the machine.',
             'blank_word' => 'manual',
-            'translation' => '操作這台機器前，請仔細閱讀使用手冊。',
             'distractors' => [
                 ['vocabulary_id' => 4232, 'word' => 'blush'],
                 ['vocabulary_id' => 4233, 'word' => 'desperate'],
@@ -3150,7 +2912,6 @@ return [
             'vocabulary_id' => 4239,
             'sentence' => 'The students showed their {{blank}} by writing a thank-you card to their teacher.',
             'blank_word' => 'appreciation',
-            'translation' => '學生寫了一張感謝卡給老師，以表達他們的感謝。',
             'distractors' => [
                 ['vocabulary_id' => 4232, 'word' => 'blush'],
                 ['vocabulary_id' => 4234, 'word' => 'violation'],
@@ -3163,7 +2924,6 @@ return [
             'vocabulary_id' => 4240,
             'sentence' => 'The orientation session will {{blank}} new employees with the company’s policies.',
             'blank_word' => 'acquaint',
-            'translation' => '說明會將讓新進員工熟悉公司的政策。',
             'distractors' => [
                 ['vocabulary_id' => 4231, 'word' => 'alert'],
                 ['vocabulary_id' => 4232, 'word' => 'blush'],
@@ -3176,7 +2936,6 @@ return [
             'vocabulary_id' => 4241,
             'sentence' => 'The scientist developed a {{blank}} method for cleaning polluted water.',
             'blank_word' => 'novel',
-            'translation' => '這位科學家發明了一種新穎的污染水清理方法。',
             'distractors' => [
                 ['vocabulary_id' => 4242, 'word' => 'resignation'],
                 ['vocabulary_id' => 4243, 'word' => 'homeland'],
@@ -3189,7 +2948,6 @@ return [
             'vocabulary_id' => 4242,
             'sentence' => 'The manager submitted his {{blank}} after working at the company for ten years.',
             'blank_word' => 'resignation',
-            'translation' => '那位經理在公司工作十年後提交了辭呈。',
             'distractors' => [
                 ['vocabulary_id' => 4243, 'word' => 'homeland'],
                 ['vocabulary_id' => 4244, 'word' => 'helicopter'],
@@ -3203,7 +2961,6 @@ return [
             'vocabulary_id' => 4243,
             'sentence' => 'After many years abroad, she returned to her {{blank}} to visit her family.',
             'blank_word' => 'homeland',
-            'translation' => '在國外多年後，她回到故鄉探望家人。',
             'distractors' => [
                 ['vocabulary_id' => 4242, 'word' => 'resignation'],
                 ['vocabulary_id' => 4244, 'word' => 'helicopter'],
@@ -3217,7 +2974,6 @@ return [
             'vocabulary_id' => 4244,
             'sentence' => 'A {{blank}} carried the injured hiker to the nearest hospital.',
             'blank_word' => 'helicopter',
-            'translation' => '一架直升機將受傷的健行者送到最近的醫院。',
             'distractors' => [
                 ['vocabulary_id' => 4242, 'word' => 'resignation'],
                 ['vocabulary_id' => 4243, 'word' => 'homeland'],
@@ -3231,7 +2987,6 @@ return [
             'vocabulary_id' => 4245,
             'sentence' => 'The {{blank}} performed a beautiful symphony at the city concert hall.',
             'blank_word' => 'orchestra',
-            'translation' => '管弦樂隊在市立音樂廳演奏了一首優美的交響曲。',
             'distractors' => [
                 ['vocabulary_id' => 4242, 'word' => 'resignation'],
                 ['vocabulary_id' => 4243, 'word' => 'homeland'],
@@ -3245,7 +3000,6 @@ return [
             'vocabulary_id' => 4246,
             'sentence' => 'By {{blank}}, the mother reached out to protect her child from falling.',
             'blank_word' => 'instinct',
-            'translation' => '母親憑著本能伸手保護孩子免於跌倒。',
             'distractors' => [
                 ['vocabulary_id' => 4242, 'word' => 'resignation'],
                 ['vocabulary_id' => 4243, 'word' => 'homeland'],
@@ -3259,7 +3013,6 @@ return [
             'vocabulary_id' => 4247,
             'sentence' => 'Because of {{blank}}, many families are spending more on food than they did last year.',
             'blank_word' => 'inflation',
-            'translation' => '由於通貨膨脹，許多家庭在食物上的花費比去年多。',
             'distractors' => [
                 ['vocabulary_id' => 4242, 'word' => 'resignation'],
                 ['vocabulary_id' => 4243, 'word' => 'homeland'],
@@ -3273,7 +3026,6 @@ return [
             'vocabulary_id' => 4248,
             'sentence' => 'The apartment is affordable; {{blank}}, it is close to public transportation.',
             'blank_word' => 'moreover',
-            'translation' => '這間公寓價格實惠；此外，它還靠近大眾運輸工具。',
             'distractors' => [
                 ['vocabulary_id' => 4241, 'word' => 'novel'],
                 ['vocabulary_id' => 4242, 'word' => 'resignation'],
@@ -3286,7 +3038,6 @@ return [
             'vocabulary_id' => 4249,
             'sentence' => 'The {{blank}} of the experiment surprised the entire research team.',
             'blank_word' => 'outcome',
-            'translation' => '實驗的結果讓整個研究團隊都感到驚訝。',
             'distractors' => [
                 ['vocabulary_id' => 4242, 'word' => 'resignation'],
                 ['vocabulary_id' => 4243, 'word' => 'homeland'],
@@ -3300,7 +3051,6 @@ return [
             'vocabulary_id' => 4250,
             'sentence' => 'The committee wants better {{blank}} of young people in local government.',
             'blank_word' => 'representation',
-            'translation' => '這個委員會希望年輕人在地方政府中獲得更好的代表權。',
             'distractors' => [
                 ['vocabulary_id' => 4242, 'word' => 'resignation'],
                 ['vocabulary_id' => 4243, 'word' => 'homeland'],
@@ -3316,7 +3066,6 @@ return [
             'vocabulary_id' => 4251,
             'sentence' => 'Clear {{blank}} is essential when people from different cultures work together.',
             'blank_word' => 'communication',
-            'translation' => '來自不同文化的人一起工作時，清楚的溝通十分重要。',
             'distractors' => [
                 ['vocabulary_id' => 4253, 'word' => 'congress'],
                 ['vocabulary_id' => 4254, 'word' => 'occupation'],
@@ -3330,7 +3079,6 @@ return [
             'vocabulary_id' => 4252,
             'sentence' => 'Students must {{blank}} permission before using the laboratory equipment.',
             'blank_word' => 'obtain',
-            'translation' => '學生使用實驗室設備前必須取得許可。',
             'distractors' => [
                 ['vocabulary_id' => 4256, 'word' => 'blossom'],
                 ['vocabulary_id' => 4251, 'word' => 'communication'],
@@ -3343,7 +3091,6 @@ return [
             'vocabulary_id' => 4253,
             'sentence' => 'Scientists from around the world attended an international {{blank}} on climate change.',
             'blank_word' => 'congress',
-            'translation' => '來自世界各地的科學家參加了一場關於氣候變遷的國際代表大會。',
             'distractors' => [
                 ['vocabulary_id' => 4251, 'word' => 'communication'],
                 ['vocabulary_id' => 4254, 'word' => 'occupation'],
@@ -3357,7 +3104,6 @@ return [
             'vocabulary_id' => 4254,
             'sentence' => 'Teaching has been her {{blank}} for more than twenty years.',
             'blank_word' => 'occupation',
-            'translation' => '教學是她從事了二十多年的職業。',
             'distractors' => [
                 ['vocabulary_id' => 4251, 'word' => 'communication'],
                 ['vocabulary_id' => 4253, 'word' => 'congress'],
@@ -3371,7 +3117,6 @@ return [
             'vocabulary_id' => 4255,
             'sentence' => 'Grandmother made a warm {{blank}} from pieces of colorful cloth.',
             'blank_word' => 'quilt',
-            'translation' => '祖母用彩色布料拼製了一床溫暖的被子。',
             'distractors' => [
                 ['vocabulary_id' => 4251, 'word' => 'communication'],
                 ['vocabulary_id' => 4253, 'word' => 'congress'],
@@ -3385,7 +3130,6 @@ return [
             'vocabulary_id' => 4256,
             'sentence' => 'The cherry trees {{blank}} every spring, covering the park with pink flowers.',
             'blank_word' => 'blossom',
-            'translation' => '櫻花樹每年春天開花，讓公園覆滿粉紅色的花朵。',
             'distractors' => [
                 ['vocabulary_id' => 4251, 'word' => 'communication'],
                 ['vocabulary_id' => 4252, 'word' => 'obtain'],
@@ -3399,7 +3143,6 @@ return [
             'vocabulary_id' => 4257,
             'sentence' => 'A small error in the {{blank}} caused the final answer to be incorrect.',
             'blank_word' => 'calculation',
-            'translation' => '計算中的一個小錯誤導致最後答案不正確。',
             'distractors' => [
                 ['vocabulary_id' => 4251, 'word' => 'communication'],
                 ['vocabulary_id' => 4253, 'word' => 'congress'],
@@ -3413,7 +3156,6 @@ return [
             'vocabulary_id' => 4258,
             'sentence' => 'My daughter has practiced {{blank}} since she was six years old.',
             'blank_word' => 'ballet',
-            'translation' => '我女兒從六歲起就開始練習芭蕾舞。',
             'distractors' => [
                 ['vocabulary_id' => 4251, 'word' => 'communication'],
                 ['vocabulary_id' => 4253, 'word' => 'congress'],
@@ -3427,7 +3169,6 @@ return [
             'vocabulary_id' => 4259,
             'sentence' => 'The {{blank}} shattered windows several blocks away from the factory.',
             'blank_word' => 'explosion',
-            'translation' => '爆炸震碎了距離工廠幾個街區外的窗戶。',
             'distractors' => [
                 ['vocabulary_id' => 4251, 'word' => 'communication'],
                 ['vocabulary_id' => 4253, 'word' => 'congress'],
@@ -3441,7 +3182,6 @@ return [
             'vocabulary_id' => 4260,
             'sentence' => 'The ancient temple is the town\'s most popular tourist {{blank}}.',
             'blank_word' => 'attraction',
-            'translation' => '這座古老的寺廟是鎮上最受歡迎的觀光景點。',
             'distractors' => [
                 ['vocabulary_id' => 4251, 'word' => 'communication'],
                 ['vocabulary_id' => 4253, 'word' => 'congress'],
@@ -3457,7 +3197,6 @@ return [
             'vocabulary_id' => 4261,
             'sentence' => 'The team prepared a {{blank}} plan in case the event was canceled by a storm.',
             'blank_word' => 'contingency',
-            'translation' => '團隊準備了應急計畫，以防活動因暴風雨而取消。',
             'distractors' => [
                 ['vocabulary_id' => 4262, 'word' => 'grammar'],
                 ['vocabulary_id' => 4263, 'word' => 'yearly'],
@@ -3469,7 +3208,6 @@ return [
             'vocabulary_id' => 4262,
             'sentence' => 'Good {{blank}} makes your writing easier to understand.',
             'blank_word' => 'grammar',
-            'translation' => '良好的文法能讓你的文章更容易理解。',
             'distractors' => [
                 ['vocabulary_id' => 4261, 'word' => 'contingency'],
                 ['vocabulary_id' => 4263, 'word' => 'yearly'],
@@ -3481,7 +3219,6 @@ return [
             'vocabulary_id' => 4263,
             'sentence' => 'The company holds a {{blank}} meeting to review its progress.',
             'blank_word' => 'yearly',
-            'translation' => '這家公司每年召開一次會議來檢討進展。',
             'distractors' => [
                 ['vocabulary_id' => 4261, 'word' => 'contingency'],
                 ['vocabulary_id' => 4262, 'word' => 'grammar'],
@@ -3495,7 +3232,6 @@ return [
             'vocabulary_id' => 4264,
             'sentence' => 'We watched the {{blank}} of the stars on the clear night.',
             'blank_word' => 'twinkle',
-            'translation' => '我們在晴朗的夜晚觀賞星星的閃爍。',
             'distractors' => [
                 ['vocabulary_id' => 4261, 'word' => 'contingency'],
                 ['vocabulary_id' => 4262, 'word' => 'grammar'],
@@ -3509,7 +3245,6 @@ return [
             'vocabulary_id' => 4265,
             'sentence' => 'He was too {{blank}} to admit that he had made a mistake.',
             'blank_word' => 'vain',
-            'translation' => '他太自負了，不願承認自己犯了錯。',
             'distractors' => [
                 ['vocabulary_id' => 4263, 'word' => 'yearly'],
                 ['vocabulary_id' => 4266, 'word' => 'admirable'],
@@ -3522,7 +3257,6 @@ return [
             'vocabulary_id' => 4266,
             'sentence' => 'Her {{blank}} courage inspired everyone on the team.',
             'blank_word' => 'admirable',
-            'translation' => '她令人欽佩的勇氣鼓舞了團隊中的每一個人。',
             'distractors' => [
                 ['vocabulary_id' => 4263, 'word' => 'yearly'],
                 ['vocabulary_id' => 4265, 'word' => 'vain'],
@@ -3535,7 +3269,6 @@ return [
             'vocabulary_id' => 4267,
             'sentence' => 'The nurse helped {{blank}} the patients\' information among the doctors.',
             'blank_word' => 'circulate',
-            'translation' => '護理師協助在醫師之間傳遞病人的資訊。',
             'distractors' => [
                 ['vocabulary_id' => 4264, 'word' => 'twinkle'],
                 ['vocabulary_id' => 4268, 'word' => 'converse'],
@@ -3546,7 +3279,6 @@ return [
             'vocabulary_id' => 4268,
             'sentence' => 'The two scientists {{blank}} about their latest research after the lecture.',
             'blank_word' => 'conversed',
-            'translation' => '演講結束後，兩位科學家談論了他們最新的研究。',
             'distractors' => [
                 ['vocabulary_id' => 4264, 'word' => 'twinkled'],
                 ['vocabulary_id' => 4267, 'word' => 'circulated'],
@@ -3557,7 +3289,6 @@ return [
             'vocabulary_id' => 4269,
             'sentence' => 'The leaves began to {{blank}} in the hot, dry weather.',
             'blank_word' => 'curl',
-            'translation' => '葉子在炎熱乾燥的天氣中開始捲曲。',
             'distractors' => [
                 ['vocabulary_id' => 4264, 'word' => 'twinkle'],
                 ['vocabulary_id' => 4267, 'word' => 'circulate'],
@@ -3568,7 +3299,6 @@ return [
             'vocabulary_id' => 4270,
             'sentence' => 'His {{blank}} in the charity project helped many local families.',
             'blank_word' => 'involvement',
-            'translation' => '他參與慈善計畫，幫助了許多當地家庭。',
             'distractors' => [
                 ['vocabulary_id' => 4261, 'word' => 'contingency'],
                 ['vocabulary_id' => 4262, 'word' => 'grammar'],
@@ -3582,7 +3312,6 @@ return [
             'vocabulary_id' => 4271,
             'sentence' => 'The children watched the clown with great {{blank}}.',
             'blank_word' => 'amusement',
-            'translation' => '孩子們饒有興趣地看著小丑表演。',
             'distractors' => [
                 ['vocabulary_id' => 4272, 'word' => 'frost'],
                 ['vocabulary_id' => 4274, 'word' => 'disguise'],
@@ -3596,7 +3325,6 @@ return [
             'vocabulary_id' => 4272,
             'sentence' => 'The {{blank}} covered the grass early this morning.',
             'blank_word' => 'frost',
-            'translation' => '今天清晨霜凍覆蓋了草地。',
             'distractors' => [
                 ['vocabulary_id' => 4271, 'word' => 'amusement'],
                 ['vocabulary_id' => 4274, 'word' => 'disguise'],
@@ -3610,7 +3338,6 @@ return [
             'vocabulary_id' => 4273,
             'sentence' => 'This {{blank}} car uses very little fuel on long trips.',
             'blank_word' => 'economical',
-            'translation' => '這輛省油的車在長途旅行中耗油量很少。',
             'distractors' => [
                 ['vocabulary_id' => 4276, 'word' => 'profitable'],
                 ['vocabulary_id' => 4277, 'word' => 'atomic'],
@@ -3623,7 +3350,6 @@ return [
             'vocabulary_id' => 4274,
             'sentence' => 'The actor wore a {{blank}} so that fans would not recognize him.',
             'blank_word' => 'disguise',
-            'translation' => '那名演員戴上偽裝，以免粉絲認出他。',
             'distractors' => [
                 ['vocabulary_id' => 4271, 'word' => 'amusement'],
                 ['vocabulary_id' => 4272, 'word' => 'frost'],
@@ -3637,7 +3363,6 @@ return [
             'vocabulary_id' => 4275,
             'sentence' => 'In the sentence “She is kind,” the word “She” is a {{blank}}.',
             'blank_word' => 'pronoun',
-            'translation' => '在「她很善良」這個句子中，「她」是代名詞。',
             'distractors' => [
                 ['vocabulary_id' => 4271, 'word' => 'amusement'],
                 ['vocabulary_id' => 4272, 'word' => 'frost'],
@@ -3651,7 +3376,6 @@ return [
             'vocabulary_id' => 4276,
             'sentence' => 'Selling fresh fruit at the market has become a {{blank}} business.',
             'blank_word' => 'profitable',
-            'translation' => '在市場販售新鮮水果已成為一項有利可圖的生意。',
             'distractors' => [
                 ['vocabulary_id' => 4273, 'word' => 'economical'],
                 ['vocabulary_id' => 4277, 'word' => 'atomic'],
@@ -3664,7 +3388,6 @@ return [
             'vocabulary_id' => 4277,
             'sentence' => 'The museum displayed a model showing the structure of an {{blank}} nucleus.',
             'blank_word' => 'atomic',
-            'translation' => '博物館展示了一個呈現原子核結構的模型。',
             'distractors' => [
                 ['vocabulary_id' => 4273, 'word' => 'economical'],
                 ['vocabulary_id' => 4276, 'word' => 'profitable'],
@@ -3677,7 +3400,6 @@ return [
             'vocabulary_id' => 4278,
             'sentence' => '{{blank}} encourages businesses to compete and develop new products.',
             'blank_word' => 'Capitalism',
-            'translation' => '資本主義鼓勵企業競爭並開發新產品。',
             'distractors' => [
                 ['vocabulary_id' => 4271, 'word' => 'Amusement'],
                 ['vocabulary_id' => 4272, 'word' => 'Frost'],
@@ -3691,7 +3413,6 @@ return [
             'vocabulary_id' => 4279,
             'sentence' => 'The {{blank}} of the awards took place at the end of the ceremony.',
             'blank_word' => 'presentation',
-            'translation' => '頒獎典禮在整場儀式結束時舉行。',
             'distractors' => [
                 ['vocabulary_id' => 4271, 'word' => 'amusement'],
                 ['vocabulary_id' => 4272, 'word' => 'frost'],
@@ -3705,7 +3426,6 @@ return [
             'vocabulary_id' => 4280,
             'sentence' => 'The researchers shared their discoveries at an international {{blank}}.',
             'blank_word' => 'conference',
-            'translation' => '研究人員在一場國際會議上分享了他們的發現。',
             'distractors' => [
                 ['vocabulary_id' => 4271, 'word' => 'amusement'],
                 ['vocabulary_id' => 4272, 'word' => 'frost'],
@@ -3721,7 +3441,6 @@ return [
             'vocabulary_id' => 4281,
             'sentence' => 'The {{blank}} guard noticed the strange noise immediately.',
             'blank_word' => 'alert',
-            'translation' => '那名警覺的警衛立刻注意到奇怪的聲音。',
             'distractors' => [
                 ['vocabulary_id' => 4284, 'word' => 'leisurely'],
                 ['vocabulary_id' => 4289, 'word' => 'productive'],
@@ -3734,7 +3453,6 @@ return [
             'vocabulary_id' => 4282,
             'sentence' => 'The website shows the current {{blank}} of your order.',
             'blank_word' => 'status',
-            'translation' => '這個網站顯示你訂單目前的狀況。',
             'distractors' => [
                 ['vocabulary_id' => 4283, 'word' => 'lead'],
                 ['vocabulary_id' => 4285, 'word' => 'plot'],
@@ -3746,7 +3464,6 @@ return [
             'vocabulary_id' => 4283,
             'sentence' => 'The old pipes were made of {{blank}} and had to be replaced.',
             'blank_word' => 'lead',
-            'translation' => '那些老舊的管子是用鉛製成的，必須更換。',
             'distractors' => [
                 ['vocabulary_id' => 4282, 'word' => 'status'],
                 ['vocabulary_id' => 4285, 'word' => 'plot'],
@@ -3758,7 +3475,6 @@ return [
             'vocabulary_id' => 4284,
             'sentence' => 'After breakfast, we took a {{blank}} walk along the beach.',
             'blank_word' => 'leisurely',
-            'translation' => '早餐後，我們從容不迫地沿著海灘散步。',
             'distractors' => [
                 ['vocabulary_id' => 4281, 'word' => 'alert'],
                 ['vocabulary_id' => 4289, 'word' => 'productive'],
@@ -3771,7 +3487,6 @@ return [
             'vocabulary_id' => 4285,
             'sentence' => 'The detective uncovered a {{blank}} to steal the valuable painting.',
             'blank_word' => 'plot',
-            'translation' => '那名偵探揭發了一項偷竊這幅名畫的陰謀。',
             'distractors' => [
                 ['vocabulary_id' => 4282, 'word' => 'status'],
                 ['vocabulary_id' => 4283, 'word' => 'lead'],
@@ -3783,7 +3498,6 @@ return [
             'vocabulary_id' => 4286,
             'sentence' => 'He cut his {{blank}} while fixing his bicycle.',
             'blank_word' => 'knuckle',
-            'translation' => '他修理腳踏車時割傷了指關節。',
             'distractors' => [
                 ['vocabulary_id' => 4282, 'word' => 'status'],
                 ['vocabulary_id' => 4283, 'word' => 'lead'],
@@ -3795,7 +3509,6 @@ return [
             'vocabulary_id' => 4287,
             'sentence' => 'We {{blank}} plastic bottles and paper at school.',
             'blank_word' => 'recycle',
-            'translation' => '我們在學校回收再利用塑膠瓶和紙張。',
             'distractors' => [
                 ['vocabulary_id' => 4290, 'word' => 'translate'],
                 ['vocabulary_id' => 4281, 'word' => 'alert'],
@@ -3808,7 +3521,6 @@ return [
             'vocabulary_id' => 4288,
             'sentence' => 'An {{blank}} is the smallest unit of an element that keeps its chemical properties.',
             'blank_word' => 'atom',
-            'translation' => '原子是保有某元素化學性質的最小單位。',
             'distractors' => [
                 ['vocabulary_id' => 4282, 'word' => 'status'],
                 ['vocabulary_id' => 4283, 'word' => 'lead'],
@@ -3820,7 +3532,6 @@ return [
             'vocabulary_id' => 4289,
             'sentence' => 'The farmers had a {{blank}} year because the weather was favorable.',
             'blank_word' => 'productive',
-            'translation' => '由於天氣良好，農夫們度過了收成豐富的一年。',
             'distractors' => [
                 ['vocabulary_id' => 4281, 'word' => 'alert'],
                 ['vocabulary_id' => 4284, 'word' => 'leisurely'],
@@ -3833,7 +3544,6 @@ return [
             'vocabulary_id' => 4290,
             'sentence' => 'Can you {{blank}} this short message into Chinese?',
             'blank_word' => 'translate',
-            'translation' => '你可以把這則簡短的訊息翻譯成中文嗎？',
             'distractors' => [
                 ['vocabulary_id' => 4287, 'word' => 'recycle'],
                 ['vocabulary_id' => 4281, 'word' => 'alert'],
@@ -3848,7 +3558,6 @@ return [
             'vocabulary_id' => 4291,
             'sentence' => 'The workers carefully moved the {{blank}} material to a safe area.',
             'blank_word' => 'explosive',
-            'translation' => '工人們小心地將易爆物質移到安全區域。',
             'distractors' => [
                 ['vocabulary_id' => 4298, 'word' => 'singular'],
                 ['vocabulary_id' => 4299, 'word' => 'senior'],
@@ -3861,7 +3570,6 @@ return [
             'vocabulary_id' => 4292,
             'sentence' => 'The {{blank}} for submitting the application is Friday.',
             'blank_word' => 'deadline',
-            'translation' => '提交申請的截止期限是星期五。',
             'distractors' => [
                 ['vocabulary_id' => 4293, 'word' => 'examinee'],
                 ['vocabulary_id' => 4294, 'word' => 'concentrate'],
@@ -3875,7 +3583,6 @@ return [
             'vocabulary_id' => 4293,
             'sentence' => 'Each {{blank}} must show an identification card before entering the test room.',
             'blank_word' => 'examinee',
-            'translation' => '每位應試者進入考場前都必須出示身分證件。',
             'distractors' => [
                 ['vocabulary_id' => 4292, 'word' => 'deadline'],
                 ['vocabulary_id' => 4294, 'word' => 'concentrate'],
@@ -3889,7 +3596,6 @@ return [
             'vocabulary_id' => 4294,
             'sentence' => 'The juice {{blank}} must be mixed with water before you drink it.',
             'blank_word' => 'concentrate',
-            'translation' => '這種果汁濃縮物在飲用前必須加水混合。',
             'distractors' => [
                 ['vocabulary_id' => 4292, 'word' => 'deadline'],
                 ['vocabulary_id' => 4293, 'word' => 'examinee'],
@@ -3903,7 +3609,6 @@ return [
             'vocabulary_id' => 4295,
             'sentence' => 'I had a {{blank}} about being lost in a dark forest.',
             'blank_word' => 'nightmare',
-            'translation' => '我夢到一個夢魘，夢見自己迷失在黑暗的森林裡。',
             'distractors' => [
                 ['vocabulary_id' => 4292, 'word' => 'deadline'],
                 ['vocabulary_id' => 4293, 'word' => 'examinee'],
@@ -3917,7 +3622,6 @@ return [
             'vocabulary_id' => 4296,
             'sentence' => 'The smell of rotten food filled her with {{blank}}.',
             'blank_word' => 'disgust',
-            'translation' => '腐爛食物的氣味讓她感到厭惡。',
             'distractors' => [
                 ['vocabulary_id' => 4292, 'word' => 'deadline'],
                 ['vocabulary_id' => 4293, 'word' => 'examinee'],
@@ -3931,7 +3635,6 @@ return [
             'vocabulary_id' => 4297,
             'sentence' => 'Washing your hands helps remove {{blank}} and prevent illness.',
             'blank_word' => 'germs',
-            'translation' => '洗手有助於去除細菌並預防疾病。',
             'distractors' => [
                 ['vocabulary_id' => 4292, 'word' => 'deadlines'],
                 ['vocabulary_id' => 4293, 'word' => 'examinees'],
@@ -3945,7 +3648,6 @@ return [
             'vocabulary_id' => 4298,
             'sentence' => 'In the sentence “The dog runs,” “dog” is a {{blank}} noun.',
             'blank_word' => 'singular',
-            'translation' => '在「那隻狗跑步」這個句子中，dog 是單數名詞。',
             'distractors' => [
                 ['vocabulary_id' => 4291, 'word' => 'explosive'],
                 ['vocabulary_id' => 4292, 'word' => 'deadline'],
@@ -3959,7 +3661,6 @@ return [
             'vocabulary_id' => 4299,
             'sentence' => 'My {{blank}} showed me how to use the new computer system.',
             'blank_word' => 'senior',
-            'translation' => '我的學長教我如何使用新的電腦系統。',
             'distractors' => [
                 ['vocabulary_id' => 4291, 'word' => 'explosive'],
                 ['vocabulary_id' => 4292, 'word' => 'deadline'],
@@ -3973,7 +3674,6 @@ return [
             'vocabulary_id' => 4300,
             'sentence' => 'The players practiced their {{blank}} before the important game.',
             'blank_word' => 'defense',
-            'translation' => '球員們在重要比賽前練習防守。',
             'distractors' => [
                 ['vocabulary_id' => 4292, 'word' => 'deadline'],
                 ['vocabulary_id' => 4293, 'word' => 'examinee'],
@@ -3989,7 +3689,6 @@ return [
             'vocabulary_id' => 4301,
             'sentence' => 'Too much {{blank}} to the sun can damage your skin.',
             'blank_word' => 'exposure',
-            'translation' => '過度暴露在陽光下可能會傷害你的皮膚。',
             'distractors' => [
                 ['vocabulary_id' => 4303, 'word' => 'shift'],
                 ['vocabulary_id' => 4304, 'word' => 'barrier'],
@@ -4003,7 +3702,6 @@ return [
             'vocabulary_id' => 4302,
             'sentence' => 'It was {{blank}} that Mia had prepared carefully for the presentation.',
             'blank_word' => 'evident',
-            'translation' => '很明顯，米雅為這場簡報做了充分準備。',
             'distractors' => [
                 ['vocabulary_id' => 4306, 'word' => 'spiritual'],
                 ['vocabulary_id' => 4309, 'word' => 'nearsighted'],
@@ -4016,7 +3714,6 @@ return [
             'vocabulary_id' => 4303,
             'sentence' => 'The night {{blank}} begins at ten o’clock.',
             'blank_word' => 'shift',
-            'translation' => '夜班在十點開始。',
             'distractors' => [
                 ['vocabulary_id' => 4301, 'word' => 'exposure'],
                 ['vocabulary_id' => 4304, 'word' => 'barrier'],
@@ -4030,7 +3727,6 @@ return [
             'vocabulary_id' => 4304,
             'sentence' => 'The fallen tree became a {{blank}} across the narrow road.',
             'blank_word' => 'barrier',
-            'translation' => '倒下的樹成了橫在狹窄道路上的障礙物。',
             'distractors' => [
                 ['vocabulary_id' => 4301, 'word' => 'exposure'],
                 ['vocabulary_id' => 4303, 'word' => 'shift'],
@@ -4044,7 +3740,6 @@ return [
             'vocabulary_id' => 4305,
             'sentence' => 'I checked the {{blank}} before sending the letter to our partner company.',
             'blank_word' => 'translation',
-            'translation' => '我在把信寄給合作公司之前檢查了譯文。',
             'distractors' => [
                 ['vocabulary_id' => 4301, 'word' => 'exposure'],
                 ['vocabulary_id' => 4303, 'word' => 'shift'],
@@ -4058,7 +3753,6 @@ return [
             'vocabulary_id' => 4306,
             'sentence' => 'The quiet walk through the forest gave her a deep {{blank}} sense of peace.',
             'blank_word' => 'spiritual',
-            'translation' => '在森林裡安靜地散步讓她深深感受到心靈上的平靜。',
             'distractors' => [
                 ['vocabulary_id' => 4302, 'word' => 'evident'],
                 ['vocabulary_id' => 4309, 'word' => 'nearsighted'],
@@ -4071,7 +3765,6 @@ return [
             'vocabulary_id' => 4307,
             'sentence' => 'Without {{blank}}, Daniel helped the injured cyclist.',
             'blank_word' => 'hesitation',
-            'translation' => '丹尼爾毫不猶豫地幫助了受傷的自行車騎士。',
             'distractors' => [
                 ['vocabulary_id' => 4301, 'word' => 'exposure'],
                 ['vocabulary_id' => 4303, 'word' => 'shift'],
@@ -4085,7 +3778,6 @@ return [
             'vocabulary_id' => 4308,
             'sentence' => 'My older sister used to watch {{blank}} after school.',
             'blank_word' => 'MTV',
-            'translation' => '我姊姊以前放學後常看音樂電視。',
             'distractors' => [
                 ['vocabulary_id' => 4301, 'word' => 'exposure'],
                 ['vocabulary_id' => 4303, 'word' => 'shift'],
@@ -4099,7 +3791,6 @@ return [
             'vocabulary_id' => 4309,
             'sentence' => 'Kevin is {{blank}}, so he wears glasses when he reads the board.',
             'blank_word' => 'nearsighted',
-            'translation' => '凱文有近視，所以他看黑板時會戴眼鏡。',
             'distractors' => [
                 ['vocabulary_id' => 4302, 'word' => 'evident'],
                 ['vocabulary_id' => 4306, 'word' => 'spiritual'],
@@ -4112,7 +3803,6 @@ return [
             'vocabulary_id' => 4310,
             'sentence' => 'The school posted a {{blank}} about the change in bus schedules.',
             'blank_word' => 'bulletin',
-            'translation' => '學校張貼了一份關於公車時刻表變更的公告。',
             'distractors' => [
                 ['vocabulary_id' => 4301, 'word' => 'exposure'],
                 ['vocabulary_id' => 4303, 'word' => 'shift'],
@@ -4128,7 +3818,6 @@ return [
             'vocabulary_id' => 4311,
             'sentence' => 'Our main {{blank}} released a cheaper version of the product.',
             'blank_word' => 'competitor',
-            'translation' => '我們的主要競爭對手推出了較便宜的產品版本。',
             'distractors' => [
                 ['vocabulary_id' => 4312, 'word' => 'offense'],
                 ['vocabulary_id' => 4313, 'word' => 'constitution'],
@@ -4142,7 +3831,6 @@ return [
             'vocabulary_id' => 4312,
             'sentence' => 'The player received a penalty for a serious {{blank}} during the game.',
             'blank_word' => 'offense',
-            'translation' => '那名球員因為在比賽中犯下嚴重犯規而受到處罰。',
             'distractors' => [
                 ['vocabulary_id' => 4311, 'word' => 'competitor'],
                 ['vocabulary_id' => 4313, 'word' => 'constitution'],
@@ -4156,7 +3844,6 @@ return [
             'vocabulary_id' => 4313,
             'sentence' => 'The {{blank}} protects the basic rights of all citizens.',
             'blank_word' => 'constitution',
-            'translation' => '憲法保障所有公民的基本權利。',
             'distractors' => [
                 ['vocabulary_id' => 4311, 'word' => 'competitor'],
                 ['vocabulary_id' => 4312, 'word' => 'offense'],
@@ -4170,7 +3857,6 @@ return [
             'vocabulary_id' => 4314,
             'sentence' => 'Listening to soft music is my favorite form of {{blank}}.',
             'blank_word' => 'relaxation',
-            'translation' => '聽輕音樂是我最喜歡的放鬆方式。',
             'distractors' => [
                 ['vocabulary_id' => 4311, 'word' => 'competitor'],
                 ['vocabulary_id' => 4312, 'word' => 'offense'],
@@ -4184,7 +3870,6 @@ return [
             'vocabulary_id' => 4315,
             'sentence' => 'The new library {{blank}} the empty building into a lively community space.',
             'blank_word' => 'transformed',
-            'translation' => '這座新圖書館把空置的建築物改造成充滿活力的社區空間。',
             'distractors' => [
                 ['vocabulary_id' => 4316, 'word' => 'urged'],
                 ['vocabulary_id' => 4311, 'word' => 'competitor'],
@@ -4197,7 +3882,6 @@ return [
             'vocabulary_id' => 4316,
             'sentence' => 'I {{blank}} you to read the instructions carefully before using the machine.',
             'blank_word' => 'urge',
-            'translation' => '我力勸你在使用這台機器前仔細閱讀說明。',
             'distractors' => [
                 ['vocabulary_id' => 4311, 'word' => 'competitor'],
                 ['vocabulary_id' => 4312, 'word' => 'offense'],
@@ -4211,7 +3895,6 @@ return [
             'vocabulary_id' => 4317,
             'sentence' => 'Lena is a {{blank}} friend who always keeps her promises.',
             'blank_word' => 'dependable',
-            'translation' => '莉娜是一位可靠的朋友，總是信守承諾。',
             'distractors' => [
                 ['vocabulary_id' => 4318, 'word' => 'maximum'],
                 ['vocabulary_id' => 4319, 'word' => 'outstanding'],
@@ -4224,7 +3907,6 @@ return [
             'vocabulary_id' => 4318,
             'sentence' => 'The {{blank}} number of passengers allowed on the boat is twelve.',
             'blank_word' => 'maximum',
-            'translation' => '這艘船最多只能搭載十二名乘客。',
             'distractors' => [
                 ['vocabulary_id' => 4311, 'word' => 'competitor'],
                 ['vocabulary_id' => 4312, 'word' => 'offense'],
@@ -4238,7 +3920,6 @@ return [
             'vocabulary_id' => 4319,
             'sentence' => 'The young scientist received an award for her {{blank}} research.',
             'blank_word' => 'outstanding',
-            'translation' => '這位年輕科學家因傑出的研究而獲得獎項。',
             'distractors' => [
                 ['vocabulary_id' => 4317, 'word' => 'dependable'],
                 ['vocabulary_id' => 4318, 'word' => 'maximum'],
@@ -4251,7 +3932,6 @@ return [
             'vocabulary_id' => 4320,
             'sentence' => 'After months of discussion, the two sides began negotiations in {{blank}}.',
             'blank_word' => 'earnest',
-            'translation' => '經過數個月的討論後，雙方開始認真進行談判。',
             'distractors' => [
                 ['vocabulary_id' => 4311, 'word' => 'competitor'],
                 ['vocabulary_id' => 4312, 'word' => 'offense'],
@@ -4267,7 +3947,6 @@ return [
             'vocabulary_id' => 4321,
             'sentence' => 'The lawyer presented a {{blank}} argument based on the available evidence.',
             'blank_word' => 'defensible',
-            'translation' => '律師根據現有證據提出了一個可辯護的論點。',
             'distractors' => [
                 ['vocabulary_id' => 4322, 'word' => 'vital'],
                 ['vocabulary_id' => 4323, 'word' => 'polish'],
@@ -4280,7 +3959,6 @@ return [
             'vocabulary_id' => 4322,
             'sentence' => 'Clean water is {{blank}} for human life.',
             'blank_word' => 'vital',
-            'translation' => '乾淨的水對人類的生命至關重要。',
             'distractors' => [
                 ['vocabulary_id' => 4321, 'word' => 'defensible'],
                 ['vocabulary_id' => 4323, 'word' => 'polish'],
@@ -4293,7 +3971,6 @@ return [
             'vocabulary_id' => 4323,
             'sentence' => 'She used a soft cloth to {{blank}} the silver vase.',
             'blank_word' => 'polish',
-            'translation' => '她用軟布擦亮銀花瓶。',
             'distractors' => [
                 ['vocabulary_id' => 4324, 'word' => 'construction'],
                 ['vocabulary_id' => 4325, 'word' => 'brainstorm'],
@@ -4307,7 +3984,6 @@ return [
             'vocabulary_id' => 4324,
             'sentence' => 'The {{blank}} of the new bridge will take two years.',
             'blank_word' => 'construction',
-            'translation' => '這座新橋的建造將耗時兩年。',
             'distractors' => [
                 ['vocabulary_id' => 4323, 'word' => 'polish'],
                 ['vocabulary_id' => 4326, 'word' => 'intern'],
@@ -4320,7 +3996,6 @@ return [
             'vocabulary_id' => 4325,
             'sentence' => 'The team {{blank}} ways to reduce plastic waste.',
             'blank_word' => 'brainstormed',
-            'translation' => '團隊集思廣益，想出減少塑膠垃圾的方法。',
             'distractors' => [
                 ['vocabulary_id' => 4323, 'word' => 'polished'],
                 ['vocabulary_id' => 4329, 'word' => 'halted'],
@@ -4331,7 +4006,6 @@ return [
             'vocabulary_id' => 4326,
             'sentence' => 'The {{blank}} helped organize the files in the office.',
             'blank_word' => 'intern',
-            'translation' => '那名實習生幫忙整理辦公室裡的檔案。',
             'distractors' => [
                 ['vocabulary_id' => 4323, 'word' => 'polish'],
                 ['vocabulary_id' => 4324, 'word' => 'construction'],
@@ -4344,7 +4018,6 @@ return [
             'vocabulary_id' => 4327,
             'sentence' => 'I need to run an {{blank}} before dinner.',
             'blank_word' => 'errand',
-            'translation' => '晚餐前我得去辦一件差事。',
             'distractors' => [
                 ['vocabulary_id' => 4323, 'word' => 'polish'],
                 ['vocabulary_id' => 4324, 'word' => 'construction'],
@@ -4357,7 +4030,6 @@ return [
             'vocabulary_id' => 4328,
             'sentence' => 'She submitted her {{blank}} for the summer program yesterday.',
             'blank_word' => 'application',
-            'translation' => '她昨天提交了暑期課程的申請書。',
             'distractors' => [
                 ['vocabulary_id' => 4323, 'word' => 'polish'],
                 ['vocabulary_id' => 4324, 'word' => 'construction'],
@@ -4370,7 +4042,6 @@ return [
             'vocabulary_id' => 4329,
             'sentence' => 'The factory came to a {{blank}} after a power failure.',
             'blank_word' => 'halt',
-            'translation' => '停電後，工廠停止運作。',
             'distractors' => [
                 ['vocabulary_id' => 4323, 'word' => 'polish'],
                 ['vocabulary_id' => 4324, 'word' => 'construction'],
@@ -4384,7 +4055,6 @@ return [
             'vocabulary_id' => 4330,
             'sentence' => 'The news of the accident {{blank}} everyone in the town.',
             'blank_word' => 'horrified',
-            'translation' => '那起事故的消息讓鎮上的每個人都感到驚懼。',
             'distractors' => [
                 ['vocabulary_id' => 4323, 'word' => 'polished'],
                 ['vocabulary_id' => 4325, 'word' => 'brainstormed'],
@@ -4397,7 +4067,6 @@ return [
             'vocabulary_id' => 4331,
             'sentence' => 'He felt {{blank}} after blaming his sister for his mistake.',
             'blank_word' => 'ashamed',
-            'translation' => '他把自己的錯誤怪到妹妹身上後，感到很羞愧。',
             'distractors' => [
                 ['vocabulary_id' => 4336, 'word' => 'audio'],
                 ['vocabulary_id' => 4332, 'word' => 'earphone'],
@@ -4410,7 +4079,6 @@ return [
             'vocabulary_id' => 4332,
             'sentence' => 'I put one {{blank}} in my ear and listened to the news.',
             'blank_word' => 'earphone',
-            'translation' => '我把一只耳機戴在耳朵上，聽起了新聞。',
             'distractors' => [
                 ['vocabulary_id' => 4333, 'word' => 'innocence'],
                 ['vocabulary_id' => 4334, 'word' => 'broil'],
@@ -4424,7 +4092,6 @@ return [
             'vocabulary_id' => 4333,
             'sentence' => 'The evidence proved the man\'s {{blank}}.',
             'blank_word' => 'innocence',
-            'translation' => '證據證明了那名男子的清白。',
             'distractors' => [
                 ['vocabulary_id' => 4332, 'word' => 'earphone'],
                 ['vocabulary_id' => 4334, 'word' => 'broil'],
@@ -4438,7 +4105,6 @@ return [
             'vocabulary_id' => 4334,
             'sentence' => 'We {{blank}} the fish with lemon and herbs for dinner.',
             'blank_word' => 'broiled',
-            'translation' => '我們用檸檬和香草炙烤魚作為晚餐。',
             'distractors' => [
                 ['vocabulary_id' => 4338, 'word' => 'assumed'],
                 ['vocabulary_id' => 4340, 'word' => 'expanded'],
@@ -4451,7 +4117,6 @@ return [
             'vocabulary_id' => 4335,
             'sentence' => 'The {{blank}} of the company still visits the office every week.',
             'blank_word' => 'founder',
-            'translation' => '這家公司的創立者至今仍每週造訪辦公室。',
             'distractors' => [
                 ['vocabulary_id' => 4332, 'word' => 'earphone'],
                 ['vocabulary_id' => 4333, 'word' => 'innocence'],
@@ -4465,7 +4130,6 @@ return [
             'vocabulary_id' => 4336,
             'sentence' => 'The camera records high-quality {{blank}} during interviews.',
             'blank_word' => 'audio',
-            'translation' => '這台攝影機在採訪時能錄下高品質的聲音。',
             'distractors' => [
                 ['vocabulary_id' => 4331, 'word' => 'ashamed'],
                 ['vocabulary_id' => 4332, 'word' => 'earphone'],
@@ -4479,7 +4143,6 @@ return [
             'vocabulary_id' => 4337,
             'sentence' => 'Thanks for the {{blank}} about tomorrow\'s schedule change.',
             'blank_word' => 'heads-up',
-            'translation' => '謝謝你提前告知我明天的行程變更。',
             'distractors' => [
                 ['vocabulary_id' => 4332, 'word' => 'earphone'],
                 ['vocabulary_id' => 4333, 'word' => 'innocence'],
@@ -4493,7 +4156,6 @@ return [
             'vocabulary_id' => 4338,
             'sentence' => 'We should not {{blank}} that everyone agrees with the plan.',
             'blank_word' => 'assume',
-            'translation' => '我們不應該以為每個人都同意這項計畫。',
             'distractors' => [
                 ['vocabulary_id' => 4334, 'word' => 'broil'],
                 ['vocabulary_id' => 4340, 'word' => 'expand'],
@@ -4506,7 +4168,6 @@ return [
             'vocabulary_id' => 4339,
             'sentence' => 'The students examined the tiny cells under a {{blank}}.',
             'blank_word' => 'microscope',
-            'translation' => '學生們在顯微鏡下觀察微小的細胞。',
             'distractors' => [
                 ['vocabulary_id' => 4332, 'word' => 'earphone'],
                 ['vocabulary_id' => 4333, 'word' => 'innocence'],
@@ -4520,7 +4181,6 @@ return [
             'vocabulary_id' => 4340,
             'sentence' => 'The bird {{blank}} its wings before flying into the sky.',
             'blank_word' => 'expanded',
-            'translation' => '那隻鳥展開翅膀，飛向天空。',
             'distractors' => [
                 ['vocabulary_id' => 4334, 'word' => 'broiled'],
                 ['vocabulary_id' => 4338, 'word' => 'assumed'],
@@ -4535,7 +4195,6 @@ return [
             'vocabulary_id' => 4341,
             'sentence' => 'Teaching is a rewarding {{blank}} that requires patience and dedication.',
             'blank_word' => 'profession',
-            'translation' => '教學是一項有成就感的職業，需要耐心與奉獻精神。',
             'distractors' => [
                 ['vocabulary_id' => 4342, 'word' => 'learning'],
                 ['vocabulary_id' => 4345, 'word' => 'consonant'],
@@ -4549,7 +4208,6 @@ return [
             'vocabulary_id' => 4342,
             'sentence' => '{{blank}} a new language takes time, practice, and confidence.',
             'blank_word' => 'Learning',
-            'translation' => '學習一種新語言需要時間、練習和自信。',
             'distractors' => [
                 ['vocabulary_id' => 4341, 'word' => 'Profession'],
                 ['vocabulary_id' => 4345, 'word' => 'Consonant'],
@@ -4563,7 +4221,6 @@ return [
             'vocabulary_id' => 4343,
             'sentence' => 'Several problems began to {{blank}} during the construction of the bridge.',
             'blank_word' => 'emerge',
-            'translation' => '橋梁施工期間，幾個問題開始浮現。',
             'distractors' => [
                 ['vocabulary_id' => 4350, 'word' => 'spare'],
                 ['vocabulary_id' => 4341, 'word' => 'profession'],
@@ -4576,7 +4233,6 @@ return [
             'vocabulary_id' => 4344,
             'sentence' => 'The apartment is small, but its kitchen is modern and {{blank}}.',
             'blank_word' => 'functional',
-            'translation' => '這間公寓雖然很小，但廚房既現代又實用。',
             'distractors' => [
                 ['vocabulary_id' => 4348, 'word' => 'submarine'],
                 ['vocabulary_id' => 4350, 'word' => 'spare'],
@@ -4589,7 +4245,6 @@ return [
             'vocabulary_id' => 4345,
             'sentence' => 'The word “school” begins with the {{blank}} “s.”',
             'blank_word' => 'consonant',
-            'translation' => '「school」這個字以子音字母「s」開頭。',
             'distractors' => [
                 ['vocabulary_id' => 4341, 'word' => 'profession'],
                 ['vocabulary_id' => 4342, 'word' => 'learning'],
@@ -4603,7 +4258,6 @@ return [
             'vocabulary_id' => 4346,
             'sentence' => 'My parents give me a weekly {{blank}} for small expenses.',
             'blank_word' => 'allowance',
-            'translation' => '我的父母每週給我零用錢，讓我支付小額開銷。',
             'distractors' => [
                 ['vocabulary_id' => 4341, 'word' => 'profession'],
                 ['vocabulary_id' => 4342, 'word' => 'learning'],
@@ -4617,7 +4271,6 @@ return [
             'vocabulary_id' => 4347,
             'sentence' => 'Please check the email {{blank}} before you send the message.',
             'blank_word' => 'attachment',
-            'translation' => '寄出訊息前，請檢查電子郵件的附件。',
             'distractors' => [
                 ['vocabulary_id' => 4341, 'word' => 'profession'],
                 ['vocabulary_id' => 4342, 'word' => 'learning'],
@@ -4631,7 +4284,6 @@ return [
             'vocabulary_id' => 4348,
             'sentence' => 'The {{blank}} traveled silently beneath the cold ocean water.',
             'blank_word' => 'submarine',
-            'translation' => '那艘潛水艇在冰冷的海水下無聲地航行。',
             'distractors' => [
                 ['vocabulary_id' => 4341, 'word' => 'profession'],
                 ['vocabulary_id' => 4342, 'word' => 'learning'],
@@ -4645,7 +4297,6 @@ return [
             'vocabulary_id' => 4349,
             'sentence' => 'The bank approved a {{blank}} to help the couple buy a house.',
             'blank_word' => 'loan',
-            'translation' => '銀行核准了一筆貸款，幫助這對夫妻買房子。',
             'distractors' => [
                 ['vocabulary_id' => 4341, 'word' => 'profession'],
                 ['vocabulary_id' => 4342, 'word' => 'learning'],
@@ -4659,7 +4310,6 @@ return [
             'vocabulary_id' => 4350,
             'sentence' => 'Could you {{blank}} a few minutes to help me carry these boxes?',
             'blank_word' => 'spare',
-            'translation' => '你可以撥出幾分鐘幫我搬這些箱子嗎？',
             'distractors' => [
                 ['vocabulary_id' => 4343, 'word' => 'emerge'],
                 ['vocabulary_id' => 4344, 'word' => 'functional'],
@@ -4672,7 +4322,6 @@ return [
             'vocabulary_id' => 4351,
             'sentence' => 'The store sells energy-saving {{blank}} such as refrigerators and washing machines.',
             'blank_word' => 'appliances',
-            'translation' => '這家商店販售冰箱和洗衣機等節能家電。',
             'distractors' => [
                 ['vocabulary_id' => 4353, 'word' => 'prosperities'],
                 ['vocabulary_id' => 4355, 'word' => 'gears'],
@@ -4686,7 +4335,6 @@ return [
             'vocabulary_id' => 4352,
             'sentence' => 'After living in Canada for five years, she became {{blank}} in English.',
             'blank_word' => 'fluent',
-            'translation' => '在加拿大住了五年後，她的英語變得很流利。',
             'distractors' => [
                 ['vocabulary_id' => 4354, 'word' => 'constructive'],
                 ['vocabulary_id' => 4359, 'word' => 'magnetic'],
@@ -4699,7 +4347,6 @@ return [
             'vocabulary_id' => 4353,
             'sentence' => 'The new railway brought {{blank}} to many small towns.',
             'blank_word' => 'prosperity',
-            'translation' => '新的鐵路為許多小鎮帶來了繁榮。',
             'distractors' => [
                 ['vocabulary_id' => 4351, 'word' => 'appliance'],
                 ['vocabulary_id' => 4355, 'word' => 'gear'],
@@ -4713,7 +4360,6 @@ return [
             'vocabulary_id' => 4354,
             'sentence' => 'The manager gave the employee {{blank}} advice on how to improve.',
             'blank_word' => 'constructive',
-            'translation' => '經理給了這名員工具建設性的建議，告訴他如何改進。',
             'distractors' => [
                 ['vocabulary_id' => 4352, 'word' => 'fluent'],
                 ['vocabulary_id' => 4359, 'word' => 'magnetic'],
@@ -4726,7 +4372,6 @@ return [
             'vocabulary_id' => 4355,
             'sentence' => 'The climbers checked their safety {{blank}} before starting up the mountain.',
             'blank_word' => 'gear',
-            'translation' => '登山者在開始攀登前檢查了安全裝備。',
             'distractors' => [
                 ['vocabulary_id' => 4351, 'word' => 'appliance'],
                 ['vocabulary_id' => 4353, 'word' => 'prosperity'],
@@ -4740,7 +4385,6 @@ return [
             'vocabulary_id' => 4356,
             'sentence' => 'The famous {{blank}} wrote a beautiful piece for the orchestra.',
             'blank_word' => 'composer',
-            'translation' => '那位著名作曲家為管弦樂團創作了一首優美的樂曲。',
             'distractors' => [
                 ['vocabulary_id' => 4351, 'word' => 'appliance'],
                 ['vocabulary_id' => 4353, 'word' => 'prosperity'],
@@ -4754,7 +4398,6 @@ return [
             'vocabulary_id' => 4357,
             'sentence' => 'The {{blank}} carefully entered the information into the computer.',
             'blank_word' => 'typist',
-            'translation' => '那名打字員仔細地將資料輸入電腦。',
             'distractors' => [
                 ['vocabulary_id' => 4351, 'word' => 'appliance'],
                 ['vocabulary_id' => 4353, 'word' => 'prosperity'],
@@ -4768,7 +4411,6 @@ return [
             'vocabulary_id' => 4358,
             'sentence' => 'We must finish the report before the {{blank}} on Friday.',
             'blank_word' => 'deadline',
-            'translation' => '我們必須在星期五的截止期限前完成報告。',
             'distractors' => [
                 ['vocabulary_id' => 4351, 'word' => 'appliance'],
                 ['vocabulary_id' => 4353, 'word' => 'prosperity'],
@@ -4782,7 +4424,6 @@ return [
             'vocabulary_id' => 4359,
             'sentence' => 'The scientist used a {{blank}} force to move the metal object.',
             'blank_word' => 'magnetic',
-            'translation' => '科學家利用磁力移動那個金屬物體。',
             'distractors' => [
                 ['vocabulary_id' => 4352, 'word' => 'fluent'],
                 ['vocabulary_id' => 4354, 'word' => 'constructive'],
@@ -4795,7 +4436,6 @@ return [
             'vocabulary_id' => 4360,
             'sentence' => 'There was a small {{blank}} in the front of his shirt.',
             'blank_word' => 'wrinkle',
-            'translation' => '他的襯衫前面有一道小皺褶。',
             'distractors' => [
                 ['vocabulary_id' => 4351, 'word' => 'appliance'],
                 ['vocabulary_id' => 4353, 'word' => 'prosperity'],
@@ -4811,7 +4451,6 @@ return [
             'vocabulary_id' => 4361,
             'sentence' => 'I share a {{blank}} room with two other students near the university.',
             'blank_word' => 'dorm',
-            'translation' => '我和另外兩名學生共住大學附近的學生宿舍房間。',
             'distractors' => [
                 ['vocabulary_id' => 4362, 'word' => 'reward'],
                 ['vocabulary_id' => 4365, 'word' => 'remark'],
@@ -4824,7 +4463,6 @@ return [
             'vocabulary_id' => 4362,
             'sentence' => 'The company {{blank}} Mia for her excellent work with a bonus.',
             'blank_word' => 'rewarded',
-            'translation' => '公司以獎金報答米雅的傑出工作表現。',
             'distractors' => [
                 ['vocabulary_id' => 4365, 'word' => 'remarked'],
                 ['vocabulary_id' => 4361, 'word' => 'dorm'],
@@ -4837,7 +4475,6 @@ return [
             'vocabulary_id' => 4363,
             'sentence' => 'Despite winning the competition, Leo remained {{blank}} and thanked his teammates.',
             'blank_word' => 'modest',
-            'translation' => '儘管贏得了比賽，里歐仍然很謙虛，並感謝他的隊友。',
             'distractors' => [
                 ['vocabulary_id' => 4364, 'word' => 'vast'],
                 ['vocabulary_id' => 4368, 'word' => 'peculiar'],
@@ -4848,7 +4485,6 @@ return [
             'vocabulary_id' => 4364,
             'sentence' => 'The explorers traveled across a {{blank}} desert for several weeks.',
             'blank_word' => 'vast',
-            'translation' => '探險家花了好幾週穿越一片廣闊的沙漠。',
             'distractors' => [
                 ['vocabulary_id' => 4363, 'word' => 'modest'],
                 ['vocabulary_id' => 4368, 'word' => 'peculiar'],
@@ -4859,7 +4495,6 @@ return [
             'vocabulary_id' => 4365,
             'sentence' => 'The teacher {{blank}} that the students had made great progress.',
             'blank_word' => 'remarked',
-            'translation' => '老師評論說，學生們已經有了很大的進步。',
             'distractors' => [
                 ['vocabulary_id' => 4362, 'word' => 'rewarded'],
                 ['vocabulary_id' => 4361, 'word' => 'dorm'],
@@ -4872,7 +4507,6 @@ return [
             'vocabulary_id' => 4366,
             'sentence' => 'Although she has lived in Taiwan for years, she still speaks English with a British {{blank}}.',
             'blank_word' => 'accent',
-            'translation' => '雖然她在臺灣住了好幾年，她說英語時仍帶有英國口音。',
             'distractors' => [
                 ['vocabulary_id' => 4361, 'word' => 'dorm'],
                 ['vocabulary_id' => 4362, 'word' => 'reward'],
@@ -4885,7 +4519,6 @@ return [
             'vocabulary_id' => 4367,
             'sentence' => 'I have been feeling tired {{blank}}, so I am trying to get more sleep.',
             'blank_word' => 'lately',
-            'translation' => '我最近一直覺得很累，所以正努力多睡一點。',
             'distractors' => [
                 ['vocabulary_id' => 4361, 'word' => 'dorm'],
                 ['vocabulary_id' => 4362, 'word' => 'reward'],
@@ -4898,7 +4531,6 @@ return [
             'vocabulary_id' => 4368,
             'sentence' => 'There was a {{blank}} smell coming from the old wooden box.',
             'blank_word' => 'peculiar',
-            'translation' => '那個老木箱裡飄出一股奇怪的味道。',
             'distractors' => [
                 ['vocabulary_id' => 4363, 'word' => 'modest'],
                 ['vocabulary_id' => 4364, 'word' => 'vast'],
@@ -4909,7 +4541,6 @@ return [
             'vocabulary_id' => 4369,
             'sentence' => 'The {{blank}} plan was to finish the project by Friday.',
             'blank_word' => 'initial',
-            'translation' => '最初的計畫是在星期五前完成這項專案。',
             'distractors' => [
                 ['vocabulary_id' => 4361, 'word' => 'dorm'],
                 ['vocabulary_id' => 4362, 'word' => 'reward'],
@@ -4923,7 +4554,6 @@ return [
             'vocabulary_id' => 4370,
             'sentence' => 'With {{blank}} and patience, she improved her English significantly.',
             'blank_word' => 'diligence',
-            'translation' => '靠著勤勉和耐心，她的英語有了顯著進步。',
             'distractors' => [
                 ['vocabulary_id' => 4361, 'word' => 'dorm'],
                 ['vocabulary_id' => 4362, 'word' => 'reward'],
@@ -4938,7 +4568,6 @@ return [
             'vocabulary_id' => 4371,
             'sentence' => 'I caught a {{blank}} of the famous singer as she left the theater.',
             'blank_word' => 'glimpse',
-            'translation' => '那位知名歌手離開劇院時，我瞥見了她一眼。',
             'distractors' => [
                 ['vocabulary_id' => 4372, 'word' => 'constitute'],
                 ['vocabulary_id' => 4373, 'word' => 'transfer'],
@@ -4952,7 +4581,6 @@ return [
             'vocabulary_id' => 4372,
             'sentence' => 'These three departments {{blank}} the main structure of the organization.',
             'blank_word' => 'constitute',
-            'translation' => '這三個部門構成了這個組織的主要架構。',
             'distractors' => [
                 ['vocabulary_id' => 4371, 'word' => 'glimpse'],
                 ['vocabulary_id' => 4373, 'word' => 'transfer'],
@@ -4963,7 +4591,6 @@ return [
             'vocabulary_id' => 4373,
             'sentence' => 'After two years at the branch office, Daniel {{blank}} to the company headquarters.',
             'blank_word' => 'transferred',
-            'translation' => '在分公司工作兩年後，丹尼爾調到公司總部。',
             'distractors' => [
                 ['vocabulary_id' => 4371, 'word' => 'glimpsed'],
                 ['vocabulary_id' => 4372, 'word' => 'constituted'],
@@ -4974,7 +4601,6 @@ return [
             'vocabulary_id' => 4374,
             'sentence' => 'Please do not {{blank}} your brother by telling everyone about his mistake.',
             'blank_word' => 'embarrass',
-            'translation' => '請不要把你哥哥的錯誤告訴大家，讓他難堪。',
             'distractors' => [
                 ['vocabulary_id' => 4371, 'word' => 'glimpse'],
                 ['vocabulary_id' => 4372, 'word' => 'constitute'],
@@ -4985,7 +4611,6 @@ return [
             'vocabulary_id' => 4375,
             'sentence' => 'The first paragraph provides an {{blank}} of the research findings.',
             'blank_word' => 'abstract',
-            'translation' => '第一段提供了研究結果的摘要。',
             'distractors' => [
                 ['vocabulary_id' => 4371, 'word' => 'glimpse'],
                 ['vocabulary_id' => 4373, 'word' => 'transfer'],
@@ -4999,7 +4624,6 @@ return [
             'vocabulary_id' => 4376,
             'sentence' => 'The ship carried {{blank}} from Taiwan to several countries in Southeast Asia.',
             'blank_word' => 'cargo',
-            'translation' => '這艘船將貨物從臺灣運送到東南亞的幾個國家。',
             'distractors' => [
                 ['vocabulary_id' => 4371, 'word' => 'glimpse'],
                 ['vocabulary_id' => 4373, 'word' => 'transfer'],
@@ -5013,7 +4637,6 @@ return [
             'vocabulary_id' => 4377,
             'sentence' => 'She found {{blank}} in spending quiet evenings with her family.',
             'blank_word' => 'contentment',
-            'translation' => '她在與家人共度寧靜夜晚時感到滿足。',
             'distractors' => [
                 ['vocabulary_id' => 4371, 'word' => 'glimpse'],
                 ['vocabulary_id' => 4372, 'word' => 'constitute'],
@@ -5026,7 +4649,6 @@ return [
             'vocabulary_id' => 4378,
             'sentence' => 'I could hear the {{blank}} in his apology, so I decided to forgive him.',
             'blank_word' => 'sincerity',
-            'translation' => '我能聽出他道歉時的誠意，所以決定原諒他。',
             'distractors' => [
                 ['vocabulary_id' => 4371, 'word' => 'glimpse'],
                 ['vocabulary_id' => 4373, 'word' => 'transfer'],
@@ -5040,7 +4662,6 @@ return [
             'vocabulary_id' => 4379,
             'sentence' => 'Her {{blank}} made her uncomfortable when people praised her achievements.',
             'blank_word' => 'modesty',
-            'translation' => '人們稱讚她的成就時，她的謙遜讓她感到不自在。',
             'distractors' => [
                 ['vocabulary_id' => 4371, 'word' => 'glimpse'],
                 ['vocabulary_id' => 4373, 'word' => 'transfer'],
@@ -5054,7 +4675,6 @@ return [
             'vocabulary_id' => 4380,
             'sentence' => 'The hotel gave us a three-day {{blank}} period to pay the bill.',
             'blank_word' => 'grace',
-            'translation' => '飯店給了我們三天的付款寬限期。',
             'distractors' => [
                 ['vocabulary_id' => 4371, 'word' => 'glimpse'],
                 ['vocabulary_id' => 4373, 'word' => 'transfer'],
@@ -5070,7 +4690,6 @@ return [
             'vocabulary_id' => 4381,
             'sentence' => 'The restaurant has a good {{blank}} for serving fresh seafood.',
             'blank_word' => 'reputation',
-            'translation' => '這家餐廳以供應新鮮海鮮而享有良好聲譽。',
             'distractors' => [
                 ['vocabulary_id' => 4382, 'word' => 'commerce'],
                 ['vocabulary_id' => 4384, 'word' => 'recovery'],
@@ -5084,7 +4703,6 @@ return [
             'vocabulary_id' => 4382,
             'sentence' => 'The Internet has greatly changed international {{blank}}.',
             'blank_word' => 'commerce',
-            'translation' => '網際網路大幅改變了國際貿易。',
             'distractors' => [
                 ['vocabulary_id' => 4381, 'word' => 'reputation'],
                 ['vocabulary_id' => 4384, 'word' => 'recovery'],
@@ -5098,7 +4716,6 @@ return [
             'vocabulary_id' => 4383,
             'sentence' => 'The two companies reached a {{blank}} agreement after several meetings.',
             'blank_word' => 'mutual',
-            'translation' => '這兩家公司經過幾次會議後達成了共識。',
             'distractors' => [
                 ['vocabulary_id' => 4386, 'word' => 'splendid'],
                 ['vocabulary_id' => 4381, 'word' => 'reputation'],
@@ -5111,7 +4728,6 @@ return [
             'vocabulary_id' => 4384,
             'sentence' => 'The patient made a slow but steady {{blank}} after the operation.',
             'blank_word' => 'recovery',
-            'translation' => '那名病人手術後逐漸穩定地恢復。',
             'distractors' => [
                 ['vocabulary_id' => 4381, 'word' => 'reputation'],
                 ['vocabulary_id' => 4382, 'word' => 'commerce'],
@@ -5125,7 +4741,6 @@ return [
             'vocabulary_id' => 4385,
             'sentence' => 'Her face began to {{blank}} when everyone praised her performance.',
             'blank_word' => 'flush',
-            'translation' => '當大家稱讚她的表現時，她的臉開始泛紅。',
             'distractors' => [
                 ['vocabulary_id' => 4381, 'word' => 'reputation'],
                 ['vocabulary_id' => 4382, 'word' => 'commerce'],
@@ -5139,7 +4754,6 @@ return [
             'vocabulary_id' => 4386,
             'sentence' => 'We enjoyed a {{blank}} view of the sunset from the mountain.',
             'blank_word' => 'splendid',
-            'translation' => '我們從山上欣賞到燦爛美麗的日落景色。',
             'distractors' => [
                 ['vocabulary_id' => 4383, 'word' => 'mutual'],
                 ['vocabulary_id' => 4381, 'word' => 'reputation'],
@@ -5152,7 +4766,6 @@ return [
             'vocabulary_id' => 4387,
             'sentence' => 'The singer\'s {{blank}} grew quickly after her first album was released.',
             'blank_word' => 'popularity',
-            'translation' => '這位歌手的第一張專輯發行後，她的聲望迅速提升。',
             'distractors' => [
                 ['vocabulary_id' => 4381, 'word' => 'reputation'],
                 ['vocabulary_id' => 4382, 'word' => 'commerce'],
@@ -5166,7 +4779,6 @@ return [
             'vocabulary_id' => 4388,
             'sentence' => 'The workers carefully removed the {{blank}} from the damaged building.',
             'blank_word' => 'explosive',
-            'translation' => '工人小心地從受損的建築物中移除了炸藥。',
             'distractors' => [
                 ['vocabulary_id' => 4381, 'word' => 'reputation'],
                 ['vocabulary_id' => 4382, 'word' => 'commerce'],
@@ -5180,7 +4792,6 @@ return [
             'vocabulary_id' => 4389,
             'sentence' => 'Please put the leftover soup in an airtight {{blank}}.',
             'blank_word' => 'container',
-            'translation' => '請把剩下的湯放進密封容器裡。',
             'distractors' => [
                 ['vocabulary_id' => 4381, 'word' => 'reputation'],
                 ['vocabulary_id' => 4382, 'word' => 'commerce'],
@@ -5194,7 +4805,6 @@ return [
             'vocabulary_id' => 4390,
             'sentence' => 'The new teacher made a friendly {{blank}} on the students.',
             'blank_word' => 'impression',
-            'translation' => '這位新老師給學生留下了親切的印象。',
             'distractors' => [
                 ['vocabulary_id' => 4381, 'word' => 'reputation'],
                 ['vocabulary_id' => 4382, 'word' => 'commerce'],
@@ -5210,7 +4820,6 @@ return [
             'vocabulary_id' => 4391,
             'sentence' => 'Our trip to the island was {{blank}} because we saw dolphins near the boat.',
             'blank_word' => 'memorable',
-            'translation' => '我們的島嶼之旅令人難忘，因為我們在船附近看到了海豚。',
             'distractors' => [
                 ['vocabulary_id' => 4393, 'word' => 'niche'],
                 ['vocabulary_id' => 4398, 'word' => 'academic'],
@@ -5221,7 +4830,6 @@ return [
             'vocabulary_id' => 4392,
             'sentence' => 'The emergency fund can {{blank}} families from the financial effects of a sudden illness.',
             'blank_word' => 'cushion',
-            'translation' => '這筆緊急基金可以減輕突發疾病對家庭造成的經濟打擊。',
             'distractors' => [
                 ['vocabulary_id' => 4395, 'word' => 'crush'],
                 ['vocabulary_id' => 4391, 'word' => 'memorable'],
@@ -5234,7 +4842,6 @@ return [
             'vocabulary_id' => 4393,
             'sentence' => 'The company found a profitable {{blank}} by selling healthy snacks to busy office workers.',
             'blank_word' => 'niche',
-            'translation' => '這家公司鎖定忙碌上班族的健康零食利基市場，因而獲利。',
             'distractors' => [
                 ['vocabulary_id' => 4391, 'word' => 'memorable'],
                 ['vocabulary_id' => 4394, 'word' => 'guilt'],
@@ -5248,7 +4855,6 @@ return [
             'vocabulary_id' => 4394,
             'sentence' => 'He felt a strong sense of {{blank}} after blaming his friend for the mistake.',
             'blank_word' => 'guilt',
-            'translation' => '他把錯誤怪罪給朋友後，感到強烈的內疚。',
             'distractors' => [
                 ['vocabulary_id' => 4393, 'word' => 'niche'],
                 ['vocabulary_id' => 4395, 'word' => 'crush'],
@@ -5261,7 +4867,6 @@ return [
             'vocabulary_id' => 4395,
             'sentence' => 'She had a {{blank}} on her classmate but was too shy to talk to him.',
             'blank_word' => 'crush',
-            'translation' => '她暗戀班上的同學，卻害羞得不敢和他說話。',
             'distractors' => [
                 ['vocabulary_id' => 4392, 'word' => 'cushion'],
                 ['vocabulary_id' => 4393, 'word' => 'niche'],
@@ -5275,7 +4880,6 @@ return [
             'vocabulary_id' => 4396,
             'sentence' => 'The quiet {{blank}} helped me concentrate on my homework.',
             'blank_word' => 'surroundings',
-            'translation' => '安靜的周遭環境幫助我專心寫作業。',
             'distractors' => [
                 ['vocabulary_id' => 4393, 'word' => 'niche'],
                 ['vocabulary_id' => 4394, 'word' => 'guilt'],
@@ -5288,7 +4892,6 @@ return [
             'vocabulary_id' => 4397,
             'sentence' => 'The charity organized the {{blank}} of food to families affected by the flood.',
             'blank_word' => 'distribution',
-            'translation' => '這個慈善團體安排將食物分發給受洪水影響的家庭。',
             'distractors' => [
                 ['vocabulary_id' => 4393, 'word' => 'niche'],
                 ['vocabulary_id' => 4394, 'word' => 'guilt'],
@@ -5301,7 +4904,6 @@ return [
             'vocabulary_id' => 4398,
             'sentence' => 'The university offers strong {{blank}} programs in science and engineering.',
             'blank_word' => 'academic',
-            'translation' => '這所大學提供優良的科學與工程學術課程。',
             'distractors' => [
                 ['vocabulary_id' => 4391, 'word' => 'memorable'],
                 ['vocabulary_id' => 4393, 'word' => 'niche'],
@@ -5312,7 +4914,6 @@ return [
             'vocabulary_id' => 4399,
             'sentence' => 'The museum\'s most popular {{blank}} is an ancient Chinese painting.',
             'blank_word' => 'exhibit',
-            'translation' => '博物館最受歡迎的展品是一幅中國古畫。',
             'distractors' => [
                 ['vocabulary_id' => 4393, 'word' => 'niche'],
                 ['vocabulary_id' => 4394, 'word' => 'guilt'],
@@ -5325,7 +4926,6 @@ return [
             'vocabulary_id' => 4400,
             'sentence' => 'The study examines the {{blank}} effects of long-term stress.',
             'blank_word' => 'psychological',
-            'translation' => '這項研究探討長期壓力的心理影響。',
             'distractors' => [
                 ['vocabulary_id' => 4391, 'word' => 'memorable'],
                 ['vocabulary_id' => 4393, 'word' => 'niche'],
@@ -5338,7 +4938,6 @@ return [
             'vocabulary_id' => 4401,
             'sentence' => 'I {{blank}} you that your package will arrive by Friday.',
             'blank_word' => 'assure',
-            'translation' => '我向你保證，你的包裹會在星期五前送達。',
             'distractors' => [
                 ['vocabulary_id' => 4408, 'word' => 'expose'],
                 ['vocabulary_id' => 4410, 'word' => 'arise'],
@@ -5351,7 +4950,6 @@ return [
             'vocabulary_id' => 4402,
             'sentence' => 'The success of the project is {{blank}} on everyone’s cooperation.',
             'blank_word' => 'dependent',
-            'translation' => '這項計畫的成功取決於每個人的合作。',
             'distractors' => [
                 ['vocabulary_id' => 4405, 'word' => 'solar'],
                 ['vocabulary_id' => 4401, 'word' => 'assure'],
@@ -5364,7 +4962,6 @@ return [
             'vocabulary_id' => 4403,
             'sentence' => 'A {{blank}} flew over the beach and landed near the boat.',
             'blank_word' => 'seagull',
-            'translation' => '一隻海鷗飛過海灘，降落在船的附近。',
             'distractors' => [
                 ['vocabulary_id' => 4404, 'word' => 'perfection'],
                 ['vocabulary_id' => 4406, 'word' => 'creation'],
@@ -5376,7 +4973,6 @@ return [
             'vocabulary_id' => 4404,
             'sentence' => 'She practiced the song many times because she wanted to sing it to {{blank}}.',
             'blank_word' => 'perfection',
-            'translation' => '她練習了這首歌很多次，因為她想把它唱到完美。',
             'distractors' => [
                 ['vocabulary_id' => 4403, 'word' => 'seagull'],
                 ['vocabulary_id' => 4406, 'word' => 'creation'],
@@ -5388,7 +4984,6 @@ return [
             'vocabulary_id' => 4405,
             'sentence' => 'The school installed {{blank}} panels on the roof to save energy.',
             'blank_word' => 'solar',
-            'translation' => '學校在屋頂上安裝太陽能板來節省能源。',
             'distractors' => [
                 ['vocabulary_id' => 4402, 'word' => 'dependent'],
                 ['vocabulary_id' => 4401, 'word' => 'assure'],
@@ -5401,7 +4996,6 @@ return [
             'vocabulary_id' => 4406,
             'sentence' => 'This painting is the artist’s latest {{blank}}.',
             'blank_word' => 'creation',
-            'translation' => '這幅畫是這位藝術家最近的創作。',
             'distractors' => [
                 ['vocabulary_id' => 4403, 'word' => 'seagull'],
                 ['vocabulary_id' => 4404, 'word' => 'perfection'],
@@ -5413,7 +5007,6 @@ return [
             'vocabulary_id' => 4407,
             'sentence' => 'The singer changed her {{blank}} to reach the highest note.',
             'blank_word' => 'pitch',
-            'translation' => '那位歌手改變音高，以唱到最高音。',
             'distractors' => [
                 ['vocabulary_id' => 4403, 'word' => 'seagull'],
                 ['vocabulary_id' => 4404, 'word' => 'perfection'],
@@ -5425,7 +5018,6 @@ return [
             'vocabulary_id' => 4408,
             'sentence' => 'Wearing sunscreen helps protect your skin from being {{blank}} to too much sunlight.',
             'blank_word' => 'exposed',
-            'translation' => '塗防曬乳有助於保護你的皮膚，避免暴露在過多的陽光下。',
             'distractors' => [
                 ['vocabulary_id' => 4401, 'word' => 'assured'],
                 ['vocabulary_id' => 4410, 'word' => 'arose'],
@@ -5438,7 +5030,6 @@ return [
             'vocabulary_id' => 4409,
             'sentence' => 'The old photograph is one of my most valuable {{blank}}.',
             'blank_word' => 'possessions',
-            'translation' => '那張老照片是我最珍貴的所有物之一。',
             'distractors' => [
                 ['vocabulary_id' => 4403, 'word' => 'seagulls'],
                 ['vocabulary_id' => 4404, 'word' => 'perfections'],
@@ -5450,7 +5041,6 @@ return [
             'vocabulary_id' => 4410,
             'sentence' => 'Unexpected problems may {{blank}} during the construction of the bridge.',
             'blank_word' => 'arise',
-            'translation' => '橋梁施工期間可能會出現意想不到的問題。',
             'distractors' => [
                 ['vocabulary_id' => 4401, 'word' => 'assure'],
                 ['vocabulary_id' => 4408, 'word' => 'expose'],
@@ -5465,7 +5055,6 @@ return [
             'vocabulary_id' => 4411,
             'sentence' => 'The {{blank}} material allows the shoes to stretch comfortably.',
             'blank_word' => 'elastic',
-            'translation' => '這種有彈性的材料讓鞋子可以舒適地伸展。',
             'distractors' => [
                 ['vocabulary_id' => 4414, 'word' => 'shortsighted'],
                 ['vocabulary_id' => 4419, 'word' => 'fossil'],
@@ -5478,7 +5067,6 @@ return [
             'vocabulary_id' => 4412,
             'sentence' => 'Add a little {{blank}} to the salad to give it a fresh, sour taste.',
             'blank_word' => 'vinegar',
-            'translation' => '在沙拉中加一點醋，讓它帶有清爽的酸味。',
             'distractors' => [
                 ['vocabulary_id' => 4413, 'word' => 'frustration'],
                 ['vocabulary_id' => 4415, 'word' => 'conjunction'],
@@ -5492,7 +5080,6 @@ return [
             'vocabulary_id' => 4413,
             'sentence' => 'After several failed attempts, he felt a great deal of {{blank}}.',
             'blank_word' => 'frustration',
-            'translation' => '幾次嘗試失敗後，他感到非常挫折。',
             'distractors' => [
                 ['vocabulary_id' => 4412, 'word' => 'vinegar'],
                 ['vocabulary_id' => 4415, 'word' => 'conjunction'],
@@ -5506,7 +5093,6 @@ return [
             'vocabulary_id' => 4414,
             'sentence' => 'It was {{blank}} to cut the training budget because the company needed skilled workers later.',
             'blank_word' => 'shortsighted',
-            'translation' => '削減培訓預算是目光短淺的做法，因為公司之後需要技術熟練的員工。',
             'distractors' => [
                 ['vocabulary_id' => 4411, 'word' => 'elastic'],
                 ['vocabulary_id' => 4419, 'word' => 'fossil'],
@@ -5519,7 +5105,6 @@ return [
             'vocabulary_id' => 4415,
             'sentence' => 'The word “and” is a {{blank}} that joins two ideas.',
             'blank_word' => 'conjunction',
-            'translation' => '「and」是一個連接詞，用來連接兩個想法。',
             'distractors' => [
                 ['vocabulary_id' => 4412, 'word' => 'vinegar'],
                 ['vocabulary_id' => 4413, 'word' => 'frustration'],
@@ -5533,7 +5118,6 @@ return [
             'vocabulary_id' => 4416,
             'sentence' => 'The scientist’s research was accepted for {{blank}} in an international journal.',
             'blank_word' => 'publication',
-            'translation' => '這位科學家的研究獲准刊登在國際期刊上。',
             'distractors' => [
                 ['vocabulary_id' => 4412, 'word' => 'vinegar'],
                 ['vocabulary_id' => 4413, 'word' => 'frustration'],
@@ -5547,7 +5131,6 @@ return [
             'vocabulary_id' => 4417,
             'sentence' => 'One of my {{blank}} moved to Taiwan more than a hundred years ago.',
             'blank_word' => 'ancestors',
-            'translation' => '我的一位祖先在一百多年前搬到臺灣。',
             'distractors' => [
                 ['vocabulary_id' => 4412, 'word' => 'vinegars'],
                 ['vocabulary_id' => 4413, 'word' => 'frustrations'],
@@ -5561,7 +5144,6 @@ return [
             'vocabulary_id' => 4418,
             'sentence' => 'The police began an {{blank}} into the cause of the accident.',
             'blank_word' => 'investigation',
-            'translation' => '警方開始調查這起事故的原因。',
             'distractors' => [
                 ['vocabulary_id' => 4412, 'word' => 'vinegar'],
                 ['vocabulary_id' => 4413, 'word' => 'frustration'],
@@ -5575,7 +5157,6 @@ return [
             'vocabulary_id' => 4419,
             'sentence' => 'The museum displayed {{blank}} plants from millions of years ago.',
             'blank_word' => 'fossil',
-            'translation' => '博物館展示了數百萬年前的植物化石。',
             'distractors' => [
                 ['vocabulary_id' => 4411, 'word' => 'elastic'],
                 ['vocabulary_id' => 4414, 'word' => 'shortsighted'],
@@ -5588,7 +5169,6 @@ return [
             'vocabulary_id' => 4420,
             'sentence' => 'The author made a careful {{blank}} of the first chapter before publication.',
             'blank_word' => 'revision',
-            'translation' => '出版前，作者仔細修訂了第一章。',
             'distractors' => [
                 ['vocabulary_id' => 4412, 'word' => 'vinegar'],
                 ['vocabulary_id' => 4413, 'word' => 'frustration'],
@@ -5603,7 +5183,6 @@ return [
             'vocabulary_id' => 4421,
             'sentence' => 'Their {{blank}} was finalized after several months of legal discussions.',
             'blank_word' => 'divorce',
-            'translation' => '他們的離婚在經過數個月的法律協商後正式完成。',
             'distractors' => [
                 ['vocabulary_id' => 4422, 'word' => 'hardware'],
                 ['vocabulary_id' => 4424, 'word' => 'oxygen'],
@@ -5615,7 +5194,6 @@ return [
             'vocabulary_id' => 4422,
             'sentence' => 'The technician replaced the computer’s {{blank}} to improve its performance.',
             'blank_word' => 'hardware',
-            'translation' => '技術人員更換了電腦的硬體，以改善它的效能。',
             'distractors' => [
                 ['vocabulary_id' => 4421, 'word' => 'divorce'],
                 ['vocabulary_id' => 4424, 'word' => 'oxygen'],
@@ -5627,7 +5205,6 @@ return [
             'vocabulary_id' => 4423,
             'sentence' => 'The students {{blank}} the new desks before the class began.',
             'blank_word' => 'assembled',
-            'translation' => '學生們在課程開始前組裝了新桌子。',
             'distractors' => [
                 ['vocabulary_id' => 4428, 'word' => 'enclosed'],
                 ['vocabulary_id' => 4430, 'word' => 'demonstrated'],
@@ -5640,7 +5217,6 @@ return [
             'vocabulary_id' => 4424,
             'sentence' => 'Plants release {{blank}} into the air during photosynthesis.',
             'blank_word' => 'oxygen',
-            'translation' => '植物在光合作用期間將氧氣釋放到空氣中。',
             'distractors' => [
                 ['vocabulary_id' => 4421, 'word' => 'divorce'],
                 ['vocabulary_id' => 4422, 'word' => 'hardware'],
@@ -5652,7 +5228,6 @@ return [
             'vocabulary_id' => 4425,
             'sentence' => 'She wore a colorful {{blank}} for the school play.',
             'blank_word' => 'costume',
-            'translation' => '她穿著色彩鮮豔的戲裝參加學校的戲劇演出。',
             'distractors' => [
                 ['vocabulary_id' => 4421, 'word' => 'divorce'],
                 ['vocabulary_id' => 4422, 'word' => 'hardware'],
@@ -5664,7 +5239,6 @@ return [
             'vocabulary_id' => 4426,
             'sentence' => 'We had a {{blank}} meal at a small restaurant by the river.',
             'blank_word' => 'delightful',
-            'translation' => '我們在河邊的一間小餐廳享用了一頓令人愉快的餐點。',
             'distractors' => [
                 ['vocabulary_id' => 4427, 'word' => 'loyal'],
                 ['vocabulary_id' => 4421, 'word' => 'divorce'],
@@ -5677,7 +5251,6 @@ return [
             'vocabulary_id' => 4427,
             'sentence' => 'The {{blank}} dog waited outside the house for its owner.',
             'blank_word' => 'loyal',
-            'translation' => '那隻忠心的狗在屋外等候主人。',
             'distractors' => [
                 ['vocabulary_id' => 4426, 'word' => 'delightful'],
                 ['vocabulary_id' => 4421, 'word' => 'divorce'],
@@ -5690,7 +5263,6 @@ return [
             'vocabulary_id' => 4428,
             'sentence' => 'The farmer {{blank}} the garden with a wooden fence.',
             'blank_word' => 'enclosed',
-            'translation' => '農夫用木柵欄把花園圍了起來。',
             'distractors' => [
                 ['vocabulary_id' => 4423, 'word' => 'assembled'],
                 ['vocabulary_id' => 4430, 'word' => 'demonstrated'],
@@ -5703,7 +5275,6 @@ return [
             'vocabulary_id' => 4429,
             'sentence' => 'The large {{blank}} carried goods across the Pacific Ocean.',
             'blank_word' => 'vessel',
-            'translation' => '那艘大型船隻載運貨物橫越太平洋。',
             'distractors' => [
                 ['vocabulary_id' => 4421, 'word' => 'divorce'],
                 ['vocabulary_id' => 4422, 'word' => 'hardware'],
@@ -5715,7 +5286,6 @@ return [
             'vocabulary_id' => 4430,
             'sentence' => 'The science teacher {{blank}} how heat causes ice to melt.',
             'blank_word' => 'demonstrated',
-            'translation' => '自然科學老師示範了熱如何使冰融化。',
             'distractors' => [
                 ['vocabulary_id' => 4423, 'word' => 'assembled'],
                 ['vocabulary_id' => 4428, 'word' => 'enclosed'],
@@ -5730,7 +5300,6 @@ return [
             'vocabulary_id' => 4431,
             'sentence' => 'The climbers worked together to {{blank}} the steep mountain.',
             'blank_word' => 'conquer',
-            'translation' => '登山客一起努力攻克那座陡峭的山。',
             'distractors' => [
                 ['vocabulary_id' => 4432, 'word' => 'endanger'],
                 ['vocabulary_id' => 4440, 'word' => 'clarify'],
@@ -5743,7 +5312,6 @@ return [
             'vocabulary_id' => 4432,
             'sentence' => 'Throwing plastic into the ocean can {{blank}} many sea animals.',
             'blank_word' => 'endanger',
-            'translation' => '把塑膠丟進海裡可能會危及許多海洋動物。',
             'distractors' => [
                 ['vocabulary_id' => 4431, 'word' => 'conquer'],
                 ['vocabulary_id' => 4440, 'word' => 'clarify'],
@@ -5756,7 +5324,6 @@ return [
             'vocabulary_id' => 4433,
             'sentence' => 'The {{blank}} of the storm increased during the night.',
             'blank_word' => 'intensity',
-            'translation' => '暴風雨的強度在夜間增強了。',
             'distractors' => [
                 ['vocabulary_id' => 4434, 'word' => 'rebate'],
                 ['vocabulary_id' => 4435, 'word' => 'logic'],
@@ -5767,7 +5334,6 @@ return [
             'vocabulary_id' => 4434,
             'sentence' => 'Customers can receive a {{blank}} after purchasing an energy-efficient appliance.',
             'blank_word' => 'rebate',
-            'translation' => '顧客購買節能家電後可以獲得折扣回饋。',
             'distractors' => [
                 ['vocabulary_id' => 4433, 'word' => 'intensity'],
                 ['vocabulary_id' => 4435, 'word' => 'logic'],
@@ -5778,7 +5344,6 @@ return [
             'vocabulary_id' => 4435,
             'sentence' => 'Her argument was based on clear {{blank}} and strong evidence.',
             'blank_word' => 'logic',
-            'translation' => '她的論點建立在清楚的邏輯和有力的證據之上。',
             'distractors' => [
                 ['vocabulary_id' => 4433, 'word' => 'intensity'],
                 ['vocabulary_id' => 4434, 'word' => 'rebate'],
@@ -5789,7 +5354,6 @@ return [
             'vocabulary_id' => 4436,
             'sentence' => 'He enjoys an {{blank}} cup of coffee in the afternoon.',
             'blank_word' => 'occasional',
-            'translation' => '他偶爾喜歡在下午喝一杯咖啡。',
             'distractors' => [
                 ['vocabulary_id' => 4437, 'word' => 'grateful'],
                 ['vocabulary_id' => 4439, 'word' => 'physical'],
@@ -5802,7 +5366,6 @@ return [
             'vocabulary_id' => 4437,
             'sentence' => 'I am {{blank}} to my neighbors for helping me during the storm.',
             'blank_word' => 'grateful',
-            'translation' => '我很感謝鄰居在暴風雨期間幫助我。',
             'distractors' => [
                 ['vocabulary_id' => 4436, 'word' => 'occasional'],
                 ['vocabulary_id' => 4439, 'word' => 'physical'],
@@ -5815,7 +5378,6 @@ return [
             'vocabulary_id' => 4438,
             'sentence' => 'The travel {{blank}} helped us find an affordable flight to Japan.',
             'blank_word' => 'agent',
-            'translation' => '旅行社的代理人幫助我們找到了一班價格實惠的日本航班。',
             'distractors' => [
                 ['vocabulary_id' => 4433, 'word' => 'intensity'],
                 ['vocabulary_id' => 4434, 'word' => 'rebate'],
@@ -5826,7 +5388,6 @@ return [
             'vocabulary_id' => 4439,
             'sentence' => 'Regular exercise is important for maintaining good {{blank}} health.',
             'blank_word' => 'physical',
-            'translation' => '規律運動對維持良好的身體健康很重要。',
             'distractors' => [
                 ['vocabulary_id' => 4436, 'word' => 'occasional'],
                 ['vocabulary_id' => 4437, 'word' => 'grateful'],
@@ -5839,7 +5400,6 @@ return [
             'vocabulary_id' => 4440,
             'sentence' => 'The manager {{blank}} the new rules during the meeting.',
             'blank_word' => 'clarified',
-            'translation' => '經理在會議中澄清了新規定。',
             'distractors' => [
                 ['vocabulary_id' => 4431, 'word' => 'conquered'],
                 ['vocabulary_id' => 4432, 'word' => 'endangered'],
@@ -5854,7 +5414,6 @@ return [
             'vocabulary_id' => 4441,
             'sentence' => 'She hopes to build a successful {{blank}} in medicine.',
             'blank_word' => 'career',
-            'translation' => '她希望在醫學領域建立成功的職業生涯。',
             'distractors' => [
                 ['vocabulary_id' => 4442, 'word' => 'drift'],
                 ['vocabulary_id' => 4444, 'word' => 'fame'],
@@ -5867,7 +5426,6 @@ return [
             'vocabulary_id' => 4442,
             'sentence' => 'The small boat began to {{blank}} away from the shore.',
             'blank_word' => 'drift',
-            'translation' => '那艘小船開始漂離海岸。',
             'distractors' => [
                 ['vocabulary_id' => 4441, 'word' => 'career'],
                 ['vocabulary_id' => 4443, 'word' => 'dispute'],
@@ -5881,7 +5439,6 @@ return [
             'vocabulary_id' => 4443,
             'sentence' => 'The two neighbors {{blank}} the ownership of the land.',
             'blank_word' => 'disputed',
-            'translation' => '兩位鄰居爭論那塊土地的所有權。',
             'distractors' => [
                 ['vocabulary_id' => 4442, 'word' => 'drifted'],
                 ['vocabulary_id' => 4447, 'word' => 'revised'],
@@ -5892,7 +5449,6 @@ return [
             'vocabulary_id' => 4444,
             'sentence' => 'The young singer gained {{blank}} after her first album was released.',
             'blank_word' => 'fame',
-            'translation' => '那位年輕歌手的第一張專輯發行後便聲名大噪。',
             'distractors' => [
                 ['vocabulary_id' => 4441, 'word' => 'career'],
                 ['vocabulary_id' => 4442, 'word' => 'drift'],
@@ -5905,7 +5461,6 @@ return [
             'vocabulary_id' => 4445,
             'sentence' => 'The {{blank}} student plans to study at a top university.',
             'blank_word' => 'ambitious',
-            'translation' => '那名有雄心的學生計畫到頂尖大學就讀。',
             'distractors' => [
                 ['vocabulary_id' => 4441, 'word' => 'career'],
                 ['vocabulary_id' => 4442, 'word' => 'drift'],
@@ -5918,7 +5473,6 @@ return [
             'vocabulary_id' => 4446,
             'sentence' => 'Please check the {{blank}} of the report before sending it.',
             'blank_word' => 'content',
-            'translation' => '寄出報告前，請檢查報告的內容。',
             'distractors' => [
                 ['vocabulary_id' => 4441, 'word' => 'career'],
                 ['vocabulary_id' => 4442, 'word' => 'drift'],
@@ -5931,7 +5485,6 @@ return [
             'vocabulary_id' => 4447,
             'sentence' => 'I need to {{blank}} my essay before submitting it.',
             'blank_word' => 'revise',
-            'translation' => '我需要在繳交作文前修訂它。',
             'distractors' => [
                 ['vocabulary_id' => 4442, 'word' => 'drift'],
                 ['vocabulary_id' => 4443, 'word' => 'dispute'],
@@ -5942,7 +5495,6 @@ return [
             'vocabulary_id' => 4448,
             'sentence' => 'The police caught a {{blank}} near the crowded train station.',
             'blank_word' => 'pickpocket',
-            'translation' => '警方在擁擠的火車站附近抓到一名扒手。',
             'distractors' => [
                 ['vocabulary_id' => 4441, 'word' => 'career'],
                 ['vocabulary_id' => 4442, 'word' => 'drift'],
@@ -5955,7 +5507,6 @@ return [
             'vocabulary_id' => 4449,
             'sentence' => 'The lake {{blank}} the bright lights of the city.',
             'blank_word' => 'reflected',
-            'translation' => '湖面反射出城市明亮的燈光。',
             'distractors' => [
                 ['vocabulary_id' => 4442, 'word' => 'drifted'],
                 ['vocabulary_id' => 4443, 'word' => 'disputed'],
@@ -5966,7 +5517,6 @@ return [
             'vocabulary_id' => 4450,
             'sentence' => 'This lightweight chair is made of {{blank}}.',
             'blank_word' => 'aluminum',
-            'translation' => '這張輕巧的椅子是用鋁製成的。',
             'distractors' => [
                 ['vocabulary_id' => 4441, 'word' => 'career'],
                 ['vocabulary_id' => 4442, 'word' => 'drift'],
@@ -5981,7 +5531,6 @@ return [
             'vocabulary_id' => 4451,
             'sentence' => 'The team made {{blank}} progress during the training camp.',
             'blank_word' => 'tremendous',
-            'translation' => '這支隊伍在訓練營期間取得了極大的進步。',
             'distractors' => [
                 ['vocabulary_id' => 4452, 'word' => 'freelance'],
                 ['vocabulary_id' => 4453, 'word' => 'revolutionary'],
@@ -5994,7 +5543,6 @@ return [
             'vocabulary_id' => 4452,
             'sentence' => 'After leaving the company, he began to {{blank}} as a graphic designer.',
             'blank_word' => 'freelance',
-            'translation' => '離開公司後，他開始以自由接案的方式擔任平面設計師。',
             'distractors' => [
                 ['vocabulary_id' => 4451, 'word' => 'tremendous'],
                 ['vocabulary_id' => 4453, 'word' => 'revolutionary'],
@@ -6008,7 +5556,6 @@ return [
             'vocabulary_id' => 4453,
             'sentence' => 'The scientist developed a {{blank}} method for treating the disease.',
             'blank_word' => 'revolutionary',
-            'translation' => '那位科學家發展出一種革命性的方法來治療這種疾病。',
             'distractors' => [
                 ['vocabulary_id' => 4451, 'word' => 'tremendous'],
                 ['vocabulary_id' => 4452, 'word' => 'freelance'],
@@ -6021,7 +5568,6 @@ return [
             'vocabulary_id' => 4454,
             'sentence' => 'My grandfather has {{blank}} views about education and family life.',
             'blank_word' => 'conservative',
-            'translation' => '我祖父對教育和家庭生活抱持保守的觀點。',
             'distractors' => [
                 ['vocabulary_id' => 4451, 'word' => 'tremendous'],
                 ['vocabulary_id' => 4452, 'word' => 'freelance'],
@@ -6034,7 +5580,6 @@ return [
             'vocabulary_id' => 4455,
             'sentence' => 'She {{blank}} her free time to help her younger brother prepare for the exam.',
             'blank_word' => 'sacrificed',
-            'translation' => '她犧牲自己的休閒時間，幫助弟弟準備考試。',
             'distractors' => [
                 ['vocabulary_id' => 4452, 'word' => 'freelanced'],
                 ['vocabulary_id' => 4460, 'word' => 'bankrupted'],
@@ -6047,7 +5592,6 @@ return [
             'vocabulary_id' => 4456,
             'sentence' => 'They spent their vacation in a {{blank}} hotel by the sea.',
             'blank_word' => 'luxurious',
-            'translation' => '他們在海邊的一家豪華飯店度過假期。',
             'distractors' => [
                 ['vocabulary_id' => 4451, 'word' => 'tremendous'],
                 ['vocabulary_id' => 4452, 'word' => 'freelance'],
@@ -6060,7 +5604,6 @@ return [
             'vocabulary_id' => 4457,
             'sentence' => 'Buying good equipment was a valuable {{blank}} for the small business.',
             'blank_word' => 'investment',
-            'translation' => '購買優良設備是這家小企業一項有價值的投資。',
             'distractors' => [
                 ['vocabulary_id' => 4455, 'word' => 'sacrifice'],
                 ['vocabulary_id' => 4458, 'word' => 'harmony'],
@@ -6072,7 +5615,6 @@ return [
             'vocabulary_id' => 4458,
             'sentence' => 'The members of the team worked together in {{blank}}.',
             'blank_word' => 'harmony',
-            'translation' => '團隊成員和睦地一起工作。',
             'distractors' => [
                 ['vocabulary_id' => 4455, 'word' => 'sacrifice'],
                 ['vocabulary_id' => 4457, 'word' => 'investment'],
@@ -6084,7 +5626,6 @@ return [
             'vocabulary_id' => 4459,
             'sentence' => 'The factory increased {{blank}} to meet growing demand.',
             'blank_word' => 'production',
-            'translation' => '這家工廠提高產量，以滿足日益增加的需求。',
             'distractors' => [
                 ['vocabulary_id' => 4455, 'word' => 'sacrifice'],
                 ['vocabulary_id' => 4457, 'word' => 'investment'],
@@ -6096,7 +5637,6 @@ return [
             'vocabulary_id' => 4460,
             'sentence' => 'The company became {{blank}} after years of heavy losses.',
             'blank_word' => 'bankrupt',
-            'translation' => '這家公司多年嚴重虧損後破產了。',
             'distractors' => [
                 ['vocabulary_id' => 4451, 'word' => 'tremendous'],
                 ['vocabulary_id' => 4452, 'word' => 'freelance'],
@@ -6112,7 +5652,6 @@ return [
             'vocabulary_id' => 4461,
             'sentence' => 'The police arrested the {{blank}} after a long investigation.',
             'blank_word' => 'murderer',
-            'translation' => '警方經過長時間的調查後逮捕了那名謀殺犯。',
             'distractors' => [
                 ['vocabulary_id' => 4463, 'word' => 'settler'],
                 ['vocabulary_id' => 4465, 'word' => 'virus'],
@@ -6124,7 +5663,6 @@ return [
             'vocabulary_id' => 4462,
             'sentence' => 'Many local people {{blank}} money to help the earthquake victims.',
             'blank_word' => 'contributed',
-            'translation' => '許多當地人捐款幫助地震受災者。',
             'distractors' => [
                 ['vocabulary_id' => 4464, 'word' => 'distributed'],
                 ['vocabulary_id' => 4466, 'word' => 'volunteered'],
@@ -6136,7 +5674,6 @@ return [
             'vocabulary_id' => 4463,
             'sentence' => 'The early {{blank}} built homes near the river.',
             'blank_word' => 'settlers',
-            'translation' => '早期的移居者在河流附近建造房屋。',
             'distractors' => [
                 ['vocabulary_id' => 4461, 'word' => 'murderers'],
                 ['vocabulary_id' => 4465, 'word' => 'viruses'],
@@ -6148,7 +5685,6 @@ return [
             'vocabulary_id' => 4464,
             'sentence' => 'Volunteers {{blank}} food and blankets to the families in need.',
             'blank_word' => 'distributed',
-            'translation' => '志工將食物和毯子分發給有需要的家庭。',
             'distractors' => [
                 ['vocabulary_id' => 4462, 'word' => 'contributed'],
                 ['vocabulary_id' => 4466, 'word' => 'volunteered'],
@@ -6160,7 +5696,6 @@ return [
             'vocabulary_id' => 4465,
             'sentence' => 'The doctor said that a {{blank}} was causing the child\'s fever.',
             'blank_word' => 'virus',
-            'translation' => '醫生說，一種病毒正引起那名孩子發燒。',
             'distractors' => [
                 ['vocabulary_id' => 4461, 'word' => 'murderer'],
                 ['vocabulary_id' => 4463, 'word' => 'settler'],
@@ -6172,7 +5707,6 @@ return [
             'vocabulary_id' => 4466,
             'sentence' => 'Several students {{blank}} to clean the beach on Saturday.',
             'blank_word' => 'volunteered',
-            'translation' => '幾名學生自願在星期六清理海灘。',
             'distractors' => [
                 ['vocabulary_id' => 4462, 'word' => 'contributed'],
                 ['vocabulary_id' => 4464, 'word' => 'distributed'],
@@ -6184,7 +5718,6 @@ return [
             'vocabulary_id' => 4467,
             'sentence' => 'At the end of the meeting, Mia {{blank}} the main points.',
             'blank_word' => 'summarized',
-            'translation' => '會議結束時，米雅總結了重點。',
             'distractors' => [
                 ['vocabulary_id' => 4462, 'word' => 'contributed'],
                 ['vocabulary_id' => 4464, 'word' => 'distributed'],
@@ -6196,7 +5729,6 @@ return [
             'vocabulary_id' => 4468,
             'sentence' => 'The teacher showed us the {{blank}} for calculating the area of a circle.',
             'blank_word' => 'formula',
-            'translation' => '老師向我們展示了計算圓面積的公式。',
             'distractors' => [
                 ['vocabulary_id' => 4461, 'word' => 'murderer'],
                 ['vocabulary_id' => 4463, 'word' => 'settler'],
@@ -6208,7 +5740,6 @@ return [
             'vocabulary_id' => 4469,
             'sentence' => '{{blank}} two hundred people attended the concert.',
             'blank_word' => 'Roughly',
-            'translation' => '大約有兩百人參加了這場音樂會。',
             'distractors' => [
                 ['vocabulary_id' => 4461, 'word' => 'Murderer'],
                 ['vocabulary_id' => 4462, 'word' => 'Contribute'],
@@ -6221,7 +5752,6 @@ return [
             'vocabulary_id' => 4470,
             'sentence' => 'The manager {{blank}} the workers after the meeting ended.',
             'blank_word' => 'dismissed',
-            'translation' => '會議結束後，經理讓員工離開。',
             'distractors' => [
                 ['vocabulary_id' => 4462, 'word' => 'contributed'],
                 ['vocabulary_id' => 4464, 'word' => 'distributed'],
@@ -6235,7 +5765,6 @@ return [
             'vocabulary_id' => 4471,
             'sentence' => 'The {{blank}} of bus service increases during the morning rush hour.',
             'blank_word' => 'frequency',
-            'translation' => '公車服務的班次在早晨尖峰時段會增加。',
             'distractors' => [
                 ['vocabulary_id' => 4474, 'word' => 'aspirin'],
                 ['vocabulary_id' => 4475, 'word' => 'infant'],
@@ -6249,7 +5778,6 @@ return [
             'vocabulary_id' => 4472,
             'sentence' => 'The long hike {{blank}} everyone in the group.',
             'blank_word' => 'exhausted',
-            'translation' => '這趟長途健行使團體中的每個人都筋疲力盡。',
             'distractors' => [
                 ['vocabulary_id' => 4473, 'word' => 'retained'],
                 ['vocabulary_id' => 4478, 'word' => 'cooperated'],
@@ -6260,7 +5788,6 @@ return [
             'vocabulary_id' => 4473,
             'sentence' => 'This container can {{blank}} heat for several hours.',
             'blank_word' => 'retain',
-            'translation' => '這個容器可以保溫好幾個小時。',
             'distractors' => [
                 ['vocabulary_id' => 4472, 'word' => 'exhaust'],
                 ['vocabulary_id' => 4478, 'word' => 'cooperate'],
@@ -6271,7 +5798,6 @@ return [
             'vocabulary_id' => 4474,
             'sentence' => 'She took an {{blank}} for her headache after asking the doctor.',
             'blank_word' => 'aspirin',
-            'translation' => '她詢問醫生後，服用了一顆阿斯匹靈來治療頭痛。',
             'distractors' => [
                 ['vocabulary_id' => 4471, 'word' => 'frequency'],
                 ['vocabulary_id' => 4475, 'word' => 'infant'],
@@ -6285,7 +5811,6 @@ return [
             'vocabulary_id' => 4475,
             'sentence' => 'The {{blank}} was sleeping peacefully in her mother\'s arms.',
             'blank_word' => 'infant',
-            'translation' => '那名嬰兒在母親的懷中安詳地睡著。',
             'distractors' => [
                 ['vocabulary_id' => 4471, 'word' => 'frequency'],
                 ['vocabulary_id' => 4474, 'word' => 'aspirin'],
@@ -6299,7 +5824,6 @@ return [
             'vocabulary_id' => 4476,
             'sentence' => 'In his {{blank}} to catch the train, he left his wallet at home.',
             'blank_word' => 'haste',
-            'translation' => '他急著趕火車，結果把錢包留在家裡。',
             'distractors' => [
                 ['vocabulary_id' => 4471, 'word' => 'frequency'],
                 ['vocabulary_id' => 4474, 'word' => 'aspirin'],
@@ -6313,7 +5837,6 @@ return [
             'vocabulary_id' => 4477,
             'sentence' => 'The hotel is in a convenient {{blank}} near the train station.',
             'blank_word' => 'location',
-            'translation' => '這家飯店位於火車站附近一個便利的地點。',
             'distractors' => [
                 ['vocabulary_id' => 4471, 'word' => 'frequency'],
                 ['vocabulary_id' => 4474, 'word' => 'aspirin'],
@@ -6327,7 +5850,6 @@ return [
             'vocabulary_id' => 4478,
             'sentence' => 'The two departments must {{blank}} to finish the project on time.',
             'blank_word' => 'cooperate',
-            'translation' => '這兩個部門必須合作，才能按時完成這項專案。',
             'distractors' => [
                 ['vocabulary_id' => 4472, 'word' => 'exhaust'],
                 ['vocabulary_id' => 4473, 'word' => 'retain'],
@@ -6338,7 +5860,6 @@ return [
             'vocabulary_id' => 4479,
             'sentence' => 'I have a doctor\'s {{blank}} at three o\'clock this afternoon.',
             'blank_word' => 'appointment',
-            'translation' => '我今天下午三點有一個看醫生的預約。',
             'distractors' => [
                 ['vocabulary_id' => 4471, 'word' => 'frequency'],
                 ['vocabulary_id' => 4474, 'word' => 'aspirin'],
@@ -6352,7 +5873,6 @@ return [
             'vocabulary_id' => 4480,
             'sentence' => 'The children {{blank}} down the snowy hill all afternoon.',
             'blank_word' => 'sledded',
-            'translation' => '孩子們整個下午都乘雪橇滑下覆滿積雪的山坡。',
             'distractors' => [
                 ['vocabulary_id' => 4472, 'word' => 'exhausted'],
                 ['vocabulary_id' => 4473, 'word' => 'retained'],
@@ -6365,7 +5885,6 @@ return [
             'vocabulary_id' => 4481,
             'sentence' => 'My grandparents live in a small {{blank}} near the lake.',
             'blank_word' => 'cottage',
-            'translation' => '我的祖父母住在湖邊的一間小屋裡。',
             'distractors' => [
                 ['vocabulary_id' => 4482, 'word' => 'enthusiasm'],
                 ['vocabulary_id' => 4484, 'word' => 'determination'],
@@ -6377,7 +5896,6 @@ return [
             'vocabulary_id' => 4482,
             'sentence' => 'The students showed great {{blank}} for the science project.',
             'blank_word' => 'enthusiasm',
-            'translation' => '學生們對這項科學專題展現了極大的熱情。',
             'distractors' => [
                 ['vocabulary_id' => 4481, 'word' => 'cottage'],
                 ['vocabulary_id' => 4484, 'word' => 'determination'],
@@ -6389,7 +5907,6 @@ return [
             'vocabulary_id' => 4483,
             'sentence' => 'I did not mean to {{blank}} you with my honest opinion.',
             'blank_word' => 'offend',
-            'translation' => '我坦率的意見並不是要冒犯你。',
             'distractors' => [
                 ['vocabulary_id' => 4488, 'word' => 'blend'],
                 ['vocabulary_id' => 4489, 'word' => 'preserve'],
@@ -6402,7 +5919,6 @@ return [
             'vocabulary_id' => 4484,
             'sentence' => 'With {{blank}}, she finished the difficult course.',
             'blank_word' => 'determination',
-            'translation' => '她憑著決心完成了這門困難的課程。',
             'distractors' => [
                 ['vocabulary_id' => 4481, 'word' => 'cottage'],
                 ['vocabulary_id' => 4482, 'word' => 'enthusiasm'],
@@ -6414,7 +5930,6 @@ return [
             'vocabulary_id' => 4485,
             'sentence' => 'The chair needs a small {{blank}} to make it more comfortable.',
             'blank_word' => 'adjustment',
-            'translation' => '這張椅子需要稍微調整一下，坐起來才會更舒適。',
             'distractors' => [
                 ['vocabulary_id' => 4481, 'word' => 'cottage'],
                 ['vocabulary_id' => 4482, 'word' => 'enthusiasm'],
@@ -6426,7 +5941,6 @@ return [
             'vocabulary_id' => 4486,
             'sentence' => 'A {{blank}} scientist gave a speech at the university.',
             'blank_word' => 'prominent',
-            'translation' => '一位傑出的科學家在這所大學發表了演講。',
             'distractors' => [
                 ['vocabulary_id' => 4487, 'word' => 'muddy'],
                 ['vocabulary_id' => 4481, 'word' => 'cottage'],
@@ -6439,7 +5953,6 @@ return [
             'vocabulary_id' => 4487,
             'sentence' => 'The children came home with {{blank}} shoes after playing outside.',
             'blank_word' => 'muddy',
-            'translation' => '孩子們在外面玩耍後，穿著沾滿泥巴的鞋子回家。',
             'distractors' => [
                 ['vocabulary_id' => 4486, 'word' => 'prominent'],
                 ['vocabulary_id' => 4481, 'word' => 'cottage'],
@@ -6452,7 +5965,6 @@ return [
             'vocabulary_id' => 4488,
             'sentence' => '{{blank}} the fruit with yogurt to make a healthy drink.',
             'blank_word' => 'Blend',
-            'translation' => '把水果和優格混合，做成健康的飲料。',
             'distractors' => [
                 ['vocabulary_id' => 4483, 'word' => 'Offend'],
                 ['vocabulary_id' => 4489, 'word' => 'Preserve'],
@@ -6465,7 +5977,6 @@ return [
             'vocabulary_id' => 4489,
             'sentence' => 'We should {{blank}} these old buildings because they are part of our history.',
             'blank_word' => 'preserve',
-            'translation' => '我們應該保存這些老建築，因為它們是我們歷史的一部分。',
             'distractors' => [
                 ['vocabulary_id' => 4483, 'word' => 'offend'],
                 ['vocabulary_id' => 4488, 'word' => 'blend'],
@@ -6478,7 +5989,6 @@ return [
             'vocabulary_id' => 4490,
             'sentence' => 'My brother trained for months before running his first {{blank}}.',
             'blank_word' => 'marathon',
-            'translation' => '我哥哥在參加人生第一場馬拉松之前，訓練了好幾個月。',
             'distractors' => [
                 ['vocabulary_id' => 4481, 'word' => 'cottage'],
                 ['vocabulary_id' => 4482, 'word' => 'enthusiasm'],
@@ -6492,7 +6002,6 @@ return [
             'vocabulary_id' => 4491,
             'sentence' => 'She pulled the {{blank}} out of the wine bottle carefully.',
             'blank_word' => 'cork',
-            'translation' => '她小心地把軟木塞從酒瓶裡拔出來。',
             'distractors' => [
                 ['vocabulary_id' => 4494, 'word' => 'mineral'],
                 ['vocabulary_id' => 4495, 'word' => 'wit'],
@@ -6505,7 +6014,6 @@ return [
             'vocabulary_id' => 4492,
             'sentence' => 'This {{blank}} speaker is small enough to fit in my backpack.',
             'blank_word' => 'portable',
-            'translation' => '這個手提式喇叭小到可以放進我的背包裡。',
             'distractors' => [
                 ['vocabulary_id' => 4493, 'word' => 'needy'],
                 ['vocabulary_id' => 4494, 'word' => 'mineral'],
@@ -6518,7 +6026,6 @@ return [
             'vocabulary_id' => 4493,
             'sentence' => 'The charity provides meals and clothing for {{blank}} families.',
             'blank_word' => 'needy',
-            'translation' => '這個慈善機構為貧困家庭提供餐點和衣物。',
             'distractors' => [
                 ['vocabulary_id' => 4492, 'word' => 'portable'],
                 ['vocabulary_id' => 4494, 'word' => 'mineral'],
@@ -6531,7 +6038,6 @@ return [
             'vocabulary_id' => 4494,
             'sentence' => 'Calcium is an important {{blank}} for strong bones.',
             'blank_word' => 'mineral',
-            'translation' => '鈣是維持骨骼強健的重要礦物質。',
             'distractors' => [
                 ['vocabulary_id' => 4491, 'word' => 'cork'],
                 ['vocabulary_id' => 4492, 'word' => 'portable'],
@@ -6545,7 +6051,6 @@ return [
             'vocabulary_id' => 4495,
             'sentence' => 'With her quick {{blank}}, she made everyone laugh during the meeting.',
             'blank_word' => 'wit',
-            'translation' => '她機智敏捷，在會議期間逗得大家哈哈大笑。',
             'distractors' => [
                 ['vocabulary_id' => 4491, 'word' => 'cork'],
                 ['vocabulary_id' => 4494, 'word' => 'mineral'],
@@ -6558,7 +6063,6 @@ return [
             'vocabulary_id' => 4496,
             'sentence' => 'The ancient people believed that the king had {{blank}} power.',
             'blank_word' => 'divine',
-            'translation' => '古代人相信國王擁有神性的力量。',
             'distractors' => [
                 ['vocabulary_id' => 4492, 'word' => 'portable'],
                 ['vocabulary_id' => 4493, 'word' => 'needy'],
@@ -6571,7 +6075,6 @@ return [
             'vocabulary_id' => 4497,
             'sentence' => 'I will always {{blank}} the memories of our family trips.',
             'blank_word' => 'cherish',
-            'translation' => '我永遠會珍惜我們全家旅行的回憶。',
             'distractors' => [
                 ['vocabulary_id' => 4499, 'word' => 'upload'],
                 ['vocabulary_id' => 4491, 'word' => 'cork'],
@@ -6584,7 +6087,6 @@ return [
             'vocabulary_id' => 4498,
             'sentence' => 'They chose a {{blank}} design for their new house.',
             'blank_word' => 'conventional',
-            'translation' => '他們為新房子選擇了傳統的設計。',
             'distractors' => [
                 ['vocabulary_id' => 4492, 'word' => 'portable'],
                 ['vocabulary_id' => 4493, 'word' => 'needy'],
@@ -6597,7 +6099,6 @@ return [
             'vocabulary_id' => 4499,
             'sentence' => 'Please {{blank}} your assignment before the deadline.',
             'blank_word' => 'upload',
-            'translation' => '請在截止期限前上傳你的作業。',
             'distractors' => [
                 ['vocabulary_id' => 4497, 'word' => 'cherish'],
                 ['vocabulary_id' => 4491, 'word' => 'cork'],
@@ -6610,7 +6111,6 @@ return [
             'vocabulary_id' => 4500,
             'sentence' => 'The small company became famous {{blank}} after its video went viral.',
             'blank_word' => 'overnight',
-            'translation' => '那家小公司的一支影片爆紅後，一夜之間就變得聲名大噪。',
             'distractors' => [
                 ['vocabulary_id' => 4492, 'word' => 'portable'],
                 ['vocabulary_id' => 4493, 'word' => 'needy'],
@@ -6625,7 +6125,6 @@ return [
             'vocabulary_id' => 4501,
             'sentence' => 'The two countries agreed to {{blank}} a new trade agreement.',
             'blank_word' => 'negotiate',
-            'translation' => '兩國同意協商一項新的貿易協定。',
             'distractors' => [
                 ['vocabulary_id' => 4502, 'word' => 'fuel'],
                 ['vocabulary_id' => 4506, 'word' => 'strengthen'],
@@ -6636,7 +6135,6 @@ return [
             'vocabulary_id' => 4502,
             'sentence' => 'The company uses solar energy to {{blank}} its operations.',
             'blank_word' => 'fuel',
-            'translation' => '這家公司利用太陽能為其營運提供能源。',
             'distractors' => [
                 ['vocabulary_id' => 4501, 'word' => 'negotiate'],
                 ['vocabulary_id' => 4503, 'word' => 'funeral'],
@@ -6650,7 +6148,6 @@ return [
             'vocabulary_id' => 4503,
             'sentence' => 'Many friends attended her grandfather’s {{blank}}.',
             'blank_word' => 'funeral',
-            'translation' => '許多朋友參加了她祖父的葬禮。',
             'distractors' => [
                 ['vocabulary_id' => 4502, 'word' => 'fuel'],
                 ['vocabulary_id' => 4504, 'word' => 'diploma'],
@@ -6664,7 +6161,6 @@ return [
             'vocabulary_id' => 4504,
             'sentence' => 'After completing the program, she received a {{blank}} in graphic design.',
             'blank_word' => 'diploma',
-            'translation' => '完成課程後，她取得了平面設計文憑。',
             'distractors' => [
                 ['vocabulary_id' => 4502, 'word' => 'fuel'],
                 ['vocabulary_id' => 4503, 'word' => 'funeral'],
@@ -6678,7 +6174,6 @@ return [
             'vocabulary_id' => 4505,
             'sentence' => 'The {{blank}} importance of each factor depends on the situation.',
             'blank_word' => 'relative',
-            'translation' => '每個因素的相對重要性取決於情況。',
             'distractors' => [
                 ['vocabulary_id' => 4501, 'word' => 'negotiate'],
                 ['vocabulary_id' => 4502, 'word' => 'fuel'],
@@ -6691,7 +6186,6 @@ return [
             'vocabulary_id' => 4506,
             'sentence' => 'The new training program will {{blank}} the team’s communication skills.',
             'blank_word' => 'strengthen',
-            'translation' => '新的訓練計畫將增強團隊的溝通能力。',
             'distractors' => [
                 ['vocabulary_id' => 4501, 'word' => 'negotiate'],
                 ['vocabulary_id' => 4502, 'word' => 'fuel'],
@@ -6702,7 +6196,6 @@ return [
             'vocabulary_id' => 4507,
             'sentence' => 'Patience is an important {{blank}} of a good teacher.',
             'blank_word' => 'characteristic',
-            'translation' => '耐心是優秀教師的重要特徵。',
             'distractors' => [
                 ['vocabulary_id' => 4502, 'word' => 'fuel'],
                 ['vocabulary_id' => 4503, 'word' => 'funeral'],
@@ -6716,7 +6209,6 @@ return [
             'vocabulary_id' => 4508,
             'sentence' => 'Only staff members have {{blank}} to this part of the building.',
             'blank_word' => 'access',
-            'translation' => '只有員工可以進入建築物的這個區域。',
             'distractors' => [
                 ['vocabulary_id' => 4502, 'word' => 'fuel'],
                 ['vocabulary_id' => 4503, 'word' => 'funeral'],
@@ -6730,7 +6222,6 @@ return [
             'vocabulary_id' => 4509,
             'sentence' => 'The professor gave a {{blank}} on climate change.',
             'blank_word' => 'lecture',
-            'translation' => '教授針對氣候變遷進行了一場演講。',
             'distractors' => [
                 ['vocabulary_id' => 4501, 'word' => 'negotiate'],
                 ['vocabulary_id' => 4502, 'word' => 'fuel'],
@@ -6744,7 +6235,6 @@ return [
             'vocabulary_id' => 4510,
             'sentence' => 'The {{blank}} brought news that the soldiers had safely returned.',
             'blank_word' => 'telegram',
-            'translation' => '這封電報帶來士兵平安返抵的消息。',
             'distractors' => [
                 ['vocabulary_id' => 4502, 'word' => 'fuel'],
                 ['vocabulary_id' => 4503, 'word' => 'funeral'],
@@ -6760,7 +6250,6 @@ return [
             'vocabulary_id' => 4511,
             'sentence' => 'One {{blank}} of this method is that it takes a long time.',
             'blank_word' => 'limitation',
-            'translation' => '這個方法的一項限制是需要很長的時間。',
             'distractors' => [
                 ['vocabulary_id' => 4513, 'word' => 'blink'],
                 ['vocabulary_id' => 4514, 'word' => 'circulation'],
@@ -6774,7 +6263,6 @@ return [
             'vocabulary_id' => 4512,
             'sentence' => 'You can {{blank}} the report through the company’s online system.',
             'blank_word' => 'access',
-            'translation' => '你可以透過公司的線上系統存取這份報告。',
             'distractors' => [
                 ['vocabulary_id' => 4513, 'word' => 'blink'],
                 ['vocabulary_id' => 4517, 'word' => 'mentor'],
@@ -6785,7 +6273,6 @@ return [
             'vocabulary_id' => 4513,
             'sentence' => 'The bright light made me {{blank}} several times.',
             'blank_word' => 'blink',
-            'translation' => '強光讓我眨了好幾次眼睛。',
             'distractors' => [
                 ['vocabulary_id' => 4511, 'word' => 'limitation'],
                 ['vocabulary_id' => 4512, 'word' => 'access'],
@@ -6799,7 +6286,6 @@ return [
             'vocabulary_id' => 4514,
             'sentence' => 'The newspaper has a daily {{blank}} of over one hundred thousand copies.',
             'blank_word' => 'circulation',
-            'translation' => '這份報紙的每日發行量超過十萬份。',
             'distractors' => [
                 ['vocabulary_id' => 4511, 'word' => 'limitation'],
                 ['vocabulary_id' => 4513, 'word' => 'blink'],
@@ -6813,7 +6299,6 @@ return [
             'vocabulary_id' => 4515,
             'sentence' => 'A {{blank}} was built to honor the victims of the earthquake.',
             'blank_word' => 'memorial',
-            'translation' => '人們建造了一座紀念碑，以紀念地震的罹難者。',
             'distractors' => [
                 ['vocabulary_id' => 4511, 'word' => 'limitation'],
                 ['vocabulary_id' => 4513, 'word' => 'blink'],
@@ -6827,7 +6312,6 @@ return [
             'vocabulary_id' => 4516,
             'sentence' => 'It was never my {{blank}} to hurt your feelings.',
             'blank_word' => 'intention',
-            'translation' => '我從來沒有傷害你感受的意圖。',
             'distractors' => [
                 ['vocabulary_id' => 4511, 'word' => 'limitation'],
                 ['vocabulary_id' => 4513, 'word' => 'blink'],
@@ -6841,7 +6325,6 @@ return [
             'vocabulary_id' => 4517,
             'sentence' => 'My {{blank}} helped me develop the skills needed for the new position.',
             'blank_word' => 'mentor',
-            'translation' => '我的職場導師幫助我培養新職位所需的技能。',
             'distractors' => [
                 ['vocabulary_id' => 4511, 'word' => 'limitation'],
                 ['vocabulary_id' => 4512, 'word' => 'access'],
@@ -6855,7 +6338,6 @@ return [
             'vocabulary_id' => 4518,
             'sentence' => 'The meeting continued without {{blank}} for two hours.',
             'blank_word' => 'interruption',
-            'translation' => '會議不間斷地持續了兩個小時。',
             'distractors' => [
                 ['vocabulary_id' => 4511, 'word' => 'limitation'],
                 ['vocabulary_id' => 4513, 'word' => 'blink'],
@@ -6869,7 +6351,6 @@ return [
             'vocabulary_id' => 4519,
             'sentence' => 'Passengers must {{blank}} all valuable items at customs.',
             'blank_word' => 'declare',
-            'translation' => '乘客必須向海關申報所有貴重物品。',
             'distractors' => [
                 ['vocabulary_id' => 4512, 'word' => 'access'],
                 ['vocabulary_id' => 4513, 'word' => 'blink'],
@@ -6880,7 +6361,6 @@ return [
             'vocabulary_id' => 4520,
             'sentence' => 'The company holds an {{blank}} meeting every December.',
             'blank_word' => 'annual',
-            'translation' => '公司每年十二月舉行一次年度會議。',
             'distractors' => [
                 ['vocabulary_id' => 4511, 'word' => 'limitation'],
                 ['vocabulary_id' => 4512, 'word' => 'access'],
@@ -6895,7 +6375,6 @@ return [
             'vocabulary_id' => 4521,
             'sentence' => 'The young singer became an {{blank}} to millions of fans around the world.',
             'blank_word' => 'idol',
-            'translation' => '這位年輕歌手成了全世界數百萬粉絲崇拜的偶像。',
             'distractors' => [
                 ['vocabulary_id' => 4522, 'word' => 'illustration'],
                 ['vocabulary_id' => 4523, 'word' => 'exception'],
@@ -6909,7 +6388,6 @@ return [
             'vocabulary_id' => 4522,
             'sentence' => 'The teacher used a simple {{blank}} to explain how the machine works.',
             'blank_word' => 'illustration',
-            'translation' => '老師用一個簡單的圖示來解釋這台機器的運作方式。',
             'distractors' => [
                 ['vocabulary_id' => 4521, 'word' => 'idol'],
                 ['vocabulary_id' => 4523, 'word' => 'exception'],
@@ -6923,7 +6401,6 @@ return [
             'vocabulary_id' => 4523,
             'sentence' => 'Everyone must follow the rules, with no {{blank}}.',
             'blank_word' => 'exception',
-            'translation' => '每個人都必須遵守規則，沒有例外。',
             'distractors' => [
                 ['vocabulary_id' => 4521, 'word' => 'idol'],
                 ['vocabulary_id' => 4522, 'word' => 'illustration'],
@@ -6937,7 +6414,6 @@ return [
             'vocabulary_id' => 4524,
             'sentence' => 'She felt great {{blank}} after completing the difficult project.',
             'blank_word' => 'satisfaction',
-            'translation' => '完成那項艱難的計畫後，她感到非常滿足。',
             'distractors' => [
                 ['vocabulary_id' => 4521, 'word' => 'idol'],
                 ['vocabulary_id' => 4522, 'word' => 'illustration'],
@@ -6951,7 +6427,6 @@ return [
             'vocabulary_id' => 4525,
             'sentence' => 'His strong {{blank}} helped him recover from the serious illness.',
             'blank_word' => 'will',
-            'translation' => '他堅強的意志幫助他從重病中康復。',
             'distractors' => [
                 ['vocabulary_id' => 4521, 'word' => 'idol'],
                 ['vocabulary_id' => 4522, 'word' => 'illustration'],
@@ -6965,7 +6440,6 @@ return [
             'vocabulary_id' => 4526,
             'sentence' => 'The driver flew into a {{blank}} when he saw the damage to his car.',
             'blank_word' => 'rage',
-            'translation' => '那名駕駛看到車子的損壞時勃然大怒。',
             'distractors' => [
                 ['vocabulary_id' => 4521, 'word' => 'idol'],
                 ['vocabulary_id' => 4522, 'word' => 'illustration'],
@@ -6979,7 +6453,6 @@ return [
             'vocabulary_id' => 4527,
             'sentence' => 'The students sat around a {{blank}} table during the discussion.',
             'blank_word' => 'circular',
-            'translation' => '討論時，學生們圍坐在一張圓桌旁。',
             'distractors' => [
                 ['vocabulary_id' => 4530, 'word' => 'favorable'],
                 ['vocabulary_id' => 4521, 'word' => 'idol'],
@@ -6992,7 +6465,6 @@ return [
             'vocabulary_id' => 4528,
             'sentence' => 'The employee tried to {{blank}} his manager by praising every decision she made.',
             'blank_word' => 'flatter',
-            'translation' => '那名員工試圖藉由稱讚經理所做的每個決定來奉承她。',
             'distractors' => [
                 ['vocabulary_id' => 4526, 'word' => 'rage'],
                 ['vocabulary_id' => 4521, 'word' => 'idol'],
@@ -7005,7 +6477,6 @@ return [
             'vocabulary_id' => 4529,
             'sentence' => 'Be careful—the {{blank}} of this knife is extremely sharp.',
             'blank_word' => 'blade',
-            'translation' => '小心，這把刀的刀刃非常鋒利。',
             'distractors' => [
                 ['vocabulary_id' => 4521, 'word' => 'idol'],
                 ['vocabulary_id' => 4522, 'word' => 'illustration'],
@@ -7019,7 +6490,6 @@ return [
             'vocabulary_id' => 4530,
             'sentence' => 'The company received a {{blank}} response to its new product.',
             'blank_word' => 'favorable',
-            'translation' => '這家公司推出的新產品獲得了正面的回應。',
             'distractors' => [
                 ['vocabulary_id' => 4527, 'word' => 'circular'],
                 ['vocabulary_id' => 4521, 'word' => 'idol'],
@@ -7034,7 +6504,6 @@ return [
             'vocabulary_id' => 4531,
             'sentence' => 'We asked a {{blank}} to carry our heavy suitcases to the hotel room.',
             'blank_word' => 'porter',
-            'translation' => '我們請搬運工把沉重的行李箱搬到飯店房間。',
             'distractors' => [
                 ['vocabulary_id' => 4532, 'word' => 'impact'],
                 ['vocabulary_id' => 4534, 'word' => 'neglect'],
@@ -7048,7 +6517,6 @@ return [
             'vocabulary_id' => 4532,
             'sentence' => 'The new law will have a major {{blank}} on small businesses.',
             'blank_word' => 'impact',
-            'translation' => '這項新法律將對小型企業產生重大影響。',
             'distractors' => [
                 ['vocabulary_id' => 4531, 'word' => 'porter'],
                 ['vocabulary_id' => 4533, 'word' => 'breed'],
@@ -7062,7 +6530,6 @@ return [
             'vocabulary_id' => 4533,
             'sentence' => 'Farmers carefully {{blank}} these sheep for their high-quality wool.',
             'blank_word' => 'breed',
-            'translation' => '農夫仔細培育這些綿羊，以取得高品質的羊毛。',
             'distractors' => [
                 ['vocabulary_id' => 4532, 'word' => 'impact'],
                 ['vocabulary_id' => 4534, 'word' => 'neglect'],
@@ -7075,7 +6542,6 @@ return [
             'vocabulary_id' => 4534,
             'sentence' => 'The garden became untidy because of the owner\'s {{blank}}.',
             'blank_word' => 'neglect',
-            'translation' => '由於屋主的疏於照料，花園變得雜亂不堪。',
             'distractors' => [
                 ['vocabulary_id' => 4531, 'word' => 'porter'],
                 ['vocabulary_id' => 4532, 'word' => 'impact'],
@@ -7089,7 +6555,6 @@ return [
             'vocabulary_id' => 4535,
             'sentence' => 'The team faced {{blank}} pressure during the final minutes of the game.',
             'blank_word' => 'intense',
-            'translation' => '比賽最後幾分鐘，這支隊伍面臨了強大的壓力。',
             'distractors' => [
                 ['vocabulary_id' => 4531, 'word' => 'porter'],
                 ['vocabulary_id' => 4532, 'word' => 'impact'],
@@ -7102,7 +6567,6 @@ return [
             'vocabulary_id' => 4536,
             'sentence' => 'There has been a significant {{blank}} in the number of traffic accidents this year.',
             'blank_word' => 'decrease',
-            'translation' => '今年交通事故的數量大幅減少。',
             'distractors' => [
                 ['vocabulary_id' => 4531, 'word' => 'porter'],
                 ['vocabulary_id' => 4532, 'word' => 'impact'],
@@ -7116,7 +6580,6 @@ return [
             'vocabulary_id' => 4537,
             'sentence' => 'The new system can {{blank}} many common errors.',
             'blank_word' => 'eliminate',
-            'translation' => '這套新系統可以消除許多常見的錯誤。',
             'distractors' => [
                 ['vocabulary_id' => 4532, 'word' => 'impact'],
                 ['vocabulary_id' => 4533, 'word' => 'breed'],
@@ -7129,7 +6592,6 @@ return [
             'vocabulary_id' => 4538,
             'sentence' => 'The family held a small {{blank}} for their grandmother\'s birthday.',
             'blank_word' => 'celebration',
-            'translation' => '這家人為祖母的生日舉辦了一場小型慶祝活動。',
             'distractors' => [
                 ['vocabulary_id' => 4531, 'word' => 'porter'],
                 ['vocabulary_id' => 4532, 'word' => 'impact'],
@@ -7143,7 +6605,6 @@ return [
             'vocabulary_id' => 4539,
             'sentence' => 'The country has introduced new {{blank}} rules for skilled workers.',
             'blank_word' => 'immigration',
-            'translation' => '這個國家為技術勞工制定了新的移民規定。',
             'distractors' => [
                 ['vocabulary_id' => 4531, 'word' => 'porter'],
                 ['vocabulary_id' => 4532, 'word' => 'impact'],
@@ -7157,7 +6618,6 @@ return [
             'vocabulary_id' => 4540,
             'sentence' => 'We woke up to the cheerful {{blank}} of birds outside the window.',
             'blank_word' => 'chirp',
-            'translation' => '我們在窗外鳥兒愉快的啁啾聲中醒來。',
             'distractors' => [
                 ['vocabulary_id' => 4531, 'word' => 'porter'],
                 ['vocabulary_id' => 4532, 'word' => 'impact'],
@@ -7173,7 +6633,6 @@ return [
             'vocabulary_id' => 4541,
             'sentence' => 'The doctor warned that the patient was in {{blank}} danger.',
             'blank_word' => 'grave',
-            'translation' => '醫生警告說病人正處於極大的危險之中。',
             'distractors' => [
                 ['vocabulary_id' => 4543, 'word' => 'universal'],
                 ['vocabulary_id' => 4545, 'word' => 'permanent'],
@@ -7184,7 +6643,6 @@ return [
             'vocabulary_id' => 4542,
             'sentence' => '“{{blank}}!” he shouted when he realized he had lost his keys.',
             'blank_word' => 'Damn',
-            'translation' => '當他發現自己弄丟鑰匙時，他大喊：「該死！」',
             'distractors' => [
                 ['vocabulary_id' => 4541, 'word' => 'grave'],
                 ['vocabulary_id' => 4543, 'word' => 'universal'],
@@ -7197,7 +6655,6 @@ return [
             'vocabulary_id' => 4543,
             'sentence' => 'The desire for friendship is almost {{blank}} among people.',
             'blank_word' => 'universal',
-            'translation' => '人們幾乎普遍都有對友誼的渴望。',
             'distractors' => [
                 ['vocabulary_id' => 4541, 'word' => 'grave'],
                 ['vocabulary_id' => 4545, 'word' => 'permanent'],
@@ -7208,7 +6665,6 @@ return [
             'vocabulary_id' => 4544,
             'sentence' => 'The hotel reached full {{blank}} during the holiday weekend.',
             'blank_word' => 'occupancy',
-            'translation' => '這家飯店在假日週末達到住房率百分之百。',
             'distractors' => [
                 ['vocabulary_id' => 4545, 'word' => 'permanent'],
                 ['vocabulary_id' => 4546, 'word' => 'paragraph'],
@@ -7218,9 +6674,8 @@ return [
         ],
         [
             'vocabulary_id' => 4545,
-            'sentence' => 'She decided to get a {{blank}} because she wanted curly hair.',
+            'sentence' => 'The accident caused {{blank}} damage to his knee.',
             'blank_word' => 'permanent',
-            'translation' => '她決定去燙永久捲，因為她想要捲髮。',
             'distractors' => [
                 ['vocabulary_id' => 4541, 'word' => 'grave'],
                 ['vocabulary_id' => 4543, 'word' => 'universal'],
@@ -7234,7 +6689,6 @@ return [
             'vocabulary_id' => 4546,
             'sentence' => 'Please read the first {{blank}} and answer the questions below.',
             'blank_word' => 'paragraph',
-            'translation' => '請閱讀第一段，然後回答下面的問題。',
             'distractors' => [
                 ['vocabulary_id' => 4544, 'word' => 'occupancy'],
                 ['vocabulary_id' => 4545, 'word' => 'permanent'],
@@ -7246,7 +6700,6 @@ return [
             'vocabulary_id' => 4547,
             'sentence' => 'There was {{blank}} enough food for everyone at the party.',
             'blank_word' => 'scarcely',
-            'translation' => '聚會上的食物幾乎不夠每個人吃。',
             'distractors' => [
                 ['vocabulary_id' => 4541, 'word' => 'grave'],
                 ['vocabulary_id' => 4542, 'word' => 'damn'],
@@ -7259,7 +6712,6 @@ return [
             'vocabulary_id' => 4548,
             'sentence' => 'My grandfather played the {{blank}} on the porch every evening.',
             'blank_word' => 'harmonica',
-            'translation' => '我祖父每天傍晚都在門廊上吹口琴。',
             'distractors' => [
                 ['vocabulary_id' => 4544, 'word' => 'occupancy'],
                 ['vocabulary_id' => 4545, 'word' => 'permanent'],
@@ -7271,7 +6723,6 @@ return [
             'vocabulary_id' => 4549,
             'sentence' => 'He packed an electric {{blank}} for his business trip.',
             'blank_word' => 'shaver',
-            'translation' => '他為出差行程帶了一把電動刮鬍刀。',
             'distractors' => [
                 ['vocabulary_id' => 4544, 'word' => 'occupancy'],
                 ['vocabulary_id' => 4545, 'word' => 'permanent'],
@@ -7283,7 +6734,6 @@ return [
             'vocabulary_id' => 4550,
             'sentence' => 'The {{blank}} dog immediately followed its owner’s command.',
             'blank_word' => 'obedient',
-            'translation' => '那隻順從的狗立刻遵從主人的命令。',
             'distractors' => [
                 ['vocabulary_id' => 4541, 'word' => 'grave'],
                 ['vocabulary_id' => 4543, 'word' => 'universal'],
@@ -7296,7 +6746,6 @@ return [
             'vocabulary_id' => 4551,
             'sentence' => 'The roses are in full {{blank}} this week.',
             'blank_word' => 'bloom',
-            'translation' => '這週玫瑰花盛開了。',
             'distractors' => [
                 ['vocabulary_id' => 4552, 'word' => 'assign'],
                 ['vocabulary_id' => 4553, 'word' => 'equality'],
@@ -7310,7 +6759,6 @@ return [
             'vocabulary_id' => 4552,
             'sentence' => 'The teacher will {{blank}} each student a research topic.',
             'blank_word' => 'assign',
-            'translation' => '老師會為每位學生指定一個研究主題。',
             'distractors' => [
                 ['vocabulary_id' => 4551, 'word' => 'bloom'],
                 ['vocabulary_id' => 4553, 'word' => 'equality'],
@@ -7323,7 +6771,6 @@ return [
             'vocabulary_id' => 4553,
             'sentence' => 'The new law promotes {{blank}} in the workplace.',
             'blank_word' => 'equality',
-            'translation' => '這項新法律促進職場上的平等。',
             'distractors' => [
                 ['vocabulary_id' => 4551, 'word' => 'bloom'],
                 ['vocabulary_id' => 4555, 'word' => 'adjective'],
@@ -7337,7 +6784,6 @@ return [
             'vocabulary_id' => 4554,
             'sentence' => 'She was {{blank}} when she discovered that someone had damaged her car.',
             'blank_word' => 'furious',
-            'translation' => '她發現有人弄壞她的車時，勃然大怒。',
             'distractors' => [
                 ['vocabulary_id' => 4555, 'word' => 'adjective'],
                 ['vocabulary_id' => 4556, 'word' => 'brutal'],
@@ -7348,7 +6794,6 @@ return [
             'vocabulary_id' => 4555,
             'sentence' => 'In the phrase “a bright star,” the word “bright” is an {{blank}}.',
             'blank_word' => 'adjective',
-            'translation' => '在「一顆明亮的星星」這個片語中，bright 是形容詞。',
             'distractors' => [
                 ['vocabulary_id' => 4551, 'word' => 'bloom'],
                 ['vocabulary_id' => 4553, 'word' => 'equality'],
@@ -7362,7 +6807,6 @@ return [
             'vocabulary_id' => 4556,
             'sentence' => 'The team suffered a {{blank}} defeat in the final game.',
             'blank_word' => 'brutal',
-            'translation' => '這支隊伍在決賽中遭遇了慘痛的失敗。',
             'distractors' => [
                 ['vocabulary_id' => 4554, 'word' => 'furious'],
                 ['vocabulary_id' => 4555, 'word' => 'adjective'],
@@ -7373,7 +6817,6 @@ return [
             'vocabulary_id' => 4557,
             'sentence' => 'In the sentence “She sings beautifully,” the word “beautifully” is an {{blank}}.',
             'blank_word' => 'adverb',
-            'translation' => '在「她唱歌唱得很美」這個句子中，beautifully 是副詞。',
             'distractors' => [
                 ['vocabulary_id' => 4551, 'word' => 'bloom'],
                 ['vocabulary_id' => 4553, 'word' => 'equality'],
@@ -7387,7 +6830,6 @@ return [
             'vocabulary_id' => 4558,
             'sentence' => 'This stadium has a seating {{blank}} of fifty thousand people.',
             'blank_word' => 'capacity',
-            'translation' => '這座體育場可容納五萬名觀眾。',
             'distractors' => [
                 ['vocabulary_id' => 4551, 'word' => 'bloom'],
                 ['vocabulary_id' => 4553, 'word' => 'equality'],
@@ -7401,7 +6843,6 @@ return [
             'vocabulary_id' => 4559,
             'sentence' => 'After the accident, he spent some time in quiet {{blank}}.',
             'blank_word' => 'reflection',
-            'translation' => '事故發生後，他花了一些時間安靜地反思。',
             'distractors' => [
                 ['vocabulary_id' => 4551, 'word' => 'bloom'],
                 ['vocabulary_id' => 4553, 'word' => 'equality'],
@@ -7415,7 +6856,6 @@ return [
             'vocabulary_id' => 4560,
             'sentence' => 'Even during the difficult interview, she maintained her {{blank}}.',
             'blank_word' => 'dignity',
-            'translation' => '即使在艱難的面試過程中，她仍維持自己的尊嚴。',
             'distractors' => [
                 ['vocabulary_id' => 4551, 'word' => 'bloom'],
                 ['vocabulary_id' => 4553, 'word' => 'equality'],
@@ -7431,7 +6871,6 @@ return [
             'vocabulary_id' => 4561,
             'sentence' => 'This factory {{blank}} thousands of bicycles every month.',
             'blank_word' => 'manufactures',
-            'translation' => '這家工廠每個月製造數千輛自行車。',
             'distractors' => [
                 ['vocabulary_id' => 4562, 'word' => 'peers'],
                 ['vocabulary_id' => 4563, 'word' => 'murmurs'],
@@ -7443,7 +6882,6 @@ return [
             'vocabulary_id' => 4562,
             'sentence' => 'She often discusses her ideas with her {{blank}}.',
             'blank_word' => 'peers',
-            'translation' => '她經常和同輩討論自己的想法。',
             'distractors' => [
                 ['vocabulary_id' => 4563, 'word' => 'murmurs'],
                 ['vocabulary_id' => 4569, 'word' => 'saleswomans'],
@@ -7456,7 +6894,6 @@ return [
             'vocabulary_id' => 4563,
             'sentence' => 'A soft {{blank}} came from the audience during the speech.',
             'blank_word' => 'murmur',
-            'translation' => '演講期間，觀眾中傳來一陣輕柔的低語聲。',
             'distractors' => [
                 ['vocabulary_id' => 4561, 'word' => 'manufacture'],
                 ['vocabulary_id' => 4562, 'word' => 'peer'],
@@ -7470,7 +6907,6 @@ return [
             'vocabulary_id' => 4564,
             'sentence' => 'Our teacher is {{blank}} of students who make honest mistakes.',
             'blank_word' => 'tolerant',
-            'translation' => '我們的老師能容忍學生犯下無心的錯誤。',
             'distractors' => [
                 ['vocabulary_id' => 4566, 'word' => 'lunar'],
                 ['vocabulary_id' => 4568, 'word' => 'multiple'],
@@ -7483,7 +6919,6 @@ return [
             'vocabulary_id' => 4565,
             'sentence' => 'For more {{blank}}, please visit the front desk.',
             'blank_word' => 'information',
-            'translation' => '如需更多資訊，請前往服務台洽詢。',
             'distractors' => [
                 ['vocabulary_id' => 4562, 'word' => 'peer'],
                 ['vocabulary_id' => 4563, 'word' => 'murmur'],
@@ -7494,7 +6929,6 @@ return [
             'vocabulary_id' => 4566,
             'sentence' => 'Many traditional festivals are based on the {{blank}} calendar.',
             'blank_word' => 'lunar',
-            'translation' => '許多傳統節日是依據陰曆而定的。',
             'distractors' => [
                 ['vocabulary_id' => 4564, 'word' => 'tolerant'],
                 ['vocabulary_id' => 4568, 'word' => 'multiple'],
@@ -7507,7 +6941,6 @@ return [
             'vocabulary_id' => 4567,
             'sentence' => 'She {{blank}} valuable computer skills through the training course.',
             'blank_word' => 'acquired',
-            'translation' => '她透過培訓課程學到了寶貴的電腦技能。',
             'distractors' => [
                 ['vocabulary_id' => 4561, 'word' => 'manufactured'],
                 ['vocabulary_id' => 4562, 'word' => 'peered'],
@@ -7519,7 +6952,6 @@ return [
             'vocabulary_id' => 4568,
             'sentence' => 'The accident caused {{blank}} problems for the local community.',
             'blank_word' => 'multiple',
-            'translation' => '這起事故為當地社區造成了多重問題。',
             'distractors' => [
                 ['vocabulary_id' => 4564, 'word' => 'tolerant'],
                 ['vocabulary_id' => 4566, 'word' => 'lunar'],
@@ -7532,7 +6964,6 @@ return [
             'vocabulary_id' => 4569,
             'sentence' => 'The {{blank}} helped me find a jacket in my size.',
             'blank_word' => 'saleswoman',
-            'translation' => '那位女店員幫我找到一件適合我尺寸的外套。',
             'distractors' => [
                 ['vocabulary_id' => 4562, 'word' => 'peer'],
                 ['vocabulary_id' => 4563, 'word' => 'murmur'],
@@ -7543,7 +6974,6 @@ return [
             'vocabulary_id' => 4570,
             'sentence' => 'Could you {{blank}} me a glass of water, please?',
             'blank_word' => 'fetch',
-            'translation' => '你可以幫我拿一杯水來嗎？',
             'distractors' => [
                 ['vocabulary_id' => 4561, 'word' => 'manufacture'],
                 ['vocabulary_id' => 4562, 'word' => 'peer'],
@@ -7557,7 +6987,6 @@ return [
             'vocabulary_id' => 4571,
             'sentence' => 'His {{blank}} would not allow him to keep the lost wallet.',
             'blank_word' => 'conscience',
-            'translation' => '他的良心不允許他留下撿到的錢包。',
             'distractors' => [
                 ['vocabulary_id' => 4573, 'word' => 'voyage'],
                 ['vocabulary_id' => 4574, 'word' => 'feedback'],
@@ -7571,7 +7000,6 @@ return [
             'vocabulary_id' => 4572,
             'sentence' => 'The noise was loud, but it was still {{blank}} for a short time.',
             'blank_word' => 'tolerable',
-            'translation' => '噪音很大，但短時間內還算可以忍受。',
             'distractors' => [
                 ['vocabulary_id' => 4571, 'word' => 'conscience'],
                 ['vocabulary_id' => 4573, 'word' => 'voyage'],
@@ -7584,7 +7012,6 @@ return [
             'vocabulary_id' => 4573,
             'sentence' => 'The long {{blank}} across the ocean took nearly three weeks.',
             'blank_word' => 'voyage',
-            'translation' => '這趟橫越大洋的航行花了將近三週。',
             'distractors' => [
                 ['vocabulary_id' => 4571, 'word' => 'conscience'],
                 ['vocabulary_id' => 4574, 'word' => 'feedback'],
@@ -7598,7 +7025,6 @@ return [
             'vocabulary_id' => 4574,
             'sentence' => 'The designer used customer {{blank}} to improve the product.',
             'blank_word' => 'feedback',
-            'translation' => '設計師利用顧客的意見回饋來改良產品。',
             'distractors' => [
                 ['vocabulary_id' => 4571, 'word' => 'conscience'],
                 ['vocabulary_id' => 4573, 'word' => 'voyage'],
@@ -7612,7 +7038,6 @@ return [
             'vocabulary_id' => 4575,
             'sentence' => 'The parrot used its strong {{blank}} to open the seed.',
             'blank_word' => 'beak',
-            'translation' => '那隻鸚鵡用強壯的鳥嘴剝開種子。',
             'distractors' => [
                 ['vocabulary_id' => 4571, 'word' => 'conscience'],
                 ['vocabulary_id' => 4573, 'word' => 'voyage'],
@@ -7626,7 +7051,6 @@ return [
             'vocabulary_id' => 4576,
             'sentence' => 'The sun slowly disappeared below the {{blank}}.',
             'blank_word' => 'horizon',
-            'translation' => '太陽慢慢消失在地平線下。',
             'distractors' => [
                 ['vocabulary_id' => 4571, 'word' => 'conscience'],
                 ['vocabulary_id' => 4573, 'word' => 'voyage'],
@@ -7640,7 +7064,6 @@ return [
             'vocabulary_id' => 4577,
             'sentence' => 'The journey was difficult; {{blank}}, we enjoyed every moment.',
             'blank_word' => 'nevertheless',
-            'translation' => '這趟旅程很艱難；儘管如此，我們仍享受每一刻。',
             'distractors' => [
                 ['vocabulary_id' => 4571, 'word' => 'conscience'],
                 ['vocabulary_id' => 4572, 'word' => 'tolerable'],
@@ -7653,7 +7076,6 @@ return [
             'vocabulary_id' => 4578,
             'sentence' => 'Please {{blank}} the file before the link expires.',
             'blank_word' => 'download',
-            'translation' => '請在連結失效前下載檔案。',
             'distractors' => [
                 ['vocabulary_id' => 4571, 'word' => 'conscience'],
                 ['vocabulary_id' => 4572, 'word' => 'tolerable'],
@@ -7666,7 +7088,6 @@ return [
             'vocabulary_id' => 4579,
             'sentence' => 'We spent the afternoon {{blank}} around the old city.',
             'blank_word' => 'sightseeing',
-            'translation' => '我們花了一個下午在老城區觀光。',
             'distractors' => [
                 ['vocabulary_id' => 4571, 'word' => 'conscience'],
                 ['vocabulary_id' => 4573, 'word' => 'voyage'],
@@ -7680,7 +7101,6 @@ return [
             'vocabulary_id' => 4580,
             'sentence' => 'As a {{blank}}, he joined a university science club.',
             'blank_word' => 'sophomore',
-            'translation' => '身為大學二年級學生，他加入了校內的科學社。',
             'distractors' => [
                 ['vocabulary_id' => 4571, 'word' => 'conscience'],
                 ['vocabulary_id' => 4573, 'word' => 'voyage'],
@@ -7696,7 +7116,6 @@ return [
             'vocabulary_id' => 4581,
             'sentence' => 'To my {{blank}}, I forgot my teacher’s name during the presentation.',
             'blank_word' => 'embarrassment',
-            'translation' => '讓我感到難堪的是，我在報告時忘了老師的名字。',
             'distractors' => [
                 ['vocabulary_id' => 4582, 'word' => 'iceberg'],
                 ['vocabulary_id' => 4583, 'word' => 'anniversary'],
@@ -7710,7 +7129,6 @@ return [
             'vocabulary_id' => 4582,
             'sentence' => 'The ship changed course after the captain saw a large {{blank}} ahead.',
             'blank_word' => 'iceberg',
-            'translation' => '船長看到前方有一座大型冰山後，便改變了航道。',
             'distractors' => [
                 ['vocabulary_id' => 4581, 'word' => 'embarrassment'],
                 ['vocabulary_id' => 4583, 'word' => 'anniversary'],
@@ -7724,7 +7142,6 @@ return [
             'vocabulary_id' => 4583,
             'sentence' => 'My parents are planning a special dinner for their thirtieth wedding {{blank}}.',
             'blank_word' => 'anniversary',
-            'translation' => '我父母正在為他們結婚三十週年紀念日準備一頓特別的晚餐。',
             'distractors' => [
                 ['vocabulary_id' => 4581, 'word' => 'embarrassment'],
                 ['vocabulary_id' => 4582, 'word' => 'iceberg'],
@@ -7738,7 +7155,6 @@ return [
             'vocabulary_id' => 4584,
             'sentence' => 'The cement will {{blank}} overnight and become strong enough to walk on.',
             'blank_word' => 'harden',
-            'translation' => '水泥會在一夜之間變硬，變得足夠堅固，可以讓人走在上面。',
             'distractors' => [
                 ['vocabulary_id' => 4588, 'word' => 'forbid'],
                 ['vocabulary_id' => 4589, 'word' => 'surrender'],
@@ -7751,7 +7167,6 @@ return [
             'vocabulary_id' => 4585,
             'sentence' => 'The weather {{blank}} says that heavy rain will arrive this evening.',
             'blank_word' => 'forecast',
-            'translation' => '天氣預報說今晚會有大雨。',
             'distractors' => [
                 ['vocabulary_id' => 4581, 'word' => 'embarrassment'],
                 ['vocabulary_id' => 4582, 'word' => 'iceberg'],
@@ -7765,7 +7180,6 @@ return [
             'vocabulary_id' => 4586,
             'sentence' => 'Taking out the garbage is my least favorite household {{blank}}.',
             'blank_word' => 'chore',
-            'translation' => '倒垃圾是我最不喜歡做的家庭雜務。',
             'distractors' => [
                 ['vocabulary_id' => 4581, 'word' => 'embarrassment'],
                 ['vocabulary_id' => 4582, 'word' => 'iceberg'],
@@ -7779,7 +7193,6 @@ return [
             'vocabulary_id' => 4587,
             'sentence' => 'She expressed her {{blank}} to everyone who helped her finish the project.',
             'blank_word' => 'gratitude',
-            'translation' => '她向所有幫助她完成專案的人表達感謝。',
             'distractors' => [
                 ['vocabulary_id' => 4581, 'word' => 'embarrassment'],
                 ['vocabulary_id' => 4582, 'word' => 'iceberg'],
@@ -7793,7 +7206,6 @@ return [
             'vocabulary_id' => 4588,
             'sentence' => 'The sign {{blank}} visitors to enter the building after dark.',
             'blank_word' => 'forbids',
-            'translation' => '這個標誌禁止訪客在天黑後進入這棟建築物。',
             'distractors' => [
                 ['vocabulary_id' => 4584, 'word' => 'hardens'],
                 ['vocabulary_id' => 4589, 'word' => 'surrenders'],
@@ -7806,7 +7218,6 @@ return [
             'vocabulary_id' => 4589,
             'sentence' => 'After the police surrounded the house, the suspect decided to {{blank}}.',
             'blank_word' => 'surrender',
-            'translation' => '警方包圍那棟房子後，嫌犯決定投降自首。',
             'distractors' => [
                 ['vocabulary_id' => 4581, 'word' => 'embarrassment'],
                 ['vocabulary_id' => 4582, 'word' => 'iceberg'],
@@ -7820,7 +7231,6 @@ return [
             'vocabulary_id' => 4590,
             'sentence' => 'The doctor gave him medicine to treat the {{blank}} in his ear.',
             'blank_word' => 'infection',
-            'translation' => '醫生給他藥物來治療耳朵的感染。',
             'distractors' => [
                 ['vocabulary_id' => 4581, 'word' => 'embarrassment'],
                 ['vocabulary_id' => 4582, 'word' => 'iceberg'],
@@ -7836,7 +7246,6 @@ return [
             'vocabulary_id' => 4591,
             'sentence' => 'Winning the championship was a great {{blank}} for the young team.',
             'blank_word' => 'triumph',
-            'translation' => '贏得冠軍對這支年輕隊伍來說是一次巨大的成功。',
             'distractors' => [
                 ['vocabulary_id' => 4592, 'word' => 'syrup'],
                 ['vocabulary_id' => 4594, 'word' => 'contest'],
@@ -7850,7 +7259,6 @@ return [
             'vocabulary_id' => 4592,
             'sentence' => 'I poured maple {{blank}} over the pancakes before serving them.',
             'blank_word' => 'syrup',
-            'translation' => '我在端上鬆餅前，把楓糖漿淋在上面。',
             'distractors' => [
                 ['vocabulary_id' => 4591, 'word' => 'triumph'],
                 ['vocabulary_id' => 4594, 'word' => 'contest'],
@@ -7864,7 +7272,6 @@ return [
             'vocabulary_id' => 4593,
             'sentence' => 'The {{blank}} region is famous for its beautiful hiking trails.',
             'blank_word' => 'mountainous',
-            'translation' => '這個多山的地區以美麗的健行步道聞名。',
             'distractors' => [
                 ['vocabulary_id' => 4591, 'word' => 'triumph'],
                 ['vocabulary_id' => 4592, 'word' => 'syrup'],
@@ -7877,7 +7284,6 @@ return [
             'vocabulary_id' => 4594,
             'sentence' => 'Mia entered a singing {{blank}} at her school and won first prize.',
             'blank_word' => 'contest',
-            'translation' => '米雅參加了學校的歌唱比賽，並贏得第一名。',
             'distractors' => [
                 ['vocabulary_id' => 4591, 'word' => 'triumph'],
                 ['vocabulary_id' => 4592, 'word' => 'syrup'],
@@ -7891,7 +7297,6 @@ return [
             'vocabulary_id' => 4595,
             'sentence' => 'A long {{blank}} appeared in the wall after the earthquake.',
             'blank_word' => 'crack',
-            'translation' => '地震後，牆上出現了一道長長的裂縫。',
             'distractors' => [
                 ['vocabulary_id' => 4591, 'word' => 'triumph'],
                 ['vocabulary_id' => 4592, 'word' => 'syrup'],
@@ -7905,7 +7310,6 @@ return [
             'vocabulary_id' => 4596,
             'sentence' => 'There is strong {{blank}} between the two companies for new customers.',
             'blank_word' => 'competition',
-            'translation' => '這兩家公司之間為了爭取新客戶而展開激烈的競爭。',
             'distractors' => [
                 ['vocabulary_id' => 4591, 'word' => 'triumph'],
                 ['vocabulary_id' => 4592, 'word' => 'syrup'],
@@ -7919,7 +7323,6 @@ return [
             'vocabulary_id' => 4597,
             'sentence' => 'The store sent out a {{blank}} announcing discounts on winter clothing.',
             'blank_word' => 'circular',
-            'translation' => '這家商店發出一份傳單，宣布冬季服裝打折。',
             'distractors' => [
                 ['vocabulary_id' => 4591, 'word' => 'triumph'],
                 ['vocabulary_id' => 4592, 'word' => 'syrup'],
@@ -7933,7 +7336,6 @@ return [
             'vocabulary_id' => 4598,
             'sentence' => 'The invention of the internet began a new {{blank}} of communication.',
             'blank_word' => 'era',
-            'translation' => '網際網路的發明開啟了溝通的新時代。',
             'distractors' => [
                 ['vocabulary_id' => 4591, 'word' => 'triumph'],
                 ['vocabulary_id' => 4592, 'word' => 'syrup'],
@@ -7947,7 +7349,6 @@ return [
             'vocabulary_id' => 4599,
             'sentence' => 'The {{blank}} of historic buildings helps us understand the city’s past.',
             'blank_word' => 'preservation',
-            'translation' => '保存歷史建築有助於我們了解這座城市的過去。',
             'distractors' => [
                 ['vocabulary_id' => 4591, 'word' => 'triumph'],
                 ['vocabulary_id' => 4592, 'word' => 'syrup'],
@@ -7961,7 +7362,6 @@ return [
             'vocabulary_id' => 4600,
             'sentence' => 'The cyclist sped up to {{blank}} the bus on the hill.',
             'blank_word' => 'overtake',
-            'translation' => '那名自行車騎士加速，在山坡上超越公車。',
             'distractors' => [
                 ['vocabulary_id' => 4591, 'word' => 'triumph'],
                 ['vocabulary_id' => 4595, 'word' => 'crack'],
@@ -7976,7 +7376,6 @@ return [
             'vocabulary_id' => 4601,
             'sentence' => 'She placed a soft {{blank}} on the wooden chair.',
             'blank_word' => 'cushion',
-            'translation' => '她在木椅上放了一個柔軟的靠墊。',
             'distractors' => [
                 ['vocabulary_id' => 4603, 'word' => 'lecturer'],
                 ['vocabulary_id' => 4606, 'word' => 'accountant'],
@@ -7989,7 +7388,6 @@ return [
             'vocabulary_id' => 4602,
             'sentence' => 'An {{blank}} tree stands in the middle of the park.',
             'blank_word' => 'enormous',
-            'translation' => '公園中央有一棵巨大的樹。',
             'distractors' => [
                 ['vocabulary_id' => 4604, 'word' => 'preferable'],
                 ['vocabulary_id' => 4601, 'word' => 'cushion'],
@@ -8002,7 +7400,6 @@ return [
             'vocabulary_id' => 4603,
             'sentence' => 'The {{blank}} explained the history of modern art clearly.',
             'blank_word' => 'lecturer',
-            'translation' => '那位講演者清楚地解說了現代藝術的歷史。',
             'distractors' => [
                 ['vocabulary_id' => 4601, 'word' => 'cushion'],
                 ['vocabulary_id' => 4606, 'word' => 'accountant'],
@@ -8015,7 +7412,6 @@ return [
             'vocabulary_id' => 4604,
             'sentence' => 'Taking the train is {{blank}} to driving during rush hour.',
             'blank_word' => 'preferable',
-            'translation' => '在尖峰時段搭火車比開車更合意。',
             'distractors' => [
                 ['vocabulary_id' => 4602, 'word' => 'enormous'],
                 ['vocabulary_id' => 4601, 'word' => 'cushion'],
@@ -8028,7 +7424,6 @@ return [
             'vocabulary_id' => 4605,
             'sentence' => 'The long period of unemployment began to {{blank}} him.',
             'blank_word' => 'depress',
-            'translation' => '長期失業開始使他感到沮喪。',
             'distractors' => [
                 ['vocabulary_id' => 4609, 'word' => 'cripple'],
                 ['vocabulary_id' => 4610, 'word' => 'cope'],
@@ -8041,7 +7436,6 @@ return [
             'vocabulary_id' => 4606,
             'sentence' => 'The {{blank}} checked the company\'s financial records carefully.',
             'blank_word' => 'accountant',
-            'translation' => '會計人員仔細核對了公司的財務紀錄。',
             'distractors' => [
                 ['vocabulary_id' => 4601, 'word' => 'cushion'],
                 ['vocabulary_id' => 4603, 'word' => 'lecturer'],
@@ -8054,7 +7448,6 @@ return [
             'vocabulary_id' => 4607,
             'sentence' => 'My teacher gave me a useful {{blank}} for improving my essay.',
             'blank_word' => 'suggestion',
-            'translation' => '老師給了我一項改善作文的實用建議。',
             'distractors' => [
                 ['vocabulary_id' => 4601, 'word' => 'cushion'],
                 ['vocabulary_id' => 4603, 'word' => 'lecturer'],
@@ -8067,7 +7460,6 @@ return [
             'vocabulary_id' => 4608,
             'sentence' => 'She took a short vacation to recover from job {{blank}}.',
             'blank_word' => 'burnout',
-            'translation' => '她休了一個短假，以從職業倦怠中恢復過來。',
             'distractors' => [
                 ['vocabulary_id' => 4601, 'word' => 'cushion'],
                 ['vocabulary_id' => 4603, 'word' => 'lecturer'],
@@ -8080,7 +7472,6 @@ return [
             'vocabulary_id' => 4609,
             'sentence' => 'The serious accident {{blank}} his right leg.',
             'blank_word' => 'crippled',
-            'translation' => '那場嚴重的意外使他的右腿殘廢。',
             'distractors' => [
                 ['vocabulary_id' => 4605, 'word' => 'depressed'],
                 ['vocabulary_id' => 4610, 'word' => 'coped'],
@@ -8093,7 +7484,6 @@ return [
             'vocabulary_id' => 4610,
             'sentence' => 'He learned to {{blank}} with the pressure of his new job.',
             'blank_word' => 'cope',
-            'translation' => '他學會了應付新工作的壓力。',
             'distractors' => [
                 ['vocabulary_id' => 4605, 'word' => 'depress'],
                 ['vocabulary_id' => 4609, 'word' => 'cripple'],
@@ -8108,7 +7498,6 @@ return [
             'vocabulary_id' => 4611,
             'sentence' => 'The audience was {{blank}} made up of university students.',
             'blank_word' => 'mostly',
-            'translation' => '觀眾大多是大學生。',
             'distractors' => [
                 ['vocabulary_id' => 4612, 'word' => 'counter'],
                 ['vocabulary_id' => 4613, 'word' => 'housework'],
@@ -8121,7 +7510,6 @@ return [
             'vocabulary_id' => 4612,
             'sentence' => 'The firefighters used a new plan to {{blank}} the spread of the fire.',
             'blank_word' => 'counter',
-            'translation' => '消防員使用新計畫來對抗火勢的蔓延。',
             'distractors' => [
                 ['vocabulary_id' => 4611, 'word' => 'mostly'],
                 ['vocabulary_id' => 4615, 'word' => 'industrialize'],
@@ -8134,7 +7522,6 @@ return [
             'vocabulary_id' => 4613,
             'sentence' => 'My brother and I share the {{blank}} on weekends.',
             'blank_word' => 'housework',
-            'translation' => '我和弟弟在週末分擔家事。',
             'distractors' => [
                 ['vocabulary_id' => 4614, 'word' => 'maturity'],
                 ['vocabulary_id' => 4616, 'word' => 'composition'],
@@ -8145,7 +7532,6 @@ return [
             'vocabulary_id' => 4614,
             'sentence' => 'Her {{blank}} helped her make a wise decision in a difficult situation.',
             'blank_word' => 'maturity',
-            'translation' => '她的成熟讓她能在困難的情況下做出明智的決定。',
             'distractors' => [
                 ['vocabulary_id' => 4613, 'word' => 'housework'],
                 ['vocabulary_id' => 4616, 'word' => 'composition'],
@@ -8156,7 +7542,6 @@ return [
             'vocabulary_id' => 4615,
             'sentence' => 'The government plans to {{blank}} the rural region.',
             'blank_word' => 'industrialize',
-            'translation' => '政府計畫使這個鄉村地區工業化。',
             'distractors' => [
                 ['vocabulary_id' => 4612, 'word' => 'counter'],
                 ['vocabulary_id' => 4617, 'word' => 'consume'],
@@ -8168,7 +7553,6 @@ return [
             'vocabulary_id' => 4616,
             'sentence' => 'The student wrote a short {{blank}} about her favorite festival.',
             'blank_word' => 'composition',
-            'translation' => '那名學生寫了一篇關於她最喜愛節日的短文。',
             'distractors' => [
                 ['vocabulary_id' => 4613, 'word' => 'housework'],
                 ['vocabulary_id' => 4614, 'word' => 'maturity'],
@@ -8179,7 +7563,6 @@ return [
             'vocabulary_id' => 4617,
             'sentence' => 'Large cars {{blank}} more fuel than small cars.',
             'blank_word' => 'consume',
-            'translation' => '大型汽車比小型汽車消耗更多燃料。',
             'distractors' => [
                 ['vocabulary_id' => 4612, 'word' => 'counter'],
                 ['vocabulary_id' => 4615, 'word' => 'industrialize'],
@@ -8191,7 +7574,6 @@ return [
             'vocabulary_id' => 4618,
             'sentence' => 'The museum has an exhibition about ancient Egyptian {{blank}}.',
             'blank_word' => 'civilization',
-            'translation' => '這座博物館有一個關於古埃及文明的展覽。',
             'distractors' => [
                 ['vocabulary_id' => 4613, 'word' => 'housework'],
                 ['vocabulary_id' => 4614, 'word' => 'maturity'],
@@ -8202,7 +7584,6 @@ return [
             'vocabulary_id' => 4619,
             'sentence' => 'The coach used small rewards to {{blank}} the players.',
             'blank_word' => 'motivate',
-            'translation' => '教練用小獎勵來激勵球員。',
             'distractors' => [
                 ['vocabulary_id' => 4612, 'word' => 'counter'],
                 ['vocabulary_id' => 4615, 'word' => 'industrialize'],
@@ -8214,7 +7595,6 @@ return [
             'vocabulary_id' => 4620,
             'sentence' => 'The museum will {{blank}} rare paintings from the nineteenth century.',
             'blank_word' => 'exhibit',
-            'translation' => '這座博物館將展出十九世紀的稀有畫作。',
             'distractors' => [
                 ['vocabulary_id' => 4612, 'word' => 'counter'],
                 ['vocabulary_id' => 4615, 'word' => 'industrialize'],
@@ -8228,7 +7608,6 @@ return [
             'vocabulary_id' => 4621,
             'sentence' => 'This small bowl of rice contains about 200 {{blank}}.',
             'blank_word' => 'calories',
-            'translation' => '這小碗飯大約含有 200 卡路里。',
             'distractors' => [
                 ['vocabulary_id' => 4623, 'word' => 'usages'],
                 ['vocabulary_id' => 4624, 'word' => 'percentages'],
@@ -8242,7 +7621,6 @@ return [
             'vocabulary_id' => 4622,
             'sentence' => 'A warm shower can {{blank}} the pain in your muscles.',
             'blank_word' => 'relieve',
-            'translation' => '熱水澡可以減輕肌肉的疼痛。',
             'distractors' => [
                 ['vocabulary_id' => 4625, 'word' => 'compose'],
                 ['vocabulary_id' => 4628, 'word' => 'accuse'],
@@ -8255,7 +7633,6 @@ return [
             'vocabulary_id' => 4623,
             'sentence' => 'The correct {{blank}} of this word depends on the situation.',
             'blank_word' => 'usage',
-            'translation' => '這個字的正確用法取決於情況。',
             'distractors' => [
                 ['vocabulary_id' => 4621, 'word' => 'calorie'],
                 ['vocabulary_id' => 4624, 'word' => 'percentage'],
@@ -8269,7 +7646,6 @@ return [
             'vocabulary_id' => 4624,
             'sentence' => 'A large {{blank}} of students walk or ride bicycles to school.',
             'blank_word' => 'percentage',
-            'translation' => '很大比例的學生步行或騎自行車上學。',
             'distractors' => [
                 ['vocabulary_id' => 4621, 'word' => 'calorie'],
                 ['vocabulary_id' => 4623, 'word' => 'usage'],
@@ -8283,7 +7659,6 @@ return [
             'vocabulary_id' => 4625,
             'sentence' => 'The musician {{blank}} a beautiful song for the school concert.',
             'blank_word' => 'composed',
-            'translation' => '那位音樂家為學校音樂會創作了一首優美的歌曲。',
             'distractors' => [
                 ['vocabulary_id' => 4622, 'word' => 'relieved'],
                 ['vocabulary_id' => 4628, 'word' => 'accused'],
@@ -8296,7 +7671,6 @@ return [
             'vocabulary_id' => 4626,
             'sentence' => 'Patience is an important {{blank}} when you are learning a new skill.',
             'blank_word' => 'virtue',
-            'translation' => '學習新技能時，耐心是一項重要的美德。',
             'distractors' => [
                 ['vocabulary_id' => 4621, 'word' => 'calorie'],
                 ['vocabulary_id' => 4623, 'word' => 'usage'],
@@ -8310,7 +7684,6 @@ return [
             'vocabulary_id' => 4627,
             'sentence' => 'Graduating from college was one of her greatest {{blank}}.',
             'blank_word' => 'accomplishments',
-            'translation' => '大學畢業是她最偉大的成就之一。',
             'distractors' => [
                 ['vocabulary_id' => 4621, 'word' => 'calories'],
                 ['vocabulary_id' => 4623, 'word' => 'usages'],
@@ -8324,7 +7697,6 @@ return [
             'vocabulary_id' => 4628,
             'sentence' => 'The manager {{blank}} the employee of taking money from the cash register.',
             'blank_word' => 'accused',
-            'translation' => '經理指控那名員工從收銀機拿錢。',
             'distractors' => [
                 ['vocabulary_id' => 4622, 'word' => 'relieved'],
                 ['vocabulary_id' => 4625, 'word' => 'composed'],
@@ -8337,7 +7709,6 @@ return [
             'vocabulary_id' => 4629,
             'sentence' => 'Everyone deserves some {{blank}} in their own home.',
             'blank_word' => 'privacy',
-            'translation' => '每個人在自己的家中都應享有一些隱私。',
             'distractors' => [
                 ['vocabulary_id' => 4621, 'word' => 'calorie'],
                 ['vocabulary_id' => 4623, 'word' => 'usage'],
@@ -8351,7 +7722,6 @@ return [
             'vocabulary_id' => 4630,
             'sentence' => 'I bought a small {{blank}} to remember my trip to Japan.',
             'blank_word' => 'souvenir',
-            'translation' => '我買了一個小紀念品，來紀念我的日本之旅。',
             'distractors' => [
                 ['vocabulary_id' => 4621, 'word' => 'calorie'],
                 ['vocabulary_id' => 4623, 'word' => 'usage'],
@@ -8367,7 +7737,6 @@ return [
             'vocabulary_id' => 4631,
             'sentence' => 'The {{blank}} carefully checked each student\'s answer sheet.',
             'blank_word' => 'examiner',
-            'translation' => '主考人仔細檢查每位學生的答案卷。',
             'distractors' => [
                 ['vocabulary_id' => 4633, 'word' => 'cease'],
                 ['vocabulary_id' => 4634, 'word' => 'relative'],
@@ -8381,7 +7750,6 @@ return [
             'vocabulary_id' => 4632,
             'sentence' => 'The children were very {{blank}} during the group project.',
             'blank_word' => 'cooperative',
-            'translation' => '孩子們在小組專題進行期間非常合作。',
             'distractors' => [
                 ['vocabulary_id' => 4631, 'word' => 'examiner'],
                 ['vocabulary_id' => 4633, 'word' => 'cease'],
@@ -8392,9 +7760,8 @@ return [
         ],
         [
             'vocabulary_id' => 4633,
-            'sentence' => 'The sudden {{blank}} of the loud music surprised everyone.',
+            'sentence' => 'The rain fell without {{blank}} throughout the afternoon.',
             'blank_word' => 'cease',
-            'translation' => '大聲音樂突然停止，讓每個人都感到驚訝。',
             'distractors' => [
                 ['vocabulary_id' => 4631, 'word' => 'examiner'],
                 ['vocabulary_id' => 4634, 'word' => 'relative'],
@@ -8408,7 +7775,6 @@ return [
             'vocabulary_id' => 4634,
             'sentence' => 'My aunt is the {{blank}} who lives closest to my home.',
             'blank_word' => 'relative',
-            'translation' => '我阿姨是住得離我家最近的親戚。',
             'distractors' => [
                 ['vocabulary_id' => 4631, 'word' => 'examiner'],
                 ['vocabulary_id' => 4633, 'word' => 'cease'],
@@ -8422,7 +7788,6 @@ return [
             'vocabulary_id' => 4635,
             'sentence' => 'The host {{blank}} the guests with funny stories.',
             'blank_word' => 'entertained',
-            'translation' => '主人用有趣的故事招待客人，讓他們感到愉快。',
             'distractors' => [
                 ['vocabulary_id' => 4637, 'word' => 'collapsed'],
                 ['vocabulary_id' => 4638, 'word' => 'classified'],
@@ -8435,7 +7800,6 @@ return [
             'vocabulary_id' => 4636,
             'sentence' => 'The doctor gently pressed the patient\'s {{blank}}.',
             'blank_word' => 'abdomen',
-            'translation' => '醫生輕輕按壓病人的腹部。',
             'distractors' => [
                 ['vocabulary_id' => 4631, 'word' => 'examiner'],
                 ['vocabulary_id' => 4633, 'word' => 'cease'],
@@ -8449,7 +7813,6 @@ return [
             'vocabulary_id' => 4637,
             'sentence' => 'The old bridge may {{blank}} if the storm becomes stronger.',
             'blank_word' => 'collapse',
-            'translation' => '如果暴風雨變得更強，這座老橋可能會倒塌。',
             'distractors' => [
                 ['vocabulary_id' => 4631, 'word' => 'examiner'],
                 ['vocabulary_id' => 4633, 'word' => 'cease'],
@@ -8463,7 +7826,6 @@ return [
             'vocabulary_id' => 4638,
             'sentence' => 'Scientists {{blank}} animals according to their physical features.',
             'blank_word' => 'classify',
-            'translation' => '科學家根據動物的身體特徵將牠們分類。',
             'distractors' => [
                 ['vocabulary_id' => 4635, 'word' => 'entertain'],
                 ['vocabulary_id' => 4637, 'word' => 'collapse'],
@@ -8476,7 +7838,6 @@ return [
             'vocabulary_id' => 4639,
             'sentence' => 'You can find the application form on the school\'s {{blank}}.',
             'blank_word' => 'website',
-            'translation' => '你可以在學校的網站上找到申請表。',
             'distractors' => [
                 ['vocabulary_id' => 4631, 'word' => 'examiner'],
                 ['vocabulary_id' => 4633, 'word' => 'cease'],
@@ -8490,7 +7851,6 @@ return [
             'vocabulary_id' => 4640,
             'sentence' => 'We did not realize the {{blank}} of the damage until morning.',
             'blank_word' => 'extent',
-            'translation' => '直到早上，我們才了解損害的程度。',
             'distractors' => [
                 ['vocabulary_id' => 4631, 'word' => 'examiner'],
                 ['vocabulary_id' => 4633, 'word' => 'cease'],
@@ -8506,7 +7866,6 @@ return [
             'vocabulary_id' => 4641,
             'sentence' => 'The teacher used a simple diagram to {{blank}} how the machine works.',
             'blank_word' => 'illustrate',
-            'translation' => '老師用一張簡單的圖表來說明這台機器的運作方式。',
             'distractors' => [
                 ['vocabulary_id' => 4644, 'word' => 'deserve'],
                 ['vocabulary_id' => 4642, 'word' => 'numerous'],
@@ -8519,7 +7878,6 @@ return [
             'vocabulary_id' => 4642,
             'sentence' => 'The museum has {{blank}} paintings from the nineteenth century.',
             'blank_word' => 'numerous',
-            'translation' => '這間博物館收藏了許多十九世紀的畫作。',
             'distractors' => [
                 ['vocabulary_id' => 4645, 'word' => 'mere'],
                 ['vocabulary_id' => 4649, 'word' => 'coarse'],
@@ -8530,7 +7888,6 @@ return [
             'vocabulary_id' => 4643,
             'sentence' => 'I bought this warm jacket at a {{blank}} during the winter sale.',
             'blank_word' => 'bargain',
-            'translation' => '我在冬季特賣時以優惠價格買到這件保暖外套。',
             'distractors' => [
                 ['vocabulary_id' => 4646, 'word' => 'charity'],
                 ['vocabulary_id' => 4647, 'word' => 'fort'],
@@ -8541,7 +7898,6 @@ return [
             'vocabulary_id' => 4644,
             'sentence' => 'You {{blank}} a break after working so hard all week.',
             'blank_word' => 'deserve',
-            'translation' => '你辛苦工作了一整週，應該休息一下。',
             'distractors' => [
                 ['vocabulary_id' => 4641, 'word' => 'illustrate'],
                 ['vocabulary_id' => 4642, 'word' => 'numerous'],
@@ -8554,7 +7910,6 @@ return [
             'vocabulary_id' => 4645,
             'sentence' => 'The {{blank}} thought of speaking in public made him nervous.',
             'blank_word' => 'mere',
-            'translation' => '光是想到要公開演講就讓他感到緊張。',
             'distractors' => [
                 ['vocabulary_id' => 4642, 'word' => 'numerous'],
                 ['vocabulary_id' => 4649, 'word' => 'coarse'],
@@ -8565,7 +7920,6 @@ return [
             'vocabulary_id' => 4646,
             'sentence' => 'The {{blank}} provides food and clothing for families in need.',
             'blank_word' => 'charity',
-            'translation' => '這個慈善團體為有需要的家庭提供食物和衣物。',
             'distractors' => [
                 ['vocabulary_id' => 4643, 'word' => 'bargain'],
                 ['vocabulary_id' => 4647, 'word' => 'fort'],
@@ -8576,7 +7930,6 @@ return [
             'vocabulary_id' => 4647,
             'sentence' => 'The old {{blank}} protected the town from attacks many years ago.',
             'blank_word' => 'fort',
-            'translation' => '這座古老的堡壘多年前保護這個城鎮免受攻擊。',
             'distractors' => [
                 ['vocabulary_id' => 4643, 'word' => 'bargain'],
                 ['vocabulary_id' => 4646, 'word' => 'charity'],
@@ -8587,7 +7940,6 @@ return [
             'vocabulary_id' => 4648,
             'sentence' => 'The company rewards customers for their {{blank}} with special discounts.',
             'blank_word' => 'loyalty',
-            'translation' => '這家公司以特別折扣回饋忠實顧客。',
             'distractors' => [
                 ['vocabulary_id' => 4643, 'word' => 'bargain'],
                 ['vocabulary_id' => 4646, 'word' => 'charity'],
@@ -8598,7 +7950,6 @@ return [
             'vocabulary_id' => 4649,
             'sentence' => 'The blanket felt {{blank}} against my skin.',
             'blank_word' => 'coarse',
-            'translation' => '這條毯子貼著我的皮膚時感覺很粗糙。',
             'distractors' => [
                 ['vocabulary_id' => 4642, 'word' => 'numerous'],
                 ['vocabulary_id' => 4645, 'word' => 'mere'],
@@ -8609,7 +7960,6 @@ return [
             'vocabulary_id' => 4650,
             'sentence' => 'The {{blank}} host welcomed every guest with a warm smile.',
             'blank_word' => 'gracious',
-            'translation' => '那位親切的主人面帶溫暖的笑容迎接每一位客人。',
             'distractors' => [
                 ['vocabulary_id' => 4642, 'word' => 'numerous'],
                 ['vocabulary_id' => 4645, 'word' => 'mere'],
@@ -8622,7 +7972,6 @@ return [
             'vocabulary_id' => 4651,
             'sentence' => 'Please handle these {{blank}} glass ornaments carefully.',
             'blank_word' => 'delicate',
-            'translation' => '請小心拿取這些易碎的玻璃裝飾品。',
             'distractors' => [
                 ['vocabulary_id' => 4654, 'word' => 'elegant'],
                 ['vocabulary_id' => 4658, 'word' => 'pregnant'],
@@ -8633,7 +7982,6 @@ return [
             'vocabulary_id' => 4652,
             'sentence' => 'The security guard asked me to show my {{blank}} before entering the building.',
             'blank_word' => 'ID',
-            'translation' => '保全人員要求我在進入大樓前出示身分證明。',
             'distractors' => [
                 ['vocabulary_id' => 4653, 'word' => 'cooperation'],
                 ['vocabulary_id' => 4655, 'word' => 'phishing'],
@@ -8645,7 +7993,6 @@ return [
             'vocabulary_id' => 4653,
             'sentence' => 'The project was completed successfully through the {{blank}} of several teams.',
             'blank_word' => 'cooperation',
-            'translation' => '這項計畫在數個團隊的合作下順利完成。',
             'distractors' => [
                 ['vocabulary_id' => 4652, 'word' => 'ID'],
                 ['vocabulary_id' => 4655, 'word' => 'phishing'],
@@ -8657,7 +8004,6 @@ return [
             'vocabulary_id' => 4654,
             'sentence' => 'She wore an {{blank}} dress to the formal dinner.',
             'blank_word' => 'elegant',
-            'translation' => '她穿了一件雅緻的洋裝參加正式晚宴。',
             'distractors' => [
                 ['vocabulary_id' => 4651, 'word' => 'delicate'],
                 ['vocabulary_id' => 4658, 'word' => 'pregnant'],
@@ -8668,7 +8014,6 @@ return [
             'vocabulary_id' => 4655,
             'sentence' => 'The bank warned customers that the suspicious email was a {{blank}} attempt.',
             'blank_word' => 'phishing',
-            'translation' => '銀行警告客戶，那封可疑電子郵件是網路釣魚詐騙。',
             'distractors' => [
                 ['vocabulary_id' => 4652, 'word' => 'ID'],
                 ['vocabulary_id' => 4653, 'word' => 'cooperation'],
@@ -8680,7 +8025,6 @@ return [
             'vocabulary_id' => 4656,
             'sentence' => 'The hikers had to {{blank}} their trip because of the heavy snow.',
             'blank_word' => 'abandon',
-            'translation' => '登山客因為大雪不得不中止行程。',
             'distractors' => [
                 ['vocabulary_id' => 4651, 'word' => 'delicate'],
                 ['vocabulary_id' => 4652, 'word' => 'ID'],
@@ -8693,7 +8037,6 @@ return [
             'vocabulary_id' => 4657,
             'sentence' => 'The {{blank}} helped the student manage her anxiety.',
             'blank_word' => 'psychologist',
-            'translation' => '那位心理學家幫助學生處理她的焦慮。',
             'distractors' => [
                 ['vocabulary_id' => 4652, 'word' => 'ID'],
                 ['vocabulary_id' => 4653, 'word' => 'cooperation'],
@@ -8705,7 +8048,6 @@ return [
             'vocabulary_id' => 4658,
             'sentence' => 'My sister is {{blank}} and will have her baby in July.',
             'blank_word' => 'pregnant',
-            'translation' => '我姊姊懷孕了，預計七月生寶寶。',
             'distractors' => [
                 ['vocabulary_id' => 4651, 'word' => 'delicate'],
                 ['vocabulary_id' => 4654, 'word' => 'elegant'],
@@ -8716,7 +8058,6 @@ return [
             'vocabulary_id' => 4659,
             'sentence' => 'The team adopted a {{blank}} strategy to protect its lead.',
             'blank_word' => 'defensive',
-            'translation' => '這支隊伍採取防禦策略來守住領先優勢。',
             'distractors' => [
                 ['vocabulary_id' => 4651, 'word' => 'delicate'],
                 ['vocabulary_id' => 4654, 'word' => 'elegant'],
@@ -8727,7 +8068,6 @@ return [
             'vocabulary_id' => 4660,
             'sentence' => 'It is difficult to understand the sentence without knowing its {{blank}}.',
             'blank_word' => 'context',
-            'translation' => '不知道這個句子的上下文，很難理解它的意思。',
             'distractors' => [
                 ['vocabulary_id' => 4652, 'word' => 'ID'],
                 ['vocabulary_id' => 4653, 'word' => 'cooperation'],
@@ -8741,7 +8081,6 @@ return [
             'vocabulary_id' => 4661,
             'sentence' => '{{blank}} to the museum is free for children under twelve.',
             'blank_word' => 'Admission',
-            'translation' => '十二歲以下的兒童免費入場博物館。',
             'distractors' => [
                 ['vocabulary_id' => 4662, 'word' => 'Pursuit'],
                 ['vocabulary_id' => 4663, 'word' => 'Community'],
@@ -8753,7 +8092,6 @@ return [
             'vocabulary_id' => 4662,
             'sentence' => 'The police chased the suspect in hot {{blank}}.',
             'blank_word' => 'pursuit',
-            'translation' => '警方緊追在後，追捕那名嫌疑犯。',
             'distractors' => [
                 ['vocabulary_id' => 4661, 'word' => 'admission'],
                 ['vocabulary_id' => 4663, 'word' => 'community'],
@@ -8765,7 +8103,6 @@ return [
             'vocabulary_id' => 4663,
             'sentence' => 'The whole {{blank}} worked together to clean the local beach.',
             'blank_word' => 'community',
-            'translation' => '整個社區共同努力清理當地海灘。',
             'distractors' => [
                 ['vocabulary_id' => 4661, 'word' => 'admission'],
                 ['vocabulary_id' => 4662, 'word' => 'pursuit'],
@@ -8777,7 +8114,6 @@ return [
             'vocabulary_id' => 4664,
             'sentence' => 'Please {{blank}} your photo to the application form.',
             'blank_word' => 'attach',
-            'translation' => '請將你的照片貼在申請表上。',
             'distractors' => [
                 ['vocabulary_id' => 4667, 'word' => 'resign'],
                 ['vocabulary_id' => 4668, 'word' => 'violate'],
@@ -8789,7 +8125,6 @@ return [
             'vocabulary_id' => 4665,
             'sentence' => 'The famous singer wrote an {{blank}} about her childhood.',
             'blank_word' => 'autobiography',
-            'translation' => '那位著名歌手寫了一本關於自己童年的自傳。',
             'distractors' => [
                 ['vocabulary_id' => 4661, 'word' => 'admission'],
                 ['vocabulary_id' => 4662, 'word' => 'pursuit'],
@@ -8801,7 +8136,6 @@ return [
             'vocabulary_id' => 4666,
             'sentence' => 'Students wear safety glasses when they work in the {{blank}}.',
             'blank_word' => 'lab',
-            'translation' => '學生在實驗室工作時會戴護目鏡。',
             'distractors' => [
                 ['vocabulary_id' => 4661, 'word' => 'admission'],
                 ['vocabulary_id' => 4662, 'word' => 'pursuit'],
@@ -8813,7 +8147,6 @@ return [
             'vocabulary_id' => 4667,
             'sentence' => 'The manager decided to {{blank}} after ten years with the company.',
             'blank_word' => 'resign',
-            'translation' => '那位經理在公司任職十年後決定辭職。',
             'distractors' => [
                 ['vocabulary_id' => 4664, 'word' => 'attach'],
                 ['vocabulary_id' => 4668, 'word' => 'violate'],
@@ -8825,7 +8158,6 @@ return [
             'vocabulary_id' => 4668,
             'sentence' => 'Anyone who {{blank}} the school rules may be suspended.',
             'blank_word' => 'violates',
-            'translation' => '任何違反校規的人都可能被停學。',
             'distractors' => [
                 ['vocabulary_id' => 4664, 'word' => 'attaches'],
                 ['vocabulary_id' => 4667, 'word' => 'resigns'],
@@ -8837,7 +8169,6 @@ return [
             'vocabulary_id' => 4669,
             'sentence' => 'The letter {{blank}} her sincere thanks to everyone who helped her.',
             'blank_word' => 'conveyed',
-            'translation' => '這封信向所有幫助她的人表達了她真誠的謝意。',
             'distractors' => [
                 ['vocabulary_id' => 4664, 'word' => 'attached'],
                 ['vocabulary_id' => 4667, 'word' => 'resigned'],
@@ -8849,7 +8180,6 @@ return [
             'vocabulary_id' => 4670,
             'sentence' => 'Our teacher will not {{blank}} cheating on exams.',
             'blank_word' => 'tolerate',
-            'translation' => '我們的老師不會容忍考試作弊。',
             'distractors' => [
                 ['vocabulary_id' => 4664, 'word' => 'attach'],
                 ['vocabulary_id' => 4667, 'word' => 'resign'],
@@ -8863,7 +8193,6 @@ return [
             'vocabulary_id' => 4671,
             'sentence' => 'The company sent us an {{blank}} for the repair work.',
             'blank_word' => 'invoice',
-            'translation' => '那家公司寄給我們一張修繕工作的請款單。',
             'distractors' => [
                 ['vocabulary_id' => 4675, 'word' => 'rhyme'],
                 ['vocabulary_id' => 4676, 'word' => 'engineering'],
@@ -8877,7 +8206,6 @@ return [
             'vocabulary_id' => 4672,
             'sentence' => 'His {{blank}} lateness often causes problems for the team.',
             'blank_word' => 'habitual',
-            'translation' => '他習慣性遲到常常給團隊帶來問題。',
             'distractors' => [
                 ['vocabulary_id' => 4674, 'word' => 'gifted'],
                 ['vocabulary_id' => 4671, 'word' => 'invoice'],
@@ -8890,7 +8218,6 @@ return [
             'vocabulary_id' => 4673,
             'sentence' => 'The coach {{blank}} the players to practice passing the ball.',
             'blank_word' => 'instructed',
-            'translation' => '教練指示球員練習傳球。',
             'distractors' => [
                 ['vocabulary_id' => 4675, 'word' => 'rhymed'],
                 ['vocabulary_id' => 4680, 'word' => 'swayed'],
@@ -8903,7 +8230,6 @@ return [
             'vocabulary_id' => 4674,
             'sentence' => 'The {{blank}} student can play several musical instruments.',
             'blank_word' => 'gifted',
-            'translation' => '那名有天賦的學生會演奏好幾種樂器。',
             'distractors' => [
                 ['vocabulary_id' => 4672, 'word' => 'habitual'],
                 ['vocabulary_id' => 4671, 'word' => 'invoice'],
@@ -8916,7 +8242,6 @@ return [
             'vocabulary_id' => 4675,
             'sentence' => 'The poem has a simple {{blank}} that makes it easy to remember.',
             'blank_word' => 'rhyme',
-            'translation' => '這首詩有簡單的押韻，因此很容易記住。',
             'distractors' => [
                 ['vocabulary_id' => 4671, 'word' => 'invoice'],
                 ['vocabulary_id' => 4673, 'word' => 'instruct'],
@@ -8930,7 +8255,6 @@ return [
             'vocabulary_id' => 4676,
             'sentence' => 'She plans to study {{blank}} at university.',
             'blank_word' => 'engineering',
-            'translation' => '她計畫在大學主修工程學。',
             'distractors' => [
                 ['vocabulary_id' => 4671, 'word' => 'invoice'],
                 ['vocabulary_id' => 4675, 'word' => 'rhyme'],
@@ -8944,7 +8268,6 @@ return [
             'vocabulary_id' => 4677,
             'sentence' => 'The {{blank}} carefully explained the treatment to the patient.',
             'blank_word' => 'physician',
-            'translation' => '那位醫師仔細向病人解釋治療方式。',
             'distractors' => [
                 ['vocabulary_id' => 4671, 'word' => 'invoice'],
                 ['vocabulary_id' => 4675, 'word' => 'rhyme'],
@@ -8958,7 +8281,6 @@ return [
             'vocabulary_id' => 4678,
             'sentence' => 'Please stand on the right side of the {{blank}}.',
             'blank_word' => 'escalator',
-            'translation' => '請站在電扶梯的右側。',
             'distractors' => [
                 ['vocabulary_id' => 4671, 'word' => 'invoice'],
                 ['vocabulary_id' => 4675, 'word' => 'rhyme'],
@@ -8972,7 +8294,6 @@ return [
             'vocabulary_id' => 4679,
             'sentence' => 'The dog was rewarded for its {{blank}} to the trainer.',
             'blank_word' => 'obedience',
-            'translation' => '那隻狗因服從訓練師而獲得獎勵。',
             'distractors' => [
                 ['vocabulary_id' => 4671, 'word' => 'invoice'],
                 ['vocabulary_id' => 4675, 'word' => 'rhyme'],
@@ -8986,7 +8307,6 @@ return [
             'vocabulary_id' => 4680,
             'sentence' => 'The tall trees began to {{blank}} in the strong wind.',
             'blank_word' => 'sway',
-            'translation' => '高大的樹木開始在強風中搖曳。',
             'distractors' => [
                 ['vocabulary_id' => 4671, 'word' => 'invoice'],
                 ['vocabulary_id' => 4673, 'word' => 'instruct'],
@@ -9002,7 +8322,6 @@ return [
             'vocabulary_id' => 4681,
             'sentence' => 'A shortage of drivers has become a serious {{blank}} in the delivery system.',
             'blank_word' => 'bottleneck',
-            'translation' => '駕駛員短缺已成為配送系統中的一大瓶頸。',
             'distractors' => [
                 ['vocabulary_id' => 4682, 'word' => 'logistics'],
                 ['vocabulary_id' => 4688, 'word' => 'protest'],
@@ -9014,7 +8333,6 @@ return [
             'vocabulary_id' => 4682,
             'sentence' => 'Good {{blank}} are essential for delivering food to the remote village on time.',
             'blank_word' => 'logistics',
-            'translation' => '良好的物流與後勤運籌對於準時將食物送到偏遠村莊至關重要。',
             'distractors' => [
                 ['vocabulary_id' => 4681, 'word' => 'bottleneck'],
                 ['vocabulary_id' => 4688, 'word' => 'protest'],
@@ -9026,7 +8344,6 @@ return [
             'vocabulary_id' => 4683,
             'sentence' => 'The author plans to {{blank}} her first novel next year.',
             'blank_word' => 'publish',
-            'translation' => '這位作家計畫明年出版她的第一本小說。',
             'distractors' => [
                 ['vocabulary_id' => 4686, 'word' => 'intensify'],
                 ['vocabulary_id' => 4688, 'word' => 'protest'],
@@ -9039,7 +8356,6 @@ return [
             'vocabulary_id' => 4684,
             'sentence' => 'The {{blank}} boy dropped the plates while carrying them to the kitchen.',
             'blank_word' => 'clumsy',
-            'translation' => '那個手腳不靈活的男孩把盤子拿到廚房時弄掉了。',
             'distractors' => [
                 ['vocabulary_id' => 4685, 'word' => 'abstract'],
                 ['vocabulary_id' => 4687, 'word' => 'respectful'],
@@ -9052,7 +8368,6 @@ return [
             'vocabulary_id' => 4685,
             'sentence' => 'The painting is beautiful, but its {{blank}} design is difficult to understand.',
             'blank_word' => 'abstract',
-            'translation' => '這幅畫很美，但它抽象的設計很難理解。',
             'distractors' => [
                 ['vocabulary_id' => 4684, 'word' => 'clumsy'],
                 ['vocabulary_id' => 4687, 'word' => 'respectful'],
@@ -9065,7 +8380,6 @@ return [
             'vocabulary_id' => 4686,
             'sentence' => 'The wind began to {{blank}} before the typhoon reached the coast.',
             'blank_word' => 'intensify',
-            'translation' => '颱風抵達海岸前，風勢開始增強。',
             'distractors' => [
                 ['vocabulary_id' => 4683, 'word' => 'publish'],
                 ['vocabulary_id' => 4688, 'word' => 'protest'],
@@ -9078,7 +8392,6 @@ return [
             'vocabulary_id' => 4687,
             'sentence' => 'The students were {{blank}} when they listened to the guest speaker.',
             'blank_word' => 'respectful',
-            'translation' => '學生們聆聽演講嘉賓說話時都很恭敬。',
             'distractors' => [
                 ['vocabulary_id' => 4684, 'word' => 'clumsy'],
                 ['vocabulary_id' => 4685, 'word' => 'abstract'],
@@ -9091,7 +8404,6 @@ return [
             'vocabulary_id' => 4688,
             'sentence' => 'Many residents {{blank}} against the plan to build a factory near the river.',
             'blank_word' => 'protested',
-            'translation' => '許多居民抗議在河邊興建工廠的計畫。',
             'distractors' => [
                 ['vocabulary_id' => 4683, 'word' => 'published'],
                 ['vocabulary_id' => 4686, 'word' => 'intensified'],
@@ -9104,7 +8416,6 @@ return [
             'vocabulary_id' => 4689,
             'sentence' => 'The {{blank}} repaired my car and replaced its old battery.',
             'blank_word' => 'mechanic',
-            'translation' => '那名技工修理了我的車，並更換了老舊的電池。',
             'distractors' => [
                 ['vocabulary_id' => 4681, 'word' => 'bottleneck'],
                 ['vocabulary_id' => 4682, 'word' => 'logistics'],
@@ -9116,7 +8427,6 @@ return [
             'vocabulary_id' => 4690,
             'sentence' => 'The family placed fresh flowers beside their grandfather\'s {{blank}}.',
             'blank_word' => 'grave',
-            'translation' => '這家人把鮮花放在祖父的墳墓旁。',
             'distractors' => [
                 ['vocabulary_id' => 4681, 'word' => 'bottleneck'],
                 ['vocabulary_id' => 4682, 'word' => 'logistics'],
@@ -9130,7 +8440,6 @@ return [
             'vocabulary_id' => 4691,
             'sentence' => 'I began to {{blank}} after walking through the dusty room.',
             'blank_word' => 'sneeze',
-            'translation' => '走過那間滿是灰塵的房間後，我開始打噴嚏。',
             'distractors' => [
                 ['vocabulary_id' => 4692, 'word' => 'occupy'],
                 ['vocabulary_id' => 4694, 'word' => 'hockey'],
@@ -9144,7 +8453,6 @@ return [
             'vocabulary_id' => 4692,
             'sentence' => 'The large sofa {{blank}} most of the space in the small living room.',
             'blank_word' => 'occupies',
-            'translation' => '那張大沙發佔據了小客廳大部分的空間。',
             'distractors' => [
                 ['vocabulary_id' => 4691, 'word' => 'sneezes'],
                 ['vocabulary_id' => 4700, 'word' => 'astonishes'],
@@ -9157,7 +8465,6 @@ return [
             'vocabulary_id' => 4693,
             'sentence' => 'The two teams played on {{blank}} days during the tournament.',
             'blank_word' => 'alternate',
-            'translation' => '兩支隊伍在比賽期間隔天輪流出賽。',
             'distractors' => [
                 ['vocabulary_id' => 4695, 'word' => 'worthwhile'],
                 ['vocabulary_id' => 4696, 'word' => 'exceptional'],
@@ -9170,7 +8477,6 @@ return [
             'vocabulary_id' => 4694,
             'sentence' => 'My brother joined the school {{blank}} team this year.',
             'blank_word' => 'hockey',
-            'translation' => '我哥哥今年加入了學校的曲棍球隊。',
             'distractors' => [
                 ['vocabulary_id' => 4691, 'word' => 'sneeze'],
                 ['vocabulary_id' => 4697, 'word' => 'ornament'],
@@ -9182,7 +8488,6 @@ return [
             'vocabulary_id' => 4695,
             'sentence' => 'Learning another language is {{blank}} because it opens the door to new opportunities.',
             'blank_word' => 'worthwhile',
-            'translation' => '學習另一種語言是值得的，因為它能帶來新的機會。',
             'distractors' => [
                 ['vocabulary_id' => 4693, 'word' => 'alternate'],
                 ['vocabulary_id' => 4696, 'word' => 'exceptional'],
@@ -9195,7 +8500,6 @@ return [
             'vocabulary_id' => 4696,
             'sentence' => 'The young musician gave an {{blank}} performance at the concert.',
             'blank_word' => 'exceptional',
-            'translation' => '那位年輕音樂家在音樂會上有非常優異的表現。',
             'distractors' => [
                 ['vocabulary_id' => 4693, 'word' => 'alternate'],
                 ['vocabulary_id' => 4695, 'word' => 'worthwhile'],
@@ -9208,7 +8512,6 @@ return [
             'vocabulary_id' => 4697,
             'sentence' => 'She hung a colorful {{blank}} on the Christmas tree.',
             'blank_word' => 'ornament',
-            'translation' => '她在聖誕樹上掛了一個色彩繽紛的裝飾品。',
             'distractors' => [
                 ['vocabulary_id' => 4691, 'word' => 'sneeze'],
                 ['vocabulary_id' => 4694, 'word' => 'hockey'],
@@ -9220,7 +8523,6 @@ return [
             'vocabulary_id' => 4698,
             'sentence' => 'His {{blank}} surprised everyone at the meeting.',
             'blank_word' => 'confession',
-            'translation' => '他的坦白讓會議上的每個人都感到驚訝。',
             'distractors' => [
                 ['vocabulary_id' => 4691, 'word' => 'sneeze'],
                 ['vocabulary_id' => 4694, 'word' => 'hockey'],
@@ -9232,7 +8534,6 @@ return [
             'vocabulary_id' => 4699,
             'sentence' => 'The bakery made a fresh {{blank}} of bread early this morning.',
             'blank_word' => 'batch',
-            'translation' => '這家麵包店今天清晨烘焙了一批新鮮麵包。',
             'distractors' => [
                 ['vocabulary_id' => 4691, 'word' => 'sneeze'],
                 ['vocabulary_id' => 4694, 'word' => 'hockey'],
@@ -9244,7 +8545,6 @@ return [
             'vocabulary_id' => 4700,
             'sentence' => 'The magician\'s final trick {{blank}} the entire audience.',
             'blank_word' => 'astonished',
-            'translation' => '魔術師最後的戲法讓全場觀眾震驚不已。',
             'distractors' => [
                 ['vocabulary_id' => 4691, 'word' => 'sneezed'],
                 ['vocabulary_id' => 4692, 'word' => 'occupied'],
@@ -9259,7 +8559,6 @@ return [
             'vocabulary_id' => 4701,
             'sentence' => 'The {{blank}} wrote a powerful drama about a family separated by war.',
             'blank_word' => 'playwright',
-            'translation' => '這位劇作家寫了一齣描述一家人因戰爭而離散的感人戲劇。',
             'distractors' => [
                 ['vocabulary_id' => 4702, 'word' => 'fad'],
                 ['vocabulary_id' => 4703, 'word' => 'garment'],
@@ -9273,7 +8572,6 @@ return [
             'vocabulary_id' => 4702,
             'sentence' => 'Many teenagers followed the latest fashion {{blank}} for only a few weeks.',
             'blank_word' => 'fad',
-            'translation' => '許多青少年只追隨最新的時尚潮流幾週。',
             'distractors' => [
                 ['vocabulary_id' => 4701, 'word' => 'playwright'],
                 ['vocabulary_id' => 4703, 'word' => 'garment'],
@@ -9287,7 +8585,6 @@ return [
             'vocabulary_id' => 4703,
             'sentence' => 'This traditional {{blank}} is made from soft cotton and colorful cloth.',
             'blank_word' => 'garment',
-            'translation' => '這件傳統衣服是用柔軟的棉布和彩色布料製成的。',
             'distractors' => [
                 ['vocabulary_id' => 4701, 'word' => 'playwright'],
                 ['vocabulary_id' => 4702, 'word' => 'fad'],
@@ -9301,7 +8598,6 @@ return [
             'vocabulary_id' => 4704,
             'sentence' => 'We bought fresh fruit from a small {{blank}} at the night market.',
             'blank_word' => 'booth',
-            'translation' => '我們在夜市的一個小亭買了新鮮水果。',
             'distractors' => [
                 ['vocabulary_id' => 4701, 'word' => 'playwright'],
                 ['vocabulary_id' => 4702, 'word' => 'fad'],
@@ -9315,7 +8611,6 @@ return [
             'vocabulary_id' => 4705,
             'sentence' => 'The rider carefully placed the {{blank}} on the horse before the trip.',
             'blank_word' => 'saddle',
-            'translation' => '騎士在出發前小心地把馬鞍放到馬背上。',
             'distractors' => [
                 ['vocabulary_id' => 4701, 'word' => 'playwright'],
                 ['vocabulary_id' => 4702, 'word' => 'fad'],
@@ -9329,7 +8624,6 @@ return [
             'vocabulary_id' => 4706,
             'sentence' => 'The explorers were attacked by a {{blank}} animal in the forest.',
             'blank_word' => 'savage',
-            'translation' => '探險家在森林裡遭到一隻野蠻兇猛的動物攻擊。',
             'distractors' => [
                 ['vocabulary_id' => 4701, 'word' => 'playwright'],
                 ['vocabulary_id' => 4702, 'word' => 'fad'],
@@ -9343,7 +8637,6 @@ return [
             'vocabulary_id' => 4707,
             'sentence' => 'He used an {{blank}} to guide the small boat toward the shore.',
             'blank_word' => 'oar',
-            'translation' => '他用一支槳將小船划向岸邊。',
             'distractors' => [
                 ['vocabulary_id' => 4701, 'word' => 'playwright'],
                 ['vocabulary_id' => 4702, 'word' => 'fad'],
@@ -9357,7 +8650,6 @@ return [
             'vocabulary_id' => 4708,
             'sentence' => 'The monks repeated a quiet {{blank}} during the ceremony.',
             'blank_word' => 'chant',
-            'translation' => '僧侶們在儀式中反覆吟唱一段安靜的曲調。',
             'distractors' => [
                 ['vocabulary_id' => 4701, 'word' => 'playwright'],
                 ['vocabulary_id' => 4702, 'word' => 'fad'],
@@ -9371,7 +8663,6 @@ return [
             'vocabulary_id' => 4709,
             'sentence' => 'The {{blank}} quality of the restaurant was better than we expected.',
             'blank_word' => 'overall',
-            'translation' => '這家餐廳的整體品質比我們預期的更好。',
             'distractors' => [
                 ['vocabulary_id' => 4701, 'word' => 'playwright'],
                 ['vocabulary_id' => 4702, 'word' => 'fad'],
@@ -9385,7 +8676,6 @@ return [
             'vocabulary_id' => 4710,
             'sentence' => 'The {{blank}} translated the speaker’s words for the foreign guests.',
             'blank_word' => 'interpreter',
-            'translation' => '口譯員為外國賓客翻譯講者的話。',
             'distractors' => [
                 ['vocabulary_id' => 4701, 'word' => 'playwright'],
                 ['vocabulary_id' => 4702, 'word' => 'fad'],
@@ -9401,7 +8691,6 @@ return [
             'vocabulary_id' => 4711,
             'sentence' => 'The actor wore a long gray {{blank}} to play an elderly king.',
             'blank_word' => 'wig',
-            'translation' => '那名演員戴上一頂長灰色假髮，飾演一位年老的國王。',
             'distractors' => [
                 ['vocabulary_id' => 4712, 'word' => 'gravity'],
                 ['vocabulary_id' => 4713, 'word' => 'crystal'],
@@ -9415,7 +8704,6 @@ return [
             'vocabulary_id' => 4712,
             'sentence' => '{{blank}} keeps the planets moving around the sun.',
             'blank_word' => 'Gravity',
-            'translation' => '重力使行星持續繞著太陽運行。',
             'distractors' => [
                 ['vocabulary_id' => 4711, 'word' => 'Wig'],
                 ['vocabulary_id' => 4713, 'word' => 'Crystal'],
@@ -9429,7 +8717,6 @@ return [
             'vocabulary_id' => 4713,
             'sentence' => 'Sunlight passed through the clear {{blank}} and filled the room with sparkling colors.',
             'blank_word' => 'crystal',
-            'translation' => '陽光穿過透明的水晶，讓房間充滿閃耀的色彩。',
             'distractors' => [
                 ['vocabulary_id' => 4711, 'word' => 'wig'],
                 ['vocabulary_id' => 4712, 'word' => 'gravity'],
@@ -9443,7 +8730,6 @@ return [
             'vocabulary_id' => 4714,
             'sentence' => 'She showed {{blank}} for people who abused their power.',
             'blank_word' => 'contempt',
-            'translation' => '她對那些濫用權力的人表示輕視。',
             'distractors' => [
                 ['vocabulary_id' => 4711, 'word' => 'wig'],
                 ['vocabulary_id' => 4712, 'word' => 'gravity'],
@@ -9457,7 +8743,6 @@ return [
             'vocabulary_id' => 4715,
             'sentence' => 'The bride looked {{blank}} in her carefully designed wedding dress.',
             'blank_word' => 'gorgeous',
-            'translation' => '新娘穿著精心設計的婚紗，看起來華麗極了。',
             'distractors' => [
                 ['vocabulary_id' => 4711, 'word' => 'wig'],
                 ['vocabulary_id' => 4712, 'word' => 'gravity'],
@@ -9470,7 +8755,6 @@ return [
             'vocabulary_id' => 4716,
             'sentence' => 'A narrow river flows through the deep {{blank}} between the mountains.',
             'blank_word' => 'gorge',
-            'translation' => '一條狹窄的河流穿過山脈之間的深峽谷。',
             'distractors' => [
                 ['vocabulary_id' => 4711, 'word' => 'wig'],
                 ['vocabulary_id' => 4712, 'word' => 'gravity'],
@@ -9484,7 +8768,6 @@ return [
             'vocabulary_id' => 4717,
             'sentence' => 'The boy tried to {{blank}} the broken vase behind the curtain.',
             'blank_word' => 'conceal',
-            'translation' => '那個男孩試圖把打破的花瓶藏在窗簾後面。',
             'distractors' => [
                 ['vocabulary_id' => 4716, 'word' => 'gorge'],
                 ['vocabulary_id' => 4719, 'word' => 'straighten'],
@@ -9497,7 +8780,6 @@ return [
             'vocabulary_id' => 4718,
             'sentence' => 'The city approved a new {{blank}} to provide affordable housing for young families.',
             'blank_word' => 'scheme',
-            'translation' => '市政府核准了一項為年輕家庭提供可負擔住房的新計畫。',
             'distractors' => [
                 ['vocabulary_id' => 4711, 'word' => 'wig'],
                 ['vocabulary_id' => 4712, 'word' => 'gravity'],
@@ -9511,7 +8793,6 @@ return [
             'vocabulary_id' => 4719,
             'sentence' => 'Please {{blank}} the picture before you leave the room.',
             'blank_word' => 'straighten',
-            'translation' => '請在離開房間前把那幅畫弄正。',
             'distractors' => [
                 ['vocabulary_id' => 4716, 'word' => 'gorge'],
                 ['vocabulary_id' => 4717, 'word' => 'conceal'],
@@ -9524,7 +8805,6 @@ return [
             'vocabulary_id' => 4720,
             'sentence' => 'A large {{blank}} sat quietly under the wet leaves after the rain.',
             'blank_word' => 'toad',
-            'translation' => '下雨後，一隻大蟾蜍靜靜地坐在潮濕的葉子下。',
             'distractors' => [
                 ['vocabulary_id' => 4711, 'word' => 'wig'],
                 ['vocabulary_id' => 4712, 'word' => 'gravity'],
@@ -9540,7 +8820,6 @@ return [
             'vocabulary_id' => 4721,
             'sentence' => 'The manager gave an {{blank}} of the team’s hard work.',
             'blank_word' => 'acknowledgement',
-            'translation' => '經理承認了團隊的辛勞。',
             'distractors' => [
                 ['vocabulary_id' => 4722, 'word' => 'curb'],
                 ['vocabulary_id' => 4723, 'word' => 'performer'],
@@ -9553,7 +8832,6 @@ return [
             'vocabulary_id' => 4722,
             'sentence' => 'The children sat on the {{blank}} and waited for the bus.',
             'blank_word' => 'curb',
-            'translation' => '孩子們坐在路邊等公車。',
             'distractors' => [
                 ['vocabulary_id' => 4721, 'word' => 'acknowledgement'],
                 ['vocabulary_id' => 4723, 'word' => 'performer'],
@@ -9567,7 +8845,6 @@ return [
             'vocabulary_id' => 4723,
             'sentence' => 'The talented {{blank}} received loud applause from the audience.',
             'blank_word' => 'performer',
-            'translation' => '那位才華洋溢的表演者獲得觀眾熱烈的掌聲。',
             'distractors' => [
                 ['vocabulary_id' => 4721, 'word' => 'acknowledgement'],
                 ['vocabulary_id' => 4722, 'word' => 'curb'],
@@ -9580,7 +8857,6 @@ return [
             'vocabulary_id' => 4724,
             'sentence' => 'The hospital uses {{blank}} equipment during emergencies.',
             'blank_word' => 'auxiliary',
-            'translation' => '這家醫院在緊急情況下使用輔助設備。',
             'distractors' => [
                 ['vocabulary_id' => 4727, 'word' => 'considerate'],
                 ['vocabulary_id' => 4728, 'word' => 'marine'],
@@ -9593,7 +8869,6 @@ return [
             'vocabulary_id' => 4725,
             'sentence' => 'A dolphin is a marine {{blank}} that breathes air.',
             'blank_word' => 'mammal',
-            'translation' => '海豚是一種需要呼吸空氣的海生哺乳類動物。',
             'distractors' => [
                 ['vocabulary_id' => 4721, 'word' => 'acknowledgement'],
                 ['vocabulary_id' => 4722, 'word' => 'curb'],
@@ -9606,7 +8881,6 @@ return [
             'vocabulary_id' => 4726,
             'sentence' => 'The store has enough {{blank}} to meet the holiday demand.',
             'blank_word' => 'stock',
-            'translation' => '這家商店有足夠的存貨來應付假日需求。',
             'distractors' => [
                 ['vocabulary_id' => 4721, 'word' => 'acknowledgement'],
                 ['vocabulary_id' => 4722, 'word' => 'curb'],
@@ -9619,7 +8893,6 @@ return [
             'vocabulary_id' => 4727,
             'sentence' => 'It was {{blank}} of Jason to lower the music while his neighbors were sleeping.',
             'blank_word' => 'considerate',
-            'translation' => '鄰居睡覺時，傑森把音樂轉小聲，真是很體諒他人。',
             'distractors' => [
                 ['vocabulary_id' => 4724, 'word' => 'auxiliary'],
                 ['vocabulary_id' => 4728, 'word' => 'marine'],
@@ -9632,7 +8905,6 @@ return [
             'vocabulary_id' => 4728,
             'sentence' => 'The researchers are studying {{blank}} life near the island.',
             'blank_word' => 'marine',
-            'translation' => '研究人員正在研究島嶼附近的海洋生物。',
             'distractors' => [
                 ['vocabulary_id' => 4724, 'word' => 'auxiliary'],
                 ['vocabulary_id' => 4727, 'word' => 'considerate'],
@@ -9645,7 +8917,6 @@ return [
             'vocabulary_id' => 4729,
             'sentence' => 'The restaurant serves tender {{blank}} with roasted vegetables.',
             'blank_word' => 'mutton',
-            'translation' => '這家餐廳供應搭配烤蔬菜的嫩羊肉。',
             'distractors' => [
                 ['vocabulary_id' => 4721, 'word' => 'acknowledgement'],
                 ['vocabulary_id' => 4722, 'word' => 'curb'],
@@ -9658,7 +8929,6 @@ return [
             'vocabulary_id' => 4730,
             'sentence' => 'The villagers {{blank}} when the missing child returned safely.',
             'blank_word' => 'rejoiced',
-            'translation' => '失蹤的孩子平安回來時，村民們都欣喜萬分。',
             'distractors' => [
                 ['vocabulary_id' => 4722, 'word' => 'curbed'],
                 ['vocabulary_id' => 4721, 'word' => 'acknowledgement'],
@@ -9673,7 +8943,6 @@ return [
             'vocabulary_id' => 4731,
             'sentence' => 'Farmers {{blank}} the wheat in early summer.',
             'blank_word' => 'reap',
-            'translation' => '農夫在初夏收割小麥。',
             'distractors' => [
                 ['vocabulary_id' => 4736, 'word' => 'impose'],
                 ['vocabulary_id' => 4738, 'word' => 'snatch'],
@@ -9686,7 +8955,6 @@ return [
             'vocabulary_id' => 4732,
             'sentence' => 'Only an {{blank}} would ignore such a clear warning.',
             'blank_word' => 'idiot',
-            'translation' => '只有白癡才會忽視如此明顯的警告。',
             'distractors' => [
                 ['vocabulary_id' => 4733, 'word' => 'mistress'],
                 ['vocabulary_id' => 4734, 'word' => 'grease'],
@@ -9698,7 +8966,6 @@ return [
             'vocabulary_id' => 4733,
             'sentence' => 'The {{blank}} of the house welcomed the guests into the dining room.',
             'blank_word' => 'mistress',
-            'translation' => '女主人歡迎客人進入餐廳。',
             'distractors' => [
                 ['vocabulary_id' => 4732, 'word' => 'idiot'],
                 ['vocabulary_id' => 4734, 'word' => 'grease'],
@@ -9710,7 +8977,6 @@ return [
             'vocabulary_id' => 4734,
             'sentence' => 'The mechanic wiped the {{blank}} from his hands with an old cloth.',
             'blank_word' => 'grease',
-            'translation' => '修理工用一塊舊布擦掉手上的油脂。',
             'distractors' => [
                 ['vocabulary_id' => 4732, 'word' => 'idiot'],
                 ['vocabulary_id' => 4733, 'word' => 'mistress'],
@@ -9722,7 +8988,6 @@ return [
             'vocabulary_id' => 4735,
             'sentence' => 'The company’s {{blank}} income increased by ten percent this year.',
             'blank_word' => 'gross',
-            'translation' => '這家公司今年的總收入增加了百分之十。',
             'distractors' => [
                 ['vocabulary_id' => 4737, 'word' => 'compassionate'],
                 ['vocabulary_id' => 4739, 'word' => 'barefoot'],
@@ -9735,7 +9000,6 @@ return [
             'vocabulary_id' => 4736,
             'sentence' => 'The government decided to {{blank}} a tax on imported goods.',
             'blank_word' => 'impose',
-            'translation' => '政府決定對進口貨品徵稅。',
             'distractors' => [
                 ['vocabulary_id' => 4731, 'word' => 'reap'],
                 ['vocabulary_id' => 4738, 'word' => 'snatch'],
@@ -9748,7 +9012,6 @@ return [
             'vocabulary_id' => 4737,
             'sentence' => 'The {{blank}} nurse comforted the frightened child.',
             'blank_word' => 'compassionate',
-            'translation' => '那位有同情心的護士安慰了受驚的孩子。',
             'distractors' => [
                 ['vocabulary_id' => 4735, 'word' => 'gross'],
                 ['vocabulary_id' => 4739, 'word' => 'barefoot'],
@@ -9761,7 +9024,6 @@ return [
             'vocabulary_id' => 4738,
             'sentence' => 'A thief tried to {{blank}} her purse, but she held on tightly.',
             'blank_word' => 'snatch',
-            'translation' => '小偷試圖奪走她的皮包，但她緊緊抓住不放。',
             'distractors' => [
                 ['vocabulary_id' => 4731, 'word' => 'reap'],
                 ['vocabulary_id' => 4732, 'word' => 'idiot'],
@@ -9775,7 +9037,6 @@ return [
             'vocabulary_id' => 4739,
             'sentence' => 'The children ran {{blank}} across the soft grass.',
             'blank_word' => 'barefoot',
-            'translation' => '孩子們赤腳跑過柔軟的草地。',
             'distractors' => [
                 ['vocabulary_id' => 4735, 'word' => 'gross'],
                 ['vocabulary_id' => 4737, 'word' => 'compassionate'],
@@ -9788,7 +9049,6 @@ return [
             'vocabulary_id' => 4740,
             'sentence' => 'Saying that the task took a hundred hours is an {{blank}}.',
             'blank_word' => 'exaggeration',
-            'translation' => '說這項任務花了整整一百個小時是一種誇張的說法。',
             'distractors' => [
                 ['vocabulary_id' => 4732, 'word' => 'idiot'],
                 ['vocabulary_id' => 4733, 'word' => 'mistress'],
@@ -9802,7 +9062,6 @@ return [
             'vocabulary_id' => 4741,
             'sentence' => 'My brother enjoys crowded parties, {{blank}} I prefer quiet evenings at home.',
             'blank_word' => 'whereas',
-            'translation' => '我哥哥喜歡熱鬧的聚會，然而我比較喜歡在家度過安靜的夜晚。',
             'distractors' => [
                 ['vocabulary_id' => 4742, 'word' => 'despise'],
                 ['vocabulary_id' => 4743, 'word' => 'peek'],
@@ -9815,7 +9074,6 @@ return [
             'vocabulary_id' => 4742,
             'sentence' => 'She {{blank}} people who treat animals cruelly.',
             'blank_word' => 'despises',
-            'translation' => '她輕視那些殘忍對待動物的人。',
             'distractors' => [
                 ['vocabulary_id' => 4743, 'word' => 'peeks'],
                 ['vocabulary_id' => 4744, 'word' => 'rallies'],
@@ -9827,7 +9085,6 @@ return [
             'vocabulary_id' => 4743,
             'sentence' => 'The child took a quick {{blank}} through the keyhole.',
             'blank_word' => 'peek',
-            'translation' => '那個孩子快速地從鑰匙孔偷看了一下。',
             'distractors' => [
                 ['vocabulary_id' => 4742, 'word' => 'despise'],
                 ['vocabulary_id' => 4744, 'word' => 'rally'],
@@ -9841,7 +9098,6 @@ return [
             'vocabulary_id' => 4744,
             'sentence' => 'The team {{blank}} after losing the first two games and won the championship.',
             'blank_word' => 'rallied',
-            'translation' => '這支隊伍在輸掉前兩場比賽後重整旗鼓，贏得了冠軍。',
             'distractors' => [
                 ['vocabulary_id' => 4742, 'word' => 'despised'],
                 ['vocabulary_id' => 4743, 'word' => 'peeked'],
@@ -9853,7 +9109,6 @@ return [
             'vocabulary_id' => 4745,
             'sentence' => 'The {{blank}} spoke to the sailors before the ship left the harbor.',
             'blank_word' => 'admiral',
-            'translation' => '海軍上將在船隻離港前向水手們致詞。',
             'distractors' => [
                 ['vocabulary_id' => 4743, 'word' => 'peek'],
                 ['vocabulary_id' => 4744, 'word' => 'rally'],
@@ -9867,7 +9122,6 @@ return [
             'vocabulary_id' => 4746,
             'sentence' => 'The hospital provided a {{blank}} for the injured visitor.',
             'blank_word' => 'wheelchair',
-            'translation' => '醫院為受傷的訪客提供了一張輪椅。',
             'distractors' => [
                 ['vocabulary_id' => 4743, 'word' => 'peek'],
                 ['vocabulary_id' => 4744, 'word' => 'rally'],
@@ -9881,7 +9135,6 @@ return [
             'vocabulary_id' => 4747,
             'sentence' => 'The cat began to {{blank}} when it heard a strange noise.',
             'blank_word' => 'crouch',
-            'translation' => '那隻貓聽到奇怪的聲音時開始蹲伏。',
             'distractors' => [
                 ['vocabulary_id' => 4742, 'word' => 'despise'],
                 ['vocabulary_id' => 4743, 'word' => 'peek'],
@@ -9895,7 +9148,6 @@ return [
             'vocabulary_id' => 4748,
             'sentence' => 'The {{blank}} in the garden fills the air with a sweet fragrance.',
             'blank_word' => 'jasmine',
-            'translation' => '花園裡的茉莉讓空氣中充滿甜美的香氣。',
             'distractors' => [
                 ['vocabulary_id' => 4743, 'word' => 'peek'],
                 ['vocabulary_id' => 4744, 'word' => 'rally'],
@@ -9909,7 +9161,6 @@ return [
             'vocabulary_id' => 4749,
             'sentence' => 'We caught a large {{blank}} in the clear mountain stream.',
             'blank_word' => 'trout',
-            'translation' => '我們在清澈的山間溪流中抓到了一條大鱒魚。',
             'distractors' => [
                 ['vocabulary_id' => 4743, 'word' => 'peek'],
                 ['vocabulary_id' => 4744, 'word' => 'rally'],
@@ -9923,7 +9174,6 @@ return [
             'vocabulary_id' => 4750,
             'sentence' => 'The scientist used new evidence to {{blank}} the false claim.',
             'blank_word' => 'refute',
-            'translation' => '那位科學家利用新的證據駁斥了這項錯誤的說法。',
             'distractors' => [
                 ['vocabulary_id' => 4742, 'word' => 'despise'],
                 ['vocabulary_id' => 4743, 'word' => 'peek'],
@@ -9937,7 +9187,6 @@ return [
             'vocabulary_id' => 4751,
             'sentence' => 'Please hold the {{blank}} while walking down the wet stairs.',
             'blank_word' => 'rail',
-            'translation' => '走下濕滑的樓梯時，請握住扶手。',
             'distractors' => [
                 ['vocabulary_id' => 4752, 'word' => 'boyhood'],
                 ['vocabulary_id' => 4756, 'word' => 'herb'],
@@ -9950,7 +9199,6 @@ return [
             'vocabulary_id' => 4752,
             'sentence' => 'He often tells stories about his {{blank}} in the countryside.',
             'blank_word' => 'boyhood',
-            'translation' => '他常常講述自己在鄉下度過的少年時期。',
             'distractors' => [
                 ['vocabulary_id' => 4751, 'word' => 'rail'],
                 ['vocabulary_id' => 4756, 'word' => 'herb'],
@@ -9963,7 +9211,6 @@ return [
             'vocabulary_id' => 4753,
             'sentence' => 'The report includes {{blank}} data about changes in the population.',
             'blank_word' => 'statistical',
-            'translation' => '這份報告包含有關人口變化的統計數字。',
             'distractors' => [
                 ['vocabulary_id' => 4754, 'word' => 'hoarse'],
                 ['vocabulary_id' => 4755, 'word' => 'clockwise'],
@@ -9976,7 +9223,6 @@ return [
             'vocabulary_id' => 4754,
             'sentence' => 'After shouting at the game, my voice became {{blank}}.',
             'blank_word' => 'hoarse',
-            'translation' => '在比賽中大喊之後，我的聲音變得沙啞。',
             'distractors' => [
                 ['vocabulary_id' => 4753, 'word' => 'statistical'],
                 ['vocabulary_id' => 4755, 'word' => 'clockwise'],
@@ -9989,7 +9235,6 @@ return [
             'vocabulary_id' => 4755,
             'sentence' => 'Turn the handle {{blank}} to open the door.',
             'blank_word' => 'clockwise',
-            'translation' => '順時針轉動把手即可開門。',
             'distractors' => [
                 ['vocabulary_id' => 4753, 'word' => 'statistical'],
                 ['vocabulary_id' => 4754, 'word' => 'hoarse'],
@@ -10002,7 +9247,6 @@ return [
             'vocabulary_id' => 4756,
             'sentence' => 'This {{blank}} is often used to soothe an upset stomach.',
             'blank_word' => 'herb',
-            'translation' => '這種藥草常被用來舒緩胃部不適。',
             'distractors' => [
                 ['vocabulary_id' => 4751, 'word' => 'rail'],
                 ['vocabulary_id' => 4752, 'word' => 'boyhood'],
@@ -10015,7 +9259,6 @@ return [
             'vocabulary_id' => 4757,
             'sentence' => 'The rabbit {{blank}} across the road when it heard the car.',
             'blank_word' => 'darted',
-            'translation' => '兔子聽到汽車聲後，猛衝過馬路。',
             'distractors' => [
                 ['vocabulary_id' => 4751, 'word' => 'rail'],
                 ['vocabulary_id' => 4752, 'word' => 'boyhood'],
@@ -10028,7 +9271,6 @@ return [
             'vocabulary_id' => 4758,
             'sentence' => 'The {{blank}} punished anyone who dared to criticize him.',
             'blank_word' => 'tyrant',
-            'translation' => '那名暴君懲罰任何敢於批評他的人。',
             'distractors' => [
                 ['vocabulary_id' => 4751, 'word' => 'rail'],
                 ['vocabulary_id' => 4752, 'word' => 'boyhood'],
@@ -10041,7 +9283,6 @@ return [
             'vocabulary_id' => 4759,
             'sentence' => 'The company gave every employee a {{blank}} at the end of the year.',
             'blank_word' => 'bonus',
-            'translation' => '公司在年底給每位員工一筆紅利。',
             'distractors' => [
                 ['vocabulary_id' => 4751, 'word' => 'rail'],
                 ['vocabulary_id' => 4752, 'word' => 'boyhood'],
@@ -10054,7 +9295,6 @@ return [
             'vocabulary_id' => 4760,
             'sentence' => 'The old {{blank}} at the harbor helped us carry the heavy boxes.',
             'blank_word' => 'jack',
-            'translation' => '港口那位老水手幫我們搬運沉重的箱子。',
             'distractors' => [
                 ['vocabulary_id' => 4751, 'word' => 'rail'],
                 ['vocabulary_id' => 4752, 'word' => 'boyhood'],
@@ -10069,7 +9309,6 @@ return [
             'vocabulary_id' => 4761,
             'sentence' => 'His {{blank}} understanding of the issue led him to make a poor decision.',
             'blank_word' => 'superficial',
-            'translation' => '他對這個問題膚淺的了解，導致他做出糟糕的決定。',
             'distractors' => [
                 ['vocabulary_id' => 4762, 'word' => 'federal'],
                 ['vocabulary_id' => 4767, 'word' => 'structural'],
@@ -10080,7 +9319,6 @@ return [
             'vocabulary_id' => 4762,
             'sentence' => 'The {{blank}} government provides funding for disaster relief.',
             'blank_word' => 'federal',
-            'translation' => '聯邦政府為災害救援提供資金。',
             'distractors' => [
                 ['vocabulary_id' => 4761, 'word' => 'superficial'],
                 ['vocabulary_id' => 4767, 'word' => 'structural'],
@@ -10091,7 +9329,6 @@ return [
             'vocabulary_id' => 4763,
             'sentence' => 'A herd of horses was running across the wide {{blank}}.',
             'blank_word' => 'prairie',
-            'translation' => '一群馬正在遼闊的大草原上奔跑。',
             'distractors' => [
                 ['vocabulary_id' => 4765, 'word' => 'blaze'],
                 ['vocabulary_id' => 4766, 'word' => 'sniff'],
@@ -10103,7 +9340,6 @@ return [
             'vocabulary_id' => 4764,
             'sentence' => 'The team must {{blank}} several difficult problems before the project can succeed.',
             'blank_word' => 'confront',
-            'translation' => '這個團隊必須面臨幾個難題，專案才可能成功。',
             'distractors' => [
                 ['vocabulary_id' => 4766, 'word' => 'sniff'],
                 ['vocabulary_id' => 4761, 'word' => 'superficial'],
@@ -10116,7 +9352,6 @@ return [
             'vocabulary_id' => 4765,
             'sentence' => 'The firefighters worked through the night to control the fierce {{blank}}.',
             'blank_word' => 'blaze',
-            'translation' => '消防員徹夜工作，以控制猛烈的火勢。',
             'distractors' => [
                 ['vocabulary_id' => 4763, 'word' => 'prairie'],
                 ['vocabulary_id' => 4766, 'word' => 'sniff'],
@@ -10128,7 +9363,6 @@ return [
             'vocabulary_id' => 4766,
             'sentence' => 'The dog {{blank}} the bag carefully before sitting beside it.',
             'blank_word' => 'sniffed',
-            'translation' => '那隻狗仔細地嗅了嗅袋子，才坐在袋子旁邊。',
             'distractors' => [
                 ['vocabulary_id' => 4764, 'word' => 'confronted'],
                 ['vocabulary_id' => 4761, 'word' => 'superficial'],
@@ -10141,7 +9375,6 @@ return [
             'vocabulary_id' => 4767,
             'sentence' => 'Engineers found {{blank}} damage in the old bridge after the earthquake.',
             'blank_word' => 'structural',
-            'translation' => '地震後，工程師在那座老橋上發現了結構損壞。',
             'distractors' => [
                 ['vocabulary_id' => 4761, 'word' => 'superficial'],
                 ['vocabulary_id' => 4762, 'word' => 'federal'],
@@ -10152,7 +9385,6 @@ return [
             'vocabulary_id' => 4768,
             'sentence' => 'The plant has a thick {{blank}} that supports its large leaves.',
             'blank_word' => 'stalk',
-            'translation' => '這株植物有一根粗莖，支撐著它的大葉子。',
             'distractors' => [
                 ['vocabulary_id' => 4763, 'word' => 'prairie'],
                 ['vocabulary_id' => 4765, 'word' => 'blaze'],
@@ -10164,7 +9396,6 @@ return [
             'vocabulary_id' => 4769,
             'sentence' => 'The soldiers developed a strong sense of {{blank}} during their training.',
             'blank_word' => 'brotherhood',
-            'translation' => '那些士兵在訓練期間培養了深厚的兄弟情誼。',
             'distractors' => [
                 ['vocabulary_id' => 4763, 'word' => 'prairie'],
                 ['vocabulary_id' => 4765, 'word' => 'blaze'],
@@ -10176,7 +9407,6 @@ return [
             'vocabulary_id' => 4770,
             'sentence' => 'Mia is {{blank}} to peanuts, so she always checks the ingredients carefully.',
             'blank_word' => 'allergic',
-            'translation' => '米雅對花生過敏，所以她總是仔細查看成分。',
             'distractors' => [
                 ['vocabulary_id' => 4761, 'word' => 'superficial'],
                 ['vocabulary_id' => 4762, 'word' => 'federal'],
@@ -10189,7 +9419,6 @@ return [
             'vocabulary_id' => 4771,
             'sentence' => 'A delivery box was left in the {{blank}} of our apartment.',
             'blank_word' => 'doorway',
-            'translation' => '一個包裹箱被放在我們公寓的出入口。',
             'distractors' => [
                 ['vocabulary_id' => 4773, 'word' => 'stoop'],
                 ['vocabulary_id' => 4775, 'word' => 'organizer'],
@@ -10203,7 +9432,6 @@ return [
             'vocabulary_id' => 4772,
             'sentence' => 'The children spent a {{blank}} afternoon playing by the river.',
             'blank_word' => 'carefree',
-            'translation' => '孩子們在河邊度過了一個無憂無慮的午後。',
             'distractors' => [
                 ['vocabulary_id' => 4774, 'word' => 'vigorous'],
                 ['vocabulary_id' => 4771, 'word' => 'doorway'],
@@ -10216,7 +9444,6 @@ return [
             'vocabulary_id' => 4773,
             'sentence' => 'You may hurt your back if you {{blank}} for too long.',
             'blank_word' => 'stoop',
-            'translation' => '如果你彎身太久，可能會傷到背部。',
             'distractors' => [
                 ['vocabulary_id' => 4771, 'word' => 'doorway'],
                 ['vocabulary_id' => 4775, 'word' => 'organizer'],
@@ -10230,7 +9457,6 @@ return [
             'vocabulary_id' => 4774,
             'sentence' => 'She takes a {{blank}} walk every morning to stay healthy.',
             'blank_word' => 'vigorous',
-            'translation' => '她每天早上快步健走，以保持健康與活力。',
             'distractors' => [
                 ['vocabulary_id' => 4772, 'word' => 'carefree'],
                 ['vocabulary_id' => 4771, 'word' => 'doorway'],
@@ -10243,7 +9469,6 @@ return [
             'vocabulary_id' => 4775,
             'sentence' => 'The {{blank}} of the charity event thanked all the volunteers.',
             'blank_word' => 'organizer',
-            'translation' => '這場慈善活動的組織者向所有志工致謝。',
             'distractors' => [
                 ['vocabulary_id' => 4771, 'word' => 'doorway'],
                 ['vocabulary_id' => 4773, 'word' => 'stoop'],
@@ -10257,7 +9482,6 @@ return [
             'vocabulary_id' => 4776,
             'sentence' => 'He pressed the camera {{blank}} just as the bird spread its wings.',
             'blank_word' => 'shutter',
-            'translation' => '就在那隻鳥張開翅膀時，他按下了相機快門。',
             'distractors' => [
                 ['vocabulary_id' => 4771, 'word' => 'doorway'],
                 ['vocabulary_id' => 4773, 'word' => 'stoop'],
@@ -10271,7 +9495,6 @@ return [
             'vocabulary_id' => 4777,
             'sentence' => 'The {{blank}} prepared fresh cuts of beef for the customers.',
             'blank_word' => 'butcher',
-            'translation' => '肉販為顧客準備了新鮮的牛肉切片。',
             'distractors' => [
                 ['vocabulary_id' => 4771, 'word' => 'doorway'],
                 ['vocabulary_id' => 4773, 'word' => 'stoop'],
@@ -10285,7 +9508,6 @@ return [
             'vocabulary_id' => 4778,
             'sentence' => 'The musician played a lively tune on his {{blank}}.',
             'blank_word' => 'fiddle',
-            'translation' => '那位音樂家用小提琴演奏了一首活潑的曲子。',
             'distractors' => [
                 ['vocabulary_id' => 4771, 'word' => 'doorway'],
                 ['vocabulary_id' => 4773, 'word' => 'stoop'],
@@ -10299,7 +9521,6 @@ return [
             'vocabulary_id' => 4779,
             'sentence' => 'The {{blank}} of usable clothing creates unnecessary waste.',
             'blank_word' => 'discard',
-            'translation' => '丟棄仍可使用的衣物會造成不必要的浪費。',
             'distractors' => [
                 ['vocabulary_id' => 4771, 'word' => 'doorway'],
                 ['vocabulary_id' => 4773, 'word' => 'stoop'],
@@ -10313,7 +9534,6 @@ return [
             'vocabulary_id' => 4780,
             'sentence' => 'The police are still trying to discover the missing man\'s {{blank}}.',
             'blank_word' => 'whereabouts',
-            'translation' => '警方仍在試圖查明那名失蹤男子的下落。',
             'distractors' => [
                 ['vocabulary_id' => 4771, 'word' => 'doorway'],
                 ['vocabulary_id' => 4773, 'word' => 'stoop'],
@@ -10329,7 +9549,6 @@ return [
             'vocabulary_id' => 4781,
             'sentence' => 'She carried a {{blank}} of milk home from the supermarket.',
             'blank_word' => 'carton',
-            'translation' => '她從超市提了一盒牛奶回家。',
             'distractors' => [
                 ['vocabulary_id' => 4782, 'word' => 'mansion'],
                 ['vocabulary_id' => 4783, 'word' => 'lime'],
@@ -10343,7 +9562,6 @@ return [
             'vocabulary_id' => 4782,
             'sentence' => 'The wealthy family lives in a large {{blank}} near the coast.',
             'blank_word' => 'mansion',
-            'translation' => '那個富有的家庭住在海邊附近的一棟大型府邸裡。',
             'distractors' => [
                 ['vocabulary_id' => 4781, 'word' => 'carton'],
                 ['vocabulary_id' => 4783, 'word' => 'lime'],
@@ -10357,7 +9575,6 @@ return [
             'vocabulary_id' => 4783,
             'sentence' => 'The workers mixed {{blank}} with water to make mortar.',
             'blank_word' => 'lime',
-            'translation' => '工人將石灰和水混合製作砂漿。',
             'distractors' => [
                 ['vocabulary_id' => 4781, 'word' => 'carton'],
                 ['vocabulary_id' => 4782, 'word' => 'mansion'],
@@ -10371,7 +9588,6 @@ return [
             'vocabulary_id' => 4784,
             'sentence' => 'The girl tied a blue ribbon around her long {{blank}}.',
             'blank_word' => 'braid',
-            'translation' => '那個女孩在她的長辮子上綁了一條藍色緞帶。',
             'distractors' => [
                 ['vocabulary_id' => 4781, 'word' => 'carton'],
                 ['vocabulary_id' => 4782, 'word' => 'mansion'],
@@ -10385,7 +9601,6 @@ return [
             'vocabulary_id' => 4785,
             'sentence' => 'The director worked hard to maintain {{blank}} between the two films.',
             'blank_word' => 'continuity',
-            'translation' => '導演努力維持兩部電影之間的連貫性。',
             'distractors' => [
                 ['vocabulary_id' => 4781, 'word' => 'carton'],
                 ['vocabulary_id' => 4782, 'word' => 'mansion'],
@@ -10399,7 +9614,6 @@ return [
             'vocabulary_id' => 4786,
             'sentence' => 'The editor had to {{blank}} several unnecessary paragraphs from the report.',
             'blank_word' => 'prune',
-            'translation' => '編輯必須刪除報告中幾段不必要的文字。',
             'distractors' => [
                 ['vocabulary_id' => 4787, 'word' => 'graze'],
                 ['vocabulary_id' => 4781, 'word' => 'carton'],
@@ -10412,7 +9626,6 @@ return [
             'vocabulary_id' => 4787,
             'sentence' => 'The horses {{blank}} quietly in the field every morning.',
             'blank_word' => 'graze',
-            'translation' => '那些馬每天早上都在田野裡安靜地吃草。',
             'distractors' => [
                 ['vocabulary_id' => 4781, 'word' => 'carton'],
                 ['vocabulary_id' => 4782, 'word' => 'mansion'],
@@ -10426,7 +9639,6 @@ return [
             'vocabulary_id' => 4788,
             'sentence' => 'It is {{blank}} to use a calculator during this part of the test.',
             'blank_word' => 'permissible',
-            'translation' => '在測驗的這個部分使用計算機是可以允許的。',
             'distractors' => [
                 ['vocabulary_id' => 4781, 'word' => 'carton'],
                 ['vocabulary_id' => 4782, 'word' => 'mansion'],
@@ -10439,7 +9651,6 @@ return [
             'vocabulary_id' => 4789,
             'sentence' => 'The runner injured his {{blank}} during the final lap.',
             'blank_word' => 'thigh',
-            'translation' => '那名跑者在最後一圈時弄傷了大腿。',
             'distractors' => [
                 ['vocabulary_id' => 4781, 'word' => 'carton'],
                 ['vocabulary_id' => 4782, 'word' => 'mansion'],
@@ -10453,7 +9664,6 @@ return [
             'vocabulary_id' => 4790,
             'sentence' => 'The safety {{blank}} requires all workers to wear protective helmets.',
             'blank_word' => 'guideline',
-            'translation' => '安全準則要求所有工人都必須戴防護頭盔。',
             'distractors' => [
                 ['vocabulary_id' => 4781, 'word' => 'carton'],
                 ['vocabulary_id' => 4782, 'word' => 'mansion'],
@@ -10469,7 +9679,6 @@ return [
             'vocabulary_id' => 4791,
             'sentence' => 'The committee developed a {{blank}} for improving public transportation.',
             'blank_word' => 'framework',
-            'translation' => '委員會建立了一套改善大眾運輸的架構。',
             'distractors' => [
                 ['vocabulary_id' => 4792, 'word' => 'scandal'],
                 ['vocabulary_id' => 4793, 'word' => 'rifle'],
@@ -10483,7 +9692,6 @@ return [
             'vocabulary_id' => 4792,
             'sentence' => 'The political {{blank}} damaged the minister\'s reputation.',
             'blank_word' => 'scandal',
-            'translation' => '這起政治醜聞損害了部長的聲譽。',
             'distractors' => [
                 ['vocabulary_id' => 4791, 'word' => 'framework'],
                 ['vocabulary_id' => 4793, 'word' => 'rifle'],
@@ -10497,7 +9705,6 @@ return [
             'vocabulary_id' => 4793,
             'sentence' => 'The soldier carefully cleaned his {{blank}} after the training exercise.',
             'blank_word' => 'rifle',
-            'translation' => '那名士兵在訓練演習後仔細地清潔他的步槍。',
             'distractors' => [
                 ['vocabulary_id' => 4791, 'word' => 'framework'],
                 ['vocabulary_id' => 4792, 'word' => 'scandal'],
@@ -10511,7 +9718,6 @@ return [
             'vocabulary_id' => 4794,
             'sentence' => 'The {{blank}} was released after serving ten years in prison.',
             'blank_word' => 'convict',
-            'translation' => '那名已定罪的犯人在監獄服刑十年後獲釋。',
             'distractors' => [
                 ['vocabulary_id' => 4791, 'word' => 'framework'],
                 ['vocabulary_id' => 4792, 'word' => 'scandal'],
@@ -10525,7 +9731,6 @@ return [
             'vocabulary_id' => 4795,
             'sentence' => 'The scientist measured the {{blank}} of the circular pond.',
             'blank_word' => 'radius',
-            'translation' => '科學家測量了圓形池塘的半徑。',
             'distractors' => [
                 ['vocabulary_id' => 4791, 'word' => 'framework'],
                 ['vocabulary_id' => 4792, 'word' => 'scandal'],
@@ -10539,7 +9744,6 @@ return [
             'vocabulary_id' => 4796,
             'sentence' => 'Warm {{blank}} rose from the cup of tea.',
             'blank_word' => 'vapor',
-            'translation' => '溫熱的蒸氣從那杯茶上升起。',
             'distractors' => [
                 ['vocabulary_id' => 4791, 'word' => 'framework'],
                 ['vocabulary_id' => 4792, 'word' => 'scandal'],
@@ -10553,7 +9757,6 @@ return [
             'vocabulary_id' => 4797,
             'sentence' => 'The online {{blank}} arrived three days after I placed the order.',
             'blank_word' => 'purchase',
-            'translation' => '我下單後三天，網路購買的商品就送到了。',
             'distractors' => [
                 ['vocabulary_id' => 4791, 'word' => 'framework'],
                 ['vocabulary_id' => 4792, 'word' => 'scandal'],
@@ -10567,7 +9770,6 @@ return [
             'vocabulary_id' => 4798,
             'sentence' => 'The restaurant is famous for its grilled {{blank}}.',
             'blank_word' => 'eel',
-            'translation' => '這家餐廳以烤鰻魚聞名。',
             'distractors' => [
                 ['vocabulary_id' => 4791, 'word' => 'framework'],
                 ['vocabulary_id' => 4792, 'word' => 'scandal'],
@@ -10581,7 +9783,6 @@ return [
             'vocabulary_id' => 4799,
             'sentence' => 'The two teams will {{blank}} for the championship next weekend.',
             'blank_word' => 'contend',
-            'translation' => '這兩支隊伍將在下週末競爭冠軍。',
             'distractors' => [
                 ['vocabulary_id' => 4797, 'word' => 'purchase'],
                 ['vocabulary_id' => 4791, 'word' => 'framework'],
@@ -10594,7 +9795,6 @@ return [
             'vocabulary_id' => 4800,
             'sentence' => 'The {{blank}} addressed the troops before the mission began.',
             'blank_word' => 'colonel',
-            'translation' => '任務開始前，上校向部隊發表談話。',
             'distractors' => [
                 ['vocabulary_id' => 4791, 'word' => 'framework'],
                 ['vocabulary_id' => 4792, 'word' => 'scandal'],
@@ -10610,7 +9810,6 @@ return [
             'vocabulary_id' => 4801,
             'sentence' => 'The {{blank}} of the flight is about three hours.',
             'blank_word' => 'duration',
-            'translation' => '這趟航班的持續時間約為三小時。',
             'distractors' => [
                 ['vocabulary_id' => 4802, 'word' => 'resident'],
                 ['vocabulary_id' => 4803, 'word' => 'pulse'],
@@ -10624,7 +9823,6 @@ return [
             'vocabulary_id' => 4802,
             'sentence' => 'Every {{blank}} of the building must follow the safety rules.',
             'blank_word' => 'resident',
-            'translation' => '這棟大樓的每位居民都必須遵守安全規定。',
             'distractors' => [
                 ['vocabulary_id' => 4801, 'word' => 'duration'],
                 ['vocabulary_id' => 4803, 'word' => 'pulse'],
@@ -10638,7 +9836,6 @@ return [
             'vocabulary_id' => 4803,
             'sentence' => 'The nurse checked the patient’s {{blank}} after the accident.',
             'blank_word' => 'pulse',
-            'translation' => '護士在事故後檢查病人的脈搏。',
             'distractors' => [
                 ['vocabulary_id' => 4801, 'word' => 'duration'],
                 ['vocabulary_id' => 4802, 'word' => 'resident'],
@@ -10652,7 +9849,6 @@ return [
             'vocabulary_id' => 4804,
             'sentence' => 'Regular {{blank}} helps keep the machine working properly.',
             'blank_word' => 'maintenance',
-            'translation' => '定期維護有助於讓機器正常運作。',
             'distractors' => [
                 ['vocabulary_id' => 4801, 'word' => 'duration'],
                 ['vocabulary_id' => 4802, 'word' => 'resident'],
@@ -10666,7 +9862,6 @@ return [
             'vocabulary_id' => 4805,
             'sentence' => 'The farmer used a {{blank}} to prepare the field for planting.',
             'blank_word' => 'plow',
-            'translation' => '農夫使用犁來整理田地，以便播種。',
             'distractors' => [
                 ['vocabulary_id' => 4801, 'word' => 'duration'],
                 ['vocabulary_id' => 4802, 'word' => 'resident'],
@@ -10680,7 +9875,6 @@ return [
             'vocabulary_id' => 4806,
             'sentence' => 'My grandmother added fresh {{blank}} to the soup.',
             'blank_word' => 'squash',
-            'translation' => '我祖母在湯裡加入了新鮮的夏南瓜。',
             'distractors' => [
                 ['vocabulary_id' => 4801, 'word' => 'duration'],
                 ['vocabulary_id' => 4802, 'word' => 'resident'],
@@ -10694,7 +9888,6 @@ return [
             'vocabulary_id' => 4807,
             'sentence' => 'The children {{blank}} across the shallow stream.',
             'blank_word' => 'waded',
-            'translation' => '孩子們涉水渡過了那條淺溪。',
             'distractors' => [
                 ['vocabulary_id' => 4805, 'word' => 'plowed'],
                 ['vocabulary_id' => 4801, 'word' => 'duration'],
@@ -10707,7 +9900,6 @@ return [
             'vocabulary_id' => 4808,
             'sentence' => 'The soldier raised his {{blank}} to protect himself from the arrows.',
             'blank_word' => 'shield',
-            'translation' => '那名士兵舉起盾牌，保護自己不被箭射中。',
             'distractors' => [
                 ['vocabulary_id' => 4801, 'word' => 'duration'],
                 ['vocabulary_id' => 4802, 'word' => 'resident'],
@@ -10721,7 +9913,6 @@ return [
             'vocabulary_id' => 4809,
             'sentence' => 'In the old story, the villagers feared that a {{blank}} might attack their town.',
             'blank_word' => 'barbarian',
-            'translation' => '在那則古老的故事中，村民害怕野蠻人可能會攻擊他們的城鎮。',
             'distractors' => [
                 ['vocabulary_id' => 4801, 'word' => 'duration'],
                 ['vocabulary_id' => 4802, 'word' => 'resident'],
@@ -10735,7 +9926,6 @@ return [
             'vocabulary_id' => 4810,
             'sentence' => 'The survey asked whether each participant was {{blank}}, homosexual, or bisexual.',
             'blank_word' => 'heterosexual',
-            'translation' => '這份問卷詢問每位參與者是異性戀、同性戀還是雙性戀。',
             'distractors' => [
                 ['vocabulary_id' => 4801, 'word' => 'duration'],
                 ['vocabulary_id' => 4802, 'word' => 'resident'],
@@ -10750,7 +9940,6 @@ return [
             'vocabulary_id' => 4811,
             'sentence' => 'The doors are {{blank}} now that the new locks have been installed.',
             'blank_word' => 'secure',
-            'translation' => '新鎖安裝好後，這些門現在很安全。',
             'distractors' => [
                 ['vocabulary_id' => 4812, 'word' => 'indulge'],
                 ['vocabulary_id' => 4814, 'word' => 'lessen'],
@@ -10764,7 +9953,6 @@ return [
             'vocabulary_id' => 4812,
             'sentence' => 'The parents sometimes {{blank}} their child by allowing him to stay up late.',
             'blank_word' => 'indulge',
-            'translation' => '這對父母有時會縱容孩子，允許他晚睡。',
             'distractors' => [
                 ['vocabulary_id' => 4811, 'word' => 'secure'],
                 ['vocabulary_id' => 4814, 'word' => 'lessen'],
@@ -10778,7 +9966,6 @@ return [
             'vocabulary_id' => 4813,
             'sentence' => 'The {{blank}} worked hard to grow enough rice for his family.',
             'blank_word' => 'peasant',
-            'translation' => '那名佃農努力耕作，種出足夠全家食用的稻米。',
             'distractors' => [
                 ['vocabulary_id' => 4815, 'word' => 'gasp'],
                 ['vocabulary_id' => 4816, 'word' => 'stake'],
@@ -10790,7 +9977,6 @@ return [
             'vocabulary_id' => 4814,
             'sentence' => 'Planting more trees can {{blank}} the effects of air pollution.',
             'blank_word' => 'lessen',
-            'translation' => '種植更多樹木可以減少空氣污染的影響。',
             'distractors' => [
                 ['vocabulary_id' => 4811, 'word' => 'secure'],
                 ['vocabulary_id' => 4812, 'word' => 'indulge'],
@@ -10804,7 +9990,6 @@ return [
             'vocabulary_id' => 4815,
             'sentence' => 'She gave a {{blank}} when she saw the large spider on the wall.',
             'blank_word' => 'gasp',
-            'translation' => '她看到牆上的大蜘蛛時，倒抽了一口氣。',
             'distractors' => [
                 ['vocabulary_id' => 4811, 'word' => 'secure'],
                 ['vocabulary_id' => 4812, 'word' => 'indulge'],
@@ -10818,7 +10003,6 @@ return [
             'vocabulary_id' => 4816,
             'sentence' => 'The safety of hundreds of passengers is at {{blank}}.',
             'blank_word' => 'stake',
-            'translation' => '數百名乘客的安全正處於危險之中。',
             'distractors' => [
                 ['vocabulary_id' => 4813, 'word' => 'peasant'],
                 ['vocabulary_id' => 4815, 'word' => 'gasp'],
@@ -10830,7 +10014,6 @@ return [
             'vocabulary_id' => 4817,
             'sentence' => '“What a beautiful view!” the tourist {{blank}}.',
             'blank_word' => 'exclaimed',
-            'translation' => '「景色真美！」那名遊客驚嘆道。',
             'distractors' => [
                 ['vocabulary_id' => 4811, 'word' => 'secured'],
                 ['vocabulary_id' => 4812, 'word' => 'indulged'],
@@ -10844,7 +10027,6 @@ return [
             'vocabulary_id' => 4818,
             'sentence' => 'He {{blank}} an apology and looked down at the floor.',
             'blank_word' => 'mumbled',
-            'translation' => '他咕噥著道歉，並低頭看著地板。',
             'distractors' => [
                 ['vocabulary_id' => 4811, 'word' => 'secured'],
                 ['vocabulary_id' => 4812, 'word' => 'indulged'],
@@ -10858,7 +10040,6 @@ return [
             'vocabulary_id' => 4819,
             'sentence' => 'The witness gave the police a {{blank}} description of the stranger.',
             'blank_word' => 'vague',
-            'translation' => '目擊者向警方提供了對那名陌生人的模糊描述。',
             'distractors' => [
                 ['vocabulary_id' => 4811, 'word' => 'secure'],
                 ['vocabulary_id' => 4812, 'word' => 'indulge'],
@@ -10871,7 +10052,6 @@ return [
             'vocabulary_id' => 4820,
             'sentence' => 'It is cruel to {{blank}} someone because of the way they speak.',
             'blank_word' => 'mock',
-            'translation' => '因為某人的說話方式而嘲笑他是很殘忍的。',
             'distractors' => [
                 ['vocabulary_id' => 4811, 'word' => 'secure'],
                 ['vocabulary_id' => 4812, 'word' => 'indulge'],
@@ -10887,7 +10067,6 @@ return [
             'vocabulary_id' => 4821,
             'sentence' => 'The designer {{blank}} the dress to make it more comfortable.',
             'blank_word' => 'modified',
-            'translation' => '設計師修改了這件洋裝，讓它穿起來更舒適。',
             'distractors' => [
                 ['vocabulary_id' => 4825, 'word' => 'howled'],
                 ['vocabulary_id' => 4827, 'word' => 'insured'],
@@ -10898,7 +10077,6 @@ return [
             'vocabulary_id' => 4822,
             'sentence' => 'In the {{blank}} of the storm, the fishermen returned to shore.',
             'blank_word' => 'midst',
-            'translation' => '在暴風雨當中，漁夫們回到了岸邊。',
             'distractors' => [
                 ['vocabulary_id' => 4823, 'word' => 'sermon'],
                 ['vocabulary_id' => 4824, 'word' => 'cannon'],
@@ -10912,7 +10090,6 @@ return [
             'vocabulary_id' => 4823,
             'sentence' => 'The priest gave a {{blank}} about kindness and forgiveness.',
             'blank_word' => 'sermon',
-            'translation' => '牧師進行了一場關於仁慈與寬恕的佈道。',
             'distractors' => [
                 ['vocabulary_id' => 4822, 'word' => 'midst'],
                 ['vocabulary_id' => 4824, 'word' => 'cannon'],
@@ -10926,7 +10103,6 @@ return [
             'vocabulary_id' => 4824,
             'sentence' => 'The old {{blank}} stood beside the entrance to the fort.',
             'blank_word' => 'cannon',
-            'translation' => '那門老式大砲矗立在堡壘入口旁。',
             'distractors' => [
                 ['vocabulary_id' => 4822, 'word' => 'midst'],
                 ['vocabulary_id' => 4823, 'word' => 'sermon'],
@@ -10940,7 +10116,6 @@ return [
             'vocabulary_id' => 4825,
             'sentence' => 'We heard the {{blank}} of a wolf in the forest.',
             'blank_word' => 'howl',
-            'translation' => '我們聽見森林裡傳來狼的號叫聲。',
             'distractors' => [
                 ['vocabulary_id' => 4821, 'word' => 'modify'],
                 ['vocabulary_id' => 4822, 'word' => 'midst'],
@@ -10954,7 +10129,6 @@ return [
             'vocabulary_id' => 4826,
             'sentence' => 'He threw a {{blank}} and hit the center of the board.',
             'blank_word' => 'dart',
-            'translation' => '他丟出一支飛鏢，擊中了靶子的中心。',
             'distractors' => [
                 ['vocabulary_id' => 4822, 'word' => 'midst'],
                 ['vocabulary_id' => 4823, 'word' => 'sermon'],
@@ -10968,7 +10142,6 @@ return [
             'vocabulary_id' => 4827,
             'sentence' => 'We {{blank}} our house against fire and earthquakes.',
             'blank_word' => 'insured',
-            'translation' => '我們為房子投保火災及地震險。',
             'distractors' => [
                 ['vocabulary_id' => 4821, 'word' => 'modified'],
                 ['vocabulary_id' => 4825, 'word' => 'howled'],
@@ -10979,7 +10152,6 @@ return [
             'vocabulary_id' => 4828,
             'sentence' => 'The ancient {{blank}} attracts thousands of visitors every year.',
             'blank_word' => 'cathedral',
-            'translation' => '這座古老的大教堂每年吸引數千名遊客。',
             'distractors' => [
                 ['vocabulary_id' => 4822, 'word' => 'midst'],
                 ['vocabulary_id' => 4823, 'word' => 'sermon'],
@@ -10993,7 +10165,6 @@ return [
             'vocabulary_id' => 4829,
             'sentence' => 'The workers {{blank}} the soil before laying the road.',
             'blank_word' => 'compacted',
-            'translation' => '工人在鋪設道路前把土壤壓緊。',
             'distractors' => [
                 ['vocabulary_id' => 4821, 'word' => 'modified'],
                 ['vocabulary_id' => 4825, 'word' => 'howled'],
@@ -11004,7 +10175,6 @@ return [
             'vocabulary_id' => 4830,
             'sentence' => 'The graduation {{blank}} will begin at ten o’clock.',
             'blank_word' => 'ceremony',
-            'translation' => '畢業典禮將在十點開始。',
             'distractors' => [
                 ['vocabulary_id' => 4822, 'word' => 'midst'],
                 ['vocabulary_id' => 4823, 'word' => 'sermon'],
@@ -11020,7 +10190,6 @@ return [
             'vocabulary_id' => 4831,
             'sentence' => 'I usually eat a bowl of warm {{blank}} for breakfast.',
             'blank_word' => 'oatmeal',
-            'translation' => '我通常早餐吃一碗熱燕麥粥。',
             'distractors' => [
                 ['vocabulary_id' => 4832, 'word' => 'crib'],
                 ['vocabulary_id' => 4833, 'word' => 'auditorium'],
@@ -11034,7 +10203,6 @@ return [
             'vocabulary_id' => 4832,
             'sentence' => 'The baby is sleeping peacefully in her {{blank}}.',
             'blank_word' => 'crib',
-            'translation' => '寶寶正在她的嬰兒床裡安詳地睡覺。',
             'distractors' => [
                 ['vocabulary_id' => 4831, 'word' => 'oatmeal'],
                 ['vocabulary_id' => 4833, 'word' => 'auditorium'],
@@ -11048,7 +10216,6 @@ return [
             'vocabulary_id' => 4833,
             'sentence' => 'The students gathered in the {{blank}} for the school concert.',
             'blank_word' => 'auditorium',
-            'translation' => '學生們聚集在禮堂參加學校音樂會。',
             'distractors' => [
                 ['vocabulary_id' => 4831, 'word' => 'oatmeal'],
                 ['vocabulary_id' => 4832, 'word' => 'crib'],
@@ -11062,7 +10229,6 @@ return [
             'vocabulary_id' => 4834,
             'sentence' => 'The team {{blank}} a plan to reduce plastic waste.',
             'blank_word' => 'conceived',
-            'translation' => '團隊構思出一個減少塑膠垃圾的計畫。',
             'distractors' => [
                 ['vocabulary_id' => 4835, 'word' => 'overeated'],
                 ['vocabulary_id' => 4840, 'word' => 'decayed'],
@@ -11075,7 +10241,6 @@ return [
             'vocabulary_id' => 4835,
             'sentence' => 'Try not to {{blank}} at the buffet, even when the food is delicious.',
             'blank_word' => 'overeat',
-            'translation' => '即使自助餐的食物很美味，也盡量不要吃得過量。',
             'distractors' => [
                 ['vocabulary_id' => 4834, 'word' => 'conceive'],
                 ['vocabulary_id' => 4840, 'word' => 'decay'],
@@ -11088,7 +10253,6 @@ return [
             'vocabulary_id' => 4836,
             'sentence' => 'She bought a cream {{blank}} from the bakery.',
             'blank_word' => 'puff',
-            'translation' => '她從麵包店買了一個奶油泡芙。',
             'distractors' => [
                 ['vocabulary_id' => 4831, 'word' => 'oatmeal'],
                 ['vocabulary_id' => 4832, 'word' => 'crib'],
@@ -11102,7 +10266,6 @@ return [
             'vocabulary_id' => 4837,
             'sentence' => 'The cat was hiding {{blank}} the sofa.',
             'blank_word' => 'underneath',
-            'translation' => '那隻貓躲在沙發下方。',
             'distractors' => [
                 ['vocabulary_id' => 4831, 'word' => 'oatmeal'],
                 ['vocabulary_id' => 4832, 'word' => 'crib'],
@@ -11115,7 +10278,6 @@ return [
             'vocabulary_id' => 4838,
             'sentence' => 'Boats carried goods along the narrow {{blank}}.',
             'blank_word' => 'canal',
-            'translation' => '船隻沿著狹窄的運河運送貨物。',
             'distractors' => [
                 ['vocabulary_id' => 4831, 'word' => 'oatmeal'],
                 ['vocabulary_id' => 4832, 'word' => 'crib'],
@@ -11129,7 +10291,6 @@ return [
             'vocabulary_id' => 4839,
             'sentence' => 'She kept a tight {{blank}} on her bag while walking through the crowd.',
             'blank_word' => 'clutch',
-            'translation' => '她在人群中行走時緊緊握住自己的包包。',
             'distractors' => [
                 ['vocabulary_id' => 4831, 'word' => 'oatmeal'],
                 ['vocabulary_id' => 4832, 'word' => 'crib'],
@@ -11143,7 +10304,6 @@ return [
             'vocabulary_id' => 4840,
             'sentence' => 'The {{blank}} of the wooden bridge made it unsafe to cross.',
             'blank_word' => 'decay',
-            'translation' => '木橋的腐朽使它通行起來不安全。',
             'distractors' => [
                 ['vocabulary_id' => 4831, 'word' => 'oatmeal'],
                 ['vocabulary_id' => 4832, 'word' => 'crib'],
@@ -11159,7 +10319,6 @@ return [
             'vocabulary_id' => 4841,
             'sentence' => 'The roller coaster ride {{blank}} everyone in the park.',
             'blank_word' => 'thrilled',
-            'translation' => '雲霄飛車之旅讓公園裡的每個人都感到興奮。',
             'distractors' => [
                 ['vocabulary_id' => 4845, 'word' => 'ventured'],
                 ['vocabulary_id' => 4848, 'word' => 'nominated'],
@@ -11172,7 +10331,6 @@ return [
             'vocabulary_id' => 4842,
             'sentence' => 'The inventor applied for a {{blank}} for her new water-saving device.',
             'blank_word' => 'patent',
-            'translation' => '這位發明家為她的新型節水裝置申請了專利。',
             'distractors' => [
                 ['vocabulary_id' => 4841, 'word' => 'thrill'],
                 ['vocabulary_id' => 4843, 'word' => 'rival'],
@@ -11186,7 +10344,6 @@ return [
             'vocabulary_id' => 4843,
             'sentence' => 'Our biggest {{blank}} opened a store across the street.',
             'blank_word' => 'rival',
-            'translation' => '我們最大的對手在街對面開了一家店。',
             'distractors' => [
                 ['vocabulary_id' => 4841, 'word' => 'thrill'],
                 ['vocabulary_id' => 4842, 'word' => 'patent'],
@@ -11200,7 +10357,6 @@ return [
             'vocabulary_id' => 4844,
             'sentence' => 'A {{blank}} from the rose bush stuck into my finger.',
             'blank_word' => 'thorn',
-            'translation' => '玫瑰叢上的一根刺刺進了我的手指。',
             'distractors' => [
                 ['vocabulary_id' => 4841, 'word' => 'thrill'],
                 ['vocabulary_id' => 4842, 'word' => 'patent'],
@@ -11214,7 +10370,6 @@ return [
             'vocabulary_id' => 4845,
             'sentence' => 'Few people {{blank}} into the forest after dark.',
             'blank_word' => 'venture',
-            'translation' => '天黑後，很少有人冒險進入森林。',
             'distractors' => [
                 ['vocabulary_id' => 4841, 'word' => 'thrill'],
                 ['vocabulary_id' => 4842, 'word' => 'patent'],
@@ -11228,7 +10383,6 @@ return [
             'vocabulary_id' => 4846,
             'sentence' => 'A basket of fresh fruit was waiting on our {{blank}}.',
             'blank_word' => 'doorstep',
-            'translation' => '我們的門階上放著一籃新鮮水果。',
             'distractors' => [
                 ['vocabulary_id' => 4841, 'word' => 'thrill'],
                 ['vocabulary_id' => 4842, 'word' => 'patent'],
@@ -11242,7 +10396,6 @@ return [
             'vocabulary_id' => 4847,
             'sentence' => 'He used a wooden {{blank}} to hold the tent in place.',
             'blank_word' => 'peg',
-            'translation' => '他用一根木樁將帳篷固定在原地。',
             'distractors' => [
                 ['vocabulary_id' => 4841, 'word' => 'thrill'],
                 ['vocabulary_id' => 4842, 'word' => 'patent'],
@@ -11256,7 +10409,6 @@ return [
             'vocabulary_id' => 4848,
             'sentence' => 'The committee will {{blank}} three students for the scholarship.',
             'blank_word' => 'nominate',
-            'translation' => '委員會將提名三名學生角逐獎學金。',
             'distractors' => [
                 ['vocabulary_id' => 4841, 'word' => 'thrill'],
                 ['vocabulary_id' => 4845, 'word' => 'venture'],
@@ -11269,7 +10421,6 @@ return [
             'vocabulary_id' => 4849,
             'sentence' => '{{blank}} patients often need extra emotional support.',
             'blank_word' => 'Adolescent',
-            'translation' => '青春期的病患通常需要額外的情緒支持。',
             'distractors' => [
                 ['vocabulary_id' => 4841, 'word' => 'Thrill'],
                 ['vocabulary_id' => 4842, 'word' => 'Patent'],
@@ -11282,7 +10433,6 @@ return [
             'vocabulary_id' => 4850,
             'sentence' => 'The scientist explained how {{blank}} is stored in trees.',
             'blank_word' => 'carbon',
-            'translation' => '這位科學家解釋了碳如何儲存在樹木中。',
             'distractors' => [
                 ['vocabulary_id' => 4841, 'word' => 'thrill'],
                 ['vocabulary_id' => 4842, 'word' => 'patent'],
@@ -11298,7 +10448,6 @@ return [
             'vocabulary_id' => 4851,
             'sentence' => 'The soldier was called a {{blank}} after sharing military secrets.',
             'blank_word' => 'traitor',
-            'translation' => '那名士兵洩漏軍事機密後，被稱為叛徒。',
             'distractors' => [
                 ['vocabulary_id' => 4852, 'word' => 'hi-fi'],
                 ['vocabulary_id' => 4853, 'word' => 'paddle'],
@@ -11312,7 +10461,6 @@ return [
             'vocabulary_id' => 4852,
             'sentence' => 'My grandfather bought a new {{blank}} to enjoy his favorite records.',
             'blank_word' => 'hi-fi',
-            'translation' => '我祖父買了一套新的高傳真音響來欣賞他最喜愛的唱片。',
             'distractors' => [
                 ['vocabulary_id' => 4851, 'word' => 'traitor'],
                 ['vocabulary_id' => 4853, 'word' => 'paddle'],
@@ -11326,7 +10474,6 @@ return [
             'vocabulary_id' => 4853,
             'sentence' => 'We used a {{blank}} to guide the canoe across the lake.',
             'blank_word' => 'paddle',
-            'translation' => '我們用槳引導獨木舟渡過湖面。',
             'distractors' => [
                 ['vocabulary_id' => 4851, 'word' => 'traitor'],
                 ['vocabulary_id' => 4852, 'word' => 'hi-fi'],
@@ -11340,7 +10487,6 @@ return [
             'vocabulary_id' => 4854,
             'sentence' => 'The temperature reached 95 degrees {{blank}} this afternoon.',
             'blank_word' => 'Fahrenheit',
-            'translation' => '今天下午氣溫達到華氏九十五度。',
             'distractors' => [
                 ['vocabulary_id' => 4851, 'word' => 'traitor'],
                 ['vocabulary_id' => 4852, 'word' => 'hi-fi'],
@@ -11354,7 +10500,6 @@ return [
             'vocabulary_id' => 4855,
             'sentence' => 'The children {{blank}} into the pool as soon as they arrived.',
             'blank_word' => 'plunged',
-            'translation' => '孩子們一到達就跳進游泳池裡。',
             'distractors' => [
                 ['vocabulary_id' => 4856, 'word' => 'distressed'],
                 ['vocabulary_id' => 4851, 'word' => 'traitor'],
@@ -11367,7 +10512,6 @@ return [
             'vocabulary_id' => 4856,
             'sentence' => 'The sudden news {{blank}} the entire family.',
             'blank_word' => 'distressed',
-            'translation' => '這個突如其來的消息使全家人感到痛苦和憂慮。',
             'distractors' => [
                 ['vocabulary_id' => 4855, 'word' => 'plunged'],
                 ['vocabulary_id' => 4851, 'word' => 'traitor'],
@@ -11380,7 +10524,6 @@ return [
             'vocabulary_id' => 4857,
             'sentence' => 'The {{blank}} looks after the elderly woman every day.',
             'blank_word' => 'caretaker',
-            'translation' => '這位照顧者每天照料那名年長婦人。',
             'distractors' => [
                 ['vocabulary_id' => 4851, 'word' => 'traitor'],
                 ['vocabulary_id' => 4852, 'word' => 'hi-fi'],
@@ -11394,7 +10537,6 @@ return [
             'vocabulary_id' => 4858,
             'sentence' => 'The company advertised a {{blank}} for an experienced designer.',
             'blank_word' => 'vacancy',
-            'translation' => '這家公司刊登了招聘一名有經驗設計師的職缺。',
             'distractors' => [
                 ['vocabulary_id' => 4851, 'word' => 'traitor'],
                 ['vocabulary_id' => 4852, 'word' => 'hi-fi'],
@@ -11408,7 +10550,6 @@ return [
             'vocabulary_id' => 4859,
             'sentence' => 'She added a {{blank}} of sugar to her tea.',
             'blank_word' => 'lump',
-            'translation' => '她在茶裡加了一塊糖。',
             'distractors' => [
                 ['vocabulary_id' => 4851, 'word' => 'traitor'],
                 ['vocabulary_id' => 4852, 'word' => 'hi-fi'],
@@ -11422,7 +10563,6 @@ return [
             'vocabulary_id' => 4860,
             'sentence' => 'The {{blank}} carefully collected rock samples on the moon.',
             'blank_word' => 'astronaut',
-            'translation' => '這名太空人在月球上仔細收集岩石樣本。',
             'distractors' => [
                 ['vocabulary_id' => 4851, 'word' => 'traitor'],
                 ['vocabulary_id' => 4852, 'word' => 'hi-fi'],
@@ -11438,7 +10578,6 @@ return [
             'vocabulary_id' => 4861,
             'sentence' => 'I {{blank}} we will arrive before sunset.',
             'blank_word' => 'reckon',
-            'translation' => '我認為我們會在日落前抵達。',
             'distractors' => [
                 ['vocabulary_id' => 4865, 'word' => 'whisk'],
                 ['vocabulary_id' => 4868, 'word' => 'flick'],
@@ -11451,7 +10590,6 @@ return [
             'vocabulary_id' => 4862,
             'sentence' => 'She learned to manage her money after entering {{blank}}.',
             'blank_word' => 'adulthood',
-            'translation' => '成年後，她學會了管理自己的錢。',
             'distractors' => [
                 ['vocabulary_id' => 4864, 'word' => 'trademark'],
                 ['vocabulary_id' => 4865, 'word' => 'whisk'],
@@ -11464,7 +10602,6 @@ return [
             'vocabulary_id' => 4863,
             'sentence' => 'The small café has a {{blank}} atmosphere on rainy days.',
             'blank_word' => 'cozy',
-            'translation' => '這間小咖啡館在下雨天有舒適的氛圍。',
             'distractors' => [
                 ['vocabulary_id' => 4867, 'word' => 'ample'],
                 ['vocabulary_id' => 4869, 'word' => 'widespread'],
@@ -11477,7 +10614,6 @@ return [
             'vocabulary_id' => 4864,
             'sentence' => 'The company registered its new logo as a {{blank}}.',
             'blank_word' => 'trademark',
-            'translation' => '這家公司將新標誌註冊為商標。',
             'distractors' => [
                 ['vocabulary_id' => 4862, 'word' => 'adulthood'],
                 ['vocabulary_id' => 4865, 'word' => 'whisk'],
@@ -11490,7 +10626,6 @@ return [
             'vocabulary_id' => 4865,
             'sentence' => 'She {{blank}} the crumbs off the table with her hand.',
             'blank_word' => 'whisked',
-            'translation' => '她用手拂去桌上的麵包屑。',
             'distractors' => [
                 ['vocabulary_id' => 4861, 'word' => 'reckoned'],
                 ['vocabulary_id' => 4868, 'word' => 'flicked'],
@@ -11503,7 +10638,6 @@ return [
             'vocabulary_id' => 4866,
             'sentence' => 'There is no air in the {{blank}} of outer space.',
             'blank_word' => 'vacuum',
-            'translation' => '外太空的真空中沒有空氣。',
             'distractors' => [
                 ['vocabulary_id' => 4862, 'word' => 'adulthood'],
                 ['vocabulary_id' => 4864, 'word' => 'trademark'],
@@ -11516,7 +10650,6 @@ return [
             'vocabulary_id' => 4867,
             'sentence' => 'We have {{blank}} time to finish the project before Friday.',
             'blank_word' => 'ample',
-            'translation' => '我們有足夠的時間在星期五前完成這項計畫。',
             'distractors' => [
                 ['vocabulary_id' => 4863, 'word' => 'cozy'],
                 ['vocabulary_id' => 4869, 'word' => 'widespread'],
@@ -11529,7 +10662,6 @@ return [
             'vocabulary_id' => 4868,
             'sentence' => 'With a quick {{blank}} of his finger, he sent the paper flying.',
             'blank_word' => 'flick',
-            'translation' => '他手指輕輕一彈，就讓那張紙飛了出去。',
             'distractors' => [
                 ['vocabulary_id' => 4861, 'word' => 'reckon'],
                 ['vocabulary_id' => 4862, 'word' => 'adulthood'],
@@ -11543,7 +10675,6 @@ return [
             'vocabulary_id' => 4869,
             'sentence' => 'The use of smartphones is {{blank}} among young people.',
             'blank_word' => 'widespread',
-            'translation' => '智慧型手機在年輕人之間廣泛使用。',
             'distractors' => [
                 ['vocabulary_id' => 4863, 'word' => 'cozy'],
                 ['vocabulary_id' => 4867, 'word' => 'ample'],
@@ -11556,7 +10687,6 @@ return [
             'vocabulary_id' => 4870,
             'sentence' => 'You should use {{blank}} when walking on the wet floor.',
             'blank_word' => 'caution',
-            'translation' => '走在濕地板上時，你應該小心。',
             'distractors' => [
                 ['vocabulary_id' => 4862, 'word' => 'adulthood'],
                 ['vocabulary_id' => 4864, 'word' => 'trademark'],
@@ -11571,7 +10701,6 @@ return [
             'vocabulary_id' => 4871,
             'sentence' => 'The latest {{blank}} show that more people are working from home.',
             'blank_word' => 'statistics',
-            'translation' => '最新的統計數據顯示，越來越多人在家工作。',
             'distractors' => [
                 ['vocabulary_id' => 4872, 'word' => 'maple'],
                 ['vocabulary_id' => 4873, 'word' => 'poke'],
@@ -11585,7 +10714,6 @@ return [
             'vocabulary_id' => 4872,
             'sentence' => 'The {{blank}} in our garden turns bright red in autumn.',
             'blank_word' => 'maple',
-            'translation' => '我們花園裡的楓樹在秋天會變成鮮紅色。',
             'distractors' => [
                 ['vocabulary_id' => 4871, 'word' => 'statistics'],
                 ['vocabulary_id' => 4873, 'word' => 'poke'],
@@ -11599,7 +10727,6 @@ return [
             'vocabulary_id' => 4873,
             'sentence' => 'The child {{blank}} the balloon to see if it would move.',
             'blank_word' => 'poked',
-            'translation' => '那個孩子戳了戳氣球，想看看它會不會移動。',
             'distractors' => [
                 ['vocabulary_id' => 4874, 'word' => 'pinched'],
                 ['vocabulary_id' => 4879, 'word' => 'beautified'],
@@ -11612,7 +10739,6 @@ return [
             'vocabulary_id' => 4874,
             'sentence' => 'She {{blank}} the loose thread between her fingers and pulled it away.',
             'blank_word' => 'pinched',
-            'translation' => '她用手指捏住鬆脫的線頭，將它拉掉。',
             'distractors' => [
                 ['vocabulary_id' => 4873, 'word' => 'poked'],
                 ['vocabulary_id' => 4879, 'word' => 'beautified'],
@@ -11625,7 +10751,6 @@ return [
             'vocabulary_id' => 4875,
             'sentence' => 'The farmer cleaned the horse\'s {{blank}} early in the morning.',
             'blank_word' => 'stall',
-            'translation' => '農夫一大早就清理了馬廄。',
             'distractors' => [
                 ['vocabulary_id' => 4871, 'word' => 'statistics'],
                 ['vocabulary_id' => 4872, 'word' => 'maple'],
@@ -11639,7 +10764,6 @@ return [
             'vocabulary_id' => 4876,
             'sentence' => 'He wrote the payment in his {{blank}} before mailing the check.',
             'blank_word' => 'checkbook',
-            'translation' => '他寄出支票前，先把這筆付款記在支票簿裡。',
             'distractors' => [
                 ['vocabulary_id' => 4871, 'word' => 'statistics'],
                 ['vocabulary_id' => 4872, 'word' => 'maple'],
@@ -11653,7 +10777,6 @@ return [
             'vocabulary_id' => 4877,
             'sentence' => 'The police are still trying to discover the thief\'s {{blank}}.',
             'blank_word' => 'motive',
-            'translation' => '警方仍在試圖查明竊賊的動機。',
             'distractors' => [
                 ['vocabulary_id' => 4871, 'word' => 'statistics'],
                 ['vocabulary_id' => 4872, 'word' => 'maple'],
@@ -11667,7 +10790,6 @@ return [
             'vocabulary_id' => 4878,
             'sentence' => 'Whole-grain bread contains plenty of {{blank}}.',
             'blank_word' => 'fiber',
-            'translation' => '全穀麵包含有豐富的纖維。',
             'distractors' => [
                 ['vocabulary_id' => 4871, 'word' => 'statistics'],
                 ['vocabulary_id' => 4872, 'word' => 'maple'],
@@ -11681,7 +10803,6 @@ return [
             'vocabulary_id' => 4879,
             'sentence' => 'The city planted flowers to {{blank}} the streets.',
             'blank_word' => 'beautify',
-            'translation' => '這座城市種植花卉來美化街道。',
             'distractors' => [
                 ['vocabulary_id' => 4873, 'word' => 'poke'],
                 ['vocabulary_id' => 4874, 'word' => 'pinch'],
@@ -11694,7 +10815,6 @@ return [
             'vocabulary_id' => 4880,
             'sentence' => 'Our {{blank}} neighbor always greets everyone with a smile.',
             'blank_word' => 'jolly',
-            'translation' => '我們那位快活的鄰居總是面帶微笑地向大家打招呼。',
             'distractors' => [
                 ['vocabulary_id' => 4871, 'word' => 'statistics'],
                 ['vocabulary_id' => 4872, 'word' => 'maple'],
@@ -11709,7 +10829,6 @@ return [
             'vocabulary_id' => 4881,
             'sentence' => 'The loud explosion {{blank}} the workers and made one of them faint.',
             'blank_word' => 'stunned',
-            'translation' => '巨大的爆炸聲使工人們昏厥，其中一人甚至因此暈倒。',
             'distractors' => [
                 ['vocabulary_id' => 4882, 'word' => 'tramped'],
                 ['vocabulary_id' => 4884, 'word' => 'softened'],
@@ -11721,7 +10840,6 @@ return [
             'vocabulary_id' => 4882,
             'sentence' => 'The {{blank}} walked along the country road carrying a small bag.',
             'blank_word' => 'tramp',
-            'translation' => '那名流浪漢提著一個小袋子，沉重地走在鄉間道路上。',
             'distractors' => [
                 ['vocabulary_id' => 4881, 'word' => 'stun'],
                 ['vocabulary_id' => 4883, 'word' => 'spacecraft'],
@@ -11735,7 +10853,6 @@ return [
             'vocabulary_id' => 4883,
             'sentence' => 'The {{blank}} carried three astronauts safely to the space station.',
             'blank_word' => 'spacecraft',
-            'translation' => '這艘太空船將三名太空人安全地送到太空站。',
             'distractors' => [
                 ['vocabulary_id' => 4882, 'word' => 'tramp'],
                 ['vocabulary_id' => 4885, 'word' => 'dormitory'],
@@ -11748,7 +10865,6 @@ return [
             'vocabulary_id' => 4884,
             'sentence' => 'Soak the beans overnight to {{blank}} them before cooking.',
             'blank_word' => 'soften',
-            'translation' => '煮豆子之前，先浸泡一晚讓它們變柔軟。',
             'distractors' => [
                 ['vocabulary_id' => 4881, 'word' => 'stun'],
                 ['vocabulary_id' => 4882, 'word' => 'tramp'],
@@ -11760,7 +10876,6 @@ return [
             'vocabulary_id' => 4885,
             'sentence' => 'My {{blank}} is close to the university library.',
             'blank_word' => 'dormitory',
-            'translation' => '我的學生宿舍離大學圖書館很近。',
             'distractors' => [
                 ['vocabulary_id' => 4882, 'word' => 'tramp'],
                 ['vocabulary_id' => 4883, 'word' => 'spacecraft'],
@@ -11773,7 +10888,6 @@ return [
             'vocabulary_id' => 4886,
             'sentence' => 'Farmers {{blank}} rice seeds in the spring.',
             'blank_word' => 'sow',
-            'translation' => '農夫在春天播種稻米。',
             'distractors' => [
                 ['vocabulary_id' => 4881, 'word' => 'stun'],
                 ['vocabulary_id' => 4882, 'word' => 'tramp'],
@@ -11787,7 +10901,6 @@ return [
             'vocabulary_id' => 4887,
             'sentence' => 'The {{blank}} students volunteered to clean the beach.',
             'blank_word' => 'enthusiastic',
-            'translation' => '熱心的學生自願去清理海灘。',
             'distractors' => [
                 ['vocabulary_id' => 4881, 'word' => 'stun'],
                 ['vocabulary_id' => 4882, 'word' => 'tramp'],
@@ -11800,7 +10913,6 @@ return [
             'vocabulary_id' => 4888,
             'sentence' => 'Although everyone disagreed with him, he {{blank}} in saying that he was right.',
             'blank_word' => 'persisted',
-            'translation' => '儘管大家都不同意他，他仍堅持說自己是對的。',
             'distractors' => [
                 ['vocabulary_id' => 4881, 'word' => 'stunned'],
                 ['vocabulary_id' => 4882, 'word' => 'tramped'],
@@ -11812,7 +10924,6 @@ return [
             'vocabulary_id' => 4889,
             'sentence' => '{{blank}} helps the bread rise and become light and soft.',
             'blank_word' => 'Yeast',
-            'translation' => '酵母菌能幫助麵包發起來，變得蓬鬆柔軟。',
             'distractors' => [
                 ['vocabulary_id' => 4882, 'word' => 'Tramp'],
                 ['vocabulary_id' => 4883, 'word' => 'Spacecraft'],
@@ -11825,7 +10936,6 @@ return [
             'vocabulary_id' => 4890,
             'sentence' => 'The doctor examined my {{blank}} after I fell down the stairs.',
             'blank_word' => 'spine',
-            'translation' => '我從樓梯上摔下來後，醫生檢查了我的脊椎。',
             'distractors' => [
                 ['vocabulary_id' => 4882, 'word' => 'tramp'],
                 ['vocabulary_id' => 4883, 'word' => 'spacecraft'],
@@ -11840,7 +10950,6 @@ return [
             'vocabulary_id' => 4891,
             'sentence' => 'The farmer added {{blank}} to help the vegetables grow.',
             'blank_word' => 'fertilizer',
-            'translation' => '農夫施加肥料來幫助蔬菜生長。',
             'distractors' => [
                 ['vocabulary_id' => 4892, 'word' => 'legislation'],
                 ['vocabulary_id' => 4894, 'word' => 'update'],
@@ -11853,7 +10962,6 @@ return [
             'vocabulary_id' => 4892,
             'sentence' => 'The new {{blank}} protects children from dangerous online content.',
             'blank_word' => 'legislation',
-            'translation' => '這項新的立法保護兒童免受危險網路內容的影響。',
             'distractors' => [
                 ['vocabulary_id' => 4891, 'word' => 'fertilizer'],
                 ['vocabulary_id' => 4894, 'word' => 'update'],
@@ -11866,7 +10974,6 @@ return [
             'vocabulary_id' => 4893,
             'sentence' => 'It was {{blank}} of him to blame his teammate and run away.',
             'blank_word' => 'cowardly',
-            'translation' => '他把責任推給隊友後逃跑，這樣的行為很膽小。',
             'distractors' => [
                 ['vocabulary_id' => 4895, 'word' => 'sober'],
                 ['vocabulary_id' => 4896, 'word' => 'martial'],
@@ -11877,7 +10984,6 @@ return [
             'vocabulary_id' => 4894,
             'sentence' => 'Please {{blank}} the software before using the computer.',
             'blank_word' => 'update',
-            'translation' => '使用電腦前，請先更新軟體。',
             'distractors' => [
                 ['vocabulary_id' => 4891, 'word' => 'fertilizer'],
                 ['vocabulary_id' => 4892, 'word' => 'legislation'],
@@ -11890,7 +10996,6 @@ return [
             'vocabulary_id' => 4895,
             'sentence' => 'The driver must remain {{blank}} while transporting the children.',
             'blank_word' => 'sober',
-            'translation' => '載送孩子時，駕駛必須保持清醒。',
             'distractors' => [
                 ['vocabulary_id' => 4893, 'word' => 'cowardly'],
                 ['vocabulary_id' => 4896, 'word' => 'martial'],
@@ -11901,7 +11006,6 @@ return [
             'vocabulary_id' => 4896,
             'sentence' => 'The country increased its {{blank}} training because of the growing threat of war.',
             'blank_word' => 'martial',
-            'translation' => '由於戰爭威脅日益增加，這個國家加強了軍事訓練。',
             'distractors' => [
                 ['vocabulary_id' => 4893, 'word' => 'cowardly'],
                 ['vocabulary_id' => 4895, 'word' => 'sober'],
@@ -11912,7 +11016,6 @@ return [
             'vocabulary_id' => 4897,
             'sentence' => 'There is no need to {{blank}} over a small mistake.',
             'blank_word' => 'fuss',
-            'translation' => '不用為了一個小錯誤大驚小怪。',
             'distractors' => [
                 ['vocabulary_id' => 4891, 'word' => 'fertilizer'],
                 ['vocabulary_id' => 4892, 'word' => 'legislation'],
@@ -11925,7 +11028,6 @@ return [
             'vocabulary_id' => 4898,
             'sentence' => 'My grandfather visits the same {{blank}} every month.',
             'blank_word' => 'barbershop',
-            'translation' => '我的祖父每個月都去同一家男士理髮廳。',
             'distractors' => [
                 ['vocabulary_id' => 4891, 'word' => 'fertilizer'],
                 ['vocabulary_id' => 4892, 'word' => 'legislation'],
@@ -11938,7 +11040,6 @@ return [
             'vocabulary_id' => 4899,
             'sentence' => 'This {{blank}} table can hold several heavy boxes.',
             'blank_word' => 'sturdy',
-            'translation' => '這張結實的桌子可以承受好幾個沉重的箱子。',
             'distractors' => [
                 ['vocabulary_id' => 4893, 'word' => 'cowardly'],
                 ['vocabulary_id' => 4895, 'word' => 'sober'],
@@ -11949,7 +11050,6 @@ return [
             'vocabulary_id' => 4900,
             'sentence' => 'Visitors left flowers at the {{blank}} to show their respect.',
             'blank_word' => 'shrine',
-            'translation' => '參訪者在聖壇前獻花以表達敬意。',
             'distractors' => [
                 ['vocabulary_id' => 4891, 'word' => 'fertilizer'],
                 ['vocabulary_id' => 4892, 'word' => 'legislation'],
@@ -11964,7 +11064,6 @@ return [
             'vocabulary_id' => 4901,
             'sentence' => 'Rice is an important {{blank}} in many Asian countries.',
             'blank_word' => 'commodity',
-            'translation' => '稻米是許多亞洲國家的重要商品。',
             'distractors' => [
                 ['vocabulary_id' => 4902, 'word' => 'outsider'],
                 ['vocabulary_id' => 4903, 'word' => 'outskirts'],
@@ -11978,7 +11077,6 @@ return [
             'vocabulary_id' => 4902,
             'sentence' => 'As an {{blank}}, she needed time to understand the team’s traditions.',
             'blank_word' => 'outsider',
-            'translation' => '身為局外人，她需要時間了解這個團隊的傳統。',
             'distractors' => [
                 ['vocabulary_id' => 4901, 'word' => 'commodity'],
                 ['vocabulary_id' => 4903, 'word' => 'outskirts'],
@@ -11992,7 +11090,6 @@ return [
             'vocabulary_id' => 4903,
             'sentence' => 'They built a small house on the {{blank}} of the city.',
             'blank_word' => 'outskirts',
-            'translation' => '他們在城市郊區蓋了一間小房子。',
             'distractors' => [
                 ['vocabulary_id' => 4901, 'word' => 'commodity'],
                 ['vocabulary_id' => 4902, 'word' => 'outsider'],
@@ -12006,7 +11103,6 @@ return [
             'vocabulary_id' => 4904,
             'sentence' => 'The museum is famous for its modern {{blank}}.',
             'blank_word' => 'architecture',
-            'translation' => '這座博物館以現代建築聞名。',
             'distractors' => [
                 ['vocabulary_id' => 4901, 'word' => 'commodity'],
                 ['vocabulary_id' => 4902, 'word' => 'outsider'],
@@ -12020,7 +11116,6 @@ return [
             'vocabulary_id' => 4905,
             'sentence' => 'He was the {{blank}} survivor of the accident.',
             'blank_word' => 'sole',
-            'translation' => '他是那起意外中唯一的生還者。',
             'distractors' => [
                 ['vocabulary_id' => 4901, 'word' => 'commodity'],
                 ['vocabulary_id' => 4902, 'word' => 'outsider'],
@@ -12033,7 +11128,6 @@ return [
             'vocabulary_id' => 4906,
             'sentence' => 'The {{blank}} of the equipment was too heavy to move by hand.',
             'blank_word' => 'bulk',
-            'translation' => '大部分的設備太重了，無法用手搬動。',
             'distractors' => [
                 ['vocabulary_id' => 4901, 'word' => 'commodity'],
                 ['vocabulary_id' => 4902, 'word' => 'outsider'],
@@ -12047,7 +11141,6 @@ return [
             'vocabulary_id' => 4907,
             'sentence' => 'The horse lifted its {{blank}} as the farmer cleaned it.',
             'blank_word' => 'hoof',
-            'translation' => '農夫清理馬蹄時，那匹馬抬起了蹄子。',
             'distractors' => [
                 ['vocabulary_id' => 4901, 'word' => 'commodity'],
                 ['vocabulary_id' => 4902, 'word' => 'outsider'],
@@ -12061,7 +11154,6 @@ return [
             'vocabulary_id' => 4908,
             'sentence' => 'I ordered a {{blank}} sandwich for lunch.',
             'blank_word' => 'tuna',
-            'translation' => '我午餐點了一份鮪魚三明治。',
             'distractors' => [
                 ['vocabulary_id' => 4901, 'word' => 'commodity'],
                 ['vocabulary_id' => 4902, 'word' => 'outsider'],
@@ -12075,7 +11167,6 @@ return [
             'vocabulary_id' => 4909,
             'sentence' => 'According to local {{blank}}, the lake is home to a mysterious creature.',
             'blank_word' => 'folklore',
-            'translation' => '根據當地的民間傳說，那座湖是神祕生物的家。',
             'distractors' => [
                 ['vocabulary_id' => 4901, 'word' => 'commodity'],
                 ['vocabulary_id' => 4902, 'word' => 'outsider'],
@@ -12089,7 +11180,6 @@ return [
             'vocabulary_id' => 4910,
             'sentence' => 'Many colorful flowers {{blank}} in this warm climate.',
             'blank_word' => 'flourish',
-            'translation' => '許多色彩繽紛的花朵在這種溫暖的氣候中茂盛生長。',
             'distractors' => [
                 ['vocabulary_id' => 4901, 'word' => 'commodity'],
                 ['vocabulary_id' => 4902, 'word' => 'outsider'],
@@ -12104,7 +11194,6 @@ return [
             'vocabulary_id' => 4911,
             'sentence' => 'Please {{blank}} the lesson before class begins.',
             'blank_word' => 'preview',
-            'translation' => '請在上課開始前預習這一課。',
             'distractors' => [
                 ['vocabulary_id' => 4912, 'word' => 'blizzard'],
                 ['vocabulary_id' => 4913, 'word' => 'chant'],
@@ -12117,7 +11206,6 @@ return [
             'vocabulary_id' => 4912,
             'sentence' => 'The {{blank}} blocked the roads and closed the schools.',
             'blank_word' => 'blizzard',
-            'translation' => '暴風雪堵住了道路，也使學校停課。',
             'distractors' => [
                 ['vocabulary_id' => 4911, 'word' => 'preview'],
                 ['vocabulary_id' => 4914, 'word' => 'ballot'],
@@ -12128,7 +11216,6 @@ return [
             'vocabulary_id' => 4913,
             'sentence' => 'The fans {{blank}} the team’s name throughout the game.',
             'blank_word' => 'chanted',
-            'translation' => '球迷在整場比賽中反覆呼喊那支球隊的名字。',
             'distractors' => [
                 ['vocabulary_id' => 4911, 'word' => 'previewed'],
                 ['vocabulary_id' => 4916, 'word' => 'endeavored'],
@@ -12139,7 +11226,6 @@ return [
             'vocabulary_id' => 4914,
             'sentence' => 'She marked her choice on the {{blank}} and placed it in the box.',
             'blank_word' => 'ballot',
-            'translation' => '她在選票上勾選自己的選擇，然後把選票投入箱中。',
             'distractors' => [
                 ['vocabulary_id' => 4911, 'word' => 'preview'],
                 ['vocabulary_id' => 4912, 'word' => 'blizzard'],
@@ -12150,7 +11236,6 @@ return [
             'vocabulary_id' => 4915,
             'sentence' => 'He seemed {{blank}} to the problem because it did not affect him.',
             'blank_word' => 'indifferent',
-            'translation' => '他似乎對這個問題漠不關心，因為那件事沒有影響到他。',
             'distractors' => [
                 ['vocabulary_id' => 4917, 'word' => 'lonesome'],
                 ['vocabulary_id' => 4918, 'word' => 'eternal'],
@@ -12161,7 +11246,6 @@ return [
             'vocabulary_id' => 4916,
             'sentence' => 'We will {{blank}} to finish the project on time.',
             'blank_word' => 'endeavor',
-            'translation' => '我們會努力按時完成這項計畫。',
             'distractors' => [
                 ['vocabulary_id' => 4911, 'word' => 'preview'],
                 ['vocabulary_id' => 4912, 'word' => 'blizzard'],
@@ -12174,7 +11258,6 @@ return [
             'vocabulary_id' => 4917,
             'sentence' => 'The {{blank}} child sat quietly by the window.',
             'blank_word' => 'lonesome',
-            'translation' => '那個寂寞的孩子靜靜地坐在窗邊。',
             'distractors' => [
                 ['vocabulary_id' => 4915, 'word' => 'indifferent'],
                 ['vocabulary_id' => 4918, 'word' => 'eternal'],
@@ -12185,7 +11268,6 @@ return [
             'vocabulary_id' => 4918,
             'sentence' => 'The poem speaks of {{blank}} love and hope.',
             'blank_word' => 'eternal',
-            'translation' => '這首詩歌頌不朽的愛與希望。',
             'distractors' => [
                 ['vocabulary_id' => 4915, 'word' => 'indifferent'],
                 ['vocabulary_id' => 4917, 'word' => 'lonesome'],
@@ -12196,7 +11278,6 @@ return [
             'vocabulary_id' => 4919,
             'sentence' => 'I called the hotel to {{blank}} about room availability.',
             'blank_word' => 'inquire',
-            'translation' => '我打電話給那家飯店，詢問是否有空房。',
             'distractors' => [
                 ['vocabulary_id' => 4911, 'word' => 'preview'],
                 ['vocabulary_id' => 4913, 'word' => 'chant'],
@@ -12207,7 +11288,6 @@ return [
             'vocabulary_id' => 4920,
             'sentence' => 'The {{blank}} boy refused to admit that he was wrong.',
             'blank_word' => 'obstinate',
-            'translation' => '那個頑固的男孩拒絕承認自己錯了。',
             'distractors' => [
                 ['vocabulary_id' => 4915, 'word' => 'indifferent'],
                 ['vocabulary_id' => 4917, 'word' => 'lonesome'],
@@ -12220,7 +11300,6 @@ return [
             'vocabulary_id' => 4921,
             'sentence' => 'The hunter trained his {{blank}} to follow the fox\'s trail.',
             'blank_word' => 'hound',
-            'translation' => '獵人訓練他的獵犬追蹤狐狸的足跡。',
             'distractors' => [
                 ['vocabulary_id' => 4922, 'word' => 'ware'],
                 ['vocabulary_id' => 4923, 'word' => 'quart'],
@@ -12234,7 +11313,6 @@ return [
             'vocabulary_id' => 4922,
             'sentence' => 'The shop sells handmade {{blank}} by local artists.',
             'blank_word' => 'ware',
-            'translation' => '這家店販售當地藝術家手工製作的器皿。',
             'distractors' => [
                 ['vocabulary_id' => 4921, 'word' => 'hound'],
                 ['vocabulary_id' => 4923, 'word' => 'quart'],
@@ -12248,7 +11326,6 @@ return [
             'vocabulary_id' => 4923,
             'sentence' => 'The recipe calls for one {{blank}} of milk.',
             'blank_word' => 'quart',
-            'translation' => '這份食譜需要一誇脫的牛奶。',
             'distractors' => [
                 ['vocabulary_id' => 4921, 'word' => 'hound'],
                 ['vocabulary_id' => 4922, 'word' => 'ware'],
@@ -12262,7 +11339,6 @@ return [
             'vocabulary_id' => 4924,
             'sentence' => 'They keep old wine bottles in the cool {{blank}}.',
             'blank_word' => 'cellar',
-            'translation' => '他們把老酒瓶存放在涼爽的酒窖裡。',
             'distractors' => [
                 ['vocabulary_id' => 4921, 'word' => 'hound'],
                 ['vocabulary_id' => 4922, 'word' => 'ware'],
@@ -12276,7 +11352,6 @@ return [
             'vocabulary_id' => 4925,
             'sentence' => 'In ancient stories, brave knights protected the {{blank}} from danger.',
             'blank_word' => 'realm',
-            'translation' => '在古老的故事裡，勇敢的騎士保護王國免於危險。',
             'distractors' => [
                 ['vocabulary_id' => 4921, 'word' => 'hound'],
                 ['vocabulary_id' => 4922, 'word' => 'ware'],
@@ -12290,7 +11365,6 @@ return [
             'vocabulary_id' => 4926,
             'sentence' => 'The fish moved its {{blank}} as it swam through the clear water.',
             'blank_word' => 'fin',
-            'translation' => '那條魚在清澈的水中游動時擺動著魚鰭。',
             'distractors' => [
                 ['vocabulary_id' => 4921, 'word' => 'hound'],
                 ['vocabulary_id' => 4922, 'word' => 'ware'],
@@ -12304,7 +11378,6 @@ return [
             'vocabulary_id' => 4927,
             'sentence' => 'The customs of the distant country seemed {{blank}} to the visitors.',
             'blank_word' => 'alien',
-            'translation' => '那個遙遠國家的習俗對訪客來說似乎很陌生。',
             'distractors' => [
                 ['vocabulary_id' => 4921, 'word' => 'hound'],
                 ['vocabulary_id' => 4922, 'word' => 'ware'],
@@ -12317,7 +11390,6 @@ return [
             'vocabulary_id' => 4928,
             'sentence' => 'She pulled the {{blank}} over her head to keep warm.',
             'blank_word' => 'hood',
-            'translation' => '她把兜帽拉到頭上保暖。',
             'distractors' => [
                 ['vocabulary_id' => 4921, 'word' => 'hound'],
                 ['vocabulary_id' => 4922, 'word' => 'ware'],
@@ -12331,7 +11403,6 @@ return [
             'vocabulary_id' => 4929,
             'sentence' => 'My grandfather grows fresh {{blank}} in his garden.',
             'blank_word' => 'radishes',
-            'translation' => '我祖父在他的菜園裡種植新鮮的蘿蔔。',
             'distractors' => [
                 ['vocabulary_id' => 4921, 'word' => 'hounds'],
                 ['vocabulary_id' => 4922, 'word' => 'wares'],
@@ -12345,7 +11416,6 @@ return [
             'vocabulary_id' => 4930,
             'sentence' => 'A little rain helped {{blank}} the dry plants.',
             'blank_word' => 'revive',
-            'translation' => '一點雨水幫助乾枯的植物恢復生機。',
             'distractors' => [
                 ['vocabulary_id' => 4921, 'word' => 'hound'],
                 ['vocabulary_id' => 4922, 'word' => 'ware'],
@@ -12360,7 +11430,6 @@ return [
             'vocabulary_id' => 4931,
             'sentence' => 'It is {{blank}} to blame the dog for the broken window.',
             'blank_word' => 'ridiculous',
-            'translation' => '把窗戶打破歸咎於那隻狗是很荒謬的。',
             'distractors' => [
                 ['vocabulary_id' => 4932, 'word' => 'extension'],
                 ['vocabulary_id' => 4933, 'word' => 'gulp'],
@@ -12373,7 +11442,6 @@ return [
             'vocabulary_id' => 4932,
             'sentence' => 'The {{blank}} of the railway will connect the town to the capital.',
             'blank_word' => 'extension',
-            'translation' => '鐵路的延伸將使這座城鎮與首都連接起來。',
             'distractors' => [
                 ['vocabulary_id' => 4933, 'word' => 'gulp'],
                 ['vocabulary_id' => 4934, 'word' => 'cello'],
@@ -12386,7 +11454,6 @@ return [
             'vocabulary_id' => 4933,
             'sentence' => 'He took a {{blank}} of water after running in the hot sun.',
             'blank_word' => 'gulp',
-            'translation' => '在炎熱的陽光下跑步後，他大口喝了一口水。',
             'distractors' => [
                 ['vocabulary_id' => 4932, 'word' => 'extension'],
                 ['vocabulary_id' => 4934, 'word' => 'cello'],
@@ -12400,7 +11467,6 @@ return [
             'vocabulary_id' => 4934,
             'sentence' => 'My sister practices the {{blank}} every evening.',
             'blank_word' => 'cello',
-            'translation' => '我姊姊每天晚上練習大提琴。',
             'distractors' => [
                 ['vocabulary_id' => 4932, 'word' => 'extension'],
                 ['vocabulary_id' => 4933, 'word' => 'gulp'],
@@ -12413,7 +11479,6 @@ return [
             'vocabulary_id' => 4935,
             'sentence' => 'The workers will {{blank}} through the rock to build a tunnel.',
             'blank_word' => 'blast',
-            'translation' => '工人將爆破岩石來建造隧道。',
             'distractors' => [
                 ['vocabulary_id' => 4933, 'word' => 'gulp'],
                 ['vocabulary_id' => 4936, 'word' => 'contemplate'],
@@ -12424,7 +11489,6 @@ return [
             'vocabulary_id' => 4936,
             'sentence' => 'She sat quietly by the lake to {{blank}} her future.',
             'blank_word' => 'contemplate',
-            'translation' => '她靜靜地坐在湖邊，深思自己的未來。',
             'distractors' => [
                 ['vocabulary_id' => 4933, 'word' => 'gulp'],
                 ['vocabulary_id' => 4935, 'word' => 'blast'],
@@ -12435,7 +11499,6 @@ return [
             'vocabulary_id' => 4937,
             'sentence' => 'The two countries signed a {{blank}} to end the conflict.',
             'blank_word' => 'treaty',
-            'translation' => '兩國簽署條約以結束衝突。',
             'distractors' => [
                 ['vocabulary_id' => 4932, 'word' => 'extension'],
                 ['vocabulary_id' => 4933, 'word' => 'gulp'],
@@ -12448,7 +11511,6 @@ return [
             'vocabulary_id' => 4938,
             'sentence' => 'His peanut {{blank}} is so serious that he always carries medicine.',
             'blank_word' => 'allergy',
-            'translation' => '他的花生過敏很嚴重，因此總是隨身攜帶藥物。',
             'distractors' => [
                 ['vocabulary_id' => 4932, 'word' => 'extension'],
                 ['vocabulary_id' => 4933, 'word' => 'gulp'],
@@ -12461,7 +11523,6 @@ return [
             'vocabulary_id' => 4939,
             'sentence' => 'The painful memory continued to {{blank}} her for many years.',
             'blank_word' => 'haunt',
-            'translation' => '那段痛苦的回憶多年來一直困擾著她。',
             'distractors' => [
                 ['vocabulary_id' => 4933, 'word' => 'gulp'],
                 ['vocabulary_id' => 4935, 'word' => 'blast'],
@@ -12472,7 +11533,6 @@ return [
             'vocabulary_id' => 4940,
             'sentence' => 'The basement provides plenty of {{blank}} for winter clothes.',
             'blank_word' => 'storage',
-            'translation' => '地下室提供了充足的空間來貯藏冬季衣物。',
             'distractors' => [
                 ['vocabulary_id' => 4932, 'word' => 'extension'],
                 ['vocabulary_id' => 4933, 'word' => 'gulp'],
@@ -12487,7 +11547,6 @@ return [
             'vocabulary_id' => 4941,
             'sentence' => 'She used a {{blank}} of paper to write down the phone number.',
             'blank_word' => 'scrap',
-            'translation' => '她用一張碎紙片記下電話號碼。',
             'distractors' => [
                 ['vocabulary_id' => 4943, 'word' => 'videotape'],
                 ['vocabulary_id' => 4944, 'word' => 'plea'],
@@ -12501,7 +11560,6 @@ return [
             'vocabulary_id' => 4942,
             'sentence' => 'The old sofa looked {{blank}} after years of use.',
             'blank_word' => 'shabby',
-            'translation' => '那張老沙發使用多年後看起來很破爛。',
             'distractors' => [
                 ['vocabulary_id' => 4941, 'word' => 'scrap'],
                 ['vocabulary_id' => 4943, 'word' => 'videotape'],
@@ -12514,7 +11572,6 @@ return [
             'vocabulary_id' => 4943,
             'sentence' => 'My grandfather showed us a {{blank}} of his wedding.',
             'blank_word' => 'videotape',
-            'translation' => '我祖父給我們看了一卷他的婚禮錄影帶。',
             'distractors' => [
                 ['vocabulary_id' => 4941, 'word' => 'scrap'],
                 ['vocabulary_id' => 4944, 'word' => 'plea'],
@@ -12528,7 +11585,6 @@ return [
             'vocabulary_id' => 4944,
             'sentence' => 'The boy made a {{blank}} for more time to finish his homework.',
             'blank_word' => 'plea',
-            'translation' => '那個男孩懇求多一點時間完成作業。',
             'distractors' => [
                 ['vocabulary_id' => 4941, 'word' => 'scrap'],
                 ['vocabulary_id' => 4943, 'word' => 'videotape'],
@@ -12542,7 +11598,6 @@ return [
             'vocabulary_id' => 4945,
             'sentence' => 'The government decided to {{blank}} the unfair tax.',
             'blank_word' => 'abolish',
-            'translation' => '政府決定廢止這項不公平的稅。',
             'distractors' => [
                 ['vocabulary_id' => 4941, 'word' => 'scrap'],
                 ['vocabulary_id' => 4949, 'word' => 'gnaw'],
@@ -12555,7 +11610,6 @@ return [
             'vocabulary_id' => 4946,
             'sentence' => 'My {{blank}} is to study in the morning when I feel fresh.',
             'blank_word' => 'preference',
-            'translation' => '我偏好在早上讀書，因為那時我精神很好。',
             'distractors' => [
                 ['vocabulary_id' => 4941, 'word' => 'scrap'],
                 ['vocabulary_id' => 4943, 'word' => 'videotape'],
@@ -12569,7 +11623,6 @@ return [
             'vocabulary_id' => 4947,
             'sentence' => 'People gathered outside to watch the solar {{blank}}.',
             'blank_word' => 'eclipse',
-            'translation' => '人們聚集在戶外觀看日蝕。',
             'distractors' => [
                 ['vocabulary_id' => 4941, 'word' => 'scrap'],
                 ['vocabulary_id' => 4943, 'word' => 'videotape'],
@@ -12583,7 +11636,6 @@ return [
             'vocabulary_id' => 4948,
             'sentence' => 'The {{blank}} made the audience laugh with a funny story.',
             'blank_word' => 'comedian',
-            'translation' => '那位喜劇演員用一個有趣的故事逗得觀眾大笑。',
             'distractors' => [
                 ['vocabulary_id' => 4941, 'word' => 'scrap'],
                 ['vocabulary_id' => 4943, 'word' => 'videotape'],
@@ -12597,7 +11649,6 @@ return [
             'vocabulary_id' => 4949,
             'sentence' => 'The mice {{blank}} through the wooden box during the night.',
             'blank_word' => 'gnawed',
-            'translation' => '老鼠在夜裡把木箱咬穿了。',
             'distractors' => [
                 ['vocabulary_id' => 4941, 'word' => 'scrapped'],
                 ['vocabulary_id' => 4945, 'word' => 'abolished'],
@@ -12610,7 +11661,6 @@ return [
             'vocabulary_id' => 4950,
             'sentence' => 'We sat on the {{blank}} and watched the sunset.',
             'blank_word' => 'porch',
-            'translation' => '我們坐在門廊上看夕陽。',
             'distractors' => [
                 ['vocabulary_id' => 4941, 'word' => 'scrap'],
                 ['vocabulary_id' => 4943, 'word' => 'videotape'],
@@ -12626,7 +11676,6 @@ return [
             'vocabulary_id' => 4951,
             'sentence' => 'A {{blank}} smell came from the kitchen sink.',
             'blank_word' => 'foul',
-            'translation' => '廚房水槽傳來一股惡臭。',
             'distractors' => [
                 ['vocabulary_id' => 4952, 'word' => 'console'],
                 ['vocabulary_id' => 4953, 'word' => 'bribe'],
@@ -12640,7 +11689,6 @@ return [
             'vocabulary_id' => 4952,
             'sentence' => 'I tried to {{blank}} my friend after she lost her job.',
             'blank_word' => 'console',
-            'translation' => '朋友失去工作後，我試著安慰她。',
             'distractors' => [
                 ['vocabulary_id' => 4951, 'word' => 'foul'],
                 ['vocabulary_id' => 4953, 'word' => 'bribe'],
@@ -12653,7 +11701,6 @@ return [
             'vocabulary_id' => 4953,
             'sentence' => 'The businessman tried to {{blank}} the officer with money.',
             'blank_word' => 'bribe',
-            'translation' => '那名商人試圖用錢向官員行賄。',
             'distractors' => [
                 ['vocabulary_id' => 4951, 'word' => 'foul'],
                 ['vocabulary_id' => 4952, 'word' => 'console'],
@@ -12666,7 +11713,6 @@ return [
             'vocabulary_id' => 4954,
             'sentence' => 'The {{blank}} stays green throughout the cold winter.',
             'blank_word' => 'evergreen',
-            'translation' => '這棵常綠樹在寒冷的冬天仍保持綠色。',
             'distractors' => [
                 ['vocabulary_id' => 4951, 'word' => 'foul'],
                 ['vocabulary_id' => 4955, 'word' => 'yoga'],
@@ -12680,7 +11726,6 @@ return [
             'vocabulary_id' => 4955,
             'sentence' => 'My mother practices {{blank}} every morning to relax her body.',
             'blank_word' => 'yoga',
-            'translation' => '我媽媽每天早上做瑜珈來放鬆身體。',
             'distractors' => [
                 ['vocabulary_id' => 4951, 'word' => 'foul'],
                 ['vocabulary_id' => 4954, 'word' => 'evergreen'],
@@ -12694,7 +11739,6 @@ return [
             'vocabulary_id' => 4956,
             'sentence' => 'The police arrested the man for {{blank}} after the fight.',
             'blank_word' => 'assault',
-            'translation' => '那名男子打架後因毆打他人而被警方逮捕。',
             'distractors' => [
                 ['vocabulary_id' => 4951, 'word' => 'foul'],
                 ['vocabulary_id' => 4954, 'word' => 'evergreen'],
@@ -12708,7 +11752,6 @@ return [
             'vocabulary_id' => 4957,
             'sentence' => 'I go to the doctor for a {{blank}} once a year.',
             'blank_word' => 'checkup',
-            'translation' => '我每年去看一次醫生做體檢。',
             'distractors' => [
                 ['vocabulary_id' => 4951, 'word' => 'foul'],
                 ['vocabulary_id' => 4954, 'word' => 'evergreen'],
@@ -12722,7 +11765,6 @@ return [
             'vocabulary_id' => 4958,
             'sentence' => 'He bought a new {{blank}} for his injured foot.',
             'blank_word' => 'sneaker',
-            'translation' => '他為受傷的腳買了一隻新的運動鞋。',
             'distractors' => [
                 ['vocabulary_id' => 4951, 'word' => 'foul'],
                 ['vocabulary_id' => 4954, 'word' => 'evergreen'],
@@ -12736,7 +11778,6 @@ return [
             'vocabulary_id' => 4959,
             'sentence' => 'The villagers found {{blank}} in a school during the storm.',
             'blank_word' => 'refuge',
-            'translation' => '暴風雨期間，村民在一所學校找到避難所。',
             'distractors' => [
                 ['vocabulary_id' => 4951, 'word' => 'foul'],
                 ['vocabulary_id' => 4954, 'word' => 'evergreen'],
@@ -12750,7 +11791,6 @@ return [
             'vocabulary_id' => 4960,
             'sentence' => 'The {{blank}} supported laws that gave people more political power.',
             'blank_word' => 'democrat',
-            'translation' => '這位民主主義者支持讓人民擁有更多政治權力的法律。',
             'distractors' => [
                 ['vocabulary_id' => 4951, 'word' => 'foul'],
                 ['vocabulary_id' => 4954, 'word' => 'evergreen'],
@@ -12766,7 +11806,6 @@ return [
             'vocabulary_id' => 4961,
             'sentence' => 'The {{blank}} camera is easy to carry in a small bag.',
             'blank_word' => 'compact',
-            'translation' => '這台緊湊的相機很容易放進小包包裡攜帶。',
             'distractors' => [
                 ['vocabulary_id' => 4962, 'word' => 'reign'],
                 ['vocabulary_id' => 4963, 'word' => 'yarn'],
@@ -12779,7 +11818,6 @@ return [
             'vocabulary_id' => 4962,
             'sentence' => 'During her {{blank}}, the queen introduced many important reforms.',
             'blank_word' => 'reign',
-            'translation' => '在她的在位期間，女王推動了許多重要的改革。',
             'distractors' => [
                 ['vocabulary_id' => 4963, 'word' => 'yarn'],
                 ['vocabulary_id' => 4964, 'word' => 'prop'],
@@ -12793,7 +11831,6 @@ return [
             'vocabulary_id' => 4963,
             'sentence' => 'My grandmother used soft {{blank}} to knit me a scarf.',
             'blank_word' => 'yarn',
-            'translation' => '我的祖母用柔軟的紗線織了一條圍巾給我。',
             'distractors' => [
                 ['vocabulary_id' => 4962, 'word' => 'reign'],
                 ['vocabulary_id' => 4964, 'word' => 'prop'],
@@ -12807,7 +11844,6 @@ return [
             'vocabulary_id' => 4964,
             'sentence' => 'The actor used a wooden sword as a {{blank}} in the play.',
             'blank_word' => 'prop',
-            'translation' => '那名演員在戲劇中使用木劍作為道具。',
             'distractors' => [
                 ['vocabulary_id' => 4962, 'word' => 'reign'],
                 ['vocabulary_id' => 4963, 'word' => 'yarn'],
@@ -12821,7 +11857,6 @@ return [
             'vocabulary_id' => 4965,
             'sentence' => 'Please send me the {{blank}} before the meeting begins.',
             'blank_word' => 'document',
-            'translation' => '請在會議開始前把文件寄給我。',
             'distractors' => [
                 ['vocabulary_id' => 4962, 'word' => 'reign'],
                 ['vocabulary_id' => 4963, 'word' => 'yarn'],
@@ -12835,7 +11870,6 @@ return [
             'vocabulary_id' => 4966,
             'sentence' => '{{blank}} the beans in water overnight before cooking them.',
             'blank_word' => 'Soak',
-            'translation' => '煮豆子之前，先將豆子浸泡在水中一晚。',
             'distractors' => [
                 ['vocabulary_id' => 4962, 'word' => 'Reign'],
                 ['vocabulary_id' => 4963, 'word' => 'Yarn'],
@@ -12849,7 +11883,6 @@ return [
             'vocabulary_id' => 4967,
             'sentence' => 'I packed my clothes in a large {{blank}} for the trip.',
             'blank_word' => 'suitcase',
-            'translation' => '我把衣服裝進一個大手提箱裡，準備旅行。',
             'distractors' => [
                 ['vocabulary_id' => 4962, 'word' => 'reign'],
                 ['vocabulary_id' => 4963, 'word' => 'yarn'],
@@ -12863,7 +11896,6 @@ return [
             'vocabulary_id' => 4968,
             'sentence' => 'Please wait here {{blank}} while I make a phone call.',
             'blank_word' => 'awhile',
-            'translation' => '我打電話時，請在這裡等片刻。',
             'distractors' => [
                 ['vocabulary_id' => 4961, 'word' => 'compact'],
                 ['vocabulary_id' => 4962, 'word' => 'reign'],
@@ -12874,9 +11906,8 @@ return [
         ],
         [
             'vocabulary_id' => 4969,
-            'sentence' => 'She bought a comfortable {{blank}} for walking on the beach.',
+            'sentence' => 'One {{blank}} broke while she was walking on the beach.',
             'blank_word' => 'sandal',
-            'translation' => '她買了一雙舒適的涼鞋，準備在海灘上走路。',
             'distractors' => [
                 ['vocabulary_id' => 4962, 'word' => 'reign'],
                 ['vocabulary_id' => 4963, 'word' => 'yarn'],
@@ -12890,7 +11921,6 @@ return [
             'vocabulary_id' => 4970,
             'sentence' => 'The company’s sales began to {{blank}} after its main product was recalled.',
             'blank_word' => 'slump',
-            'translation' => '公司的主要產品被召回後，銷售額開始衰落。',
             'distractors' => [
                 ['vocabulary_id' => 4962, 'word' => 'reign'],
                 ['vocabulary_id' => 4963, 'word' => 'yarn'],
@@ -12906,7 +11936,6 @@ return [
             'vocabulary_id' => 4971,
             'sentence' => 'His {{blank}} driving put everyone in the car in danger.',
             'blank_word' => 'reckless',
-            'translation' => '他魯莽的駕駛行為使車上的每個人都陷入危險。',
             'distractors' => [
                 ['vocabulary_id' => 4977, 'word' => 'upward'],
                 ['vocabulary_id' => 4980, 'word' => 'outward'],
@@ -12919,7 +11948,6 @@ return [
             'vocabulary_id' => 4972,
             'sentence' => 'The museum displays a {{blank}} from an ancient temple.',
             'blank_word' => 'relic',
-            'translation' => '這間博物館展示了一件來自古代寺廟的遺物。',
             'distractors' => [
                 ['vocabulary_id' => 4974, 'word' => 'visa'],
                 ['vocabulary_id' => 4975, 'word' => 'prick'],
@@ -12931,7 +11959,6 @@ return [
             'vocabulary_id' => 4973,
             'sentence' => 'The old wooden door began to {{blank}} when I opened it.',
             'blank_word' => 'creak',
-            'translation' => '我打開那扇老木門時，它開始發出喀吱聲。',
             'distractors' => [
                 ['vocabulary_id' => 4975, 'word' => 'prick'],
                 ['vocabulary_id' => 4978, 'word' => 'esteem'],
@@ -12944,7 +11971,6 @@ return [
             'vocabulary_id' => 4974,
             'sentence' => 'She applied for a {{blank}} before traveling to Canada.',
             'blank_word' => 'visa',
-            'translation' => '她在前往加拿大之前申請了簽證。',
             'distractors' => [
                 ['vocabulary_id' => 4972, 'word' => 'relic'],
                 ['vocabulary_id' => 4975, 'word' => 'prick'],
@@ -12956,7 +11982,6 @@ return [
             'vocabulary_id' => 4975,
             'sentence' => 'The sharp needle {{blank}} my finger while I was sewing.',
             'blank_word' => 'pricked',
-            'translation' => '我縫紉時，尖針刺痛了我的手指。',
             'distractors' => [
                 ['vocabulary_id' => 4973, 'word' => 'creaked'],
                 ['vocabulary_id' => 4978, 'word' => 'esteemed'],
@@ -12969,7 +11994,6 @@ return [
             'vocabulary_id' => 4976,
             'sentence' => 'The {{blank}} is studying biology at a large university.',
             'blank_word' => 'undergraduate',
-            'translation' => '這名大學生正在一所大型大學研讀生物學。',
             'distractors' => [
                 ['vocabulary_id' => 4972, 'word' => 'relic'],
                 ['vocabulary_id' => 4974, 'word' => 'visa'],
@@ -12981,7 +12005,6 @@ return [
             'vocabulary_id' => 4977,
             'sentence' => 'The hikers followed an {{blank}} path toward the mountain peak.',
             'blank_word' => 'upward',
-            'translation' => '登山客沿著向上的路徑朝山頂前進。',
             'distractors' => [
                 ['vocabulary_id' => 4971, 'word' => 'reckless'],
                 ['vocabulary_id' => 4980, 'word' => 'outward'],
@@ -12994,7 +12017,6 @@ return [
             'vocabulary_id' => 4978,
             'sentence' => 'Many students {{blank}} their teacher for her patience and wisdom.',
             'blank_word' => 'esteem',
-            'translation' => '許多學生因為老師的耐心與智慧而尊重她。',
             'distractors' => [
                 ['vocabulary_id' => 4973, 'word' => 'creak'],
                 ['vocabulary_id' => 4975, 'word' => 'prick'],
@@ -13007,7 +12029,6 @@ return [
             'vocabulary_id' => 4979,
             'sentence' => 'We stopped on the mountain {{blank}} to enjoy the view.',
             'blank_word' => 'ridge',
-            'translation' => '我們在山脊上停下來欣賞景色。',
             'distractors' => [
                 ['vocabulary_id' => 4972, 'word' => 'relic'],
                 ['vocabulary_id' => 4974, 'word' => 'visa'],
@@ -13019,7 +12040,6 @@ return [
             'vocabulary_id' => 4980,
             'sentence' => 'The doors open {{blank}} to give people more space inside.',
             'blank_word' => 'outward',
-            'translation' => '這些門向外開，以便為裡面的人提供更多空間。',
             'distractors' => [
                 ['vocabulary_id' => 4971, 'word' => 'reckless'],
                 ['vocabulary_id' => 4977, 'word' => 'upward'],
@@ -13034,7 +12054,6 @@ return [
             'vocabulary_id' => 4981,
             'sentence' => 'Please {{blank}} the sentence that best supports your answer.',
             'blank_word' => 'underline',
-            'translation' => '請在最能支持你答案的句子下畫線。',
             'distractors' => [
                 ['vocabulary_id' => 4982, 'word' => 'blot'],
                 ['vocabulary_id' => 4984, 'word' => 'justify'],
@@ -13045,7 +12064,6 @@ return [
             'vocabulary_id' => 4982,
             'sentence' => 'A large {{blank}} of ink covered the corner of the report.',
             'blank_word' => 'blot',
-            'translation' => '一大塊墨水污漬沾滿了報告的一角。',
             'distractors' => [
                 ['vocabulary_id' => 4981, 'word' => 'underline'],
                 ['vocabulary_id' => 4983, 'word' => 'ace'],
@@ -13059,7 +12077,6 @@ return [
             'vocabulary_id' => 4983,
             'sentence' => 'She drew an {{blank}} and won the card game.',
             'blank_word' => 'ace',
-            'translation' => '她抽到一張么點牌，贏得了這場紙牌遊戲。',
             'distractors' => [
                 ['vocabulary_id' => 4982, 'word' => 'blot'],
                 ['vocabulary_id' => 4985, 'word' => 'pessimism'],
@@ -13071,7 +12088,6 @@ return [
             'vocabulary_id' => 4984,
             'sentence' => 'The manager tried to {{blank}} his decision with clear evidence.',
             'blank_word' => 'justify',
-            'translation' => '經理試圖用明確的證據證明他的決定合理。',
             'distractors' => [
                 ['vocabulary_id' => 4981, 'word' => 'underline'],
                 ['vocabulary_id' => 4982, 'word' => 'blot'],
@@ -13082,7 +12098,6 @@ return [
             'vocabulary_id' => 4985,
             'sentence' => 'His {{blank}} made him expect the project to fail.',
             'blank_word' => 'pessimism',
-            'translation' => '他的悲觀主義使他預期這項計畫會失敗。',
             'distractors' => [
                 ['vocabulary_id' => 4982, 'word' => 'blot'],
                 ['vocabulary_id' => 4983, 'word' => 'ace'],
@@ -13094,7 +12109,6 @@ return [
             'vocabulary_id' => 4986,
             'sentence' => 'He broke a {{blank}} in the bicycle accident.',
             'blank_word' => 'rib',
-            'translation' => '他在那場自行車事故中摔斷了一根肋骨。',
             'distractors' => [
                 ['vocabulary_id' => 4982, 'word' => 'blot'],
                 ['vocabulary_id' => 4983, 'word' => 'ace'],
@@ -13106,7 +12120,6 @@ return [
             'vocabulary_id' => 4987,
             'sentence' => 'The {{blank}} teacher inspired her students to love history.',
             'blank_word' => 'passionate',
-            'translation' => '那位熱情的老師啟發學生喜愛歷史。',
             'distractors' => [
                 ['vocabulary_id' => 4988, 'word' => 'erect'],
                 ['vocabulary_id' => 4981, 'word' => 'underline'],
@@ -13119,7 +12132,6 @@ return [
             'vocabulary_id' => 4988,
             'sentence' => 'The soldiers stood {{blank}} during the ceremony.',
             'blank_word' => 'erect',
-            'translation' => '士兵們在典禮期間挺立站好。',
             'distractors' => [
                 ['vocabulary_id' => 4987, 'word' => 'passionate'],
                 ['vocabulary_id' => 4981, 'word' => 'underline'],
@@ -13132,7 +12144,6 @@ return [
             'vocabulary_id' => 4989,
             'sentence' => 'The two teams {{blank}} hosting the annual competition.',
             'blank_word' => 'alternate',
-            'translation' => '這兩支隊伍輪流主辦年度比賽。',
             'distractors' => [
                 ['vocabulary_id' => 4981, 'word' => 'underline'],
                 ['vocabulary_id' => 4982, 'word' => 'blot'],
@@ -13143,7 +12154,6 @@ return [
             'vocabulary_id' => 4990,
             'sentence' => 'Her music combines traditional instruments with {{blank}} pop.',
             'blank_word' => 'mainstream',
-            'translation' => '她的音樂將傳統樂器與主流流行音樂結合在一起。',
             'distractors' => [
                 ['vocabulary_id' => 4982, 'word' => 'blot'],
                 ['vocabulary_id' => 4983, 'word' => 'ace'],
@@ -13157,7 +12167,6 @@ return [
             'vocabulary_id' => 4991,
             'sentence' => 'The children {{blank}} excitedly about their school trip.',
             'blank_word' => 'chattered',
-            'translation' => '孩子們興奮地喋喋不休談論他們的校外教學。',
             'distractors' => [
                 ['vocabulary_id' => 4992, 'word' => 'nibbled'],
                 ['vocabulary_id' => 4994, 'word' => 'sneaked'],
@@ -13170,7 +12179,6 @@ return [
             'vocabulary_id' => 4992,
             'sentence' => 'The rabbit {{blank}} on a carrot while hiding under the table.',
             'blank_word' => 'nibbled',
-            'translation' => '那隻兔子躲在桌子底下一點一點地啃著胡蘿蔔。',
             'distractors' => [
                 ['vocabulary_id' => 4991, 'word' => 'chattered'],
                 ['vocabulary_id' => 4994, 'word' => 'sneaked'],
@@ -13183,7 +12191,6 @@ return [
             'vocabulary_id' => 4993,
             'sentence' => 'Only a small {{blank}} of the students opposed the new rule.',
             'blank_word' => 'fraction',
-            'translation' => '只有一小部分學生反對這項新規定。',
             'distractors' => [
                 ['vocabulary_id' => 4991, 'word' => 'chatter'],
                 ['vocabulary_id' => 4992, 'word' => 'nibble'],
@@ -13197,7 +12204,6 @@ return [
             'vocabulary_id' => 4994,
             'sentence' => 'The cat {{blank}} into the kitchen while no one was watching.',
             'blank_word' => 'sneaked',
-            'translation' => '沒人注意時，那隻貓偷偷溜進了廚房。',
             'distractors' => [
                 ['vocabulary_id' => 4991, 'word' => 'chattered'],
                 ['vocabulary_id' => 4992, 'word' => 'nibbled'],
@@ -13210,7 +12216,6 @@ return [
             'vocabulary_id' => 4995,
             'sentence' => 'The charity received a {{blank}} donation from a local company.',
             'blank_word' => 'substantial',
-            'translation' => '這個慈善團體收到一家當地公司的大筆捐款。',
             'distractors' => [
                 ['vocabulary_id' => 4991, 'word' => 'chatter'],
                 ['vocabulary_id' => 4992, 'word' => 'nibble'],
@@ -13223,7 +12228,6 @@ return [
             'vocabulary_id' => 4996,
             'sentence' => 'A tall {{blank}} of hay stood beside the barn.',
             'blank_word' => 'stack',
-            'translation' => '穀倉旁邊有一大堆高高的乾草堆。',
             'distractors' => [
                 ['vocabulary_id' => 4991, 'word' => 'chatter'],
                 ['vocabulary_id' => 4992, 'word' => 'nibble'],
@@ -13237,7 +12241,6 @@ return [
             'vocabulary_id' => 4997,
             'sentence' => 'The children built a small {{blank}} of sand near the beach.',
             'blank_word' => 'mound',
-            'translation' => '孩子們在海邊堆了一座小沙丘。',
             'distractors' => [
                 ['vocabulary_id' => 4991, 'word' => 'chatter'],
                 ['vocabulary_id' => 4992, 'word' => 'nibble'],
@@ -13251,7 +12254,6 @@ return [
             'vocabulary_id' => 4998,
             'sentence' => 'The official {{blank}} is located near the city hall.',
             'blank_word' => 'residence',
-            'translation' => '官邸位於市政府附近。',
             'distractors' => [
                 ['vocabulary_id' => 4991, 'word' => 'chatter'],
                 ['vocabulary_id' => 4992, 'word' => 'nibble'],
@@ -13265,7 +12267,6 @@ return [
             'vocabulary_id' => 4999,
             'sentence' => 'Thick {{blank}} filled the room after the machine overheated.',
             'blank_word' => 'fumes',
-            'translation' => '機器過熱後，濃烈難聞的煙氣充滿了房間。',
             'distractors' => [
                 ['vocabulary_id' => 4991, 'word' => 'chatters'],
                 ['vocabulary_id' => 4992, 'word' => 'nibbles'],
@@ -13279,7 +12280,6 @@ return [
             'vocabulary_id' => 5000,
             'sentence' => 'A green {{blank}} rested on a warm stone in the garden.',
             'blank_word' => 'lizard',
-            'translation' => '一隻綠色蜥蜴趴在花園裡一塊溫暖的石頭上。',
             'distractors' => [
                 ['vocabulary_id' => 4991, 'word' => 'chatter'],
                 ['vocabulary_id' => 4992, 'word' => 'nibble'],

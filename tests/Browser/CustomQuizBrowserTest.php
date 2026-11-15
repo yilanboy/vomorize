@@ -321,6 +321,7 @@ test('authenticated member can select sentence cloze mode and play quiz with pos
         ->create([
             'level_id' => $level->id,
             'group_id' => $group->id,
+            'example_translation' => '團隊執行了這項計畫。',
         ]);
 
     foreach ($vocabularies as $index => $vocab) {
@@ -333,7 +334,6 @@ test('authenticated member can select sentence cloze mode and play quiz with pos
             'vocabulary_id' => $vocab->id,
             'sentence' => "The team {{blank}} the plan for task {$index}.",
             'blank_word' => $vocab->word.'ed',
-            'translation' => '團隊執行了這項計畫。',
             'distractors' => $peers->map(fn (Vocabulary $peer): array => [
                 'vocabulary_id' => $peer->id,
                 'word' => $peer->word.'ed',

@@ -14,7 +14,6 @@ use Illuminate\Database\Eloquent\Relations\BelongsTo;
  * @property int $vocabulary_id
  * @property string $sentence
  * @property string $blank_word
- * @property string $translation
  * @property array<int, array{vocabulary_id: int, word: string}> $distractors
  */
 class SentenceClozeQuestion extends Model
@@ -26,7 +25,6 @@ class SentenceClozeQuestion extends Model
         'vocabulary_id',
         'sentence',
         'blank_word',
-        'translation',
         'distractors',
     ];
 

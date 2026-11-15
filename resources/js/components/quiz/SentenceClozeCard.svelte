@@ -28,9 +28,6 @@
             ? question.sentence_segments
             : [{ type: 'text', text: question.stem }],
     );
-    const translation = $derived(
-        question.sentence_translation || vocabulary.example_translation,
-    );
 </script>
 
 <div
@@ -100,7 +97,7 @@
                 <p
                     class="text-foreground/90 line-clamp-2 text-sm leading-snug font-medium"
                 >
-                    {translation}
+                    {vocabulary.example_translation}
                 </p>
             </div>
         </div>

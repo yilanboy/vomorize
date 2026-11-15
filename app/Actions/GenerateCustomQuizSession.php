@@ -44,7 +44,6 @@ use InvalidArgumentException;
  *     options: array<int, QuizOptionPayload>,
  *     correct_option_id: int,
  *     sentence_segments?: array<int, SentenceSegmentPayload>,
- *     sentence_translation?: string,
  * }
  * @phpstan-type SpellingSlotPayload array{
  *     is_blank: bool,
@@ -373,7 +372,6 @@ readonly class GenerateCustomQuizSession
             'options' => $options,
             'correct_option_id' => $target['id'],
             'sentence_segments' => $segments,
-            'sentence_translation' => $cloze->translation,
         ];
     }
 

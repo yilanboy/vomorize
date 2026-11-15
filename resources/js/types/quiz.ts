@@ -39,7 +39,6 @@ export interface QuizQuestionPayload {
     options: QuizOptionPayload[];
     correct_option_id: number;
     sentence_segments?: SentenceSegment[];
-    sentence_translation?: string;
 }
 
 export interface SpellingSlot {

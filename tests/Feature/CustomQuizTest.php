@@ -317,7 +317,6 @@ test('member can start custom quiz in sentence_cloze mode with inflected options
             'vocabulary_id' => $vocab->id,
             'sentence' => "She {{blank}} the answer for item {$index}.",
             'blank_word' => $vocab->word.'ed',
-            'translation' => "她回答了第 {$index} 題。",
             'distractors' => $peerIds->map(fn (Vocabulary $peer): array => [
                 'vocabulary_id' => $peer->id,
                 'word' => $peer->word.'ed',
@@ -359,7 +358,8 @@ test('member can start custom quiz in sentence_cloze mode with inflected options
         expect($quiz['quiz_type'])->toBe('sentence_cloze')
             ->and($quiz['correct_option_id'])->toBe($targetVocab['id'])
             ->and($quiz['audio_url'])->toBe('')
-            ->and($quiz['sentence_translation'])->toStartWith('她回答了第')
+            ->and($quiz)->not->toHaveKey('sentence_translation')
+            ->and($targetVocab['example_translation'])->not->toBeEmpty()
             ->and($quiz['options'])->toHaveCount(4)
             ->and($step['fallback_quiz'])->toBeNull();
 
