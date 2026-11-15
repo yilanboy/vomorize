@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 
 use App\Actions\GenerateCustomQuizSession;
 use App\Actions\RecordTodayCheckIn;
+use App\Enums\QuizMode;
 use App\Http\Requests\CustomQuizRequest;
 use App\Models\Group;
 use App\Models\User;
@@ -33,7 +34,7 @@ class CustomQuizSessionController extends Controller
             return to_route('quiz.index');
         }
 
-        $quizMode = (string) $request->validated('quiz_mode', 'standard');
+        $quizMode = (string) $request->validated('quiz_mode', QuizMode::defaultMode()->value);
 
         $request->session()->put('custom_quiz_config', [
             'question_count' => $questionCount,

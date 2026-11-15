@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\Actions;
 
+use App\Enums\QuizMode;
 use App\Enums\QuizType;
 use App\Models\Group;
 use App\Models\LearningProgress;
@@ -65,6 +66,11 @@ use InvalidArgumentException;
  */
 readonly class GenerateCustomQuizSession
 {
+    /** @var array<int, int> */
+    public const array QUESTION_COUNT_OPTIONS = [10, 20, 30, 50, 100];
+
+    public const int DEFAULT_QUESTION_COUNT = 10;
+
     /**
      * Resolve available passed group IDs for a member or guest.
      *
@@ -104,7 +110,7 @@ readonly class GenerateCustomQuizSession
      *     question_count: int,
      * }
      */
-    public function handle(int $questionCount, ?User $user = null, array $passedGroupIds = [], string $quizMode = 'standard'): array
+    public function handle(int $questionCount, ?User $user = null, array $passedGroupIds = [], string $quizMode = QuizMode::Standard->value): array
     {
         $cdnUrl = rtrim((string) (config('filesystems.disks.r2.url') ?: 'https://assets.vomorize.com'), '/');
 
@@ -161,7 +167,7 @@ readonly class GenerateCustomQuizSession
             $stepIndex = $index + 1;
             $groupVocabularies = $vocabulariesByGroup[$target['group_id']] ?? [];
 
-            if ($quizMode === 'spelling') {
+            if ($quizMode === QuizMode::Spelling->value) {
                 $quiz = $this->buildSpellingQuestion($target);
                 $fallbackQuiz = null;
             } else {

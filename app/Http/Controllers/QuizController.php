@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers;
 
+use App\Actions\GenerateCustomQuizSession;
+use App\Enums\QuizMode;
 use App\Models\Group;
 use App\Models\LearningProgress;
 use App\Models\User;
@@ -35,6 +37,10 @@ class QuizController extends Controller
         return Inertia::render('quiz/index/Page', [
             'passedGroupCount' => $passedGroupCount,
             'unlockedWordCount' => $unlockedWordCount,
+            'questionCountOptions' => GenerateCustomQuizSession::QUESTION_COUNT_OPTIONS,
+            'defaultQuestionCount' => GenerateCustomQuizSession::DEFAULT_QUESTION_COUNT,
+            'availableQuizModes' => QuizMode::availableValues(),
+            'defaultQuizMode' => QuizMode::defaultMode()->value,
         ]);
     }
 }

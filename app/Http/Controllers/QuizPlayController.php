@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Http\Controllers;
 
 use App\Actions\GenerateCustomQuizSession;
+use App\Enums\QuizMode;
 use App\Models\Group;
 use App\Models\User;
 use Illuminate\Http\RedirectResponse;
@@ -31,7 +32,7 @@ class QuizPlayController extends Controller
         /** @var User|null $user */
         $user = $request->user();
         $questionCount = (int) $config['question_count'];
-        $quizMode = (string) ($config['quiz_mode'] ?? 'standard');
+        $quizMode = (string) ($config['quiz_mode'] ?? QuizMode::defaultMode()->value);
         /** @var array<int, int> $passedGroupIds */
         $passedGroupIds = array_map('intval', (array) ($config['passed_group_ids'] ?? []));
 

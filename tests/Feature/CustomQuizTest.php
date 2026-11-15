@@ -2,6 +2,8 @@
 
 declare(strict_types=1);
 
+use App\Actions\GenerateCustomQuizSession;
+use App\Enums\QuizMode;
 use App\Models\Group;
 use App\Models\LearningProgress;
 use App\Models\Level;
@@ -21,6 +23,10 @@ test('guest accessing custom quiz setup page receives null counts', function () 
         ->component('quiz/index/Page')
         ->where('passedGroupCount', null)
         ->where('unlockedWordCount', null)
+        ->where('questionCountOptions', GenerateCustomQuizSession::QUESTION_COUNT_OPTIONS)
+        ->where('defaultQuestionCount', GenerateCustomQuizSession::DEFAULT_QUESTION_COUNT)
+        ->where('availableQuizModes', QuizMode::availableValues())
+        ->where('defaultQuizMode', QuizMode::defaultMode()->value)
     );
 });
 

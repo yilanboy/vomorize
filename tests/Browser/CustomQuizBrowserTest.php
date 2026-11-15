@@ -38,10 +38,12 @@ test('authenticated member with unlocked words sees word pool count and question
     $groups = Group::factory()->count(2)->create(['level_id' => $level->id]);
 
     foreach ($groups as $group) {
-        Vocabulary::factory()->count(10)->create([
-            'level_id' => $level->id,
-            'group_id' => $group->id,
-        ]);
+        Vocabulary::factory()
+            ->count(10)
+            ->create([
+                'level_id' => $level->id,
+                'group_id' => $group->id,
+            ]);
 
         LearningProgress::factory()->create([
             'user_id' => $user->id,
@@ -76,10 +78,12 @@ test('authenticated member can select spelling mode and enter custom quiz room',
     $level = Level::factory()->create();
     $group = Group::factory()->create(['level_id' => $level->id]);
 
-    Vocabulary::factory()->count(10)->create([
-        'level_id' => $level->id,
-        'group_id' => $group->id,
-    ]);
+    Vocabulary::factory()
+        ->count(10)
+        ->create([
+            'level_id' => $level->id,
+            'group_id' => $group->id,
+        ]);
 
     LearningProgress::factory()->create([
         'user_id' => $user->id,
@@ -91,7 +95,8 @@ test('authenticated member can select spelling mode and enter custom quiz room',
     $this->actingAs($user);
 
     $page = visit('/quiz');
-    $page->assertNoSmoke()
+    $page
+        ->assertNoSmoke()
         ->assertSee('單字拼寫')
         ->click('button:has-text("拼音")')
         ->assertSee('已配置：拼音模式')
@@ -109,10 +114,12 @@ test('authenticated member completing custom quiz displays result summary withou
     $level = Level::factory()->create();
     $group = Group::factory()->create(['level_id' => $level->id]);
 
-    Vocabulary::factory()->count(10)->create([
-        'level_id' => $level->id,
-        'group_id' => $group->id,
-    ]);
+    Vocabulary::factory()
+        ->count(10)
+        ->create([
+            'level_id' => $level->id,
+            'group_id' => $group->id,
+        ]);
 
     LearningProgress::factory()->create([
         'user_id' => $user->id,
@@ -124,7 +131,8 @@ test('authenticated member completing custom quiz displays result summary withou
     $this->actingAs($user);
 
     $page = visit('/quiz');
-    $page->assertNoSmoke()
+    $page
+        ->assertNoSmoke()
         ->assertSee('開始自訂測驗 (10 題)')
         ->click('button:has-text("開始自訂測驗")')
         ->wait(2)
@@ -135,7 +143,168 @@ test('authenticated member completing custom quiz displays result summary withou
         $page->click('button:has-text("1")')->wait(1.2);
     }
 
-    $page->assertSee('自訂測驗完成！')
+    $page
+        ->assertSee('自訂測驗完成！')
         ->assertDontSee('All Inertia requests must receive a valid Inertia response')
         ->assertNoSmoke();
+});
+
+it("can remember user's choices", function () {
+    app()->setLocale('zh_TW');
+
+    $user = loginAsUser();
+
+    $level = Level::factory()->create();
+    $groups = Group::factory()
+        ->count(2)
+        ->create([
+            'level_id' => $level->id,
+        ]);
+    $user->learningProgress()->createMany([
+        [
+            'level_id' => $level->id,
+            'group_id' => $groups[0]->id,
+            'stage' => 1,
+            'last_score' => 90,
+            'last_reviewed_at' => now()->subDay(),
+            'next_review_at' => now()->subDay(),
+        ],
+        [
+            'level_id' => $level->id,
+            'group_id' => $groups[1]->id,
+            'stage' => 1,
+            'last_score' => 90,
+            'last_reviewed_at' => now()->subDay(),
+            'next_review_at' => now()->subDay(),
+        ],
+    ]);
+
+    $page = visit('/quiz');
+    $page
+        ->assertNoSmoke()
+        ->assertDontSee('尚未解鎖自訂測驗')
+        ->assertSee('選擇測驗題數')
+        ->assertSee('測驗題型模式')
+        ->assertAriaAttribute('@count-option-10', 'pressed', 'true')
+        ->assertAriaAttribute('@count-option-20', 'pressed', 'false')
+        ->assertAriaAttribute('@mode-option-standard', 'pressed', 'true')
+        ->assertAriaAttribute('@mode-option-spelling', 'pressed', 'false')
+        ->assertSee('已配置：一般模式 · 10 題')
+        ->click('@count-option-20')
+        ->click('@mode-option-spelling')
+        ->assertAriaAttribute('@count-option-20', 'pressed', 'true')
+        ->assertAriaAttribute('@mode-option-spelling', 'pressed', 'true')
+        ->assertSee('已配置：拼音模式 · 20 題')
+        ->click('a:has-text("單字等級")')
+        ->assertPathIs('/levels')
+        ->assertNoSmoke()
+        ->click('a:has-text("自訂測驗")')
+        ->assertPathIs('/quiz')
+        ->assertNoSmoke()
+        ->assertAriaAttribute('@count-option-20', 'pressed', 'true')
+        ->assertAriaAttribute('@mode-option-spelling', 'pressed', 'true')
+        ->assertSee('已配置：拼音模式 · 20 題');
+});
+
+it('falls back to 10 questions when switching to a user with only 10 unlocked words', function () {
+    app()->setLocale('zh_TW');
+
+    $level = Level::factory()->create();
+    $groups = Group::factory()
+        ->count(2)
+        ->create([
+            'level_id' => $level->id,
+        ]);
+
+    $userWith20Words = User::factory()->create([
+        'name' => 'Twenty User',
+    ]);
+    $userWith20Words->learningProgress()->createMany([
+        [
+            'level_id' => $level->id,
+            'group_id' => $groups[0]->id,
+            'stage' => 1,
+            'last_score' => 90,
+            'last_reviewed_at' => now()->subDay(),
+            'next_review_at' => now()->subDay(),
+        ],
+        [
+            'level_id' => $level->id,
+            'group_id' => $groups[1]->id,
+            'stage' => 1,
+            'last_score' => 90,
+            'last_reviewed_at' => now()->subDay(),
+            'next_review_at' => now()->subDay(),
+        ],
+    ]);
+
+    $userWith10Words = User::factory()->create([
+        'name' => 'Ten User',
+    ]);
+    $userWith10Words->learningProgress()->create([
+        'level_id' => $level->id,
+        'group_id' => $groups[0]->id,
+        'stage' => 1,
+        'last_score' => 90,
+        'last_reviewed_at' => now()->subDay(),
+        'next_review_at' => now()->subDay(),
+    ]);
+
+    loginAsUser($userWith20Words);
+
+    $page = visit('/quiz');
+    $page
+        ->assertNoSmoke()
+        ->assertSee('20 個單字')
+        ->click('@count-option-20')
+        ->assertAriaAttribute('@count-option-20', 'pressed', 'true')
+        ->assertSee('已配置：一般模式 · 20 題')
+        ->click('header button:has-text("TU")')
+        ->click('@logout-button')
+        ->wait(1)
+        ->click('header a:has-text("登入")')
+        ->assertPathIs('/login')
+        ->fill('#email', $userWith10Words->email)
+        ->fill('#password', 'password')
+        ->click('@login-button')
+        ->wait(1)
+        ->click('header a:has-text("自訂測驗")')
+        ->assertPathIs('/quiz')
+        ->assertNoSmoke()
+        ->assertSee('10 個單字')
+        ->assertAriaAttribute('@count-option-10', 'pressed', 'true')
+        ->assertAriaAttribute('@count-option-20', 'pressed', 'false')
+        ->assertSee('已配置：一般模式 · 10 題');
+});
+
+it('falls back to backend defaults when stored preferences are outside allowed ranges', function () {
+    app()->setLocale('zh_TW');
+
+    $user = loginAsUser();
+    $level = Level::factory()->create();
+    $group = Group::factory()->create([
+        'level_id' => $level->id,
+    ]);
+    $user->learningProgress()->create([
+        'level_id' => $level->id,
+        'group_id' => $group->id,
+        'stage' => 1,
+        'last_score' => 90,
+        'last_reviewed_at' => now()->subDay(),
+        'next_review_at' => now()->subDay(),
+    ]);
+
+    $page = visit('/quiz');
+    $page->script(<<<'JS'
+        localStorage.setItem('quiz_question_count', '999');
+        localStorage.setItem('quiz_mode', 'sentence_cloze');
+    JS);
+
+    $page
+        ->navigate('/quiz')
+        ->assertNoSmoke()
+        ->assertAriaAttribute('@count-option-10', 'pressed', 'true')
+        ->assertAriaAttribute('@mode-option-standard', 'pressed', 'true')
+        ->assertAriaAttribute('@mode-option-spelling', 'pressed', 'false')
+        ->assertSee('已配置：一般模式 · 10 題');
 });

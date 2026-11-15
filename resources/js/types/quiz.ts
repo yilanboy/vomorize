@@ -24,6 +24,8 @@ export type QuizType =
     | 'audio_to_definition'
     | 'spelling';
 
+export type QuizMode = 'standard' | 'sentence_cloze' | 'spelling';
+
 export interface QuizQuestionPayload {
     quiz_type: QuizType;
     stem: string;

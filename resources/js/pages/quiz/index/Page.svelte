@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { onMount } from 'svelte';
+    import { onMount, untrack } from 'svelte';
     import { Link, page, setLayoutProps, useForm } from '@inertiajs/svelte';
     import ArrowRight from '@lucide/svelte/icons/arrow-right';
     import Check from '@lucide/svelte/icons/check';
@@ -14,15 +14,28 @@
     import { Button } from '@/components/ui/button';
     import { t } from '@/lib/i18n';
     import { learningProgressDb } from '@/lib/learningProgressDb';
+    import { loadPreference, savePreference } from '@/lib/preference';
     import type { BreadcrumbItem } from '@/types';
+    import type { QuizMode } from '@/types/quiz';
 
     let {
         passedGroupCount = null,
         unlockedWordCount = null,
+        questionCountOptions,
+        defaultQuestionCount,
+        availableQuizModes,
+        defaultQuizMode,
     }: {
         passedGroupCount?: number | null;
         unlockedWordCount?: number | null;
+        questionCountOptions: number[];
+        defaultQuestionCount: number;
+        availableQuizModes: QuizMode[];
+        defaultQuizMode: QuizMode;
     } = $props();
+
+    const QUIZ_COUNT_STORAGE_KEY = 'quiz_question_count';
+    const QUIZ_MODE_STORAGE_KEY = 'quiz_mode';
 
     const breadcrumbs: BreadcrumbItem[] = [
         {
@@ -46,12 +59,10 @@
     );
 
     const form = useForm({
-        question_count: 10,
-        quiz_mode: 'standard' as 'standard' | 'sentence_cloze' | 'spelling',
+        question_count: untrack(() => defaultQuestionCount),
+        quiz_mode: untrack(() => defaultQuizMode),
         passed_group_ids: [] as number[],
     });
-
-    const COUNT_OPTIONS = [10, 20, 30, 50, 100] as const;
 
     const vocabularyPerGroup = $derived(page.props.vocabularyPerGroup);
 
@@ -98,6 +109,16 @@
         }
     }
 
+    function selectQuestionCount(count: number) {
+        form.question_count = count;
+        savePreference(QUIZ_COUNT_STORAGE_KEY, String(count));
+    }
+
+    function selectQuizMode(mode: QuizMode) {
+        form.quiz_mode = mode;
+        savePreference(QUIZ_MODE_STORAGE_KEY, mode);
+    }
+
     onMount(async () => {
         if (unlockedWordCount === null) {
             const records = await learningProgressDb.getAllProgress();
@@ -105,6 +126,37 @@
             form.passed_group_ids = passed.map((r) => r.group_id);
             localPassedGroupCount = passed.length;
             localUnlockedWordCount = passed.length * vocabularyPerGroup;
+        }
+
+        const availableWordCount =
+            unlockedWordCount ?? localUnlockedWordCount ?? 0;
+
+        const storedCount = Number.parseInt(
+            loadPreference(
+                QUIZ_COUNT_STORAGE_KEY,
+                String(defaultQuestionCount),
+            ),
+            10,
+        );
+
+        if (
+            questionCountOptions.includes(storedCount) &&
+            availableWordCount >= storedCount
+        ) {
+            form.question_count = storedCount;
+        } else {
+            form.question_count = defaultQuestionCount;
+        }
+
+        const storedMode = loadPreference(
+            QUIZ_MODE_STORAGE_KEY,
+            defaultQuizMode,
+        );
+
+        if (availableQuizModes.includes(storedMode as QuizMode)) {
+            form.quiz_mode = storedMode as QuizMode;
+        } else {
+            form.quiz_mode = defaultQuizMode;
         }
     });
 </script>
@@ -264,14 +316,16 @@
                 <div
                     class="border-border/80 divide-border/80 mt-4 grid grid-cols-2 divide-x divide-y overflow-hidden rounded-xl border sm:grid-cols-5 sm:divide-y-0"
                 >
-                    {#each COUNT_OPTIONS as count, idx (count)}
+                    {#each questionCountOptions as count, idx (count)}
                         {@const isAvailable = effectiveWordCount >= count}
                         {@const isSelected =
                             form.question_count === count && isAvailable}
                         {@const diff = count - effectiveWordCount}
 
                         <button
+                            data-test={`count-option-${count}`}
                             type="button"
+                            aria-pressed={isSelected}
                             class={{
                                 'group relative flex flex-col justify-between p-4 text-left transition-colors outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset': true,
                                 'max-sm:rounded-tl-[11px] sm:rounded-l-[11px]':
@@ -289,7 +343,7 @@
                             disabled={!isAvailable}
                             onclick={() => {
                                 if (isAvailable) {
-                                    form.question_count = count;
+                                    selectQuestionCount(count);
                                 }
                             }}
                         >
@@ -377,7 +431,9 @@
                 >
                     <!-- Mode 1: Standard (Active) -->
                     <button
+                        data-test="mode-option-standard"
                         type="button"
+                        aria-pressed={form.quiz_mode === 'standard'}
                         class={{
                             'flex w-full cursor-pointer flex-col justify-between p-5 text-left transition-colors outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset max-lg:rounded-t-[11px] lg:rounded-l-[11px]': true,
                             'bg-blue-50/80 ring-2 ring-blue-600 ring-inset dark:bg-blue-950/35 dark:ring-blue-500':
@@ -385,7 +441,7 @@
                             'bg-card hover:bg-muted/40':
                                 form.quiz_mode !== 'standard',
                         }}
-                        onclick={() => (form.quiz_mode = 'standard')}
+                        onclick={() => selectQuizMode('standard')}
                     >
                         <div class="space-y-2.5">
                             <div
@@ -486,7 +542,9 @@
 
                     <!-- Mode 3: Spelling (Active) -->
                     <button
+                        data-test="mode-option-spelling"
                         type="button"
+                        aria-pressed={form.quiz_mode === 'spelling'}
                         class={{
                             'flex w-full cursor-pointer flex-col justify-between p-5 text-left transition-colors outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-inset max-lg:rounded-b-[11px] lg:rounded-r-[11px]': true,
                             'bg-blue-50/80 ring-2 ring-blue-600 ring-inset dark:bg-blue-950/35 dark:ring-blue-500':
@@ -494,7 +552,7 @@
                             'bg-card hover:bg-muted/40':
                                 form.quiz_mode !== 'spelling',
                         }}
-                        onclick={() => (form.quiz_mode = 'spelling')}
+                        onclick={() => selectQuizMode('spelling')}
                     >
                         <div class="space-y-2.5">
                             <div
