@@ -120,9 +120,16 @@
                 <span
                     class="text-muted-foreground text-center text-sm font-medium"
                 >
-                    {audioPlaying
-                        ? t('ui.quiz.audio_prompt.playing')
-                        : t('ui.quiz.audio_prompt.play_hint')}
+                    {#if audioPlaying}
+                        {t('ui.quiz.audio_prompt.playing')}
+                    {:else}
+                        <span class="sm:hidden">
+                            {t('ui.quiz.audio_prompt.play_hint_mobile')}
+                        </span>
+                        <span class="hidden sm:inline">
+                            {t('ui.quiz.audio_prompt.play_hint')}
+                        </span>
+                    {/if}
                 </span>
             </div>
 

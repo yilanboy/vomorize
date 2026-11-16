@@ -125,7 +125,9 @@
         </button>
     {/each}
 
-    <p class="text-muted-foreground text-center text-sm font-medium">
+    <p
+        class="text-muted-foreground hidden text-center text-sm font-medium sm:block"
+    >
         {t('ui.quiz.options.keyboard_hint')}
     </p>
 </div>

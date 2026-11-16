@@ -92,23 +92,6 @@
         });
     }
 
-    function handleKeydown(event: KeyboardEvent) {
-        if (
-            event.target instanceof HTMLInputElement ||
-            event.target instanceof HTMLTextAreaElement ||
-            event.metaKey ||
-            event.ctrlKey ||
-            event.altKey
-        ) {
-            return;
-        }
-
-        if (event.key === 'Enter' && isUnlocked && !form.processing) {
-            event.preventDefault();
-            startQuiz();
-        }
-    }
-
     function selectQuestionCount(count: number) {
         form.question_count = count;
         savePreference(QUIZ_COUNT_STORAGE_KEY, String(count));
@@ -160,8 +143,6 @@
         }
     });
 </script>
-
-<svelte:window onkeydown={handleKeydown} />
 
 <AppHead title={t('ui.quiz.custom.title')} />
 
@@ -652,6 +633,9 @@
                         })}
                     </div>
                     <p class="text-muted-foreground text-sm">
+                        <span class="hidden sm:inline">
+                            {t('ui.quiz.custom.footer_keyboard_hint')}
+                        </span>
                         {t('ui.quiz.custom.footer_hint')}
                     </p>
                 </div>
@@ -663,16 +647,9 @@
                     onclick={startQuiz}
                 >
                     <span>
-                        {t('ui.quiz.custom.start_button', {
-                            count: form.question_count,
-                        })}
+                        {t('ui.quiz.custom.start_button')}
                     </span>
                     <ArrowRight class="size-4.5 shrink-0" />
-                    <span
-                        class="bg-primary-foreground/20 text-primary-foreground ml-1 hidden rounded px-2 py-0.5 font-mono text-sm sm:inline-flex"
-                    >
-                        Enter ↵
-                    </span>
                 </Button>
             </div>
         </section>

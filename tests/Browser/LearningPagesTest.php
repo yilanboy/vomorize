@@ -134,3 +134,11 @@ test('stage 2 review quiz result score matches partial correct count and lists m
 test('stage 2 review quiz shows expected visual feedback for correct and wrong option selections', function () {
     //
 })->skip('Practice: assert correct/wrong option feedback states (or fixed-seed assertScreenshotMatches())');
+
+test('stage 1 intro card hides spacebar keyboard hint on mobile and shows it on desktop', function () {
+    //
+})->skip('Practice: visit /groups/{group}/intro with on()->mobile() and assertDontSee("按 Space 鍵繼續"), then verify it is visible on desktop');
+
+test('stage 1 and stage 2 quiz cards hide keyboard hints on mobile', function () {
+    //
+})->skip('Practice: on mobile viewport during stage 1/2 quiz, assertDontSee("按數字鍵 1-4 快速作答") and verify audio prompt shows "點擊播放發音" rather than "點擊或按 Space 播放發音"');

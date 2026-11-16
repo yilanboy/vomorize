@@ -157,7 +157,6 @@ return [
         ],
     ],
     'study' => [
-        'card_tip' => '點擊空白鍵或按鈕翻至下一張',
         'cooldown_remaining' => '冷卻中 (:time)',
         'ready_to_review' => '開始複習測驗',
     ],
@@ -637,10 +636,11 @@ return [
             'clear' => '清除',
             'correct_answer' => '正確拼寫',
             'correct_banner' => '拼寫正確！',
-            'next' => '下一題 (Enter)',
+            'next' => '下一題',
         ],
         'audio_prompt' => [
             'play_hint' => '點擊或按 Space 播放發音',
+            'play_hint_mobile' => '點擊播放發音',
             'playing' => '正在播放發音...',
         ],
         'options' => [
@@ -689,7 +689,6 @@ return [
                 'guest_hint' => '免註冊即可體驗 · 學習進度自動安全保存於本機',
             ],
             'select_count_label' => '選擇測驗題數',
-            'select_count_hint' => '按數字鍵 1–5 快速切換題數',
             'count_options' => [
                 '10' => '10 題',
                 '20' => '20 題',
@@ -728,8 +727,9 @@ return [
                 'coming_soon' => '即將推出',
             ],
             'summary_line' => '已配置：:mode模式 · :count 題',
-            'start_button' => '開始自訂測驗 (:count 題)',
-            'footer_hint' => '測驗過程全面支援鍵盤 1-4 快捷作答，交卷後將提供去重錯題回顧。',
+            'start_button' => '開始自訂測驗',
+            'footer_keyboard_hint' => '測驗過程全面支援鍵盤 1-4 快捷作答，',
+            'footer_hint' => '交卷後將提供去重錯題回顧。',
             'top_bar' => [
                 'leave' => '離開測驗',
                 'session_badge' => '自訂測驗 · 一般模式',
@@ -739,7 +739,6 @@ return [
                 'cant_listen' => '現在不方便聽',
                 'listening_disabled' => '聽力已關閉（本次測驗生效）',
                 'listening_disabled_label' => '聽力已關閉',
-                'keyboard_hint' => '數字鍵 1–4 作答',
                 'leave_dialog' => [
                     'title' => '確定要中途離開測驗嗎？',
                     'description' => '若現在離開，本次自訂測驗的作答進度將不會被保存。',

@@ -185,7 +185,9 @@
                 <ArrowRight class="size-4.5" />
             </button>
 
-            <p class="text-muted-foreground text-center text-sm">
+            <p
+                class="text-muted-foreground hidden text-center text-sm sm:block"
+            >
                 {t('ui.intro.card.keyboard_hint')}
             </p>
         </div>
