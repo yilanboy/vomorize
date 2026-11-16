@@ -1,7 +1,6 @@
 <script lang="ts">
     import { Link, page } from '@inertiajs/svelte';
     import Menu from '@lucide/svelte/icons/menu';
-    import AppLogoIcon from '@/components/AppLogoIcon.svelte';
     import MobileNavSheet from '@/components/MobileNavSheet.svelte';
     import ThemeToggle from '@/components/ThemeToggle.svelte';
     import {
@@ -63,11 +62,12 @@
                 href={toUrl(home())}
                 class="text-foreground flex items-center gap-2.5 font-bold transition-opacity hover:opacity-90"
             >
-                <div
-                    class="bg-primary text-primary-foreground flex size-8 items-center justify-center rounded-lg shadow-xs"
-                >
-                    <AppLogoIcon class="size-5 fill-current" />
-                </div>
+                <img
+                    src="/favicon.svg"
+                    alt=""
+                    aria-hidden="true"
+                    class="size-8 rounded-lg shadow-xs"
+                />
                 <span class="text-xl font-bold tracking-tight">Vomorize</span>
             </Link>
         </div>

@@ -4,7 +4,6 @@
     import House from '@lucide/svelte/icons/house';
     import LayoutGrid from '@lucide/svelte/icons/layout-grid';
     import Sparkles from '@lucide/svelte/icons/sparkles';
-    import AppLogoIcon from '@/components/AppLogoIcon.svelte';
     import {
         Sheet,
         SheetContent,
@@ -39,11 +38,12 @@
                     class="text-foreground flex items-center gap-2 font-bold"
                     onclick={close}
                 >
-                    <div
-                        class="bg-primary text-primary-foreground flex size-8 items-center justify-center rounded-lg shadow-xs"
-                    >
-                        <AppLogoIcon class="size-5 fill-current" />
-                    </div>
+                    <img
+                        src="/favicon.svg"
+                        alt=""
+                        aria-hidden="true"
+                        class="size-8 rounded-lg shadow-xs"
+                    />
                     <span class="text-lg font-bold tracking-tight"
                         >Vomorize</span
                     >

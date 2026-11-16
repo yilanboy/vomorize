@@ -1,7 +1,6 @@
 <script lang="ts">
     import { Link } from '@inertiajs/svelte';
     import type { Snippet } from 'svelte';
-    import AppLogoIcon from '@/components/AppLogoIcon.svelte';
     import { home } from '@/routes';
 
     let {
@@ -25,11 +24,12 @@
                     href={home()}
                     class="flex flex-col items-center gap-2 font-medium"
                 >
-                    <div
-                        class="bg-primary text-primary-foreground mb-1 flex size-10 items-center justify-center rounded-xl shadow-xs"
-                    >
-                        <AppLogoIcon class="size-6 fill-current" />
-                    </div>
+                    <img
+                        src="/favicon.svg"
+                        alt=""
+                        aria-hidden="true"
+                        class="mb-1 size-10 rounded-xl shadow-xs"
+                    />
                     <span
                         class="text-foreground text-xl font-bold tracking-tight"
                         >Vomorize</span
