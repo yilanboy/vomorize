@@ -19,6 +19,7 @@ readonly class GetLevelDetail
      */
     public function handle(Level $level): array
     {
+        $level->loadMissing('translations');
         $level->loadCount(['vocabularies', 'groups']);
 
         return [

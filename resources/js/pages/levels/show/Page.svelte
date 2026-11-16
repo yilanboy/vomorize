@@ -86,8 +86,7 @@
         }
     });
 
-    // svelte-ignore state_referenced_locally
-    const breadcrumbs: BreadcrumbItem[] = [
+    const breadcrumbs: BreadcrumbItem[] = $derived([
         {
             title: t('ui.level_detail.breadcrumb_levels'),
             href: '/levels',
@@ -96,10 +95,12 @@
             title: t('ui.level_detail.title', { name: level.name }),
             href: `/levels/${level.id}`,
         },
-    ];
+    ]);
 
-    setLayoutProps({
-        breadcrumbs,
+    $effect(() => {
+        setLayoutProps({
+            breadcrumbs,
+        });
     });
 
     function getStatusLabel(status: GroupProgressSummary['status']): string {

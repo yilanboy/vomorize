@@ -9,10 +9,9 @@ use App\Models\User;
 use Inertia\Testing\AssertableInertia as Assert;
 
 test('guest can access level detail page and sees inertia levels/Show component with null progress', function () {
-    $level = Level::factory()->create([
-        'name' => '基礎入門',
-        'description' => '核心常用 1,000 單字',
-    ]);
+    $level = Level::factory()
+        ->withTranslation('zh_TW', '基礎入門', '核心常用 1,000 單字')
+        ->create();
 
     Group::factory()->count(10)->create([
         'level_id' => $level->id,
@@ -41,9 +40,9 @@ test('level detail page returns 404 for non-existent level', function () {
 
 test('authenticated user can access level detail page', function () {
     $user = User::factory()->create();
-    $level = Level::factory()->create([
-        'name' => '初級進階',
-    ]);
+    $level = Level::factory()
+        ->withTranslation('zh_TW', '初級進階')
+        ->create();
 
     $response = $this->actingAs($user)->get(route('levels.show', $level));
 
@@ -77,9 +76,9 @@ test('level detail page shares ui translation keys for level_detail', function (
 
 test('calculates group learning statuses and counts correctly for authenticated user', function () {
     $user = User::factory()->create();
-    $level = Level::factory()->create([
-        'name' => '基礎入門',
-    ]);
+    $level = Level::factory()
+        ->withTranslation('zh_TW', '基礎入門')
+        ->create();
 
     // Create 4 groups for this level
     $groups = Group::factory()->count(4)->create([

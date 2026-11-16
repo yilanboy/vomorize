@@ -14,7 +14,7 @@ use Inertia\Testing\AssertableInertia as Assert;
 uses(RefreshDatabase::class);
 
 test('guest can access group review quiz page and receives 20-step session payload', function () {
-    $level = Level::factory()->create(['name' => '基礎入門']);
+    $level = Level::factory()->withTranslation('zh_TW', '基礎入門')->create();
     $group = Group::factory()->create(['level_id' => $level->id, 'sequence' => 1]);
 
     Vocabulary::factory()->count(10)->create([

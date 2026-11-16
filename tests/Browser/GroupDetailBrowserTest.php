@@ -9,9 +9,9 @@ use App\Models\User;
 use App\Models\Vocabulary;
 
 it("won't show footer", function () {
-    $level = Level::factory()->create([
-        'name' => '基礎入門',
-    ]);
+    $level = Level::factory()
+        ->withTranslation('zh_TW', '基礎入門')
+        ->create();
 
     $group = Group::factory()->create([
         'level_id' => $level->id,

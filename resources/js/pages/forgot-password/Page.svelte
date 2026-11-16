@@ -18,9 +18,11 @@
         status?: string;
     } = $props();
 
-    setLayoutProps({
-        title: t('ui.auth.forgot_password.title'),
-        description: t('ui.auth.forgot_password.subtitle'),
+    $effect(() => {
+        setLayoutProps({
+            title: t('ui.auth.forgot_password.title'),
+            description: t('ui.auth.forgot_password.subtitle'),
+        });
     });
 </script>
 

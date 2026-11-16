@@ -41,10 +41,9 @@ test('welcome page shares ui translation keys for hero, features, and levels', f
 });
 
 test('welcome page passes levels data loaded from database', function () {
-    $level = Level::factory()->create([
-        'name' => '等級 1',
-        'description' => '基礎入門：核心常用 1,000 單字',
-    ]);
+    $level = Level::factory()
+        ->withTranslation('zh_TW', '等級 1', '基礎入門：核心常用 1,000 單字')
+        ->create();
 
     $response = $this->get(route('home'));
 

@@ -26,7 +26,7 @@ readonly class GetGroupVocabularies
      */
     public function handle(Group $group): array
     {
-        $group->loadMissing('vocabularies');
+        $group->loadMissing('vocabularies.translations');
 
         $cdnUrl = rtrim((string) (config('filesystems.disks.r2.url') ?: 'https://assets.vomorize.com'), '/');
 

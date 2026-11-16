@@ -72,7 +72,7 @@
         }
     });
 
-    const breadcrumbs: BreadcrumbItem[] = [
+    const breadcrumbs: BreadcrumbItem[] = $derived([
         {
             title: t('ui.levels_page.breadcrumb_home'),
             href: '/',
@@ -81,10 +81,12 @@
             title: t('ui.levels_page.breadcrumb'),
             href: '/levels',
         },
-    ];
+    ]);
 
-    setLayoutProps({
-        breadcrumbs,
+    $effect(() => {
+        setLayoutProps({
+            breadcrumbs,
+        });
     });
 </script>
 

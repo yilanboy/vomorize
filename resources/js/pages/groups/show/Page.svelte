@@ -72,8 +72,7 @@
     // svelte-ignore state_referenced_locally
     let cooldownSeconds = $state(progress?.cooldown_remaining_seconds ?? 0);
 
-    // svelte-ignore state_referenced_locally
-    const breadcrumbs: BreadcrumbItem[] = [
+    const breadcrumbs: BreadcrumbItem[] = $derived([
         {
             title: t('ui.group_detail.breadcrumb_levels'),
             href: '/levels',
@@ -88,11 +87,13 @@
             }),
             href: `/groups/${group.id}`,
         },
-    ];
+    ]);
 
-    setLayoutProps({
-        breadcrumbs,
-        showFooter: false,
+    $effect(() => {
+        setLayoutProps({
+            breadcrumbs,
+            showFooter: false,
+        });
     });
 
     function formatCooldownTime(totalSeconds: number): string {

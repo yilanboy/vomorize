@@ -318,10 +318,10 @@ test('authenticated member can select sentence cloze mode and play quiz with pos
 
     $vocabularies = Vocabulary::factory()
         ->count(10)
+        ->withTranslation('zh_TW', null, '團隊執行了這項計畫。')
         ->create([
             'level_id' => $level->id,
             'group_id' => $group->id,
-            'example_translation' => '團隊執行了這項計畫。',
         ]);
 
     foreach ($vocabularies as $index => $vocab) {

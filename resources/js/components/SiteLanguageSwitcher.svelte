@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { page } from '@inertiajs/svelte';
     import Check from '@lucide/svelte/icons/check';
     import Globe from '@lucide/svelte/icons/globe';
     import { Button } from '@/components/ui/button';
@@ -9,47 +10,51 @@
         DropdownMenuTrigger,
     } from '@/components/ui/dropdown-menu';
     import { t } from '@/lib/i18n';
+    import {
+        isSupportedLocale,
+        setLocale,
+        type SupportedLocale,
+    } from '@/lib/locale';
     import { cn } from '@/lib/utils';
 
     interface SiteOption {
-        id: 'zh_TW' | 'ja' | 'zh_CN';
+        id: SupportedLocale;
         labelKey: string;
-        url: string;
-        isCurrent: boolean;
     }
 
     let {
         variant = 'desktop',
         class: className = '',
+        onSelect,
     }: {
         variant?: 'desktop' | 'mobile';
         class?: string;
+        onSelect?: () => void;
     } = $props();
+
+    const currentLocale = $derived<SupportedLocale>(
+        isSupportedLocale(page.props.locale) ? page.props.locale : 'zh_TW',
+    );
 
     const sites: SiteOption[] = [
         {
             id: 'zh_TW',
             labelKey: 'ui.sites.zh_TW',
-            url: 'https://vomorize.com',
-            isCurrent: true,
         },
         {
             id: 'ja',
             labelKey: 'ui.sites.ja',
-            url: 'https://ja.vomorize.com',
-            isCurrent: false,
         },
         {
             id: 'zh_CN',
             labelKey: 'ui.sites.zh_CN',
-            url: 'https://cn.vomorize.com',
-            isCurrent: false,
         },
     ];
 
-    function handleSwitch(site: SiteOption) {
-        if (!site.isCurrent) {
-            window.location.href = site.url;
+    function handleSwitch(locale: SupportedLocale) {
+        if (locale !== currentLocale) {
+            setLocale(locale);
+            onSelect?.();
         }
     }
 </script>
@@ -88,11 +93,11 @@
                             )}
                             onclick={() => {
                                 props.onClick?.();
-                                handleSwitch(site);
+                                handleSwitch(site.id);
                             }}
                         >
                             <span>{t(site.labelKey)}</span>
-                            {#if site.isCurrent}
+                            {#if site.id === currentLocale}
                                 <Check class="text-primary size-4" />
                             {/if}
                         </button>
@@ -117,14 +122,14 @@
                     class={{
                         'flex min-h-[44px] w-full items-center justify-between rounded-lg px-3 py-2 text-sm font-medium transition-colors': true,
                         'bg-accent text-foreground font-semibold':
-                            site.isCurrent,
+                            site.id === currentLocale,
                         'text-muted-foreground hover:bg-accent/60 hover:text-foreground':
-                            !site.isCurrent,
+                            site.id !== currentLocale,
                     }}
-                    onclick={() => handleSwitch(site)}
+                    onclick={() => handleSwitch(site.id)}
                 >
                     <span>{t(site.labelKey)}</span>
-                    {#if site.isCurrent}
+                    {#if site.id === currentLocale}
                         <Check class="text-primary size-4" />
                     {/if}
                 </button>

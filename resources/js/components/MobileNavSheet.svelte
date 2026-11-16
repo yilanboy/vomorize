@@ -4,6 +4,7 @@
     import House from '@lucide/svelte/icons/house';
     import LayoutGrid from '@lucide/svelte/icons/layout-grid';
     import Sparkles from '@lucide/svelte/icons/sparkles';
+    import SiteLanguageSwitcher from '@/components/SiteLanguageSwitcher.svelte';
     import {
         Sheet,
         SheetContent,
@@ -133,5 +134,7 @@
                 </nav>
             </div>
         </div>
+
+        <SiteLanguageSwitcher variant="mobile" onSelect={close} />
     </SheetContent>
 </Sheet>

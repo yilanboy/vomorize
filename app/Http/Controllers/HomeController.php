@@ -16,10 +16,11 @@ class HomeController extends Controller
     public function index(): Response
     {
         $levels = Level::query()
+            ->with('translations')
             ->withCount(['vocabularies', 'groups'])
             ->orderBy('id', 'asc')
             ->limit(7)
-            ->get(['id', 'name', 'description']);
+            ->get(['id']);
 
         return Inertia::render('Page', [
             'levels' => $levels,

@@ -15,15 +15,17 @@
         stats: DashboardStats;
     } = $props();
 
-    const breadcrumbs: BreadcrumbItem[] = [
+    const breadcrumbs: BreadcrumbItem[] = $derived([
         {
             title: t('ui.dashboard.breadcrumb'),
             href: '/dashboard',
         },
-    ];
+    ]);
 
-    setLayoutProps({
-        breadcrumbs,
+    $effect(() => {
+        setLayoutProps({
+            breadcrumbs,
+        });
     });
 
     const user = $derived(page.props.auth?.user);

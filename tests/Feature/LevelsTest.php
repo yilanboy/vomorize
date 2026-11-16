@@ -51,10 +51,9 @@ test('levels page shares ui translation keys for levels_page', function () {
 });
 
 test('levels page passes levels data loaded from database with null progress for guest', function () {
-    $level = Level::factory()->create([
-        'name' => '等級 1',
-        'description' => '基礎入門：核心常用 1,000 單字',
-    ]);
+    $level = Level::factory()
+        ->withTranslation('zh_TW', '等級 1', '基礎入門：核心常用 1,000 單字')
+        ->create();
 
     $response = $this->get(route('levels.index'));
 
@@ -75,10 +74,9 @@ test('levels page passes levels data loaded from database with null progress for
 test('levels page calculates mastery percentage correctly based on 6 stages per group for authenticated user', function () {
     $user = User::factory()->create();
 
-    $level = Level::factory()->create([
-        'name' => '等級 1',
-        'description' => '基礎入門：核心常用 1,000 單字',
-    ]);
+    $level = Level::factory()
+        ->withTranslation('zh_TW', '等級 1', '基礎入門：核心常用 1,000 單字')
+        ->create();
 
     // Create 4 groups for this level (4 groups * 6 stages = 24 max stages)
     $groups = Group::factory()
@@ -119,10 +117,9 @@ test('levels page calculates mastery percentage correctly based on 6 stages per 
 test('levels page calculates mastery percentage accurately for 100 groups standard level', function () {
     $user = User::factory()->create();
 
-    $level = Level::factory()->create([
-        'name' => '等級 1',
-        'description' => '基礎入門：核心常用 1,000 單字',
-    ]);
+    $level = Level::factory()
+        ->withTranslation('zh_TW', '等級 1', '基礎入門：核心常用 1,000 單字')
+        ->create();
 
     // Create 100 groups (100 * 6 = 600 max stages)
     $groups = Group::factory()
@@ -166,9 +163,9 @@ test('levels page calculates mastery percentage accurately for 100 groups standa
 test('levels page calculates decimal mastery percentage for early progress', function () {
     $user = User::factory()->create();
 
-    $level = Level::factory()->create([
-        'name' => '等級 1',
-    ]);
+    $level = Level::factory()
+        ->withTranslation('zh_TW', '等級 1')
+        ->create();
 
     $groups = Group::factory()
         ->count(100)

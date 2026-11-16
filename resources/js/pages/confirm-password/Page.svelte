@@ -15,9 +15,11 @@
     import { t } from '@/lib/i18n';
     import { store } from '@/routes/password/confirm';
 
-    setLayoutProps({
-        title: t('ui.auth.confirm_password.title'),
-        description: t('ui.auth.confirm_password.subtitle'),
+    $effect(() => {
+        setLayoutProps({
+            title: t('ui.auth.confirm_password.title'),
+            description: t('ui.auth.confirm_password.subtitle'),
+        });
     });
 </script>
 

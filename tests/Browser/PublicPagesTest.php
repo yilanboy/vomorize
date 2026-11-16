@@ -16,9 +16,9 @@ test('public pages load without javascript errors', function (string $url) {
 ]);
 
 test('level detail page loads without javascript errors', function () {
-    $level = Level::factory()->create([
-        'name' => '基礎入門',
-    ]);
+    $level = Level::factory()
+        ->withTranslation('zh_TW', '基礎入門')
+        ->create();
 
     visit("/levels/{$level->id}")
         ->assertSee('基礎入門')

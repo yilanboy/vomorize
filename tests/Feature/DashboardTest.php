@@ -29,7 +29,7 @@ test('dashboard shares ui translation keys for dashboard', function () {
 });
 
 test('new authenticated user sees dashboard in empty state with default stats', function () {
-    $level1 = Level::factory()->create(['name' => '等級 1']);
+    $level1 = Level::factory()->withTranslation('zh_TW', '等級 1')->create();
     $group1 = Group::factory()->create([
         'level_id' => $level1->id,
         'sequence' => 1,
@@ -59,7 +59,7 @@ test('new authenticated user sees dashboard in empty state with default stats', 
 });
 
 test('active authenticated user receives correctly calculated streak and kpis', function () {
-    $level = Level::factory()->create(['name' => '等級 1']);
+    $level = Level::factory()->withTranslation('zh_TW', '等級 1')->create();
     $groups = Group::factory()->count(5)->sequence(
         ['level_id' => $level->id, 'sequence' => 1],
         ['level_id' => $level->id, 'sequence' => 2],
@@ -123,7 +123,7 @@ test('active authenticated user receives correctly calculated streak and kpis', 
 });
 
 test('action center provides ordered due reviews, upcoming cooldowns, and next recommendation', function () {
-    $level = Level::factory()->create(['name' => '等級 1']);
+    $level = Level::factory()->withTranslation('zh_TW', '等級 1')->create();
     $groups = Group::factory()->count(5)->sequence(
         ['level_id' => $level->id, 'sequence' => 1],
         ['level_id' => $level->id, 'sequence' => 2],
@@ -212,7 +212,7 @@ test('action center provides ordered due reviews, upcoming cooldowns, and next r
 });
 
 test('srs stage breakdown and level progress are accurately categorized and calculated', function () {
-    $level = Level::factory()->create(['name' => '等級 1']);
+    $level = Level::factory()->withTranslation('zh_TW', '等級 1')->create();
     $groups = Group::factory()->count(4)->sequence(
         ['level_id' => $level->id, 'sequence' => 1],
         ['level_id' => $level->id, 'sequence' => 2],

@@ -6,6 +6,7 @@ namespace App\Http\Middleware;
 
 use App\Models\Group;
 use Illuminate\Http\Request;
+use Inertia\Inertia;
 use Inertia\Middleware;
 
 class HandleInertiaRequests extends Middleware
@@ -57,12 +58,14 @@ class HandleInertiaRequests extends Middleware
      */
     public function shareOnce(Request $request): array
     {
+        $locale = app()->getLocale();
+
         return [
             ...parent::shareOnce($request),
-            'locale' => fn () => app()->getLocale(),
-            'translations' => fn () => [
+            'locale' => Inertia::once(fn (): string => $locale)->as("locale:{$locale}"),
+            'translations' => Inertia::once(fn (): array => [
                 'ui' => trans('ui'),
-            ],
+            ])->as("translations:{$locale}"),
             'vocabularyPerGroup' => fn (): int => Group::VOCABULARY_PER_GROUP,
         ];
     }

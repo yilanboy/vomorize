@@ -22,9 +22,11 @@
         passwordRules: string;
     } = $props();
 
-    setLayoutProps({
-        title: t('ui.auth.reset_password.title'),
-        description: t('ui.auth.reset_password.subtitle'),
+    $effect(() => {
+        setLayoutProps({
+            title: t('ui.auth.reset_password.title'),
+            description: t('ui.auth.reset_password.subtitle'),
+        });
     });
 </script>
 

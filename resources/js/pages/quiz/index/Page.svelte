@@ -37,7 +37,7 @@
     const QUIZ_COUNT_STORAGE_KEY = 'quiz_question_count';
     const QUIZ_MODE_STORAGE_KEY = 'quiz_mode';
 
-    const breadcrumbs: BreadcrumbItem[] = [
+    const breadcrumbs: BreadcrumbItem[] = $derived([
         {
             title: t('ui.levels_page.breadcrumb_home'),
             href: '/',
@@ -46,10 +46,12 @@
             title: t('ui.quiz.custom.breadcrumb'),
             href: '/quiz',
         },
-    ];
+    ]);
 
-    setLayoutProps({
-        breadcrumbs,
+    $effect(() => {
+        setLayoutProps({
+            breadcrumbs,
+        });
     });
 
     let localPassedGroupCount = $state<number | null>(null);

@@ -136,6 +136,7 @@ readonly class GenerateCustomQuizSession
         $isSentenceCloze = $quizMode === QuizMode::SentenceCloze->value;
 
         $rawVocabularies = Vocabulary::query()
+            ->with('translations')
             ->whereIn('group_id', $availableGroupIds)
             ->when($isSentenceCloze, fn ($query) => $query->with('sentenceClozeQuestion'))
             ->get();

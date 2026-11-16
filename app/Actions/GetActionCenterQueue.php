@@ -154,7 +154,7 @@ readonly class GetActionCenterQueue
 
         /** @var Group|null $nextGroup */
         $nextGroup = Group::query()
-            ->with('level')
+            ->with('level.translations')
             ->when(! empty($startedGroupIds), fn ($query) => $query->whereNotIn('id', $startedGroupIds))
             ->orderBy('level_id')
             ->orderBy('sequence')

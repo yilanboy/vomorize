@@ -1,3 +1,4 @@
+import type { SupportedLocale } from '@/lib/locale';
 import type { Auth } from '@/types/auth';
 
 // Extend ImportMeta interface for Vite...
@@ -22,6 +23,7 @@ declare module '@inertiajs/core' {
             name: string;
             auth: Auth;
             sidebarOpen: boolean;
+            locale: SupportedLocale;
             vocabularyPerGroup: number;
             [key: string]: unknown;
         };

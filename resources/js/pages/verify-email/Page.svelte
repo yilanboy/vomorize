@@ -14,9 +14,11 @@
         status?: string;
     } = $props();
 
-    setLayoutProps({
-        title: t('ui.auth.verify_email.title'),
-        description: t('ui.auth.verify_email.subtitle'),
+    $effect(() => {
+        setLayoutProps({
+            title: t('ui.auth.verify_email.title'),
+            description: t('ui.auth.verify_email.subtitle'),
+        });
     });
 </script>
 

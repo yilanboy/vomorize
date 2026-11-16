@@ -11,10 +11,10 @@
 
     let {
         open = $bindable(false),
-        title = t('ui.intro.top_bar.leave_dialog_title'),
-        description = t('ui.intro.top_bar.leave_dialog_desc'),
-        cancelText = t('ui.intro.top_bar.leave_dialog_cancel'),
-        confirmText = t('ui.intro.top_bar.leave_dialog_confirm'),
+        title,
+        description,
+        cancelText,
+        confirmText,
         onConfirm,
         onCancel,
     }: {
@@ -47,12 +47,12 @@
                 <AlertTriangle class="size-6" />
             </div>
             <DialogTitle class="text-lg font-bold">
-                {title}
+                {title ?? t('ui.intro.top_bar.leave_dialog_title')}
             </DialogTitle>
             <DialogDescription
                 class="text-muted-foreground mt-2 text-sm leading-relaxed"
             >
-                {description}
+                {description ?? t('ui.intro.top_bar.leave_dialog_desc')}
             </DialogDescription>
         </div>
 
@@ -62,14 +62,14 @@
                 class="hover:bg-muted text-foreground border-border/80 flex min-h-11 flex-1 cursor-pointer items-center justify-center rounded-xl border text-sm font-semibold transition-colors"
                 onclick={handleCancel}
             >
-                {cancelText}
+                {cancelText ?? t('ui.intro.top_bar.leave_dialog_cancel')}
             </button>
             <button
                 type="button"
                 class="flex min-h-11 flex-1 cursor-pointer items-center justify-center rounded-xl bg-red-600 text-sm font-semibold text-white transition-colors hover:bg-red-700"
                 onclick={handleConfirm}
             >
-                {confirmText}
+                {confirmText ?? t('ui.intro.top_bar.leave_dialog_confirm')}
             </button>
         </DialogFooter>
     </DialogContent>

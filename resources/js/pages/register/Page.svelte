@@ -16,9 +16,11 @@
 
     let { passwordRules }: { passwordRules: string } = $props();
 
-    setLayoutProps({
-        title: t('ui.auth.register.title'),
-        description: t('ui.auth.register.subtitle'),
+    $effect(() => {
+        setLayoutProps({
+            title: t('ui.auth.register.title'),
+            description: t('ui.auth.register.subtitle'),
+        });
     });
 </script>
 

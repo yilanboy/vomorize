@@ -10,9 +10,9 @@ use App\Models\Vocabulary;
 use Inertia\Testing\AssertableInertia as Assert;
 
 test('guest can access group detail page and sees inertia groups/Show component with null progress', function () {
-    $level = Level::factory()->create([
-        'name' => '基礎入門',
-    ]);
+    $level = Level::factory()
+        ->withTranslation('zh_TW', '基礎入門')
+        ->create();
 
     $group = Group::factory()->create([
         'level_id' => $level->id,
@@ -50,16 +50,16 @@ test('group detail page includes correctly structured vocabulary data with CDN a
     $level = Level::factory()->create();
     $group = Group::factory()->create(['level_id' => $level->id]);
 
-    $vocab = Vocabulary::factory()->create([
-        'level_id' => $level->id,
-        'group_id' => $group->id,
-        'word' => 'abandon',
-        'part_of_speech' => 'v.',
-        'pronunciation' => '/əˈbændən/',
-        'definition' => '放棄',
-        'example_sentence' => 'They had to abandon the plan.',
-        'example_translation' => '他們不得不放棄這個計劃。',
-    ]);
+    $vocab = Vocabulary::factory()
+        ->withTranslation('zh_TW', '放棄', '他們不得不放棄這個計劃。')
+        ->create([
+            'level_id' => $level->id,
+            'group_id' => $group->id,
+            'word' => 'abandon',
+            'part_of_speech' => 'v.',
+            'pronunciation' => '/əˈbændən/',
+            'example_sentence' => 'They had to abandon the plan.',
+        ]);
 
     $response = $this->get(route('groups.show', $group));
 

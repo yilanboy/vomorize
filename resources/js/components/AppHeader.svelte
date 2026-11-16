@@ -2,6 +2,7 @@
     import { Link, page } from '@inertiajs/svelte';
     import Menu from '@lucide/svelte/icons/menu';
     import MobileNavSheet from '@/components/MobileNavSheet.svelte';
+    import SiteLanguageSwitcher from '@/components/SiteLanguageSwitcher.svelte';
     import ThemeToggle from '@/components/ThemeToggle.svelte';
     import {
         Avatar,
@@ -131,8 +132,11 @@
             </Link>
         </nav>
 
-        <!-- Right: ThemeToggle + Member Avatar / Login -->
+        <!-- Right: SiteLanguageSwitcher + ThemeToggle + Member Avatar / Login -->
         <div class="flex items-center gap-1.5 sm:gap-2">
+            <!-- Language Switcher Dropdown -->
+            <SiteLanguageSwitcher variant="desktop" />
+
             <!-- Theme Toggle Dropdown -->
             <ThemeToggle />
 

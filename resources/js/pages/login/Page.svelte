@@ -24,9 +24,11 @@
         canResetPassword: boolean;
     } = $props();
 
-    setLayoutProps({
-        title: t('ui.auth.login.title'),
-        description: t('ui.auth.login.subtitle'),
+    $effect(() => {
+        setLayoutProps({
+            title: t('ui.auth.login.title'),
+            description: t('ui.auth.login.subtitle'),
+        });
     });
 </script>
 
