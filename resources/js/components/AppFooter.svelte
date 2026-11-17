@@ -15,9 +15,9 @@
     )}
 >
     <div
-        class="text-muted-foreground mx-auto flex max-w-7xl flex-col items-center justify-between gap-4 px-4 py-6 text-sm sm:flex-row sm:px-6 lg:px-8"
+        class="text-muted-foreground mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-6 text-sm sm:px-6 lg:px-8"
     >
-        <div class="text-center sm:text-left">
+        <div>
             <span>{t('ui.footer.copyright', { year: currentYear })}</span>
         </div>
 

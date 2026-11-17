@@ -54,6 +54,7 @@
                 class="inline-flex size-9 cursor-pointer items-center justify-center rounded-lg text-zinc-500 transition-colors duration-200 hover:bg-zinc-200/50 hover:text-zinc-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-200 lg:hidden dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-100 dark:focus-visible:ring-zinc-700"
                 onclick={() => (mobileNavOpen = true)}
                 aria-label={t('ui.nav.open_menu')}
+                data-test="mobile-menu-button"
             >
                 <Menu class="size-5" />
             </button>
@@ -135,7 +136,7 @@
         <!-- Right: SiteLanguageSwitcher + ThemeToggle + Member Avatar / Login -->
         <div class="flex items-center gap-1.5 sm:gap-2">
             <!-- Language Switcher Dropdown -->
-            <SiteLanguageSwitcher variant="desktop" />
+            <SiteLanguageSwitcher />
 
             <!-- Theme Toggle Dropdown -->
             <ThemeToggle />

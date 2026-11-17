@@ -4,7 +4,6 @@
     import House from '@lucide/svelte/icons/house';
     import LayoutGrid from '@lucide/svelte/icons/layout-grid';
     import Sparkles from '@lucide/svelte/icons/sparkles';
-    import SiteLanguageSwitcher from '@/components/SiteLanguageSwitcher.svelte';
     import {
         Sheet,
         SheetContent,
@@ -27,11 +26,8 @@
 </script>
 
 <Sheet bind:open>
-    <SheetContent
-        side="left"
-        class="flex w-[280px] flex-col justify-between p-6"
-    >
-        <div>
+    <SheetContent side="left" class="w-70 p-6">
+        <div data-test="mobile-nav-sheet">
             <SheetTitle class="sr-only">{t('ui.nav.menu_title')}</SheetTitle>
             <SheetHeader class="flex flex-row items-center gap-2 text-left">
                 <Link
@@ -134,7 +130,5 @@
                 </nav>
             </div>
         </div>
-
-        <SiteLanguageSwitcher variant="mobile" onSelect={close} />
     </SheetContent>
 </Sheet>

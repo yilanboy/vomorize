@@ -55,7 +55,7 @@
             <span>{t('ui.auth.back')}</span>
         </button>
         <div class="flex items-center gap-1.5 sm:gap-2">
-            <SiteLanguageSwitcher variant="desktop" />
+            <SiteLanguageSwitcher />
             <ThemeToggle />
         </div>
     </header>
