@@ -77,6 +77,7 @@
             }}
             onclick={() => handleSelect(option)}
             disabled={disabled || isAnswered}
+            data-test={isCorrect ? 'correct-option' : 'wrong-option'}
         >
             <span class="flex flex-1 items-center gap-3">
                 <span

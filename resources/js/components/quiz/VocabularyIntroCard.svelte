@@ -69,7 +69,7 @@
 
 {#if vocabulary}
     <div
-        class="border-border/80 bg-card mx-auto flex h-[560px] w-full max-w-xl flex-col justify-between rounded-2xl border p-6 shadow-2xs sm:h-[580px] sm:p-8"
+        class="border-border/80 bg-card mx-auto flex h-140 w-full max-w-xl flex-col justify-between rounded-2xl border p-6 shadow-2xs sm:h-145 sm:p-8"
     >
         <!-- Header Badge & Word Title -->
         <div class="flex flex-col gap-2.5">
@@ -108,7 +108,7 @@
                 <button
                     type="button"
                     class={{
-                        'inline-flex min-h-[40px] items-center gap-2 rounded-xl border px-3.5 py-1.5 text-sm font-medium transition-all duration-150 active:scale-95': true,
+                        'inline-flex min-h-10 items-center gap-2 rounded-xl border px-3.5 py-1.5 text-sm font-medium transition-all duration-150 active:scale-95': true,
                         'animate-pulse border-blue-600 bg-blue-600 text-white shadow-xs ring-4 ring-blue-500/20':
                             isWordPlaying,
                         'border-border/70 bg-muted/40 text-muted-foreground dark:bg-muted/30 hover:border-blue-300 hover:bg-blue-50 hover:text-blue-600 dark:hover:border-blue-800/60 dark:hover:bg-blue-950/60 dark:hover:text-blue-300':
@@ -124,7 +124,7 @@
                     <button
                         type="button"
                         class={{
-                            'inline-flex min-h-[40px] items-center gap-2 rounded-xl border px-3.5 py-1.5 text-sm font-medium transition-all duration-150 active:scale-95': true,
+                            'inline-flex min-h-10 items-center gap-2 rounded-xl border px-3.5 py-1.5 text-sm font-medium transition-all duration-150 active:scale-95': true,
                             'animate-pulse border-blue-600 bg-blue-600 text-white shadow-xs ring-4 ring-blue-500/20':
                                 isSentencePlaying,
                             'border-border/70 bg-muted/40 text-muted-foreground dark:bg-muted/30 hover:border-blue-300 hover:bg-blue-50 hover:text-blue-600 dark:hover:border-blue-800/60 dark:hover:bg-blue-950/60 dark:hover:text-blue-300':
@@ -153,7 +153,7 @@
             <!-- Example Sentence Section -->
             {#if vocabulary.example_sentence}
                 <div
-                    class="border-border/60 bg-muted/30 flex max-h-[140px] flex-col gap-1 overflow-y-auto rounded-xl border p-3.5"
+                    class="border-border/60 bg-muted/30 flex max-h-35 flex-col gap-1 overflow-y-auto rounded-xl border p-3.5"
                 >
                     <span
                         class="text-sm font-semibold text-blue-600 dark:text-blue-400"
@@ -177,8 +177,9 @@
         <!-- Bottom Action Button -->
         <div class="mt-auto flex flex-col gap-2 pt-2">
             <button
+                data-test="continue-button"
                 type="button"
-                class="flex min-h-[50px] w-full items-center justify-center gap-2 rounded-xl bg-blue-600 text-base font-semibold text-white shadow-xs transition-all hover:bg-blue-700 active:scale-[0.98]"
+                class="flex min-h-12.5 w-full items-center justify-center gap-2 rounded-xl bg-blue-600 text-base font-semibold text-white shadow-xs transition-all hover:bg-blue-700 active:scale-[0.98]"
                 onclick={onContinue}
             >
                 <span>{t('ui.intro.card.continue')}</span>

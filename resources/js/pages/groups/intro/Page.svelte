@@ -288,6 +288,7 @@
             <div class="flex flex-1 flex-col items-center gap-1.5 px-4 sm:px-8">
                 <div class="flex items-center gap-2">
                     <span
+                        data-test="current-step"
                         class="text-foreground font-mono text-sm font-semibold"
                     >
                         {Math.min(currentIndex + 1, totalSteps)}

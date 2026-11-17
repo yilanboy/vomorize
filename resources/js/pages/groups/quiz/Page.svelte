@@ -289,7 +289,12 @@
         : t('ui.quiz.stage_badge', { stage: activeTargetStage })}"
 />
 
-<div class="bg-background flex min-h-screen flex-col">
+<div
+    class="bg-background flex min-h-screen flex-col"
+    data-progress-ready={progress !== null || localProgress !== null
+        ? 'true'
+        : 'false'}
+>
     <!-- Focused Immersive Top Bar -->
     <header
         class="border-border/80 bg-background/80 sticky top-0 z-40 border-b backdrop-blur-md"
@@ -311,6 +316,7 @@
             <div class="flex flex-1 flex-col items-center gap-1.5 px-4 sm:px-8">
                 <div class="flex items-center gap-2">
                     <span
+                        data-test="current-step"
                         class="text-foreground font-mono text-sm font-semibold"
                     >
                         {Math.min(currentIndex + 1, totalSteps)}
