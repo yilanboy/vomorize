@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace App\Models;
 
-use App\Models\Concerns\HasTranslations;
 use Database\Factories\LevelFactory;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 
 /**
  * @property int $id
@@ -20,9 +20,6 @@ class Level extends Model
 {
     /** @use HasFactory<LevelFactory> */
     use HasFactory;
-
-    /** @use HasTranslations<LevelTranslation> */
-    use HasTranslations;
 
     protected $fillable = [
         'id',
@@ -40,15 +37,25 @@ class Level extends Model
      * @var list<string>
      */
     protected $hidden = [
+        'translation',
         'translations',
     ];
 
     /**
-     * @return class-string<LevelTranslation>
+     * @return HasMany<LevelTranslation, $this>
      */
-    protected function translationModelClass(): string
+    public function translations(): HasMany
     {
-        return LevelTranslation::class;
+        return $this->hasMany(LevelTranslation::class);
+    }
+
+    /**
+     * @return HasOne<LevelTranslation, $this>
+     */
+    public function translation(?string $locale = null): HasOne
+    {
+        return $this->hasOne(LevelTranslation::class)
+            ->where('locale', $locale ?? app()->getLocale());
     }
 
     /**
@@ -57,7 +64,7 @@ class Level extends Model
     protected function name(): Attribute
     {
         return Attribute::get(function (): string {
-            $translation = $this->resolveTranslation();
+            $translation = $this->translation;
 
             return $translation !== null ? $translation->name : '';
         });
@@ -69,7 +76,7 @@ class Level extends Model
     protected function description(): Attribute
     {
         return Attribute::get(function (): string {
-            $translation = $this->resolveTranslation();
+            $translation = $this->translation;
 
             return $translation !== null ? $translation->description : '';
         });

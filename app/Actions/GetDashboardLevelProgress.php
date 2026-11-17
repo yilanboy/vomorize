@@ -39,7 +39,7 @@ readonly class GetDashboardLevelProgress
     public function handle(User $user, Collection $userProgress): array
     {
         $levels = Level::query()
-            ->with('translations')
+            ->with('translation')
             ->withCount(['groups', 'vocabularies'])
             ->orderBy('id')
             ->get();

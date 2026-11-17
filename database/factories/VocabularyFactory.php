@@ -33,11 +33,13 @@ class VocabularyFactory extends Factory
     public function configure(): static
     {
         return $this->afterCreating(function (Vocabulary $vocabulary): void {
-            if ($vocabulary->translations()->doesntExist()) {
-                VocabularyTranslation::factory()->create([
-                    'vocabulary_id' => $vocabulary->id,
-                    'locale' => Locale::default()->value,
-                ]);
+            foreach (Locale::values() as $locale) {
+                if ($vocabulary->translations()->where('locale', $locale)->doesntExist()) {
+                    VocabularyTranslation::factory()->create([
+                        'vocabulary_id' => $vocabulary->id,
+                        'locale' => $locale,
+                    ]);
+                }
             }
         });
     }

@@ -16,7 +16,7 @@ class HomeController extends Controller
     public function index(): Response
     {
         $levels = Level::query()
-            ->with('translations')
+            ->with('translation')
             ->withCount(['vocabularies', 'groups'])
             ->orderBy('id', 'asc')
             ->limit(7)

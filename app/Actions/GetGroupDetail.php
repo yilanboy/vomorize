@@ -23,7 +23,7 @@ readonly class GetGroupDetail
      */
     public function handle(Group $group): array
     {
-        $group->loadMissing('level.translations');
+        $group->loadMissing('level.translation');
         $group->loadCount('vocabularies');
 
         $prevGroupId = Group::query()

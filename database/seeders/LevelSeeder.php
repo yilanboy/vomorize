@@ -8,6 +8,7 @@ use App\Enums\Locale;
 use App\Models\Level;
 use App\Models\LevelTranslation;
 use Illuminate\Database\Seeder;
+use RuntimeException;
 
 class LevelSeeder extends Seeder
 {
@@ -20,15 +21,16 @@ class LevelSeeder extends Seeder
         $baseFile = database_path('data/zh_TW/levels.php');
 
         if (! file_exists($baseFile)) {
-            return;
+            throw new RuntimeException("Missing base level data file: {$baseFile}");
         }
 
         /** @var array<int, array{name: string, description: string}> $baseLevels */
         $baseLevels = require $baseFile;
+        $expectedLevelIds = array_keys($baseLevels);
 
         $levelRows = [];
 
-        foreach (array_keys($baseLevels) as $id) {
+        foreach ($expectedLevelIds as $id) {
             $levelRows[] = [
                 'id' => $id,
                 'created_at' => $now,
@@ -50,18 +52,22 @@ class LevelSeeder extends Seeder
             $file = database_path("data/{$locale}/levels.php");
 
             if (! file_exists($file)) {
-                continue;
+                throw new RuntimeException("Missing level translation file for locale [{$locale}]: {$file}");
             }
 
             /** @var array<int, array{name: string, description: string}> $levels */
             $levels = require $file;
 
-            foreach ($levels as $id => $data) {
+            foreach ($expectedLevelIds as $id) {
+                if (! isset($levels[$id]) || trim($levels[$id]['name']) === '' || trim($levels[$id]['description']) === '') {
+                    throw new RuntimeException("Missing or empty level translation for level [{$id}] in locale [{$locale}].");
+                }
+
                 $translationRows[] = [
                     'level_id' => $id,
                     'locale' => $locale,
-                    'name' => $data['name'],
-                    'description' => $data['description'],
+                    'name' => $levels[$id]['name'],
+                    'description' => $levels[$id]['description'],
                     'created_at' => $now,
                     'updated_at' => $now,
                 ];

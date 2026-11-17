@@ -33,7 +33,7 @@ class DashboardController extends Controller
 
         /** @var Collection<int, LearningProgress> $userProgress */
         $userProgress = $user->learningProgress()
-            ->with(['group.level.translations'])
+            ->with(['group.level.translation'])
             ->get();
 
         return Inertia::render('dashboard/Page', [

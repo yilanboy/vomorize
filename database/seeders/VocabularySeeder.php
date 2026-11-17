@@ -10,6 +10,7 @@ use App\Models\Level;
 use App\Models\Vocabulary;
 use App\Models\VocabularyTranslation;
 use Illuminate\Database\Seeder;
+use RuntimeException;
 
 class VocabularySeeder extends Seeder
 {
@@ -21,18 +22,21 @@ class VocabularySeeder extends Seeder
         $timestamp = now()->toDateTimeString();
 
         for ($levelId = 1; $levelId <= 7; $levelId++) {
-            $this->seedLevelBase($levelId, $timestamp);
-            $this->seedLevelTranslations($levelId, $timestamp);
+            $expectedVocabularyIds = $this->seedLevelBase($levelId, $timestamp);
+            $this->seedLevelTranslations($levelId, $expectedVocabularyIds, $timestamp);
             gc_collect_cycles();
         }
     }
 
-    private function seedLevelBase(int $levelId, string $timestamp): void
+    /**
+     * @return list<int>
+     */
+    private function seedLevelBase(int $levelId, string $timestamp): array
     {
         $baseFile = database_path("data/zh_TW/level_{$levelId}_vocabulary.php");
 
         if (! file_exists($baseFile)) {
-            return;
+            throw new RuntimeException("Missing base vocabulary data file: {$baseFile}");
         }
 
         $level = Level::findOrFail($levelId);
@@ -49,6 +53,7 @@ class VocabularySeeder extends Seeder
          * }>> $levelVocabulary
          */
         $levelVocabulary = require $baseFile;
+        $expectedVocabularyIds = [];
 
         foreach ($levelVocabulary as $key => $items) {
             $sequence = (int) str_replace('group_', '', $key);
@@ -61,6 +66,7 @@ class VocabularySeeder extends Seeder
             $vocabularyRows = [];
 
             foreach ($items as $item) {
+                $expectedVocabularyIds[] = $item['id'];
                 $vocabularyRows[] = [
                     'id' => $item['id'],
                     'level_id' => $level->id,
@@ -82,15 +88,20 @@ class VocabularySeeder extends Seeder
                 );
             }
         }
+
+        return $expectedVocabularyIds;
     }
 
-    private function seedLevelTranslations(int $levelId, string $timestamp): void
+    /**
+     * @param  list<int>  $expectedVocabularyIds
+     */
+    private function seedLevelTranslations(int $levelId, array $expectedVocabularyIds, string $timestamp): void
     {
         foreach (Locale::values() as $locale) {
             $file = database_path("data/{$locale}/level_{$levelId}_vocabulary.php");
 
             if (! file_exists($file)) {
-                continue;
+                throw new RuntimeException("Missing vocabulary translation file for locale [{$locale}] level [{$levelId}]: {$file}");
             }
 
             /**
@@ -106,19 +117,37 @@ class VocabularySeeder extends Seeder
              */
             $levelVocabulary = require $file;
 
-            $translationRows = [];
-
+            /** @var array<int, array{definition: string, example_translation: string}> $itemsById */
+            $itemsById = [];
             foreach ($levelVocabulary as $items) {
                 foreach ($items as $item) {
-                    $translationRows[] = [
-                        'vocabulary_id' => $item['id'],
-                        'locale' => $locale,
+                    $itemsById[$item['id']] = [
                         'definition' => $item['definition'],
                         'example_translation' => $item['example_translation'],
-                        'created_at' => $timestamp,
-                        'updated_at' => $timestamp,
                     ];
                 }
+            }
+
+            $translationRows = [];
+
+            foreach ($expectedVocabularyIds as $vocabularyId) {
+                if (! isset($itemsById[$vocabularyId])
+                    || trim($itemsById[$vocabularyId]['definition']) === ''
+                    || trim($itemsById[$vocabularyId]['example_translation']) === ''
+                ) {
+                    throw new RuntimeException(
+                        "Missing or empty vocabulary translation for vocabulary [{$vocabularyId}] in level [{$levelId}] locale [{$locale}].",
+                    );
+                }
+
+                $translationRows[] = [
+                    'vocabulary_id' => $vocabularyId,
+                    'locale' => $locale,
+                    'definition' => $itemsById[$vocabularyId]['definition'],
+                    'example_translation' => $itemsById[$vocabularyId]['example_translation'],
+                    'created_at' => $timestamp,
+                    'updated_at' => $timestamp,
+                ];
             }
 
             foreach (array_chunk($translationRows, 500) as $chunk) {

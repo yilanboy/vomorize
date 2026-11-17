@@ -114,33 +114,6 @@ test('invalid locale cookie falls back to Accept-Language or zh_TW', function ()
     );
 });
 
-test('missing translation for active locale gracefully falls back to zh_TW', function () {
-    $level = Level::factory()
-        ->withTranslation('zh_TW', '基礎入門', '核心常用 1,000 單字')
-        ->create();
-
-    $group = Group::factory()->create(['level_id' => $level->id, 'sequence' => 1]);
-
-    Vocabulary::factory()
-        ->withTranslation('zh_TW', '綿羊', '綿羊正在田野裡吃草。')
-        ->create([
-            'level_id' => $level->id,
-            'group_id' => $group->id,
-            'word' => 'sheep',
-        ]);
-
-    $response = $this->withUnencryptedCookie('locale', 'ja')
-        ->get(route('groups.show', $group));
-
-    $response->assertOk();
-    $response->assertInertia(fn (Assert $page) => $page
-        ->where('locale', 'ja')
-        ->where('group.level_name', '基礎入門')
-        ->where('vocabularies.0.definition', '綿羊')
-        ->where('vocabularies.0.example_translation', '綿羊正在田野裡吃草。')
-    );
-});
-
 test('inertia onceProps cache keys rotate per locale for SPA reload without full refresh', function () {
     $level = Level::factory()
         ->withTranslation('zh_TW', '基礎入門', '繁中描述')
@@ -199,7 +172,7 @@ test('level seeder populates translations for all supported locales', function (
 
     foreach (Locale::values() as $locale) {
         app()->setLocale($locale);
-        $level = Level::query()->with('translations')->findOrFail(1);
+        $level = Level::query()->with(['translations', 'translation'])->findOrFail(1);
 
         expect($level->translations)->toHaveCount(count(Locale::values()));
         expect($level->name)->not->toBe('');

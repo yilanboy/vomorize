@@ -21,7 +21,7 @@ readonly class GetLevels
     public function handle(): Collection
     {
         $levels = Level::query()
-            ->with('translations')
+            ->with('translation')
             ->withCount(['vocabularies', 'groups'])
             ->orderBy('id', 'asc')
             ->get(['id']);

@@ -24,11 +24,13 @@ class LevelFactory extends Factory
     public function configure(): static
     {
         return $this->afterCreating(function (Level $level): void {
-            if ($level->translations()->doesntExist()) {
-                LevelTranslation::factory()->create([
-                    'level_id' => $level->id,
-                    'locale' => Locale::default()->value,
-                ]);
+            foreach (Locale::values() as $locale) {
+                if ($level->translations()->where('locale', $locale)->doesntExist()) {
+                    LevelTranslation::factory()->create([
+                        'level_id' => $level->id,
+                        'locale' => $locale,
+                    ]);
+                }
             }
         });
     }

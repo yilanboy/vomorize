@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace App\Models;
 
-use App\Models\Concerns\HasTranslations;
 use Database\Factories\VocabularyFactory;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 
 /**
@@ -28,9 +28,6 @@ class Vocabulary extends Model
     /** @use HasFactory<VocabularyFactory> */
     use HasFactory;
 
-    /** @use HasTranslations<VocabularyTranslation> */
-    use HasTranslations;
-
     protected $fillable = [
         'level_id',
         'group_id',
@@ -44,15 +41,25 @@ class Vocabulary extends Model
      * @var list<string>
      */
     protected $hidden = [
+        'translation',
         'translations',
     ];
 
     /**
-     * @return class-string<VocabularyTranslation>
+     * @return HasMany<VocabularyTranslation, $this>
      */
-    protected function translationModelClass(): string
+    public function translations(): HasMany
     {
-        return VocabularyTranslation::class;
+        return $this->hasMany(VocabularyTranslation::class);
+    }
+
+    /**
+     * @return HasOne<VocabularyTranslation, $this>
+     */
+    public function translation(?string $locale = null): HasOne
+    {
+        return $this->hasOne(VocabularyTranslation::class)
+            ->where('locale', $locale ?? app()->getLocale());
     }
 
     /**
@@ -61,7 +68,7 @@ class Vocabulary extends Model
     protected function definition(): Attribute
     {
         return Attribute::get(function (): string {
-            $translation = $this->resolveTranslation();
+            $translation = $this->translation;
 
             return $translation !== null ? $translation->definition : '';
         });
@@ -73,7 +80,7 @@ class Vocabulary extends Model
     protected function exampleTranslation(): Attribute
     {
         return Attribute::get(function (): string {
-            $translation = $this->resolveTranslation();
+            $translation = $this->translation;
 
             return $translation !== null ? $translation->example_translation : '';
         });
