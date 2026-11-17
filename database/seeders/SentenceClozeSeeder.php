@@ -6,6 +6,7 @@ namespace Database\Seeders;
 
 use App\Models\SentenceClozeQuestion;
 use Illuminate\Database\Seeder;
+use RuntimeException;
 
 class SentenceClozeSeeder extends Seeder
 {
@@ -14,25 +15,20 @@ class SentenceClozeSeeder extends Seeder
      */
     public function run(): void
     {
-        $locale = (string) config('app.locale', 'zh_TW');
         $timestamp = now()->toDateTimeString();
 
         for ($levelId = 1; $levelId <= 7; $levelId++) {
-            $this->seedLevel($levelId, $locale, $timestamp);
+            $this->seedLevel($levelId, $timestamp);
             gc_collect_cycles();
         }
     }
 
-    private function seedLevel(int $levelId, string $locale, string $timestamp): void
+    private function seedLevel(int $levelId, string $timestamp): void
     {
-        $file = database_path("data/{$locale}/level_{$levelId}_sentence_cloze.php");
+        $file = database_path("data/level_{$levelId}_sentence_cloze.php");
 
         if (! file_exists($file)) {
-            $file = database_path("data/zh_TW/level_{$levelId}_sentence_cloze.php");
-        }
-
-        if (! file_exists($file)) {
-            return;
+            throw new RuntimeException("Missing sentence cloze data file: {$file}");
         }
 
         /**

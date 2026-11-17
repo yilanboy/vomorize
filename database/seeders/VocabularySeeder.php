@@ -33,7 +33,7 @@ class VocabularySeeder extends Seeder
      */
     private function seedLevelBase(int $levelId, string $timestamp): array
     {
-        $baseFile = database_path("data/zh_TW/level_{$levelId}_vocabulary.php");
+        $baseFile = database_path("data/level_{$levelId}_vocabulary.php");
 
         if (! file_exists($baseFile)) {
             throw new RuntimeException("Missing base vocabulary data file: {$baseFile}");
@@ -47,9 +47,7 @@ class VocabularySeeder extends Seeder
          *     word: string,
          *     part_of_speech: string,
          *     pronunciation: string,
-         *     definition: string,
-         *     example_sentence: string,
-         *     example_translation: string
+         *     example_sentence: string
          * }>> $levelVocabulary
          */
         $levelVocabulary = require $baseFile;
@@ -105,35 +103,19 @@ class VocabularySeeder extends Seeder
             }
 
             /**
-             * @var array<string, array<int, array{
-             *     id: int,
-             *     word: string,
-             *     part_of_speech: string,
-             *     pronunciation: string,
+             * @var array<int, array{
              *     definition: string,
-             *     example_sentence: string,
              *     example_translation: string
-             * }>> $levelVocabulary
+             * }> $translationsById
              */
-            $levelVocabulary = require $file;
-
-            /** @var array<int, array{definition: string, example_translation: string}> $itemsById */
-            $itemsById = [];
-            foreach ($levelVocabulary as $items) {
-                foreach ($items as $item) {
-                    $itemsById[$item['id']] = [
-                        'definition' => $item['definition'],
-                        'example_translation' => $item['example_translation'],
-                    ];
-                }
-            }
+            $translationsById = require $file;
 
             $translationRows = [];
 
             foreach ($expectedVocabularyIds as $vocabularyId) {
-                if (! isset($itemsById[$vocabularyId])
-                    || trim($itemsById[$vocabularyId]['definition']) === ''
-                    || trim($itemsById[$vocabularyId]['example_translation']) === ''
+                if (! isset($translationsById[$vocabularyId])
+                    || trim($translationsById[$vocabularyId]['definition']) === ''
+                    || trim($translationsById[$vocabularyId]['example_translation']) === ''
                 ) {
                     throw new RuntimeException(
                         "Missing or empty vocabulary translation for vocabulary [{$vocabularyId}] in level [{$levelId}] locale [{$locale}].",
@@ -143,8 +125,8 @@ class VocabularySeeder extends Seeder
                 $translationRows[] = [
                     'vocabulary_id' => $vocabularyId,
                     'locale' => $locale,
-                    'definition' => $itemsById[$vocabularyId]['definition'],
-                    'example_translation' => $itemsById[$vocabularyId]['example_translation'],
+                    'definition' => $translationsById[$vocabularyId]['definition'],
+                    'example_translation' => $translationsById[$vocabularyId]['example_translation'],
                     'created_at' => $timestamp,
                     'updated_at' => $timestamp,
                 ];

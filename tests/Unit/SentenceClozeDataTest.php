@@ -8,8 +8,8 @@ test('all 7000 vocabularies have valid single-blank sentence cloze data with sam
     $clozeEntries = [];
 
     for ($levelId = 1; $levelId <= 7; $levelId++) {
-        $vocabFile = dirname(__DIR__, 2)."/database/data/zh_TW/level_{$levelId}_vocabulary.php";
-        $clozeFile = dirname(__DIR__, 2)."/database/data/zh_TW/level_{$levelId}_sentence_cloze.php";
+        $vocabFile = dirname(__DIR__, 2)."/database/data/level_{$levelId}_vocabulary.php";
+        $clozeFile = dirname(__DIR__, 2)."/database/data/level_{$levelId}_sentence_cloze.php";
 
         expect(file_exists($vocabFile))->toBeTrue()
             ->and(file_exists($clozeFile))->toBeTrue();

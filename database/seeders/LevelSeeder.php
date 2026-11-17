@@ -18,15 +18,14 @@ class LevelSeeder extends Seeder
     public function run(): void
     {
         $now = now()->toDateTimeString();
-        $baseFile = database_path('data/zh_TW/levels.php');
+        $baseFile = database_path('data/levels.php');
 
         if (! file_exists($baseFile)) {
             throw new RuntimeException("Missing base level data file: {$baseFile}");
         }
 
-        /** @var array<int, array{name: string, description: string}> $baseLevels */
-        $baseLevels = require $baseFile;
-        $expectedLevelIds = array_keys($baseLevels);
+        /** @var list<int> $expectedLevelIds */
+        $expectedLevelIds = require $baseFile;
 
         $levelRows = [];
 
