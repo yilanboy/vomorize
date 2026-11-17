@@ -1,12 +1,10 @@
 <script lang="ts">
     import { Link, page } from '@inertiajs/svelte';
     import ArrowRight from '@lucide/svelte/icons/arrow-right';
-    import BookOpen from '@lucide/svelte/icons/book-open';
     import Brain from '@lucide/svelte/icons/brain';
     import Check from '@lucide/svelte/icons/check';
     import CheckCircle2 from '@lucide/svelte/icons/check-circle-2';
     import CircleAlert from '@lucide/svelte/icons/circle-alert';
-    import RotateCcw from '@lucide/svelte/icons/rotate-ccw';
     import ShieldCheck from '@lucide/svelte/icons/shield-check';
     import Smartphone from '@lucide/svelte/icons/smartphone';
     import Sparkles from '@lucide/svelte/icons/sparkles';
@@ -37,28 +35,27 @@
     } = $props();
 
     // Audio pronunciation preview
-    let isPlayingAudio = $state(false);
-    function playDemoAudio() {
+    let playingAudioTarget = $state<'word' | 'sentence' | null>(null);
+    function playDemoAudio(text: string, target: 'word' | 'sentence') {
         if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-            isPlayingAudio = true;
+            playingAudioTarget = target;
             window.speechSynthesis.cancel();
-            const utterance = new SpeechSynthesisUtterance(
-                t('ui.welcome.hero.demo_word'),
-            );
+            const utterance = new SpeechSynthesisUtterance(text);
             utterance.lang = 'en-US';
             utterance.rate = 0.9;
             utterance.onend = () => {
-                isPlayingAudio = false;
+                if (playingAudioTarget === target) {
+                    playingAudioTarget = null;
+                }
             };
             utterance.onerror = () => {
-                isPlayingAudio = false;
+                if (playingAudioTarget === target) {
+                    playingAudioTarget = null;
+                }
             };
             window.speechSynthesis.speak(utterance);
         }
     }
-
-    // Interactive Demo Card State
-    let demoState = $state<'initial' | 'mastered' | 'forgot'>('initial');
 
     // Sample mastery percentages for levels preview on landing page
     const levelMasteryPercentages = [70, 55, 40, 25, 15, 10, 5];
@@ -273,201 +270,109 @@
                 </div>
             </div>
 
-            <!-- Right Hero Product Visual / Interactive Flashcard -->
+            <!-- Right Hero Product Visual / Vocabulary Card -->
             <div class="relative flex justify-center lg:col-span-5">
-                <!-- Tactile Flashcard Container -->
-                <div
-                    class="border-border/80 bg-card relative w-full max-w-[400px] rounded-3xl border p-6 shadow-xl shadow-slate-900/5 transition-all sm:p-7 dark:shadow-black/40"
+                <section
+                    class="border-border/80 bg-card w-full max-w-md rounded-2xl border p-5 shadow-lg shadow-slate-900/5 transition-all sm:p-6 dark:shadow-black/30"
+                    aria-label={t('ui.welcome.hero.demo_word')}
                 >
-                    <!-- Header Preview -->
-                    <div
-                        class="border-border/60 text-muted-foreground mb-4 flex items-center justify-between border-b pb-3 text-sm font-medium"
-                    >
-                        <span
-                            class="text-foreground flex items-center gap-2 font-semibold"
+                    <!-- Card Header: Word, POS, Pronunciation, Word Audio Button -->
+                    <div class="flex items-start justify-between gap-4">
+                        <div
+                            class="flex flex-wrap items-baseline gap-2.5 sm:gap-3"
                         >
-                            <BookOpen
-                                class="size-4.5 text-blue-600 dark:text-blue-400"
-                            />
-                            <span>Vomorize</span>
-                        </span>
-                        <div class="flex items-center gap-2">
-                            <span
-                                class="bg-muted text-muted-foreground rounded-full px-2.5 py-0.5 font-mono text-sm"
+                            <!-- Target Word -->
+                            <h2
+                                class="text-foreground text-2xl font-extrabold tracking-tight sm:text-3xl"
                             >
-                                {t('ui.welcome.hero.demo_word_counter', {
-                                    current: 3,
-                                    total: 20,
-                                })}
+                                {t('ui.welcome.hero.demo_word')}
+                            </h2>
+
+                            <!-- Part of Speech Pill -->
+                            <span
+                                class="bg-muted text-foreground/80 rounded-md px-2.5 py-0.5 text-sm font-semibold"
+                            >
+                                {t('ui.welcome.hero.demo_pos')}
                             </span>
+
+                            <!-- IPA Pronunciation -->
+                            <span
+                                class="text-muted-foreground font-mono text-sm sm:text-base"
+                            >
+                                {t('ui.welcome.hero.demo_phonetic')}
+                            </span>
+                        </div>
+
+                        <!-- 40x40px Word Audio Button -->
+                        <button
+                            type="button"
+                            onclick={() =>
+                                playDemoAudio(
+                                    t('ui.welcome.hero.demo_word'),
+                                    'word',
+                                )}
+                            class={{
+                                'flex size-10 shrink-0 items-center justify-center rounded-full border transition-all duration-150 active:scale-95': true,
+                                'animate-pulse border-blue-600 bg-blue-600 text-white shadow-xs ring-4 ring-blue-500/20':
+                                    playingAudioTarget === 'word',
+                                'border-border/70 bg-muted/40 text-muted-foreground dark:bg-muted/30 hover:border-blue-300 hover:bg-blue-50 hover:text-blue-600 dark:hover:border-blue-800/60 dark:hover:bg-blue-950/60 dark:hover:text-blue-300':
+                                    playingAudioTarget !== 'word',
+                            }}
+                            title={t('ui.intro.card.play_word')}
+                            aria-label={t('ui.intro.card.play_word')}
+                        >
+                            <Volume2 class="size-4.5" />
+                        </button>
+                    </div>
+
+                    <!-- Definition -->
+                    <p
+                        class="text-foreground mt-2.5 text-base font-medium sm:text-lg"
+                    >
+                        {t('ui.welcome.hero.demo_translation')}
+                    </p>
+
+                    <!-- Integrated Example Sentence Section -->
+                    <div class="border-border/60 mt-4 border-t pt-3.5">
+                        <div class="flex items-start justify-between gap-4">
+                            <div class="space-y-1">
+                                <p
+                                    class="text-foreground text-sm leading-relaxed font-medium sm:text-base"
+                                >
+                                    {t('ui.welcome.hero.demo_example')}
+                                </p>
+                                <p
+                                    class="text-muted-foreground text-sm leading-normal"
+                                >
+                                    {t(
+                                        'ui.welcome.hero.demo_example_translation',
+                                    )}
+                                </p>
+                            </div>
+
+                            <!-- 40x40px Sentence Audio Button -->
                             <button
                                 type="button"
-                                onclick={playDemoAudio}
+                                onclick={() =>
+                                    playDemoAudio(
+                                        t('ui.welcome.hero.demo_example'),
+                                        'sentence',
+                                    )}
                                 class={{
-                                    'text-muted-foreground hover:text-foreground rounded-full p-1.5 transition-colors focus-visible:ring-2 focus-visible:ring-blue-500': true,
-                                    'animate-pulse text-blue-600 dark:text-blue-400':
-                                        isPlayingAudio,
+                                    'flex size-10 shrink-0 items-center justify-center rounded-full border transition-all duration-150 active:scale-95': true,
+                                    'animate-pulse border-blue-600 bg-blue-600 text-white shadow-xs ring-4 ring-blue-500/20':
+                                        playingAudioTarget === 'sentence',
+                                    'border-border/70 bg-muted/40 text-muted-foreground dark:bg-muted/30 hover:border-blue-300 hover:bg-blue-50 hover:text-blue-600 dark:hover:border-blue-800/60 dark:hover:bg-blue-950/60 dark:hover:text-blue-300':
+                                        playingAudioTarget !== 'sentence',
                                 }}
-                                title={t('ui.welcome.hero.play_audio')}
-                                aria-label={t('ui.welcome.hero.play_audio')}
+                                title={t('ui.intro.card.play_sentence')}
+                                aria-label={t('ui.intro.card.play_sentence')}
                             >
                                 <Volume2 class="size-4.5" />
                             </button>
                         </div>
                     </div>
-
-                    <!-- Flashcard Surface -->
-                    <div
-                        class="border-border/80 bg-muted/40 relative flex flex-col rounded-2xl border p-5 text-left"
-                    >
-                        <!-- Tag Row -->
-                        <div
-                            class="mb-3 flex w-full items-center justify-between"
-                        >
-                            <span
-                                class="rounded-md border border-blue-200 bg-blue-50 px-2.5 py-0.5 text-sm font-bold tracking-wide text-blue-700 uppercase dark:border-blue-900/60 dark:bg-blue-950/50 dark:text-blue-300"
-                            >
-                                {t('ui.welcome.hero.demo_pos')}
-                            </span>
-                            <span
-                                class="text-muted-foreground text-sm font-medium"
-                            >
-                                {t('ui.welcome.hero.demo_preview_tag')}
-                            </span>
-                        </div>
-
-                        <!-- Main Target Word & Pronunciation -->
-                        <div class="mb-1 flex items-baseline gap-2.5">
-                            <h2
-                                class="text-foreground text-3xl font-extrabold tracking-tight"
-                            >
-                                {t('ui.welcome.hero.demo_word')}
-                            </h2>
-                            <button
-                                type="button"
-                                onclick={playDemoAudio}
-                                class={{
-                                    'flex size-7 items-center justify-center rounded-full bg-blue-100 text-blue-700 transition-colors hover:bg-blue-200 dark:bg-blue-950/70 dark:text-blue-300': true,
-                                    'ring-2 ring-blue-500 ring-offset-1':
-                                        isPlayingAudio,
-                                }}
-                                title={t('ui.welcome.hero.play_audio')}
-                                aria-label={t('ui.welcome.hero.play_audio')}
-                            >
-                                <Volume2 class="size-4" />
-                            </button>
-                        </div>
-                        <p
-                            class="text-muted-foreground mb-4 font-mono text-sm italic"
-                        >
-                            {t('ui.welcome.hero.demo_phonetic')}
-                        </p>
-
-                        <!-- Meaning Definition -->
-                        <div
-                            class="border-border/60 w-full border-t pt-3.5 pb-3"
-                        >
-                            <span
-                                class="text-muted-foreground mb-1 block text-sm font-bold tracking-wider uppercase"
-                            >
-                                {t('ui.welcome.hero.demo_definition_label')}
-                            </span>
-                            <p class="text-foreground text-base font-bold">
-                                {t('ui.welcome.hero.demo_translation')}
-                            </p>
-                            <p
-                                class="text-muted-foreground mt-1 text-sm leading-relaxed"
-                            >
-                                {t('ui.welcome.hero.demo_definition')}
-                            </p>
-                        </div>
-
-                        <!-- Contextual Example -->
-                        <div
-                            class="border-border bg-card mb-4 w-full rounded-xl border p-3.5 shadow-2xs"
-                        >
-                            <span
-                                class="text-muted-foreground mb-1 block text-sm font-bold tracking-wider uppercase"
-                            >
-                                {t('ui.welcome.hero.demo_example_label')}
-                            </span>
-                            <p class="text-foreground text-sm leading-relaxed">
-                                Her natural <span
-                                    class="font-bold text-blue-600 underline decoration-blue-300 decoration-2 underline-offset-2 dark:text-blue-400"
-                                    >resilience</span
-                                >
-                                helped her overcome immense challenges.
-                            </p>
-                        </div>
-
-                        <!-- Mastery Status Badge (Emerald Green / Dynamic State) -->
-                        <div
-                            class={{
-                                'flex items-center justify-center gap-1.5 rounded-xl border px-3.5 py-2 text-sm font-medium transition-all': true,
-                                'border-emerald-200 bg-emerald-50 text-emerald-700 dark:border-emerald-900/60 dark:bg-emerald-950/40 dark:text-emerald-300':
-                                    demoState !== 'forgot',
-                                'border-red-200 bg-red-50 text-red-700 dark:border-red-900/60 dark:bg-red-950/40 dark:text-red-300':
-                                    demoState === 'forgot',
-                            }}
-                        >
-                            {#if demoState === 'mastered'}
-                                <Check
-                                    class="size-4 text-emerald-600 dark:text-emerald-400"
-                                />
-                                <span
-                                    >{t('ui.welcome.hero.demo_mastered')} · SRS 間隔推進至
-                                    7 天</span
-                                >
-                            {:else if demoState === 'forgot'}
-                                <RotateCcw
-                                    class="size-4 text-red-600 dark:text-red-400"
-                                />
-                                <span
-                                    >{t('ui.welcome.hero.demo_forgot')} · 20 分鐘後再次強化</span
-                                >
-                            {:else}
-                                <CheckCircle2
-                                    class="size-4 text-emerald-600 dark:text-emerald-400"
-                                />
-                                <span
-                                    >{t('ui.welcome.hero.demo_srs_badge')}</span
-                                >
-                            {/if}
-                        </div>
-                    </div>
-
-                    <!-- Action Row -->
-                    <div class="mt-4 grid grid-cols-2 gap-3 pt-1">
-                        <button
-                            type="button"
-                            onclick={() => (demoState = 'forgot')}
-                            class={{
-                                'flex items-center justify-center gap-1.5 rounded-xl px-3.5 py-2.5 text-sm font-semibold transition-colors focus-visible:ring-2 focus-visible:ring-red-500': true,
-                                'bg-secondary hover:bg-secondary/80 text-secondary-foreground':
-                                    demoState !== 'forgot',
-                                'bg-red-100 text-red-700 ring-2 ring-red-500 dark:bg-red-950/60 dark:text-red-300':
-                                    demoState === 'forgot',
-                            }}
-                        >
-                            <RotateCcw class="text-muted-foreground size-4" />
-                            <span>{t('ui.welcome.hero.demo_forgot')}</span>
-                        </button>
-                        <button
-                            type="button"
-                            onclick={() => (demoState = 'mastered')}
-                            class={{
-                                'flex items-center justify-center gap-1.5 rounded-xl px-3.5 py-2.5 text-sm font-bold shadow-2xs transition-colors focus-visible:ring-2 focus-visible:ring-emerald-500': true,
-                                'bg-emerald-600 text-white hover:bg-emerald-700':
-                                    demoState !== 'mastered',
-                                'bg-emerald-700 text-white ring-2 ring-emerald-400':
-                                    demoState === 'mastered',
-                            }}
-                        >
-                            <Check class="size-4" />
-                            <span>{t('ui.welcome.hero.demo_mastered')}</span>
-                        </button>
-                    </div>
-                </div>
+                </section>
             </div>
         </div>
     </section>
