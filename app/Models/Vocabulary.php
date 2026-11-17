@@ -41,7 +41,6 @@ class Vocabulary extends Model
      * @var list<string>
      */
     protected $hidden = [
-        'translation',
         'translations',
     ];
 

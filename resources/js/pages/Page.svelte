@@ -17,6 +17,8 @@
     import { t } from '@/lib/i18n';
     import { cn, toUrl } from '@/lib/utils';
     import { dashboard, login } from '@/routes';
+    import { audioPlayer } from '@/lib/audioPlayer.svelte';
+    import { onMount } from 'svelte';
 
     const auth = $derived(page.props.auth);
 
@@ -28,33 +30,41 @@
         groups_count?: number;
     }
 
+    interface VocabularyData {
+        id: number;
+        word: string;
+        part_of_speech: string;
+        pronunciation: string;
+        example_sentence: string;
+        translation: {
+            definition: string;
+            example_translation: string;
+        };
+    }
+
     let {
         levels = [],
+        vocabulary,
     }: {
         levels?: LevelData[];
+        vocabulary?: VocabularyData;
     } = $props();
 
-    // Audio pronunciation preview
-    let playingAudioTarget = $state<'word' | 'sentence' | null>(null);
-    function playDemoAudio(text: string, target: 'word' | 'sentence') {
-        if (typeof window !== 'undefined' && 'speechSynthesis' in window) {
-            playingAudioTarget = target;
-            window.speechSynthesis.cancel();
-            const utterance = new SpeechSynthesisUtterance(text);
-            utterance.lang = 'en-US';
-            utterance.rate = 0.9;
-            utterance.onend = () => {
-                if (playingAudioTarget === target) {
-                    playingAudioTarget = null;
-                }
-            };
-            utterance.onerror = () => {
-                if (playingAudioTarget === target) {
-                    playingAudioTarget = null;
-                }
-            };
-            window.speechSynthesis.speak(utterance);
-        }
+    let wordAudioUrl = $derived(
+        `https://assets.vomorize.com/vocabulary/${vocabulary?.id}/word.mp3`,
+    );
+    let sentenceAudioUrl = $derived(
+        `https://assets.vomorize.com/vocabulary/${vocabulary?.id}/sentence.mp3`,
+    );
+
+    function playWordAudio() {
+        audioPlayer.stop();
+        void audioPlayer.play(wordAudioUrl, 'word');
+    }
+
+    function playSentenceAudio() {
+        audioPlayer.stop();
+        void audioPlayer.play(sentenceAudioUrl, 'sentence');
     }
 
     // Sample mastery percentages for levels preview on landing page
@@ -153,6 +163,14 @@
             isQuiz: false,
         },
     ];
+
+    onMount(() => {
+        void audioPlayer.preload([wordAudioUrl, sentenceAudioUrl]);
+
+        return () => {
+            audioPlayer.stop();
+        };
+    });
 </script>
 
 <AppHead title={t('ui.welcome.hero.title')} />
@@ -285,38 +303,34 @@
                             <h2
                                 class="text-foreground text-2xl font-extrabold tracking-tight sm:text-3xl"
                             >
-                                {t('ui.welcome.hero.demo_word')}
+                                {vocabulary?.word}
                             </h2>
 
                             <!-- Part of Speech Pill -->
                             <span
                                 class="bg-muted text-foreground/80 rounded-md px-2.5 py-0.5 text-sm font-semibold"
                             >
-                                {t('ui.welcome.hero.demo_pos')}
+                                {vocabulary?.part_of_speech}
                             </span>
 
                             <!-- IPA Pronunciation -->
                             <span
                                 class="text-muted-foreground font-mono text-sm sm:text-base"
                             >
-                                {t('ui.welcome.hero.demo_phonetic')}
+                                {vocabulary?.pronunciation}
                             </span>
                         </div>
 
                         <!-- 40x40px Word Audio Button -->
                         <button
                             type="button"
-                            onclick={() =>
-                                playDemoAudio(
-                                    t('ui.welcome.hero.demo_word'),
-                                    'word',
-                                )}
+                            onclick={playWordAudio}
                             class={{
                                 'flex size-10 shrink-0 items-center justify-center rounded-full border transition-all duration-150 active:scale-95': true,
                                 'animate-pulse border-blue-600 bg-blue-600 text-white shadow-xs ring-4 ring-blue-500/20':
-                                    playingAudioTarget === 'word',
+                                    audioPlayer.isPlaying('word'),
                                 'border-border/70 bg-muted/40 text-muted-foreground dark:bg-muted/30 hover:border-blue-300 hover:bg-blue-50 hover:text-blue-600 dark:hover:border-blue-800/60 dark:hover:bg-blue-950/60 dark:hover:text-blue-300':
-                                    playingAudioTarget !== 'word',
+                                    !audioPlayer.isPlaying('word'),
                             }}
                             title={t('ui.intro.card.play_word')}
                             aria-label={t('ui.intro.card.play_word')}
@@ -329,7 +343,7 @@
                     <p
                         class="text-foreground mt-2.5 text-base font-medium sm:text-lg"
                     >
-                        {t('ui.welcome.hero.demo_translation')}
+                        {vocabulary?.translation?.definition}
                     </p>
 
                     <!-- Integrated Example Sentence Section -->
@@ -339,31 +353,26 @@
                                 <p
                                     class="text-foreground text-sm leading-relaxed font-medium sm:text-base"
                                 >
-                                    {t('ui.welcome.hero.demo_example')}
+                                    {vocabulary?.example_sentence}
                                 </p>
                                 <p
                                     class="text-muted-foreground text-sm leading-normal"
                                 >
-                                    {t(
-                                        'ui.welcome.hero.demo_example_translation',
-                                    )}
+                                    {vocabulary?.translation
+                                        ?.example_translation}
                                 </p>
                             </div>
 
                             <!-- 40x40px Sentence Audio Button -->
                             <button
                                 type="button"
-                                onclick={() =>
-                                    playDemoAudio(
-                                        t('ui.welcome.hero.demo_example'),
-                                        'sentence',
-                                    )}
+                                onclick={playSentenceAudio}
                                 class={{
                                     'flex size-10 shrink-0 items-center justify-center rounded-full border transition-all duration-150 active:scale-95': true,
                                     'animate-pulse border-blue-600 bg-blue-600 text-white shadow-xs ring-4 ring-blue-500/20':
-                                        playingAudioTarget === 'sentence',
+                                        audioPlayer.isPlaying('sentence'),
                                     'border-border/70 bg-muted/40 text-muted-foreground dark:bg-muted/30 hover:border-blue-300 hover:bg-blue-50 hover:text-blue-600 dark:hover:border-blue-800/60 dark:hover:bg-blue-950/60 dark:hover:text-blue-300':
-                                        playingAudioTarget !== 'sentence',
+                                        !audioPlayer.isPlaying('sentence'),
                                 }}
                                 title={t('ui.intro.card.play_sentence')}
                                 aria-label={t('ui.intro.card.play_sentence')}

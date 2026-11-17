@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use App\Models\Level;
 use App\Models\User;
+use App\Models\Vocabulary;
 use Inertia\Testing\AssertableInertia as Assert;
 
 test('guest can access welcome page and sees inertia welcome component', function () {
@@ -68,5 +69,30 @@ it('will only show 7 levels on welcome page', function () {
     $response->assertInertia(fn (Assert $page) => $page
         ->component('Page')
         ->has('levels', 7)
+    );
+});
+
+test('welcome page passes a random vocabulary with localized translation', function () {
+    $vocabulary = Vocabulary::factory()
+        ->withTranslation('zh_TW', '靜謐的', '湖面在黎明時分十分靜謐。')
+        ->create([
+            'word' => 'serene',
+            'part_of_speech' => 'adj.',
+            'pronunciation' => '/səˈriːn/',
+            'example_sentence' => 'The lake was serene at dawn.',
+        ]);
+
+    $response = $this->get(route('home'));
+
+    $response->assertOk();
+    $response->assertInertia(fn (Assert $page) => $page
+        ->component('Page')
+        ->where('vocabulary.id', $vocabulary->id)
+        ->where('vocabulary.word', 'serene')
+        ->where('vocabulary.part_of_speech', 'adj.')
+        ->where('vocabulary.pronunciation', '/səˈriːn/')
+        ->where('vocabulary.example_sentence', 'The lake was serene at dawn.')
+        ->where('vocabulary.translation.definition', '靜謐的')
+        ->where('vocabulary.translation.example_translation', '湖面在黎明時分十分靜謐。')
     );
 });
