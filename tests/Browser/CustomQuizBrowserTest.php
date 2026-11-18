@@ -68,9 +68,9 @@ test('authenticated member with unlocked words sees word pool count and question
         ->assertSee('還差 10 題解鎖')
         ->assertSee('一般')
         ->assertSee('看例句選出正確的單字')
-        ->assertSee('語境填空')
+        ->assertSee('看例句上下文語境挖空選單字')
         ->assertSee('拼音')
-        ->assertSee('單字拼寫')
+        ->assertSee('顯示中文意思與詞性')
         ->assertSee('開始自訂測驗');
 });
 
@@ -98,9 +98,9 @@ test('authenticated member can select spelling mode and enter custom quiz room',
     $page = visit('/quiz');
     $page
         ->assertNoSmoke()
-        ->assertSee('單字拼寫')
-        ->click('button:has-text("拼音")')
-        ->assertSee('已配置：拼音模式')
+        ->assertSee('拼音')
+        ->click('@mode-option-spelling')
+        ->assertAriaAttribute('@mode-option-spelling', 'pressed', 'true')
         ->click('button:has-text("開始自訂測驗")')
         ->wait(2)
         ->assertNoSmoke()
@@ -190,12 +190,10 @@ it("can remember user's choices", function () {
         ->assertAriaAttribute('@count-option-20', 'pressed', 'false')
         ->assertAriaAttribute('@mode-option-standard', 'pressed', 'true')
         ->assertAriaAttribute('@mode-option-spelling', 'pressed', 'false')
-        ->assertSee('已配置：一般模式 · 10 題')
         ->click('@count-option-20')
         ->click('@mode-option-spelling')
         ->assertAriaAttribute('@count-option-20', 'pressed', 'true')
         ->assertAriaAttribute('@mode-option-spelling', 'pressed', 'true')
-        ->assertSee('已配置：拼音模式 · 20 題')
         ->click('a:has-text("單字等級")')
         ->assertPathIs('/levels')
         ->assertNoSmoke()
@@ -203,8 +201,7 @@ it("can remember user's choices", function () {
         ->assertPathIs('/quiz')
         ->assertNoSmoke()
         ->assertAriaAttribute('@count-option-20', 'pressed', 'true')
-        ->assertAriaAttribute('@mode-option-spelling', 'pressed', 'true')
-        ->assertSee('已配置：拼音模式 · 20 題');
+        ->assertAriaAttribute('@mode-option-spelling', 'pressed', 'true');
 });
 
 it('falls back to 10 questions when switching to a user with only 10 unlocked words', function () {
@@ -259,7 +256,6 @@ it('falls back to 10 questions when switching to a user with only 10 unlocked wo
         ->assertSee('20 個單字')
         ->click('@count-option-20')
         ->assertAriaAttribute('@count-option-20', 'pressed', 'true')
-        ->assertSee('已配置：一般模式 · 20 題')
         ->click('header button:has-text("TU")')
         ->click('@logout-button')
         ->wait(1)
@@ -274,8 +270,7 @@ it('falls back to 10 questions when switching to a user with only 10 unlocked wo
         ->assertNoSmoke()
         ->assertSee('10 個單字')
         ->assertAriaAttribute('@count-option-10', 'pressed', 'true')
-        ->assertAriaAttribute('@count-option-20', 'pressed', 'false')
-        ->assertSee('已配置：一般模式 · 10 題');
+        ->assertAriaAttribute('@count-option-20', 'pressed', 'false');
 });
 
 it('falls back to backend defaults when stored preferences are outside allowed ranges', function () {
@@ -307,8 +302,7 @@ it('falls back to backend defaults when stored preferences are outside allowed r
         ->assertAriaAttribute('@count-option-10', 'pressed', 'true')
         ->assertAriaAttribute('@mode-option-standard', 'pressed', 'true')
         ->assertAriaAttribute('@mode-option-sentence-cloze', 'pressed', 'false')
-        ->assertAriaAttribute('@mode-option-spelling', 'pressed', 'false')
-        ->assertSee('已配置：一般模式 · 10 題');
+        ->assertAriaAttribute('@mode-option-spelling', 'pressed', 'false');
 });
 
 test('authenticated member can select sentence cloze mode and play quiz with post-answer translation reveal', function () {
@@ -355,7 +349,6 @@ test('authenticated member can select sentence cloze mode and play quiz with pos
         ->assertNoSmoke()
         ->click('@mode-option-sentence-cloze')
         ->assertAriaAttribute('@mode-option-sentence-cloze', 'pressed', 'true')
-        ->assertSee('已配置：看例句選出正確的單字模式 · 10 題')
         ->click('button:has-text("開始自訂測驗")')
         ->wait(2)
         ->assertNoSmoke()

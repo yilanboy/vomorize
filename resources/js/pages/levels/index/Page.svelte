@@ -98,53 +98,35 @@
     <!-- Breadcrumb -->
     <Breadcrumbs {breadcrumbs} />
 
-    <!-- Level Header & Overall Progress Card -->
-    <section
-        class="border-border/80 bg-card rounded-2xl border p-6 shadow-xs sm:p-8"
+    <!-- Level Header & Overall Progress -->
+    <header
+        class="border-border/80 flex flex-col justify-between gap-5 border-b pb-4 md:flex-row md:items-end md:pb-6"
     >
-        <div
-            class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between"
-        >
-            <div class="max-w-2xl">
-                <h1
-                    class="text-foreground text-2xl font-extrabold tracking-tight sm:text-3xl"
-                >
-                    {t('ui.levels_page.title')}
-                </h1>
-                <p
-                    class="text-muted-foreground mt-2 text-sm leading-relaxed sm:text-base"
-                >
-                    {t('ui.levels_page.subtitle')}
-                </p>
-            </div>
-
-            <!-- Global Stats & Overall Mastery -->
-            <div
-                class="border-border/60 flex flex-wrap items-center gap-4 border-t pt-4 sm:gap-6 lg:border-t-0 lg:border-l lg:pt-0 lg:pl-6"
+        <div class="max-w-2xl">
+            <h1
+                class="text-foreground text-2xl font-extrabold tracking-tight sm:text-3xl"
             >
-                <div>
-                    <span
-                        class="text-muted-foreground block text-sm font-medium"
-                    >
-                        全站核心單字掌握度
-                    </span>
-                    <span
-                        class="text-foreground font-mono text-2xl font-extrabold"
-                    >
-                        {overallMastery}%
-                    </span>
-                </div>
-                <div
-                    class="bg-muted h-2.5 w-32 overflow-hidden rounded-full sm:w-40"
-                >
-                    <div
-                        class="h-full rounded-full bg-emerald-500 transition-all duration-500"
-                        style={`width: ${Math.min(overallMastery, 100)}%`}
-                    ></div>
-                </div>
-            </div>
+                {t('ui.levels_page.title')}
+            </h1>
+            <p
+                class="text-muted-foreground mt-2 hidden text-sm leading-relaxed sm:text-base md:block"
+            >
+                {t('ui.levels_page.subtitle')}
+            </p>
         </div>
-    </section>
+
+        <!-- Global Stats & Overall Mastery -->
+        <div class="hidden shrink-0 text-right md:block">
+            <span class="text-muted-foreground block text-sm font-medium">
+                全站核心單字掌握度
+            </span>
+            <span
+                class="text-foreground font-mono text-2xl font-extrabold tabular-nums"
+            >
+                {overallMastery}%
+            </span>
+        </div>
+    </header>
 
     <!-- Level Cards Grid -->
     <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">

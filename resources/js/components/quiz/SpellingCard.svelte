@@ -5,6 +5,7 @@
     import Delete from '@lucide/svelte/icons/delete';
     import RotateCcw from '@lucide/svelte/icons/rotate-ccw';
     import Volume2 from '@lucide/svelte/icons/volume-2';
+    import TactileTile from '@/components/TactileTile.svelte';
     import { Button } from '@/components/ui/button';
     import { audioPlayer } from '@/lib/audioPlayer.svelte';
     import { t } from '@/lib/i18n';
@@ -395,20 +396,14 @@
         <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
             {#each question.tiles as tile (tile.slot_index)}
                 {@const isUsed = usedSlotIndices.has(tile.slot_index)}
-                <button
-                    type="button"
-                    class={{
-                        'flex size-[50px] shrink-0 items-center justify-center rounded-xl border-2 font-mono text-xl font-extrabold transition-all select-none sm:size-[54px] sm:text-2xl': true,
-                        'border-border/80 bg-card text-foreground hover:border-primary/60 cursor-pointer shadow-[0_3px_0_0_rgba(0,0,0,0.08)] hover:-translate-y-0.5 active:translate-y-1 active:shadow-none dark:shadow-[0_3px_0_0_rgba(255,255,255,0.06)]':
-                            !isUsed && !isAnswered,
-                        'border-border/40 bg-muted/20 text-muted-foreground/20 pointer-events-none translate-y-0.5 border-dashed opacity-40 shadow-none':
-                            isUsed || isAnswered,
-                    }}
+                <TactileTile
+                    depressed={isUsed || isAnswered}
+                    class="size-[50px] shrink-0 font-mono text-xl font-extrabold sm:size-[54px] sm:text-2xl"
                     onclick={() => handleTileClick(tile)}
                     disabled={isUsed || isAnswered || disabled}
                 >
                     {tile.char}
-                </button>
+                </TactileTile>
             {/each}
         </div>
 

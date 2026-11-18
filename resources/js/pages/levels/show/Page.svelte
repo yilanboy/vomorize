@@ -1,16 +1,18 @@
 <script lang="ts">
     import { onMount } from 'svelte';
-    import { Link, page, setLayoutProps } from '@inertiajs/svelte';
+    import { page, setLayoutProps } from '@inertiajs/svelte';
     import CheckCircle2 from '@lucide/svelte/icons/check-circle-2';
     import Circle from '@lucide/svelte/icons/circle';
     import Clock from '@lucide/svelte/icons/clock';
-    import Info from '@lucide/svelte/icons/info';
     import RotateCcw from '@lucide/svelte/icons/rotate-ccw';
     import Zap from '@lucide/svelte/icons/zap';
     import { show as showGroup } from '@/actions/App/Http/Controllers/GroupController';
     import { show as introGroup } from '@/actions/App/Http/Controllers/GroupIntroController';
     import AppHead from '@/components/AppHead.svelte';
     import Breadcrumbs from '@/components/Breadcrumbs.svelte';
+    import TactileTile, {
+        type TactileTileVariant,
+    } from '@/components/TactileTile.svelte';
     import { t } from '@/lib/i18n';
     import {
         computeLevelProgressData,
@@ -103,6 +105,16 @@
         });
     });
 
+    const statusVariants: Record<
+        GroupProgressSummary['status'],
+        TactileTileVariant
+    > = {
+        completed: 'emerald',
+        ready: 'primary',
+        cooldown: 'amber',
+        not_started: 'muted',
+    };
+
     function getStatusLabel(status: GroupProgressSummary['status']): string {
         switch (status) {
             case 'completed':
@@ -126,61 +138,43 @@
     <!-- Breadcrumb -->
     <Breadcrumbs {breadcrumbs} />
 
-    <!-- Level Overview Header Card -->
-    <section
-        class="border-border/80 bg-card rounded-2xl border p-6 shadow-xs sm:p-8"
+    <!-- Level Overview Header -->
+    <header
+        class="border-border/80 flex flex-col justify-between gap-5 border-b pb-4 md:flex-row md:items-end md:pb-6"
     >
-        <div
-            class="flex flex-col gap-6 lg:flex-row lg:items-center lg:justify-between"
-        >
-            <div class="max-w-2xl">
-                <h1
-                    class="text-foreground text-2xl font-extrabold tracking-tight sm:text-3xl"
-                >
-                    {t('ui.level_detail.title', { name: level.name })}
-                </h1>
-                <p
-                    class="text-muted-foreground mt-2 text-sm leading-relaxed sm:text-base"
-                >
-                    {t('ui.level_detail.subtitle', {
-                        words: (
-                            level.vocabularies_count ??
-                            level.groups_count * page.props.vocabularyPerGroup
-                        ).toLocaleString(),
-                        groups: level.groups_count,
-                    })}
-                </p>
-            </div>
-
-            <!-- Summary Progress Stats -->
-            <div
-                class="border-border/60 flex flex-wrap items-center gap-4 border-t pt-4 sm:gap-6 lg:border-t-0 lg:border-l lg:pt-0 lg:pl-6"
+        <div class="max-w-2xl">
+            <h1
+                class="text-foreground text-2xl font-extrabold tracking-tight sm:text-3xl"
             >
-                <div>
-                    <span
-                        class="text-muted-foreground block text-sm font-medium"
-                    >
-                        {t('ui.level_detail.filters.completed', {
-                            count: counts.completed,
-                        })}
-                    </span>
-                    <span
-                        class="text-foreground font-mono text-2xl font-extrabold"
-                    >
-                        {completionRate}%
-                    </span>
-                </div>
-                <div
-                    class="bg-muted h-2.5 w-32 overflow-hidden rounded-full sm:w-40"
-                >
-                    <div
-                        class="h-full rounded-full bg-emerald-500 transition-all duration-500"
-                        style={`width: ${completionRate}%`}
-                    ></div>
-                </div>
-            </div>
+                {t('ui.level_detail.title', { name: level.name })}
+            </h1>
+            <p
+                class="text-muted-foreground mt-2 hidden text-sm leading-relaxed sm:text-base md:block"
+            >
+                {t('ui.level_detail.subtitle', {
+                    words: (
+                        level.vocabularies_count ??
+                        level.groups_count * page.props.vocabularyPerGroup
+                    ).toLocaleString(),
+                    groups: level.groups_count,
+                })}
+            </p>
         </div>
-    </section>
+
+        <!-- Summary Progress Stats -->
+        <div class="hidden shrink-0 text-right md:block">
+            <span class="text-muted-foreground block text-sm font-medium">
+                {t('ui.level_detail.filters.completed', {
+                    count: counts.completed,
+                })}
+            </span>
+            <span
+                class="text-foreground font-mono text-2xl font-extrabold tabular-nums"
+            >
+                {completionRate}%
+            </span>
+        </div>
+    </header>
 
     <!-- Filter Pills Bar -->
     <div
@@ -305,12 +299,10 @@
     </div>
 
     <!-- The Core 100-Group Matrix -->
-    <section
-        class="border-border/80 bg-card rounded-2xl border p-5 shadow-xs sm:p-6 md:p-8"
-    >
+    <section>
         {#if filteredGroups.length === 0}
             <div
-                class="flex flex-col items-center justify-center py-16 text-center"
+                class="border-border/80 flex flex-col items-center justify-center rounded-2xl border border-dashed py-16 text-center"
             >
                 <p class="text-foreground text-base font-semibold">
                     {t('ui.level_detail.empty_filter', {
@@ -328,14 +320,15 @@
             </div>
         {:else}
             <div
-                class="grid grid-cols-4 gap-2.5 sm:grid-cols-5 sm:gap-3 md:grid-cols-8 lg:grid-cols-10"
+                class="grid grid-cols-4 gap-3 sm:grid-cols-5 sm:gap-3.5 md:grid-cols-8 lg:grid-cols-10"
             >
                 {#each filteredGroups as group (group.id)}
                     {@const groupStatus = getGroupStatus(group.id)}
-                    <Link
+                    <TactileTile
                         href={groupStatus === 'not_started'
                             ? introGroup.url(group.id)
                             : showGroup.url(group.id)}
+                        variant={statusVariants[groupStatus]}
                         title={t('ui.level_detail.card_aria', {
                             number: group.sequence,
                             status: getStatusLabel(groupStatus),
@@ -344,21 +337,7 @@
                             number: group.sequence,
                             status: getStatusLabel(groupStatus),
                         })}
-                        class={{
-                            'group relative flex aspect-square flex-col items-center justify-center rounded-xl p-2 transition-all duration-200 outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 sm:p-3': true,
-                            // Completed
-                            'border border-emerald-300 bg-emerald-50/90 text-emerald-800 shadow-2xs hover:border-emerald-400 hover:shadow-sm dark:border-emerald-800/80 dark:bg-emerald-950/30 dark:text-emerald-300 dark:hover:border-emerald-700':
-                                groupStatus === 'completed',
-                            // Ready
-                            'border-2 border-blue-500 bg-blue-50/90 text-blue-700 shadow-xs ring-2 ring-blue-500/20 hover:border-blue-600 hover:shadow-md dark:border-blue-500 dark:bg-blue-950/50 dark:text-blue-300 dark:ring-blue-400/20 dark:hover:border-blue-400':
-                                groupStatus === 'ready',
-                            // Cooldown
-                            'border border-amber-300 bg-amber-50/80 text-amber-800 hover:border-amber-400 hover:shadow-sm dark:border-amber-800/80 dark:bg-amber-950/30 dark:text-amber-300 dark:hover:border-amber-700':
-                                groupStatus === 'cooldown',
-                            // Not Started
-                            'border-border/80 bg-card text-muted-foreground hover:text-foreground border hover:border-slate-400 dark:border-slate-800 dark:bg-slate-900/40 dark:text-slate-400 dark:hover:border-slate-600 dark:hover:text-slate-200':
-                                groupStatus === 'not_started',
-                        }}
+                        class="group aspect-square flex-col p-2 sm:p-3"
                     >
                         <!-- Status Micro Icon -->
                         <div
@@ -389,30 +368,9 @@
                         >
                             {group.sequence}
                         </span>
-                    </Link>
+                    </TactileTile>
                 {/each}
             </div>
         {/if}
-
-        <!-- Matrix Footnote / Instruction & Stats -->
-        <div
-            class="border-border/60 text-muted-foreground mt-8 flex flex-col gap-3 border-t pt-5 text-sm sm:flex-row sm:items-center sm:justify-between"
-        >
-            <div class="flex items-center gap-2">
-                <Info
-                    class="size-4 shrink-0 text-blue-600 dark:text-blue-400"
-                />
-                <span>{t('ui.level_detail.footer_hint')}</span>
-            </div>
-            <div class="text-foreground shrink-0 font-medium">
-                {t('ui.level_detail.footer_stats', {
-                    words: (
-                        level.vocabularies_count ??
-                        level.groups_count * page.props.vocabularyPerGroup
-                    ).toLocaleString(),
-                    groups: level.groups_count,
-                })}
-            </div>
-        </div>
     </section>
 </main>
