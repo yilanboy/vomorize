@@ -56,39 +56,27 @@
 
     const slotDensity = $derived.by(() => {
         const count = question.slots.length;
-        if (count <= 5) {
-            return {
-                gap: 'gap-2 sm:gap-2.5',
-                size: 'size-12 sm:size-14 text-xl sm:text-2xl rounded-xl',
-            };
-        }
         if (count <= 7) {
             return {
                 gap: 'gap-1.5 sm:gap-2',
-                size: 'w-9 h-11 sm:size-12 text-base sm:text-xl rounded-xl',
+                size: 'h-11 w-7 text-3xl sm:h-12 sm:w-8 sm:text-4xl',
             };
         }
-        if (count <= 9) {
+        if (count <= 10) {
             return {
                 gap: 'gap-1 sm:gap-1.5',
-                size: 'w-7 h-10 sm:w-11 sm:h-12 text-sm sm:text-lg rounded-lg sm:rounded-xl',
-            };
-        }
-        if (count <= 11) {
-            return {
-                gap: 'gap-1 sm:gap-1.5',
-                size: 'w-6 h-10 sm:w-10 sm:h-12 text-sm sm:text-lg rounded-md sm:rounded-xl',
+                size: 'h-10 w-6 text-2xl sm:h-11 sm:w-7 sm:text-3xl',
             };
         }
         if (count <= 14) {
             return {
                 gap: 'gap-0.5 sm:gap-1',
-                size: 'w-5 h-9 sm:w-8 sm:h-11 text-sm sm:text-base rounded-md sm:rounded-lg',
+                size: 'h-9 w-5 text-xl sm:h-10 sm:w-6 sm:text-2xl',
             };
         }
         return {
-            gap: 'gap-0.5 sm:gap-0.5',
-            size: 'w-4 h-9 sm:w-6 sm:h-10 text-sm sm:text-sm rounded-sm sm:rounded-md',
+            gap: 'gap-0.5 sm:gap-1',
+            size: 'h-9 w-[18px] text-lg sm:h-10 sm:w-5 sm:text-xl',
         };
     });
 
@@ -321,29 +309,34 @@
                     <!-- Static hint or separator slot (Anchor) -->
                     <div
                         class={{
-                            'border-border/80 bg-muted/60 text-foreground flex shrink-0 items-center justify-center border-2 font-mono font-extrabold shadow-inner select-none': true,
+                            'flex shrink-0 items-center justify-center border-b-2 border-transparent font-mono font-bold transition-colors duration-150 select-none': true,
                             [slotDensity.size]: true,
+                            'text-emerald-600 dark:text-emerald-400':
+                                isAnswered && isCorrect,
+                            'text-foreground': !(isAnswered && isCorrect),
                         }}
                     >
                         {slot.char}
                     </div>
                 {:else}
-                    <!-- Interactive blank slot (Socket) -->
+                    <!-- Interactive blank slot (Underline) -->
                     <button
                         type="button"
                         class={{
-                            'flex shrink-0 items-center justify-center border-2 font-mono font-extrabold transition-all select-none': true,
+                            'focus-visible:outline-primary/70 flex shrink-0 items-center justify-center border-b-2 font-mono font-bold transition-all duration-150 select-none focus-visible:outline-2 focus-visible:outline-offset-4': true,
                             [slotDensity.size]: true,
-                            'border-border/80 bg-background/50 text-muted-foreground/30 border-dashed':
+                            'border-zinc-400/70 dark:border-zinc-600':
                                 !assignedTile && !isAnswered && !isTargetCursor,
-                            'border-primary bg-primary/[0.04] ring-primary/20 text-muted-foreground/40 border-dashed ring-2':
+                            'border-primary dark:border-blue-400':
                                 isTargetCursor,
-                            'border-primary/80 bg-primary/10 text-foreground hover:border-destructive hover:bg-destructive/10 hover:text-destructive cursor-pointer shadow-xs active:scale-95':
+                            'border-primary/70 text-primary hover:border-destructive hover:text-destructive cursor-pointer active:scale-95 dark:border-blue-400/70 dark:text-blue-400':
                                 assignedTile && !isAnswered,
-                            'border-emerald-600 bg-emerald-50 text-emerald-800 shadow-xs dark:border-emerald-500 dark:bg-emerald-950/40 dark:text-emerald-200':
-                                isAnswered && isSlotCorrect,
-                            'border-red-600 bg-red-50 text-red-800 shadow-xs dark:border-red-500 dark:bg-red-950/40 dark:text-red-200':
-                                isAnswered && !isSlotCorrect,
+                            'border-transparent text-emerald-600 dark:text-emerald-400':
+                                isAnswered && isCorrect,
+                            'border-emerald-600/60 text-emerald-600 dark:border-emerald-400/60 dark:text-emerald-400':
+                                isAnswered && !isCorrect && isSlotCorrect,
+                            'border-red-600 text-red-600 dark:border-red-400 dark:text-red-400':
+                                isAnswered && !isCorrect && !isSlotCorrect,
                         }}
                         onclick={() => handleSlotClick(index)}
                         disabled={isAnswered || disabled || !assignedTile}
@@ -351,7 +344,14 @@
                             ? t('ui.quiz.spelling.touch_hint')
                             : undefined}
                     >
-                        {assignedTile ? assignedTile.char : ''}
+                        {#if assignedTile}
+                            {assignedTile.char}
+                        {:else if isTargetCursor}
+                            <span
+                                class="bg-primary/80 h-5 w-0.5 animate-pulse rounded-full sm:h-6 dark:bg-blue-400/80"
+                                aria-hidden="true"
+                            ></span>
+                        {/if}
                     </button>
                 {/if}
             {/each}
