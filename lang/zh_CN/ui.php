@@ -342,7 +342,6 @@ return [
         'level_badge' => '等级 :id',
         'stats' => ':words 词 · :groups 组',
         'mastery' => '已掌握 :rate%',
-        'enter_level' => '进入等级',
     ],
     'level_detail' => [
         'title' => ':name',

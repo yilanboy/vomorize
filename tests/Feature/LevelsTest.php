@@ -45,8 +45,7 @@ test('levels page shares ui translation keys for levels_page', function () {
             ->has('translations.ui.levels_page.subtitle')
             ->has('translations.ui.levels_page.level_badge')
             ->has('translations.ui.levels_page.stats')
-            ->has('translations.ui.levels_page.mastery')
-            ->has('translations.ui.levels_page.enter_level'),
+            ->has('translations.ui.levels_page.mastery'),
     );
 });
 
@@ -71,48 +70,49 @@ test('levels page passes levels data loaded from database with null progress for
     );
 });
 
-test('levels page calculates mastery percentage correctly based on 6 stages per group for authenticated user', function () {
-    $user = User::factory()->create();
+test('levels page calculates mastery percentage correctly based on 6 stages per group for authenticated user',
+    function () {
+        $user = User::factory()->create();
 
-    $level = Level::factory()
-        ->withTranslation('zh_TW', '等級 1', '基礎入門：核心常用 1,000 單字')
-        ->create();
+        $level = Level::factory()
+            ->withTranslation('zh_TW', '等級 1', '基礎入門：核心常用 1,000 單字')
+            ->create();
 
-    // Create 4 groups for this level (4 groups * 6 stages = 24 max stages)
-    $groups = Group::factory()
-        ->count(4)
-        ->create([
+        // Create 4 groups for this level (4 groups * 6 stages = 24 max stages)
+        $groups = Group::factory()
+            ->count(4)
+            ->create([
+                'level_id' => $level->id,
+            ]);
+
+        // Group 1: Stage 6 (fully mastered)
+        LearningProgress::factory()->create([
+            'user_id' => $user->id,
             'level_id' => $level->id,
+            'group_id' => $groups[0]->id,
+            'stage' => 6,
         ]);
 
-    // Group 1: Stage 6 (fully mastered)
-    LearningProgress::factory()->create([
-        'user_id' => $user->id,
-        'level_id' => $level->id,
-        'group_id' => $groups[0]->id,
-        'stage' => 6,
-    ]);
+        // Group 2: Stage 6 (fully mastered) -> total 12 stages out of 24 = 50%
+        LearningProgress::factory()->create([
+            'user_id' => $user->id,
+            'level_id' => $level->id,
+            'group_id' => $groups[1]->id,
+            'stage' => 6,
+        ]);
 
-    // Group 2: Stage 6 (fully mastered) -> total 12 stages out of 24 = 50%
-    LearningProgress::factory()->create([
-        'user_id' => $user->id,
-        'level_id' => $level->id,
-        'group_id' => $groups[1]->id,
-        'stage' => 6,
-    ]);
+        $response = $this->actingAs($user)->get(route('levels.index'));
 
-    $response = $this->actingAs($user)->get(route('levels.index'));
-
-    $response->assertOk();
-    $response->assertInertia(fn (Assert $page) => $page
-        ->component('levels/index/Page')
-        ->has('levels', 1)
-        ->where('levels.0.id', $level->id)
-        ->where('levels.0.groups_count', 4)
-        ->where("progress.{$level->id}.total_stages", 12)
-        ->where("progress.{$level->id}.max_stages", 24)
-        ->where("progress.{$level->id}.mastery_percentage", 50));
-});
+        $response->assertOk();
+        $response->assertInertia(fn (Assert $page) => $page
+            ->component('levels/index/Page')
+            ->has('levels', 1)
+            ->where('levels.0.id', $level->id)
+            ->where('levels.0.groups_count', 4)
+            ->where("progress.{$level->id}.total_stages", 12)
+            ->where("progress.{$level->id}.max_stages", 24)
+            ->where("progress.{$level->id}.mastery_percentage", 50));
+    });
 
 test('levels page calculates mastery percentage accurately for 100 groups standard level', function () {
     $user = User::factory()->create();

@@ -139,24 +139,11 @@
             >
                 <div>
                     <!-- Header: Title & Mastery Status -->
-                    <div class="flex items-start justify-between gap-3">
-                        <h2
-                            class="text-foreground text-lg font-bold transition-colors group-hover:text-blue-600 dark:group-hover:text-blue-400"
-                        >
-                            {parsed.title}
-                        </h2>
-
-                        <span
-                            class="inline-flex shrink-0 items-center gap-1.5 text-sm font-semibold text-emerald-600 dark:text-emerald-400"
-                        >
-                            <CheckCircle2 class="size-4" />
-                            <span>
-                                {t('ui.levels_page.mastery', {
-                                    rate: masteryRate,
-                                })}
-                            </span>
-                        </span>
-                    </div>
+                    <h2
+                        class="text-foreground text-lg font-bold transition-colors group-hover:text-blue-600 dark:group-hover:text-blue-400"
+                    >
+                        {parsed.title}
+                    </h2>
 
                     <!-- Level Description -->
                     <p
@@ -171,7 +158,6 @@
                     <div
                         class="text-muted-foreground mb-2 flex items-center justify-between text-sm font-medium"
                     >
-                        <span>進度概覽</span>
                         <span>
                             {t('ui.levels_page.stats', {
                                 words: (
@@ -180,26 +166,27 @@
                                 groups: level.groups_count ?? 100,
                             })}
                         </span>
+
+                        <span
+                            class="inline-flex shrink-0 items-center gap-1.5 text-sm font-semibold text-emerald-600 dark:text-emerald-400"
+                        >
+                            <CheckCircle2 class="size-4" />
+                            <span>
+                                {t('ui.levels_page.mastery', {
+                                    rate: masteryRate,
+                                })}
+                            </span>
+                        </span>
                     </div>
 
                     <!-- Progress Bar -->
                     <div
-                        class="bg-muted mb-4 h-2 w-full overflow-hidden rounded-full"
+                        class="bg-muted h-2 w-full overflow-hidden rounded-full"
                     >
                         <div
                             class="h-full rounded-full bg-emerald-500 transition-all duration-500"
-                            style={`width: ${Math.min(masteryRate, 100)}%`}
+                            style:width={Math.min(masteryRate, 100) + '%'}
                         ></div>
-                    </div>
-
-                    <!-- Action Link -->
-                    <div
-                        class="flex items-center justify-between text-sm font-bold text-blue-600 transition-colors group-hover:text-blue-700 dark:text-blue-400 dark:group-hover:text-blue-300"
-                    >
-                        <span>{t('ui.levels_page.enter_level')}</span>
-                        <ArrowRight
-                            class="size-4 transition-transform duration-300 group-hover:translate-x-1"
-                        />
                     </div>
                 </div>
             </Link>
