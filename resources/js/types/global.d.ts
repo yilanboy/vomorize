@@ -1,5 +1,13 @@
+import type { learningProgressDb } from '@/lib/learningProgressDb';
 import type { SupportedLocale } from '@/lib/locale';
 import type { Auth } from '@/types/auth';
+
+declare global {
+    interface Window {
+        // Exposed in app.ts for browser tests to seed / inspect guest progress.
+        __learningProgressDb?: typeof learningProgressDb;
+    }
+}
 
 // Extend ImportMeta interface for Vite...
 declare module 'vite/client' {

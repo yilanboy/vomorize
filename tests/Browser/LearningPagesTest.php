@@ -18,33 +18,31 @@ if (! function_exists('seedGuestLearningProgress')) {
 
         $page->script(<<<JS
             async () => {
-                const records = {$json};
-                await new Promise((resolve, reject) => {
-                    const request = window.indexedDB.open('vomorize', 1);
-                    request.onupgradeneeded = () => {
-                        const db = request.result;
-                        if (!db.objectStoreNames.contains('learning_progress')) {
-                            const store = db.createObjectStore('learning_progress', { keyPath: 'group_id' });
-                            store.createIndex('level_id', 'level_id', { unique: false });
-                            store.createIndex('stage', 'stage', { unique: false });
-                        }
-                    };
-                    request.onsuccess = () => {
-                        const db = request.result;
-                        const transaction = db.transaction('learning_progress', 'readwrite');
-                        const store = transaction.objectStore('learning_progress');
-                        for (const record of records) {
-                            store.put(record);
-                        }
-                        transaction.oncomplete = () => {
-                            db.close();
-                            resolve(true);
-                        };
-                        transaction.onerror = () => reject(transaction.error);
-                    };
-                    request.onerror = () => reject(request.error);
-                });
+                for (const record of {$json}) {
+                    await window.__learningProgressDb.saveGroupProgress(record);
+                }
             }
+        JS);
+    }
+}
+
+if (! function_exists('guestGroupProgress')) {
+    /**
+     * @return array<string, mixed>|null
+     */
+    function guestGroupProgress(object $page, int $groupId): ?array
+    {
+        return $page->script(<<<JS
+            async () => await window.__learningProgressDb.getGroupProgress({$groupId})
+        JS);
+    }
+}
+
+if (! function_exists('guestProgressCount')) {
+    function guestProgressCount(object $page): int
+    {
+        return $page->script(<<<'JS'
+            async () => (await window.__learningProgressDb.getAllProgress()).length
         JS);
     }
 }
@@ -223,23 +221,13 @@ test('guest completes stage 1 intro and quiz with perfect score and persists pro
         ->assertSee('100 / 100')
         ->assertSee(__('ui.quiz.result.all_correct'))
         ->assertSee(__('ui.quiz.result.btn_back_level'))
-        ->assertDontSee(__('ui.quiz.result.btn_dashboard'))
-        ->assertScript(<<<JS
-            async () => {
-                const record = await new Promise((resolve) => {
-                    const req = window.indexedDB.open('vomorize', 1);
-                    req.onsuccess = () => {
-                        const db = req.result;
-                        const tx = db.transaction('learning_progress', 'readonly');
-                        const getReq = tx.objectStore('learning_progress').get({$group->id});
-                        getReq.onsuccess = () => resolve(getReq.result ?? null);
-                        getReq.onerror = () => resolve(null);
-                    };
-                    req.onerror = () => resolve(null);
-                });
-                return record !== null && record.stage === 1 && record.last_score === 100 && record.level_id === {$level->id} && record.next_review_at !== null;
-            }
-        JS);
+        ->assertDontSee(__('ui.quiz.result.btn_dashboard'));
+
+    $record = guestGroupProgress($page, $group->id);
+
+    expect($record)->not->toBeNull()
+        ->toMatchArray(['stage' => 1, 'last_score' => 100, 'level_id' => $level->id])
+        ->and($record['next_review_at'])->not->toBeNull();
 
     expect(LearningProgress::query()->count())->toBe(0);
 
@@ -313,23 +301,10 @@ test('stage 1 quiz result score matches partial correct answers, lists mistakes,
         ->assertSee('70 / 100')
         ->assertSee(__('ui.quiz.result.title_failed'))
         ->assertSee(__('ui.quiz.result.failed_notice'))
-        ->assertSee('本次錯誤單字回顧')
-        ->assertScript(<<<JS
-            async () => {
-                const record = await new Promise((resolve) => {
-                    const req = window.indexedDB.open('vomorize', 1);
-                    req.onsuccess = () => {
-                        const db = req.result;
-                        const tx = db.transaction('learning_progress', 'readonly');
-                        const getReq = tx.objectStore('learning_progress').get({$group->id});
-                        getReq.onsuccess = () => resolve(getReq.result ?? null);
-                        getReq.onerror = () => resolve(null);
-                    };
-                    req.onerror = () => resolve(null);
-                });
-                return record !== null && record.stage === 0 && record.last_score === 70 && record.next_review_at === null;
-            }
-        JS);
+        ->assertSee('本次錯誤單字回顧');
+
+    expect(guestGroupProgress($page, $group->id))
+        ->toMatchArray(['stage' => 0, 'last_score' => 70, 'next_review_at' => null]);
 });
 
 test('stage 1 quiz shows expected visual feedback for correct and wrong option selections', function () {
@@ -582,23 +557,13 @@ test('guest with ready stage 1 progress in indexeddb completes stage 2 review qu
     $page
         ->assertSee('100 / 100')
         ->assertSee(__('ui.quiz.result.all_correct'))
-        ->assertSee(__('ui.quiz.result.btn_back_level'))
-        ->assertScript(<<<JS
-            async () => {
-                const record = await new Promise((resolve) => {
-                    const req = window.indexedDB.open('vomorize', 1);
-                    req.onsuccess = () => {
-                        const db = req.result;
-                        const tx = db.transaction('learning_progress', 'readonly');
-                        const getReq = tx.objectStore('learning_progress').get({$group->id});
-                        getReq.onsuccess = () => resolve(getReq.result ?? null);
-                        getReq.onerror = () => resolve(null);
-                    };
-                    req.onerror = () => resolve(null);
-                });
-                return record !== null && record.stage === 2 && record.last_score === 100 && record.next_review_at !== null;
-            }
-        JS);
+        ->assertSee(__('ui.quiz.result.btn_back_level'));
+
+    $record = guestGroupProgress($page, $group->id);
+
+    expect($record)->not->toBeNull()
+        ->toMatchArray(['stage' => 2, 'last_score' => 100])
+        ->and($record['next_review_at'])->not->toBeNull();
 });
 
 test('guest at stage 5 in indexeddb fails stage 6 with score 85 and retains stage 5', function () {
@@ -634,23 +599,10 @@ test('guest at stage 5 in indexeddb fails stage 6 with score 85 and retains stag
     $page
         ->assertSee('85 / 100')
         ->assertSee(__('ui.quiz.result.title_failed'))
-        ->assertSee(__('ui.quiz.result.failed_notice_stage', ['stage' => 6, 'threshold' => 90]))
-        ->assertScript(<<<JS
-            async () => {
-                const record = await new Promise((resolve) => {
-                    const req = window.indexedDB.open('vomorize', 1);
-                    req.onsuccess = () => {
-                        const db = req.result;
-                        const tx = db.transaction('learning_progress', 'readonly');
-                        const getReq = tx.objectStore('learning_progress').get({$group->id});
-                        getReq.onsuccess = () => resolve(getReq.result ?? null);
-                        getReq.onerror = () => resolve(null);
-                    };
-                    req.onerror = () => resolve(null);
-                });
-                return record !== null && record.stage === 5 && record.last_score === 85 && record.next_review_at === null;
-            }
-        JS);
+        ->assertSee(__('ui.quiz.result.failed_notice_stage', ['stage' => 6, 'threshold' => 90]));
+
+    expect(guestGroupProgress($page, $group->id))
+        ->toMatchArray(['stage' => 5, 'last_score' => 85, 'next_review_at' => null]);
 });
 
 test('guest with stage 6 mastered progress in indexeddb sees self-test mode on quiz page', function () {
@@ -705,23 +657,10 @@ test('guest indexeddb progress automatically syncs to database after logging in'
         ->fill('#password', 'password')
         ->click('@login-button')
         ->assertPathIs('/dashboard')
-        ->assertNoSmoke()
-        ->assertScript(<<<'JS'
-            async () => {
-                const count = await new Promise((resolve) => {
-                    const req = window.indexedDB.open('vomorize', 1);
-                    req.onsuccess = () => {
-                        const db = req.result;
-                        const tx = db.transaction('learning_progress', 'readonly');
-                        const countReq = tx.objectStore('learning_progress').count();
-                        countReq.onsuccess = () => resolve(countReq.result);
-                        countReq.onerror = () => resolve(-1);
-                    };
-                    req.onerror = () => resolve(-1);
-                });
-                return count === 0;
-            }
-        JS);
+        ->assertNoSmoke();
+
+    // progressSync clears IndexedDB asynchronously after syncing, so poll until it is empty.
+    waitUntilCondition(fn (): bool => guestProgressCount($page) === 0);
 
     waitUntilCondition(fn (): bool => LearningProgress::query()
         ->where('user_id', $user->id)
@@ -735,6 +674,48 @@ test('guest indexeddb progress automatically syncs to database after logging in'
 
     expect($progress->stage)->toBe(2)
         ->and($progress->last_score)->toBe(90);
+});
+
+test('guest indexeddb progress is discarded entirely after logging in when the server rejects it as invalid', function () {
+    $user = User::factory()->create();
+    $level = Level::factory()->create();
+    $validGroup = Group::factory()->create(['level_id' => $level->id, 'sequence' => 1]);
+    $invalidGroup = Group::factory()->create(['level_id' => $level->id, 'sequence' => 2]);
+
+    $page = visit('/login');
+
+    seedGuestLearningProgress($page, [
+        [
+            'group_id' => $validGroup->id,
+            'level_id' => $level->id,
+            'stage' => 2,
+            'last_score' => 90,
+            'last_reviewed_at' => now()->subHours(2)->toIso8601String(),
+            'next_review_at' => now()->addHours(22)->toIso8601String(),
+        ],
+        [
+            'group_id' => $invalidGroup->id,
+            'level_id' => $level->id,
+            'stage' => 7,
+            'last_score' => 90,
+            'last_reviewed_at' => now()->subHours(2)->toIso8601String(),
+            'next_review_at' => null,
+        ],
+    ]);
+
+    expect(guestProgressCount($page))->toBe(2);
+
+    $page
+        ->fill('#email', $user->email)
+        ->fill('#password', 'password')
+        ->click('@login-button')
+        ->assertPathIs('/dashboard')
+        ->assertNoSmoke();
+
+    // A single invalid record rejects the whole batch, and the client then discards all local progress.
+    waitUntilCondition(fn (): bool => guestProgressCount($page) === 0);
+
+    expect(LearningProgress::query()->where('user_id', $user->id)->count())->toBe(0);
 });
 
 test('stage 1 intro card hides keyboard shortcut hint on mobile and shows it on desktop', function () {

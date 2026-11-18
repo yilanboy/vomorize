@@ -33,7 +33,13 @@ async function syncGuestProgressIfPresent(): Promise<void> {
             {
                 preserveState: true,
                 preserveScroll: true,
+                errorBag: 'progressSync',
                 onSuccess: () => {
+                    void learningProgressDb.clearAllProgress();
+                },
+                onError: () => {
+                    // The server rejected the payload as invalid. Local data can no longer be trusted,
+                    // and retrying the same payload would fail forever, so discard it entirely.
                     void learningProgressDb.clearAllProgress();
                 },
                 onFinish: () => {
