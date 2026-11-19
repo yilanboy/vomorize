@@ -27,8 +27,7 @@ test('guest accessing custom quiz setup page receives null counts', function () 
         ->where('questionCountOptions', GenerateCustomQuizSession::QUESTION_COUNT_OPTIONS)
         ->where('defaultQuestionCount', GenerateCustomQuizSession::DEFAULT_QUESTION_COUNT)
         ->where('availableQuizModes', QuizMode::availableValues())
-        ->where('defaultQuizMode', QuizMode::defaultMode()->value)
-    );
+        ->where('defaultQuizMode', QuizMode::defaultMode()->value));
 });
 
 test('member with no passed groups receives 0 unlocked words on setup page', function () {
@@ -37,10 +36,11 @@ test('member with no passed groups receives 0 unlocked words on setup page', fun
     $response = $this->actingAs($user)->get(route('quiz.index'));
 
     $response->assertOk();
-    $response->assertInertia(fn (Assert $page) => $page
-        ->component('quiz/index/Page')
-        ->where('passedGroupCount', 0)
-        ->where('unlockedWordCount', 0)
+    $response->assertInertia(
+        fn (Assert $page) => $page
+            ->component('quiz/index/Page')
+            ->where('passedGroupCount', 0)
+            ->where('unlockedWordCount', 0),
     );
 });
 
@@ -72,10 +72,11 @@ test('member with passed groups receives correct unlocked word count', function 
     $response = $this->actingAs($user)->get(route('quiz.index'));
 
     $response->assertOk();
-    $response->assertInertia(fn (Assert $page) => $page
-        ->component('quiz/index/Page')
-        ->where('passedGroupCount', 2)
-        ->where('unlockedWordCount', 20)
+    $response->assertInertia(
+        fn (Assert $page) => $page
+            ->component('quiz/index/Page')
+            ->where('passedGroupCount', 2)
+            ->where('unlockedWordCount', 20),
     );
 });
 
@@ -98,10 +99,12 @@ test('custom quiz redirects to setup when member has insufficient unlocked words
     $level = Level::factory()->create();
     $group = Group::factory()->create(['level_id' => $level->id]);
 
-    Vocabulary::factory()->count(10)->create([
-        'level_id' => $level->id,
-        'group_id' => $group->id,
-    ]);
+    Vocabulary::factory()
+        ->count(10)
+        ->create([
+            'level_id' => $level->id,
+            'group_id' => $group->id,
+        ]);
 
     // 1 group passed = 10 words, but requests 20 questions
     LearningProgress::factory()->create([
@@ -124,10 +127,12 @@ test('member can start custom quiz and receives session with same-group distract
     $groups = Group::factory()->count(2)->create(['level_id' => $level->id]);
 
     foreach ($groups as $group) {
-        Vocabulary::factory()->count(10)->create([
-            'level_id' => $level->id,
-            'group_id' => $group->id,
-        ]);
+        Vocabulary::factory()
+            ->count(10)
+            ->create([
+                'level_id' => $level->id,
+                'group_id' => $group->id,
+            ]);
 
         LearningProgress::factory()->create([
             'user_id' => $user->id,
@@ -146,12 +151,13 @@ test('member can start custom quiz and receives session with same-group distract
     $response = $this->actingAs($user)->get(route('quiz.play'));
 
     $response->assertOk();
-    $response->assertInertia(fn (Assert $page) => $page
-        ->component('quiz/play/Page')
-        ->where('questionCount', 10)
-        ->has('session.steps', 10)
-        ->has('session.correct_audio_url')
-        ->has('session.wrong_audio_url')
+    $response->assertInertia(
+        fn (Assert $page) => $page
+            ->component('quiz/play/Page')
+            ->where('questionCount', 10)
+            ->has('session.steps', 10)
+            ->has('session.correct_audio_url')
+            ->has('session.wrong_audio_url'),
     );
 
     // Verify properties of steps
@@ -183,10 +189,12 @@ test('guest can start custom quiz by providing passed_group_ids', function () {
     $groups = Group::factory()->count(2)->create(['level_id' => $level->id]);
 
     foreach ($groups as $group) {
-        Vocabulary::factory()->count(10)->create([
-            'level_id' => $level->id,
-            'group_id' => $group->id,
-        ]);
+        Vocabulary::factory()
+            ->count(10)
+            ->create([
+                'level_id' => $level->id,
+                'group_id' => $group->id,
+            ]);
     }
 
     $startResponse = $this->post(route('quiz.start'), [
@@ -199,10 +207,11 @@ test('guest can start custom quiz by providing passed_group_ids', function () {
     $response = $this->get(route('quiz.play'));
 
     $response->assertOk();
-    $response->assertInertia(fn (Assert $page) => $page
-        ->component('quiz/play/Page')
-        ->where('questionCount', 10)
-        ->has('session.steps', 10)
+    $response->assertInertia(
+        fn (Assert $page) => $page
+            ->component('quiz/play/Page')
+            ->where('questionCount', 10)
+            ->has('session.steps', 10),
     );
 });
 
@@ -215,16 +224,20 @@ test('completing custom quiz updates daily streak for logged in user and redirec
         'last_studied_date' => null,
     ]);
 
-    $response = $this->actingAs($user)
+    $response = $this
+        ->actingAs($user)
         ->from(route('quiz.play'))
         ->post(route('quiz.complete'));
 
     $response->assertRedirect(route('quiz.play'));
 
     $user->refresh();
-    expect($user->current_streak)->toBe(1)
-        ->and($user->longest_streak)->toBe(1)
-        ->and($user->last_studied_date?->toDateString())->toBe('2026-11-09');
+    expect($user->current_streak)
+        ->toBe(1)
+        ->and($user->longest_streak)
+        ->toBe(1)
+        ->and($user->last_studied_date?->toDateString())
+        ->toBe('2026-11-09');
 
     // Guest completing also redirects back without errors
     $guestResponse = $this->from(route('quiz.play'))->post(route('quiz.complete'));
@@ -236,10 +249,12 @@ test('member can start custom quiz in spelling mode with valid slots and sorted 
     $level = Level::factory()->create();
     $group = Group::factory()->create(['level_id' => $level->id]);
 
-    Vocabulary::factory()->count(10)->create([
-        'level_id' => $level->id,
-        'group_id' => $group->id,
-    ]);
+    Vocabulary::factory()
+        ->count(10)
+        ->create([
+            'level_id' => $level->id,
+            'group_id' => $group->id,
+        ]);
 
     LearningProgress::factory()->create([
         'user_id' => $user->id,
@@ -258,11 +273,12 @@ test('member can start custom quiz in spelling mode with valid slots and sorted 
     $response = $this->actingAs($user)->get(route('quiz.play'));
 
     $response->assertOk();
-    $response->assertInertia(fn (Assert $page) => $page
-        ->component('quiz/play/Page')
-        ->where('questionCount', 10)
-        ->where('quizMode', 'spelling')
-        ->has('session.steps', 10)
+    $response->assertInertia(
+        fn (Assert $page) => $page
+            ->component('quiz/play/Page')
+            ->where('questionCount', 10)
+            ->where('quizMode', 'spelling')
+            ->has('session.steps', 10),
     );
 
     $steps = $response->viewData('page')['props']['session']['steps'];
@@ -270,9 +286,12 @@ test('member can start custom quiz in spelling mode with valid slots and sorted 
 
     foreach ($steps as $step) {
         $quiz = $step['quiz'];
-        expect($quiz['quiz_type'])->toBe('spelling')
-            ->and($quiz)->toHaveKeys(['stem', 'audio_url', 'target_word', 'slots', 'tiles'])
-            ->and($step['fallback_quiz'])->toBeNull();
+        expect($quiz['quiz_type'])
+            ->toBe('spelling')
+            ->and($quiz)
+            ->toHaveKeys(['stem', 'audio_url', 'target_word', 'slots', 'tiles'])
+            ->and($step['fallback_quiz'])
+            ->toBeNull();
 
         $slots = $quiz['slots'];
         $tiles = $quiz['tiles'];
@@ -291,8 +310,7 @@ test('member can start custom quiz in spelling mode with valid slots and sorted 
         // Tiles must correspond to blank slots
         foreach ($tiles as $tile) {
             $slotIndex = $tile['slot_index'];
-            expect($slots[$slotIndex]['is_blank'])->toBeTrue()
-                ->and($slots[$slotIndex]['char'])->toBe($tile['char']);
+            expect($slots[$slotIndex]['is_blank'])->toBeTrue()->and($slots[$slotIndex]['char'])->toBe($tile['char']);
         }
     }
 });
@@ -302,10 +320,12 @@ test('member can start custom quiz in sentence_cloze mode with inflected options
     $level = Level::factory()->create();
     $group = Group::factory()->create(['level_id' => $level->id]);
 
-    $vocabularies = Vocabulary::factory()->count(10)->create([
-        'level_id' => $level->id,
-        'group_id' => $group->id,
-    ]);
+    $vocabularies = Vocabulary::factory()
+        ->count(10)
+        ->create([
+            'level_id' => $level->id,
+            'group_id' => $group->id,
+        ]);
 
     foreach ($vocabularies as $index => $vocab) {
         $peerIds = $vocabularies
@@ -341,11 +361,12 @@ test('member can start custom quiz in sentence_cloze mode with inflected options
     $response = $this->actingAs($user)->get(route('quiz.play'));
 
     $response->assertOk();
-    $response->assertInertia(fn (Assert $page) => $page
-        ->component('quiz/play/Page')
-        ->where('questionCount', 10)
-        ->where('quizMode', 'sentence_cloze')
-        ->has('session.steps', 10)
+    $response->assertInertia(
+        fn (Assert $page) => $page
+            ->component('quiz/play/Page')
+            ->where('questionCount', 10)
+            ->where('quizMode', 'sentence_cloze')
+            ->has('session.steps', 10),
     );
 
     $steps = $response->viewData('page')['props']['session']['steps'];
@@ -355,21 +376,25 @@ test('member can start custom quiz in sentence_cloze mode with inflected options
         $quiz = $step['quiz'];
         $targetVocab = $step['vocabulary'];
 
-        expect($quiz['quiz_type'])->toBe('sentence_cloze')
-            ->and($quiz['correct_option_id'])->toBe($targetVocab['id'])
-            ->and($quiz['audio_url'])->toBe('')
-            ->and($quiz)->not->toHaveKey('sentence_translation')
-            ->and($targetVocab['example_translation'])->not->toBeEmpty()
-            ->and($quiz['options'])->toHaveCount(4)
-            ->and($step['fallback_quiz'])->toBeNull();
+        expect($quiz['quiz_type'])
+            ->toBe('sentence_cloze')
+            ->and($quiz['correct_option_id'])
+            ->toBe($targetVocab['id'])
+            ->and($quiz['audio_url'])
+            ->toBe('')
+            ->and($quiz)
+            ->not->toHaveKey('sentence_translation')->and($targetVocab['example_translation'])
+            ->not->toBeEmpty()->and($quiz['options'])->toHaveCount(4)->and($step['fallback_quiz'])->toBeNull();
 
         $blankSegments = array_values(array_filter(
             $quiz['sentence_segments'],
             fn (array $segment): bool => $segment['type'] === 'blank',
         ));
 
-        expect($blankSegments)->toHaveCount(1)
-            ->and($blankSegments[0]['text'])->toBe($targetVocab['word'].'ed');
+        expect($blankSegments)
+            ->toHaveCount(1)
+            ->and($blankSegments[0]['text'])
+            ->toBe($targetVocab['word'].'ed');
 
         foreach ($quiz['options'] as $option) {
             expect($option['text'])->toBe($option['word'].'ed');
@@ -382,10 +407,12 @@ test('sentence_cloze mode throws when cloze questions are missing for the reques
     $level = Level::factory()->create();
     $group = Group::factory()->create(['level_id' => $level->id]);
 
-    Vocabulary::factory()->count(10)->create([
-        'level_id' => $level->id,
-        'group_id' => $group->id,
-    ]);
+    Vocabulary::factory()
+        ->count(10)
+        ->create([
+            'level_id' => $level->id,
+            'group_id' => $group->id,
+        ]);
 
     LearningProgress::factory()->create([
         'user_id' => $user->id,
@@ -398,5 +425,43 @@ test('sentence_cloze mode throws when cloze questions are missing for the reques
 })->throws(InvalidArgumentException::class);
 
 test('custom quiz generates exact step count for each supported question count option', function () {
-    //
-})->skip('Practice: verify GenerateCustomQuizSession::QUESTION_COUNT_OPTIONS [10, 20, 30, 50, 100] produce matching session.steps counts');
+    $user = User::factory()->create();
+    $level = Level::factory()->create();
+    $groups = Group::factory()->count(10)->create(['level_id' => $level->id]);
+
+    foreach ($groups as $group) {
+        Vocabulary::factory()
+            ->count(Group::VOCABULARY_PER_GROUP)
+            ->create([
+                'level_id' => $level->id,
+                'group_id' => $group->id,
+            ]);
+
+        LearningProgress::factory()->create([
+            'user_id' => $user->id,
+            'level_id' => $level->id,
+            'group_id' => $group->id,
+            'stage' => 1,
+        ]);
+    }
+
+    $groupIds = $groups->pluck('id')->toArray();
+
+    foreach (GenerateCustomQuizSession::QUESTION_COUNT_OPTIONS as $count) {
+        $this
+            ->actingAs($user)
+            ->session(['custom_quiz_config' => [
+                'question_count' => $count,
+                'quiz_mode' => QuizMode::defaultMode()->value,
+                'passed_group_ids' => $groupIds,
+            ]])
+            ->get(route('quiz.play'))
+            ->assertOk()
+            ->assertInertia(
+                fn (Assert $page) => $page
+                    ->component('quiz/play/Page')
+                    ->where('questionCount', $count)
+                    ->has('session.steps', $count),
+            );
+    }
+});
