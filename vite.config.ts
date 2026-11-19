@@ -10,7 +10,9 @@ const isSvelteCheck = process.argv.some((argument) =>
     argument.includes('svelte-check'),
 );
 
-if (isSvelteCheck) {
+const isVitest = Boolean(process.env.VITEST);
+
+if (isSvelteCheck || isVitest) {
     process.env.LARAVEL_BYPASS_ENV_CHECK ??= '1';
 }
 
