@@ -1,20 +1,18 @@
 <script lang="ts">
     import { onMount, untrack } from 'svelte';
-    import { Link, page, setLayoutProps, useForm } from '@inertiajs/svelte';
+    import { Link, page, useForm } from '@inertiajs/svelte';
     import ArrowRight from '@lucide/svelte/icons/arrow-right';
     import CheckCircle2 from '@lucide/svelte/icons/check-circle-2';
     import Lock from '@lucide/svelte/icons/lock';
     import { index as levelsIndex } from '@/actions/App/Http/Controllers/LevelController';
     import { store as start } from '@/actions/App/Http/Controllers/CustomQuizSessionController';
     import AppHead from '@/components/AppHead.svelte';
-    import Breadcrumbs from '@/components/Breadcrumbs.svelte';
     import TactileTile from '@/components/TactileTile.svelte';
     import { Button } from '@/components/ui/button';
     import { t } from '@/lib/i18n';
     import { learningProgressDb } from '@/lib/learningProgressDb';
     import { loadPreference, savePreference } from '@/lib/preference';
     import { cn } from '@/lib/utils';
-    import type { BreadcrumbItem } from '@/types';
     import type { QuizMode } from '@/types/quiz';
 
     let {
@@ -35,23 +33,6 @@
 
     const QUIZ_COUNT_STORAGE_KEY = 'quiz_question_count';
     const QUIZ_MODE_STORAGE_KEY = 'quiz_mode';
-
-    const breadcrumbs: BreadcrumbItem[] = $derived([
-        {
-            title: t('ui.levels_page.breadcrumb_home'),
-            href: '/',
-        },
-        {
-            title: t('ui.quiz.custom.breadcrumb'),
-            href: '/quiz',
-        },
-    ]);
-
-    $effect(() => {
-        setLayoutProps({
-            breadcrumbs,
-        });
-    });
 
     let localPassedGroupCount = $state<number | null>(null);
     let localUnlockedWordCount = $state<number | null>(null);
@@ -148,8 +129,6 @@
 <main
     class="mx-auto max-w-5xl space-y-6 px-4 py-6 selection:bg-blue-600 selection:text-white sm:space-y-8 sm:px-6 sm:py-8 lg:px-8"
 >
-    <Breadcrumbs {breadcrumbs} />
-
     {#if !isClientLoaded}
         <div
             class="flex min-h-[50vh] items-center justify-center py-6 sm:py-12"

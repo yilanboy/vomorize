@@ -1,18 +1,14 @@
 <script lang="ts">
     import { onMount } from 'svelte';
-    import { Link, setLayoutProps } from '@inertiajs/svelte';
-    import ArrowRight from '@lucide/svelte/icons/arrow-right';
-    import BookOpen from '@lucide/svelte/icons/book-open';
+    import { Link } from '@inertiajs/svelte';
     import CheckCircle2 from '@lucide/svelte/icons/check-circle-2';
     import AppHead from '@/components/AppHead.svelte';
-    import Breadcrumbs from '@/components/Breadcrumbs.svelte';
     import { t } from '@/lib/i18n';
     import {
         computeLevelsProgressMap,
         learningProgressDb,
         type LevelProgressSummaryItem,
     } from '@/lib/learningProgressDb';
-    import type { BreadcrumbItem } from '@/types';
 
     interface LevelItem {
         id: number;
@@ -71,23 +67,6 @@
             localProgress = computeLevelsProgressMap(records, levels);
         }
     });
-
-    const breadcrumbs: BreadcrumbItem[] = $derived([
-        {
-            title: t('ui.levels_page.breadcrumb_home'),
-            href: '/',
-        },
-        {
-            title: t('ui.levels_page.breadcrumb'),
-            href: '/levels',
-        },
-    ]);
-
-    $effect(() => {
-        setLayoutProps({
-            breadcrumbs,
-        });
-    });
 </script>
 
 <AppHead title={t('ui.levels_page.title')} />
@@ -95,9 +74,6 @@
 <main
     class="mx-auto max-w-7xl space-y-6 px-4 py-6 selection:bg-blue-600 selection:text-white sm:space-y-8 sm:px-6 sm:py-8 lg:px-8"
 >
-    <!-- Breadcrumb -->
-    <Breadcrumbs {breadcrumbs} />
-
     <!-- Level Header & Overall Progress -->
     <header
         class="border-border/80 flex flex-col justify-between gap-5 border-b pb-4 md:flex-row md:items-end md:pb-6"
