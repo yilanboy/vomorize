@@ -55,9 +55,7 @@
         progress?: GroupProgressSummary | null;
     } = $props();
 
-    let focusedIndex = $state(0);
     let localProgress = $state<GroupProgressSummary | null>(null);
-    let cardElements: HTMLElement[] = $state([]);
 
     const currentProgress = $derived(
         progress ??
@@ -117,50 +115,6 @@
         }
 
         return t('ui.time.seconds', { count: totalSeconds });
-    }
-
-    function focusCard(index: number): void {
-        if (index < 0 || index >= vocabularies.length) {
-            return;
-        }
-        focusedIndex = index;
-        cardElements[index]?.scrollIntoView({
-            behavior: 'smooth',
-            block: 'nearest',
-        });
-    }
-
-    function handleKeyDown(event: KeyboardEvent): void {
-        const target = event.target as HTMLElement | null;
-        if (
-            target &&
-            ['INPUT', 'TEXTAREA', 'SELECT'].includes(target.tagName)
-        ) {
-            return;
-        }
-
-        if (event.code === 'Space') {
-            event.preventDefault();
-            const current = vocabularies[focusedIndex];
-            if (current) {
-                audioPlayer.play(current.word_audio_url, `word-${current.id}`);
-            }
-        } else if (event.key === 's' || event.key === 'S') {
-            event.preventDefault();
-            const current = vocabularies[focusedIndex];
-            if (current) {
-                audioPlayer.play(
-                    current.sentence_audio_url,
-                    `sentence-${current.id}`,
-                );
-            }
-        } else if (event.key === 'ArrowDown' || event.key === 'j') {
-            event.preventDefault();
-            focusCard(Math.min(vocabularies.length - 1, focusedIndex + 1));
-        } else if (event.key === 'ArrowUp' || event.key === 'k') {
-            event.preventDefault();
-            focusCard(Math.max(0, focusedIndex - 1));
-        }
     }
 
     function preloadVocabulariesAudio(): void {
@@ -240,8 +194,6 @@
         };
     });
 </script>
-
-<svelte:window onkeydown={handleKeyDown} />
 
 <AppHead
     title={t('ui.group_detail.title', {
@@ -395,17 +347,8 @@
     <div class="space-y-4">
         {#each vocabularies as item, index (item.id)}
             <section
-                bind:this={cardElements[index]}
-                class={{
-                    'bg-card scroll-my-24 rounded-2xl border p-5 transition-all duration-200 sm:p-6': true,
-                    'border-border/70 hover:border-border shadow-2xs':
-                        focusedIndex !== index,
-                    'border-blue-500/80 shadow-xs ring-2 ring-blue-500/20 dark:border-blue-500/70 dark:ring-blue-500/30':
-                        focusedIndex === index,
-                }}
+                class="bg-card border-border/70 hover:border-border scroll-my-24 rounded-2xl border p-5 shadow-2xs transition-all duration-200 sm:p-6"
                 aria-label={item.word}
-                onpointerdown={() => (focusedIndex = index)}
-                onfocusin={() => (focusedIndex = index)}
             >
                 <!-- Card Header: Index, Word, POS, Pronunciation, Word Audio Button -->
                 <div class="flex items-start justify-between gap-4">
@@ -442,9 +385,7 @@
                     <!-- 40x40px Word Audio Button (strictly aligned to right rail) -->
                     <button
                         type="button"
-                        onclick={(e) => {
-                            e.stopPropagation();
-                            focusedIndex = index;
+                        onclick={() => {
                             audioPlayer.play(
                                 item.word_audio_url,
                                 `word-${item.id}`,
@@ -490,9 +431,7 @@
                         <!-- 40x40px Sentence Audio Button (strictly aligned with word audio button) -->
                         <button
                             type="button"
-                            onclick={(e) => {
-                                e.stopPropagation();
-                                focusedIndex = index;
+                            onclick={() => {
                                 audioPlayer.play(
                                     item.sentence_audio_url,
                                     `sentence-${item.id}`,
@@ -529,20 +468,13 @@
     aria-label="Group action footer"
 >
     <div class="mx-auto flex max-w-4xl items-center justify-between gap-4">
-        <!-- Summary & Keyboard Shortcuts -->
+        <!-- Summary -->
         <div class="flex flex-col gap-0.5 sm:flex-row sm:items-center sm:gap-4">
             <span class="text-foreground text-sm font-semibold">
                 {t('ui.group_detail.sticky_bar.summary', {
                     sequence: group.sequence,
                     count: vocabularies.length,
                 })}
-            </span>
-
-            <span
-                class="text-muted-foreground hidden items-center gap-1.5 text-sm lg:inline-flex"
-            >
-                <span class="text-border">·</span>
-                <span>{t('ui.group_detail.keyboard_hint')}</span>
             </span>
         </div>
 

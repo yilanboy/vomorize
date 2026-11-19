@@ -12,6 +12,7 @@
     import LeaveConfirmationDialog from '@/components/LeaveConfirmationDialog.svelte';
     import AudioToDefinitionCard from '@/components/quiz/AudioToDefinitionCard.svelte';
     import DefinitionToWordCard from '@/components/quiz/DefinitionToWordCard.svelte';
+    import QuizActionFooter from '@/components/quiz/QuizActionFooter.svelte';
     import QuizResultSummary from '@/components/quiz/QuizResultSummary.svelte';
     import SentenceClozeCard from '@/components/quiz/SentenceClozeCard.svelte';
     import SpellingCard from '@/components/quiz/SpellingCard.svelte';
@@ -19,7 +20,6 @@
     import { audioPlayer } from '@/lib/audioPlayer.svelte';
     import { t } from '@/lib/i18n';
     import { createNavigationGuard } from '@/lib/navigationGuard';
-    import { QUIZ_ANSWER_FEEDBACK_DELAY_MS } from '@/lib/quiz';
     import type {
         CustomQuizSessionData,
         MistakeReviewItem,
@@ -45,7 +45,7 @@
 
     let currentIndex = $state(0);
     let selectedOptionId = $state<number | null>(null);
-    let isAdvancing = $state(false);
+    let spellingAnswered = $state(false);
     let listeningDisabled = $state(false);
     let isDisableListeningDialogOpen = $state(false);
     let correctAnswersCount = $state(0);
@@ -100,12 +100,16 @@
             ? Math.min(100, Math.round(((currentIndex + 1) / totalSteps) * 100))
             : 0,
     );
+    const hasAnswered = $derived(selectedOptionId !== null || spellingAnswered);
+    const isLastStep = $derived(currentIndex + 1 >= totalSteps);
 
     function advanceToNextStep() {
+        audioPlayer.stop();
+
         if (currentIndex + 1 < totalSteps) {
             currentIndex += 1;
             selectedOptionId = null;
-            isAdvancing = false;
+            spellingAnswered = false;
 
             const futureStep = session.steps?.[currentIndex + 6];
             if (futureStep?.vocabulary?.word_audio_url) {
@@ -122,14 +126,12 @@
         if (
             selectedOptionId !== null ||
             !activeQuiz ||
-            !('correct_option_id' in activeQuiz) ||
-            isAdvancing
+            !('correct_option_id' in activeQuiz)
         ) {
             return;
         }
 
         selectedOptionId = option.id;
-        isAdvancing = true;
 
         const isCorrect = option.id === activeQuiz.correct_option_id;
         if (isCorrect) {
@@ -160,27 +162,20 @@
                 ];
             }
         }
-
-        setTimeout(() => {
-            advanceToNextStep();
-        }, QUIZ_ANSWER_FEEDBACK_DELAY_MS);
     }
 
     function handleSpellingResult(isCorrect: boolean) {
-        if (isAdvancing) {
+        if (spellingAnswered) {
             return;
         }
 
+        spellingAnswered = true;
+
         if (isCorrect) {
-            isAdvancing = true;
             correctAnswersCount += 1;
             if (!listeningDisabled && session.correct_audio_url) {
                 void audioPlayer.play(session.correct_audio_url, 'sfx-correct');
             }
-
-            setTimeout(() => {
-                advanceToNextStep();
-            }, QUIZ_ANSWER_FEEDBACK_DELAY_MS);
         } else {
             if (!listeningDisabled && session.wrong_audio_url) {
                 void audioPlayer.play(session.wrong_audio_url, 'sfx-wrong');
@@ -204,10 +199,6 @@
                 ];
             }
         }
-    }
-
-    function handleSpellingNext() {
-        advanceToNextStep();
     }
 
     function handleQuizCompletion() {
@@ -312,6 +303,7 @@
             <div class="flex flex-1 flex-col items-center gap-1.5 px-4 sm:px-8">
                 <div class="flex items-center gap-2">
                     <span
+                        data-test="current-step"
                         class="text-foreground font-mono text-sm font-semibold"
                     >
                         {Math.min(currentIndex + 1, totalSteps)}
@@ -362,7 +354,7 @@
 
     <!-- Main Content Area -->
     <main
-        class="flex flex-1 flex-col items-center justify-center px-4 py-8 sm:px-6"
+        class="flex flex-1 flex-col items-center justify-center px-4 py-6 sm:px-6"
     >
         {#if quizCompleted}
             <QuizResultSummary
@@ -384,7 +376,7 @@
                             vocabulary={currentStep.vocabulary}
                             {selectedOptionId}
                             onSelect={handleQuizOptionSelect}
-                            disabled={isAdvancing}
+                            disabled={hasAnswered}
                         />
                     {:else if activeQuiz.quiz_type === 'definition_to_word'}
                         <DefinitionToWordCard
@@ -392,7 +384,7 @@
                             vocabulary={currentStep.vocabulary}
                             {selectedOptionId}
                             onSelect={handleQuizOptionSelect}
-                            disabled={isAdvancing}
+                            disabled={hasAnswered}
                         />
                     {:else if activeQuiz.quiz_type === 'audio_to_definition'}
                         <AudioToDefinitionCard
@@ -401,7 +393,7 @@
                             {selectedOptionId}
                             autoPlay={!listeningDisabled}
                             onSelect={handleQuizOptionSelect}
-                            disabled={isAdvancing}
+                            disabled={hasAnswered}
                         />
                     {:else if activeQuiz.quiz_type === 'sentence_cloze'}
                         <SentenceClozeCard
@@ -409,7 +401,7 @@
                             vocabulary={currentStep.vocabulary}
                             {selectedOptionId}
                             onSelect={handleQuizOptionSelect}
-                            disabled={isAdvancing}
+                            disabled={hasAnswered}
                         />
                     {:else if activeQuiz.quiz_type === 'spelling'}
                         <SpellingCard
@@ -417,14 +409,23 @@
                             vocabulary={currentStep.vocabulary}
                             autoPlay={!listeningDisabled}
                             onResult={handleSpellingResult}
-                            onNext={handleSpellingNext}
-                            disabled={isAdvancing}
+                            disabled={hasAnswered}
                         />
                     {/if}
                 {/if}
             {/key}
         {/if}
     </main>
+
+    {#if !quizCompleted && currentStep}
+        <QuizActionFooter
+            canAdvance={hasAnswered}
+            label={isLastStep
+                ? t('ui.quiz.footer.view_results')
+                : t('ui.quiz.footer.next')}
+            onAdvance={advanceToNextStep}
+        />
+    {/if}
 
     <!-- Leave Confirmation Dialog -->
     <LeaveConfirmationDialog

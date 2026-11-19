@@ -38,7 +38,3 @@ it("won't show footer", function () {
         ->assertNotPresent('css=footer')
         ->assertPresent('aside[aria-label="Group action footer"]');
 });
-
-test('group detail sticky bar hides keyboard shortcut hint on mobile and shows it on desktop', function () {
-    //
-})->skip('Practice: visit /groups/{group} with on()->mobile() and assertDontSee("快捷鍵：Space 朗讀單字"), then verify it is visible on desktop (>= lg)');

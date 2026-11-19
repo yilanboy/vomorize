@@ -18,6 +18,8 @@ async function syncGuestProgressIfPresent(): Promise<void> {
             return;
         }
 
+        let shouldClear = false;
+
         router.post(
             syncProgress.url(),
             {
@@ -35,15 +37,23 @@ async function syncGuestProgressIfPresent(): Promise<void> {
                 preserveScroll: true,
                 errorBag: 'progressSync',
                 onSuccess: () => {
-                    void learningProgressDb.clearAllProgress();
+                    shouldClear = true;
                 },
                 onError: () => {
                     // The server rejected the payload as invalid. Local data can no longer be trusted,
                     // and retrying the same payload would fail forever, so discard it entirely.
-                    void learningProgressDb.clearAllProgress();
+                    shouldClear = true;
                 },
                 onFinish: () => {
-                    isSyncing = false;
+                    if (shouldClear) {
+                        void learningProgressDb
+                            .clearAllProgress()
+                            .finally(() => {
+                                isSyncing = false;
+                            });
+                    } else {
+                        isSyncing = false;
+                    }
                 },
             },
         );

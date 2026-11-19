@@ -382,13 +382,12 @@ return [
             'not_started' => '尚未开始',
             'completed' => '已经完成',
         ],
-        'play_word_audio' => '播放单词发音 (Space)',
-        'play_sentence_audio' => '播放例句发音 (S)',
+        'play_word_audio' => '播放单词发音',
+        'play_sentence_audio' => '播放例句发音',
         'prev_group' => '上一组',
         'next_group' => '下一组',
         'stage_indicator' => '第 :stage / 6 阶段',
         'stage_completed' => '已完成全部 6 阶段',
-        'keyboard_hint' => '快捷键：Space 朗读单词 · S 朗读例句 · ↑↓ 切换',
         'sticky_bar' => [
             'summary' => '第 :sequence 组 · :count 个核心单词',
             'start_stage_1' => '开始第一阶段测验 (Stage 1)',
@@ -544,7 +543,6 @@ return [
             'definition_label' => '中文释义',
             'example_label' => '语境例句',
             'continue' => '我记住了，下一题',
-            'keyboard_hint' => '按 Space 键继续',
         ],
     ],
     'quiz' => [
@@ -568,22 +566,21 @@ return [
         ],
         'spelling' => [
             'badge' => '拼写测验',
-            'play_audio_hint' => '播放读音 (Space)',
-            'keyboard_hint' => '直接键盘输入字母 / Backspace 删除',
+            'play_audio_hint' => '播放读音',
             'touch_hint' => '点击字母填入空格，点击已填字母可退回',
             'backspace' => '退格',
             'clear' => '清除',
             'correct_answer' => '正确拼写',
             'correct_banner' => '拼写正确！',
-            'next' => '下一题',
         ],
         'audio_prompt' => [
-            'play_hint' => '点击或按 Space 播放发音',
-            'play_hint_mobile' => '点击播放发音',
+            'play_hint' => '点击播放发音',
             'playing' => '正在播放发音...',
         ],
-        'options' => [
-            'keyboard_hint' => '按数字键 1-4 快速作答',
+        'footer' => [
+            'aria_label' => '测验操作栏',
+            'next' => '下一题',
+            'view_results' => '查看结果',
         ],
         'result' => [
             'title_passed' => '恭喜通关！Stage 1 学习达成',
@@ -653,7 +650,6 @@ return [
             ],
             'summary_line' => '已配置：:mode模式 · :count 题',
             'start_button' => '开始自定义测验',
-            'footer_keyboard_hint' => '测验过程全面支持键盘 1-4 快捷作答，',
             'footer_hint' => '交卷后将提供错题去重回顾。',
             'top_bar' => [
                 'leave' => '离开测验',

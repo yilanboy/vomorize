@@ -374,6 +374,26 @@ export const learningProgressDb = {
         });
     },
 
+    async count(): Promise<number> {
+        const db = await openDatabase();
+        if (!db) {
+            return 0;
+        }
+
+        return new Promise((resolve) => {
+            try {
+                const transaction = db.transaction(STORE_NAME, 'readonly');
+                const store = transaction.objectStore(STORE_NAME);
+                const request = store.count();
+
+                request.onsuccess = () => resolve(request.result);
+                request.onerror = () => resolve(0);
+            } catch {
+                resolve(0);
+            }
+        });
+    },
+
     async saveGroupProgress(record: LocalLearningProgress): Promise<void> {
         const db = await openDatabase();
         if (!db) {
@@ -384,12 +404,41 @@ export const learningProgressDb = {
             try {
                 const transaction = db.transaction(STORE_NAME, 'readwrite');
                 const store = transaction.objectStore(STORE_NAME);
-                const request = store.put(record);
+                store.put(record);
 
-                request.onsuccess = () => resolve();
-                request.onerror = () => resolve();
+                transaction.oncomplete = () => resolve();
+                transaction.onerror = () => resolve();
+                transaction.onabort = () => resolve();
             } catch {
                 resolve();
+            }
+        });
+    },
+
+    async saveMany(records: LocalLearningProgress[]): Promise<number> {
+        if (records.length === 0) {
+            return 0;
+        }
+
+        const db = await openDatabase();
+        if (!db) {
+            return 0;
+        }
+
+        return new Promise((resolve) => {
+            try {
+                const transaction = db.transaction(STORE_NAME, 'readwrite');
+                const store = transaction.objectStore(STORE_NAME);
+
+                for (const record of records) {
+                    store.put(record);
+                }
+
+                transaction.oncomplete = () => resolve(records.length);
+                transaction.onerror = () => resolve(0);
+                transaction.onabort = () => resolve(0);
+            } catch {
+                resolve(0);
             }
         });
     },
@@ -423,10 +472,11 @@ export const learningProgressDb = {
             try {
                 const transaction = db.transaction(STORE_NAME, 'readwrite');
                 const store = transaction.objectStore(STORE_NAME);
-                const request = store.clear();
+                store.clear();
 
-                request.onsuccess = () => resolve();
-                request.onerror = () => resolve();
+                transaction.oncomplete = () => resolve();
+                transaction.onerror = () => resolve();
+                transaction.onabort = () => resolve();
             } catch {
                 resolve();
             }

@@ -6,801 +6,433 @@ use App\Models\Group;
 use App\Models\LearningProgress;
 use App\Models\Level;
 use App\Models\User;
-use App\Models\Vocabulary;
 
-if (! function_exists('seedGuestLearningProgress')) {
-    /**
-     * @param  array<int, array<string, mixed>>  $records
-     */
-    function seedGuestLearningProgress(object $page, array $records): void
-    {
-        $json = json_encode($records, JSON_THROW_ON_ERROR);
+describe('page loading and leave guards', function () {
+    test('stage 1 intro page loads without javascript errors', function () {
+        $level = Level::factory()->withTranslation('zh_TW', __('ui.dashboard.levels.subtitles.1'))->create();
+        $group = Group::factory()->withVocabularies()->create(['level_id' => $level->id, 'sequence' => 1]);
 
-        $page->script(<<<JS
-            async () => {
-                for (const record of {$json}) {
-                    await window.__learningProgressDb.saveGroupProgress(record);
-                }
-            }
-        JS);
-    }
-}
+        visit("/groups/{$group->id}/intro")
+            ->assertSee($group->sequence)
+            ->assertNoSmoke();
+    });
 
-if (! function_exists('guestGroupProgress')) {
-    /**
-     * @return array<string, mixed>|null
-     */
-    function guestGroupProgress(object $page, int $groupId): ?array
-    {
-        return $page->script(<<<JS
-            async () => await window.__learningProgressDb.getGroupProgress({$groupId})
-        JS);
-    }
-}
+    test('stage 1 intro page guards against leaving and browser back from the very first step', function () {
+        $level = Level::factory()->withTranslation('zh_TW', __('ui.dashboard.levels.subtitles.1'))->create();
+        $group = Group::factory()->withVocabularies()->create(['level_id' => $level->id, 'sequence' => 1]);
 
-if (! function_exists('guestProgressCount')) {
-    function guestProgressCount(object $page): int
-    {
-        return $page->script(<<<'JS'
-            async () => (await window.__learningProgressDb.getAllProgress()).length
-        JS);
-    }
-}
+        $page = visit("/groups/{$group->id}/intro");
 
-if (! function_exists('completeStage1Session')) {
-    function completeStage1Session(object $page, int $wrongCount = 0): void
-    {
-        $introSteps = [1, 2, 5, 6, 11, 12, 17, 18, 23, 24];
-        $quizIndex = 0;
-        $correctTarget = 20 - $wrongCount;
+        $page
+            ->assertSee('30')
+            ->click('button[title="'.__('ui.intro.top_bar.leave').'"]')
+            ->assertSee(__('ui.intro.top_bar.leave_dialog_title'))
+            ->click(__('ui.intro.top_bar.leave_dialog_cancel'))
+            ->assertDontSee(__('ui.intro.top_bar.leave_dialog_title'));
 
-        $page->assertNotPresent('footer');
+        $page->script('window.history.back()');
 
-        for ($step = 1; $step <= 30; $step++) {
-            $page->assertSeeIn('@current-step', (string) $step);
+        $page
+            ->assertSee(__('ui.intro.top_bar.leave_dialog_title'))
+            ->assertNoSmoke();
+    });
 
-            if (in_array($step, $introSteps, true)) {
-                $page->click('@continue-button');
-            } else {
-                $quizIndex++;
-                $selector = $quizIndex <= $correctTarget ? '@correct-option' : '@wrong-option';
-                $page->assertEnabled($selector)->click($selector);
-            }
-        }
-    }
-}
+    test('group show page for passed group loads without javascript errors', function () {
+        $user = loginAsUser();
+        $group = Group::factory()->withVocabularies()->create();
 
-if (! function_exists('completeReviewQuizSession')) {
-    function completeReviewQuizSession(object $page, int $wrongCount = 0): void
-    {
-        $correctTarget = 20 - $wrongCount;
-
-        $page->assertNotPresent('footer');
-
-        for ($step = 1; $step <= 20; $step++) {
-            $selector = $step <= $correctTarget ? '@correct-option' : '@wrong-option';
-
-            $page->assertSeeIn('@current-step', (string) $step)
-                ->assertEnabled($selector)
-                ->click($selector);
-        }
-    }
-}
-
-if (! function_exists('waitUntilCondition')) {
-    function waitUntilCondition(callable $condition, int $timeoutMs = 5000): void
-    {
-        $deadline = microtime(true) + ($timeoutMs / 1000);
-
-        while (microtime(true) < $deadline) {
-            if ($condition()) {
-                return;
-            }
-
-            usleep(50_000);
-        }
-
-        expect($condition())->toBeTrue();
-    }
-}
-
-test('stage 1 intro page loads without javascript errors', function () {
-    $level = Level::factory()->withTranslation('zh_TW', __('ui.dashboard.levels.subtitles.1'))->create();
-    $group = Group::factory()->create(['level_id' => $level->id, 'sequence' => 1]);
-
-    Vocabulary::factory()
-        ->count(10)
-        ->create([
-            'level_id' => $level->id,
+        LearningProgress::factory()->create([
+            'user_id' => $user->id,
+            'level_id' => $group->level_id,
             'group_id' => $group->id,
-        ]);
-
-    visit("/groups/{$group->id}/intro")
-        ->assertSee($group->sequence)
-        ->assertNoSmoke();
-});
-
-test('stage 1 intro page guards against leaving and browser back from the very first step', function () {
-    $level = Level::factory()->withTranslation('zh_TW', __('ui.dashboard.levels.subtitles.1'))->create();
-    $group = Group::factory()->create(['level_id' => $level->id, 'sequence' => 1]);
-
-    Vocabulary::factory()
-        ->count(10)
-        ->create([
-            'level_id' => $level->id,
-            'group_id' => $group->id,
-        ]);
-
-    $page = visit("/groups/{$group->id}/intro");
-
-    $page
-        ->assertSee('30')
-        ->click('button[title="'.__('ui.intro.top_bar.leave').'"]')
-        ->assertSee(__('ui.intro.top_bar.leave_dialog_title'))
-        ->click(__('ui.intro.top_bar.leave_dialog_cancel'))
-        ->assertDontSee(__('ui.intro.top_bar.leave_dialog_title'));
-
-    $page->script('window.history.back()');
-
-    $page->assertSee(__('ui.intro.top_bar.leave_dialog_title'))
-        ->assertNoSmoke();
-});
-
-test('group show page for passed group loads without javascript errors', function () {
-    $user = loginAsUser();
-    $level = Level::factory()->create();
-    $group = Group::factory()->create(['level_id' => $level->id]);
-
-    Vocabulary::factory()
-        ->count(10)
-        ->create([
-            'level_id' => $level->id,
-            'group_id' => $group->id,
-        ]);
-
-    LearningProgress::factory()->create([
-        'user_id' => $user->id,
-        'level_id' => $level->id,
-        'group_id' => $group->id,
-        'stage' => 1,
-    ]);
-
-    visit("/groups/{$group->id}")
-        ->assertNoSmoke();
-});
-
-test('stage 2 review quiz page loads without javascript errors and guards against leaving', function () {
-    $user = loginAsUser();
-    $level = Level::factory()->withTranslation('zh_TW', __('ui.dashboard.levels.subtitles.1'))->create();
-    $group = Group::factory()->create(['level_id' => $level->id, 'sequence' => 1]);
-
-    Vocabulary::factory()
-        ->count(10)
-        ->create([
-            'level_id' => $level->id,
-            'group_id' => $group->id,
-        ]);
-
-    LearningProgress::factory()->create([
-        'user_id' => $user->id,
-        'level_id' => $level->id,
-        'group_id' => $group->id,
-        'stage' => 1,
-        'last_score' => 85,
-        'next_review_at' => now()->subMinute(),
-    ]);
-
-    $page = visit("/groups/{$group->id}/quiz");
-
-    $page
-        ->assertSee('20')
-        ->click('button[title="'.__('ui.intro.top_bar.leave').'"]')
-        ->assertSee(__('ui.intro.top_bar.leave_dialog_title'))
-        ->click(__('ui.intro.top_bar.leave_dialog_cancel'))
-        ->assertDontSee(__('ui.intro.top_bar.leave_dialog_title'))
-        ->assertNoSmoke();
-});
-
-test('guest completes stage 1 intro and quiz with perfect score and persists progress to indexeddb', function () {
-    $level = Level::factory()->create();
-    $group = Group::factory()->create([
-        'level_id' => $level->id,
-    ]);
-
-    Vocabulary::factory()->count(10)->create([
-        'level_id' => $level->id,
-        'group_id' => $group->id,
-    ]);
-
-    $page = visit(route('groups.intro', ['group' => $group->id]));
-    $page->assertNoSmoke();
-
-    completeStage1Session($page);
-
-    $page
-        ->assertSee('100 / 100')
-        ->assertSee(__('ui.quiz.result.all_correct'))
-        ->assertSee(__('ui.quiz.result.btn_back_level'))
-        ->assertDontSee(__('ui.quiz.result.btn_dashboard'));
-
-    $record = guestGroupProgress($page, $group->id);
-
-    expect($record)->not->toBeNull()
-        ->toMatchArray(['stage' => 1, 'last_score' => 100, 'level_id' => $level->id])
-        ->and($record['next_review_at'])->not->toBeNull();
-
-    expect(LearningProgress::query()->count())->toBe(0);
-
-    $page
-        ->click(__('ui.quiz.result.btn_done'))
-        ->assertPathIs("/groups/{$group->id}")
-        ->assertSee(__('ui.group_detail.status.cooldown'))
-        ->assertSee(__('ui.group_detail.stage_indicator', ['stage' => 1]))
-        ->assertNoSmoke();
-});
-
-test('member completes stage 1 intro and quiz with perfect score and persists progress to database', function () {
-    $user = loginAsUser();
-    $level = Level::factory()->create();
-    $group = Group::factory()->create([
-        'level_id' => $level->id,
-    ]);
-
-    Vocabulary::factory()->count(10)->create([
-        'level_id' => $level->id,
-        'group_id' => $group->id,
-    ]);
-
-    $page = visit(route('groups.intro', ['group' => $group->id]));
-    $page->assertNoSmoke();
-
-    completeStage1Session($page);
-
-    $page
-        ->assertSee('100 / 100')
-        ->assertSee(__('ui.quiz.result.all_correct'))
-        ->assertSee(__('ui.quiz.result.btn_dashboard'))
-        ->assertDontSee(__('ui.quiz.result.btn_back_level'));
-
-    waitUntilCondition(fn (): bool => LearningProgress::query()
-        ->where('user_id', $user->id)
-        ->where('group_id', $group->id)
-        ->where('stage', 1)
-        ->exists());
-
-    $progress = LearningProgress::query()
-        ->where('user_id', $user->id)
-        ->where('group_id', $group->id)
-        ->firstOrFail();
-
-    expect($progress->stage)->toBe(1)
-        ->and($progress->last_score)->toBe(100)
-        ->and($progress->next_review_at)->not->toBeNull();
-
-    $user->refresh();
-    expect($user->current_streak)->toBe(1);
-});
-
-test('stage 1 quiz result score matches partial correct answers, lists mistakes, and shows failed state below 80', function () {
-    $level = Level::factory()->create();
-    $group = Group::factory()->create([
-        'level_id' => $level->id,
-    ]);
-
-    Vocabulary::factory()->count(10)->create([
-        'level_id' => $level->id,
-        'group_id' => $group->id,
-    ]);
-
-    $page = visit(route('groups.intro', ['group' => $group->id]));
-    $page->assertNoSmoke();
-
-    completeStage1Session($page, wrongCount: 6);
-
-    $page
-        ->assertSee('70 / 100')
-        ->assertSee(__('ui.quiz.result.title_failed'))
-        ->assertSee(__('ui.quiz.result.failed_notice'))
-        ->assertSee('本次錯誤單字回顧');
-
-    expect(guestGroupProgress($page, $group->id))
-        ->toMatchArray(['stage' => 0, 'last_score' => 70, 'next_review_at' => null]);
-});
-
-test('stage 1 quiz shows expected visual feedback for correct and wrong option selections', function () {
-    $level = Level::factory()->create();
-    $group = Group::factory()->create([
-        'level_id' => $level->id,
-    ]);
-
-    Vocabulary::factory()->count(10)->create([
-        'level_id' => $level->id,
-        'group_id' => $group->id,
-    ]);
-
-    $page = visit(route('groups.intro', ['group' => $group->id]));
-
-    $page->assertNoSmoke()
-        ->assertNotPresent('footer')
-        ->assertSeeIn('@current-step', '1')
-        ->click('@continue-button')
-        ->assertSeeIn('@current-step', '2')
-        ->click('@continue-button')
-        ->assertSeeIn('@current-step', '3')
-        ->click('@correct-option')
-        ->assertDisabled('@correct-option')
-        ->assertAttributeContains('@correct-option', 'class', 'border-emerald-600')
-        ->assertSeeIn('@current-step', '4')
-        ->assertEnabled('@wrong-option')
-        ->click('@wrong-option')
-        ->assertDisabled('@wrong-option')
-        ->assertAttributeContains('@wrong-option', 'class', 'border-red-600')
-        ->assertAttributeContains('@correct-option', 'class', 'border-emerald-600')
-        ->assertNoSmoke();
-});
-
-test('member completes stage 2 review quiz with perfect score and advances to stage 2 in database', function () {
-    $level = Level::factory()->create();
-    $group = Group::factory()->create([
-        'level_id' => $level->id,
-    ]);
-
-    Vocabulary::factory()->count(10)->create([
-        'level_id' => $level->id,
-        'group_id' => $group->id,
-    ]);
-
-    $user = loginAsUser();
-
-    $user->learningProgress()->create([
-        'level_id' => $level->id,
-        'group_id' => $group->id,
-        'stage' => 1,
-        'last_score' => 85,
-        'last_reviewed_at' => now()->subDay(),
-        'next_review_at' => now()->subMinute(),
-    ]);
-
-    $page = visit(route('groups.quiz', [
-        'group' => $group->id,
-    ]));
-    $page->assertNoSmoke();
-
-    completeReviewQuizSession($page);
-
-    $page
-        ->assertSee('100 / 100')
-        ->assertSee(__('ui.quiz.result.all_correct'))
-        ->assertSee(__('ui.quiz.result.btn_dashboard'));
-
-    waitUntilCondition(fn (): bool => LearningProgress::query()
-        ->where('user_id', $user->id)
-        ->where('group_id', $group->id)
-        ->where('stage', 2)
-        ->exists());
-
-    $progress = LearningProgress::query()
-        ->where('user_id', $user->id)
-        ->where('group_id', $group->id)
-        ->firstOrFail();
-
-    expect($progress->stage)->toBe(2)
-        ->and($progress->last_score)->toBe(100)
-        ->and($progress->next_review_at)->not->toBeNull();
-});
-
-test('member stage 2 review quiz result score matches partial correct count and lists mistakes', function () {
-    $level = Level::factory()->create();
-    $group = Group::factory()->create([
-        'level_id' => $level->id,
-    ]);
-
-    Vocabulary::factory()->count(10)->create([
-        'level_id' => $level->id,
-        'group_id' => $group->id,
-    ]);
-
-    $user = loginAsUser();
-
-    $user->learningProgress()->create([
-        'level_id' => $level->id,
-        'group_id' => $group->id,
-        'stage' => 1,
-        'last_score' => 85,
-        'last_reviewed_at' => now()->subDay(),
-        'next_review_at' => now()->subMinute(),
-    ]);
-
-    $page = visit(route('groups.quiz', [
-        'group' => $group->id,
-    ]));
-    $page->assertNoSmoke();
-
-    completeReviewQuizSession($page, wrongCount: 4);
-
-    $page
-        ->assertSee('80 / 100')
-        ->assertSee(__('ui.quiz.result.title_passed_stage', ['stage' => 2]))
-        ->assertSee('本次錯誤單字回顧');
-
-    waitUntilCondition(fn (): bool => LearningProgress::query()
-        ->where('user_id', $user->id)
-        ->where('group_id', $group->id)
-        ->where('stage', 2)
-        ->exists());
-
-    $progress = LearningProgress::query()
-        ->where('user_id', $user->id)
-        ->where('group_id', $group->id)
-        ->firstOrFail();
-
-    expect($progress->last_score)->toBe(80);
-});
-
-test('stage 2 review quiz shows expected visual feedback for correct and wrong option selections', function () {
-    $level = Level::factory()->create();
-    $group = Group::factory()->create([
-        'level_id' => $level->id,
-    ]);
-
-    Vocabulary::factory()->count(10)->create([
-        'level_id' => $level->id,
-        'group_id' => $group->id,
-    ]);
-
-    $user = loginAsUser();
-
-    $user->learningProgress()->create([
-        'level_id' => $level->id,
-        'group_id' => $group->id,
-        'stage' => 1,
-        'last_score' => 85,
-        'last_reviewed_at' => now()->subDay(),
-        'next_review_at' => now()->subMinute(),
-    ]);
-
-    $page = visit(route('groups.quiz', [
-        'group' => $group->id,
-    ]));
-
-    $page->assertNoSmoke()
-        ->assertNotPresent('footer')
-        ->assertSeeIn('@current-step', '1')
-        ->click('@correct-option')
-        ->assertDisabled('@correct-option')
-        ->assertAttributeContains('@correct-option', 'class', 'border-emerald-600')
-        ->assertSeeIn('@current-step', '2')
-        ->assertEnabled('@wrong-option')
-        ->click('@wrong-option')
-        ->assertDisabled('@wrong-option')
-        ->assertAttributeContains('@wrong-option', 'class', 'border-red-600')
-        ->assertAttributeContains('@correct-option', 'class', 'border-emerald-600')
-        ->assertNoSmoke();
-});
-
-test('guest without indexeddb progress visiting group detail or quiz is redirected to intro', function () {
-    $level = Level::factory()->create();
-    $group = Group::factory()->create(['level_id' => $level->id]);
-
-    Vocabulary::factory()->count(10)->create([
-        'level_id' => $level->id,
-        'group_id' => $group->id,
-    ]);
-
-    visit(route('groups.quiz', ['group' => $group->id]))
-        ->assertPathIs("/groups/{$group->id}/intro")
-        ->assertNoSmoke();
-
-    visit(route('groups.show', ['group' => $group->id]))
-        ->assertPathIs("/groups/{$group->id}/intro")
-        ->assertNoSmoke();
-});
-
-test('guest with cooldown progress in indexeddb visiting quiz is redirected to group detail', function () {
-    $level = Level::factory()->create();
-    $group = Group::factory()->create(['level_id' => $level->id]);
-
-    Vocabulary::factory()->count(10)->create([
-        'level_id' => $level->id,
-        'group_id' => $group->id,
-    ]);
-
-    $page = visit('/');
-
-    seedGuestLearningProgress($page, [
-        [
-            'group_id' => $group->id,
-            'level_id' => $level->id,
             'stage' => 1,
-            'last_score' => 90,
-            'last_reviewed_at' => now()->subHour()->toIso8601String(),
-            'next_review_at' => now()->addHours(11)->toIso8601String(),
-        ],
-    ]);
+        ]);
 
-    $page->navigate(route('groups.quiz', ['group' => $group->id]))
-        ->assertPathIs("/groups/{$group->id}")
-        ->assertSee(__('ui.group_detail.status.cooldown'))
-        ->assertNoSmoke();
+        visit("/groups/{$group->id}")
+            ->assertNoSmoke();
+    });
+
+    test('stage 2 review quiz page loads without javascript errors and guards against leaving', function () {
+        $user = loginAsUser();
+        $level = Level::factory()->withTranslation('zh_TW', __('ui.dashboard.levels.subtitles.1'))->create();
+        $group = Group::factory()->withVocabularies()->create(['level_id' => $level->id, 'sequence' => 1]);
+
+        LearningProgress::factory()->readyForReview()->create([
+            'user_id' => $user->id,
+            'level_id' => $group->level_id,
+            'group_id' => $group->id,
+        ]);
+
+        visit("/groups/{$group->id}/quiz")
+            ->assertSee('20')
+            ->click('button[title="'.__('ui.intro.top_bar.leave').'"]')
+            ->assertSee(__('ui.intro.top_bar.leave_dialog_title'))
+            ->click(__('ui.intro.top_bar.leave_dialog_cancel'))
+            ->assertDontSee(__('ui.intro.top_bar.leave_dialog_title'))
+            ->assertNoSmoke();
+    });
 });
 
-test('guest with ready stage 1 progress in indexeddb completes stage 2 review quiz and updates indexeddb', function () {
-    $level = Level::factory()->create();
-    $group = Group::factory()->create(['level_id' => $level->id]);
+describe('stage 1 intro and quiz', function () {
+    test('guest completes stage 1 intro and quiz with perfect score and persists progress to indexeddb', function () {
+        $group = Group::factory()->withVocabularies()->create();
 
-    Vocabulary::factory()->count(10)->create([
-        'level_id' => $level->id,
-        'group_id' => $group->id,
-    ]);
+        $page = visit(route('groups.intro', ['group' => $group->id]));
+        $page->assertNoSmoke();
 
-    $page = visit('/');
+        $this->completeStage1Session($page);
 
-    seedGuestLearningProgress($page, [
-        [
+        $page
+            ->assertSee('100 / 100')
+            ->assertSee(__('ui.quiz.result.all_correct'))
+            ->assertSee(__('ui.quiz.result.btn_back_level'))
+            ->assertDontSee(__('ui.quiz.result.btn_dashboard'))
+            ->assertPresent('[data-progress-saved="true"]');
+
+        $record = $this->guestGroupProgress($page, $group);
+
+        expect($record)->not->toBeNull()
+            ->toMatchArray(['stage' => 1, 'last_score' => 100, 'level_id' => $group->level_id])
+            ->and($record['next_review_at'])->not->toBeNull();
+
+        $this->assertDatabaseCount('learning_progress', 0);
+
+        $page
+            ->click(__('ui.quiz.result.btn_done'))
+            ->assertPathIs("/groups/{$group->id}")
+            ->assertSee(__('ui.group_detail.status.cooldown'))
+            ->assertSee(__('ui.group_detail.stage_indicator', ['stage' => 1]))
+            ->assertNoSmoke();
+    });
+
+    test('member completes stage 1 intro and quiz with perfect score and persists progress to database', function () {
+        $user = loginAsUser();
+        $group = Group::factory()->withVocabularies()->create();
+
+        $page = visit(route('groups.intro', ['group' => $group->id]));
+        $page->assertNoSmoke();
+
+        $this->completeStage1Session($page);
+
+        $page
+            ->assertSee('100 / 100')
+            ->assertSee(__('ui.quiz.result.all_correct'))
+            ->assertSee(__('ui.quiz.result.btn_dashboard'))
+            ->assertDontSee(__('ui.quiz.result.btn_back_level'))
+            ->assertPresent('[data-progress-saved="true"]');
+
+        $this->assertDatabaseHas('learning_progress', [
+            'user_id' => $user->id,
             'group_id' => $group->id,
-            'level_id' => $level->id,
             'stage' => 1,
-            'last_score' => 85,
-            'last_reviewed_at' => now()->subDay()->toIso8601String(),
-            'next_review_at' => now()->subMinute()->toIso8601String(),
-        ],
-    ]);
+            'last_score' => 100,
+        ]);
 
-    $page->navigate(route('groups.quiz', ['group' => $group->id]))
-        ->assertPathIs("/groups/{$group->id}/quiz")
-        ->assertPresent('[data-progress-ready="true"]')
-        ->assertTitleContains(__('ui.quiz.stage_badge', ['stage' => 2]))
-        ->assertNoSmoke();
+        $progress = LearningProgress::query()
+            ->where('user_id', $user->id)
+            ->where('group_id', $group->id)
+            ->firstOrFail();
 
-    completeReviewQuizSession($page);
+        expect($progress->next_review_at)->not->toBeNull()
+            ->and($user->fresh()->current_streak)->toBe(1);
+    });
 
-    $page
-        ->assertSee('100 / 100')
-        ->assertSee(__('ui.quiz.result.all_correct'))
-        ->assertSee(__('ui.quiz.result.btn_back_level'));
+    test('stage 1 quiz result score matches partial correct answers, lists mistakes, and shows failed state below 80', function () {
+        $group = Group::factory()->withVocabularies()->create();
 
-    $record = guestGroupProgress($page, $group->id);
+        $page = visit(route('groups.intro', ['group' => $group->id]));
+        $page->assertNoSmoke();
 
-    expect($record)->not->toBeNull()
-        ->toMatchArray(['stage' => 2, 'last_score' => 100])
-        ->and($record['next_review_at'])->not->toBeNull();
+        $this->completeStage1Session($page, wrongCount: 6);
+
+        $page
+            ->assertSee('70 / 100')
+            ->assertSee(__('ui.quiz.result.title_failed'))
+            ->assertSee(__('ui.quiz.result.failed_notice'))
+            ->assertSee('本次錯誤單字回顧')
+            ->assertPresent('[data-progress-saved="true"]');
+
+        expect($this->guestGroupProgress($page, $group))
+            ->toMatchArray(['stage' => 0, 'last_score' => 70, 'next_review_at' => null]);
+    });
+
+    test('stage 1 quiz shows expected visual feedback for correct and wrong option selections', function () {
+        $group = Group::factory()->withVocabularies()->create();
+
+        visit(route('groups.intro', ['group' => $group->id]))
+            ->assertNoSmoke()
+            ->assertNotPresent('footer')
+            ->assertSeeIn('@current-step', '1')
+            ->assertEnabled('@continue-button')
+            ->click('@continue-button')
+            ->assertSeeIn('@current-step', '2')
+            ->assertEnabled('@continue-button')
+            ->click('@continue-button')
+            ->assertSeeIn('@current-step', '3')
+            ->assertDisabled('@continue-button')
+            ->click('@correct-option')
+            ->assertDisabled('@correct-option')
+            ->assertAttributeContains('@correct-option', 'class', 'border-emerald-600')
+            ->assertEnabled('@continue-button')
+            ->assertAttributeContains('@continue-button', 'class', 'bg-blue-600')
+            ->click('@continue-button')
+            ->assertSeeIn('@current-step', '4')
+            ->assertDisabled('@continue-button')
+            ->assertEnabled('@wrong-option')
+            ->click('@wrong-option')
+            ->assertDisabled('@wrong-option')
+            ->assertAttributeContains('@wrong-option', 'class', 'border-red-600')
+            ->assertAttributeContains('@correct-option', 'class', 'border-emerald-600')
+            ->assertEnabled('@continue-button')
+            ->assertNoSmoke();
+    });
 });
 
-test('guest at stage 5 in indexeddb fails stage 6 with score 85 and retains stage 5', function () {
-    $level = Level::factory()->create();
-    $group = Group::factory()->create(['level_id' => $level->id]);
+describe('stage 2+ review quiz', function () {
+    test('member completes stage 2 review quiz with perfect score and advances to stage 2 in database', function () {
+        $user = loginAsUser();
+        $group = Group::factory()->withVocabularies()->create();
 
-    Vocabulary::factory()->count(10)->create([
-        'level_id' => $level->id,
-        'group_id' => $group->id,
-    ]);
-
-    $page = visit('/');
-
-    seedGuestLearningProgress($page, [
-        [
+        LearningProgress::factory()->readyForReview()->create([
+            'user_id' => $user->id,
+            'level_id' => $group->level_id,
             'group_id' => $group->id,
-            'level_id' => $level->id,
-            'stage' => 5,
-            'last_score' => 90,
-            'last_reviewed_at' => now()->subDays(8)->toIso8601String(),
-            'next_review_at' => now()->subMinute()->toIso8601String(),
-        ],
-    ]);
+        ]);
 
-    $page->navigate(route('groups.quiz', ['group' => $group->id]))
-        ->assertPathIs("/groups/{$group->id}/quiz")
-        ->assertPresent('[data-progress-ready="true"]')
-        ->assertTitleContains(__('ui.quiz.stage_badge', ['stage' => 6]))
-        ->assertNoSmoke();
+        $page = visit(route('groups.quiz', ['group' => $group->id]));
+        $page->assertNoSmoke();
 
-    completeReviewQuizSession($page, wrongCount: 3);
+        $this->completeReviewQuizSession($page);
 
-    $page
-        ->assertSee('85 / 100')
-        ->assertSee(__('ui.quiz.result.title_failed'))
-        ->assertSee(__('ui.quiz.result.failed_notice_stage', ['stage' => 6, 'threshold' => 90]));
+        $page
+            ->assertSee('100 / 100')
+            ->assertSee(__('ui.quiz.result.all_correct'))
+            ->assertSee(__('ui.quiz.result.btn_dashboard'))
+            ->assertPresent('[data-progress-saved="true"]');
 
-    expect(guestGroupProgress($page, $group->id))
-        ->toMatchArray(['stage' => 5, 'last_score' => 85, 'next_review_at' => null]);
+        $this->assertDatabaseHas('learning_progress', [
+            'user_id' => $user->id,
+            'group_id' => $group->id,
+            'stage' => 2,
+            'last_score' => 100,
+        ]);
+
+        $progress = LearningProgress::query()
+            ->where('user_id', $user->id)
+            ->where('group_id', $group->id)
+            ->firstOrFail();
+
+        expect($progress->next_review_at)->not->toBeNull();
+    });
+
+    test('member stage 2 review quiz result score matches partial correct count and lists mistakes', function () {
+        $user = loginAsUser();
+        $group = Group::factory()->withVocabularies()->create();
+
+        LearningProgress::factory()->readyForReview()->create([
+            'user_id' => $user->id,
+            'level_id' => $group->level_id,
+            'group_id' => $group->id,
+        ]);
+
+        $page = visit(route('groups.quiz', ['group' => $group->id]));
+        $page->assertNoSmoke();
+
+        $this->completeReviewQuizSession($page, wrongCount: 4);
+
+        $page
+            ->assertSee('80 / 100')
+            ->assertSee(__('ui.quiz.result.title_passed_stage', ['stage' => 2]))
+            ->assertSee('本次錯誤單字回顧')
+            ->assertPresent('[data-progress-saved="true"]');
+
+        $this->assertDatabaseHas('learning_progress', [
+            'user_id' => $user->id,
+            'group_id' => $group->id,
+            'stage' => 2,
+            'last_score' => 80,
+        ]);
+    });
+
+    test('stage 2 review quiz shows expected visual feedback for correct and wrong option selections', function () {
+        $user = loginAsUser();
+        $group = Group::factory()->withVocabularies()->create();
+
+        LearningProgress::factory()->readyForReview()->create([
+            'user_id' => $user->id,
+            'level_id' => $group->level_id,
+            'group_id' => $group->id,
+        ]);
+
+        visit(route('groups.quiz', ['group' => $group->id]))
+            ->assertNoSmoke()
+            ->assertNotPresent('footer')
+            ->assertSeeIn('@current-step', '1')
+            ->assertDisabled('@continue-button')
+            ->click('@correct-option')
+            ->assertDisabled('@correct-option')
+            ->assertAttributeContains('@correct-option', 'class', 'border-emerald-600')
+            ->assertEnabled('@continue-button')
+            ->assertAttributeContains('@continue-button', 'class', 'bg-blue-600')
+            ->click('@continue-button')
+            ->assertSeeIn('@current-step', '2')
+            ->assertDisabled('@continue-button')
+            ->assertEnabled('@wrong-option')
+            ->click('@wrong-option')
+            ->assertDisabled('@wrong-option')
+            ->assertAttributeContains('@wrong-option', 'class', 'border-red-600')
+            ->assertAttributeContains('@correct-option', 'class', 'border-emerald-600')
+            ->assertEnabled('@continue-button')
+            ->assertNoSmoke();
+    });
 });
 
-test('guest with stage 6 mastered progress in indexeddb sees self-test mode on quiz page', function () {
-    $level = Level::factory()->create();
-    $group = Group::factory()->create(['level_id' => $level->id]);
+describe('guest indexeddb progress and login sync', function () {
+    test('guest without indexeddb progress visiting group detail or quiz is redirected to intro', function () {
+        $group = Group::factory()->withVocabularies()->create();
 
-    Vocabulary::factory()->count(10)->create([
-        'level_id' => $level->id,
-        'group_id' => $group->id,
-    ]);
+        visit(route('groups.quiz', ['group' => $group->id]))
+            ->assertPathIs("/groups/{$group->id}/intro")
+            ->assertNoSmoke();
 
-    $page = visit('/');
+        visit(route('groups.show', ['group' => $group->id]))
+            ->assertPathIs("/groups/{$group->id}/intro")
+            ->assertNoSmoke();
+    });
 
-    seedGuestLearningProgress($page, [
-        [
+    test('guest with cooldown progress in indexeddb visiting quiz is redirected to group detail', function () {
+        $group = Group::factory()->withVocabularies()->create();
+
+        $page = visit('/');
+        $this->seedGuestProgress($page, [
+            $this->guestProgressRecord($group, stage: 1, lastReviewedAt: now()->subHour(), nextReviewAt: now()->addHours(11)),
+        ]);
+
+        $page->navigate(route('groups.quiz', ['group' => $group->id]))
+            ->assertPathIs("/groups/{$group->id}")
+            ->assertSee(__('ui.group_detail.status.cooldown'))
+            ->assertNoSmoke();
+    });
+
+    test('guest with ready stage 1 progress in indexeddb completes stage 2 review quiz and updates indexeddb', function () {
+        $group = Group::factory()->withVocabularies()->create();
+
+        $page = visit('/');
+        $this->seedGuestProgress($page, [
+            $this->guestProgressRecord($group, stage: 1, lastScore: 85, nextReviewAt: now()->subMinute()),
+        ]);
+
+        $page->navigate(route('groups.quiz', ['group' => $group->id]))
+            ->assertPathIs("/groups/{$group->id}/quiz")
+            ->assertPresent('[data-progress-ready="true"]')
+            ->assertTitleContains(__('ui.quiz.stage_badge', ['stage' => 2]))
+            ->assertNoSmoke();
+
+        $this->completeReviewQuizSession($page);
+
+        $page
+            ->assertSee('100 / 100')
+            ->assertSee(__('ui.quiz.result.all_correct'))
+            ->assertSee(__('ui.quiz.result.btn_back_level'))
+            ->assertPresent('[data-progress-saved="true"]');
+
+        $record = $this->guestGroupProgress($page, $group);
+
+        expect($record)->not->toBeNull()
+            ->toMatchArray(['stage' => 2, 'last_score' => 100])
+            ->and($record['next_review_at'])->not->toBeNull();
+    });
+
+    test('guest at stage 5 in indexeddb fails stage 6 with score 85 and retains stage 5', function () {
+        $group = Group::factory()->withVocabularies()->create();
+
+        $page = visit('/');
+        $this->seedGuestProgress($page, [
+            $this->guestProgressRecord($group, stage: 5, lastReviewedAt: now()->subDays(8), nextReviewAt: now()->subMinute()),
+        ]);
+
+        $page->navigate(route('groups.quiz', ['group' => $group->id]))
+            ->assertPathIs("/groups/{$group->id}/quiz")
+            ->assertPresent('[data-progress-ready="true"]')
+            ->assertTitleContains(__('ui.quiz.stage_badge', ['stage' => 6]))
+            ->assertNoSmoke();
+
+        $this->completeReviewQuizSession($page, wrongCount: 3);
+
+        $page
+            ->assertSee('85 / 100')
+            ->assertSee(__('ui.quiz.result.title_failed'))
+            ->assertSee(__('ui.quiz.result.failed_notice_stage', ['stage' => 6, 'threshold' => 90]))
+            ->assertPresent('[data-progress-saved="true"]');
+
+        expect($this->guestGroupProgress($page, $group))
+            ->toMatchArray(['stage' => 5, 'last_score' => 85, 'next_review_at' => null]);
+    });
+
+    test('guest with stage 6 mastered progress in indexeddb sees self-test mode on quiz page', function () {
+        $group = Group::factory()->withVocabularies()->create();
+
+        $page = visit('/');
+        $this->seedGuestProgress($page, [
+            $this->guestProgressRecord($group, stage: 6, lastScore: 95),
+        ]);
+
+        $page->navigate(route('groups.quiz', ['group' => $group->id]))
+            ->assertPathIs("/groups/{$group->id}/quiz")
+            ->assertPresent('[data-progress-ready="true"]')
+            ->assertTitleContains(__('ui.quiz.self_test_badge'))
+            ->assertNoSmoke();
+    });
+
+    test('guest indexeddb progress automatically syncs to database after logging in', function () {
+        $user = User::factory()->create();
+        $group = Group::factory()->create();
+
+        $page = visit('/login');
+        $this->seedGuestProgress($page, [
+            $this->guestProgressRecord($group, stage: 2, lastReviewedAt: now()->subHours(2), nextReviewAt: now()->addHours(22)),
+        ]);
+
+        $page
+            ->fill('#email', $user->email)
+            ->fill('#password', 'password')
+            ->click('@login-button')
+            ->assertPathIs('/dashboard')
+            ->assertNoSmoke();
+
+        $this->assertGuestProgressCount($page, 0);
+
+        $this->assertDatabaseHas('learning_progress', [
+            'user_id' => $user->id,
             'group_id' => $group->id,
-            'level_id' => $level->id,
-            'stage' => 6,
-            'last_score' => 95,
-            'last_reviewed_at' => now()->subDay()->toIso8601String(),
-            'next_review_at' => null,
-        ],
-    ]);
-
-    $page->navigate(route('groups.quiz', ['group' => $group->id]))
-        ->assertPathIs("/groups/{$group->id}/quiz")
-        ->assertPresent('[data-progress-ready="true"]')
-        ->assertTitleContains(__('ui.quiz.self_test_badge'))
-        ->assertNoSmoke();
-});
-
-test('guest indexeddb progress automatically syncs to database after logging in', function () {
-    $user = User::factory()->create();
-    $level = Level::factory()->create();
-    $group = Group::factory()->create(['level_id' => $level->id]);
-
-    $page = visit('/login');
-
-    seedGuestLearningProgress($page, [
-        [
-            'group_id' => $group->id,
-            'level_id' => $level->id,
             'stage' => 2,
             'last_score' => 90,
-            'last_reviewed_at' => now()->subHours(2)->toIso8601String(),
-            'next_review_at' => now()->addHours(22)->toIso8601String(),
-        ],
-    ]);
+        ]);
+    });
 
-    $page
-        ->fill('#email', $user->email)
-        ->fill('#password', 'password')
-        ->click('@login-button')
-        ->assertPathIs('/dashboard')
-        ->assertNoSmoke();
+    test('guest indexeddb progress is discarded entirely after logging in when the server rejects it as invalid', function () {
+        $user = User::factory()->create();
+        $level = Level::factory()->create();
+        $validGroup = Group::factory()->create(['level_id' => $level->id, 'sequence' => 1]);
+        $invalidGroup = Group::factory()->create(['level_id' => $level->id, 'sequence' => 2]);
 
-    // progressSync clears IndexedDB asynchronously after syncing, so poll until it is empty.
-    waitUntilCondition(fn (): bool => guestProgressCount($page) === 0);
+        $page = visit('/login');
+        $savedCount = $this->seedGuestProgress($page, [
+            $this->guestProgressRecord($validGroup, stage: 2, lastReviewedAt: now()->subHours(2), nextReviewAt: now()->addHours(22)),
+            $this->guestProgressRecord($invalidGroup, stage: 7, lastReviewedAt: now()->subHours(2)),
+        ]);
 
-    waitUntilCondition(fn (): bool => LearningProgress::query()
-        ->where('user_id', $user->id)
-        ->where('group_id', $group->id)
-        ->exists());
+        expect($savedCount)->toBe(2);
 
-    $progress = LearningProgress::query()
-        ->where('user_id', $user->id)
-        ->where('group_id', $group->id)
-        ->firstOrFail();
+        $page
+            ->fill('#email', $user->email)
+            ->fill('#password', 'password')
+            ->click('@login-button')
+            ->assertPathIs('/dashboard')
+            ->assertNoSmoke();
 
-    expect($progress->stage)->toBe(2)
-        ->and($progress->last_score)->toBe(90);
-});
-
-test('guest indexeddb progress is discarded entirely after logging in when the server rejects it as invalid', function () {
-    $user = User::factory()->create();
-    $level = Level::factory()->create();
-    $validGroup = Group::factory()->create(['level_id' => $level->id, 'sequence' => 1]);
-    $invalidGroup = Group::factory()->create(['level_id' => $level->id, 'sequence' => 2]);
-
-    $page = visit('/login');
-
-    seedGuestLearningProgress($page, [
-        [
-            'group_id' => $validGroup->id,
-            'level_id' => $level->id,
-            'stage' => 2,
-            'last_score' => 90,
-            'last_reviewed_at' => now()->subHours(2)->toIso8601String(),
-            'next_review_at' => now()->addHours(22)->toIso8601String(),
-        ],
-        [
-            'group_id' => $invalidGroup->id,
-            'level_id' => $level->id,
-            'stage' => 7,
-            'last_score' => 90,
-            'last_reviewed_at' => now()->subHours(2)->toIso8601String(),
-            'next_review_at' => null,
-        ],
-    ]);
-
-    expect(guestProgressCount($page))->toBe(2);
-
-    $page
-        ->fill('#email', $user->email)
-        ->fill('#password', 'password')
-        ->click('@login-button')
-        ->assertPathIs('/dashboard')
-        ->assertNoSmoke();
-
-    // A single invalid record rejects the whole batch, and the client then discards all local progress.
-    waitUntilCondition(fn (): bool => guestProgressCount($page) === 0);
-
-    expect(LearningProgress::query()->where('user_id', $user->id)->count())->toBe(0);
-});
-
-test('stage 1 intro card hides keyboard shortcut hint on mobile and shows it on desktop', function () {
-    $level = Level::factory()->create();
-    $group = Group::factory()->create([
-        'level_id' => $level->id,
-    ]);
-
-    Vocabulary::factory()->count(10)->create([
-        'level_id' => $level->id,
-        'group_id' => $group->id,
-    ]);
-
-    visit(route('groups.intro', ['group' => $group->id]))
-        ->on()
-        ->mobile()
-        ->assertSee(__('ui.intro.card.badge'))
-        ->assertDontSee(__('ui.intro.card.keyboard_hint'))
-        ->assertNoSmoke();
-
-    visit(route('groups.intro', ['group' => $group->id]))
-        ->on()
-        ->desktop()
-        ->assertSee(__('ui.intro.card.badge'))
-        ->assertSee(__('ui.intro.card.keyboard_hint'))
-        ->assertNoSmoke();
-});
-
-test('stage 1 and stage 2 quiz cards hide keyboard hints on mobile', function () {
-    $level = Level::factory()->create();
-    $group = Group::factory()->create([
-        'level_id' => $level->id,
-    ]);
-
-    Vocabulary::factory()->count(10)->create([
-        'level_id' => $level->id,
-        'group_id' => $group->id,
-    ]);
-
-    // Stage 1 quiz card (guest)
-    visit(route('groups.intro', ['group' => $group->id]))
-        ->on()
-        ->mobile()
-        ->assertNotPresent('footer')
-        ->assertSeeIn('@current-step', '1')
-        ->click('@continue-button')
-        ->assertSeeIn('@current-step', '2')
-        ->click('@continue-button')
-        ->assertSeeIn('@current-step', '3')
-        ->assertDontSee(__('ui.quiz.options.keyboard_hint'))
-        ->assertNoSmoke();
-
-    visit(route('groups.intro', ['group' => $group->id]))
-        ->on()
-        ->desktop()
-        ->assertNotPresent('footer')
-        ->assertSeeIn('@current-step', '1')
-        ->click('@continue-button')
-        ->assertSeeIn('@current-step', '2')
-        ->click('@continue-button')
-        ->assertSeeIn('@current-step', '3')
-        ->assertSee(__('ui.quiz.options.keyboard_hint'))
-        ->assertNoSmoke();
-
-    // Stage 2 quiz card (authenticated)
-    $user = loginAsUser();
-
-    $user->learningProgress()->create([
-        'level_id' => $level->id,
-        'group_id' => $group->id,
-        'stage' => 1,
-        'last_score' => 85,
-        'last_reviewed_at' => now()->subDay(),
-        'next_review_at' => now()->subMinute(),
-    ]);
-
-    visit(route('groups.quiz', ['group' => $group->id]))
-        ->on()
-        ->mobile()
-        ->assertDontSee(__('ui.quiz.options.keyboard_hint'))
-        ->assertNoSmoke();
-
-    visit(route('groups.quiz', ['group' => $group->id]))
-        ->on()
-        ->desktop()
-        ->assertSee(__('ui.quiz.options.keyboard_hint'))
-        ->assertNoSmoke();
+        // A single invalid record rejects the whole batch, and the client then discards all local progress.
+        $this->assertGuestProgressCount($page, 0);
+        $this->assertDatabaseCount('learning_progress', 0);
+    });
 });

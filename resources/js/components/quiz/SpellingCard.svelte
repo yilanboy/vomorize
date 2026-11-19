@@ -1,12 +1,10 @@
 <script lang="ts">
     import { onMount } from 'svelte';
-    import ArrowRight from '@lucide/svelte/icons/arrow-right';
     import CheckCircle2 from '@lucide/svelte/icons/check-circle-2';
     import Delete from '@lucide/svelte/icons/delete';
     import RotateCcw from '@lucide/svelte/icons/rotate-ccw';
     import Volume2 from '@lucide/svelte/icons/volume-2';
     import TactileTile from '@/components/TactileTile.svelte';
-    import { Button } from '@/components/ui/button';
     import { audioPlayer } from '@/lib/audioPlayer.svelte';
     import { t } from '@/lib/i18n';
     import type {
@@ -20,14 +18,12 @@
         vocabulary,
         autoPlay = true,
         onResult,
-        onNext,
         disabled = false,
     }: {
         question: SpellingQuestionPayload;
         vocabulary: VocabularyPayload;
         autoPlay?: boolean;
         onResult: (isCorrect: boolean) => void;
-        onNext: () => void;
         disabled?: boolean;
     } = $props();
 
@@ -162,64 +158,12 @@
         onResult(correct);
     }
 
-    function handleKeyDown(event: KeyboardEvent): void {
-        const target = event.target as HTMLElement | null;
-        if (
-            target &&
-            (target.tagName === 'INPUT' ||
-                target.tagName === 'TEXTAREA' ||
-                target.isContentEditable)
-        ) {
-            return;
-        }
-
-        if (event.key === ' ' || event.code === 'Space') {
-            event.preventDefault();
-            playAudio();
-            return;
-        }
-
-        if (event.key === 'Enter') {
-            event.preventDefault();
-            if (isAnswered && !isCorrect) {
-                onNext();
-            }
-            return;
-        }
-
-        if (event.key === 'Backspace') {
-            event.preventDefault();
-            handleBackspace();
-            return;
-        }
-
-        const keyChar = event.key.toLowerCase();
-        if (/^[a-z]$/.test(keyChar)) {
-            event.preventDefault();
-            if (isAnswered || disabled) {
-                return;
-            }
-
-            const availableTile = question.tiles.find(
-                (tile) =>
-                    tile.char === keyChar &&
-                    !usedSlotIndices.has(tile.slot_index),
-            );
-
-            if (availableTile) {
-                handleTileClick(availableTile);
-            }
-        }
-    }
-
     onMount(() => {
         if (autoPlay && audioUrl) {
             playAudio();
         }
     });
 </script>
-
-<svelte:window onkeydown={handleKeyDown} />
 
 <div
     class="border-border/80 bg-card mx-auto flex h-[580px] w-full max-w-xl flex-col justify-between rounded-2xl border px-3 py-6 shadow-sm transition-all sm:h-[600px] sm:p-8"
@@ -409,71 +353,53 @@
 
         <!-- Bottom Action Bar -->
         <div
-            class="border-border/80 flex h-14 items-center justify-between border-t pt-2"
+            class="border-border/80 flex h-14 items-center justify-end border-t pt-2"
         >
-            {#if isAnswered && !isCorrect}
-                <!-- Bottom Primary Action on wrong answer -->
-                <Button
-                    size="default"
-                    class="h-10 w-full cursor-pointer gap-2 bg-red-600 text-sm font-semibold text-white shadow-xs transition-all hover:bg-red-700 active:scale-[0.99] dark:bg-red-600 dark:hover:bg-red-700"
-                    onclick={onNext}
-                >
-                    <span>{t('ui.quiz.spelling.next')}</span>
-                    <ArrowRight class="size-4" />
-                </Button>
-            {:else}
-                <span
-                    class="text-muted-foreground/80 hidden text-sm font-medium sm:inline"
-                >
-                    {t('ui.quiz.spelling.keyboard_hint')}
-                </span>
-
-                <div class="ml-auto flex items-center gap-2">
-                    <button
-                        type="button"
-                        class={{
-                            'border-border/80 inline-flex h-10 cursor-pointer items-center gap-1.5 rounded-xl border px-3 text-sm font-semibold transition-all select-none': true,
-                            'bg-card text-foreground hover:bg-muted shadow-[0_2px_0_0_rgba(0,0,0,0.06)] active:translate-y-0.5 active:shadow-none dark:shadow-[0_2px_0_0_rgba(255,255,255,0.05)]':
-                                Object.keys(filledSlots).length > 0 &&
-                                !isAnswered &&
-                                !disabled,
-                            'text-muted-foreground/30 cursor-not-allowed border-dashed opacity-40 shadow-none':
-                                Object.keys(filledSlots).length === 0 ||
-                                isAnswered ||
-                                disabled,
-                        }}
-                        onclick={handleBackspace}
-                        disabled={Object.keys(filledSlots).length === 0 ||
+            <div class="flex items-center gap-2">
+                <button
+                    type="button"
+                    class={{
+                        'border-border/80 inline-flex h-10 cursor-pointer items-center gap-1.5 rounded-xl border px-3 text-sm font-semibold transition-all select-none': true,
+                        'bg-card text-foreground hover:bg-muted shadow-[0_2px_0_0_rgba(0,0,0,0.06)] active:translate-y-0.5 active:shadow-none dark:shadow-[0_2px_0_0_rgba(255,255,255,0.05)]':
+                            Object.keys(filledSlots).length > 0 &&
+                            !isAnswered &&
+                            !disabled,
+                        'text-muted-foreground/30 cursor-not-allowed border-dashed opacity-40 shadow-none':
+                            Object.keys(filledSlots).length === 0 ||
                             isAnswered ||
-                            disabled}
-                    >
-                        <Delete class="size-4" />
-                        <span>{t('ui.quiz.spelling.backspace')}</span>
-                    </button>
+                            disabled,
+                    }}
+                    onclick={handleBackspace}
+                    disabled={Object.keys(filledSlots).length === 0 ||
+                        isAnswered ||
+                        disabled}
+                >
+                    <Delete class="size-4" />
+                    <span>{t('ui.quiz.spelling.backspace')}</span>
+                </button>
 
-                    <button
-                        type="button"
-                        class={{
-                            'border-border/80 inline-flex h-10 cursor-pointer items-center gap-1.5 rounded-xl border px-3 text-sm font-semibold transition-all select-none': true,
-                            'bg-card text-foreground hover:bg-muted shadow-[0_2px_0_0_rgba(0,0,0,0.06)] active:translate-y-0.5 active:shadow-none dark:shadow-[0_2px_0_0_rgba(255,255,255,0.05)]':
-                                Object.keys(filledSlots).length > 0 &&
-                                !isAnswered &&
-                                !disabled,
-                            'text-muted-foreground/30 cursor-not-allowed border-dashed opacity-40 shadow-none':
-                                Object.keys(filledSlots).length === 0 ||
-                                isAnswered ||
-                                disabled,
-                        }}
-                        onclick={handleClear}
-                        disabled={Object.keys(filledSlots).length === 0 ||
+                <button
+                    type="button"
+                    class={{
+                        'border-border/80 inline-flex h-10 cursor-pointer items-center gap-1.5 rounded-xl border px-3 text-sm font-semibold transition-all select-none': true,
+                        'bg-card text-foreground hover:bg-muted shadow-[0_2px_0_0_rgba(0,0,0,0.06)] active:translate-y-0.5 active:shadow-none dark:shadow-[0_2px_0_0_rgba(255,255,255,0.05)]':
+                            Object.keys(filledSlots).length > 0 &&
+                            !isAnswered &&
+                            !disabled,
+                        'text-muted-foreground/30 cursor-not-allowed border-dashed opacity-40 shadow-none':
+                            Object.keys(filledSlots).length === 0 ||
                             isAnswered ||
-                            disabled}
-                    >
-                        <RotateCcw class="size-4" />
-                        <span>{t('ui.quiz.spelling.clear')}</span>
-                    </button>
-                </div>
-            {/if}
+                            disabled,
+                    }}
+                    onclick={handleClear}
+                    disabled={Object.keys(filledSlots).length === 0 ||
+                        isAnswered ||
+                        disabled}
+                >
+                    <RotateCcw class="size-4" />
+                    <span>{t('ui.quiz.spelling.clear')}</span>
+                </button>
+            </div>
         </div>
     </div>
 </div>

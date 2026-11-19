@@ -39,31 +39,12 @@
         }
     }
 
-    function handleKeyDown(event: KeyboardEvent): void {
-        const target = event.target as HTMLElement | null;
-        if (
-            target &&
-            (target.tagName === 'INPUT' ||
-                target.tagName === 'TEXTAREA' ||
-                target.isContentEditable)
-        ) {
-            return;
-        }
-
-        if (event.code === 'Space') {
-            event.preventDefault();
-            playAudio();
-        }
-    }
-
     onMount(() => {
         if (autoPlay && audioUrl) {
             playAudio();
         }
     });
 </script>
-
-<svelte:window onkeydown={handleKeyDown} />
 
 <div
     class="border-border/80 bg-card mx-auto flex h-[560px] w-full max-w-xl flex-col justify-between rounded-2xl border p-6 shadow-2xs sm:h-[580px] sm:p-8"
@@ -123,12 +104,7 @@
                     {#if audioPlaying}
                         {t('ui.quiz.audio_prompt.playing')}
                     {:else}
-                        <span class="sm:hidden">
-                            {t('ui.quiz.audio_prompt.play_hint_mobile')}
-                        </span>
-                        <span class="hidden sm:inline">
-                            {t('ui.quiz.audio_prompt.play_hint')}
-                        </span>
+                        {t('ui.quiz.audio_prompt.play_hint')}
                     {/if}
                 </span>
             </div>

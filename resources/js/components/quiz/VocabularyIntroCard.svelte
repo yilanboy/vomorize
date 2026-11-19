@@ -1,6 +1,5 @@
 <script lang="ts">
     import { onMount } from 'svelte';
-    import ArrowRight from '@lucide/svelte/icons/arrow-right';
     import Volume2 from '@lucide/svelte/icons/volume-2';
     import { audioPlayer } from '@/lib/audioPlayer.svelte';
     import { t } from '@/lib/i18n';
@@ -9,11 +8,9 @@
     let {
         vocabulary,
         autoPlay = true,
-        onContinue,
     }: {
         vocabulary?: VocabularyPayload;
         autoPlay?: boolean;
-        onContinue: () => void;
     } = $props();
 
     const isWordPlaying = $derived(
@@ -41,23 +38,6 @@
         }
     }
 
-    function handleKeyDown(event: KeyboardEvent): void {
-        const target = event.target as HTMLElement | null;
-        if (
-            target &&
-            (target.tagName === 'INPUT' ||
-                target.tagName === 'TEXTAREA' ||
-                target.isContentEditable)
-        ) {
-            return;
-        }
-
-        if (event.code === 'Space') {
-            event.preventDefault();
-            onContinue();
-        }
-    }
-
     onMount(() => {
         if (autoPlay && vocabulary?.word_audio_url) {
             playWordAudio();
@@ -65,11 +45,9 @@
     });
 </script>
 
-<svelte:window onkeydown={handleKeyDown} />
-
 {#if vocabulary}
     <div
-        class="border-border/80 bg-card mx-auto flex h-140 w-full max-w-xl flex-col justify-between rounded-2xl border p-6 shadow-2xs sm:h-145 sm:p-8"
+        class="border-border/80 bg-card mx-auto flex min-h-115 w-full max-w-xl flex-col justify-between gap-5 rounded-2xl border p-6 shadow-2xs sm:min-h-120 sm:p-8"
     >
         <!-- Header Badge & Word Title -->
         <div class="flex flex-col gap-2.5">
@@ -172,25 +150,6 @@
                     {/if}
                 </div>
             {/if}
-        </div>
-
-        <!-- Bottom Action Button -->
-        <div class="mt-auto flex flex-col gap-2 pt-2">
-            <button
-                data-test="continue-button"
-                type="button"
-                class="flex min-h-12.5 w-full items-center justify-center gap-2 rounded-xl bg-blue-600 text-base font-semibold text-white shadow-xs transition-all hover:bg-blue-700 active:scale-[0.98]"
-                onclick={onContinue}
-            >
-                <span>{t('ui.intro.card.continue')}</span>
-                <ArrowRight class="size-4.5" />
-            </button>
-
-            <p
-                class="text-muted-foreground hidden text-center text-sm sm:block"
-            >
-                {t('ui.intro.card.keyboard_hint')}
-            </p>
         </div>
     </div>
 {/if}

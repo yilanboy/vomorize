@@ -382,13 +382,12 @@ return [
             'not_started' => '尚未開始',
             'completed' => '已經完成',
         ],
-        'play_word_audio' => '播放單字發音 (Space)',
-        'play_sentence_audio' => '播放例句發音 (S)',
+        'play_word_audio' => '播放單字發音',
+        'play_sentence_audio' => '播放例句發音',
         'prev_group' => '上一組',
         'next_group' => '下一組',
         'stage_indicator' => '第 :stage / 6 階段',
         'stage_completed' => '已完成全部 6 階段',
-        'keyboard_hint' => '快捷鍵：Space 朗讀單字 · S 朗讀例句 · ↑↓ 切換',
         'sticky_bar' => [
             'summary' => '第 :sequence 組 · :count 個核心單字',
             'start_stage_1' => '開始第一階段測驗 (Stage 1)',
@@ -544,7 +543,6 @@ return [
             'definition_label' => '中文釋義',
             'example_label' => '情境例句',
             'continue' => '我記住了，下一題',
-            'keyboard_hint' => '按 Space 鍵繼續',
         ],
     ],
     'quiz' => [
@@ -568,22 +566,21 @@ return [
         ],
         'spelling' => [
             'badge' => '拼音測驗',
-            'play_audio_hint' => '播放讀音 (Space)',
-            'keyboard_hint' => '直接鍵盤輸入字母 / Backspace 刪除',
+            'play_audio_hint' => '播放讀音',
             'touch_hint' => '點選字母填入空格，點選已填字母可退回',
             'backspace' => '退格',
             'clear' => '清除',
             'correct_answer' => '正確拼寫',
             'correct_banner' => '拼寫正確！',
-            'next' => '下一題',
         ],
         'audio_prompt' => [
-            'play_hint' => '點擊或按 Space 播放發音',
-            'play_hint_mobile' => '點擊播放發音',
+            'play_hint' => '點擊播放發音',
             'playing' => '正在播放發音...',
         ],
-        'options' => [
-            'keyboard_hint' => '按數字鍵 1-4 快速作答',
+        'footer' => [
+            'aria_label' => '測驗操作列',
+            'next' => '下一題',
+            'view_results' => '查看結果',
         ],
         'result' => [
             'title_passed' => '恭喜通關！Stage 1 學習達成',
@@ -653,7 +650,6 @@ return [
             ],
             'summary_line' => '已配置：:mode模式 · :count 題',
             'start_button' => '開始自訂測驗',
-            'footer_keyboard_hint' => '測驗過程全面支援鍵盤 1-4 快捷作答，',
             'footer_hint' => '交卷後將提供去重錯題回顧。',
             'top_bar' => [
                 'leave' => '離開測驗',

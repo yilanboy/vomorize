@@ -5,6 +5,8 @@ declare(strict_types=1);
 use App\Models\User;
 use Database\Factories\GroupFactory;
 use Illuminate\Foundation\Testing\RefreshDatabase;
+use Tests\Browser\Concerns\InteractsWithGuestProgress;
+use Tests\Browser\Concerns\PlaysLearningSessions;
 use Tests\TestCase;
 
 /*
@@ -25,6 +27,13 @@ pest()
         GroupFactory::resetSequences();
     })
     ->in('Feature', 'Browser');
+
+pest()
+    ->use(
+        InteractsWithGuestProgress::class,
+        PlaysLearningSessions::class,
+    )
+    ->in('Browser');
 
 /*
  |--------------------------------------------------------------------------

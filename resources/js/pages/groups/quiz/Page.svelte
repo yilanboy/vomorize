@@ -11,6 +11,7 @@
     import LeaveConfirmationDialog from '@/components/LeaveConfirmationDialog.svelte';
     import AudioToDefinitionCard from '@/components/quiz/AudioToDefinitionCard.svelte';
     import DefinitionToWordCard from '@/components/quiz/DefinitionToWordCard.svelte';
+    import QuizActionFooter from '@/components/quiz/QuizActionFooter.svelte';
     import QuizResultSummary from '@/components/quiz/QuizResultSummary.svelte';
     import WordToDefinitionCard from '@/components/quiz/WordToDefinitionCard.svelte';
     import { audioPlayer } from '@/lib/audioPlayer.svelte';
@@ -21,7 +22,6 @@
         type GroupProgressSummary,
     } from '@/lib/learningProgressDb';
     import { createNavigationGuard } from '@/lib/navigationGuard';
-    import { QUIZ_ANSWER_FEEDBACK_DELAY_MS } from '@/lib/quiz';
     import type {
         MistakeReviewItem,
         QuizOptionPayload,
@@ -54,12 +54,12 @@
     let localProgress = $state<GroupProgressSummary | null>(null);
     let currentIndex = $state(0);
     let selectedOptionId = $state<number | null>(null);
-    let isAdvancing = $state(false);
     let listeningDisabled = $state(false);
     let isDisableListeningDialogOpen = $state(false);
     let correctAnswersCount = $state(0);
     let mistakes = $state<MistakeReviewItem[]>([]);
     let quizCompleted = $state(false);
+    let isSavingProgress = $state(false);
     let finalScore = $state(0);
     let completedTargetStage = $state(2);
     let completedIsMasteredRetake = $state(false);
@@ -118,10 +118,12 @@
     const isPassed = $derived(
         completedIsMasteredRetake || finalScore >= passThreshold,
     );
+    const hasAnswered = $derived(selectedOptionId !== null);
+    const isLastStep = $derived(currentIndex + 1 >= totalSteps);
 
     function advanceToNextStep() {
+        audioPlayer.stop();
         selectedOptionId = null;
-        isAdvancing = false;
 
         if (currentIndex + 1 >= totalSteps) {
             void handleQuizCompletion();
@@ -131,12 +133,11 @@
     }
 
     function handleQuizOptionSelect(option: QuizOptionPayload) {
-        if (isAdvancing || selectedOptionId !== null || !currentStep) {
+        if (selectedOptionId !== null || !currentStep) {
             return;
         }
 
         selectedOptionId = option.id;
-        isAdvancing = true;
 
         if (currentStep.kind === 'quiz' && activeQuiz) {
             const isCorrect = option.id === activeQuiz.correct_option_id;
@@ -172,10 +173,6 @@
                 }
             }
         }
-
-        setTimeout(() => {
-            advanceToNextStep();
-        }, QUIZ_ANSWER_FEEDBACK_DELAY_MS);
     }
 
     async function handleQuizCompletion() {
@@ -191,6 +188,7 @@
         completedTargetStage = activeTargetStage;
         completedIsMasteredRetake = activeIsMasteredRetake;
         finalScore = computedScore;
+        isSavingProgress = true;
         quizCompleted = true;
 
         if (progress !== null) {
@@ -201,15 +199,22 @@
                     preserveState: true,
                     preserveScroll: true,
                     only: ['progress'],
+                    onFinish: () => {
+                        isSavingProgress = false;
+                    },
                 },
             );
         } else {
-            const updated = await learningProgressDb.recordQuizResult(
-                group.id,
-                group.level_id,
-                computedScore,
-            );
-            localProgress = determineLocalGroupStatus(updated);
+            try {
+                const updated = await learningProgressDb.recordQuizResult(
+                    group.id,
+                    group.level_id,
+                    computedScore,
+                );
+                localProgress = determineLocalGroupStatus(updated);
+            } finally {
+                isSavingProgress = false;
+            }
         }
     }
 
@@ -218,10 +223,10 @@
         listeningDisabled = false;
         currentIndex = 0;
         selectedOptionId = null;
-        isAdvancing = false;
         correctAnswersCount = 0;
         mistakes = [];
         quizCompleted = false;
+        isSavingProgress = false;
         finalScore = 0;
         router.reload({ only: ['session', 'progress'] });
     }
@@ -294,6 +299,7 @@
     data-progress-ready={progress !== null || localProgress !== null
         ? 'true'
         : 'false'}
+    data-progress-saved={quizCompleted && !isSavingProgress ? 'true' : 'false'}
 >
     <!-- Focused Immersive Top Bar -->
     <header
@@ -362,7 +368,7 @@
 
     <!-- Main Content Area -->
     <main
-        class="flex flex-1 flex-col items-center justify-center px-4 py-8 sm:px-6"
+        class="flex flex-1 flex-col items-center justify-center px-4 py-6 sm:px-6"
     >
         {#if quizCompleted}
             <QuizResultSummary
@@ -385,7 +391,7 @@
                             vocabulary={currentStep.vocabulary}
                             {selectedOptionId}
                             onSelect={handleQuizOptionSelect}
-                            disabled={isAdvancing}
+                            disabled={hasAnswered}
                         />
                     {:else if activeQuiz.quiz_type === 'definition_to_word'}
                         <DefinitionToWordCard
@@ -393,7 +399,7 @@
                             vocabulary={currentStep.vocabulary}
                             {selectedOptionId}
                             onSelect={handleQuizOptionSelect}
-                            disabled={isAdvancing}
+                            disabled={hasAnswered}
                         />
                     {:else if activeQuiz.quiz_type === 'audio_to_definition'}
                         <AudioToDefinitionCard
@@ -402,13 +408,23 @@
                             {selectedOptionId}
                             autoPlay={!listeningDisabled}
                             onSelect={handleQuizOptionSelect}
-                            disabled={isAdvancing}
+                            disabled={hasAnswered}
                         />
                     {/if}
                 {/if}
             {/key}
         {/if}
     </main>
+
+    {#if !quizCompleted && currentStep}
+        <QuizActionFooter
+            canAdvance={hasAnswered}
+            label={isLastStep
+                ? t('ui.quiz.footer.view_results')
+                : t('ui.quiz.footer.next')}
+            onAdvance={advanceToNextStep}
+        />
+    {/if}
 
     <!-- Leave Confirmation Dialog -->
     <LeaveConfirmationDialog

@@ -141,7 +141,12 @@ test('authenticated member completing custom quiz displays result summary withou
         ->assertPathIs('/quiz/play');
 
     for ($i = 1; $i <= 10; $i++) {
-        $page->click('button:has-text("1")')->wait(1.8);
+        $page
+            ->assertSeeIn('@current-step', (string) $i)
+            ->assertDisabled('@continue-button')
+            ->click('button:has-text("1")')
+            ->assertEnabled('@continue-button')
+            ->click('@continue-button');
     }
 
     $page
@@ -389,11 +394,3 @@ test('custom quiz shows expected visual feedback when selecting correct option',
 test('custom quiz shows expected visual feedback when selecting wrong option', function () {
     //
 })->skip('Practice: assert wrong-option & highlighted correct-option feedback state (or fixed-seed assertScreenshotMatches())');
-
-test('custom quiz setup page hides keyboard shortcut hint on mobile and shows it on desktop', function () {
-    //
-})->skip('Practice: visit /quiz on mobile (on()->mobile()) and assertDontSee("測驗過程全面支援鍵盤 1-4 快捷作答") while still seeing "交卷後將提供去重錯題回顧。", then assertSee full text on desktop');
-
-test('custom quiz play page hides keyboard shortcut hints on mobile across quiz modes', function () {
-    //
-})->skip('Practice: on /quiz/play mobile viewport, verify "按數字鍵 1-4 快速作答" (QuizOptions) and "直接鍵盤輸入字母 / Backspace 刪除" (SpellingCard) are hidden, and AudioToDefinitionCard shows "點擊播放發音" instead of "點擊或按 Space 播放發音"');

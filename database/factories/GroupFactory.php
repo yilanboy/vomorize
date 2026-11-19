@@ -6,6 +6,7 @@ namespace Database\Factories;
 
 use App\Models\Group;
 use App\Models\Level;
+use App\Models\Vocabulary;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
@@ -39,5 +40,17 @@ class GroupFactory extends Factory
                 return ++static::$sequences[$levelId];
             },
         ];
+    }
+
+    public function withVocabularies(int $count = Group::VOCABULARY_PER_GROUP): static
+    {
+        return $this->afterCreating(function (Group $group) use ($count): void {
+            Vocabulary::factory()
+                ->count($count)
+                ->create([
+                    'level_id' => $group->level_id,
+                    'group_id' => $group->id,
+                ]);
+        });
     }
 }

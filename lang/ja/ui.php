@@ -382,13 +382,12 @@ return [
             'not_started' => '未学習',
             'completed' => '完了済み',
         ],
-        'play_word_audio' => '単語の発音を再生 (Space)',
-        'play_sentence_audio' => '例文の発音を再生 (S)',
+        'play_word_audio' => '単語の発音を再生',
+        'play_sentence_audio' => '例文の発音を再生',
         'prev_group' => '前のグループ',
         'next_group' => '次のグループ',
         'stage_indicator' => 'ステージ :stage / 6',
         'stage_completed' => '全6ステージ完了済み',
-        'keyboard_hint' => 'ショートカット：Space 単語再生 · S 例文再生 · ↑↓ 移動',
         'sticky_bar' => [
             'summary' => 'グループ :sequence · 重要単語 :count 語',
             'start_stage_1' => '第1ステージテストを開始 (Stage 1)',
@@ -544,7 +543,6 @@ return [
             'definition_label' => '日本語の意味',
             'example_label' => '例文',
             'continue' => '覚えた・次へ',
-            'keyboard_hint' => 'Space キーで次へ',
         ],
     ],
     'quiz' => [
@@ -568,22 +566,21 @@ return [
         ],
         'spelling' => [
             'badge' => 'スペリングテスト',
-            'play_audio_hint' => '発音を再生 (Space)',
-            'keyboard_hint' => 'キーボードで直接入力 / Backspace で削除',
+            'play_audio_hint' => '発音を再生',
             'touch_hint' => '文字をタップして空欄に入力、入力済みの文字をタップで戻せます',
             'backspace' => '1文字削除',
             'clear' => 'クリア',
             'correct_answer' => '正しいスペル',
             'correct_banner' => 'スペル正解！',
-            'next' => '次の問題',
         ],
         'audio_prompt' => [
-            'play_hint' => 'クリックまたは Space で発音を再生',
-            'play_hint_mobile' => 'タップして発音を再生',
+            'play_hint' => 'タップして発音を再生',
             'playing' => '発音を再生中...',
         ],
-        'options' => [
-            'keyboard_hint' => '数字キー 1〜4 で素早く回答',
+        'footer' => [
+            'aria_label' => 'テスト操作バー',
+            'next' => '次の問題',
+            'view_results' => '結果を見る',
         ],
         'result' => [
             'title_passed' => '合格おめでとうございます！Stage 1 クリア',
@@ -653,7 +650,6 @@ return [
             ],
             'summary_line' => '設定済み：:mode モード · :count 問',
             'start_button' => 'カスタムクイズを開始',
-            'footer_keyboard_hint' => 'クイズ中はキーボードの 1〜4 で素早く回答でき、',
             'footer_hint' => '終了後は重複を除いたミス単語の振り返りを確認できます。',
             'top_bar' => [
                 'leave' => 'クイズを終了',
