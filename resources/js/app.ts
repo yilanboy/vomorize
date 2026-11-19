@@ -3,7 +3,6 @@ import AppLayout from '@/layouts/AppLayout.svelte';
 import AuthLayout from '@/layouts/AuthLayout.svelte';
 import SettingsLayout from '@/layouts/settings/Layout.svelte';
 import { initializeFlashToast } from '@/lib/flashToast';
-import { learningProgressDb } from '@/lib/learningProgressDb';
 import { initializeProgressSync } from '@/lib/progressSync';
 import { initializeTheme } from '@/lib/theme.svelte';
 
@@ -44,9 +43,3 @@ initializeFlashToast();
 
 // This will automatically sync guest IndexedDB progress upon login or registration...
 initializeProgressSync();
-
-// Expose the guest progress store so browser tests can seed and inspect IndexedDB
-// through the same API the app uses, instead of duplicating the schema.
-if (typeof window !== 'undefined') {
-    window.__learningProgressDb = learningProgressDb;
-}

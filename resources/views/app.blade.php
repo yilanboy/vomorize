@@ -17,7 +17,9 @@
             href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;600;700&display=swap"
         />
 
-        @vite(['resources/css/app.css', 'resources/js/app.ts'])
+        @vite(app()->environment('testing')
+            ? ['resources/css/app.css', 'resources/js/app.ts', 'resources/js/testing.ts']
+            : ['resources/css/app.css', 'resources/js/app.ts'])
         <x-inertia::head>
             <title>{{ config('app.name', 'Laravel') }}</title>
         </x-inertia::head>

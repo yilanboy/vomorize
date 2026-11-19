@@ -4,7 +4,7 @@ import type { Auth } from '@/types/auth';
 
 declare global {
     interface Window {
-        // Exposed in app.ts for browser tests to seed / inspect guest progress.
+        // Exposed in testing.ts (loaded only in testing env) for browser tests to seed / inspect guest progress.
         __learningProgressDb?: typeof learningProgressDb;
     }
 }
