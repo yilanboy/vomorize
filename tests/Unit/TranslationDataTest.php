@@ -64,7 +64,10 @@ test('all supported locales have complete non-empty vocabulary translations matc
             expect(array_keys($translations))->toBe($levelVocabIds);
 
             foreach ($levelVocabIds as $vocabId) {
-                expect(trim($translations[$vocabId]['definition']))->not->toBeEmpty()
+                $definition = $translations[$vocabId]['definition'];
+
+                expect(trim($definition))->not->toBeEmpty()
+                    ->and($definition)->not->toMatch('/[;；()（）,，、\/／・\s]/u')
                     ->and(trim($translations[$vocabId]['example_translation']))->not->toBeEmpty();
             }
         }

@@ -3976,7 +3976,7 @@ return [
         'example_translation' => '只有一小部分學生反對這項新規定。',
     ],
     4994 => [
-        'definition' => '偷偷地走／做',
+        'definition' => '偷溜',
         'example_translation' => '沒人注意時，那隻貓偷偷溜進了廚房。',
     ],
     4995 => [

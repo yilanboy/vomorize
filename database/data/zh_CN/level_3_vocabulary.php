@@ -876,7 +876,7 @@ return [
         'example_translation' => '我需要在明天的考试前练习数学。',
     ],
     2219 => [
-        'definition' => '上（船、车等）',
+        'definition' => '登上',
         'example_translation' => '乘客们迅速上了火车。',
     ],
     2220 => [
@@ -3440,7 +3440,7 @@ return [
         'example_translation' => '箱子开始从楼梯上滚下来。',
     ],
     2860 => [
-        'definition' => '重担；货物',
+        'definition' => '货物',
         'example_translation' => '沉重的货物让那名工人很难走路。',
     ],
     2861 => [

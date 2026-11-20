@@ -164,7 +164,7 @@ return [
         'example_translation' => '這家公司因漠視重要的安全規定而遭到罰款。',
     ],
     6041 => [
-        'definition' => '施用',
+        'definition' => '給予',
         'example_translation' => '護理師在睡前給病人服用了藥物。',
     ],
     6042 => [
@@ -880,7 +880,7 @@ return [
         'example_translation' => '教練稱讚那名球員在激烈爭論中保持克制。',
     ],
     6220 => [
-        'definition' => '沖泡／釀造飲料',
+        'definition' => '沖泡飲料',
         'example_translation' => '這種當地沖泡的咖啡風味濃郁，香氣宜人。',
     ],
     6221 => [
@@ -1200,7 +1200,7 @@ return [
         'example_translation' => '醫生解釋說，血液是一種在身體內輸送氧氣的液體。',
     ],
     6300 => [
-        'definition' => '複製品／人',
+        'definition' => '複製品',
         'example_translation' => '科學家從一片葉子培育出這株植物的複製品。',
     ],
     6301 => [
@@ -3420,7 +3420,7 @@ return [
         'example_translation' => '醫生開了一張抗生素處方給我。',
     ],
     6855 => [
-        'definition' => '總裁／總統職位',
+        'definition' => '總統職位',
         'example_translation' => '她在總統任內專注於經濟改革。',
     ],
     6856 => [
@@ -3628,7 +3628,7 @@ return [
         'example_translation' => '許多稀有鳥類棲息於海岸附近的濕地。',
     ],
     6907 => [
-        'definition' => '總裁／總統的',
+        'definition' => '總統的',
         'example_translation' => '總統大選將於一月舉行。',
     ],
     6908 => [

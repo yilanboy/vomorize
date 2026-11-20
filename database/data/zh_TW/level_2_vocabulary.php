@@ -3076,7 +3076,7 @@ return [
         'example_translation' => '我爸爸做了美式鬆餅當早餐。',
     ],
     1769 => [
-        'definition' => '堂兄弟／姐妹',
+        'definition' => '表親',
         'example_translation' => '我的表姊和她的家人住在臺北。',
     ],
     1770 => [

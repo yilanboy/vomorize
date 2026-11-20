@@ -340,7 +340,7 @@ return [
         'example_translation' => '孩子们在长满草的田野上玩耍。',
     ],
     1085 => [
-        'definition' => '采访；访谈',
+        'definition' => '采访',
         'example_translation' => '那位记者在电视上采访了这位知名歌手。',
     ],
     1086 => [
@@ -408,7 +408,7 @@ return [
         'example_translation' => '我信任我最好的朋友，因为她总是告诉我真相。',
     ],
     1102 => [
-        'definition' => '短语；词组',
+        'definition' => '短语',
         'example_translation' => '“早安”是一个常见的英文短语。',
     ],
     1103 => [
@@ -488,7 +488,7 @@ return [
         'example_translation' => '请把你的干净内衣放进抽屉里。',
     ],
     1122 => [
-        'definition' => '生菜；莴苣',
+        'definition' => '生菜',
         'example_translation' => '我在三明治里加了一些新鲜的生菜。',
     ],
     1123 => [
@@ -880,7 +880,7 @@ return [
         'example_translation' => '病人正在等候看医生。',
     ],
     1220 => [
-        'definition' => '衣柜；衣橱',
+        'definition' => '衣柜',
         'example_translation' => '我的冬季大衣在衣柜里。',
     ],
     1221 => [
@@ -988,7 +988,7 @@ return [
         'example_translation' => '医生在医院戴着口罩。',
     ],
     1247 => [
-        'definition' => '人行横道；斑马线',
+        'definition' => '人行横道',
         'example_translation' => '过人行横道前，一定要先看清两侧。',
     ],
     1248 => [
@@ -1564,7 +1564,7 @@ return [
         'example_translation' => '我们以前的老师昨天来拜访我们。',
     ],
     1391 => [
-        'definition' => '酒店；旅馆',
+        'definition' => '旅馆',
         'example_translation' => '我们住在海滩附近的一家小旅馆。',
     ],
     1392 => [
@@ -2208,7 +2208,7 @@ return [
         'example_translation' => '这家商店出售冬天穿的保暖衣物。',
     ],
     1552 => [
-        'definition' => '有智慧的；明智的',
+        'definition' => '明智的',
         'example_translation' => '今天带雨伞是明智的做法。',
     ],
     1553 => [
@@ -2604,7 +2604,7 @@ return [
         'example_translation' => '火车以很快的速度行驶。',
     ],
     1651 => [
-        'definition' => '县；郡',
+        'definition' => '县',
         'example_translation' => '她住在山附近的一个小县。',
     ],
     1652 => [
@@ -2672,7 +2672,7 @@ return [
         'example_translation' => '谢谢你邀请我参加你的生日派对。',
     ],
     1668 => [
-        'definition' => '搭档；伙伴',
+        'definition' => '搭档',
         'example_translation' => '我的搭档帮我完成了学校的课题。',
     ],
     1669 => [
@@ -2892,7 +2892,7 @@ return [
         'example_translation' => '今天天气非常适合野餐。',
     ],
     1723 => [
-        'definition' => '牛角面包；可颂',
+        'definition' => '牛角面包',
         'example_translation' => '我早餐吃了一个热腾腾的牛角面包。',
     ],
     1724 => [
@@ -2928,7 +2928,7 @@ return [
         'example_translation' => '我把湿衣服放进烘干机里。',
     ],
     1732 => [
-        'definition' => '消息；信息',
+        'definition' => '消息',
         'example_translation' => '我在妈妈的手机上留了一条消息。',
     ],
     1733 => [
@@ -2988,7 +2988,7 @@ return [
         'example_translation' => '这位勇敢的斗士在艰难的比赛中从未放弃。',
     ],
     1747 => [
-        'definition' => '炸弹；轰炸',
+        'definition' => '炸弹',
         'example_translation' => '士兵在那栋老建筑物附近发现了一枚炸弹。',
     ],
     1748 => [
@@ -3076,7 +3076,7 @@ return [
         'example_translation' => '我爸爸做了美式松饼当早餐。',
     ],
     1769 => [
-        'definition' => '堂兄弟／姐妹',
+        'definition' => '表亲',
         'example_translation' => '我的表姐和她的家人住在台北。',
     ],
     1770 => [
@@ -3608,7 +3608,7 @@ return [
         'example_translation' => '我吃了一颗花生当点心。',
     ],
     1902 => [
-        'definition' => '土豆；马铃薯',
+        'definition' => '土豆',
         'example_translation' => '她烤了一个土豆当晚饭。',
     ],
     1903 => [
@@ -3776,7 +3776,7 @@ return [
         'example_translation' => '一只燕子在屋顶下筑了一个巢。',
     ],
     1944 => [
-        'definition' => '更喜欢；宁可',
+        'definition' => '更喜欢',
         'example_translation' => '比起咖啡，我更喜欢喝茶。',
     ],
     1945 => [
@@ -3792,7 +3792,7 @@ return [
         'example_translation' => '警方追踪嫌疑犯到了附近的一家旅馆。',
     ],
     1948 => [
-        'definition' => '自助餐厅；食堂',
+        'definition' => '食堂',
         'example_translation' => '我们在学校食堂吃午饭。',
     ],
     1949 => [

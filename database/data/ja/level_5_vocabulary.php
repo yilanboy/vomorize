@@ -1764,7 +1764,7 @@ return [
         'example_translation' => 'マネージャーは会議中に新しい規則について明確に説明しました。',
     ],
     4441 => [
-        'definition' => '経歴・キャリア',
+        'definition' => 'キャリア',
         'example_translation' => '彼女は医学の分野で成功したキャリアを築くことを望んでいます。',
     ],
     4442 => [
@@ -2816,7 +2816,7 @@ return [
         'example_translation' => 'この伝統的な衣服は柔らかい綿と色鮮やかな布で作られています。',
     ],
     4704 => [
-        'definition' => '屋台・ブース',
+        'definition' => '屋台',
         'example_translation' => '私たちは夜市の小さな屋台で新鮮な果物を買いました。',
     ],
     4705 => [
@@ -2884,7 +2884,7 @@ return [
         'example_translation' => '雨の後、大きなヒキガエルが濡れた葉の下に静かに座っていました。',
     ],
     4721 => [
-        'definition' => '承認・評価',
+        'definition' => '評価',
         'example_translation' => 'マネージャーはチームの懸命な働きを認め、評価を示しました。',
     ],
     4722 => [
@@ -2936,7 +2936,7 @@ return [
         'example_translation' => 'その家の女主人はゲストをダイニングルームに迎え入れました。',
     ],
     4734 => [
-        'definition' => '油・グリース',
+        'definition' => '油',
         'example_translation' => '整備士は古い布で手の油汚れを拭き取りました。',
     ],
     4735 => [
@@ -3076,7 +3076,7 @@ return [
         'example_translation' => 'この植物には大きな葉を支える太い茎があります。',
     ],
     4769 => [
-        'definition' => '兄弟愛・連帯感',
+        'definition' => '連帯感',
         'example_translation' => '兵士たちは訓練の中で強い連帯感を育みました。',
     ],
     4770 => [
@@ -3136,7 +3136,7 @@ return [
         'example_translation' => '作業員たちはモルタルを作るために石灰と水を混ぜました。',
     ],
     4784 => [
-        'definition' => 'おさげ・三つ編み',
+        'definition' => '三つ編み',
         'example_translation' => 'その女の子は長い三つ編みに青いリボンを結びました。',
     ],
     4785 => [
@@ -3216,7 +3216,7 @@ return [
         'example_translation' => '看護師は事故の後、患者の脈拍を確認しました。',
     ],
     4804 => [
-        'definition' => '保守・メンテナンス',
+        'definition' => 'メンテナンス',
         'example_translation' => '定期的なメンテナンスは機械が正常に作動し続けるのに役立ちます。',
     ],
     4805 => [
@@ -3224,7 +3224,7 @@ return [
         'example_translation' => '農家は種まきの準備として畑を耕すためにすきを使いました。',
     ],
     4806 => [
-        'definition' => 'ズッキーニ・ウリ',
+        'definition' => 'ズッキーニ',
         'example_translation' => '祖母はスープに新鮮なズッキーニを加えました。',
     ],
     4807 => [
@@ -3388,7 +3388,7 @@ return [
         'example_translation' => '新鮮な果物の入ったバスケットが玄関先に置かれていました。',
     ],
     4847 => [
-        'definition' => 'ペグ・杭',
+        'definition' => 'ペグ',
         'example_translation' => '彼はテントを固定するために木製のペグを使いました。',
     ],
     4848 => [
@@ -3444,7 +3444,7 @@ return [
         'example_translation' => 'その宇宙飛行士は月面で岩石のサンプルを慎重に採取しました。',
     ],
     4861 => [
-        'definition' => '見なす・思う',
+        'definition' => '思う',
         'example_translation' => '日没前には到着すると思います。',
     ],
     4862 => [
@@ -3632,7 +3632,7 @@ return [
         'example_translation' => '農夫が掃除をすると、その馬はひづめを持ち上げました。',
     ],
     4908 => [
-        'definition' => 'ツナ・マグロ',
+        'definition' => 'ツナ',
         'example_translation' => '昼食にツナサンドイッチを注文しました。',
     ],
     4909 => [
@@ -3640,7 +3640,7 @@ return [
         'example_translation' => '地元の民間伝承によると、その湖には不思議な生き物が住んでいるそうです。',
     ],
     4910 => [
-        'definition' => '繁栄する・咲き誇る',
+        'definition' => '咲き誇る',
         'example_translation' => 'この温暖な気候では、色鮮やかな花々がたくさん咲き誇ります。',
     ],
     4911 => [
@@ -3984,7 +3984,7 @@ return [
         'example_translation' => 'その慈善団体は地元の企業からかなりの額の寄付を受け取りました。',
     ],
     4996 => [
-        'definition' => '山・積み重ね',
+        'definition' => '山',
         'example_translation' => '納屋のそばに干し草の高い山が積まれていました。',
     ],
     4997 => [
@@ -3992,11 +3992,11 @@ return [
         'example_translation' => '子どもたちは砂浜の近くに小さな砂の山を作りました。',
     ],
     4998 => [
-        'definition' => '住居・公邸',
+        'definition' => '公邸',
         'example_translation' => 'その公邸は市庁舎の近くに位置しています。',
     ],
     4999 => [
-        'definition' => '煙・ガス',
+        'definition' => '煙',
         'example_translation' => '機械が過熱した後、濃い煙が部屋に充満しました。',
     ],
     5000 => [

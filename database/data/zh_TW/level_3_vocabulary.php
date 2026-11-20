@@ -876,7 +876,7 @@ return [
         'example_translation' => '我需要在明天的考試前練習數學。',
     ],
     2219 => [
-        'definition' => '上（船、車等）',
+        'definition' => '登上',
         'example_translation' => '乘客們迅速上了火車。',
     ],
     2220 => [

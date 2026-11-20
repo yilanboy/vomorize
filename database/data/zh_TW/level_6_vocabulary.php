@@ -2476,7 +2476,7 @@ return [
         'example_translation' => '那位老人走下陡峭的小徑時開始蹣跚搖晃。',
     ],
     5619 => [
-        'definition' => '新聞／撰稿記者',
+        'definition' => '新聞記者',
         'example_translation' => '那名新聞記者採訪了幾位事故目擊者。',
     ],
     5620 => [
@@ -3876,7 +3876,7 @@ return [
         'example_translation' => '實驗室必須證明飲用水是安全的。',
     ],
     5969 => [
-        'definition' => '全套服裝／裝備',
+        'definition' => '全套裝備',
         'example_translation' => '她買了一套新的登山裝備，包括堅固的靴子和防水外套。',
     ],
     5970 => [

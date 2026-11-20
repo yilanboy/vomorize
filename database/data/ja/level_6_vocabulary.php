@@ -8,7 +8,7 @@ return [
         'example_translation' => '彼女の小さな企業は、成功した国際企業へと成長しました。',
     ],
     5002 => [
-        'definition' => '絡ませる・絡まる',
+        'definition' => '絡まる',
         'example_translation' => '漁師は、網に絡まった糸をほどかなければなりませんでした。',
     ],
     5003 => [
@@ -28,7 +28,7 @@ return [
         'example_translation' => '授業が難しすぎると、幼い子どもは興味を失いがちです。',
     ],
     5007 => [
-        'definition' => 'どこにも（～ない）',
+        'definition' => 'どこにも～ない',
         'example_translation' => '私たちはあらゆる場所を探しましたが、行方不明のボートはどこにも見つかりませんでした。',
     ],
     5008 => [
@@ -44,7 +44,7 @@ return [
         'example_translation' => 'その船は狭い海峡を通過してから、外海へ出ました。',
     ],
     5011 => [
-        'definition' => 'しるし・象徴',
+        'definition' => 'しるし',
         'example_translation' => 'そのメダルは、長年の貢献に対する感謝のしるしとして贈られました。',
     ],
     5012 => [
@@ -56,7 +56,7 @@ return [
         'example_translation' => '建物を出るときは、滑りやすい階段に気をつけてください。',
     ],
     5014 => [
-        'definition' => '広げる・広がる',
+        'definition' => '広げる',
         'example_translation' => '海外で学ぶことで、異文化への理解を広げることができます。',
     ],
     5015 => [
@@ -84,7 +84,7 @@ return [
         'example_translation' => '細胞核は、細胞の重要な活動の多くを制御しています。',
     ],
     5021 => [
-        'definition' => '掛ける・覆う',
+        'definition' => '掛ける',
         'example_translation' => '彼らは毎晩、窓に青いカーテンを掛けます。',
     ],
     5022 => [
@@ -100,7 +100,7 @@ return [
         'example_translation' => 'そのフィルターは、飲料水からごく小さな微粒子を取り除きます。',
     ],
     5025 => [
-        'definition' => 'ラック・棚に置く',
+        'definition' => '棚に置く',
         'example_translation' => 'きれいな皿は、流し台の横のラックに置いてください。',
     ],
     5026 => [
@@ -120,7 +120,7 @@ return [
         'example_translation' => 'マネージャーは緊急会議のためにチームを招集することにしました。',
     ],
     5030 => [
-        'definition' => '単独の・一人の',
+        'definition' => '一人の',
         'example_translation' => 'その一人旅の旅行者は、静かな湖のそばで読書を楽しみました。',
     ],
     5031 => [
@@ -128,7 +128,7 @@ return [
         'example_translation' => 'この谷は穏やかで肥沃なため、多くの家族がここに住んでいます。',
     ],
     5032 => [
-        'definition' => 'バス（魚）',
+        'definition' => 'バス',
         'example_translation' => '祖父は今朝、川で大きなバスを釣り上げました。',
     ],
     5033 => [
@@ -172,7 +172,7 @@ return [
         'example_translation' => '陪審員団は評決を下す前に、双方の主張を注意深く聞きました。',
     ],
     5043 => [
-        'definition' => '係員・乗務員',
+        'definition' => '乗務員',
         'example_translation' => '客室乗務員は、年配の乗客が荷物を収納するのを手伝いました。',
     ],
     5044 => [
@@ -180,7 +180,7 @@ return [
         'example_translation' => 'けがをした選手は、衝突のあと痛みでうめき始めました。',
     ],
     5045 => [
-        'definition' => '荘厳さ・威厳',
+        'definition' => '荘厳さ',
         'example_translation' => '訪れた人々は、その古い大聖堂の荘厳さに感銘を受けました。',
     ],
     5046 => [
@@ -204,7 +204,7 @@ return [
         'example_translation' => '会衆は立ち上がり、一緒に賛美歌を歌いました。',
     ],
     5051 => [
-        'definition' => '退治する・殺す',
+        'definition' => '退治する',
         'example_translation' => '伝説によると、その騎士はドラゴンを退治するために派遣されました。',
     ],
     5052 => [
@@ -232,7 +232,7 @@ return [
         'example_translation' => 'その指導者は、チームを裏切った人々について軽蔑を込めて語りました。',
     ],
     5058 => [
-        'definition' => '厳しい・冷酷な',
+        'definition' => '厳しい',
         'example_translation' => '救助隊員たちは、嵐が多くの命を奪ったという厳しい現実に直面しました。',
     ],
     5059 => [
@@ -256,7 +256,7 @@ return [
         'example_translation' => 'ホテルのチェックインは午後3時に始まります。',
     ],
     5064 => [
-        'definition' => '料理長・シェフ',
+        'definition' => 'シェフ',
         'example_translation' => 'シェフはお客様のために特別なシーフード料理を用意しました。',
     ],
     5065 => [
@@ -280,7 +280,7 @@ return [
         'example_translation' => 'その橋の幅は、バス2台が安全にすれ違えるほどあります。',
     ],
     5070 => [
-        'definition' => 'けち・守銭奴',
+        'definition' => '守銭奴',
         'example_translation' => 'その守銭奴は、必要な修理にさえお金を使うのを拒みました。',
     ],
     5071 => [
@@ -344,7 +344,7 @@ return [
         'example_translation' => '彼女はドレッサーの上の小さな箱に宝石をしまっていました。',
     ],
     5086 => [
-        'definition' => 'クーポン・割引券',
+        'definition' => 'クーポン',
         'example_translation' => '私はクーポンを使って、購入金額から20パーセントの割引を受けました。',
     ],
     5087 => [
@@ -376,7 +376,7 @@ return [
         'example_translation' => 'その病院は、来年患者の記録をコンピュータ化する予定です。',
     ],
     5094 => [
-        'definition' => 'ストライプ・縞',
+        'definition' => 'ストライプ',
         'example_translation' => 'そのシャツの胸元には、鮮やかな青いストライプが入っています。',
     ],
     5095 => [
@@ -404,7 +404,7 @@ return [
         'example_translation' => 'その地域の農業産業は、季節ごとの降雨量に大きく依存しています。',
     ],
     5101 => [
-        'definition' => '並木道・大通り',
+        'definition' => '並木道',
         'example_translation' => 'その広い並木道には、木々と色とりどりの花が並んでいました。',
     ],
     5102 => [
@@ -416,7 +416,7 @@ return [
         'example_translation' => '事故の後、そのけがをした男性はよろめきながら通りを渡りました。',
     ],
     5104 => [
-        'definition' => '同盟国・味方',
+        'definition' => '同盟国',
         'example_translation' => 'その小国は、必要なときに強力な同盟国を見つけました。',
     ],
     5105 => [
@@ -424,11 +424,11 @@ return [
         'example_translation' => 'ヘビは、体を温めるために太陽の光に頼る爬虫類です。',
     ],
     5106 => [
-        'definition' => '無関心・冷淡さ',
+        'definition' => '無関心',
         'example_translation' => '従業員の懸念に対するマネージャーの無関心な態度は、彼らに無視されていると感じさせました。',
     ],
     5107 => [
-        'definition' => '婚約者（男性）',
+        'definition' => '婚約者',
         'example_translation' => '彼女の婚約者は、ロマンチックな夕食で彼女を驚かせました。',
     ],
     5108 => [
@@ -452,7 +452,7 @@ return [
         'example_translation' => '大統領は拒否権を行使して、提出された法案を却下しました。',
     ],
     5113 => [
-        'definition' => '専門家・専門医',
+        'definition' => '専門医',
         'example_translation' => '私たちは父の病状について、心臓の専門医に相談しました。',
     ],
     5114 => [
@@ -476,7 +476,7 @@ return [
         'example_translation' => '定期的な運動は、心と体の両方にとって有益です。',
     ],
     5119 => [
-        'definition' => 'ベース（低音楽器）',
+        'definition' => 'ベース',
         'example_translation' => 'その音楽家は、学校のコンサートでベースを演奏しました。',
     ],
     5120 => [
@@ -484,11 +484,11 @@ return [
         'example_translation' => 'ランナーがゴールラインを越えたとき、すべての観客が歓声を上げました。',
     ],
     5121 => [
-        'definition' => '上空に留まる・旋回する',
+        'definition' => '旋回する',
         'example_translation' => '1羽のタカが獲物を探しながら、野原の上空を旋回していました。',
     ],
     5122 => [
-        'definition' => '助言する・忠告する',
+        'definition' => '助言する',
         'example_translation' => '弁護士は彼女に、裁判の間は冷静さを保つよう助言しました。',
     ],
     5123 => [
@@ -496,7 +496,7 @@ return [
         'example_translation' => '審判は、そのボールがアウトであると宣言しました。',
     ],
     5124 => [
-        'definition' => '暫定的な・仮の',
+        'definition' => '仮の',
         'example_translation' => '私たちは来週の金曜日に会うという仮の予定を立てました。',
     ],
     5125 => [
@@ -504,7 +504,7 @@ return [
         'example_translation' => 'その火山が突然噴火し、空に火山灰を噴き上げました。',
     ],
     5126 => [
-        'definition' => '遭難・苦悩',
+        'definition' => '遭難',
         'example_translation' => '道に迷ったハイカーたちは、無線を使って遭難信号を送りました。',
     ],
     5127 => [
@@ -524,7 +524,7 @@ return [
         'example_translation' => 'これらの植物は、水をやりすぎると病気にかかりやすくなります。',
     ],
     5131 => [
-        'definition' => 'ロッジ・山小屋',
+        'definition' => 'ロッジ',
         'example_translation' => '私たちは山道の近くにある小さなロッジに泊まりました。',
     ],
     5132 => [
@@ -532,11 +532,11 @@ return [
         'example_translation' => 'その市は公共交通システムを近代化する計画です。',
     ],
     5133 => [
-        'definition' => '和音・コード',
+        'definition' => '和音',
         'example_translation' => 'ギタリストは曲の最後に美しい和音を弾きました。',
     ],
     5134 => [
-        'definition' => '巻き・コイル',
+        'definition' => '巻き',
         'example_translation' => '漁船のそばに、一巻きのロープが置かれていました。',
     ],
     5135 => [
@@ -544,11 +544,11 @@ return [
         'example_translation' => '彼はパンにマヨネーズを塗ってから、野菜をのせました。',
     ],
     5136 => [
-        'definition' => '居住する・住む',
+        'definition' => '住む',
         'example_translation' => '多くの家族が、この静かな海辺の町に住んでいます。',
     ],
     5137 => [
-        'definition' => '埠頭・波止場',
+        'definition' => '埠頭',
         'example_translation' => '漁師たちは古い埠頭で、獲れた魚を陸揚げしました。',
     ],
     5138 => [
@@ -576,7 +576,7 @@ return [
         'example_translation' => '穏やかなさざ波が湖面に広がりました。',
     ],
     5144 => [
-        'definition' => '恨み・憤り',
+        'definition' => '恨み',
         'example_translation' => '長年の不公平な扱いにより、従業員たちの間に深い恨みが生じました。',
     ],
     5145 => [
@@ -592,7 +592,7 @@ return [
         'example_translation' => 'その赤ちゃんはぽっちゃりした頬と明るい笑顔をしています。',
     ],
     5148 => [
-        'definition' => '職員・人員',
+        'definition' => '職員',
         'example_translation' => '許可された職員のみがこの区域に入ることができます。',
     ],
     5149 => [
@@ -664,7 +664,7 @@ return [
         'example_translation' => 'マネージャーはその重大なミスに気づいたとき、激怒して怒鳴りました。',
     ],
     5166 => [
-        'definition' => '慕う・大好きである',
+        'definition' => '慕う',
         'example_translation' => '子どもたちは、いつも面白い話をしてくれる祖母をとても慕っています。',
     ],
     5167 => [
@@ -672,7 +672,7 @@ return [
         'example_translation' => 'そのドアは、狭い廊下のスペースを節約するために内側に開きます。',
     ],
     5168 => [
-        'definition' => '株式会社・法人',
+        'definition' => '株式会社',
         'example_translation' => 'その株式会社は、台湾南部に新しい研究センターを開設しました。',
     ],
     5169 => [
@@ -704,7 +704,7 @@ return [
         'example_translation' => '数時間の大雨の後、川が氾濫し始めました。',
     ],
     5176 => [
-        'definition' => '摘む・抜く',
+        'definition' => '摘む',
         'example_translation' => '彼女は庭の苗木から熟したイチゴを1粒摘みました。',
     ],
     5177 => [
@@ -816,11 +816,11 @@ return [
         'example_translation' => '私たちは富と幸福を同一視すべきではありません。',
     ],
     5204 => [
-        'definition' => '低木・灌木',
+        'definition' => '低木',
         'example_translation' => '庭の入り口のそばに、花の咲く低木が生えています。',
     ],
     5205 => [
-        'definition' => '亡命・追放',
+        'definition' => '亡命',
         'example_translation' => 'その作家は政府を批判した後、何年も亡命生活を送りました。',
     ],
     5206 => [
@@ -848,11 +848,11 @@ return [
         'example_translation' => 'その子はクモを見たとき、甲高い悲鳴を上げました。',
     ],
     5212 => [
-        'definition' => '議長・委員長',
+        'definition' => '議長',
         'example_translation' => '議長はすべての来賓を歓迎して会議を始めました。',
     ],
     5213 => [
-        'definition' => '見なす・捉える',
+        'definition' => '見なす',
         'example_translation' => '多くの人々が、その古い建物をこの街の歴史の重要な一部と見なしています。',
     ],
     5214 => [
@@ -868,11 +868,11 @@ return [
         'example_translation' => '彼女はテーブルの上の花瓶にピンクのカーネーションを1本生けました。',
     ],
     5217 => [
-        'definition' => '特徴的な・独特の',
+        'definition' => '独特の',
         'example_translation' => 'その芸術家は、鮮やかな色彩を独自に使いこなすことで知られています。',
     ],
     5218 => [
-        'definition' => '自我・プライド',
+        'definition' => 'プライド',
         'example_translation' => '彼の強いプライドのせいで、批判を受け入れるのが難しくなっていました。',
     ],
     5219 => [
@@ -888,7 +888,7 @@ return [
         'example_translation' => 'ごみはリサイクル用のゴミ箱に入れてください。',
     ],
     5222 => [
-        'definition' => '議員・立法者',
+        'definition' => '議員',
         'example_translation' => 'その議員は、子どもをオンライン上で保護するための法案を提出しました。',
     ],
     5223 => [
@@ -896,7 +896,7 @@ return [
         'example_translation' => '市は、公共の公園での喫煙を禁止すると発表しました。',
     ],
     5224 => [
-        'definition' => 'だます・欺く',
+        'definition' => '欺く',
         'example_translation' => 'その広告は、製品の品質について顧客を欺くように作られていました。',
     ],
     5225 => [
@@ -904,11 +904,11 @@ return [
         'example_translation' => '一日中歩いた後、私たちは疲れ果てて夕食を作る気力もありませんでした。',
     ],
     5226 => [
-        'definition' => 'テンポ・拍子',
+        'definition' => 'テンポ',
         'example_translation' => '指揮者は曲の終盤でテンポを速めました。',
     ],
     5227 => [
-        'definition' => '植生・植物',
+        'definition' => '植物',
         'example_translation' => 'その島は雨が豊富に降るため、植物が生い茂っています。',
     ],
     5228 => [
@@ -916,7 +916,7 @@ return [
         'example_translation' => 'この価格には税金と配送料は含まれていません。',
     ],
     5229 => [
-        'definition' => '店員・給仕',
+        'definition' => '店員',
         'example_translation' => 'レストランの店員がメニューと2杯の水を持ってきてくれました。',
     ],
     5230 => [
@@ -936,11 +936,11 @@ return [
         'example_translation' => '種によって繁殖する植物もあれば、挿し木から育つ植物もあります。',
     ],
     5234 => [
-        'definition' => '背骨・脊椎',
+        'definition' => '背骨',
         'example_translation' => '事故の後、医師は彼の背骨を診察しました。',
     ],
     5235 => [
-        'definition' => '公転する・回転する',
+        'definition' => '公転する',
         'example_translation' => '地球は毎年1回、太陽の周りを公転します。',
     ],
     5236 => [
@@ -956,7 +956,7 @@ return [
         'example_translation' => 'その彫刻家は、大理石の塊から本物そっくりの像を彫り上げました。',
     ],
     5239 => [
-        'definition' => '合唱団・聖歌隊',
+        'definition' => '合唱団',
         'example_translation' => '学校の合唱団は、卒業式で美しく歌いました。',
     ],
     5240 => [
@@ -964,7 +964,7 @@ return [
         'example_translation' => '彼女の楽観主義のおかげで、チームはその困難なプロジェクトの間も希望を持ち続けることができました。',
     ],
     5241 => [
-        'definition' => 'にきび・吹き出物',
+        'definition' => 'にきび',
         'example_translation' => '学校のコンサートの前に、おでこに小さなにきびができました。',
     ],
     5242 => [
@@ -972,7 +972,7 @@ return [
         'example_translation' => 'ダイバーたちは、澄んだ海の下で育つ色とりどりのサンゴを見ました。',
     ],
     5243 => [
-        'definition' => '応接室・居間',
+        'definition' => '応接室',
         'example_translation' => '夕食後、客たちは応接室に集まって話し合いました。',
     ],
     5244 => [
@@ -984,7 +984,7 @@ return [
         'example_translation' => 'ワシは高い木の枝から自分の獲物を見張っていました。',
     ],
     5246 => [
-        'definition' => '局・部局',
+        'definition' => '局',
         'example_translation' => '地元の保健局が、新しいワクチンに関する情報を提供しました。',
     ],
     5247 => [
@@ -1000,7 +1000,7 @@ return [
         'example_translation' => 'その本は、一人の共産主義者がどのように労働者運動を率いたかを描いています。',
     ],
     5250 => [
-        'definition' => '付き添う・護衛する',
+        'definition' => '付き添う',
         'example_translation' => '警察官が制限区域を通る間、訪問者に付き添います。',
     ],
     5251 => [
@@ -1008,11 +1008,11 @@ return [
         'example_translation' => '彼はハムをはさむ前に、サンドイッチにマスタードを塗りました。',
     ],
     5252 => [
-        'definition' => '違い・区別',
+        'definition' => '違い',
         'example_translation' => '事実を聞くことと、それを理解することの間には重要な違いがあります。',
     ],
     5253 => [
-        'definition' => '事前に・あらかじめ',
+        'definition' => '事前に',
         'example_translation' => '会議に出席できない場合は、事前にお知らせください。',
     ],
     5254 => [
@@ -1020,7 +1020,7 @@ return [
         'example_translation' => '先生は理科のプロジェクトについて、わかりやすい指示をくれました。',
     ],
     5255 => [
-        'definition' => '悼む・哀悼する',
+        'definition' => '悼む',
         'example_translation' => '家族が集まり、愛する祖母の死を悼みました。',
     ],
     5256 => [
@@ -1048,7 +1048,7 @@ return [
         'example_translation' => 'その島は東経120度に位置しています。',
     ],
     5262 => [
-        'definition' => '縁（ふち）',
+        'definition' => '縁',
         'example_translation' => '池の縁は薄い氷に覆われていました。',
     ],
     5263 => [
@@ -1080,7 +1080,7 @@ return [
         'example_translation' => '端がきつね色になったら、パンケーキをひっくり返してください。',
     ],
     5270 => [
-        'definition' => '見て回る・閲覧する',
+        'definition' => '見て回る',
         'example_translation' => '私は本を選ぶ前に、本棚を見て回るのが好きです。',
     ],
     5271 => [
@@ -1104,7 +1104,7 @@ return [
         'example_translation' => '1頭のアリゲーターが沼の端の近くで休んでいました。',
     ],
     5276 => [
-        'definition' => '箔・ホイル',
+        'definition' => 'ホイル',
         'example_translation' => 'ベイクドポテトを温かく保つために、アルミホイルで包んでください。',
     ],
     5277 => [
@@ -1128,7 +1128,7 @@ return [
         'example_translation' => '機械が正しく作動するためには、この2本の電線を並列に接続しなければなりません。',
     ],
     5282 => [
-        'definition' => '否認・否定',
+        'definition' => '否認',
         'example_translation' => '彼の容疑の否認は、捜査官たちを納得させられませんでした。',
     ],
     5283 => [
@@ -1144,7 +1144,7 @@ return [
         'example_translation' => '店員は顧客に書類の入った小包を郵送しました。',
     ],
     5286 => [
-        'definition' => '敬意・賛辞',
+        'definition' => '敬意',
         'example_translation' => 'その式典は、命を落とした消防士たちに敬意を表すために開かれました。',
     ],
     5287 => [
@@ -1156,7 +1156,7 @@ return [
         'example_translation' => 'その巨大な滝は、訪れた人々を畏敬の念で満たしました。',
     ],
     5289 => [
-        'definition' => '学校・学院',
+        'definition' => '学校',
         'example_translation' => '警察学校を卒業した後、彼は市警察に入りました。',
     ],
     5290 => [
@@ -1176,7 +1176,7 @@ return [
         'example_translation' => 'その広告主は、ウェブサイトのトップページにカラフルなバナー広告を掲載しました。',
     ],
     5294 => [
-        'definition' => '沼・湿地',
+        'definition' => '沼',
         'example_translation' => 'ハイカーたちは狭い木の道を使って、慎重に沼地を渡りました。',
     ],
     5295 => [
@@ -1196,7 +1196,7 @@ return [
         'example_translation' => 'その鳥は檻から逃げるとき、素早く羽ばたきました。',
     ],
     5299 => [
-        'definition' => '溶け合う・融合する',
+        'definition' => '溶け合う',
         'example_translation' => 'その2つの金属片は、高温に加熱されると溶け合って一つになりました。',
     ],
     5300 => [
@@ -1216,7 +1216,7 @@ return [
         'example_translation' => '市は、すべての大型店舗でビニール袋の使用を禁止する計画です。',
     ],
     5304 => [
-        'definition' => '木材・製材',
+        'definition' => '木材',
         'example_translation' => '建設作業員たちは、雨に濡れないよう木材を屋根の下に保管しました。',
     ],
     5305 => [
@@ -1224,7 +1224,7 @@ return [
         'example_translation' => 'その作家は、静かな山の湖を描写するのに詩的な言葉を使いました。',
     ],
     5306 => [
-        'definition' => '訴える・頼る',
+        'definition' => '訴える',
         'example_translation' => '交渉が決裂したため、労働者たちはストライキに訴えました。',
     ],
     5307 => [
@@ -1232,11 +1232,11 @@ return [
         'example_translation' => 'ホッキョクグマは、極寒の北極の気候で生き延びるために特別な適応をしています。',
     ],
     5308 => [
-        'definition' => '宴会・祝宴',
+        'definition' => '宴会',
         'example_translation' => '大学は卒業生たちの功績を祝うために宴会を開きました。',
     ],
     5309 => [
-        'definition' => '所持品・持ち物',
+        'definition' => '所持品',
         'example_translation' => '電車に乗っている間は、所持品を手元から離さないでください。',
     ],
     5310 => [
@@ -1248,7 +1248,7 @@ return [
         'example_translation' => 'その農家は上質な絹を生産するためにカイコを育てています。',
     ],
     5312 => [
-        'definition' => '居酒屋・酒場',
+        'definition' => '居酒屋',
         'example_translation' => '旅人たちは夕食と温かい飲み物を求めて、小さな居酒屋に立ち寄りました。',
     ],
     5313 => [
@@ -1260,7 +1260,7 @@ return [
         'example_translation' => '彼女はパン屋で、リンゴがたっぷり入った温かいペストリーを買いました。',
     ],
     5315 => [
-        'definition' => '山賊・強盗',
+        'definition' => '山賊',
         'example_translation' => 'その山賊は通りかかった隊商を襲った後、森の中に隠れました。',
     ],
     5316 => [
@@ -1284,7 +1284,7 @@ return [
         'example_translation' => '七面鳥は農夫が近づいてくるのを見ると、大声でゴロゴロと鳴き始めました。',
     ],
     5321 => [
-        'definition' => '社交的な・外向的な',
+        'definition' => '社交的な',
         'example_translation' => 'ミアは社交的で、パーティーで新しい人に会うのが好きです。',
     ],
     5322 => [
@@ -1300,15 +1300,15 @@ return [
         'example_translation' => 'コーチは徐々に選手たちを早朝の練習に慣れさせました。',
     ],
     5325 => [
-        'definition' => '勧める・推薦する',
+        'definition' => '勧める',
         'example_translation' => '環境問題に関心のあるすべての人に、この本を強くお勧めします。',
     ],
     5326 => [
-        'definition' => '連盟・リーグ',
+        'definition' => 'リーグ',
         'example_translation' => 'それらのチームは、定期的な試合を組み、用具を共有するためにリーグを結成しました。',
     ],
     5327 => [
-        'definition' => '証明書・修了証',
+        'definition' => '修了証',
         'example_translation' => 'レナは応急処置の講習を修了した後、修了証を受け取りました。',
     ],
     5328 => [
@@ -1324,7 +1324,7 @@ return [
         'example_translation' => 'その博物館は、地元の芸術家による著名な絵画のコレクションで知られています。',
     ],
     5331 => [
-        'definition' => '宣誓・誓い',
+        'definition' => '宣誓',
         'example_translation' => '新任の裁判官は、公正に法に仕えるという宣誓を行いました。',
     ],
     5332 => [
@@ -1348,11 +1348,11 @@ return [
         'example_translation' => '祭りの間、色鮮やかな行列がゆっくりと町を練り歩きました。',
     ],
     5337 => [
-        'definition' => '研ぐ・削る',
+        'definition' => '削る',
         'example_translation' => '絵を描き始める前に、この鉛筆を削ってください。',
     ],
     5338 => [
-        'definition' => '退ける・防ぐ',
+        'definition' => '防ぐ',
         'example_translation' => 'その柵は、牛の群れが菜園に近づかないように防ぐのに役立ちました。',
     ],
     5339 => [
@@ -1424,7 +1424,7 @@ return [
         'example_translation' => '彼女の新しい髪型は、彼女をより自信に満ちた印象に見せます。',
     ],
     5356 => [
-        'definition' => '敬意・尊敬',
+        'definition' => '尊敬',
         'example_translation' => 'その科学者は同僚たちから高く尊敬されています。',
     ],
     5357 => [
@@ -1456,7 +1456,7 @@ return [
         'example_translation' => 'ミアは学校のパーティーのためにおしゃれなジャケットを買いました。',
     ],
     5364 => [
-        'definition' => '思いやり・同情',
+        'definition' => '思いやり',
         'example_translation' => 'その看護師は、すべての患者に思いやりをもって接しました。',
     ],
     5365 => [
@@ -1468,7 +1468,7 @@ return [
         'example_translation' => '王はその裏切り者を国外へ追放することを決めました。',
     ],
     5367 => [
-        'definition' => '上回る・凌ぐ',
+        'definition' => '上回る',
         'example_translation' => 'その新しいレストランは、より良いサービスで競合店を上回ることを目指しています。',
     ],
     5368 => [
@@ -1488,7 +1488,7 @@ return [
         'example_translation' => 'その勇敢な戦士は、村を危険から守りました。',
     ],
     5372 => [
-        'definition' => 'くるむ・押し込む',
+        'definition' => 'くるむ',
         'example_translation' => '部屋を出る前に、子どもの周りに毛布をしっかりと掛けてあげてください。',
     ],
     5373 => [
@@ -1540,7 +1540,7 @@ return [
         'example_translation' => '彼女はさっぱりとしたレモンドレッシングのサラダを注文しました。',
     ],
     5385 => [
-        'definition' => '横断幕・旗',
+        'definition' => '横断幕',
         'example_translation' => '学校の入り口の上に大きな横断幕が掲げられていました。',
     ],
     5386 => [
@@ -1548,7 +1548,7 @@ return [
         'example_translation' => 'チームは計画を時間通りに実行するため、注意深く作業を進めました。',
     ],
     5387 => [
-        'definition' => 'ターミナル・終着駅',
+        'definition' => 'ターミナル',
         'example_translation' => '私たちは正午直前にバスターミナルに到着しました。',
     ],
     5388 => [
@@ -1568,7 +1568,7 @@ return [
         'example_translation' => 'ひもがほどけないように、棒に巻きつけてください。',
     ],
     5392 => [
-        'definition' => '見込み・展望',
+        'definition' => '展望',
         'example_translation' => '海外留学の展望は、その若い学生をわくわくさせました。',
     ],
     5393 => [
@@ -1576,7 +1576,7 @@ return [
         'example_translation' => '看護師は患者の様子を確認するために病院の病棟を回りました。',
     ],
     5394 => [
-        'definition' => '財産・資産',
+        'definition' => '財産',
         'example_translation' => '複数の言語を話せる彼女の能力は、貴重な財産です。',
     ],
     5395 => [
@@ -1608,7 +1608,7 @@ return [
         'example_translation' => '若い王子は、母親が退位した後に王位を継承する予定です。',
     ],
     5402 => [
-        'definition' => '荒野・未開の地',
+        'definition' => '荒野',
         'example_translation' => '探検家たちは、辺境の荒野を横断するのに3日間を費やしました。',
     ],
     5403 => [
@@ -1620,7 +1620,7 @@ return [
         'example_translation' => 'その怒った犬は、近所のすべての人にとって脅威となりました。',
     ],
     5405 => [
-        'definition' => '悩ませる・苦しめる',
+        'definition' => '悩ませる',
         'example_translation' => 'その難しいパズルで、私は何時間も頭を悩ませました。',
     ],
     5406 => [
@@ -1648,7 +1648,7 @@ return [
         'example_translation' => '歌手が歌い終えると、観客は拍手を始めました。',
     ],
     5412 => [
-        'definition' => 'かすかな・弱い',
+        'definition' => 'かすかな',
         'example_translation' => '小さな窓から、かすかな光が差し込んでいました。',
     ],
     5413 => [
@@ -1656,11 +1656,11 @@ return [
         'example_translation' => '医師は、感染症が彼の腸の一部に影響を及ぼしていると説明しました。',
     ],
     5414 => [
-        'definition' => '翡翠（ひすい）',
+        'definition' => '翡翠',
         'example_translation' => '祖母は彼女に、誕生日の贈り物として翡翠のペンダントをくれました。',
     ],
     5415 => [
-        'definition' => 'シリーズ・連続番組',
+        'definition' => '連続番組',
         'example_translation' => 'そのドキュメンタリーは、現代医学の歴史を紹介する連続番組です。',
     ],
     5416 => [
@@ -1676,7 +1676,7 @@ return [
         'example_translation' => '膝の傷跡は、彼に自転車事故のことを思い出させました。',
     ],
     5419 => [
-        'definition' => 'トーチ・たいまつ',
+        'definition' => 'トーチ',
         'example_translation' => '開会式で、ランナーはトーチを掲げてスタジアムに入場しました。',
     ],
     5420 => [
@@ -1688,7 +1688,7 @@ return [
         'example_translation' => '若い兵士たちは、訓練を始める前に旗に向かって敬礼します。',
     ],
     5422 => [
-        'definition' => '群れ・房',
+        'definition' => '群れ',
         'example_translation' => '色鮮やかな風船の束が、入り口の上に浮かんでいました。',
     ],
     5423 => [
@@ -1700,7 +1700,7 @@ return [
         'example_translation' => '村人たちは、森にいる怪物のような生き物に怯えていました。',
     ],
     5425 => [
-        'definition' => '居残る・留まる',
+        'definition' => '留まる',
         'example_translation' => '博物館が閉館した後も、数人の観光客が門の近くに留まっていました。',
     ],
     5426 => [
@@ -1712,15 +1712,15 @@ return [
         'example_translation' => 'その科学者は、実験中に並外れた発見をしました。',
     ],
     5428 => [
-        'definition' => 'におい・香り',
+        'definition' => '香り',
         'example_translation' => '焼きたてのパンの心地よい香りが、台所いっぱいに広がりました。',
     ],
     5429 => [
-        'definition' => '桟橋・埠頭',
+        'definition' => '桟橋',
         'example_translation' => '漁師たちは日の出前に桟橋に集まりました。',
     ],
     5430 => [
-        'definition' => '枯れる・滅びる',
+        'definition' => '枯れる',
         'example_translation' => '十分な水がなければ、若い植物は夏の暑さで枯れてしまいます。',
     ],
     5431 => [
@@ -1736,7 +1736,7 @@ return [
         'example_translation' => '手術の後、獣医はその犬の腸を注意深く診察しました。',
     ],
     5434 => [
-        'definition' => 'ひどい・悪質な',
+        'definition' => 'ひどい',
         'example_translation' => '登山者たちは下山途中にひどい嵐に見舞われました。',
     ],
     5435 => [
@@ -1752,7 +1752,7 @@ return [
         'example_translation' => 'その夫婦は3人の子どもを育てるために一生懸命働きました。',
     ],
     5438 => [
-        'definition' => 'より糸・一本',
+        'definition' => 'より糸',
         'example_translation' => '何年も使った後、ロープのより糸の1本がほどけていました。',
     ],
     5439 => [
@@ -1812,7 +1812,7 @@ return [
         'example_translation' => '技術者は設計の中に小さな欠陥を見つけました。',
     ],
     5453 => [
-        'definition' => '少女・乙女',
+        'definition' => '少女',
         'example_translation' => 'その若い娘は、花のかごを抱えて村を歩きました。',
     ],
     5454 => [
@@ -1848,11 +1848,11 @@ return [
         'example_translation' => '大会で敗れた後、ミアは何日間も気落ちしていました。',
     ],
     5462 => [
-        'definition' => '苦痛・拷問',
+        'definition' => '苦痛',
         'example_translation' => '検査結果を待つ時間は、まさに拷問のような苦痛でした。',
     ],
     5463 => [
-        'definition' => '役員・管理職',
+        'definition' => '役員',
         'example_translation' => '会社の役員は、長い議論の末にその計画を承認しました。',
     ],
     5464 => [
@@ -1904,7 +1904,7 @@ return [
         'example_translation' => 'その有名人は、小児病院に多額の寄付をしました。',
     ],
     5476 => [
-        'definition' => '省・州',
+        'definition' => '省',
         'example_translation' => '彼女は中国南部の雲南省の小さな村で育ちました。',
     ],
     5477 => [
@@ -1932,7 +1932,7 @@ return [
         'example_translation' => '農夫は生まれたばかりの子牛を優しく抱えて納屋へ連れ戻しました。',
     ],
     5483 => [
-        'definition' => '婚約者（女性）',
+        'definition' => '婚約者',
         'example_translation' => 'ジェイソンは夕食の席で、自分の婚約者を両親に紹介しました。',
     ],
     5484 => [
@@ -1952,7 +1952,7 @@ return [
         'example_translation' => '思春期には、多くの若者がより強い自己認識を育み始めます。',
     ],
     5488 => [
-        'definition' => '憂うつ・陰気さ',
+        'definition' => '憂うつ',
         'example_translation' => '子どもたちが冗談を言い始めると、部屋の暗い雰囲気は晴れました。',
     ],
     5489 => [
@@ -2004,7 +2004,7 @@ return [
         'example_translation' => '最終的な費用は、当初の予算を超えるかもしれません。',
     ],
     5501 => [
-        'definition' => '探求・追求',
+        'definition' => '探求',
         'example_translation' => '知識への生涯にわたる探求が、彼女をいくつかの国での留学へと導きました。',
     ],
     5502 => [
@@ -2032,7 +2032,7 @@ return [
         'example_translation' => 'その2人の音楽家は、学校で出会った後、生涯にわたる友情を築きました。',
     ],
     5508 => [
-        'definition' => '妨害・支障',
+        'definition' => '支障',
         'example_translation' => '大雨による支障のため、試合は延期されました。',
     ],
     5509 => [
@@ -2056,11 +2056,11 @@ return [
         'example_translation' => 'その農場では、人道的な方法で食用動物の屠殺を行っています。',
     ],
     5514 => [
-        'definition' => '遺産・財産',
+        'definition' => '遺産',
         'example_translation' => '弁護士は、その家族が父親の遺産を公平に分割するのを手伝いました。',
     ],
     5515 => [
-        'definition' => '気晴らし・娯楽',
+        'definition' => '気晴らし',
         'example_translation' => '雨の夜に歴史小説を読むことは、彼女の一番の気晴らしです。',
     ],
     5516 => [
@@ -2084,7 +2084,7 @@ return [
         'example_translation' => '同僚が、明日の会議のためのプレゼンテーションを準備するのを手伝ってくれました。',
     ],
     5521 => [
-        'definition' => 'コンパス・羅針盤',
+        'definition' => 'コンパス',
         'example_translation' => '私たちは森を通り抜ける道を見つけるためにコンパスを使いました。',
     ],
     5522 => [
@@ -2128,7 +2128,7 @@ return [
         'example_translation' => '生徒の大きな割合が徒歩で通学しています。',
     ],
     5532 => [
-        'definition' => '通り抜ける・貫通する',
+        'definition' => '通り抜ける',
         'example_translation' => '日光は厚い雲を通り抜けることができませんでした。',
     ],
     5533 => [
@@ -2152,7 +2152,7 @@ return [
         'example_translation' => '私たちは動物園で水を飲んでいるサイを見ました。',
     ],
     5538 => [
-        'definition' => '運転する・操縦する',
+        'definition' => '運転する',
         'example_translation' => '兄は私に車の運転の仕方を教えてくれました。',
     ],
     5539 => [
@@ -2164,7 +2164,7 @@ return [
         'example_translation' => '警察の護衛隊が、混雑した通りを抜けて大使を安全に先導しました。',
     ],
     5541 => [
-        'definition' => '形式・フォーマット',
+        'definition' => '形式',
         'example_translation' => '送信する前に、報告書をPDF形式で保存してください。',
     ],
     5542 => [
@@ -2200,7 +2200,7 @@ return [
         'example_translation' => '私たちは町の古い通りを歩き回って午後を過ごしました。',
     ],
     5550 => [
-        'definition' => 'ドワーフ・小人',
+        'definition' => 'ドワーフ',
         'example_translation' => 'そのファンタジー小説では、勇敢なドワーフが英雄を助けてドラゴンを倒します。',
     ],
     5551 => [
@@ -2212,7 +2212,7 @@ return [
         'example_translation' => '外に一日中放置された後、ごみは悪臭を放ち始めました。',
     ],
     5553 => [
-        'definition' => '悪役・悪党',
+        'definition' => '悪役',
         'example_translation' => 'その映画の悪役は、街全体を破壊しようと企んでいます。',
     ],
     5554 => [
@@ -2240,7 +2240,7 @@ return [
         'example_translation' => 'チェックアウトは正午ですので、鍵はフロントにお渡しください。',
     ],
     5560 => [
-        'definition' => '大規模な・巨大な',
+        'definition' => '大規模な',
         'example_translation' => '大規模な地震が、沿岸沿いの多くの建物に被害を与えました。',
     ],
     5561 => [
@@ -2252,7 +2252,7 @@ return [
         'example_translation' => 'その化学者は、研究室でより安全な薬を開発しました。',
     ],
     5563 => [
-        'definition' => '巻き枠・リール',
+        'definition' => '巻き枠',
         'example_translation' => '祖父は物置に1巻きの釣り糸をしまっていました。',
     ],
     5564 => [
@@ -2272,7 +2272,7 @@ return [
         'example_translation' => '博物館では、中国に由来する古い巻物が展示されていました。',
     ],
     5568 => [
-        'definition' => '欲深さ・強欲',
+        'definition' => '欲深さ',
         'example_translation' => '彼の欲深さのせいで、彼は友人をすべて失ってしまいました。',
     ],
     5569 => [
@@ -2300,7 +2300,7 @@ return [
         'example_translation' => 'あなたの損失のことを聞き、同情いたします。',
     ],
     5575 => [
-        'definition' => 'スープ・だし汁',
+        'definition' => 'スープ',
         'example_translation' => '彼女は病気の弟のために温かいチキンスープを作りました。',
     ],
     5576 => [
@@ -2308,7 +2308,7 @@ return [
         'example_translation' => 'その家の内壁は白く塗られていました。',
     ],
     5577 => [
-        'definition' => '節目・画期的な出来事',
+        'definition' => '節目',
         'example_translation' => '大学を卒業したことは、彼女の人生において重要な節目でした。',
     ],
     5578 => [
@@ -2336,7 +2336,7 @@ return [
         'example_translation' => 'その車は走行距離が多いですが、依然として信頼できます。',
     ],
     5584 => [
-        'definition' => '飲み込む・圧倒する',
+        'definition' => '飲み込む',
         'example_translation' => '突然の洪水は、その小さな町を飲み込む恐れがありました。',
     ],
     5585 => [
@@ -2344,11 +2344,11 @@ return [
         'example_translation' => '壁のペンキを削り落とさないように気をつけてください。',
     ],
     5586 => [
-        'definition' => 'しみ・汚れ',
+        'definition' => 'しみ',
         'example_translation' => '私の白いシャツにコーヒーのしみがついています。',
     ],
     5587 => [
-        'definition' => '鎧（よろい）',
+        'definition' => '鎧',
         'example_translation' => '騎士は戦いに出る前に重い鎧を身につけました。',
     ],
     5588 => [
@@ -2404,7 +2404,7 @@ return [
         'example_translation' => 'その若いボクサーは、全国大会に向けて毎朝トレーニングをしていました。',
     ],
     5601 => [
-        'definition' => '氏族・一族',
+        'definition' => '一族',
         'example_translation' => '一族全員が山村に集まり、結婚式を祝いました。',
     ],
     5602 => [
@@ -2416,11 +2416,11 @@ return [
         'example_translation' => '父は芝刈り機を使って、裏庭の伸びた草を刈りました。',
     ],
     5604 => [
-        'definition' => '文通・通信',
+        'definition' => '文通',
         'example_translation' => '別の国へ引っ越した後も、彼らの文通は何年も続きました。',
     ],
     5605 => [
-        'definition' => '湿地・ぬかるみ',
+        'definition' => '湿地',
         'example_translation' => 'ハイカーたちは泥に沈まないよう、慎重に湿地を横切らなければなりませんでした。',
     ],
     5606 => [
@@ -2428,7 +2428,7 @@ return [
         'example_translation' => 'その馬は開けた野原を全速力で駆け始めました。',
     ],
     5607 => [
-        'definition' => '誓約・約束',
+        'definition' => '誓約',
         'example_translation' => '市長は、市内の公共交通機関を改善することを誓約しました。',
     ],
     5608 => [
@@ -2448,7 +2448,7 @@ return [
         'example_translation' => '先生はそのいじめっ子に話をし、その行動は許されないと説明しました。',
     ],
     5612 => [
-        'definition' => '誘発する・促す',
+        'definition' => '促す',
         'example_translation' => '医師は彼女に睡眠を促す薬を出しました。',
     ],
     5613 => [
@@ -2460,7 +2460,7 @@ return [
         'example_translation' => '港の上空に上がる花火は、息をのむような壮観でした。',
     ],
     5615 => [
-        'definition' => '競技場・アリーナ',
+        'definition' => '競技場',
         'example_translation' => '決勝戦を観戦するため、何千人ものファンが競技場を埋め尽くしました。',
     ],
     5616 => [
@@ -2472,11 +2472,11 @@ return [
         'example_translation' => '小さな鳥が私の窓の外の枝に止まりました。',
     ],
     5618 => [
-        'definition' => 'ふらつく・よろめく',
+        'definition' => 'ふらつく',
         'example_translation' => 'その老人は急な小道を下るにつれて、足元がふらつき始めました。',
     ],
     5619 => [
-        'definition' => 'ジャーナリスト・記者',
+        'definition' => '記者',
         'example_translation' => 'その記者は事故について数人の目撃者に取材しました。',
     ],
     5620 => [
@@ -2492,7 +2492,7 @@ return [
         'example_translation' => 'マネージャーは書面での通知を出す前に、私たちに口頭での警告を与えました。',
     ],
     5623 => [
-        'definition' => '考え・観念',
+        'definition' => '考え',
         'example_translation' => '彼女は、成功は才能だけで決まるという考えを退けました。',
     ],
     5624 => [
@@ -2504,7 +2504,7 @@ return [
         'example_translation' => '砂糖の過剰摂取は健康を損なう恐れがあります。',
     ],
     5626 => [
-        'definition' => '筋・しま',
+        'definition' => '筋',
         'example_translation' => '夕暮れの空に、鮮やかな赤い筋が現れました。',
     ],
     5627 => [
@@ -2540,7 +2540,7 @@ return [
         'example_translation' => '列車の乗務員は、年配の乗客が席を見つけるのを手伝いました。',
     ],
     5635 => [
-        'definition' => '野良の・迷う',
+        'definition' => '野良の',
         'example_translation' => '1匹の野良犬が公園から家まで私たちの後をついてきました。',
     ],
     5636 => [
@@ -2556,7 +2556,7 @@ return [
         'example_translation' => 'ページの中央を横切るように水平線を引いてください。',
     ],
     5639 => [
-        'definition' => '鋳型・型',
+        'definition' => '型',
         'example_translation' => '芸術家は像を作るために、湿った粘土を型に押し込みました。',
     ],
     5640 => [
@@ -2580,7 +2580,7 @@ return [
         'example_translation' => '高い生け垣が、私たちの庭と道路を隔てています。',
     ],
     5645 => [
-        'definition' => '感情・世論',
+        'definition' => '世論',
         'example_translation' => '今年は増税に反対する強い世論があります。',
     ],
     5646 => [
@@ -2604,11 +2604,11 @@ return [
         'example_translation' => 'その建物の外壁は明るい白に塗られていました。',
     ],
     5651 => [
-        'definition' => 'つる・つる植物',
+        'definition' => 'つる',
         'example_translation' => '緑のつるが壁を伝って伸び、窓まで届きました。',
     ],
     5652 => [
-        'definition' => '強める・高める',
+        'definition' => '強める',
         'example_translation' => '突然の静寂が、みんなの恐怖感をいっそう強めました。',
     ],
     5653 => [
@@ -2632,7 +2632,7 @@ return [
         'example_translation' => '彼女は落ち着いているように見えましたが、内心では大きな不安を感じていました。',
     ],
     5658 => [
-        'definition' => '独唱・ソロ',
+        'definition' => '独唱',
         'example_translation' => 'その歌手はコンサートの最後に美しい独唱を披露しました。',
     ],
     5659 => [
@@ -2644,7 +2644,7 @@ return [
         'example_translation' => 'その芸術家は、柔らかな鉛筆の線を使って裸体の人物習作を描きました。',
     ],
     5661 => [
-        'definition' => 'せがむ・くどくど言う',
+        'definition' => 'せがむ',
         'example_translation' => '弟はゲームを貸してほしいとしつこくせがみ続けています。',
     ],
     5662 => [
@@ -2660,11 +2660,11 @@ return [
         'example_translation' => 'そのカップルは誓いを交わし、永遠に支え合うことを約束しました。',
     ],
     5665 => [
-        'definition' => 'サケ・サーモン',
+        'definition' => 'サケ',
         'example_translation' => '私たちは夕食に野菜を添えた焼きサケを食べました。',
     ],
     5666 => [
-        'definition' => '守る・従う',
+        'definition' => '守る',
         'example_translation' => 'すべての来館者は博物館の規則を守らなければなりません。',
     ],
     5667 => [
@@ -2728,7 +2728,7 @@ return [
         'example_translation' => 'マネージャーは、コミュニケーション不足がチームの主な欠点であると認めました。',
     ],
     5682 => [
-        'definition' => '最愛の・愛された',
+        'definition' => '愛された',
         'example_translation' => 'その町は、みんなに愛された先生を称える式典を開きました。',
     ],
     5683 => [
@@ -2748,7 +2748,7 @@ return [
         'example_translation' => 'その小説では一人の登場人物が「ジプシー」と表現されていますが、今日では多くの人がこの言葉を時代遅れで攻撃的だと見なしています。',
     ],
     5687 => [
-        'definition' => '使者・告げる',
+        'definition' => '使者',
         'example_translation' => '使者の到着は、王の知らせが村に届いたことを示しました。',
     ],
     5688 => [
@@ -2764,7 +2764,7 @@ return [
         'example_translation' => 'その頑丈な登山靴は、岩の多い登山道で彼の足を守ってくれました。',
     ],
     5691 => [
-        'definition' => '取り乱した・必死の',
+        'definition' => '必死の',
         'example_translation' => '必死になった両親は、行方不明の子どもをあらゆる場所で探しました。',
     ],
     5692 => [
@@ -2772,7 +2772,7 @@ return [
         'example_translation' => '彼女は寝室の壁に、柔らかく女性らしい色を選びました。',
     ],
     5693 => [
-        'definition' => 'トーナメント・大会',
+        'definition' => '大会',
         'example_translation' => '私たちの学校は春休み中にバスケットボールの大会を開催しました。',
     ],
     5694 => [
@@ -2796,7 +2796,7 @@ return [
         'example_translation' => '私たちはご飯と新鮮な野菜が付いた辛いカレーを注文しました。',
     ],
     5699 => [
-        'definition' => 'からかう・あざける',
+        'definition' => 'からかう',
         'example_translation' => '年上の少年たちは、その新入生のなまりをからかい続けました。',
     ],
     5700 => [
@@ -2808,7 +2808,7 @@ return [
         'example_translation' => '医師は、そのインフルエンザの感染力が非常に強いと警告しました。',
     ],
     5702 => [
-        'definition' => '作業場・工房',
+        'definition' => '工房',
         'example_translation' => '私の叔父は、木製家具を作る工房で働いています。',
     ],
     5703 => [
@@ -2852,15 +2852,15 @@ return [
         'example_translation' => '教授は、その難解な詩について明確な解釈を示しました。',
     ],
     5713 => [
-        'definition' => 'カテゴリー・分類',
+        'definition' => 'カテゴリー',
         'example_translation' => 'この本は歴史小説のカテゴリーに属します。',
     ],
     5714 => [
-        'definition' => 'ひも・ストラップ',
+        'definition' => 'ひも',
         'example_translation' => 'ハイキングの最中に、リュックサックの肩ひもが切れてしまいました。',
     ],
     5715 => [
-        'definition' => '監視員・観察者',
+        'definition' => '監視員',
         'example_translation' => '独立した監視員が、公正に行われるよう選挙を見守りました。',
     ],
     5716 => [
@@ -2880,7 +2880,7 @@ return [
         'example_translation' => 'その家族は大きな牧場で馬と牛を育てています。',
     ],
     5720 => [
-        'definition' => 'パトロールする・巡回する',
+        'definition' => 'パトロールする',
         'example_translation' => '警察は毎晩、その地域をパトロールしています。',
     ],
     5721 => [
@@ -2940,7 +2940,7 @@ return [
         'example_translation' => '彼の虚栄心のせいで、彼は自分の外見を確認することにあまりにも多くの時間を費やしていました。',
     ],
     5735 => [
-        'definition' => '入居者・賃借人',
+        'definition' => '入居者',
         'example_translation' => 'その入居者は、毎月1日に家賃を支払います。',
     ],
     5736 => [
@@ -2952,7 +2952,7 @@ return [
         'example_translation' => '昼食後、子どもたちは中庭で静かに遊びました。',
     ],
     5738 => [
-        'definition' => '出席・出席者数',
+        'definition' => '出席者数',
         'example_translation' => '学校の会議への出席者数は予想よりも多かったです。',
     ],
     5739 => [
@@ -2980,11 +2980,11 @@ return [
         'example_translation' => 'ジャスミンの甘い香りが夕方の空気に満ちていました。',
     ],
     5745 => [
-        'definition' => '委嘱する・任命する',
+        'definition' => '委嘱する',
         'example_translation' => '理事会は彼女にその重要なプロジェクトを率いるよう委嘱しました。',
     ],
     5746 => [
-        'definition' => '私道・車寄せ',
+        'definition' => '私道',
         'example_translation' => '雨が降り始める前に、父は車を私道に停めました。',
     ],
     5747 => [
@@ -3008,7 +3008,7 @@ return [
         'example_translation' => '大きな音に対する彼女の敏感さのせいで、混雑した場所で働くことが難しくなっています。',
     ],
     5752 => [
-        'definition' => '監督者・上司',
+        'definition' => '上司',
         'example_translation' => '新しい仕事で助けが必要な場合は、上司に尋ねてください。',
     ],
     5753 => [
@@ -3020,7 +3020,7 @@ return [
         'example_translation' => '嵐のため、その試合は中止になる可能性が非常に高いです。',
     ],
     5755 => [
-        'definition' => '連（詩の）',
+        'definition' => '連',
         'example_translation' => 'その詩の最後の連は、未来への希望を表現しています。',
     ],
     5756 => [
@@ -3128,7 +3128,7 @@ return [
         'example_translation' => 'その頑丈な木製の橋は、嵐の間も安全なままでした。',
     ],
     5782 => [
-        'definition' => '燃え上がる・火をつける',
+        'definition' => '燃え上がる',
         'example_translation' => 'キャンパーがマッチをすると、乾いた葉はすぐに燃え上がりました。',
     ],
     5783 => [
@@ -3204,11 +3204,11 @@ return [
         'example_translation' => 'その地図は、その地域の地理的特徴を示しています。',
     ],
     5801 => [
-        'definition' => '苦労・骨折り',
+        'definition' => '苦労',
         'example_translation' => '長年の苦労の末、農家たちはついに豊かな作物を収穫しました。',
     ],
     5802 => [
-        'definition' => '不毛の・やせた',
+        'definition' => 'やせた',
         'example_translation' => '余分な水と肥料がなければ、このやせた土壌では何も育ちませんでした。',
     ],
     5803 => [
@@ -3216,7 +3216,7 @@ return [
         'example_translation' => '明かりがつき始めたちょうど夕暮れ時に、私たちは村に到着しました。',
     ],
     5804 => [
-        'definition' => '交わる・歓談する',
+        'definition' => '交わる',
         'example_translation' => 'レセプションでは、招待客たちが互いに交わり、思い出話を語り合いました。',
     ],
     5805 => [
@@ -3224,7 +3224,7 @@ return [
         'example_translation' => 'ハイカーたちは険しい山々を通る狭い道を進みました。',
     ],
     5806 => [
-        'definition' => '苦しめる・悩ませる',
+        'definition' => '悩ませる',
         'example_translation' => 'チームがプロジェクトを終わらせようとしている間、絶え間ない中断が彼らを悩ませました。',
     ],
     5807 => [
@@ -3236,7 +3236,7 @@ return [
         'example_translation' => 'その年配の教授は、今でも驚くほどの活力をもって教えています。',
     ],
     5809 => [
-        'definition' => '少年・未成年者',
+        'definition' => '少年',
         'example_translation' => 'その少年は法律に違反した後、少年裁判所へ送られました。',
     ],
     5810 => [
@@ -3320,7 +3320,7 @@ return [
         'example_translation' => 'ボランティアたちは、ビーチを清掃するために大きな熱意をもって働きました。',
     ],
     5830 => [
-        'definition' => '長い・冗長な',
+        'definition' => '長い',
         'example_translation' => '委員会は、提案された変更について話し合うため、長い会議を開きました。',
     ],
     5831 => [
@@ -3340,11 +3340,11 @@ return [
         'example_translation' => 'マネージャーは、重要な業務を繰り返し完了できなかった怠慢な従業員を解雇しました。',
     ],
     5835 => [
-        'definition' => '正確さ・精密さ',
+        'definition' => '正確さ',
         'example_translation' => '外科医は驚くほどの正確さで、その繊細な手術を行いました。',
     ],
     5836 => [
-        'definition' => '認識・見方',
+        'definition' => '認識',
         'example_translation' => '地元の住民たちと知り合うようになってから、彼女のその地域に対する認識が変わりました。',
     ],
     5837 => [
@@ -3596,7 +3596,7 @@ return [
         'example_translation' => 'レントゲン写真には、彼の手首の小さな骨折が写っていました。',
     ],
     5899 => [
-        'definition' => '架かる・またがる',
+        'definition' => '架かる',
         'example_translation' => 'その石橋は狭い川に架かり、2つの村を結んでいます。',
     ],
     5900 => [
@@ -3604,7 +3604,7 @@ return [
         'example_translation' => '医師は治療法を勧める前に、患者の状態を評価します。',
     ],
     5901 => [
-        'definition' => '熟考・瞑想',
+        'definition' => '熟考',
         'example_translation' => '数分間静かに熟考した後、マヤはその新しい役職を引き受けることにしました。',
     ],
     5902 => [
@@ -3624,11 +3624,11 @@ return [
         'example_translation' => '私の迷信深い叔父は、毎月13日には旅行に出かけるのを拒みます。',
     ],
     5906 => [
-        'definition' => '培う・養う',
+        'definition' => '培う',
         'example_translation' => 'そのプログラムは、若者が将来のキャリアに役立つスキルを培うのを助けます。',
     ],
     5907 => [
-        'definition' => 'パイ生地・皮',
+        'definition' => 'パイ生地',
         'example_translation' => 'パン職人はオーブンに入れる前に、パイ生地にバターを塗りました。',
     ],
     5908 => [
@@ -3656,7 +3656,7 @@ return [
         'example_translation' => 'この小さな付属品のおかげで、カメラを持ち運びやすくなります。',
     ],
     5914 => [
-        'definition' => '機構・仕組み',
+        'definition' => '機構',
         'example_translation' => 'その時計の内部機構は、長年使った後に動かなくなりました。',
     ],
     5915 => [
@@ -3668,7 +3668,7 @@ return [
         'example_translation' => '現代の戦争は、伝統的な武器だけでなく、高度な技術にも頼ることが多いです。',
     ],
     5917 => [
-        'definition' => '吹き口・マウスピース',
+        'definition' => 'マウスピース',
         'example_translation' => 'その音楽家はコンサートの前に、トランペットのマウスピースを交換しました。',
     ],
     5918 => [
@@ -3708,7 +3708,7 @@ return [
         'example_translation' => 'オーストラリアは南半球に位置しています。',
     ],
     5927 => [
-        'definition' => '探査・探検',
+        'definition' => '探査',
         'example_translation' => 'その博物館では、深海の探査に関する展示を行っています。',
     ],
     5928 => [
@@ -3720,11 +3720,11 @@ return [
         'example_translation' => 'その広告は、手頃な価格で贅沢を味わえるという約束で買い物客を誘惑しようとしました。',
     ],
     5930 => [
-        'definition' => '分析官・アナリスト',
+        'definition' => 'アナリスト',
         'example_translation' => 'その金融アナリストは、その会社が着実に成長するだろうと予測しました。',
     ],
     5931 => [
-        'definition' => 'まったく（～ない）',
+        'definition' => 'まったく',
         'example_translation' => 'その古い機械は、動く気配がまったくありませんでした。',
     ],
     5932 => [
@@ -3744,7 +3744,7 @@ return [
         'example_translation' => '電子は負の電荷を帯びています。',
     ],
     5936 => [
-        'definition' => '側面・次元',
+        'definition' => '側面',
         'example_translation' => 'その建築家は、プロジェクトの実用面と芸術面の両方を考慮しました。',
     ],
     5937 => [
@@ -3768,7 +3768,7 @@ return [
         'example_translation' => 'なくなった鍵はソファの下にあるのではないかという予感がしました。',
     ],
     5942 => [
-        'definition' => '立ち入る・邪魔をする',
+        'definition' => '立ち入る',
         'example_translation' => '彼らの私的な会話に割り込まないでください。',
     ],
     5943 => [
@@ -3776,7 +3776,7 @@ return [
         'example_translation' => '私たちに尋ねもせずに、チーム全体を代表して話すような勝手なまねはすべきではありません。',
     ],
     5944 => [
-        'definition' => '始まり・入り口',
+        'definition' => '入り口',
         'example_translation' => 'その会社は、大きな技術的躍進の戸口に立っています。',
     ],
     5945 => [
@@ -3796,11 +3796,11 @@ return [
         'example_translation' => '彼女は赤ちゃんの頬を優しくなでました。',
     ],
     5949 => [
-        'definition' => '出来事・エピソード',
+        'definition' => '出来事',
         'example_translation' => '停電は、それ以外は順調だったイベントにおける不運な出来事でした。',
     ],
     5950 => [
-        'definition' => '気がかり・サスペンス',
+        'definition' => 'サスペンス',
         'example_translation' => '監督は最後の場面まで、観客をハラハラさせ続けました。',
     ],
     5951 => [
@@ -3808,11 +3808,11 @@ return [
         'example_translation' => 'その音楽家のまろやかな声は、静かな夜を温かく穏やかなものに感じさせました。',
     ],
     5952 => [
-        'definition' => '露天商・売り手',
+        'definition' => '露天商',
         'example_translation' => '露店の店主が、駅の近くで作ったばかりの餃子を売っていました。',
     ],
     5953 => [
-        'definition' => '気晴らし・注意散漫',
+        'definition' => '注意散漫',
         'example_translation' => '携帯電話の電源を切ることで、勉強中に気が散るのを防ぐことができました。',
     ],
     5954 => [
@@ -3824,7 +3824,7 @@ return [
         'example_translation' => 'その診療所では、リスクの高い患者に対して無料の結核検査を提供しています。',
     ],
     5956 => [
-        'definition' => '物置・小屋',
+        'definition' => '物置',
         'example_translation' => '農夫は家の裏の小さな物置に道具をしまっていました。',
     ],
     5957 => [
@@ -3832,7 +3832,7 @@ return [
         'example_translation' => '彼の証言と証拠の間には明らかな矛盾があります。',
     ],
     5958 => [
-        'definition' => '処理・処分',
+        'definition' => '処理',
         'example_translation' => '医療廃棄物の安全な処理は、公衆衛生にとって不可欠です。',
     ],
     5959 => [
@@ -3844,7 +3844,7 @@ return [
         'example_translation' => '定期的な運動は、人々が糖尿病をより効果的に管理するのに役立ちます。',
     ],
     5961 => [
-        'definition' => '開示・暴露',
+        'definition' => '開示',
         'example_translation' => '会社の財務記録が開示されたことで、いくつかの違法な支払いが明らかになりました。',
     ],
     5962 => [
@@ -3852,7 +3852,7 @@ return [
         'example_translation' => '宝石商は、金と真珠で作られた精巧なネックレスを展示しました。',
     ],
     5963 => [
-        'definition' => 'キャロル・聖歌',
+        'definition' => 'キャロル',
         'example_translation' => '子どもたちは教会の外で伝統的なクリスマスキャロルを歌いました。',
     ],
     5964 => [
@@ -3860,7 +3860,7 @@ return [
         'example_translation' => 'いくつかの言語への熟達のおかげで、彼女は多くの国の人々とコミュニケーションをとることができました。',
     ],
     5965 => [
-        'definition' => 'こむら返り・けいれん',
+        'definition' => 'こむら返り',
         'example_translation' => '足が突然つってしまい、私は走るのをやめざるを得ませんでした。',
     ],
     5966 => [
@@ -3876,7 +3876,7 @@ return [
         'example_translation' => '研究所は、飲料水が安全であることを証明しなければなりません。',
     ],
     5969 => [
-        'definition' => '装備一式・服装',
+        'definition' => '装備一式',
         'example_translation' => '彼女は丈夫なブーツや防水ジャケットを含む、新しいハイキング用の装備一式を買いました。',
     ],
     5970 => [
@@ -3932,7 +3932,7 @@ return [
         'example_translation' => 'その患者は来週、手術を受ける予定です。',
     ],
     5983 => [
-        'definition' => '標準・規範',
+        'definition' => '標準',
         'example_translation' => 'このクラスでは、敬意を持った議論が標準となっています。',
     ],
     5984 => [
@@ -3956,11 +3956,11 @@ return [
         'example_translation' => 'その宣教師は、アフリカの地域社会を支援するために何年も費やしました。',
     ],
     5989 => [
-        'definition' => '悩みの種・苛立ち',
+        'definition' => '悩みの種',
         'example_translation' => '工事現場からの絶え間ない騒音は、大きな悩みの種でした。',
     ],
     5990 => [
-        'definition' => '奴隷状態・束縛',
+        'definition' => '奴隷状態',
         'example_translation' => 'その小説は、奴隷状態から逃れようと奮闘する家族の物語を描いています。',
     ],
     5991 => [

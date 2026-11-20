@@ -1748,7 +1748,7 @@ return [
         'example_translation' => '我们的客人在七点抵达。',
     ],
     437 => [
-        'definition' => '扔；投',
+        'definition' => '扔',
         'example_translation' => '请把球扔给我。',
     ],
     438 => [
@@ -2424,7 +2424,7 @@ return [
         'example_translation' => '台北是一座繁忙的城市。',
     ],
     606 => [
-        'definition' => '分；美分',
+        'definition' => '美分',
         'example_translation' => '这个玩具五十美分。',
     ],
     607 => [
@@ -3604,7 +3604,7 @@ return [
         'example_translation' => '我叔叔在农场工作。',
     ],
     901 => [
-        'definition' => '在线的；线上的',
+        'definition' => '在线的',
         'example_translation' => '我们的英语课今天在线上进行。',
     ],
     902 => [
@@ -3832,7 +3832,7 @@ return [
         'example_translation' => '公园在我学校附近。',
     ],
     958 => [
-        'definition' => '单词；词',
+        'definition' => '词',
         'example_translation' => '请把这个词写在你的笔记本上。',
     ],
     959 => [

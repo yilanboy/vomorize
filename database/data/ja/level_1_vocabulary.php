@@ -32,7 +32,7 @@ return [
         'example_translation' => '70は60より10多いです。',
     ],
     8 => [
-        'definition' => '出る、去る',
+        'definition' => '出る',
         'example_translation' => '私たちは8時に家を出る必要があります。',
     ],
     9 => [
@@ -52,11 +52,11 @@ return [
         'example_translation' => '壁の時計は3時を指しています。',
     ],
     13 => [
-        'definition' => 'スクーター、原付バイク',
+        'definition' => 'スクーター',
         'example_translation' => '兄はスクーターで学校に通っています。',
     ],
     14 => [
-        'definition' => '鐘、ベル',
+        'definition' => 'ベル',
         'example_translation' => '学校のチャイムは8時に鳴ります。',
     ],
     15 => [
@@ -80,15 +80,15 @@ return [
         'example_translation' => 'この正方形の面積は25平方メートルです。',
     ],
     20 => [
-        'definition' => '味わう、味見する',
+        'definition' => '味見する',
         'example_translation' => 'スープを味見して、もっと塩が必要か教えてください。',
     ],
     21 => [
-        'definition' => '下へ、下に',
+        'definition' => '下へ',
         'example_translation' => 'ボールが丘を下って転がりました。',
     ],
     22 => [
-        'definition' => '奇妙な、変な',
+        'definition' => '奇妙な',
         'example_translation' => 'それは奇妙な音です。',
     ],
     23 => [
@@ -152,7 +152,7 @@ return [
         'example_translation' => '雨の後に虹が現れました。',
     ],
     38 => [
-        'definition' => '暖かい、温かい',
+        'definition' => '温かい',
         'example_translation' => 'そのスープは温かいです。',
     ],
     39 => [
@@ -164,19 +164,19 @@ return [
         'example_translation' => 'もうすぐ寝る時間です。',
     ],
     41 => [
-        'definition' => '嫌う、憎む',
+        'definition' => '嫌う',
         'example_translation' => '私は寒い朝に早起きするのが大嫌いです。',
     ],
     42 => [
-        'definition' => 'キャップ、野球帽',
+        'definition' => 'キャップ',
         'example_translation' => '兄は野球をするとき赤いキャップをかぶります。',
     ],
     43 => [
-        'definition' => 'カード、トランプ',
+        'definition' => 'カード',
         'example_translation' => '夕食の後、私たちはカードゲームをして遊びました。',
     ],
     44 => [
-        'definition' => 'ダンサー、踊り手',
+        'definition' => 'ダンサー',
         'example_translation' => 'そのダンサーはステージの上を美しく舞いました。',
     ],
     45 => [
@@ -200,7 +200,7 @@ return [
         'example_translation' => '迷子の犬についてのその話は本当です。',
     ],
     50 => [
-        'definition' => '男性、男の人',
+        'definition' => '男性',
         'example_translation' => '親切な男性が私の箱を運ぶのを手伝ってくれました。',
     ],
     51 => [
@@ -224,7 +224,7 @@ return [
         'example_translation' => '私たちの町には小さな公園があります。',
     ],
     56 => [
-        'definition' => '汚れた、汚い',
+        'definition' => '汚れた',
         'example_translation' => '外で遊んだのであなたの靴は汚れています。',
     ],
     57 => [
@@ -236,7 +236,7 @@ return [
         'example_translation' => '料理中に指を切ってしまいました。',
     ],
     59 => [
-        'definition' => '戻る、帰る',
+        'definition' => '戻る',
         'example_translation' => '私たちは暗くなる前に家へ戻ります。',
     ],
     60 => [
@@ -248,7 +248,7 @@ return [
         'example_translation' => 'あなたが戻ってくるまで、ここで待っています。',
     ],
     62 => [
-        'definition' => '何でも、何か',
+        'definition' => '何でも',
         'example_translation' => '箱の中から好きなものを何でも選んでいいですよ。',
     ],
     63 => [
@@ -388,7 +388,7 @@ return [
         'example_translation' => '私は祖母にカードを送ります。',
     ],
     97 => [
-        'definition' => 'どれ、どちら',
+        'definition' => 'どれ',
         'example_translation' => 'あなたの好きな色はどれですか？',
     ],
     98 => [
@@ -404,15 +404,15 @@ return [
         'example_translation' => 'この絵を見てください。',
     ],
     101 => [
-        'definition' => '解雇する、クビにする',
+        'definition' => '解雇する',
         'example_translation' => 'マネージャーは遅刻が多すぎたため、トムを解雇しました。',
     ],
     102 => [
-        'definition' => '考え、アイデア',
+        'definition' => 'アイデア',
         'example_translation' => 'クラスのプロジェクトについて良いアイデアがあります。',
     ],
     103 => [
-        'definition' => 'まだ、それでも',
+        'definition' => 'それでも',
         'example_translation' => '雨が降っていますが、それでも私たちは外に出ます。',
     ],
     104 => [
@@ -420,7 +420,7 @@ return [
         'example_translation' => '私は図書館から面白い本を借りました。',
     ],
     105 => [
-        'definition' => '大きい、うるさい',
+        'definition' => '大きい',
         'example_translation' => '音楽の音量が大きすぎます。',
     ],
     106 => [
@@ -428,7 +428,7 @@ return [
         'example_translation' => '私たちは夕日の美しさを楽しみました。',
     ],
     107 => [
-        'definition' => '牛、雌牛',
+        'definition' => '牛',
         'example_translation' => '牛が野原で草を食べています。',
     ],
     108 => [
@@ -448,7 +448,7 @@ return [
         'example_translation' => '食べすぎておなかが痛いです。',
     ],
     112 => [
-        'definition' => 'あなた、君',
+        'definition' => 'あなた',
         'example_translation' => 'あなたは私の一番の友達です。',
     ],
     113 => [
@@ -516,11 +516,11 @@ return [
         'example_translation' => '彼女は一人っ子です。',
     ],
     129 => [
-        'definition' => 'あちこちに、周囲に',
+        'definition' => '周囲に',
         'example_translation' => '家の周りじゅうに花が咲いています。',
     ],
     130 => [
-        'definition' => '騒がしい、うるさい',
+        'definition' => '騒がしい',
         'example_translation' => '教室はとても騒がしいです。',
     ],
     131 => [
@@ -560,7 +560,7 @@ return [
         'example_translation' => '猫がテーブルの下で寝ています。',
     ],
     140 => [
-        'definition' => '自分勝手な、利己的な',
+        'definition' => '自分勝手な',
         'example_translation' => '食べ物を全部独り占めするのは自分勝手です。',
     ],
     141 => [
@@ -596,7 +596,7 @@ return [
         'example_translation' => '私は2日前に彼を見ました。',
     ],
     149 => [
-        'definition' => '捕まえる、受け取る',
+        'definition' => '受け取る',
         'example_translation' => 'ボールを受け取ってください。',
     ],
     150 => [
@@ -620,7 +620,7 @@ return [
         'example_translation' => 'その犬は庭にいます。',
     ],
     155 => [
-        'definition' => '台所、キッチン',
+        'definition' => '台所',
         'example_translation' => '母は台所で料理をしています。',
     ],
     156 => [
@@ -656,7 +656,7 @@ return [
         'example_translation' => 'その赤ちゃんは今や歩くことさえできます。',
     ],
     164 => [
-        'definition' => 'ランプ、電灯',
+        'definition' => 'ランプ',
         'example_translation' => '部屋が暗いのでランプをつけてください。',
     ],
     165 => [
@@ -688,7 +688,7 @@ return [
         'example_translation' => '私たちは水曜日に音楽の授業があります。',
     ],
     172 => [
-        'definition' => '場面、シーン',
+        'definition' => '場面',
         'example_translation' => '映画のビーチの場面はとても美しかったです。',
     ],
     173 => [
@@ -700,7 +700,7 @@ return [
         'example_translation' => '葉っぱの上に小さな虫がいます。',
     ],
     175 => [
-        'definition' => '髪、毛',
+        'definition' => '髪',
         'example_translation' => '姉は長い黒髪をしています。',
     ],
     176 => [
@@ -716,11 +716,11 @@ return [
         'example_translation' => 'その子は自分のベッドで寝ています。',
     ],
     179 => [
-        'definition' => 'サイズ、大きさ',
+        'definition' => 'サイズ',
         'example_translation' => '何サイズの靴を履いていますか？',
     ],
     180 => [
-        'definition' => '笑顔、微笑み',
+        'definition' => '笑顔',
         'example_translation' => 'その小さな女の子は私にやさしい笑顔を向けました。',
     ],
     181 => [
@@ -748,7 +748,7 @@ return [
         'example_translation' => '父は新しいカメラを持っています。',
     ],
     187 => [
-        'definition' => 'ほかに、そのほか',
+        'definition' => 'ほかに',
         'example_translation' => 'ほかに何が欲しいですか？',
     ],
     188 => [
@@ -760,7 +760,7 @@ return [
         'example_translation' => '16は偶数です。',
     ],
     190 => [
-        'definition' => '祖父、おじいさん',
+        'definition' => '祖父',
         'example_translation' => '私の祖父は私にお話をしてくれます。',
     ],
     191 => [
@@ -772,7 +772,7 @@ return [
         'example_translation' => '彼女は毎朝リンゴを1個食べます。',
     ],
     193 => [
-        'definition' => '様、先生（男性への敬称）',
+        'definition' => '先生',
         'example_translation' => 'はい、承知いたしました。',
     ],
     194 => [
@@ -800,7 +800,7 @@ return [
         'example_translation' => '良い成績を取りたいです。',
     ],
     200 => [
-        'definition' => 'すでに、もう',
+        'definition' => 'すでに',
         'example_translation' => '彼女はすでに宿題を終えました。',
     ],
     201 => [
@@ -820,7 +820,7 @@ return [
         'example_translation' => '私は友達から手紙をもらいました。',
     ],
     205 => [
-        'definition' => 'ボート、小舟',
+        'definition' => 'ボート',
         'example_translation' => '私たちは小さなボートで湖を渡りました。',
     ],
     206 => [
@@ -836,7 +836,7 @@ return [
         'example_translation' => 'ここにまっすぐな線を引いてください。',
     ],
     209 => [
-        'definition' => 'においをかぐ、～のにおいがする',
+        'definition' => '～のにおいがする',
         'example_translation' => '焼きたてのパンのにおいがします。',
     ],
     210 => [
@@ -848,7 +848,7 @@ return [
         'example_translation' => '水を少し飲んでください。',
     ],
     212 => [
-        'definition' => '全体の、丸ごとの',
+        'definition' => '丸ごとの',
         'example_translation' => '彼はリンゴを丸ごと1個食べました。',
     ],
     213 => [
@@ -864,7 +864,7 @@ return [
         'example_translation' => '私たちは次に何をするか決めなければなりません。',
     ],
     216 => [
-        'definition' => 'または、それとも',
+        'definition' => 'それとも',
         'example_translation' => 'お茶と牛乳のどちらがいいですか？',
     ],
     217 => [
@@ -884,7 +884,7 @@ return [
         'example_translation' => '太陽は西に沈みます。',
     ],
     221 => [
-        'definition' => '生放送の、ライブの',
+        'definition' => '生放送の',
         'example_translation' => '私たちはテレビで生放送の番組を見ました。',
     ],
     222 => [
@@ -900,7 +900,7 @@ return [
         'example_translation' => 'ここに来た理由は何ですか？',
     ],
     225 => [
-        'definition' => '授業、課',
+        'definition' => '授業',
         'example_translation' => '今日の英語の授業は動物についてです。',
     ],
     226 => [
@@ -916,7 +916,7 @@ return [
         'example_translation' => '今日は晴れです。',
     ],
     229 => [
-        'definition' => 'よく、しばしば',
+        'definition' => 'よく',
         'example_translation' => '私は放課後によくサッカーをします。',
     ],
     230 => [
@@ -940,7 +940,7 @@ return [
         'example_translation' => '母はホットラテを注文しました。',
     ],
     235 => [
-        'definition' => 'それぞれの、各',
+        'definition' => 'それぞれの',
         'example_translation' => 'それぞれの生徒が本を持っています。',
     ],
     236 => [
@@ -956,7 +956,7 @@ return [
         'example_translation' => 'ボールは2つのいすの間にあります。',
     ],
     239 => [
-        'definition' => '明確な、わかりやすい',
+        'definition' => 'わかりやすい',
         'example_translation' => 'その説明はわかりやすく、従いやすいです。',
     ],
     240 => [
@@ -996,7 +996,7 @@ return [
         'example_translation' => 'みんなに行き渡るだけの十分な食べ物があります。',
     ],
     249 => [
-        'definition' => 'だから、それで',
+        'definition' => 'だから',
         'example_translation' => '寒かったので、私はコートを着ました。',
     ],
     250 => [
@@ -1008,7 +1008,7 @@ return [
         'example_translation' => '寒い日には暖かいパーカーを着ます。',
     ],
     252 => [
-        'definition' => '飼い主、主人',
+        'definition' => '飼い主',
         'example_translation' => 'その犬は飼い主のもとへ走っていきました。',
     ],
     253 => [
@@ -1020,7 +1020,7 @@ return [
         'example_translation' => 'その男の子はボールを蹴りました。',
     ],
     255 => [
-        'definition' => '大きい、広い',
+        'definition' => '大きい',
         'example_translation' => '彼らは大きな家に住んでいます。',
     ],
     256 => [
@@ -1032,7 +1032,7 @@ return [
         'example_translation' => 'その道は通行止めでした。したがって、私たちは別の道を通りました。',
     ],
     258 => [
-        'definition' => '着る、身につける',
+        'definition' => '身につける',
         'example_translation' => '晴れた日には帽子をかぶります。',
     ],
     259 => [
@@ -1040,7 +1040,7 @@ return [
         'example_translation' => 'この枕はとても柔らかいです。',
     ],
     260 => [
-        'definition' => '親切な、素敵な',
+        'definition' => '親切な',
         'example_translation' => '彼女はとても親切な人です。',
     ],
     261 => [
@@ -1064,7 +1064,7 @@ return [
         'example_translation' => '私の祖父は60歳です。',
     ],
     266 => [
-        'definition' => '飼育員、管理者',
+        'definition' => '飼育員',
         'example_translation' => '動物園の飼育員は毎朝動物たちにえさをやります。',
     ],
     267 => [
@@ -1072,7 +1072,7 @@ return [
         'example_translation' => '飲み物に氷を少し入れてください。',
     ],
     268 => [
-        'definition' => '費やす、使う',
+        'definition' => '使う',
         'example_translation' => '私は昼食に10ドル使います。',
     ],
     269 => [
@@ -1088,11 +1088,11 @@ return [
         'example_translation' => '「大丈夫ですか？」「はい、大丈夫です。」',
     ],
     272 => [
-        'definition' => '競走、競争する',
+        'definition' => '競走',
         'example_translation' => '2人の男の子がゴールラインまで競走します。',
     ],
     273 => [
-        'definition' => '孫（男の子）',
+        'definition' => '孫',
         'example_translation' => '彼女の孫は毎週日曜日に彼女を訪ねます。',
     ],
     274 => [
@@ -1124,7 +1124,7 @@ return [
         'example_translation' => 'その運転手はそこに駐車したため罰金を払わなければなりませんでした。',
     ],
     281 => [
-        'definition' => '簡単な、シンプルな',
+        'definition' => '簡単な',
         'example_translation' => 'これは簡単な質問です。',
     ],
     282 => [
@@ -1164,19 +1164,19 @@ return [
         'example_translation' => '最後の段に気をつけてください。',
     ],
     291 => [
-        'definition' => 'Wi-Fi、無線LAN',
+        'definition' => 'Wi-Fi',
         'example_translation' => 'そのホテルには無料のWi-Fiがあります。',
     ],
     292 => [
-        'definition' => '手伝う、助ける',
+        'definition' => '手伝う',
         'example_translation' => 'この箱を運ぶのを手伝ってもらえますか？',
     ],
     293 => [
-        'definition' => '端、縁',
+        'definition' => '端',
         'example_translation' => 'テーブルの端に座らないでください。',
     ],
     294 => [
-        'definition' => '指導者、長',
+        'definition' => '指導者',
         'example_translation' => '指導者は人々を安全な場所へ導きました。',
     ],
     295 => [
@@ -1192,7 +1192,7 @@ return [
         'example_translation' => 'その作家は面白い物語を書きます。',
     ],
     298 => [
-        'definition' => 'キャンディー、お菓子',
+        'definition' => 'キャンディー',
         'example_translation' => 'その男の子はお店でキャンディーを買いました。',
     ],
     299 => [
@@ -1208,7 +1208,7 @@ return [
         'example_translation' => 'ゾウは大きな動物です。',
     ],
     302 => [
-        'definition' => '～のそばに、～の横に',
+        'definition' => '～の横に',
         'example_translation' => '犬が私の横に座っています。',
     ],
     303 => [
@@ -1216,11 +1216,11 @@ return [
         'example_translation' => 'その男の子はドアの方へ歩いています。',
     ],
     304 => [
-        'definition' => 'カカオ、ココア',
+        'definition' => 'カカオ',
         'example_translation' => 'カカオはチョコレートを作るのに使われます。',
     ],
     305 => [
-        'definition' => '雄鶏（おんどり）',
+        'definition' => '雄鶏',
         'example_translation' => 'その雄鶏は毎朝私たちを起こします。',
     ],
     306 => [
@@ -1228,7 +1228,7 @@ return [
         'example_translation' => 'スープに塩を少し加えてください。',
     ],
     307 => [
-        'definition' => 'たくさんの、多くの',
+        'definition' => '多くの',
         'example_translation' => '私はあまり時間がありません。',
     ],
     308 => [
@@ -1256,19 +1256,19 @@ return [
         'example_translation' => 'その猫は自分の前足をなめています。',
     ],
     314 => [
-        'definition' => '恐れ、恐怖',
+        'definition' => '恐れ',
         'example_translation' => 'その小さな男の子は犬を怖がっています。',
     ],
     315 => [
-        'definition' => 'ビーチ、砂浜',
+        'definition' => 'ビーチ',
         'example_translation' => '私たちは一日中ビーチで遊びました。',
     ],
     316 => [
-        'definition' => '閉める、閉じる',
+        'definition' => '閉める',
         'example_translation' => '窓を閉めてください。',
     ],
     317 => [
-        'definition' => 'いくつかの、何人かの',
+        'definition' => '何人かの',
         'example_translation' => '何人かの生徒が本を読んでいます。',
     ],
     318 => [
@@ -1276,11 +1276,11 @@ return [
         'example_translation' => '私たちは映画館でポップコーンを食べました。',
     ],
     319 => [
-        'definition' => 'しっぽ、尾',
+        'definition' => 'しっぽ',
         'example_translation' => 'その犬は長いしっぽを持っています。',
     ],
     320 => [
-        'definition' => 'ゲーム、試合',
+        'definition' => 'ゲーム',
         'example_translation' => '夕食のあとにゲームをしましょう。',
     ],
     321 => [
@@ -1304,27 +1304,27 @@ return [
         'example_translation' => 'その映画はかなり面白いです。',
     ],
     326 => [
-        'definition' => '家、自宅',
+        'definition' => '家',
         'example_translation' => '私の家は学校の近くにあります。',
     ],
     327 => [
-        'definition' => '散髪、ヘアカット',
+        'definition' => '散髪',
         'example_translation' => '私は昨日新しい髪型にしました。',
     ],
     328 => [
-        'definition' => 'プレイヤー、選手',
+        'definition' => 'プレイヤー',
         'example_translation' => 'そのプレイヤーはそのゲームがとても上手です。',
     ],
     329 => [
-        'definition' => '痛める、けがをする',
+        'definition' => 'けがをする',
         'example_translation' => '転んだときに膝をけがしました。',
     ],
     330 => [
-        'definition' => '船で渡る、航海する',
+        'definition' => '船で渡る',
         'example_translation' => '私たちは日曜日に湖を船で渡ります。',
     ],
     331 => [
-        'definition' => '前方に、先に',
+        'definition' => '前方に',
         'example_translation' => '私たちの前にバスが1台走っています。',
     ],
     332 => [
@@ -1336,7 +1336,7 @@ return [
         'example_translation' => '風船が空に向かって上がっていきます。',
     ],
     334 => [
-        'definition' => '離れて、去って',
+        'definition' => '離れて',
         'example_translation' => '私がドアを開けると、その鳥は飛び去りました。',
     ],
     335 => [
@@ -1344,7 +1344,7 @@ return [
         'example_translation' => '私たちはクリスマスにツリーを飾ります。',
     ],
     336 => [
-        'definition' => '許す、許可する',
+        'definition' => '許す',
         'example_translation' => '両親は私が外で遊ぶのを許してくれます。',
     ],
     337 => [
@@ -1352,23 +1352,23 @@ return [
         'example_translation' => '私は先生の質問を理解しています。',
     ],
     338 => [
-        'definition' => '事務所、オフィス',
+        'definition' => 'オフィス',
         'example_translation' => '母はオフィスで働いています。',
     ],
     339 => [
-        'definition' => '本当の、真の',
+        'definition' => '本当の',
         'example_translation' => '彼女はいつも私を助けてくれる本当の友達です。',
     ],
     340 => [
-        'definition' => '彼を、彼に',
+        'definition' => '彼に',
         'example_translation' => '私は彼に私の古い本をあげました。',
     ],
     341 => [
-        'definition' => '壊す、割る',
+        'definition' => '割る',
         'example_translation' => 'ガラスを割らないでください。',
     ],
     342 => [
-        'definition' => 'うれしい、幸せな',
+        'definition' => 'うれしい',
         'example_translation' => '友達に会えてうれしいです。',
     ],
     343 => [
@@ -1380,7 +1380,7 @@ return [
         'example_translation' => 'その鳥は空を自由に飛ぶことができます。',
     ],
     345 => [
-        'definition' => '植物、植える',
+        'definition' => '植物',
         'example_translation' => '私たちは庭に小さな植物を植えます。',
     ],
     346 => [
@@ -1400,7 +1400,7 @@ return [
         'example_translation' => '彼女は美しい声をしています。',
     ],
     350 => [
-        'definition' => '見る、鑑賞する',
+        'definition' => '見る',
         'example_translation' => '私たちは金曜日の夜に一緒に映画を見ます。',
     ],
     351 => [
@@ -1416,7 +1416,7 @@ return [
         'example_translation' => '私は学校のプロジェクトについて良い考えを思いつきました。',
     ],
     354 => [
-        'definition' => '異なる、違う',
+        'definition' => '違う',
         'example_translation' => 'その2つのカバンは違う色です。',
     ],
     355 => [
@@ -1428,15 +1428,15 @@ return [
         'example_translation' => '彼はきれいな白いシャツを着ています。',
     ],
     357 => [
-        'definition' => 'リスト、一覧表',
+        'definition' => 'リスト',
         'example_translation' => '私は買うもののリストを書きました。',
     ],
     358 => [
-        'definition' => 'メモ、短い手紙',
+        'definition' => 'メモ',
         'example_translation' => '先生にメモを書いてください。',
     ],
     359 => [
-        'definition' => '弱い、衰弱した',
+        'definition' => '弱い',
         'example_translation' => '3日間病気だったあと、体が弱っているように感じました。',
     ],
     360 => [
@@ -1444,11 +1444,11 @@ return [
         'example_translation' => 'その鉄道は町の中を通っています。',
     ],
     361 => [
-        'definition' => '塗る、ペンキを塗る',
+        'definition' => '塗る',
         'example_translation' => '私たちは壁を青く塗ります。',
     ],
     362 => [
-        'definition' => 'お茶、紅茶',
+        'definition' => 'お茶',
         'example_translation' => '母は毎朝お茶を飲みます。',
     ],
     363 => [
@@ -1476,7 +1476,7 @@ return [
         'example_translation' => '私たちは7時に夕食を食べます。',
     ],
     369 => [
-        'definition' => '～である、～になる',
+        'definition' => '～になる',
         'example_translation' => '私は先生になりたいです。',
     ],
     370 => [
@@ -1492,7 +1492,7 @@ return [
         'example_translation' => '彼女は外国語を1つ話すことができます。',
     ],
     373 => [
-        'definition' => '図表、グラフ',
+        'definition' => '図表',
         'example_translation' => 'この表は私たちのクラスの成績を示しています。',
     ],
     374 => [
@@ -1512,7 +1512,7 @@ return [
         'example_translation' => '今日の日付は何日ですか？',
     ],
     378 => [
-        'definition' => '握る、持つ',
+        'definition' => '握る',
         'example_translation' => '私の手を握ってください。',
     ],
     379 => [
@@ -1520,7 +1520,7 @@ return [
         'example_translation' => '私は朝ごはんにサツマイモを1本食べます。',
     ],
     380 => [
-        'definition' => 'ドア、扉',
+        'definition' => 'ドア',
         'example_translation' => 'ドアを閉めてください。',
     ],
     381 => [
@@ -1540,7 +1540,7 @@ return [
         'example_translation' => '彼女は手を振って「さようなら！」と言いました。',
     ],
     385 => [
-        'definition' => '肌、皮膚',
+        'definition' => '肌',
         'example_translation' => '肌を守るために日焼け止めを使ってください。',
     ],
     386 => [
@@ -1612,7 +1612,7 @@ return [
         'example_translation' => 'その小さな犬はとてもかわいいです。',
     ],
     403 => [
-        'definition' => '物音、騒音',
+        'definition' => '物音',
         'example_translation' => '外の物音で目が覚めました。',
     ],
     404 => [
@@ -1632,7 +1632,7 @@ return [
         'example_translation' => 'どちらの色を選んでもよいです。',
     ],
     408 => [
-        'definition' => '炭酸飲料、ソーダ',
+        'definition' => 'ソーダ',
         'example_translation' => '弟は昼食と一緒にソーダを飲みます。',
     ],
     409 => [
@@ -1640,19 +1640,19 @@ return [
         'example_translation' => '箱の外側は赤いです。',
     ],
     410 => [
-        'definition' => '導く、案内する',
+        'definition' => '案内する',
         'example_translation' => 'この道は私たちを公園へ案内してくれます。',
     ],
     411 => [
-        'definition' => '叫ぶ、大声を出す',
+        'definition' => '大声を出す',
         'example_translation' => '図書館で大声を出さないでください。',
     ],
     412 => [
-        'definition' => '親、保護者',
+        'definition' => '保護者',
         'example_translation' => '一人の保護者が学校の面談に来ました。',
     ],
     413 => [
-        'definition' => '庭、庭園',
+        'definition' => '庭',
         'example_translation' => '庭にはたくさんの花が咲いています。',
     ],
     414 => [
@@ -1660,7 +1660,7 @@ return [
         'example_translation' => '子どもたちは放課後にバスケットボールをします。',
     ],
     415 => [
-        'definition' => '前方、先頭',
+        'definition' => '先頭',
         'example_translation' => '列の先頭でお待ちください。',
     ],
     416 => [
@@ -1684,7 +1684,7 @@ return [
         'example_translation' => 'アリがテーブルの上を歩いています。',
     ],
     421 => [
-        'definition' => 'とても、非常に',
+        'definition' => 'とても',
         'example_translation' => '私は今日とても幸せです。',
     ],
     422 => [
@@ -1708,7 +1708,7 @@ return [
         'example_translation' => '私は今夜予定があります。',
     ],
     427 => [
-        'definition' => '幽霊、お化け',
+        'definition' => '幽霊',
         'example_translation' => '子どもたちはその古い家で幽霊を見ました。',
     ],
     428 => [
@@ -1716,7 +1716,7 @@ return [
         'example_translation' => '夕食の前に手を洗ってください。',
     ],
     429 => [
-        'definition' => 'ばかな、おろかな',
+        'definition' => 'ばかな',
         'example_translation' => 'それはばかな間違いでした。',
     ],
     430 => [
@@ -1728,7 +1728,7 @@ return [
         'example_translation' => '図書館は静かです。',
     ],
     432 => [
-        'definition' => '満たす、いっぱいにする',
+        'definition' => 'いっぱいにする',
         'example_translation' => 'コップを水でいっぱいにしてください。',
     ],
     433 => [
@@ -1744,7 +1744,7 @@ return [
         'example_translation' => '学校は9月に始まります。',
     ],
     436 => [
-        'definition' => '客、ゲスト',
+        'definition' => '客',
         'example_translation' => 'お客さんは7時に到着しました。',
     ],
     437 => [
@@ -1760,15 +1760,15 @@ return [
         'example_translation' => '私のためにこの絵を印刷してください。',
     ],
     440 => [
-        'definition' => '男の子、少年',
+        'definition' => '男の子',
         'example_translation' => 'その男の子はボールで遊んでいます。',
     ],
     441 => [
-        'definition' => '不足している、欠く',
+        'definition' => '不足している',
         'example_translation' => '暑い夏には一部の植物は水分が不足します。',
     ],
     442 => [
-        'definition' => '明るい、まぶしい',
+        'definition' => '明るい',
         'example_translation' => '明るい太陽の光で朝早く目が覚めました。',
     ],
     443 => [
@@ -1780,19 +1780,19 @@ return [
         'example_translation' => '1000人の人がそのお祭りに来ました。',
     ],
     445 => [
-        'definition' => '職員、係官',
+        'definition' => '職員',
         'example_translation' => '役所の職員が用紙に記入するのを手伝ってくれました。',
     ],
     446 => [
-        'definition' => '孫（女の子）',
+        'definition' => '孫娘',
         'example_translation' => '私の孫娘は絵本を読むのが好きです。',
     ],
     447 => [
-        'definition' => '入浴、お風呂',
+        'definition' => 'お風呂',
         'example_translation' => '赤ちゃんは温かいお風呂に入っています。',
     ],
     448 => [
-        'definition' => '～さん、～先生（男性）',
+        'definition' => '～先生',
         'example_translation' => 'リー先生は私たちの新しい先生です。',
     ],
     449 => [
@@ -1800,11 +1800,11 @@ return [
         'example_translation' => '私のシャツには11という数字が付いています。',
     ],
     450 => [
-        'definition' => '休日、休暇',
+        'definition' => '休日',
         'example_translation' => '私たちは休日に祖父母を訪ねます。',
     ],
     451 => [
-        'definition' => '運動場、校庭',
+        'definition' => '校庭',
         'example_translation' => '子どもたちが学校の校庭で走っています。',
     ],
     452 => [
@@ -1812,7 +1812,7 @@ return [
         'example_translation' => 'バスの運転手は赤信号で止まりました。',
     ],
     453 => [
-        'definition' => 'あげる、渡す',
+        'definition' => '渡す',
         'example_translation' => 'あなたのノートを私に渡してください。',
     ],
     454 => [
@@ -1820,11 +1820,11 @@ return [
         'example_translation' => '凧が空高く飛んでいます。',
     ],
     455 => [
-        'definition' => '触る、触れる',
+        'definition' => '触る',
         'example_translation' => '手でこの柔らかい毛布に触ってみてください。',
     ],
     456 => [
-        'definition' => '死んだ、枯れた',
+        'definition' => '枯れた',
         'example_translation' => 'その枯れた木には緑の葉がありません。',
     ],
     457 => [
@@ -1832,7 +1832,7 @@ return [
         'example_translation' => '私たちはビーチでとても楽しい時間を過ごしました。',
     ],
     458 => [
-        'definition' => '場合、ケース',
+        'definition' => '場合',
         'example_translation' => 'このような場合は、医者に電話するべきです。',
     ],
     459 => [
@@ -1840,7 +1840,7 @@ return [
         'example_translation' => '一番近いお店はここから遠いです。',
     ],
     460 => [
-        'definition' => '等しい、同じ',
+        'definition' => '同じ',
         'example_translation' => '2つのチームには同じ人数の選手がいます。',
     ],
     461 => [
@@ -1876,7 +1876,7 @@ return [
         'example_translation' => 'この箱はどうやって開けるのですか？',
     ],
     469 => [
-        'definition' => '願う、祈る',
+        'definition' => '願う',
         'example_translation' => '楽しいお誕生日になりますよう願っています。',
     ],
     470 => [
@@ -1900,11 +1900,11 @@ return [
         'example_translation' => '今日はバスが遅れています。',
     ],
     475 => [
-        'definition' => '温める、加熱する',
+        'definition' => '温める',
         'example_translation' => '夕食前にスープを温めてください。',
     ],
     476 => [
-        'definition' => 'なぜなら、～なので',
+        'definition' => '～なので',
         'example_translation' => '病気だったので、家にいました。',
     ],
     477 => [
@@ -1920,7 +1920,7 @@ return [
         'example_translation' => '彼女は昼食にハムサンドイッチを作りました。',
     ],
     480 => [
-        'definition' => 'ミミズ、虫',
+        'definition' => 'ミミズ',
         'example_translation' => 'その鳥は地面でミミズを見つけました。',
     ],
     481 => [
@@ -1960,7 +1960,7 @@ return [
         'example_translation' => '祖母から手紙が届きました。',
     ],
     490 => [
-        'definition' => 'ボウル、お椀',
+        'definition' => 'お椀',
         'example_translation' => '彼女はご飯を茶碗に盛りました。',
     ],
     491 => [
@@ -1980,7 +1980,7 @@ return [
         'example_translation' => '私は毎朝果物を食べます。',
     ],
     495 => [
-        'definition' => '女の子、少女',
+        'definition' => '女の子',
         'example_translation' => 'その女の子は本を読んでいます。',
     ],
     496 => [
@@ -1992,7 +1992,7 @@ return [
         'example_translation' => 'ジョンを除いて全員が来ました。',
     ],
     498 => [
-        'definition' => '電車、列車',
+        'definition' => '電車',
         'example_translation' => '私たちは電車で台北へ行きました。',
     ],
     499 => [
@@ -2004,7 +2004,7 @@ return [
         'example_translation' => 'カラスが木にとまっています。',
     ],
     501 => [
-        'definition' => '～夫人、～先生（既婚女性への敬称）',
+        'definition' => '～先生',
         'example_translation' => 'リー先生は私の先生です。',
     ],
     502 => [
@@ -2012,7 +2012,7 @@ return [
         'example_translation' => 'トムはおもちゃが壊れたので怒っています。',
     ],
     503 => [
-        'definition' => 'どこに、どこで',
+        'definition' => 'どこに',
         'example_translation' => '私の本はどこにありますか？',
     ],
     504 => [
@@ -2020,11 +2020,11 @@ return [
         'example_translation' => 'あのゾウはとても巨大です。',
     ],
     505 => [
-        'definition' => '～さん、～先生（女性への敬称）',
+        'definition' => '～先生',
         'example_translation' => 'チェン先生が新しい先生です。',
     ],
     506 => [
-        'definition' => '岸、浜辺',
+        'definition' => '浜辺',
         'example_translation' => '私たちは浜辺に沿って歩きました。',
     ],
     507 => [
@@ -2040,7 +2040,7 @@ return [
         'example_translation' => '飛行機が空を飛んでいます。',
     ],
     510 => [
-        'definition' => '恐れている、怖がっている',
+        'definition' => '怖がっている',
         'example_translation' => 'その小さな男の子は暗闇を怖がっています。',
     ],
     511 => [
@@ -2068,11 +2068,11 @@ return [
         'example_translation' => '今日は私の誕生日です。',
     ],
     517 => [
-        'definition' => '森、森林',
+        'definition' => '森',
         'example_translation' => '多くの鳥が森の中に住んでいます。',
     ],
     518 => [
-        'definition' => 'すべての、毎～',
+        'definition' => '毎～',
         'example_translation' => '私は毎朝歯を磨きます。',
     ],
     519 => [
@@ -2092,7 +2092,7 @@ return [
         'example_translation' => '父は自動車工場で働いています。',
     ],
     523 => [
-        'definition' => '真ん中の、中央の',
+        'definition' => '真ん中の',
         'example_translation' => '私は真ん中の席に座っています。',
     ],
     524 => [
@@ -2104,7 +2104,7 @@ return [
         'example_translation' => 'この箱の重さはどれくらいですか？',
     ],
     526 => [
-        'definition' => '最初の、1番目の',
+        'definition' => '最初の',
         'example_translation' => '彼女は最初に到着した生徒でした。',
     ],
     527 => [
@@ -2128,7 +2128,7 @@ return [
         'example_translation' => '空に明るい星が見えます。',
     ],
     532 => [
-        'definition' => '彼女を、彼女に',
+        'definition' => '彼女に',
         'example_translation' => '私は彼女に自分の鉛筆をあげました。',
     ],
     533 => [
@@ -2140,7 +2140,7 @@ return [
         'example_translation' => '彼は黄色いシャツを着ています。',
     ],
     535 => [
-        'definition' => 'ロープ、綱',
+        'definition' => 'ロープ',
         'example_translation' => 'その男の子はロープを引きました。',
     ],
     536 => [
@@ -2148,7 +2148,7 @@ return [
         'example_translation' => '馬が野原を走っています。',
     ],
     537 => [
-        'definition' => '生徒、学生',
+        'definition' => '生徒',
         'example_translation' => 'すべての生徒が本を持っています。',
     ],
     538 => [
@@ -2168,15 +2168,15 @@ return [
         'example_translation' => '窓にハエがいます。',
     ],
     542 => [
-        'definition' => '丘、小山',
+        'definition' => '丘',
         'example_translation' => '私たちはその小さな丘を歩いて登りました。',
     ],
     543 => [
-        'definition' => '少しの、少数の',
+        'definition' => '少しの',
         'example_translation' => 'かごの中にリンゴがいくつかあります。',
     ],
     544 => [
-        'definition' => 'とても、すごく',
+        'definition' => 'すごく',
         'example_translation' => 'これはすごく大きなケーキです。',
     ],
     545 => [
@@ -2188,7 +2188,7 @@ return [
         'example_translation' => 'その勇敢な女の子は子犬を助けました。',
     ],
     547 => [
-        'definition' => '物語、話',
+        'definition' => '話',
         'example_translation' => 'おじいちゃんが私たちに面白いお話をしてくれました。',
     ],
     548 => [
@@ -2196,7 +2196,7 @@ return [
         'example_translation' => '今日は肩が痛いです。',
     ],
     549 => [
-        'definition' => '母、お母さん',
+        'definition' => '母',
         'example_translation' => '母は毎朝朝食を作ります。',
     ],
     550 => [
@@ -2224,11 +2224,11 @@ return [
         'example_translation' => '彼女は上手に泳ぐことができます。',
     ],
     556 => [
-        'definition' => '作業員、労働者',
+        'definition' => '作業員',
         'example_translation' => '作業員が道路を修理しています。',
     ],
     557 => [
-        'definition' => '強い、力持ちの',
+        'definition' => '力持ちの',
         'example_translation' => '兄はその箱を持ち上げられるほど力持ちです。',
     ],
     558 => [
@@ -2240,7 +2240,7 @@ return [
         'example_translation' => '私たちは6時に夕食を食べます。',
     ],
     560 => [
-        'definition' => '頂上、てっぺん',
+        'definition' => '頂上',
         'example_translation' => '山の頂上には雪があります。',
     ],
     561 => [
@@ -2256,7 +2256,7 @@ return [
         'example_translation' => 'ボールは箱の中にあります。',
     ],
     564 => [
-        'definition' => '力、パワー',
+        'definition' => '力',
         'example_translation' => 'その力強い馬には大きな力があります。',
     ],
     565 => [
@@ -2268,7 +2268,7 @@ return [
         'example_translation' => 'もし雨が降ったら、私たちは家にいます。',
     ],
     567 => [
-        'definition' => '見る、見える',
+        'definition' => '見える',
         'example_translation' => '木の上に鳥が見えます。',
     ],
     568 => [
@@ -2280,19 +2280,19 @@ return [
         'example_translation' => '子どもたちが川の近くで遊んでいます。',
     ],
     570 => [
-        'definition' => 'そのような、とても～な',
+        'definition' => 'とても～な',
         'example_translation' => '本当にとても素敵な日ですね。',
     ],
     571 => [
-        'definition' => 'かわいい、きれいな',
+        'definition' => 'かわいい',
         'example_translation' => 'その女の子はかわいいワンピースを着ています。',
     ],
     572 => [
-        'definition' => '道具、工具',
+        'definition' => '工具',
         'example_translation' => '父はいすを修理するのに工具を使います。',
     ],
     573 => [
-        'definition' => 'ひとりの、ひとりで',
+        'definition' => 'ひとりで',
         'example_translation' => 'その小さな男の子はひとりで家にいます。',
     ],
     574 => [
@@ -2320,7 +2320,7 @@ return [
         'example_translation' => 'このレモンは酸っぱい味がします。',
     ],
     580 => [
-        'definition' => '土手、川岸',
+        'definition' => '川岸',
         'example_translation' => '私たちは川岸に座りました。',
     ],
     581 => [
@@ -2344,7 +2344,7 @@ return [
         'example_translation' => '父は私たちを空港まで車で送ってくれました。',
     ],
     586 => [
-        'definition' => 'まずい、気持ち悪い',
+        'definition' => 'まずい',
         'example_translation' => 'このスープはまずい味がします。',
     ],
     587 => [
@@ -2356,7 +2356,7 @@ return [
         'example_translation' => '私たちは毎朝犬にえさをやります。',
     ],
     589 => [
-        'definition' => '楽しみ、面白さ',
+        'definition' => '楽しみ',
         'example_translation' => '友達と一緒にゲームをするのは楽しいです。',
     ],
     590 => [
@@ -2368,19 +2368,19 @@ return [
         'example_translation' => 'あなたの答えは正しいです。',
     ],
     592 => [
-        'definition' => '対処する、扱う',
+        'definition' => '対処する',
         'example_translation' => '私はこの問題に対処できます。',
     ],
     593 => [
-        'definition' => 'ナイフ、包丁',
+        'definition' => 'ナイフ',
         'example_translation' => 'リンゴを切るのにナイフを使ってください。',
     ],
     594 => [
-        'definition' => 'もう一つの、別の',
+        'definition' => 'もう一つの',
         'example_translation' => 'もう一杯お水はいかがですか？',
     ],
     595 => [
-        'definition' => '言い当てる、推測する',
+        'definition' => '言い当てる',
         'example_translation' => '私の好きな色を当てられますか？',
     ],
     596 => [
@@ -2388,11 +2388,11 @@ return [
         'example_translation' => '舌をかまないように気をつけてください。',
     ],
     597 => [
-        'definition' => '思う、考える',
+        'definition' => '思う',
         'example_translation' => 'この本は面白いと思います。',
     ],
     598 => [
-        'definition' => 'テイクアウト、持ち帰り',
+        'definition' => 'テイクアウト',
         'example_translation' => '私たちは夕食にテイクアウトを注文しました。',
     ],
     599 => [
@@ -2408,7 +2408,7 @@ return [
         'example_translation' => '私は自分の将来のために英語を勉強しています。',
     ],
     602 => [
-        'definition' => 'きれいな、清潔な',
+        'definition' => 'きれいな',
         'example_translation' => '私の部屋はきれいです。',
     ],
     603 => [
@@ -2420,7 +2420,7 @@ return [
         'example_translation' => 'その男の子はボールを打ちました。',
     ],
     605 => [
-        'definition' => '都市、街',
+        'definition' => '都市',
         'example_translation' => '台北はにぎやかな都市です。',
     ],
     606 => [
@@ -2432,11 +2432,11 @@ return [
         'example_translation' => 'その女の子は今日悲しんでいます。',
     ],
     608 => [
-        'definition' => '1枚、シート',
+        'definition' => '1枚',
         'example_translation' => '紙を1枚ください。',
     ],
     609 => [
-        'definition' => '規則、ルール',
+        'definition' => 'ルール',
         'example_translation' => '最初のルールは親切にすることです。',
     ],
     610 => [
@@ -2444,7 +2444,7 @@ return [
         'example_translation' => 'サルがバナナを食べています。',
     ],
     611 => [
-        'definition' => 'セット、一組',
+        'definition' => 'セット',
         'example_translation' => '私は色鉛筆のセットを買いました。',
     ],
     612 => [
@@ -2460,7 +2460,7 @@ return [
         'example_translation' => 'これは私自身の部屋です。',
     ],
     615 => [
-        'definition' => '贈り物、プレゼント',
+        'definition' => 'プレゼント',
         'example_translation' => '私は妹に誕生日プレゼントをあげました。',
     ],
     616 => [
@@ -2472,11 +2472,11 @@ return [
         'example_translation' => '多くの人々が神に祈ります。',
     ],
     618 => [
-        'definition' => '気持ち、感情',
+        'definition' => '気持ち',
         'example_translation' => '自分の気持ちを分かち合うことは大切です。',
     ],
     619 => [
-        'definition' => '何か、いくらかの',
+        'definition' => '何か',
         'example_translation' => '何か質問はありますか？',
     ],
     620 => [
@@ -2520,7 +2520,7 @@ return [
         'example_translation' => 'このファイルをパソコンに保存してください。',
     ],
     630 => [
-        'definition' => '教える、話す',
+        'definition' => '教える',
         'example_translation' => 'あなたの名前を教えてください。',
     ],
     631 => [
@@ -2536,7 +2536,7 @@ return [
         'example_translation' => 'その学校には100人の生徒がいます。',
     ],
     634 => [
-        'definition' => '心、精神',
+        'definition' => '心',
         'example_translation' => '読書は頭や心を活発に保つのに役立ちます。',
     ],
     635 => [
@@ -2544,11 +2544,11 @@ return [
         'example_translation' => '彼女は私の一番の友達です。',
     ],
     636 => [
-        'definition' => 'とどまる、滞在する',
+        'definition' => 'とどまる',
         'example_translation' => '今日は家にいたいです。',
     ],
     637 => [
-        'definition' => '和らぎ、安らぎ',
+        'definition' => '和らぎ',
         'example_translation' => 'その薬は彼の痛みを和らげました。',
     ],
     638 => [
@@ -2556,7 +2556,7 @@ return [
         'example_translation' => '授業に本を持ってきてください。',
     ],
     639 => [
-        'definition' => '力、勢い',
+        'definition' => '力',
         'example_translation' => 'その風にはドアを動かすだけの力があります。',
     ],
     640 => [
@@ -2592,7 +2592,7 @@ return [
         'example_translation' => '春にはたくさんの花が咲きます。',
     ],
     648 => [
-        'definition' => '明かり、光',
+        'definition' => '明かり',
         'example_translation' => '明かりをつけてください。',
     ],
     649 => [
@@ -2600,7 +2600,7 @@ return [
         'example_translation' => '私たちは学校の近くに車を停めました。',
     ],
     650 => [
-        'definition' => '進路、ルート',
+        'definition' => 'ルート',
         'example_translation' => 'このルートは川に沿って町へ続いています。',
     ],
     651 => [
@@ -2608,7 +2608,7 @@ return [
         'example_translation' => '私たちは金曜日にテストがあります。',
     ],
     652 => [
-        'definition' => 'カップ、コップ',
+        'definition' => 'カップ',
         'example_translation' => '彼女はお茶を1杯飲みました。',
     ],
     653 => [
@@ -2620,7 +2620,7 @@ return [
         'example_translation' => '私は毎日夕方に犬の散歩をします。',
     ],
     655 => [
-        'definition' => '（否定文で）～もまた',
+        'definition' => '～もまた',
         'example_translation' => '私もコーヒーは好きではありません。',
     ],
     656 => [
@@ -2652,7 +2652,7 @@ return [
         'example_translation' => 'そのゾウはとても大きいです。',
     ],
     663 => [
-        'definition' => '農家、農夫',
+        'definition' => '農家',
         'example_translation' => 'その農家は田んぼで米を育てています。',
     ],
     664 => [
@@ -2668,15 +2668,15 @@ return [
         'example_translation' => '手伝ってくれた先生に感謝します。',
     ],
     667 => [
-        'definition' => '海、大洋',
+        'definition' => '海',
         'example_translation' => '海は青くて美しいです。',
     ],
     668 => [
-        'definition' => '父、お父さん',
+        'definition' => '父',
         'example_translation' => '父が私たちのために夕食を作ります。',
     ],
     669 => [
-        'definition' => '私を、私に',
+        'definition' => '私に',
         'example_translation' => 'その本を私にください。',
     ],
     670 => [
@@ -2692,7 +2692,7 @@ return [
         'example_translation' => '明日は英語の試験があります。',
     ],
     673 => [
-        'definition' => '壮大な、立派な',
+        'definition' => '壮大な',
         'example_translation' => '私たちはその街で壮大な宮殿を見ました。',
     ],
     674 => [
@@ -2712,7 +2712,7 @@ return [
         'example_translation' => '夜には星が明るく輝きます。',
     ],
     678 => [
-        'definition' => '位置、場所',
+        'definition' => '位置',
         'example_translation' => 'いすをこの位置に置いてください。',
     ],
     679 => [
@@ -2720,7 +2720,7 @@ return [
         'example_translation' => '彼は風のように速く走ります。',
     ],
     680 => [
-        'definition' => '（ボートを）こぐ',
+        'definition' => 'こぐ',
         'example_translation' => '彼らは湖を渡ってボートをこぎます。',
     ],
     681 => [
@@ -2760,7 +2760,7 @@ return [
         'example_translation' => '私の寝室は上の階にあります。',
     ],
     690 => [
-        'definition' => '重要な、鍵となる',
+        'definition' => '重要な',
         'example_translation' => '良いコミュニケーションはチームワークの重要な要素です。',
     ],
     691 => [
@@ -2776,7 +2776,7 @@ return [
         'example_translation' => '私はたいてい8時間眠ります。',
     ],
     694 => [
-        'definition' => '兄、弟',
+        'definition' => '兄',
         'example_translation' => '私の兄は本を読むのが好きです。',
     ],
     695 => [
@@ -2784,7 +2784,7 @@ return [
         'example_translation' => '熱いフライパンに触らないでください。',
     ],
     696 => [
-        'definition' => '魂、心',
+        'definition' => '心',
         'example_translation' => '音楽は心に安らぎをもたらしてくれます。',
     ],
     697 => [
@@ -2792,7 +2792,7 @@ return [
         'example_translation' => '私は夕食のあとに宿題をします。',
     ],
     698 => [
-        'definition' => 'レポート、報告書',
+        'definition' => 'レポート',
         'example_translation' => '理科のレポートを書き終えました。',
     ],
     699 => [
@@ -2800,7 +2800,7 @@ return [
         'example_translation' => '私の家の近くに小さなお店があります。',
     ],
     700 => [
-        'definition' => '～するつもりだ、～だろう',
+        'definition' => '～するつもりだ',
         'example_translation' => '私たちは明日おばあちゃんを訪ねる予定です。',
     ],
     701 => [
@@ -2816,7 +2816,7 @@ return [
         'example_translation' => 'このテーブルは私には低すぎます。',
     ],
     704 => [
-        'definition' => 'たいていの、ほとんどの',
+        'definition' => 'ほとんどの',
         'example_translation' => 'ほとんどの生徒が音楽を好きです。',
     ],
     705 => [
@@ -2824,15 +2824,15 @@ return [
         'example_translation' => '父は仕事に行くときネクタイを締めます。',
     ],
     706 => [
-        'definition' => '絵、写真',
+        'definition' => '絵',
         'example_translation' => '壁に絵が掛かっています。',
     ],
     707 => [
-        'definition' => '望む、願う',
+        'definition' => '願う',
         'example_translation' => 'よい一日になりますように。',
     ],
     708 => [
-        'definition' => '浴室、お風呂場',
+        'definition' => '浴室',
         'example_translation' => '浴室は寝室の隣にあります。',
     ],
     709 => [
@@ -2848,15 +2848,15 @@ return [
         'example_translation' => '姉は19歳です。',
     ],
     712 => [
-        'definition' => '元気な、健康な',
+        'definition' => '元気な',
         'example_translation' => '祖父は今とても元気です。',
     ],
     713 => [
-        'definition' => '困りごと、トラブル',
+        'definition' => '困りごと',
         'example_translation' => '何か困ったことがあれば教えてください。',
     ],
     714 => [
-        'definition' => '引っ越す、動く',
+        'definition' => '引っ越す',
         'example_translation' => '私たちは来月新しい家に引っ越します。',
     ],
     715 => [
@@ -2864,11 +2864,11 @@ return [
         'example_translation' => 'どちらの子どもも本を持っています。',
     ],
     716 => [
-        'definition' => 'こんにちは、あいさつ',
+        'definition' => 'あいさつ',
         'example_translation' => '彼女は私に親しみを込めてあいさつしてくれました。',
     ],
     717 => [
-        'definition' => '指導する、監督する',
+        'definition' => '指導する',
         'example_translation' => '先生が学校の劇を指導します。',
     ],
     718 => [
@@ -2876,7 +2876,7 @@ return [
         'example_translation' => 'アヒルたちが池で泳いでいます。',
     ],
     719 => [
-        'definition' => 'ショー、発表会',
+        'definition' => 'ショー',
         'example_translation' => '私たちの学校ではタレントショーを開きます。',
     ],
     720 => [
@@ -2908,15 +2908,15 @@ return [
         'example_translation' => 'このケーキは甘い味がします。',
     ],
     727 => [
-        'definition' => '始まる、始める',
+        'definition' => '始まる',
         'example_translation' => '映画は7時に始まります。',
     ],
     728 => [
-        'definition' => '命、生命',
+        'definition' => '生命',
         'example_translation' => '水は生命にとって必要です。',
     ],
     729 => [
-        'definition' => '陸、陸地',
+        'definition' => '陸地',
         'example_translation' => '船は水上から陸地へと移動しました。',
     ],
     730 => [
@@ -2936,11 +2936,11 @@ return [
         'example_translation' => 'これは休み前の最後の授業です。',
     ],
     734 => [
-        'definition' => '1単位、1個',
+        'definition' => '1単位',
         'example_translation' => 'この箱はこのセットの中の1単位です。',
     ],
     735 => [
-        'definition' => 'もしかすると、たぶん',
+        'definition' => 'もしかすると',
         'example_translation' => 'あとで公園に行けるかもしれません。',
     ],
     736 => [
@@ -2948,7 +2948,7 @@ return [
         'example_translation' => '私のカバンはテーブルの下にあります。',
     ],
     737 => [
-        'definition' => '空間、場所',
+        'definition' => '空間',
         'example_translation' => '部屋に十分なスペースがありません。',
     ],
     738 => [
@@ -2964,7 +2964,7 @@ return [
         'example_translation' => '窓の近くの席にお座りください。',
     ],
     741 => [
-        'definition' => '気にかける、大切にする',
+        'definition' => '大切にする',
         'example_translation' => '私は家族を大切に思っています。',
     ],
     742 => [
@@ -2972,7 +2972,7 @@ return [
         'example_translation' => 'その怠け者の猫は一日中寝ています。',
     ],
     743 => [
-        'definition' => '訓練する、しつける',
+        'definition' => 'しつける',
         'example_translation' => '私たちは毎朝その犬をしつけています。',
     ],
     744 => [
@@ -2992,11 +2992,11 @@ return [
         'example_translation' => 'そのホテルは良いサービスを提供しています。',
     ],
     748 => [
-        'definition' => '診察する、調べる',
+        'definition' => '診察する',
         'example_translation' => 'お医者さんが私の耳を診察します。',
     ],
     749 => [
-        'definition' => 'ちょうど、たった今',
+        'definition' => 'たった今',
         'example_translation' => 'たった今家に帰ってきたところです。',
     ],
     750 => [
@@ -3012,11 +3012,11 @@ return [
         'example_translation' => '私たちは新しい先生について話しました。',
     ],
     753 => [
-        'definition' => '眺め、景色',
+        'definition' => '景色',
         'example_translation' => 'この部屋からは美しい海の景色が見えます。',
     ],
     754 => [
-        'definition' => '確かな、決まった',
+        'definition' => '決まった',
         'example_translation' => '会議のために決まった日付が必要です。',
     ],
     755 => [
@@ -3028,11 +3028,11 @@ return [
         'example_translation' => 'ドアを開けるために取っ手を回してください。',
     ],
     757 => [
-        'definition' => 'お父さん、パパ',
+        'definition' => 'お父さん',
         'example_translation' => 'お父さんが私たちに朝ごはんを作ってくれます。',
     ],
     758 => [
-        'definition' => '続く、持つ',
+        'definition' => '持つ',
         'example_translation' => 'これらの電池は長い間持ちます。',
     ],
     759 => [
@@ -3044,7 +3044,7 @@ return [
         'example_translation' => '飲む前にボトルを振ってください。',
     ],
     761 => [
-        'definition' => '機会、チャンス',
+        'definition' => '機会',
         'example_translation' => '放課後にサッカーをする機会があります。',
     ],
     762 => [
@@ -3076,7 +3076,7 @@ return [
         'example_translation' => '走る前に靴ひもを結びます。',
     ],
     769 => [
-        'definition' => '若い、幼い',
+        'definition' => '幼い',
         'example_translation' => 'その幼い男の子は外で遊ぶのが好きです。',
     ],
     770 => [
@@ -3084,7 +3084,7 @@ return [
         'example_translation' => 'ボールを見つけましたが、それは赤いです。',
     ],
     771 => [
-        'definition' => 'かご、バスケット',
+        'definition' => 'かご',
         'example_translation' => '彼女はリンゴをかごに入れました。',
     ],
     772 => [
@@ -3092,7 +3092,7 @@ return [
         'example_translation' => '彼は白いシャツを着ています。',
     ],
     773 => [
-        'definition' => '訪れる、見学する',
+        'definition' => '訪れる',
         'example_translation' => '私たちは日曜日に動物園を訪れます。',
     ],
     774 => [
@@ -3176,7 +3176,7 @@ return [
         'example_translation' => 'ここでお待ちください。',
     ],
     794 => [
-        'definition' => '凧（たこ）',
+        'definition' => '凧',
         'example_translation' => 'その男の子は凧を揚げています。',
     ],
     795 => [
@@ -3200,7 +3200,7 @@ return [
         'example_translation' => '母がアップルパイを作ってくれました。',
     ],
     800 => [
-        'definition' => '属する、～のものである',
+        'definition' => '～のものである',
         'example_translation' => 'これらの本は私のものです。',
     ],
     801 => [
@@ -3212,15 +3212,15 @@ return [
         'example_translation' => 'コーラを1杯いただきたいです。',
     ],
     803 => [
-        'definition' => 'ここに、ここで',
+        'definition' => 'ここに',
         'example_translation' => 'ここに座ってください。',
     ],
     804 => [
-        'definition' => '鋭い、よく切れる',
+        'definition' => 'よく切れる',
         'example_translation' => 'そのよく切れるナイフに気をつけてください。',
     ],
     805 => [
-        'definition' => '～するつもりである、～しよう',
+        'definition' => '～しよう',
         'example_translation' => '私たちは明日公園で会いましょう。',
     ],
     806 => [
@@ -3228,7 +3228,7 @@ return [
         'example_translation' => 'このおもちゃは1ドルです。',
     ],
     807 => [
-        'definition' => '女性、ご婦人',
+        'definition' => 'ご婦人',
         'example_translation' => 'あのご婦人は私の先生です。',
     ],
     808 => [
@@ -3256,7 +3256,7 @@ return [
         'example_translation' => '子どもたちが音楽に合わせて踊っています。',
     ],
     814 => [
-        'definition' => '申し訳ない、ごめんなさい',
+        'definition' => '申し訳ない',
         'example_translation' => '遅れてしまって申し訳ありません。',
     ],
     815 => [
@@ -3272,11 +3272,11 @@ return [
         'example_translation' => 'きれいなお皿をテーブルの上に置いてください。',
     ],
     818 => [
-        'definition' => '聴く、耳を傾ける',
+        'definition' => '聴く',
         'example_translation' => '先生の話をよく聞いてください。',
     ],
     819 => [
-        'definition' => 'スピーチ、演説',
+        'definition' => 'スピーチ',
         'example_translation' => '校長先生は短いスピーチをしました。',
     ],
     820 => [
@@ -3288,7 +3288,7 @@ return [
         'example_translation' => '私は1日に2回歯を磨きます。',
     ],
     822 => [
-        'definition' => 'バンド、帯、リボン',
+        'definition' => 'バンド',
         'example_translation' => '私の帽子についているバンドは青いです。',
     ],
     823 => [
@@ -3300,7 +3300,7 @@ return [
         'example_translation' => '秋になると葉が赤くなります。',
     ],
     825 => [
-        'definition' => 'ほかの、残りの',
+        'definition' => 'ほかの',
         'example_translation' => 'ほかの子どもたちは外で遊んでいます。',
     ],
     826 => [
@@ -3308,7 +3308,7 @@ return [
         'example_translation' => '赤ちゃんはおもちゃに手を伸ばしました。',
     ],
     827 => [
-        'definition' => '棒、バー',
+        'definition' => 'バー',
         'example_translation' => '彼は昼食のあとにチョコレートバーを食べました。',
     ],
     828 => [
@@ -3316,7 +3316,7 @@ return [
         'example_translation' => '私たちは今、行動を起こす必要があります。',
     ],
     829 => [
-        'definition' => '日、一日',
+        'definition' => '日',
         'example_translation' => '私は毎日1冊の本を読みます。',
     ],
     830 => [
@@ -3324,11 +3324,11 @@ return [
         'example_translation' => '子どもたちは授業中に歌います。',
     ],
     831 => [
-        'definition' => '死ぬ、枯れる',
+        'definition' => '枯れる',
         'example_translation' => '一部の花は水がないと枯れてしまいます。',
     ],
     832 => [
-        'definition' => '恋しく思う、寂しく思う',
+        'definition' => '恋しく思う',
         'example_translation' => '家から離れているときは祖父母が恋しくなります。',
     ],
     833 => [
@@ -3344,7 +3344,7 @@ return [
         'example_translation' => '小さな教室にとって、40は大きな数です。',
     ],
     836 => [
-        'definition' => 'その時、当時',
+        'definition' => 'その時',
         'example_translation' => 'その時、私は台北に住んでいました。',
     ],
     837 => [
@@ -3352,7 +3352,7 @@ return [
         'example_translation' => '私の誕生日は12月です。',
     ],
     838 => [
-        'definition' => '1ダース（12個）',
+        'definition' => '1ダース',
         'example_translation' => '彼女は卵を1ダース買いました。',
     ],
     839 => [
@@ -3364,15 +3364,15 @@ return [
         'example_translation' => '7月はとても暑いです。',
     ],
     841 => [
-        'definition' => '住む、暮らす',
+        'definition' => '住む',
         'example_translation' => '私は家族と一緒に小さな家に住んでいます。',
     ],
     842 => [
-        'definition' => '内側、中',
+        'definition' => '中',
         'example_translation' => '箱の中は空っぽです。',
     ],
     843 => [
-        'definition' => '静かな、穏やかな',
+        'definition' => '穏やかな',
         'example_translation' => '早朝の湖はとても穏やかです。',
     ],
     844 => [
@@ -3380,11 +3380,11 @@ return [
         'example_translation' => '昼食代を払う必要があります。',
     ],
     845 => [
-        'definition' => '先、先端',
+        'definition' => '先',
         'example_translation' => 'この鉛筆の先はとても尖っています。',
     ],
     846 => [
-        'definition' => '切符、チケット',
+        'definition' => '切符',
         'example_translation' => '私はバスの切符を買いました。',
     ],
     847 => [
@@ -3396,7 +3396,7 @@ return [
         'example_translation' => '彼女は赤いワンピースを着ています。',
     ],
     849 => [
-        'definition' => '（費用が）かかる',
+        'definition' => 'かかる',
         'example_translation' => 'その本は10ドルします。',
     ],
     850 => [
@@ -3416,7 +3416,7 @@ return [
         'example_translation' => '電車はまもなく駅に到着します。',
     ],
     854 => [
-        'definition' => '試す、やってみる',
+        'definition' => 'やってみる',
         'example_translation' => 'ケーキを作ってみようと思います。',
     ],
     855 => [
@@ -3432,7 +3432,7 @@ return [
         'example_translation' => '郵便物の中にあなた宛ての手紙があります。',
     ],
     858 => [
-        'definition' => '音色、トーン',
+        'definition' => 'トーン',
         'example_translation' => 'その歌手は曲の最後に声のトーンを変えました。',
     ],
     859 => [
@@ -3448,7 +3448,7 @@ return [
         'example_translation' => 'その小さな子羊は母羊の後ろについていっています。',
     ],
     862 => [
-        'definition' => '1切れ、1つ',
+        'definition' => '1切れ',
         'example_translation' => 'ケーキを1切れいただいてもいいですか？',
     ],
     863 => [
@@ -3460,7 +3460,7 @@ return [
         'example_translation' => '私は朝食にバターを塗ったパンを食べるのが好きです。',
     ],
     865 => [
-        'definition' => '～のように見える、思われる',
+        'definition' => '～のように見える',
         'example_translation' => '彼らは今日とても楽しそうに見えます。',
     ],
     866 => [
@@ -3476,11 +3476,11 @@ return [
         'example_translation' => '母は銀行で働いています。',
     ],
     869 => [
-        'definition' => '姉、妹',
+        'definition' => '姉',
         'example_translation' => '私の姉は自分の部屋で本を読んでいます。',
     ],
     870 => [
-        'definition' => '置く、横たえる',
+        'definition' => '置く',
         'example_translation' => 'その本をテーブルの上に置いてください。',
     ],
     871 => [
@@ -3488,7 +3488,7 @@ return [
         'example_translation' => 'この部屋はきれいで明るいです。',
     ],
     872 => [
-        'definition' => '打つ、たたく',
+        'definition' => '打つ',
         'example_translation' => '彼は太鼓を大きく打ち鳴らすことができます。',
     ],
     873 => [
@@ -3496,7 +3496,7 @@ return [
         'example_translation' => 'コウモリは夜に飛びます。',
     ],
     874 => [
-        'definition' => '旅行、遠足',
+        'definition' => '遠足',
         'example_translation' => '私たちは動物園への楽しい遠足を楽しみました。',
     ],
     875 => [
@@ -3508,15 +3508,15 @@ return [
         'example_translation' => '昨日、おばが私たちの家を訪ねてきました。',
     ],
     877 => [
-        'definition' => '医者、医師',
+        'definition' => '医者',
         'example_translation' => 'お医者さんは病気の人が良くなるのを助けます。',
     ],
     878 => [
-        'definition' => '感じ、感覚',
+        'definition' => '感じ',
         'example_translation' => 'このテストについては良い予感がします。',
     ],
     879 => [
-        'definition' => '側、横',
+        'definition' => '側',
         'example_translation' => '彼女はバスの右側に座りました。',
     ],
     880 => [
@@ -3532,11 +3532,11 @@ return [
         'example_translation' => '彼は青いTシャツを着ています。',
     ],
     883 => [
-        'definition' => '賛成する、同意する',
+        'definition' => '賛成する',
         'example_translation' => '私はあなたの考えに賛成です。',
     ],
     884 => [
-        'definition' => 'リーダー、指導者',
+        'definition' => 'リーダー',
         'example_translation' => '私たちのリーダーは私たちが協力するのを助けてくれます。',
     ],
     885 => [
@@ -3544,15 +3544,15 @@ return [
         'example_translation' => '私はサイコロを振って5を出しました。',
     ],
     886 => [
-        'definition' => '正午、昼',
+        'definition' => '正午',
         'example_translation' => '私たちは正午に昼食を食べます。',
     ],
     887 => [
-        'definition' => '1つの、ある',
+        'definition' => '1つの',
         'example_translation' => '彼女は新しいカバンを持っています。',
     ],
     888 => [
-        'definition' => 'たくさんの、多くの',
+        'definition' => 'たくさんの',
         'example_translation' => 'テーブルの上にたくさんの本があります。',
     ],
     889 => [
@@ -3560,7 +3560,7 @@ return [
         'example_translation' => 'カップをテーブルの上に置いてください。',
     ],
     890 => [
-        'definition' => '問題になる、重要である',
+        'definition' => '重要である',
         'example_translation' => '遅れても構いません。',
     ],
     891 => [
@@ -3572,7 +3572,7 @@ return [
         'example_translation' => '合計金額は10ドルです。',
     ],
     893 => [
-        'definition' => '祖母、おばあさん',
+        'definition' => 'おばあさん',
         'example_translation' => '私のおばあさんはおいしいクッキーを作ります。',
     ],
     894 => [
@@ -3588,15 +3588,15 @@ return [
         'example_translation' => 'その戦争は何年も続きました。',
     ],
     897 => [
-        'definition' => '愚かな、ばかな',
+        'definition' => '愚かな',
         'example_translation' => 'ドアを開けたままにしておくのは愚かなことでした。',
     ],
     898 => [
-        'definition' => '1組、1足',
+        'definition' => '1足',
         'example_translation' => '私は靴下を1足買いました。',
     ],
     899 => [
-        'definition' => '土、土壌',
+        'definition' => '土',
         'example_translation' => '植物はこの土の中でよく育ちます。',
     ],
     900 => [
@@ -3608,7 +3608,7 @@ return [
         'example_translation' => '今日の英語の授業はオンラインです。',
     ],
     902 => [
-        'definition' => '足音、一歩',
+        'definition' => '足音',
         'example_translation' => '後ろで足音が聞こえました。',
     ],
     903 => [
@@ -3620,7 +3620,7 @@ return [
         'example_translation' => '私はチョコレートアイスクリームが好きです。',
     ],
     905 => [
-        'definition' => 'クラス、学級',
+        'definition' => 'クラス',
         'example_translation' => '私のクラスには30人の生徒がいます。',
     ],
     906 => [
@@ -3628,7 +3628,7 @@ return [
         'example_translation' => 'これは私にとって2度目の台北訪問です。',
     ],
     907 => [
-        'definition' => 'レベル、段階',
+        'definition' => 'レベル',
         'example_translation' => 'このゲームには5つのレベルがあります。',
     ],
     908 => [
@@ -3640,7 +3640,7 @@ return [
         'example_translation' => 'そのお金持ちの男性は大きな家に住んでいます。',
     ],
     910 => [
-        'definition' => '保存する、しまっておく',
+        'definition' => '保存する',
         'example_translation' => '私たちはお米を涼しくて乾燥した場所に保存します。',
     ],
     911 => [
@@ -3660,11 +3660,11 @@ return [
         'example_translation' => '私は宿題をしながら音楽を聴きました。',
     ],
     915 => [
-        'definition' => '大切な、重要な',
+        'definition' => '大切な',
         'example_translation' => '十分な水を飲むことは大切です。',
     ],
     916 => [
-        'definition' => '誤った、偽りの',
+        'definition' => '誤った',
         'example_translation' => '魚が飛べるという記述は誤りです。',
     ],
     917 => [
@@ -3692,7 +3692,7 @@ return [
         'example_translation' => '私は夏にサンダルを履きます。',
     ],
     923 => [
-        'definition' => '習得する、マスターする',
+        'definition' => '習得する',
         'example_translation' => '彼女は英語を習得したいと思っています。',
     ],
     924 => [
@@ -3704,11 +3704,11 @@ return [
         'example_translation' => '私は毎日ピアノを練習します。',
     ],
     926 => [
-        'definition' => '体、身体',
+        'definition' => '体',
         'example_translation' => '運動は体に良いです。',
     ],
     927 => [
-        'definition' => '右、右の',
+        'definition' => '右の',
         'example_translation' => '学校は道路の右側にあります。',
     ],
     928 => [
@@ -3720,11 +3720,11 @@ return [
         'example_translation' => '大人がその子どもの道路横断を手伝う必要があります。',
     ],
     930 => [
-        'definition' => 'これ、この',
+        'definition' => 'これ',
         'example_translation' => 'これは私の新しい本です。',
     ],
     931 => [
-        'definition' => '～さん、～先生（未婚女性への敬称）',
+        'definition' => '～先生',
         'example_translation' => 'リー先生は私たちの英語の先生です。',
     ],
     932 => [
@@ -3732,7 +3732,7 @@ return [
         'example_translation' => '父は車で職場へ通勤しています。',
     ],
     933 => [
-        'definition' => '誰を、誰に',
+        'definition' => '誰に',
         'example_translation' => '公園で誰に会いましたか？',
     ],
     934 => [
@@ -3740,11 +3740,11 @@ return [
         'example_translation' => '子猫が箱の中で寝ています。',
     ],
     935 => [
-        'definition' => 'そこに、あそこに',
+        'definition' => 'あそこに',
         'example_translation' => 'あなたのカバンはあそこにあります。',
     ],
     936 => [
-        'definition' => '育つ、成長する',
+        'definition' => '育つ',
         'example_translation' => '花は春に速く育ちます。',
     ],
     937 => [
@@ -3780,11 +3780,11 @@ return [
         'example_translation' => '窓が開いています。',
     ],
     945 => [
-        'definition' => '自動車、車',
+        'definition' => '車',
         'example_translation' => '父は青い車に乗っています。',
     ],
     946 => [
-        'definition' => '街区、ブロック',
+        'definition' => 'ブロック',
         'example_translation' => '学校は私の家から1ブロックのところにあります。',
     ],
     947 => [
@@ -3812,11 +3812,11 @@ return [
         'example_translation' => 'その白いユリは美しいです。',
     ],
     953 => [
-        'definition' => 'しかし、でも',
+        'definition' => 'しかし',
         'example_translation' => '私は疲れていますが、遊びたいです。',
     ],
     954 => [
-        'definition' => '私たちを、私たちに',
+        'definition' => '私たちを',
         'example_translation' => '私たちの先生は宿題を手伝ってくれます。',
     ],
     955 => [
@@ -3832,7 +3832,7 @@ return [
         'example_translation' => '公園は私の学校の近くにあります。',
     ],
     958 => [
-        'definition' => '単語、言葉',
+        'definition' => '単語',
         'example_translation' => 'この単語をノートに書いてください。',
     ],
     959 => [
@@ -3844,7 +3844,7 @@ return [
         'example_translation' => '今日は首が痛いです。',
     ],
     961 => [
-        'definition' => 'セール、特売',
+        'definition' => 'セール',
         'example_translation' => 'そのお店は今日セールをしています。',
     ],
     962 => [
@@ -3852,7 +3852,7 @@ return [
         'example_translation' => '太陽は東から昇ります。',
     ],
     963 => [
-        'definition' => '問題、事柄',
+        'definition' => '問題',
         'example_translation' => 'どうしたのですか？',
     ],
     964 => [
@@ -3876,7 +3876,7 @@ return [
         'example_translation' => '私たちは7時に朝食を食べます。',
     ],
     969 => [
-        'definition' => 'おり、ケージ',
+        'definition' => 'おり',
         'example_translation' => 'ライオンは大きなおりの中にいます。',
     ],
     970 => [
@@ -3888,7 +3888,7 @@ return [
         'example_translation' => '子どもたちが公園で遊んでいます。',
     ],
     972 => [
-        'definition' => '彼らを、それらを',
+        'definition' => '彼らを',
         'example_translation' => '私は毎日学校で彼らに会います。',
     ],
     973 => [
@@ -3920,7 +3920,7 @@ return [
         'example_translation' => 'なぜ悲しいのですか？',
     ],
     980 => [
-        'definition' => '物語、話',
+        'definition' => '話',
         'example_translation' => '父は毎晩私にお話を読んでくれます。',
     ],
     981 => [
@@ -3952,11 +3952,11 @@ return [
         'example_translation' => 'お医者さんは私の心臓の音を聴きました。',
     ],
     988 => [
-        'definition' => '元気な、良い',
+        'definition' => '良い',
         'example_translation' => '今日は体調がとても良いです。',
     ],
     989 => [
-        'definition' => '恥ずかしがり屋の、内気な',
+        'definition' => '内気な',
         'example_translation' => 'その内気な男の子はあまり話しません。',
     ],
     990 => [
@@ -3964,7 +3964,7 @@ return [
         'example_translation' => '彼女はいつも寝る前に歯を磨きます。',
     ],
     991 => [
-        'definition' => '技能、スキル',
+        'definition' => 'スキル',
         'example_translation' => '料理は役に立つスキルです。',
     ],
     992 => [
@@ -3972,15 +3972,15 @@ return [
         'example_translation' => '私の鉛筆は机の上にあります。',
     ],
     993 => [
-        'definition' => '～に、～で',
+        'definition' => '～で',
         'example_translation' => '父はバス停で待っています。',
     ],
     994 => [
-        'definition' => '給仕する、提供する',
+        'definition' => '給仕する',
         'example_translation' => 'ウェイターはお客様に料理を出します。',
     ],
     995 => [
-        'definition' => '自分、自己',
+        'definition' => '自己',
         'example_translation' => '自分の内なる自己に忠実でいましょう。',
     ],
     996 => [
@@ -3992,7 +3992,7 @@ return [
         'example_translation' => 'おもちゃが床の上にあります。',
     ],
     998 => [
-        'definition' => '価格、値段',
+        'definition' => '値段',
         'example_translation' => 'この本の値段は5ドルです。',
     ],
     999 => [
@@ -4000,7 +4000,7 @@ return [
         'example_translation' => '彼らの娘は本を読むのが好きです。',
     ],
     1000 => [
-        'definition' => '少しの間、瞬間',
+        'definition' => '少しの間',
         'example_translation' => '少々お待ちください。',
     ],
 ];

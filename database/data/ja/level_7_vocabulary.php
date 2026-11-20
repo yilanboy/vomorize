@@ -1040,7 +1040,7 @@ return [
         'example_translation' => '明確なコミュニケーションはプロジェクトの成功に極めて重要です。',
     ],
     6260 => [
-        'definition' => '指名された（未就任の）',
+        'definition' => '指名された',
         'example_translation' => '次期大統領は来月就任します。',
     ],
     6261 => [
@@ -1248,7 +1248,7 @@ return [
         'example_translation' => 'その新しいアパートは4人家族が暮らすのに十分なほど広々としています。',
     ],
     6312 => [
-        'definition' => '負傷者・死者',
+        'definition' => '負傷者',
         'example_translation' => 'その病院は列車事故のすべての死傷者を治療しました。',
     ],
     6313 => [
@@ -1804,7 +1804,7 @@ return [
         'example_translation' => 'その政治家の力強い弁舌は多くの若い有権者を魅了しました。',
     ],
     6451 => [
-        'definition' => '携帯情報端末（PDA）',
+        'definition' => 'PDA',
         'example_translation' => 'スマートフォンが普及する前は、多くの専門家が予定を管理するためにPDAを使っていました。',
     ],
     6452 => [
@@ -2228,7 +2228,7 @@ return [
         'example_translation' => 'その会社の来年の売上予測は、予想以上に楽観的です。',
     ],
     6557 => [
-        'definition' => '知能指数（IQ）',
+        'definition' => 'IQ',
         'example_translation' => '高いIQが必ずしも人生の成功を保証するわけではありません。',
     ],
     6558 => [
@@ -2272,7 +2272,7 @@ return [
         'example_translation' => '労働者に対する不公平な扱いは世間を激怒させました。',
     ],
     6568 => [
-        'definition' => '質感・食感',
+        'definition' => '食感',
         'example_translation' => 'シェフはサラダにカリカリとした食感を出すためにナッツを加えました。',
     ],
     6569 => [
@@ -2960,7 +2960,7 @@ return [
         'example_translation' => 'このアパートの主な欠点は、台所が狭いことです。',
     ],
     6740 => [
-        'definition' => '見通し・考え方',
+        'definition' => '考え方',
         'example_translation' => '困難にもかかわらず、彼女は人生に対して前向きな見方を持っています。',
     ],
     6741 => [
@@ -3312,7 +3312,7 @@ return [
         'example_translation' => '濃い煙のせいで消防士たちは呼吸が困難になり、もう少しで窒息するところでした。',
     ],
     6828 => [
-        'definition' => '暴露・発覚',
+        'definition' => '発覚',
         'example_translation' => '隠されていた手紙の発見は、その家族にとって衝撃的な事実の発覚でした。',
     ],
     6829 => [
@@ -3420,7 +3420,7 @@ return [
         'example_translation' => '医師は私に抗生物質の処方箋を出してくれました。',
     ],
     6855 => [
-        'definition' => '大統領職・社長職',
+        'definition' => '大統領職',
         'example_translation' => '彼女は大統領の任期中、経済改革に注力しました。',
     ],
     6856 => [
@@ -3444,7 +3444,7 @@ return [
         'example_translation' => '度重なる遅延の後、その会社は契約を終了することを決定しました。',
     ],
     6861 => [
-        'definition' => '報奨・動機付け',
+        'definition' => '動機付け',
         'example_translation' => '会社は従業員の業績向上を促すインセンティブとしてボーナスを提供しました。',
     ],
     6862 => [
@@ -3520,7 +3520,7 @@ return [
         'example_translation' => '警察はさらなる尋問のために容疑者を拘留しました。',
     ],
     6880 => [
-        'definition' => '心の知能指数（EQ）',
+        'definition' => 'EQ',
         'example_translation' => '高いEQは、他者を理解し自分の感情を管理するのに役立ちます。',
     ],
     6881 => [
@@ -3628,7 +3628,7 @@ return [
         'example_translation' => '多くの希少な鳥類が海岸近くの湿地に生息しています。',
     ],
     6907 => [
-        'definition' => '大統領の・社長の',
+        'definition' => '大統領の',
         'example_translation' => '大統領選挙は1月に実施されます。',
     ],
     6908 => [
@@ -3920,7 +3920,7 @@ return [
         'example_translation' => 'その博物館は古い絵画の真贋を証明するために専門家を雇いました。',
     ],
     6980 => [
-        'definition' => '遺産・功績',
+        'definition' => '功績',
         'example_translation' => 'その科学者は画期的な研究を通じて永続的な功績を残しました。',
     ],
     6981 => [

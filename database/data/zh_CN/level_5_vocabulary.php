@@ -128,7 +128,7 @@ return [
         'example_translation' => '那位咨询师很有同情心，仔细聆听我的担忧。',
     ],
     4032 => [
-        'definition' => '晋升；升职',
+        'definition' => '晋升',
         'example_translation' => '她的努力为她赢得了晋升为团队主管的机会。',
     ],
     4033 => [
@@ -440,7 +440,7 @@ return [
         'example_translation' => '那家酒店有一座四周种满树木的人工湖。',
     ],
     4110 => [
-        'definition' => '截然不同的；明显的',
+        'definition' => '截然不同的',
         'example_translation' => '这两姐妹有截然不同的性格。',
     ],
     4111 => [
@@ -536,7 +536,7 @@ return [
         'example_translation' => '天气很宜人，所以我们在户外吃午餐。',
     ],
     4134 => [
-        'definition' => '灵活的；有弹性的',
+        'definition' => '灵活的',
         'example_translation' => '我们的老师很灵活，允许我们选择不同的课题主题。',
     ],
     4135 => [
@@ -560,7 +560,7 @@ return [
         'example_translation' => '程序员在电脑代码中发现了一个错误。',
     ],
     4140 => [
-        'definition' => '保证；保修',
+        'definition' => '保修',
         'example_translation' => '这台洗衣机附带两年的质保。',
     ],
     4141 => [
@@ -664,7 +664,7 @@ return [
         'example_translation' => '在英语中，children 是 child 的复数形式。',
     ],
     4166 => [
-        'definition' => '系统的；有条理的',
+        'definition' => '系统的',
         'example_translation' => '这位科学家用系统的方法检查证据。',
     ],
     4167 => [
@@ -728,11 +728,11 @@ return [
         'example_translation' => '那艘船在日落前航越海湾。',
     ],
     4182 => [
-        'definition' => '数字的；数码的',
+        'definition' => '数码的',
         'example_translation' => '我为这趟旅行买了一台数码相机。',
     ],
     4183 => [
-        'definition' => '金融；财政',
+        'definition' => '金融',
         'example_translation' => '她在大学攻读金融学，现在在银行工作。',
     ],
     4184 => [
@@ -788,7 +788,7 @@ return [
         'example_translation' => '我们家计划在暑假举行家庭团聚。',
     ],
     4197 => [
-        'definition' => '提取；取款',
+        'definition' => '取款',
         'example_translation' => '旅行前，我需要从银行取一些钱。',
     ],
     4198 => [
@@ -824,7 +824,7 @@ return [
         'example_translation' => '导演给演员提示，让他们开始演出这一幕。',
     ],
     4206 => [
-        'definition' => '教练；教员',
+        'definition' => '教练',
         'example_translation' => '我们的游泳教练教我们如何正确呼吸。',
     ],
     4207 => [
@@ -868,7 +868,7 @@ return [
         'example_translation' => '他们在港口附近的一家高档餐厅用餐。',
     ],
     4217 => [
-        'definition' => '列车员；乘务员',
+        'definition' => '列车员',
         'example_translation' => '火车开动前，列车员检查了我们的车票。',
     ],
     4218 => [
@@ -884,7 +884,7 @@ return [
         'example_translation' => '管弦乐团昨晚演奏了一首优美的交响曲。',
     ],
     4221 => [
-        'definition' => '初级的；资历浅的',
+        'definition' => '初级的',
         'example_translation' => '初级员工接受了资深员工提供的额外培训。',
     ],
     4222 => [
@@ -1156,7 +1156,7 @@ return [
         'example_translation' => '原子是保有某元素化学性质的最小单位。',
     ],
     4289 => [
-        'definition' => '多产的；富有成效的',
+        'definition' => '多产的',
         'example_translation' => '由于天气良好，农民们度过了丰收的一年。',
     ],
     4290 => [
@@ -1180,7 +1180,7 @@ return [
         'example_translation' => '这种果汁浓缩物在饮用前必须加水稀释。',
     ],
     4295 => [
-        'definition' => '噩梦；梦魇',
+        'definition' => '噩梦',
         'example_translation' => '我做了一个噩梦，梦见自己迷失在黑暗的森林里。',
     ],
     4296 => [
@@ -1344,7 +1344,7 @@ return [
         'example_translation' => '这家公司的创立者至今仍每周造访办公室。',
     ],
     4336 => [
-        'definition' => '音频的；声音的',
+        'definition' => '音频',
         'example_translation' => '这台摄像机在采访时能录下高质量的音频。',
     ],
     4337 => [
@@ -1400,7 +1400,7 @@ return [
         'example_translation' => '银行批准了一笔贷款，帮助这对夫妻买房。',
     ],
     4350 => [
-        'definition' => '抽出；分出',
+        'definition' => '抽出',
         'example_translation' => '你能抽出几分钟帮我搬这些箱子吗？',
     ],
     4351 => [
@@ -1448,7 +1448,7 @@ return [
         'example_translation' => '我和另外两名学生共住大学附近的学生宿舍房间。',
     ],
     4362 => [
-        'definition' => '奖励；报答',
+        'definition' => '奖励',
         'example_translation' => '公司用奖金奖励米娅的杰出工作表现。',
     ],
     4363 => [
@@ -1496,7 +1496,7 @@ return [
         'example_translation' => '在分公司工作两年后，丹尼尔调到公司总部。',
     ],
     4374 => [
-        'definition' => '使尴尬；使难堪',
+        'definition' => '使难堪',
         'example_translation' => '请不要把你哥哥的错误告诉大家，让他难堪。',
     ],
     4375 => [
@@ -1548,7 +1548,7 @@ return [
         'example_translation' => '我们从山上欣赏到灿烂美丽的日落景色。',
     ],
     4387 => [
-        'definition' => '受欢迎；人气',
+        'definition' => '人气',
         'example_translation' => '这位歌手的第一张专辑发行后，她的人气迅速上升。',
     ],
     4388 => [
@@ -1700,7 +1700,7 @@ return [
         'example_translation' => '植物在光合作用期间将氧气释放到空气中。',
     ],
     4425 => [
-        'definition' => '戏服；服装',
+        'definition' => '戏服',
         'example_translation' => '她穿着色彩鲜艳的戏服参加学校的戏剧演出。',
     ],
     4426 => [
@@ -1736,7 +1736,7 @@ return [
         'example_translation' => '暴风雨的强度在夜间增强了。',
     ],
     4434 => [
-        'definition' => '返现；折扣退款',
+        'definition' => '返现',
         'example_translation' => '顾客购买节能家电后可以获得返现。',
     ],
     4435 => [
@@ -1808,7 +1808,7 @@ return [
         'example_translation' => '这支队伍在训练营期间取得了极大的进步。',
     ],
     4452 => [
-        'definition' => '自由职业的；从事自由职业',
+        'definition' => '从事自由职业',
         'example_translation' => '离开公司后，他开始以自由职业者的身份担任平面设计师。',
     ],
     4453 => [
@@ -1968,7 +1968,7 @@ return [
         'example_translation' => '她小心地把软木塞从酒瓶里拔出来。',
     ],
     4492 => [
-        'definition' => '便携式的；手提式的',
+        'definition' => '便携式的',
         'example_translation' => '这款便携式音箱小到可以放进我的背包里。',
     ],
     4493 => [
@@ -2088,7 +2088,7 @@ return [
         'example_translation' => '这位年轻歌手成了全世界数百万粉丝崇拜的偶像。',
     ],
     4522 => [
-        'definition' => '图解；插图',
+        'definition' => '图解',
         'example_translation' => '老师用一个简单的图解来解释这台机器的运作方式。',
     ],
     4523 => [
@@ -2176,7 +2176,7 @@ return [
         'example_translation' => '人们几乎普遍都有对友谊的渴望。',
     ],
     4544 => [
-        'definition' => '入住率；占有率',
+        'definition' => '入住率',
         'example_translation' => '这家酒店在假日周末达到了百分之百的入住率。',
     ],
     4545 => [
@@ -2412,11 +2412,11 @@ return [
         'example_translation' => '公园中央有一棵巨大的树。',
     ],
     4603 => [
-        'definition' => '演讲者；讲师',
+        'definition' => '演讲者',
         'example_translation' => '那位演讲者清楚地讲解了现代艺术的历史。',
     ],
     4604 => [
-        'definition' => '更可取的；更理想的',
+        'definition' => '更理想的',
         'example_translation' => '在高峰时段乘火车比开车更理想。',
     ],
     4605 => [
@@ -2492,7 +2492,7 @@ return [
         'example_translation' => '热水澡可以减轻肌肉的疼痛。',
     ],
     4623 => [
-        'definition' => '用法；使用',
+        'definition' => '用法',
         'example_translation' => '这个词的正确用法取决于具体情况。',
     ],
     4624 => [
@@ -2572,7 +2572,7 @@ return [
         'example_translation' => '这间博物馆收藏了许多十九世纪的画作。',
     ],
     4643 => [
-        'definition' => '特价商品；便宜货',
+        'definition' => '特价商品',
         'example_translation' => '我在冬季特卖时以优惠价格买到这件保暖外套。',
     ],
     4644 => [
@@ -2684,7 +2684,7 @@ return [
         'example_translation' => '我们的老师不会容忍考试作弊。',
     ],
     4671 => [
-        'definition' => '发票；账单',
+        'definition' => '账单',
         'example_translation' => '那家公司给我们寄来了一张维修工作的账单。',
     ],
     4672 => [
@@ -2708,7 +2708,7 @@ return [
         'example_translation' => '她计划在大学主修工程学。',
     ],
     4677 => [
-        'definition' => '医生；内科医生',
+        'definition' => '医生',
         'example_translation' => '那位医生仔细向病人解释治疗方式。',
     ],
     4678 => [
@@ -2816,7 +2816,7 @@ return [
         'example_translation' => '这件传统衣服是用柔软的棉布和彩色布料制成的。',
     ],
     4704 => [
-        'definition' => '摊位；小亭',
+        'definition' => '摊位',
         'example_translation' => '我们在夜市的一个摊位买了新鲜水果。',
     ],
     4705 => [
@@ -3012,7 +3012,7 @@ return [
         'example_translation' => '他常常讲述自己在乡下度过的少年时期。',
     ],
     4753 => [
-        'definition' => '统计的；统计数据的',
+        'definition' => '统计的',
         'example_translation' => '这份报告包含有关人口变化的统计数据。',
     ],
     4754 => [
@@ -3036,7 +3036,7 @@ return [
         'example_translation' => '那名暴君惩罚任何敢于批评他的人。',
     ],
     4759 => [
-        'definition' => '奖金；红利',
+        'definition' => '奖金',
         'example_translation' => '公司在年底给每位员工发了一笔奖金。',
     ],
     4760 => [
@@ -3056,7 +3056,7 @@ return [
         'example_translation' => '一群马正在辽阔的大草原上奔跑。',
     ],
     4764 => [
-        'definition' => '面对；面临',
+        'definition' => '面对',
         'example_translation' => '这个团队必须面对几个难题，项目才可能成功。',
     ],
     4765 => [
@@ -3164,7 +3164,7 @@ return [
         'example_translation' => '安全准则要求所有工人都必须戴防护头盔。',
     ],
     4791 => [
-        'definition' => '框架；架构',
+        'definition' => '框架',
         'example_translation' => '委员会建立了一套改善公共交通的框架。',
     ],
     4792 => [
@@ -3184,7 +3184,7 @@ return [
         'example_translation' => '科学家测量了圆形池塘的半径。',
     ],
     4796 => [
-        'definition' => '蒸汽；水汽',
+        'definition' => '蒸汽',
         'example_translation' => '茶杯里升起阵阵热气。',
     ],
     4797 => [
@@ -3224,7 +3224,7 @@ return [
         'example_translation' => '农民使用犁来整理田地，以便播种。',
     ],
     4806 => [
-        'definition' => '西葫芦；南瓜',
+        'definition' => '西葫芦',
         'example_translation' => '我祖母在汤里加入了新鲜的西葫芦。',
     ],
     4807 => [
@@ -3252,7 +3252,7 @@ return [
         'example_translation' => '这对父母有时会纵容孩子，允许他晚睡。',
     ],
     4813 => [
-        'definition' => '农民；佃农',
+        'definition' => '农民',
         'example_translation' => '那名农民努力耕作，种出足够全家食用的稻米。',
     ],
     4814 => [
@@ -3428,7 +3428,7 @@ return [
         'example_translation' => '这个突如其来的消息使全家人感到痛苦和忧虑。',
     ],
     4857 => [
-        'definition' => '看护人；照料者',
+        'definition' => '看护人',
         'example_translation' => '这位看护人每天照料那位老妇人。',
     ],
     4858 => [
@@ -3532,7 +3532,7 @@ return [
         'example_translation' => '那名流浪汉提着一个小袋子，走在乡间道路上。',
     ],
     4883 => [
-        'definition' => '宇宙飞船；航天器',
+        'definition' => '宇宙飞船',
         'example_translation' => '这艘宇宙飞船将三名宇航员安全地送往空间站。',
     ],
     4884 => [
@@ -3760,7 +3760,7 @@ return [
         'example_translation' => '那段痛苦的回忆多年来一直困扰着她。',
     ],
     4940 => [
-        'definition' => '储存；存储',
+        'definition' => '储存',
         'example_translation' => '地下室提供了充足的空间来储存冬季衣物。',
     ],
     4941 => [
@@ -3780,7 +3780,7 @@ return [
         'example_translation' => '那个男孩恳求多一点时间完成作业。',
     ],
     4945 => [
-        'definition' => '废除；废止',
+        'definition' => '废除',
         'example_translation' => '政府决定废除这项不公平的税。',
     ],
     4946 => [
@@ -3788,7 +3788,7 @@ return [
         'example_translation' => '我偏好在早上读书，因为那时我精神很好。',
     ],
     4947 => [
-        'definition' => '日食；月食',
+        'definition' => '日食',
         'example_translation' => '人们聚集在户外观看日食。',
     ],
     4948 => [
@@ -3860,7 +3860,7 @@ return [
         'example_translation' => '那名演员在戏剧中使用木剑作为道具。',
     ],
     4965 => [
-        'definition' => '文件；文档',
+        'definition' => '文件',
         'example_translation' => '请在会议开始前把文件发给我。',
     ],
     4966 => [
@@ -3932,7 +3932,7 @@ return [
         'example_translation' => '一大块墨水污渍沾满了报告的一角。',
     ],
     4983 => [
-        'definition' => 'A牌；王牌',
+        'definition' => 'A牌',
         'example_translation' => '她抽到一张A牌，赢得了这场纸牌游戏。',
     ],
     4984 => [
@@ -3976,7 +3976,7 @@ return [
         'example_translation' => '只有一小部分学生反对这项新规定。',
     ],
     4994 => [
-        'definition' => '偷偷地走／做',
+        'definition' => '偷偷地走',
         'example_translation' => '没人注意时，那只猫偷偷溜进了厨房。',
     ],
     4995 => [

@@ -3876,7 +3876,7 @@ return [
         'example_translation' => '实验室必须证明饮用水是安全的。',
     ],
     5969 => [
-        'definition' => '全套服装；装备',
+        'definition' => '装备',
         'example_translation' => '她买了一套新的登山装备，包括坚固的靴子和防水外套。',
     ],
     5970 => [

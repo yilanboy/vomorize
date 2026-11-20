@@ -68,7 +68,7 @@ return [
         'example_translation' => '雕刻家用黏土塑造雕像的脸部。',
     ],
     6017 => [
-        'definition' => '反光的；反射的',
+        'definition' => '反光的',
         'example_translation' => '那名自行车骑手穿着反光外套，好在夜间保持显眼。',
     ],
     6018 => [
@@ -76,11 +76,11 @@ return [
         'example_translation' => '更多细节将在即将发布的报告中公布。',
     ],
     6019 => [
-        'definition' => '议会；国会',
+        'definition' => '议会',
         'example_translation' => '议会正在辩论一项改善公共交通的法案。',
     ],
     6020 => [
-        'definition' => '渲染；呈现',
+        'definition' => '渲染',
         'example_translation' => '这套软件能在几秒钟内渲染复杂的图像。',
     ],
     6021 => [
@@ -92,7 +92,7 @@ return [
         'example_translation' => '尽管情况令人害怕，她仍保持冷静，神志正常。',
     ],
     6023 => [
-        'definition' => '融合；整合',
+        'definition' => '融合',
         'example_translation' => '将新技术融入教育体系改善了在线学习。',
     ],
     6024 => [
@@ -112,7 +112,7 @@ return [
         'example_translation' => '这座古老的清真寺以其巨大的蓝色圆屋顶闻名。',
     ],
     6028 => [
-        'definition' => '专享的；独有的',
+        'definition' => '专享的',
         'example_translation' => '这家酒店有一片专属海滩，只有住客可以使用。',
     ],
     6029 => [
@@ -164,7 +164,7 @@ return [
         'example_translation' => '这家公司因漠视重要的安全规定而遭到罚款。',
     ],
     6041 => [
-        'definition' => '施用；给药',
+        'definition' => '给药',
         'example_translation' => '护士在睡前给病人服用了药物。',
     ],
     6042 => [
@@ -256,11 +256,11 @@ return [
         'example_translation' => '经过数小时的讨论后，双方各自作出让步，达成了协议。',
     ],
     6064 => [
-        'definition' => '大型客机；班轮',
+        'definition' => '大型客机',
         'example_translation' => '那架从台北飞来的客机尽管遇上大雨，仍安全降落在机场。',
     ],
     6065 => [
-        'definition' => '替代的；备选的',
+        'definition' => '替代的',
         'example_translation' => '因为主要道路封闭，我们不得不改走替代路线。',
     ],
     6066 => [
@@ -312,11 +312,11 @@ return [
         'example_translation' => '这位新领导人努力团结党内不同的派系。',
     ],
     6078 => [
-        'definition' => '打开行李；拆开包裹',
+        'definition' => '打开行李',
         'example_translation' => '抵达酒店后，我们开始打开行李箱整理物品。',
     ],
     6079 => [
-        'definition' => '休息室；候机室',
+        'definition' => '休息室',
         'example_translation' => '我们在机场休息室等到航班准备登机。',
     ],
     6080 => [
@@ -324,7 +324,7 @@ return [
         'example_translation' => '政府建造了一道新墙来加强边境防御。',
     ],
     6081 => [
-        'definition' => '补充剂；补充物',
+        'definition' => '补充剂',
         'example_translation' => '医生建议她服用维生素补充剂，以改善饮食。',
     ],
     6082 => [
@@ -332,7 +332,7 @@ return [
         'example_translation' => '这套新软件将促进老师与家长之间的沟通。',
     ],
     6083 => [
-        'definition' => '咨询；就诊',
+        'definition' => '咨询',
         'example_translation' => '病人预约了心脏科专家的咨询。',
     ],
     6084 => [
@@ -496,15 +496,15 @@ return [
         'example_translation' => '这项研究的范围包括气候变化对沿海城市的影响。',
     ],
     6124 => [
-        'definition' => '演变；进化',
+        'definition' => '演变',
         'example_translation' => '智能手机的发展改变了人们的沟通方式。',
     ],
     6125 => [
-        'definition' => '正宗的；真实的',
+        'definition' => '正宗的',
         'example_translation' => '这家餐厅供应以进口食材制作的正宗意大利菜。',
     ],
     6126 => [
-        'definition' => '提升；增强',
+        'definition' => '提升',
         'example_translation' => '新的照明系统将提升这栋历史建筑的美感。',
     ],
     6127 => [
@@ -588,15 +588,15 @@ return [
         'example_translation' => '抗议者聚集起来，为这项不公平法律所造成的不公正发声。',
     ],
     6147 => [
-        'definition' => '抑制；扼杀',
+        'definition' => '扼杀',
         'example_translation' => '高额税负可能会扼杀小型企业，使它们无法发展。',
     ],
     6148 => [
-        'definition' => '颤动；振动',
+        'definition' => '振动',
         'example_translation' => '火车的振动使窗户咔咔作响。',
     ],
     6149 => [
-        'definition' => '图片说明；字幕',
+        'definition' => '图片说明',
         'example_translation' => '照片下方的图片说明解释了拍摄的时间和地点。',
     ],
     6150 => [
@@ -636,7 +636,7 @@ return [
         'example_translation' => '前往热带地区的旅客应采取预防疟疾的措施。',
     ],
     6159 => [
-        'definition' => '残疾；残障',
+        'definition' => '残障',
         'example_translation' => '新的坡道让残障人士更容易进出这栋建筑物。',
     ],
     6160 => [
@@ -660,7 +660,7 @@ return [
         'example_translation' => '铁不足会使人感到疲倦和虚弱。',
     ],
     6165 => [
-        'definition' => '茶点；点心',
+        'definition' => '点心',
         'example_translation' => '长途徒步后，我们停下来吃些点心并稍作休息。',
     ],
     6166 => [
@@ -668,7 +668,7 @@ return [
         'example_translation' => '这座纪念碑是为了庆祝这座城市脱离外国统治而获得解放。',
     ],
     6167 => [
-        'definition' => '改进；改善',
+        'definition' => '改进',
         'example_translation' => '制造流程的改进提升了产品的质量。',
     ],
     6168 => [
@@ -696,7 +696,7 @@ return [
         'example_translation' => '科学家警告，现在宣布这项发现还为时过早。',
     ],
     6174 => [
-        'definition' => '语录；选集',
+        'definition' => '语录',
         'example_translation' => '《论语》收录了许多被认为出自孔子及其弟子的语录。',
     ],
     6175 => [
@@ -772,7 +772,7 @@ return [
         'example_translation' => '这个项目的大约费用是两百万美元。',
     ],
     6193 => [
-        'definition' => '招募；征募',
+        'definition' => '招募',
         'example_translation' => '这家公司计划招募几名有经验的工程师。',
     ],
     6194 => [
@@ -844,7 +844,7 @@ return [
         'example_translation' => '新娘走过走道时看起来容光焕发。',
     ],
     6211 => [
-        'definition' => '拨出；分配',
+        'definition' => '拨出',
         'example_translation' => '这座城市计划为公共交通拨出更多经费。',
     ],
     6212 => [
@@ -880,7 +880,7 @@ return [
         'example_translation' => '教练称赞那名球员在激烈争论中保持克制。',
     ],
     6220 => [
-        'definition' => '冲泡／酿造饮料',
+        'definition' => '冲泡饮料',
         'example_translation' => '这种当地冲泡的咖啡风味浓郁，香气宜人。',
     ],
     6221 => [
@@ -936,7 +936,7 @@ return [
         'example_translation' => '我们预计长假期间会有严重的交通拥堵。',
     ],
     6234 => [
-        'definition' => '职业；志向',
+        'definition' => '职业',
         'example_translation' => '教书成了他的终身事业，因为他喜欢帮助年轻人学习。',
     ],
     6235 => [
@@ -956,7 +956,7 @@ return [
         'example_translation' => '博物馆展示了来自中世纪城堡的武器。',
     ],
     6239 => [
-        'definition' => '专卖店；销售网点',
+        'definition' => '专卖店',
         'example_translation' => '这家公司在繁华的购物区开了一家新的专卖店。',
     ],
     6240 => [
@@ -1040,7 +1040,7 @@ return [
         'example_translation' => '清楚的沟通对计划的成功至关重要。',
     ],
     6260 => [
-        'definition' => '已任命但尚未就职的；候任的',
+        'definition' => '候任的',
         'example_translation' => '候任总统将于下个月就职。',
     ],
     6261 => [
@@ -1056,11 +1056,11 @@ return [
         'example_translation' => '这位代表与几名选民会面，讨论新的住宅计划。',
     ],
     6264 => [
-        'definition' => '胜任；能力',
+        'definition' => '能力',
         'example_translation' => '她管理大型项目的能力为她赢得了晋升。',
     ],
     6265 => [
-        'definition' => '首相；总理',
+        'definition' => '首相',
         'example_translation' => '首相宣布了一项支持公共交通的新计划。',
     ],
     6266 => [
@@ -1076,7 +1076,7 @@ return [
         'example_translation' => '这条新高速公路已成为连接两座城市的重要干线。',
     ],
     6269 => [
-        'definition' => '复兴；新生',
+        'definition' => '复兴',
         'example_translation' => '这座城市正经历文化复兴，每年都有新的剧院和画廊开业。',
     ],
     6270 => [
@@ -1104,7 +1104,7 @@ return [
         'example_translation' => '她致力于帮助弱势儿童的奉献精神鼓舞了团队中的每个人。',
     ],
     6276 => [
-        'definition' => '具有……特征；以……为特色',
+        'definition' => '具有特征',
         'example_translation' => '鲜艳的色彩和大胆的图案是这位艺术家近期作品的特色。',
     ],
     6277 => [
@@ -1168,7 +1168,7 @@ return [
         'example_translation' => '这位歌手因强而有力的歌唱演出而受到赞赏。',
     ],
     6292 => [
-        'definition' => '安慰；安抚',
+        'definition' => '安抚',
         'example_translation' => '护士轻声说话来安抚受惊的孩子。',
     ],
     6293 => [
@@ -1200,7 +1200,7 @@ return [
         'example_translation' => '医生解释说，血液是一种在身体内输送氧气的液体。',
     ],
     6300 => [
-        'definition' => '克隆体；克隆人',
+        'definition' => '克隆体',
         'example_translation' => '科学家从一片叶子培育出这株植物的克隆体。',
     ],
     6301 => [
@@ -1324,7 +1324,7 @@ return [
         'example_translation' => '这道汤的一份含有大量蔬菜。',
     ],
     6331 => [
-        'definition' => '伦理的；道德的',
+        'definition' => '伦理的',
         'example_translation' => '这家公司在收集客户数据时遵守伦理标准。',
     ],
     6332 => [
@@ -1332,7 +1332,7 @@ return [
         'example_translation' => '这座博物馆将拍卖一幅稀有画作，为修复工作筹集资金。',
     ],
     6333 => [
-        'definition' => '进取心；主动性',
+        'definition' => '进取心',
         'example_translation' => '她的进取心促使学校开始推行回收项目。',
     ],
     6334 => [
@@ -1472,7 +1472,7 @@ return [
         'example_translation' => '所有员工都必须遵守公司的安全规定。',
     ],
     6368 => [
-        'definition' => '腐败；贪污',
+        'definition' => '腐败',
         'example_translation' => '政府开始调查高级官员中的腐败问题。',
     ],
     6369 => [
@@ -1684,7 +1684,7 @@ return [
         'example_translation' => '新规定禁止访客进入这个区域。',
     ],
     6421 => [
-        'definition' => '易接近的；易到达的',
+        'definition' => '易到达的',
         'example_translation' => '这座博物馆从市中心坐公交车就很容易到达。',
     ],
     6422 => [
@@ -1876,7 +1876,7 @@ return [
         'example_translation' => '会议开始前，我只有时间快速浏览那份报告。',
     ],
     6469 => [
-        'definition' => '怪诞的；反常的人',
+        'definition' => '怪诞的',
         'example_translation' => '他在正式晚宴上的怪诞行为让同桌的每个人都感到震惊。',
     ],
     6470 => [
@@ -2028,7 +2028,7 @@ return [
         'example_translation' => '耐心是成功教师的重要特征。',
     ],
     6507 => [
-        'definition' => '继承人；接班人',
+        'definition' => '接班人',
         'example_translation' => '这家公司已选出一位才华横溢的接班人来领导该部门。',
     ],
     6508 => [
@@ -2092,7 +2092,7 @@ return [
         'example_translation' => '他们开了一瓶香槟酒来庆祝成功。',
     ],
     6523 => [
-        'definition' => '预期的；潜在的',
+        'definition' => '潜在的',
         'example_translation' => '经理面试了几位应聘新职位的潜在人选。',
     ],
     6524 => [
@@ -2132,7 +2132,7 @@ return [
         'example_translation' => '这位候选人走访全国，争取尚未决定投票对象的选民。',
     ],
     6533 => [
-        'definition' => '会议；培训课程',
+        'definition' => '培训课程',
         'example_translation' => '学生参加了一场关于应急程序的培训。',
     ],
     6534 => [
@@ -2184,7 +2184,7 @@ return [
         'example_translation' => '这把刀太钝了，无法切断粗绳。',
     ],
     6546 => [
-        'definition' => '认真尽责的；凭良心的',
+        'definition' => '认真尽责的',
         'example_translation' => '米娅是个认真尽责的员工，总是仔细检查自己的报告。',
     ],
     6547 => [
@@ -2480,7 +2480,7 @@ return [
         'example_translation' => '这些指示模棱两可，没有人知道该先做什么。',
     ],
     6620 => [
-        'definition' => '迎合；满足需求',
+        'definition' => '满足需求',
         'example_translation' => '这家餐厅满足偏好素食餐点的顾客需求。',
     ],
     6621 => [
@@ -2504,7 +2504,7 @@ return [
         'example_translation' => '极端的民族主义可能使人们不信任来自其他国家的人。',
     ],
     6626 => [
-        'definition' => '保修单；保修期',
+        'definition' => '保修期',
         'example_translation' => '这台笔记本电脑附带两年的制造缺陷保修。',
     ],
     6627 => [
@@ -2608,7 +2608,7 @@ return [
         'example_translation' => '那名工程师设计出一个巧妙的设备，能同时节省时间与能源。',
     ],
     6652 => [
-        'definition' => '驻外记者；特派记者',
+        'definition' => '驻外记者',
         'example_translation' => '那家报纸的驻外记者从战区发回报道。',
     ],
     6653 => [
@@ -2628,7 +2628,7 @@ return [
         'example_translation' => '这款洗发水有助于减少我头皮上的头皮屑。',
     ],
     6657 => [
-        'definition' => '保护；保育',
+        'definition' => '保护',
         'example_translation' => '这座岛设立了海洋保护区，以保护海龟。',
     ],
     6658 => [
@@ -2704,7 +2704,7 @@ return [
         'example_translation' => '新鲜的凤梨酥是这个台湾小镇的特产。',
     ],
     6676 => [
-        'definition' => '威慑；制止',
+        'definition' => '威慑',
         'example_translation' => '建筑物周围的明亮灯光可能会威慑窃贼进入。',
     ],
     6677 => [
@@ -2748,7 +2748,7 @@ return [
         'example_translation' => '这座岛屿拥有充裕的淡水和肥沃的土地。',
     ],
     6687 => [
-        'definition' => '使结合；融入',
+        'definition' => '融入',
         'example_translation' => '这个项目帮助新生融入学校社区。',
     ],
     6688 => [
@@ -2804,7 +2804,7 @@ return [
         'example_translation' => '微小改变的累计效果可以大幅提升能源效率。',
     ],
     6701 => [
-        'definition' => '专门技术；专业知识',
+        'definition' => '专业知识',
         'example_translation' => '这个项目因为那位工程师在可再生能源方面的专业知识而成功。',
     ],
     6702 => [
@@ -2840,11 +2840,11 @@ return [
         'example_translation' => '这个节庆庆祝当地人民的文化遗产。',
     ],
     6710 => [
-        'definition' => '转移；使改道',
+        'definition' => '使改道',
         'example_translation' => '警方将车流引导到远离积水道路的地方。',
     ],
     6711 => [
-        'definition' => '电话号码簿；目录',
+        'definition' => '电话号码簿',
         'example_translation' => '我在在线电话簿中找到了那家餐厅的电话号码。',
     ],
     6712 => [
@@ -3032,7 +3032,7 @@ return [
         'example_translation' => '学生们井然有序地离开教室。',
     ],
     6758 => [
-        'definition' => '假定；假设',
+        'definition' => '假设',
         'example_translation' => '我们的计划是建立在天气会持续干燥的假设上。',
     ],
     6759 => [
@@ -3420,7 +3420,7 @@ return [
         'example_translation' => '医生开了一张抗生素处方给我。',
     ],
     6855 => [
-        'definition' => '总裁／总统职位',
+        'definition' => '总统职位',
         'example_translation' => '她在总统任内专注于经济改革。',
     ],
     6856 => [
@@ -3444,7 +3444,7 @@ return [
         'example_translation' => '在一再延误之后，公司决定终止这份合同。',
     ],
     6861 => [
-        'definition' => '激励；诱因',
+        'definition' => '激励',
         'example_translation' => '公司提供奖金，作为激励员工提升工作表现的动力。',
     ],
     6862 => [
@@ -3628,7 +3628,7 @@ return [
         'example_translation' => '许多稀有鸟类栖息于海岸附近的湿地。',
     ],
     6907 => [
-        'definition' => '总裁／总统的',
+        'definition' => '总统的',
         'example_translation' => '总统大选将于一月举行。',
     ],
     6908 => [
@@ -3812,7 +3812,7 @@ return [
         'example_translation' => '经理将新的安全指示逐级传达给每个部门。',
     ],
     6953 => [
-        'definition' => '通融的；乐于配合的',
+        'definition' => '通融的',
         'example_translation' => '我们的接待方非常通融，调整了会议时间以配合所有人。',
     ],
     6954 => [
