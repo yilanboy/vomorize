@@ -7,13 +7,13 @@
     import ChevronRight from '@lucide/svelte/icons/chevron-right';
     import Circle from '@lucide/svelte/icons/circle';
     import Clock from '@lucide/svelte/icons/clock';
-    import Volume2 from '@lucide/svelte/icons/volume-2';
     import Zap from '@lucide/svelte/icons/zap';
     import { show as showGroup } from '@/actions/App/Http/Controllers/GroupController';
     import { show as introGroup } from '@/actions/App/Http/Controllers/GroupIntroController';
     import { show as quizGroup } from '@/actions/App/Http/Controllers/GroupQuizController';
     import AppHead from '@/components/AppHead.svelte';
     import Breadcrumbs from '@/components/Breadcrumbs.svelte';
+    import VocabularyCard from '@/components/VocabularyCard.svelte';
     import { audioPlayer } from '@/lib/audioPlayer.svelte';
     import { t } from '@/lib/i18n';
     import {
@@ -346,118 +346,7 @@
     <!-- 10 Vocabulary Cards List -->
     <div class="space-y-4">
         {#each vocabularies as item, index (item.id)}
-            <section
-                class="bg-card border-border/70 hover:border-border scroll-my-24 rounded-2xl border p-5 shadow-2xs transition-all duration-200 sm:p-6"
-                aria-label={item.word}
-            >
-                <!-- Card Header: Index, Word, POS, Pronunciation, Word Audio Button -->
-                <div class="flex items-start justify-between gap-4">
-                    <div class="flex flex-wrap items-baseline gap-2.5 sm:gap-3">
-                        <!-- 01~10 Index Badge -->
-                        <span
-                            class="text-muted-foreground/60 font-mono text-sm font-bold select-none"
-                        >
-                            {String(index + 1).padStart(2, '0')}
-                        </span>
-
-                        <!-- Target Word -->
-                        <h2
-                            class="text-foreground text-2xl font-extrabold tracking-tight sm:text-3xl"
-                        >
-                            {item.word}
-                        </h2>
-
-                        <!-- Part of Speech Pill -->
-                        <span
-                            class="bg-muted text-foreground/80 rounded-md px-2.5 py-0.5 text-sm font-semibold"
-                        >
-                            {item.part_of_speech}
-                        </span>
-
-                        <!-- IPA Pronunciation -->
-                        <span
-                            class="text-muted-foreground font-mono text-sm sm:text-base"
-                        >
-                            {item.pronunciation}
-                        </span>
-                    </div>
-
-                    <!-- 40x40px Word Audio Button (strictly aligned to right rail) -->
-                    <button
-                        type="button"
-                        onclick={() => {
-                            audioPlayer.play(
-                                item.word_audio_url,
-                                `word-${item.id}`,
-                            );
-                        }}
-                        class={{
-                            'flex size-10 shrink-0 items-center justify-center rounded-full border transition-all duration-150 active:scale-95': true,
-                            'animate-pulse border-blue-600 bg-blue-600 text-white shadow-xs ring-4 ring-blue-500/20':
-                                audioPlayer.isPlaying(`word-${item.id}`),
-                            'border-border/70 bg-muted/40 text-muted-foreground dark:bg-muted/30 hover:border-blue-300 hover:bg-blue-50 hover:text-blue-600 dark:hover:border-blue-800/60 dark:hover:bg-blue-950/60 dark:hover:text-blue-300':
-                                !audioPlayer.isPlaying(`word-${item.id}`),
-                        }}
-                        title={t('ui.group_detail.play_word_audio')}
-                        aria-label={t('ui.group_detail.play_word_audio')}
-                    >
-                        <Volume2 class="size-4.5" />
-                    </button>
-                </div>
-
-                <!-- Definition -->
-                <p
-                    class="text-foreground mt-2.5 text-base font-medium sm:text-lg"
-                >
-                    {item.definition}
-                </p>
-
-                <!-- Integrated Example Sentence Section (strictly aligned to right rail) -->
-                <div class="border-border/60 mt-4 border-t pt-3.5">
-                    <div class="flex items-start justify-between gap-4">
-                        <div class="space-y-1">
-                            <p
-                                class="text-foreground text-sm leading-relaxed font-medium sm:text-base"
-                            >
-                                {item.example_sentence}
-                            </p>
-                            <p
-                                class="text-muted-foreground text-sm leading-normal"
-                            >
-                                {item.example_translation}
-                            </p>
-                        </div>
-
-                        <!-- 40x40px Sentence Audio Button (strictly aligned with word audio button) -->
-                        <button
-                            type="button"
-                            onclick={() => {
-                                audioPlayer.play(
-                                    item.sentence_audio_url,
-                                    `sentence-${item.id}`,
-                                );
-                            }}
-                            class={{
-                                'flex size-10 shrink-0 items-center justify-center rounded-full border transition-all duration-150 active:scale-95': true,
-                                'animate-pulse border-blue-600 bg-blue-600 text-white shadow-xs ring-4 ring-blue-500/20':
-                                    audioPlayer.isPlaying(
-                                        `sentence-${item.id}`,
-                                    ),
-                                'border-border/70 bg-muted/40 text-muted-foreground dark:bg-muted/30 hover:border-blue-300 hover:bg-blue-50 hover:text-blue-600 dark:hover:border-blue-800/60 dark:hover:bg-blue-950/60 dark:hover:text-blue-300':
-                                    !audioPlayer.isPlaying(
-                                        `sentence-${item.id}`,
-                                    ),
-                            }}
-                            title={t('ui.group_detail.play_sentence_audio')}
-                            aria-label={t(
-                                'ui.group_detail.play_sentence_audio',
-                            )}
-                        >
-                            <Volume2 class="size-4.5" />
-                        </button>
-                    </div>
-                </div>
-            </section>
+            <VocabularyCard vocabulary={item} {index} />
         {/each}
     </div>
 </div>

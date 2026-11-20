@@ -5,9 +5,8 @@
     import Clock from '@lucide/svelte/icons/clock';
     import RotateCcw from '@lucide/svelte/icons/rotate-ccw';
     import Settings from '@lucide/svelte/icons/settings';
-    import Volume2 from '@lucide/svelte/icons/volume-2';
     import XCircle from '@lucide/svelte/icons/x-circle';
-    import { audioPlayer } from '@/lib/audioPlayer.svelte';
+    import VocabularyCard from '@/components/VocabularyCard.svelte';
     import { t } from '@/lib/i18n';
     import type { MistakeReviewItem } from '@/types/quiz';
 
@@ -186,12 +185,6 @@
               })
             : t('ui.quiz.result.mistakes_title', { count: mistakes.length }),
     );
-
-    function playAudio(url: string, id: string) {
-        if (url) {
-            void audioPlayer.play(url, id);
-        }
-    }
 </script>
 
 <div class="mx-auto flex w-full max-w-xl flex-col gap-6 pb-12">
@@ -294,112 +287,14 @@
                 </h3>
             </div>
 
-            <div class="flex flex-col gap-3">
-                {#each mistakes as mistake (mistake.id)}
-                    {@const isWordAudioPlaying = audioPlayer.isPlaying(
-                        `mistake-word-${mistake.id}`,
-                    )}
-                    {@const isSentenceAudioPlaying = audioPlayer.isPlaying(
-                        `mistake-sentence-${mistake.id}`,
-                    )}
-
-                    <div
-                        class="border-border/70 bg-card flex flex-col gap-3 rounded-xl border p-4 shadow-sm"
-                    >
-                        <div class="flex items-center justify-between">
-                            <div class="flex items-baseline gap-2.5">
-                                <span class="text-foreground text-lg font-bold">
-                                    {mistake.word}
-                                </span>
-                                {#if mistake.pronunciation}
-                                    <span
-                                        class="text-muted-foreground font-mono text-sm"
-                                    >
-                                        {mistake.pronunciation}
-                                    </span>
-                                {/if}
-                                {#if mistake.part_of_speech}
-                                    <span
-                                        class="bg-secondary text-secondary-foreground inline-flex items-center rounded-md px-2 py-0.5 text-sm font-medium"
-                                    >
-                                        {mistake.part_of_speech}
-                                    </span>
-                                {/if}
-                            </div>
-
-                            {#if mistake.word_audio_url}
-                                <button
-                                    type="button"
-                                    class="hover:bg-muted text-foreground border-border/70 flex h-8 w-8 cursor-pointer items-center justify-center rounded-lg border transition-colors"
-                                    onclick={() =>
-                                        playAudio(
-                                            mistake.word_audio_url,
-                                            `mistake-word-${mistake.id}`,
-                                        )}
-                                    title={t('ui.intro.card.play_word')}
-                                >
-                                    <Volume2
-                                        class={{
-                                            'h-4 w-4': true,
-                                            'text-primary animate-pulse':
-                                                isWordAudioPlaying,
-                                            'text-muted-foreground':
-                                                !isWordAudioPlaying,
-                                        }}
-                                    />
-                                </button>
-                            {/if}
-                        </div>
-
-                        <p class="text-foreground text-base font-semibold">
-                            {mistake.definition}
-                        </p>
-
-                        {#if mistake.example_sentence}
-                            <div class="bg-muted/40 rounded-lg p-2.5">
-                                <div
-                                    class="flex items-start justify-between gap-2"
-                                >
-                                    <p
-                                        class="text-foreground text-sm leading-relaxed font-medium"
-                                    >
-                                        {mistake.example_sentence}
-                                    </p>
-                                    {#if mistake.sentence_audio_url}
-                                        <button
-                                            type="button"
-                                            class="hover:bg-muted text-foreground border-border/70 mt-0.5 flex size-6 shrink-0 cursor-pointer items-center justify-center rounded border transition-colors"
-                                            onclick={() =>
-                                                playAudio(
-                                                    mistake.sentence_audio_url,
-                                                    `mistake-sentence-${mistake.id}`,
-                                                )}
-                                            title={t(
-                                                'ui.quiz.custom.result.listen_sentence',
-                                            )}
-                                        >
-                                            <Volume2
-                                                class={{
-                                                    'size-3.5': true,
-                                                    'text-primary animate-pulse':
-                                                        isSentenceAudioPlaying,
-                                                    'text-muted-foreground':
-                                                        !isSentenceAudioPlaying,
-                                                }}
-                                            />
-                                        </button>
-                                    {/if}
-                                </div>
-                                {#if mistake.example_translation}
-                                    <p
-                                        class="text-muted-foreground mt-0.5 text-sm"
-                                    >
-                                        {mistake.example_translation}
-                                    </p>
-                                {/if}
-                            </div>
-                        {/if}
-                    </div>
+            <div class="space-y-4">
+                {#each mistakes as mistake, index (mistake.id)}
+                    <VocabularyCard
+                        vocabulary={mistake}
+                        {index}
+                        audioKeyPrefix="mistake-"
+                        headingTag="h4"
+                    />
                 {/each}
             </div>
         </div>

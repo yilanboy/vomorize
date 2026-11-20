@@ -150,6 +150,10 @@ describe('stage 1 intro and quiz', function () {
             ->assertSee(__('ui.quiz.result.title_failed'))
             ->assertSee(__('ui.quiz.result.failed_notice'))
             ->assertSee('本次錯誤單字回顧')
+            ->assertSee('01')
+            ->assertPresent('section[aria-label]')
+            ->assertPresent('button[aria-label="'.__('ui.group_detail.play_word_audio').'"]')
+            ->assertPresent('button[aria-label="'.__('ui.group_detail.play_sentence_audio').'"]')
             ->assertPresent('[data-progress-saved="true"]');
 
         expect($this->guestGroupProgress($page, $group))
@@ -244,6 +248,10 @@ describe('stage 2+ review quiz', function () {
             ->assertSee('80 / 100')
             ->assertSee(__('ui.quiz.result.title_passed_stage', ['stage' => 2]))
             ->assertSee('本次錯誤單字回顧')
+            ->assertSee('01')
+            ->assertPresent('section[aria-label]')
+            ->assertPresent('button[aria-label="'.__('ui.group_detail.play_word_audio').'"]')
+            ->assertPresent('button[aria-label="'.__('ui.group_detail.play_sentence_audio').'"]')
             ->assertPresent('[data-progress-saved="true"]');
 
         $this->assertDatabaseHas('learning_progress', [
