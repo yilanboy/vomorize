@@ -299,7 +299,8 @@ it('falls back to backend defaults when stored preferences are outside allowed r
     $page->script(<<<'JS'
         localStorage.setItem('quiz_question_count', '999');
         localStorage.setItem('quiz_mode', 'unsupported_mode');
-    JS);
+    JS
+    );
 
     $page
         ->navigate('/quiz')
@@ -310,70 +311,131 @@ it('falls back to backend defaults when stored preferences are outside allowed r
         ->assertAriaAttribute('@mode-option-spelling', 'pressed', 'false');
 });
 
-test('authenticated member can select sentence cloze mode and play quiz with post-answer translation reveal', function () {
-    $user = User::factory()->create();
-    $level = Level::factory()->create();
-    $group = Group::factory()->create(['level_id' => $level->id]);
+test('authenticated member can select sentence cloze mode and play quiz with post-answer translation reveal',
+    function () {
+        $user = User::factory()->create();
+        $level = Level::factory()->create();
+        $group = Group::factory()->create(['level_id' => $level->id]);
 
-    $vocabularies = Vocabulary::factory()
-        ->count(10)
-        ->withTranslation('zh_TW', null, '團隊執行了這項計畫。')
-        ->create([
+        $vocabularies = Vocabulary::factory()
+            ->count(10)
+            ->withTranslation('zh_TW', null, '團隊執行了這項計畫。')
+            ->create([
+                'level_id' => $level->id,
+                'group_id' => $group->id,
+            ]);
+
+        foreach ($vocabularies as $index => $vocab) {
+            $peers = $vocabularies
+                ->filter(fn(Vocabulary $v): bool => $v->id !== $vocab->id)
+                ->take(4)
+                ->values();
+
+            SentenceClozeQuestion::factory()->create([
+                'vocabulary_id' => $vocab->id,
+                'sentence' => "The team {{blank}} the plan for task {$index}.",
+                'blank_word' => $vocab->word.'ed',
+                'distractors' => $peers->map(fn(Vocabulary $peer): array => [
+                    'vocabulary_id' => $peer->id,
+                    'word' => $peer->word.'ed',
+                ])->all(),
+            ]);
+        }
+
+        LearningProgress::factory()->create([
+            'user_id' => $user->id,
             'level_id' => $level->id,
             'group_id' => $group->id,
+            'stage' => 1,
         ]);
 
-    foreach ($vocabularies as $index => $vocab) {
-        $peers = $vocabularies
-            ->filter(fn (Vocabulary $v): bool => $v->id !== $vocab->id)
-            ->take(4)
-            ->values();
+        $this->actingAs($user);
 
-        SentenceClozeQuestion::factory()->create([
-            'vocabulary_id' => $vocab->id,
-            'sentence' => "The team {{blank}} the plan for task {$index}.",
-            'blank_word' => $vocab->word.'ed',
-            'distractors' => $peers->map(fn (Vocabulary $peer): array => [
-                'vocabulary_id' => $peer->id,
-                'word' => $peer->word.'ed',
-            ])->all(),
+        $page = visit('/quiz');
+        $page
+            ->assertNoSmoke()
+            ->click('@mode-option-sentence-cloze')
+            ->assertAriaAttribute('@mode-option-sentence-cloze', 'pressed', 'true')
+            ->click('button:has-text("開始自訂測驗")')
+            ->wait(2)
+            ->assertNoSmoke()
+            ->assertPathIs('/quiz/play')
+            ->assertSee('看例句選字')
+            ->assertSee('_____')
+            ->assertMissing('@disable-listening-button')
+            ->assertAttribute('[data-test="sentence-cloze-reveal"]', 'aria-hidden', 'true')
+            ->click('button:has-text("1")')
+            ->assertAttribute('[data-test="sentence-cloze-reveal"]', 'aria-hidden', 'false')
+            ->assertSee('團隊執行了這項計畫。');
+    });
+
+test('selecting 10 or 20 questions starts a custom quiz session with matching question count', function () {
+    $user = User::factory()->create();
+    $level = Level::factory()->create();
+    $groups = Group::factory()->count(2)->create(['level_id' => $level->id]);
+
+    foreach ($groups as $group) {
+        Vocabulary::factory()->count(10)->create(['group_id' => $group->id]);
+
+        LearningProgress::factory()->create([
+            'user_id' => $user->id,
+            'level_id' => $level->id,
+            'group_id' => $group->id,
+            'stage' => 1,
         ]);
     }
 
-    LearningProgress::factory()->create([
-        'user_id' => $user->id,
-        'level_id' => $level->id,
-        'group_id' => $group->id,
-        'stage' => 1,
-    ]);
+    loginAsUser($user);
 
-    $this->actingAs($user);
+    $page = visit(route('quiz.index'));
 
-    $page = visit('/quiz');
     $page
         ->assertNoSmoke()
-        ->click('@mode-option-sentence-cloze')
-        ->assertAriaAttribute('@mode-option-sentence-cloze', 'pressed', 'true')
-        ->click('button:has-text("開始自訂測驗")')
-        ->wait(2)
-        ->assertNoSmoke()
+        ->click('@count-option-10')
+        ->click('@start-quiz-button')
         ->assertPathIs('/quiz/play')
-        ->assertSee('看例句選字')
-        ->assertSee('_____')
-        ->assertMissing('@disable-listening-button')
-        ->assertAttribute('[data-test="sentence-cloze-reveal"]', 'aria-hidden', 'true')
-        ->click('button:has-text("1")')
-        ->assertAttribute('[data-test="sentence-cloze-reveal"]', 'aria-hidden', 'false')
-        ->assertSee('團隊執行了這項計畫。');
+        ->assertSee('1 / 10');
+
+    $page = visit(route('quiz.index'));
+
+    $page
+        ->assertNoSmoke()
+        ->click('@count-option-20')
+        ->click('@start-quiz-button')
+        ->assertPathIs('/quiz/play')
+        ->assertSee('1 / 20');
 });
 
-test('selecting 10 or 20 questions starts a custom quiz session with matching question count', function () {
-    //
-})->skip('Practice: verify /quiz/play top progress bar shows 1 / 10 or 1 / 20 according to selection');
+test('member completes standard custom quiz with perfect score using correct-option and sees 100/100 result',
+    function () {
+        $user = User::factory()->create();
+        $level = Level::factory()->create();
+        $groups = Group::factory()->count(2)->withVocabularies()->create(['level_id' => $level->id]);
 
-test('member completes standard custom quiz with perfect score using correct-option and sees 100/100 result', function () {
-    //
-})->skip('Practice: add data-test="correct-option" in QuizOptions.svelte, answer all 10 questions correctly, and assert 100 / 100');
+        foreach ($groups as $group) {
+            LearningProgress::factory()->create([
+                'user_id' => $user->id,
+                'level_id' => $level->id,
+                'group_id' => $group->id,
+                'stage' => 1,
+            ]);
+        }
+
+        loginAsUser($user);
+
+        $page = visit(route('quiz.index'));
+
+        $page
+            ->assertNoSmoke()
+            ->click('@count-option-20')
+            ->click('@start-quiz-button')
+            ->assertPathIs('/quiz/play')
+            ->assertSee('1 / 20');
+
+        $this->playCustomQuiz($page, 20);
+
+        $page->assertSee('100 / 100');
+    });
 
 test('member completes sentence cloze custom quiz with perfect score using correct-option', function () {
     //

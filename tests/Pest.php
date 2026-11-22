@@ -4,8 +4,9 @@ declare(strict_types=1);
 
 use App\Models\User;
 use Database\Factories\GroupFactory;
-use Illuminate\Foundation\Testing\RefreshDatabase;
+use Illuminate\Foundation\Testing\LazilyRefreshDatabase;
 use Tests\Browser\Concerns\InteractsWithGuestProgress;
+use Tests\Browser\Concerns\PlaysCustomQuizzes;
 use Tests\Browser\Concerns\PlaysLearningSessions;
 use Tests\TestCase;
 
@@ -22,7 +23,7 @@ use Tests\TestCase;
 
 pest()
     ->extend(TestCase::class)
-    ->use(RefreshDatabase::class)
+    ->use(LazilyRefreshDatabase::class)
     ->beforeEach(function () {
         GroupFactory::resetSequences();
     })
@@ -32,6 +33,7 @@ pest()
     ->use(
         InteractsWithGuestProgress::class,
         PlaysLearningSessions::class,
+        PlaysCustomQuizzes::class
     )
     ->in('Browser');
 

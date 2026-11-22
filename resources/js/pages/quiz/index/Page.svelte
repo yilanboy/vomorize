@@ -337,6 +337,7 @@
         <!-- Launch Action -->
         <div class="flex justify-end pt-2">
             <Button
+                data-test="start-quiz-button"
                 size="lg"
                 class="h-12 w-full gap-2.5 px-7 text-base font-semibold whitespace-nowrap shadow-xs sm:w-auto"
                 disabled={!isUnlocked || form.processing}

@@ -8,10 +8,7 @@ use App\Models\Level;
 use App\Models\User;
 use App\Models\Vocabulary;
 use Carbon\Carbon;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Inertia\Testing\AssertableInertia as Assert;
-
-uses(RefreshDatabase::class);
 
 test('guest can access group review quiz page and receives 20-step session payload', function () {
     $level = Level::factory()->withTranslation('zh_TW', '基礎入門')->create();
@@ -25,7 +22,7 @@ test('guest can access group review quiz page and receives 20-step session paylo
     $response = $this->get(route('groups.quiz', $group));
 
     $response->assertOk();
-    $response->assertInertia(fn (Assert $page) => $page
+    $response->assertInertia(fn(Assert $page) => $page
         ->component('groups/quiz/Page')
         ->has('group')
         ->where('group.id', $group->id)
@@ -115,7 +112,7 @@ test('member can progress through stages 2 to 6 and mark group as completed', fu
     $this->actingAs($user)
         ->get(route('groups.quiz', $group))
         ->assertOk()
-        ->assertInertia(fn (Assert $page) => $page
+        ->assertInertia(fn(Assert $page) => $page
             ->component('groups/quiz/Page')
             ->where('progress.stage', 1)
             ->where('progress.status', 'ready')
@@ -162,7 +159,7 @@ test('member can progress through stages 2 to 6 and mark group as completed', fu
     $this->actingAs($user)
         ->get(route('groups.show', $group))
         ->assertOk()
-        ->assertInertia(fn (Assert $page) => $page
+        ->assertInertia(fn(Assert $page) => $page
             ->component('groups/show/Page')
             ->where('progress.stage', 6)
             ->where('progress.status', 'completed')
