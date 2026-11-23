@@ -325,7 +325,7 @@
             </div>
 
             <!-- Right: Disable Listening Toggle (omitted in sentence cloze mode) -->
-            {#if quizMode !== 'sentence_cloze'}
+            {#if quizMode !== 'sentence_cloze' && quizCompleted === false}
                 <button
                     type="button"
                     data-test="disable-listening-button"

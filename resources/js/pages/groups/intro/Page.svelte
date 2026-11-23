@@ -325,25 +325,29 @@
             </div>
 
             <!-- Right: Disable listening toggle button -->
-            <button
-                type="button"
-                class={{
-                    'flex size-10 items-center justify-center rounded-xl transition-colors': true,
-                    'hover:bg-muted text-muted-foreground hover:text-foreground cursor-pointer':
-                        !listeningDisabled,
-                    'text-muted-foreground/40 cursor-not-allowed':
-                        listeningDisabled,
-                }}
-                disabled={listeningDisabled}
-                onclick={() => {
-                    isDisableListeningDialogOpen = true;
-                }}
-                title={listeningDisabled
-                    ? t('ui.quiz.top_bar.listening_disabled')
-                    : t('ui.quiz.top_bar.cant_listen')}
-            >
-                <EarOff class="size-5" />
-            </button>
+            {#if quizCompleted === false}
+                <button
+                    type="button"
+                    class={{
+                        'flex size-10 items-center justify-center rounded-xl transition-colors': true,
+                        'hover:bg-muted text-muted-foreground hover:text-foreground cursor-pointer':
+                            !listeningDisabled,
+                        'text-muted-foreground/40 cursor-not-allowed':
+                            listeningDisabled,
+                    }}
+                    disabled={listeningDisabled}
+                    onclick={() => {
+                        isDisableListeningDialogOpen = true;
+                    }}
+                    title={listeningDisabled
+                        ? t('ui.quiz.top_bar.listening_disabled')
+                        : t('ui.quiz.top_bar.cant_listen')}
+                >
+                    <EarOff class="size-5" />
+                </button>
+            {:else}
+                <div class="size-10" aria-hidden="true"></div>
+            {/if}
         </div>
     </header>
 
