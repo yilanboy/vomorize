@@ -20,15 +20,17 @@
         onSelect: (option: QuizOptionPayload) => void;
         disabled?: boolean;
     } = $props();
+
+    const isAnswered = $derived(selectedOptionId !== null);
 </script>
 
 <div
     class="border-border/80 bg-card mx-auto flex h-[560px] w-full max-w-xl flex-col justify-between rounded-2xl border p-6 shadow-2xs sm:h-[580px] sm:p-8"
 >
     <!-- Card Header / Stem: Fixed height across all quiz cards -->
-    <div class="flex h-[170px] shrink-0 flex-col justify-between sm:h-[180px]">
+    <div class="flex h-[170px] shrink-0 flex-col sm:h-[180px]">
         <!-- Top Badges -->
-        <div class="flex items-center justify-between">
+        <div class="flex shrink-0 items-center justify-start">
             <span
                 class="inline-flex items-center gap-1.5 rounded-full border border-blue-200/80 bg-blue-50/80 px-3 py-0.5 text-sm font-semibold tracking-wide text-blue-700 dark:border-blue-800/60 dark:bg-blue-950/50 dark:text-blue-300"
             >
@@ -36,42 +38,48 @@
                 ></span>
                 <span>{t('ui.quiz.question_types.definition_to_word')}</span>
             </span>
-
-            <span
-                class="bg-muted text-foreground/80 rounded-md px-2.5 py-0.5 text-sm font-semibold"
-            >
-                {vocabulary.part_of_speech}
-            </span>
         </div>
 
         <!-- Definition Stem & Reveal Area -->
-        <div class="flex flex-1 flex-col justify-center gap-2 py-1">
-            <h2
-                class="text-foreground line-clamp-2 text-2xl font-bold tracking-tight sm:text-3xl"
-            >
-                {question.stem}
-            </h2>
+        <div
+            class="flex flex-1 flex-col justify-start gap-2.5 pt-5 sm:gap-3 sm:pt-6"
+        >
+            <div class="flex min-h-11 items-center">
+                <h2
+                    class="text-foreground line-clamp-2 text-2xl font-extrabold tracking-tight sm:text-3xl"
+                >
+                    {question.stem}
+                </h2>
+            </div>
 
-            <!-- Answer Reveal: Space is reserved with h-11 to prevent any layout shifting -->
+            <!-- Answer Reveal: Reserved height prevents any layout shifting -->
             <div
                 class={{
-                    'border-border/60 bg-muted/40 flex h-11 items-center rounded-xl border px-3.5 transition-opacity duration-150': true,
-                    'visible opacity-100': selectedOptionId !== null,
-                    'invisible border-transparent bg-transparent opacity-0 select-none':
-                        selectedOptionId === null,
+                    'flex min-h-10 flex-wrap items-baseline gap-x-2.5 gap-y-1 transition-opacity duration-150': true,
+                    'visible opacity-100': isAnswered,
+                    'invisible opacity-0 select-none': !isAnswered,
                 }}
-                aria-hidden={selectedOptionId === null}
+                aria-hidden={!isAnswered}
             >
-                <div class="flex items-baseline gap-2.5">
+                <span
+                    class="text-foreground text-2xl font-bold tracking-tight sm:text-3xl"
+                >
+                    {vocabulary.word}
+                </span>
+                {#if vocabulary.pronunciation}
                     <span
-                        class="text-foreground text-base font-bold sm:text-lg"
+                        class="text-muted-foreground font-mono text-sm sm:text-base"
                     >
-                        {vocabulary.word}
-                    </span>
-                    <span class="text-muted-foreground font-mono text-sm">
                         {vocabulary.pronunciation}
                     </span>
-                </div>
+                {/if}
+                {#if vocabulary.part_of_speech}
+                    <span
+                        class="border-border/80 bg-muted/70 text-foreground/75 inline-flex shrink-0 items-center self-center rounded-md border px-2 py-0.5 text-sm leading-tight font-semibold italic"
+                    >
+                        {vocabulary.part_of_speech}
+                    </span>
+                {/if}
             </div>
         </div>
     </div>

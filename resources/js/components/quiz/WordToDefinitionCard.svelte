@@ -23,6 +23,7 @@
         disabled?: boolean;
     } = $props();
 
+    const isAnswered = $derived(selectedOptionId !== null);
     const isPlaying = $derived(
         audioPlayer.isPlaying(`quiz-word-${vocabulary.id}`),
     );
@@ -41,9 +42,9 @@
     class="border-border/80 bg-card mx-auto flex h-[560px] w-full max-w-xl flex-col justify-between rounded-2xl border p-6 shadow-2xs sm:h-[580px] sm:p-8"
 >
     <!-- Card Header / Stem: Fixed height across all quiz cards -->
-    <div class="flex h-[170px] shrink-0 flex-col justify-between sm:h-[180px]">
+    <div class="flex h-[170px] shrink-0 flex-col sm:h-[180px]">
         <!-- Top Badges -->
-        <div class="flex items-center justify-between">
+        <div class="flex shrink-0 items-center justify-start">
             <span
                 class="inline-flex items-center gap-1.5 rounded-full border border-blue-200/80 bg-blue-50/80 px-3 py-0.5 text-sm font-semibold tracking-wide text-blue-700 dark:border-blue-800/60 dark:bg-blue-950/50 dark:text-blue-300"
             >
@@ -51,48 +52,60 @@
                 ></span>
                 <span>{t('ui.quiz.question_types.word_to_definition')}</span>
             </span>
-
-            <span
-                class="bg-muted text-foreground/80 rounded-md px-2.5 py-0.5 text-sm font-semibold"
-            >
-                {vocabulary.part_of_speech}
-            </span>
         </div>
 
         <!-- Word, Pronunciation, & Audio Trigger -->
-        <div class="flex flex-1 items-center justify-between gap-4 py-2">
-            <div class="flex flex-col gap-1.5">
-                <div class="flex flex-wrap items-baseline gap-3">
+        <div class="flex flex-1 flex-col justify-start pt-5 sm:pt-6">
+            <div class="flex min-h-11 items-center justify-between gap-4">
+                <div class="flex flex-wrap items-baseline gap-x-2.5 gap-y-1.5">
                     <h2
-                        class="text-foreground text-3xl font-extrabold tracking-tight sm:text-4xl"
+                        class="text-foreground text-2xl font-extrabold tracking-tight sm:text-3xl"
                     >
                         {vocabulary.word}
                     </h2>
-                    <span class="text-muted-foreground font-mono text-base">
-                        {vocabulary.pronunciation}
-                    </span>
+                    {#if vocabulary.pronunciation}
+                        <span
+                            class="text-muted-foreground font-mono text-sm sm:text-base"
+                        >
+                            {vocabulary.pronunciation}
+                        </span>
+                    {/if}
+                    {#if vocabulary.part_of_speech}
+                        <span
+                            class={{
+                                'border-border/80 bg-muted/70 text-foreground/75 inline-flex shrink-0 items-center self-center rounded-md border px-2 py-0.5 text-sm leading-tight font-semibold italic transition-opacity duration-150': true,
+                                'visible opacity-100': isAnswered,
+                                'invisible opacity-0 select-none': !isAnswered,
+                            }}
+                            aria-hidden={!isAnswered}
+                        >
+                            {vocabulary.part_of_speech}
+                        </span>
+                    {/if}
                 </div>
-            </div>
 
-            <button
-                type="button"
-                class={{
-                    'flex size-11 shrink-0 items-center justify-center rounded-xl border transition-all duration-150 active:scale-95': true,
-                    'border-blue-600 bg-blue-600 text-white shadow-xs ring-4 ring-blue-500/20':
-                        isPlaying,
-                    'border-border/70 bg-muted/40 text-muted-foreground dark:bg-muted/30 hover:border-blue-300 hover:bg-blue-50 hover:text-blue-600 dark:hover:border-blue-800/60 dark:hover:bg-blue-950/60 dark:hover:text-blue-300':
-                        !isPlaying,
-                }}
-                onclick={playAudio}
-                title={t('ui.intro.card.play_word')}
-            >
-                <Volume2
+                <button
+                    type="button"
                     class={{
-                        'size-5': true,
-                        'animate-pulse': isPlaying,
+                        'flex size-11 shrink-0 items-center justify-center rounded-xl border transition-all duration-150 active:scale-95': true,
+                        'border-blue-600 bg-blue-600 text-white shadow-xs ring-4 ring-blue-500/20':
+                            isPlaying,
+                        'border-border/70 bg-muted/40 text-muted-foreground dark:bg-muted/30 hover:border-blue-300 hover:bg-blue-50 hover:text-blue-600 dark:hover:border-blue-800/60 dark:hover:bg-blue-950/60 dark:hover:text-blue-300':
+                            !isPlaying,
                     }}
-                />
-            </button>
+                    onclick={playAudio}
+                    aria-label={t('ui.intro.card.play_word')}
+                    aria-pressed={isPlaying}
+                    title={t('ui.intro.card.play_word')}
+                >
+                    <Volume2
+                        class={{
+                            'size-5': true,
+                            'animate-pulse': isPlaying,
+                        }}
+                    />
+                </button>
+            </div>
         </div>
     </div>
 
