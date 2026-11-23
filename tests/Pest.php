@@ -5,9 +5,6 @@ declare(strict_types=1);
 use App\Models\User;
 use Database\Factories\GroupFactory;
 use Illuminate\Foundation\Testing\LazilyRefreshDatabase;
-use Tests\Browser\Concerns\InteractsWithGuestProgress;
-use Tests\Browser\Concerns\PlaysCustomQuizzes;
-use Tests\Browser\Concerns\PlaysLearningSessions;
 use Tests\TestCase;
 
 /*
@@ -28,14 +25,6 @@ pest()
         GroupFactory::resetSequences();
     })
     ->in('Feature', 'Browser');
-
-pest()
-    ->use(
-        InteractsWithGuestProgress::class,
-        PlaysLearningSessions::class,
-        PlaysCustomQuizzes::class
-    )
-    ->in('Browser');
 
 /*
  |--------------------------------------------------------------------------

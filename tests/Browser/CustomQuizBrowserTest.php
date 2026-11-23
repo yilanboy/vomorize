@@ -8,6 +8,9 @@ use App\Models\Level;
 use App\Models\SentenceClozeQuestion;
 use App\Models\User;
 use App\Models\Vocabulary;
+use Tests\Browser\Concerns\PlaysCustomQuizzes;
+
+uses(PlaysCustomQuizzes::class);
 
 test('guest visits custom quiz page with zero unlocked words and sees empty state', function () {
     visit('/quiz')
@@ -327,7 +330,7 @@ test('authenticated member can select sentence cloze mode and play quiz with pos
 
         foreach ($vocabularies as $index => $vocab) {
             $peers = $vocabularies
-                ->filter(fn(Vocabulary $v): bool => $v->id !== $vocab->id)
+                ->filter(fn (Vocabulary $v): bool => $v->id !== $vocab->id)
                 ->take(4)
                 ->values();
 
@@ -335,7 +338,7 @@ test('authenticated member can select sentence cloze mode and play quiz with pos
                 'vocabulary_id' => $vocab->id,
                 'sentence' => "The team {{blank}} the plan for task {$index}.",
                 'blank_word' => $vocab->word.'ed',
-                'distractors' => $peers->map(fn(Vocabulary $peer): array => [
+                'distractors' => $peers->map(fn (Vocabulary $peer): array => [
                     'vocabulary_id' => $peer->id,
                     'word' => $peer->word.'ed',
                 ])->all(),

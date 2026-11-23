@@ -17,7 +17,7 @@ test('guest accessing custom quiz setup page receives null counts', function () 
     $response = $this->get(route('quiz.index'));
 
     $response->assertOk();
-    $response->assertInertia(fn(Assert $page) => $page
+    $response->assertInertia(fn (Assert $page) => $page
         ->component('quiz/index/Page')
         ->where('passedGroupCount', null)
         ->where('unlockedWordCount', null)
@@ -34,7 +34,7 @@ test('member with no passed groups receives 0 unlocked words on setup page', fun
 
     $response->assertOk();
     $response->assertInertia(
-        fn(Assert $page) => $page
+        fn (Assert $page) => $page
             ->component('quiz/index/Page')
             ->where('passedGroupCount', 0)
             ->where('unlockedWordCount', 0),
@@ -70,7 +70,7 @@ test('member with passed groups receives correct unlocked word count', function 
 
     $response->assertOk();
     $response->assertInertia(
-        fn(Assert $page) => $page
+        fn (Assert $page) => $page
             ->component('quiz/index/Page')
             ->where('passedGroupCount', 2)
             ->where('unlockedWordCount', 20),
@@ -149,7 +149,7 @@ test('member can start custom quiz and receives session with same-group distract
 
     $response->assertOk();
     $response->assertInertia(
-        fn(Assert $page) => $page
+        fn (Assert $page) => $page
             ->component('quiz/play/Page')
             ->where('questionCount', 10)
             ->has('session.steps', 10)
@@ -205,7 +205,7 @@ test('guest can start custom quiz by providing passed_group_ids', function () {
 
     $response->assertOk();
     $response->assertInertia(
-        fn(Assert $page) => $page
+        fn (Assert $page) => $page
             ->component('quiz/play/Page')
             ->where('questionCount', 10)
             ->has('session.steps', 10),
@@ -271,7 +271,7 @@ test('member can start custom quiz in spelling mode with valid slots and sorted 
 
     $response->assertOk();
     $response->assertInertia(
-        fn(Assert $page) => $page
+        fn (Assert $page) => $page
             ->component('quiz/play/Page')
             ->where('questionCount', 10)
             ->where('quizMode', 'spelling')
@@ -293,7 +293,7 @@ test('member can start custom quiz in spelling mode with valid slots and sorted 
         $slots = $quiz['slots'];
         $tiles = $quiz['tiles'];
 
-        $blankSlots = array_filter($slots, fn(array $s): bool => $s['is_blank'] === true);
+        $blankSlots = array_filter($slots, fn (array $s): bool => $s['is_blank'] === true);
 
         // Tiles count must match blank slots count exactly
         expect(count($tiles))->toBe(count($blankSlots));
@@ -327,7 +327,7 @@ test('member can start custom quiz in sentence_cloze mode with inflected options
 
         foreach ($vocabularies as $index => $vocab) {
             $peerIds = $vocabularies
-                ->filter(fn(Vocabulary $v): bool => $v->id !== $vocab->id)
+                ->filter(fn (Vocabulary $v): bool => $v->id !== $vocab->id)
                 ->take(4)
                 ->values();
 
@@ -335,7 +335,7 @@ test('member can start custom quiz in sentence_cloze mode with inflected options
                 'vocabulary_id' => $vocab->id,
                 'sentence' => "She {{blank}} the answer for item {$index}.",
                 'blank_word' => $vocab->word.'ed',
-                'distractors' => $peerIds->map(fn(Vocabulary $peer): array => [
+                'distractors' => $peerIds->map(fn (Vocabulary $peer): array => [
                     'vocabulary_id' => $peer->id,
                     'word' => $peer->word.'ed',
                 ])->all(),
@@ -360,7 +360,7 @@ test('member can start custom quiz in sentence_cloze mode with inflected options
 
         $response->assertOk();
         $response->assertInertia(
-            fn(Assert $page) => $page
+            fn (Assert $page) => $page
                 ->component('quiz/play/Page')
                 ->where('questionCount', 10)
                 ->where('quizMode', 'sentence_cloze')
@@ -386,7 +386,7 @@ test('member can start custom quiz in sentence_cloze mode with inflected options
 
             $blankSegments = array_values(array_filter(
                 $quiz['sentence_segments'],
-                fn(array $segment): bool => $segment['type'] === 'blank',
+                fn (array $segment): bool => $segment['type'] === 'blank',
             ));
 
             expect($blankSegments)
@@ -453,12 +453,12 @@ test('custom quiz generates exact step count for each supported question count o
                     'question_count' => $count,
                     'quiz_mode' => QuizMode::defaultMode()->value,
                     'passed_group_ids' => $groupIds,
-                ]
+                ],
             ])
             ->get(route('quiz.play'))
             ->assertOk()
             ->assertInertia(
-                fn(Assert $page) => $page
+                fn (Assert $page) => $page
                     ->component('quiz/play/Page')
                     ->where('questionCount', $count)
                     ->has('session.steps', $count),

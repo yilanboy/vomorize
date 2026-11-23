@@ -6,6 +6,13 @@ use App\Models\Group;
 use App\Models\LearningProgress;
 use App\Models\Level;
 use App\Models\User;
+use Tests\Browser\Concerns\InteractsWithGuestProgress;
+use Tests\Browser\Concerns\PlaysLearningSessions;
+
+uses(
+    InteractsWithGuestProgress::class,
+    PlaysLearningSessions::class,
+);
 
 describe('page loading and leave guards', function () {
     test('stage 1 intro page loads without javascript errors', function () {
@@ -137,28 +144,29 @@ describe('stage 1 intro and quiz', function () {
             ->and($user->fresh()->current_streak)->toBe(1);
     });
 
-    test('stage 1 quiz result score matches partial correct answers, lists mistakes, and shows failed state below 80', function () {
-        $group = Group::factory()->withVocabularies()->create();
+    test('stage 1 quiz result score matches partial correct answers, lists mistakes, and shows failed state below 80',
+        function () {
+            $group = Group::factory()->withVocabularies()->create();
 
-        $page = visit(route('groups.intro', ['group' => $group->id]));
-        $page->assertNoSmoke();
+            $page = visit(route('groups.intro', ['group' => $group->id]));
+            $page->assertNoSmoke();
 
-        $this->completeStage1Session($page, wrongCount: 6);
+            $this->completeStage1Session($page, wrongCount: 6);
 
-        $page
-            ->assertSee('70 / 100')
-            ->assertSee(__('ui.quiz.result.title_failed'))
-            ->assertSee(__('ui.quiz.result.failed_notice'))
-            ->assertSee('本次錯誤單字回顧')
-            ->assertSee('01')
-            ->assertPresent('section[aria-label]')
-            ->assertPresent('button[aria-label="'.__('ui.group_detail.play_word_audio').'"]')
-            ->assertPresent('button[aria-label="'.__('ui.group_detail.play_sentence_audio').'"]')
-            ->assertPresent('[data-progress-saved="true"]');
+            $page
+                ->assertSee('70 / 100')
+                ->assertSee(__('ui.quiz.result.title_failed'))
+                ->assertSee(__('ui.quiz.result.failed_notice'))
+                ->assertSee('本次錯誤單字回顧')
+                ->assertSee('01')
+                ->assertPresent('section[aria-label]')
+                ->assertPresent('button[aria-label="'.__('ui.group_detail.play_word_audio').'"]')
+                ->assertPresent('button[aria-label="'.__('ui.group_detail.play_sentence_audio').'"]')
+                ->assertPresent('[data-progress-saved="true"]');
 
-        expect($this->guestGroupProgress($page, $group))
-            ->toMatchArray(['stage' => 0, 'last_score' => 70, 'next_review_at' => null]);
-    });
+            expect($this->guestGroupProgress($page, $group))
+                ->toMatchArray(['stage' => 0, 'last_score' => 70, 'next_review_at' => null]);
+        });
 
     test('stage 1 quiz shows expected visual feedback for correct and wrong option selections', function () {
         $group = Group::factory()->withVocabularies()->create();
@@ -313,7 +321,8 @@ describe('guest indexeddb progress and login sync', function () {
 
         $page = visit('/');
         $this->seedGuestProgress($page, [
-            $this->guestProgressRecord($group, stage: 1, lastReviewedAt: now()->subHour(), nextReviewAt: now()->addHours(11)),
+            $this->guestProgressRecord($group, stage: 1, lastReviewedAt: now()->subHour(),
+                nextReviewAt: now()->addHours(11)),
         ]);
 
         $page->navigate(route('groups.quiz', ['group' => $group->id]))
@@ -322,41 +331,43 @@ describe('guest indexeddb progress and login sync', function () {
             ->assertNoSmoke();
     });
 
-    test('guest with ready stage 1 progress in indexeddb completes stage 2 review quiz and updates indexeddb', function () {
-        $group = Group::factory()->withVocabularies()->create();
+    test('guest with ready stage 1 progress in indexeddb completes stage 2 review quiz and updates indexeddb',
+        function () {
+            $group = Group::factory()->withVocabularies()->create();
 
-        $page = visit('/');
-        $this->seedGuestProgress($page, [
-            $this->guestProgressRecord($group, stage: 1, lastScore: 85, nextReviewAt: now()->subMinute()),
-        ]);
+            $page = visit('/');
+            $this->seedGuestProgress($page, [
+                $this->guestProgressRecord($group, stage: 1, lastScore: 85, nextReviewAt: now()->subMinute()),
+            ]);
 
-        $page->navigate(route('groups.quiz', ['group' => $group->id]))
-            ->assertPathIs("/groups/{$group->id}/quiz")
-            ->assertPresent('[data-progress-ready="true"]')
-            ->assertTitleContains(__('ui.quiz.stage_badge', ['stage' => 2]))
-            ->assertNoSmoke();
+            $page->navigate(route('groups.quiz', ['group' => $group->id]))
+                ->assertPathIs("/groups/{$group->id}/quiz")
+                ->assertPresent('[data-progress-ready="true"]')
+                ->assertTitleContains(__('ui.quiz.stage_badge', ['stage' => 2]))
+                ->assertNoSmoke();
 
-        $this->completeReviewQuizSession($page);
+            $this->completeReviewQuizSession($page);
 
-        $page
-            ->assertSee('100 / 100')
-            ->assertSee(__('ui.quiz.result.all_correct'))
-            ->assertSee(__('ui.quiz.result.btn_back_level'))
-            ->assertPresent('[data-progress-saved="true"]');
+            $page
+                ->assertSee('100 / 100')
+                ->assertSee(__('ui.quiz.result.all_correct'))
+                ->assertSee(__('ui.quiz.result.btn_back_level'))
+                ->assertPresent('[data-progress-saved="true"]');
 
-        $record = $this->guestGroupProgress($page, $group);
+            $record = $this->guestGroupProgress($page, $group);
 
-        expect($record)->not->toBeNull()
-            ->toMatchArray(['stage' => 2, 'last_score' => 100])
-            ->and($record['next_review_at'])->not->toBeNull();
-    });
+            expect($record)->not->toBeNull()
+                ->toMatchArray(['stage' => 2, 'last_score' => 100])
+                ->and($record['next_review_at'])->not->toBeNull();
+        });
 
     test('guest at stage 5 in indexeddb fails stage 6 with score 85 and retains stage 5', function () {
         $group = Group::factory()->withVocabularies()->create();
 
         $page = visit('/');
         $this->seedGuestProgress($page, [
-            $this->guestProgressRecord($group, stage: 5, lastReviewedAt: now()->subDays(8), nextReviewAt: now()->subMinute()),
+            $this->guestProgressRecord($group, stage: 5, lastReviewedAt: now()->subDays(8),
+                nextReviewAt: now()->subMinute()),
         ]);
 
         $page->navigate(route('groups.quiz', ['group' => $group->id]))
@@ -398,7 +409,8 @@ describe('guest indexeddb progress and login sync', function () {
 
         $page = visit('/login');
         $this->seedGuestProgress($page, [
-            $this->guestProgressRecord($group, stage: 2, lastReviewedAt: now()->subHours(2), nextReviewAt: now()->addHours(22)),
+            $this->guestProgressRecord($group, stage: 2, lastReviewedAt: now()->subHours(2),
+                nextReviewAt: now()->addHours(22)),
         ]);
 
         $page
@@ -418,29 +430,31 @@ describe('guest indexeddb progress and login sync', function () {
         ]);
     });
 
-    test('guest indexeddb progress is discarded entirely after logging in when the server rejects it as invalid', function () {
-        $user = User::factory()->create();
-        $level = Level::factory()->create();
-        $validGroup = Group::factory()->create(['level_id' => $level->id, 'sequence' => 1]);
-        $invalidGroup = Group::factory()->create(['level_id' => $level->id, 'sequence' => 2]);
+    test('guest indexeddb progress is discarded entirely after logging in when the server rejects it as invalid',
+        function () {
+            $user = User::factory()->create();
+            $level = Level::factory()->create();
+            $validGroup = Group::factory()->create(['level_id' => $level->id, 'sequence' => 1]);
+            $invalidGroup = Group::factory()->create(['level_id' => $level->id, 'sequence' => 2]);
 
-        $page = visit('/login');
-        $savedCount = $this->seedGuestProgress($page, [
-            $this->guestProgressRecord($validGroup, stage: 2, lastReviewedAt: now()->subHours(2), nextReviewAt: now()->addHours(22)),
-            $this->guestProgressRecord($invalidGroup, stage: 7, lastReviewedAt: now()->subHours(2)),
-        ]);
+            $page = visit('/login');
+            $savedCount = $this->seedGuestProgress($page, [
+                $this->guestProgressRecord($validGroup, stage: 2, lastReviewedAt: now()->subHours(2),
+                    nextReviewAt: now()->addHours(22)),
+                $this->guestProgressRecord($invalidGroup, stage: 7, lastReviewedAt: now()->subHours(2)),
+            ]);
 
-        expect($savedCount)->toBe(2);
+            expect($savedCount)->toBe(2);
 
-        $page
-            ->fill('#email', $user->email)
-            ->fill('#password', 'password')
-            ->click('@login-button')
-            ->assertPathIs('/dashboard')
-            ->assertNoSmoke();
+            $page
+                ->fill('#email', $user->email)
+                ->fill('#password', 'password')
+                ->click('@login-button')
+                ->assertPathIs('/dashboard')
+                ->assertNoSmoke();
 
-        // A single invalid record rejects the whole batch, and the client then discards all local progress.
-        $this->assertGuestProgressCount($page, 0);
-        $this->assertDatabaseCount('learning_progress', 0);
-    });
+            // A single invalid record rejects the whole batch, and the client then discards all local progress.
+            $this->assertGuestProgressCount($page, 0);
+            $this->assertDatabaseCount('learning_progress', 0);
+        });
 });
