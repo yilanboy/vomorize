@@ -166,10 +166,10 @@
 </script>
 
 <div
-    class="border-border/80 bg-card mx-auto flex h-[580px] w-full max-w-xl flex-col justify-between rounded-2xl border px-3 py-6 shadow-sm transition-all sm:h-[600px] sm:p-8"
+    class="border-border/80 bg-card mx-auto flex h-145 w-full max-w-xl flex-col justify-between rounded-2xl border px-3 py-6 shadow-sm transition-all sm:h-150 sm:p-8"
 >
     <!-- Header / Stem -->
-    <div class="flex h-[170px] shrink-0 flex-col justify-between sm:h-[180px]">
+    <div class="flex h-42.5 shrink-0 flex-col justify-between sm:h-45">
         <!-- Top Badges -->
         <div class="flex items-center justify-between">
             <span
@@ -231,7 +231,7 @@
         <!-- Letter Slots -->
         <div
             class={{
-                'flex max-w-full [scrollbar-width:none] flex-nowrap items-center justify-center overflow-x-auto py-1.5 [&::-webkit-scrollbar]:hidden': true,
+                'flex max-w-full scrollbar-none flex-nowrap items-center justify-center overflow-x-auto py-1.5 [&::-webkit-scrollbar]:hidden': true,
                 [slotDensity.gap]: true,
             }}
         >
@@ -342,7 +342,7 @@
                 {@const isUsed = usedSlotIndices.has(tile.slot_index)}
                 <TactileTile
                     depressed={isUsed || isAnswered}
-                    class="size-[50px] shrink-0 font-mono text-xl font-extrabold sm:size-[54px] sm:text-2xl"
+                    class="size-12.5 shrink-0 font-mono text-xl font-extrabold sm:size-13.5 sm:text-2xl"
                     onclick={() => handleTileClick(tile)}
                     disabled={isUsed || isAnswered || disabled}
                 >

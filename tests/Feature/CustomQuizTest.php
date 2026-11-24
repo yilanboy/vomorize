@@ -312,7 +312,8 @@ test('member can start custom quiz in spelling mode with valid slots and sorted 
     }
 });
 
-test('member can start custom quiz in sentence_cloze mode with inflected options and same-group distractors',
+test(
+    'member can start custom quiz in sentence_cloze mode with inflected options and same-group distractors',
     function () {
         $user = User::factory()->create();
         $level = Level::factory()->create();
@@ -384,10 +385,12 @@ test('member can start custom quiz in sentence_cloze mode with inflected options
                 ->not->toHaveKey('sentence_translation')->and($targetVocab['example_translation'])
                 ->not->toBeEmpty()->and($quiz['options'])->toHaveCount(4)->and($step['fallback_quiz'])->toBeNull();
 
-            $blankSegments = array_values(array_filter(
-                $quiz['sentence_segments'],
-                fn (array $segment): bool => $segment['type'] === 'blank',
-            ));
+            $blankSegments = array_values(
+                array_filter(
+                    $quiz['sentence_segments'],
+                    fn (array $segment): bool => $segment['type'] === 'blank',
+                )
+            );
 
             expect($blankSegments)
                 ->toHaveCount(1)
@@ -398,7 +401,8 @@ test('member can start custom quiz in sentence_cloze mode with inflected options
                 expect($option['text'])->toBe($option['word'].'ed');
             }
         }
-    });
+    }
+);
 
 test('sentence_cloze mode throws when cloze questions are missing for the requested count', function () {
     $user = User::factory()->create();

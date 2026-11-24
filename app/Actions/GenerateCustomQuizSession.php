@@ -7,7 +7,6 @@ namespace App\Actions;
 use App\Enums\QuizMode;
 use App\Enums\QuizType;
 use App\Models\Group;
-use App\Models\LearningProgress;
 use App\Models\SentenceClozeQuestion;
 use App\Models\User;
 use App\Models\Vocabulary;
@@ -77,32 +76,9 @@ readonly class GenerateCustomQuizSession
 
     public const int DEFAULT_QUESTION_COUNT = 10;
 
-    /**
-     * Resolve available passed group IDs for a member or guest.
-     *
-     * @param  array<int, int>  $passedGroupIds
-     * @return array<int, int>
-     */
-    public function resolveAvailableGroupIds(?User $user = null, array $passedGroupIds = []): array
-    {
-        /** @var array<int, int> $availableGroupIds */
-        $availableGroupIds = $user instanceof User
-            ? LearningProgress::query()
-                ->where('user_id', $user->id)
-                ->where('stage', '>=', 1)
-                ->pluck('group_id')
-                ->map(fn ($id): int => (int) $id)
-                ->values()
-                ->all()
-            : Group::query()
-                ->whereIn('id', $passedGroupIds)
-                ->pluck('id')
-                ->map(fn ($id): int => (int) $id)
-                ->values()
-                ->all();
-
-        return $availableGroupIds;
-    }
+    public function __construct(
+        private ResolveAvailableQuizGroupIds $resolveAvailableQuizGroupIds,
+    ) {}
 
     /**
      * Generate custom quiz session with questions sampled from passed Stage 1 groups.
@@ -124,7 +100,7 @@ readonly class GenerateCustomQuizSession
     ): array {
         $cdnUrl = rtrim((string) (config('filesystems.disks.r2.url') ?: 'https://assets.vomorize.com'), '/');
 
-        $availableGroupIds = $this->resolveAvailableGroupIds($user, $passedGroupIds);
+        $availableGroupIds = $this->resolveAvailableQuizGroupIds->handle($user, $passedGroupIds);
 
         $totalWordsAvailable = count($availableGroupIds) * Group::VOCABULARY_PER_GROUP;
         if ($totalWordsAvailable < $questionCount || $questionCount <= 0) {

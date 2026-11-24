@@ -34,7 +34,9 @@ class GroupFactory extends Factory
                 $levelId = (int) ($attributes['level_id'] ?? 0);
 
                 if (! isset(static::$sequences[$levelId])) {
-                    static::$sequences[$levelId] = (int) (Group::query()->where('level_id', $levelId)->max('sequence') ?? 0);
+                    static::$sequences[$levelId] = (int) (Group::query()->where('level_id', $levelId)->max(
+                        'sequence'
+                    ) ?? 0);
                 }
 
                 return ++static::$sequences[$levelId];

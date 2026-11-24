@@ -299,7 +299,8 @@ it('falls back to backend defaults when stored preferences are outside allowed r
     ]);
 
     $page = visit('/quiz');
-    $page->script(<<<'JS'
+    $page->script(
+        <<<'JS'
         localStorage.setItem('quiz_question_count', '999');
         localStorage.setItem('quiz_mode', 'unsupported_mode');
     JS
@@ -314,7 +315,8 @@ it('falls back to backend defaults when stored preferences are outside allowed r
         ->assertAriaAttribute('@mode-option-spelling', 'pressed', 'false');
 });
 
-test('authenticated member can select sentence cloze mode and play quiz with post-answer translation reveal',
+test(
+    'authenticated member can select sentence cloze mode and play quiz with post-answer translation reveal',
     function () {
         $user = User::factory()->create();
         $level = Level::factory()->create();
@@ -370,7 +372,8 @@ test('authenticated member can select sentence cloze mode and play quiz with pos
             ->click('button:has-text("1")')
             ->assertAttribute('[data-test="sentence-cloze-reveal"]', 'aria-hidden', 'false')
             ->assertSee('團隊執行了這項計畫。');
-    });
+    }
+);
 
 test('selecting 10 or 20 questions starts a custom quiz session with matching question count', function () {
     $user = User::factory()->create();
@@ -409,7 +412,8 @@ test('selecting 10 or 20 questions starts a custom quiz session with matching qu
         ->assertSee('1 / 20');
 });
 
-test('member completes standard custom quiz with perfect score using correct-option and sees 100/100 result',
+test(
+    'member completes standard custom quiz with perfect score using correct-option and sees 100/100 result',
     function () {
         $user = User::factory()->create();
         $level = Level::factory()->create();
@@ -438,11 +442,47 @@ test('member completes standard custom quiz with perfect score using correct-opt
         $this->playCustomQuiz($page, 20);
 
         $page->assertSee('100 / 100');
-    });
+    }
+);
 
 test('member completes sentence cloze custom quiz with perfect score using correct-option', function () {
-    //
-})->skip('Practice: complete 10 sentence_cloze questions via @correct-option and verify 100 / 100 result');
+    $user = User::factory()->create();
+    $level = Level::factory()->create();
+    $group = Group::factory()->create(['level_id' => $level->id]);
+
+    LearningProgress::factory()->create([
+        'user_id' => $user->id,
+        'level_id' => $level->id,
+        'group_id' => $group->id,
+        'stage' => 1,
+    ]);
+
+    Vocabulary::factory()->count(10)
+        ->create([
+            'level_id' => $level->id,
+            'group_id' => $group->id,
+        ])->each(function (Vocabulary $vocabulary) {
+            SentenceClozeQuestion::factory()->create([
+                'vocabulary_id' => $vocabulary->id,
+            ]);
+        });
+
+    loginAsUser($user);
+
+    $page = visit(route('quiz.index'));
+
+    $page
+        ->assertNoSmoke()
+        ->click('@count-option-10')
+        ->click('@mode-option-sentence-cloze')
+        ->click('@start-quiz-button')
+        ->assertPathIs('/quiz/play')
+        ->assertSee('1 / 10');
+
+    $this->playCustomQuiz($page, 10);
+
+    $page->assertSee('100 / 100');
+});
 
 test('member completes spelling custom quiz with perfect score and sees 100/100 result', function () {
     //
@@ -458,4 +498,6 @@ test('custom quiz shows expected visual feedback when selecting correct option',
 
 test('custom quiz shows expected visual feedback when selecting wrong option', function () {
     //
-})->skip('Practice: assert wrong-option & highlighted correct-option feedback state (or fixed-seed assertScreenshotMatches())');
+})->skip(
+    'Practice: assert wrong-option & highlighted correct-option feedback state (or fixed-seed assertScreenshotMatches())'
+);

@@ -24,6 +24,9 @@ class CustomQuizRequest extends FormRequest
     /**
      * Get the validation rules that apply to the request.
      *
+     * Guests must provide `passed_group_ids` explicitly, whereas authenticated
+     * members can omit it and rely on their stored learning progress.
+     *
      * @return array<string, ValidationRule|array<mixed>|string>
      */
     public function rules(): array

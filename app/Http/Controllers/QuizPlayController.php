@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Http\Controllers;
 
 use App\Actions\GenerateCustomQuizSession;
+use App\Actions\ResolveAvailableQuizGroupIds;
 use App\Enums\QuizMode;
 use App\Models\Group;
 use App\Models\User;
@@ -20,6 +21,7 @@ class QuizPlayController extends Controller
      */
     public function show(
         Request $request,
+        ResolveAvailableQuizGroupIds $resolveAvailableQuizGroupIds,
         GenerateCustomQuizSession $generateCustomQuizSession,
     ): Response|RedirectResponse {
         /** @var array{question_count?: int, quiz_mode?: string, passed_group_ids?: array<int, int>}|null $config */
@@ -36,7 +38,7 @@ class QuizPlayController extends Controller
         /** @var array<int, int> $passedGroupIds */
         $passedGroupIds = array_map('intval', (array) ($config['passed_group_ids'] ?? []));
 
-        $availableGroupIds = $generateCustomQuizSession->resolveAvailableGroupIds($user, $passedGroupIds);
+        $availableGroupIds = $resolveAvailableQuizGroupIds->handle($user, $passedGroupIds);
 
         if (count($availableGroupIds) * Group::VOCABULARY_PER_GROUP < $questionCount || $questionCount <= 0) {
             return to_route('quiz.index');

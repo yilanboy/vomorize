@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers;
 
-use App\Actions\GenerateCustomQuizSession;
 use App\Actions\RecordTodayCheckIn;
+use App\Actions\ResolveAvailableQuizGroupIds;
 use App\Enums\QuizMode;
 use App\Http\Requests\CustomQuizRequest;
 use App\Models\Group;
@@ -20,15 +20,15 @@ class CustomQuizSessionController extends Controller
      */
     public function store(
         CustomQuizRequest $request,
-        GenerateCustomQuizSession $generateCustomQuizSession,
+        ResolveAvailableQuizGroupIds $resolveAvailableQuizGroupIds,
     ): RedirectResponse {
         /** @var User|null $user */
         $user = $request->user();
         $questionCount = (int) $request->validated('question_count');
         /** @var array<int, int> $passedGroupIds */
-        $passedGroupIds = array_map('intval', (array) $request->validated('passed_group_ids', []));
+        $passedGroupIds = $request->validated('passed_group_ids', []);
 
-        $availableGroupIds = $generateCustomQuizSession->resolveAvailableGroupIds($user, $passedGroupIds);
+        $availableGroupIds = $resolveAvailableQuizGroupIds->handle($user, $passedGroupIds);
 
         if (count($availableGroupIds) * Group::VOCABULARY_PER_GROUP < $questionCount || $questionCount <= 0) {
             return to_route('quiz.index');

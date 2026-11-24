@@ -31,6 +31,7 @@ class QuizController extends Controller
                 ->where('user_id', $user->id)
                 ->where('stage', '>=', 1)
                 ->count();
+
             $unlockedWordCount = $passedGroupCount * Group::VOCABULARY_PER_GROUP;
         }
 
