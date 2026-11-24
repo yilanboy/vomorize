@@ -1,6 +1,7 @@
 <script lang="ts">
     import { Link, page } from '@inertiajs/svelte';
     import Menu from '@lucide/svelte/icons/menu';
+    import { onMount } from 'svelte';
     import MobileNavSheet from '@/components/MobileNavSheet.svelte';
     import SiteLanguageSwitcher from '@/components/SiteLanguageSwitcher.svelte';
     import ThemeToggle from '@/components/ThemeToggle.svelte';
@@ -25,9 +26,11 @@
 
     let {
         breadcrumbs = [],
+        transparent = false,
         class: className = '',
     }: {
         breadcrumbs?: BreadcrumbItem[];
+        transparent?: boolean;
         class?: string;
     } = $props();
 
@@ -35,11 +38,30 @@
     const url = currentUrlState();
 
     let mobileNavOpen = $state(false);
+    let scrolled = $state(false);
+
+    onMount(() => {
+        const updateScrolled = () => {
+            scrolled = window.scrollY > 12;
+        };
+
+        updateScrolled();
+        window.addEventListener('scroll', updateScrolled, { passive: true });
+
+        return () => {
+            window.removeEventListener('scroll', updateScrolled);
+        };
+    });
 </script>
 
 <header
     class={cn(
-        'border-border bg-background sticky top-0 z-40 h-16 w-full border-b transition-colors duration-300',
+        'sticky top-0 z-40 h-16 w-full border-b transition-[background-color,border-color,backdrop-filter] duration-200 motion-reduce:transition-none',
+        transparent
+            ? scrolled
+                ? 'border-border/80 bg-background/90 backdrop-blur-md'
+                : 'border-transparent bg-transparent'
+            : 'border-border bg-background',
         className,
     )}
 >
@@ -70,7 +92,9 @@
                     aria-hidden="true"
                     class="size-8 rounded-lg shadow-xs"
                 />
-                <span class="text-xl font-bold tracking-tight">Vomorize</span>
+                <span class="text-xl font-extrabold tracking-tight"
+                    >Vomorize</span
+                >
             </Link>
         </div>
 
@@ -149,7 +173,7 @@
                             <Button
                                 variant="ghost"
                                 size="icon"
-                                class="ring-offset-background hover:ring-primary/40 focus-visible:ring-ring relative size-9 cursor-pointer rounded-full p-0 transition-all hover:ring-2 focus-visible:ring-2"
+                                class="ring-offset-background hover:ring-primary/40 focus-visible:ring-ring relative size-9 cursor-pointer rounded-full p-0 transition-shadow hover:ring-2 focus-visible:ring-2"
                                 onclick={props.onclick}
                                 aria-expanded={props['aria-expanded']}
                                 data-state={props['data-state']}
