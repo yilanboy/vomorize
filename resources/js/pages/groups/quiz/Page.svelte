@@ -1,19 +1,16 @@
 <script lang="ts">
     import { onMount } from 'svelte';
     import { router, setLayoutProps } from '@inertiajs/svelte';
-    import EarOff from '@lucide/svelte/icons/ear-off';
-    import X from '@lucide/svelte/icons/x';
     import { show as showGroup } from '@/actions/App/Http/Controllers/GroupController';
     import { show as introGroup } from '@/actions/App/Http/Controllers/GroupIntroController';
     import { store as saveProgress } from '@/actions/App/Http/Controllers/GroupProgressController';
     import AppHead from '@/components/AppHead.svelte';
-    import DisableListeningDialog from '@/components/DisableListeningDialog.svelte';
     import LeaveConfirmationDialog from '@/components/LeaveConfirmationDialog.svelte';
     import AudioToDefinitionCard from '@/components/quiz/AudioToDefinitionCard.svelte';
     import DefinitionToWordCard from '@/components/quiz/DefinitionToWordCard.svelte';
-    import QuizActionFooter from '@/components/quiz/QuizActionFooter.svelte';
     import QuizResultSummary from '@/components/quiz/QuizResultSummary.svelte';
     import WordToDefinitionCard from '@/components/quiz/WordToDefinitionCard.svelte';
+    import type { QuizLayoutProps } from '@/layouts/QuizLayout.svelte';
     import { audioPlayer } from '@/lib/audioPlayer.svelte';
     import { t } from '@/lib/i18n';
     import {
@@ -46,16 +43,10 @@
         progress?: GroupProgressSummary | null;
     } = $props();
 
-    setLayoutProps({
-        showHeader: false,
-        showFooter: false,
-    });
-
     let localProgress = $state<GroupProgressSummary | null>(null);
     let currentIndex = $state(0);
     let selectedOptionId = $state<number | null>(null);
     let listeningDisabled = $state(false);
-    let isDisableListeningDialogOpen = $state(false);
     let correctAnswersCount = $state(0);
     let mistakes = $state<MistakeReviewItem[]>([]);
     let quizCompleted = $state(false);
@@ -109,17 +100,36 @@
             ? currentStep.fallback_quiz
             : (currentStep?.quiz ?? null),
     );
-    const progressPercent = $derived(
-        totalSteps > 0
-            ? Math.min(100, Math.round(((currentIndex + 1) / totalSteps) * 100))
-            : 0,
-    );
     const passThreshold = $derived(completedTargetStage >= 6 ? 90 : 80);
     const isPassed = $derived(
         completedIsMasteredRetake || finalScore >= passThreshold,
     );
     const hasAnswered = $derived(selectedOptionId !== null);
     const isLastStep = $derived(currentIndex + 1 >= totalSteps);
+
+    $effect.pre(() => {
+        setLayoutProps<QuizLayoutProps>({
+            currentStep: currentIndex + 1,
+            totalSteps,
+            onLeave: handleLeaveClick,
+            listening: quizCompleted
+                ? null
+                : {
+                      disabled: listeningDisabled,
+                      onDisable: handleConfirmDisableListening,
+                  },
+            footer:
+                !quizCompleted && currentStep
+                    ? {
+                          canAdvance: hasAnswered,
+                          label: isLastStep
+                              ? t('ui.quiz.footer.view_results')
+                              : t('ui.quiz.footer.next'),
+                          onAdvance: advanceToNextStep,
+                      }
+                    : null,
+        });
+    });
 
     function advanceToNextStep() {
         audioPlayer.stop();
@@ -295,150 +305,60 @@
 />
 
 <div
-    class="bg-background flex min-h-screen flex-col"
+    class="flex w-full flex-col items-center"
     data-progress-ready={progress !== null || localProgress !== null
         ? 'true'
         : 'false'}
     data-progress-saved={quizCompleted && !isSavingProgress ? 'true' : 'false'}
 >
-    <!-- Focused Immersive Top Bar -->
-    <header
-        class="border-border/80 bg-background/80 sticky top-0 z-40 border-b backdrop-blur-md"
-    >
-        <div
-            class="mx-auto flex h-16 max-w-4xl items-center justify-between px-4 sm:px-6"
-        >
-            <!-- Left: Leave button -->
-            <button
-                type="button"
-                class="hover:bg-muted text-muted-foreground hover:text-foreground flex size-10 items-center justify-center rounded-xl transition-colors"
-                onclick={handleLeaveClick}
-                title={t('ui.intro.top_bar.leave')}
-            >
-                <X class="size-5" />
-            </button>
-
-            <!-- Center: Progress indicator -->
-            <div class="flex flex-1 flex-col items-center gap-1.5 px-4 sm:px-8">
-                <div class="flex items-center gap-2">
-                    <span
-                        data-test="current-step"
-                        class="text-foreground font-mono text-sm font-semibold"
-                    >
-                        {Math.min(currentIndex + 1, totalSteps)}
-                    </span>
-                    <span class="text-muted-foreground text-sm">/</span>
-                    <span class="text-muted-foreground font-mono text-sm">
-                        {totalSteps}
-                    </span>
-                </div>
-
-                <div
-                    class="bg-muted h-2 w-full max-w-xs overflow-hidden rounded-full sm:max-w-sm"
-                >
-                    <div
-                        class="bg-primary h-full rounded-full transition-all duration-300 ease-out"
-                        style:width="{progressPercent}%"
-                    ></div>
-                </div>
-            </div>
-
-            <!-- Right: Disable listening toggle button -->
-            {#if quizCompleted === false}
-                <button
-                    type="button"
-                    class={{
-                        'flex size-10 items-center justify-center rounded-xl transition-colors': true,
-                        'hover:bg-muted text-muted-foreground hover:text-foreground cursor-pointer':
-                            !listeningDisabled,
-                        'text-muted-foreground/40 cursor-not-allowed':
-                            listeningDisabled,
-                    }}
-                    disabled={listeningDisabled}
-                    onclick={() => {
-                        isDisableListeningDialogOpen = true;
-                    }}
-                    title={listeningDisabled
-                        ? t('ui.quiz.top_bar.listening_disabled')
-                        : t('ui.quiz.top_bar.cant_listen')}
-                >
-                    <EarOff class="size-5" />
-                </button>
-            {:else}
-                <div class="size-10" aria-hidden="true"></div>
-            {/if}
-        </div>
-    </header>
-
-    <!-- Main Content Area -->
-    <main
-        class="flex flex-1 flex-col items-center justify-center px-4 py-6 sm:px-6"
-    >
-        {#if quizCompleted}
-            <QuizResultSummary
-                score={finalScore}
-                passed={isPassed}
-                groupId={group.id}
-                levelId={group.level_id}
-                stage={completedTargetStage}
-                isMasteredRetake={completedIsMasteredRetake}
-                {mistakes}
-                onRetry={handleRetry}
-                onDone={handleDone}
-            />
-        {:else if currentStep}
-            {#key `${currentStep.id}-${activeQuiz?.quiz_type}`}
-                {#if currentStep.kind === 'quiz' && activeQuiz}
-                    {#if activeQuiz.quiz_type === 'word_to_definition'}
-                        <WordToDefinitionCard
-                            question={activeQuiz}
-                            vocabulary={currentStep.vocabulary}
-                            {selectedOptionId}
-                            onSelect={handleQuizOptionSelect}
-                            disabled={hasAnswered}
-                        />
-                    {:else if activeQuiz.quiz_type === 'definition_to_word'}
-                        <DefinitionToWordCard
-                            question={activeQuiz}
-                            vocabulary={currentStep.vocabulary}
-                            {selectedOptionId}
-                            onSelect={handleQuizOptionSelect}
-                            disabled={hasAnswered}
-                        />
-                    {:else if activeQuiz.quiz_type === 'audio_to_definition'}
-                        <AudioToDefinitionCard
-                            question={activeQuiz}
-                            vocabulary={currentStep.vocabulary}
-                            {selectedOptionId}
-                            autoPlay={!listeningDisabled}
-                            onSelect={handleQuizOptionSelect}
-                            disabled={hasAnswered}
-                        />
-                    {/if}
-                {/if}
-            {/key}
-        {/if}
-    </main>
-
-    {#if !quizCompleted && currentStep}
-        <QuizActionFooter
-            canAdvance={hasAnswered}
-            label={isLastStep
-                ? t('ui.quiz.footer.view_results')
-                : t('ui.quiz.footer.next')}
-            onAdvance={advanceToNextStep}
+    {#if quizCompleted}
+        <QuizResultSummary
+            score={finalScore}
+            passed={isPassed}
+            groupId={group.id}
+            levelId={group.level_id}
+            stage={completedTargetStage}
+            isMasteredRetake={completedIsMasteredRetake}
+            {mistakes}
+            onRetry={handleRetry}
+            onDone={handleDone}
         />
+    {:else if currentStep}
+        {#key `${currentStep.id}-${activeQuiz?.quiz_type}`}
+            {#if currentStep.kind === 'quiz' && activeQuiz}
+                {#if activeQuiz.quiz_type === 'word_to_definition'}
+                    <WordToDefinitionCard
+                        question={activeQuiz}
+                        vocabulary={currentStep.vocabulary}
+                        {selectedOptionId}
+                        onSelect={handleQuizOptionSelect}
+                        disabled={hasAnswered}
+                    />
+                {:else if activeQuiz.quiz_type === 'definition_to_word'}
+                    <DefinitionToWordCard
+                        question={activeQuiz}
+                        vocabulary={currentStep.vocabulary}
+                        {selectedOptionId}
+                        onSelect={handleQuizOptionSelect}
+                        disabled={hasAnswered}
+                    />
+                {:else if activeQuiz.quiz_type === 'audio_to_definition'}
+                    <AudioToDefinitionCard
+                        question={activeQuiz}
+                        vocabulary={currentStep.vocabulary}
+                        {selectedOptionId}
+                        autoPlay={!listeningDisabled}
+                        onSelect={handleQuizOptionSelect}
+                        disabled={hasAnswered}
+                    />
+                {/if}
+            {/if}
+        {/key}
     {/if}
-
-    <!-- Leave Confirmation Dialog -->
-    <LeaveConfirmationDialog
-        bind:open={isLeaveDialogOpen}
-        onConfirm={handleConfirmLeave}
-    />
-
-    <!-- Disable Listening Confirmation Dialog -->
-    <DisableListeningDialog
-        bind:open={isDisableListeningDialogOpen}
-        onConfirm={handleConfirmDisableListening}
-    />
 </div>
+
+<!-- Leave Confirmation Dialog -->
+<LeaveConfirmationDialog
+    bind:open={isLeaveDialogOpen}
+    onConfirm={handleConfirmLeave}
+/>

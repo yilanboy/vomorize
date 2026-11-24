@@ -1,6 +1,7 @@
 import { createInertiaApp } from '@inertiajs/svelte';
 import AppLayout from '@/layouts/AppLayout.svelte';
 import AuthLayout from '@/layouts/AuthLayout.svelte';
+import QuizLayout from '@/layouts/QuizLayout.svelte';
 import SettingsLayout from '@/layouts/settings/Layout.svelte';
 import { initializeFlashToast } from '@/lib/flashToast';
 import { initializeProgressSync } from '@/lib/progressSync';
@@ -18,12 +19,20 @@ const authPages = new Set([
     'two-factor-challenge/Page',
 ]);
 
+const quizPages = new Set([
+    'groups/intro/Page',
+    'groups/quiz/Page',
+    'quiz/play/Page',
+]);
+
 void createInertiaApp({
     title: (title) => (title ? `${title} - ${appName}` : appName),
     layout: (name) => {
         switch (true) {
             case authPages.has(name):
                 return AuthLayout;
+            case quizPages.has(name):
+                return QuizLayout;
             case name.startsWith('settings/'):
                 return [AppLayout, SettingsLayout];
             default:

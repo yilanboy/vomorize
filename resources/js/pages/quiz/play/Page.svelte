@@ -1,22 +1,19 @@
 <script lang="ts">
     import { onMount } from 'svelte';
     import { page, router, setLayoutProps } from '@inertiajs/svelte';
-    import EarOff from '@lucide/svelte/icons/ear-off';
-    import X from '@lucide/svelte/icons/x';
     import { index as levelsIndex } from '@/actions/App/Http/Controllers/LevelController';
     import { destroy as complete } from '@/actions/App/Http/Controllers/CustomQuizSessionController';
     import { index as quizIndex } from '@/actions/App/Http/Controllers/QuizController';
     import { show as play } from '@/actions/App/Http/Controllers/QuizPlayController';
     import AppHead from '@/components/AppHead.svelte';
-    import DisableListeningDialog from '@/components/DisableListeningDialog.svelte';
     import LeaveConfirmationDialog from '@/components/LeaveConfirmationDialog.svelte';
     import AudioToDefinitionCard from '@/components/quiz/AudioToDefinitionCard.svelte';
     import DefinitionToWordCard from '@/components/quiz/DefinitionToWordCard.svelte';
-    import QuizActionFooter from '@/components/quiz/QuizActionFooter.svelte';
     import QuizResultSummary from '@/components/quiz/QuizResultSummary.svelte';
     import SentenceClozeCard from '@/components/quiz/SentenceClozeCard.svelte';
     import SpellingCard from '@/components/quiz/SpellingCard.svelte';
     import WordToDefinitionCard from '@/components/quiz/WordToDefinitionCard.svelte';
+    import type { QuizLayoutProps } from '@/layouts/QuizLayout.svelte';
     import { audioPlayer } from '@/lib/audioPlayer.svelte';
     import { t } from '@/lib/i18n';
     import { createNavigationGuard } from '@/lib/navigationGuard';
@@ -38,16 +35,10 @@
         quizMode?: QuizMode;
     } = $props();
 
-    setLayoutProps({
-        showHeader: false,
-        showFooter: false,
-    });
-
     let currentIndex = $state(0);
     let selectedOptionId = $state<number | null>(null);
     let spellingAnswered = $state(false);
     let listeningDisabled = $state(false);
-    let isDisableListeningDialogOpen = $state(false);
     let correctAnswersCount = $state(0);
     let mistakes = $state<MistakeReviewItem[]>([]);
     let quizCompleted = $state(false);
@@ -95,13 +86,34 @@
             ? currentStep.fallback_quiz
             : (currentStep?.quiz ?? null),
     );
-    const progressPercent = $derived(
-        totalSteps > 0
-            ? Math.min(100, Math.round(((currentIndex + 1) / totalSteps) * 100))
-            : 0,
-    );
     const hasAnswered = $derived(selectedOptionId !== null || spellingAnswered);
     const isLastStep = $derived(currentIndex + 1 >= totalSteps);
+
+    $effect.pre(() => {
+        setLayoutProps<QuizLayoutProps>({
+            currentStep: currentIndex + 1,
+            totalSteps,
+            leaveTitle: t('ui.quiz.custom.top_bar.leave'),
+            onLeave: handleLeaveClick,
+            listening:
+                quizMode !== 'sentence_cloze' && !quizCompleted
+                    ? {
+                          disabled: listeningDisabled,
+                          onDisable: handleConfirmDisableListening,
+                      }
+                    : null,
+            footer:
+                !quizCompleted && currentStep
+                    ? {
+                          canAdvance: hasAnswered,
+                          label: isLastStep
+                              ? t('ui.quiz.footer.view_results')
+                              : t('ui.quiz.footer.next'),
+                          onAdvance: advanceToNextStep,
+                      }
+                    : null,
+        });
+    });
 
     function advanceToNextStep() {
         audioPlayer.stop();
@@ -279,169 +291,72 @@
     )})"
 />
 
-<div
-    class="bg-background flex min-h-screen flex-col selection:bg-blue-600 selection:text-white"
->
-    <!-- Focused Immersive Top Bar -->
-    <header
-        class="border-border/80 bg-background/80 sticky top-0 z-40 border-b backdrop-blur-md"
-    >
-        <div
-            class="mx-auto flex h-16 max-w-4xl items-center justify-between px-4 sm:px-6"
-        >
-            <!-- Left: Leave button -->
-            <button
-                type="button"
-                class="hover:bg-muted text-muted-foreground hover:text-foreground flex size-10 items-center justify-center rounded-xl transition-colors"
-                onclick={handleLeaveClick}
-                title={t('ui.quiz.custom.top_bar.leave')}
-            >
-                <X class="size-5" />
-            </button>
-
-            <!-- Center: Progress indicator -->
-            <div class="flex flex-1 flex-col items-center gap-1.5 px-4 sm:px-8">
-                <div class="flex items-center gap-2">
-                    <span
-                        data-test="current-step"
-                        class="text-foreground font-mono text-sm font-semibold"
-                    >
-                        {Math.min(currentIndex + 1, totalSteps)}
-                    </span>
-                    <span class="text-muted-foreground text-sm">/</span>
-                    <span class="text-muted-foreground font-mono text-sm">
-                        {totalSteps}
-                    </span>
-                </div>
-
-                <div
-                    class="bg-muted h-2 w-full max-w-xs overflow-hidden rounded-full sm:max-w-sm"
-                >
-                    <div
-                        class="bg-primary h-full rounded-full transition-all duration-300 ease-out"
-                        style:width="{progressPercent}%"
-                    ></div>
-                </div>
-            </div>
-
-            <!-- Right: Disable Listening Toggle (omitted in sentence cloze mode) -->
-            {#if quizMode !== 'sentence_cloze' && quizCompleted === false}
-                <button
-                    type="button"
-                    data-test="disable-listening-button"
-                    class={{
-                        'flex size-10 items-center justify-center rounded-xl transition-colors': true,
-                        'hover:bg-muted text-muted-foreground hover:text-foreground cursor-pointer':
-                            !listeningDisabled,
-                        'text-muted-foreground/40 cursor-not-allowed':
-                            listeningDisabled,
-                    }}
-                    disabled={listeningDisabled}
-                    onclick={() => {
-                        isDisableListeningDialogOpen = true;
-                    }}
-                    title={listeningDisabled
-                        ? t('ui.quiz.top_bar.listening_disabled')
-                        : t('ui.quiz.top_bar.cant_listen')}
-                >
-                    <EarOff class="size-5" />
-                </button>
-            {:else}
-                <div class="size-10" aria-hidden="true"></div>
-            {/if}
-        </div>
-    </header>
-
-    <!-- Main Content Area -->
-    <main
-        class="flex flex-1 flex-col items-center justify-center px-4 py-6 sm:px-6"
-    >
-        {#if quizCompleted}
-            <QuizResultSummary
-                mode="custom"
-                correctCount={correctAnswersCount}
-                totalCount={totalSteps}
-                {timeSpentSeconds}
-                {mistakes}
-                onRetry={handleRetry}
-                onSettings={handleSettings}
-                onLevels={handleLevels}
-            />
-        {:else if currentStep}
-            {#key `${currentStep.id}-${activeQuiz?.quiz_type}`}
-                {#if currentStep.kind === 'quiz' && activeQuiz}
-                    {#if activeQuiz.quiz_type === 'word_to_definition'}
-                        <WordToDefinitionCard
-                            question={activeQuiz}
-                            vocabulary={currentStep.vocabulary}
-                            {selectedOptionId}
-                            onSelect={handleQuizOptionSelect}
-                            disabled={hasAnswered}
-                        />
-                    {:else if activeQuiz.quiz_type === 'definition_to_word'}
-                        <DefinitionToWordCard
-                            question={activeQuiz}
-                            vocabulary={currentStep.vocabulary}
-                            {selectedOptionId}
-                            onSelect={handleQuizOptionSelect}
-                            disabled={hasAnswered}
-                        />
-                    {:else if activeQuiz.quiz_type === 'audio_to_definition'}
-                        <AudioToDefinitionCard
-                            question={activeQuiz}
-                            vocabulary={currentStep.vocabulary}
-                            {selectedOptionId}
-                            autoPlay={!listeningDisabled}
-                            onSelect={handleQuizOptionSelect}
-                            disabled={hasAnswered}
-                        />
-                    {:else if activeQuiz.quiz_type === 'sentence_cloze'}
-                        <SentenceClozeCard
-                            question={activeQuiz}
-                            vocabulary={currentStep.vocabulary}
-                            {selectedOptionId}
-                            onSelect={handleQuizOptionSelect}
-                            disabled={hasAnswered}
-                        />
-                    {:else if activeQuiz.quiz_type === 'spelling'}
-                        <SpellingCard
-                            question={activeQuiz as SpellingQuestionPayload}
-                            vocabulary={currentStep.vocabulary}
-                            autoPlay={!listeningDisabled}
-                            onResult={handleSpellingResult}
-                            disabled={hasAnswered}
-                        />
-                    {/if}
-                {/if}
-            {/key}
-        {/if}
-    </main>
-
-    {#if !quizCompleted && currentStep}
-        <QuizActionFooter
-            canAdvance={hasAnswered}
-            label={isLastStep
-                ? t('ui.quiz.footer.view_results')
-                : t('ui.quiz.footer.next')}
-            onAdvance={advanceToNextStep}
-        />
-    {/if}
-
-    <!-- Leave Confirmation Dialog -->
-    <LeaveConfirmationDialog
-        bind:open={isLeaveDialogOpen}
-        title={t('ui.quiz.custom.top_bar.leave_dialog.title')}
-        description={t('ui.quiz.custom.top_bar.leave_dialog.description')}
-        cancelText={t('ui.quiz.custom.top_bar.leave_dialog.cancel')}
-        confirmText={t('ui.quiz.custom.top_bar.leave_dialog.confirm')}
-        onConfirm={handleConfirmLeave}
+{#if quizCompleted}
+    <QuizResultSummary
+        mode="custom"
+        correctCount={correctAnswersCount}
+        totalCount={totalSteps}
+        {timeSpentSeconds}
+        {mistakes}
+        onRetry={handleRetry}
+        onSettings={handleSettings}
+        onLevels={handleLevels}
     />
+{:else if currentStep}
+    {#key `${currentStep.id}-${activeQuiz?.quiz_type}`}
+        {#if currentStep.kind === 'quiz' && activeQuiz}
+            {#if activeQuiz.quiz_type === 'word_to_definition'}
+                <WordToDefinitionCard
+                    question={activeQuiz}
+                    vocabulary={currentStep.vocabulary}
+                    {selectedOptionId}
+                    onSelect={handleQuizOptionSelect}
+                    disabled={hasAnswered}
+                />
+            {:else if activeQuiz.quiz_type === 'definition_to_word'}
+                <DefinitionToWordCard
+                    question={activeQuiz}
+                    vocabulary={currentStep.vocabulary}
+                    {selectedOptionId}
+                    onSelect={handleQuizOptionSelect}
+                    disabled={hasAnswered}
+                />
+            {:else if activeQuiz.quiz_type === 'audio_to_definition'}
+                <AudioToDefinitionCard
+                    question={activeQuiz}
+                    vocabulary={currentStep.vocabulary}
+                    {selectedOptionId}
+                    autoPlay={!listeningDisabled}
+                    onSelect={handleQuizOptionSelect}
+                    disabled={hasAnswered}
+                />
+            {:else if activeQuiz.quiz_type === 'sentence_cloze'}
+                <SentenceClozeCard
+                    question={activeQuiz}
+                    vocabulary={currentStep.vocabulary}
+                    {selectedOptionId}
+                    onSelect={handleQuizOptionSelect}
+                    disabled={hasAnswered}
+                />
+            {:else if activeQuiz.quiz_type === 'spelling'}
+                <SpellingCard
+                    question={activeQuiz as SpellingQuestionPayload}
+                    vocabulary={currentStep.vocabulary}
+                    autoPlay={!listeningDisabled}
+                    onResult={handleSpellingResult}
+                    disabled={hasAnswered}
+                />
+            {/if}
+        {/if}
+    {/key}
+{/if}
 
-    <!-- Disable Listening Confirmation Dialog -->
-    {#if quizMode !== 'sentence_cloze'}
-        <DisableListeningDialog
-            bind:open={isDisableListeningDialogOpen}
-            onConfirm={handleConfirmDisableListening}
-        />
-    {/if}
-</div>
+<!-- Leave Confirmation Dialog -->
+<LeaveConfirmationDialog
+    bind:open={isLeaveDialogOpen}
+    title={t('ui.quiz.custom.top_bar.leave_dialog.title')}
+    description={t('ui.quiz.custom.top_bar.leave_dialog.description')}
+    cancelText={t('ui.quiz.custom.top_bar.leave_dialog.cancel')}
+    confirmText={t('ui.quiz.custom.top_bar.leave_dialog.confirm')}
+    onConfirm={handleConfirmLeave}
+/>
