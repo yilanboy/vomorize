@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace App\Actions;
 
 use App\Enums\QuizMode;
-use App\Enums\QuizType;
 use App\Models\Group;
 use App\Models\SentenceClozeQuestion;
 use App\Models\User;
@@ -78,6 +77,9 @@ readonly class GenerateCustomQuizSession
 
     public function __construct(
         private ResolveAvailableQuizGroupIds $resolveAvailableQuizGroupIds,
+        private BuildQuizQuestion $buildQuizQuestion,
+        private BuildSentenceClozeQuestion $buildSentenceClozeQuestion,
+        private BuildSpellingQuestion $buildSpellingQuestion,
     ) {}
 
     /**
@@ -98,8 +100,7 @@ readonly class GenerateCustomQuizSession
         array $passedGroupIds = [],
         string $quizMode = QuizMode::Standard->value,
     ): array {
-        $cdnUrl = rtrim((string) (config('filesystems.disks.r2.url') ?: 'https://assets.vomorize.com'), '/');
-
+        $cdnUrl = $this->resolveCdnUrl();
         $availableGroupIds = $this->resolveAvailableQuizGroupIds->handle($user, $passedGroupIds);
 
         $totalWordsAvailable = count($availableGroupIds) * Group::VOCABULARY_PER_GROUP;
@@ -109,105 +110,25 @@ readonly class GenerateCustomQuizSession
             );
         }
 
-        $isSentenceCloze = $quizMode === QuizMode::SentenceCloze->value;
+        $mode = QuizMode::tryFrom($quizMode) ?? QuizMode::Standard;
 
-        $rawVocabularies = Vocabulary::query()
-            ->with('translation')
-            ->whereIn('group_id', $availableGroupIds)
-            ->when($isSentenceCloze, fn ($query) => $query->with('sentenceClozeQuestion'))
-            ->get();
+        [
+            'all' => $allVocabularies,
+            'by_group' => $vocabulariesByGroup,
+            'cloze_by_vocab_id' => $clozeByVocabId,
+        ] = $this->loadVocabularyPool($availableGroupIds, $cdnUrl, $mode);
 
-        /** @var array<int, VocabularyPayload> $allVocabularies */
-        $allVocabularies = [];
-        /** @var array<int, array<int, VocabularyPayload>> $vocabulariesByGroup */
-        $vocabulariesByGroup = [];
-        /** @var array<int, SentenceClozeQuestion> $clozeByVocabId */
-        $clozeByVocabId = [];
-
-        foreach ($rawVocabularies as $vocab) {
-            /** @var VocabularyPayload $payload */
-            $payload = [
-                'id' => (int) $vocab->id,
-                'group_id' => (int) $vocab->group_id,
-                'word' => (string) $vocab->word,
-                'part_of_speech' => (string) $vocab->part_of_speech,
-                'pronunciation' => (string) $vocab->pronunciation,
-                'definition' => (string) $vocab->definition,
-                'example_sentence' => (string) $vocab->example_sentence,
-                'example_translation' => (string) $vocab->example_translation,
-                'word_audio_url' => "{$cdnUrl}/vocabulary/{$vocab->id}/word.mp3",
-                'sentence_audio_url' => "{$cdnUrl}/vocabulary/{$vocab->id}/sentence.mp3",
-            ];
-
-            $allVocabularies[] = $payload;
-            $vocabulariesByGroup[$payload['group_id']][] = $payload;
-
-            if ($isSentenceCloze && $vocab->sentenceClozeQuestion instanceof SentenceClozeQuestion) {
-                $clozeByVocabId[$payload['id']] = $vocab->sentenceClozeQuestion;
-            }
-        }
-
-        $targetPool = $allVocabularies;
-        if ($isSentenceCloze) {
-            $targetPool = array_values(array_filter(
-                $allVocabularies,
-                static fn (array $v): bool => isset($clozeByVocabId[$v['id']]),
-            ));
-
-            if (count($targetPool) < $questionCount) {
-                throw new InvalidArgumentException(
-                    "Insufficient sentence cloze questions for the requested {$questionCount} questions.",
-                );
-            }
-        }
-
-        /** @var array<int, VocabularyPayload> $selectedTargets */
-        $selectedTargets = collect($targetPool)
-            ->shuffle()
-            ->take($questionCount)
-            ->values()
-            ->all();
+        $selectedTargets = $this->selectTargetVocabularies(
+            $allVocabularies,
+            $clozeByVocabId,
+            $questionCount,
+            $mode,
+        );
 
         $steps = [];
-        $standardQuizTypes = [
-            QuizType::WordToDefinition,
-            QuizType::DefinitionToWord,
-            QuizType::AudioToDefinition,
-        ];
-
         foreach ($selectedTargets as $index => $target) {
-            $stepIndex = $index + 1;
             $groupVocabularies = $vocabulariesByGroup[$target['group_id']] ?? [];
-
-            if ($quizMode === QuizMode::Spelling->value) {
-                $quiz = $this->buildSpellingQuestion($target);
-                $fallbackQuiz = null;
-            } elseif ($isSentenceCloze) {
-                $cloze = $clozeByVocabId[$target['id']] ?? throw new InvalidArgumentException(
-                    "Missing sentence cloze question for vocabulary {$target['id']}.",
-                );
-                $quiz = $this->buildSentenceClozeQuestion($target, $cloze, $groupVocabularies);
-                $fallbackQuiz = null;
-            } else {
-                $selectedType = $standardQuizTypes[random_int(0, count($standardQuizTypes) - 1)];
-                $quiz = $this->buildQuizQuestion($target, $groupVocabularies, $selectedType);
-
-                $fallbackQuiz = null;
-                if ($selectedType === QuizType::AudioToDefinition) {
-                    $nonAudioTypes = [QuizType::WordToDefinition, QuizType::DefinitionToWord];
-                    $fallbackType = $nonAudioTypes[random_int(0, 1)];
-                    $fallbackQuiz = $this->buildQuizQuestion($target, $groupVocabularies, $fallbackType);
-                }
-            }
-
-            $steps[] = [
-                'id' => "step-{$stepIndex}-custom-quiz-{$target['id']}",
-                'step_index' => $stepIndex,
-                'kind' => 'quiz',
-                'vocabulary' => $target,
-                'quiz' => $quiz,
-                'fallback_quiz' => $fallbackQuiz,
-            ];
+            $steps[] = $this->buildStep($index + 1, $target, $groupVocabularies, $clozeByVocabId, $mode);
         }
 
         return [
@@ -218,232 +139,153 @@ readonly class GenerateCustomQuizSession
         ];
     }
 
-    /**
-     * Build quiz question with 3 distractors chosen from the same group.
-     *
-     * @param  VocabularyPayload  $target
-     * @param  array<int, VocabularyPayload>  $groupVocabularies
-     * @return QuizQuestionPayload
-     */
-    private function buildQuizQuestion(array $target, array $groupVocabularies, QuizType $type): array
+    private function resolveCdnUrl(): string
     {
-        $distractors = collect($groupVocabularies)
-            ->filter(fn (array $v): bool => $v['id'] !== $target['id'])
-            ->shuffle()
-            ->take(3)
-            ->values()
-            ->all();
+        /** @var string|null $configuredUrl */
+        $configuredUrl = config('filesystems.disks.r2.url');
+        $baseUrl = is_string($configuredUrl) && $configuredUrl !== ''
+            ? $configuredUrl
+            : 'https://assets.vomorize.com';
 
-        $allOptionsRaw = array_merge([$target], $distractors);
+        return rtrim($baseUrl, '/');
+    }
 
-        /** @var array<int, QuizOptionPayload> $options */
-        $options = collect($allOptionsRaw)
-            ->shuffle()
-            ->values()
-            ->map(fn (array $v): array => [
-                'id' => $v['id'],
-                'text' => $type === QuizType::DefinitionToWord ? $v['word'] : $v['definition'],
-                'part_of_speech' => $v['part_of_speech'],
-                'word' => $v['word'],
-                'definition' => $v['definition'],
-            ])
-            ->all();
+    /**
+     * Load vocabulary payloads indexed by group and optional sentence cloze question mapping.
+     *
+     * @param  array<int, int>  $availableGroupIds
+     * @return array{
+     *     all: array<int, VocabularyPayload>,
+     *     by_group: array<int, array<int, VocabularyPayload>>,
+     *     cloze_by_vocab_id: array<int, SentenceClozeQuestion>,
+     * }
+     */
+    private function loadVocabularyPool(array $availableGroupIds, string $cdnUrl, QuizMode $mode): array
+    {
+        $isSentenceCloze = $mode === QuizMode::SentenceCloze;
 
-        $stem = match ($type) {
-            QuizType::WordToDefinition => $target['word'],
-            QuizType::DefinitionToWord, QuizType::Spelling => $target['definition'],
-            QuizType::AudioToDefinition, QuizType::SentenceCloze => '',
-        };
+        $rawVocabularies = Vocabulary::query()
+            ->with('translation')
+            ->whereIn('group_id', $availableGroupIds)
+            ->when($isSentenceCloze, static fn ($query) => $query->with('sentenceClozeQuestion'))
+            ->get();
+
+        /** @var array<int, VocabularyPayload> $allVocabularies */
+        $allVocabularies = [];
+        /** @var array<int, array<int, VocabularyPayload>> $vocabulariesByGroup */
+        $vocabulariesByGroup = [];
+        /** @var array<int, SentenceClozeQuestion> $clozeByVocabId */
+        $clozeByVocabId = [];
+
+        foreach ($rawVocabularies as $vocab) {
+            $payload = $this->formatVocabularyPayload($vocab, $cdnUrl);
+            $allVocabularies[] = $payload;
+            $vocabulariesByGroup[$payload['group_id']][] = $payload;
+
+            if ($isSentenceCloze && $vocab->sentenceClozeQuestion instanceof SentenceClozeQuestion) {
+                $clozeByVocabId[$payload['id']] = $vocab->sentenceClozeQuestion;
+            }
+        }
 
         return [
-            'quiz_type' => $type->value,
-            'stem' => $stem,
-            'audio_url' => $target['word_audio_url'],
-            'options' => $options,
-            'correct_option_id' => $target['id'],
+            'all' => $allVocabularies,
+            'by_group' => $vocabulariesByGroup,
+            'cloze_by_vocab_id' => $clozeByVocabId,
         ];
     }
 
     /**
-     * Build sentence cloze question using curated same-group distractors and inflected option forms.
-     *
-     * @param  VocabularyPayload  $target
-     * @param  array<int, VocabularyPayload>  $groupVocabularies
-     * @return QuizQuestionPayload
+     * @return VocabularyPayload
      */
-    private function buildSentenceClozeQuestion(
-        array $target,
-        SentenceClozeQuestion $cloze,
-        array $groupVocabularies,
+    private function formatVocabularyPayload(Vocabulary $vocab, string $cdnUrl): array
+    {
+        return [
+            'id' => $vocab->id,
+            'group_id' => $vocab->group_id,
+            'word' => $vocab->word,
+            'part_of_speech' => $vocab->part_of_speech,
+            'pronunciation' => $vocab->pronunciation,
+            'definition' => $vocab->definition,
+            'example_sentence' => $vocab->example_sentence,
+            'example_translation' => $vocab->example_translation,
+            'word_audio_url' => "{$cdnUrl}/vocabulary/{$vocab->id}/word.mp3",
+            'sentence_audio_url' => "{$cdnUrl}/vocabulary/{$vocab->id}/sentence.mp3",
+        ];
+    }
+
+    /**
+     * Filter eligible vocabularies for the mode and randomly sample the requested count.
+     *
+     * @param  array<int, VocabularyPayload>  $allVocabularies
+     * @param  array<int, SentenceClozeQuestion>  $clozeByVocabId
+     * @return array<int, VocabularyPayload>
+     */
+    private function selectTargetVocabularies(
+        array $allVocabularies,
+        array $clozeByVocabId,
+        int $questionCount,
+        QuizMode $mode,
     ): array {
-        /** @var array<int, VocabularyPayload> $vocabById */
-        $vocabById = [];
-        foreach ($groupVocabularies as $vocab) {
-            $vocabById[$vocab['id']] = $vocab;
-        }
+        $targetPool = $allVocabularies;
 
-        $selectedDistractors = collect($cloze->distractors)
-            ->filter(
-                fn (array $d): bool => $d['vocabulary_id'] !== $target['id'] && isset($vocabById[$d['vocabulary_id']]),
-            )
-            ->shuffle()
-            ->take(3)
-            ->values()
-            ->all();
+        if ($mode === QuizMode::SentenceCloze) {
+            $targetPool = array_values(array_filter(
+                $allVocabularies,
+                static fn (array $v): bool => array_key_exists($v['id'], $clozeByVocabId),
+            ));
 
-        // Fallback if curated distractors had fewer than 3 valid group members
-        if (count($selectedDistractors) < 3) {
-            $usedIds = array_merge([$target['id']], array_column($selectedDistractors, 'vocabulary_id'));
-            $extra = collect($groupVocabularies)
-                ->filter(fn (array $v): bool => ! in_array($v['id'], $usedIds, true))
-                ->shuffle()
-                ->take(3 - count($selectedDistractors))
-                ->map(fn (array $v): array => ['vocabulary_id' => $v['id'], 'word' => $v['word']])
-                ->all();
-            $selectedDistractors = array_merge($selectedDistractors, $extra);
-        }
-
-        $rawOptions = [
-            [
-                'vocabulary' => $target,
-                'display_word' => $cloze->blank_word,
-            ],
-        ];
-
-        foreach ($selectedDistractors as $distractor) {
-            $rawOptions[] = [
-                'vocabulary' => $vocabById[$distractor['vocabulary_id']],
-                'display_word' => $distractor['word'],
-            ];
-        }
-
-        /** @var array<int, QuizOptionPayload> $options */
-        $options = collect($rawOptions)
-            ->shuffle()
-            ->values()
-            ->map(fn (array $entry): array => [
-                'id' => $entry['vocabulary']['id'],
-                'text' => $entry['display_word'],
-                'part_of_speech' => $entry['vocabulary']['part_of_speech'],
-                'word' => $entry['vocabulary']['word'],
-                'definition' => $entry['vocabulary']['definition'],
-            ])
-            ->all();
-
-        $parts = preg_split('/(\{\{blank\}\})/', $cloze->sentence, -1, PREG_SPLIT_DELIM_CAPTURE | PREG_SPLIT_NO_EMPTY);
-        /** @var array<int, SentenceSegmentPayload> $segments */
-        $segments = [];
-
-        if (is_array($parts)) {
-            foreach ($parts as $part) {
-                $segments[] = $part === '{{blank}}'
-                    ? ['type' => 'blank', 'text' => $cloze->blank_word]
-                    : ['type' => 'text', 'text' => $part];
+            if (count($targetPool) < $questionCount) {
+                throw new InvalidArgumentException(
+                    "Insufficient sentence cloze questions for the requested {$questionCount} questions.",
+                );
             }
         }
 
-        return [
-            'quiz_type' => QuizType::SentenceCloze->value,
-            'stem' => $cloze->sentence,
-            'audio_url' => '',
-            'options' => $options,
-            'correct_option_id' => $target['id'],
-            'sentence_segments' => $segments,
-        ];
+        return collect($targetPool)
+            ->shuffle()
+            ->take($questionCount)
+            ->values()
+            ->all();
     }
 
     /**
-     * Build spelling question with ladder blanking and A-Z sorted tiles.
-     *
      * @param  VocabularyPayload  $target
-     * @return SpellingQuestionPayload
+     * @param  array<int, VocabularyPayload>  $groupVocabularies
+     * @param  array<int, SentenceClozeQuestion>  $clozeByVocabId
+     * @return SessionStep
      */
-    private function buildSpellingQuestion(array $target): array
-    {
-        $rawChars = str_split(strtolower($target['word']));
-        $len = count($rawChars);
-
-        // Identify non-blankable separator characters (hyphen, apostrophe, space)
-        $alphaIndices = [];
-        foreach ($rawChars as $idx => $char) {
-            if (ctype_alpha($char)) {
-                $alphaIndices[] = $idx;
-            }
-        }
-
-        $alphaCount = count($alphaIndices);
-
-        // Determine target blank count K based on word length
-        $targetK = match (true) {
-            $len <= 2 => $alphaCount,
-            $len === 3 => max(1, min(2, $alphaCount - 1)),
-            $len <= 5 => min(3, max(1, $alphaCount - 1)),
-            $len <= 8 => min(4, max(1, $alphaCount - 2)),
-            default => min(5, max(1, $alphaCount - 2)),
+    private function buildStep(
+        int $stepIndex,
+        array $target,
+        array $groupVocabularies,
+        array $clozeByVocabId,
+        QuizMode $mode,
+    ): array {
+        ['quiz' => $quiz, 'fallback_quiz' => $fallbackQuiz] = match ($mode) {
+            QuizMode::Spelling => [
+                'quiz' => $this->buildSpellingQuestion->handle($target),
+                'fallback_quiz' => null,
+            ],
+            QuizMode::SentenceCloze => [
+                'quiz' => $this->buildSentenceClozeQuestion->handle(
+                    $target,
+                    $clozeByVocabId[$target['id']] ?? throw new InvalidArgumentException(
+                        "Missing sentence cloze question for vocabulary {$target['id']}.",
+                    ),
+                    $groupVocabularies,
+                ),
+                'fallback_quiz' => null,
+            ],
+            QuizMode::Standard => $this->buildQuizQuestion->handleStandard($target, $groupVocabularies),
         };
 
-        // Anchor indices:
-        // For len <= 2: no anchor (both can be blanked if alphaCount == 2)
-        // For len == 3: keep first letter (anchor index 0)
-        // For len >= 6: keep first letter and last letter
-        $anchorIndices = [];
-        if ($len > 2 && $alphaCount > 1) {
-            $anchorIndices[] = $alphaIndices[0];
-        }
-        if ($len >= 6 && $alphaCount > 3) {
-            $anchorIndices[] = $alphaIndices[$alphaCount - 1];
-        }
-
-        $candidateIndices = array_values(array_diff($alphaIndices, $anchorIndices));
-
-        // Fallback if candidate pool is smaller than targetK
-        if (count($candidateIndices) < $targetK && $alphaCount > 1) {
-            $candidateIndices = array_slice($alphaIndices, 1);
-        }
-
-        $k = min($targetK, count($candidateIndices));
-        if ($k <= 0 && $alphaCount > 0) {
-            $k = 1;
-            $candidateIndices = $alphaIndices;
-        }
-
-        /** @var array<int, int> $chosenIndices */
-        $chosenIndices = collect($candidateIndices)
-            ->shuffle()
-            ->take($k)
-            ->values()
-            ->all();
-
-        /** @var array<int, SpellingSlotPayload> $slots */
-        $slots = [];
-        /** @var array<int, SpellingTilePayload> $tiles */
-        $tiles = [];
-
-        foreach ($rawChars as $idx => $char) {
-            $isBlank = in_array($idx, $chosenIndices, true);
-            $slots[] = [
-                'is_blank' => $isBlank,
-                'char' => $char,
-            ];
-
-            if ($isBlank) {
-                $tiles[] = [
-                    'slot_index' => $idx,
-                    'char' => $char,
-                ];
-            }
-        }
-
-        // Sort tiles alphabetically (A-Z)
-        usort($tiles, fn (array $a, array $b): int => strcmp($a['char'], $b['char']));
-
         return [
-            'quiz_type' => QuizType::Spelling->value,
-            'stem' => $target['definition'],
-            'audio_url' => $target['word_audio_url'],
-            'target_word' => strtolower($target['word']),
-            'slots' => $slots,
-            'tiles' => $tiles,
+            'id' => "step-{$stepIndex}-custom-quiz-{$target['id']}",
+            'step_index' => $stepIndex,
+            'kind' => 'quiz',
+            'vocabulary' => $target,
+            'quiz' => $quiz,
+            'fallback_quiz' => $fallbackQuiz,
         ];
     }
 }

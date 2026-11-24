@@ -22,6 +22,7 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
  * @property string $example_sentence
  * @property-read string $definition
  * @property-read string $example_translation
+ * @property-read SentenceClozeQuestion|null $sentenceClozeQuestion
  */
 class Vocabulary extends Model
 {
