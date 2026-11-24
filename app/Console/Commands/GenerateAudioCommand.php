@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace App\Console\Commands;
 
 use App\Actions\ParseIdRange;
-use App\Actions\PurgeCdnCache;
+use App\Actions\PurgeVocabularyAudioCache;
 use App\Models\Vocabulary;
 use Illuminate\Console\Attributes\Description;
 use Illuminate\Console\Attributes\Signature;
@@ -22,7 +22,7 @@ class GenerateAudioCommand extends Command
     /**
      * Execute the console command.
      */
-    public function handle(ParseIdRange $parseIdRange, PurgeCdnCache $purgeCdnCache): int
+    public function handle(ParseIdRange $parseIdRange, PurgeVocabularyAudioCache $purgeVocabularyAudioCache): int
     {
         $id = $this->option('id');
 
@@ -88,7 +88,7 @@ class GenerateAudioCommand extends Command
             $this->info('Purging Cloudflare CDN cache...');
 
             try {
-                $purgeCdnCache->purgeVocabularyAudio($processedIds);
+                $purgeVocabularyAudioCache->handle($processedIds);
                 $this->info('Cloudflare CDN cache purged successfully.');
             } catch (Throwable $e) {
                 $this->error('Failed to purge Cloudflare CDN cache: '.$e->getMessage());
