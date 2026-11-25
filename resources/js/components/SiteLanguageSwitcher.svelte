@@ -2,7 +2,6 @@
     import { page } from '@inertiajs/svelte';
     import Check from '@lucide/svelte/icons/check';
     import Languages from '@lucide/svelte/icons/languages';
-    import { Button } from '@/components/ui/button';
     import {
         DropdownMenu,
         DropdownMenuContent,
@@ -57,22 +56,21 @@
 <DropdownMenu>
     <DropdownMenuTrigger asChild>
         {#snippet children(props)}
-            <Button
-                variant="ghost"
-                size="icon"
-                class={cn(
-                    'inline-flex size-9 cursor-pointer items-center justify-center rounded-lg text-zinc-500 transition-all duration-200 hover:bg-zinc-200/50 hover:text-zinc-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-200 active:scale-95 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-100 dark:focus-visible:ring-zinc-700',
-                    className,
-                )}
+            <button
+                type="button"
+                class={{
+                    'text-foreground/75 inline-flex size-9 cursor-pointer items-center justify-center rounded-full transition-[background-color,color,transform] duration-150 ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-blue-600/8 hover:text-blue-600 focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:outline-none active:scale-95 motion-reduce:transition-none dark:hover:bg-blue-400/12 dark:hover:text-blue-400': true,
+                    [className]: Boolean(className),
+                }}
                 onclick={props.onclick}
                 aria-expanded={props['aria-expanded']}
                 aria-label={t('ui.sites.switch_site')}
             >
                 <span class="sr-only">{t('ui.sites.switch_site')}</span>
                 <Languages
-                    class="size-5 transition-transform duration-300 hover:scale-105"
+                    class="size-5 transition-transform duration-300 hover:scale-105 motion-reduce:transition-none"
                 />
-            </Button>
+            </button>
         {/snippet}
     </DropdownMenuTrigger>
     <DropdownMenuContent align="end" class="w-44">

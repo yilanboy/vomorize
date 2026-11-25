@@ -2,21 +2,26 @@
     import { Link, page, setLayoutProps } from '@inertiajs/svelte';
     import ArrowRight from '@lucide/svelte/icons/arrow-right';
     import Brain from '@lucide/svelte/icons/brain';
-    import Check from '@lucide/svelte/icons/check';
     import Cloud from '@lucide/svelte/icons/cloud';
-    import Eye from '@lucide/svelte/icons/eye';
-    import EyeOff from '@lucide/svelte/icons/eye-off';
     import Layers from '@lucide/svelte/icons/layers';
     import RotateCcw from '@lucide/svelte/icons/rotate-ccw';
     import Smartphone from '@lucide/svelte/icons/smartphone';
-    import Volume2 from '@lucide/svelte/icons/volume-2';
     import { onMount } from 'svelte';
     import AppHead from '@/components/AppHead.svelte';
+    import SentenceClozeCard from '@/components/quiz/SentenceClozeCard.svelte';
+    import SpellingCard from '@/components/quiz/SpellingCard.svelte';
+    import VocabularyIntroCard from '@/components/quiz/VocabularyIntroCard.svelte';
     import { Button } from '@/components/ui/button';
     import { audioPlayer } from '@/lib/audioPlayer.svelte';
     import { t } from '@/lib/i18n';
     import { dashboard } from '@/routes';
     import { index as levelsIndex, show as levelsShow } from '@/routes/levels';
+    import type {
+        QuizOptionPayload,
+        QuizQuestionPayload,
+        SpellingQuestionPayload,
+        VocabularyPayload,
+    } from '@/types/quiz';
 
     setLayoutProps<{ transparentHeader?: boolean }>({
         transparentHeader: true,
@@ -30,308 +35,161 @@
         groups_count?: number;
     }
 
-    interface VocabularyData {
-        id: number;
-        word: string;
-        part_of_speech: string;
-        pronunciation: string;
-        example_sentence: string;
-        translation: {
-            definition: string;
-            example_translation: string;
-        };
+    interface WelcomeShowcaseData {
+        vocabulary: VocabularyPayload;
+        cloze_question: QuizQuestionPayload | null;
+        spelling_question: SpellingQuestionPayload;
     }
 
     let {
         levels = [],
-        vocabulary,
+        showcase = null,
     }: {
         levels?: LevelData[];
-        vocabulary?: VocabularyData | null;
+        showcase?: WelcomeShowcaseData | null;
     } = $props();
 
     const auth = $derived(page.props.auth);
 
-    const activeVocab = $derived.by(() => {
-        if (vocabulary?.word) {
-            return {
-                id: vocabulary.id,
-                word: vocabulary.word,
-                part_of_speech: vocabulary.part_of_speech,
-                pronunciation: vocabulary.pronunciation,
-                definition: vocabulary.translation?.definition ?? '',
-                example_sentence: vocabulary.example_sentence,
-                example_translation:
-                    vocabulary.translation?.example_translation ?? '',
-                hasAudio: Boolean(vocabulary.id),
-            };
-        }
-
-        return {
-            id: 0,
-            word: t('ui.welcome.hero.fallback.word'),
-            part_of_speech: t('ui.welcome.hero.fallback.part_of_speech'),
-            pronunciation: t('ui.welcome.hero.fallback.pronunciation'),
-            definition: t('ui.welcome.hero.fallback.definition'),
-            example_sentence: t('ui.welcome.hero.fallback.example_sentence'),
-            example_translation: t(
-                'ui.welcome.hero.fallback.example_translation',
-            ),
-            hasAudio: false,
-        };
+    const fallbackVocabulary = $derived<VocabularyPayload>({
+        id: 0,
+        word: t('ui.welcome.hero.fallback.word'),
+        part_of_speech: t('ui.welcome.hero.fallback.part_of_speech'),
+        pronunciation: t('ui.welcome.hero.fallback.pronunciation'),
+        definition: t('ui.welcome.hero.fallback.definition'),
+        example_sentence: t('ui.welcome.hero.fallback.example_sentence'),
+        example_translation: t('ui.welcome.hero.fallback.example_translation'),
+        word_audio_url: '',
+        sentence_audio_url: '',
     });
 
-    const wordAudioUrl = $derived(
-        activeVocab.hasAudio
-            ? `https://assets.vomorize.com/vocabulary/${activeVocab.id}/word.mp3`
-            : '',
+    const fallbackClozeQuestion = $derived<QuizQuestionPayload>({
+        quiz_type: 'sentence_cloze',
+        stem: 'Her {{blank}} helped her recover quickly from the setback.',
+        audio_url: '',
+        correct_option_id: 1,
+        sentence_segments: [
+            { type: 'text', text: 'Her ' },
+            { type: 'blank', text: 'resilience' },
+            {
+                type: 'text',
+                text: ' helped her recover quickly from the setback.',
+            },
+        ],
+        options: [
+            {
+                id: 1,
+                text: 'resilience',
+                part_of_speech: 'n.',
+                word: 'resilience',
+                definition: t('ui.welcome.hero.fallback.definition'),
+            },
+            {
+                id: 2,
+                text: 'hesitation',
+                part_of_speech: 'n.',
+                word: 'hesitation',
+                definition: '',
+            },
+            {
+                id: 3,
+                text: 'curiosity',
+                part_of_speech: 'n.',
+                word: 'curiosity',
+                definition: '',
+            },
+            {
+                id: 4,
+                text: 'obstacle',
+                part_of_speech: 'n.',
+                word: 'obstacle',
+                definition: '',
+            },
+        ],
+    });
+
+    const fallbackSpellingQuestion = $derived<SpellingQuestionPayload>({
+        quiz_type: 'spelling',
+        stem: fallbackVocabulary.definition,
+        audio_url: '',
+        target_word: 'resilience',
+        slots: [
+            { is_blank: false, char: 'r' },
+            { is_blank: false, char: 'e' },
+            { is_blank: true, char: 's' },
+            { is_blank: false, char: 'i' },
+            { is_blank: true, char: 'l' },
+            { is_blank: false, char: 'i' },
+            { is_blank: true, char: 'e' },
+            { is_blank: false, char: 'n' },
+            { is_blank: true, char: 'c' },
+            { is_blank: false, char: 'e' },
+        ],
+        tiles: [
+            { slot_index: 8, char: 'c' },
+            { slot_index: 6, char: 'e' },
+            { slot_index: 4, char: 'l' },
+            { slot_index: 2, char: 's' },
+        ],
+    });
+
+    const introVocabulary = $derived(
+        showcase?.vocabulary ?? fallbackVocabulary,
     );
-    const sentenceAudioUrl = $derived(
-        activeVocab.hasAudio
-            ? `https://assets.vomorize.com/vocabulary/${activeVocab.id}/sentence.mp3`
-            : '',
+    const clozeVocabulary = $derived(
+        showcase?.cloze_question ? showcase.vocabulary : fallbackVocabulary,
+    );
+    const clozeQuestion = $derived(
+        showcase?.cloze_question ?? fallbackClozeQuestion,
+    );
+    const spellingVocabulary = $derived(
+        showcase?.vocabulary ?? fallbackVocabulary,
+    );
+    const spellingQuestion = $derived(
+        showcase?.spelling_question ?? fallbackSpellingQuestion,
     );
 
-    function playWordAudio(): void {
-        if (!wordAudioUrl) {
-            return;
-        }
+    type WorkbenchMode = 'intro' | 'cloze' | 'spelling';
+    let workbenchMode = $state<WorkbenchMode>('intro');
+    let selectedClozeOptionId = $state<number | null>(null);
+    let spellingAnswered = $state(false);
+    let spellingKey = $state(0);
+
+    function switchWorkbenchMode(mode: WorkbenchMode): void {
         audioPlayer.stop();
-        void audioPlayer.play(wordAudioUrl, 'hero-word');
+        workbenchMode = mode;
+        selectedClozeOptionId = null;
+        spellingAnswered = false;
+        if (mode === 'spelling') {
+            spellingKey += 1;
+        }
     }
 
-    function playSentenceAudio(): void {
-        if (!sentenceAudioUrl) {
-            return;
-        }
+    function retryWorkbenchQuiz(): void {
         audioPlayer.stop();
-        void audioPlayer.play(sentenceAudioUrl, 'hero-sentence');
+        if (workbenchMode === 'cloze') {
+            selectedClozeOptionId = null;
+        } else if (workbenchMode === 'spelling') {
+            spellingAnswered = false;
+            spellingKey += 1;
+        }
     }
 
     onMount(() => {
         if (
-            wordAudioUrl &&
-            sentenceAudioUrl &&
+            introVocabulary.word_audio_url &&
+            introVocabulary.sentence_audio_url &&
             window.location.hostname.endsWith('vomorize.com')
         ) {
-            void audioPlayer.preload([wordAudioUrl, sentenceAudioUrl]);
+            void audioPlayer.preload([
+                introVocabulary.word_audio_url,
+                introVocabulary.sentence_audio_url,
+            ]);
         }
 
         return () => {
             audioPlayer.stop();
         };
-    });
-
-    // Band 1: Hero Interactive Workbench
-    type WorkbenchMode = 'card' | 'recall' | 'spelling';
-    let workbenchMode = $state<WorkbenchMode>('card');
-
-    // Recall mode state
-    let recallRevealed = $state(false);
-    let recallChoice = $state<'known' | 'review' | null>(null);
-
-    function switchWorkbenchMode(mode: WorkbenchMode): void {
-        workbenchMode = mode;
-        if (mode === 'recall') {
-            recallRevealed = false;
-            recallChoice = null;
-        } else if (mode === 'spelling') {
-            filledSlots = {};
-        }
-    }
-
-    // Spelling mode deterministic puzzle derived from activeVocab.word
-    interface SpellingSlot {
-        index: number;
-        char: string;
-        isBlank: boolean;
-    }
-
-    interface SpellingTile {
-        tileId: number;
-        slotIndex: number;
-        char: string;
-    }
-
-    const spellingPuzzle = $derived.by(() => {
-        const raw = activeVocab.word.trim();
-        const chars = Array.from(raw);
-        const alphaIndices: number[] = [];
-
-        chars.forEach((ch, idx) => {
-            if (/[a-zA-Z]/.test(ch)) {
-                alphaIndices.push(idx);
-            }
-        });
-
-        const blankSet = new Set<number>();
-        if (alphaIndices.length > 0) {
-            const candidatePool =
-                alphaIndices.length >= 5
-                    ? alphaIndices.slice(1, -1)
-                    : alphaIndices;
-            const targetCount = Math.min(
-                4,
-                Math.max(1, Math.floor(alphaIndices.length / 2)),
-            );
-
-            for (let i = 0; i < targetCount; i++) {
-                const pickIdx = Math.min(
-                    candidatePool.length - 1,
-                    Math.floor((i * candidatePool.length) / targetCount),
-                );
-                blankSet.add(candidatePool[pickIdx]);
-            }
-        }
-
-        const slots: SpellingSlot[] = chars.map((ch, idx) => ({
-            index: idx,
-            char: ch,
-            isBlank: blankSet.has(idx),
-        }));
-
-        const blanks = slots.filter((slot) => slot.isBlank);
-        const orderedTiles: SpellingTile[] = blanks.map((slot, idx) => ({
-            tileId: idx,
-            slotIndex: slot.index,
-            char: slot.char.toLowerCase(),
-        }));
-
-        const sortedTiles = [...orderedTiles].sort((a, b) => {
-            const scoreA = (a.char.charCodeAt(0) * 31 + a.slotIndex * 17) % 97;
-            const scoreB = (b.char.charCodeAt(0) * 31 + b.slotIndex * 17) % 97;
-            return scoreA - scoreB || a.slotIndex - b.slotIndex;
-        });
-
-        // Ensure scrambled order differs from answer order whenever possible
-        if (
-            sortedTiles.length >= 2 &&
-            sortedTiles.every((tile, i) => tile.char === orderedTiles[i].char)
-        ) {
-            const first = sortedTiles.shift();
-            if (first) {
-                sortedTiles.push(first);
-            }
-        }
-
-        return {
-            slots,
-            tiles: sortedTiles,
-            blankCount: blanks.length,
-        };
-    });
-
-    // Maps slotIndex -> tileId
-    let filledSlots = $state<Record<number, number>>({});
-
-    const usedTileIds = $derived(new Set(Object.values(filledSlots)));
-
-    const tileById = $derived.by(() => {
-        const map = new Map<number, SpellingTile>();
-        for (const tile of spellingPuzzle.tiles) {
-            map.set(tile.tileId, tile);
-        }
-        return map;
-    });
-
-    const isSpellingComplete = $derived(
-        spellingPuzzle.blankCount > 0 &&
-            Object.keys(filledSlots).length === spellingPuzzle.blankCount,
-    );
-
-    const isSpellingCorrect = $derived.by(() => {
-        if (!isSpellingComplete) {
-            return false;
-        }
-        return spellingPuzzle.slots.every((slot) => {
-            if (!slot.isBlank) {
-                return true;
-            }
-            const tileId = filledSlots[slot.index];
-            const tile =
-                tileId !== undefined ? tileById.get(tileId) : undefined;
-            return tile?.char === slot.char.toLowerCase();
-        });
-    });
-
-    function handleTileSelect(tile: SpellingTile): void {
-        if (usedTileIds.has(tile.tileId) || isSpellingComplete) {
-            return;
-        }
-
-        const nextBlank = spellingPuzzle.slots.find(
-            (slot) => slot.isBlank && filledSlots[slot.index] === undefined,
-        );
-        if (!nextBlank) {
-            return;
-        }
-
-        const nextState = {
-            ...filledSlots,
-            [nextBlank.index]: tile.tileId,
-        };
-        filledSlots = nextState;
-
-        if (Object.keys(nextState).length === spellingPuzzle.blankCount) {
-            const solved = spellingPuzzle.slots.every((slot) => {
-                if (!slot.isBlank) {
-                    return true;
-                }
-                const pickedId = nextState[slot.index];
-                const pickedTile =
-                    pickedId !== undefined ? tileById.get(pickedId) : undefined;
-                return pickedTile?.char === slot.char.toLowerCase();
-            });
-            if (solved && activeVocab.hasAudio) {
-                playWordAudio();
-            }
-        }
-    }
-
-    function handleSlotClear(slotIndex: number): void {
-        if (filledSlots[slotIndex] === undefined || isSpellingCorrect) {
-            return;
-        }
-        const nextState = { ...filledSlots };
-        delete nextState[slotIndex];
-        filledSlots = nextState;
-    }
-
-    function resetSpelling(): void {
-        filledSlots = {};
-    }
-
-    // Safe sentence word emphasis without @html
-    interface SentenceChunk {
-        text: string;
-        highlight: boolean;
-    }
-
-    const highlightedSentence = $derived.by((): SentenceChunk[] => {
-        const sentence = activeVocab.example_sentence;
-        const word = activeVocab.word.trim();
-        if (!sentence || !word) {
-            return [{ text: sentence, highlight: false }];
-        }
-
-        const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-        const regex = new RegExp(`(${escaped}[a-zA-Z]*)`, 'i');
-        const match = regex.exec(sentence);
-        if (!match || match.index === undefined) {
-            return [{ text: sentence, highlight: false }];
-        }
-
-        const start = match.index;
-        const end = start + match[0].length;
-        const chunks: SentenceChunk[] = [];
-        if (start > 0) {
-            chunks.push({ text: sentence.slice(0, start), highlight: false });
-        }
-        chunks.push({ text: sentence.slice(start, end), highlight: true });
-        if (end < sentence.length) {
-            chunks.push({ text: sentence.slice(end), highlight: false });
-        }
-        return chunks;
     });
 
     // Band 2: SRS Interactive Curve & 6 Stages
@@ -366,47 +224,7 @@
     const crammingCurvePath =
         'M 56 28 C 102 145, 165 202, 260 222 C 370 234, 510 236, 664 238';
 
-    // Band 3: Editorial Features & Interactive Quiz Anatomy
-    type PreviewMode = 'word' | 'audio' | 'cloze';
-    let previewMode = $state<PreviewMode>('word');
-    let selectedOptionIndex = $state<number | null>(null);
-
-    const previewAnswers: Record<PreviewMode, number> = {
-        word: 0,
-        audio: 1,
-        cloze: 2,
-    };
-
-    const activePreviewSample = $derived.by(() => {
-        const correctIndex = previewAnswers[previewMode];
-        return {
-            prompt: t(
-                `ui.welcome.features.preview_samples.${previewMode}.prompt`,
-            ),
-            pos: t(`ui.welcome.features.preview_samples.${previewMode}.pos`),
-            options: [
-                t(
-                    `ui.welcome.features.preview_samples.${previewMode}.option_0`,
-                ),
-                t(
-                    `ui.welcome.features.preview_samples.${previewMode}.option_1`,
-                ),
-                t(
-                    `ui.welcome.features.preview_samples.${previewMode}.option_2`,
-                ),
-                t(
-                    `ui.welcome.features.preview_samples.${previewMode}.option_3`,
-                ),
-            ],
-            correctIndex,
-        };
-    });
-
-    function switchPreviewMode(mode: PreviewMode): void {
-        previewMode = mode;
-        selectedOptionIndex = null;
-    }
-
+    // Band 3: Editorial Feature Rows
     const featureRows = [
         {
             icon: Brain,
@@ -456,8 +274,8 @@
 <AppHead title={t('ui.welcome.hero.title')} />
 
 <div class="selection:bg-blue-600 selection:text-white">
-    <!-- Band 1: Hero & Interactive Study Workbench (bleeds to y=0 behind transparent header) -->
-    <section class="relative overflow-hidden pt-28 pb-20 sm:pt-32 sm:pb-28">
+    <!-- Band 1: Hero & Real Interactive Learning Card Showcase -->
+    <section class="relative overflow-hidden pt-28 pb-20 sm:pt-32 sm:pb-24">
         <!-- Subtle architectural sky-cobalt aura and hairline paper grid -->
         <div
             aria-hidden="true"
@@ -503,462 +321,79 @@
             </div>
         </div>
 
-        <!-- Wide Interactive Study Workbench -->
+        <!-- Real Learning Card Stage (matches actual Intro / Cloze / Spelling cards) -->
         <div
-            class="relative mx-auto mt-12 max-w-4xl px-4 sm:mt-14 sm:px-6 lg:px-8"
+            class="relative mx-auto mt-12 max-w-xl px-4 sm:mt-14 sm:px-0"
+            data-test="hero-workbench"
         >
-            <section
-                aria-label={t('ui.welcome.hero.workbench_label')}
-                class="border-border bg-card/95 rounded-2xl border shadow-sm backdrop-blur-xs"
-            >
-                <!-- Workbench Control Strip -->
+            <div class="flex justify-center">
                 <div
-                    class="border-border flex flex-wrap items-center justify-between gap-3 border-b px-5 py-3.5 sm:px-8"
+                    role="tablist"
+                    aria-label={t('ui.welcome.hero.workbench_label')}
+                    class="border-border/80 bg-muted/75 inline-flex rounded-xl border p-1 backdrop-blur-xs"
                 >
-                    <div
-                        role="tablist"
-                        aria-label={t('ui.welcome.hero.workbench_label')}
-                        class="bg-muted/70 inline-flex rounded-lg p-1"
-                    >
-                        {#each ['card', 'recall', 'spelling'] as const as mode (mode)}
-                            {@const isActive = workbenchMode === mode}
-                            <button
-                                type="button"
-                                role="tab"
-                                aria-selected={isActive}
-                                onclick={() => switchWorkbenchMode(mode)}
-                                class={{
-                                    'cursor-pointer rounded-md px-3.5 py-1.5 text-sm font-semibold transition-[background-color,color,box-shadow] duration-150 ease-[cubic-bezier(0.22,1,0.36,1)] focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:outline-none motion-reduce:transition-none': true,
-                                    'bg-background text-foreground shadow-2xs':
-                                        isActive,
-                                    'text-muted-foreground hover:text-foreground':
-                                        !isActive,
-                                }}
-                            >
-                                {t(`ui.welcome.hero.modes.${mode}`)}
-                            </button>
-                        {/each}
-                    </div>
-
-                    {#if activeVocab.hasAudio}
+                    {#each ['intro', 'cloze', 'spelling'] as const as mode (mode)}
+                        {@const isActive = workbenchMode === mode}
                         <button
                             type="button"
-                            onclick={playWordAudio}
-                            aria-label={t('ui.welcome.hero.play_word')}
-                            title={t('ui.welcome.hero.play_word')}
+                            role="tab"
+                            aria-selected={isActive}
+                            onclick={() => switchWorkbenchMode(mode)}
                             class={{
-                                'inline-flex cursor-pointer items-center gap-2 rounded-lg border px-3 py-1.5 text-sm font-medium transition-[background-color,border-color,color] duration-150 focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:outline-none motion-reduce:transition-none': true,
-                                'border-blue-600 bg-blue-600 text-white':
-                                    audioPlayer.isPlaying('hero-word'),
-                                'border-border bg-background text-foreground hover:border-blue-400 hover:text-blue-600 dark:hover:text-blue-400':
-                                    !audioPlayer.isPlaying('hero-word'),
+                                'cursor-pointer rounded-lg px-3.5 py-1.5 text-sm font-semibold transition-[background-color,color,box-shadow] duration-150 ease-[cubic-bezier(0.22,1,0.36,1)] focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:outline-none motion-reduce:transition-none sm:px-4': true,
+                                'bg-background text-foreground shadow-xs':
+                                    isActive,
+                                'text-muted-foreground hover:text-foreground':
+                                    !isActive,
                             }}
                         >
-                            <Volume2 class="size-4" />
-                            <span>{t('ui.welcome.hero.play_word')}</span>
+                            {t(`ui.welcome.hero.modes.${mode}`)}
                         </button>
-                    {/if}
+                    {/each}
                 </div>
+            </div>
 
-                <!-- Workbench Active Stage -->
-                <div class="px-5 py-7 sm:px-8 sm:py-9">
-                    {#if workbenchMode === 'card'}
-                        <div class="space-y-6">
-                            <div
-                                class="flex flex-wrap items-baseline justify-between gap-4"
-                            >
-                                <div
-                                    class="flex flex-wrap items-baseline gap-3"
-                                >
-                                    <span
-                                        class="text-foreground text-3xl font-extrabold tracking-tight sm:text-4xl"
-                                    >
-                                        {activeVocab.word}
-                                    </span>
-                                    {#if activeVocab.part_of_speech}
-                                        <span
-                                            class="text-muted-foreground text-sm font-semibold italic"
-                                        >
-                                            {activeVocab.part_of_speech}
-                                        </span>
-                                    {/if}
-                                    {#if activeVocab.pronunciation}
-                                        <span
-                                            class="text-muted-foreground text-sm tabular-nums"
-                                        >
-                                            {activeVocab.pronunciation}
-                                        </span>
-                                    {/if}
-                                </div>
-                            </div>
+            <div class="mt-4 text-left" data-test="hero-workbench-card">
+                {#if workbenchMode === 'intro'}
+                    <VocabularyIntroCard
+                        vocabulary={introVocabulary}
+                        autoPlay={false}
+                    />
+                {:else if workbenchMode === 'cloze'}
+                    <SentenceClozeCard
+                        question={clozeQuestion}
+                        vocabulary={clozeVocabulary}
+                        selectedOptionId={selectedClozeOptionId}
+                        onSelect={(option: QuizOptionPayload) => {
+                            selectedClozeOptionId = option.id;
+                        }}
+                    />
+                {:else}
+                    {#key spellingKey}
+                        <SpellingCard
+                            question={spellingQuestion}
+                            vocabulary={spellingVocabulary}
+                            autoPlay={false}
+                            onResult={() => {
+                                spellingAnswered = true;
+                            }}
+                        />
+                    {/key}
+                {/if}
+            </div>
 
-                            <p
-                                class="text-foreground text-base leading-relaxed font-semibold"
-                            >
-                                {activeVocab.definition}
-                            </p>
-
-                            {#if activeVocab.example_sentence}
-                                <div
-                                    class="border-border/80 flex items-start justify-between gap-4 border-t pt-5"
-                                >
-                                    <div class="space-y-1.5">
-                                        <p
-                                            class="text-foreground text-base leading-relaxed"
-                                        >
-                                            {#each highlightedSentence as chunk, idx (idx)}
-                                                {#if chunk.highlight}
-                                                    <span
-                                                        class="font-semibold text-blue-600 dark:text-blue-400"
-                                                        >{chunk.text}</span
-                                                    >
-                                                {:else}
-                                                    {chunk.text}
-                                                {/if}
-                                            {/each}
-                                        </p>
-                                        {#if activeVocab.example_translation}
-                                            <p
-                                                class="text-muted-foreground text-sm leading-relaxed"
-                                            >
-                                                {activeVocab.example_translation}
-                                            </p>
-                                        {/if}
-                                    </div>
-
-                                    {#if activeVocab.hasAudio}
-                                        <button
-                                            type="button"
-                                            onclick={playSentenceAudio}
-                                            aria-label={t(
-                                                'ui.welcome.hero.play_sentence',
-                                            )}
-                                            title={t(
-                                                'ui.welcome.hero.play_sentence',
-                                            )}
-                                            class={{
-                                                'flex size-10 shrink-0 cursor-pointer items-center justify-center rounded-full border transition-[background-color,border-color,color,transform] duration-150 active:scale-95 motion-reduce:transition-none': true,
-                                                'border-blue-600 bg-blue-600 text-white':
-                                                    audioPlayer.isPlaying(
-                                                        'hero-sentence',
-                                                    ),
-                                                'border-border bg-background text-muted-foreground hover:border-blue-400 hover:text-blue-600 dark:hover:text-blue-400':
-                                                    !audioPlayer.isPlaying(
-                                                        'hero-sentence',
-                                                    ),
-                                            }}
-                                        >
-                                            <Volume2 class="size-4.5" />
-                                        </button>
-                                    {/if}
-                                </div>
-                            {/if}
-                        </div>
-                    {:else if workbenchMode === 'recall'}
-                        <div class="space-y-6">
-                            <div
-                                class="flex flex-wrap items-baseline justify-between gap-4"
-                            >
-                                <div
-                                    class="flex flex-wrap items-baseline gap-3"
-                                >
-                                    <span
-                                        class="text-foreground text-3xl font-extrabold tracking-tight sm:text-4xl"
-                                    >
-                                        {activeVocab.word}
-                                    </span>
-                                    {#if activeVocab.pronunciation}
-                                        <span
-                                            class="text-muted-foreground text-sm tabular-nums"
-                                        >
-                                            {activeVocab.pronunciation}
-                                        </span>
-                                    {/if}
-                                </div>
-
-                                <button
-                                    type="button"
-                                    onclick={() => {
-                                        recallRevealed = !recallRevealed;
-                                    }}
-                                    class="text-foreground inline-flex cursor-pointer items-center gap-2 text-sm font-semibold transition-colors duration-150 hover:text-blue-600 focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:outline-none motion-reduce:transition-none dark:hover:text-blue-400"
-                                >
-                                    {#if recallRevealed}
-                                        <EyeOff class="size-4" />
-                                        <span
-                                            >{t(
-                                                'ui.welcome.hero.recall_hide',
-                                            )}</span
-                                        >
-                                    {:else}
-                                        <Eye class="size-4" />
-                                        <span
-                                            >{t(
-                                                'ui.welcome.hero.recall_reveal',
-                                            )}</span
-                                        >
-                                    {/if}
-                                </button>
-                            </div>
-
-                            {#if recallRevealed}
-                                <div class="space-y-4">
-                                    <p
-                                        class="text-foreground text-base leading-relaxed font-semibold"
-                                    >
-                                        {#if activeVocab.part_of_speech}
-                                            <span
-                                                class="text-muted-foreground mr-2 text-sm font-semibold italic"
-                                            >
-                                                {activeVocab.part_of_speech}
-                                            </span>
-                                        {/if}
-                                        {activeVocab.definition}
-                                    </p>
-
-                                    {#if activeVocab.example_sentence}
-                                        <div
-                                            class="border-border/80 space-y-1 border-t pt-4"
-                                        >
-                                            <p
-                                                class="text-foreground text-base leading-relaxed"
-                                            >
-                                                {activeVocab.example_sentence}
-                                            </p>
-                                            {#if activeVocab.example_translation}
-                                                <p
-                                                    class="text-muted-foreground text-sm leading-relaxed"
-                                                >
-                                                    {activeVocab.example_translation}
-                                                </p>
-                                            {/if}
-                                        </div>
-                                    {/if}
-
-                                    <div
-                                        class="border-border/80 flex flex-wrap items-center justify-between gap-4 border-t pt-4"
-                                    >
-                                        <div
-                                            role="radiogroup"
-                                            aria-label={t(
-                                                'ui.welcome.hero.modes.recall',
-                                            )}
-                                            class="bg-muted/70 inline-flex rounded-lg p-1"
-                                        >
-                                            <button
-                                                type="button"
-                                                role="radio"
-                                                aria-checked={recallChoice ===
-                                                    'known'}
-                                                onclick={() =>
-                                                    (recallChoice = 'known')}
-                                                class={{
-                                                    'cursor-pointer rounded-md px-3.5 py-1.5 text-sm font-semibold transition-[background-color,color] duration-150 motion-reduce:transition-none': true,
-                                                    'bg-emerald-600 text-white':
-                                                        recallChoice ===
-                                                        'known',
-                                                    'text-muted-foreground hover:text-foreground':
-                                                        recallChoice !==
-                                                        'known',
-                                                }}
-                                            >
-                                                {t(
-                                                    'ui.welcome.hero.recall_known',
-                                                )}
-                                            </button>
-                                            <button
-                                                type="button"
-                                                role="radio"
-                                                aria-checked={recallChoice ===
-                                                    'review'}
-                                                onclick={() =>
-                                                    (recallChoice = 'review')}
-                                                class={{
-                                                    'cursor-pointer rounded-md px-3.5 py-1.5 text-sm font-semibold transition-[background-color,color] duration-150 motion-reduce:transition-none': true,
-                                                    'bg-blue-600 text-white':
-                                                        recallChoice ===
-                                                        'review',
-                                                    'text-muted-foreground hover:text-foreground':
-                                                        recallChoice !==
-                                                        'review',
-                                                }}
-                                            >
-                                                {t(
-                                                    'ui.welcome.hero.recall_review',
-                                                )}
-                                            </button>
-                                        </div>
-
-                                        {#if recallChoice === 'known'}
-                                            <p
-                                                class="flex items-center gap-1.5 text-sm font-medium text-emerald-700 dark:text-emerald-400"
-                                            >
-                                                <Check class="size-4" />
-                                                <span>
-                                                    {t(
-                                                        'ui.welcome.hero.recall_known_feedback',
-                                                    )}
-                                                </span>
-                                            </p>
-                                        {:else if recallChoice === 'review'}
-                                            <p
-                                                class="text-sm font-medium text-blue-700 dark:text-blue-400"
-                                            >
-                                                {t(
-                                                    'ui.welcome.hero.recall_review_feedback',
-                                                )}
-                                            </p>
-                                        {/if}
-                                    </div>
-                                </div>
-                            {:else}
-                                <button
-                                    type="button"
-                                    onclick={() => (recallRevealed = true)}
-                                    class="border-border bg-muted/40 text-muted-foreground hover:text-foreground flex w-full cursor-pointer items-center justify-center rounded-xl border border-dashed py-8 text-base font-medium transition-[border-color,color] duration-150 hover:border-blue-400/70 focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:outline-none motion-reduce:transition-none"
-                                >
-                                    {t('ui.welcome.hero.recall_hint')}
-                                </button>
-                            {/if}
-                        </div>
-                    {:else}
-                        <div class="space-y-6">
-                            <div
-                                class="flex flex-wrap items-baseline justify-between gap-4"
-                            >
-                                <div>
-                                    <p
-                                        class="text-foreground text-base font-semibold"
-                                    >
-                                        {activeVocab.definition}
-                                    </p>
-                                    <p
-                                        class="text-muted-foreground mt-1 text-sm"
-                                    >
-                                        {t('ui.welcome.hero.spelling_prompt')}
-                                    </p>
-                                </div>
-
-                                <button
-                                    type="button"
-                                    onclick={resetSpelling}
-                                    class="text-muted-foreground hover:text-foreground inline-flex cursor-pointer items-center gap-1.5 text-sm font-medium transition-colors duration-150 focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:outline-none motion-reduce:transition-none"
-                                >
-                                    <RotateCcw class="size-4" />
-                                    <span
-                                        >{t(
-                                            'ui.welcome.hero.spelling_reset',
-                                        )}</span
-                                    >
-                                </button>
-                            </div>
-
-                            <!-- Word Slots -->
-                            <div
-                                aria-label={t(
-                                    'ui.welcome.hero.spelling_slots_label',
-                                )}
-                                class="flex flex-wrap items-center gap-1.5 sm:gap-2"
-                            >
-                                {#each spellingPuzzle.slots as slot (slot.index)}
-                                    {#if slot.isBlank}
-                                        {@const assignedTileId =
-                                            filledSlots[slot.index]}
-                                        {@const assignedTile =
-                                            assignedTileId !== undefined
-                                                ? tileById.get(assignedTileId)
-                                                : undefined}
-                                        <button
-                                            type="button"
-                                            onclick={() =>
-                                                handleSlotClear(slot.index)}
-                                            disabled={assignedTile ===
-                                                undefined || isSpellingCorrect}
-                                            class={{
-                                                'flex h-12 min-w-9 items-center justify-center rounded-lg border-b-2 px-2 text-3xl font-extrabold tracking-tight transition-[border-color,background-color,color] duration-150 focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:outline-none motion-reduce:transition-none sm:text-4xl': true,
-                                                'border-emerald-600 bg-emerald-50 text-emerald-700 dark:bg-emerald-950/40 dark:text-emerald-300':
-                                                    isSpellingCorrect,
-                                                'cursor-pointer border-red-500 bg-red-50 text-red-700 dark:bg-red-950/40 dark:text-red-300':
-                                                    isSpellingComplete &&
-                                                    !isSpellingCorrect,
-                                                'cursor-pointer border-blue-600 bg-blue-50/70 text-blue-700 dark:bg-blue-950/30 dark:text-blue-300':
-                                                    !isSpellingComplete &&
-                                                    assignedTile !== undefined,
-                                                'border-border bg-muted/55 border border-b-2 border-b-blue-300/80 text-transparent dark:border-b-blue-700/70':
-                                                    assignedTile === undefined,
-                                            }}
-                                        >
-                                            {assignedTile?.char ?? '_'}
-                                        </button>
-                                    {:else}
-                                        <span
-                                            class="text-foreground flex h-12 items-center px-0.5 text-3xl font-extrabold tracking-tight sm:text-4xl"
-                                        >
-                                            {slot.char}
-                                        </span>
-                                    {/if}
-                                {/each}
-                            </div>
-
-                            <!-- Tactile Letter Tiles -->
-                            <div
-                                class="border-border/80 flex flex-wrap items-center justify-between gap-4 border-t pt-5"
-                            >
-                                <div
-                                    aria-label={t(
-                                        'ui.welcome.hero.spelling_tiles_label',
-                                    )}
-                                    class="flex flex-wrap items-center gap-2.5"
-                                >
-                                    {#each spellingPuzzle.tiles as tile (tile.tileId)}
-                                        {@const used = usedTileIds.has(
-                                            tile.tileId,
-                                        )}
-                                        <button
-                                            type="button"
-                                            disabled={used ||
-                                                isSpellingComplete}
-                                            onclick={() =>
-                                                handleTileSelect(tile)}
-                                            class={{
-                                                'flex size-11 items-center justify-center rounded-xl border text-base font-bold transition-[transform,background-color,border-color,opacity,box-shadow] duration-150 ease-[cubic-bezier(0.22,1,0.36,1)] focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:outline-none motion-reduce:transition-none': true,
-                                                'border-border/50 bg-muted/30 text-muted-foreground/30 pointer-events-none translate-y-0.5 border-dashed shadow-none':
-                                                    used,
-                                                'cursor-pointer border-blue-400/80 bg-blue-50/90 text-blue-700 shadow-[0_3px_0_0_rgba(37,99,235,0.28)] hover:-translate-y-0.5 hover:border-blue-500 active:translate-y-[3px] active:shadow-none dark:border-blue-500/70 dark:bg-blue-950/50 dark:text-blue-300 dark:shadow-[0_3px_0_0_rgba(59,130,246,0.34)]':
-                                                    !used &&
-                                                    !isSpellingComplete,
-                                                'border-border bg-muted/40 text-muted-foreground opacity-50 shadow-none':
-                                                    !used && isSpellingComplete,
-                                            }}
-                                        >
-                                            {tile.char}
-                                        </button>
-                                    {/each}
-                                </div>
-
-                                {#if isSpellingCorrect}
-                                    <p
-                                        class="flex items-center gap-1.5 text-sm font-semibold text-emerald-700 dark:text-emerald-400"
-                                    >
-                                        <Check class="size-4" />
-                                        <span>
-                                            {t(
-                                                'ui.welcome.hero.spelling_solved',
-                                            )}
-                                        </span>
-                                    </p>
-                                {:else if isSpellingComplete}
-                                    <p
-                                        class="text-sm font-medium text-red-600 dark:text-red-400"
-                                    >
-                                        {t('ui.welcome.hero.spelling_wrong')}
-                                    </p>
-                                {/if}
-                            </div>
-                        </div>
-                    {/if}
-                </div>
-            </section>
+            <div class="mt-3 flex h-9 items-center justify-center">
+                {#if (workbenchMode === 'cloze' && selectedClozeOptionId !== null) || (workbenchMode === 'spelling' && spellingAnswered)}
+                    <button
+                        type="button"
+                        onclick={retryWorkbenchQuiz}
+                        class="text-muted-foreground hover:text-foreground inline-flex cursor-pointer items-center gap-1.5 rounded-lg px-3 py-1.5 text-sm font-medium transition-colors duration-150 focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:outline-none motion-reduce:transition-none"
+                    >
+                        <RotateCcw class="size-4" />
+                        <span>{t('ui.welcome.hero.retry')}</span>
+                    </button>
+                {/if}
+            </div>
         </div>
     </section>
 
@@ -1321,13 +756,13 @@
         </div>
     </section>
 
-    <!-- Band 3: Editorial Feature Craft & Quiz Anatomy -->
+    <!-- Band 3: Editorial Feature Craft -->
     <section id="features" class="py-20 sm:py-28">
         <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div
                 class="grid grid-cols-1 items-start gap-12 lg:grid-cols-12 lg:gap-16"
             >
-                <!-- Left Sticky Column: Heading + Interactive Quiz Anatomy Mini-Preview -->
+                <!-- Left Sticky Column: Heading & Summary -->
                 <div class="lg:sticky lg:top-24 lg:col-span-5">
                     <h2
                         class="text-foreground text-3xl leading-tight font-extrabold tracking-tight sm:text-4xl"
@@ -1339,166 +774,6 @@
                     >
                         {t('ui.welcome.features.subtitle')}
                     </p>
-
-                    <!-- Inline Quiz Anatomy Preview (hairline framed, no nested card box) -->
-                    <div class="border-border mt-8 border-t pt-7">
-                        <div
-                            class="flex flex-wrap items-center justify-between gap-3"
-                        >
-                            <h3 class="text-foreground text-base font-bold">
-                                {t('ui.welcome.features.preview_label')}
-                            </h3>
-
-                            <div
-                                role="tablist"
-                                aria-label={t(
-                                    'ui.welcome.features.preview_label',
-                                )}
-                                class="bg-muted/70 inline-flex rounded-lg p-1"
-                            >
-                                {#each ['word', 'audio', 'cloze'] as const as mode (mode)}
-                                    {@const isActive = previewMode === mode}
-                                    <button
-                                        type="button"
-                                        role="tab"
-                                        aria-selected={isActive}
-                                        onclick={() => switchPreviewMode(mode)}
-                                        class={{
-                                            'cursor-pointer rounded-md px-2.5 py-1 text-sm font-medium transition-[background-color,color] duration-150 motion-reduce:transition-none': true,
-                                            'bg-background text-foreground shadow-2xs':
-                                                isActive,
-                                            'text-muted-foreground hover:text-foreground':
-                                                !isActive,
-                                        }}
-                                    >
-                                        {t(
-                                            `ui.welcome.features.preview_modes.${mode}`,
-                                        )}
-                                    </button>
-                                {/each}
-                            </div>
-                        </div>
-
-                        <div class="mt-5 space-y-4">
-                            <div
-                                class="flex flex-wrap items-baseline justify-between gap-2"
-                            >
-                                <p class="text-foreground text-base font-bold">
-                                    {activePreviewSample.prompt}
-                                </p>
-                                <span
-                                    class={{
-                                        'text-sm font-medium': true,
-                                        'text-blue-600 dark:text-blue-400':
-                                            selectedOptionIndex !== null,
-                                        'text-muted-foreground':
-                                            selectedOptionIndex === null,
-                                    }}
-                                >
-                                    {selectedOptionIndex === null
-                                        ? t(
-                                              'ui.welcome.features.preview_pos_hidden',
-                                          )
-                                        : t(
-                                              'ui.welcome.features.preview_pos_revealed',
-                                              {
-                                                  pos: activePreviewSample.pos,
-                                              },
-                                          )}
-                                </span>
-                            </div>
-
-                            <div
-                                class="divide-border border-border divide-y border-y"
-                            >
-                                {#each activePreviewSample.options as option, idx (idx)}
-                                    {@const isPicked =
-                                        selectedOptionIndex === idx}
-                                    {@const isRight =
-                                        idx ===
-                                        activePreviewSample.correctIndex}
-                                    {@const isAnswered =
-                                        selectedOptionIndex !== null}
-                                    <button
-                                        type="button"
-                                        disabled={isAnswered}
-                                        onclick={() =>
-                                            (selectedOptionIndex = idx)}
-                                        class={{
-                                            'flex w-full items-center justify-between gap-3 rounded-md px-2.5 py-3 text-left text-base transition-colors duration-150 focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:outline-none motion-reduce:transition-none': true,
-                                            'hover:bg-muted/40 cursor-pointer hover:text-blue-600 dark:hover:text-blue-400':
-                                                !isAnswered,
-                                            'font-semibold text-emerald-700 dark:text-emerald-400':
-                                                isAnswered && isRight,
-                                            'font-semibold text-red-600 dark:text-red-400':
-                                                isAnswered &&
-                                                isPicked &&
-                                                !isRight,
-                                            'text-muted-foreground':
-                                                isAnswered &&
-                                                !isRight &&
-                                                !isPicked,
-                                        }}
-                                    >
-                                        <span>{option}</span>
-                                        {#if isAnswered && isRight}
-                                            <Check
-                                                class="size-4 text-emerald-600 dark:text-emerald-400"
-                                            />
-                                        {/if}
-                                    </button>
-                                {/each}
-                            </div>
-
-                            <div
-                                class="flex items-center justify-between gap-3 text-sm"
-                            >
-                                {#if selectedOptionIndex === null}
-                                    <span class="text-muted-foreground">
-                                        {t(
-                                            'ui.welcome.features.preview_prompt_hint',
-                                        )}
-                                    </span>
-                                {:else if selectedOptionIndex === activePreviewSample.correctIndex}
-                                    <span
-                                        class="font-medium text-emerald-700 dark:text-emerald-400"
-                                    >
-                                        {t(
-                                            'ui.welcome.features.preview_correct',
-                                        )}
-                                    </span>
-                                {:else}
-                                    <span
-                                        class="font-medium text-red-600 dark:text-red-400"
-                                    >
-                                        {t(
-                                            'ui.welcome.features.preview_incorrect',
-                                            {
-                                                answer: activePreviewSample
-                                                    .options[
-                                                    activePreviewSample
-                                                        .correctIndex
-                                                ],
-                                            },
-                                        )}
-                                    </span>
-                                {/if}
-
-                                {#if selectedOptionIndex !== null}
-                                    <button
-                                        type="button"
-                                        onclick={() =>
-                                            (selectedOptionIndex = null)}
-                                        class="text-foreground shrink-0 cursor-pointer font-semibold transition-colors duration-150 hover:text-blue-600 motion-reduce:transition-none dark:hover:text-blue-400"
-                                    >
-                                        {t(
-                                            'ui.welcome.features.preview_try_again',
-                                        )}
-                                    </button>
-                                {/if}
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <!-- Right Column: 4 Editorial Feature Rows -->
@@ -1533,7 +808,7 @@
         </div>
     </section>
 
-    <!-- Band 4: 7-Level Curriculum Ledger -->
+    <!-- Band 4: Curriculum Ledger -->
     <section
         id="levels"
         class="border-border/80 bg-muted/30 border-t py-20 sm:py-28"

@@ -23,7 +23,7 @@
 >
     <AppHeader {breadcrumbs} transparent={transparentHeader} />
 
-    <main class={transparentHeader ? '-mt-16 flex-1' : 'flex-1'}>
+    <main class={{ 'flex-1': true, '-mt-16': transparentHeader }}>
         {@render children?.()}
     </main>
 
