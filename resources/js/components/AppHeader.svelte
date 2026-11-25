@@ -1,6 +1,8 @@
 <script lang="ts">
     import { Link, page } from '@inertiajs/svelte';
     import Menu from '@lucide/svelte/icons/menu';
+    import { onMount } from 'svelte';
+    import { on } from 'svelte/events';
     import MobileNavSheet from '@/components/MobileNavSheet.svelte';
     import SiteLanguageSwitcher from '@/components/SiteLanguageSwitcher.svelte';
     import ThemeToggle from '@/components/ThemeToggle.svelte';
@@ -9,7 +11,6 @@
         AvatarFallback,
         AvatarImage,
     } from '@/components/ui/avatar';
-    import { Button } from '@/components/ui/button';
     import {
         DropdownMenu,
         DropdownMenuContent,
@@ -19,15 +20,19 @@
     import { currentUrlState } from '@/lib/currentUrl.svelte';
     import { t } from '@/lib/i18n';
     import { getInitials } from '@/lib/initials';
-    import { cn, toUrl } from '@/lib/utils';
+    import { toUrl } from '@/lib/utils';
     import { dashboard, home, login } from '@/routes';
+    import { index as levelsIndex } from '@/routes/levels';
+    import { index as quizIndex } from '@/routes/quiz';
     import type { BreadcrumbItem } from '@/types';
 
     let {
         breadcrumbs = [],
+        transparent = false,
         class: className = '',
     }: {
         breadcrumbs?: BreadcrumbItem[];
+        transparent?: boolean;
         class?: string;
     } = $props();
 
@@ -35,23 +40,71 @@
     const url = currentUrlState();
 
     let mobileNavOpen = $state(false);
+    let scrolled = $state(false);
+
+    const navItems = $derived.by(() => {
+        const items = [
+            {
+                href: toUrl(home()),
+                label: t('ui.nav.home'),
+                active: url.isCurrentUrl(home(), url.currentUrl),
+            },
+        ];
+
+        if (auth.user) {
+            items.push({
+                href: toUrl(dashboard()),
+                label: t('ui.nav.dashboard'),
+                active: url.isCurrentUrl(dashboard(), url.currentUrl),
+            });
+        }
+
+        items.push(
+            {
+                href: levelsIndex.url(),
+                label: t('ui.nav.levels'),
+                active: url.isCurrentOrParentUrl('/levels', url.currentUrl),
+            },
+            {
+                href: quizIndex.url(),
+                label: t('ui.nav.custom_quiz'),
+                active: url.isCurrentOrParentUrl('/quiz', url.currentUrl),
+            },
+        );
+
+        return items;
+    });
+
+    onMount(() => {
+        const updateScrolled = () => {
+            scrolled = window.scrollY > 12;
+        };
+
+        updateScrolled();
+
+        return on(window, 'scroll', updateScrolled, { passive: true });
+    });
 </script>
 
 <header
-    class={cn(
-        'border-border bg-background sticky top-0 z-40 h-16 w-full border-b transition-colors duration-300',
-        className,
-    )}
+    data-test="app-header"
+    class={{
+        'sticky top-0 z-40 h-16 w-full border-b transition-[background-color,border-color,backdrop-filter] duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none': true,
+        'border-transparent bg-transparent': transparent && !scrolled,
+        'border-border/80 bg-background/88 backdrop-blur-md':
+            transparent && scrolled,
+        'border-border bg-background': !transparent,
+        [className]: Boolean(className),
+    }}
 >
     <div
-        class="mx-auto flex h-full max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8"
+        class="mx-auto flex h-full max-w-7xl items-center justify-between gap-2 px-4 sm:gap-4 sm:px-6 lg:px-8"
     >
         <!-- Left: Mobile Menu Toggle & Brand Logo -->
         <div class="flex items-center gap-2 lg:gap-6">
-            <!-- Mobile Menu Button (< lg) -->
             <button
                 type="button"
-                class="inline-flex size-9 cursor-pointer items-center justify-center rounded-lg text-zinc-500 transition-colors duration-200 hover:bg-zinc-200/50 hover:text-zinc-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-200 lg:hidden dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-100 dark:focus-visible:ring-zinc-700"
+                class="text-foreground/75 inline-flex size-9 cursor-pointer items-center justify-center rounded-full transition-[background-color,color] duration-150 ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-blue-600/8 hover:text-blue-600 focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:outline-none motion-reduce:transition-none lg:hidden dark:hover:bg-blue-400/12 dark:hover:text-blue-400"
                 onclick={() => (mobileNavOpen = true)}
                 aria-label={t('ui.nav.open_menu')}
                 data-test="mobile-menu-button"
@@ -59,97 +112,58 @@
                 <Menu class="size-5" />
             </button>
 
-            <!-- Brand Logo -->
             <Link
                 href={toUrl(home())}
-                class="text-foreground flex items-center gap-2.5 font-bold transition-opacity hover:opacity-90"
+                class="text-foreground flex items-center gap-2.5 font-bold transition-opacity duration-150 hover:opacity-90 motion-reduce:transition-none"
             >
                 <img
                     src="/favicon.svg"
                     alt=""
                     aria-hidden="true"
-                    class="size-8 rounded-lg shadow-xs"
+                    class="size-7 rounded-lg shadow-xs sm:size-8"
                 />
-                <span class="text-xl font-bold tracking-tight">Vomorize</span>
+                <span class="text-lg font-extrabold tracking-tight sm:text-xl"
+                    >Vomorize</span
+                >
             </Link>
         </div>
 
         <!-- Center: Desktop Navigation Links (lg:) -->
-        <nav class="hidden items-center gap-1.5 lg:flex">
-            <Link
-                href={toUrl(home())}
-                class={{
-                    'inline-flex items-center rounded-lg px-3.5 py-2 text-sm font-medium transition-colors': true,
-                    'bg-accent text-foreground font-semibold': url.isCurrentUrl(
-                        home(),
-                        url.currentUrl,
-                    ),
-                    'text-muted-foreground hover:bg-accent/60 hover:text-foreground':
-                        !url.isCurrentUrl(home(), url.currentUrl),
-                }}
-            >
-                {t('ui.nav.home')}
-            </Link>
-
-            {#if auth.user}
+        <nav class="hidden items-center gap-7 lg:flex">
+            {#each navItems as item (item.href)}
                 <Link
-                    href={toUrl(dashboard())}
+                    href={item.href}
                     class={{
-                        'inline-flex items-center rounded-lg px-3.5 py-2 text-sm font-medium transition-colors': true,
-                        'bg-accent text-foreground font-semibold':
-                            url.isCurrentUrl(dashboard(), url.currentUrl),
-                        'text-muted-foreground hover:bg-accent/60 hover:text-foreground':
-                            !url.isCurrentUrl(dashboard(), url.currentUrl),
+                        'relative rounded-xs py-1 text-sm transition-colors duration-150 ease-[cubic-bezier(0.22,1,0.36,1)] after:absolute after:inset-x-0 after:bottom-0 after:h-[1.5px] after:origin-left after:bg-blue-600 after:transition-transform after:duration-200 after:ease-[cubic-bezier(0.22,1,0.36,1)] focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:outline-none motion-reduce:transition-none motion-reduce:after:transition-none dark:after:bg-blue-400': true,
+                        'text-foreground font-semibold after:scale-x-100':
+                            item.active,
+                        'text-foreground/75 font-medium after:scale-x-0 hover:text-blue-600 hover:after:scale-x-100 dark:hover:text-blue-400':
+                            !item.active,
                     }}
                 >
-                    {t('ui.nav.dashboard')}
+                    {item.label}
                 </Link>
-            {/if}
-
-            <Link
-                href="/levels"
-                class={{
-                    'inline-flex items-center rounded-lg px-3.5 py-2 text-sm font-medium transition-colors': true,
-                    'bg-accent text-foreground font-semibold':
-                        url.isCurrentOrParentUrl('/levels', url.currentUrl),
-                    'text-muted-foreground hover:bg-accent/60 hover:text-foreground':
-                        !url.isCurrentOrParentUrl('/levels', url.currentUrl),
-                }}
-            >
-                {t('ui.nav.levels')}
-            </Link>
-
-            <Link
-                href="/quiz"
-                class={{
-                    'inline-flex items-center rounded-lg px-3.5 py-2 text-sm font-medium transition-colors': true,
-                    'bg-accent text-foreground font-semibold':
-                        url.isCurrentOrParentUrl('/quiz', url.currentUrl),
-                    'text-muted-foreground hover:bg-accent/60 hover:text-foreground':
-                        !url.isCurrentOrParentUrl('/quiz', url.currentUrl),
-                }}
-            >
-                {t('ui.nav.custom_quiz')}
-            </Link>
+            {/each}
         </nav>
 
         <!-- Right: SiteLanguageSwitcher + ThemeToggle + Member Avatar / Login -->
         <div class="flex items-center gap-1.5 sm:gap-2">
-            <!-- Language Switcher Dropdown -->
             <SiteLanguageSwitcher />
 
-            <!-- Theme Toggle Dropdown -->
             <ThemeToggle />
 
-            <!-- Member Avatar or Guest Login -->
+            <span
+                aria-hidden="true"
+                class="bg-border/80 hidden h-4 w-px sm:block"
+            ></span>
+
             {#if auth.user}
                 <DropdownMenu>
                     <DropdownMenuTrigger asChild>
                         {#snippet children(props)}
-                            <Button
-                                variant="ghost"
-                                size="icon"
-                                class="ring-offset-background hover:ring-primary/40 focus-visible:ring-ring relative size-9 cursor-pointer rounded-full p-0 transition-all hover:ring-2 focus-visible:ring-2"
+                            <button
+                                type="button"
+                                class="ring-offset-background focus-visible:ring-ring relative inline-flex size-9 cursor-pointer items-center justify-center rounded-full p-0 transition-shadow duration-150 hover:ring-2 hover:ring-blue-500/50 focus-visible:ring-2 focus-visible:outline-none motion-reduce:transition-none"
                                 onclick={props.onclick}
                                 aria-expanded={props['aria-expanded']}
                                 data-state={props['data-state']}
@@ -167,7 +181,7 @@
                                         {getInitials(auth.user?.name ?? '')}
                                     </AvatarFallback>
                                 </Avatar>
-                            </Button>
+                            </button>
                         {/snippet}
                     </DropdownMenuTrigger>
                     <DropdownMenuContent align="end" class="w-56">
@@ -175,17 +189,15 @@
                     </DropdownMenuContent>
                 </DropdownMenu>
             {:else}
-                <Button asChild size="sm">
-                    {#snippet children(props)}
-                        <Link href={toUrl(login())} class={props.class}>
-                            {t('ui.nav.login')}
-                        </Link>
-                    {/snippet}
-                </Button>
+                <Link
+                    href={toUrl(login())}
+                    class="border-border/90 bg-background/70 text-foreground dark:bg-background/50 inline-flex h-9 items-center justify-center rounded-lg border px-4 text-sm font-medium whitespace-nowrap backdrop-blur-xs transition-[background-color,border-color,color,transform] duration-150 ease-[cubic-bezier(0.22,1,0.36,1)] hover:border-blue-500/60 hover:bg-blue-600/8 hover:text-blue-600 focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:outline-none active:scale-[0.98] motion-reduce:transition-none dark:hover:border-blue-400/60 dark:hover:bg-blue-400/12 dark:hover:text-blue-400"
+                >
+                    {t('ui.nav.login')}
+                </Link>
             {/if}
         </div>
     </div>
 </header>
 
-<!-- Mobile Navigation Drawer -->
 <MobileNavSheet bind:open={mobileNavOpen} />

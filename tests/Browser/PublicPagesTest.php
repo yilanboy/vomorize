@@ -72,3 +72,27 @@ test('register page displays redesigned card elements and navigation', function 
         ->assertSee('直接登入')
         ->assertSee('返回');
 });
+
+test('landing page displays unified header, hero cta, and minimal footer', function () {
+    visit('/')
+        ->assertNoSmoke()
+        ->assertSeeIn('@app-header', __('ui.nav.levels'))
+        ->assertSeeIn('@app-header', __('ui.nav.login'))
+        ->assertSeeIn('@app-footer', __('ui.footer.github'))
+        ->click('a:has-text("'.__('ui.welcome.hero.start_learning').'")')
+        ->assertPathIs('/levels')
+        ->assertNoSmoke();
+});
+
+test('landing page hero workbench switches across real intro, cloze, and spelling cards', function () {
+    visit('/')
+        ->assertNoSmoke()
+        ->assertSeeIn('@hero-workbench-card', __('ui.intro.card.badge'))
+        ->click('[data-test="hero-workbench"] [role="tab"]:has-text("'.__('ui.welcome.hero.modes.cloze').'")')
+        ->assertVisible('[data-test="sentence-cloze-stem"]')
+        ->click('[data-test="hero-workbench-card"] [data-test="correct-option"]')
+        ->assertVisible('[data-test="sentence-cloze-reveal"]')
+        ->click('[data-test="hero-workbench"] [role="tab"]:has-text("'.__('ui.welcome.hero.modes.spelling').'")')
+        ->assertSeeIn('@hero-workbench-card', __('ui.quiz.spelling.badge'))
+        ->assertNoSmoke();
+});

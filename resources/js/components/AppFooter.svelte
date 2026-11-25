@@ -9,6 +9,7 @@
 </script>
 
 <footer
+    data-test="app-footer"
     class={cn(
         'border-border bg-background border-t transition-colors duration-300',
         className,

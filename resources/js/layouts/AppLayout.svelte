@@ -8,10 +8,12 @@
     let {
         breadcrumbs = [],
         showFooter = true,
+        transparentHeader = false,
         children,
     }: {
         breadcrumbs?: BreadcrumbItem[];
         showFooter?: boolean;
+        transparentHeader?: boolean;
         children?: Snippet;
     } = $props();
 </script>
@@ -19,9 +21,9 @@
 <div
     class="bg-background text-foreground flex min-h-screen flex-col transition-colors duration-300"
 >
-    <AppHeader {breadcrumbs} />
+    <AppHeader {breadcrumbs} transparent={transparentHeader} />
 
-    <main class="flex-1">
+    <main class={{ 'flex-1': true, '-mt-16': transparentHeader }}>
         {@render children?.()}
     </main>
 

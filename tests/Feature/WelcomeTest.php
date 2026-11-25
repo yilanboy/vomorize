@@ -2,7 +2,9 @@
 
 declare(strict_types=1);
 
+use App\Models\Group;
 use App\Models\Level;
+use App\Models\SentenceClozeQuestion;
 use App\Models\User;
 use App\Models\Vocabulary;
 use Inertia\Testing\AssertableInertia as Assert;
@@ -94,5 +96,46 @@ test('welcome page passes a random vocabulary with localized translation', funct
         ->where('vocabulary.example_sentence', 'The lake was serene at dawn.')
         ->where('vocabulary.translation.definition', '靜謐的')
         ->where('vocabulary.translation.example_translation', '湖面在黎明時分十分靜謐。')
+        ->where('showcase.vocabulary.id', $vocabulary->id)
+        ->where('showcase.spelling_question.target_word', 'serene')
+    );
+});
+
+test('welcome page builds real cloze and spelling showcase when group has sentence cloze data', function () {
+    $level = Level::factory()->create();
+    $group = Group::factory()->create(['level_id' => $level->id]);
+
+    $vocabularies = Vocabulary::factory()
+        ->count(4)
+        ->withTranslation('zh_TW', '韌性', '她的韌性幫助她很快從挫折中重新振作。')
+        ->create([
+            'level_id' => $level->id,
+            'group_id' => $group->id,
+        ]);
+
+    $target = $vocabularies->firstOrFail();
+
+    SentenceClozeQuestion::factory()->create([
+        'vocabulary_id' => $target->id,
+        'sentence' => 'Her {{blank}} helped her recover quickly from the setback.',
+        'blank_word' => $target->word,
+        'distractors' => $vocabularies
+            ->slice(1)
+            ->values()
+            ->map(static fn (Vocabulary $v): array => ['vocabulary_id' => $v->id, 'word' => $v->word])
+            ->all(),
+    ]);
+
+    $response = $this->get(route('home'));
+
+    $response->assertOk();
+    $response->assertInertia(fn (Assert $page) => $page
+        ->component('Page')
+        ->where('showcase.vocabulary.id', $target->id)
+        ->where('showcase.cloze_question.quiz_type', 'sentence_cloze')
+        ->has('showcase.cloze_question.options', 4)
+        ->has('showcase.cloze_question.sentence_segments', 3)
+        ->where('showcase.spelling_question.quiz_type', 'spelling')
+        ->where('showcase.spelling_question.target_word', strtolower($target->word))
     );
 });

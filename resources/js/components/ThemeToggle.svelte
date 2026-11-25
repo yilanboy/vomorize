@@ -3,7 +3,6 @@
     import Monitor from '@lucide/svelte/icons/monitor';
     import Moon from '@lucide/svelte/icons/moon';
     import Sun from '@lucide/svelte/icons/sun';
-    import { Button } from '@/components/ui/button';
     import {
         DropdownMenu,
         DropdownMenuContent,
@@ -15,7 +14,11 @@
     import { cn } from '@/lib/utils';
     import type { Appearance } from '@/types';
 
-    let { class: className = '' }: { class?: string } = $props();
+    let {
+        class: className = '',
+    }: {
+        class?: string;
+    } = $props();
 
     const { appearance, updateAppearance } = themeState();
 
@@ -29,13 +32,12 @@
 <DropdownMenu>
     <DropdownMenuTrigger asChild>
         {#snippet children(props)}
-            <Button
-                variant="ghost"
-                size="icon"
-                class={cn(
-                    'inline-flex size-9 cursor-pointer items-center justify-center rounded-lg text-zinc-500 transition-all duration-200 hover:bg-zinc-200/50 hover:text-zinc-900 focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-200 active:scale-95 dark:text-zinc-400 dark:hover:bg-zinc-800 dark:hover:text-zinc-100 dark:focus-visible:ring-zinc-700',
-                    className,
-                )}
+            <button
+                type="button"
+                class={{
+                    'text-foreground/75 inline-flex size-9 cursor-pointer items-center justify-center rounded-full transition-[background-color,color,transform] duration-150 ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-blue-600/8 hover:text-blue-600 focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:outline-none active:scale-95 motion-reduce:transition-none dark:hover:bg-blue-400/12 dark:hover:text-blue-400': true,
+                    [className]: Boolean(className),
+                }}
                 onclick={props.onclick}
                 aria-expanded={props['aria-expanded']}
                 aria-label={t('ui.theme.toggle')}
@@ -43,18 +45,18 @@
                 <span class="sr-only">{t('ui.theme.toggle')}</span>
                 {#if appearance.value === 'light'}
                     <Sun
-                        class="size-5 rotate-0 text-amber-500 transition-transform duration-300 hover:rotate-12"
+                        class="size-5 rotate-0 text-amber-500 transition-transform duration-300 hover:rotate-12 motion-reduce:transition-none"
                     />
                 {:else if appearance.value === 'dark'}
                     <Moon
-                        class="size-5 rotate-0 text-indigo-500 transition-transform duration-300 hover:-rotate-12 dark:text-indigo-400"
+                        class="size-5 rotate-0 text-blue-600 transition-transform duration-300 hover:-rotate-12 motion-reduce:transition-none dark:text-blue-400"
                     />
                 {:else}
                     <Monitor
-                        class="size-5 text-zinc-600 transition-transform duration-300 dark:text-zinc-300"
+                        class="size-5 text-zinc-600 transition-transform duration-300 motion-reduce:transition-none dark:text-zinc-300"
                     />
                 {/if}
-            </Button>
+            </button>
         {/snippet}
     </DropdownMenuTrigger>
     <DropdownMenuContent align="end" class="w-36">
