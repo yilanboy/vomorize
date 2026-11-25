@@ -23,8 +23,8 @@
         VocabularyPayload,
     } from '@/types/quiz';
 
-    setLayoutProps<{ transparentHeader?: boolean }>({
-        transparentHeader: true,
+    setLayoutProps<{ headerOverlay?: boolean }>({
+        headerOverlay: true,
     });
 
     interface LevelData {

@@ -28,11 +28,9 @@
 
     let {
         breadcrumbs = [],
-        transparent = false,
         class: className = '',
     }: {
         breadcrumbs?: BreadcrumbItem[];
-        transparent?: boolean;
         class?: string;
     } = $props();
 
@@ -90,10 +88,8 @@
     data-test="app-header"
     class={{
         'sticky top-0 z-40 h-16 w-full border-b transition-[background-color,border-color,backdrop-filter] duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] motion-reduce:transition-none': true,
-        'border-transparent bg-transparent': transparent && !scrolled,
-        'border-border/80 bg-background/88 backdrop-blur-md':
-            transparent && scrolled,
-        'border-border bg-background': !transparent,
+        'border-transparent bg-transparent': !scrolled,
+        'border-border/80 bg-background/88 backdrop-blur-md': scrolled,
         [className]: Boolean(className),
     }}
 >
