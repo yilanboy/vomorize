@@ -1,46 +1,34 @@
 <script lang="ts">
+    import { Link } from '@inertiajs/svelte';
     import ArrowRight from '@lucide/svelte/icons/arrow-right';
-    import Sparkles from '@lucide/svelte/icons/sparkles';
     import { t } from '@/lib/i18n';
     import type { RecommendedGroupItem } from '@/types';
 
     let {
-        recommendedNextGroup = null,
+        recommendedNextGroup,
     }: {
-        recommendedNextGroup?: RecommendedGroupItem | null;
+        recommendedNextGroup: RecommendedGroupItem;
     } = $props();
 </script>
 
 <div
-    class="text-card-foreground flex h-full flex-col justify-between rounded-xl border border-blue-200 bg-blue-50/70 p-6 shadow-2xs dark:border-blue-900/60 dark:bg-blue-950/30"
+    class="bg-muted/35 border-border flex h-full flex-col justify-between rounded-xl border p-5 sm:p-6"
 >
     <div>
-        <div class="mb-3 flex items-center justify-between">
-            <span
-                class="rounded bg-blue-100 px-2.5 py-1 text-sm font-semibold text-blue-800 dark:bg-blue-900 dark:text-blue-200"
-            >
-                {t('ui.dashboard.action_center.recommended_new')}
-            </span>
-            <Sparkles class="size-4 text-blue-600 dark:text-blue-400" />
-        </div>
+        <h2 class="text-muted-foreground text-sm font-medium">
+            {t('ui.dashboard.action_center.recommended_new')}
+        </h2>
 
-        <h3 class="text-foreground mb-2 text-lg font-bold">
-            {recommendedNextGroup?.group_title ??
-                t('ui.dashboard.action_center.all_started')}
-        </h3>
-
-        <p class="text-muted-foreground mb-6 text-sm leading-relaxed">
-            {t('ui.dashboard.action_center.recommended_desc')}
+        <p class="text-foreground mt-2 text-base font-semibold">
+            {recommendedNextGroup.group_title}
         </p>
     </div>
 
-    {#if recommendedNextGroup}
-        <a
-            href={recommendedNextGroup.start_url}
-            class="inline-flex h-11 w-full items-center justify-center gap-2 rounded-lg bg-blue-600 text-sm font-semibold text-white shadow-2xs transition hover:bg-blue-700 dark:bg-blue-600 dark:hover:bg-blue-500"
-        >
-            <span>{t('ui.dashboard.action_center.start_stage_1')}</span>
-            <ArrowRight class="size-4" />
-        </a>
-    {/if}
+    <Link
+        href={recommendedNextGroup.start_url}
+        class="bg-card border-border text-foreground mt-5 inline-flex h-10 w-full items-center justify-center gap-2 rounded-lg border px-4 text-sm font-semibold transition-[background-color,border-color,color,transform] duration-150 ease-[cubic-bezier(0.22,1,0.36,1)] hover:border-blue-500/60 hover:bg-blue-600/8 hover:text-blue-600 focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 focus-visible:outline-none active:scale-[0.98] motion-reduce:transition-none dark:hover:border-blue-400/60 dark:hover:bg-blue-400/12 dark:hover:text-blue-400"
+    >
+        <span>{t('ui.dashboard.action_center.start_learning')}</span>
+        <ArrowRight class="size-4 shrink-0" />
+    </Link>
 </div>

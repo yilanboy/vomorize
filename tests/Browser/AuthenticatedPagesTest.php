@@ -2,6 +2,9 @@
 
 declare(strict_types=1);
 
+use App\Models\Group;
+use App\Models\LearningProgress;
+use App\Models\Level;
 use App\Models\User;
 
 test('authenticated pages load without javascript errors', function (string $url) {
@@ -16,6 +19,98 @@ test('authenticated pages load without javascript errors', function (string $url
     'profile settings' => '/settings/profile',
     'appearance settings' => '/settings/appearance',
 ]);
+
+test('dashboard shows clean onboarding without zeroed kpis for new users', function () {
+    $level = Level::factory()->withTranslation('zh_TW', '基礎入門')->create();
+    Group::factory()->create([
+        'level_id' => $level->id,
+        'sequence' => 1,
+    ]);
+
+    $user = User::factory()->create();
+
+    $this->actingAs($user);
+
+    visit('/dashboard')
+        ->assertNoSmoke()
+        ->assertSee(__('ui.dashboard.title'))
+        ->assertSee(__('ui.dashboard.onboarding.title'))
+        ->assertSee(__('ui.dashboard.onboarding.start_cta'))
+        ->assertDontSee(__('ui.dashboard.kpis.learning_words'))
+        ->assertDontSee(__('ui.dashboard.kpis.mastered_words'));
+});
+
+test('dashboard shows core kpis, due reviews, and next recommendation for active users', function () {
+    $level = Level::factory()->withTranslation('zh_TW', '基礎入門')->create();
+    $groups = Group::factory()->count(3)->sequence(
+        ['level_id' => $level->id, 'sequence' => 1],
+        ['level_id' => $level->id, 'sequence' => 2],
+        ['level_id' => $level->id, 'sequence' => 3],
+    )->create();
+
+    $user = User::factory()->create([
+        'current_streak' => 4,
+        'longest_streak' => 9,
+        'last_studied_date' => now(),
+    ]);
+
+    LearningProgress::factory()->create([
+        'user_id' => $user->id,
+        'level_id' => $level->id,
+        'group_id' => $groups[0]->id,
+        'stage' => 2,
+        'last_score' => 90,
+        'next_review_at' => now()->subMinutes(15),
+    ]);
+
+    LearningProgress::factory()->create([
+        'user_id' => $user->id,
+        'level_id' => $level->id,
+        'group_id' => $groups[1]->id,
+        'stage' => 6,
+        'last_score' => 100,
+        'next_review_at' => null,
+    ]);
+
+    $this->actingAs($user);
+
+    visit('/dashboard')
+        ->assertNoSmoke()
+        ->assertSee(__('ui.dashboard.kpis.streak'))
+        ->assertSee(__('ui.dashboard.kpis.streak_checked_in'))
+        ->assertSee(__('ui.dashboard.kpis.learning_words'))
+        ->assertSee(__('ui.dashboard.kpis.mastered_words'))
+        ->assertSee(__('ui.dashboard.action_center.due_title'))
+        ->assertSee(__('ui.dashboard.action_center.start_quiz'))
+        ->assertSee(__('ui.dashboard.action_center.recommended_new'))
+        ->assertSee(__('ui.dashboard.action_center.start_learning'));
+});
+
+test('dashboard shows single cleared card when no reviews are due', function () {
+    $level = Level::factory()->withTranslation('zh_TW', '基礎入門')->create();
+    $groups = Group::factory()->count(2)->sequence(
+        ['level_id' => $level->id, 'sequence' => 1],
+        ['level_id' => $level->id, 'sequence' => 2],
+    )->create();
+
+    $user = User::factory()->create();
+
+    LearningProgress::factory()->create([
+        'user_id' => $user->id,
+        'level_id' => $level->id,
+        'group_id' => $groups[0]->id,
+        'stage' => 1,
+        'last_score' => 90,
+        'next_review_at' => now()->addHours(10),
+    ]);
+
+    $this->actingAs($user);
+
+    visit('/dashboard')
+        ->assertNoSmoke()
+        ->assertSee(__('ui.dashboard.action_center.due_cleared_title'))
+        ->assertDontSee(__('ui.dashboard.action_center.recommended_new'));
+});
 
 test('security settings page loads with confirmed password without javascript errors', function () {
     $user = User::factory()->create();

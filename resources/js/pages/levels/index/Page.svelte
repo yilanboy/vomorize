@@ -1,14 +1,15 @@
 <script lang="ts">
     import { onMount } from 'svelte';
-    import { Link } from '@inertiajs/svelte';
     import CheckCircle2 from '@lucide/svelte/icons/check-circle-2';
     import AppHead from '@/components/AppHead.svelte';
+    import TactileTile from '@/components/TactileTile.svelte';
     import { t } from '@/lib/i18n';
     import {
         computeLevelsProgressMap,
         learningProgressDb,
         type LevelProgressSummaryItem,
     } from '@/lib/learningProgressDb';
+    import { show as showLevel } from '@/routes/levels';
 
     interface LevelItem {
         id: number;
@@ -109,9 +110,10 @@
         {#each levels as level (level.id)}
             {@const masteryRate = getMastery(level.id)}
             {@const parsed = parseLevelInfo(level)}
-            <Link
-                href={`/levels/${level.id}`}
-                class="group border-border/80 bg-card relative flex flex-col justify-between rounded-2xl border p-6 shadow-2xs transition-all duration-300 outline-none hover:-translate-y-1 hover:border-blue-400 hover:shadow-md focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 dark:hover:border-blue-600"
+            <TactileTile
+                href={showLevel.url(level.id)}
+                variant={masteryRate >= 100 ? 'emerald' : 'default'}
+                class="group flex-col items-stretch justify-between p-6 text-left"
             >
                 <div>
                     <!-- Header: Title & Mastery Status -->
@@ -165,7 +167,7 @@
                         ></div>
                     </div>
                 </div>
-            </Link>
+            </TactileTile>
         {/each}
     </div>
 </main>

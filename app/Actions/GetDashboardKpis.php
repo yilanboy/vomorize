@@ -7,7 +7,6 @@ namespace App\Actions;
 use App\Models\Group;
 use App\Models\LearningProgress;
 use App\Models\User;
-use Carbon\CarbonInterface;
 use Illuminate\Database\Eloquent\Collection;
 
 readonly class GetDashboardKpis
@@ -31,22 +30,15 @@ readonly class GetDashboardKpis
      *     mastered_words: array{
      *         words_count: int,
      *         groups_count: int,
-     *         percentage: float,
-     *     },
-     *     due_groups: array{
-     *         count: int,
-     *         has_due: bool,
      *     },
      * }
      */
     public function handle(
         User $user,
         Collection $userProgress,
-        CarbonInterface $now,
     ): array {
         $learningGroupsCount = 0;
         $masteredGroupsCount = 0;
-        $dueGroupsCount = 0;
 
         foreach ($userProgress as $progress) {
             $stage = $progress->stage;
@@ -56,24 +48,7 @@ readonly class GetDashboardKpis
             } elseif ($stage >= 1) {
                 $learningGroupsCount++;
             }
-
-            if ($stage < 6) {
-                $isFailed =
-                    $progress->last_score < 80
-                    || $stage === 5 && $progress->next_review_at === null && $progress->last_score < 90;
-
-                $isCooldownElapsed = $progress->next_review_at === null || $progress->next_review_at->lte($now);
-
-                if ($isFailed || $isCooldownElapsed) {
-                    $dueGroupsCount++;
-                }
-            }
         }
-
-        $totalGroupsCount = Group::query()->count();
-        $totalGroupsCount = $totalGroupsCount > 0 ? $totalGroupsCount : 700;
-
-        $masteredPercentage = round(($masteredGroupsCount / $totalGroupsCount) * 100, 1);
 
         return [
             'streak' => $this->getUserStreak->handle($user),
@@ -84,11 +59,6 @@ readonly class GetDashboardKpis
             'mastered_words' => [
                 'words_count' => $masteredGroupsCount * Group::VOCABULARY_PER_GROUP,
                 'groups_count' => $masteredGroupsCount,
-                'percentage' => $masteredPercentage,
-            ],
-            'due_groups' => [
-                'count' => $dueGroupsCount,
-                'has_due' => $dueGroupsCount > 0,
             ],
         ];
     }

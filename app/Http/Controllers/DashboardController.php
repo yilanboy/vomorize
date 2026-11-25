@@ -6,8 +6,6 @@ namespace App\Http\Controllers;
 
 use App\Actions\GetActionCenterQueue;
 use App\Actions\GetDashboardKpis;
-use App\Actions\GetDashboardLevelProgress;
-use App\Actions\GetSrsStageBreakdown;
 use App\Models\LearningProgress;
 use App\Models\User;
 use Illuminate\Database\Eloquent\Collection;
@@ -24,8 +22,6 @@ class DashboardController extends Controller
         Request $request,
         GetDashboardKpis $getDashboardKpis,
         GetActionCenterQueue $getActionCenterQueue,
-        GetSrsStageBreakdown $getSrsStageBreakdown,
-        GetDashboardLevelProgress $getDashboardLevelProgress,
     ): Response {
         /** @var User $user */
         $user = $request->user();
@@ -39,10 +35,8 @@ class DashboardController extends Controller
         return Inertia::render('dashboard/Page', [
             'stats' => [
                 'is_empty_state' => $userProgress->isEmpty(),
-                'kpis' => $getDashboardKpis->handle($user, $userProgress, $now),
-                'action_center' => $getActionCenterQueue->handle($user, $userProgress, $now),
-                'srs_distribution' => $getSrsStageBreakdown->handle($userProgress),
-                'level_progress' => $getDashboardLevelProgress->handle($user, $userProgress),
+                'kpis' => $getDashboardKpis->handle($user, $userProgress),
+                'action_center' => $getActionCenterQueue->handle($userProgress, $now),
             ],
         ]);
     }

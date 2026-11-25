@@ -16,7 +16,7 @@ uses(
 
 describe('page loading and leave guards', function () {
     test('stage 1 intro page loads without javascript errors', function () {
-        $level = Level::factory()->withTranslation('zh_TW', __('ui.dashboard.levels.subtitles.1'))->create();
+        $level = Level::factory()->withTranslation('zh_TW', '基礎入門')->create();
         $group = Group::factory()->withVocabularies()->create(['level_id' => $level->id, 'sequence' => 1]);
 
         visit("/groups/{$group->id}/intro")
@@ -25,7 +25,7 @@ describe('page loading and leave guards', function () {
     });
 
     test('stage 1 intro page guards against leaving and browser back from the very first step', function () {
-        $level = Level::factory()->withTranslation('zh_TW', __('ui.dashboard.levels.subtitles.1'))->create();
+        $level = Level::factory()->withTranslation('zh_TW', '基礎入門')->create();
         $group = Group::factory()->withVocabularies()->create(['level_id' => $level->id, 'sequence' => 1]);
 
         $page = visit("/groups/{$group->id}/intro");
@@ -61,7 +61,7 @@ describe('page loading and leave guards', function () {
 
     test('stage 2 review quiz page loads without javascript errors and guards against leaving', function () {
         $user = loginAsUser();
-        $level = Level::factory()->withTranslation('zh_TW', __('ui.dashboard.levels.subtitles.1'))->create();
+        $level = Level::factory()->withTranslation('zh_TW', '基礎入門')->create();
         $group = Group::factory()->withVocabularies()->create(['level_id' => $level->id, 'sequence' => 1]);
 
         LearningProgress::factory()->readyForReview()->create([
