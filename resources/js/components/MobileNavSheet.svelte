@@ -14,11 +14,14 @@
     import { t } from '@/lib/i18n';
     import { toUrl } from '@/lib/utils';
     import { dashboard, home } from '@/routes';
+    import { index as levelsIndex } from '@/routes/levels';
+    import { index as quizIndex } from '@/routes/quiz';
 
     let { open = $bindable(false) }: { open?: boolean } = $props();
 
     const auth = $derived(page.props.auth);
     const url = currentUrlState();
+    const brandHref = $derived(auth.user ? toUrl(dashboard()) : toUrl(home()));
 
     function close() {
         open = false;
@@ -31,7 +34,7 @@
             <SheetTitle class="sr-only">{t('ui.nav.menu_title')}</SheetTitle>
             <SheetHeader class="flex flex-row items-center gap-2 text-left">
                 <Link
-                    href={toUrl(home())}
+                    href={brandHref}
                     class="text-foreground flex items-center gap-2 font-bold"
                     onclick={close}
                 >
@@ -49,23 +52,6 @@
 
             <div class="pt-6">
                 <nav class="space-y-1">
-                    <Link
-                        href={toUrl(home())}
-                        class={{
-                            'hover:bg-accent hover:text-accent-foreground flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors': true,
-                            'bg-accent text-foreground font-semibold':
-                                url.isCurrentUrl(home(), url.currentUrl),
-                            'text-muted-foreground': !url.isCurrentUrl(
-                                home(),
-                                url.currentUrl,
-                            ),
-                        }}
-                        onclick={close}
-                    >
-                        <House class="size-4.5" />
-                        <span>{t('ui.nav.home')}</span>
-                    </Link>
-
                     {#if auth.user}
                         <Link
                             href={toUrl(dashboard())}
@@ -86,10 +72,27 @@
                             <LayoutGrid class="size-4.5" />
                             <span>{t('ui.nav.dashboard')}</span>
                         </Link>
+                    {:else}
+                        <Link
+                            href={toUrl(home())}
+                            class={{
+                                'hover:bg-accent hover:text-accent-foreground flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors': true,
+                                'bg-accent text-foreground font-semibold':
+                                    url.isCurrentUrl(home(), url.currentUrl),
+                                'text-muted-foreground': !url.isCurrentUrl(
+                                    home(),
+                                    url.currentUrl,
+                                ),
+                            }}
+                            onclick={close}
+                        >
+                            <House class="size-4.5" />
+                            <span>{t('ui.nav.home')}</span>
+                        </Link>
                     {/if}
 
                     <Link
-                        href="/levels"
+                        href={levelsIndex.url()}
                         class={{
                             'hover:bg-accent hover:text-accent-foreground flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors': true,
                             'bg-accent text-foreground font-semibold':
@@ -109,7 +112,7 @@
                     </Link>
 
                     <Link
-                        href="/quiz"
+                        href={quizIndex.url()}
                         class={{
                             'hover:bg-accent hover:text-accent-foreground flex items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium transition-colors': true,
                             'bg-accent text-foreground font-semibold':

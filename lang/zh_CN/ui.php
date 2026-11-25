@@ -43,7 +43,6 @@ return [
             'title' => '记住日常英文单词，不再背了就忘',
             'subtitle' => '在遗忘临界点精准提醒复习，涵盖日常核心与多元主题词库，免注册就能立即开始。',
             'start_learning' => '开始背单词吧',
-            'dashboard' => '前往学习总览',
             'workbench_label' => '单词练习互动工作台',
             'modes' => [
                 'intro' => '单词预习',

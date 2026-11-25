@@ -15,7 +15,9 @@ use App\Http\Controllers\QuizController;
 use App\Http\Controllers\QuizPlayController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/', [HomeController::class, 'index'])
+    ->middleware('guest')
+    ->name('home');
 Route::get('/levels', [LevelController::class, 'index'])->name('levels.index');
 Route::get('/levels/{level}', [LevelController::class, 'show'])->name('levels.show');
 Route::get('/groups/{group}', [GroupController::class, 'show'])->name('groups.show');

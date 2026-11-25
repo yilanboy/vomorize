@@ -43,7 +43,6 @@ return [
             'title' => '記住日常英文單字，不再背了就忘',
             'subtitle' => '在遺忘臨界點精準提醒複習，涵蓋日常核心與多元主題單字庫，免註冊就能立即開始。',
             'start_learning' => '開始背單字吧',
-            'dashboard' => '前往學習總覽',
             'workbench_label' => '單字練習互動工作台',
             'modes' => [
                 'intro' => '單字預習',

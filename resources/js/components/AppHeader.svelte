@@ -36,26 +36,27 @@
 
     const auth = $derived(page.props.auth);
     const url = currentUrlState();
+    const brandHref = $derived(auth.user ? toUrl(dashboard()) : toUrl(home()));
 
     let mobileNavOpen = $state(false);
     let scrolled = $state(false);
 
     const navItems = $derived.by(() => {
-        const items = [
-            {
-                href: toUrl(home()),
-                label: t('ui.nav.home'),
-                active: url.isCurrentUrl(home(), url.currentUrl),
-            },
-        ];
-
-        if (auth.user) {
-            items.push({
-                href: toUrl(dashboard()),
-                label: t('ui.nav.dashboard'),
-                active: url.isCurrentUrl(dashboard(), url.currentUrl),
-            });
-        }
+        const items = auth.user
+            ? [
+                  {
+                      href: toUrl(dashboard()),
+                      label: t('ui.nav.dashboard'),
+                      active: url.isCurrentUrl(dashboard(), url.currentUrl),
+                  },
+              ]
+            : [
+                  {
+                      href: toUrl(home()),
+                      label: t('ui.nav.home'),
+                      active: url.isCurrentUrl(home(), url.currentUrl),
+                  },
+              ];
 
         items.push(
             {
@@ -109,7 +110,7 @@
             </button>
 
             <Link
-                href={toUrl(home())}
+                href={brandHref}
                 class="text-foreground flex items-center gap-2.5 font-bold transition-opacity duration-150 hover:opacity-90 motion-reduce:transition-none"
             >
                 <img

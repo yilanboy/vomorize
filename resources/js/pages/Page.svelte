@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { Link, page, setLayoutProps } from '@inertiajs/svelte';
+    import { Link, setLayoutProps } from '@inertiajs/svelte';
     import ArrowRight from '@lucide/svelte/icons/arrow-right';
     import Brain from '@lucide/svelte/icons/brain';
     import Cloud from '@lucide/svelte/icons/cloud';
@@ -14,7 +14,6 @@
     import { Button } from '@/components/ui/button';
     import { audioPlayer } from '@/lib/audioPlayer.svelte';
     import { t } from '@/lib/i18n';
-    import { dashboard } from '@/routes';
     import { index as levelsIndex, show as levelsShow } from '@/routes/levels';
     import type {
         QuizOptionPayload,
@@ -48,8 +47,6 @@
         levels?: LevelData[];
         showcase?: WelcomeShowcaseData | null;
     } = $props();
-
-    const auth = $derived(page.props.auth);
 
     const fallbackVocabulary = $derived<VocabularyPayload>({
         id: 0,
@@ -263,9 +260,6 @@
         };
     }
 
-    const primaryHeroHref = $derived(
-        auth.user ? dashboard.url() : levelsIndex.url(),
-    );
     const primaryCtaHref = $derived(
         levels.length > 0 ? levelsShow.url(levels[0].id) : levelsIndex.url(),
     );
@@ -308,12 +302,8 @@
                     class="h-12 bg-blue-600 px-7 text-base font-semibold text-white shadow-sm transition-colors duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-blue-700 focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2 motion-reduce:transition-none"
                 >
                     {#snippet children(props)}
-                        <Link href={primaryHeroHref} class={props.class}>
-                            <span>
-                                {auth.user
-                                    ? t('ui.welcome.hero.dashboard')
-                                    : t('ui.welcome.hero.start_learning')}
-                            </span>
+                        <Link href={levelsIndex.url()} class={props.class}>
+                            <span>{t('ui.welcome.hero.start_learning')}</span>
                             <ArrowRight class="size-4.5" />
                         </Link>
                     {/snippet}

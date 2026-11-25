@@ -176,3 +176,46 @@ it('can click back button', function () {
         ->click(__('ui.auth.back'))
         ->assertPathIs('/login');
 });
+
+test('authenticated user visiting home is redirected to dashboard', function () {
+    $user = User::factory()->create();
+
+    $this->actingAs($user);
+
+    visit(route('home'))
+        ->assertPathIs('/dashboard')
+        ->assertNoSmoke();
+});
+
+test('header hides home link and links logo to dashboard for authenticated users', function () {
+    $user = User::factory()->create();
+
+    $this->actingAs($user);
+
+    visit('/levels')
+        ->assertNoSmoke()
+        ->assertSeeIn('@app-header', __('ui.nav.dashboard'))
+        ->assertSeeIn('@app-header', __('ui.nav.levels'))
+        ->assertSeeIn('@app-header', __('ui.nav.custom_quiz'))
+        ->assertDontSeeIn('@app-header', __('ui.nav.home'))
+        ->click('header span:text-is("Vomorize")')
+        ->assertPathIs('/dashboard')
+        ->assertNoSmoke();
+});
+
+test('mobile nav sheet hides home link and shows dashboard for authenticated users', function () {
+    $user = User::factory()->create();
+
+    $this->actingAs($user);
+
+    visit('/levels')
+        ->on()
+        ->mobile()
+        ->assertNoSmoke()
+        ->assertVisible('@mobile-menu-button')
+        ->click('@mobile-menu-button')
+        ->assertSeeIn('@mobile-nav-sheet', __('ui.nav.dashboard'))
+        ->assertSeeIn('@mobile-nav-sheet', __('ui.nav.levels'))
+        ->assertSeeIn('@mobile-nav-sheet', __('ui.nav.custom_quiz'))
+        ->assertDontSeeIn('@mobile-nav-sheet', __('ui.nav.home'));
+});

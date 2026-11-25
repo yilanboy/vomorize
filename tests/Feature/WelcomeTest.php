@@ -18,15 +18,20 @@ test('guest can access welcome page and sees inertia welcome component', functio
     );
 });
 
-test('authenticated user can access welcome page', function () {
+test('authenticated user is redirected from welcome page to dashboard', function () {
     $user = User::factory()->create();
 
     $response = $this->actingAs($user)->get(route('home'));
 
-    $response->assertOk();
-    $response->assertInertia(fn (Assert $page) => $page
-        ->component('Page')
-    );
+    $response->assertRedirect(route('dashboard'));
+});
+
+test('unverified authenticated user is redirected from welcome page to dashboard', function () {
+    $user = User::factory()->unverified()->create();
+
+    $response = $this->actingAs($user)->get(route('home'));
+
+    $response->assertRedirect(route('dashboard'));
 });
 
 test('welcome page shares ui translation keys for hero, features, and levels', function () {
