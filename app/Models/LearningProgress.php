@@ -31,6 +31,35 @@ class LearningProgress extends Model
 
     public const int STAGE_UNSTARTED = 0;
 
+    /**
+     * Cooldown hours after passing each stage (Stage 1..5). Stage 6 is mastered (no cooldown).
+     *
+     * @var array<int, int|null>
+     */
+    public const array STAGE_COOLDOWN_HOURS = [
+        1 => 24,
+        2 => 72,
+        3 => 168,
+        4 => 336,
+        5 => 720,
+        6 => null,
+    ];
+
+    /**
+     * Stepped cooldown hours after failing each target stage (Stage 1..6).
+     * Stage 1 keeps zero cooldown (null) for immediate retry; Stage 2..6 retain current stage with stepped cooldowns.
+     *
+     * @var array<int, int|null>
+     */
+    public const array STAGE_FAILURE_COOLDOWN_HOURS = [
+        1 => null,
+        2 => 24,
+        3 => 24,
+        4 => 72,
+        5 => 72,
+        6 => 168,
+    ];
+
     protected $table = 'learning_progress';
 
     protected $fillable = [

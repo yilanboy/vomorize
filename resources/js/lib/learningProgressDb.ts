@@ -43,13 +43,22 @@ const DB_NAME = 'vomorize';
 const DB_VERSION = 1;
 const STORE_NAME = 'learning_progress';
 
-const STAGE_COOLDOWN_HOURS: Record<number, number | null> = {
-    1: 12,
-    2: 24,
-    3: 48,
-    4: 96,
-    5: 168,
+export const STAGE_COOLDOWN_HOURS: Record<number, number | null> = {
+    1: 24,
+    2: 72,
+    3: 168,
+    4: 336,
+    5: 720,
     6: null,
+};
+
+export const STAGE_FAILURE_COOLDOWN_HOURS: Record<number, number | null> = {
+    1: null,
+    2: 24,
+    3: 24,
+    4: 72,
+    5: 72,
+    6: 168,
 };
 
 let dbPromise: Promise<IDBDatabase | null> | null = null;
@@ -244,8 +253,8 @@ export function computeLevelProgressData(
 /**
  * Calculate the updated SRS progress record after completing a quiz.
  * - Stage 1~5 pass threshold: 80; Stage 6 pass threshold: 90.
- * - Passed: advances stage by 1 (up to 6) with exact integer hour cooldown (12h/24h/48h/96h/168h/null).
- * - Failed: retains current stage and sets next_review_at to null (zero cooldown, immediate retry).
+ * - Passed: advances stage by 1 (up to 6) with exact integer hour cooldown (24h/72h/168h/336h/720h/null).
+ * - Failed: retains current stage and applies stepped cooldown (Stage 1: null, Stage 2-3: 24h, Stage 4-5: 72h, Stage 6: 168h).
  */
 export function calculateNextQuizProgress(
     currentRecord: LocalLearningProgress | null | undefined,
@@ -274,7 +283,7 @@ export function calculateNextQuizProgress(
     const newStage = isPassed ? targetStage : currentStage;
     const cooldownHours = isPassed
         ? (STAGE_COOLDOWN_HOURS[newStage] ?? null)
-        : null;
+        : (STAGE_FAILURE_COOLDOWN_HOURS[targetStage] ?? null);
 
     const nextReviewAt =
         cooldownHours !== null

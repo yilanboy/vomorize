@@ -361,12 +361,12 @@ describe('guest indexeddb progress and login sync', function () {
                 ->and($record['next_review_at'])->not->toBeNull();
         });
 
-    test('guest at stage 5 in indexeddb fails stage 6 with score 85 and retains stage 5', function () {
+    test('guest at stage 5 in indexeddb fails stage 6 with score 85 and enters 7-day stepped cooldown', function () {
         $group = Group::factory()->withVocabularies()->create();
 
         $page = visit('/');
         $this->seedGuestProgress($page, [
-            $this->guestProgressRecord($group, stage: 5, lastReviewedAt: now()->subDays(8),
+            $this->guestProgressRecord($group, stage: 5, lastReviewedAt: now()->subDays(31),
                 nextReviewAt: now()->subMinute()),
         ]);
 
@@ -381,11 +381,19 @@ describe('guest indexeddb progress and login sync', function () {
         $page
             ->assertSee('85 / 100')
             ->assertSee(__('ui.quiz.result.title_failed'))
-            ->assertSee(__('ui.quiz.result.failed_notice_stage', ['stage' => 6, 'threshold' => 90]))
+            ->assertSee(__('ui.quiz.result.failed_notice_stage', [
+                'stage' => 6,
+                'threshold' => 90,
+                'cooldown' => __('ui.time.days', ['count' => 7]),
+            ]))
+            ->assertDontSee(__('ui.quiz.result.btn_retry_stage', ['stage' => 6]))
             ->assertPresent('[data-progress-saved="true"]');
 
-        expect($this->guestGroupProgress($page, $group))
-            ->toMatchArray(['stage' => 5, 'last_score' => 85, 'next_review_at' => null]);
+        $record = $this->guestGroupProgress($page, $group);
+
+        expect($record)->not->toBeNull()
+            ->toMatchArray(['stage' => 5, 'last_score' => 85])
+            ->and($record['next_review_at'])->not->toBeNull();
     });
 
     test('guest with stage 6 mastered progress in indexeddb sees self-test mode on quiz page', function () {

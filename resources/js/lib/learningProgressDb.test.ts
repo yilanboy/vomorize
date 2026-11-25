@@ -119,7 +119,7 @@ describe('determineLocalGroupStatus', () => {
 });
 
 describe('calculateNextQuizProgress', () => {
-    it('advances from stage 0 to stage 1 with 12h cooldown at exact threshold 80', () => {
+    it('advances from stage 0 to stage 1 with 24h cooldown at exact threshold 80', () => {
         const result = calculateNextQuizProgress(null, 10, 2, 80, NOW);
 
         expect(result).toEqual({
@@ -128,7 +128,7 @@ describe('calculateNextQuizProgress', () => {
             stage: 1,
             last_score: 80,
             last_reviewed_at: NOW.toISOString(),
-            next_review_at: '2026-11-20T00:00:00.000Z',
+            next_review_at: '2026-11-20T12:00:00.000Z',
         });
     });
 
@@ -146,10 +146,10 @@ describe('calculateNextQuizProgress', () => {
     });
 
     it.each([
-        { fromStage: 1, toStage: 2, cooldownHours: 24 },
-        { fromStage: 2, toStage: 3, cooldownHours: 48 },
-        { fromStage: 3, toStage: 4, cooldownHours: 96 },
-        { fromStage: 4, toStage: 5, cooldownHours: 168 },
+        { fromStage: 1, toStage: 2, cooldownHours: 72 },
+        { fromStage: 2, toStage: 3, cooldownHours: 168 },
+        { fromStage: 3, toStage: 4, cooldownHours: 336 },
+        { fromStage: 4, toStage: 5, cooldownHours: 720 },
     ])(
         'advances from stage $fromStage to stage $toStage with $cooldownHours h cooldown at score 80',
         ({ fromStage, toStage, cooldownHours }) => {
@@ -166,25 +166,35 @@ describe('calculateNextQuizProgress', () => {
         },
     );
 
-    it('retains current stage with zero cooldown when failing stages 2 through 5', () => {
-        const current = makeRecord({
-            stage: 3,
-            next_review_at: '2026-11-19T10:00:00.000Z',
-        });
+    it.each([
+        { currentStage: 1, targetStage: 2, cooldownHours: 24 },
+        { currentStage: 2, targetStage: 3, cooldownHours: 24 },
+        { currentStage: 3, targetStage: 4, cooldownHours: 72 },
+        { currentStage: 4, targetStage: 5, cooldownHours: 72 },
+    ])(
+        'retains stage $currentStage with $cooldownHours h stepped cooldown when failing target stage $targetStage',
+        ({ currentStage, cooldownHours }) => {
+            const current = makeRecord({
+                stage: currentStage,
+                next_review_at: '2026-11-19T10:00:00.000Z',
+            });
 
-        const result = calculateNextQuizProgress(current, 1, 1, 79, NOW);
+            const result = calculateNextQuizProgress(current, 1, 1, 79, NOW);
 
-        expect(result).toEqual({
-            group_id: 1,
-            level_id: 1,
-            stage: 3,
-            last_score: 79,
-            last_reviewed_at: NOW.toISOString(),
-            next_review_at: null,
-        });
-    });
+            expect(result).toEqual({
+                group_id: 1,
+                level_id: 1,
+                stage: currentStage,
+                last_score: 79,
+                last_reviewed_at: NOW.toISOString(),
+                next_review_at: new Date(
+                    NOW.getTime() + cooldownHours * 3_600_000,
+                ).toISOString(),
+            });
+        },
+    );
 
-    it('requires 90 points to advance from stage 5 to stage 6', () => {
+    it('requires 90 points to advance from stage 5 to stage 6 and applies 168h cooldown on failure', () => {
         const current = makeRecord({ stage: 5, last_score: 90 });
 
         const failed = calculateNextQuizProgress(current, 1, 1, 89, NOW);
@@ -194,7 +204,9 @@ describe('calculateNextQuizProgress', () => {
             stage: 5,
             last_score: 89,
             last_reviewed_at: NOW.toISOString(),
-            next_review_at: null,
+            next_review_at: new Date(
+                NOW.getTime() + 168 * 3_600_000,
+            ).toISOString(),
         });
 
         const passed = calculateNextQuizProgress(current, 1, 1, 90, NOW);

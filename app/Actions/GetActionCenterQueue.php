@@ -42,17 +42,25 @@ readonly class GetActionCenterQueue
         foreach ($userProgress as $progress) {
             $stage = $progress->stage;
 
-            if ($stage >= 6) {
+            if ($stage >= LearningProgress::STAGE_MASTERED) {
                 continue;
             }
 
-            $isStage6Failed = $stage === 5 && $progress->next_review_at === null && $progress->last_score < 90;
-            $isFailed = $progress->last_score < 80 || $isStage6Failed;
             $isCooldownElapsed = $progress->next_review_at === null || $progress->next_review_at->lte($now);
 
-            if (! $isFailed && ! $isCooldownElapsed) {
+            if (! $isCooldownElapsed) {
                 continue;
             }
+
+            $stage6RetryHours = LearningProgress::STAGE_FAILURE_COOLDOWN_HOURS[LearningProgress::STAGE_MASTERED];
+            $isStage6RetryWindow = $progress->next_review_at === null
+                || $progress->last_reviewed_at->diffInHours($progress->next_review_at, false) <= $stage6RetryHours;
+
+            $isStage6Failed = $stage === (LearningProgress::STAGE_MASTERED - 1)
+                && $progress->last_score < 90
+                && $isStage6RetryWindow;
+
+            $isFailed = $progress->last_score < 80 || $isStage6Failed;
 
             $levelId = $progress->level_id;
             $levelName = $progress->group !== null ? $progress->group->level->name : "等級 {$levelId}";
@@ -63,18 +71,22 @@ readonly class GetActionCenterQueue
                 'sequence' => $sequence,
             ]);
 
-            $targetStage = $isStage6Failed ? 6 : ($isFailed ? max(1, $stage) : min(6, $stage + 1));
+            $targetStage = min(LearningProgress::STAGE_MASTERED, $stage + 1);
 
             if ($isFailed) {
                 $badgeText = (string) __('ui.dashboard.action_center.badge_retake', ['stage' => $targetStage]);
                 $badgeVariant = 'warning';
-            } elseif ($targetStage >= 6) {
-                $badgeText = (string) __('ui.dashboard.action_center.badge_final', ['stage' => 6]);
+            } elseif ($targetStage >= LearningProgress::STAGE_MASTERED) {
+                $badgeText = (string) __('ui.dashboard.action_center.badge_final', ['stage' => LearningProgress::STAGE_MASTERED]);
                 $badgeVariant = 'success';
             } else {
                 $badgeText = (string) __('ui.dashboard.action_center.badge_challenge', ['stage' => $targetStage]);
                 $badgeVariant = 'primary';
             }
+
+            $reviewUrl = $stage === LearningProgress::STAGE_UNSTARTED
+                ? route('groups.intro', ['group' => $progress->group_id], false)
+                : route('groups.quiz', ['group' => $progress->group_id], false);
 
             $dueReviews[] = [
                 'group_id' => $progress->group_id,
@@ -86,22 +98,21 @@ readonly class GetActionCenterQueue
                 'badge_variant' => $badgeVariant,
                 'last_score' => $progress->last_score,
                 'is_failed' => $isFailed,
-                'review_url' => route('groups.quiz', ['group' => $progress->group_id], false),
+                'review_url' => $reviewUrl,
                 'next_review_at' => $progress->next_review_at,
             ];
         }
 
-        // Sort due reviews: failed first, then next_review_at asc
+        // Sort due reviews: failed first, then next_review_at asc (null treated as earliest)
         usort($dueReviews, function ($a, $b) {
             if ($a['is_failed'] !== $b['is_failed']) {
                 return $a['is_failed'] ? -1 : 1;
             }
 
-            if ($a['next_review_at'] && $b['next_review_at']) {
-                return $a['next_review_at']->timestamp <=> $b['next_review_at']->timestamp;
-            }
+            $aTime = $a['next_review_at'] !== null ? $a['next_review_at']->timestamp : 0;
+            $bTime = $b['next_review_at'] !== null ? $b['next_review_at']->timestamp : 0;
 
-            return 0;
+            return $aTime <=> $bTime;
         });
 
         // Strip helper key from dueReviews

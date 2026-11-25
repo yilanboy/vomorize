@@ -13,7 +13,7 @@ use Tests\TestCase;
 
 uses(TestCase::class, RefreshDatabase::class);
 
-test('passing stage 1 with score 80 or above advances stage to 1 with 12 hour cooldown', function () {
+test('passing stage 1 with score 80 or above advances stage to 1 with 24 hour cooldown', function () {
     Carbon::setTestNow('2026-10-25 10:00:00');
 
     $user = User::factory()->create();
@@ -28,7 +28,7 @@ test('passing stage 1 with score 80 or above advances stage to 1 with 12 hour co
         ->and($progress->level_id)->toBe($level->id)
         ->and($progress->stage)->toBe(1)
         ->and($progress->last_score)->toBe(85)
-        ->and($progress->next_review_at?->toDateTimeString())->toBe('2026-10-25 22:00:00');
+        ->and($progress->next_review_at?->toDateTimeString())->toBe('2026-10-26 10:00:00');
 });
 
 test('failing stage 1 with score below 80 keeps stage at 0 with null cooldown', function () {
@@ -66,7 +66,7 @@ test('subsequent quiz updates existing learning progress record instead of creat
         ->and($final->last_score)->toBe(90);
 });
 
-test('stages 2 through 5 advance with 24h, 48h, 96h, and 168h cooldowns at 80 threshold', function () {
+test('stages 2 through 5 advance with 72h, 168h, 336h, and 720h cooldowns at 80 threshold', function () {
     Carbon::setTestNow('2026-10-25 10:00:00');
 
     $user = User::factory()->create();
@@ -84,29 +84,61 @@ test('stages 2 through 5 advance with 24h, 48h, 96h, and 168h cooldowns at 80 th
 
     $action = app(SaveGroupQuizProgress::class);
 
-    // Stage 1 -> 2 (24 hours)
+    // Stage 1 -> 2 (72 hours / 3 days)
     $p2 = $action->handle($user, $group, 80);
     expect($p2->stage)->toBe(2)
-        ->and($p2->next_review_at?->toDateTimeString())->toBe('2026-10-26 10:00:00');
+        ->and($p2->next_review_at?->toDateTimeString())->toBe('2026-10-28 10:00:00');
 
-    // Stage 2 -> 3 (48 hours)
-    Carbon::setTestNow('2026-10-26 11:00:00');
+    // Stage 2 -> 3 (168 hours / 7 days)
+    Carbon::setTestNow('2026-10-28 11:00:00');
     $p3 = $action->handle($user, $group, 80);
     expect($p3->stage)->toBe(3)
-        ->and($p3->next_review_at?->toDateTimeString())->toBe('2026-10-28 11:00:00');
+        ->and($p3->next_review_at?->toDateTimeString())->toBe('2026-11-04 11:00:00');
 
-    // Stage 3 -> 4 (96 hours)
-    Carbon::setTestNow('2026-10-28 12:00:00');
+    // Stage 3 -> 4 (336 hours / 14 days)
+    Carbon::setTestNow('2026-11-04 12:00:00');
     $p4 = $action->handle($user, $group, 80);
     expect($p4->stage)->toBe(4)
-        ->and($p4->next_review_at?->toDateTimeString())->toBe('2026-11-01 12:00:00');
+        ->and($p4->next_review_at?->toDateTimeString())->toBe('2026-11-18 12:00:00');
 
-    // Stage 4 -> 5 (168 hours)
-    Carbon::setTestNow('2026-11-01 13:00:00');
+    // Stage 4 -> 5 (720 hours / 30 days)
+    Carbon::setTestNow('2026-11-18 13:00:00');
     $p5 = $action->handle($user, $group, 85);
     expect($p5->stage)->toBe(5)
-        ->and($p5->next_review_at?->toDateTimeString())->toBe('2026-11-08 13:00:00');
+        ->and($p5->next_review_at?->toDateTimeString())->toBe('2026-12-18 13:00:00');
 });
+
+test('failing review stages 2 through 6 retains stage and applies stepped cooldowns', function (int $currentStage, int $score, int $expectedCooldownHours) {
+    Carbon::setTestNow('2026-10-25 10:00:00');
+
+    $user = User::factory()->create();
+    $level = Level::factory()->create();
+    $group = Group::factory()->create(['level_id' => $level->id]);
+
+    LearningProgress::factory()->create([
+        'user_id' => $user->id,
+        'level_id' => $level->id,
+        'group_id' => $group->id,
+        'stage' => $currentStage,
+        'last_score' => 85,
+        'next_review_at' => Carbon::now()->subMinute(),
+    ]);
+
+    $action = app(SaveGroupQuizProgress::class);
+    $failed = $action->handle($user, $group, $score);
+
+    expect($failed->stage)->toBe($currentStage)
+        ->and($failed->last_score)->toBe($score)
+        ->and($failed->next_review_at?->toDateTimeString())->toBe(
+            Carbon::now()->addHours($expectedCooldownHours)->toDateTimeString()
+        );
+})->with([
+    'stage 2 failure (24h)' => [1, 75, 24],
+    'stage 3 failure (24h)' => [2, 75, 24],
+    'stage 4 failure (72h)' => [3, 75, 72],
+    'stage 5 failure (72h)' => [4, 75, 72],
+    'stage 6 failure (168h)' => [5, 85, 168],
+]);
 
 test('stage 6 requires 90 points to complete and retains stage 6 permanently on subsequent self-tests', function () {
     Carbon::setTestNow('2026-11-10 10:00:00');
@@ -126,13 +158,14 @@ test('stage 6 requires 90 points to complete and retains stage 6 permanently on 
 
     $action = app(SaveGroupQuizProgress::class);
 
-    // 85 points is below Stage 6 threshold (90): stays at stage 5 with null cooldown
+    // 85 points is below Stage 6 threshold (90): stays at stage 5 with 168h cooldown
     $failedFinal = $action->handle($user, $group, 85);
     expect($failedFinal->stage)->toBe(5)
         ->and($failedFinal->last_score)->toBe(85)
-        ->and($failedFinal->next_review_at)->toBeNull();
+        ->and($failedFinal->next_review_at?->toDateTimeString())->toBe('2026-11-17 10:00:00');
 
     // 90 points passes Stage 6: reaches stage 6 with null cooldown (permanent completion)
+    Carbon::setTestNow('2026-11-17 10:05:00');
     $passedFinal = $action->handle($user, $group, 90);
     expect($passedFinal->stage)->toBe(6)
         ->and($passedFinal->last_score)->toBe(90)

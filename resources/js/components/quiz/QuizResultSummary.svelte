@@ -8,6 +8,10 @@
     import XCircle from '@lucide/svelte/icons/x-circle';
     import VocabularyCard from '@/components/VocabularyCard.svelte';
     import { t } from '@/lib/i18n';
+    import {
+        STAGE_COOLDOWN_HOURS,
+        STAGE_FAILURE_COOLDOWN_HOURS,
+    } from '@/lib/learningProgressDb';
     import type { MistakeReviewItem } from '@/types/quiz';
 
     let {
@@ -46,6 +50,9 @@
 
     const isAuthenticated = $derived(Boolean(page.props.auth?.user));
     const passThresholdScore = $derived(stage >= 6 ? 90 : 80);
+    const failureCooldownHours = $derived(
+        STAGE_FAILURE_COOLDOWN_HOURS[stage] ?? null,
+    );
 
     const computedScore = $derived.by(() => {
         if (score !== undefined) {
@@ -77,21 +84,18 @@
         return `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
     });
 
-    function getStageCooldownLabel(currentStage: number): string {
-        switch (currentStage) {
-            case 1:
-                return t('ui.time.hours', { count: 12 });
-            case 2:
-                return t('ui.time.days', { count: 1 });
-            case 3:
-                return t('ui.time.days', { count: 2 });
-            case 4:
-                return t('ui.time.days', { count: 4 });
-            case 5:
-                return t('ui.time.days', { count: 7 });
-            default:
-                return '';
+    const canRetryImmediately = $derived(
+        mode === 'custom' || (!isPassed && failureCooldownHours === null),
+    );
+
+    function formatCooldownHours(hours: number | null): string {
+        if (hours === null || hours <= 0) {
+            return '';
         }
+        if (hours % 24 === 0) {
+            return t('ui.time.days', { count: hours / 24 });
+        }
+        return t('ui.time.hours', { count: hours });
     }
 
     const resultTitle = $derived.by(() => {
@@ -146,11 +150,17 @@
                 return t('ui.quiz.result.mastered_notice');
             }
             if (stage === 1) {
-                return t('ui.quiz.result.cooldown_notice');
+                return t('ui.quiz.result.cooldown_notice', {
+                    cooldown: formatCooldownHours(
+                        STAGE_COOLDOWN_HOURS[1] ?? null,
+                    ),
+                });
             }
             return t('ui.quiz.result.cooldown_notice_stage', {
                 stage,
-                cooldown: getStageCooldownLabel(stage),
+                cooldown: formatCooldownHours(
+                    STAGE_COOLDOWN_HOURS[stage] ?? null,
+                ),
                 next_stage: stage + 1,
             });
         }
@@ -160,6 +170,7 @@
         return t('ui.quiz.result.failed_notice_stage', {
             stage,
             threshold: passThresholdScore,
+            cooldown: formatCooldownHours(failureCooldownHours),
         });
     });
 
@@ -343,7 +354,24 @@
                     {t('ui.quiz.custom.result.btn_levels')}
                 </button>
             {/if}
-        {:else if isPassed}
+        {:else if canRetryImmediately}
+            <button
+                type="button"
+                class="bg-primary hover:bg-primary/90 text-primary-foreground flex min-h-[50px] w-full cursor-pointer items-center justify-center gap-2 rounded-xl text-base font-semibold shadow-sm transition-all active:scale-[0.99]"
+                onclick={onRetry}
+            >
+                <RotateCcw class="size-4.5" />
+                <span>{retryButtonLabel}</span>
+            </button>
+
+            <button
+                type="button"
+                class="hover:bg-muted text-foreground border-border/80 flex min-h-[46px] w-full cursor-pointer items-center justify-center rounded-xl border text-sm font-semibold transition-colors"
+                onclick={onDone}
+            >
+                {t('ui.quiz.result.btn_done')}
+            </button>
+        {:else}
             <button
                 type="button"
                 class="bg-primary hover:bg-primary/90 text-primary-foreground flex min-h-[50px] w-full cursor-pointer items-center justify-center gap-2 rounded-xl text-base font-semibold shadow-sm transition-all active:scale-[0.99]"
@@ -367,23 +395,6 @@
                     {t('ui.quiz.result.btn_back_level')}
                 </Link>
             {/if}
-        {:else}
-            <button
-                type="button"
-                class="bg-primary hover:bg-primary/90 text-primary-foreground flex min-h-[50px] w-full cursor-pointer items-center justify-center gap-2 rounded-xl text-base font-semibold shadow-sm transition-all active:scale-[0.99]"
-                onclick={onRetry}
-            >
-                <RotateCcw class="size-4.5" />
-                <span>{retryButtonLabel}</span>
-            </button>
-
-            <button
-                type="button"
-                class="hover:bg-muted text-foreground border-border/80 flex min-h-[46px] w-full cursor-pointer items-center justify-center rounded-xl border text-sm font-semibold transition-colors"
-                onclick={onDone}
-            >
-                {t('ui.quiz.result.btn_done')}
-            </button>
         {/if}
     </div>
 </div>

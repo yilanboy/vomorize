@@ -202,12 +202,12 @@
     }
 
     const srsNodes: SrsStageNode[] = [
-        { stage: 1, cx: 120, cy: 43, dayLabel: '12h' },
-        { stage: 2, cx: 196, cy: 40, dayLabel: '1d' },
-        { stage: 3, cx: 288, cy: 38, dayLabel: '2d' },
-        { stage: 4, cx: 402, cy: 38, dayLabel: '4d' },
-        { stage: 5, cx: 526, cy: 35, dayLabel: '7d' },
-        { stage: 6, cx: 644, cy: 33, dayLabel: '15d+' },
+        { stage: 1, cx: 120, cy: 43, dayLabel: '1d' },
+        { stage: 2, cx: 196, cy: 40, dayLabel: '3d' },
+        { stage: 3, cx: 288, cy: 38, dayLabel: '7d' },
+        { stage: 4, cx: 402, cy: 38, dayLabel: '14d' },
+        { stage: 5, cx: 526, cy: 35, dayLabel: '30d' },
+        { stage: 6, cx: 644, cy: 33, dayLabel: '55d+' },
     ];
 
     let activeSrsStage = $state<number>(4);

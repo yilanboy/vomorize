@@ -12,18 +12,6 @@ use Illuminate\Support\Facades\DB;
 
 readonly class SaveGroupQuizProgress
 {
-    /**
-     * @var array<int, int|null>
-     */
-    private const array STAGE_COOLDOWN_HOURS = [
-        1 => 12,
-        2 => 24,
-        3 => 48,
-        4 => 96,
-        5 => 168,
-        6 => null,
-    ];
-
     public function handle(User $user, Group $group, int $score, ?CarbonInterface $now = null): LearningProgress
     {
         $now ??= now();
@@ -46,14 +34,14 @@ readonly class SaveGroupQuizProgress
                 return $existing;
             }
 
-            $targetStage = min(6, $currentStage + 1);
-            $passThreshold = $targetStage >= 6 ? 90 : 80;
+            $targetStage = min(LearningProgress::STAGE_MASTERED, $currentStage + 1);
+            $passThreshold = $targetStage >= LearningProgress::STAGE_MASTERED ? 90 : 80;
             $isPassed = $score >= $passThreshold;
 
             $newStage = $isPassed ? $targetStage : $currentStage;
             $cooldownHours = $isPassed
-                ? (self::STAGE_COOLDOWN_HOURS[$newStage] ?? null)
-                : null;
+                ? (LearningProgress::STAGE_COOLDOWN_HOURS[$newStage] ?? null)
+                : (LearningProgress::STAGE_FAILURE_COOLDOWN_HOURS[$targetStage] ?? null);
 
             $nextReviewAt = $cooldownHours !== null
                 ? $now->copy()->addHours($cooldownHours)

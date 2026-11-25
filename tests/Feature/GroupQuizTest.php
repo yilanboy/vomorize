@@ -120,7 +120,7 @@ test('member can progress through stages 2 to 6 and mark group as completed', fu
         );
 
     // Complete Stage 2 -> 3 -> 4 -> 5
-    $cooldownHours = [2 => 24, 3 => 48, 4 => 96, 5 => 168];
+    $cooldownHours = [2 => 72, 3 => 168, 4 => 336, 5 => 720];
 
     foreach ($cooldownHours as $expectedStage => $hours) {
         $this->actingAs($user)
@@ -135,7 +135,7 @@ test('member can progress through stages 2 to 6 and mark group as completed', fu
         Carbon::setTestNow(now()->addHours($hours)->addMinute());
     }
 
-    // Now at Stage 5, ready for Stage 6 final review: fail with 85 (< 90)
+    // Now at Stage 5, ready for Stage 6 final review: fail with 85 (< 90) -> 7 day (168h) stepped cooldown
     $this->actingAs($user)
         ->from(route('groups.quiz', $group))
         ->post(route('groups.progress.save', $group), ['score' => 85])
@@ -143,7 +143,16 @@ test('member can progress through stages 2 to 6 and mark group as completed', fu
 
     $progressAfterFail = LearningProgress::where('user_id', $user->id)->where('group_id', $group->id)->firstOrFail();
     expect($progressAfterFail->stage)->toBe(5)
-        ->and($progressAfterFail->next_review_at)->toBeNull();
+        ->and($progressAfterFail->next_review_at?->toDateTimeString())->toBe(now()->addHours(168)->toDateTimeString());
+
+    // During 7-day failure cooldown, visiting quiz redirects back to group show (consume flashed quiz_completed first like Inertia back())
+    session()->forget('quiz_completed');
+    $this->actingAs($user)
+        ->get(route('groups.quiz', $group))
+        ->assertRedirect(route('groups.show', $group));
+
+    // Advance past 7-day failure cooldown
+    Carbon::setTestNow(now()->addHours(168)->addMinute());
 
     // Pass Stage 6 with 95 (>= 90) -> group is marked completed!
     $this->actingAs($user)
