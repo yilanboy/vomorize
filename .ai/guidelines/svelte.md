@@ -126,10 +126,6 @@ Custom Svelte components (such as shadcn-svelte UI components like `<Button>`) a
     - Prefer `onMount` over `$effect` for page entrance tasks (such as preloading audio, initiating timers, or logging page views).
     - If `$effect` is used for page entrance tasks, props updating right before the Inertia component swap can trigger `$effect` on the old instance before it unmounts and then again on the newly mounted instance, causing **duplicate execution**.
 
-3. **Layout Props (`setLayoutProps`) Placement**:
-    - Call `setLayoutProps` directly at the **top level of `<script>`**, NOT inside `onMount` or `$effect`.
-    - Calling `setLayoutProps` synchronously in `<script>` allows the layout store (`storeState.shared`) to be populated before initial DOM rendering, avoiding layout shift (CLS) or breadcrumbs flashing.
-
 ---
 
 ## Global Event Listeners & `onMount` Structure
