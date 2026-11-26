@@ -225,36 +225,40 @@ it('falls back to 10 questions when switching to a user with only 10 unlocked wo
     $userWith20Words = User::factory()->create([
         'name' => 'Twenty User',
     ]);
-    $userWith20Words->learningProgress()->createMany([
-        [
+    $userWith20Words
+        ->learningProgress()
+        ->createMany([
+            [
+                'level_id' => $level->id,
+                'group_id' => $groups[0]->id,
+                'stage' => 1,
+                'last_score' => 90,
+                'last_reviewed_at' => now()->subDay(),
+                'next_review_at' => now()->subDay(),
+            ],
+            [
+                'level_id' => $level->id,
+                'group_id' => $groups[1]->id,
+                'stage' => 1,
+                'last_score' => 90,
+                'last_reviewed_at' => now()->subDay(),
+                'next_review_at' => now()->subDay(),
+            ],
+        ]);
+
+    $userWith10Words = User::factory()->create([
+        'name' => 'Ten User',
+    ]);
+    $userWith10Words
+        ->learningProgress()
+        ->create([
             'level_id' => $level->id,
             'group_id' => $groups[0]->id,
             'stage' => 1,
             'last_score' => 90,
             'last_reviewed_at' => now()->subDay(),
             'next_review_at' => now()->subDay(),
-        ],
-        [
-            'level_id' => $level->id,
-            'group_id' => $groups[1]->id,
-            'stage' => 1,
-            'last_score' => 90,
-            'last_reviewed_at' => now()->subDay(),
-            'next_review_at' => now()->subDay(),
-        ],
-    ]);
-
-    $userWith10Words = User::factory()->create([
-        'name' => 'Ten User',
-    ]);
-    $userWith10Words->learningProgress()->create([
-        'level_id' => $level->id,
-        'group_id' => $groups[0]->id,
-        'stage' => 1,
-        'last_score' => 90,
-        'last_reviewed_at' => now()->subDay(),
-        'next_review_at' => now()->subDay(),
-    ]);
+        ]);
 
     loginAsUser($userWith20Words);
 
@@ -301,9 +305,9 @@ it('falls back to backend defaults when stored preferences are outside allowed r
     $page = visit('/quiz');
     $page->script(
         <<<'JS'
-        localStorage.setItem('quiz_question_count', '999');
-        localStorage.setItem('quiz_mode', 'unsupported_mode');
-    JS
+                localStorage.setItem('quiz_question_count', '999');
+                localStorage.setItem('quiz_mode', 'unsupported_mode');
+            JS,
     );
 
     $page
@@ -372,7 +376,7 @@ test(
             ->click('button:has-text("1")')
             ->assertAttribute('[data-test="sentence-cloze-reveal"]', 'aria-hidden', 'false')
             ->assertSee('團隊執行了這項計畫。');
-    }
+    },
 );
 
 test('selecting 10 or 20 questions starts a custom quiz session with matching question count', function () {
@@ -442,7 +446,7 @@ test(
         $this->playCustomQuiz($page, 20);
 
         $page->assertSee('100 / 100');
-    }
+    },
 );
 
 test('member completes sentence cloze custom quiz with perfect score using correct-option', function () {
@@ -457,11 +461,13 @@ test('member completes sentence cloze custom quiz with perfect score using corre
         'stage' => 1,
     ]);
 
-    Vocabulary::factory()->count(10)
+    Vocabulary::factory()
+        ->count(10)
         ->create([
             'level_id' => $level->id,
             'group_id' => $group->id,
-        ])->each(function (Vocabulary $vocabulary) {
+        ])
+        ->each(function (Vocabulary $vocabulary) {
             SentenceClozeQuestion::factory()->create([
                 'vocabulary_id' => $vocabulary->id,
             ]);
@@ -485,8 +491,40 @@ test('member completes sentence cloze custom quiz with perfect score using corre
 });
 
 test('member completes spelling custom quiz with perfect score and sees 100/100 result', function () {
-    //
-})->skip('Practice: complete 10 spelling questions by clicking matching letter tiles and verify 100 / 100 result');
+    $user = User::factory()->create();
+    $level = Level::factory()->create();
+    $group = Group::factory()->create(['level_id' => $level->id]);
+
+    LearningProgress::factory()->create([
+        'user_id' => $user->id,
+        'level_id' => $level->id,
+        'group_id' => $group->id,
+        'stage' => 1,
+    ]);
+
+    Vocabulary::factory()
+        ->count(10)
+        ->create([
+            'level_id' => $level->id,
+            'group_id' => $group->id,
+        ]);
+
+    loginAsUser($user);
+
+    $page = visit(route('quiz.index'));
+
+    $page
+        ->assertNoSmoke()
+        ->click('@count-option-10')
+        ->click('@mode-option-spelling')
+        ->click('@start-quiz-button')
+        ->assertPathIs('/quiz/play')
+        ->assertSee('1 / 10');
+
+    $this->playSpellingQuiz($page, 10);
+
+    $page->assertSee('100 / 100');
+});
 
 test('custom quiz result summary matches partial correct count and lists wrong answers', function () {
     //
@@ -499,5 +537,5 @@ test('custom quiz shows expected visual feedback when selecting correct option',
 test('custom quiz shows expected visual feedback when selecting wrong option', function () {
     //
 })->skip(
-    'Practice: assert wrong-option & highlighted correct-option feedback state (or fixed-seed assertScreenshotMatches())'
+    'Practice: assert wrong-option & highlighted correct-option feedback state (or fixed-seed assertScreenshotMatches())',
 );
