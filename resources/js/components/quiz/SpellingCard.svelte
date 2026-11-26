@@ -341,6 +341,7 @@
             {#each question.tiles as tile (tile.slot_index)}
                 {@const isUsed = usedSlotIndices.has(tile.slot_index)}
                 <TactileTile
+                    data-test="tile-{tile.slot_index}"
                     depressed={isUsed || isAnswered}
                     class="size-12.5 shrink-0 font-mono text-xl font-extrabold sm:size-13.5 sm:text-2xl"
                     onclick={() => handleTileClick(tile)}
