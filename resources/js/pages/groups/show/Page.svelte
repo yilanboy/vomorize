@@ -2,12 +2,9 @@
     import { onMount } from 'svelte';
     import { Link, router, setLayoutProps } from '@inertiajs/svelte';
     import ArrowRight from '@lucide/svelte/icons/arrow-right';
-    import CheckCircle2 from '@lucide/svelte/icons/check-circle-2';
     import ChevronLeft from '@lucide/svelte/icons/chevron-left';
     import ChevronRight from '@lucide/svelte/icons/chevron-right';
-    import Circle from '@lucide/svelte/icons/circle';
     import Clock from '@lucide/svelte/icons/clock';
-    import Zap from '@lucide/svelte/icons/zap';
     import { show as showGroup } from '@/actions/App/Http/Controllers/GroupController';
     import { show as introGroup } from '@/actions/App/Http/Controllers/GroupIntroController';
     import { show as quizGroup } from '@/actions/App/Http/Controllers/GroupQuizController';
@@ -205,7 +202,7 @@
 <div
     class="mx-auto max-w-4xl px-4 pt-6 pb-32 selection:bg-blue-600 selection:text-white sm:px-6 sm:pt-8 sm:pb-36"
 >
-    <!-- Header Section: Title, Status, SRS Stage, Prev/Next Navigation (Idea A: Two-tier layout) -->
+    <!-- Header Section: Title, SRS Stage, Prev/Next Navigation -->
     <header class="border-border/70 mb-8 border-b pb-6">
         <!-- Top Row: Title on Left, Prev/Next Navigation on Right -->
         <div class="flex items-center justify-between gap-4">
@@ -263,79 +260,42 @@
             </nav>
         </div>
 
-        <!-- Second Row: SRS Learning Track (Status Badge + Stage Indicator) -->
-        <div class="mt-3 flex flex-wrap items-center gap-3">
-            <!-- Status Badge -->
-            {#if currentProgress.status === 'completed'}
-                <span
-                    class="inline-flex items-center gap-1.5 rounded-full border border-emerald-300 bg-emerald-50 px-3 py-0.5 text-sm font-semibold text-emerald-800 dark:border-emerald-800/60 dark:bg-emerald-950/50 dark:text-emerald-300"
-                >
-                    <CheckCircle2
-                        class="size-4 text-emerald-600 dark:text-emerald-400"
-                    />
-                    <span>{t('ui.group_detail.status.completed')}</span>
-                </span>
-            {:else if currentProgress.status === 'ready' || (currentProgress.status === 'cooldown' && cooldownSeconds <= 0)}
-                <span
-                    class="inline-flex items-center gap-1.5 rounded-full border border-blue-300 bg-blue-50 px-3 py-0.5 text-sm font-semibold text-blue-800 dark:border-blue-800/60 dark:bg-blue-950/50 dark:text-blue-300"
-                >
-                    <Zap class="size-4 text-blue-600 dark:text-blue-400" />
-                    <span>{t('ui.group_detail.status.ready')}</span>
-                </span>
-            {:else if currentProgress.status === 'cooldown' && cooldownSeconds > 0}
-                <span
-                    class="inline-flex items-center gap-1.5 rounded-full border border-amber-300 bg-amber-50 px-3 py-0.5 text-sm font-semibold text-amber-800 dark:border-amber-800/60 dark:bg-amber-950/50 dark:text-amber-300"
-                >
-                    <Clock class="size-4 text-amber-600 dark:text-amber-400" />
-                    <span>{t('ui.group_detail.status.cooldown')}</span>
-                </span>
-            {:else}
-                <span
-                    class="border-border bg-muted/60 text-muted-foreground inline-flex items-center gap-1.5 rounded-full border px-3 py-0.5 text-sm font-medium"
-                >
-                    <Circle class="size-3.5 stroke-[1.5]" />
-                    <span>{t('ui.group_detail.status.not_started')}</span>
-                </span>
-            {/if}
-
-            <!-- 6-Stage Indicator & Progress Text (only when stage > 0) -->
-            {#if currentProgress.stage > 0}
-                <span class="text-border select-none">·</span>
-                <div
-                    class="flex items-center gap-2"
-                    title={currentProgress.stage >= 6
+        <!-- Second Row: 6-Stage SRS Progress Track -->
+        {#if currentProgress.stage > 0}
+            <div
+                class="mt-3 flex flex-wrap items-center gap-3"
+                title={currentProgress.stage >= 6
+                    ? t('ui.group_detail.stage_completed')
+                    : t('ui.group_detail.stage_indicator', {
+                          stage: currentProgress.stage,
+                      })}
+            >
+                <div class="flex items-center gap-1.5">
+                    {#each [1, 2, 3, 4, 5, 6] as step (step)}
+                        <span
+                            class={{
+                                'h-2 w-6 rounded-full transition-colors': true,
+                                'bg-emerald-600 dark:bg-emerald-400':
+                                    currentProgress.stage >= step &&
+                                    currentProgress.status === 'completed',
+                                'bg-blue-600 dark:bg-blue-400':
+                                    currentProgress.stage >= step &&
+                                    currentProgress.status !== 'completed',
+                                'bg-muted-foreground/25 dark:bg-muted-foreground/30':
+                                    currentProgress.stage < step,
+                            }}
+                        ></span>
+                    {/each}
+                </div>
+                <span class="text-muted-foreground text-sm font-medium">
+                    {currentProgress.stage >= 6
                         ? t('ui.group_detail.stage_completed')
                         : t('ui.group_detail.stage_indicator', {
                               stage: currentProgress.stage,
                           })}
-                >
-                    <div class="flex items-center gap-1">
-                        {#each [1, 2, 3, 4, 5, 6] as step}
-                            <span
-                                class={{
-                                    'size-2 rounded-full transition-colors': true,
-                                    'bg-emerald-600 dark:bg-emerald-400':
-                                        currentProgress.stage >= step &&
-                                        currentProgress.status === 'completed',
-                                    'bg-blue-600 dark:bg-blue-400':
-                                        currentProgress.stage >= step &&
-                                        currentProgress.status !== 'completed',
-                                    'bg-muted-foreground/25 dark:bg-muted-foreground/30':
-                                        currentProgress.stage < step,
-                                }}
-                            ></span>
-                        {/each}
-                    </div>
-                    <span class="text-muted-foreground text-sm font-medium">
-                        {currentProgress.stage >= 6
-                            ? t('ui.group_detail.stage_completed')
-                            : t('ui.group_detail.stage_indicator', {
-                                  stage: currentProgress.stage,
-                              })}
-                    </span>
-                </div>
-            {/if}
-        </div>
+                </span>
+            </div>
+        {/if}
     </header>
 
     <!-- 10 Vocabulary Cards List -->
@@ -375,12 +335,12 @@
             <button
                 type="button"
                 disabled
-                class="bg-muted text-muted-foreground inline-flex cursor-not-allowed items-center gap-2 rounded-xl px-6 py-2.5 text-sm font-semibold sm:px-8 sm:py-3 sm:text-base"
+                class="inline-flex cursor-not-allowed items-center gap-2 rounded-xl border border-amber-300 bg-amber-50 px-6 py-2.5 text-sm font-semibold text-amber-800 sm:px-8 sm:py-3 sm:text-base dark:border-amber-800/60 dark:bg-amber-950/50 dark:text-amber-300"
             >
                 <Clock
                     class={{
-                        'size-4.5': true,
-                        'animate-pulse text-amber-500': cooldownSeconds <= 60,
+                        'size-4.5 text-amber-600 dark:text-amber-400': true,
+                        'animate-pulse': cooldownSeconds <= 60,
                     }}
                 />
                 <span class={{ 'font-mono': cooldownSeconds <= 60 }}>
