@@ -5,6 +5,7 @@ declare(strict_types=1);
 use App\Enums\Locale;
 use App\Models\Group;
 use App\Models\Level;
+use App\Models\SentenceClozeQuestion;
 use App\Models\Vocabulary;
 use Database\Seeders\LevelSeeder;
 use Inertia\Testing\AssertableInertia as Assert;
@@ -14,6 +15,9 @@ test('defaults to zh_TW when no locale cookie or matching Accept-Language header
         ->withTranslation('zh_TW', '基礎入門', '核心常用 1,000 單字')
         ->withTranslation('ja', '基礎入門 (JA)', '日常でよく使う基本の 1,000 単語')
         ->create();
+    $group = Group::factory()->for($level)->create();
+    $vocabulary = Vocabulary::factory()->for($level)->for($group)->create();
+    SentenceClozeQuestion::factory()->for($vocabulary)->create();
 
     $response = $this->withHeaders([
         'Accept-Language' => 'en-US,en;q=0.9',

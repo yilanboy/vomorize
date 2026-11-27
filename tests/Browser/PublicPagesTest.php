@@ -2,9 +2,13 @@
 
 declare(strict_types=1);
 
+use App\Models\Group;
 use App\Models\Level;
+use App\Models\SentenceClozeQuestion;
 
 test('public pages load without javascript errors', function (string $url) {
+    SentenceClozeQuestion::factory()->create();
+
     visit($url)
         ->assertNoSmoke();
 })->with([
@@ -34,6 +38,8 @@ test('header contains home and levels navigation links for guest and logo links 
 });
 
 test('clicking header logo navigates to home page', function () {
+    SentenceClozeQuestion::factory()->create();
+
     visit('/levels')
         ->click('header span:text-is("Vomorize")')
         ->assertPathIs('/')
@@ -41,6 +47,8 @@ test('clicking header logo navigates to home page', function () {
 });
 
 test('clicking header home navigation link navigates to home page', function () {
+    SentenceClozeQuestion::factory()->create();
+
     visit('/levels')
         ->click('首頁')
         ->assertPathIs('/')
@@ -74,6 +82,8 @@ test('register page displays redesigned card elements and navigation', function 
 });
 
 test('landing page displays unified header, hero cta, and minimal footer', function () {
+    SentenceClozeQuestion::factory()->create();
+
     visit('/')
         ->assertNoSmoke()
         ->assertSeeIn('@app-header', __('ui.nav.levels'))
@@ -85,6 +95,9 @@ test('landing page displays unified header, hero cta, and minimal footer', funct
 });
 
 test('landing page hero workbench switches across real intro, cloze, and spelling cards', function () {
+    $group = Group::factory()->withVocabularies(4)->create();
+    SentenceClozeQuestion::factory()->for($group->vocabularies()->firstOrFail())->create();
+
     visit('/')
         ->assertNoSmoke()
         ->assertSeeIn('@hero-workbench-card', __('ui.intro.card.badge'))

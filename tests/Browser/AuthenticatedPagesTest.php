@@ -5,6 +5,7 @@ declare(strict_types=1);
 use App\Models\Group;
 use App\Models\LearningProgress;
 use App\Models\Level;
+use App\Models\SentenceClozeQuestion;
 use App\Models\User;
 
 test('authenticated pages load without javascript errors', function (string $url) {
@@ -164,6 +165,7 @@ test('appearance settings page displays redesigned elements and navigation', fun
 
 it('can click back button', function () {
     app()->setLocale('zh_TW');
+    SentenceClozeQuestion::factory()->create();
 
     visit(route('home'))
         ->click(__('ui.nav.login'))

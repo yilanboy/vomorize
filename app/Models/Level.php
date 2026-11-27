@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\Models;
 
 use Database\Factories\LevelFactory;
+use Illuminate\Database\Eloquent\Attributes\Appends;
 use Illuminate\Database\Eloquent\Casts\Attribute;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
@@ -16,6 +17,7 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
  * @property-read string $name
  * @property-read string $description
  */
+#[Appends(['name', 'description'])]
 class Level extends Model
 {
     /** @use HasFactory<LevelFactory> */
@@ -23,22 +25,6 @@ class Level extends Model
 
     protected $fillable = [
         'id',
-    ];
-
-    /**
-     * @var list<string>
-     */
-    protected $appends = [
-        'name',
-        'description',
-    ];
-
-    /**
-     * @var list<string>
-     */
-    protected $hidden = [
-        'translation',
-        'translations',
     ];
 
     /**

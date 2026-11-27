@@ -277,7 +277,7 @@
         ></div>
         <div
             aria-hidden="true"
-            class="pointer-events-none absolute inset-x-0 top-0 h-[420px] bg-radial-[at_50%_0%] from-blue-500/12 via-blue-500/4 to-transparent dark:from-blue-400/15 dark:via-blue-500/5"
+            class="pointer-events-none absolute inset-x-0 top-0 h-105 bg-radial-[at_50%_0%] from-blue-500/12 via-blue-500/4 to-transparent dark:from-blue-400/15 dark:via-blue-500/5"
         ></div>
 
         <div

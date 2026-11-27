@@ -214,6 +214,7 @@ it("can remember user's choices", function () {
 
 it('falls back to 10 questions when switching to a user with only 10 unlocked words', function () {
     app()->setLocale('zh_TW');
+    SentenceClozeQuestion::factory()->create();
 
     $level = Level::factory()->create();
     $groups = Group::factory()

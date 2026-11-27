@@ -2,15 +2,20 @@
 
 declare(strict_types=1);
 
+use App\Models\SentenceClozeQuestion;
 use App\Models\User;
 
 test('welcome page renders successfully', function () {
+    SentenceClozeQuestion::factory()->create();
+
     $response = $this->get(route('home'));
 
     $response->assertOk();
 });
 
 test('translations are shared via inertia shareOnce on initial visit', function () {
+    SentenceClozeQuestion::factory()->create();
+
     $response = $this->get(route('home'));
 
     $response->assertOk();

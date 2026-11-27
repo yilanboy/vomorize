@@ -28,10 +28,7 @@ readonly class GetWelcomeShowcase
     /**
      * Load a random vocabulary along with real cloze and spelling payloads for the landing page.
      *
-     * @return array{
-     *     vocabulary: Vocabulary|null,
-     *     showcase: ShowcasePayload|null,
-     * }
+     * @return ShowcasePayload
      */
     public function handle(): array
     {
@@ -39,21 +36,7 @@ readonly class GetWelcomeShowcase
             ->whereHas('sentenceClozeQuestion')
             ->with(['translation:vocabulary_id,definition,example_translation', 'sentenceClozeQuestion'])
             ->inRandomOrder()
-            ->first(['id', 'group_id', 'word', 'part_of_speech', 'pronunciation', 'example_sentence']);
-
-        if ($vocabulary === null) {
-            $vocabulary = Vocabulary::query()
-                ->with('translation:vocabulary_id,definition,example_translation')
-                ->inRandomOrder()
-                ->first(['id', 'group_id', 'word', 'part_of_speech', 'pronunciation', 'example_sentence']);
-        }
-
-        if ($vocabulary === null) {
-            return [
-                'vocabulary' => null,
-                'showcase' => null,
-            ];
-        }
+            ->firstOrFail(['id', 'group_id', 'word', 'part_of_speech', 'pronunciation', 'example_sentence']);
 
         $cdnUrl = $this->resolveCdnUrl();
         $targetPayload = $this->formatVocabularyPayload($vocabulary, $cdnUrl);
@@ -61,12 +44,9 @@ readonly class GetWelcomeShowcase
         $clozeQuestion = $this->resolveClozeQuestion($vocabulary, $targetPayload, $cdnUrl);
 
         return [
-            'vocabulary' => $vocabulary,
-            'showcase' => [
-                'vocabulary' => $targetPayload,
-                'cloze_question' => $clozeQuestion,
-                'spelling_question' => $spellingQuestion,
-            ],
+            'vocabulary' => $targetPayload,
+            'cloze_question' => $clozeQuestion,
+            'spelling_question' => $spellingQuestion,
         ];
     }
 

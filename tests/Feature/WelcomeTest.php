@@ -10,6 +10,21 @@ use App\Models\Vocabulary;
 use Inertia\Testing\AssertableInertia as Assert;
 
 test('guest can access welcome page and sees inertia welcome component', function () {
+    $level = Level::factory()->create();
+    $group = Group::factory()->create(['level_id' => $level->id]);
+
+    Vocabulary::factory()
+        ->count(10)
+        ->create([
+            'level_id' => $level->id,
+            'group_id' => $group->id,
+        ])
+        ->each(function (Vocabulary $vocabulary) {
+            SentenceClozeQuestion::factory()->create([
+                'vocabulary_id' => $vocabulary->id,
+            ]);
+        });
+
     $response = $this->get(route('home'));
 
     $response->assertOk();
@@ -19,6 +34,21 @@ test('guest can access welcome page and sees inertia welcome component', functio
 });
 
 test('authenticated user is redirected from welcome page to dashboard', function () {
+    $level = Level::factory()->create();
+    $group = Group::factory()->create(['level_id' => $level->id]);
+
+    Vocabulary::factory()
+        ->count(10)
+        ->create([
+            'level_id' => $level->id,
+            'group_id' => $group->id,
+        ])
+        ->each(function (Vocabulary $vocabulary) {
+            SentenceClozeQuestion::factory()->create([
+                'vocabulary_id' => $vocabulary->id,
+            ]);
+        });
+
     $user = User::factory()->create();
 
     $response = $this->actingAs($user)->get(route('home'));
@@ -27,6 +57,21 @@ test('authenticated user is redirected from welcome page to dashboard', function
 });
 
 test('unverified authenticated user is redirected from welcome page to dashboard', function () {
+    $level = Level::factory()->create();
+    $group = Group::factory()->create(['level_id' => $level->id]);
+
+    Vocabulary::factory()
+        ->count(10)
+        ->create([
+            'level_id' => $level->id,
+            'group_id' => $group->id,
+        ])
+        ->each(function (Vocabulary $vocabulary) {
+            SentenceClozeQuestion::factory()->create([
+                'vocabulary_id' => $vocabulary->id,
+            ]);
+        });
+
     $user = User::factory()->unverified()->create();
 
     $response = $this->actingAs($user)->get(route('home'));
@@ -35,6 +80,21 @@ test('unverified authenticated user is redirected from welcome page to dashboard
 });
 
 test('welcome page shares ui translation keys for hero, features, and levels', function () {
+    $level = Level::factory()->create();
+    $group = Group::factory()->create(['level_id' => $level->id]);
+
+    Vocabulary::factory()
+        ->count(10)
+        ->create([
+            'level_id' => $level->id,
+            'group_id' => $group->id,
+        ])
+        ->each(function (Vocabulary $vocabulary) {
+            SentenceClozeQuestion::factory()->create([
+                'vocabulary_id' => $vocabulary->id,
+            ]);
+        });
+
     $response = $this->get(route('home'));
 
     $response->assertOk();
@@ -53,6 +113,20 @@ test('welcome page passes levels data loaded from database', function () {
         ->withTranslation('zh_TW', '等級 1', '基礎入門：核心常用 1,000 單字')
         ->create();
 
+    $group = Group::factory()->create(['level_id' => $level->id]);
+
+    Vocabulary::factory()
+        ->count(10)
+        ->create([
+            'level_id' => $level->id,
+            'group_id' => $group->id,
+        ])
+        ->each(function (Vocabulary $vocabulary) {
+            SentenceClozeQuestion::factory()->create([
+                'vocabulary_id' => $vocabulary->id,
+            ]);
+        });
+
     $response = $this->get(route('home'));
 
     $response->assertOk();
@@ -62,13 +136,27 @@ test('welcome page passes levels data loaded from database', function () {
         ->where('levels.0.id', $level->id)
         ->where('levels.0.name', '等級 1')
         ->where('levels.0.description', '基礎入門：核心常用 1,000 單字')
-        ->where('levels.0.vocabularies_count', 0)
-        ->where('levels.0.groups_count', 0)
+        ->where('levels.0.vocabularies_count', 10)
+        ->where('levels.0.groups_count', 1)
     );
 });
 
 it('will only show 7 levels on welcome page', function () {
-    Level::factory()->count(10)->create();
+    $levels = Level::factory()->count(10)->create();
+
+    $group = Group::factory()->create(['level_id' => $levels->first()->id]);
+
+    Vocabulary::factory()
+        ->count(10)
+        ->create([
+            'level_id' => $levels->first()->id,
+            'group_id' => $group->id,
+        ])
+        ->each(function (Vocabulary $vocabulary) {
+            SentenceClozeQuestion::factory()->create([
+                'vocabulary_id' => $vocabulary->id,
+            ]);
+        });
 
     $response = $this->get(route('home'));
 
@@ -80,28 +168,36 @@ it('will only show 7 levels on welcome page', function () {
 });
 
 test('welcome page passes a random vocabulary with localized translation', function () {
+    $level = Level::factory()->create();
+    $group = Group::factory()->create(['level_id' => $level->id]);
+
     $vocabulary = Vocabulary::factory()
         ->withTranslation('zh_TW', '靜謐的', '湖面在黎明時分十分靜謐。')
         ->create([
+            'level_id' => $level->id,
+            'group_id' => $group->id,
             'word' => 'serene',
             'part_of_speech' => 'adj.',
             'pronunciation' => '/səˈriːn/',
             'example_sentence' => 'The lake was serene at dawn.',
         ]);
 
+    SentenceClozeQuestion::factory()->create([
+        'vocabulary_id' => $vocabulary->id,
+    ]);
+
     $response = $this->get(route('home'));
 
     $response->assertOk();
     $response->assertInertia(fn (Assert $page) => $page
         ->component('Page')
-        ->where('vocabulary.id', $vocabulary->id)
-        ->where('vocabulary.word', 'serene')
-        ->where('vocabulary.part_of_speech', 'adj.')
-        ->where('vocabulary.pronunciation', '/səˈriːn/')
-        ->where('vocabulary.example_sentence', 'The lake was serene at dawn.')
-        ->where('vocabulary.translation.definition', '靜謐的')
-        ->where('vocabulary.translation.example_translation', '湖面在黎明時分十分靜謐。')
         ->where('showcase.vocabulary.id', $vocabulary->id)
+        ->where('showcase.vocabulary.word', 'serene')
+        ->where('showcase.vocabulary.part_of_speech', 'adj.')
+        ->where('showcase.vocabulary.pronunciation', '/səˈriːn/')
+        ->where('showcase.vocabulary.example_sentence', 'The lake was serene at dawn.')
+        ->where('showcase.vocabulary.definition', '靜謐的')
+        ->where('showcase.vocabulary.example_translation', '湖面在黎明時分十分靜謐。')
         ->where('showcase.spelling_question.target_word', 'serene')
     );
 });

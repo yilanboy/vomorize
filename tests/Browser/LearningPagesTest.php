@@ -5,6 +5,7 @@ declare(strict_types=1);
 use App\Models\Group;
 use App\Models\LearningProgress;
 use App\Models\Level;
+use App\Models\SentenceClozeQuestion;
 use App\Models\User;
 use Tests\Browser\Concerns\InteractsWithGuestProgress;
 use Tests\Browser\Concerns\PlaysLearningSessions;
@@ -318,6 +319,7 @@ describe('guest indexeddb progress and login sync', function () {
 
     test('guest with cooldown progress in indexeddb visiting quiz is redirected to group detail', function () {
         $group = Group::factory()->withVocabularies()->create();
+        SentenceClozeQuestion::factory()->create();
 
         $page = visit('/');
         $this->seedGuestProgress($page, [
@@ -334,6 +336,7 @@ describe('guest indexeddb progress and login sync', function () {
     test('guest with ready stage 1 progress in indexeddb completes stage 2 review quiz and updates indexeddb',
         function () {
             $group = Group::factory()->withVocabularies()->create();
+            SentenceClozeQuestion::factory()->create();
 
             $page = visit('/');
             $this->seedGuestProgress($page, [
@@ -363,6 +366,7 @@ describe('guest indexeddb progress and login sync', function () {
 
     test('guest at stage 5 in indexeddb fails stage 6 with score 85 and enters 7-day stepped cooldown', function () {
         $group = Group::factory()->withVocabularies()->create();
+        SentenceClozeQuestion::factory()->create();
 
         $page = visit('/');
         $this->seedGuestProgress($page, [
@@ -398,6 +402,7 @@ describe('guest indexeddb progress and login sync', function () {
 
     test('guest with stage 6 mastered progress in indexeddb sees self-test mode on quiz page', function () {
         $group = Group::factory()->withVocabularies()->create();
+        SentenceClozeQuestion::factory()->create();
 
         $page = visit('/');
         $this->seedGuestProgress($page, [

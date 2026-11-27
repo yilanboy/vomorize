@@ -2,7 +2,11 @@
 
 declare(strict_types=1);
 
+use App\Models\SentenceClozeQuestion;
+
 test('Mobile nav sidebar will not show on desktop', function () {
+    SentenceClozeQuestion::factory()->create();
+
     $page = visit(route('home'))->on()->desktop();
 
     $page
@@ -12,6 +16,8 @@ test('Mobile nav sidebar will not show on desktop', function () {
 });
 
 test('Mobile nav sidebar only shows on mobile', function () {
+    SentenceClozeQuestion::factory()->create();
+
     $page = visit(route('home'))->on()->mobile();
 
     $page
