@@ -22,6 +22,8 @@ use Illuminate\Database\Eloquent\Relations\HasOne;
  * @property string $example_sentence
  * @property-read string $definition
  * @property-read string $example_translation
+ * @property-read string $word_audio_url
+ * @property-read string $sentence_audio_url
  * @property-read SentenceClozeQuestion|null $sentenceClozeQuestion
  */
 class Vocabulary extends Model
@@ -84,6 +86,29 @@ class Vocabulary extends Model
 
             return $translation !== null ? $translation->example_translation : '';
         });
+    }
+
+    /**
+     * @return Attribute<string, never>
+     */
+    protected function wordAudioUrl(): Attribute
+    {
+        return Attribute::get(fn (): string => $this->audioUrl('word.mp3'));
+    }
+
+    /**
+     * @return Attribute<string, never>
+     */
+    protected function sentenceAudioUrl(): Attribute
+    {
+        return Attribute::get(fn (): string => $this->audioUrl('sentence.mp3'));
+    }
+
+    private function audioUrl(string $filename): string
+    {
+        $cdnUrl = rtrim((string) (config('filesystems.disks.r2.url') ?: 'https://assets.vomorize.com'), '/');
+
+        return "{$cdnUrl}/vocabulary/{$this->id}/{$filename}";
     }
 
     /**

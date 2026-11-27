@@ -28,9 +28,8 @@ readonly class GetGroupVocabularies
     {
         $group->loadMissing('vocabularies.translation');
 
-        $cdnUrl = rtrim((string) (config('filesystems.disks.r2.url') ?: 'https://assets.vomorize.com'), '/');
-
-        return $group->vocabularies
+        return $group
+            ->vocabularies
             ->sortBy('id')
             ->values()
             ->map(fn (Vocabulary $v): array => [
@@ -41,8 +40,8 @@ readonly class GetGroupVocabularies
                 'definition' => $v->definition,
                 'example_sentence' => $v->example_sentence,
                 'example_translation' => $v->example_translation,
-                'word_audio_url' => "{$cdnUrl}/vocabulary/{$v->id}/word.mp3",
-                'sentence_audio_url' => "{$cdnUrl}/vocabulary/{$v->id}/sentence.mp3",
+                'word_audio_url' => $v->word_audio_url,
+                'sentence_audio_url' => $v->sentence_audio_url,
             ])
             ->all();
     }

@@ -7,6 +7,7 @@ use App\Models\Level;
 use App\Models\SentenceClozeQuestion;
 use App\Models\Vocabulary;
 use App\Models\VocabularyTranslation;
+use Illuminate\Support\Facades\Config;
 
 test('vocabulary translations relation returns all translations belonging to the vocabulary', function () {
     $vocabulary = Vocabulary::factory()
@@ -48,35 +49,36 @@ test('vocabulary translation relation returns the translation matching active or
         ->toBeInstanceOf(VocabularyTranslation::class)
         ->locale->toBe('ja')
         ->definition->toBe('羊')
-        ->example_translation->toBe('羊が草を食べている。')
-        ->and($zhTwTranslation)
-        ->toBeInstanceOf(VocabularyTranslation::class)
+        ->example_translation->toBe('羊が草を食べている。')->and(
+            $zhTwTranslation,
+        )->toBeInstanceOf(VocabularyTranslation::class)
         ->locale->toBe('zh_TW')
-        ->definition->toBe('綿羊')
-        ->and($missingTranslation)->toBeNull();
-
+        ->definition->toBe('綿羊')->and($missingTranslation)->toBeNull();
 });
 
-test('vocabulary returns localized definition and example translation from eager-loaded translation relation',
-    function () {
-        $vocabulary = Vocabulary::factory()
-            ->withTranslation('zh_TW', '綿羊', '綿羊正在吃草。')
-            ->withTranslation('ja', '羊', '羊が草を食べている。')
-            ->withTranslation('zh_CN', '绵羊', '绵羊正在吃草。')
-            ->create(['word' => 'sheep']);
+test('vocabulary returns localized definition and example translation from eager-loaded translation relation', function () {
+    $vocabulary = Vocabulary::factory()
+        ->withTranslation('zh_TW', '綿羊', '綿羊正在吃草。')
+        ->withTranslation('ja', '羊', '羊が草を食べている。')
+        ->withTranslation('zh_CN', '绵羊', '绵羊正在吃草。')
+        ->create(['word' => 'sheep']);
 
-        app()->setLocale('ja');
-        $jaVocabulary = Vocabulary::query()->with('translation')->findOrFail($vocabulary->id);
+    app()->setLocale('ja');
+    $jaVocabulary = Vocabulary::query()->with('translation')->findOrFail($vocabulary->id);
 
-        expect($jaVocabulary->definition)->toBe('羊')
-            ->and($jaVocabulary->example_translation)->toBe('羊が草を食べている。');
+    expect($jaVocabulary->definition)
+        ->toBe('羊')
+        ->and($jaVocabulary->example_translation)
+        ->toBe('羊が草を食べている。');
 
-        app()->setLocale('zh_CN');
-        $zhCnVocabulary = Vocabulary::query()->with('translation')->findOrFail($vocabulary->id);
+    app()->setLocale('zh_CN');
+    $zhCnVocabulary = Vocabulary::query()->with('translation')->findOrFail($vocabulary->id);
 
-        expect($zhCnVocabulary->definition)->toBe('绵羊')
-            ->and($zhCnVocabulary->example_translation)->toBe('绵羊正在吃草。');
-    });
+    expect($zhCnVocabulary->definition)
+        ->toBe('绵羊')
+        ->and($zhCnVocabulary->example_translation)
+        ->toBe('绵羊正在吃草。');
+});
 
 test('vocabulary level and group relations return the parent level and group', function () {
     $level = Level::factory()
@@ -95,12 +97,8 @@ test('vocabulary level and group relations return the parent level and group', f
     expect($vocabulary->level)
         ->toBeInstanceOf(Level::class)
         ->id->toBe($level->id)
-        ->name->toBe('基礎入門')
-        ->and($vocabulary->group)
-        ->toBeInstanceOf(Group::class)
-        ->id->toBe($group->id)
-        ->and($vocabulary->group->sequence)->toBe(4);
-
+        ->name->toBe('基礎入門')->and($vocabulary->group)->toBeInstanceOf(Group::class)
+        ->id->toBe($group->id)->and($vocabulary->group->sequence)->toBe(4);
 });
 
 test('vocabulary sentenceClozeQuestion relation returns the associated question or null when absent', function () {
@@ -122,7 +120,23 @@ test('vocabulary sentenceClozeQuestion relation returns the associated question 
         ->toBeInstanceOf(SentenceClozeQuestion::class)
         ->sentence->toBe('The {{blank}} is vast and deep.')
         ->blank_word->toBe('ocean')
-        ->distractors->toHaveCount(3)
-        ->and($vocabularyWithoutQuestion->sentenceClozeQuestion)->toBeNull();
+        ->distractors->toHaveCount(3)->and($vocabularyWithoutQuestion->sentenceClozeQuestion)->toBeNull();
+});
 
+test('vocabulary audio url accessors resolve configured r2 url and fallback to default cdn', function () {
+    $vocabulary = Vocabulary::factory()->create(['word' => 'river']);
+
+    Config::set('filesystems.disks.r2.url', 'https://cdn.example.com/');
+
+    expect($vocabulary->word_audio_url)
+        ->toBe("https://cdn.example.com/vocabulary/{$vocabulary->id}/word.mp3")
+        ->and($vocabulary->sentence_audio_url)
+        ->toBe("https://cdn.example.com/vocabulary/{$vocabulary->id}/sentence.mp3");
+
+    Config::set('filesystems.disks.r2.url', '');
+
+    expect($vocabulary->word_audio_url)
+        ->toBe("https://assets.vomorize.com/vocabulary/{$vocabulary->id}/word.mp3")
+        ->and($vocabulary->sentence_audio_url)
+        ->toBe("https://assets.vomorize.com/vocabulary/{$vocabulary->id}/sentence.mp3");
 });

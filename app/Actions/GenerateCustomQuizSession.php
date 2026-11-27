@@ -100,7 +100,7 @@ readonly class GenerateCustomQuizSession
         array $passedGroupIds = [],
         string $quizMode = QuizMode::Standard->value,
     ): array {
-        $cdnUrl = $this->resolveCdnUrl();
+        $cdnUrl = rtrim((string) (config('filesystems.disks.r2.url') ?: 'https://assets.vomorize.com'), '/');
         $availableGroupIds = $this->resolveAvailableQuizGroupIds->handle($user, $passedGroupIds);
 
         $totalWordsAvailable = count($availableGroupIds) * Group::VOCABULARY_PER_GROUP;
@@ -116,7 +116,7 @@ readonly class GenerateCustomQuizSession
             'all' => $allVocabularies,
             'by_group' => $vocabulariesByGroup,
             'cloze_by_vocab_id' => $clozeByVocabId,
-        ] = $this->loadVocabularyPool($availableGroupIds, $cdnUrl, $mode);
+        ] = $this->loadVocabularyPool($availableGroupIds, $mode);
 
         $selectedTargets = $this->selectTargetVocabularies(
             $allVocabularies,
@@ -139,17 +139,6 @@ readonly class GenerateCustomQuizSession
         ];
     }
 
-    private function resolveCdnUrl(): string
-    {
-        /** @var string|null $configuredUrl */
-        $configuredUrl = config('filesystems.disks.r2.url');
-        $baseUrl = is_string($configuredUrl) && $configuredUrl !== ''
-            ? $configuredUrl
-            : 'https://assets.vomorize.com';
-
-        return rtrim($baseUrl, '/');
-    }
-
     /**
      * Load vocabulary payloads indexed by group and optional sentence cloze question mapping.
      *
@@ -160,7 +149,7 @@ readonly class GenerateCustomQuizSession
      *     cloze_by_vocab_id: array<int, SentenceClozeQuestion>,
      * }
      */
-    private function loadVocabularyPool(array $availableGroupIds, string $cdnUrl, QuizMode $mode): array
+    private function loadVocabularyPool(array $availableGroupIds, QuizMode $mode): array
     {
         $isSentenceCloze = $mode === QuizMode::SentenceCloze;
 
@@ -178,7 +167,7 @@ readonly class GenerateCustomQuizSession
         $clozeByVocabId = [];
 
         foreach ($rawVocabularies as $vocab) {
-            $payload = $this->formatVocabularyPayload($vocab, $cdnUrl);
+            $payload = $this->formatVocabularyPayload($vocab);
             $allVocabularies[] = $payload;
             $vocabulariesByGroup[$payload['group_id']][] = $payload;
 
@@ -197,7 +186,7 @@ readonly class GenerateCustomQuizSession
     /**
      * @return VocabularyPayload
      */
-    private function formatVocabularyPayload(Vocabulary $vocab, string $cdnUrl): array
+    private function formatVocabularyPayload(Vocabulary $vocab): array
     {
         return [
             'id' => $vocab->id,
@@ -208,8 +197,8 @@ readonly class GenerateCustomQuizSession
             'definition' => $vocab->definition,
             'example_sentence' => $vocab->example_sentence,
             'example_translation' => $vocab->example_translation,
-            'word_audio_url' => "{$cdnUrl}/vocabulary/{$vocab->id}/word.mp3",
-            'sentence_audio_url' => "{$cdnUrl}/vocabulary/{$vocab->id}/sentence.mp3",
+            'word_audio_url' => $vocab->word_audio_url,
+            'sentence_audio_url' => $vocab->sentence_audio_url,
         ];
     }
 

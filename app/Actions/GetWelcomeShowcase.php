@@ -38,10 +38,9 @@ readonly class GetWelcomeShowcase
             ->inRandomOrder()
             ->firstOrFail(['id', 'group_id', 'word', 'part_of_speech', 'pronunciation', 'example_sentence']);
 
-        $cdnUrl = $this->resolveCdnUrl();
-        $targetPayload = $this->formatVocabularyPayload($vocabulary, $cdnUrl);
+        $targetPayload = $this->formatVocabularyPayload($vocabulary);
         $spellingQuestion = $this->buildSpellingQuestion->handle($targetPayload);
-        $clozeQuestion = $this->resolveClozeQuestion($vocabulary, $targetPayload, $cdnUrl);
+        $clozeQuestion = $this->resolveClozeQuestion($vocabulary, $targetPayload);
 
         return [
             'vocabulary' => $targetPayload,
@@ -57,7 +56,6 @@ readonly class GetWelcomeShowcase
     private function resolveClozeQuestion(
         Vocabulary $vocabulary,
         array $targetPayload,
-        string $cdnUrl,
     ): ?array {
         $cloze = $vocabulary->sentenceClozeQuestion;
         if (! $cloze instanceof SentenceClozeQuestion) {
@@ -68,7 +66,7 @@ readonly class GetWelcomeShowcase
             ->with('translation:vocabulary_id,definition,example_translation')
             ->where('group_id', $vocabulary->group_id)
             ->get(['id', 'group_id', 'word', 'part_of_speech', 'pronunciation', 'example_sentence'])
-            ->map(fn (Vocabulary $item): array => $this->formatVocabularyPayload($item, $cdnUrl))
+            ->map(fn (Vocabulary $item): array => $this->formatVocabularyPayload($item))
             ->values()
             ->all();
 
@@ -82,7 +80,7 @@ readonly class GetWelcomeShowcase
     /**
      * @return VocabularyPayload
      */
-    private function formatVocabularyPayload(Vocabulary $vocabulary, string $cdnUrl): array
+    private function formatVocabularyPayload(Vocabulary $vocabulary): array
     {
         return [
             'id' => $vocabulary->id,
@@ -93,19 +91,8 @@ readonly class GetWelcomeShowcase
             'definition' => $vocabulary->definition,
             'example_sentence' => $vocabulary->example_sentence,
             'example_translation' => $vocabulary->example_translation,
-            'word_audio_url' => "{$cdnUrl}/vocabulary/{$vocabulary->id}/word.mp3",
-            'sentence_audio_url' => "{$cdnUrl}/vocabulary/{$vocabulary->id}/sentence.mp3",
+            'word_audio_url' => $vocabulary->word_audio_url,
+            'sentence_audio_url' => $vocabulary->sentence_audio_url,
         ];
-    }
-
-    private function resolveCdnUrl(): string
-    {
-        /** @var string|null $configuredUrl */
-        $configuredUrl = config('filesystems.disks.r2.url');
-        $baseUrl = is_string($configuredUrl) && $configuredUrl !== ''
-            ? $configuredUrl
-            : 'https://assets.vomorize.com';
-
-        return rtrim($baseUrl, '/');
     }
 }
