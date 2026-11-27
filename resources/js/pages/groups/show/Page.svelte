@@ -12,7 +12,6 @@
     import { show as introGroup } from '@/actions/App/Http/Controllers/GroupIntroController';
     import { show as quizGroup } from '@/actions/App/Http/Controllers/GroupQuizController';
     import AppHead from '@/components/AppHead.svelte';
-    import Breadcrumbs from '@/components/Breadcrumbs.svelte';
     import VocabularyCard from '@/components/VocabularyCard.svelte';
     import { audioPlayer } from '@/lib/audioPlayer.svelte';
     import { t } from '@/lib/i18n';
@@ -21,6 +20,7 @@
         learningProgressDb,
         type GroupProgressSummary,
     } from '@/lib/learningProgressDb';
+    import { index as levelsIndex, show as showLevel } from '@/routes/levels';
     import type { BreadcrumbItem } from '@/types';
 
     interface GroupData {
@@ -73,21 +73,21 @@
     const breadcrumbs: BreadcrumbItem[] = $derived([
         {
             title: t('ui.group_detail.breadcrumb_levels'),
-            href: '/levels',
+            href: levelsIndex.url(),
         },
         {
             title: group.level_name,
-            href: `/levels/${group.level_id}`,
+            href: showLevel.url(group.level_id),
         },
         {
             title: t('ui.group_detail.breadcrumb_group', {
                 sequence: group.sequence,
             }),
-            href: `/groups/${group.id}`,
+            href: showGroup.url(group.id),
         },
     ]);
 
-    $effect(() => {
+    $effect.pre(() => {
         setLayoutProps({
             breadcrumbs,
             showFooter: false,
@@ -205,11 +205,6 @@
 <div
     class="mx-auto max-w-4xl px-4 pt-6 pb-32 selection:bg-blue-600 selection:text-white sm:px-6 sm:pt-8 sm:pb-36"
 >
-    <!-- Breadcrumb -->
-    <div class="mb-4 sm:mb-6">
-        <Breadcrumbs {breadcrumbs} />
-    </div>
-
     <!-- Header Section: Title, Status, SRS Stage, Prev/Next Navigation (Idea A: Two-tier layout) -->
     <header class="border-border/70 mb-8 border-b pb-6">
         <!-- Top Row: Title on Left, Prev/Next Navigation on Right -->

@@ -1,11 +1,10 @@
 <script lang="ts">
-    import { Link, page, setLayoutProps } from '@inertiajs/svelte';
+    import { Link, page } from '@inertiajs/svelte';
     import ArrowRight from '@lucide/svelte/icons/arrow-right';
     import AppHead from '@/components/AppHead.svelte';
     import { t } from '@/lib/i18n';
-    import { dashboard } from '@/routes';
     import { index as levelsIndex } from '@/routes/levels';
-    import type { BreadcrumbItem, DashboardStats } from '@/types';
+    import type { DashboardStats } from '@/types';
     import ActionCenter from './partials/ActionCenter.svelte';
     import KpiSummaryCards from './partials/KpiSummaryCards.svelte';
 
@@ -14,19 +13,6 @@
     }: {
         stats: DashboardStats;
     } = $props();
-
-    const breadcrumbs: BreadcrumbItem[] = $derived([
-        {
-            title: t('ui.dashboard.breadcrumb'),
-            href: dashboard.url(),
-        },
-    ]);
-
-    $effect(() => {
-        setLayoutProps({
-            breadcrumbs,
-        });
-    });
 
     const user = $derived(page.props.auth?.user);
     const userName = $derived(user?.name || '');

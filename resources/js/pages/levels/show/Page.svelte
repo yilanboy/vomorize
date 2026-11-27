@@ -9,7 +9,6 @@
     import { show as showGroup } from '@/actions/App/Http/Controllers/GroupController';
     import { show as introGroup } from '@/actions/App/Http/Controllers/GroupIntroController';
     import AppHead from '@/components/AppHead.svelte';
-    import Breadcrumbs from '@/components/Breadcrumbs.svelte';
     import TactileTile, {
         type TactileTileVariant,
     } from '@/components/TactileTile.svelte';
@@ -20,6 +19,7 @@
         type GroupProgressSummary,
         type LevelGroupsProgressData,
     } from '@/lib/learningProgressDb';
+    import { index as levelsIndex, show as showLevel } from '@/routes/levels';
     import type { BreadcrumbItem } from '@/types';
 
     interface LevelData {
@@ -91,15 +91,15 @@
     const breadcrumbs: BreadcrumbItem[] = $derived([
         {
             title: t('ui.level_detail.breadcrumb_levels'),
-            href: '/levels',
+            href: levelsIndex.url(),
         },
         {
             title: t('ui.level_detail.title', { name: level.name }),
-            href: `/levels/${level.id}`,
+            href: showLevel.url(level.id),
         },
     ]);
 
-    $effect(() => {
+    $effect.pre(() => {
         setLayoutProps({
             breadcrumbs,
         });
@@ -135,9 +135,6 @@
 <main
     class="mx-auto max-w-7xl space-y-6 px-4 py-6 selection:bg-blue-600 selection:text-white sm:space-y-8 sm:px-6 sm:py-8 lg:px-8"
 >
-    <!-- Breadcrumb -->
-    <Breadcrumbs {breadcrumbs} />
-
     <!-- Level Overview Header -->
     <header
         class="border-border/80 flex flex-col justify-between gap-5 border-b pb-4 md:flex-row md:items-end md:pb-6"

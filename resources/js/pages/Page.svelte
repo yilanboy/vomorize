@@ -22,7 +22,7 @@
         VocabularyPayload,
     } from '@/types/quiz';
 
-    setLayoutProps<{ headerOverlay?: boolean }>({
+    setLayoutProps({
         headerOverlay: true,
     });
 

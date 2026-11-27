@@ -24,13 +24,10 @@
     import { dashboard, home, login } from '@/routes';
     import { index as levelsIndex } from '@/routes/levels';
     import { index as quizIndex } from '@/routes/quiz';
-    import type { BreadcrumbItem } from '@/types';
 
     let {
-        breadcrumbs = [],
         class: className = '',
     }: {
-        breadcrumbs?: BreadcrumbItem[];
         class?: string;
     } = $props();
 
