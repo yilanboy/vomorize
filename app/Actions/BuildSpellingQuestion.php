@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace App\Actions;
 
 use App\Enums\QuizType;
+use App\Models\Vocabulary;
 
 /**
- * @phpstan-import-type VocabularyPayload from GenerateCustomQuizSession
  * @phpstan-import-type SpellingSlotPayload from GenerateCustomQuizSession
  * @phpstan-import-type SpellingTilePayload from GenerateCustomQuizSession
  * @phpstan-import-type SpellingQuestionPayload from GenerateCustomQuizSession
@@ -17,12 +17,13 @@ readonly class BuildSpellingQuestion
     /**
      * Build spelling question with ladder blanking and A-Z sorted tiles.
      *
-     * @param  VocabularyPayload  $target
      * @return SpellingQuestionPayload
      */
-    public function handle(array $target): array
+    public function handle(Vocabulary $vocabulary): array
     {
-        $targetWord = strtolower($target['word']);
+        $vocabulary->loadMissing('translation');
+
+        $targetWord = strtolower($vocabulary->word);
         $rawChars = str_split($targetWord);
         $alphaIndices = array_keys(array_filter($rawChars, static fn (string $char): bool => ctype_alpha($char)));
         $chosenIndices = $this->selectBlankIndices(count($rawChars), $alphaIndices);
@@ -30,8 +31,8 @@ readonly class BuildSpellingQuestion
 
         return [
             'quiz_type' => QuizType::Spelling->value,
-            'stem' => $target['definition'],
-            'audio_url' => $target['word_audio_url'],
+            'stem' => $vocabulary->definition,
+            'audio_url' => $vocabulary->word_audio_url,
             'target_word' => $targetWord,
             'slots' => $slots,
             'tiles' => $tiles,

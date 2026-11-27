@@ -34,117 +34,17 @@
         groups_count?: number;
     }
 
-    interface WelcomeShowcaseData {
-        vocabulary: VocabularyPayload;
-        cloze_question: QuizQuestionPayload | null;
-        spelling_question: SpellingQuestionPayload;
-    }
-
     let {
         levels = [],
-        showcase = null,
+        vocabulary,
+        cloze_question,
+        spelling_question,
     }: {
         levels?: LevelData[];
-        showcase?: WelcomeShowcaseData | null;
+        vocabulary: VocabularyPayload;
+        cloze_question: QuizQuestionPayload;
+        spelling_question: SpellingQuestionPayload;
     } = $props();
-
-    const fallbackVocabulary = $derived<VocabularyPayload>({
-        id: 0,
-        word: t('ui.welcome.hero.fallback.word'),
-        part_of_speech: t('ui.welcome.hero.fallback.part_of_speech'),
-        pronunciation: t('ui.welcome.hero.fallback.pronunciation'),
-        definition: t('ui.welcome.hero.fallback.definition'),
-        example_sentence: t('ui.welcome.hero.fallback.example_sentence'),
-        example_translation: t('ui.welcome.hero.fallback.example_translation'),
-        word_audio_url: '',
-        sentence_audio_url: '',
-    });
-
-    const fallbackClozeQuestion = $derived<QuizQuestionPayload>({
-        quiz_type: 'sentence_cloze',
-        stem: 'Her {{blank}} helped her recover quickly from the setback.',
-        audio_url: '',
-        correct_option_id: 1,
-        sentence_segments: [
-            { type: 'text', text: 'Her ' },
-            { type: 'blank', text: 'resilience' },
-            {
-                type: 'text',
-                text: ' helped her recover quickly from the setback.',
-            },
-        ],
-        options: [
-            {
-                id: 1,
-                text: 'resilience',
-                part_of_speech: 'n.',
-                word: 'resilience',
-                definition: t('ui.welcome.hero.fallback.definition'),
-            },
-            {
-                id: 2,
-                text: 'hesitation',
-                part_of_speech: 'n.',
-                word: 'hesitation',
-                definition: '',
-            },
-            {
-                id: 3,
-                text: 'curiosity',
-                part_of_speech: 'n.',
-                word: 'curiosity',
-                definition: '',
-            },
-            {
-                id: 4,
-                text: 'obstacle',
-                part_of_speech: 'n.',
-                word: 'obstacle',
-                definition: '',
-            },
-        ],
-    });
-
-    const fallbackSpellingQuestion = $derived<SpellingQuestionPayload>({
-        quiz_type: 'spelling',
-        stem: fallbackVocabulary.definition,
-        audio_url: '',
-        target_word: 'resilience',
-        slots: [
-            { is_blank: false, char: 'r' },
-            { is_blank: false, char: 'e' },
-            { is_blank: true, char: 's' },
-            { is_blank: false, char: 'i' },
-            { is_blank: true, char: 'l' },
-            { is_blank: false, char: 'i' },
-            { is_blank: true, char: 'e' },
-            { is_blank: false, char: 'n' },
-            { is_blank: true, char: 'c' },
-            { is_blank: false, char: 'e' },
-        ],
-        tiles: [
-            { slot_index: 8, char: 'c' },
-            { slot_index: 6, char: 'e' },
-            { slot_index: 4, char: 'l' },
-            { slot_index: 2, char: 's' },
-        ],
-    });
-
-    const introVocabulary = $derived(
-        showcase?.vocabulary ?? fallbackVocabulary,
-    );
-    const clozeVocabulary = $derived(
-        showcase?.cloze_question ? showcase.vocabulary : fallbackVocabulary,
-    );
-    const clozeQuestion = $derived(
-        showcase?.cloze_question ?? fallbackClozeQuestion,
-    );
-    const spellingVocabulary = $derived(
-        showcase?.vocabulary ?? fallbackVocabulary,
-    );
-    const spellingQuestion = $derived(
-        showcase?.spelling_question ?? fallbackSpellingQuestion,
-    );
 
     type WorkbenchMode = 'intro' | 'cloze' | 'spelling';
     let workbenchMode = $state<WorkbenchMode>('intro');
@@ -174,13 +74,13 @@
 
     onMount(() => {
         if (
-            introVocabulary.word_audio_url &&
-            introVocabulary.sentence_audio_url &&
+            vocabulary.word_audio_url &&
+            vocabulary.sentence_audio_url &&
             window.location.hostname.endsWith('vomorize.com')
         ) {
             void audioPlayer.preload([
-                introVocabulary.word_audio_url,
-                introVocabulary.sentence_audio_url,
+                vocabulary.word_audio_url,
+                vocabulary.sentence_audio_url,
             ]);
         }
 
@@ -345,14 +245,11 @@
 
             <div class="mt-4 text-left" data-test="hero-workbench-card">
                 {#if workbenchMode === 'intro'}
-                    <VocabularyIntroCard
-                        vocabulary={introVocabulary}
-                        autoPlay={false}
-                    />
+                    <VocabularyIntroCard {vocabulary} autoPlay={false} />
                 {:else if workbenchMode === 'cloze'}
                     <SentenceClozeCard
-                        question={clozeQuestion}
-                        vocabulary={clozeVocabulary}
+                        question={cloze_question}
+                        {vocabulary}
                         selectedOptionId={selectedClozeOptionId}
                         onSelect={(option: QuizOptionPayload) => {
                             selectedClozeOptionId = option.id;
@@ -361,8 +258,8 @@
                 {:else}
                     {#key spellingKey}
                         <SpellingCard
-                            question={spellingQuestion}
-                            vocabulary={spellingVocabulary}
+                            question={spelling_question}
+                            {vocabulary}
                             autoPlay={false}
                             onResult={() => {
                                 spellingAnswered = true;

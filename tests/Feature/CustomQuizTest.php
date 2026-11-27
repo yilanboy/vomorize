@@ -371,6 +371,8 @@ test(
         $steps = $response->viewData('page')['props']['session']['steps'];
         expect($steps)->toHaveCount(10);
 
+        $vocabById = $vocabularies->keyBy('id');
+
         foreach ($steps as $step) {
             $quiz = $step['quiz'];
             $targetVocab = $step['vocabulary'];
@@ -389,7 +391,7 @@ test(
                 array_filter(
                     $quiz['sentence_segments'],
                     fn (array $segment): bool => $segment['type'] === 'blank',
-                )
+                ),
             );
 
             expect($blankSegments)
@@ -398,10 +400,15 @@ test(
                 ->toBe($targetVocab['word'].'ed');
 
             foreach ($quiz['options'] as $option) {
-                expect($option['text'])->toBe($option['word'].'ed');
+                $expectedVocab = $vocabById->get($option['id']);
+                expect($expectedVocab)
+                    ->not
+                    ->toBeNull()
+                    ->and($option['text'])
+                    ->toBe($expectedVocab->word.'ed');
             }
         }
-    }
+    },
 );
 
 test('sentence_cloze mode throws when cloze questions are missing for the requested count', function () {

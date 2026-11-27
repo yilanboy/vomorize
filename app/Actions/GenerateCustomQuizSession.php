@@ -9,6 +9,7 @@ use App\Models\Group;
 use App\Models\SentenceClozeQuestion;
 use App\Models\User;
 use App\Models\Vocabulary;
+use Illuminate\Support\Collection;
 use InvalidArgumentException;
 
 /**
@@ -31,9 +32,9 @@ use InvalidArgumentException;
  * @phpstan-type QuizOptionPayload array{
  *     id: int,
  *     text: string,
- *     part_of_speech: string,
- *     word: string,
- *     definition: string,
+ *     part_of_speech?: string,
+ *     word?: string,
+ *     definition?: string,
  * }
  * @phpstan-type QuizQuestionPayload array{
  *     quiz_type: string,
@@ -111,24 +112,15 @@ readonly class GenerateCustomQuizSession
         }
 
         $mode = QuizMode::tryFrom($quizMode) ?? QuizMode::Standard;
-
-        [
-            'all' => $allVocabularies,
-            'by_group' => $vocabulariesByGroup,
-            'cloze_by_vocab_id' => $clozeByVocabId,
-        ] = $this->loadVocabularyPool($availableGroupIds, $mode);
-
-        $selectedTargets = $this->selectTargetVocabularies(
-            $allVocabularies,
-            $clozeByVocabId,
-            $questionCount,
-            $mode,
-        );
+        $allVocabularies = $this->loadVocabularyPool($availableGroupIds, $mode);
+        $vocabulariesByGroup = $allVocabularies->groupBy('group_id');
+        $selectedTargets = $this->selectTargetVocabularies($allVocabularies, $questionCount, $mode);
 
         $steps = [];
         foreach ($selectedTargets as $index => $target) {
-            $groupVocabularies = $vocabulariesByGroup[$target['group_id']] ?? [];
-            $steps[] = $this->buildStep($index + 1, $target, $groupVocabularies, $clozeByVocabId, $mode);
+            /** @var Collection<int, Vocabulary> $groupVocabularies */
+            $groupVocabularies = $vocabulariesByGroup->get($target->group_id, collect());
+            $steps[] = $this->buildStep($index + 1, $target, $groupVocabularies, $mode);
         }
 
         return [
@@ -140,97 +132,68 @@ readonly class GenerateCustomQuizSession
     }
 
     /**
-     * Load vocabulary payloads indexed by group and optional sentence cloze question mapping.
+     * Load vocabularies with localized translations and optional sentence cloze relations.
      *
      * @param  array<int, int>  $availableGroupIds
-     * @return array{
-     *     all: array<int, VocabularyPayload>,
-     *     by_group: array<int, array<int, VocabularyPayload>>,
-     *     cloze_by_vocab_id: array<int, SentenceClozeQuestion>,
-     * }
+     * @return Collection<int, Vocabulary>
      */
-    private function loadVocabularyPool(array $availableGroupIds, QuizMode $mode): array
+    private function loadVocabularyPool(array $availableGroupIds, QuizMode $mode): Collection
     {
-        $isSentenceCloze = $mode === QuizMode::SentenceCloze;
-
-        $rawVocabularies = Vocabulary::query()
+        return Vocabulary::query()
             ->with('translation')
             ->whereIn('group_id', $availableGroupIds)
-            ->when($isSentenceCloze, static fn ($query) => $query->with('sentenceClozeQuestion'))
+            ->when(
+                $mode === QuizMode::SentenceCloze,
+                static fn ($query) => $query->with('sentenceClozeQuestion'),
+            )
             ->get();
-
-        /** @var array<int, VocabularyPayload> $allVocabularies */
-        $allVocabularies = [];
-        /** @var array<int, array<int, VocabularyPayload>> $vocabulariesByGroup */
-        $vocabulariesByGroup = [];
-        /** @var array<int, SentenceClozeQuestion> $clozeByVocabId */
-        $clozeByVocabId = [];
-
-        foreach ($rawVocabularies as $vocab) {
-            $payload = $this->formatVocabularyPayload($vocab);
-            $allVocabularies[] = $payload;
-            $vocabulariesByGroup[$payload['group_id']][] = $payload;
-
-            if ($isSentenceCloze && $vocab->sentenceClozeQuestion instanceof SentenceClozeQuestion) {
-                $clozeByVocabId[$payload['id']] = $vocab->sentenceClozeQuestion;
-            }
-        }
-
-        return [
-            'all' => $allVocabularies,
-            'by_group' => $vocabulariesByGroup,
-            'cloze_by_vocab_id' => $clozeByVocabId,
-        ];
     }
 
     /**
      * @return VocabularyPayload
      */
-    private function formatVocabularyPayload(Vocabulary $vocab): array
+    private function formatVocabularyPayload(Vocabulary $vocabulary): array
     {
         return [
-            'id' => $vocab->id,
-            'group_id' => $vocab->group_id,
-            'word' => $vocab->word,
-            'part_of_speech' => $vocab->part_of_speech,
-            'pronunciation' => $vocab->pronunciation,
-            'definition' => $vocab->definition,
-            'example_sentence' => $vocab->example_sentence,
-            'example_translation' => $vocab->example_translation,
-            'word_audio_url' => $vocab->word_audio_url,
-            'sentence_audio_url' => $vocab->sentence_audio_url,
+            'id' => $vocabulary->id,
+            'group_id' => $vocabulary->group_id,
+            'word' => $vocabulary->word,
+            'part_of_speech' => $vocabulary->part_of_speech,
+            'pronunciation' => $vocabulary->pronunciation,
+            'definition' => $vocabulary->definition,
+            'example_sentence' => $vocabulary->example_sentence,
+            'example_translation' => $vocabulary->example_translation,
+            'word_audio_url' => $vocabulary->word_audio_url,
+            'sentence_audio_url' => $vocabulary->sentence_audio_url,
         ];
     }
 
     /**
      * Filter eligible vocabularies for the mode and randomly sample the requested count.
      *
-     * @param  array<int, VocabularyPayload>  $allVocabularies
-     * @param  array<int, SentenceClozeQuestion>  $clozeByVocabId
-     * @return array<int, VocabularyPayload>
+     * @param  Collection<int, Vocabulary>  $allVocabularies
+     * @return array<int, Vocabulary>
      */
     private function selectTargetVocabularies(
-        array $allVocabularies,
-        array $clozeByVocabId,
+        Collection $allVocabularies,
         int $questionCount,
         QuizMode $mode,
     ): array {
         $targetPool = $allVocabularies;
 
         if ($mode === QuizMode::SentenceCloze) {
-            $targetPool = array_values(array_filter(
-                $allVocabularies,
-                static fn (array $v): bool => array_key_exists($v['id'], $clozeByVocabId),
-            ));
+            $targetPool = $allVocabularies
+                ->filter(static fn (Vocabulary $v): bool => $v->sentenceClozeQuestion instanceof SentenceClozeQuestion)
+                ->values();
 
-            if (count($targetPool) < $questionCount) {
+            if ($targetPool->count() < $questionCount) {
                 throw new InvalidArgumentException(
                     "Insufficient sentence cloze questions for the requested {$questionCount} questions.",
                 );
             }
         }
 
-        return collect($targetPool)
+        return $targetPool
             ->shuffle()
             ->take($questionCount)
             ->values()
@@ -238,16 +201,13 @@ readonly class GenerateCustomQuizSession
     }
 
     /**
-     * @param  VocabularyPayload  $target
-     * @param  array<int, VocabularyPayload>  $groupVocabularies
-     * @param  array<int, SentenceClozeQuestion>  $clozeByVocabId
+     * @param  Collection<int, Vocabulary>  $groupVocabularies
      * @return SessionStep
      */
     private function buildStep(
         int $stepIndex,
-        array $target,
-        array $groupVocabularies,
-        array $clozeByVocabId,
+        Vocabulary $target,
+        Collection $groupVocabularies,
         QuizMode $mode,
     ): array {
         ['quiz' => $quiz, 'fallback_quiz' => $fallbackQuiz] = match ($mode) {
@@ -256,12 +216,8 @@ readonly class GenerateCustomQuizSession
                 'fallback_quiz' => null,
             ],
             QuizMode::SentenceCloze => [
-                'quiz' => $this->buildSentenceClozeQuestion->handle(
-                    $target,
-                    $clozeByVocabId[$target['id']] ?? throw new InvalidArgumentException(
-                        "Missing sentence cloze question for vocabulary {$target['id']}.",
-                    ),
-                    $groupVocabularies,
+                'quiz' => $this->buildSentenceClozeQuestion->handle($target) ?? throw new InvalidArgumentException(
+                    "Missing sentence cloze question for vocabulary {$target->id}.",
                 ),
                 'fallback_quiz' => null,
             ],
@@ -269,10 +225,10 @@ readonly class GenerateCustomQuizSession
         };
 
         return [
-            'id' => "step-{$stepIndex}-custom-quiz-{$target['id']}",
+            'id' => "step-{$stepIndex}-custom-quiz-{$target->id}",
             'step_index' => $stepIndex,
             'kind' => 'quiz',
-            'vocabulary' => $target,
+            'vocabulary' => $this->formatVocabularyPayload($target),
             'quiz' => $quiz,
             'fallback_quiz' => $fallbackQuiz,
         ];

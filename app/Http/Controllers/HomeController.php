@@ -4,19 +4,24 @@ declare(strict_types=1);
 
 namespace App\Http\Controllers;
 
-use App\Actions\GetWelcomeShowcase;
+use App\Actions\BuildSentenceClozeQuestion;
+use App\Actions\BuildSpellingQuestion;
 use App\Http\Resources\LevelResource;
+use App\Http\Resources\VocabularyResource;
 use App\Models\Level;
+use App\Models\Vocabulary;
 use Inertia\Inertia;
 use Inertia\Response;
 
 final class HomeController extends Controller
 {
     /**
-     * Display the welcome page with all vocabulary levels.
+     * Display the welcome page with vocabulary levels and an interactive sample vocabulary.
      */
-    public function index(GetWelcomeShowcase $getWelcomeShowcase): Response
-    {
+    public function index(
+        BuildSentenceClozeQuestion $buildSentenceClozeQuestion,
+        BuildSpellingQuestion $buildSpellingQuestion,
+    ): Response {
         $levels = Level::query()
             ->with('translation')
             ->withCount(['vocabularies', 'groups'])
@@ -24,11 +29,17 @@ final class HomeController extends Controller
             ->limit(7)
             ->get(['id']);
 
-        $showcase = $getWelcomeShowcase->handle();
+        $vocabulary = Vocabulary::query()
+            ->whereHas('sentenceClozeQuestion')
+            ->with(['translation', 'sentenceClozeQuestion'])
+            ->inRandomOrder()
+            ->firstOrFail();
 
         return Inertia::render('Page', [
             'levels' => LevelResource::collection($levels),
-            'showcase' => $showcase,
+            'vocabulary' => new VocabularyResource($vocabulary),
+            'cloze_question' => $buildSentenceClozeQuestion->handle($vocabulary),
+            'spelling_question' => $buildSpellingQuestion->handle($vocabulary),
         ]);
     }
 }

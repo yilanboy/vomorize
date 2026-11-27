@@ -25,9 +25,9 @@ class SentenceClozeQuestionFactory extends Factory
             'sentence' => 'This is a {{blank}} sentence.',
             'blank_word' => 'test',
             'distractors' => [
-                ['vocabulary_id' => 1, 'word' => 'alpha'],
-                ['vocabulary_id' => 2, 'word' => 'beta'],
-                ['vocabulary_id' => 3, 'word' => 'gamma'],
+                ['vocabulary_id' => 10001, 'word' => 'alpha'],
+                ['vocabulary_id' => 10002, 'word' => 'beta'],
+                ['vocabulary_id' => 10003, 'word' => 'gamma'],
             ],
         ];
     }

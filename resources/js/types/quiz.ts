@@ -13,9 +13,9 @@ export interface VocabularyPayload {
 export interface QuizOptionPayload {
     id: number;
     text: string;
-    part_of_speech: string;
-    word: string;
-    definition: string;
+    part_of_speech?: string;
+    word?: string;
+    definition?: string;
 }
 
 export type QuizType =
