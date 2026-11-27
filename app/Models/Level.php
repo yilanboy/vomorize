@@ -23,10 +23,6 @@ class Level extends Model
     /** @use HasFactory<LevelFactory> */
     use HasFactory;
 
-    protected $fillable = [
-        'id',
-    ];
-
     /**
      * @return HasMany<LevelTranslation, $this>
      */
