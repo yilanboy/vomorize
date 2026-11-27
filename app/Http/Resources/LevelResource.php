@@ -24,8 +24,8 @@ class LevelResource extends JsonResource
             'id' => $this->id,
             'name' => $this->translation->name,
             'description' => $this->translation->description,
-            'vocabularies_count' => $this->whenCounted('vocabularies', fn (): int => $this->vocabularies_count),
-            'groups_count' => $this->whenCounted('groups', fn (): int => $this->groups_count),
+            'vocabularies_count' => $this->whenCounted('vocabularies'),
+            'groups_count' => $this->whenCounted('groups'),
         ];
     }
 }
