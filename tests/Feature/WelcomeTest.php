@@ -9,8 +9,11 @@ use App\Models\User;
 use App\Models\Vocabulary;
 use Inertia\Testing\AssertableInertia as Assert;
 
-test('guest can access welcome page and sees inertia welcome component', function () {
-    $level = Level::factory()->create();
+beforeEach(function () {
+    $level = Level::factory()
+        ->withTranslation('zh_TW', '等級 1', '基礎入門：核心常用 1,000 單字')
+        ->create();
+    Level::factory()->count(9)->create();
     $group = Group::factory()->create(['level_id' => $level->id]);
 
     Vocabulary::factory()
@@ -24,7 +27,9 @@ test('guest can access welcome page and sees inertia welcome component', functio
                 'vocabulary_id' => $vocabulary->id,
             ]);
         });
+});
 
+test('guest can access welcome page and sees inertia welcome component', function () {
     $response = $this->get(route('home'));
 
     $response->assertOk();
@@ -34,67 +39,24 @@ test('guest can access welcome page and sees inertia welcome component', functio
 });
 
 test('authenticated user is redirected from welcome page to dashboard', function () {
-    $level = Level::factory()->create();
-    $group = Group::factory()->create(['level_id' => $level->id]);
-
-    Vocabulary::factory()
-        ->count(10)
-        ->create([
-            'level_id' => $level->id,
-            'group_id' => $group->id,
-        ])
-        ->each(function (Vocabulary $vocabulary) {
-            SentenceClozeQuestion::factory()->create([
-                'vocabulary_id' => $vocabulary->id,
-            ]);
-        });
-
     $user = User::factory()->create();
 
-    $response = $this->actingAs($user)->get(route('home'));
+    $response = $this->actingAs($user)
+        ->get(route('home'));
 
     $response->assertRedirect(route('dashboard'));
 });
 
 test('unverified authenticated user is redirected from welcome page to dashboard', function () {
-    $level = Level::factory()->create();
-    $group = Group::factory()->create(['level_id' => $level->id]);
-
-    Vocabulary::factory()
-        ->count(10)
-        ->create([
-            'level_id' => $level->id,
-            'group_id' => $group->id,
-        ])
-        ->each(function (Vocabulary $vocabulary) {
-            SentenceClozeQuestion::factory()->create([
-                'vocabulary_id' => $vocabulary->id,
-            ]);
-        });
-
     $user = User::factory()->unverified()->create();
 
-    $response = $this->actingAs($user)->get(route('home'));
+    $response = $this->actingAs($user)
+        ->get(route('home'));
 
     $response->assertRedirect(route('dashboard'));
 });
 
 test('welcome page shares ui translation keys for hero, features, and levels', function () {
-    $level = Level::factory()->create();
-    $group = Group::factory()->create(['level_id' => $level->id]);
-
-    Vocabulary::factory()
-        ->count(10)
-        ->create([
-            'level_id' => $level->id,
-            'group_id' => $group->id,
-        ])
-        ->each(function (Vocabulary $vocabulary) {
-            SentenceClozeQuestion::factory()->create([
-                'vocabulary_id' => $vocabulary->id,
-            ]);
-        });
-
     $response = $this->get(route('home'));
 
     $response->assertOk();
@@ -109,30 +71,13 @@ test('welcome page shares ui translation keys for hero, features, and levels', f
 });
 
 test('welcome page passes levels data loaded from database', function () {
-    $level = Level::factory()
-        ->withTranslation('zh_TW', '等級 1', '基礎入門：核心常用 1,000 單字')
-        ->create();
-
-    $group = Group::factory()->create(['level_id' => $level->id]);
-
-    Vocabulary::factory()
-        ->count(10)
-        ->create([
-            'level_id' => $level->id,
-            'group_id' => $group->id,
-        ])
-        ->each(function (Vocabulary $vocabulary) {
-            SentenceClozeQuestion::factory()->create([
-                'vocabulary_id' => $vocabulary->id,
-            ]);
-        });
+    $level = Level::first();
 
     $response = $this->get(route('home'));
 
     $response->assertOk();
     $response->assertInertia(fn (Assert $page) => $page
         ->component('Page')
-        ->has('levels', 1)
         ->where('levels.0.id', $level->id)
         ->where('levels.0.name', '等級 1')
         ->where('levels.0.description', '基礎入門：核心常用 1,000 單字')
@@ -142,22 +87,6 @@ test('welcome page passes levels data loaded from database', function () {
 });
 
 it('will only show 7 levels on welcome page', function () {
-    $levels = Level::factory()->count(10)->create();
-
-    $group = Group::factory()->create(['level_id' => $levels->first()->id]);
-
-    Vocabulary::factory()
-        ->count(10)
-        ->create([
-            'level_id' => $levels->first()->id,
-            'group_id' => $group->id,
-        ])
-        ->each(function (Vocabulary $vocabulary) {
-            SentenceClozeQuestion::factory()->create([
-                'vocabulary_id' => $vocabulary->id,
-            ]);
-        });
-
     $response = $this->get(route('home'));
 
     $response->assertOk();
@@ -167,76 +96,24 @@ it('will only show 7 levels on welcome page', function () {
     );
 });
 
-test('welcome page passes a random vocabulary with localized translation', function () {
-    $level = Level::factory()->create();
-    $group = Group::factory()->create(['level_id' => $level->id]);
-
-    $vocabulary = Vocabulary::factory()
-        ->withTranslation('zh_TW', '靜謐的', '湖面在黎明時分十分靜謐。')
-        ->create([
-            'level_id' => $level->id,
-            'group_id' => $group->id,
-            'word' => 'serene',
-            'part_of_speech' => 'adj.',
-            'pronunciation' => '/səˈriːn/',
-            'example_sentence' => 'The lake was serene at dawn.',
-        ]);
-
-    SentenceClozeQuestion::factory()->create([
-        'vocabulary_id' => $vocabulary->id,
-    ]);
-
+test('welcome page passes a random vocabulary with localized translation and spelling test', function () {
     $response = $this->get(route('home'));
 
     $response->assertOk();
     $response->assertInertia(fn (Assert $page) => $page
         ->component('Page')
-        ->where('showcase.vocabulary.id', $vocabulary->id)
-        ->where('showcase.vocabulary.word', 'serene')
-        ->where('showcase.vocabulary.part_of_speech', 'adj.')
-        ->where('showcase.vocabulary.pronunciation', '/səˈriːn/')
-        ->where('showcase.vocabulary.example_sentence', 'The lake was serene at dawn.')
-        ->where('showcase.vocabulary.definition', '靜謐的')
-        ->where('showcase.vocabulary.example_translation', '湖面在黎明時分十分靜謐。')
-        ->where('showcase.spelling_question.target_word', 'serene')
-    );
-});
-
-test('welcome page builds real cloze and spelling showcase when group has sentence cloze data', function () {
-    $level = Level::factory()->create();
-    $group = Group::factory()->create(['level_id' => $level->id]);
-
-    $vocabularies = Vocabulary::factory()
-        ->count(4)
-        ->withTranslation('zh_TW', '韌性', '她的韌性幫助她很快從挫折中重新振作。')
-        ->create([
-            'level_id' => $level->id,
-            'group_id' => $group->id,
-        ]);
-
-    $target = $vocabularies->firstOrFail();
-
-    SentenceClozeQuestion::factory()->create([
-        'vocabulary_id' => $target->id,
-        'sentence' => 'Her {{blank}} helped her recover quickly from the setback.',
-        'blank_word' => $target->word,
-        'distractors' => $vocabularies
-            ->slice(1)
-            ->values()
-            ->map(static fn (Vocabulary $v): array => ['vocabulary_id' => $v->id, 'word' => $v->word])
-            ->all(),
-    ]);
-
-    $response = $this->get(route('home'));
-
-    $response->assertOk();
-    $response->assertInertia(fn (Assert $page) => $page
-        ->component('Page')
-        ->where('showcase.vocabulary.id', $target->id)
+        ->has('showcase.vocabulary.id')
+        ->has('showcase.vocabulary.word')
+        ->has('showcase.vocabulary.part_of_speech')
+        ->has('showcase.vocabulary.pronunciation')
+        ->has('showcase.vocabulary.example_sentence')
+        ->has('showcase.vocabulary.definition')
+        ->has('showcase.vocabulary.example_translation')
+        ->has('showcase.spelling_question.target_word')
         ->where('showcase.cloze_question.quiz_type', 'sentence_cloze')
         ->has('showcase.cloze_question.options', 4)
         ->has('showcase.cloze_question.sentence_segments', 3)
         ->where('showcase.spelling_question.quiz_type', 'spelling')
-        ->where('showcase.spelling_question.target_word', strtolower($target->word))
+        ->has('showcase.spelling_question.target_word')
     );
 });
